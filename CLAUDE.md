@@ -64,10 +64,16 @@ gibi bir düğmeye dönme.
 
 Ekran üç katmandır ve bu sırayı koru: (1) `.idline` — avatar + ad + toplam istatistik,
 tek satır, dokunulunca Durum paneli; (2) `.hero` — ilerleme halkası (`ringSvg`) + modül
-adı + **tek** birincil düğme, yanında "Değiştir"; (3) `.chiprow` — deste çipleri, sayısı
-sıfır olan deste hiç çizilmez. Konular ve Ayarlar akordeonu varsayılan olarak kapalı.
-İlk ziyarette (`G.seen === 0`) hero "Hoş geldin" sürümüne düşer ve çip satırı gizlenir.
-Ana ekranı sayı yığınına çevirme — kullanıcı tek birincil eylem istedi.
+kutusu + **tek** birincil düğme; (3) `.chiprow` — deste çipleri, sayısı sıfır olan deste
+hiç çizilmez. İlk ziyarette (`G.seen === 0`) hero "Hoş geldin" sürümüne düşer ve çip
+satırı gizlenir. Ana ekranı sayı yığınına çevirme — kullanıcı tek birincil eylem istedi.
+
+**Konu seçimi ayrı bir bölüm değil.** Modül kutusuna (`modPick`, `#mPick`) dokununca
+altında `#picker` açılır; kapsam yalnız oradan seçilir. Ayrı "Konular" akordeonu isteme,
+kullanıcı açıkça kaldırttı. Seçici içinde iki ayrı davranış var, ikisini de koru:
+modül/bölüm **adına** dokunmak (`data-solo`) seçimi tek başına ona alır ve seçiciyi
+kapatır (dropdown gibi), **kutucuğa** (`data-s`) dokunmak çoklu seçim yapar ve seçici
+açık kalır. `pickOpen` durumu `home()` yeniden çizimleri arasında korunur.
 
 İlk ziyarette `randomName()` rastgele bir profil adı üretir ve profil kendiliğinden açılır;
 giriş yoktur. Ad Durum panelinden değiştirilir (`renameProfile` localStorage anahtarını taşır). Aralıklı tekrar
