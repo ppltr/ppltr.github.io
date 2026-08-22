@@ -53,7 +53,10 @@ ok("misafir tur açabiliyor")
 q = c.get(f"/api/tur/{run_id}/soru/0").json()
 for key in ("is_correct", "correct_pos", "answer", "correct"):
     assert key not in q, f"yanıtta {key} sızmış"
-assert "correct" not in str(q["options"])
+# Şık nesnelerinde yalnız pos ve text olmalı; metnin içinde geçen İngilizce
+# "correct" kelimesi sızıntı değildir, o yüzden metne değil anahtarlara bakılır.
+for o in q["options"]:
+    assert set(o) == {"pos", "text"}, f"şıkta fazladan alan: {set(o) - {'pos', 'text'}}"
 ok("doğru cevap istemciye gönderilmiyor")
 
 # ── 3. Yanlış → deftere, iki doğru → defterden ───────────────────────

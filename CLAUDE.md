@@ -3,10 +3,14 @@
 PPL teori sınavlarına hazırlık için soru bankası ve çalışma sitesi.
 Sorular ATPL TV platformundaki *PPL Turkey (English)* sınav raporlarından elle çevrildi.
 
-**Bankanın tamamı şu an PPL.** ATPL soruları ileride eklenecek. Hazırlık yapıldı:
-`subjects.level` sütunu ve dışa aktarımdaki `lv` alanı var, varsayılan `ppl`. ATPL
-eklenirken veri JSON'una `"level": "atpl"` yaz; uygulamada seviye süzgeci o zaman
-eklenir. Depo dizini tarihsel olarak `atpl/` adında, karışmasın.
+**Banka ağırlıkla PPL.** ATPL soruları ileride eklenecek. Seviye `subjects.level`
+sütununda ve dışa aktarımdaki `lv` alanında tutulur, varsayılan `ppl`. ATPL eklenirken
+veri JSON'una `"level": "atpl"` yaz; uygulamada seviye süzgeci o zaman eklenir. Depo
+dizini tarihsel olarak `atpl/` adında, karışmasın.
+
+**502 · Güvenlik Bilinci PPL değil**, SHGM güvenlik bilinci sınavının dersidir;
+`"level": "gb"` ile işaretli. Seviye süzgeci eklenirken bu modülü PPL'in içine sayma.
+Uygulamada modül listesinde 501'in yanında görünür — bu bilinçli.
 
 ## Bozulmaması gereken kural
 

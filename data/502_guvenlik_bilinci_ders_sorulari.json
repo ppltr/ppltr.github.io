@@ -1,0 +1,317 @@
+{
+  "subject_code": "502",
+  "subject_name": "Güvenlik Bilinci",
+  "level": "gb",
+  "source": "Güvenlik Bilinci ders notu - bölüm sonu soruları (25 soru)",
+  "answer_convention": "Kaynakta doğru cevap dağınıktı; şıklar doğru cevap başa (A) gelecek şekilde yeniden sıralandı.",
+  "id_convention": "Kaynakta soru ID'si yok; 50201'den başlayan yapay ID'ler verildi.",
+  "sections": {
+    "GB-01": "Yasadışı Eylemler",
+    "GB-02": "Mevzuat",
+    "GB-03": "Yapılanma",
+    "GB-04": "Güvenlik Tedbirleri",
+    "GB-05": "Acil Durum ve Güvenlik Kültürü"
+  },
+  "questions": [
+    {
+      "id": 50201,
+      "section": "GB-01",
+      "text": "I) Hava aracının yasadışı olarak ele geçirilmesi II) Hizmetteki hava aracına zarar verilmesi III) Havaalanında veya hava aracı içinde rehin alınması IV) Hava aracına, havaalanına veya havaalanındaki tesislere zorla izinsiz girilmesi V) Hava aracına veya havaalanına kötü amaçla silah, tehlikeli cihaz veya madde sokulması. Yukarıdakilerden hangisi/hangileri yasadışı müdahale eylemleri arasında yer alır?",
+      "options": [
+        "I, II, III, IV ve V",
+        "II, III ve IV",
+        "I, III ve IV",
+        "I, II ve III",
+        "I, II, III ve IV"
+      ]
+    },
+    {
+      "id": 50202,
+      "section": "GB-01",
+      "text": "\"…………\" havacılık sektöründe çalışan bir kişinin farklı motivasyonlarla bir terör örgütüne yardımcı olmasıdır. Boş bırakılan alana aşağıdakilerden hangisi gelmelidir?",
+      "options": [
+        "İç tehdit",
+        "Sınır dışı edilen kişiler",
+        "Potansiyel tehlike arz eden yolcu",
+        "Kuraldışı yolcu",
+        "İHA"
+      ]
+    },
+    {
+      "id": 50203,
+      "section": "GB-01",
+      "text": "Bir havaalanında ya da hava aracında kurallara uymayarak veya havaalanı personeli ya da kabin ekibinin talimatlarına uymayarak havaalanındaki ya da hava aracındaki düzen ve disiplini bozan kişilere ne ad verilir?",
+      "options": [
+        "Kuraldışı yolcu",
+        "Akli dengesi bozuk yolcu",
+        "Sınır dışı edilen kişiler",
+        "Hukuki işleme maruz kişi",
+        "Kabul edilemez yolcu"
+      ]
+    },
+    {
+      "id": 50204,
+      "section": "GB-01",
+      "text": "Bireylerin hareket ettikleri için ne tür bir eylem gerçekleştireceklerinin ve bir sonraki hareketlerinin tahmin edilmesinin zor olması, bireysel tehditlerin hangi özelliği ile ilişkilidir?",
+      "options": [
+        "Öngörülemezlik",
+        "Kısıtlı teknik uzmanlık",
+        "Kısıtlı kaynak",
+        "Kişisellik",
+        "Şüpheli davranış"
+      ]
+    },
+    {
+      "id": 50205,
+      "section": "GB-03",
+      "text": "I) Yetkili Otorite II) Havaalanı Güvenlik Komisyonu III) Yerel Otorite IV) Eğitim, Araştırma ve Denetleme Birimi. Şikago Sözleşmesi Ek 17'ye göre ulusal yapılanma yukarıdakilerden en az hangisini/hangilerini içermelidir?",
+      "options": [
+        "I, II ve III",
+        "I, II, III ve IV",
+        "Yalnız I",
+        "I ve IV",
+        "Yalnız III"
+      ]
+    },
+    {
+      "id": 50206,
+      "section": "GB-02",
+      "text": "Aşağıdakilerden hangisinin temel amacı; halkın, yolcuların, mürettebatın, yer personelinin, havalimanı bina ve tesislerinin, sivil havacılığa karşı yerde ve havada meydana gelebilecek her türlü yasadışı eylemlere karşı korunması ile ilgili kurum ve kuruluşların görev, yetki ve sorumluluklarını düzenlemek ve uygulama esaslarını belirlemektir?",
+      "options": [
+        "Ulusal Sivil Havacılık Güvenlik Programı",
+        "Havayolu Güvenlik Programı",
+        "Ulusal Sivil Havacılık Emniyet Programı",
+        "Havayolu Emniyet Programı",
+        "Ulusal Sivil Havacılık Güvenlik Eğitim Programı"
+      ]
+    },
+    {
+      "id": 50207,
+      "section": "GB-02",
+      "text": "ICAO Ek-17 Güvenlik düzenlemesi için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Oldukça kısa ve öz bir şekilde kaleme alınmıştır",
+        "Çok detaylı ve kapsamlıdır",
+        "Tokyo Sözleşmesi'ne ek olarak düzenlenmiştir",
+        "Tüm sivil havacılık düzenlemelerini içerir",
+        "Uygulama detaylarına dair detaylı tavsiyeler içermektedir"
+      ]
+    },
+    {
+      "id": 50208,
+      "section": "GB-02",
+      "text": "Hangi sözleşme, sivil havacılığa karşı patlayıcı düzeneklerinin kullanılmasını kapsamaktadır?",
+      "options": [
+        "Sivil Havacılığın Güvenliğine Karşı Kanun Dışı Eylemlerin Önlenmesine İlişkin Sözleşme (Montreal Sözleşmesi)",
+        "Uçaklarda İşlenen Suçlar ve Diğer Bazı Eylemlere İlişkin Sözleşme (Tokyo Sözleşmesi)",
+        "Uçakların Kanundışı Yollarla Ele Geçirilmesinin Önlenmesine Dair Sözleşme (Lahey Sözleşmesi)",
+        "Milletlerarası Sivil Havacılık Sözleşmesi (Şikago Sözleşmesi)",
+        "Plastik Patlayıcıların İşaretlenmesine Dair Sözleşme (MEX Sözleşmesi)"
+      ]
+    },
+    {
+      "id": 50209,
+      "section": "GB-02",
+      "text": "Hangi sözleşme, uçaktaki düzeni veya disiplini bozan eylemlerde hava aracından sorumlu kişilere yetki vermektedir?",
+      "options": [
+        "Uçaklarda İşlenen Suçlar ve Diğer Bazı Eylemlere İlişkin Sözleşme (Tokyo Sözleşmesi)",
+        "Sivil Havacılığın Güvenliğine Karşı Kanun Dışı Eylemlerin Önlenmesine İlişkin Sözleşme (Montreal Sözleşmesi)",
+        "Uçakların Kanundışı Yollarla Ele Geçirilmesinin Önlenmesine Dair Sözleşme (Lahey Sözleşmesi)",
+        "Plastik Patlayıcıların İşaretlenmesine Dair Sözleşme (MEX Sözleşmesi)",
+        "Milletlerarası Sivil Havacılık Sözleşmesi (Şikago Sözleşmesi)"
+      ]
+    },
+    {
+      "id": 50210,
+      "section": "GB-02",
+      "text": "I) Oluşturulması ve uygulanması zorunludur. II) Yazılı bir belge olması gerekir. III) Sivil havacılığın yasa dışı eylemlere karşı korunması için önlemleri içerir. IV) Programın hazırlanmasından ve programda belirtilen görev ve hizmetlerin koordinasyonunun sağlanarak yürütülmesinden sorumlu bir yetkili otorite belirlenir. Yukarıdakilerden hangisi/hangileri Ulusal Sivil Havacılık Güvenlik Programı için doğrudur?",
+      "options": [
+        "I, II, III ve IV",
+        "Yalnız I",
+        "I, II ve III",
+        "II, III ve IV",
+        "II ve III"
+      ]
+    },
+    {
+      "id": 50211,
+      "section": "GB-03",
+      "text": "Aşağıdakilerden hangisi Ulusal Sivil Havacılık Güvenlik Komitesi'nin görevlerinden değildir?",
+      "options": [
+        "Havalimanlarında denetim, test ve inceleme yapmak",
+        "Havacılığa yönelik tehditlere karşı havacılık güvenlik önlemleri konusunda tavsiyelerde bulunmak",
+        "Sivil havacılığın güvenliğini bir bütün olarak geliştirmek için uluslararası kuruluşlar ve diğer devletlerle işbirliği yapmanın yollarını düşünmek",
+        "Ulusal Sivil Havacılık Güvenlik Programının uygulanmasından sorumlu kurumlar ve diğer kuruluşlar arasında havacılık güvenliği önlemlerinin koordinasyonunu sağlamak",
+        "Yeni havalimanlarının tasarımında veya mevcut tesislerin genişletilmesinde güvenlik hususlarını teşvik etmek"
+      ]
+    },
+    {
+      "id": 50212,
+      "section": "GB-03",
+      "text": "Havacılık güvenliği alanında ulusal yapılanmanın nasıl oluşturulması gerektiği aşağıdakilerden hangisinde düzenlenmiştir?",
+      "options": [
+        "Şikago Sözleşmesi Ek-17, Bölüm 3",
+        "Şikago Sözleşmesi Ek-15, Bölüm 7",
+        "Şikago Sözleşmesi Ek-14, Bölüm 9",
+        "Şikago Sözleşmesi Ek-15, Bölüm 8",
+        "Şikago Sözleşmesi Ek-14, Bölüm 5"
+      ]
+    },
+    {
+      "id": 50213,
+      "section": "GB-03",
+      "text": "Ulusal Sivil Havacılık Güvenlik Programı'nın geliştirilmesi, uygulanması ve devamlılığından sorumlu olan kuruluş aşağıdakilerden hangisidir?",
+      "options": [
+        "Yetkili Otorite",
+        "Havaalanı Güvenlik Komisyonu",
+        "Ulusal Havacılık Güvenliği Komitesi",
+        "Ulusal Güvenlik Denetçisi",
+        "Ulusal Güvenlik Teşkilatı"
+      ]
+    },
+    {
+      "id": 50214,
+      "section": "GB-03",
+      "text": "Ulusal havacılık güvenliği yapılanmasında yer alan havaalanı güvenlik komisyonu ile ilgili olarak aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Her havaalanı için ayrı ayrı kurulur ve yerel düzeyde faaliyet gösterir",
+        "Görevleri sadece yolcu güvenliği ile sınırlıdır",
+        "Sadece uluslararası havaalanlarında kurulur",
+        "Teknik bakım ve uçuş planlamasından sorumludur",
+        "Havaalanı güvenlik otoritesine doğrudan bağlı çalışır"
+      ]
+    },
+    {
+      "id": 50215,
+      "section": "GB-03",
+      "text": "Havalimanı güvenliğinden sorumlu yerel otorite kimdir?",
+      "options": [
+        "Mülki İdare Amiri",
+        "SHGM",
+        "Göç İdaresi Müdürü",
+        "DHMİ",
+        "Özel güvenlik amiri"
+      ]
+    },
+    {
+      "id": 50216,
+      "section": "GB-04",
+      "text": "Geçerli bir giriş belgesiyle ve güvenlik kontrolü yapılarak giriş sağlanan alanlara ne ad verilir?",
+      "options": [
+        "Güvenlik tahditli alan",
+        "Kontuar alanı",
+        "Hava tarafı",
+        "Kara tarafı",
+        "Demarke alan"
+      ]
+    },
+    {
+      "id": 50217,
+      "section": "GB-04",
+      "text": "Aşağıdakilerden hangisi giriş kartı sahibi personelin uyması gereken kurallardan değildir?",
+      "options": [
+        "Görevli oldukları alanlara izinsiz misafir veya ziyaretçi kabul etmek",
+        "Giriş kartını sadece izin verilen alanlar için kullanmak",
+        "Güvenlik kontrol noktalarında, görevlilerin havaalanı giriş kartını inceleyerek fotoğrafı ile karşılaştırmasına ve yetki verilen alanları kontrol etmesine izin vermek",
+        "Giriş kartının tek başına muafiyet sağlamaması nedeniyle kontrol noktalarında taramaya tabi olmak",
+        "Kartlarını kullanım için başkasına vermemek"
+      ]
+    },
+    {
+      "id": 50218,
+      "section": "GB-04",
+      "text": "I) Araç giriş izni araca özel olmalıdır. II) İzin belgesinde giriş iznine sahip olduğu alanlar yer almalıdır. III) İzin belgesinde son kullanma tarihi yazılmalıdır. IV) İzin belgesinde aracın şoförünün bilgileri yer almalıdır. Araç giriş izni ile ilgili yukarıdaki bilgilerden hangisi/hangileri doğrudur?",
+      "options": [
+        "I, II ve III",
+        "II, III ve IV",
+        "I, II, III ve IV",
+        "II ve III",
+        "Yalnız II"
+      ]
+    },
+    {
+      "id": 50219,
+      "section": "GB-04",
+      "text": "Hava tarafı ve güvenlik tahditli alanlara yetkisiz kişilerin ve araçların girişinin önlenmesi amacıyla yapılan yetki kontrolüne ne denir?",
+      "options": [
+        "Giriş kontrol",
+        "Güvenlik kontrolü",
+        "Yetkisiz giriş",
+        "Giriş kısıtlaması",
+        "Tarama"
+      ]
+    },
+    {
+      "id": 50220,
+      "section": "GB-04",
+      "text": "Havaalanında herkesin giriş yapamadığı, sadece yolcunun ve yetkili personelin giriş yapabildiği, \"giriş kontrolü\" yapılan noktadan sonraki kısımlara ne ad verilir?",
+      "options": [
+        "Hava tarafı",
+        "Kara tarafı",
+        "Güvenlik tahditli alan",
+        "Check-in salonu",
+        "Demarke alan"
+      ]
+    },
+    {
+      "id": 50221,
+      "section": "GB-05",
+      "text": "Aşağıdakilerden hangisi etkili güvenlik kültürünün faydaları arasında gösterilemez?",
+      "options": [
+        "Güvenliğin, büyük harcamalar yapılarak geliştirilmesinin sağlanması",
+        "Çalışanların endişe verici davranışları/faaliyetleri belirleme ve bildirme olasılığının yükselmesi",
+        "Çalışanların güvenlik sorunlarıyla ilgilenmesi ve sorumluluk alması",
+        "Çalışanların daha büyük bir güvenlik duygusu hissetmesinin sağlanması",
+        "Güvenlik önlemlerine uyum seviyelerinin artması"
+      ]
+    },
+    {
+      "id": 50222,
+      "section": "GB-05",
+      "text": "Aşağıdakilerden hangisi işletmelerde güvenlik kültürünü geliştirmek amacıyla yöneticiler tarafından yerine getirilmesi gereken sorumluluklardan değildir?",
+      "options": [
+        "Ekonomik sıkıntı yaşandığı dönemlerde havacılık güvenliğinden taviz vermek",
+        "Havacılık güvenliğini kurum/kuruluşun tamamına yansıyan temel bir değer haline getirmek",
+        "Havacılık güvenliğinde belirlenen kurallara her zaman uymak ve örnek olmak",
+        "Güvenlik olayları ile ilgili yapıcı geri bildirimi teşvik etmek",
+        "Güvenlik önlemlerinin önemini sürekli teşvik ederek desteklemek"
+      ]
+    },
+    {
+      "id": 50223,
+      "section": "GB-05",
+      "text": "I) Güvenlik önlemlerinin önemini vurgulayan el ilanları ve posterler II) E-öğrenme araçlarını kullanmak III) İntranet, haber bültenleri ve videolar gibi iç iletişim platformları IV) Dijital medyayı kullanmak. Yukarıdakilerden hangisi güvenlik kültürünü geliştirmek amacıyla kurum/kuruluşlar tarafından gerçekleştirilecek farkındalık kampanyalarındandır?",
+      "options": [
+        "I, II, III ve IV",
+        "I, II ve III",
+        "Yalnız III",
+        "I ve III",
+        "III ve IV"
+      ]
+    },
+    {
+      "id": 50224,
+      "section": "GB-05",
+      "text": "Havacılık alanında faaliyet gösteren kurum/kuruluş ve çalışanlarının havacılık güvenliği ve potansiyel güvenlik tehditleri hakkında bilgi sahibi olmaması ya da bilinçli olmaması nedeniyle ortaya çıkan duruma ne denir?",
+      "options": [
+        "Zayıf güvenlik kültürü",
+        "Güvenlik bilinci",
+        "İlave güvenlik tedbiri",
+        "Temel sivil havacılık güvenliği",
+        "Güvenli tedarik zinciri"
+      ]
+    },
+    {
+      "id": 50225,
+      "section": "GB-05",
+      "text": "Aşağıdakilerden hangisi etkili bir güvenlik kültürünün faydalarından değildir?",
+      "options": [
+        "Güvenlik olaylarının yaşanma riskinin, çalışanların güvenlik konusunda daha bilinçli şekilde hareket etmesiyle artması",
+        "Çalışanların şüpheli davranışları belirleme ve bildirme olasılığının artması",
+        "Güvenliğin, büyük harcamalara gerek kalmadan geliştirilmesi",
+        "Güvenlik önlemlerine uyum seviyelerinin artması",
+        "Çalışanların güvenlik sorunlarıyla ilgilenmesi ve sorumluluk alması"
+      ]
+    }
+  ]
+}

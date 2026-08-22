@@ -1,0 +1,1434 @@
+{
+  "subject_code": "502",
+  "subject_name": "Güvenlik Bilinci",
+  "level": "gb",
+  "source": "Güvenlik Bilinci ders notundan üretilmiş sorular (gerçek sınav sorusu değildir)",
+  "origin": "uretilmis",
+  "answer_convention": "Doğru cevap ilk şıktır (A).",
+  "id_convention": "95201+ bandı: ders notundan üretilmiş sorular.",
+  "sections": {
+    "GB-01": "Yasadışı Eylemler",
+    "GB-02": "Mevzuat",
+    "GB-03": "Yapılanma",
+    "GB-04": "Güvenlik Tedbirleri",
+    "GB-05": "Acil Durum ve Güvenlik Kültürü"
+  },
+  "questions": [
+    {
+      "id": 95201,
+      "section": "GB-01",
+      "text": "Halkın, yolcuların, mürettebatın, yer personelinin, havaalanı bina ve tesislerinin, hava seyrüsefer ve havacılık iletişim altyapılarının yasadışı eylemlere karşı korunması maksadıyla alınan tedbirlere ne ad verilir?",
+      "options": [
+        "Havacılık güvenliği",
+        "Havacılık emniyeti",
+        "Havacılık kalite kontrolü",
+        "Havacılık gözetimi",
+        "Havacılık denetimi"
+      ]
+    },
+    {
+      "id": 95202,
+      "section": "GB-01",
+      "text": "Havacılık aktiviteleri veya hava operasyonuna doğrudan etkisi olan risklerin azaltılması ve kabul edilebilir bir seviyede tutulması durumu aşağıdakilerden hangisidir?",
+      "options": [
+        "Havacılık emniyeti",
+        "Havacılık güvenliği",
+        "Güvenlik kültürü",
+        "Güvenlik tahdidi",
+        "Yasadışı müdahale"
+      ]
+    },
+    {
+      "id": 95203,
+      "section": "GB-01",
+      "text": "Havacılık güvenliği ile havacılık emniyeti arasındaki temel fark aşağıdakilerden hangisidir?",
+      "options": [
+        "Güvenlik olaylarında bir kural kasıtlı olarak ihlal edilir, emniyette ise kasıttan ziyade ihmal veya hata söz konusudur",
+        "Güvenlik yalnızca yerde, emniyet yalnızca havada geçerlidir",
+        "Güvenlik yolcuları, emniyet ise sadece mürettebatı korur",
+        "Güvenlik ulusal, emniyet ise yalnızca uluslararası bir kavramdır",
+        "Güvenlik ticari uçuşlarda, emniyet ise özel uçuşlarda uygulanır"
+      ]
+    },
+    {
+      "id": 95204,
+      "section": "GB-01",
+      "text": "Havacılık emniyetine ilişkin hususlar aşağıdaki durumların hangilerinin sonuçlarıyla ilgilidir?",
+      "options": [
+        "Arıza, üretim hatası, ihmal ve unutkanlık",
+        "Sabotaj, kaçırma ve rehin alma",
+        "Siber saldırı ve silahlı saldırı",
+        "Kaçakçılık ve sahtecilik",
+        "Grev ve iş yavaşlatma"
+      ]
+    },
+    {
+      "id": 95205,
+      "section": "GB-01",
+      "text": "Aşağıdakilerden hangisi sivil havacılığa yönelik tehditlerde kullanılan saldırı yöntemlerinden biri değildir?",
+      "options": [
+        "Hava aracının bakım kayıtlarının dikkatsizlik sonucu hatalı tutulması",
+        "El yapımı patlayıcılar",
+        "Hava aracı kaçırma",
+        "Taşınabilir hava savunma sistemleri saldırıları",
+        "Hava aracının silah olarak kullanılması"
+      ]
+    },
+    {
+      "id": 95206,
+      "section": "GB-01",
+      "text": "Havacılık güvenliğine yönelik bireysel eylemlerde bulunan kişiler genellikle kimlerdir?",
+      "options": [
+        "İltica etmek isteyenler, kızgın çalışanlar veya suçlular",
+        "Yalnızca yabancı uyruklu yolcular",
+        "Yalnızca eğitimli terör örgütü üyeleri",
+        "Yalnızca havaalanı yöneticileri",
+        "Yalnızca transit yolcular"
+      ]
+    },
+    {
+      "id": 95207,
+      "section": "GB-01",
+      "text": "Organize tehditleri bireysel tehditlerden ayıran temel özellik aşağıdakilerden hangisidir?",
+      "options": [
+        "Örgütlerin geniş kaynaklara sahip olması ve eylemler hakkında sistematik çalışma yürütmesi",
+        "Örgütlerin kaynaklarının bireylere göre daha kısıtlı olması",
+        "Örgüt üyelerinin hiçbir eğitimden geçmemesi",
+        "Örgütlerin eylemlerinin her zaman önceden öngörülebilir olması",
+        "Örgütlerin yalnızca yerde eylem yapabilmesi"
+      ]
+    },
+    {
+      "id": 95208,
+      "section": "GB-01",
+      "text": "Terör örgütleri siyasi, ideolojik veya dinsel gibi farklı sebeplerle kurulmuş olsalar da hepsinin ortak amacı nedir?",
+      "options": [
+        "Toplumda korku yaratarak kendi felsefelerinin propagandasını yapıp çıkar elde etmek",
+        "Havayolu şirketlerinin bilet gelirlerini artırmak",
+        "Uluslararası havacılık standartlarını yükseltmek",
+        "Havaalanı personeline eğitim vermek",
+        "Sivil havacılık trafiğini yasal yollarla düzenlemek"
+      ]
+    },
+    {
+      "id": 95209,
+      "section": "GB-01",
+      "text": "Aşağıdakilerden hangisi sivil havacılığın teröristler için cazip bir hedef olmasının sebeplerinden biri değildir?",
+      "options": [
+        "Uçuş esnasındaki saldırılarda müdahale imkânının çok geniş olması",
+        "Dünya kamuoyunun ilgisini çekmesi",
+        "Etkili bir propaganda imkânı sağlaması",
+        "Uluslararası niteliği",
+        "Uçuş esnasındaki saldırılarda can ve mal kaybının yüksek olması"
+      ]
+    },
+    {
+      "id": 95210,
+      "section": "GB-01",
+      "text": "Bulunduğu ülkenin vatandaşı olmayan ve herhangi bir neden yüzünden kendi ülkesine ya da başka bir ülkeye hava yolu aracılığı ile gönderilen kişilere ne ad verilir?",
+      "options": [
+        "Sınır dışı edilen kişiler",
+        "Kabul edilemez yolcular",
+        "Hukuki işlemlere maruz kişiler",
+        "Kuraldışı yolcular",
+        "Transit yolcular"
+      ]
+    },
+    {
+      "id": 95211,
+      "section": "GB-01",
+      "text": "Eksik belgeleri bulunan veya geçersiz vize gereği ülkeye girişi yetkili merciler tarafından reddedilen yolculara ne ad verilir?",
+      "options": [
+        "Kabul edilemez yolcular",
+        "Sınır dışı edilen kişiler",
+        "Hukuki işlemlere maruz kişiler",
+        "Kuraldışı yolcular",
+        "Refakatli yolcular"
+      ]
+    },
+    {
+      "id": 95212,
+      "section": "GB-01",
+      "text": "Şüpheli, sanık ve tutuklu kişiler gibi adli bir işleme tabi olup bir yerden başka bir yere hava aracı ile transfer edilen kişiler hangi başlık altında değerlendirilir?",
+      "options": [
+        "Hukuki işlemlere maruz kişiler",
+        "Sınır dışı edilen kişiler",
+        "Kabul edilemez yolcular",
+        "Kuraldışı yolcular",
+        "İç tehdit"
+      ]
+    },
+    {
+      "id": 95213,
+      "section": "GB-01",
+      "text": "Kemer ikaz ışıkları sönmeden emniyet kemerini çözerek yerinden kalkan bir yolcu havacılık güvenliği açısından hangi grupta değerlendirilir?",
+      "options": [
+        "Kuraldışı yolcu",
+        "Kabul edilemez yolcu",
+        "Sınır dışı edilen kişi",
+        "Hukuki işleme maruz kişi",
+        "İç tehdit"
+      ]
+    },
+    {
+      "id": 95214,
+      "section": "GB-01",
+      "text": "Sivil havacılığa karşı yasadışı müdahale eylemleri 1948 ile 1968 yılları arasında ağırlıklı olarak hangi amaçla gerçekleştirilmiştir?",
+      "options": [
+        "İltica",
+        "Politik terörizm",
+        "Kitle imha",
+        "Ekonomik kazanç",
+        "Propaganda"
+      ]
+    },
+    {
+      "id": 95215,
+      "section": "GB-01",
+      "text": "Sivil havacılığa karşı yasadışı müdahale eylemleri 1968 ile 1994 yılları arasında ağırlıklı olarak hangi amaçla gerçekleştirilmiştir?",
+      "options": [
+        "Politik terörizm",
+        "İltica",
+        "Kitle imha",
+        "Kaçakçılık",
+        "Fidye"
+      ]
+    },
+    {
+      "id": 95216,
+      "section": "GB-01",
+      "text": "1994 yılından günümüze kadar yasadışı müdahale eylemleri genellikle hangi amaçla gerçekleştirilmiştir?",
+      "options": [
+        "Kitle imha",
+        "İltica",
+        "Politik terörizm",
+        "Korsanlık",
+        "Ekonomik çıkar"
+      ]
+    },
+    {
+      "id": 95217,
+      "section": "GB-01",
+      "text": "Yasadışı müdahale eylemlerinde en sık kullanılan saldırı aracı aşağıdakilerden hangisidir?",
+      "options": [
+        "Patlayıcı düzenekler",
+        "Taşınabilir hava savunma sistemleri",
+        "Siber saldırı yazılımları",
+        "İnsansız hava araçları",
+        "Kimyasal maddeler"
+      ]
+    },
+    {
+      "id": 95218,
+      "section": "GB-01",
+      "text": "Aşağıdakilerden hangisi bir patlayıcı düzeneği oluşturan parçalardan biri değildir?",
+      "options": [
+        "Basınç göstergesi",
+        "Fünye",
+        "Güç kaynağı",
+        "Ateşleyici",
+        "Zamanlayıcı"
+      ]
+    },
+    {
+      "id": 95219,
+      "section": "GB-01",
+      "text": "Bomba ihbarının analizinde temel amaç nedir?",
+      "options": [
+        "Tehdidin inanılırlığını değerlendirerek gerçek olup olmadığını belirlemek",
+        "Saldırganın kimliğini tespit etmek",
+        "Patlayıcının markasını belirlemek",
+        "Uçuşun ticari kaybını hesaplamak",
+        "Basın açıklamasını hazırlamak"
+      ]
+    },
+    {
+      "id": 95220,
+      "section": "GB-01",
+      "text": "Bomba ihbarının analizi kim tarafından ve nasıl yapılmalıdır?",
+      "options": [
+        "Eğitimli personel tarafından vakit kaybedilmeksizin",
+        "Herhangi bir personel tarafından mesai saatleri içinde",
+        "Yalnızca havayolu şirketi yöneticileri tarafından uçuş sonrasında",
+        "Yolculardan gelen bilgilere göre kabin ekibi tarafından",
+        "Yalnızca yazılı talep üzerine bir hafta içinde"
+      ]
+    },
+    {
+      "id": 95221,
+      "section": "GB-01",
+      "text": "Hava aracı kaçırma eylemleri çoğunlukla ne zaman gerçekleştirilmektedir?",
+      "options": [
+        "Hava aracının kalkışından sonra",
+        "Yolcu biniş işlemleri sırasında",
+        "Hava aracı apronda park hâlindeyken",
+        "Bakım hangarında",
+        "İniş takımları açıldıktan sonra"
+      ]
+    },
+    {
+      "id": 95222,
+      "section": "GB-01",
+      "text": "Hava aracı kaçırma olayları hangi amaçlarla başlamıştır?",
+      "options": [
+        "İltica ve korsanlık yapmak",
+        "Kitle imha ve propaganda",
+        "Kaçakçılık ve vergi kaçırma",
+        "Sigorta dolandırıcılığı",
+        "Fidye ve rehin ticareti"
+      ]
+    },
+    {
+      "id": 95223,
+      "section": "GB-01",
+      "text": "27 Eylül 1974 tarihinde Paris Orly havaalanında gerçekleşen saldırıda patlayıcı düzenek nereye yerleştirilmiştir?",
+      "options": [
+        "Kilitli dolap içerisinde bulunan bagaja",
+        "Yolcu köprüsüne",
+        "İkram aracına",
+        "Kargo deposundaki bir konteynere",
+        "Kontrol kulesinin girişine"
+      ]
+    },
+    {
+      "id": 95224,
+      "section": "GB-01",
+      "text": "14 Mart 1994 tarihinde Londra Heathrow havaalanında yaklaşık 5 gün süren saldırılarda hangi araç kullanılmış ve sonuç ne olmuştur?",
+      "options": [
+        "Havan; ciddi maddi hasar ya da yaralanma olmamış, çok sayıda uçuş iptal edilmiştir",
+        "İntihar bombacısı; 35 kişi hayatını kaybetmiştir",
+        "Siber saldırı; tüm sistemler devre dışı kalmıştır",
+        "Taşınabilir hava savunma sistemi; bir hava aracı düşürülmüştür",
+        "Kimyasal madde; terminal tahliye edilmiştir"
+      ]
+    },
+    {
+      "id": 95225,
+      "section": "GB-01",
+      "text": "24 Ocak 2011 tarihinde Rusya Domodedovo Uluslararası havaalanında gerçekleştirilen saldırı hangi alana yönelik olmuş ve kaç kişi yaşamını yitirmiştir?",
+      "options": [
+        "Bagaj alım sahası; 35 kişi",
+        "Check-in kontuarları; 12 kişi",
+        "Apron; 50 kişi",
+        "Kontrol kulesi; 8 kişi",
+        "Otopark; 20 kişi"
+      ]
+    },
+    {
+      "id": 95226,
+      "section": "GB-01",
+      "text": "22 Mart 2016 tarihinde Brüksel havaalanında gerçekleşen saldırının sonuçları aşağıdakilerden hangisidir?",
+      "options": [
+        "33 kişi hayatını kaybetmiş, 250 kişi yaralanmış, havaalanı aylarca kapalı kalmıştır",
+        "2 kişi yaralanmış, havaalanı aynı gün açılmıştır",
+        "35 kişi hayatını kaybetmiş, 150 kişi yaralanmıştır",
+        "Yalnızca maddi hasar oluşmuş, uçuşlar iptal edilmiştir",
+        "19 kişi hayatını kaybetmiş, havaalanı bir hafta kapanmıştır"
+      ]
+    },
+    {
+      "id": 95227,
+      "section": "GB-01",
+      "text": "11 Eylül 2001 tarihindeki saldırılarda kaç hava aracı silah olarak kullanılmıştır?",
+      "options": [
+        "4",
+        "2",
+        "3",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "id": 95228,
+      "section": "GB-01",
+      "text": "11 Eylül 2001 saldırılarında hava korsanları dışında kaç kişinin hayatını kaybettiği açıklanmıştır?",
+      "options": [
+        "2.974",
+        "1.974",
+        "3.974",
+        "974",
+        "2.019"
+      ]
+    },
+    {
+      "id": 95229,
+      "section": "GB-01",
+      "text": "11 Eylül 2001 saldırılarında dördüncü uçak nereye düşmüştür?",
+      "options": [
+        "Pensilvanya kırsalı",
+        "Dünya Ticaret Merkezi",
+        "Pentagon",
+        "Beyaz Saray",
+        "Atlantik Okyanusu"
+      ]
+    },
+    {
+      "id": 95230,
+      "section": "GB-01",
+      "text": "Havacılık güvenliği açısından milat kabul edilen ve tehditlerin doğasını tamamen değiştiren olay hangisidir?",
+      "options": [
+        "11 Eylül 2001 saldırıları",
+        "Paris Orly saldırısı",
+        "Londra Heathrow havan saldırıları",
+        "Domodedovo saldırısı",
+        "Brüksel havaalanı saldırısı"
+      ]
+    },
+    {
+      "id": 95231,
+      "section": "GB-01",
+      "text": "Aşağıdakilerden hangisi sivil havacılığa karşı güncel tehditler arasında sayılmaz?",
+      "options": [
+        "Hava aracının teknik arızası nedeniyle rötar yapması",
+        "Siber saldırılar",
+        "İnsansız hava araçları",
+        "Nükleer saldırılar",
+        "Biyolojik ve kimyasal saldırılar"
+      ]
+    },
+    {
+      "id": 95232,
+      "section": "GB-01",
+      "text": "İç tehdit oluşturan kişiler için aşağıdakilerden hangisi doğru değildir?",
+      "options": [
+        "Havacılık sektörü dışından gelen ve havaalanına hiç girmemiş kişilerdir",
+        "Bir terör örgütünün üyesi olabilirler",
+        "Bir menfaat sağlamak amacıyla saldırılara yardımcı olabilirler",
+        "Yeterli güvenlik bilincine sahip olmadıkları için suç örgütlerince kullanılabilirler",
+        "Havacılık sektöründe çalışan kişilerdir"
+      ]
+    },
+    {
+      "id": 95233,
+      "section": "GB-02",
+      "text": "Uluslararası Sivil Havacılık Sözleşmesi (Şikago Sözleşmesi) hangi yılda imzalanmıştır?",
+      "options": [
+        "1944",
+        "1963",
+        "1970",
+        "1971",
+        "1974"
+      ]
+    },
+    {
+      "id": 95234,
+      "section": "GB-02",
+      "text": "Şikago Sözleşmesi'nin havacılık güvenliği açısından öne çıkan özelliği nedir?",
+      "options": [
+        "Havacılık güvenliğine ilişkin doğrudan bir hüküm bulunmamaktadır",
+        "Havacılık güvenliğinin tüm uygulama detaylarını içerir",
+        "Yalnızca havacılık güvenliği konusunu düzenler",
+        "Havaalanı giriş kartlarının biçimini belirler",
+        "Güvenlik taramasının teknik standartlarını içerir"
+      ]
+    },
+    {
+      "id": 95235,
+      "section": "GB-02",
+      "text": "Uçakta işlenen suçlar ve diğer bazı eylemlere ilişkin Tokyo Sözleşmesi hangi yılda imzalanmıştır?",
+      "options": [
+        "1963",
+        "1944",
+        "1970",
+        "1971",
+        "1988"
+      ]
+    },
+    {
+      "id": 95236,
+      "section": "GB-02",
+      "text": "Tokyo Sözleşmesi, yeterli ve güncel hükümler içermediği düşünüldüğünden hangi belge ile değiştirilmiştir?",
+      "options": [
+        "2014 tarihli Montreal Protokolü",
+        "2010 tarihli Pekin Protokolü",
+        "1988 tarihli Montreal Protokolü",
+        "1991 tarihli MEX Sözleşmesi",
+        "1974 tarihli Ek-17"
+      ]
+    },
+    {
+      "id": 95237,
+      "section": "GB-02",
+      "text": "Uçakların yasadışı olarak ele geçirilmesinin önlenmesine ilişkin Lahey Sözleşmesi hangi yılda imzalanmıştır?",
+      "options": [
+        "1970",
+        "1963",
+        "1971",
+        "1988",
+        "1991"
+      ]
+    },
+    {
+      "id": 95238,
+      "section": "GB-02",
+      "text": "Lahey Sözleşmesi hangi belge ile tadil edilmiştir?",
+      "options": [
+        "2010 yılında imzalanan Pekin Protokolü",
+        "2014 tarihli Montreal Protokolü",
+        "1988 tarihli Montreal Protokolü",
+        "1991 tarihli MEX Sözleşmesi",
+        "1944 tarihli Şikago Sözleşmesi"
+      ]
+    },
+    {
+      "id": 95239,
+      "section": "GB-02",
+      "text": "Sivil havacılığın güvenliğine karşı hukuka aykırı eylemlerin önlenmesine ilişkin Montreal Sözleşmesi hangi yılda imzalanmıştır?",
+      "options": [
+        "1971",
+        "1963",
+        "1970",
+        "1988",
+        "1991"
+      ]
+    },
+    {
+      "id": 95240,
+      "section": "GB-02",
+      "text": "1988 yılında kabul edilen Montreal Protokolü, diğer uluslararası sözleşmelerden farklı olarak hangi konulara yer vermiştir?",
+      "options": [
+        "Havalimanı çalışanlarının, tesislerinin ve hava araçlarının güvenliği",
+        "Yalnızca uçuş esnasındaki suçlar",
+        "Yalnızca plastik patlayıcıların işaretlenmesi",
+        "Yalnızca hava aracının kaçırılması",
+        "Yalnızca hava sahası egemenliği"
+      ]
+    },
+    {
+      "id": 95241,
+      "section": "GB-02",
+      "text": "Plastik Patlayıcıların Tespit Amacıyla İşaretlenmesine İlişkin Sözleşme hangi yılda yapılmıştır?",
+      "options": [
+        "1991",
+        "1971",
+        "1988",
+        "2001",
+        "2010"
+      ]
+    },
+    {
+      "id": 95242,
+      "section": "GB-02",
+      "text": "Pekin Sözleşmesi ve Pekin Protokolü hangi belgelerin yerini almıştır?",
+      "options": [
+        "1971 Montreal Sözleşmesi ve 1988 Montreal Protokolü",
+        "1944 Şikago Sözleşmesi ve 1963 Tokyo Sözleşmesi",
+        "1970 Lahey Sözleşmesi ve 1991 MEX Sözleşmesi",
+        "Yalnızca 1963 Tokyo Sözleşmesi",
+        "Yalnızca ICAO Ek-17"
+      ]
+    },
+    {
+      "id": 95243,
+      "section": "GB-02",
+      "text": "Uluslararası Sivil Havacılık Sözleşmesi'nin ana metnine ek olarak yayımlanan Ek sayısı kaçtır?",
+      "options": [
+        "19",
+        "9",
+        "17",
+        "12",
+        "21"
+      ]
+    },
+    {
+      "id": 95244,
+      "section": "GB-02",
+      "text": "\"Güvenlik: Uluslararası Sivil Havacılığın Yasadışı Müdahalelere Karşı Korunması\" başlıklı Ek-17 hangi yılda kabul edilmiştir?",
+      "options": [
+        "1974",
+        "1944",
+        "1963",
+        "1971",
+        "1988"
+      ]
+    },
+    {
+      "id": 95245,
+      "section": "GB-02",
+      "text": "Uçak kokpitinin korunması için güçlendirilmiş kokpit kapısının yapısı hangi Ek'te belirlenmiştir?",
+      "options": [
+        "Ek-6",
+        "Ek-9",
+        "Ek-14",
+        "Ek-17",
+        "Ek-15"
+      ]
+    },
+    {
+      "id": 95246,
+      "section": "GB-02",
+      "text": "Kabul edilmeyen yolcuların başlıkları ve seyahat belgelerinin kontrolü hangi Ek'te düzenlenmiştir?",
+      "options": [
+        "Ek-9",
+        "Ek-6",
+        "Ek-17",
+        "Ek-14",
+        "Ek-15"
+      ]
+    },
+    {
+      "id": 95247,
+      "section": "GB-02",
+      "text": "ICAO Doküman 8973 aşağıdakilerden hangisidir?",
+      "options": [
+        "Havacılık Güvenliği El Kitabı",
+        "Makine Tarafından Okunabilir Seyahat Belgeleri",
+        "Hava Trafik Yönetimi El Kitabı",
+        "Havaalanı Tasarım Kılavuzu",
+        "Kaza Araştırma El Kitabı"
+      ]
+    },
+    {
+      "id": 95248,
+      "section": "GB-02",
+      "text": "ICAO Doküman 8973'ün içeriği için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Ek-17'de belirtilen genel ilkelerin ayrıntılı açıklamaları ile standart ve tavsiyelerin uygulama prosedürlerini içerir",
+        "Yalnızca sözleşme metinlerinin listesini içerir",
+        "Ek-17'nin kısaltılmış bir özetidir",
+        "Yalnızca kaza istatistiklerini içerir",
+        "Yalnızca ulusal mevzuat örneklerini içerir"
+      ]
+    },
+    {
+      "id": 95249,
+      "section": "GB-02",
+      "text": "Ulusal Havacılık Güvenliği Kalite Kontrol Programı kapsamındaki kalite kontrol faaliyetleri hangi unsurları kapsar?",
+      "options": [
+        "Kapsamlı denetim, test ve inceleme",
+        "Eğitim, sertifikalandırma ve tazeleme",
+        "Tarama, arama ve el ile kontrol",
+        "Planlama, bütçeleme ve raporlama",
+        "Devriye, gözetim ve refakat"
+      ]
+    },
+    {
+      "id": 95250,
+      "section": "GB-02",
+      "text": "Ulusal Havacılık Güvenliği Kalite Kontrol Programı'nın amacı nedir?",
+      "options": [
+        "Uygulanan mevzuat ve güvenlik tedbirlerinin ulusal sivil havacılık güvenlik programına uyum seviyesini tespit etmek",
+        "Havaalanı personelinin maaşlarını belirlemek",
+        "Uçuş tarifelerini düzenlemek",
+        "Havaalanı kapasitesini artırmak",
+        "Yolcu memnuniyetini ölçmek"
+      ]
+    },
+    {
+      "id": 95251,
+      "section": "GB-02",
+      "text": "Ulusal Sivil Havacılık Güvenliği Eğitim Programı ile aşağıdakilerden hangisinin belirlenmesi gerekmektedir?",
+      "options": [
+        "Tarayıcı personel ve eğitmenlerin sertifikalandırılma şartları",
+        "Havaalanı giriş kartlarının rengi",
+        "Uçuş ekibinin dinlenme süreleri",
+        "Bagaj ücret tarifeleri",
+        "Apron park pozisyonları"
+      ]
+    },
+    {
+      "id": 95252,
+      "section": "GB-02",
+      "text": "Havaalanı Güvenlik Programı ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Her havaalanı için ulusal programla uyumlu ve o havaalanına özgü özellikleri içerecek şekilde oluşturulur",
+        "Tüm havaalanları için tek ve ortak bir metin olarak hazırlanır",
+        "Yalnızca uluslararası uçuş yapan havaalanları için hazırlanır",
+        "Yazılı olması zorunlu değildir",
+        "Yalnızca kriz anlarında oluşturulur"
+      ]
+    },
+    {
+      "id": 95253,
+      "section": "GB-02",
+      "text": "Türkiye'de Ulusal Sivil Havacılık Güvenlik Programı gerekliliği hangi belge ile ve hangi yılda karşılanmıştır?",
+      "options": [
+        "Milli Sivil Havacılık Güvenlik Programı - 1996",
+        "Milli Sivil Havacılık Kalite Kontrol Programı - 1986",
+        "Havaalanı Güvenlik Programı - 2001",
+        "Merkez Güvenlik Kurulu Yönetmeliği - 1974",
+        "Ulusal Eğitim Programı - 2010"
+      ]
+    },
+    {
+      "id": 95254,
+      "section": "GB-02",
+      "text": "Havacılık güvenliği ulusal mevzuatı ile ilgili olarak aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Uluslararası standart ve kuralların yalnızca kabulü yeterli değildir; iç hukuk ve mevzuat sistemine aktarılmaları gerekir",
+        "Uluslararası standartların kabul edilmesi tek başına yeterlidir",
+        "Ulusal mevzuat uluslararası mevzuattan bağımsız hazırlanır",
+        "Ulusal ihtiyaçların dikkate alınması gerekmez",
+        "Yalnızca tek seviyede düzenleme yapılması gerekir"
+      ]
+    },
+    {
+      "id": 95255,
+      "section": "GB-03",
+      "text": "ICAO'nun havacılık güvenliği standartları hangi organ tarafından hazırlanır?",
+      "options": [
+        "Havacılık Güvenliği Paneli",
+        "Konsey",
+        "Genel Kurul",
+        "Havaalanı Güvenlik Komisyonu",
+        "Yetkili Otorite"
+      ]
+    },
+    {
+      "id": 95256,
+      "section": "GB-03",
+      "text": "ICAO havacılık güvenliği standartları hangi aşamalardan sonra yürürlüğe girer?",
+      "options": [
+        "ICAO'nun yürütme organı olan Konsey oluru ve üye ülkelerin onayı sonrasında",
+        "Yalnızca panel kararıyla",
+        "Yalnızca üye ülkelerin onayıyla",
+        "Genel Kurul'un salt çoğunluğuyla",
+        "Havaalanı güvenlik komisyonlarının onayıyla"
+      ]
+    },
+    {
+      "id": 95257,
+      "section": "GB-03",
+      "text": "Ek-17'ye göre ulusal yapılanma en az hangi yapıları içermelidir?",
+      "options": [
+        "Yetkili otorite, ulusal sivil havacılık güvenliği komitesi, yerel otorite ve havaalanı güvenlik komisyonu",
+        "Yalnızca yetkili otorite ve havaalanı güvenlik komisyonu",
+        "Yetkili otorite, kalite kontrol birimi ve eğitim birimi",
+        "Yalnızca ulusal komite ve yerel otorite",
+        "Yetkili otorite, havayolu işletmecisi ve hava trafik servis sağlayıcısı"
+      ]
+    },
+    {
+      "id": 95258,
+      "section": "GB-03",
+      "text": "Ek-17'ye göre üye devletin atadığı yetkili otorite ile ilgili olarak aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Atanan otoritenin ICAO'ya bildirilmesi gerekir",
+        "Yalnızca sivil havacılık otoritesi olabilir, başka bir kurum olamaz",
+        "ICAO'ya bildirilmesi gerekmez",
+        "Her havaalanı için ayrı ayrı atanır",
+        "Yalnızca kriz dönemlerinde görev yapar"
+      ]
+    },
+    {
+      "id": 95259,
+      "section": "GB-03",
+      "text": "Türkiye'de sivil havacılık güvenliği otoritesi olarak yetkilendirilen ve ICAO'ya bildirilen kurum hangisidir?",
+      "options": [
+        "Sivil Havacılık Genel Müdürlüğü",
+        "Devlet Hava Meydanları İşletmesi",
+        "Havaalanı Mülki İdare Amirliği",
+        "Merkez Güvenlik Kurulu",
+        "Göç İdaresi Başkanlığı"
+      ]
+    },
+    {
+      "id": 95260,
+      "section": "GB-03",
+      "text": "Türkiye'de Ulusal Sivil Havacılık Güvenliği Komitesi'nin görevlerini yerine getirmek üzere hangi yapı oluşturulmuştur?",
+      "options": [
+        "9707 sayılı Yönetmelik ile Merkez Güvenlik Kurulu",
+        "Havaalanı Güvenlik Komisyonu",
+        "Eğitim, Araştırma ve Denetleme Birimi",
+        "Havaalanı Mülki İdare Amirliği",
+        "Sivil Havacılık Genel Müdürlüğü"
+      ]
+    },
+    {
+      "id": 95261,
+      "section": "GB-03",
+      "text": "Türkiye'de havaalanı güvenlik otoritesinin görevlerini yerine getirmesinde sekretarya hizmetlerini yürütmek, teknik görüş hazırlamak ve havaalanı bazında kalite kontrol faaliyetleri yürütmek amacıyla oluşturulan yapı hangisidir?",
+      "options": [
+        "Eğitim, Araştırma ve Denetleme Birimi",
+        "Merkez Güvenlik Kurulu",
+        "Havaalanı Güvenlik Komisyonu",
+        "Havacılık Güvenliği Paneli",
+        "Eğitim Araştırma ve Denetleme Uzmanları Kurulu"
+      ]
+    },
+    {
+      "id": 95262,
+      "section": "GB-03",
+      "text": "Havaalanı güvenlik otoritesi aşağıdakilerden hangisine yetkilidir?",
+      "options": [
+        "Gerekli önlemleri almaya ve uygulamaya, kuruluşların çalışmalarını denetlemeye",
+        "Uçuş tarifelerini belirlemeye",
+        "Hava aracı bakım programını onaylamaya",
+        "Uluslararası sözleşme imzalamaya",
+        "ICAO standartlarını değiştirmeye"
+      ]
+    },
+    {
+      "id": 95263,
+      "section": "GB-03",
+      "text": "Havaalanı Güvenlik Komisyonu'nun sorumluluklarına göre güvenlik araştırmaları ve teftişleri nasıl gerçekleştirilmelidir?",
+      "options": [
+        "Öngörülemeyen ancak sık aralıklarla",
+        "Önceden duyurularak yılda bir kez",
+        "Yalnızca olay sonrasında",
+        "Yalnızca yetkili otoritenin talebi üzerine",
+        "Her uçuş öncesinde"
+      ]
+    },
+    {
+      "id": 95264,
+      "section": "GB-03",
+      "text": "Aşağıdakilerden hangisi Havaalanı Güvenlik Komisyonu'nun sorumluluklarından biridir?",
+      "options": [
+        "Temel ekipman ve tesisler dahil olmak üzere savunmasız alanların belirlenmesi ve güvenliğinin düzenli gözden geçirilmesi",
+        "Uluslararası sözleşmelerin tadil edilmesi",
+        "ICAO standartlarının hazırlanması",
+        "Ulusal programın yazılması ve yayımlanması",
+        "Hava aracı tip sertifikasının verilmesi"
+      ]
+    },
+    {
+      "id": 95265,
+      "section": "GB-04",
+      "text": "Havacılık güvenliği açısından havaalanları hangi bölümlere ayrılmaktadır?",
+      "options": [
+        "Kara tarafı, hava tarafı ve güvenlik tahditli alanlar",
+        "Terminal, apron ve otopark",
+        "İç hatlar, dış hatlar ve kargo",
+        "Giden yolcu, gelen yolcu ve transit",
+        "Sivil bölge, askerî bölge ve serbest bölge"
+      ]
+    },
+    {
+      "id": 95266,
+      "section": "GB-04",
+      "text": "Bir havaalanında doğrudan uçuş faaliyetlerine dahil olmayan, ana giriş yolu başlangıç noktasından başlayarak hava tarafı dışında kalan bölümlere ne ad verilir?",
+      "options": [
+        "Kara tarafı",
+        "Hava tarafı",
+        "Güvenlik tahditli alan",
+        "Demarke alan",
+        "Apron"
+      ]
+    },
+    {
+      "id": 95267,
+      "section": "GB-04",
+      "text": "Havaalanının kara tarafına aşağıdakilerden hangileri girebilir?",
+      "options": [
+        "Yolcu, personel, yolcu yakınları, uğurlayıcı ve karşılayıcılar",
+        "Yalnızca yolcular ve yetkili personel",
+        "Yalnızca geçerli giriş kartı olan personel",
+        "Yalnızca güvenlik kontrolünden geçen yolcular",
+        "Yalnızca mürettebat"
+      ]
+    },
+    {
+      "id": 95268,
+      "section": "GB-04",
+      "text": "Aşağıdakilerden hangisi havaalanının kara tarafına örnek olarak verilebilir?",
+      "options": [
+        "Check-in kontuarlarının bulunduğu alanlar",
+        "Ramp sahası",
+        "Bagaj ayırma alanı",
+        "Taksi yolları",
+        "Giden yolcu pasaport kontrol noktası sonrası"
+      ]
+    },
+    {
+      "id": 95269,
+      "section": "GB-04",
+      "text": "Ek-17 gereğince havaalanının kara tarafında güvenlik önlemi alınması konusunda aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Yasadışı müdahale riskini düşürmek için kara tarafında da güvenlik önlemi alınması gerekir",
+        "Kara tarafında güvenlik önlemi alınmasına gerek yoktur",
+        "Kara tarafı yalnızca kolluk kuvvetlerinin sorumluluğundadır",
+        "Kara tarafında yalnızca kamera bulundurulması yeterlidir",
+        "Kara tarafı güvenlik tahditli alan sayıldığından ayrıca önlem gerekmez"
+      ]
+    },
+    {
+      "id": 95270,
+      "section": "GB-04",
+      "text": "Aşağıdakilerden hangisi havaalanının hava tarafına örnek olarak verilebilir?",
+      "options": [
+        "Gelen yolcu bagaj alım sahası",
+        "Otopark alanları",
+        "Terminal binası girişi",
+        "Check-in kontuarları",
+        "Havaalanı ana giriş yolu"
+      ]
+    },
+    {
+      "id": 95271,
+      "section": "GB-04",
+      "text": "Aşağıdakilerden hangisi güvenlik tahditli alanlar kapsamında değerlendirilmez?",
+      "options": [
+        "Havaalanı otoparkı",
+        "Ramp sahası",
+        "Bagaj ayırma alanları",
+        "Kargo depoları ve posta merkezleri",
+        "Hava tarafında bulunan ikram ve hava aracı temizlik tesisleri"
+      ]
+    },
+    {
+      "id": 95272,
+      "section": "GB-04",
+      "text": "Havaalanlarında hava tarafından güvenlik tahditli alana geçiş yapabilmek için kişiler neye tabi tutulur?",
+      "options": [
+        "Giriş kontrol ve güvenlik kontrolüne",
+        "Yalnızca giriş kontrolüne",
+        "Yalnızca güvenlik kontrolüne",
+        "Yalnızca pasaport kontrolüne",
+        "Herhangi bir kontrole tabi tutulmaz"
+      ]
+    },
+    {
+      "id": 95273,
+      "section": "GB-04",
+      "text": "Demarke alanlar ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Alternatif tedbirlerin uygulanabilmesi için oluşturulur ve güvenlik tahditli alanlardan net bir şekilde ayrılır",
+        "Güvenlik tahditli alanların bir alt bölümüdür ve aynı tedbirler uygulanır",
+        "Yalnızca tarifeli ticari uçuşlar için oluşturulur",
+        "Yalnızca terminal binası içinde bulunur",
+        "Herhangi bir güvenlik tedbiri uygulanmayan alanlardır"
+      ]
+    },
+    {
+      "id": 95274,
+      "section": "GB-04",
+      "text": "Demarke alanların güvenlik tahditli alanlardan ayrılması hangi yollarla yapılabilir?",
+      "options": [
+        "Fiziksel tedbirlerle ya da devriye ve gözetim yoluyla",
+        "Yalnızca duvar veya tel örgü ile",
+        "Yalnızca kamera sistemleri ile",
+        "Yalnızca uyarı levhaları ile",
+        "Yalnızca giriş kartı okuyucuları ile"
+      ]
+    },
+    {
+      "id": 95275,
+      "section": "GB-04",
+      "text": "Havacılık güvenliği tedbirleri temel olarak hangi prosedürlerden oluşmaktadır?",
+      "options": [
+        "Giriş kontrol ve güvenlik kontrolü",
+        "Tarama ve refakat",
+        "Denetim ve test",
+        "Devriye ve gözetim",
+        "Eğitim ve sertifikalandırma"
+      ]
+    },
+    {
+      "id": 95276,
+      "section": "GB-04",
+      "text": "Yasadışı müdahale eylemlerini önlemek için yasaklı maddelerin tespit edilmesi amacıyla kullanılan yöntemlere ne ad verilir?",
+      "options": [
+        "Güvenlik kontrolü",
+        "Giriş kontrolü",
+        "Yetkilendirme",
+        "Kalite kontrol",
+        "Özgeçmiş kontrolü"
+      ]
+    },
+    {
+      "id": 95277,
+      "section": "GB-04",
+      "text": "Bir havalimanının hava tarafına giriş için kullanılabilecek yetkilendirmeler hangi iki ana gruba ayrılır?",
+      "options": [
+        "Yolcuların kullandığı biniş kartları ve yolcu dışındaki kişilerin kullandığı havaalanı giriş kartı",
+        "Pasaport ve vize",
+        "Bilet ve bagaj etiketi",
+        "Apron plakası ve araç tanıtım kartı",
+        "Üniforma ve tanıtma kartı"
+      ]
+    },
+    {
+      "id": 95278,
+      "section": "GB-04",
+      "text": "Yolcuların kullandıkları biniş kartlarına kimlik bilgilerinin doğru yazılıp yazılmadığı genellikle nerede kontrol edilir?",
+      "options": [
+        "Check-in kontuarlarında",
+        "Uçak kapısında",
+        "Otopark girişinde",
+        "Bagaj alım sahasında",
+        "Apron girişinde"
+      ]
+    },
+    {
+      "id": 95279,
+      "section": "GB-04",
+      "text": "Aşağıdakilerden hangisi havaalanı kimlik kartında bulunması gereken bilgilerden biri değildir?",
+      "options": [
+        "Kişinin kan grubu",
+        "Kişinin adı ve fotoğrafı",
+        "Kartı veren kuruluş ya da havalimanının adı",
+        "Kişinin erişim sağlamasına izin verilen alanlar",
+        "Geçerlilik tarihi"
+      ]
+    },
+    {
+      "id": 95280,
+      "section": "GB-04",
+      "text": "Mürettebatın kimlik kartlarında bulunması gereken ve diğer kartlardan ayıran ifade hangisidir?",
+      "options": [
+        "İngilizce olarak \"Crew\" ifadesi",
+        "İngilizce olarak \"Staff\" ifadesi",
+        "İngilizce olarak \"Airside\" ifadesi",
+        "İngilizce olarak \"Security\" ifadesi",
+        "İngilizce olarak \"Visitor\" ifadesi"
+      ]
+    },
+    {
+      "id": 95281,
+      "section": "GB-04",
+      "text": "Kişilere güvenlik tahditli alanlara refakatsiz giriş izni veren bir kimlik kartı verilmeden önce yapılması gereken özgeçmiş kontrolü neleri kapsar?",
+      "options": [
+        "Kişinin eğitim, çalışma ve adli sicillerinin incelenmesi",
+        "Kişinin sağlık raporunun incelenmesi",
+        "Kişinin mali durumunun incelenmesi",
+        "Kişinin seyahat geçmişinin incelenmesi",
+        "Kişinin ehliyet bilgilerinin incelenmesi"
+      ]
+    },
+    {
+      "id": 95282,
+      "section": "GB-04",
+      "text": "Geçmiş kontrolünde başarısız olan bir kişinin kimlik kartı ile ilgili olarak ne yapılmalıdır?",
+      "options": [
+        "Duruma göre derhal devre dışı bırakılmalı veya geri çekilmeli ve kartı veren kuruluşa iade edilmelidir",
+        "Bir yıl boyunca geçerliliğini korumalıdır",
+        "Yalnızca refakatli girişlerde kullanılmaya devam edilmelidir",
+        "Kişide kalmalı ancak yetki alanları daraltılmalıdır",
+        "Herhangi bir işlem yapılmasına gerek yoktur"
+      ]
+    },
+    {
+      "id": 95283,
+      "section": "GB-04",
+      "text": "Kişilerin giriş yapmak istedikleri alanlara yetkilerinin kontrolü için kullanılan yöntemler hangileridir?",
+      "options": [
+        "Görsel, elektronik, hibrit ve biyometrik",
+        "Görsel, sesli ve yazılı",
+        "Manuel, otomatik ve yarı otomatik",
+        "Fiziksel, kimyasal ve dijital",
+        "Birincil, ikincil ve ilave"
+      ]
+    },
+    {
+      "id": 95284,
+      "section": "GB-04",
+      "text": "Elektronik giriş kontrolünde riskin artmasına sebep olan durumlar aşağıdakilerden hangisidir?",
+      "options": [
+        "Sistemin yetkisiz kişilerce kullanılması, şifre paylaşımı veya bilgi güvenliğinin korunamaması",
+        "Kart okuyucunun çok hızlı çalışması",
+        "Kapıların birden fazla kişi için tasarlanmış olması",
+        "Görsel kontrolün de yapılıyor olması",
+        "Gözetim sisteminin kullanılması"
+      ]
+    },
+    {
+      "id": 95285,
+      "section": "GB-04",
+      "text": "Hibrit giriş kontrolünde, kontrol noktasındaki güvenlik görevlisinin unutmaması gereken en önemli nokta nedir?",
+      "options": [
+        "Elektronik kart okuyucularının sadece yetkilerin geçerliliğini kontrol edebildiği",
+        "Elektronik kart okuyucularının kişi ile kartı da eşleştirdiği",
+        "Görsel kontrole gerek olmadığı",
+        "Kartın geçerlilik tarihinin okunamayacağı",
+        "Refakatli girişlerin otomatik onaylandığı"
+      ]
+    },
+    {
+      "id": 95286,
+      "section": "GB-04",
+      "text": "Biyometrik giriş kontrolünde kullanılabilecek veriler ICAO'nun hangi numaralı belgesinde belirtilmiştir?",
+      "options": [
+        "9303",
+        "8973",
+        "4444",
+        "9859",
+        "7300"
+      ]
+    },
+    {
+      "id": 95287,
+      "section": "GB-04",
+      "text": "ICAO belgesinde sadece bir kişiye ait olan ve özel kabul edilen biyometrik veriler hangileridir?",
+      "options": [
+        "Parmak izleri, yüz hatları ve iris yapısı",
+        "Boy, kilo ve göz rengi",
+        "Ses tonu, imza ve el yazısı",
+        "Kan grubu, DNA ve diş yapısı",
+        "Yürüyüş şekli, duruş ve mimikler"
+      ]
+    },
+    {
+      "id": 95288,
+      "section": "GB-04",
+      "text": "Havaalanında kısa süreli geçici kimlik kartları ve belgeler ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Bu belgelerle güvenlik tahditli alanlara refakatçi olmadan girişe izin verilmez",
+        "Bu belgelerle güvenlik tahditli alanlara serbestçe girilebilir",
+        "Bu belgelerin havaalanı kimlik kartlarından farklı özelliklere sahip olması gerekir",
+        "Bu belgeler yalnızca kara tarafında kullanılabilir",
+        "Bu belgeler için geçerlilik tarihi aranmaz"
+      ]
+    },
+    {
+      "id": 95289,
+      "section": "GB-04",
+      "text": "Havaalanına giriş yetkisi konusunda aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Havaalanı giriş kartları ve yetki belgeleri haricinde hiçbir üniforma veya tanıtma kartı giriş yetkisi vermez",
+        "Havayolu üniforması tek başına giriş yetkisi verir",
+        "Kurum tanıtma kartı giriş kartı yerine geçer",
+        "Mürettebat üniforması giriş kontrolünden muaf tutar",
+        "Kolluk üniforması tüm alanlara giriş yetkisi verir"
+      ]
+    },
+    {
+      "id": 95290,
+      "section": "GB-04",
+      "text": "Havaalanı giriş kartlarının geçerliliği ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Sadece tanzim edildiği havaalanında geçerlidir, başka havaalanında kullanılamaz",
+        "Ülke genelindeki tüm havaalanlarında geçerlidir",
+        "Uluslararası havaalanlarının tamamında geçerlidir",
+        "Aynı havayolu şirketinin uçtuğu her havaalanında geçerlidir",
+        "Kartı düzenleyen kurumun bulunduğu ildeki tüm tesislerde geçerlidir"
+      ]
+    },
+    {
+      "id": 95291,
+      "section": "GB-04",
+      "text": "Giriş kartının uygunsuz kullanımı durumunda sorumluluk kime aittir?",
+      "options": [
+        "Kart kullanıcısı ile birlikte personelin bağlı olduğu kurum ya da kuruluşa",
+        "Yalnızca kart kullanıcısına",
+        "Yalnızca kartı düzenleyen otoriteye",
+        "Yalnızca havaalanı işletmecisine",
+        "Yalnızca güvenlik kontrol noktasındaki görevliye"
+      ]
+    },
+    {
+      "id": 95292,
+      "section": "GB-04",
+      "text": "Aşağıdakilerden hangisi havaalanı giriş kartının düzenleyen kuruma derhal iade edilmesini gerektiren durumlardan biri değildir?",
+      "options": [
+        "Personelin yıllık izne ayrılması",
+        "İstihdamın son bulması",
+        "İşverenin değişmesi",
+        "Kartın geçerlilik süresinin dolması",
+        "Kartın iptal edilmesi"
+      ]
+    },
+    {
+      "id": 95293,
+      "section": "GB-04",
+      "text": "Türkiye'de en az kaç havalimanında görev yapan personele Tüm Havaalanları Giriş Kartı düzenlenmektedir?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "5",
+        "10"
+      ]
+    },
+    {
+      "id": 95294,
+      "section": "GB-04",
+      "text": "Türkiye'de havaalanı giriş kartının uygunsuz kullanılması durumunda 2024 yılı için uygulanan idari para cezası ne kadardır?",
+      "options": [
+        "9.113 TL",
+        "18.222 TL",
+        "4.556 TL",
+        "36.444 TL",
+        "1.000 TL"
+      ]
+    },
+    {
+      "id": 95295,
+      "section": "GB-04",
+      "text": "Güvenlik kontrol noktalarında uyarılmasına rağmen taranmaya veya elle aranmaya mukavemet gösterilmesi durumunda 2024 yılı için uygulanan idari para cezası ne kadardır?",
+      "options": [
+        "18.222 TL",
+        "9.113 TL",
+        "4.556 TL",
+        "36.444 TL",
+        "2.500 TL"
+      ]
+    },
+    {
+      "id": 95296,
+      "section": "GB-04",
+      "text": "Araç giriş izinleri hangi araçlar için düzenlenir?",
+      "options": [
+        "Sadece operasyonel ihtiyacı olan araçlar için",
+        "Havaalanına gelen tüm araçlar için",
+        "Yalnızca kamu kurumlarına ait araçlar için",
+        "Yalnızca havayolu şirketlerine ait araçlar için",
+        "Yalnızca yolcu taşıyan araçlar için"
+      ]
+    },
+    {
+      "id": 95297,
+      "section": "GB-04",
+      "text": "Araçların giriş yetkileri için düzgün bir uygulama olarak geçerlilik süresinin en fazla ne kadar olması önerilmektedir?",
+      "options": [
+        "2 yıl",
+        "1 yıl",
+        "3 yıl",
+        "5 yıl",
+        "6 ay"
+      ]
+    },
+    {
+      "id": 95298,
+      "section": "GB-04",
+      "text": "Türkiye'de araçların güvenlik tahditli alanlara girişinde hangi belgelerin bulundurulması ve doğrulanması zorunludur?",
+      "options": [
+        "Apron plakası ve araç tanıtım kartı",
+        "Yalnızca apron plakası",
+        "Yalnızca araç tanıtım kartı",
+        "Ruhsat ve sürücü belgesi",
+        "Sigorta poliçesi ve muayene belgesi"
+      ]
+    },
+    {
+      "id": 95299,
+      "section": "GB-04",
+      "text": "Aşağıdakilerden hangisi havaalanlarındaki güvenlik kontrol noktalarından biri değildir?",
+      "options": [
+        "Hava aracı kokpit girişi kontrol noktası",
+        "Havaalanı ana giriş yolu kontrol noktası",
+        "Terminal giriş kontrol noktası",
+        "Yolcu giriş kontrol noktası",
+        "Apron girişi kontrol noktası"
+      ]
+    },
+    {
+      "id": 95300,
+      "section": "GB-04",
+      "text": "Ek-17 uyarınca yolcu dışındaki kişilerin ve taşıdıkları eşyaların taranması ne zaman gerçekleştirilmelidir?",
+      "options": [
+        "Güvenlik tahditli alanlara girişlerinden önce",
+        "Güvenlik tahditli alanlardan çıkışlarında",
+        "Yalnızca mesai bitiminde",
+        "Yalnızca şüphe duyulduğunda",
+        "Hava aracına binişten sonra"
+      ]
+    },
+    {
+      "id": 95301,
+      "section": "GB-04",
+      "text": "Yolcu dışındaki kişilerin taranması işleminde kullanılacak yöntem için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Patlayıcı varlığını ya da izini tespit edebilen bir yöntem ile yapılmalıdır",
+        "Yalnızca gözle kontrol yeterlidir",
+        "Yalnızca metal dedektörü kullanılmalıdır",
+        "Yalnızca kimlik doğrulaması yapılmalıdır",
+        "Yalnızca kamera kaydı alınmalıdır"
+      ]
+    },
+    {
+      "id": 95302,
+      "section": "GB-04",
+      "text": "Patlayıcı tespit yöntemi ilave yöntem olarak uygulandığında seçim işlemi nasıl yapılmalıdır?",
+      "options": [
+        "Öngörülemez ve rastgele",
+        "Sıralı ve önceden duyurulmuş",
+        "Yalnızca şüpheli kişiler seçilerek",
+        "Yalnızca yabancı uyruklular seçilerek",
+        "Her kişiye sırayla"
+      ]
+    },
+    {
+      "id": 95303,
+      "section": "GB-04",
+      "text": "Türkiye'de havalimanında görevli silahlı kolluk görevlilerine tanınan tarama muafiyeti için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Muafiyet yalnızca görevleri ile ilgili taşınan eşyalarını kapsar ve giriş kartlarının kontrolü uygulamasına devam edilir",
+        "Muafiyet tüm kişisel eşyalarını kapsar ve giriş kartı kontrolü de yapılmaz",
+        "Muafiyet mesai dışında da geçerlidir",
+        "Muafiyet giriş kontrolünden de muafiyet getirir",
+        "Muafiyet için ayrıca bir kayıt prosedürü gerekmez"
+      ]
+    },
+    {
+      "id": 95304,
+      "section": "GB-04",
+      "text": "Aşağıdakilerden hangisi ICAO Ek-17 uyarınca hava araçlarına yönelik uygulanması gereken asgari güvenlik tedbirlerinden biri değildir?",
+      "options": [
+        "Hava aracının uçuş sonrası ticari performansının raporlanması",
+        "Hava araçlarının uçuş öncesinde güvenlik araması veya güvenlik kontrolüne tabi tutulması",
+        "Transit uçuşlarda inen yolculardan kalan eşyaların kontrolü",
+        "Uçuş esnasında kokpit girişinin yetkisiz kişilere karşı korunması",
+        "Hava aracının korunması"
+      ]
+    },
+    {
+      "id": 95305,
+      "section": "GB-05",
+      "text": "Havaalanında görev yapan personelin yolcuları ve diğer kişileri gözlemleme yükümlülüğü hangi aşamaları kapsar?",
+      "options": [
+        "Havaalanı giriş noktasından uçağa binişe kadar her aşamayı",
+        "Yalnızca güvenlik kontrol noktasını",
+        "Yalnızca uçağa biniş kapısını",
+        "Yalnızca terminal girişini",
+        "Yalnızca apron sahasını"
+      ]
+    },
+    {
+      "id": 95306,
+      "section": "GB-05",
+      "text": "Havaalanı giriş kartına sahip personelin kartsız kişilerle ilgili yükümlülüğü nedir?",
+      "options": [
+        "Kartsız kişileri güvenlik birimlerine veya yetkili mercilere bildirmek",
+        "Kartsız kişilere refakat ederek çıkışa yönlendirmek",
+        "Kartsız kişilerin kimliğini sorgulayıp kayıt altına almak",
+        "Kartsız kişilere geçici kart düzenlemek",
+        "Herhangi bir yükümlülüğü bulunmamaktadır"
+      ]
+    },
+    {
+      "id": 95307,
+      "section": "GB-05",
+      "text": "Aşağıdakilerden hangisi şüpheli olaylara örnek olarak verilebilir?",
+      "options": [
+        "Şüpheli veya sahipsiz paket görülmesi",
+        "Uçuşun rötar yapması",
+        "Bagajın kaybolması",
+        "Check-in kuyruğunun uzaması",
+        "Hava aracının bakıma alınması"
+      ]
+    },
+    {
+      "id": 95308,
+      "section": "GB-05",
+      "text": "Şikago Sözleşmesi Ek-17'ye göre her üye devletin oluşturması gereken raporlama sistemi hangisidir?",
+      "options": [
+        "Gizli bir olay raporlama sistemi",
+        "Kamuya açık bir olay raporlama sistemi",
+        "Yalnızca yazılı başvuru kabul eden bir sistem",
+        "Yalnızca yetkili otoriteye açık kapalı bir sistem",
+        "Yalnızca havayolu şirketleri için bir sistem"
+      ]
+    },
+    {
+      "id": 95309,
+      "section": "GB-05",
+      "text": "Havacılık tesislerinde kurallara aykırı olduğu değerlendirilen olayların raporlanması hangi yollarla yapılabilir?",
+      "options": [
+        "Yazılı, sözlü veya e-posta ile ve kurumların internet sayfalarındaki raporlama bölümlerinden",
+        "Yalnızca resmî yazı ile",
+        "Yalnızca yüz yüze görüşme ile",
+        "Yalnızca yıllık denetim raporlarıyla",
+        "Yalnızca noter aracılığıyla"
+      ]
+    },
+    {
+      "id": 95310,
+      "section": "GB-05",
+      "text": "Olay raporlaması yapılırken olayın aşamaları nasıl sıralanmalıdır?",
+      "options": [
+        "Kronolojik olarak",
+        "Öneme göre",
+        "Alfabetik olarak",
+        "Kişilere göre gruplanarak",
+        "Sondan başa doğru"
+      ]
+    },
+    {
+      "id": 95311,
+      "section": "GB-05",
+      "text": "Aşağıdakilerden hangisi olay raporlaması yapılırken dikkat edilmesi gereken hususlardan biri değildir?",
+      "options": [
+        "Rapora kişisel yorum ve tahminlerin eklenmesi",
+        "Belirsiz ifadelerden kaçınılması",
+        "İfadelerin okunaklı, açık ve anlamlı olması",
+        "Mağdur, şüpheli ve tanıkların kimliklerinin belirtilmesi",
+        "Bilgilerin ne zaman, nasıl ve kimden alındığının açıkça yazılması"
+      ]
+    },
+    {
+      "id": 95312,
+      "section": "GB-05",
+      "text": "Bir kurumun günlük işleyişi içerisinde tüm birim ve personelin eylem ve davranışları tarafından yansıtılan güvenlikle ilgili normlar, değerler, tutumlar ve varsayımlar bütününe ne ad verilir?",
+      "options": [
+        "Güvenlik kültürü",
+        "Güvenlik programı",
+        "Güvenlik tedbiri",
+        "Güvenlik bilinci",
+        "Güvenlik yönetim sistemi"
+      ]
+    },
+    {
+      "id": 95313,
+      "section": "GB-05",
+      "text": "Havacılık güvenliğinin sorumluluğu kime aittir?",
+      "options": [
+        "Tabandan tavana herkese",
+        "Yalnızca güvenlik birimine",
+        "Yalnızca yetkili otoriteye",
+        "Yalnızca havaalanı işletmecisine",
+        "Yalnızca üst yönetime"
+      ]
+    },
+    {
+      "id": 95314,
+      "section": "GB-05",
+      "text": "Aşağıdakilerden hangisi zayıf güvenlik kültürünün göstergelerinden biri değildir?",
+      "options": [
+        "Olay raporlama kanallarının açık, bilinir ve güvenilir olması",
+        "Güvenliğin yalnızca güvenlik biriminin sorumluluğunda olduğunun düşünülmesi",
+        "İhlaller hakkında bilgilerin veya endişelerin gizlenmesi",
+        "Güvenlik ve risk yönetiminde proaktif yerine reaktif bir yaklaşım benimsenmesi",
+        "Güvenliğin işletme için bir yük olarak görülmesi"
+      ]
+    },
+    {
+      "id": 95315,
+      "section": "GB-05",
+      "text": "Zayıf güvenlik kültüründe güvenlik ve risk yönetiminde hangi yaklaşım benimsenir?",
+      "options": [
+        "Proaktif yerine reaktif bir yaklaşım",
+        "Reaktif yerine proaktif bir yaklaşım",
+        "Yalnızca öngörücü bir yaklaşım",
+        "Yalnızca katılımcı bir yaklaşım",
+        "Yalnızca önleyici bir yaklaşım"
+      ]
+    },
+    {
+      "id": 95316,
+      "section": "GB-05",
+      "text": "Etkin güvenlik kültürünün meydana gelmesi aşağıdakilerden hangisiyle doğrudan ilişkilidir?",
+      "options": [
+        "Güvenliğin bir zorunluluk veya külfetli bir iş olarak değil, temel bir değer olarak kabul edilmesi",
+        "Güvenlik bütçesinin sürekli artırılması",
+        "Güvenlik personeli sayısının çoğaltılması",
+        "Denetim sıklığının azaltılması",
+        "Raporlama zorunluluğunun kaldırılması"
+      ]
+    },
+    {
+      "id": 95317,
+      "section": "GB-05",
+      "text": "Güvenlik kültüründe liderlik ile ilgili aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Liderlerin kararları örgütsel güvenlik kültürünü büyük ölçüde etkiler",
+        "Liderlerin kurum kültürü üzerinde etkisi sınırlıdır",
+        "Güvenlik kültürü yalnızca alt kademe personelin davranışıyla belirlenir",
+        "Liderlerin yalnızca bütçe kararları güvenliği etkiler",
+        "Güvenlik kültürü liderlikten bağımsız gelişir"
+      ]
+    },
+    {
+      "id": 95318,
+      "section": "GB-05",
+      "text": "Olumlu bir güvenlik kültürü oluşturmak için atılması gereken pratik adımlar arasında, şüpheli davranışları veya ihmalleri bildiren raporlarla ilgili olarak ne yapılmalıdır?",
+      "options": [
+        "Raporlara ve bunların kaynaklarına koruma sağlayan bir çerçeve oluşturulmalıdır",
+        "Raporlar kamuoyuyla paylaşılmalıdır",
+        "Rapor sahiplerinin kimlikleri tüm personele duyurulmalıdır",
+        "Raporlar yalnızca yıl sonunda değerlendirilmelidir",
+        "Raporlama yalnızca yöneticilerle sınırlandırılmalıdır"
+      ]
+    }
+  ]
+}
