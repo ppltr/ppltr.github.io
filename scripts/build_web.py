@@ -21,6 +21,7 @@ PAGES = ROOT / "docs" / "index.html"        # GitHub Pages /docs kökünden yay�
 NOTES_DIR = ROOT / "notes"
 
 # Ders notu dosyasındaki kod, soru bankasındaki ders koduna eşlenir
+FIG_DIR = ROOT / "figures"
 NOTE_SUBJECT = {"073": "070"}
 NOTE_SKIP = {"annex-kart-promptlari.md"}    # üretim promptları, çalışma notu değil
 
@@ -44,6 +45,25 @@ def export_notes() -> list:
     return out
 
 
+def export_figures() -> tuple[dict, dict]:
+    """figures/index.json + SVG'leri okur.
+
+    Döner: ({çizim_adı: svg}, {soru_id: çizim_adı}).  Aynı çizimi paylaşan
+    sorular tek kopya taşır; artifact'ta yer kaybı olmaz.
+    """
+    idx_path = FIG_DIR / "index.json"
+    if not idx_path.exists():
+        return {}, {}
+    by_q = json.loads(idx_path.read_text(encoding="utf-8"))
+    svgs = {}
+    for name in set(by_q.values()):
+        f = FIG_DIR / f"{name}.svg"
+        if not f.exists():
+            sys.exit(f"hata: {f} yok — scripts/make_figures.py çalıştır")
+        svgs[name] = f.read_text(encoding="utf-8").strip()
+    return svgs, by_q
+
+
 def export() -> dict:
     conn = sqlite3.connect(DB)
     conn.row_factory = sqlite3.Row
@@ -59,6 +79,14 @@ def export() -> dict:
         sec_idx[(r["subject_code"], r["code"])] = len(s["sec"])
         s["sec"].append([r["code"], r["name"]])
 
+    figs, fig_of = export_figures()
+    eksik = [q["id"] for q in conn.execute(
+        "SELECT id FROM questions WHERE needs_figure = 1")
+        if str(q["id"]) not in fig_of]
+    if eksik:
+        print(f"uyarı: şekli olmayan {len(eksik)} soru: "
+              + ", ".join(str(x) for x in eksik[:10]), file=sys.stderr)
+
     qs = []
     for r in conn.execute(
         "SELECT q.id, q.subject_code, s.code AS sec, q.text, q.flagged, "
@@ -71,9 +99,10 @@ def export() -> dict:
             "SELECT text FROM options WHERE question_id = ? ORDER BY ord", (r["id"],))]
         qs.append([r["id"], subj_idx[r["subject_code"]],
                    sec_idx.get((r["subject_code"], r["sec"]), 0),
-                   r["text"], opts, r["flagged"] or 0, r["dup"], r["gen"], r["fig"] or 0])
+                   r["text"], opts, r["flagged"] or 0, r["dup"], r["gen"],
+                   r["fig"] or 0, fig_of.get(str(r["id"]), "")])
     conn.close()
-    return {"s": subjects, "q": qs, "n": export_notes()}
+    return {"s": subjects, "q": qs, "n": export_notes(), "fg": figs}
 
 
 def main() -> None:
@@ -95,7 +124,7 @@ def main() -> None:
     PAGES.write_text(html, encoding="utf-8")
     kb = OUT.stat().st_size / 1024
     print(f"{OUT}  ({len(data['q'])} soru, {len(data['s'])} ders, "
-          f"{len(data['n'])} not, {kb:.1f} KB)")
+          f"{len(data['n'])} not, {len(data['fg'])} çizim, {kb:.1f} KB)")
     print(f"{PAGES}  (GitHub Pages için aynı dosya)")
 
 

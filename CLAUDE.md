@@ -100,6 +100,30 @@ gömer. Değişiklikten sonra `python3 scripts/build_web.py` çalıştır.
 Yedekleme metin kopyala/yapıştır üzerinden yapılır — artifact kum havuzunda dosya
 indirme engelli. Dosya düğmeleri yalnızca `window.self === window.top` iken gösterilir.
 
+## Şekiller
+
+Şekil gerektiren sorular (`questions.needs_figure = 1`) için çizimler `figures/` altında
+SVG olarak durur; `figures/index.json` soru id'sini çizim adına bağlar, birden çok soru
+aynı çizimi paylaşabilir.
+
+```bash
+python3 scripts/make_figures.py    # figures/*.svg + index.json üretir
+python3 scripts/check_figures.py   # figures/_kontrol.html — geriye doğru teyit sayfası
+```
+
+`make_figures.py` çizimlerin tek kaynağıdır — SVG dosyalarını elle düzenleme, betiği
+düzelt. Çizim kuralı: **beyaz zemin, siyah çizgi, temel şekiller** (doğru, daire, elips,
+üçgen, yay); gri yalnız zemin dolgusu gibi ayırt etmesi zorunlu yerlerde. Uygulamada
+`.figbox` beyaz kalır, koyu temada basılı bir şekil gibi durur.
+
+**Yeni çizim eklerken teyit zorunlu:** `check_figures.py` her çizimi sorusunun ve doğru
+şıkkının yanına koyar; şekle bakıp cevabın çizimden okunabildiği doğrulanır. Çizimi
+olmayan soru kalırsa betik hata verir, `build_web.py` de uyarı basar.
+
+**Şekil süzgeci kaldırıldı.** Hepsi çizildiği için `hideFig` tercihi yok; şekil gerektiren
+hiçbir soru gizlenmiyor. Eski kayıtlardaki `hideFig` `loadProfile`'da siliniyor. Çizimi
+olmayan bir soru eklenirse kartta "şekil gerekli" rozeti çıkar — o zaman çizimini üret.
+
 ## Soru üretimi
 
 Kullanıcı ders notu verdiğinde iş akışı:

@@ -321,6 +321,10 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .starbtn.on{color:var(--accent)}
 .qt{font-family:var(--f-read); font-size:18px; line-height:1.5; padding:19px 15px 6px;
   white-space:pre-wrap; text-wrap:pretty}
+/* Çizimler bilerek beyaz zeminli: koyu temada da basılı bir şekil gibi durur */
+.figbox{margin:12px 15px 2px; padding:10px; background:#ffffff;
+  border:1px solid var(--rule); border-radius:var(--r)}
+.figbox svg{display:block; width:100%; height:auto; max-height:min(46vh, 340px)}
 @media (min-width:720px){ .qt{font-size:19.5px} }
 .opts{display:flex; flex-direction:column; gap:7px; padding:11px}
 .opt{display:flex; gap:11px; align-items:flex-start; text-align:left; width:100%;
@@ -493,7 +497,9 @@ kbd{font-family:var(--f-num); font-size:10px; background:var(--surface-2);
 "use strict";
 
 const DB = JSON.parse(document.getElementById('qdata').textContent);
-const SUBJ = DB.s, QS = DB.q, NOTES = DB.n || [];
+const SUBJ = DB.s, QS = DB.q, NOTES = DB.n || [], FIGS = DB.fg || {};
+/** Sorunun çizimi (varsa) — q[9] çizim adı, FIGS adı SVG'ye çevirir. */
+const figOf = q => (q[9] && FIGS[q[9]]) || '';
 // soru: [0]id [1]dersIdx [2]bölümIdx [3]metin [4]şıklar [5]tartışmalı [6]tekrar [7]üretilmiş [8]şekil
 const BY_ID = new Map(QS.map(q => [q[0], q]));
 const KEYS = ['A','B','C','D','E'];
@@ -559,6 +565,8 @@ function loadProfile(){
   try{ const p = JSON.parse(raw || 'null'); if (p && p.v === 2) S = Object.assign(blank(), p); }catch(e){}
   if (!Array.isArray(S.runs)) S.runs = [];
   Object.assign(F, DEFAULTS, S.pref || {});
+  delete F.hideFig;                       // süzgeç kaldırıldı, eski kayıt taşımasın
+  if (S.pref) delete S.pref.hideFig;
   if (!F.pick || typeof F.pick !== 'object') F.pick = {};
 }
 let saveT;
@@ -593,7 +601,8 @@ function switchProfile(name){
 // ── Filtreler ──
 // count:0 = sınır yok, kapsamdaki tüm sorular
 // deck:'new' = varsayılan olarak henüz çözülmemişlerden başla, tüm konular
-const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true, hideFig:true,
+// hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
+const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
                    hideFlag:false, count:0, mode:'study', order:'smart' };
 const F = Object.assign({}, DEFAULTS);
 function savePref(){ S.pref = F; save(); }
@@ -626,7 +635,6 @@ function matchPick(q){
 function inScope(q){
   if (F.hideDup && q[6]) return false;
   if (!F.gen && q[7]) return false;
-  if (F.hideFig && q[8]) return false;
   if (F.hideFlag && q[5]) return false;
   if (!matchPick(q)) return false;
   if (F.q){
@@ -637,7 +645,7 @@ function inScope(q){
 }
 // Konu ağacındaki sayılar seçimden bağımsız, diğer anahtarlara bağlıdır
 function inToggles(q){
-  return !(F.hideDup && q[6]) && (F.gen || !q[7]) && !(F.hideFig && q[8]) && !(F.hideFlag && q[5]);
+  return !(F.hideDup && q[6]) && (F.gen || !q[7]) && !(F.hideFlag && q[5]);
 }
 
 const DECKS = [
@@ -977,7 +985,6 @@ function home(){
   buildTree();
   el('sw').innerHTML = [
     ['hideDup','Tekrar eden soruları gizle', QS.filter(q => q[6]).length],
-    ['hideFig','Şekil gerekenleri gizle',    QS.filter(q => q[8]).length],
     ['gen',    'Ders notundan üretilmişler', QS.filter(q => q[7]).length],
     ['hideFlag','Tartışmalıları gizle',      QS.filter(q => q[5]).length],
   ].map(([k,x,n]) => '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k +
@@ -1196,13 +1203,14 @@ function draw(){
     '<div class="card"><div class="head"><span class="lbl">' + esc(s.c) + '</span>' +
       '<span class="who">' + esc(sec[1]) + '</span><span class="sp"></span>' +
       (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
-      (q[8] ? '<span class="tag fig">şekil gerekli</span>' : '') +
+      (q[8] && !figOf(q) ? '<span class="tag fig">şekil gerekli</span>' : '') +
       (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') +
       (q[5] ? '<span class="tag flag">tartışmalı</span>' : '') +
       '<button class="starbtn' + (st.has(q[0]) ? ' on' : '') + '" id="star" type="button" ' +
         'title="Yıldızla (S)">' + (st.has(q[0]) ? '★' : '☆') + '</button>' +
       '<span class="lbl num">' + q[0] + '</span></div>' +
       '<div class="qt">' + esc(q[3]) + '</div>' +
+      (figOf(q) ? '<div class="figbox">' + figOf(q) + '</div>' : '') +
       '<div class="opts">' + opts + '</div>' + verdict + '</div>' +
     '<div class="acts">' +
       '<button class="go" id="next" type="button"' + (R.picked === null ? ' disabled' : '') + '>' +
