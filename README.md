@@ -296,7 +296,7 @@ indir/seç düğmeleri çıkar.
 
 ## Yayın
 
-**Canlı site: https://xmlparser.github.io/**
+**Canlı site: https://ppltr.github.io/**
 
 GitHub Pages, `main` dalının `/docs` klasöründen yayımlar. `scripts/build_web.py` aynı
 dosyayı iki yere yazar:

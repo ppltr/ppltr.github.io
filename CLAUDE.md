@@ -107,12 +107,13 @@ Değişiklikten sonra testleri çalıştır. Kritik davranışlar:
 
 ## Yayın ve kimlik
 
-Depo `xmlparser/xmlparser.github.io` altında herkese açık; site
-**https://xmlparser.github.io/** adresinde yayında.
+Depo `ppltr/ppltr.github.io` altında herkese açık; site
+**https://ppltr.github.io/** adresinde yayında.
 
-Adres bilerek kısa: org Pages deposu `<org>.github.io` adını taşıdığı için path boş
-kalıyor. Depo adını değiştirme — adres uzar. Deponun `eski-site-2020` dalında 2020'den
-kalma eski XML editor sitesi duruyor, silme.
+Adres bilerek kısa: organizasyon `ppltr`, depo adı `ppltr.github.io` olduğu için path
+boş kalıyor. **İkisinden birini değiştirirsen adres uzar ya da kırılır.** Organizasyon
+2026-08-22'de `xmlparser`'dan `ppltr`'ye çevrildi (eski ad serbest bırakıldı). Deponun
+`eski-site-2020` dalında 2020'den kalma XML editor sitesi duruyor, silme.
 
 **Yayın otomatik:** Pages kaynağı GitHub Actions (`.github/workflows/pages.yml`).
 `web/template.html`, `atpl.db`, `scripts/build_web.py` ya da `notes/` değişip main'e
