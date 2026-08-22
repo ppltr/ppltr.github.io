@@ -143,9 +143,9 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .hero .hsub i{font-style:normal; opacity:.75}
 .hero .hsub .num{color:var(--ink-2); font-weight:500}
 .hero .hsub .ok{color:var(--ok); font-weight:600}
-.hero .hact{display:flex; gap:8px; flex-wrap:wrap}
-.hero .hact .go{flex:1 1 12rem; max-width:26rem}
-.hero .hact .go2{flex:1 1 7rem}
+.hero .hact{display:flex; justify-content:center; gap:8px; flex-wrap:wrap}
+.hero .hact .go{flex:0 1 20rem; min-width:11rem}
+.hero .hact .go2{flex:0 1 9rem}
 .hero .hnext{display:block; width:100%; text-align:center; margin-top:9px; padding:9px;
   font-size:12.5px; color:var(--cyan); border-radius:var(--r)}
 .hero .hnext:hover{background:var(--surface-2)}
@@ -163,6 +163,38 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .ring.done .rfg{stroke:var(--ok)}
 .ring .rtx{fill:var(--ink); font-family:var(--f-num); font-size:14px; font-weight:500;
   text-anchor:middle; dominant-baseline:central}
+
+/* ── Yarım kalan tur ── */
+.resume{display:flex; width:100%; align-items:center; gap:10px; text-align:left;
+  padding:10px 13px; margin-bottom:12px; border-radius:var(--r);
+  background:var(--accent-soft); border:1px solid var(--accent);
+  color:var(--accent-ink); transition:filter .12s}
+.resume:hover{filter:brightness(1.06)}
+.resume .rl{display:block; min-width:0; flex:1}
+.resume .rl b{display:block; font-size:10.5px; font-family:var(--f-num); font-weight:500;
+  letter-spacing:.06em; text-transform:uppercase; opacity:.75}
+.resume .rl span{display:block; font-size:13.5px; font-weight:600; margin-top:2px;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.resume .rn{flex:none; font-size:11.5px; font-family:var(--f-num)}
+.resume .chev{flex:none; font-family:var(--f-num); font-size:14px}
+
+/* ── Tur geçmişi ── */
+.hislist{display:flex; flex-direction:column; gap:6px}
+.hisrow{display:flex; width:100%; align-items:center; gap:10px; text-align:left;
+  padding:9px 11px; border-radius:var(--r); background:var(--surface-2);
+  border:1px solid var(--rule); transition:border-color .12s}
+.hisrow:hover{border-color:var(--rule-2)}
+.hisrow .hdot{flex:none; width:7px; height:7px; border-radius:50%; background:var(--ink-3)}
+.hisrow .hdot.ok{background:var(--ok)} .hisrow .hdot.mid{background:var(--accent)}
+.hisrow .hdot.bad{background:var(--bad)}
+.hisrow .hdot.live{background:var(--accent); box-shadow:0 0 0 3px var(--accent-soft)}
+.hisrow .hi{display:block; flex:1; min-width:0}
+.hisrow .hi b{display:block; font-size:13px; font-weight:600;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.hisrow .hi i{display:block; font-style:normal; font-size:11px; color:var(--ink-3);
+  font-family:var(--f-num); margin-top:2px}
+.hisrow .hpct{flex:none; font-family:var(--f-num); font-size:12.5px; color:var(--ink-2)}
+.hisrow .hpct.go2x{color:var(--accent); font-weight:500}
 
 /* ── Deste çipleri ── */
 .chiprow{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px}
@@ -267,7 +299,12 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .prog{height:3px; background:var(--rule); border-radius:2px; overflow:hidden; margin-bottom:8px}
 .prog i{display:block; height:100%; background:var(--accent); width:0; transition:width .25s ease}
 .prog i.retry{background:var(--bad)}
-.meta{display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:12px}
+.meta{display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:12px}
+.meta .lbl:first-of-type{margin-right:auto}
+.backb{flex:none; width:28px; height:28px; margin:-4px 0 -4px -6px; display:grid;
+  place-items:center; border-radius:8px; font-family:var(--f-num); font-size:17px;
+  color:var(--ink-3)}
+.backb:hover{background:var(--surface-2); color:var(--accent)}
 .card{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
   box-shadow:var(--shadow); overflow:hidden}
 .head{display:flex; align-items:center; gap:7px; flex-wrap:wrap; padding:9px 13px;
@@ -513,21 +550,29 @@ let ME = ls.get('atpl.profile') || PROFILES[0];
 if (!PROFILES.includes(ME)) ME = PROFILES[0];
 const keyOf = p => 'atpl.v2:' + p;
 
-const blank = () => ({ v:2, c:{}, star:[], day:{}, pref:{} });
+const blank = () => ({ v:2, c:{}, star:[], day:{}, pref:{}, runs:[] });
 let S = blank();
 function loadProfile(){
   S = blank();
   let raw = ls.get(keyOf(ME));
   if (!raw && ME === PROFILES[0]) raw = ls.get('atpl.v2');   // eski tek profilli kayıt
   try{ const p = JSON.parse(raw || 'null'); if (p && p.v === 2) S = Object.assign(blank(), p); }catch(e){}
+  if (!Array.isArray(S.runs)) S.runs = [];
   Object.assign(F, DEFAULTS, S.pref || {});
   if (!F.pick || typeof F.pick !== 'object') F.pick = {};
 }
 let saveT;
 function save(){
   clearTimeout(saveT);
-  saveT = setTimeout(() => ls.set(keyOf(ME), JSON.stringify(S)), 250);
+  saveT = setTimeout(flush, 250);
 }
+/** Bekleyen kaydı hemen yaz — sekme kapanırken son cevap kaybolmasın. */
+function flush(){
+  clearTimeout(saveT);
+  ls.set(keyOf(ME), JSON.stringify(S));
+}
+addEventListener('pagehide', flush);
+addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flush(); });
 function renameProfile(oldN, newN){
   const data = ls.get(keyOf(oldN));
   ls.set(keyOf(newN), data || JSON.stringify(S));
@@ -690,10 +735,59 @@ const optOrder = q => shuffle(q[4].map((_, i) => i));
 // ── Oturum ──
 let R = null, advT = null;
 
+const RUN_MAX = 24;                       // geçmişte tutulan tur sayısı
+
+/** Ana ekrandaki kapsam adı — geçmiş satırında ne çalışıldığı yazsın. */
+function scopeTitle(){
+  const solo = soloModule();
+  if (solo){
+    const s = SUBJ.find(x => x.c === solo);
+    return solo + ' · ' + (s ? s.n : '');
+  }
+  const ks = Object.keys(F.pick);
+  if (!ks.length) return 'Tüm modüller';
+  if (ks.length === 1){
+    const s = SUBJ.find(x => x.c === ks[0]);
+    return ks[0] + ' · ' + (s ? s.n : '');
+  }
+  return ks.length + ' modül';
+}
+function openRun(){ return S.runs.find(r => !r.done) || null; }
+function runRec(){ return R ? S.runs.find(r => r.id === R.id) : null; }
+
+/** Tur durumunu kayda geçir — sayfa kapansa da kaldığı yerden açılsın. */
+function saveRun(){
+  const rec = runRec();
+  if (!rec) return;
+  rec.ids = R.list.map(q => q[0]);
+  rec.i = R.i; rec.round = R.round;
+  rec.missed = R.missed.slice();
+  rec.log = R.log.slice();
+  rec.tN = Date.now();
+  save();
+}
 function start(){
   const list = buildQueue();
   if (!list.length) return;
-  R = { list, i:0, order:null, picked:null, log:[], t0:Date.now(), round:1, missed:[] };
+  S.runs = S.runs.filter(r => r.done || (r.log || []).length);   // boş bırakılanları at
+  const id = 'r' + Date.now();
+  R = { id, list, i:0, order:null, picked:null, log:[], t0:Date.now(), round:1, missed:[] };
+  S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle(), deck:deckName(),
+                   n0:list.length, ids:list.map(q => q[0]), i:0, round:1,
+                   missed:[], log:[], done:false });
+  if (S.runs.length > RUN_MAX) S.runs.length = RUN_MAX;
+  save();
+  step0();
+}
+/** Yarım kalan turu geri yükler; sorular silinmişse turu kapatır. */
+function resumeRun(id){
+  const rec = S.runs.find(r => r.id === id);
+  if (!rec || rec.done) return home();
+  const list = (rec.ids || []).map(x => BY_ID.get(x)).filter(Boolean);
+  if (!list.length){ rec.done = true; save(); return home(); }
+  R = { id:rec.id, list, i:Math.min(rec.i || 0, list.length), order:null, picked:null,
+        log:(rec.log || []).slice(), t0:rec.t0, round:rec.round || 1,
+        missed:(rec.missed || []).slice() };
   step0();
 }
 function step0(){
@@ -710,6 +804,7 @@ function step0(){
   }
   R.order = optOrder(R.list[R.i]);
   R.picked = null;
+  saveRun();
   draw();
   window.scrollTo({ top:0, behavior:'smooth' });
 }
@@ -720,6 +815,7 @@ function pick(pos){
   grade(q[0], ok);
   R.log.push({ id:q[0], ok, pick:R.order[pos], round:R.round });
   if (!ok && !R.missed.includes(q[0])) R.missed.push(q[0]);
+  saveRun();
   draw();
   clearTimeout(advT);
   if (F.mode === 'exam') advT = setTimeout(next, 150);
@@ -821,12 +917,32 @@ function home(){
       'type="button" title="Deste süzgeci olmadan, kapsamdaki her soru">' +
       '<b class="num">' + nf(total) + '</b>Tümü</button>';
 
+  // ── Yarım kalan tur: kaldığın yerden tek dokunuşla dön ──
+  const orun = openRun();
+  const resume = orun
+    ? '<button class="resume" id="rGo" type="button">' +
+        '<span class="rl"><b>Yarım kalan tur</b><span>' + esc(orun.title) + '</span></span>' +
+        '<span class="rn"><b class="num">' + runSeen(orun) + '</b>/' + nf(orun.n0 || 0) +
+          ' soru</span><span class="chev">›</span></button>'
+    : '';
+
   el('view').innerHTML =
-    idline + hero +
+    idline + resume + hero +
     (firstRun ? '' : '<div class="chiprow">' + chips + '</div>') +
     (otherWait
       ? '<button class="nextmod" id="mAll" type="button">Diğer modüllerde ' +
         '<b class="num">' + otherWait + '</b> soru tekrar bekliyor ›</button>' : '') +
+
+    (S.runs.length
+      ? '<details class="box" id="hisBox">' +
+          '<summary>Geçmiş<span class="pill off">' + S.runs.length + ' tur</span>' +
+          '<span class="chev">›</span></summary><div class="in">' +
+          '<div class="hislist">' + S.runs.map(hisRow).join('') + '</div>' +
+          (S.runs.some(r => r.done)
+            ? '<div class="tools" style="margin:10px 0 0">' +
+              '<button class="tbtn" id="hClr" type="button">Biten turları sil</button></div>' : '') +
+        '</div></details>'
+      : '') +
 
     '<details class="box" id="optBox">' +
       '<summary>Ayarlar<span class="pill off">' + (F.count ? F.count + ' soru' : 'tüm tur') +
@@ -874,6 +990,15 @@ function home(){
     F.deck = b.dataset.deck; savePref(); home();
   });
   el('topStat').onclick = openStats;
+  const rg = el('rGo');
+  if (rg) rg.onclick = () => resumeRun(orun.id);
+  el('view').querySelectorAll('[data-run]').forEach(b => b.onclick = () => {
+    const rec = S.runs.find(r => r.id === b.dataset.run);
+    if (!rec) return;
+    rec.done ? report(rec, false) : resumeRun(rec.id);
+  });
+  const hc = el('hClr');
+  if (hc) hc.onclick = () => { S.runs = S.runs.filter(r => !r.done); save(); home(); };
   el('go').onclick = start;
   el('mPick').onclick = () => { pickOpen = !pickOpen; paintPicker(); };
   paintPicker();
@@ -921,6 +1046,33 @@ function paintPicker(){
   b.classList.toggle('open', pickOpen);
   b.setAttribute('aria-expanded', pickOpen ? 'true' : 'false');
   pk.hidden = !pickOpen;
+}
+
+const AYLAR = ['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'];
+function stamp(ms){
+  const d = new Date(ms), p2 = x => String(x).padStart(2, '0');
+  return d.getDate() + ' ' + AYLAR[d.getMonth()] + ' ' + p2(d.getHours()) + ':' + p2(d.getMinutes());
+}
+/** Turda kaç ayrı soru görüldü — ilerleme bunun üzerinden yazılır. */
+function runSeen(r){ return new Set((r.log || []).map(x => x.id)).size; }
+/** Turun ilk denemedeki isabeti. */
+function runPct(r){
+  const first = (r.log || []).filter(x => x.round === 1);
+  if (!first.length) return null;
+  return Math.round(first.filter(x => x.ok).length / first.length * 100);
+}
+/** Geçmiş listesinde bir tur satırı. */
+function hisRow(r){
+  const pct = runPct(r);
+  const dot = !r.done ? 'live' : pct === null ? '' : pct >= 75 ? 'ok' : pct >= 50 ? 'mid' : 'bad';
+  const alt = r.done
+    ? stamp(r.t0) + ' · ' + runSeen(r) + ' soru'
+    : stamp(r.t0) + ' · ' + runSeen(r) + ' / ' + (r.n0 || 0) + ' soru';
+  return '<button class="hisrow" data-run="' + r.id + '" type="button">' +
+    '<span class="hdot ' + dot + '"></span>' +
+    '<span class="hi"><b>' + esc(r.title || 'Tur') + '</b><i>' + alt + '</i></span>' +
+    '<span class="hpct' + (r.done ? '' : ' go2x') + '">' +
+      (r.done ? (pct === null ? '—' : '%' + pct) : 'Devam et') + '</span></button>';
 }
 
 /** İlerleme halkası — modül ne kadar tamamlandı. */
@@ -1035,7 +1187,9 @@ function draw(){
   el('view').innerHTML =
     '<div class="prog"><i class="' + (retry ? 'retry' : '') + '" style="width:' +
       (R.i / R.list.length * 100) + '%"></i></div>' +
-    '<div class="meta"><span class="lbl">Soru <span class="num">' + (R.i + 1) + '</span> / ' +
+    '<div class="meta"><button class="backb" id="hb" type="button" ' +
+      'title="Ana ekran — tur kayıtlı kalır, geçmişten devam edersin">‹</button>' +
+      '<span class="lbl">Soru <span class="num">' + (R.i + 1) + '</span> / ' +
       '<span class="num">' + R.list.length + '</span></span>' +
       '<span class="lbl"' + (retry ? ' style="color:var(--bad)"' : '') + '>' +
         (retry ? 'Yanlış turu ' + R.round : deckName()) + '</span></div>' +
@@ -1057,6 +1211,7 @@ function draw(){
       '<button class="go2" id="quit" type="button">Turu bitir</button></div>';
 
   el('view').querySelectorAll('.opt').forEach(b => b.onclick = () => pick(+b.dataset.p));
+  el('hb').onclick = () => { clearTimeout(advT); saveRun(); home(); };
   el('next').onclick = next;
   const sk = el('skip'); if (sk) sk.onclick = next;
   el('quit').onclick = done;
@@ -1083,21 +1238,33 @@ function deckName(){
 
 function done(){
   clearTimeout(advT);
-  const log = R ? R.log : [], rounds = R ? R.round : 1;
-  const t0 = R ? R.t0 : Date.now();
+  const rec = runRec();
+  if (rec){
+    rec.i = R.i; rec.round = R.round; rec.log = R.log.slice();
+    rec.tN = Date.now(); rec.done = true;
+    delete rec.ids; delete rec.missed;        // bitmiş tur geri yüklenmez
+    if (!rec.log.length) S.runs.splice(S.runs.indexOf(rec), 1);
+    save();
+  }
+  const live = R ? { log:R.log, round:R.round, t0:R.t0, tN:Date.now() } : null;
   R = null;
-  if (!log.length) return home();
+  if (!live || !live.log.length) return home();
+  report(live, true);
+}
 
+/** Tur raporu — hem tur biter bitmez hem de geçmişten açılınca çizilir. */
+function report(rec, live){
+  const log = rec.log || [], rounds = rec.round || 1;
   const first = log.filter(x => x.round === 1);
   const ok = first.filter(x => x.ok).length;
   const pct = first.length ? Math.round(ok / first.length * 100) : 0;
-  const mins = Math.max(1, Math.round((Date.now() - t0) / 6e4));
+  const mins = Math.max(1, Math.round(((rec.tN || Date.now()) - rec.t0) / 6e4));
   const seen = [...new Set(log.map(x => x.id))];
 
   el('view').innerHTML =
     '<div class="card"><div style="padding:24px 16px; text-align:center">' +
-      '<div class="lbl">Tur bitti · ' + mins + ' dakika' +
-        (rounds > 1 ? ' · ' + rounds + ' tur' : '') + '</div>' +
+      '<div class="lbl">' + (live ? 'Tur bitti' : esc(rec.title || 'Tur')) + ' · ' + mins +
+        ' dakika' + (rounds > 1 ? ' · ' + rounds + ' tur' : '') + '</div>' +
       '<div class="score" style="color:' + (pct >= 75 ? 'var(--ok)' : pct >= 50 ? 'var(--ink)' : 'var(--bad)') +
         '">%' + pct + '</div>' +
       '<div class="lbl" style="margin-top:5px">İlk denemede <span class="num">' + ok +
@@ -1131,7 +1298,8 @@ function done(){
             '<div id="okList" class="hidden">' + good.map(row).join('') + '</div>'
           : '');
     })() + '</div>' +
-    '<div class="acts"><button class="go" id="again" type="button">Devam et</button>' +
+    '<div class="acts">' +
+      (live ? '<button class="go" id="again" type="button">Devam et</button>' : '') +
       '<button class="go2" id="back" type="button">Ana ekran</button></div>';
   const fo = el('foldOk');
   if (fo) fo.onclick = () => {
@@ -1141,7 +1309,8 @@ function done(){
     fo.setAttribute('aria-expanded', String(!open));
     fo.classList.toggle('open', !open);
   };
-  el('again').onclick = start;
+  const ag = el('again');
+  if (ag) ag.onclick = start;
   el('back').onclick = home;
 }
 
@@ -1432,6 +1601,6 @@ loadProfile();
 if (!Object.keys(F.pick).length && !S.pref) autoPickModule();
 if (!Object.keys(F.pick).length && !Object.keys(S.c).length) autoPickModule();
 paintWho();
-home();
+if (S.runs[0] && !S.runs[0].done) resumeRun(S.runs[0].id); else home();
 })();
 </script>

@@ -75,6 +75,18 @@ modül/bölüm **adına** dokunmak (`data-solo`) seçimi tek başına ona alır 
 kapatır (dropdown gibi), **kutucuğa** (`data-s`) dokunmak çoklu seçim yapar ve seçici
 açık kalır. `pickOpen` durumu `home()` yeniden çizimleri arasında korunur.
 
+**Turlar kalıcıdır.** Her `start()` bir kayıt açar (`S.runs`, en yeni başta, `RUN_MAX`
+tane tutulur). Her cevapta ve her soru geçişinde `saveRun()` çalışır; sekme gizlenince
+`flush()` bekleyen yazmayı hemen diske indirir. Açılışta `S.runs[0]` bitmemişse uygulama
+doğrudan o soruya döner — ana ekrana uğramaz. Soru ekranındaki `‹` (`#hb`) turu
+**kapatmaz**, ana ekrana döner; `Turu bitir` (`#quit`) kapatır ve raporu çizer.
+
+Ana ekranda bitmemiş tur varsa kimlik satırının altında `.resume` şeridi çıkar. Tüm turlar
+`Geçmiş` akordeonunda listelenir (`hisRow`): biteni açmak raporu gösterir (`report(rec,
+false)` — "Devam et" düğmesi yalnız `live` iken çizilir), bitmeyeni açmak `resumeRun()`
+ile kaldığı yerden sürdürür. Biten turların `ids`/`missed` alanları silinir, geri
+yüklenmezler. Hiç soru çözülmeden bırakılan turlar bir sonraki `start()`'ta atılır.
+
 İlk ziyarette `randomName()` rastgele bir profil adı üretir ve profil kendiliğinden açılır;
 giriş yoktur. Ad Durum panelinden değiştirilir (`renameProfile` localStorage anahtarını taşır). Aralıklı tekrar
 kutuları `BOX_MS`, takılma eşiği `LEECH`, yanlış defterinden çıkış `MASTER` sabitleriyle
