@@ -62,6 +62,13 @@ istemedi. Kart hangi modülde olunduğunu, ilerlemeyi ve kalan soruyu yazar; "Ba
 modülü açar. Modül bitince "Sıradaki modüle geç" çıkar. Bunu bozup "Başla · 2265 soru"
 gibi bir düğmeye dönme.
 
+Ekran üç katmandır ve bu sırayı koru: (1) `.idline` — avatar + ad + toplam istatistik,
+tek satır, dokunulunca Durum paneli; (2) `.hero` — ilerleme halkası (`ringSvg`) + modül
+adı + **tek** birincil düğme, yanında "Değiştir"; (3) `.chiprow` — deste çipleri, sayısı
+sıfır olan deste hiç çizilmez. Konular ve Ayarlar akordeonu varsayılan olarak kapalı.
+İlk ziyarette (`G.seen === 0`) hero "Hoş geldin" sürümüne düşer ve çip satırı gizlenir.
+Ana ekranı sayı yığınına çevirme — kullanıcı tek birincil eylem istedi.
+
 İlk ziyarette `randomName()` rastgele bir profil adı üretir ve profil kendiliğinden açılır;
 giriş yoktur. Ad Durum panelinden değiştirilir (`renameProfile` localStorage anahtarını taşır). Aralıklı tekrar
 kutuları `BOX_MS`, takılma eşiği `LEECH`, yanlış defterinden çıkış `MASTER` sabitleriyle
