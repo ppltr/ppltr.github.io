@@ -81,8 +81,8 @@ button{cursor:pointer; background:none; border:none}
 #bWho{display:inline-flex; align-items:center; gap:7px; padding:4px 9px 4px 5px;
   font-family:var(--f-ui); font-size:12.5px; font-weight:600; letter-spacing:0;
   text-transform:none; color:var(--ink-2)}
-#bWho .nm{max-width:8.5rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
-@media (max-width:560px){ #bWho .nm{display:none} #bWho{padding:4px 5px} }
+#bWho .nm{display:none}
+#bWho{padding:4px 5px}
 
 .page{max-width:760px; margin:0 auto; padding:18px 14px 80px}
 @media (min-width:720px){ .page{padding:26px 20px 90px} }
@@ -90,65 +90,82 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .sub{margin:0 0 18px; color:var(--ink-2); font-size:14px}
 
 /* ── Desteler ── */
-.topstat{display:block; width:100%; text-align:left; background:var(--surface);
-  border:1px solid var(--rule); border-radius:var(--r); padding:11px 13px;
-  margin-bottom:16px; transition:border-color .12s}
-.topstat:hover{border-color:var(--rule-2)}
-.topstat .tsline{display:flex; align-items:center; gap:9px; margin-bottom:9px}
-.topstat .tsline .ava{width:26px; height:26px; font-size:10.5px}
-.topstat .chev{flex:none; color:var(--ink-3); font-family:var(--f-num); font-size:13px}
-.topstat .who{font-size:13.5px; font-weight:600; letter-spacing:-.01em; min-width:0;
+/* ── Kimlik satırı ── */
+.idline{display:flex; width:100%; align-items:center; gap:9px; padding:9px 12px;
+  background:var(--surface); border:1px solid var(--rule); border-radius:99px;
+  margin-bottom:14px; transition:border-color .12s}
+.idline:hover{border-color:var(--rule-2)}
+.idline .nm{font-size:13.5px; font-weight:600; letter-spacing:-.01em; min-width:0;
   overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
-.topstat .tsline .lbl{margin-left:auto; flex:none}
-.topstat:hover .chev{color:var(--accent)}
-.topstat .tsbar{height:4px; background:var(--surface-3); border-radius:99px;
-  overflow:hidden; margin-bottom:8px}
-.topstat .tsbar i{display:block; height:100%; background:var(--cyan); border-radius:99px;
-  transition:width .3s ease}
-.topstat .tsnums{display:flex; flex-wrap:wrap; gap:2px 15px; align-items:baseline;
-  font-size:12px; color:var(--ink-3); line-height:1.6}
-.topstat .tsnums b{font-weight:500; color:var(--ink-2)}
-.topstat .tsnums b.ok{color:var(--ok)} .topstat .tsnums b.bad{color:var(--bad)}
-.topstat .tsnums b.due{color:var(--due)}
-.topstat .dot{color:var(--rule-2)}
-.modcard{background:var(--surface); border:1px solid var(--rule); border-left:3px solid var(--accent);
-  border-radius:var(--r); padding:14px 15px; margin-bottom:12px; box-shadow:var(--shadow)}
-.modcard.done{border-left-color:var(--ok)}
-.modcard .mtop{display:flex; align-items:center; gap:10px; margin-bottom:7px}
-.modcard .mtop .lbl{flex:1}
-.modcard .mname{font-size:18px; font-weight:600; letter-spacing:-.015em; line-height:1.3;
-  text-wrap:balance}
-.modcard .mname b{font-family:var(--f-num); font-weight:500; color:var(--accent)}
-.modcard .mbar{height:5px; background:var(--surface-3); border-radius:99px; overflow:hidden;
-  margin:10px 0 7px}
-.modcard .mbar i{display:block; height:100%; background:var(--accent); border-radius:99px;
-  transition:width .3s ease}
-.modcard.done .mbar i{background:var(--ok)}
-.modcard .mfoot{font-size:12.5px; color:var(--ink-2)}
-.modcard .mfoot .num{color:var(--ink); font-weight:500}
+.idline .sep{flex:1}
+.idline .mini{font-size:11.5px; color:var(--ink-3); white-space:nowrap}
+.idline .mini b{color:var(--ink-2); font-weight:500}
+.idline .chev{flex:none; color:var(--ink-3); font-family:var(--f-num); font-size:13px}
+.idline:hover .chev{color:var(--accent)}
+.idline .stats{display:flex; align-items:center; gap:10px; min-width:0}
+@media (max-width:430px){
+  .idline{display:grid; grid-template-columns:auto minmax(0,1fr) auto;
+    column-gap:10px; row-gap:1px; border-radius:16px; padding:9px 13px}
+  .idline .ava{grid-row:1 / span 2}
+  .idline .nm{grid-column:2; grid-row:1}
+  .idline .stats{grid-column:2; grid-row:2; gap:9px}
+  .idline .chev{grid-column:3; grid-row:1 / span 2}
+  .idline .sep{display:none}
+}
+
+/* ── Kahraman kart ── */
+.hero{background:var(--surface); border:1px solid var(--rule); border-radius:10px;
+  box-shadow:var(--shadow); padding:16px; margin-bottom:12px}
+.hero .hrow{display:flex; align-items:center; gap:14px; margin-bottom:14px}
+.hero .hinfo{min-width:0; flex:1}
+.hero .hname{font-size:17px; font-weight:600; letter-spacing:-.015em; line-height:1.3;
+  margin-top:3px; text-wrap:balance}
+.hero .hname b{font-family:var(--f-num); font-weight:500; color:var(--accent)}
+.hero .hsub{font-size:12.5px; color:var(--ink-3); margin-top:5px}
+.hero .hsub .num{color:var(--ink-2); font-weight:500}
+.hero .hsub .ok{color:var(--ok); font-weight:600}
+.hero .hact{display:flex; gap:8px; flex-wrap:wrap}
+.hero .hact .go{flex:1 1 12rem; max-width:26rem}
+.hero .hact .go2{flex:1 1 7rem}
+.hero .hnext{display:block; width:100%; text-align:center; margin-top:9px; padding:9px;
+  font-size:12.5px; color:var(--cyan); border-radius:var(--r)}
+.hero .hnext:hover{background:var(--surface-2)}
+.hero.welcome{text-align:left}
+.hero .wtitle{font-size:20px; font-weight:700; letter-spacing:-.02em; margin-bottom:6px}
+.hero .wtext{margin:0 0 15px; font-size:13.5px; color:var(--ink-2); line-height:1.55}
+.hero .wtext b{color:var(--ink)}
+.hero .wmod{background:var(--surface-2); border:1px solid var(--rule);
+  border-radius:var(--r); padding:11px 13px; margin-bottom:14px}
+
+/* ── İlerleme halkası ── */
+.ring{flex:none}
+.ring .rbg{fill:none; stroke:var(--surface-3); stroke-width:5}
+.ring .rfg{fill:none; stroke:var(--accent); stroke-width:5; stroke-linecap:round;
+  transform:rotate(-90deg); transform-origin:30px 30px; transition:stroke-dashoffset .45s ease}
+.ring.done .rfg{stroke:var(--ok)}
+.ring .rtx{fill:var(--ink); font-family:var(--f-num); font-size:14px; font-weight:500;
+  text-anchor:middle; dominant-baseline:central}
+
+/* ── Deste çipleri ── */
+.chiprow{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px}
+.dchip{display:inline-flex; align-items:center; gap:6px; padding:7px 13px;
+  border:1px solid var(--rule); border-radius:99px; background:var(--surface);
+  font-size:12.5px; font-weight:500; color:var(--ink-2); white-space:nowrap;
+  transition:border-color .12s, background .12s}
+.dchip:hover{border-color:var(--rule-2); color:var(--ink)}
+.dchip b{font-weight:600; color:var(--ink)}
+.dchip.due b{color:var(--due)} .dchip.wrong b{color:var(--bad)}
+.dchip.new b{color:var(--cyan)} .dchip.star b{color:var(--accent)}
+.dchip.leech b{color:var(--bad)}
+.dchip.on{background:var(--accent); border-color:var(--accent); color:var(--on-accent)}
+.dchip.on b{color:var(--on-accent)}
+
 .nextmod{display:block; width:100%; text-align:left; background:var(--surface);
   border:1px solid var(--rule); border-left:2px solid var(--cyan); border-radius:var(--r);
-  padding:11px 13px; font-size:12.5px; color:var(--ink-2); margin-bottom:10px}
+  padding:11px 13px; font-size:12.5px; color:var(--ink-2); margin-bottom:12px}
 .nextmod:hover{border-color:var(--rule-2); color:var(--ink)}
 .nextmod b{font-family:var(--f-num); color:var(--cyan)}
-.decks{display:grid; grid-template-columns:1fr 1fr; gap:9px; margin-bottom:12px}
-@media (min-width:620px){ .decks{grid-template-columns:repeat(4,1fr)} }
-.deck{display:flex; flex-direction:column; gap:3px; text-align:left;
-  background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
-  padding:13px 13px 12px; transition:border-color .12s, transform .08s}
-.deck:hover:not(:disabled){border-color:var(--rule-2)}
-.deck:active:not(:disabled){transform:scale(.985)}
-.deck:disabled{opacity:.42; cursor:not-allowed}
-.deck.on{border-color:var(--accent); background:var(--accent-soft)}
-.deck .v{font-family:var(--f-num); font-size:25px; font-weight:500; line-height:1.05;
-  font-variant-numeric:tabular-nums; letter-spacing:-.02em}
-.deck .t{font-size:12.5px; font-weight:600}
-.deck .d{font-size:11px; color:var(--ink-3); line-height:1.35}
-.deck.due .v{color:var(--due)} .deck.wrong .v{color:var(--bad)}
-.deck.new .v{color:var(--cyan)} .deck.star .v{color:var(--accent)}
-.deck.on .d,.deck.on .t{color:var(--accent-ink)}
 
-.gobar{display:flex; gap:9px; margin:14px 0 18px}
 .go{flex:1; background:var(--accent); color:var(--on-accent); border-radius:var(--r);
   padding:15px 20px; font-size:16px; font-weight:600; text-align:center}
 .go:hover{filter:brightness(1.07)}
@@ -698,96 +715,113 @@ function home(){
   const total = scoped().length;
   const counts = {}; DECKS.forEach(d => counts[d.k] = deckCount(d.k));
   const leech = deckCount('leech');
-  const ready = F.deck === 'all' ? total : counts[F.deck] || 0;
-  const nSubj = Object.keys(F.pick).length;
-  const nSec = Object.values(F.pick).reduce((a,b) => a + b.length, 0);
-  const scopeTxt = !nSubj ? 'Tüm dersler'
-    : nSubj + ' ders' + (nSec ? ' · ' + nSec + ' bölüm' : '');
-
-  // Hangi modüldeyiz? Tek modül seçiliyse onu öne çıkar.
+  const G = globalStat();
+  const cov = G.total ? Math.round(G.seen / G.total * 100) : 0;
   const solo = soloModule();
   const m = solo ? moduleStat(solo) : null;
-  const others = QS.filter(q => inToggles(q) && !matchPick(q));
-  const otherDue = others.filter(q => inDeck(q, 'due')).length;
-  const otherWrong = others.filter(q => inDeck(q, 'wrong')).length;
+  const ready = F.deck === 'all' ? total : counts[F.deck] || 0;
+  const firstRun = G.seen === 0;
 
-  let modCard;
-  if (m){
-    const doneAll = m.left === 0;
-    const pctSeen = m.total ? Math.round(m.seen / m.total * 100) : 0;
-    modCard =
-      '<div class="modcard' + (doneAll ? ' done' : '') + '">' +
-        '<div class="mtop"><span class="lbl">Şimdi çalıştığın modül</span>' +
-          '<button class="tbtn" id="mSwap" type="button">Başka modül</button></div>' +
-        '<div class="mname"><b>' + esc(m.code) + '</b> · ' + esc(m.name) + '</div>' +
-        '<div class="mbar"><i style="width:' + pctSeen + '%"></i></div>' +
-        '<div class="mfoot"><span class="num">' + m.seen + '</span> / ' +
-          '<span class="num">' + m.total + '</span> soru görüldü' +
-          (doneAll ? ' · <b style="color:var(--ok)">modülü bitirdin</b>'
-                   : ' · <span class="num">' + m.left + '</span> kaldı') + '</div>' +
+  const others = QS.filter(q => inToggles(q) && !matchPick(q));
+  const otherWait = others.filter(q => inDeck(q, 'due') || inDeck(q, 'wrong')).length;
+
+  // ── Kimlik satırı: tek satır, dokunulabilir ──
+  const idline =
+    '<button class="idline" id="topStat" type="button">' +
+      avatar(ME) + '<span class="nm">' + esc(ME) + '</span>' +
+      '<span class="sep"></span>' +
+      '<span class="stats">' +
+        '<span class="mini"><b class="num">' + nf(G.seen) + '</b>/' + nf(G.total) + '</span>' +
+        (G.pct !== null ? '<span class="mini"><b class="num">%' + G.pct + '</b> isabet</span>' : '') +
+        (G.streak ? '<span class="mini"><b class="num">' + G.streak + '</b> gün</span>' : '') +
+      '</span>' +
+      '<span class="chev">›</span>' +
+    '</button>';
+
+  // ── Kahraman kart: modül + tek birincil eylem ──
+  let hero;
+  if (firstRun && m){
+    hero =
+      '<div class="hero welcome">' +
+        '<div class="wtitle">Hoş geldin.</div>' +
+        '<p class="wtext"><b class="num">' + nf(G.total) + '</b> PPL sorusu, ' +
+          SUBJ.length + ' modül. Yanlış yaptığın soru kaydedilir ve ' +
+          'öğrenene kadar karşına çıkar.</p>' +
+        '<div class="wmod"><span class="lbl">İlk modülün</span>' +
+          '<div class="hname"><b>' + esc(m.code) + '</b> · ' + esc(m.name) + '</div>' +
+          '<div class="hsub"><span class="num">' + m.total + '</span> soru</div></div>' +
+        '<div class="hact">' +
+          '<button class="go" id="go">Başla</button>' +
+          '<button class="go2" id="mSwap" type="button">Başka modül</button>' +
+        '</div>' +
+      '</div>';
+  } else if (m){
+    const done = m.left === 0;
+    const pct = m.total ? Math.round(m.seen / m.total * 100) : 0;
+    hero =
+      '<div class="hero' + (done ? ' done' : '') + '">' +
+        '<div class="hrow">' + ringSvg(pct, done) +
+          '<div class="hinfo"><span class="lbl">Şimdi çalıştığın modül</span>' +
+            '<div class="hname"><b>' + esc(m.code) + '</b> · ' + esc(m.name) + '</div>' +
+            '<div class="hsub"><span class="num">' + m.seen + '</span> / ' +
+              '<span class="num">' + m.total + '</span> soru' +
+              (done ? ' · <b class="ok">modülü bitirdin</b>'
+                    : ' · <span class="num">' + m.left + '</span> kaldı') + '</div>' +
+          '</div></div>' +
+        '<div class="hact">' +
+          '<button class="go" id="go"' + (ready ? '' : ' disabled') + '>' +
+            (ready ? 'Başla · ' + (F.count ? Math.min(ready, F.count) : nf(ready)) + ' soru'
+                   : (done ? 'Bu modül bitti' : 'Bu destede soru yok')) + '</button>' +
+          '<button class="go2" id="mSwap" type="button">Değiştir</button>' +
+        '</div>' +
+        (done && openModules().length
+          ? '<button class="hnext" id="mNext" type="button">Sıradaki modüle geç ›</button>' : '') +
       '</div>';
   } else {
     const ks = Object.keys(F.pick);
-    modCard =
-      '<div class="modcard">' +
-        '<div class="mtop"><span class="lbl">Seçili kapsam</span>' +
-          '<button class="tbtn" id="mSwap" type="button">Modül seç</button></div>' +
-        '<div class="mname">' + (ks.length ? esc(ks.join(', ')) + ' — karma seçim'
-                                           : 'Tüm modüller') + '</div>' +
-        '<div class="mfoot"><span class="num">' + nf(total) + '</span> soru kapsamda</div>' +
+    hero =
+      '<div class="hero">' +
+        '<div class="hrow">' + ringSvg(cov, false) +
+          '<div class="hinfo"><span class="lbl">Seçili kapsam</span>' +
+            '<div class="hname">' + (ks.length ? esc(ks.join(', ')) + ' — karma seçim'
+                                               : 'Tüm modüller') + '</div>' +
+            '<div class="hsub"><span class="num">' + nf(total) + '</span> soru</div>' +
+          '</div></div>' +
+        '<div class="hact">' +
+          '<button class="go" id="go"' + (ready ? '' : ' disabled') + '>' +
+            (ready ? 'Başla · ' + (F.count ? Math.min(ready, F.count) : nf(ready)) + ' soru'
+                   : 'Bu destede soru yok') + '</button>' +
+          '<button class="go2" id="mSwap" type="button">Modül seç</button>' +
+        '</div>' +
       '</div>';
   }
 
-  const G = globalStat();
-  const cov = G.total ? Math.round(G.seen / G.total * 100) : 0;
-  const strip =
-    '<button class="topstat" id="topStat" type="button" title="Ayrıntılı durum">' +
-      '<div class="tsline">' + avatar(ME) + '<span class="who">' + esc(ME) + '</span>' +
-        '<span class="lbl">tüm PPL bankası</span><span class="chev">›</span></div>' +
-      '<div class="tsbar"><i style="width:' + cov + '%"></i></div>' +
-      '<div class="tsnums">' +
-        '<span><b class="num">' + nf(G.seen) + '</b> / ' + nf(G.total) + ' soru görüldü</span>' +
-        '<span><b class="num' + (G.pct === null ? '' : G.pct >= 75 ? ' ok' : G.pct < 50 ? ' bad' : '') +
-          '">' + (G.pct === null ? '—' : '%' + G.pct) + '</b> başarı</span>' +
-        (G.due ? '<span><b class="num due">' + G.due + '</b> tekrar zamanı</span>' : '') +
-        (G.wrong ? '<span><b class="num bad">' + G.wrong + '</b> yanlış defteri</span>' : '') +
-        (G.streak ? '<span><b class="num">' + G.streak + '</b> gün seri</span>' : '') +
-      '</div>' +
-    '</button>';
+  // ── Deste çipleri: sıfır olanlar gizli, yer kaplamıyor ──
+  const chips = DECKS.filter(d => counts[d.k] > 0)
+    .map(d => '<button class="dchip ' + d.cls + (F.deck === d.k ? ' on' : '') +
+      '" data-deck="' + d.k + '" type="button" title="' + d.d + '">' +
+      '<b class="num">' + counts[d.k] + '</b>' + d.t + '</button>').join('') +
+    (leech ? '<button class="dchip leech" data-deck="leech" type="button" ' +
+      'title="' + LEECH + ' kez ve üzeri yanlış yaptıkların">' +
+      '<b class="num">' + leech + '</b>Takıldıklarım</button>' : '') +
+    '<button class="dchip' + (F.deck === 'all' ? ' on' : '') + '" data-deck="all" ' +
+      'type="button" title="Deste süzgeci olmadan, kapsamdaki her soru">' +
+      '<b class="num">' + nf(total) + '</b>Tümü</button>';
 
   el('view').innerHTML =
-    strip +
-    '<h1>Ne çalışalım?</h1>' +
-    '<p class="sub">Modül modül ilerle. Bir modülü bitirince yenisine geçersin.</p>' +
-    modCard +
-
-    '<div class="decklbl"><span class="lbl">' +
-      (m ? esc(m.code) + ' modülünde' : 'Seçili kapsamda') + '</span></div>' +
-    '<div class="decks">' + DECKS.map(d =>
-      '<button class="deck ' + d.cls + (F.deck === d.k ? ' on' : '') + '" data-deck="' + d.k + '"' +
-      (counts[d.k] ? '' : ' disabled') + ' type="button"><span class="v">' + counts[d.k] + '</span>' +
-      '<span class="t">' + d.t + '</span><span class="d">' + d.d + '</span></button>').join('') +
-    '</div>' +
-
-    '<div class="gobar">' +
-      '<button class="go" id="go" type="button"' + (ready ? '' : ' disabled') + '>' +
-        (ready ? 'Başla · ' + (F.count ? Math.min(ready, F.count) : nf(ready)) + ' soru'
-               : (m && m.left === 0 ? 'Bu modül bitti' : 'Bu kapsamda soru yok')) + '</button>' +
-      '<button class="go2" id="goAll" type="button"' + (F.deck === 'all' ? ' disabled' : '') +
-        ' title="Deste süzgecini kaldır, modüldeki tüm sorular gelsin">Tüm sorular</button>' +
-    '</div>' +
-    (!ready && !(m && m.left === 0)
-      ? '<div class="tip">Bu deste bu kapsamda boş. <b>Tüm sorular</b>a bas ya da ' +
-        'Konular\'dan başka modül seç.</div>' : '') +
-    (m && m.left === 0 && openModules().length
-      ? '<button class="nextmod" id="mNext" type="button">Sıradaki modüle geç ›</button>' : '') +
-    ((otherDue + otherWrong)
-      ? '<button class="nextmod" id="mAll" type="button">Diğer modüllerde <b class="num">' +
-        (otherDue + otherWrong) + '</b> soru tekrar bekliyor — hepsini çöz ›</button>' : '') +
+    idline + hero +
+    (firstRun ? '' : '<div class="chiprow">' + chips + '</div>') +
+    (otherWait
+      ? '<button class="nextmod" id="mAll" type="button">Diğer modüllerde ' +
+        '<b class="num">' + otherWait + '</b> soru tekrar bekliyor ›</button>' : '') +
 
     '<details class="box" id="topicBox">' +
-      '<summary>Konular<span class="pill' + (nSubj ? '' : ' off') + '">' + scopeTxt + '</span>' +
-      '<span class="chev">›</span></summary><div class="in">' +
+      '<summary>Konular<span class="pill' + (Object.keys(F.pick).length ? '' : ' off') + '">' +
+      (!Object.keys(F.pick).length ? 'Tüm modüller'
+        : Object.keys(F.pick).length + ' modül' +
+          (Object.values(F.pick).reduce((a,b)=>a+b.length,0)
+            ? ' · ' + Object.values(F.pick).reduce((a,b)=>a+b.length,0) + ' bölüm' : '')) +
+      '</span><span class="chev">›</span></summary><div class="in">' +
         '<div class="tools">' +
           '<button class="tbtn" id="tAll" type="button">Hepsini seç</button>' +
           '<button class="tbtn" id="tNone" type="button">Temizle</button>' +
@@ -801,11 +835,11 @@ function home(){
           '<input type="search" id="q" placeholder="kelime ya da soru ID" value="' + esc(F.q) + '"></div>' +
         '<div class="grp"><span class="lbl">Kapsam</span><div id="sw"></div></div>' +
         '<div class="grp"><span class="lbl">Tur uzunluğu</span><div class="seg" id="cnt">' +
-          [[0,'Tümü'],[20,'20'],[50,'50'],[100,'100']].map(([v,t]) =>
+          [[0,'Tümü'],[20,'20'],[50,'50'],[100,'100']].map(([v,x]) =>
             '<button type="button" data-n="' + v + '" class="' + (F.count === v ? 'on' : '') +
-            '">' + t + '</button>').join('') + '</div>' +
-          '<div class="note">Tümü: kapsamdaki bütün sorular tek turda. ' +
-          'İstediğin an <b>Çık</b> ile bırakabilirsin, ilerlemen kayıtlı kalır.</div></div>' +
+            '">' + x + '</button>').join('') + '</div>' +
+          '<div class="note">Tümü: kapsamdaki bütün sorular tek turda. İstediğin an ' +
+          '<b>Turu bitir</b> dersin, ilerlemen kayıtlı kalır.</div></div>' +
         '<div class="grp"><span class="lbl">Mod</span><div class="seg" id="mode">' +
           '<button type="button" data-m="study" class="' + (F.mode === 'study' ? 'on' : '') + '">Çalışma</button>' +
           '<button type="button" data-m="exam" class="' + (F.mode === 'exam' ? 'on' : '') + '">Sınav</button>' +
@@ -820,14 +854,8 @@ function home(){
             : 'Tamamen karışık.') + '</div></div>' +
       '</div></details>' +
 
-    (leech ? '<button class="box" id="leechBtn" type="button" style="width:100%; text-align:left;' +
-      'padding:12px 14px; font-size:13px; color:var(--ink-2); border-left:2px solid var(--bad)">' +
-      '<b class="num" style="color:var(--bad)">' + leech + '</b> soruda takılıyorsun — ' +
-      'bunlara ayrı çalış ›</button>' : '') +
-
     '<div class="hint"><kbd>1</kbd>–<kbd>5</kbd> şık · <kbd>Enter</kbd> devam · <kbd>S</kbd> yıldız<br>' +
-      'Tur bitince yanlış yaptıkların tekrar sorulur. İlerleme bu tarayıcıda, ' +
-      '<b>' + esc(ME) + '</b> profilinde saklanır.</div>';
+      'Tur bitince yanlış yaptıkların tekrar sorulur.</div>';
 
   buildTree();
   el('sw').innerHTML = [
@@ -835,18 +863,17 @@ function home(){
     ['hideFig','Şekil gerekenleri gizle',    QS.filter(q => q[8]).length],
     ['gen',    'Ders notundan üretilmişler', QS.filter(q => q[7]).length],
     ['hideFlag','Tartışmalıları gizle',      QS.filter(q => q[5]).length],
-  ].map(([k,t,n]) => '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k +
-    '" type="button"><span class="knob"></span><span>' + t + '</span>' +
+  ].map(([k,x,n]) => '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k +
+    '" type="button"><span class="knob"></span><span>' + x + '</span>' +
     '<span class="n">' + n + '</span></button>').join('');
   el('sw').querySelectorAll('.switch').forEach(b =>
     b.onclick = () => { F[b.dataset.k] = !F[b.dataset.k]; savePref(); home(); openBox('optBox'); });
 
-  el('view').querySelectorAll('.deck').forEach(b => b.onclick = () => {
-    F.deck = F.deck === b.dataset.deck ? 'all' : b.dataset.deck; savePref(); home();
+  el('view').querySelectorAll('.dchip').forEach(b => b.onclick = () => {
+    F.deck = b.dataset.deck; savePref(); home();
   });
-  el('go').onclick = start;
-  el('goAll').onclick = () => { F.deck = 'all'; savePref(); home(); };
   el('topStat').onclick = openStats;
+  el('go').onclick = start;
   el('mSwap').onclick = () => {
     openBox('topicBox');
     el('topicBox').scrollIntoView({ behavior:'smooth', block:'start' });
@@ -854,25 +881,36 @@ function home(){
   const mn = el('mNext');
   if (mn) mn.onclick = () => { autoPickModule(); F.deck = 'new'; home(); };
   const ma = el('mAll');
-  if (ma) ma.onclick = () => { F.pick = {}; F.deck = 'due'; savePref();
-    if (!deckCount('due')) F.deck = 'wrong';
-    home(); };
-  const lb = el('leechBtn'); if (lb) lb.onclick = () => { F.deck = 'leech'; savePref(); start(); };
+  if (ma) ma.onclick = () => {
+    F.pick = {}; F.deck = deckCount('due') ? 'due' : 'wrong'; savePref(); home();
+  };
   el('cnt').querySelectorAll('button').forEach(b =>
     b.onclick = () => { F.count = +b.dataset.n; savePref(); home(); openBox('optBox'); });
   el('mode').querySelectorAll('button').forEach(b =>
     b.onclick = () => { F.mode = b.dataset.m; savePref(); home(); openBox('optBox'); });
   el('ord').querySelectorAll('button').forEach(b =>
     b.onclick = () => { F.order = b.dataset.o; savePref(); home(); openBox('optBox'); });
-  let t; el('q').oninput = e => {
-    clearTimeout(t);
-    t = setTimeout(() => {
+  let tm; el('q').oninput = e => {
+    clearTimeout(tm);
+    tm = setTimeout(() => {
       const pos = e.target.selectionStart;
       F.q = e.target.value.trim(); savePref(); home(); openBox('optBox');
-      const i = el('q'); i.focus(); i.setSelectionRange(pos, pos);
+      const i2 = el('q'); i2.focus(); i2.setSelectionRange(pos, pos);
     }, 260);
   };
 }
+
+/** İlerleme halkası — modül ne kadar tamamlandı. */
+function ringSvg(pct, done){
+  const r = 25, c = 2 * Math.PI * r;
+  return '<svg class="ring' + (done ? ' done' : '') + '" viewBox="0 0 60 60" ' +
+    'width="60" height="60" aria-hidden="true">' +
+    '<circle class="rbg" cx="30" cy="30" r="' + r + '"/>' +
+    '<circle class="rfg" cx="30" cy="30" r="' + r + '" style="stroke-dasharray:' + c +
+      ';stroke-dashoffset:' + (c * (1 - pct / 100)) + '"/>' +
+    '<text class="rtx" x="30" y="30">%' + pct + '</text></svg>';
+}
+
 function openBox(id){ const b = el(id); if (b) b.open = true; }
 
 // ── Konu ağacı (akordeon, varsayılan kapalı) ──
@@ -959,7 +997,8 @@ function draw(){
       ? '<div class="verdict ok"><span class="p">Doğru</span><span class="x">Bildin. ' +
         'Sonraki soru geliyor…<s>' + when(card(q[0])) + '</s></span></div>'
       : '<div class="verdict bad"><span class="p">Yanlış</span><span class="x">' +
-        'Doğru cevap: <b>' + esc(q[4][0]) + '</b><s>Bu turun sonunda tekrar sorulacak</s></span></div>';
+        'Doğru cevap yukarıda yeşil: <b>' + KEYS[R.order.indexOf(0)] + ' şıkkı</b>' +
+        '<s>Bu turun sonunda tekrar sorulacak</s></span></div>';
   }
 
   const last = R.i === R.list.length - 1 && !R.missed.length;
