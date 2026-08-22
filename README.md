@@ -296,7 +296,7 @@ indir/seç düğmeleri çıkar.
 
 ## Yayın
 
-**Canlı site: https://datavirtualizer.github.io/ppl-soru-bankasi/**
+**Canlı site: https://xmlparser.github.io/**
 
 GitHub Pages, `main` dalının `/docs` klasöründen yayımlar. `scripts/build_web.py` aynı
 dosyayı iki yere yazar:

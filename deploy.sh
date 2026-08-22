@@ -12,5 +12,5 @@ git add -A
 git commit -m "${1:-Soru bankası ve site güncellendi}"
 git push
 echo
-echo "Yayında: https://datavirtualizer.github.io/ppl-soru-bankasi/"
+echo "Yayında: https://xmlparser.github.io/"
 echo "(GitHub Pages yeniden derlemesi ~1 dakika sürer)"

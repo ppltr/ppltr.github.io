@@ -107,8 +107,12 @@ Değişiklikten sonra testleri çalıştır. Kritik davranışlar:
 
 ## Yayın ve kimlik
 
-Depo `datavirtualizer/ppl-soru-bankasi` altında herkese açık; site
-https://datavirtualizer.github.io/ppl-soru-bankasi/ adresinde yayında.
+Depo `xmlparser/xmlparser.github.io` altında herkese açık; site
+**https://xmlparser.github.io/** adresinde yayında.
+
+Adres bilerek kısa: org Pages deposu `<org>.github.io` adını taşıdığı için path boş
+kalıyor. Depo adını değiştirme — adres uzar. Deponun `eski-site-2020` dalında 2020'den
+kalma eski XML editor sitesi duruyor, silme.
 
 **Yayın otomatik:** Pages kaynağı GitHub Actions (`.github/workflows/pages.yml`).
 `web/template.html`, `atpl.db`, `scripts/build_web.py` ya da `notes/` değişip main'e
