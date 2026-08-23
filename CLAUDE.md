@@ -210,6 +210,15 @@ gecikmeli gönderir; Firestore yazma kotasını düşük tutar.
 Artifact'ta bulut çalışmaz (kum havuzu dış kaynağı engeller); `Cloud.init()` yakalar,
 `acik` false olur, kutu hiç çizilmez. Bu bilinçli — tek dosya iki yerde de çalışsın diye.
 
+**Google sağlayıcısını API'den açmaya çalışma, yolu yok.** Denendi: Identity Platform
+`initializeAuth` faturalandırma istiyor (o ücretli GCIP), `admin/v2/.../config` PATCH/POST
+yapılandırma yokken 404 veriyor, IdP oluşturma `client_id` istiyor ve OAuth istemcisi
+üreten genel bir API yok. Konsoldaki **Get started → Google → Enable** tıklaması bu
+istemciyi üretiyor; tek elle adım budur. Ondan **sonra** izinli alan listesi
+`admin/v2/.../config?updateMask=authorizedDomains` ile güncellenebiliyor ve betik bunu
+kendisi yapıyor. `CONFIGURATION_NOT_FOUND` hatası "API anahtarı bozuk" demek değildir,
+"projede Authentication hiç açılmamış" demektir.
+
 ## Sunucu (isteğe bağlı)
 
 Çok cihazlı senkron isteyene FastAPI sürümü duruyor; günlük kullanım için gerekli değil.

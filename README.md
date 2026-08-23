@@ -309,8 +309,9 @@ npm i -g firebase-tools        # bir kez
 ```
 
 Betik şunları yapar: oturumu kontrol eder, projeyi açar/seçer, web uygulaması oluşturur,
-`web/firebase-config.json` dosyasını yazar, Firestore veritabanını açar ve
-`firestore.rules` dosyasını yayımlar. Var olan bir projeyi kullanmak için:
+`web/firebase-config.json` dosyasını yazar, Firestore veritabanını açar,
+`firestore.rules` dosyasını yayımlar ve sitenin adresini izinli alanlara ekler. Var olan
+bir projeyi kullanmak için:
 
 ```bash
 ./scripts/setup_firebase.sh <proje-id>
@@ -318,17 +319,23 @@ Betik şunları yapar: oturumu kontrol eder, projeyi açar/seçer, web uygulamas
 
 Yeniden çalıştırmak güvenlidir; var olanı bulur, üstüne yazmaz.
 
-### Konsoldan yapılacak iki adım
+### Konsoldan yapılacak tek adım
 
-CLI bu ikisini yapamıyor, bir kez elle açman gerekir:
+**Google girişini açmak CLI'den yapılamıyor.** Firebase bu sırada projeye bir OAuth
+istemcisi üretiyor ve bunun için tarayıcıda destek e-postası seçmen gerekiyor; bunu
+yapan bir genel API yok. Bir kez:
 
-1. **Google girişini aç** — Firebase konsolu → Authentication → Sign-in method →
-   Google → Enable → Save
-2. **Adresi izinli alanlara ekle** — Authentication → Settings → Authorized domains →
-   `ppltr.github.io` ekle (`localhost` zaten ekli)
+> Firebase konsolu → Authentication → **Get started** → Google → **Enable** →
+> *Public-facing name* ve *Support email* doldur → **Save**
 
-Bu adımlar atlanırsa uygulama giriş denemesinde ne yapılacağını yazar:
-"Google girişi Firebase konsolunda açık değil" ya da "Bu adres Firebase'de izinli değil".
+Sonra betiği tekrar çalıştır — izinli alanı (`ppltr.github.io`) artık kendisi ekler:
+
+```bash
+./scripts/setup_firebase.sh <proje-id>
+```
+
+Adım atlanırsa uygulama giriş denemesinde ne yapılacağını yazar: "Google girişi Firebase
+konsolunda açık değil" ya da "Bu adres Firebase'de izinli değil".
 
 Sonra yapılandırmayı sayfaya göm ve yayına al:
 

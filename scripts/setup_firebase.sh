@@ -109,23 +109,52 @@ firebase deploy --only firestore:rules --project "$PROJE" \
   && tamam "kurallar yayında" \
   || uyar "kurallar yayımlanamadı — Firestore açıldıktan sonra tekrar dene"
 
-# ── Elle yapılacaklar ───────────────────────────────────────────────
-cat <<SON
+# ── İzinli alan ─────────────────────────────────────────────────────
+# Authentication bir kez konsoldan açıldıktan sonra izinli alan listesi admin
+# API'siyle güncellenebiliyor. CLI'nin kendi oturum belirteci kullanılır.
+adim "İzinli alanlar"
+SITE="${SITE_ALAN:-ppltr.github.io}"
+TOKEN="$(python3 -c "import json,pathlib;p=pathlib.Path.home()/'.config/configstore/firebase-tools.json';print(json.loads(p.read_text())['tokens']['access_token'] if p.exists() else '')" 2>/dev/null)"
 
-$KALIN── Konsoldan yapılacak iki adım ──$BITIR
-CLI bu ikisini yapamıyor, bir kez elle açman gerekiyor:
+AUTH_HAZIR=0
+if [ -z "$TOKEN" ]; then
+  uyar "CLI belirteci okunamadı — izinli alanı konsoldan ekle"
+else
+  CFG="$(curl -s "https://identitytoolkit.googleapis.com/admin/v2/projects/$PROJE/config" -H "Authorization: Bearer $TOKEN")"
+  if printf '%s' "$CFG" | grep -q CONFIGURATION_NOT_FOUND; then
+    uyar "Authentication henüz açılmamış — aşağıdaki adımı yapıp betiği tekrar çalıştır"
+  else
+    AUTH_HAZIR=1
+    YENI="$(printf '%s' "$CFG" | SITE="$SITE" python3 -c "
+import json, os, re, sys
+d = json.loads(re.sub(r'[\\x00-\\x1f]', ' ', sys.stdin.read()))
+a = d.get('authorizedDomains', [])
+s = os.environ['SITE']
+if s not in a: a.append(s)
+print(json.dumps({'authorizedDomains': a}))
+")"
+    if curl -s -o /dev/null -X PATCH \
+      "https://identitytoolkit.googleapis.com/admin/v2/projects/$PROJE/config?updateMask=authorizedDomains" \
+      -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" -d "$YENI"; then
+      tamam "$SITE izinli alanlarda"
+    else
+      uyar "izinli alan eklenemedi — konsoldan ekle"
+    fi
+  fi
+fi
 
-  1) Google ile girişi aç
-     https://console.firebase.google.com/project/$PROJE/authentication/providers
-     Authentication → Sign-in method → Google → Enable → Save
-
-  2) Sitenin adresini izinli alanlara ekle
-     https://console.firebase.google.com/project/$PROJE/authentication/settings
-     Authorized domains → Add domain → ppltr.github.io
-     (localhost zaten ekli, yerelde denemek için yeterli)
-
-Sonra:
-  python3 scripts/build_web.py     # yapılandırmayı sayfaya göm
-  ./deploy.sh "Google girişi"      # yayına al
-
-SON
+# ── Kapanış ─────────────────────────────────────────────────────────
+if [ "$AUTH_HAZIR" = "1" ]; then
+  printf "\n%s── Kurulum tamam ──%s\n" "$KALIN" "$BITIR"
+  printf "  python3 scripts/build_web.py     # \"bulut açık\" yazmalı\n"
+  printf "  ./deploy.sh \"Google girişi\"      # yayına al\n\n"
+else
+  printf "\n%s── Konsoldan yapılacak tek adım ──%s\n" "$KALIN" "$BITIR"
+  printf "Google girişini açmak CLI'den yapılamıyor: Firebase bu sırada projeye bir\n"
+  printf "OAuth istemcisi üretiyor ve bunun için destek e-postası seçmen gerekiyor.\n\n"
+  printf "  https://console.firebase.google.com/project/%s/authentication/providers\n\n" "$PROJE"
+  printf "  Authentication → Get started → Google → Enable\n"
+  printf "  → Public-facing name ve Support email doldur → Save\n\n"
+  printf "Sonra betiği tekrar çalıştır; izinli alanı ve gerisini kendisi halleder:\n\n"
+  printf "  ./scripts/setup_firebase.sh %s\n\n" "$PROJE"
+fi
