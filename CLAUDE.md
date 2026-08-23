@@ -79,6 +79,21 @@ modül/bölüm **adına** dokunmak (`data-solo`) seçimi tek başına ona alır 
 kapatır (dropdown gibi), **kutucuğa** (`data-s`) dokunmak çoklu seçim yapar ve seçici
 açık kalır. `pickOpen` durumu `home()` yeniden çizimleri arasında korunur.
 
+**Geçilen sınavlar.** `S.passed` profil bazında geçilen ders kodlarını tutar. Geçilen
+ders kapsamdan tümüyle çıkar: `inScope` ve `inToggles` `notPassed(q)` ile eler, dolayısıyla
+toplam sayı, deste sayaçları, konu seçici, `openModules`/`autoPickModule` ve turlar
+otomatik olarak dışlar. İşaretleme Durum panelindeki **Geçtiğim sınavlar** çip listesinden
+yapılır; konu seçicideki `#tPass` düğmesi oraya götürür. `inToggles(q, withPassed)` ikinci
+parametreyle geçilenleri de sayar — yalnız o listenin kendi sayıları için kullanılır.
+
+> `inToggles`/`inScope` gibi ikinci parametre alan yüklemleri `filter()`'a **çıplak verme**;
+> `Array.filter` ikinci argüman olarak indeksi geçirir ve süzgeç sessizce devre dışı kalır.
+> Her zaman `filter(q => inToggles(q))` yaz.
+
+Geçilen ders seçili kapsamdaysa `togglePassed` onu düşürür ve `autoPickModule()` ile yeni
+modüle geçer. Hepsi geçilirse ana ekran "Hepsini geçtin" boş durumuna düşer — o durumda
+`#mPick` ve `#tree` çizilmez, `buildTree` erken döner.
+
 **Turlar kalıcıdır.** Her `start()` bir kayıt açar (`S.runs`, en yeni başta, `RUN_MAX`
 tane tutulur). Her cevapta ve her soru geçişinde `saveRun()` çalışır; sekme gizlenince
 `flush()` bekleyen yazmayı hemen diske indirir. Açılışta `S.runs[0]` bitmemişse uygulama

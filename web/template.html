@@ -265,6 +265,30 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .node.sel > .row{background:var(--accent-soft)}
 .node.sel > .row .nm{color:var(--accent-ink)}
 
+/* Geçilen ders satırı */
+.tbl tr.passed td{opacity:.55}
+.pflag{display:inline-block; font-family:var(--f-num); font-size:9.5px; font-weight:500;
+  letter-spacing:.06em; text-transform:uppercase; padding:1px 5px; border-radius:99px;
+  background:var(--accent-soft); color:var(--accent-ink); vertical-align:middle}
+
+/* Geçilen sınav çipleri */
+.pchips{display:flex; flex-direction:column; gap:6px}
+.pchip{display:flex; align-items:center; gap:9px; width:100%; text-align:left;
+  padding:9px 11px; background:var(--surface-2); border:1px solid var(--rule);
+  border-radius:var(--r); font-size:13.5px; transition:border-color .12s, background .12s}
+.pchip:hover{border-color:var(--rule-2)}
+.pchip .tk{flex:none; width:19px; height:19px; border-radius:5px;
+  border:1.5px solid var(--rule-2); display:grid; place-items:center;
+  font-size:11px; line-height:1; color:transparent}
+.pchip .tk::after{content:'✓'}
+.pchip b{flex:none; font-family:var(--f-num); font-weight:500; color:var(--ink-2)}
+.pchip .nm{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.pchip .num{flex:none; font-style:normal; font-size:11.5px; color:var(--ink-3)}
+.pchip.on{background:var(--accent-soft); border-color:var(--accent)}
+.pchip.on b, .pchip.on .nm{color:var(--accent-ink)}
+.pchip.on .num{color:var(--accent-ink); opacity:.7}
+.pchip.on .tk{background:var(--accent); border-color:var(--accent); color:var(--surface)}
+
 .switch{display:flex; align-items:center; gap:10px; padding:9px 11px; width:100%;
   background:var(--surface-2); border:1px solid var(--rule); border-radius:var(--r);
   text-align:left; font-size:13px; font-weight:500; color:var(--ink-2); margin-bottom:6px}
@@ -556,7 +580,7 @@ let ME = ls.get('atpl.profile') || PROFILES[0];
 if (!PROFILES.includes(ME)) ME = PROFILES[0];
 const keyOf = p => 'atpl.v2:' + p;
 
-const blank = () => ({ v:2, c:{}, star:[], day:{}, pref:{}, runs:[] });
+const blank = () => ({ v:2, c:{}, star:[], day:{}, pref:{}, runs:[], passed:[] });
 let S = blank();
 function loadProfile(){
   S = blank();
@@ -564,6 +588,7 @@ function loadProfile(){
   if (!raw && ME === PROFILES[0]) raw = ls.get('atpl.v2');   // eski tek profilli kayıt
   try{ const p = JSON.parse(raw || 'null'); if (p && p.v === 2) S = Object.assign(blank(), p); }catch(e){}
   if (!Array.isArray(S.runs)) S.runs = [];
+  if (!Array.isArray(S.passed)) S.passed = [];
   Object.assign(F, DEFAULTS, S.pref || {});
   delete F.hideFig;                       // süzgeç kaldırıldı, eski kayıt taşımasın
   if (S.pref) delete S.pref.hideFig;
@@ -625,6 +650,31 @@ function grade(id, ok){
 
 // Konu seçimi:  F.pick = { "050": [] }  boş dizi = dersin tamamı
 function pickedAny(){ return Object.keys(F.pick).length > 0; }
+// ── Geçilen sınavlar ────────────────────────────────────────────────
+// Geçtiğin dersin soruları kapsamdan tümüyle çıkar: toplam sayıda, konu
+// seçicide, destelerde ve turlarda görünmez. Kayıt profile bağlıdır.
+function isPassed(code){ return (S.passed || []).indexOf(code) >= 0; }
+const notPassed = q => !isPassed(SUBJ[q[1]].c);
+let passDirty = false;
+
+function togglePassed(code){
+  S.passed = S.passed || [];
+  const i = S.passed.indexOf(code);
+  if (i < 0) S.passed.push(code); else S.passed.splice(i, 1);
+  // Geçilen ders seçili kapsamdaysa düşür; kapsam boş kalırsa yeni modül seç
+  if (i < 0 && F.pick[code]) delete F.pick[code];
+  if (!Object.keys(F.pick).length) autoPickModule();
+  savePref();
+  passDirty = true;
+  save();
+}
+/** Tur kaydının ait olduğu modül kodu (eski kayıtlarda başlıktan okunur). */
+function runCode(r){
+  if (r.code !== undefined) return r.code;
+  const m = /^(\S+) · /.exec(r.title || '');
+  return m ? m[1] : '';
+}
+
 function matchPick(q){
   if (!pickedAny()) return true;
   const s = SUBJ[q[1]];
@@ -633,6 +683,7 @@ function matchPick(q){
   return sel.length === 0 || sel.includes(s.sec[q[2]][0]);
 }
 function inScope(q){
+  if (!notPassed(q)) return false;
   if (F.hideDup && q[6]) return false;
   if (!F.gen && q[7]) return false;
   if (F.hideFlag && q[5]) return false;
@@ -644,7 +695,8 @@ function inScope(q){
   return true;
 }
 // Konu ağacındaki sayılar seçimden bağımsız, diğer anahtarlara bağlıdır
-function inToggles(q){
+function inToggles(q, withPassed){
+  if (!withPassed && !notPassed(q)) return false;
   return !(F.hideDup && q[6]) && (F.gen || !q[7]) && !(F.hideFlag && q[5]);
 }
 
@@ -670,7 +722,7 @@ const deckCount = d => scoped().filter(q => inDeck(q, d)).length;
 
 /** Profilin tümüne ait durum — modül seçiminden bağımsız. */
 function globalStat(){
-  const all = QS.filter(inToggles);
+  const all = QS.filter(q => inToggles(q));
   let seen = 0, ans = 0, ok = 0;
   all.forEach(q => {
     const k = S.c[q[0]];
@@ -696,9 +748,9 @@ function globalStat(){
 }
 
 /** Bir modülün (dersin) durumu: toplam, görülen, kalan. */
-function moduleStat(code){
+function moduleStat(code, raw){
   const si = SUBJ.findIndex(x => x.c === code);
-  const all = QS.filter(q => q[1] === si && inToggles(q));
+  const all = QS.filter(q => q[1] === si && inToggles(q, raw));
   const seen = all.filter(q => card(q[0])).length;
   return { code, name: SUBJ[si].n, total: all.length, seen, left: all.length - seen };
 }
@@ -760,7 +812,9 @@ function scopeTitle(){
   }
   return ks.length + ' modül';
 }
-function openRun(){ return S.runs.find(r => !r.done) || null; }
+function openRun(){
+  return S.runs.find(r => !r.done && !isPassed(runCode(r))) || null;
+}
 function runRec(){ return R ? S.runs.find(r => r.id === R.id) : null; }
 
 /** Tur durumunu kayda geçir — sayfa kapansa da kaldığı yerden açılsın. */
@@ -780,7 +834,8 @@ function start(){
   S.runs = S.runs.filter(r => r.done || (r.log || []).length);   // boş bırakılanları at
   const id = 'r' + Date.now();
   R = { id, list, i:0, order:null, picked:null, log:[], t0:Date.now(), round:1, missed:[] };
-  S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle(), deck:deckName(),
+  S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle(), code:soloModule() || '',
+                   deck:deckName(),
                    n0:list.length, ids:list.map(q => q[0]), i:0, round:1,
                    missed:[], log:[], done:false });
   if (S.runs.length > RUN_MAX) S.runs.length = RUN_MAX;
@@ -843,6 +898,8 @@ function home(){
   const m = solo ? moduleStat(solo) : null;
   const ready = F.deck === 'all' ? total : counts[F.deck] || 0;
   const firstRun = G.seen === 0;
+  // Bütün dersler geçildi işaretlendiyse kapsamda soru kalmaz
+  const allPassed = G.total === 0 && (S.passed || []).length > 0;
 
   const others = QS.filter(q => inToggles(q) && !matchPick(q));
   const otherWait = others.filter(q => inDeck(q, 'due') || inDeck(q, 'wrong')).length;
@@ -862,12 +919,21 @@ function home(){
 
   // ── Kahraman kart: modül + tek birincil eylem ──
   let hero;
-  if (firstRun && m){
+  if (allPassed){
+    hero =
+      '<div class="hero welcome">' +
+        '<div class="wtitle">Hepsini geçtin.</div>' +
+        '<p class="wtext">Bütün dersleri geçildi olarak işaretledin, kapsamda soru kalmadı. ' +
+          'Birini geri almak istersen listeden çıkar.</p>' +
+        '<div class="hact"><button class="go" id="go">Geçtiğim sınavlar</button></div>' +
+      '</div>';
+  } else if (firstRun && m){
     hero =
       '<div class="hero welcome">' +
         '<div class="wtitle">Hoş geldin.</div>' +
         '<p class="wtext"><b class="num">' + nf(G.total) + '</b> soru, ' +
-          SUBJ.length + ' modül. Yanlış yaptığın soru kaydedilir ve ' +
+          SUBJ.filter(s => !isPassed(s.c) && moduleStat(s.c).total).length +
+          ' modül. Yanlış yaptığın soru kaydedilir ve ' +
           'öğrenene kadar karşına çıkar.</p>' +
         modPick('İlk modülün',
           '<b>' + esc(m.code) + '</b> · ' + esc(m.name),
@@ -936,7 +1002,7 @@ function home(){
 
   el('view').innerHTML =
     idline + resume + hero +
-    (firstRun ? '' : '<div class="chiprow">' + chips + '</div>') +
+    (firstRun || allPassed ? '' : '<div class="chiprow">' + chips + '</div>') +
     (otherWait
       ? '<button class="nextmod" id="mAll" type="button">Diğer modüllerde ' +
         '<b class="num">' + otherWait + '</b> soru tekrar bekliyor ›</button>' : '') +
@@ -984,9 +1050,9 @@ function home(){
 
   buildTree();
   el('sw').innerHTML = [
-    ['hideDup','Tekrar eden soruları gizle', QS.filter(q => q[6]).length],
-    ['gen',    'Ders notundan üretilmişler', QS.filter(q => q[7]).length],
-    ['hideFlag','Tartışmalıları gizle',      QS.filter(q => q[5]).length],
+    ['hideDup','Tekrar eden soruları gizle', QS.filter(q => q[6] && notPassed(q)).length],
+    ['gen',    'Ders notundan üretilmişler', QS.filter(q => q[7] && notPassed(q)).length],
+    ['hideFlag','Tartışmalıları gizle',      QS.filter(q => q[5] && notPassed(q)).length],
   ].map(([k,x,n]) => '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k +
     '" type="button"><span class="knob"></span><span>' + x + '</span>' +
     '<span class="n">' + n + '</span></button>').join('');
@@ -1006,8 +1072,11 @@ function home(){
   });
   const hc = el('hClr');
   if (hc) hc.onclick = () => { S.runs = S.runs.filter(r => !r.done); save(); home(); };
-  el('go').onclick = start;
-  el('mPick').onclick = () => { pickOpen = !pickOpen; paintPicker(); };
+  el('go').onclick = allPassed
+    ? () => { openStats(); const h = el('passHead');
+              if (h) h.scrollIntoView({ block:'start' }); }
+    : start;
+  if (!allPassed) el('mPick').onclick = () => { pickOpen = !pickOpen; paintPicker(); };
   paintPicker();
   const mn = el('mNext');
   if (mn) mn.onclick = () => { autoPickModule(); F.deck = 'new'; home(); };
@@ -1045,6 +1114,9 @@ function modPick(label, name, sub, ring){
       '<span class="chev">›</span></button>' +
     '<div class="picker" id="picker"' + (pickOpen ? '' : ' hidden') + '>' +
       '<div class="tools"><button class="tbtn" id="tAll" type="button">Tüm modüller</button>' +
+        '<button class="tbtn" id="tPass" type="button">' +
+          ((S.passed || []).length ? (S.passed.length + ' ders geçildi') : 'Geçtiğim sınavlar') +
+        '</button>' +
       '</div><div class="tree" id="tree"></div></div>';
 }
 function paintPicker(){
@@ -1099,6 +1171,7 @@ function openBox(id){ const b = el(id); if (b) b.open = true; }
 let expanded = {}, pickOpen = false;
 function buildTree(){
   const t = el('tree');
+  if (!t) return;                 // hepsi geçildiyse seçici çizilmez
   t.innerHTML = SUBJ.map((s, si) => {
     const qs = QS.filter(q => q[1] === si && inToggles(q));
     if (!qs.length) return '';
@@ -1141,6 +1214,12 @@ function buildTree(){
   });
   const ta = el('tAll');
   if (ta) ta.onclick = () => { F.pick = {}; savePref(); pickOpen = true; home(); };
+  const tp = el('tPass');
+  if (tp) tp.onclick = () => {
+    openStats();
+    const h = el('passHead');
+    if (h) h.scrollIntoView({ block:'start', behavior:'smooth' });
+  };
 }
 function toggleSubject(code){
   if (F.pick[code]) delete F.pick[code];
@@ -1331,6 +1410,9 @@ function openStats(){
   Object.keys(S.c).forEach(id => { const k = S.c[id]; tot += k[2]; wrong += k[3]; seen++; });
   const pct = tot ? Math.round((tot - wrong) / tot * 100) : null;
   const dueN = deckCount('due'), wrongN = deckCount('wrong'), leech = deckCount('leech');
+  // Kapsam sayacı: geçilen dersler hem payda hem payda dışında
+  const scopedIds = new Set(QS.filter(q => !q[6] && notPassed(q)).map(q => q[0]));
+  const seenScoped = Object.keys(S.c).filter(id => scopedIds.has(+id)).length;
 
   const per = SUBJ.map((s, si) => {
     const qs = QS.filter(q => q[1] === si && !q[6]);
@@ -1381,17 +1463,33 @@ function openStats(){
     '<div class="lbl" style="margin-bottom:7px">Son 45 gün</div>' +
     '<div class="heat">' + days.map(d => '<i class="' + lvl(d[1]) + '" title="' + d[0] +
       ' · ' + d[1] + ' soru"></i>').join('') + '</div>' +
-    '<div class="note" style="margin-bottom:16px">Gördüğün soru: <b>' + seen + '</b> / ' +
-      nf(QS.filter(q => !q[6]).length) + '</div>' +
+    '<div class="note" style="margin-bottom:16px">Gördüğün soru: <b>' + seenScoped +
+      '</b> / ' + nf(scopedIds.size) +
+      ((S.passed || []).length ? ' <span class="lbl">(geçtiklerin hariç)</span>' : '') +
+      '</div>' +
 
     '<div class="lbl" style="margin-bottom:7px">Ders bazında</div>' +
     '<table class="tbl"><thead><tr><th>Ders</th><th class="n">Başarı</th><th style="width:28%"></th>' +
       '<th class="n">Kapsam</th></tr></thead><tbody>' +
-      per.map(p => '<tr><td><b>' + p.c + '</b></td><td class="n">' +
+      per.map(p => '<tr' + (isPassed(p.c) ? ' class="passed"' : '') + '><td><b>' + p.c +
+        '</b>' + (isPassed(p.c) ? ' <span class="pflag">geçildi</span>' : '') +
+        '</td><td class="n">' +
         (p.pct === null ? '—' : '%'+p.pct) + '</td><td><div class="bar2"><i class="' +
         (p.pct === null ? '' : p.pct >= 75 ? 'ok' : p.pct < 50 ? 'bad' : '') + '" style="width:' +
         (p.pct || 0) + '%"></i></div></td><td class="n">' + p.uniq + '/' + p.bank + '</td></tr>').join('') +
     '</tbody></table>' +
+
+    '<div class="lbl" id="passHead" style="margin:18px 0 7px">Geçtiğim sınavlar</div>' +
+    '<div class="note" style="margin-bottom:9px">İşaretlediğin ders toplam soru sayısından, ' +
+      'konu listesinden ve turlardan çıkar. İstediğin an geri alırsın.</div>' +
+    '<div class="pchips">' + SUBJ.map(s => {
+      const m = moduleStat(s.c, true);
+      return '<button class="pchip' + (isPassed(s.c) ? ' on' : '') + '" data-pass="' + s.c +
+        '" type="button" aria-pressed="' + (isPassed(s.c) ? 'true' : 'false') + '">' +
+        '<span class="tk"></span><b>' + s.c + '</b><span class="nm">' + esc(s.n) + '</span>' +
+        '<i class="num">' + m.total + '</i></button>';
+    }).join('') + '</div>' +
+    '<div class="note" id="passSum" style="margin-top:8px"></div>' +
 
     (secs.length ? '<div class="lbl" style="margin:16px 0 7px">En zayıf bölümlerin</div>' +
       '<table class="tbl"><tbody>' + secs.slice(0,8).map(s =>
@@ -1429,6 +1527,23 @@ function openStats(){
   const ps = el('prof'); if (ps) ps.onchange = e => switchProfile(e.target.value);
   const gl = el('goLeech');
   if (gl) gl.onclick = () => { closeSheet(); F.deck = 'leech'; savePref(); start(); };
+
+  // Geçilen sınav çipleri — panel yeniden çizilmez, dokunuş anında yansır
+  const passSum = () => {
+    const on = (S.passed || []).length;
+    const kalan = QS.filter(q => inToggles(q)).length;
+    el('passSum').innerHTML = on
+      ? '<b>' + on + '</b> ders geçildi · kapsamda kalan <b>' + nf(kalan) + '</b> soru'
+      : 'Henüz işaretlemedin — bütün dersler kapsamda.';
+  };
+  el('sheetBody').querySelectorAll('[data-pass]').forEach(b => b.onclick = () => {
+    togglePassed(b.dataset.pass);
+    const on = isPassed(b.dataset.pass);
+    b.classList.toggle('on', on);
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    passSum();
+  });
+  passSum();
 
   const bak = el('bak'); bak.value = JSON.stringify(S);
   el('copy').onclick = async () => {
@@ -1580,7 +1695,11 @@ function md(src){
   return out.join('');
 }
 
-function closeSheet(){ el('sheet').classList.remove('on'); }
+function closeSheet(){
+  el('sheet').classList.remove('on');
+  // Geçilen sınav listesi değiştiyse ana ekranı tazele (tur sürüyorsa dokunma)
+  if (passDirty){ passDirty = false; if (!R) home(); }
+}
 
 // ── Olaylar ──
 const th = ls.get('atpl.theme');
