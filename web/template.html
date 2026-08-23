@@ -103,6 +103,9 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .idline .chev{flex:none; color:var(--ink-3); font-family:var(--f-num); font-size:13px}
 .idline:hover .chev{color:var(--accent)}
 .idline .stats{display:flex; align-items:center; gap:10px; min-width:0}
+.csync{flex:none; width:7px; height:7px; border-radius:50%; background:var(--ok)}
+.csync.wait{background:var(--accent)}
+.csync.err{background:var(--bad)}
 @media (max-width:430px){
   .idline{display:grid; grid-template-columns:auto minmax(0,1fr) auto;
     column-gap:10px; row-gap:1px; border-radius:16px; padding:9px 13px}
@@ -665,7 +668,8 @@ const FB_SDK = 'https://www.gstatic.com/firebasejs/12.9.0/';
 
 const Cloud = {
   acik: !!(FBCONF && FBCONF.apiKey),
-  sdk: null, user: null, durum: '', mesgul: false, sonEs: 0, pT: null,
+  sdk: null, user: null, durum: '', mesgul: false,
+  sonEs: 0, sonCek: 0, kirli: false, pT: null,
 
   async yukle(){
     if (this.sdk) return this.sdk;
@@ -736,21 +740,31 @@ const Cloud = {
 
   async cikisYap(){
     try{
+      if (this.kirli){ try{ await this.gonder(); }catch(e){} }
       const s = await this.yukle();
       await s.b.signOut(s.auth);
-      this.sonEs = 0;
+      this.sonEs = 0; this.kirli = false;
     }catch(e){ this.durum = 'Çıkış yapılamadı.'; paintCloud(); }
   },
 
   ref(s, ad){
     return s.c.doc(s.db, 'users', this.user.uid, 'profiles', encodeURIComponent(ad));
   },
-  async gonder(){
+  /** Profil adı ve verisi dışarıdan verilebilir — profil değiştirirken
+   *  eskisini, ad değiştirirken yenisini yollamak için gerekiyor. */
+  async gonder(ad, veri){
+    if (!this.user) return;
+    const isim = ad || ME;
+    const s = await this.yukle();
+    await s.c.setDoc(this.ref(s, isim),
+      { name: isim, data: veri || JSON.stringify(S), updated: Date.now(), v: 2 });
+    this.sonEs = Date.now();
+    this.kirli = false;
+  },
+  async sil(ad){
     if (!this.user) return;
     const s = await this.yukle();
-    await s.c.setDoc(this.ref(s, ME),
-      { name: ME, data: JSON.stringify(S), updated: Date.now(), v: 2 });
-    this.sonEs = Date.now();
+    await s.c.deleteDoc(this.ref(s, ad));
   },
   async cek(){
     if (!this.user) return 0;
@@ -762,6 +776,7 @@ const Cloud = {
       const v = d.data();
       if (v && typeof v.data === 'string' && v.name && mergeProfile(v.name, v.data)) k++;
     });
+    this.sonCek = Date.now();
     return k;
   },
 
@@ -787,8 +802,29 @@ const Cloud = {
   /** Kaydın ardından buluta gönderimi geciktirir; yazma sayısını düşük tutar. */
   schedule(){
     if (!this.user) return;
+    this.kirli = true;
     clearTimeout(this.pT);
-    this.pT = setTimeout(() => { this.gonder().then(paintCloud, () => {}); }, 4000);
+    this.pT = setTimeout(() => this.gonderGuvenli(), 4000);
+  },
+  async gonderGuvenli(){
+    if (!this.user || this.mesgul) return;
+    try{ await this.gonder(); this.durum = ''; }
+    catch(e){ this.durum = 'Gönderilemedi — bağlantı gelince tekrar denenecek.'; }
+    paintCloud();
+  },
+  /** Sekme kapanırken/gizlenirken bekleyeni hemen yolla; 4 sn'lik pencerede
+   *  verilen son cevaplar kaybolmasın. */
+  simdiGonder(){
+    if (!this.user || !this.kirli) return;
+    clearTimeout(this.pT);
+    this.gonder().catch(() => {});
+  },
+  /** Sekmeye dönüldüğünde başka cihazdaki ilerlemeyi al. Tur ortasında
+   *  karıştırmamak için sadece ana ekrandayken çalışır. */
+  async donusteCek(){
+    if (!this.user || this.mesgul || R) return;
+    if (Date.now() - this.sonCek < 30000) return;
+    await this.esitle(true);
   },
 };
 
@@ -798,12 +834,20 @@ function flushLocal(){
   ls.set(keyOf(ME), JSON.stringify(S));
 }
 function flush(){ flushLocal(); Cloud.schedule(); }
-addEventListener('pagehide', flush);
-addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flush(); });
+addEventListener('pagehide', () => { flushLocal(); Cloud.simdiGonder(); });
+addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden'){ flushLocal(); Cloud.simdiGonder(); }
+  else Cloud.donusteCek();
+});
+addEventListener('online', () => { if (Cloud.kirli) Cloud.gonderGuvenli(); });
 function renameProfile(oldN, newN){
   const data = ls.get(keyOf(oldN));
   ls.set(keyOf(newN), data || JSON.stringify(S));
   ls.del(keyOf(oldN));
+  if (Cloud.user){                            // bulutta da adı taşı
+    Cloud.gonder(newN, data || JSON.stringify(S))
+      .then(() => Cloud.sil(oldN)).catch(() => {});
+  }
   PROFILES = PROFILES.map(x => x === oldN ? newN : x);
   ls.set('atpl.profiles', JSON.stringify(PROFILES));
   ME = newN; ls.set('atpl.profile', ME);
@@ -812,9 +856,12 @@ function renameProfile(oldN, newN){
 
 function switchProfile(name){
   ls.set(keyOf(ME), JSON.stringify(S));
+  // Eski profili buluta yolla — ME değişmeden, değerler yakalanarak
+  if (Cloud.user) Cloud.gonder(ME, JSON.stringify(S)).catch(() => {});
   ME = name; ls.set('atpl.profile', ME);
   if (!PROFILES.includes(name)){ PROFILES.push(name); ls.set('atpl.profiles', JSON.stringify(PROFILES)); }
   loadProfile(); paintWho(); R = null; closeSheet(); home();
+  if (Cloud.user) Cloud.esitle(true);        // yeni profilin bulut hâlini al
 }
 
 // ── Filtreler ──
@@ -1183,6 +1230,11 @@ function home(){
         '<span class="mini"><b class="num">' + nf(G.seen) + '</b>/' + nf(G.total) + '</span>' +
         (G.pct !== null ? '<span class="mini"><b class="num">%' + G.pct + '</b> isabet</span>' : '') +
         (G.streak ? '<span class="mini"><b class="num">' + G.streak + '</b> gün</span>' : '') +
+      (Cloud.user
+        ? '<span class="csync ' + (Cloud.durum ? 'err' : Cloud.kirli ? 'wait' : 'ok') +
+          '" title="' + (Cloud.durum ? 'Eşitlenemedi' :
+            Cloud.kirli ? 'Bekleyen değişiklik var' : 'Google hesabına yedeklendi') +
+          '"></span>' : '') +
       '</span>' +
       '<span class="chev">›</span>' +
     '</button>';
@@ -1820,7 +1872,9 @@ function cloudInner(){
     '</div>' +
     '<div class="note' + (Cloud.durum ? ' bad' : '') + '">' +
       (Cloud.durum ? esc(Cloud.durum)
-        : Cloud.sonEs ? 'Son eşitleme ' + stamp(Cloud.sonEs)
+        : Cloud.mesgul ? 'Eşitleniyor…'
+        : Cloud.kirli ? 'Bekleyen değişiklik var, birkaç saniye içinde gidecek.'
+        : Cloud.sonEs ? 'Her şey yedeklendi · son eşitleme ' + stamp(Cloud.sonEs)
         : 'Değişiklikler kendiliğinden gönderilir.') + '</div>';
 }
 function bindCloud(){
@@ -2020,7 +2074,10 @@ function openStats(){
     if (!armed){ armed = true; el('wipe').textContent = 'Emin misin? Tekrar bas';
       setTimeout(() => { armed = false; const w = el('wipe'); if (w) w.textContent = 'Sıfırla'; }, 4000);
       return; }
-    S = blank(); Object.assign(F, DEFAULTS); save(); closeSheet(); home();
+    // Bulut kopyası da silinmeli; yoksa ilk eşitlemede her şey geri gelir
+    if (Cloud.user) Cloud.sil(ME).catch(() => {});
+    S = blank(); Object.assign(F, DEFAULTS); Cloud.kirli = false;
+    save(); closeSheet(); home();
   };
 }
 
