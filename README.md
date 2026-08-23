@@ -346,17 +346,45 @@ python3 scripts/build_web.py     # "bulut açık" yazmalı
 
 ### Nasıl çalışıyor
 
-Durum panelinde **Google ile giriş yap** düğmesi çıkar. Girdikten sonra:
+Durum panelinde **Google ile giriş yap** düğmesi çıkar. Girdikten sonra profilin
+**tamamı** yedeklenir:
 
-- Her kayıttan ~4 saniye sonra aktif profil buluta gönderilir
-- Girişte ve **Şimdi eşitle** düğmesinde önce buluttan çekilir, yerelle **kaynaştırılır**,
-  sonra geri gönderilir — çakışma ekranı yoktur, iki cihazın emeği birleşir
-- Her soruda "daha çok görülmüş" kayıt kazanır, gün sayaçları en büyükte birleşir,
-  turlar id'ye göre son dokunulanla gelir, geçilen sınavlar zaman damgasıyla son karara
-  göre belirlenir
-- Birden çok profilin varsa hepsi ayrı belge olarak eşitlenir
+| Ne | Örnek |
+| --- | --- |
+| Aralıklı tekrar kartları | hangi soru hangi kutuda, ne zaman tekrar edilecek |
+| Yanlış defteri | doğru/yanlış sayıları, üst üste doğru serisi |
+| Yıldızlar | sonra bakılacak sorular |
+| Günlük sayaçlar | seri ve son 45 gün ısı haritası |
+| Tur geçmişi | biten turlar ve **yarım kalan tur** — başka cihazda kaldığın sorudan devam |
+| Geçilen sınavlar | eledigin dersler |
+| Ayarlar | deste, kapsam, tur uzunluğu, mod, sıra, ses, sohbet seçimi |
+
+**Ne zaman gönderilir**
+
+- Her kayıttan ~4 saniye sonra
+- Sekme kapanırken ya da arka plana alınırken bekleyen değişiklik **hemen**
+- Çıkış yapmadan önce
+- Profil değiştirirken eskisi, ad değiştirirken yeni adla
+- Gönderim başarısızsa "kirli" işaretlenir; bağlantı gelince ve sonraki kayıtta
+  yeniden denenir
+
+**Ne zaman çekilir**
+
+- Girişte ve **Şimdi eşitle** düğmesinde
+- Sekmeye dönüldüğünde (tur ortasında değilsen, en fazla 30 saniyede bir)
+
+Çekme sonrası yerelle **kaynaştırılır**, sonra geri gönderilir — çakışma ekranı yoktur,
+iki cihazın emeği birleşir. Her soruda "daha çok görülmüş" kayıt kazanır, gün sayaçları
+en büyükte birleşir, turlar id'ye göre son dokunulanla gelir, geçilen sınavlar zaman
+damgasıyla son karara göre belirlenir.
+
+Kimlik satırındaki küçük nokta durumu söyler: yeşil yedeklendi, mor bekliyor,
+kırmızı gönderilemedi. Durum panelinde aynısı yazıyla.
+
+**Sıfırla** bulut kopyasını da siler; yoksa ilk eşitlemede her şey geri gelirdi.
 
 Veri `users/{uid}/profiles/{profil}` altında, tek bir JSON metni alanında durur.
+Birden çok profilin varsa hepsi ayrı belge olarak eşitlenir.
 
 ### Güvenlik
 

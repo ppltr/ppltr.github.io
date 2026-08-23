@@ -201,6 +201,16 @@ kurallar `firestore.rules`.
 yapılandırması sır değildir; erişimi kurallar kısıtlar (`request.auth.uid == uid`). Bunu
 "sızmış anahtar" sanıp gitignore'a ekleme — eklersen derleme bulutu kapatır.
 
+**Gönderim tetikleyicileri eksiksiz olmalı.** `flush()` yalnız 4 sn'lik zamanlayıcı
+kurar; sekme kapanırken o zamanlayıcı ateşlenmez. Bu yüzden `pagehide` ve
+`visibilitychange`→hidden `Cloud.simdiGonder()` çağırır, çıkıştan önce bekleyen
+gönderilir, profil değiştirme/ad değiştirme/sıfırlama bulutu da günceller. Bu
+kancalardan birini kaldırırsan sessiz veri kaybı olur.
+
+`Cloud.gonder(ad, veri)` profil adını dışarıdan alır: `switchProfile` eskisini `ME`
+değişmeden yakalayıp yollar. `Sıfırla` bulut belgesini de siler — yoksa ilk eşitlemede
+veri geri gelir.
+
 Eşitleme çakışma çözmez, **kaynaştırır**: `mergeState(hedef, gelen)` kart bazında daha çok
 görülmüşü, gün sayaçlarında en büyüğü, turlarda son dokunulanı alır. Geçilen sınavlar
 `S.pAt` zaman damgasıyla son yazana gider — birleştirmek kaldırılan dersi geri getirirdi.
