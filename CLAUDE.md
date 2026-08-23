@@ -79,6 +79,29 @@ modül/bölüm **adına** dokunmak (`data-solo`) seçimi tek başına ona alır 
 kapatır (dropdown gibi), **kutucuğa** (`data-s`) dokunmak çoklu seçim yapar ve seçici
 açık kalır. `pickOpen` durumu `home()` yeniden çizimleri arasında korunur.
 
+**Tur içinde gezinme.** `R.orders[i]` her sorunun şık sırasını, `R.picks[i]` verilen
+cevabı tutar; ikisi de indeks bazlı olduğu için geri gidince şıklar yeniden karışmaz ve
+cevap görünür kalır. `pick()` `R.picked !== null` ise erken döner — geri gidip yeniden
+cevaplamak **çift puanlamaz**. Yeni yanlış turunda `orders`/`picks` sıfırlanır.
+`resumeRun` cevapları `R.log`'dan geri kurar: kayıtta kaynak şık indeksi durur, yeni
+karıştırmadaki karşılığı `orderFor(i).indexOf(...)` ile bulunur.
+
+`goTo(i)` / `prevQ()` / `nextQ()` konumu değiştirir ve bekleyen otomatik geçişi iptal
+eder. `nextQ` son soruda turu kazara bitirmez — ancak cevap verilmişse `next()`'e düşer.
+
+**Klavye:** `A`–`E` ve `1`–`5` cevaplar, `←` `→` soru değiştirir, `Home`/`End` başa ve
+sona gider, `Enter` devam eder, `S` yıldızlar, `Esc` açık paneli kapatır.
+
+**Gezinme paneli** soru sayacına (`#navBtn`) dokununca açılır (`navOpen`, çizimler arası
+korunur): ilk/önceki/sonraki/son düğmeleri, numara kutusu ve "Git". Kapalıyken hiç yer
+kaplamaz — kullanıcı kontrollerin arayüzü işgal etmesini istemedi, kalıcı bir gezinme
+çubuğu ekleme.
+
+**Geri bildirim.** `feedback(ok)` kartta tek atımlık renk vurgusu (`fok`/`fbad`/`fnew`)
+ve `beep()` ile WebAudio notası çalar; ses dosyası yoktur. `prefers-reduced-motion`
+açıksa animasyon çalışmaz. **Sınav modunda ses ve renk nötrdür** (`fnew` + tek nota) —
+aksi hâlde doğru cevabı ele verir. `F.sound` Ayarlar'dan kapatılır.
+
 **Geçilen sınavlar.** `S.passed` profil bazında geçilen ders kodlarını tutar. Geçilen
 ders kapsamdan tümüyle çıkar: `inScope` ve `inToggles` `notPassed(q)` ile eler, dolayısıyla
 toplam sayı, deste sayaçları, konu seçici, `openModules`/`autoPickModule` ve turlar

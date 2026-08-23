@@ -325,6 +325,41 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .prog i.retry{background:var(--bad)}
 .meta{display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:12px}
 .meta .lbl:first-of-type{margin-right:auto}
+/* Gezinme düğmesi ve paneli — kapalıyken hiç yer kaplamaz */
+.navb{display:inline-flex; align-items:center; gap:5px; padding:3px 8px; margin:-3px 0;
+  border-radius:99px; font-family:var(--f-num); font-size:11.5px; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--ink-3); border:1px solid transparent;
+  transition:border-color .12s, color .12s}
+.navb:hover{border-color:var(--rule-2); color:var(--ink-2)}
+.navb.on{border-color:var(--accent); color:var(--accent)}
+.navb b{color:var(--ink-2); font-weight:500}
+.navb.on b{color:var(--accent)}
+.navb .cv{display:inline-block; transition:transform .15s}
+.navb.on .cv{transform:rotate(90deg)}
+.navpop{background:var(--surface); border:1px solid var(--rule-2); border-radius:var(--r);
+  padding:10px 11px; margin:-4px 0 12px; box-shadow:var(--shadow)}
+.navpop.hidden{display:none}
+.navrow{display:flex; align-items:center; gap:6px; flex-wrap:wrap}
+.nb{flex:none; min-width:38px; height:34px; display:grid; place-items:center;
+  padding:0 9px; background:var(--surface-2); border:1px solid var(--rule);
+  border-radius:8px; font-size:13px; color:var(--ink-2); transition:border-color .12s}
+.nb:hover{border-color:var(--accent); color:var(--accent)}
+.nb.wide{font-family:var(--f-body); font-size:12.5px; font-weight:500}
+.navpop input{flex:1; min-width:64px; height:34px; padding:0 9px;
+  background:var(--surface-2); border:1px solid var(--rule); border-radius:8px;
+  color:var(--ink); font-family:var(--f-num); font-size:13px; text-align:center}
+.navpop input:focus{outline:none; border-color:var(--accent)}
+.navpop .note{margin-top:8px; font-size:11.5px}
+
+/* Cevap anındaki tek atımlık vurgu */
+@keyframes fpulse{ from{box-shadow:0 0 0 3px var(--pc)} to{box-shadow:0 0 0 3px transparent} }
+.card.fok{--pc:var(--ok); animation:fpulse .6s ease-out}
+.card.fbad{--pc:var(--bad); animation:fpulse .6s ease-out}
+.card.fnew{--pc:var(--accent); animation:fpulse .6s ease-out}
+@media (prefers-reduced-motion: reduce){
+  .card.fok, .card.fbad, .card.fnew{animation:none}
+}
+
 .backb{flex:none; width:28px; height:28px; margin:-4px 0 -4px -6px; display:grid;
   place-items:center; border-radius:8px; font-family:var(--f-num); font-size:17px;
   color:var(--ink-3)}
@@ -628,7 +663,8 @@ function switchProfile(name){
 // deck:'new' = varsayılan olarak henüz çözülmemişlerden başla, tüm konular
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
-                   hideFlag:false, count:0, mode:'study', order:'smart' };
+                   hideFlag:false, count:0, mode:'study', order:'smart',
+                   sound:true };
 const F = Object.assign({}, DEFAULTS);
 function savePref(){ S.pref = F; save(); }
 
@@ -792,8 +828,51 @@ function shuffle(a){
 }
 const optOrder = q => shuffle(q[4].map((_, i) => i));
 
+// ── Geri bildirim: kısa ses + kartta tek atımlık renk ──
+// Ses dosyası yok; iki-üç osilatör notası WebAudio ile üretilir. Bağlam ilk
+// dokunuşta açılır, tarayıcı otomatik oynatma kuralına takılmaz.
+let actx = null;
+const REDUCED = window.matchMedia &&
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function beep(kind){
+  if (!F.sound) return;
+  try{
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return;
+    actx = actx || new AC();
+    if (actx.state === 'suspended') actx.resume();
+    const t0 = actx.currentTime;
+    const notes = kind === 'ok'  ? [[660, 0, .10], [988, .085, .13]]
+                : kind === 'bad' ? [[190, 0, .16], [142, .10, .18]]
+                :                  [[520, 0, .07]];
+    notes.forEach(([f, d, len]) => {
+      const o = actx.createOscillator(), g = actx.createGain();
+      o.type = kind === 'bad' ? 'square' : 'sine';
+      o.frequency.value = f;
+      g.gain.setValueAtTime(0.0001, t0 + d);
+      g.gain.exponentialRampToValueAtTime(kind === 'bad' ? .05 : .10, t0 + d + .012);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + d + len);
+      o.connect(g); g.connect(actx.destination);
+      o.start(t0 + d); o.stop(t0 + d + len + .02);
+    });
+  }catch(e){}
+}
+/** Sınav modunda doğru/yanlış sızmasın diye ses ve renk nötr kalır. */
+function feedback(ok){
+  const notr = F.mode === 'exam';
+  const card = el('view').querySelector('.card');
+  if (card && !REDUCED){
+    const c = notr ? 'fnew' : ok ? 'fok' : 'fbad';
+    card.classList.add(c);
+    setTimeout(() => { if (card) card.classList.remove(c); }, 620);
+  }
+  beep(notr ? 'tap' : ok ? 'ok' : 'bad');
+}
+
 // ── Oturum ──
 let R = null, advT = null;
+let navOpen = false;                      // gezinme paneli açık mı
 
 const RUN_MAX = 24;                       // geçmişte tutulan tur sayısı
 
@@ -833,7 +912,8 @@ function start(){
   if (!list.length) return;
   S.runs = S.runs.filter(r => r.done || (r.log || []).length);   // boş bırakılanları at
   const id = 'r' + Date.now();
-  R = { id, list, i:0, order:null, picked:null, log:[], t0:Date.now(), round:1, missed:[] };
+  R = { id, list, i:0, order:null, picked:null, orders:[], picks:[],
+        log:[], t0:Date.now(), round:1, missed:[] };
   S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle(), code:soloModule() || '',
                    deck:deckName(),
                    n0:list.length, ids:list.map(q => q[0]), i:0, round:1,
@@ -849,9 +929,22 @@ function resumeRun(id){
   const list = (rec.ids || []).map(x => BY_ID.get(x)).filter(Boolean);
   if (!list.length){ rec.done = true; save(); return home(); }
   R = { id:rec.id, list, i:Math.min(rec.i || 0, list.length), order:null, picked:null,
-        log:(rec.log || []).slice(), t0:rec.t0, round:rec.round || 1,
-        missed:(rec.missed || []).slice() };
+        orders:[], picks:[], log:(rec.log || []).slice(), t0:rec.t0,
+        round:rec.round || 1, missed:(rec.missed || []).slice() };
+  // Bu turda verilmiş cevapları geri kur: kayıtta kaynak şık indeksi var,
+  // yeni karıştırmada karşılığı bulunur. Böylece geri gidince cevap görünür
+  // ve yeniden puanlanmaz.
+  const gecmis = R.log.filter(x => x.round === R.round);
+  R.list.forEach((q, i) => {
+    const e = gecmis.find(x => x.id === q[0]);
+    if (e) R.picks[i] = orderFor(i).indexOf(e.pick);
+  });
   step0();
+}
+/** Sorunun şık sırası — bir kez üretilir, geri gidip gelince değişmez. */
+function orderFor(i){
+  if (!R.orders[i]) R.orders[i] = optOrder(R.list[i]);
+  return R.orders[i];
 }
 function step0(){
   clearTimeout(advT);
@@ -862,24 +955,41 @@ function step0(){
       // missed soru id'si tutar, list soru nesnesi bekler
       R.list = shuffle(R.missed.map(id => BY_ID.get(id)).filter(Boolean));
       R.missed = []; R.i = 0; R.round++;
+      R.orders = []; R.picks = [];        // yeni tur: sıra ve cevaplar sıfırlanır
       if (!R.list.length) return done();
     } else return done();
   }
-  R.order = optOrder(R.list[R.i]);
-  R.picked = null;
+  if (R.i < 0) R.i = 0;
+  R.order = orderFor(R.i);
+  R.picked = R.picks[R.i] === undefined ? null : R.picks[R.i];
   saveRun();
   draw();
   window.scrollTo({ top:0, behavior:'smooth' });
 }
+/** Tur içinde belirli bir soruya git (0 tabanlı, sınırlara kırpılır). */
+function goTo(i){
+  if (!R) return;
+  clearTimeout(advT);
+  R.i = Math.max(0, Math.min(i, R.list.length - 1));
+  step0();
+}
+function prevQ(){ if (R && R.i > 0) goTo(R.i - 1); }
+/** Sağ ok: son soruda turu kazara bitirmesin, cevap verilmişse bitirir. */
+function nextQ(){
+  if (!R) return;
+  if (R.i < R.list.length - 1) goTo(R.i + 1);
+  else if (R.picked !== null) next();
+}
 function pick(pos){
   if (!R || R.picked !== null) return;
   const q = R.list[R.i], ok = R.order[pos] === 0;
-  R.picked = pos;
+  R.picked = pos; R.picks[R.i] = pos;
   grade(q[0], ok);
   R.log.push({ id:q[0], ok, pick:R.order[pos], round:R.round });
   if (!ok && !R.missed.includes(q[0])) R.missed.push(q[0]);
   saveRun();
   draw();
+  feedback(ok);
   clearTimeout(advT);
   if (F.mode === 'exam') advT = setTimeout(next, 150);
   else if (ok) advT = setTimeout(next, 580);
@@ -1031,6 +1141,11 @@ function home(){
             '">' + x + '</button>').join('') + '</div>' +
           '<div class="note">Tümü: kapsamdaki bütün sorular tek turda. İstediğin an ' +
           '<b>Turu bitir</b> dersin, ilerlemen kayıtlı kalır.</div></div>' +
+        '<div class="grp"><span class="lbl">Geri bildirim</span>' +
+          '<button class="switch' + (F.sound ? ' on' : '') + '" id="swSound" type="button">' +
+            '<span class="knob"></span><span>Cevapta ses çal</span></button>' +
+          '<div class="note">Doğruda yükselen iki nota, yanlışta kısa bir uyarı. ' +
+          'Sınav modunda ses nötrdür, cevabı ele vermez.</div></div>' +
         '<div class="grp"><span class="lbl">Mod</span><div class="seg" id="mode">' +
           '<button type="button" data-m="study" class="' + (F.mode === 'study' ? 'on' : '') + '">Çalışma</button>' +
           '<button type="button" data-m="exam" class="' + (F.mode === 'exam' ? 'on' : '') + '">Sınav</button>' +
@@ -1045,8 +1160,9 @@ function home(){
             : 'Tamamen karışık.') + '</div></div>' +
       '</div></details>' +
 
-    '<div class="hint"><kbd>1</kbd>–<kbd>5</kbd> şık · <kbd>Enter</kbd> devam · <kbd>S</kbd> yıldız<br>' +
-      'Tur bitince yanlış yaptıkların tekrar sorulur.</div>';
+    '<div class="hint"><kbd>A</kbd>–<kbd>E</kbd> ya da <kbd>1</kbd>–<kbd>5</kbd> şık · ' +
+      '<kbd>←</kbd><kbd>→</kbd> soru değiştir · <kbd>Enter</kbd> devam · ' +
+      '<kbd>S</kbd> yıldız<br>Tur bitince yanlış yaptıkların tekrar sorulur.</div>';
 
   buildTree();
   el('sw').innerHTML = [
@@ -1083,6 +1199,10 @@ function home(){
   const ma = el('mAll');
   if (ma) ma.onclick = () => {
     F.pick = {}; F.deck = deckCount('due') ? 'due' : 'wrong'; savePref(); home();
+  };
+  el('swSound').onclick = () => {
+    F.sound = !F.sound; savePref(); home(); openBox('optBox');
+    if (F.sound) beep('ok');
   };
   el('cnt').querySelectorAll('button').forEach(b =>
     b.onclick = () => { F.count = +b.dataset.n; savePref(); home(); openBox('optBox'); });
@@ -1275,10 +1395,28 @@ function draw(){
       (R.i / R.list.length * 100) + '%"></i></div>' +
     '<div class="meta"><button class="backb" id="hb" type="button" ' +
       'title="Ana ekran — tur kayıtlı kalır, geçmişten devam edersin">‹</button>' +
-      '<span class="lbl">Soru <span class="num">' + (R.i + 1) + '</span> / ' +
-      '<span class="num">' + R.list.length + '</span></span>' +
+      '<button class="navb' + (navOpen ? ' on' : '') + '" id="navBtn" type="button" ' +
+        'aria-expanded="' + (navOpen ? 'true' : 'false') + '" ' +
+        'title="Sorular arasında gez">Soru <b class="num">' + (R.i + 1) + '</b> / ' +
+        '<b class="num">' + R.list.length + '</b><span class="cv">›</span></button>' +
       '<span class="lbl"' + (retry ? ' style="color:var(--bad)"' : '') + '>' +
         (retry ? 'Yanlış turu ' + R.round : deckName()) + '</span></div>' +
+    '<div class="navpop' + (navOpen ? '' : ' hidden') + '" id="navPop">' +
+      '<div class="navrow">' +
+        '<button class="nb" data-nav="first" type="button" title="İlk soru (Home)">⏮</button>' +
+        '<button class="nb" data-nav="prev" type="button" title="Önceki (←)">◀</button>' +
+        '<button class="nb" data-nav="next" type="button" title="Sonraki (→)">▶</button>' +
+        '<button class="nb" data-nav="last" type="button" title="Son soru (End)">⏭</button>' +
+        '<input type="number" id="navNo" min="1" max="' + R.list.length +
+          '" value="' + (R.i + 1) + '" inputmode="numeric" aria-label="Soru numarası">' +
+        '<button class="nb wide" id="navGo" type="button">Git</button>' +
+      '</div>' +
+      '<div class="note">Cevapladığın <b class="num">' +
+        R.picks.filter(x => x !== undefined && x !== null).length + '</b> / ' +
+        '<b class="num">' + R.list.length + '</b> · ' +
+        '<kbd>A</kbd>–<kbd>E</kbd> ya da <kbd>1</kbd>–<kbd>5</kbd> ile cevapla, ' +
+        '<kbd>←</kbd><kbd>→</kbd> ile gez</div>' +
+    '</div>' +
     '<div class="card"><div class="head"><span class="lbl">' + esc(s.c) + '</span>' +
       '<span class="who">' + esc(sec[1]) + '</span><span class="sp"></span>' +
       (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
@@ -1299,6 +1437,29 @@ function draw(){
 
   el('view').querySelectorAll('.opt').forEach(b => b.onclick = () => pick(+b.dataset.p));
   el('hb').onclick = () => { clearTimeout(advT); saveRun(); home(); };
+  el('navBtn').onclick = () => {
+    navOpen = !navOpen;
+    el('navPop').classList.toggle('hidden', !navOpen);
+    el('navBtn').classList.toggle('on', navOpen);
+    el('navBtn').setAttribute('aria-expanded', navOpen ? 'true' : 'false');
+    if (navOpen) el('navNo').focus();
+  };
+  el('navPop').querySelectorAll('[data-nav]').forEach(b => b.onclick = () => {
+    const d = b.dataset.nav;
+    if (d === 'first') goTo(0);
+    else if (d === 'prev') prevQ();
+    else if (d === 'next') nextQ();
+    else goTo(R.list.length - 1);
+  });
+  const navGo = () => {
+    const v = parseInt(el('navNo').value, 10);
+    if (!isNaN(v)) goTo(v - 1);
+  };
+  el('navGo').onclick = navGo;
+  el('navNo').onkeydown = e => {
+    if (e.key === 'Enter'){ e.preventDefault(); navGo(); }
+    e.stopPropagation();
+  };
   el('next').onclick = next;
   const sk = el('skip'); if (sk) sk.onclick = next;
   el('quit').onclick = done;
@@ -1721,15 +1882,27 @@ el('bNotes').onclick = () => openNotes();
 el('veil').onclick = closeSheet;
 
 document.addEventListener('keydown', e => {
-  if (e.target.matches('input, select, textarea')) return;
-  if (e.key === 'Escape'){ closeSheet(); return; }
+  const tg = e.target;
+  if (tg && tg.matches && tg.matches('input, select, textarea')) return;
+  if (e.key === 'Escape'){
+    if (navOpen && R){ el('navBtn').click(); return; }
+    closeSheet(); return;
+  }
   if (!R) return;
-  if (e.key >= '1' && e.key <= '5'){
-    const p = +e.key - 1;
+  const k = e.key;
+  let p = -1;
+  if (k >= '1' && k <= '5') p = +k - 1;                     // 1–5
+  else if (/^[a-eA-E]$/.test(k)) p = k.toLowerCase().charCodeAt(0) - 97;   // A–E
+  if (p >= 0){
     if (p < R.order.length && R.picked === null){ pick(p); e.preventDefault(); }
-  } else if (e.key === 'Enter' || e.key === 'ArrowRight'){
-    if (R.picked !== null){ next(); e.preventDefault(); }
-  } else if (e.key === 's' || e.key === 'S'){
+    return;
+  }
+  if (k === 'Enter'){ if (R.picked !== null){ next(); e.preventDefault(); } }
+  else if (k === 'ArrowRight'){ nextQ(); e.preventDefault(); }
+  else if (k === 'ArrowLeft'){ prevQ(); e.preventDefault(); }
+  else if (k === 'Home'){ goTo(0); e.preventDefault(); }
+  else if (k === 'End'){ goTo(R.list.length - 1); e.preventDefault(); }
+  else if (k === 's' || k === 'S'){
     const b = el('star'); if (b){ b.click(); e.preventDefault(); }
   }
 });
