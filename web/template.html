@@ -376,6 +376,13 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .tag.fig{color:var(--ink-2)} .tag.gen{color:var(--cyan)}
 .tag.flag{color:var(--accent-ink); background:var(--accent-soft)}
 .tag.box{color:var(--due); background:var(--due-soft)}
+.askbtn{flex:none; display:inline-flex; align-items:center; padding:3px 9px;
+  border-radius:99px; border:1px solid var(--rule-2); background:var(--surface);
+  color:var(--ink-2); font-family:var(--f-num); font-size:10.5px; font-weight:500;
+  letter-spacing:.07em; text-transform:uppercase; text-decoration:none; cursor:pointer;
+  transition:border-color .12s, color .12s}
+.askbtn:hover{border-color:var(--accent); color:var(--accent)}
+.askbtn.done{border-color:var(--ok); color:var(--ok)}
 .starbtn{font-size:15px; line-height:1; padding:2px 4px; color:var(--ink-3)}
 .starbtn.on{color:var(--accent)}
 .qt{font-family:var(--f-read); font-size:18px; line-height:1.5; padding:19px 15px 6px;
@@ -664,7 +671,7 @@ function switchProfile(name){
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
                    hideFlag:false, count:0, mode:'study', order:'smart',
-                   sound:true };
+                   sound:true, ai:'claude' };
 const F = Object.assign({}, DEFAULTS);
 function savePref(){ S.pref = F; save(); }
 
@@ -1141,6 +1148,12 @@ function home(){
             '">' + x + '</button>').join('') + '</div>' +
           '<div class="note">Tümü: kapsamdaki bütün sorular tek turda. İstediğin an ' +
           '<b>Turu bitir</b> dersin, ilerlemen kayıtlı kalır.</div></div>' +
+        '<div class="grp"><span class="lbl">Soruyu sorduğun yer</span><div class="seg" id="aiSel">' +
+          Object.keys(AI).map(k => '<button type="button" data-ai="' + k + '" class="' +
+            (F.ai === k ? 'on' : '') + '">' + AI[k][0] + '</button>').join('') + '</div>' +
+          '<div class="note">Soru kartındaki <b>Sor</b> düğmesi soruyu, şıkları, doğru ' +
+          'cevabı ve senin cevabını metne çevirip panoya kopyalar ve burayı yeni sekmede ' +
+          'açar. Sekme açılmazsa metin panonda hazır bekler.</div></div>' +
         '<div class="grp"><span class="lbl">Geri bildirim</span>' +
           '<button class="switch' + (F.sound ? ' on' : '') + '" id="swSound" type="button">' +
             '<span class="knob"></span><span>Cevapta ses çal</span></button>' +
@@ -1200,6 +1213,8 @@ function home(){
   if (ma) ma.onclick = () => {
     F.pick = {}; F.deck = deckCount('due') ? 'due' : 'wrong'; savePref(); home();
   };
+  el('aiSel').querySelectorAll('button').forEach(b =>
+    b.onclick = () => { F.ai = b.dataset.ai; savePref(); home(); openBox('optBox'); });
   el('swSound').onclick = () => {
     F.sound = !F.sound; savePref(); home(); openBox('optBox');
     if (F.sound) beep('ok');
@@ -1359,6 +1374,65 @@ function toggleSection(code, sec){
   else F.pick[code] = sel;
 }
 
+// ── Soruyu yapay zekâya sorma ──
+// Satır içi API yok: anahtar gerektirir, bu dosya herkese açık bir statik
+// sayfa olarak yayınlanıyor. Bunun yerine metin panoya kopyalanır ve
+// seçilen sohbetin sorgu adresi yeni sekmede açılır.
+const AI = {
+  claude:     ['Claude',     'https://claude.ai/new?q='],
+  chatgpt:    ['ChatGPT',    'https://chatgpt.com/?q='],
+  perplexity: ['Perplexity', 'https://www.perplexity.ai/search?q='],
+  google:     ['Google',     'https://www.google.com/search?q='],
+};
+const URL_MAX = 7000;              // uzun soruda adres yerine yalnız kopyala
+
+/** Kart başlığındaki "Sor" düğmesi. Adres çok uzunsa yalnız kopyalar. */
+function askBtn(){
+  const ai = AI[F.ai] || AI.claude;
+  const url = ai[1] + encodeURIComponent(askText());
+  const ttl = ai[0] + '\'a sor — metin panoya da kopyalanır';
+  return url.length <= URL_MAX
+    ? '<a class="askbtn" id="ask" href="' + esc(url) + '" target="_blank" ' +
+      'rel="noopener noreferrer" title="' + esc(ttl) + '">Sor</a>'
+    : '<button class="askbtn" id="ask" type="button" ' +
+      'title="Soru çok uzun — panoya kopyalanır">Kopyala</button>';
+}
+
+/** Soruyu, şıkları, doğru cevabı ve verilen cevabı düz metne çevirir. */
+function askText(){
+  if (!R) return '';
+  const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
+  const okPos = R.order.indexOf(0);
+  const L = [
+    'Aşağıdaki soruyu açıkla: doğru cevap neden doğru, diğer şıklar neden yanlış? ' +
+      'Kısa ve net yaz, Türkçe cevapla.',
+    '',
+    'Ders: ' + s.c + ' · ' + s.n + (sec && sec[1] ? ' — ' + sec[1] : ''),
+    'Soru (' + q[0] + '): ' + q[3],
+    '',
+  ];
+  R.order.forEach((oi, pos) => L.push(KEYS[pos] + ') ' + q[4][oi]));
+  L.push('', 'Doğru cevap: ' + KEYS[okPos] + ') ' + q[4][0]);
+  if (R.picked !== null){
+    const dogru = R.order[R.picked] === 0;
+    L.push('Benim cevabım: ' + KEYS[R.picked] + ') ' + q[4][R.order[R.picked]] +
+           (dogru ? '  (doğru)' : '  (yanlış)'));
+  }
+  if (q[8]) L.push('', 'Not: Bu soruda bir şekil var, metne aktarılamadı.');
+  if (q[7]) L.push('Not: Bu soru ders notundan üretilmiştir, gerçek sınav sorusu değildir.');
+  return L.join('\n');
+}
+async function copyText(s){
+  try{ await navigator.clipboard.writeText(s); return true; }catch(e){}
+  try{                                        // pano izni yoksa eski yöntem
+    const ta = document.createElement('textarea');
+    ta.value = s; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    const ok = document.execCommand('copy');
+    ta.remove(); return ok;
+  }catch(e){ return false; }
+}
+
 // ── Soru ekranı ──
 function draw(){
   const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
@@ -1423,6 +1497,7 @@ function draw(){
       (q[8] && !figOf(q) ? '<span class="tag fig">şekil gerekli</span>' : '') +
       (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') +
       (q[5] ? '<span class="tag flag">tartışmalı</span>' : '') +
+      askBtn() +
       '<button class="starbtn' + (st.has(q[0]) ? ' on' : '') + '" id="star" type="button" ' +
         'title="Yıldızla (S)">' + (st.has(q[0]) ? '★' : '☆') + '</button>' +
       '<span class="lbl num">' + q[0] + '</span></div>' +
@@ -1437,6 +1512,16 @@ function draw(){
 
   el('view').querySelectorAll('.opt').forEach(b => b.onclick = () => pick(+b.dataset.p));
   el('hb').onclick = () => { clearTimeout(advT); saveRun(); home(); };
+  el('ask').onclick = async () => {
+    const b = el('ask'), eski = b.textContent;
+    const ok = await copyText(askText());
+    b.textContent = ok ? 'Kopyalandı' : 'Kopyalanamadı';
+    b.classList.add('done');
+    setTimeout(() => {
+      const c = el('ask');
+      if (c){ c.textContent = eski; c.classList.remove('done'); }
+    }, 1800);
+  };
   el('navBtn').onclick = () => {
     navOpen = !navOpen;
     el('navPop').classList.toggle('hidden', !navOpen);

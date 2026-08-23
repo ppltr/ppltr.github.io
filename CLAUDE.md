@@ -97,6 +97,20 @@ korunur): ilk/önceki/sonraki/son düğmeleri, numara kutusu ve "Git". Kapalıyk
 kaplamaz — kullanıcı kontrollerin arayüzü işgal etmesini istemedi, kalıcı bir gezinme
 çubuğu ekleme.
 
+**Soruyu yapay zekâya sorma.** Kart başlığındaki `Sor` düğmesi (`askBtn`) soruyu,
+gördüğün sıradaki şıkları, doğru cevabı ve verdiğin cevabı düz metne çevirip
+(`askText`) panoya kopyalar ve seçilen sohbeti yeni sekmede açar. Düğme gerçek bir
+`<a target="_blank">`; `window.open` sandbox'ta engellenebiliyor. Sağlayıcı `AI`
+sözlüğünde, seçim `F.ai` ile Ayarlar'dan yapılır.
+
+**Satır içi API eklemeyi deneme.** Bu dosya herkese açık statik bir sayfa olarak
+yayınlanıyor; API anahtarı gömmek anahtarı sızdırır ve faturayı kullanıcıya keser.
+Artifact çalışma zamanının yetenekleri de (`artifact`, `downloads`, `mcp`, `self`)
+dil modeli çağrısı içermiyor. Kopyala-ve-aç yolu bilinçli tercihtir.
+
+Şekil gerektiren soruda metne "şekil metne aktarılamadı" notu eklenir — yoksa model
+görmediği bir çizim hakkında uydurur. Adres `URL_MAX`'i aşarsa düğme yalnız kopyalar.
+
 **Geri bildirim.** `feedback(ok)` kartta tek atımlık renk vurgusu (`fok`/`fbad`/`fnew`)
 ve `beep()` ile WebAudio notası çalar; ses dosyası yoktur. `prefers-reduced-motion`
 açıksa animasyon çalışmaz. **Sınav modunda ses ve renk nötrdür** (`fnew` + tek nota) —
