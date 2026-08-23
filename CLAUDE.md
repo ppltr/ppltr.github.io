@@ -201,6 +201,16 @@ kurallar `firestore.rules`.
 yapılandırması sır değildir; erişimi kurallar kısıtlar (`request.auth.uid == uid`). Bunu
 "sızmış anahtar" sanıp gitignore'a ekleme — eklersen derleme bulutu kapatır.
 
+**Her Firestore çağrısı `sureli()` ile sınırlanmalı (12 sn).** Sınır kaldırılırsa
+`mesgul` bayrağı takılıp arayüz "Eşitleniyor…"da asılı kalır — bu bir kez yaşandı.
+Söz iptal edilmez: zaman aşımından sonra da Firestore yazmayı kuyrukta tutar, sunucu
+onaylayınca `gonder()` içindeki `soz.then` durumu kendiliğinden düzeltir. Bağlantı
+`initializeFirestore(..., { experimentalAutoDetectLongPolling: true })` ile kurulur;
+WebChannel'ın kurulup yanıt döndürmediği ağlarda XHR'a düşmesi için gerekiyor.
+
+Arka plan eşitlemesi ekranı boşuna tazelememeli: `cek()` yalnız aktif profilde gerçek
+bir değişiklik olduğunda `true` döner, `esitle()` `home()`'u yalnız o zaman çağırır.
+
 **Gönderim tetikleyicileri eksiksiz olmalı.** `flush()` yalnız 4 sn'lik zamanlayıcı
 kurar; sekme kapanırken o zamanlayıcı ateşlenmez. Bu yüzden `pagehide` ve
 `visibilitychange`→hidden `Cloud.simdiGonder()` çağırır, çıkıştan önce bekleyen
