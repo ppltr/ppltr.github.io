@@ -666,6 +666,15 @@ const FBCONF = (() => {
 })();
 const FB_SDK = 'https://www.gstatic.com/firebasejs/12.9.0/';
 
+/** Sözü süreyle sınırla — ağ takılırsa arayüz "Eşitleniyor…"da asılı kalmasın.
+ *  Söz iptal edilmez: Firestore yazmayı kuyrukta tutar, bağlantı gelince gönderir. */
+function sureli(soz, ms){
+  let z;
+  const saat = new Promise((_, red) => { z = setTimeout(() => red(new Error('timeout')), ms); });
+  return Promise.race([soz, saat]).finally(() => clearTimeout(z));
+}
+const AGZAMAN = 12000;
+
 const Cloud = {
   acik: !!(FBCONF && FBCONF.apiKey),
   sdk: null, user: null, durum: '', mesgul: false,
@@ -679,7 +688,13 @@ const Cloud = {
       import(FB_SDK + 'firebase-firestore.js'),
     ]);
     const app = a.initializeApp(FBCONF);
-    this.sdk = { a, b, c, app, auth: b.getAuth(app), db: c.getFirestore(app) };
+    // Bazı ağlarda/vekil sunucularda WebChannel akışı kuruluyor ama hiç yanıt
+    // dönmüyor; setDoc sözü sonsuza kadar bekliyor. Otomatik uzun yoklama bunu
+    // algılayıp XHR'a düşüyor.
+    let db;
+    try{ db = c.initializeFirestore(app, { experimentalAutoDetectLongPolling: true }); }
+    catch(e){ db = c.getFirestore(app); }
+    this.sdk = { a, b, c, app, auth: b.getAuth(app), db };
     return this.sdk;
   },
 
@@ -756,8 +771,15 @@ const Cloud = {
     if (!this.user) return;
     const isim = ad || ME;
     const s = await this.yukle();
-    await s.c.setDoc(this.ref(s, isim),
+    const soz = s.c.setDoc(this.ref(s, isim),
       { name: isim, data: veri || JSON.stringify(S), updated: Date.now(), v: 2 });
+    // Zaman aşımına uğrasak bile yazma kuyrukta; sunucu onaylayınca durumu düzelt
+    soz.then(() => {
+      this.sonEs = Date.now(); this.kirli = false;
+      if (/sıraya alındı/.test(this.durum)) this.durum = '';
+      paintCloud();
+    }, () => {});
+    await sureli(soz, AGZAMAN);
     this.sonEs = Date.now();
     this.kirli = false;
   },
@@ -769,34 +791,39 @@ const Cloud = {
   async cek(){
     if (!this.user) return 0;
     const s = await this.yukle();
-    const snap = await s.c.getDocs(
-      s.c.collection(s.db, 'users', this.user.uid, 'profiles'));
-    let k = 0;
+    const snap = await sureli(
+      s.c.getDocs(s.c.collection(s.db, 'users', this.user.uid, 'profiles')), AGZAMAN);
+    const once = JSON.stringify(S);
     snap.forEach(d => {
       const v = d.data();
-      if (v && typeof v.data === 'string' && v.name && mergeProfile(v.name, v.data)) k++;
+      if (v && typeof v.data === 'string' && v.name) mergeProfile(v.name, v.data);
     });
     this.sonCek = Date.now();
-    return k;
+    return once !== JSON.stringify(S);   // ekranı tazelemek gerekiyor mu
   },
 
   /** Çek + kaynaştır + gönder. Çakışma yok: iki taraf birleşir. */
   async esitle(sessiz){
     if (!this.user || this.mesgul) return;
     this.mesgul = true; this.durum = ''; paintCloud();
+    let degisti = false;
     try{
-      await this.cek();
+      degisti = await this.cek();
       flushLocal();
       await this.gonder();
     }catch(e){
       const k = (e && e.code) || (e && e.message) || 'bilinmeyen hata';
-      this.durum = /permission/i.test(k)
+      this.durum = k === 'timeout'
+        ? 'Bağlantı yavaş — değişiklikler sıraya alındı, kendiliğinden gönderilecek.'
+        : /permission/i.test(k)
         ? 'Yetki reddedildi — güvenlik kuralları yayımlandı mı?'
         : 'Eşitlenemedi: ' + k;
     }
     this.mesgul = false;
-    paintWho(); paintCloud();
-    if (!R) home();
+    paintCloud();
+    // Arka plan eşitlemesi ekranı boşuna sıçratmasın: yalnız buluttan gerçekten
+    // yeni bir şey geldiyse tazele
+    if (!R && degisti){ paintWho(); home(); }
   },
 
   /** Kaydın ardından buluta gönderimi geciktirir; yazma sayısını düşük tutar. */
@@ -1866,8 +1893,7 @@ function cloudInner(){
   return '<div class="cloudrow"><span class="cwho">' +
       esc(u.displayName || u.email || 'Hesap') + '</span></div>' +
     '<div class="cloudrow">' +
-      '<button class="tbtn" id="cSync" type="button"' + (Cloud.mesgul ? ' disabled' : '') +
-        '>' + (Cloud.mesgul ? 'Eşitleniyor…' : 'Şimdi eşitle') + '</button>' +
+      '<button class="tbtn" id="cSync" type="button">Şimdi eşitle</button>' +
       '<button class="tbtn" id="cOut" type="button">Çıkış yap</button>' +
     '</div>' +
     '<div class="note' + (Cloud.durum ? ' bad' : '') + '">' +
