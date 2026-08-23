@@ -190,6 +190,26 @@ Kullanıcı ders notu verdiğinde iş akışı:
 Üretilmiş sorular uygulamada "üretilmiş" etiketiyle görünür ve kapsam anahtarından
 kapatılabilir; gerçek sınav sorularıyla asla karıştırılmaz.
 
+## Bulut (Google girişi)
+
+Firebase Auth + Firestore. Yapılandırma `web/firebase-config.json`, `build_web.py`
+`__FIREBASE__` yer tutucusuna gömer; dosya yoksa `null` gömülür ve `Cloud.acik` false
+kalır — uygulama yalnız `localStorage` ile çalışır. Kurulum `scripts/setup_firebase.sh`,
+kurallar `firestore.rules`.
+
+**`web/firebase-config.json` depoya girer ve herkese açıktır, bu doğrudur.** Firebase web
+yapılandırması sır değildir; erişimi kurallar kısıtlar (`request.auth.uid == uid`). Bunu
+"sızmış anahtar" sanıp gitignore'a ekleme — eklersen derleme bulutu kapatır.
+
+Eşitleme çakışma çözmez, **kaynaştırır**: `mergeState(hedef, gelen)` kart bazında daha çok
+görülmüşü, gün sayaçlarında en büyüğü, turlarda son dokunulanı alır. Geçilen sınavlar
+`S.pAt` zaman damgasıyla son yazana gider — birleştirmek kaldırılan dersi geri getirirdi.
+`flush()` yerel yazmayı `flushLocal()` yapar, ardından `Cloud.schedule()` ile 4 saniye
+gecikmeli gönderir; Firestore yazma kotasını düşük tutar.
+
+Artifact'ta bulut çalışmaz (kum havuzu dış kaynağı engeller); `Cloud.init()` yakalar,
+`acik` false olur, kutu hiç çizilmez. Bu bilinçli — tek dosya iki yerde de çalışsın diye.
+
 ## Sunucu (isteğe bağlı)
 
 Çok cihazlı senkron isteyene FastAPI sürümü duruyor; günlük kullanım için gerekli değil.

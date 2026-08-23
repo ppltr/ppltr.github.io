@@ -294,6 +294,80 @@ Durum panelindeki kutudan metni kopyala, öbür cihazda aynı kutuya yapıştır
 Birleştirme yapılır, iki cihazın emeği korunur. Statik sunucudan açtığında ayrıca dosya
 indir/seç düğmeleri çıkar.
 
+## Google ile giriş ve bulut yedeği
+
+Kaldığın yerden başka cihazda devam etmek için Firebase (Google girişi + Firestore)
+kullanılır. **Kendi sunucunu tutman gerekmez**, ücretsiz katman bu iş için fazlasıyla
+yeterli. Kurulmadıysa uygulama bugünkü gibi yalnız `localStorage` ile çalışır — bulut
+katmanı tümüyle kapalı kalır.
+
+### Kurulum
+
+```bash
+npm i -g firebase-tools        # bir kez
+./scripts/setup_firebase.sh    # projeyi sorar ya da yenisini açar
+```
+
+Betik şunları yapar: oturumu kontrol eder, projeyi açar/seçer, web uygulaması oluşturur,
+`web/firebase-config.json` dosyasını yazar, Firestore veritabanını açar ve
+`firestore.rules` dosyasını yayımlar. Var olan bir projeyi kullanmak için:
+
+```bash
+./scripts/setup_firebase.sh <proje-id>
+```
+
+Yeniden çalıştırmak güvenlidir; var olanı bulur, üstüne yazmaz.
+
+### Konsoldan yapılacak iki adım
+
+CLI bu ikisini yapamıyor, bir kez elle açman gerekir:
+
+1. **Google girişini aç** — Firebase konsolu → Authentication → Sign-in method →
+   Google → Enable → Save
+2. **Adresi izinli alanlara ekle** — Authentication → Settings → Authorized domains →
+   `ppltr.github.io` ekle (`localhost` zaten ekli)
+
+Bu adımlar atlanırsa uygulama giriş denemesinde ne yapılacağını yazar:
+"Google girişi Firebase konsolunda açık değil" ya da "Bu adres Firebase'de izinli değil".
+
+Sonra yapılandırmayı sayfaya göm ve yayına al:
+
+```bash
+python3 scripts/build_web.py     # "bulut açık" yazmalı
+./deploy.sh "Google girişi"
+```
+
+### Nasıl çalışıyor
+
+Durum panelinde **Google ile giriş yap** düğmesi çıkar. Girdikten sonra:
+
+- Her kayıttan ~4 saniye sonra aktif profil buluta gönderilir
+- Girişte ve **Şimdi eşitle** düğmesinde önce buluttan çekilir, yerelle **kaynaştırılır**,
+  sonra geri gönderilir — çakışma ekranı yoktur, iki cihazın emeği birleşir
+- Her soruda "daha çok görülmüş" kayıt kazanır, gün sayaçları en büyükte birleşir,
+  turlar id'ye göre son dokunulanla gelir, geçilen sınavlar zaman damgasıyla son karara
+  göre belirlenir
+- Birden çok profilin varsa hepsi ayrı belge olarak eşitlenir
+
+Veri `users/{uid}/profiles/{profil}` altında, tek bir JSON metni alanında durur.
+
+### Güvenlik
+
+`web/firebase-config.json` **depoya girer ve herkese açıktır — bu normaldir.** Firebase
+web yapılandırması bir kimlik bilgisi değil, projenin adresidir; Google böyle
+tasarlamıştır. Erişimi `firestore.rules` kısıtlar:
+
+```
+match /users/{uid} { allow read, write: if request.auth.uid == uid; }
+```
+
+Yani giriş yapmayan hiçbir şey okuyamaz, giriş yapan da yalnız kendi verisini okur.
+Kurallar ayrıca yazılan belgenin biçimini ve boyutunu doğrular.
+
+> Artifact sürümünde bulut çalışmaz: Artifact kum havuzu dış kaynaklara ağ isteğini
+> engeller. Katman sessizce kapanır, uygulama `localStorage` ile çalışmaya devam eder.
+> Bulut yedeği için siteyi kullan.
+
 ## Yayın
 
 **Canlı site: https://ppltr.github.io/**

@@ -22,6 +22,7 @@ NOTES_DIR = ROOT / "notes"
 
 # Ders notu dosyasındaki kod, soru bankasındaki ders koduna eşlenir
 FIG_DIR = ROOT / "figures"
+FBCONF = ROOT / "web" / "firebase-config.json"
 NOTE_SUBJECT = {"073": "070"}
 NOTE_SKIP = {"annex-kart-promptlari.md"}    # üretim promptları, çalışma notu değil
 
@@ -114,17 +115,34 @@ def main() -> None:
     # </script> dizisi JSON içinde geçerse script bloğunu erken kapatır
     blob = blob.replace("</", "<\\/")
 
-    tpl = TPL.read_text(encoding="utf-8")
-    if "__DATA__" not in tpl:
-        sys.exit("hata: şablonda __DATA__ yer tutucusu yok")
+    # Firebase web yapılandırması — yoksa bulut katmanı kapalı kalır.
+    # Bu değerler sır değildir, istemcide görünmeleri normaldir; erişimi
+    # firestore.rules kısıtlar.
+    fb = "null"
+    if FBCONF.exists():
+        try:
+            conf = json.loads(FBCONF.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            sys.exit(f"hata: {FBCONF} bozuk JSON")
+        eksik = [k for k in ("apiKey", "authDomain", "projectId", "appId")
+                 if not conf.get(k)]
+        if eksik:
+            sys.exit(f"hata: {FBCONF} eksik alan: {', '.join(eksik)}")
+        fb = json.dumps(conf, ensure_ascii=False, separators=(",", ":"))
 
-    html = tpl.replace("__DATA__", blob)
+    tpl = TPL.read_text(encoding="utf-8")
+    for yer in ("__DATA__", "__FIREBASE__"):
+        if yer not in tpl:
+            sys.exit(f"hata: şablonda {yer} yer tutucusu yok")
+
+    html = tpl.replace("__DATA__", blob).replace("__FIREBASE__", fb)
     OUT.write_text(html, encoding="utf-8")
     PAGES.parent.mkdir(parents=True, exist_ok=True)
     PAGES.write_text(html, encoding="utf-8")
     kb = OUT.stat().st_size / 1024
     print(f"{OUT}  ({len(data['q'])} soru, {len(data['s'])} ders, "
-          f"{len(data['n'])} not, {len(data['fg'])} çizim, {kb:.1f} KB)")
+          f"{len(data['n'])} not, {len(data['fg'])} çizim, {kb:.1f} KB"
+          + (", bulut açık)" if fb != "null" else ", bulut kapalı)"))
     print(f"{PAGES}  (GitHub Pages için aynı dosya)")
 
 

@@ -8,3 +8,7 @@ server/app.db-shm
 cards/
 videos/
 figures/_kontrol.html
+
+# firebase CLI günlüğü
+firebase-debug.log
+.firebase/

@@ -471,6 +471,16 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .sheet h2{margin:0 0 13px; font-size:17px; font-weight:700; letter-spacing:-.02em;
   display:flex; align-items:center; gap:10px}
 .sheet h2 .sp{flex:1}
+.cloud{background:var(--surface-2); border:1px solid var(--rule);
+  border-radius:var(--r); padding:12px 13px}
+.cloudrow{display:flex; gap:7px; flex-wrap:wrap; align-items:center; margin-bottom:8px}
+.cloudrow:last-child{margin-bottom:0}
+.cloud .note{margin-top:0}
+.cloud .note + .cloudrow{margin-top:9px}
+.cwho{font-size:13.5px; font-weight:600; overflow:hidden; text-overflow:ellipsis;
+  white-space:nowrap}
+.tbtn.cbig{padding:9px 14px; font-size:13px}
+.note.bad{color:var(--bad)}
 .whobox{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
   padding:12px 13px; margin-bottom:14px}
 .whorow{display:flex; gap:7px; align-items:center; margin-top:6px}
@@ -558,6 +568,7 @@ kbd{font-family:var(--f-num); font-size:10px; background:var(--surface-2);
 </div>
 
 <script id="qdata" type="application/json">__DATA__</script>
+<script id="fbconf" type="application/json">__FIREBASE__</script>
 <script>
 (function(){
 "use strict";
@@ -641,11 +652,152 @@ function save(){
   clearTimeout(saveT);
   saveT = setTimeout(flush, 250);
 }
-/** Bekleyen kaydı hemen yaz — sekme kapanırken son cevap kaybolmasın. */
-function flush(){
+// ── Bulut: Google ile giriş + Firestore yedeği ──────────────────────
+// Yapılandırma yoksa (artifact sürümü, kurulum yapılmamış kopya) katman
+// tümüyle kapalıdır; uygulama bugünkü gibi yalnız localStorage ile çalışır.
+// Firebase web anahtarı sır değildir, istemcide görünmesi normaldir —
+// erişimi firestore.rules kısıtlar: herkes yalnız kendi uid'sini okur/yazar.
+const FBCONF = (() => {
+  try{ return JSON.parse(document.getElementById('fbconf').textContent); }
+  catch(e){ return null; }
+})();
+const FB_SDK = 'https://www.gstatic.com/firebasejs/12.9.0/';
+
+const Cloud = {
+  acik: !!(FBCONF && FBCONF.apiKey),
+  sdk: null, user: null, durum: '', mesgul: false, sonEs: 0, pT: null,
+
+  async yukle(){
+    if (this.sdk) return this.sdk;
+    const [a, b, c] = await Promise.all([
+      import(FB_SDK + 'firebase-app.js'),
+      import(FB_SDK + 'firebase-auth.js'),
+      import(FB_SDK + 'firebase-firestore.js'),
+    ]);
+    const app = a.initializeApp(FBCONF);
+    this.sdk = { a, b, c, app, auth: b.getAuth(app), db: c.getFirestore(app) };
+    return this.sdk;
+  },
+
+  async init(){
+    if (!this.acik) return;
+    try{
+      const s = await this.yukle();
+      s.b.onAuthStateChanged(s.auth, u => {
+        this.user = u || null;
+        this.durum = '';
+        if (u) this.esitle(true); else paintCloud();
+      });
+      s.b.getRedirectResult(s.auth).catch(() => {});
+    }catch(e){
+      // Artifact kum havuzu dış kaynakları engeller — sessizce kapalı kalır
+      this.acik = false;
+      paintCloud();
+    }
+  },
+
+  /** Hata kodunu ne yapılacağını söyleyen bir cümleye çevirir. */
+  anlat(k){
+    if (k === 'auth/operation-not-allowed')
+      return 'Google girişi Firebase konsolunda açık değil. ' +
+             'Authentication → Sign-in method → Google → Enable.';
+    if (k === 'auth/unauthorized-domain')
+      return 'Bu adres Firebase\'de izinli değil. ' +
+             'Authentication → Settings → Authorized domains listesine ekle.';
+    if (k === 'auth/popup-blocked')
+      return 'Açılır pencere engellendi — düğmeye yeniden dokun ya da ' +
+             'tarayıcıda bu siteye izin ver.';
+    if (k === 'auth/network-request-failed') return 'Ağ hatası — bağlantını kontrol et.';
+    return 'Giriş yapılamadı: ' + (k || 'bilinmeyen hata');
+  },
+
+  async girisYap(){
+    try{
+      const s = await this.yukle();
+      await s.b.signInWithPopup(s.auth, new s.b.GoogleAuthProvider());
+      this.durum = '';
+    }catch(e){
+      const k = (e && e.code) || '';
+      if (k === 'auth/popup-closed-by-user' || k === 'auth/cancelled-popup-request'){
+        this.durum = '';                    // kullanıcı vazgeçti, hata değil
+        paintCloud(); return;
+      }
+      if (k === 'auth/operation-not-supported-in-this-environment'){
+        try{
+          const s = await this.yukle();
+          await s.b.signInWithRedirect(s.auth, new s.b.GoogleAuthProvider());
+          return;                            // sayfa yönlenir
+        }catch(e2){}
+      }
+      this.durum = this.anlat(k || (e && e.message));
+      paintCloud();
+    }
+  },
+
+  async cikisYap(){
+    try{
+      const s = await this.yukle();
+      await s.b.signOut(s.auth);
+      this.sonEs = 0;
+    }catch(e){ this.durum = 'Çıkış yapılamadı.'; paintCloud(); }
+  },
+
+  ref(s, ad){
+    return s.c.doc(s.db, 'users', this.user.uid, 'profiles', encodeURIComponent(ad));
+  },
+  async gonder(){
+    if (!this.user) return;
+    const s = await this.yukle();
+    await s.c.setDoc(this.ref(s, ME),
+      { name: ME, data: JSON.stringify(S), updated: Date.now(), v: 2 });
+    this.sonEs = Date.now();
+  },
+  async cek(){
+    if (!this.user) return 0;
+    const s = await this.yukle();
+    const snap = await s.c.getDocs(
+      s.c.collection(s.db, 'users', this.user.uid, 'profiles'));
+    let k = 0;
+    snap.forEach(d => {
+      const v = d.data();
+      if (v && typeof v.data === 'string' && v.name && mergeProfile(v.name, v.data)) k++;
+    });
+    return k;
+  },
+
+  /** Çek + kaynaştır + gönder. Çakışma yok: iki taraf birleşir. */
+  async esitle(sessiz){
+    if (!this.user || this.mesgul) return;
+    this.mesgul = true; this.durum = ''; paintCloud();
+    try{
+      await this.cek();
+      flushLocal();
+      await this.gonder();
+    }catch(e){
+      const k = (e && e.code) || (e && e.message) || 'bilinmeyen hata';
+      this.durum = /permission/i.test(k)
+        ? 'Yetki reddedildi — güvenlik kuralları yayımlandı mı?'
+        : 'Eşitlenemedi: ' + k;
+    }
+    this.mesgul = false;
+    paintWho(); paintCloud();
+    if (!R) home();
+  },
+
+  /** Kaydın ardından buluta gönderimi geciktirir; yazma sayısını düşük tutar. */
+  schedule(){
+    if (!this.user) return;
+    clearTimeout(this.pT);
+    this.pT = setTimeout(() => { this.gonder().then(paintCloud, () => {}); }, 4000);
+  },
+};
+
+/** Bekleyen kaydı hemen diske yaz — sekme kapanırken son cevap kaybolmasın. */
+function flushLocal(){
   clearTimeout(saveT);
   ls.set(keyOf(ME), JSON.stringify(S));
 }
+function flush(){ flushLocal(); Cloud.schedule(); }
 addEventListener('pagehide', flush);
 addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') flush(); });
 function renameProfile(oldN, newN){
@@ -704,6 +856,7 @@ function togglePassed(code){
   S.passed = S.passed || [];
   const i = S.passed.indexOf(code);
   if (i < 0) S.passed.push(code); else S.passed.splice(i, 1);
+  S.pAt = Date.now();                      // eşitlemede son karar kazansın
   // Geçilen ders seçili kapsamdaysa düşür; kapsam boş kalırsa yeni modül seç
   if (i < 0 && F.pick[code]) delete F.pick[code];
   if (!Object.keys(F.pick).length) autoPickModule();
@@ -1647,6 +1800,42 @@ function report(rec, live){
   el('back').onclick = home;
 }
 
+/** Durum panelindeki bulut kutusunun içi. */
+function cloudInner(){
+  const u = Cloud.user;
+  if (!u){
+    return '<div class="note">Giriş yaparsan ilerlemen Google hesabına yedeklenir; ' +
+      'telefonda ve bilgisayarda aynı yerden devam edersin. Yalnız kendi verini ' +
+      'görürsün.</div>' +
+      '<div class="cloudrow"><button class="tbtn cbig" id="cIn" type="button">' +
+        'Google ile giriş yap</button></div>' +
+      (Cloud.durum ? '<div class="note bad">' + esc(Cloud.durum) + '</div>' : '');
+  }
+  return '<div class="cloudrow"><span class="cwho">' +
+      esc(u.displayName || u.email || 'Hesap') + '</span></div>' +
+    '<div class="cloudrow">' +
+      '<button class="tbtn" id="cSync" type="button"' + (Cloud.mesgul ? ' disabled' : '') +
+        '>' + (Cloud.mesgul ? 'Eşitleniyor…' : 'Şimdi eşitle') + '</button>' +
+      '<button class="tbtn" id="cOut" type="button">Çıkış yap</button>' +
+    '</div>' +
+    '<div class="note' + (Cloud.durum ? ' bad' : '') + '">' +
+      (Cloud.durum ? esc(Cloud.durum)
+        : Cloud.sonEs ? 'Son eşitleme ' + stamp(Cloud.sonEs)
+        : 'Değişiklikler kendiliğinden gönderilir.') + '</div>';
+}
+function bindCloud(){
+  const g = el('cIn'), s = el('cSync'), c = el('cOut');
+  if (g) g.onclick = () => Cloud.girisYap();
+  if (s) s.onclick = () => Cloud.esitle(false);
+  if (c) c.onclick = () => Cloud.cikisYap();
+}
+function paintCloud(){
+  const b = el('cloudBox');
+  if (!b) return;
+  b.innerHTML = cloudInner();
+  bindCloud();
+}
+
 // ── Durum paneli ──
 const msg = m => { const b = el('bakMsg'); if (!b) return; b.textContent = m;
   setTimeout(() => { const x = el('bakMsg'); if (x) x.textContent = ''; }, 3500); };
@@ -1746,6 +1935,11 @@ function openStats(){
     (leech ? '<div class="note" style="margin-top:14px"><b style="color:var(--bad)">' + leech +
       '</b> soruda takılıyorsun. <button class="tbtn" id="goLeech" type="button">Bunlara çalış</button></div>' : '') +
 
+    (Cloud.acik
+      ? '<div class="lbl" style="margin:18px 0 7px">Google ile giriş</div>' +
+        '<div class="cloud" id="cloudBox">' + cloudInner() + '</div>'
+      : '') +
+
     '<div class="lbl" style="margin:18px 0 7px">Yedek</div>' +
     '<div class="note" style="margin-bottom:8px">İlerleme bu tarayıcıda, <b>' + esc(ME) +
       '</b> profilinde. Başka cihaza taşımak için metni kopyala, orada aynı kutuya yapıştırıp Yükle.</div>' +
@@ -1768,6 +1962,7 @@ function openStats(){
     renameProfile(ME, nv);
     openStats();
   };
+  bindCloud();
   el('pname').onkeydown = e => { if (e.key === 'Enter') el('pSave').click(); };
   el('pNew').onclick = () => switchProfile(randomName(PROFILES));
   const ps = el('prof'); if (ps) ps.onchange = e => switchProfile(e.target.value);
@@ -1830,20 +2025,61 @@ function openStats(){
 }
 
 /** Yedek metnini mevcut ilerlemeyle birleştirir; daha çok görülmüş kayıt kazanır. */
+/**
+ * Gelen durumu hedefe kaynaştırır. Kart bazında "daha çok görülmüş" kazanır;
+ * gün sayaçları en büyükte birleşir; turlar id'ye göre son dokunulanla gelir.
+ * Geçilen sınavlar bir aç/kapa kararı olduğu için zaman damgasıyla son yazan
+ * kazanır — birleştirmek kaldırdığın dersi geri getirirdi.
+ */
+function mergeState(t, p){
+  Object.keys(p.c || {}).forEach(id => {
+    const a = t.c[id], b = p.c[id];
+    if (Array.isArray(b) && b.length === 5 && (!a || b[2] > a[2])) t.c[id] = b;
+  });
+  t.star = Array.from(new Set((t.star || []).concat(p.star || [])));
+  Object.keys(p.day || {}).forEach(d => {
+    const a = t.day[d] || [0,0], b = p.day[d];
+    if (Array.isArray(b)) t.day[d] = [Math.max(a[0], b[0]), Math.max(a[1], b[1])];
+  });
+  if ((p.pAt || 0) > (t.pAt || 0)){
+    t.passed = (p.passed || []).slice();
+    t.pAt = p.pAt;
+  }
+  const byId = {};
+  (t.runs || []).concat(p.runs || []).forEach(r => {
+    if (!r || !r.id) return;
+    const v = byId[r.id];
+    if (!v || (r.tN || 0) > (v.tN || 0)) byId[r.id] = r;
+  });
+  t.runs = Object.keys(byId).map(k => byId[k])
+    .sort((a, b) => (b.t0 || 0) - (a.t0 || 0)).slice(0, RUN_MAX);
+  return t;
+}
 function merge(text){
   let p;
   try{ p = JSON.parse(text); }catch(e){ return 'Metin bozuk — tamamını kopyaladığından emin ol.'; }
   if (!p || p.v !== 2 || typeof p.c !== 'object') return 'Bu bir ATPL Çalışma yedeği değil.';
-  Object.keys(p.c).forEach(id => {
-    const a = S.c[id], b = p.c[id];
-    if (Array.isArray(b) && b.length === 5 && (!a || b[2] > a[2])) S.c[id] = b;
-  });
-  S.star = Array.from(new Set(S.star.concat(p.star || [])));
-  Object.keys(p.day || {}).forEach(d => {
-    const a = S.day[d] || [0,0], b = p.day[d];
-    if (Array.isArray(b)) S.day[d] = [Math.max(a[0], b[0]), Math.max(a[1], b[1])];
-  });
+  mergeState(S, p);
   save();
+  return true;
+}
+/** Buluttan gelen bir profili yerele kaynaştırır (aktif profil de olabilir). */
+function mergeProfile(name, text){
+  if (name === ME) return merge(text) === true;
+  let p;
+  try{ p = JSON.parse(text); }catch(e){ return false; }
+  if (!p || p.v !== 2 || typeof p.c !== 'object') return false;
+  let cur = blank();
+  try{
+    const raw = JSON.parse(ls.get(keyOf(name)) || 'null');
+    if (raw && raw.v === 2) cur = Object.assign(blank(), raw);
+  }catch(e){}
+  mergeState(cur, p);
+  ls.set(keyOf(name), JSON.stringify(cur));
+  if (PROFILES.indexOf(name) < 0){
+    PROFILES.push(name);
+    ls.set('atpl.profiles', JSON.stringify(PROFILES));
+  }
   return true;
 }
 
@@ -1997,5 +2233,6 @@ if (!Object.keys(F.pick).length && !S.pref) autoPickModule();
 if (!Object.keys(F.pick).length && !Object.keys(S.c).length) autoPickModule();
 paintWho();
 if (S.runs[0] && !S.runs[0].done) resumeRun(S.runs[0].id); else home();
+Cloud.init();
 })();
 </script>

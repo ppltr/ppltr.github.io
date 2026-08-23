@@ -1,0 +1,26 @@
+rules_version = '2';
+
+// Herkes yalnız kendi verisine erişir. Belge yolu users/{uid}/profiles/{profil}
+// ve uid, giriş yapan Google hesabının kimliğidir; başkasının verisi okunamaz.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+
+      match /profiles/{profil} {
+        allow read, delete: if request.auth != null && request.auth.uid == uid;
+
+        // Yazarken biçim de doğrulanır: yalnız beklenen alanlar, makul boyut.
+        allow create, update: if request.auth != null
+          && request.auth.uid == uid
+          && request.resource.data.keys().hasOnly(['name', 'data', 'updated', 'v'])
+          && request.resource.data.name is string
+          && request.resource.data.name.size() <= 40
+          && request.resource.data.data is string
+          && request.resource.data.data.size() <= 900000
+          && request.resource.data.updated is number
+          && request.resource.data.v == 2;
+      }
+    }
+  }
+}
