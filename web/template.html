@@ -77,7 +77,10 @@ button{cursor:pointer; background:none; border:none}
 .ava{flex:none; width:21px; height:21px; border-radius:50%; display:inline-grid;
   place-items:center; background:hsl(var(--h) 46% 38%); color:#fff;
   font-family:var(--f-ui); font-size:9px; font-weight:700; letter-spacing:.02em;
-  line-height:1; text-transform:uppercase}
+  line-height:1; text-transform:uppercase; overflow:hidden; position:relative}
+/* Resim baş harflerin üstünü örter; yüklenemezse img silinir, harfler geri gelir */
+.ava.pic{color:transparent}
+.ava img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
 #bWho{display:inline-flex; align-items:center; gap:7px; padding:4px 9px 4px 5px;
   font-family:var(--f-ui); font-size:12.5px; font-weight:600; letter-spacing:0;
   text-transform:none; color:var(--ink-2)}
@@ -481,7 +484,11 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .cloud .note{margin-top:0}
 .cloud .note + .cloudrow{margin-top:9px}
 .cwho{font-size:13.5px; font-weight:600; overflow:hidden; text-overflow:ellipsis;
-  white-space:nowrap}
+  white-space:nowrap; display:flex; flex-direction:column; gap:1px; min-width:0}
+.cwho .cmail{font-size:11.5px; font-weight:400; color:var(--ink-3);
+  overflow:hidden; text-overflow:ellipsis}
+.gacc{gap:10px; flex-wrap:nowrap}
+.gacc .ava{width:34px; height:34px; font-size:13px}
 .tbtn.cbig{padding:9px 14px; font-size:13px}
 .note.bad{color:var(--bad)}
 .whobox{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
@@ -602,12 +609,31 @@ function hueOf(name){
   for (const ch of String(name)) h = (h * 31 + ch.codePointAt(0)) % 360;
   return h;
 }
-const avatar = name => '<span class="ava" style="--h:' + hueOf(name) + '" aria-hidden="true">' +
-  esc(initials(name)) + '</span>';
+const avatar = name => {
+  const u = picOf(name);
+  return '<span class="ava' + (u ? ' pic' : '') + '" style="--h:' + hueOf(name) +
+    '" aria-hidden="true">' + esc(initials(name)) +
+    (u ? '<img src="' + esc(u) + '" alt="" referrerpolicy="no-referrer" ' +
+         'onerror="this.parentNode.classList.remove(\'pic\'); this.remove()">' : '') +
+    '</span>';
+};
 const today = () => new Date().toISOString().slice(0,10);
 const ls = { get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
              set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} },
              del(k){ try{ localStorage.removeItem(k); }catch(e){} } };
+
+/** Profil fotoğrafları — Google'dan gelen resim profil adına bağlı tutulur.
+ *  Yerelde saklanır, buluta gitmesine gerek yok: her cihaz kendi girişinde
+ *  aynı adresi zaten alıyor. */
+let PICS = {};
+try{ PICS = JSON.parse(ls.get('atpl.pics') || '{}') || {}; }catch(e){ PICS = {}; }
+const picOf = name => (PICS && PICS[name]) || '';
+function setPic(name, url){
+  if (picOf(name) === (url || '')) return false;
+  if (url) PICS[name] = url; else delete PICS[name];
+  ls.set('atpl.pics', JSON.stringify(PICS));
+  return true;
+}
 
 // ── Profiller: giriş yok. İlk ziyarette rastgele bir ad verilir, sonra değiştirilebilir ──
 const AD1 = ['Sakin','Hızlı','Gümüş','Kuzey','Berrak','Serin','Altın','Mavi','Keskin',
@@ -645,10 +671,14 @@ function loadProfile(){
   try{ const p = JSON.parse(raw || 'null'); if (p && p.v === 2) S = Object.assign(blank(), p); }catch(e){}
   if (!Array.isArray(S.runs)) S.runs = [];
   if (!Array.isArray(S.passed)) S.passed = [];
+  applyPref();
+}
+/** S.pref → F. Açılışta ve buluttan daha yeni bir ayar seti geldiğinde çalışır. */
+function applyPref(){
   Object.assign(F, DEFAULTS, S.pref || {});
   delete F.hideFig;                       // süzgeç kaldırıldı, eski kayıt taşımasın
-  if (S.pref) delete S.pref.hideFig;
   if (!F.pick || typeof F.pick !== 'object') F.pick = {};
+  S.pref = F;                             // bundan sonrası tek nesne üzerinden
 }
 let saveT;
 function save(){
@@ -674,6 +704,9 @@ function sureli(soz, ms){
   return Promise.race([soz, saat]).finally(() => clearTimeout(z));
 }
 const AGZAMAN = 12000;
+// uid → hesabın yazdığı profil adı. Giriş yapan hesabın hangi profile bağlandığını
+// bu tarayıcıda hatırlar; girişten sonra ad elle değişirse bağ yeni ada taşınır.
+const ACCT = 'atpl.acct:';
 
 const Cloud = {
   acik: !!(FBCONF && FBCONF.apiKey),
@@ -705,7 +738,17 @@ const Cloud = {
       s.b.onAuthStateChanged(s.auth, u => {
         this.user = u || null;
         this.durum = '';
-        if (u) this.esitle(true); else paintCloud();
+        if (!u){ paintWho(); paintCloud(); return; }
+        // Giriş yapıldı: ad Google'daki ad soyad, resim Google profil resmi olur
+        // ve bundan sonraki her kayıt bu profile — yani bu hesaba — yazılır.
+        const panel = !!el('pname');
+        if (bindAccount(u)){
+          paintWho();
+          if (!R) home();
+          if (panel && el('sheet').classList.contains('on')) openStats();
+        }
+        paintCloud();
+        this.esitle(true);
       });
       s.b.getRedirectResult(s.auth).catch(() => {});
     }catch(e){
@@ -759,6 +802,8 @@ const Cloud = {
       const s = await this.yukle();
       await s.b.signOut(s.auth);
       this.sonEs = 0; this.kirli = false;
+      setPic(ME, '');                    // resim hesaba ait, ad ve veri yerelde kalır
+      paintWho(); if (!R) home();
     }catch(e){ this.durum = 'Çıkış yapılamadı.'; paintCloud(); }
   },
 
@@ -834,7 +879,13 @@ const Cloud = {
     this.pT = setTimeout(() => this.gonderGuvenli(), 4000);
   },
   async gonderGuvenli(){
-    if (!this.user || this.mesgul) return;
+    if (!this.user) return;
+    // Eşitleme sürerken gönderme; bekleyeni düşürmeyip biraz sonra dene
+    if (this.mesgul){
+      clearTimeout(this.pT);
+      this.pT = setTimeout(() => this.gonderGuvenli(), 2000);
+      return;
+    }
     try{ await this.gonder(); this.durum = ''; }
     catch(e){ this.durum = 'Gönderilemedi — bağlantı gelince tekrar denenecek.'; }
     paintCloud();
@@ -867,18 +918,29 @@ addEventListener('visibilitychange', () => {
   else Cloud.donusteCek();
 });
 addEventListener('online', () => { if (Cloud.kirli) Cloud.gonderGuvenli(); });
-function renameProfile(oldN, newN){
+// Sekme saatlerce açık kalırsa başka cihazdaki ilerleme de gelsin; donusteCek
+// tur ortasında ve 30 sn'den yeni çekişte kendisi geri dönüyor.
+setInterval(() => Cloud.donusteCek(), 3e5);
+/** Profili yeniden adlandırır. `bekle` verilirse yeni ada buluta yazma
+ *  atlanır — girişte kullanılır: hesabın belgesinde başka cihazın verisi
+ *  olabilir, doğrudan yazmak onu ezerdi; ardından gelen esitle() önce çekip
+ *  kaynaştırır, sonra gönderir. Eski belge her hâlükârda silinir. */
+function renameProfile(oldN, newN, bekle){
   const data = ls.get(keyOf(oldN));
   ls.set(keyOf(newN), data || JSON.stringify(S));
   ls.del(keyOf(oldN));
   if (Cloud.user){                            // bulutta da adı taşı
-    Cloud.gonder(newN, data || JSON.stringify(S))
+    if (bekle) Cloud.sil(oldN).catch(() => {});
+    else Cloud.gonder(newN, data || JSON.stringify(S))
       .then(() => Cloud.sil(oldN)).catch(() => {});
   }
+  setPic(newN, picOf(oldN)); setPic(oldN, '');
   PROFILES = PROFILES.map(x => x === oldN ? newN : x);
   ls.set('atpl.profiles', JSON.stringify(PROFILES));
   ME = newN; ls.set('atpl.profile', ME);
+  if (Cloud.user) ls.set(ACCT + Cloud.user.uid, ME);   // hesap bağı yeni ada geçsin
   paintWho();
+  if (!R) home();                             // kimlik satırındaki ad da tazelensin
 }
 
 function switchProfile(name){
@@ -887,8 +949,45 @@ function switchProfile(name){
   if (Cloud.user) Cloud.gonder(ME, JSON.stringify(S)).catch(() => {});
   ME = name; ls.set('atpl.profile', ME);
   if (!PROFILES.includes(name)){ PROFILES.push(name); ls.set('atpl.profiles', JSON.stringify(PROFILES)); }
+  if (Cloud.user) ls.set(ACCT + Cloud.user.uid, ME);   // hesap artık bu profile yazsın
   loadProfile(); paintWho(); R = null; closeSheet(); home();
   if (Cloud.user) Cloud.esitle(true);        // yeni profilin bulut hâlini al
+}
+
+/** Google hesabından profil adı: "Ad Soyad", yoksa e-postanın kullanıcı adı. */
+function accountName(u){
+  const ad = String(u.displayName || '').trim() ||
+             String(u.email || '').split('@')[0].trim() || 'Hesap';
+  return ad.slice(0, 28);
+}
+
+/** Girişten sonra aktif profili hesaba bağlar: profil adı Google'daki ad soyad
+ *  olur, avatar Google profil resmi olur, ilerleme/ayar/tur hepsi bu profile
+ *  yazılır ve bulutta aynı ad altında durur.
+ *
+ *  Misafirken çözülenler kaybolmaz: profil hesabın adına *yeniden adlandırılır*,
+ *  veri olduğu gibi taşınır. Hesabın profili bu tarayıcıda zaten varsa ona
+ *  geçilir, misafir profili yerinde bırakılır.
+ *
+ *  Ekranın tazelenmesi gerekiyorsa true döner. */
+function bindAccount(u){
+  flushLocal();                       // ad değişiminde verinin son hâli taşınsın
+  const anahtar = ACCT + u.uid;
+  let hedef = ls.get(anahtar);
+  if (!hedef || !PROFILES.includes(hedef)) hedef = accountName(u);
+  let degisti = false;
+  if (hedef !== ME){
+    if (PROFILES.includes(hedef)){
+      ME = hedef; ls.set('atpl.profile', ME);
+      loadProfile(); R = null; closeSheet();
+    }else{
+      renameProfile(ME, hedef, true);
+    }
+    degisti = true;
+  }
+  ls.set(anahtar, ME);
+  if (setPic(ME, u.photoURL || '')) degisti = true;
+  return degisti;
 }
 
 // ── Filtreler ──
@@ -897,9 +996,25 @@ function switchProfile(name){
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
                    hideFlag:false, count:0, mode:'study', order:'smart',
-                   sound:true, ai:'claude' };
+                   sound:true, ai:'claude', lang:'en' };
 const F = Object.assign({}, DEFAULTS);
-function savePref(){ S.pref = F; save(); }
+
+// ── Soru dili ────────────────────────────────────────────────────────
+// Kaynak dil İngilizce (sınavda öyle çıkıyor), varsayılan da o. Türkçe kipte
+// çevirisi olan soru Türkçe gelir, olmayan İngilizce kalır — yarım çeviri
+// yüzünden soru kaybolmasın.
+//
+// İlerleme soru **id'sine** bağlıdır: dili değiştirmek çözülmüşleri sıfırlamaz
+// ve aynı soruyu iki dilde iki kez sormaz. Bir kez çözdüysen çözülmüştür.
+const trMode = () => F.lang === 'tr';
+const qText = q => (trMode() && q[10]) ? q[10] : q[3];
+const qOpts = q => (trMode() && q[11]) ? q[11] : q[4];
+const subjName = s => (trMode() && s.nt) ? s.nt : s.n;
+const secName = sc => (trMode() && sc[2]) ? sc[2] : sc[1];
+// Türkçe gelen soru sayısı: çevrilmişler + kaynağı zaten Türkçe olanlar (501, 502,
+// ders notu soruları). Derleme sayıyor, burada yeniden hesaplanmıyor.
+const TRN = DB.tr || 0;
+function savePref(){ S.pref = F; S.prefAt = Date.now(); save(); }
 
 const card = id => S.c[id];
 const stars = () => new Set(S.star);
@@ -960,7 +1075,11 @@ function inScope(q){
   if (!matchPick(q)) return false;
   if (F.q){
     const n = F.q.toLocaleLowerCase('tr');
-    if (!(q[0] + ' ' + q[3] + ' ' + q[4].join(' ')).toLocaleLowerCase('tr').includes(n)) return false;
+    // Hangi kipte olursan ol iki dilde de ara: Türkçe kipteyken İngilizce
+    // terimle, İngilizce kipteyken Türkçe kelimeyle arayabilesin
+    const hep = q[0] + ' ' + q[3] + ' ' + q[4].join(' ') +
+      (q[10] ? ' ' + q[10] + ' ' + q[11].join(' ') : '');
+    if (!hep.toLocaleLowerCase('tr').includes(n)) return false;
   }
   return true;
 }
@@ -1022,7 +1141,7 @@ function moduleStat(code, raw){
   const si = SUBJ.findIndex(x => x.c === code);
   const all = QS.filter(q => q[1] === si && inToggles(q, raw));
   const seen = all.filter(q => card(q[0])).length;
-  return { code, name: SUBJ[si].n, total: all.length, seen, left: all.length - seen };
+  return { code, name: subjName(SUBJ[si]), total: all.length, seen, left: all.length - seen };
 }
 /** Seçim tek bir modülün tamamıysa o modülün kodunu, değilse null döner. */
 function soloModule(){
@@ -1115,13 +1234,13 @@ function scopeTitle(){
   const solo = soloModule();
   if (solo){
     const s = SUBJ.find(x => x.c === solo);
-    return solo + ' · ' + (s ? s.n : '');
+    return solo + ' · ' + (s ? subjName(s) : '');
   }
   const ks = Object.keys(F.pick);
   if (!ks.length) return 'Tüm modüller';
   if (ks.length === 1){
     const s = SUBJ.find(x => x.c === ks[0]);
-    return ks[0] + ' · ' + (s ? s.n : '');
+    return ks[0] + ' · ' + (s ? subjName(s) : '');
   }
   return ks.length + ' modül';
 }
@@ -1368,9 +1487,23 @@ function home(){
       : '') +
 
     '<details class="box" id="optBox">' +
-      '<summary>Ayarlar<span class="pill off">' + (F.count ? F.count + ' soru' : 'tüm tur') +
+      '<summary>Ayarlar<span class="pill off">' + (trMode() ? 'Türkçe' : 'English') +
+        ' · ' + (F.count ? F.count + ' soru' : 'tüm tur') +
         ' · ' + (F.mode === 'study' ? 'çalışma' : 'sınav') + '</span><span class="chev">›</span></summary>' +
       '<div class="in">' +
+        '<div class="grp"><span class="lbl">Soru dili</span><div class="seg" id="lang">' +
+          '<button type="button" data-lang="en" class="' + (F.lang === 'en' ? 'on' : '') +
+            '">English</button>' +
+          '<button type="button" data-lang="tr" class="' + (F.lang === 'tr' ? 'on' : '') +
+            '">Türkçe</button>' +
+          '</div><div class="note">' + (trMode()
+            ? 'Sorular Türkçe geliyor.' + (TRN < QS.length
+                ? ' Çevirisi henüz olmayan <b class="num">' + nf(QS.length - TRN) +
+                  '</b> soru İngilizce kalır.' : '')
+            : 'Sınavda çıktığı dil — varsayılan bu. ' +
+              (TRN ? '<b class="num">' + nf(TRN) + '</b> sorunun Türkçesi hazır.' : '')) +
+          ' Dili değiştirmek ilerlemeni bozmaz: soru dilden bağımsız sayılır, ' +
+          'çözdüğün soru iki kez karşına çıkmaz.</div></div>' +
         '<div class="grp"><span class="lbl">Ara</span>' +
           '<input type="search" id="q" placeholder="kelime ya da soru ID" value="' + esc(F.q) + '"></div>' +
         '<div class="grp"><span class="lbl">Kapsam</span><div id="sw"></div></div>' +
@@ -1445,6 +1578,8 @@ function home(){
   if (ma) ma.onclick = () => {
     F.pick = {}; F.deck = deckCount('due') ? 'due' : 'wrong'; savePref(); home();
   };
+  el('lang').querySelectorAll('button').forEach(b =>
+    b.onclick = () => { F.lang = b.dataset.lang; savePref(); home(); openBox('optBox'); });
   el('aiSel').querySelectorAll('button').forEach(b =>
     b.onclick = () => { F.ai = b.dataset.ai; savePref(); home(); openBox('optBox'); });
   el('swSound').onclick = () => {
@@ -1551,12 +1686,12 @@ function buildTree(){
       return '<div class="row"><button class="tick ' + (on ? 'all' : '') + '" data-s="' + s.c +
         '" data-c="' + sc[0] + '" type="button">' + (on ? '◼' : '◻') + '</button>' +
         '<button class="nm" data-solo="' + s.c + '" data-c="' + sc[0] + '" type="button" title="' +
-        esc(sc[1]) + '">' + esc(sc[1]) + '<b>' + n + '</b></button></div>';
+        esc(secName(sc)) + '">' + esc(secName(sc)) + '<b>' + n + '</b></button></div>';
     }).join('');
     return '<div class="node' + (state ? ' sel' : '') + '"><div class="row">' +
       '<button class="tick ' + state + '" data-s="' + s.c + '" type="button">' +
         (state === 'all' ? '◼' : state === 'some' ? '◧' : '◻') + '</button>' +
-      '<button class="nm" data-solo="' + s.c + '" type="button">' + s.c + ' · ' + esc(s.n) +
+      '<button class="nm" data-solo="' + s.c + '" type="button">' + s.c + ' · ' + esc(subjName(s)) +
         '<b>' + qs.length + '</b></button>' +
       '<button class="exp' + (expanded[s.c] ? ' open' : '') + '" data-x="' + s.c +
         '" type="button" aria-label="Bölümler">›</button></div>' +
@@ -1639,17 +1774,20 @@ function askText(){
     'Aşağıdaki soruyu açıkla: doğru cevap neden doğru, diğer şıklar neden yanlış? ' +
       'Kısa ve net yaz, Türkçe cevapla.',
     '',
-    'Ders: ' + s.c + ' · ' + s.n + (sec && sec[1] ? ' — ' + sec[1] : ''),
-    'Soru (' + q[0] + '): ' + q[3],
+    'Ders: ' + s.c + ' · ' + subjName(s) + (sec && sec[1] ? ' — ' + secName(sec) : ''),
+    'Soru (' + q[0] + '): ' + qText(q),
     '',
   ];
-  R.order.forEach((oi, pos) => L.push(KEYS[pos] + ') ' + q[4][oi]));
-  L.push('', 'Doğru cevap: ' + KEYS[okPos] + ') ' + q[4][0]);
+  R.order.forEach((oi, pos) => L.push(KEYS[pos] + ') ' + qOpts(q)[oi]));
+  L.push('', 'Doğru cevap: ' + KEYS[okPos] + ') ' + qOpts(q)[0]);
   if (R.picked !== null){
     const dogru = R.order[R.picked] === 0;
-    L.push('Benim cevabım: ' + KEYS[R.picked] + ') ' + q[4][R.order[R.picked]] +
+    L.push('Benim cevabım: ' + KEYS[R.picked] + ') ' + qOpts(q)[R.order[R.picked]] +
            (dogru ? '  (doğru)' : '  (yanlış)'));
   }
+  // Türkçe kipteysek İngilizce aslını da ver: model çeviriye değil kaynağa baksın
+  if (trMode() && q[10]) L.push('', 'Sorunun İngilizce aslı: ' + q[3],
+    ...q[4].map((t, i) => '  ' + (i === 0 ? '(doğru) ' : '') + t));
   if (q[8]) L.push('', 'Not: Bu soruda bir şekil var, metne aktarılamadı.');
   if (q[7]) L.push('Not: Bu soru ders notundan üretilmiştir, gerçek sınav sorusu değildir.');
   return L.join('\n');
@@ -1680,7 +1818,7 @@ function draw(){
     } else if (pos === R.picked) cls += ' sel';
     return '<button class="' + cls + '" data-p="' + pos + '"' +
       (R.picked !== null ? ' disabled' : '') + ' type="button">' +
-      '<span class="k">' + KEYS[pos] + '</span><span>' + esc(q[4][oi]) + '</span>' +
+      '<span class="k">' + KEYS[pos] + '</span><span>' + esc(qOpts(q)[oi]) + '</span>' +
       (mark ? '<span class="m">' + mark + '</span>' : '') + '</button>';
   }).join('');
 
@@ -1724,7 +1862,7 @@ function draw(){
         '<kbd>←</kbd><kbd>→</kbd> ile gez</div>' +
     '</div>' +
     '<div class="card"><div class="head"><span class="lbl">' + esc(s.c) + '</span>' +
-      '<span class="who">' + esc(sec[1]) + '</span><span class="sp"></span>' +
+      '<span class="who">' + esc(secName(sec)) + '</span><span class="sp"></span>' +
       (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
       (q[8] && !figOf(q) ? '<span class="tag fig">şekil gerekli</span>' : '') +
       (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') +
@@ -1733,7 +1871,7 @@ function draw(){
       '<button class="starbtn' + (st.has(q[0]) ? ' on' : '') + '" id="star" type="button" ' +
         'title="Yıldızla (S)">' + (st.has(q[0]) ? '★' : '☆') + '</button>' +
       '<span class="lbl num">' + q[0] + '</span></div>' +
-      '<div class="qt">' + esc(q[3]) + '</div>' +
+      '<div class="qt">' + esc(qText(q)) + '</div>' +
       (figOf(q) ? '<div class="figbox">' + figOf(q) + '</div>' : '') +
       '<div class="opts">' + opts + '</div>' + verdict + '</div>' +
     '<div class="acts">' +
@@ -1843,10 +1981,10 @@ function report(rec, live){
         const firstOk = tries[0].ok;
         const fixed = tries.length > 1 && tries[tries.length - 1].ok;
         return '<div class="rrow"><span class="rdot ' + (firstOk ? 'ok' : 'bad') + '"></span>' +
-          '<div style="min-width:0"><div class="q">' + esc(q[3]) + '</div><div class="a">' +
-          (firstOk ? '<b>' + esc(q[4][0]) + '</b>'
-                   : '<i>İlk seçimin: ' + esc(q[4][tries[0].pick]) + '</i> · <b>Doğru: ' +
-                     esc(q[4][0]) + '</b>' + (fixed ? ' · sonra bildin' : '')) +
+          '<div style="min-width:0"><div class="q">' + esc(qText(q)) + '</div><div class="a">' +
+          (firstOk ? '<b>' + esc(qOpts(q)[0]) + '</b>'
+                   : '<i>İlk seçimin: ' + esc(qOpts(q)[tries[0].pick]) + '</i> · <b>Doğru: ' +
+                     esc(qOpts(q)[0]) + '</b>' + (fixed ? ' · sonra bildin' : '')) +
           '</div></div></div>';
       };
       const bad = seen.filter(id => !log.filter(x => x.id === id)[0].ok);
@@ -1890,8 +2028,10 @@ function cloudInner(){
         'Google ile giriş yap</button></div>' +
       (Cloud.durum ? '<div class="note bad">' + esc(Cloud.durum) + '</div>' : '');
   }
-  return '<div class="cloudrow"><span class="cwho">' +
-      esc(u.displayName || u.email || 'Hesap') + '</span></div>' +
+  return '<div class="cloudrow gacc">' + avatar(ME) + '<span class="cwho">' +
+      '<b>' + esc(u.displayName || ME) + '</b>' +
+      (u.email ? '<span class="cmail">' + esc(u.email) + '</span>' : '') +
+      '</span></div>' +
     '<div class="cloudrow">' +
       '<button class="tbtn" id="cSync" type="button">Şimdi eşitle</button>' +
       '<button class="tbtn" id="cOut" type="button">Çıkış yap</button>' +
@@ -1941,7 +2081,7 @@ function openStats(){
     let n = 0, o = 0;
     QS.forEach(q => { if (q[1] === si && q[2] === i){ const k = S.c[q[0]];
       if (k){ n += k[2]; o += k[2] - k[3]; } } });
-    if (n >= 4) secs.push({ c:sc[0], t:sc[1], n, pct: Math.round(o/n*100) });
+    if (n >= 4) secs.push({ c:sc[0], t:secName(sc), n, pct: Math.round(o/n*100) });
   }));
   secs.sort((a,b) => a.pct - b.pct);
 
@@ -1960,8 +2100,10 @@ function openStats(){
     '<div class="whobox"><span class="lbl">Adın</span>' +
       '<div class="whorow"><input id="pname" maxlength="28" value="' + esc(ME) + '">' +
         '<button class="tbtn" id="pSave" type="button">Kaydet</button></div>' +
-      '<div class="note">Sistem rastgele verdi — istediğin gibi değiştir. ' +
-        'İlerlemen bu ada bağlı saklanır.</div>' +
+      '<div class="note">' + (Cloud.user
+        ? 'Google hesabındaki adın. Değiştirirsen bulutta da yeni adla saklanır.'
+        : 'Sistem rastgele verdi — istediğin gibi değiştir. ' +
+          'İlerlemen bu ada bağlı saklanır.') + '</div>' +
       (PROFILES.length > 1
         ? '<div class="whorow" style="margin-top:8px">' +
           '<select id="prof">' + PROFILES.map(x => '<option' + (x === ME ? ' selected' : '') +
@@ -2001,7 +2143,7 @@ function openStats(){
       const m = moduleStat(s.c, true);
       return '<button class="pchip' + (isPassed(s.c) ? ' on' : '') + '" data-pass="' + s.c +
         '" type="button" aria-pressed="' + (isPassed(s.c) ? 'true' : 'false') + '">' +
-        '<span class="tk"></span><b>' + s.c + '</b><span class="nm">' + esc(s.n) + '</span>' +
+        '<span class="tk"></span><b>' + s.c + '</b><span class="nm">' + esc(subjName(s)) + '</span>' +
         '<i class="num">' + m.total + '</i></button>';
     }).join('') + '</div>' +
     '<div class="note" id="passSum" style="margin-top:8px"></div>' +
@@ -2128,6 +2270,11 @@ function mergeState(t, p){
     t.passed = (p.passed || []).slice();
     t.pAt = p.pAt;
   }
+  // Ayarlar bir tercih kümesidir, birleştirilemez — en son kaydedilen kazanır
+  if (p.pref && (p.prefAt || 0) > (t.prefAt || 0)){
+    t.pref = Object.assign({}, p.pref);
+    t.prefAt = p.prefAt;
+  }
   const byId = {};
   (t.runs || []).concat(p.runs || []).forEach(r => {
     if (!r || !r.id) return;
@@ -2142,7 +2289,9 @@ function merge(text){
   let p;
   try{ p = JSON.parse(text); }catch(e){ return 'Metin bozuk — tamamını kopyaladığından emin ol.'; }
   if (!p || p.v !== 2 || typeof p.c !== 'object') return 'Bu bir ATPL Çalışma yedeği değil.';
+  const oncePref = S.prefAt || 0;
   mergeState(S, p);
+  if ((S.prefAt || 0) !== oncePref) applyPref();   // buluttan daha yeni ayar geldi
   save();
   return true;
 }

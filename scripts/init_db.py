@@ -16,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "atpl.db"
 DATA_DIR = ROOT / "data"
+TR_DIR = DATA_DIR / "tr"          # Türkçe çeviriler; kaynak dosyalar İngilizce kalır
 
 SCHEMA = """
 PRAGMA foreign_keys = ON;
@@ -127,6 +128,24 @@ def migrate(conn: sqlite3.Connection) -> None:
     if "flagged" not in cols:
         # kaynakta "Attention!" işaretli sorular: cevabı tartışmalı olabilir
         conn.execute("ALTER TABLE questions ADD COLUMN flagged INTEGER NOT NULL DEFAULT 0")
+    if "text_tr" not in cols:
+        # Türkçe çeviri; boşsa uygulama İngilizce metne düşer
+        conn.execute("ALTER TABLE questions ADD COLUMN text_tr TEXT")
+    if "lang" not in cols:
+        # sorunun **kaynak** dili: 'en' (sınav raporu) | 'tr' (ders notu, 501, 502).
+        # Kaynağı Türkçe olan sorunun çeviriye ihtiyacı yoktur.
+        conn.execute("ALTER TABLE questions ADD COLUMN lang TEXT NOT NULL DEFAULT 'en'")
+
+    ocols = {r[1] for r in conn.execute("PRAGMA table_info(options)")}
+    if "text_tr" not in ocols:
+        conn.execute("ALTER TABLE options ADD COLUMN text_tr TEXT")
+
+    if "name_tr" not in scols:
+        conn.execute("ALTER TABLE subjects ADD COLUMN name_tr TEXT")
+
+    seccols = {r[1] for r in conn.execute("PRAGMA table_info(sections)")}
+    if "name_tr" not in seccols:
+        conn.execute("ALTER TABLE sections ADD COLUMN name_tr TEXT")
 
     conn.commit()
 
@@ -181,6 +200,7 @@ def import_file(conn: sqlite3.Connection, path: Path) -> int:
     default_section = data.get("section_code")
     source = data.get("source")
     origin = data.get("origin", "banka")
+    lang = data.get("lang", "en")           # kaynak dil, dosya düzeyinde
     labels = "ABCDE"
 
     for q in data["questions"]:
@@ -189,15 +209,16 @@ def import_file(conn: sqlite3.Connection, path: Path) -> int:
             sys.exit(f"hata: soru {q['id']} tanımsız bölüme işaret ediyor: {code}")
 
         conn.execute(
-            "INSERT INTO questions(id, subject_code, section_id, text, source, flagged, origin, needs_figure) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?) "
+            "INSERT INTO questions(id, subject_code, section_id, text, source, flagged, origin, "
+            "                      needs_figure, lang) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) "
             "ON CONFLICT(id) DO UPDATE SET subject_code = excluded.subject_code, "
             "section_id = excluded.section_id, text = excluded.text, "
             "source = excluded.source, flagged = excluded.flagged, origin = excluded.origin, "
-            "needs_figure = excluded.needs_figure",
+            "needs_figure = excluded.needs_figure, lang = excluded.lang",
             (q["id"], subject_code, section_ids.get(code), q["text"], source,
              1 if q.get("flagged") else 0, q.get("origin", origin),
-             1 if q.get("needs_figure") else 0),
+             1 if q.get("needs_figure") else 0, q.get("lang", lang)),
         )
         # Şıklar her içe aktarımda yeniden yazılır (sıra/metin düzeltmeleri için)
         conn.execute("DELETE FROM options WHERE question_id = ?", (q["id"],))
@@ -210,6 +231,53 @@ def import_file(conn: sqlite3.Connection, path: Path) -> int:
 
     conn.commit()
     return len(data["questions"])
+
+
+def import_translations(conn: sqlite3.Connection) -> tuple[int, int]:
+    """data/tr/*.json içindeki Türkçe metinleri sorulara ve şıklara yazar.
+
+    Şıklar **sırayla** eşlenir: kaynakta doğru cevap ilk sıradadır, çeviri de
+    aynı sırayı taşımak zorundadır. Sayı tutmuyorsa dosya reddedilir — sessizce
+    yanlış şıkka doğru cevap etiketi yapıştırmaktansa derleme dursun.
+    """
+    conn.execute("UPDATE questions SET text_tr = NULL")
+    conn.execute("UPDATE options SET text_tr = NULL")
+    if not TR_DIR.exists():
+        return 0, 0
+
+    ders = TR_DIR / "_dersler.json"
+    if ders.exists():
+        d = json.loads(ders.read_text(encoding="utf-8"))
+        for code, ad in d.get("subjects", {}).items():
+            conn.execute("UPDATE subjects SET name_tr = ? WHERE code = ?", (ad, code))
+        for code, ad in d.get("sections", {}).items():
+            conn.execute("UPDATE sections SET name_tr = ? WHERE code = ?", (ad, code))
+
+    nq = 0
+    for path in sorted(TR_DIR.glob("*.json")):
+        if path.name.startswith("_"):
+            continue
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for sid, tr in data.get("questions", {}).items():
+            qid = int(sid)
+            row = conn.execute("SELECT id FROM questions WHERE id = ?", (qid,)).fetchone()
+            if row is None:
+                sys.exit(f"hata: {path.name} bilinmeyen soru id'si çeviriyor: {qid}")
+            opts = conn.execute(
+                "SELECT id FROM options WHERE question_id = ? ORDER BY ord", (qid,)).fetchall()
+            tops = tr.get("options", [])
+            if len(tops) != len(opts):
+                sys.exit(f"hata: {path.name} soru {qid}: {len(tops)} şık çevrilmiş, "
+                         f"kaynakta {len(opts)} şık var")
+            if not tr.get("text", "").strip() or any(not t.strip() for t in tops):
+                sys.exit(f"hata: {path.name} soru {qid}: boş çeviri")
+            conn.execute("UPDATE questions SET text_tr = ? WHERE id = ?", (tr["text"], qid))
+            for (oid,), t in zip(opts, tops):
+                conn.execute("UPDATE options SET text_tr = ? WHERE id = ?", (t, oid))
+            nq += 1
+    conn.commit()
+    toplam = conn.execute("SELECT COUNT(*) FROM questions").fetchone()[0]
+    return nq, toplam
 
 
 def rebuild_fts(conn: sqlite3.Connection) -> None:
@@ -234,11 +302,13 @@ def main() -> None:
         print(f"{path.name}: {n} soru içe aktarıldı")
 
     dups = apply_duplicates(conn)
+    ceviri, _ = import_translations(conn)
     rebuild_fts(conn)
 
     q = conn.execute("SELECT COUNT(*) FROM questions").fetchone()[0]
     o = conn.execute("SELECT COUNT(*) FROM options").fetchone()[0]
     uret = conn.execute("SELECT COUNT(*) FROM questions WHERE origin = 'uretilmis'").fetchone()[0]
+    trsrc = conn.execute("SELECT COUNT(*) FROM questions WHERE lang = 'tr'").fetchone()[0]
     missing = conn.execute(
         "SELECT COUNT(*) FROM questions q "
         "WHERE NOT EXISTS (SELECT 1 FROM options o WHERE o.question_id = q.id AND o.is_correct = 1)"
@@ -248,6 +318,8 @@ def main() -> None:
     print(f"\n{DB_PATH}: toplam {q} soru, {o} şık")
     print(f"  {dups} tekrar işaretlendi → {q - dups} benzersiz soru")
     print(f"  {uret} soru ders notundan üretilmiş")
+    print(f"  {ceviri} sorunun Türkçe çevirisi var, {trsrc} soru zaten Türkçe kaynaklı")
+    print(f"  → Türkçe kipte {ceviri + trsrc}/{q} soru Türkçe geliyor")
     if missing:
         print(f"UYARI: {missing} sorunun doğru cevabı işaretlenmemiş")
 

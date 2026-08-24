@@ -25,8 +25,11 @@ en başta olacak şekilde veriyor; bu sıra `data/*.json` içinde ve `atpl.db`'d
 
 ```
 data/*.json          soru kaynağı (elle çevrilmiş, tek doğruluk kaynağı)
+data/tr/*.json       soruların Türkçe çevirisi (id → metin + şıklar)
+data/tr/_dersler.json ders ve bölüm adlarının Türkçesi
 data/_tekrarlar.json elle doğrulanmış tekrar grupları
 scripts/init_db.py   data/ → atpl.db  (idempotent, ON CONFLICT ile günceller)
+scripts/check_tr.py  çevirileri kaynakla karşılaştırıp doğrular
 scripts/find_duplicates.py  benzer soru tarayıcı
 scripts/topic_gap.py   ders notunda olup soruda olmayan konuları listeler
 atpl.db              üretilmiş soru bankası — elle düzenleme, JSON'u düzelt
@@ -45,6 +48,44 @@ python3 scripts/build_web.py   # artifact sürümünü tazele
 ```
 
 `init_db.py` tabloları düşürmez; kullanıcı verisi ayrı dosyada olduğu için güvenlidir.
+
+## Soru dili (İngilizce / Türkçe)
+
+Sınav soruları kaynakta İngilizcedir ve **varsayılan dil İngilizcedir** — sınavda öyle
+çıkıyor. Türkçesi `data/tr/*.json` içinde ayrı durur; kaynak dosyalara dokunulmaz.
+
+```json
+{ "questions": { "14227": { "text": "Soru?", "options": ["Şık 1", "Şık 2"] } } }
+```
+
+- **Şıklar sırayla eşlenir.** Kaynakta doğru cevap ilk şıktır; çeviri aynı sırayı
+  taşımak zorundadır. Sayı tutmazsa `init_db.py` ve `check_tr.py` derlemeyi durdurur —
+  sıra kayarsa yanlış şık doğru diye işaretlenirdi.
+- Çevirisi olmayan soru Türkçe kipte de **İngilizce görünür**; yarım çeviri yüzünden
+  soru kaybolmaz.
+- Kaynağı zaten Türkçe olan dosyalar (501, 502, ders notu soruları) dosya düzeyinde
+  `"lang": "tr"` taşır. Bunlar çeviri kapsamı dışıdır, "çevrilmedi" diye sayılmazlar.
+- Ders/bölüm adları `data/tr/_dersler.json` içinde; karşılığı olmayan İngilizce kalır.
+
+Çeviri eklendikten sonra:
+
+```bash
+python3 scripts/check_tr.py            # şık sayısı, boş/çevrilmemiş metin, çift id
+python3 scripts/init_db.py && python3 scripts/build_web.py
+```
+
+Uygulamada tercih `F.lang` (`'en'` varsayılan), Ayarlar'daki **Soru dili** satırından
+seçilir ve `S.pref` içinde saklanıp cihazlar arasında eşitlenir. Metin seçimi tek yerden
+geçer: `qText(q)` / `qOpts(q)` / `subjName(s)` / `secName(sc)`. Soru metnini doğrudan
+`q[3]`, şıkları `q[4]` diye okuma — dil süzgeci devre dışı kalır.
+
+**İlerleme dilden bağımsızdır.** Kayıt soru **id'sine** bağlı; dili değiştirmek
+çözülmüşleri sıfırlamaz ve aynı soruyu iki dilde iki kez sormaz. Şık dizilerinin uzunluğu
+iki dilde aynı olduğu için tur ortasında dil değiştirmek cevap konumlarını da bozmaz.
+
+Dışa aktarımda çeviri, soru satırının **10. ve 11. alanları**dır (`q[10]` metin,
+`q[11]` şıklar) ve yalnız çevirisi olan satırda bulunur — çevirisiz sorular bugünküyle
+aynı boyutta kalır.
 
 ## Tekrar grupları
 
@@ -144,7 +185,8 @@ ile kaldığı yerden sürdürür. Biten turların `ids`/`missed` alanları sili
 yüklenmezler. Hiç soru çözülmeden bırakılan turlar bir sonraki `start()`'ta atılır.
 
 İlk ziyarette `randomName()` rastgele bir profil adı üretir ve profil kendiliğinden açılır;
-giriş yoktur. Ad Durum panelinden değiştirilir (`renameProfile` localStorage anahtarını taşır). Aralıklı tekrar
+giriş yoktur. Google ile giriş yapılırsa profil hesabın ad soyadına döner (aşağıya bak).
+Ad Durum panelinden değiştirilir (`renameProfile` localStorage anahtarını taşır). Aralıklı tekrar
 kutuları `BOX_MS`, takılma eşiği `LEECH`, yanlış defterinden çıkış `MASTER` sabitleriyle
 ayarlanır. Kaynak `web/template.html`; `__DATA__` yer tutucusuna `build_web.py` veriyi
 gömer. Değişiklikten sonra `python3 scripts/build_web.py` çalıştır.
@@ -221,9 +263,32 @@ kancalardan birini kaldırırsan sessiz veri kaybı olur.
 değişmeden yakalayıp yollar. `Sıfırla` bulut belgesini de siler — yoksa ilk eşitlemede
 veri geri gelir.
 
+**Giriş yapan hesap profili sahiplenir.** `onAuthStateChanged` içinde `bindAccount(u)`
+çalışır: profil adı Google'daki **ad soyad** olur (yoksa e-postanın kullanıcı adı, 28
+karakterde kesilir), avatar `u.photoURL` olur ve bundan sonraki her kayıt — çözülen
+soru, ayar, tur, geçilen sınav — bu profile, yani hesaba yazılır.
+
+- Misafirken çözülenler kaybolmaz: profil **yeniden adlandırılır** (`renameProfile`),
+  veri olduğu gibi taşınır. Hesabın profili bu tarayıcıda zaten varsa ona geçilir ve
+  misafir profili yerinde bırakılır.
+- Girişteki yeniden adlandırma buluta **hemen yazmaz** (`renameProfile(…, true)`):
+  hesabın belgesinde başka cihazın verisi olabilir, `setDoc` onu ezerdi. Ardından gelen
+  `esitle()` önce çeker, kaynaştırır, sonra gönderir. Bu üçüncü parametreyi kaldırma.
+- Bağ uid başına `atpl.acct:<uid>` içinde durur. Girişten sonra adı elle değiştirirsen
+  bağ yeni ada taşınır ve sonraki giriş adı geri almaz; profil değiştirirsen hesap
+  artık o profile yazar.
+
+**Profil resmi yerelde durur** (`atpl.pics`, ad → adres); buluta gönderilmez, çünkü her
+cihaz kendi girişinde aynı adresi zaten alıyor. `avatar()` baş harfleri yazar ve resmi
+üstüne serer; resim yüklenemezse `onerror` img'yi silip `pic` sınıfını kaldırır, baş
+harfler geri gelir. Çıkışta resim düşer, ad ve veri yerelde kalır.
+
 Eşitleme çakışma çözmez, **kaynaştırır**: `mergeState(hedef, gelen)` kart bazında daha çok
 görülmüşü, gün sayaçlarında en büyüğü, turlarda son dokunulanı alır. Geçilen sınavlar
 `S.pAt` zaman damgasıyla son yazana gider — birleştirmek kaldırılan dersi geri getirirdi.
+Ayarlar da bir tercih kümesidir, birleştirilemez: `S.prefAt` damgasıyla son kaydeden
+kazanır (`savePref` damgayı basar). Buluttan daha yeni ayar gelirse `merge()` `applyPref()`
+çağırıp `F`'i tazeler — `S.pref === F` bağı orada yeniden kurulur, koru.
 `flush()` yerel yazmayı `flushLocal()` yapar, ardından `Cloud.schedule()` ile 4 saniye
 gecikmeli gönderir; Firestore yazma kotasını düşük tutar.
 
