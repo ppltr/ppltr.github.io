@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "16311": {
+   "text": "Bir pilotun okuyarak teyit etmesi (read back) gerekenler:",
+   "options": [
+    "SSR çalıştırma talimatları, kalkış müsaadeleri, altimetre ayarları, VDF bilgisi, frekans değişiklikleri.",
+    "altimetre ayarları, taksi bilgisi, terminal hava durumu, pist müsaadeleri, yaklaşma yardımcısı.",
+    "kullanılabilirlik durumu",
+    "rota müsaadeleri, hız talimatları, hava raporları, taksi müsaadeleri, pist durumu bilgisi. ATC rota müsaadeleri, pist müsaadeleri, şartlı müsaadeler, güncel hava raporları."
+   ]
+  },
+  "16312": {
+   "text": "Bir pilot, uçak çağrı adını (callsign) yalnızca şu durumda kısaltabilir;",
+   "options": [
+    "kullanılmakta olan frekansta yer istasyonu tarafından önce kısaltılmışsa.",
+    "karışıklığa yol açmayacağını düşündüğünde.",
+    "bir yer istasyonuyla haberleşme kurduktan sonra.",
+    "frekans değiştirirken."
+   ]
+  },
+  "16313": {
+   "text": "Bir pilot çağrı adını (call-sign) yalnızca şu durumda kısaltabilir:",
+   "options": [
+    "Kullanılmakta olan frekansta hava seyrüsefer yer istasyonu tarafından önce kısaltılmışsa.",
+    "Kalkış ve varış havaalanlarıyla haberleşirken.",
+    "Kullanılmakta olan frekansta benzer başka bir çağrı adıyla karışıklık olmayacağını düşündüğünde.",
+    "Kullanılmakta olan frekansta bir hava seyrüsefer yer istasyonuyla haberleşme kurduktan sonra."
+   ]
+  },
+  "16314": {
+   "text": "Bir pilot ETA'sını 'zero seven' olarak iletiyor. Varışını hangi saate tahmin ediyor?",
+   "options": [
+    "Saatin yedi dakika geçesinde.",
+    "Yetmiş dakika sonra.",
+    "Yedi dakika sonra.",
+    "Sabah saat yedide."
+   ]
+  },
+  "16315": {
+   "text": "1300 UTC saati şöyle iletilir:",
+   "options": [
+    "one three zero zero.",
+    "thirteen hundred UTC.",
+    "one three hundred UTC.",
+    "one thousand three hundred."
+   ]
+  },
+  "16316": {
+   "text": "1500 feet irtifası şöyle iletilir;",
+   "options": [
+    "one tousand fife hundred feet.",
+    "one fife zero zero feet.",
+    "one fife hundred feet.",
+    "fifteen hundred feet."
+   ]
+  },
+  "16317": {
+   "text": "Manevra alanındaki uçak ve araçların kontrolünden sorumlu ATC biriminin çağrı adı nedir?",
+   "options": [
+    "GROUND",
+    "APRON",
+    "DISPATCH",
+    "TOWER"
+   ]
+  },
+  "16318": {
+   "text": "İletimlerden bazı kelimeler, karışıklığa yol açmayacaksa çıkarılabilir. Aşağıdaki altı çizili kelimelerden hangisi asla çıkarılmamalıdır?",
+   "options": [
+    "İrtifa veya yükseklikle ilgili olarak FEET.",
+    "Meteorolojik raporlarda CLOUD.",
+    "Radar baş açılarıyla (heading) ilgili olarak DEGREES.",
+    "Yüzey rüzgârı ve yönüyle ilgili olarak SURFACE."
+   ]
+  },
+  "16319": {
+   "text": "Coventry Tower. \"G-ABCD take next right, return to apron contact ground 118.350.\" Doğru olanı seçin.",
+   "options": [
+    "Next right 118.350 G-ABCD",
+    "G-CD next right 118.350",
+    "Coventry Tower G-ABCD take next right 118.350",
+    "Next right 118.350 G-CD"
+   ]
+  },
+  "16320": {
+   "text": "'DISREGARD' ne anlama gelir:",
+   "options": [
+    "son mesajımın son kısmını dikkate almayın.",
+    "son mesaj uygunsuzdu ve yenisiyle değiştirilecek.",
+    "doğrulanmamış bilgiyi dikkate almayın.",
+    "o iletimi hiç gönderilmemiş sayın."
+   ]
+  },
+  "16321": {
+   "text": "Ondalık nokta içeren sayıların iletiminde:",
+   "options": [
+    "DECIMAL terimi her zaman iletilmelidir.",
+    "DECIMAL terimi yalnızca ardından üç rakam geliyorsa söylenmelidir.",
+    "DECIMAL terimi yalnızca tanıdık ATS birimleriyle iletişimde çıkarılabilir.",
+    "Yanlış anlaşılma ihtimali yoksa DECIMAL terimi çıkarılabilir."
+   ]
+  },
+  "16322": {
+   "text": "Saat konusunda karışıklık ihtimali yoksa, sabah 9.20 saati RT'de nasıl bildirilir?",
+   "options": [
+    "TWO ZERO",
+    "DECIMAL TWO ZERO",
+    "NINE TWO ZERO",
+    "ZERO NINE TWO ZERO"
+   ]
+  },
+  "16323": {
+   "text": "1500 saati nasıl iletilmelidir?",
+   "options": [
+    "Wun Fife Zero Zero",
+    "Minute Zero Zero",
+    "Wun Fife Hundred",
+    "Fifteen Hundred"
+   ]
+  },
+  "16324": {
+   "text": "Ankara Regional Pressure Setting değerinin 1015 mb olduğu nasıl okuyarak teyit edilir (read back)?",
+   "options": [
+    "'Ankara wun zero wun fife'",
+    "'Regional Pressure Setting wun zero wun fife'",
+    "'Regional Pressure wun zero wun fife'",
+    "'Ankara wun tousand wun fife millibars'"
+   ]
+  },
+  "16325": {
+   "text": "\"TC-AYB, Change to Hezarfen Tower, 118.025\" ATC talimatına doğru yanıt nasıl olurdu?",
+   "options": [
+    "118.025TC-AYB.",
+    "Wilco, TC- AYE.",
+    "Change to HezarfenTower 118.025, TC- AYE.",
+    "G-CD, 118.025."
+   ]
+  },
+  "16326": {
+   "text": "\"TC-AYE, Change to Corlu Tower, 120.375\" ATC talimatına doğru yanıt nasıl olurdu?",
+   "options": [
+    "120.375 TC-AYE.",
+    "Wilco, G-CD.",
+    "Change to Stephenuille Tower 120.375, G-CD.",
+    "G-CD, 120.375."
+   ]
+  },
+  "16327": {
+   "text": "Bir kontrolör talimat verdiğinde, talimat anlaşılmış ve gereği yerine getirilecekse standart yanıt:",
+   "options": [
+    "Wilco",
+    "Confirm",
+    "Roger",
+    "Verify"
+   ]
+  },
+  "16328": {
+   "text": "Bir pilot, ATC'den yerine getiremeyeceği bir talimat aldığında hangi ifadeyi kullanmalıdır:",
+   "options": [
+    "UNABLE TO COMPLY",
+    "CANCEL INSTRUCTİON.",
+    "NO CAN DO.",
+    "NEGATIVE INSTRUCTION."
+   ]
+  },
+  "16329": {
+   "text": "'ALL STATIONS' çağrısı yapıldığında:",
+   "options": [
+    "Belirli istasyonlardan teyit istenmedikçe yanıt beklenmez",
+    "Bir teyit alındıktan sonra tekrarlanmalıdır",
+    "ALL STATIONS çağrısının teyit edilmesi zorunludur",
+    "Hiçbir zaman yanıt verilmemelidir"
+   ]
+  },
+  "16330": {
+   "text": "Bir mesajı ileten kişi hata yaparsa, o kişi şunu yapmalıdır:",
+   "options": [
+    "\"correction\" ifadesini iletip ardından doğru talimatı veya isteği söylemek",
+    "'repeat' ifadesini kullanıp, son doğru kelimeyi veya ifadeyi tekrarlamak ve ardından düzeltilmiş mesaja devam etmek.",
+    "'I say again' ifadesini kullanıp, son yanlış kelimeyi veya ifadeyi tekrarlamak ve ardından mesajın düzeltilmiş halini vermek.",
+    "konuşmayı durdurup, 'I say again' ifadesini iletmek ve ardından doğru mesajı vermek."
+   ]
+  },
+  "16331": {
+   "text": "ATC'den gelen bir talimatın 'G-LO squawk 7043' olduğu düşünüldüğünde, verilecek yanıt ne olmalıdır?",
+   "options": [
+    "'say again squawk, Golf Lima Oscar'",
+    "'Golf Lima Oscar, squawk 7043'",
+    "'squawk 7043, Golf Lima Oscar'",
+    "'squawk 7043'"
+   ]
+  },
+  "16332": {
+   "text": "ATC'den \"STAND BY\" duyulduğunda doğru anlamı:",
+   "options": [
+    "Bekleyin, tekrar arama yapılacaktır.",
+    "GO AHEAD",
+    "I SAY AGAIN",
+    "HOLD"
+   ]
+  },
+  "16333": {
+   "text": "ATC'den \"WILCO\" duyulduğunda doğru anlamı:",
+   "options": [
+    "Mesaj anlaşıldı ve gereği yerine getirilecek.",
+    "roger.",
+    "I SAY AGAIN",
+    "HOLD"
+   ]
+  },
+  "16334": {
+   "text": "'Bekleyin, tekrar arama yapılacaktır' anlamı iletilmek istendiğinde kullanılması gereken doğru ifade:",
+   "options": [
+    "STANDBY",
+    "GO AHEAD",
+    "I SAY AGAIN",
+    "HOLD"
+   ]
+  },
+  "16335": {
+   "text": "Mesajları etkili kılmak için:",
+   "options": [
+    "sabit bir ses seviyesinde konuşmak",
+    "mesajı tekrarlamak",
+    "kelimeleri iki kez kullanmak",
+    "daha yavaş konuşmak"
+   ]
+  },
+  "16336": {
+   "text": "Havacılıkta günümüzde kullanılan alfabe...",
+   "options": [
+    "IRSA veya ICAO alfabesi olarak bilinir.",
+    "IPA (International Pronounciation Alphabet).",
+    "EASA fonetik alfabesi.",
+    "NATO fonetik alfabesi."
+   ]
+  },
+  "16337": {
+   "text": "Aşağıdaki doğru cümleyi işaretleyin.",
+   "options": [
+    "SSR talimatı, zorunlu RTF haberleşmesinin bir parçası olan okuyarak teyit (readback) mesajının bir bölümüdür",
+    "Kule ile haberleşmede önce konum bildirimi, ardından kimlik bilgisi verilir.",
+    "Konuşmalar sırasında mikrofon ile dudaklar arasındaki mesafe yaklaşık 10 cm olmalıdır.",
+    "Telsiz konuşmaları, ortalama dakikada 50 kelime hızında ve yüksek sesle yapılır."
+   ]
+  },
+  "16338": {
+   "text": "Mesajım şu durumda daha etkili ve anlaşılır olur:",
+   "options": [
+    "Konuşma ses düzeyini sabit tutmak",
+    "Mesajın her başlangıcını vurgulamak",
+    "Mesajın sonunu vurgulamak",
+    "Kelimeleri iki kez kullanma yöntemini uygulamak"
+   ]
+  },
+  "16339": {
+   "text": "QFE şudur,",
+   "options": [
+    "Havaalanı yüzeyinin üzerindeki dikey mesafeyi veren altimetre ayarı.",
+    "Bulut tavanı ve görüş mesafesi uygun.",
+    "Rüzgâr hızı ve yönünde ani değişim.",
+    "Deniz seviyesinin üzerindeki dikey mesafeyi veren altimetre ayarı."
+   ]
+  },
+  "16340": {
+   "text": "Okunabilirlik skalasında \"Readability 5\" ne anlama gelir:",
+   "options": [
+    "Mükemmel okunabilir.",
+    "Anlamada sorun var.",
+    "Okunamıyor.",
+    "Zorlukla okunabiliyor."
+   ]
+  },
+  "16341": {
+   "text": "QNH şudur,",
+   "options": [
+    "Yerdeyken rakımı (elevation) verecek altimetre alt skala ayarı.",
+    "QNH hektopaskal değildir.",
+    "Q kodu",
+    "Havaalanı rakımındaki atmosfer basıncı."
+   ]
+  },
+  "16342": {
+   "text": "'SQUAWK IDENT' ne anlama gelir:",
+   "options": [
+    "SSR transponderin 'Special Position Identification' özelliğini çalıştırmak.",
+    "çağrı adını tekrar söylemek.",
+    "SSR transponder modunu 'ALT' konumuna almak.",
+    "SSR transponder kodunu 7000'e ayarlamak."
+   ]
+  },
+  "16343": {
+   "text": "STANDBY şu anlama gelir,",
+   "options": [
+    "Bekleyin, tekrar arama yapılacaktır.",
+    "İstek yerine getirilemiyor.",
+    "Mesaj anlaşıldı.",
+    "Konuşma hızını azaltmak."
+   ]
+  },
+  "16344": {
+   "text": "'STANDBY' ne anlama gelir:",
+   "options": [
+    "beklemek, tekrar arama yapılacak.",
+    "mevcut baş açısında (heading) devam etmek ve dinlemeye devam etmek.",
+    "mevcut konumu korumak.",
+    "SSR transponderde STANDBY'ı seçmek."
+   ]
+  },
+  "16345": {
+   "text": "TC-ABC uçak çağrı adının kısaltması:",
+   "options": [
+    "T-BC",
+    "ABC",
+    "BC",
+    "TC-BC"
+   ]
+  },
+  "16346": {
+   "text": "Aşağıda listelenen ATC mesajları tam olarak okuyarak teyit edilmelidir (read back). Pilotlar herhangi bir mesajı okuyarak teyit etmezse kontrolör bunu onlardan ister. Bir mesaj tam olarak alınamazsa veya anlaşılmazsa, pilot durumu netleştirmesi için kontrolörden talepte bulunmalıdır.",
+   "options": [
+    "Tümü.",
+    "Kullanılan pist, hava yolları veya rota müsaadeleri.",
+    "Baş açısı (heading) ve hız talimatları.",
+    "Seviye (level) talimatları."
+   ]
+  },
+  "16347": {
+   "text": "Manevra alanındaki yer araçlarını kontrol eden istasyonun çağrı adı:",
+   "options": [
+    "GROUND",
+    "TOWER",
+    "CLEARANCE",
+    "APRON"
+   ]
+  },
+  "16348": {
+   "text": "Kartal BAHT çağrı adının doğru kısaltması...",
+   "options": [
+    "Kartal HT.",
+    "Kartal B-HT.",
+    "B-HT.",
+    "Kartal B -T."
+   ]
+  },
+  "16349": {
+   "text": "TC-ABC çağrı adının doğru kısaltması;",
+   "options": [
+    "Tango Bravo Charlie",
+    "Charlie Bravo Charlie",
+    "Alfa Bravo Charlie",
+    "Tango Charlie Alfa."
+   ]
+  },
+  "16350": {
+   "text": "Bir uçağın Position Report'unun (konum raporu) doğru sırası ve içeriği şöyledir:",
+   "options": [
+    "Çağrı adı / Konum / Zaman / Seviye veya İrtifa / ETA ile birlikte sonraki konum",
+    "Çağrı adı / Pistte geri taksi (back-track) / Geçiş seviyeleri (Transition Levels)",
+    "Çağrı adı / Çatışan trafiğe olan mesafe / Seviye zamanı",
+    "Konum / Zaman / Seviye veya İrtifa / ETA ile birlikte sonraki konum"
+   ]
+  },
+  "16351": {
+   "text": "Mesaj kategorilerinin doğru öncelik sırası nedir?",
+   "options": [
+    "yön bulma - uçuş emniyeti - uçuş düzenliliği",
+    "aciliyet (urgency) - tehlike (distress) - yön bulma",
+    "uçuş emniyeti - tehlike (distress) - aciliyet (urgency)",
+    "yön bulma - uçuş emniyeti - aciliyet (urgency) - uçuş düzenliliği"
+   ]
+  },
+  "16352": {
+   "text": "Tehlikedeki bir uçak tarafından gönderilecek tehlike sinyali ve tehlike mesajı hangi frekanstan iletilmelidir:",
+   "options": [
+    "O sırada kullanılmakta olan hava-yer frekansı.",
+    "Her durumda acil durum frekansı.",
+    "Bölgesel guard frekansı.",
+    "İlgili hava sahası için belirlenmiş FIS frekansı."
+   ]
+  },
+  "16353": {
+   "text": "VHF Havacılık RTF hizmetinin frekans bandı nedir?",
+   "options": [
+    "118.000 MHz-136.975 MHz",
+    "108.000 KHz-136.975 MHz",
+    "30 MHz-300 MHz",
+    "108.000 MHz-118.000 MHz"
+   ]
+  },
+  "16354": {
+   "text": "ICAO Radyotelefoni El Kitabı (ICAO Manual of Radiotelephony), aşağıdaki müsaadelerin, talimatların ve bilgilerin pilot tarafından her zaman okuyarak teyit edilmesini (read back) şart koşar.",
+   "options": [
+    "Tümü",
+    "Transponder (SSR) Kodları,",
+    "Altimetre Ayarları.",
+    "ATC Rota Müsaadeleri."
+   ]
+  },
+  "16356": {
+   "text": "Kuleden gelen \"Vacate Runway left\" talimatı şu anlama gelir,",
+   "options": [
+    "Pisti sol taraftan terk etmek",
+    "Taksi hızını artırmak veya pisti C taksi yolundan terk etmek.",
+    "180 derece dönüp geri gitmek ve pisti C taksi yolu üzerinden terk etmek.",
+    "C taksi yolundan pisti terk eden trafiğe karşı dikkatli olmak"
+   ]
+  },
+  "16357": {
+   "text": "'GO AROUND' ATC talimatının anlamı:",
+   "options": [
+    "pas geçmeyi (missed approach) uygulamak.",
+    "50 ft AGL'nin altına inmemek.",
+    "kanat ucu açıklığı yeterliyse manevra alanındaki öndeki uçağın etrafından dolaşmak.",
+    "öndeki trafiğin pisti boşaltmasına izin vermek için standart 360° dönüş yapmak."
+   ]
+  },
+  "16358": {
+   "text": "'CORRECT' kelimesinin anlamı:",
+   "options": [
+    "Doğru",
+    "son talimat düzeltilecek.",
+    "iletimimin son doğru kısmından sonra gelen ifade veya mesaj doğrudur.",
+    "son talimatın doğru şekilde okuyarak teyit edilmesi."
+   ]
+  },
+  "16359": {
+   "text": "WILCO'nun anlamı;",
+   "options": [
+    "Mesaj anlaşıldı ve gereği yerine getirilecek.",
+    "Mesajın yalnızca bir kısmı duyuldu.",
+    "Talimata uyulmaya çalışılacak.",
+    "Mesaj duyuldu."
+   ]
+  },
+  "16360": {
+   "text": "\"T-CD CHANGE FREQUENCY TO Yeşilköy TOWER 118.1\" ATC mesajının okuyarak teyidinin (readback) asgari içeriği:",
+   "options": [
+    "118.1 T-CD",
+    "CHANGING FREQUENCY X-CD",
+    "118.1",
+    "TO Yeşilköy T-CD"
+   ]
+  },
+  "16361": {
+   "text": "Bir hava seyrüsefer istasyonunun çağrı adındaki isim veya sonek şu durumda çıkarılabilir:",
+   "options": [
+    "tatmin edici haberleşme kurulduktan ve karışıklık olmayacağı sağlandıktan sonra",
+    "yalnızca yer istasyonu tarafından ilk kez kullanıldığında",
+    "uçağın havaalanıyla görsel temasta olması şartıyla",
+    "asla"
+   ]
+  },
+  "16362": {
+   "text": "\"Squawk Charlie\" ifadesi şu anlama gelir",
+   "options": [
+    "transponderde 'ALT' seçmek.",
+    "Transponderde OFF konumunu seçmek.",
+    "transponderde 7700'ü seçmek.",
+    "transponderin ON konumunda olduğunu teyit etmek."
+   ]
+  },
+  "16363": {
+   "text": "\"yes\" (evet) demek istendiğinde kullanılacak ifade:",
+   "options": [
+    "AFFIRM",
+    "WILCO",
+    "ROGER",
+    "AFFIRMATIVE"
+   ]
+  },
+  "16364": {
+   "text": "İrtifa için Q kodu:",
+   "options": [
+    "QNH",
+    "QFE",
+    "QDM",
+    "QDR"
+   ]
+  },
+  "16365": {
+   "text": "0910 saatinde iletilecek 1020 saati şu şekilde iletilir:",
+   "options": [
+    "'one zero two zero'.",
+    "ten two zero.",
+    "'two zero'.",
+    "ten twenty hours."
+   ]
+  },
+  "16366": {
+   "text": "Saat 4:15 P.M. Saat konusunda karışıklık ihtimali varsa bu saat nasıl doğru şekilde iletilir?",
+   "options": [
+    "One six one five",
+    "Four fifteen in the afternoon",
+    "Sixteen fifteen",
+    "Four fifteen P.M."
+   ]
+  },
+  "16367": {
+   "text": "Hava seyrüsefer haberleşme hizmetinin 3 kategorisi vardır:",
+   "options": [
+    "Tam Hava Trafik Kontrolü / Uçuş Bilgi Hizmeti (Flight Information Service) / Hava-Yer Haberleşme Hizmeti",
+    "Tower / Tam Hava Trafik Kontrolü / FIS",
+    "Approach / Tower / FIS",
+    "Tower / FIS / FIR"
+   ]
+  },
+  "16368": {
+   "text": "Hangi pist koşullarında fren etkisi \"Unreliable\" olarak bildirilir?",
+   "options": [
+    "Pist ıslak kar ve sulu karla (slush) kaplı",
+    "Pist kuru karla kaplı.",
+    "Pist koşulları normal.",
+    "Pist buzla kaplı."
+   ]
+  },
+  "16369": {
+   "text": "'VERIFY' ne anlama gelir:",
+   "options": [
+    "son mesajın kontrol edilip teyit edilmesi.",
+    "son mesajın teyit edilmesi.",
+    "VDF kerterizinin okuyarak teyit edilmesi (read back).",
+    "son iletimin tekrarlanması."
+   ]
+  },
+  "16370": {
+   "text": "VHF Frekansları,",
+   "options": [
+    "30-300 MHz",
+    "30-300 GHz",
+    "30-300 KHz",
+    "3-30 Mhz"
+   ]
+  },
+  "16371": {
+   "text": "VHF şunlarda kullanılır,",
+   "options": [
+    "VHF RT, VDF, VOR, ILS, Marker Beacons",
+    "NDB, Decca, Loran-C",
+    "HR RT",
+    "ILS Glidepath, DME"
+   ]
+  },
+  "16372": {
+   "text": "\"FIS\" kısaltması neyin karşılığıdır?",
+   "options": [
+    "Uçuş bilgi hizmeti",
+    "Yanıp sönen bilgi hizmeti",
+    "Yanıp sönen bilgi sistemi",
+    "Uçuş bilgi sistemi"
+   ]
+  },
+  "16373": {
+   "text": "\"HJ\" kısaltması ne anlama gelir?",
+   "options": [
+    "Gün doğumundan gün batımına.",
+    "Kesintisiz gece gündüz hizmeti.",
+    "Gün batımından gün doğumuna.",
+    "Belirli çalışma saati yok."
+   ]
+  },
+  "16374": {
+   "text": "\"HX\" kısaltması ne anlama gelir?",
+   "options": [
+    "Belirli çalışma saati yok.",
+    "Kesintisiz gece gündüz hizmeti.",
+    "Gün doğumundan gün batımına.",
+    "Gün batımından gün doğumuna."
+   ]
+  },
+  "16375": {
+   "text": "\"Go ahead\" ifadesi ne anlama gelir:",
+   "options": [
+    "mesaja devam edilmesi",
+    "Evet",
+    "aşağıdaki bilginin iletilmesi...",
+    "Taxi on"
+   ]
+  },
+  "16376": {
+   "text": "\"Read back\" ifadesi ne anlama gelir:",
+   "options": [
+    "Bu mesajın tamamının veya belirtilen kısmının, alındığı şekliyle aynen geri iletilmesi",
+    "Gönderenle kontrol edip teyit edilmesi",
+    "Bu mesajın alındığının ve anlaşıldığının bildirilmesi",
+    "Bu mesaj doğru şekilde alındı mı?"
+   ]
+  },
+  "16377": {
+   "text": "\"Read Back\" ifadesi ne anlama gelir:",
+   "options": [
+    "Bu mesajın tamamının veya belirtilen kısmının, alındığı şekliyle aynen geri iletilmesi",
+    "Bu mesajın alındığının ve anlaşıldığının bildirilmesi",
+    "mesaja devam edilmesi",
+    "aşağıdaki bilginin iletilmesi"
+   ]
+  },
+  "16378": {
+   "text": "Sesli haberleşmenin işbirliği (collaboration) bölümünde kullanılan WILCO terimi ne anlama gelir?",
+   "options": [
+    "anlaşıldı, gereği yapılacak",
+    "yaklaşmaya devam edilecek.",
+    "Anlaşılmadı.",
+    "Tekrarlanabilir mi?"
+   ]
+  },
+  "16379": {
+   "text": "TC-JYC'nin bir telsiz mesajında doğru heceleme (spelling out) şekli nedir?",
+   "options": [
+    "Tango Charlie Juliett Yankee Charlie",
+    "Tango Charlie India Victor Charlie",
+    "Tango Charlie Juliett India Kilo",
+    "Tango Charlie India Yankee Charlie"
+   ]
+  },
+  "16380": {
+   "text": "1001 değerinin QNH olarak doğru iletim şekli nedir?",
+   "options": [
+    "QNH one zero zero one",
+    "QNH one double zero one",
+    "QNH one thousand and one",
+    "QNH one double \"O\" one"
+   ]
+  },
+  "16381": {
+   "text": "118.1 sayısının bir frekansı belirtmek için doğru iletim şekli nedir?",
+   "options": [
+    "one one eight decimal one",
+    "one one eight point one",
+    "one one eight one",
+    "one eighteen one"
+   ]
+  }
+ }
+}

@@ -1,0 +1,634 @@
+{
+  "questions": {
+    "15420": {
+      "text": "Hava olaylarının temel nedeni:",
+      "options": [
+        "hem yatay hem dikey yöndeki basınç değişimleri.",
+        "Çevresel sıcaklık düşüş oranı",
+        "Yağış",
+        "Yerel rüzgârlar"
+      ]
+    },
+    "15354": {
+      "text": "5.000 ft izohipsi, sabit basınç haritasında hangi basınç seviyesinde beklenir?",
+      "options": [
+        "850 hPa",
+        "300 hPa",
+        "500 hPa",
+        "700 hPa"
+      ]
+    },
+    "15530": {
+      "text": "Gökyüzünde Altocumulus Lenticularis görürseniz ne beklersiniz?",
+      "options": [
+        "Dağ dalgalarına (mountain wave) bağlı şiddetli türbülans",
+        "Güneş etrafında halo",
+        "Sağanak yağış",
+        "Hafif türbülans"
+      ]
+    },
+    "15596": {
+      "text": "Aşağıdaki koşullardan hangisi uçak gövdesinde buzlanmaya en çok neden olur?",
+      "options": [
+        "+FZRA",
+        "GR",
+        "BR",
+        "SHSN"
+      ]
+    },
+    "15587": {
+      "text": "Dikey rüzgâr kesmesi (vertical wind shear) nedir?",
+      "options": [
+        "Yatay rüzgârın dikey yöndeki değişimi",
+        "Dikey rüzgârın yatay yöndeki değişimi",
+        "Dikey rüzgârın dikey yöndeki değişimi",
+        "Yatay rüzgârın yatay yöndeki değişimi"
+      ]
+    },
+    "15325": {
+      "text": "FL 200'de seyir halindeyken dış hava sıcaklığı -35°C olarak ölçülüyor. Bu seviyede ISA'dan sapma nedir?",
+      "options": [
+        "ISA'dan 10°C daha soğuk.",
+        "ISA'dan 5°C daha soğuk.",
+        "ISA'dan 5°C daha sıcak.",
+        "ISA'dan 10°C daha sıcak."
+      ]
+    },
+    "15656": {
+      "text": "TAF LTAU 210440Z 2106/2206 03008KT 9999 SCT040 BECMG 2112/2114 CAVOK Yukarıdaki raporun geçerlilik süresi nedir?",
+      "options": [
+        "24 saat",
+        "1 saat",
+        "12 saat",
+        "6 saat"
+      ]
+    },
+    "15516": {
+      "text": "Bir hava tabakası içindeki aşağıdaki süreçlerden hangisi CU ve CB bulutlarının oluşumuna yol açabilir?",
+      "options": [
+        "Konveksiyon",
+        "Adveksiyon",
+        "Radyasyon",
+        "Çökme hareketi (subsidence)"
+      ]
+    },
+    "15626": {
+      "text": "RERA ne anlama gelir?",
+      "options": [
+        "Önceki bir hava olayı: havaalanında orta şiddette yağmur",
+        "Mevcut bir hava olayı: o sırada METAR'da verilen yağmur",
+        "Donan yağmur",
+        "Yağmur"
+      ]
+    },
+    "15491": {
+      "text": "Sıvıdan gaza hâl değişimi süreci şu şekilde bilinir:",
+      "options": [
+        "gizli ısının soğurulduğu buharlaşma.",
+        "gizli ısının soğurulduğu yoğuşma.",
+        "gizli ısının açığa çıktığı buharlaşma.",
+        "gizli ısının açığa çıktığı yoğuşma."
+      ]
+    },
+    "15365": {
+      "text": "Uluslararası Standart Atmosfer'de (ISA) deniz seviyesindeki yoğunluk nedir?",
+      "options": [
+        "1225g/m3",
+        "122.5g/m3",
+        "1.225g/m3",
+        "12.25g/m3"
+      ]
+    },
+    "15336": {
+      "text": "Sıcak hava daha soğuk bir yüzeyin üzerine hareket ettiğinde __________.",
+      "options": [
+        "kararlı hale gelir.",
+        "yükselir.",
+        "kararsız hale gelir.",
+        "gök gürültülü fırtınalar oluşturur."
+      ]
+    },
+    "15392": {
+      "text": "QNH'den QFE hesaplamak için aşağıdakilerden hangisinin bilinmesi gerekir?",
+      "options": [
+        "Havaalanının rakımı.",
+        "Havaalanının rakımı ve MSL'deki sıcaklık.",
+        "Havaalanındaki sıcaklık.",
+        "Havaalanının rakımı ve sıcaklığı."
+      ]
+    },
+    "15474": {
+      "text": "Bir hava parselinin doygun (saturated) olduğu söylenir, eğer bağıl nemi:",
+      "options": [
+        "1",
+        "%80'in üzerinde",
+        "%90'ın üzerinde",
+        "0,5"
+      ]
+    },
+    "15040": {
+      "text": "QNH 1013. Ölçülen sıcaklık 6000 ft AMSL'de 0°C ise, ISA'ya göre sıcaklık sapması nedir?",
+      "options": [
+        "-3°C",
+        "Sapma yok",
+        "+3°C",
+        "-7°C"
+      ]
+    },
+    "15665": {
+      "text": "Bir TAF'ta BECMG 1820 BKN030 şu anlama gelir:",
+      "options": [
+        "1800 UTC ile 2000 UTC arasında 3000 ft AGL'de 5-7 okta buluta dönüşüyor.",
+        "1820 UTC'den itibaren 300 ft AGL'de 3-4 okta buluta dönüşüyor.",
+        "1820 UTC'den itibaren 3000 ft AGL'de 5-7 okta buluta dönüşüyor.",
+        "1800 UTC ile 2000 UTC arasında 300 ft AGL'de 3-4 okta buluta dönüşüyor."
+      ]
+    },
+    "15620": {
+      "text": "ICAO standartlarına göre RVR ne zaman rapor edilir?",
+      "options": [
+        "Meteorolojik görüş 1500 m'nin altına düştüğünde.",
+        "RVR 800 m'nin altına düştüğünde.",
+        "Meteorolojik görüş 800 m'nin altına düştüğünde.",
+        "RVR 2000 m'nin altına düştüğünde."
+      ]
+    },
+    "15536": {
+      "text": "Hangi bulut tipi en sürekli yağışı üretir?",
+      "options": [
+        "Nimbostratus",
+        "Towering Cumulus.",
+        "Altocumulus Lenticularis",
+        "Stratus"
+      ]
+    },
+    "15523": {
+      "text": "Havacılık açısından Cumulonimbus (CB) bulutunu şöyle adlandırabiliriz;",
+      "options": [
+        "Tüm cevaplar doğru",
+        "Önemli hava (significant weather)",
+        "Şiddetli hava",
+        "Gök gürültülü fırtına"
+      ]
+    },
+    "15532": {
+      "text": "Hangi bulut konveksiyonla oluşmaz?",
+      "options": [
+        "Altocumulus Lenticularis",
+        "Towering Cumulus",
+        "Cumulonimbus",
+        "Cumulus"
+      ]
+    },
+    "15627": {
+      "text": "Bir METAR'ın sonunda TREND yer aldığında, bu trend şunun için geçerli bir tahmindir:",
+      "options": [
+        "gözlem saatinden sonraki 2 saat",
+        "yayımlandıktan sonraki 1 saat.",
+        "yayımlandıktan sonraki 2 saat.",
+        "gözlem saatinden sonraki 1 saat."
+      ]
+    },
+    "15438": {
+      "text": "Alçak basıncı tanımlayın:",
+      "options": [
+        "Çevresindekinden daha düşük basınca sahip bir alan.",
+        "Yukarıdakilerin hiçbiri.",
+        "Bir oluk (trough).",
+        "Bir yakınsama (convergence) alanı."
+      ]
+    },
+    "15334": {
+      "text": "Soğuk hava daha sıcak bir yüzeyin üzerine hareket ettiğinde __________.",
+      "options": [
+        "kararsız hale gelir.",
+        "cephe sisi oluşturur.",
+        "alçalır.",
+        "kararlı hale gelir."
+      ]
+    },
+    "15481": {
+      "text": "Bir tabakadaki kararlılık aşağıdaki durumlardan hangisinde artar?",
+      "options": [
+        "Üst kısımda sıcak hava, alt kısımda soğuk hava adveksiyonu olursa",
+        "Üst kısımda soğuk ve kuru hava adveksiyonu olursa",
+        "Alt kısımda sıcak ve nemli hava adveksiyonu olursa",
+        "Alt kısımda sıcak hava, üst kısımda soğuk hava adveksiyonu olursa"
+      ]
+    },
+    "15653": {
+      "text": "Aşağıdaki 1850 UTC METAR raporlarına göre, hangisinde sis oluşma olasılığı en yüksektir?",
+      "options": [
+        "VRB01KT 8000 SCT025 11/10 Q1028 BECMG 3000 =",
+        "00000KT 9999 SCT300 21/01 Q1032 NOSIG =",
+        "22004KT 6000 -RA SCT012 OVC030 17/14 Q1009 NOSIG =",
+        "VRB02KT 2500 SCT120 14/M08 Q1035 NOSIG ="
+      ]
+    },
+    "15636": {
+      "text": "Metin biçimindeki meteorolojik bilgilerde bulut tabanı yüksekliği şöyle tanımlanır:",
+      "options": [
+        "METAR - AGL TAF - AGL",
+        "METAR - AMSL TAF - AGL",
+        "METAR - AMSL TAF - AMSL",
+        "METAR - AGL TAF - AMSL"
+      ]
+    },
+    "15599": {
+      "text": "Bir dağ zirvesini başlık bulutu (cap cloud) kaplıyorsa, bu şunun göstergesi olabilir;",
+      "options": [
+        "Kararlı hava",
+        "Yağış",
+        "Durgun rüzgârlı alan",
+        "Yüksek seviye rüzgârları."
+      ]
+    },
+    "15646": {
+      "text": "METAR'da kullanılan BECMG FM 1100 -SHRA kodu şu anlama gelir:",
+      "options": [
+        "1100 UTC'den itibaren hafif sağanak yağmura dönüşüyor.",
+        "1100 UTC'den itibaren hâkim sağanak yağmur hafifliyor.",
+        "1100 UTC'den itibaren oldukça orta şiddette havaya dönüşüyor.",
+        "1100 UTC'den itibaren sağanak yağmurun sona ermesi."
+      ]
+    },
+    "15484": {
+      "text": "Süblimleşme (sublimation) nedir?",
+      "options": [
+        "Buzdan su buharına ya da su buharından buza hâl değişimi",
+        "Su buharından suya hâl değişimi",
+        "Sudan su buharına hâl değişimi",
+        "Buzdan suya hâl değişimi"
+      ]
+    },
+    "15619": {
+      "text": "RVR neyin kısaltmasıdır?",
+      "options": [
+        "Pist görüş mesafesi (runway visual range).",
+        "Radyo VHF ve menzil",
+        "Azaltılmış dikey menzil.",
+        "Azaltılmış görüş mesafesi."
+      ]
+    },
+    "15493": {
+      "text": "Bulut…",
+      "options": [
+        "hepsi",
+        "yoğuşmuş su buharı",
+        "çok küçük su damlacıkları",
+        "havadaki su"
+      ]
+    },
+    "15467": {
+      "text": "Yükselen hava soğur, çünkü",
+      "options": [
+        "Genleşir",
+        "Büzülür",
+        "Çevresindeki hava daha yüksek seviyelerde daha soğuktur",
+        "Daha nemli hale gelir"
+      ]
+    },
+    "15441": {
+      "text": "Iraksama (divergence) nedir?",
+      "options": [
+        "Dışarı doğru hareket eden hava",
+        "Alçalan hava.",
+        "Yükselen hava",
+        "İçeri doğru hareket eden hava"
+      ]
+    },
+    "15314": {
+      "text": "Hava kütlesindeki sıcaklığın yükseklikle birlikte gerçek değişimi şu şekilde bilinir:",
+      "options": [
+        "Çevresel sıcaklık düşüş oranı (ELR)",
+        "Gerçek sıcaklık düşüş oranı (LR)",
+        "Sıcaklık eğrisi",
+        "Adyabatik sıcaklık düşüş oranı (ALR)"
+      ]
+    },
+    "15614": {
+      "text": "Bir METAR'da hamle (gust) şu durumda rapor edilir:",
+      "options": [
+        "ortalama rüzgâr hızından 10 kt daha fazla olduğunda.",
+        "ortalama rüzgâr hızından 5 kt daha fazla olduğunda.",
+        "ortalama rüzgâr hızından 20 kt daha fazla olduğunda.",
+        "ortalama rüzgâr hızından 15 kt daha fazla olduğunda."
+      ]
+    },
+    "15527": {
+      "text": "Gösterilen bulut şekillerinden hangisi altocumulus castellanus'u temsil eder?",
+      "options": [
+        "3",
+        "4",
+        "2",
+        "1"
+      ]
+    },
+    "15346": {
+      "text": "Troposferde tırmanırken sıcaklık azalmak yerine artar. Bu olguya şu ad verilir:",
+      "options": [
+        "Enversiyon",
+        "Duraklama",
+        "Sıcaklık düşüş oranı",
+        "Başarısızlık"
+      ]
+    },
+    "15369": {
+      "text": "Hava Yoğunluğunun Sıcaklıkla Değişimi:",
+      "options": [
+        "Havanın sıcaklığı ne kadar düşükse, yoğunluğu o kadar büyüktür.",
+        "Hava sıcaklığı ne kadar yüksekse, yoğunluğu o kadar büyüktür.",
+        "Havanın sıcaklığı ne kadar yüksekse, yoğunluğu o kadar büyüktür.",
+        "Havanın sıcaklığı ne kadar düşükse, yoğunluğu o kadar düşüktür."
+      ]
+    },
+    "20939": {
+      "text": "Aşağıdaki şekilde gösterilen cephenin adı nedir?",
+      "options": [
+        "Oklüzyon cephesi",
+        "Sıcak cephe",
+        "Soğuk cephe",
+        "Hızlı cephe"
+      ]
+    },
+    "15359": {
+      "text": "Eşit basınç noktalarını birleştiren çizgilere şu ad verilir:",
+      "options": [
+        "İzobar",
+        "İzostar",
+        "İzotak",
+        "İzoterm"
+      ]
+    },
+    "15415": {
+      "text": "Alt skalaya QNH 1015 ayarlanmış şekilde sabit gösterge irtifasında uçuyorsunuz ve dış hava sıcaklığının sürekli düştüğünü fark ediyorsunuz. Gerçek irtifanızda ne olmasını beklersiniz?",
+      "options": [
+        "Gerçek irtifa azalmış olacaktır.",
+        "Gerçek irtifa önce artmış sonra azalmış olacaktır.",
+        "Gerçek irtifa aynı kalmış olacaktır.",
+        "Gerçek irtifa artmış olacaktır."
+      ]
+    },
+    "15402": {
+      "text": "Bir havaalanının (deniz seviyesinden 200 metre yükseklikte) QFE'si 1000 hPa ise, yaklaşık QNH nedir? (1 mb = 27 ft)",
+      "options": [
+        "1025 hPa",
+        "1035 hPa",
+        "990 hPa",
+        "985 hPa"
+      ]
+    },
+    "15526": {
+      "text": "Gösterilen bulut şekillerinden hangisi cumulonimbus capillatus'u temsil eder?",
+      "options": [
+        "4",
+        "3",
+        "2",
+        "1"
+      ]
+    },
+    "15323": {
+      "text": "2000 ft AMSL'deki sıcaklığın +5°C olması tahmin ediliyor: Uluslararası Standart Atmosfer'e (ISA) göre bu:",
+      "options": [
+        "ISA -6.",
+        "ISA -4.",
+        "ISA +5.",
+        "lSA +6."
+      ]
+    },
+    "15556": {
+      "text": "Hangisi en soğuğudur?",
+      "options": [
+        "Arktik hava",
+        "Tropikal hava",
+        "Kutup havası",
+        "Ekvatoral hava"
+      ]
+    },
+    "15428": {
+      "text": "Sakin rüzgâr koşulları için günün en olası saati nedir?",
+      "options": [
+        "Sabah",
+        "Öğle",
+        "Akşam",
+        "Öğleden sonra"
+      ]
+    },
+    "15437": {
+      "text": "Yönü saat yönünün tersine değişen bir rüzgâr için şu söylenebilir:",
+      "options": [
+        "Geriye dönmüş (backed)",
+        "Sakin",
+        "Azalmış",
+        "İleri dönmüş (veered)"
+      ]
+    },
+    "15304": {
+      "text": "Troposfer hakkında hangi ifade doğrudur?",
+      "options": [
+        "Kutuplarda ekvatora göre daha incedir.",
+        "Sıcaklık her 200 metrede 0.65 Celsius derece azalır.",
+        "Atmosferin ağırlığının ve su buharının yarısını içerir.",
+        "Termosferden sonra atmosferin en kararsız katmanıdır."
+      ]
+    },
+    "15300": {
+      "text": "Troposferin bir özelliği nedir?",
+      "options": [
+        "İrtifa arttıkça sıcaklıkta genel bir azalma olur",
+        "İrtifa arttıkça sıcaklıkta genel bir artış olur",
+        "Troposferin tepesinin ortalama yüksekliği yaklaşık 8 kilometredir",
+        "Atmosferdeki tüm nemi içerir"
+      ]
+    },
+    "15585": {
+      "text": "Bir piste yaklaşırken tam önünüzde bir gök gürültülü fırtına görüyorsunuz; büyük olasılıkla _______ beklersiniz.",
+      "options": [
+        "rüzgâr kesmesi (wind shear)",
+        "Altocumulus Lenticularis",
+        "çisenti",
+        "havaalanında enversiyon"
+      ]
+    },
+    "15306": {
+      "text": "Ekvator üzerinde tropopozun ortalama yüksekliği yaklaşık nedir?",
+      "options": [
+        "16 km",
+        "8 km",
+        "11 km",
+        "40 km"
+      ]
+    },
+    "15447": {
+      "text": "Yüzeydeki bir alçak basınç oluğu genellikle şununla ilişkilidir:",
+      "options": [
+        "artan bulut ve yağışa neden olan yakınsama.",
+        "azalan bulut ve yağışa neden olan çökme hareketi (subsidence).",
+        "artan bulut ve yağışa neden olan çökme hareketi (subsidence).",
+        "artan bulut ve yağışa neden olan ıraksama."
+      ]
+    },
+    "15570": {
+      "text": "Soğuk cephe özelliği taşıyan bir oklüzyonda soğuk hava nerededir?",
+      "options": [
+        "Cephenin arkasında",
+        "Oklüzyondan sonra",
+        "Cephede",
+        "Cephenin önünde"
+      ]
+    },
+    "15521": {
+      "text": "Hangi bulutlarda en fazla türbülans vardır?",
+      "options": [
+        "Cumulunimbus.",
+        "Altocumulus castellanus.",
+        "Nimbostratus.",
+        "Cumulus."
+      ]
+    },
+    "15546": {
+      "text": "En yaygın donan yağış (freezing precipitation) türü nedir?",
+      "options": [
+        "Donan yağmur ve donan çisenti.",
+        "Donan dolu ve donan kar.",
+        "Donan graupel (yumuşak dolu).",
+        "Donan tanecikler."
+      ]
+    },
+    "15518": {
+      "text": "Cumulonimbus bulutunun gelişmesi için şunun var olması gerekir:",
+      "options": [
+        "Yüzeyden yukarıya doğru, çok kararsız nemli havadan oluşan derin bir tabaka.",
+        "Yüzeyden yukarıya doğru, düşük bir sıcaklık düşüş oranına sahip çok kararsız nemli havadan oluşan derin bir tabaka.",
+        "Düşük bir sıcaklık düşüş oranına sahip çok kararlı nemli havadan oluşan derin bir tabaka.",
+        "Yüzeyden yukarıya doğru, çok kararsız nemli havadan oluşan sığ bir tabaka."
+      ]
+    },
+    "15510": {
+      "text": "Aşağıdaki bulutlardan hangisi birden fazla katmana yayılabilir?",
+      "options": [
+        "Nimbostratus.",
+        "Cirrus.",
+        "Altocumulus.",
+        "Stratus."
+      ]
+    },
+    "15372": {
+      "text": "Nem ile ilgili hangisi doğrudur? (diğer tüm etkenler sabitken)",
+      "options": [
+        "Nemli hava, kuru havadan daha az yoğundur.",
+        "Nemli hava ile kuru havayı karşılaştırmak mümkün değildir.",
+        "Nemli hava ile kuru hava aynı yoğunluğa sahiptir.",
+        "Nemli hava, kuru havadan daha yoğundur."
+      ]
+    },
+    "15555": {
+      "text": "Kararsız havada, yüzey görüşü büyük olasılıkla şununla kısıtlanır:",
+      "options": [
+        "yağmur ya da kar sağanakları",
+        "çisenti",
+        "alçak stratus",
+        "pus (haze)"
+      ]
+    },
+    "15635": {
+      "text": "PROB30'un anlamı nedir?",
+      "options": [
+        "%30 olasılıkla",
+        "30 kt",
+        "görüş 30 m",
+        "3000 ft'de"
+      ]
+    },
+    "15543": {
+      "text": "Hangi bulut en olası şekilde SHGR (dolu sağanağı) üretir?",
+      "options": [
+        "Cumulonimbus",
+        "Altocumulus",
+        "Nimbostratus",
+        "Stratus"
+      ]
+    },
+    "15661": {
+      "text": "Etimesgut havaalanı için verilen TAF'a bakınız. LTAD 281040 281221 14010KT 6000 -RA SCT025 BECMG 1416 12015G25KT SCT008 BKN013 TEMPO 1619 3000 RA BKN005 OVC010 BECMG 1921 25020KT 8000 NSW BKN020 = Antalya'dan Etimesgut'a uçuş, ETA 1800 UTC. ETA'da Etimesgut için hangi görüş tahmin edilmektedir?",
+      "options": [
+        "3 km",
+        "6 km",
+        "5 NM",
+        "5 km"
+      ]
+    },
+    "15451": {
+      "text": "Bir uçak, pisti kıyıya paralel olan bir havaalanına görerek uçuş kurallarına (VFR) göre yaklaşıyor. Deniz üzerinde rüzgâr altı bacağındayken havaalanı solda kalıyor. Güneşli bir öğleden sonra, son yaklaşma ve inişte hangi rüzgâr etkisi beklenmelidir?",
+      "options": [
+        "Soldan yan rüzgâr",
+        "Burun rüzgârı",
+        "Kuyruk rüzgârı",
+        "Sağdan yan rüzgâr"
+      ]
+    },
+    "15524": {
+      "text": "Kuzeye doğru uçuyorsunuz ve tam önünüzdeki bir CB'nin örsü doğuya doğru uzanıyor. Aşağıdakilerden hangisi daha iyi bir karardır?",
+      "options": [
+        "Bulutun batısından dolaşmak.",
+        "Bulutun doğusundan dolaşmak.",
+        "bulutun tam altından uçmak",
+        "Bulutun içine girmek."
+      ]
+    },
+    "15660": {
+      "text": "Isparta havaalanı için verilen TAF'a bakınız. TAF LTFC 281340 281524 26015KT 9999 SHRA BKN020 TEMPO 1620 26020G30KT 8000 +SHRA BKN015CB PROB30 TSRA = Antalya'dan Isparta'ya uçuş, ETA 1800 UTC. ETA'da Isparta için tahmin edilen en düşük görüş kaçtır?",
+      "options": [
+        "8 KM",
+        "10 NM",
+        "8 NM",
+        "10 veya daha fazla KM"
+      ]
+    },
+    "15347": {
+      "text": "Enversiyon, öyle bir hava tabakasıdır ki",
+      "options": [
+        "kesinlikle kararlıdır",
+        "koşullu olarak kararlıdır",
+        "koşullu olarak kararsızdır",
+        "kesinlikle kararsızdır"
+      ]
+    },
+    "15503": {
+      "text": "Hangi bulut tipleri kararlı hava koşullarının tipik kanıtıdır?",
+      "options": [
+        "ST, AS",
+        "CB, CC",
+        "NS, CU",
+        "CU, CB"
+      ]
+    },
+    "15292": {
+      "text": "Atmosferin toplam kalınlığı yaklaşık olarak",
+      "options": [
+        "1000 KM'den fazladır.",
+        "20 KM",
+        "120 kilometredir (400 000 ft).",
+        "500 KM"
+      ]
+    },
+    "15331": {
+      "text": "Orta enlemlerde kara üzerindeki konvektif etkinlik en fazla şu zamandadır:",
+      "options": [
+        "Yaz, öğleden sonra.",
+        "Yaz, gece ve sabahın erken saatlerinde.",
+        "Kış, öğleden sonra.",
+        "Kış, gece ve sabahın erken saatlerinde."
+      ]
+    },
+    "15565": {
+      "text": "Soğuk cephe, sıcak havanın altına girer çünkü;",
+      "options": [
+        "Yüksek yoğunluk.",
+        "Yüksek rüzgâr hızı.",
+        "Sıcak hava.",
+        "Dik cephe açısı."
+      ]
+    }
+  }
+}

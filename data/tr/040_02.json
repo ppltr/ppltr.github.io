@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "15099": {
+   "text": "Bir pilotun vücuduna yeterli oksijen ulaşmazsa, aşağıdakilerden hangisinden muzdarip olur?",
+   "options": [
+    "Hipoksi.",
+    "Hypsigiena.",
+    "Anoksi.",
+    "Hiperventilasyon."
+   ]
+  },
+  "15116": {
+   "text": "Hipoksi hakkında en doğru ifade hangisidir?",
+   "options": [
+    "Kan dolaşımındaki yetersiz oksijenin sonucudur",
+    "Havadaki aşırı CO2'den kaynaklanır",
+    "Göğüs ağrısına neden olur",
+    "Kırmızı kan hücresindeki hemoglobin içeriğinin anormal şekilde azalmasıdır"
+   ]
+  },
+  "15192": {
+   "text": "Gözün, çevresel görüşten sorumlu ve düşük ışık seviyelerine duyarlı bileşeni hangisidir?",
+   "options": [
+    "Çubuk hücreler.",
+    "Retina.",
+    "Fovea.",
+    "Koni hücreleri."
+   ]
+  },
+  "15158": {
+   "text": "Aşağıdakilerden hangisi ani pilot yetersizleşmesinin en yaygın şeklidir?",
+   "options": [
+    "Gastroenterit.",
+    "Akciğer sönmesi.",
+    "İnme.",
+    "Kalp krizi."
+   ]
+  },
+  "15115": {
+   "text": "Artan irtifanın atmosferdeki ana gazların toplam basıncı ve kısmi basıncı üzerindeki etkisi nedir?",
+   "options": [
+    "Toplam basınç azalır ve kısmi basınçlar azalır",
+    "Toplam basınç sabit kalır ve kısmi basınçlar azalır",
+    "Toplam basınç azalır ve kısmi basınçlar artar",
+    "Toplam basınç azalır ve kısmi basınçlar sabit kalır"
+   ]
+  },
+  "15096": {
+   "text": "Hiperventilasyon öyle bir sorundur ki:",
+   "options": [
+    "pilotların aşina olması ve kontrol etmeyi bilmesi gerekir.",
+    "yalnızca normal hafif uçak operasyonlarının gerçekleştiği irtifalardan daha yüksek irtifalarda ortaya çıkar.",
+    "yalnızca yaşlıları etkiler.",
+    "sağlıklı insanları etkilemez."
+   ]
+  },
+  "15075": {
+   "text": "Dekompresyon hastalığı için bir risk faktörü...",
+   "options": [
+    "uçuştan önce scuba dalışı yapmaktır.",
+    "sigara içmektir.",
+    "spor yapmaktır.",
+    "dekompresyondan sonra %100 oksijen almaktır."
+   ]
+  },
+  "15271": {
+   "text": "Aşağıdaki tutumlardan hangisi bir uçağı kullanırken tehlikeli değildir?",
+   "options": [
+    "Sinerjik",
+    "Yanılmazlık",
+    "Maço",
+    "Dürtüsellik"
+   ]
+  },
+  "15266": {
+   "text": "Kokpitte özel konuları tartışmak;",
+   "options": [
+    "takım ruhunu geliştirebilir.",
+    "kaptanın liderlik rolünü azaltır.",
+    "kokpitte her ne pahasına olursa olsun kaçınılmalıdır.",
+    "uçuşun her aşamasında uygundur."
+   ]
+  },
+  "15280": {
+   "text": "Stres hangi kategorilere ayrılır?",
+   "options": [
+    "Akut ve kronik",
+    "Zihinsel ve fiziksel",
+    "Şiddetli ve kronik",
+    "Akut ve şiddetli"
+   ]
+  },
+  "15046": {
+   "text": "Kan bağışladıktan sonra bir pilotun uçmadan önce beklemesi gereken minimum süre nedir?",
+   "options": [
+    "24 saat.",
+    "48 saat.",
+    "12 saat.",
+    "2 saat."
+   ]
+  },
+  "15080": {
+   "text": "Basınçlandırılmamış bir uçak tırmanırken, pilota ulaşan oksijen miktarı şu nedenle azalır:",
+   "options": [
+    "atmosfer basıncındaki azalma.",
+    "atmosferdeki azot oranının artması.",
+    "atmosferdeki oksijen oranının azalması.",
+    "atmosfer sıcaklığındaki azalma."
+   ]
+  },
+  "15070": {
+   "text": "Sinir sisteminin hangi bölümü genellikle solunumu kontrol eder?",
+   "options": [
+    "Otonom Sinir Sistemi.",
+    "Birincil Sinir Sistemi.",
+    "Periferik Sinir Sistemi.",
+    "Merkezi Sinir Sistemi."
+   ]
+  },
+  "15182": {
+   "text": "Çubuk hücreler şundan sorumludur:",
+   "options": [
+    "Çevresel görüş",
+    "İnce ayrıntılar",
+    "Merkezi görüş",
+    "Renkli görüş"
+   ]
+  },
+  "15077": {
+   "text": "Anemik hipoksiye şu neden olabilir...",
+   "options": [
+    "karbon monoksit zehirlenmesi.",
+    "yüksek irtifalar.",
+    "düşük basınç.",
+    "alkol."
+   ]
+  },
+  "15288": {
+   "text": "Gizli hata (latent error) nedir?",
+   "options": [
+    "Sistemde uzun süre fark edilmeden kalan bir hata",
+    "Pilot tarafından aktif ve bilinçli olarak yapılan bir hata",
+    "Yalnızca inişten sonra sonuç doğuran bir hata",
+    "Kumandalar üzerinde anında etkisi olan bir hata"
+   ]
+  },
+  "15275": {
+   "text": "Bir kişi stresli bir durumu bir kez başarıyla atlattıktan sonra, aynı veya benzer bir durumla ikinci kez karşılaştığında nasıl tepki verir?",
+   "options": [
+    "Stresli durumu daha önce başarıyla atlattığı için, bunu tekrar başarabileceğine güvenecek ve stres azalacaktır",
+    "Deneyim, strese verilen tepkiyi etkileyemez",
+    "Önünde ne olduğunu bildiği için korkacak ve stres artacaktır",
+    "Çok az bir fark olacaktır"
+   ]
+  },
+  "15087": {
+   "text": "Saf oksijen solumak (basınçsız) şu irtifaya kadar yeterli olacaktır:",
+   "options": [
+    "40000 FT",
+    "60000 FT",
+    "80000 FT",
+    "45000 FT"
+   ]
+  },
+  "15101": {
+   "text": "Geleneksel uçaklar atmosferin hangi katmanında ya da katmanlarında uçar? i. Troposfer ii. Stratosfer iii. İyonosfer",
+   "options": [
+    "i ve ii.",
+    "yalnızca i.",
+    "i ve iii.",
+    "ii ve iii."
+   ]
+  },
+  "15071": {
+   "text": "35.000 Ft'te bir dekompresyondan sonra \"Faydalı Bilinç Süresi\" (Time of Useful Consciousness) şudur:",
+   "options": [
+    "30 ile 60 saniye arasında",
+    "20 saniyeden az",
+    "yaklaşık 5 dakika",
+    "yaklaşık 3 dakika"
+   ]
+  },
+  "15234": {
+   "text": "Aşağıdakilerden hangisi insan kulağının bir parçası değildir?",
+   "options": [
+    "Kornea.",
+    "Otolitler.",
+    "Yarım daire kanalı.",
+    "Timpan."
+   ]
+  },
+  "15049": {
+   "text": "Bir pilot anestezi aldıktan sonra ne kadar süre uçmaktan kaçınmalıdır?",
+   "options": [
+    "Lokal anestezi sonrası 12 saat ve genel anestezi sonrası 48 saat",
+    "Hem lokal hem genel anestezi sonrası 24 saat",
+    "Lokal anestezi sonrası 12 saat ve genel anestezi sonrası 24 saat",
+    "Lokal anestezi sonrası 24 saat ve genel anestezi sonrası 48 saat"
+   ]
+  },
+  "15045": {
+   "text": "\"Gazların basıncı, sıcaklıklarıyla doğru orantılıdır.\" Aşağıdaki yasalardan hangisi yukarıdaki tanımı açıklar?",
+   "options": [
+    "Charles Yasası",
+    "Boyle Yasası",
+    "Henry Yasası",
+    "Dalton Yasası"
+   ]
+  },
+  "15186": {
+   "text": "İris şunu kontrol etmekten sorumludur:",
+   "options": [
+    "Göze giren ışık miktarı",
+    "Akomodasyon miktarı",
+    "Işığa adaptasyon hızı",
+    "Karanlığa adaptasyon hızı"
+   ]
+  },
+  "15200": {
+   "text": "Aşağıdakilerden hangisi uzaktaki nesneleri net görmede güçlük çekme kusurunun adıdır?",
+   "options": [
+    "Miyopi",
+    "Emetropi",
+    "Astigmatizm",
+    "Hipermetropi"
+   ]
+  },
+  "15173": {
+   "text": "Bir pilot, alışık olduğu pistlerden daha büyük bir piste yaklaşma yaparken pisti nasıl algılar?",
+   "options": [
+    "Pist, gerçekte olduğundan daha yakın görünecektir",
+    "Pilot bu pist ile alışık olduğu pistler arasında bir fark algılamayacaktır",
+    "Pilot yüksekte ve uzakta olduğu izlenimine kapılacaktır",
+    "Pist, gerçekte olduğundan daha uzak görünecektir"
+   ]
+  },
+  "15187": {
+   "text": "Göz küresinin arkasını kaplayan, çubuk ve koni hücrelerini içeren ışığa duyarlı doku şu şekilde bilinir:",
+   "options": [
+    "Retina",
+    "İris",
+    "Kornea",
+    "Göz bebeği"
+   ]
+  },
+  "15250": {
+   "text": "Bilgi işleme sürecinin ilk aşaması:",
+   "options": [
+    "duyusal uyarım",
+    "algı",
+    "seçici dikkat",
+    "bilginin tanınması"
+   ]
+  },
+  "15286": {
+   "text": "İnsan faktörlerinin neden olduğu kazaların yüzdesi:",
+   "options": [
+    "%70-%80",
+    "%90-%100",
+    "%20-%40",
+    "%40-%50"
+   ]
+  },
+  "15089": {
+   "text": "Sigara içmeyen biriyle karşılaştırıldığında, sigara içen biri hipoksinin etkilerini muhtemelen şurada yaşar…",
+   "options": [
+    "daha düşük bir irtifada.",
+    "her irtifada.",
+    "aynı irtifada.",
+    "daha yüksek bir irtifada."
+   ]
+  },
+  "15102": {
+   "text": "Dekompresyon hastalığının belirtilerinden biri sinir sistemini ve beyni etkiler. Bu etki şu şekilde bilinir:",
+   "options": [
+    "The Staggers",
+    "The Bends",
+    "The Creeps",
+    "The Chokes"
+   ]
+  },
+  "15063": {
+   "text": "Akciğerlerde gaz değişimi nerede gerçekleşir?",
+   "options": [
+    "Alveoller",
+    "Bronşiyoller",
+    "Trachioles",
+    "Bronşlar"
+   ]
+  },
+  "15241": {
+   "text": "Seçici dikkat mekanizması şu nedenle gereklidir:",
+   "options": [
+    "merkezi karar vericinin ve çalışma belleğinin kapasitesi sınırlı olduğu için.",
+    "uzun süreli belleğin kapasitesi sınırlı olduğu için.",
+    "motor program deposundaki sınırlamalar nedeniyle.",
+    "duyu organlarının sınırlamaları nedeniyle."
+   ]
+  },
+  "15191": {
+   "text": "Yokuş yukarı eğimli bir piste yaklaşırken hangi izlenim oluşabilir?",
+   "options": [
+    "Yaklaşmayı fazla yükseklikten yapma (overshoot)",
+    "Yaklaşmayı fazla alçaktan yapma (undershoot)",
+    "Sert iniş",
+    "Merkez hattının yanına iniş"
+   ]
+  },
+  "15114": {
+   "text": "Troposferdeki gaz bileşimi nedir?",
+   "options": [
+    "%21 O2 %78 Azot %1 Diğer gazlar",
+    "%78 O2 %21 Azot %1 Hidrojen",
+    "%21 O2 %78 Azot %1 Helyum",
+    "%78 O2 %21 Azot %1 Diğer gazlar"
+   ]
+  },
+  "15166": {
+   "text": "'Miyopi' olan bir kişi:",
+   "options": [
+    "Normalden daha uzun bir göz küresine sahiptir ve görme Konkav (çukur) mercekle düzeltilir",
+    "Normalden daha kısa bir göz küresine sahiptir ve görme Konveks (tümsek) mercekle düzeltilir",
+    "Normalden daha uzun bir göz küresine sahiptir ve görme Konveks (tümsek) mercekle düzeltilir",
+    "Normalden daha kısa bir göz küresine sahiptir ve görme Konkav (çukur) mercekle düzeltilir"
+   ]
+  },
+  "15264": {
+   "text": "Bir uçağın kaptanı olarak iyi liderlik becerileri göstermeniz gerekir. Aşağıdakilerden hangisi böyle bir beceri değildir?",
+   "options": [
+    "Agresif kendini ifade etme",
+    "Kendi sınırlarının ve yeteneklerinin farkında olmak",
+    "İyi bir durumsal farkındalık sürdürmek",
+    "İleriye dönük planlama"
+   ]
+  },
+  "15056": {
+   "text": "Kırmızı kan hücresinin ana işlevi:",
+   "options": [
+    "Dokulara oksijen taşımak",
+    "Sindirilmiş besin ürünlerini dokulara ulaştırmak",
+    "Enfeksiyonlarla mücadele etmek için antikor üretmek",
+    "Pıhtılaşma sürecine yardımcı olmak"
+   ]
+  },
+  "15155": {
+   "text": "Diğerlerinin yanı sıra solunumu, sindirimi ve kalp frekansını kontrol eden sistemin doğru adı nedir?",
+   "options": [
+    "Otonom sinir sistemi",
+    "Uyumlu sinir sistemi",
+    "Otomatik sinir sistemi",
+    "Kritik sinir sistemi"
+   ]
+  },
+  "15138": {
+   "text": "Grey-out şunun sonucudur...",
+   "options": [
+    "pozitif g kuvvetleri.",
+    "hiperventilasyon.",
+    "hipoksi.",
+    "yorgunluk."
+   ]
+  },
+  "15238": {
+   "text": "Kulağın hangi bölümü doğrusal ivmeleri algılar?",
+   "options": [
+    "Vestibüler Aparattaki Otolitler",
+    "İşitme Siniri",
+    "Östaki Borusu",
+    "Kulak Kemikçikleri"
+   ]
+  },
+  "15098": {
+   "text": "Bir pilot soğuk algınlığı veya grip geçiriyorsa:",
+   "options": [
+    "Uçmaya elverişli değildir",
+    "Kulaklarını denkleyebiliyorsa uçmaya elverişlidir",
+    "Bir saattir hapşırma yaşanmadıysa uçmaya elverişlidir",
+    "Uygun ilaç kullanıyorsa uçmaya elverişlidir"
+   ]
+  },
+  "15265": {
+   "text": "İletişim verimliliği en çok şuna duyarlıdır;",
+   "options": [
+    "iş yükü ve kesintiler.",
+    "ifadelerin paketlenmesi.",
+    "kelimelerin paketlenmesi.",
+    "cümlelerin paketlenmesi."
+   ]
+  },
+  "15061": {
+   "text": "Solunum ve sindirim sistemlerinden vücudun hücrelerine besinleri, oksijeni ve diğer hayati maddeleri taşıyan sistem hangisidir?",
+   "options": [
+    "Dolaşım Sistemi",
+    "Sinir Sistemi",
+    "İskelet ve Kas Sistemi",
+    "Boşaltım Sistemi"
+   ]
+  },
+  "15248": {
+   "text": "Merkezi karar verme kanalımız birden çok görev arasında zaman paylaşımı yapabilir. Kişi aynı anda birden çok görev üzerinde çalışıyormuş gibi görünür. Aşağıdaki yanıtlardan hangisi doğrudur?",
+   "options": [
+    "Bölünmüş dikkat",
+    "Tetiklik",
+    "Zaman Paylaşımı",
+    "Seçici dikkat"
+   ]
+  },
+  "15249": {
+   "text": "Algı, bilgi işlemenin en önemli yönlerinden biridir çünkü:",
+   "options": [
+    "Duyusal bilgi anlamlı bir yapıya dönüştürülür",
+    "Seçici, bölünmüş ve odaklanmış dikkati içerir",
+    "Düzeltici eylemler ve tepkiler bu aşamada gerçekleştirilir",
+    "İyi değerlendirmeler ve kararlar bu aşamada verilir"
+   ]
+  },
+  "15148": {
+   "text": "Bir pilotun orta düzeydeki kuvvetlere bile dayanma yeteneği şundan etkilenebilir:",
+   "options": [
+    "Pilotun yorgunluğu",
+    "hepsi.",
+    "Presbiakuzi",
+    "Uçağın maksimum yük limitleri"
+   ]
+  },
+  "15112": {
+   "text": "Uçuşta dekompresyon hastalığı görülme riskini ne artırır?",
+   "options": [
+    "Uçuştan kısa süre önce scuba dalışı yapmak",
+    "Uçuştan kısa süre önce şnorkelle dalış yapmak",
+    "Alkol",
+    "Sigara"
+   ]
+  },
+  "15048": {
+   "text": "Aşağıdaki ifadeyi tamamlayın. Bir kişi stres veya korku yaşadığında, kan dolaşımına adrenalin salınır ve bu ani şuna neden olur:",
+   "options": [
+    "nabız hızında artışa.",
+    "nabız hızında azalışa.",
+    "bilinç kaybına.",
+    "yorgunluğa."
+   ]
+  },
+  "15174": {
+   "text": "Bir pilot, alışık olduğu pistlerden daha küçük bir piste yaklaşma yaparken pisti nasıl algılar?",
+   "options": [
+    "Pist, gerçekte olduğundan daha uzak görünecektir",
+    "Pilot bu pist ile alışık olduğu pistler arasında bir fark algılamayacaktır",
+    "Pilot alçakta ve yakında olduğu izlenimine kapılacaktır",
+    "Pist, gerçekte olduğundan daha yakın görünecektir"
+   ]
+  },
+  "15085": {
+   "text": "Akciğerlerdeki oksijenin kısmi basıncı, hangi yükseklikte deniz seviyesindekinin yaklaşık yarısına düşer?",
+   "options": [
+    "18.000 feet",
+    "34.000 feet",
+    "10.000 feet",
+    "8.000 feet"
+   ]
+  },
+  "15199": {
+   "text": "Pilotlar mekânsal yönelimlerini belirlerken farklı duyular kullanırlar. Aşağıdakilerden hangisi bu duyulardan biri değildir?",
+   "options": [
+    "İşitme",
+    "Gözler",
+    "Vestibüler sistem",
+    "Vücuttaki proprioseptif alıcılar (Seat of the Pants)"
+   ]
+  },
+  "15073": {
+   "text": "Hipoksinin olası belirtisi ya da belirtileri şunlar olabilir….",
+   "options": [
+    "hepsi.",
+    "formikasyon (karıncalanma hissi).",
+    "artan kalp atış hızı.",
+    "siyanoz."
+   ]
+  },
+  "15108": {
+   "text": "Uluslararası Standart Atmosfer'in (ISA) deniz seviyesi basıncı şuna eşittir:",
+   "options": [
+    "1013.25 mb.",
+    "50 inç cıva.",
+    "1014.25 Hpa.",
+    "1014.00 mb."
+   ]
+  },
+  "15159": {
+   "text": "Aşağıdakilerden hangisi tüm kemik ve kıkırdak yapılarını içeren sistemdir?",
+   "options": [
+    "İskelet Sistemi",
+    "Sinir Sistemi",
+    "Boşaltım Sistemi",
+    "Kas Sistemi"
+   ]
+  },
+  "15194": {
+   "text": "Retinanın en iyi görme keskinliğinin elde edildiği bölümünün adı nedir?",
+   "options": [
+    "Fovea",
+    "Optik merkez",
+    "Optik kiazma",
+    "Optik sinir"
+   ]
+  },
+  "15067": {
+   "text": "Aşağıdakilerden hangisi kardiyovasküler sistemi ifade eder?",
+   "options": [
+    "Dolaşım Sistemi",
+    "İskelet ve Kas Sistemi",
+    "Boşaltım Sistemi",
+    "Sinir Sistemi"
+   ]
+  },
+  "15185": {
+   "text": "Göz, farklı ışık seviyelerine şu şekilde uyum sağlar:",
+   "options": [
+    "Retinadaki kimyasal değişimler",
+    "Korneanın şekil bozukluğu",
+    "Merceğin giderek opaklaşması",
+    "Pupilladaki kimyasal değişimler."
+   ]
+  },
+  "15223": {
+   "text": "Vestibüler organ:",
+   "options": [
+    "doğrusal/açısal ivmeye ve yerçekimine tepki verir",
+    "kokleanın titreşimlerine tepki verir",
+    "orta kulaktaki basınç değişimlerine tepki verir",
+    "işitme izlenimi verir"
+   ]
+  },
+  "15095": {
+   "text": "Derin bir dalıştan sonra yüzeye çok hızlı çıkan bir scuba dalgıcı, \"dekompresyon hastalığı\" ya da \"bends\" olarak bilinen bir durumdan muzdarip olabilir. Aynı durum, scuba dalışından hemen sonra çok yükseğe uçan bir pilotta da ortaya çıkabilir. Dekompresyon hastalığına, kandan hangi gazın kabarcıklar halinde açığa çıkması neden olur?",
+   "options": [
+    "Azot.",
+    "Su Buharı.",
+    "Oksijen.",
+    "Karbon Dioksit."
+   ]
+  },
+  "15226": {
+   "text": "Orta kulak neyi içerir?",
+   "options": [
+    "Hava ve sesi ileten üç kulak kemikçiği.",
+    "Sıvı, koklea ve yarım daire kanalları.",
+    "Dış kulak yolu ve vestibüler aparat.",
+    "Sıvı ve sesi ileten üç kulak kemikçiği."
+   ]
+  },
+  "15127": {
+   "text": "Aşağıdakilerden hangisi vücudun oksijen eksikliğine en duyarlı organıdır?",
+   "options": [
+    "Beyin",
+    "Akciğerler",
+    "Kan Damarları",
+    "Kalp"
+   ]
+  },
+  "15153": {
+   "text": "Normal kan basıncı nedir?",
+   "options": [
+    "Diyastolik 80 mm Hg Sistolik 120 mm Hg",
+    "Diyastolik 140 mm Hg Sistolik 80 mm Hg",
+    "Diyastolik 120 mm Hg Sistolik 80 mm Hg",
+    "Diyastolik 80 mm Hg Sistolik 140 mm Hg"
+   ]
+  },
+  "15245": {
+   "text": "Kısa süreli bellekte, bir kişi yaklaşık olarak şunu depolayabilir:",
+   "options": [
+    "10-20 saniye boyunca 7 öğe",
+    "1-5 dakika boyunca 9 öğe",
+    "1-5 dakika boyunca 7 öğe",
+    "10-20 saniye boyunca 9 öğe"
+   ]
+  },
+  "15260": {
+   "text": "Aşağıdaki ifadelerden hangileri doğrudur? Aşırı tetiklik (hypervigilance) şunlarla artar: 1. Uyarım eksikliği 2. Yorgunluk 3. Monotonluk 4. Stres 5. Kaygı",
+   "options": [
+    "4 ve 5",
+    "Yalnızca 4",
+    "1 ve 4",
+    "1, 2, 3"
+   ]
+  },
+  "15196": {
+   "text": "Gözün hangi bölümü odaklamanın büyük kısmından sorumludur?",
+   "options": [
+    "Kornea",
+    "Göz bebeği",
+    "Mercek",
+    "İris"
+   ]
+  },
+  "15225": {
+   "text": "İletim tipi sağırlığa ne neden olur?",
+   "options": [
+    "Kulak kemikçiklerinin veya kulak zarının hasar görmesi",
+    "Orta kulağın hasar görmesi",
+    "Kulak kepçesinin (pinna) hasar görmesi",
+    "Dış kulağın hasar görmesi"
+   ]
+  },
+  "15139": {
+   "text": "Gastroenterit geçiren bir pilot...",
+   "options": [
+    "uçmaya elverişli değildir.",
+    "ilaç kullanmıyorsa uçmaya elverişlidir.",
+    "kendini yeterince iyi hissettiği sürece uçmaya elverişlidir.",
+    "muhtemelen uçabilir."
+   ]
+  },
+  "15229": {
+   "text": "İletim tipi sağırlığın nedeni nedir?",
+   "options": [
+    "Kulak Kemikçiklerinin ve/veya Kulak Zarının hasar görmesi",
+    "Düşük ortam basıncı",
+    "Östaki Borusunun tıkanması",
+    "Kulak Kepçesinin (Pinna) hasar görmesi"
+   ]
+  },
+  "15062": {
+   "text": "Oksijen ile karbondioksit+su buharı değişimi nerede gerçekleşir?",
+   "options": [
+    "Kılcal damarlar",
+    "Pulmoner venler ve arterler",
+    "Venler",
+    "Arterler"
+   ]
+  }
+ }
+}

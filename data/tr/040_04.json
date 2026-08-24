@@ -1,0 +1,373 @@
+{
+ "questions": {
+  "15111": {
+   "text": "35.000 ft'de basınçlandırma kaybını takiben TUC (yararlı bilinç süresi):",
+   "options": [
+    "30 - 60 saniye.",
+    "10 - 15 saniye.",
+    "5 dakika ve üzeri.",
+    "3 - 4 dakika."
+   ]
+  },
+  "15066": {
+   "text": "1 litrelik kapalı bir balon deniz seviyesinden 18.000 fite çıkarılırsa aşağıdaki durumlardan hangisi gözlenir?",
+   "options": [
+    "Balon içindeki gaz basıncı arttıkça gazın hacmi iki katına çıkar.",
+    "İrtifa arttıkça gaz basıncı azalır ve bu durum gazın hacminin azalmasına neden olur.",
+    "İrtifa arttıkça gaz basıncı artar, gazın hacmi azalır.",
+    "Balon kapalı olduğu için herhangi bir değişiklik gözlenmez."
+   ]
+  },
+  "15058": {
+   "text": "Soluk hacmi (tidal volume) şudur:",
+   "options": [
+    "Her normal solunumda içe ve dışa verilen hava hacmi",
+    "Dalış sırasında solunan hava hacmi",
+    "Her normal solunumda dışa verilen hava hacmi",
+    "Her normal solunumda içe çekilen hava hacmi"
+   ]
+  },
+  "15124": {
+   "text": "Aşağıdakilerden hangisi solunan havadaki oksijen kısmi basıncının azalmasına neden olur?",
+   "options": [
+    "Hipoksik hipoksi",
+    "Karanlığa adaptasyonun iyileşmesi",
+    "Termoregülasyon",
+    "Aort distorsiyonu"
+   ]
+  },
+  "15122": {
+   "text": "Normal solunum sırasında vücut tarafından emilen hangi gaz, dekompresyon hastalığında önemli bir rol oynar?",
+   "options": [
+    "Azot.",
+    "Karbon monoksit.",
+    "Karbon dioksit.",
+    "Oksijen."
+   ]
+  },
+  "15214": {
+   "text": "Orta kulaktaki kemikler topluca ne olarak bilinir?",
+   "options": [
+    "Kemikçikler (ossicles)",
+    "Sakküller (saccules)",
+    "Monolitler",
+    "Otolitler (otoliths)"
+   ]
+  },
+  "15151": {
+   "text": "İnsan sirkadiyen döngüsü yaklaşık olarak şu döngüye dayanır...",
+   "options": [
+    "25 saat.",
+    "13 saat.",
+    "22 saat.",
+    "10 saat."
+   ]
+  },
+  "15068": {
+   "text": "Aşağıdaki gazlardan hangisi, kandaki seviyesine bağlı olarak solunumun hızını ve derinliğini düzenler?",
+   "options": [
+    "Karbon dioksit.",
+    "Karbon monoksit.",
+    "Azot.",
+    "Oksijen."
+   ]
+  },
+  "15208": {
+   "text": "Yanılsama (illusion) şudur:",
+   "options": [
+    "Algının gerçek dünyayla aynı olmadığı durum",
+    "Görsel ya da işitsel uyarandan yoksun kalındığında ortaya çıkan durum",
+    "Bölünmüş dikkat ile seçici dikkat arasındaki fark",
+    "Dikkatsiz pilotu yakalamak için gerçeğin kasıtlı olarak değiştirilmesi"
+   ]
+  },
+  "15178": {
+   "text": "Bir pilot, farkında olmadığı belirgin bir yukarı eğime sahip bir piste görsel yaklaşma yaparsa muhtemel sonuç ne olur?",
+   "options": [
+    "Pilot, amaçlanandan daha sığ bir yaklaşma yapar ve bu da pistin gerisine düşme (undershoot) olasılığına yol açar.",
+    "Pilot, amaçlanandan daha dik bir yaklaşma yapar ve bu da pistin gerisine düşme (undershoot) olasılığına yol açar.",
+    "Pilot, amaçlanandan daha sığ bir yaklaşma yapar ve bu da pistin ilerisine geçme (overshoot) olasılığına yol açar.",
+    "Pilot, amaçlanandan daha dik bir yaklaşma yapar ve bu da pistin ilerisine geçme (overshoot) olasılığına yol açar."
+   ]
+  },
+  "15230": {
+   "text": "Kulak zarının arkasında bulunan kemiğin adı nedir?",
+   "options": [
+    "Çekiç (malleus) kemiği",
+    "Kulak kıkırdağı",
+    "Üzengi (stapes) kemiği",
+    "Kaval kemiği"
+   ]
+  },
+  "15198": {
+   "text": "Yukarı eğimli bir piste yaklaşırken, bunun yarattığı görsel yanılsama sizi şuna yönlendirebilir:",
+   "options": [
+    "normalden daha alçak ve daha sığ bir yaklaşma yapmaya",
+    "pistin ilerisine geçmeye (overshoot)",
+    "normalden daha yüksek ve daha sığ bir yaklaşma yapmaya",
+    "normalden daha hızlı ve daha dik bir yaklaşma yapmaya"
+   ]
+  },
+  "15081": {
+   "text": "Basıncın deniz seviyesindekinin yarısı olduğu bir irtifada bir kişi şunu yapmak zorunda kalır:",
+   "options": [
+    "takviye oksijen kullanmak",
+    "hipoksiden kaçınmak için yavaş solumak",
+    "basınçlı oksijen solumak",
+    "saf oksijen solumak"
+   ]
+  },
+  "15147": {
+   "text": "Terleme, arter basıncı, vücut sıcaklığı, solunum, sindirim ve kalp atış hızı şunun tarafından kontrol edilir;",
+   "options": [
+    "Otonom sinir sistemi",
+    "Somatik sinir sistemi",
+    "Merkezi sinir sistemi",
+    "İkincil sinir sistemi"
+   ]
+  },
+  "15209": {
+   "text": "Aşırı gürültüye maruz kalmak şunu zedeleyebilir;",
+   "options": [
+    "kokleadaki hassas zarı.",
+    "kulak zarını.",
+    "yarım daire kanallarını.",
+    "kemikçikleri."
+   ]
+  },
+  "15131": {
+   "text": "Scuba dalışı sonrası dekompresyon hastalığına yatkınlık açısından aşağıdaki ifadelerden hangisi yanlıştır?",
+   "options": [
+    "10 metreye (30 fit) kadar çoklu dalış: uçuştan 12 saat kaçınılmalı.",
+    "10 metrenin (30 fit) üzerinde tekli veya çoklu dalış: uçuştan 24 saat kaçınılmalı.",
+    "10 metreye (30 fit) kadar çoklu dalış: uçuştan 24 saat kaçınılmalı.",
+    "10 metreye (30 fit) kadar tekli dalış: uçuştan 12 saat kaçınılmalı."
+   ]
+  },
+  "15164": {
+   "text": "Bir pilotun nezle olduğunda uçmaması neden önemlidir?",
+   "options": [
+    "Orta kulak ile atmosfer havası arasındaki basınç eşitlenemeyebilir.",
+    "Akciğerler ile atmosfer havası arasındaki basınç eşitlenemeyebilir.",
+    "İç kulak ile orta kulak arasındaki basınç eşitlenemeyebilir.",
+    "İç kulak ile atmosfer havası arasındaki basınç eşitlenemeyebilir."
+   ]
+  },
+  "15054": {
+   "text": "Dalton yasasının etkileri şuna neden olabilir:",
+   "options": [
+    "Hipoksi",
+    "Vurgun (bends)",
+    "Hapsolmuş gaz bozuklukları",
+    "Açığa çıkan gaz bozuklukları"
+   ]
+  },
+  "15078": {
+   "text": "Kaygı ve korku şuna neden olabilir:",
+   "options": [
+    "hiperventilasyona.",
+    "hipoglisemiye.",
+    "hipoksiye.",
+    "mekânsal yönelim bozukluğuna."
+   ]
+  },
+  "15246": {
+   "text": "Zihinsel aşırı yüklenme genellikle:",
+   "options": [
+    "Performansın düşmesine yol açar.",
+    "Etkilenmez.",
+    "Performans üzerinde hiçbir etkisi yoktur.",
+    "Daha iyi performansa yol açar."
+   ]
+  },
+  "15282": {
+   "text": "Uyarılma/performans grafiğinde bir pilot, performansı düşürmeden zor bir görevle başa çıkmak için en iyi nerede konumlanır?",
+   "options": [
+    "Kırılma noktasının altında",
+    "Kırılma noktasının ötesinde",
+    "Kırılma noktasında",
+    "Grafikteki herhangi bir noktada"
+   ]
+  },
+  "15090": {
+   "text": "Aşağıdaki ifadeyi tamamlayın. Sıkıştırılmış hava kullanarak 30 fitin biraz üzerinde bir derinliğe SCUBA dalışı yaptıktan sonra, kişinin şu süre boyunca uçmaması önerilir:",
+   "options": [
+    "24 saat.",
+    "6 saat.",
+    "48 saat.",
+    "12 saat."
+   ]
+  },
+  "15183": {
+   "text": "Göz referans noktasının (eye datum point) altında oturmak:",
+   "options": [
+    "Yaklaşmada undershoot (kısa düşme) bölgesinin bir kısmının görüş dışında kalabileceği anlamına gelir",
+    "Yaklaşmada overshoot (ileri geçme) bölgesinin bir kısmının görüş dışında kalabileceği anlamına gelir",
+    "Acil durumda kokpitten daha hızlı çıkışa olanak tanır",
+    "Pilotun başının kokpit tavanına temas etmesini önler"
+   ]
+  },
+  "15119": {
+   "text": "Oksijen eksikliğinin en olası ilk belirtileri neler olur?",
+   "options": [
+    "Zihinsel görevleri yerine getirmede güçlük ve engellemelerin (inhibisyonların) kaybı.",
+    "Bulantı ve baş dönmesi hissi.",
+    "Zayıf kas kontrolü.",
+    "Hafıza kaybı."
+   ]
+  },
+  "15222": {
+   "text": "Vestibüler aparat şunu algılar:",
+   "options": [
+    "Açısal ve doğrusal.",
+    "Pozitif \"g\".",
+    "Açısal.",
+    "Doğrusal."
+   ]
+  },
+  "15262": {
+   "text": "Aşağıdakilerden hangisi bilgi işleme aşamalarından biri değildir?",
+   "options": [
+    "Biliş",
+    "Eylem",
+    "Algı",
+    "Tespit"
+   ]
+  },
+  "15161": {
+   "text": "Aşağıdaki seçeneklerden hangisi bir havacılık hekiminin (aeromedical examiner) acil olarak görülmesini gerektirmez?",
+   "options": [
+    "Koruyucu diş taraması",
+    "Gözlük için ilk reçete",
+    "Hamilelik",
+    "Düzenli ilaç kullanımı"
+   ]
+  },
+  "15104": {
+   "text": "\"Bends\" (vurgun) çekmek, kandan hangi gazın çözeltiden çıkmasının sonucudur?",
+   "options": [
+    "Azot.",
+    "Oksijen.",
+    "Karbon monoksit.",
+    "Karbon dioksit."
+   ]
+  },
+  "15162": {
+   "text": "Aşağıdakilerden hangisi sinir sisteminin bir parçası değildir?",
+   "options": [
+    "Sistemik sistem",
+    "Otonom sinir sistemi.",
+    "Periferik sinir sistemi.",
+    "Merkezi sinir sistemi"
+   ]
+  },
+  "15144": {
+   "text": "Hareket hastalığı (motion sickness) şundan kaynaklanır",
+   "options": [
+    "İç kulakta denge duyusunu kontrol eden küçük bölümün sürekli uyarılması.",
+    "Mide zarının kasılmasına neden olan asidik bir maddenin oluşması.",
+    "Uçağın hareketinin mide ağrısına neden olması",
+    "Dengeyi etkileyen ve genellikle deneyimle aşılan beyin hücrelerindeki dengesizlik."
+   ]
+  },
+  "15289": {
+   "text": "İnsan hatasına yönelik güncel yaklaşım nedir?",
+   "options": [
+    "İnsanların hataya açık olduğunun ve sistem ile prosedürlerin insan hatasını en aza indirecek şekilde tasarlanması gerektiğinin kabul edilmesi",
+    "İnsanların hataya açık olduğunun ve sistem ile prosedürlerin, sistem ve prosedür hatalarını önleyecek şekilde düzenlenmesi gerektiğinin kabul edilmesi",
+    "İnsanların hatasız olduğunun ve sistem/prosedürlerin insan hatasını en aza indirecek şekilde tasarlanması gerektiğinin kabul edilmesi",
+    "İnsanların hatasız olduğunun ve sistem ile prosedürlerin, sistem/prosedür hatalarını önleyecek şekilde düzenlenmesi gerektiğinin kabul edilmesi"
+   ]
+  },
+  "15197": {
+   "text": "Gözlerin parlaklığa uyum sağlaması için yaklaşık ne kadar süre gerekir?",
+   "options": [
+    "10 saniye",
+    "1 dakika",
+    "1 saniye",
+    "10 dakika"
+   ]
+  },
+  "15055": {
+   "text": "Hemoglobinin temel işlevi şudur:",
+   "options": [
+    "Vücutta oksijen ve karbondioksit taşımak",
+    "Dekompresyonu önlemek",
+    "İstenmeyen karbolik asidi dışarı atmak",
+    "Vücutta karbon monoksit taşımak"
+   ]
+  },
+  "15263": {
+   "text": "Bir uçağın kaptanı olarak iyi liderlik becerileri göstermeniz gerekir. Aşağıdakilerden hangisi bu becerilerden biri değildir?",
+   "options": [
+    "Agresif kendini kabul ettirme.",
+    "Yetki devretme sanatı.",
+    "İyi bir durumsal farkındalığı sürdürmek.",
+    "İleriye dönük planlama."
+   ]
+  },
+  "15060": {
+   "text": "Beyaz kan hücrelerinin (lökositler) işlevi nedir?",
+   "options": [
+    "Bağışıklık savunması",
+    "Kan pıhtılaşması",
+    "Oksijen taşınması",
+    "Kan şekeri düzenlenmesi"
+   ]
+  },
+  "15107": {
+   "text": "Vücudun doğru şekilde işlev görmesi için yeterli oksijen alamadığı durum şu şekilde bilinir…",
+   "options": [
+    "Hipoksi",
+    "Hiperglisemi.",
+    "Hiperventilasyon.",
+    "Hipotansiyon."
+   ]
+  },
+  "15243": {
+   "text": "Tetiklik (vigilance) örneği veriniz:",
+   "options": [
+    "Tetikliğe bir örnek, uzun bir uçuş boyunca diğer uçaklar için sürekli tarama yapmak olurdu",
+    "Tetikliğe bir örnek, bir ekip üyesinin önceden planlama yapıp ne olacağını ya da ne olabileceğini öngörmesi olurdu",
+    "Tetikte olan bir ekip üyesi bir sorunu tüm ekibe bildirir",
+    "Dikkatinizi teknik ve teknik olmayan görevler arasında bölmek"
+   ]
+  },
+  "15273": {
+   "text": "Bilişsel başa çıkma (cognitive coping) şununla ilişkilidir;",
+   "options": [
+    "stres etkenini görmezden gelmek veya akılcılaştırmak.",
+    "stresin etkilerini hafifletmek için ilaç almak.",
+    "stres etkeninin kasıtlı olarak ortadan kaldırılması.",
+    "stres etkeninin kaynağının ortadan kaldırılması."
+   ]
+  },
+  "15255": {
+   "text": "\"Durumsal Farkındalık\" (Situation Awareness) nedir?",
+   "options": [
+    "Nerede olduğunuzu, ne yaptığınızı ve bunun sonucunun ne olacağını bilmek",
+    "Bir pilot olarak mümkün olduğunca hassas uçmak",
+    "Her zaman güvende ve kendinden emin olmak",
+    "\"Kontrolden çıktığınız\" bir durumda olmak"
+   ]
+  },
+  "15143": {
+   "text": "Hareket hastalığı şu durumda ortaya çıkar:",
+   "options": [
+    "Görsel ve vestibüler sinyaller arasında bir uyumsuzluk",
+    "Boylamsal eksenden dikey yer değiştirme",
+    "Görsel referansların kaybından kaynaklanan yönelim bozukluğu",
+    "Yatay eksenden dikey yer değiştirme"
+   ]
+  },
+  "15215": {
+   "text": "Orta kulak ile burun ve boğaz bölgesi arasındaki bağlantıya ne denir...",
+   "options": [
+    "Östaki borusu (Eustachian tube).",
+    "Koklea.",
+    "İç kulak.",
+    "Kulak zarı."
+   ]
+  }
+ }
+}

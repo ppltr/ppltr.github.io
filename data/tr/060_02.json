@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "15696": {
+   "text": "Dünya'nın şekli hakkında aşağıdaki ifadelerden hangisi doğrudur?",
+   "options": [
+    "Kutuplarda hafifçe basıktır.",
+    "Ekvator çapı, kutup çapından yaklaşık 60 NM daha uzundur.",
+    "En uzun çap kutuplar arasındadır.",
+    "Dünya'nın çapı tüm enlemlerde aynıdır."
+   ]
+  },
+  "15794": {
+   "text": "Aşağıdaki bilgileri kullanarak rüzgâr hızını (wind velocity) hesaplayın: HDG: 054°T, TAS: 225 kt, Track: 059°T, GS: 208 kt",
+   "options": [
+    "010°T/25 kt",
+    "010°T/30 kt",
+    "005°T/25 kt",
+    "010°T/40 kt"
+   ]
+  },
+  "15847": {
+   "text": "70 m/sn'nin karşılığı yaklaşık olarak:",
+   "options": [
+    "136 kt",
+    "35 kt",
+    "210 kt",
+    "145 kt"
+   ]
+  },
+  "15814": {
+   "text": "TT:250 W/V 190/36 kt GS: 160 kt. TAS'ı bulun?",
+   "options": [
+    "182 kt",
+    "160 kt",
+    "166 kt",
+    "188 kt"
+   ]
+  },
+  "15723": {
+   "text": "Gerçek yönler, derece cinsinden bir açı olarak şu şekilde ölçülür…",
+   "options": [
+    "gerçek kuzeyden saat yönünde.",
+    "uçağın boylamsal ekseninden saat yönünde.",
+    "uçağın boylamsal ekseninden saat yönünün tersine.",
+    "gerçek kuzeyden saat yönünün tersine."
+   ]
+  },
+  "15783": {
+   "text": "Gün doğumu ile gün batımı arasındaki zaman aralığı neye bağlıdır;",
+   "options": [
+    "Güneşin deklinasyonu ve gözlemcinin enlemi.",
+    "Dünya ekseninin eğimi ve gözlemcinin boylamı.",
+    "Gözlemcinin enlemi ve boylamı.",
+    "Gözlemcinin boylamı."
+   ]
+  },
+  "15871": {
+   "text": "Dünya üzerindeki iki nokta arasında ölçülen mesafe 96 NM'dir. Bu mesafe, 1:1.200.000 ölçekli bir seyrüsefer haritasında şu şekilde gösterilir;",
+   "options": [
+    "148 mm",
+    "139 mm",
+    "128 mm",
+    "120 mm"
+   ]
+  },
+  "15809": {
+   "text": "Track= 300°, GS= 170 kt, W/V= 150°/30kt. Heading = ?",
+   "options": [
+    "294°.",
+    "180°.",
+    "306°.",
+    "145°."
+   ]
+  },
+  "15799": {
+   "text": "Verilenler: True Heading = 090° TAS = 180 kt GS = 180 kt Sürüklenme (Drift) 5° sağ. W/V'yi hesaplayın?",
+   "options": [
+    "360° / 15 kt.",
+    "010° / 15 kt.",
+    "190° / 15 kt.",
+    "180° / 15 kt."
+   ]
+  },
+  "15800": {
+   "text": "Verilenler; İstenen rota (course) 045°( M ). Sapma (variation) 15°E. W/V 190°( T ) / 30 kt. Standart atmosferde FL 55'te CAS 120 kt. Heading ( °M ) ve GS nedir?",
+   "options": [
+    "055° ve 147 kt",
+    "036° ve 151 kt",
+    "052° ve 154 kt",
+    "056° ve 137 kt"
+   ]
+  },
+  "15896": {
+   "text": "Bir uçak bir VOR radyali boyunca uçarsa şunu izler;",
+   "options": [
+    "büyük daire rota hattı.",
+    "sabit rota hattı (rhumb line).",
+    "sabit manyetik rota hattı.",
+    "sabit kerteriz hattı."
+   ]
+  },
+  "15908": {
+   "text": "Aşağıdakilerden hangisi bir VOR'un çalışma menzilini etkilemez?",
+   "options": [
+    "Gece operasyonları.",
+    "Verici gücü.",
+    "Araya giren yüksek arazi veya insan yapımı yapılar",
+    "Verici ve alıcının yüksekliği."
+   ]
+  },
+  "15768": {
+   "text": "Bir uçağın yer hızı (groundspeed) 90 knot ise, 20 dakikada ne kadar mesafe uçar?",
+   "options": [
+    "30 deniz mili.",
+    "45 deniz mili.",
+    "4.5 deniz mili.",
+    "1800 deniz mili."
+   ]
+  },
+  "15750": {
+   "text": "Sapma (variation) 6°W. İzogonik hatlar Ocak 2002. Yıllık ortalama artış 10'. 2005'te sapma nedir.",
+   "options": [
+    "6,5° W.",
+    "5.5°E.",
+    "6,3° W.",
+    "5,5° W."
+   ]
+  },
+  "15744": {
+   "text": "Bir agonik hat, hangi noktaları birleştirir:",
+   "options": [
+    "Sıfır manyetik sapma (variation).",
+    "Sıfır manyetik deviasyon.",
+    "Eşit manyetik sapma (variation).",
+    "Eşit manyetik deviasyon."
+   ]
+  },
+  "15872": {
+   "text": "Yerde birbirinden 17 NM uzakta olan iki nokta, harita üzerinde birbirinden 5 inç uzaktaysa, bu VFR haritasının oran olarak ölçeği nedir?",
+   "options": [
+    "1:250 000",
+    "1:215 000",
+    "1:185 000",
+    "1:500 000"
+   ]
+  },
+  "15848": {
+   "text": "85 m/sn'nin karşılığı yaklaşık olarak…",
+   "options": [
+    "165 kt.",
+    "136 kt.",
+    "127 kt.",
+    "275 kt."
+   ]
+  },
+  "15740": {
+   "text": "Hangisi doğrudur?",
+   "options": [
+    "Bunların hepsi.",
+    "Azami deviasyon 180 derece olabilir.",
+    "Manyetik kuzey ile pusula kuzeyi arasındaki açıya deviasyon denir.",
+    "Ekvator'un çevresi yaklaşık 40000 km'dir."
+   ]
+  },
+  "15913": {
+   "text": "Bir kontrolör sizden \"SQUAWK IDENT\" derse, şunu yapmalısınız:",
+   "options": [
+    "IDENT düğmesine bir kez, kısaca basın",
+    "Transponderınıza 7600 girin ve IDENT düğmesine basın",
+    "Transpondere size verdiği kodu girin",
+    "Transponderınızda hangi kodu ayarladığınızı ona teyit edin"
+   ]
+  },
+  "15793": {
+   "text": "5000 ft irtifada, sıcaklığın sıfır santigrat derece olduğu bir noktada uçarken, gösterge hava hızınız (IAS) 100 knot ise gerçek hava hızınızı (TAS) hesaplayın.",
+   "options": [
+    "106.5 kt.",
+    "108 kt.",
+    "105 kt.",
+    "104 kt."
+   ]
+  },
+  "15914": {
+   "text": "Birincil radarın çalışma prensibi:",
+   "options": [
+    "darbe (pulse) tekniği.",
+    "diferansiyel menzil.",
+    "modülasyon derinliği farkı.",
+    "faz farkı."
+   ]
+  },
+  "15700": {
+   "text": "Paraleller ve meridyenler hakkında hangisi yanlıştır?",
+   "options": [
+    "İki meridyen arasındaki mesafe sabittir.",
+    "Tüm meridyenler, karşı meridyenleriyle birlikte bir büyük daire oluşturur.",
+    "Tüm paraleller birer sabit rota hattıdır (rhumb line), ancak yalnızca ekvator bir büyük dairedir.",
+    "İki paralel arasındaki mesafe sabittir."
+   ]
+  },
+  "15685": {
+   "text": "Dünya elipsoidi üzerinde, ekvatora yakın bir yerde bir derece enlemin karşılığı olan mesafe…",
+   "options": [
+    "60 NM'den azdır.",
+    "60 NM'dir.",
+    "60 NM'den fazladır.",
+    "60 NM'den fazla ama 61 NM'den azdır."
+   ]
+  },
+  "15852": {
+   "text": "Tahmini seyir (Dead Reckoning, DR) mevkii ile bir Fix arasında farka ne sebep olabilir?",
+   "options": [
+    "Gerçek rüzgâr ile tahmin edilen rüzgâr arasındaki fark.",
+    "Manyetik ve gerçek rüzgâr yönü arasındaki fark.",
+    "Rüzgârsızlık ile gerçek rüzgâr arasındaki fark.",
+    "Rüzgârsızlık ile tahmin edilen rüzgâr arasındaki fark."
+   ]
+  },
+  "15716": {
+   "text": "Manyetik sapma (variation), hangi ikisi arasındaki açıdır:",
+   "options": [
+    "Gerçek kuzey ile manyetik kuzey.",
+    "Manyetik kuzey ile uçağın gerçek başı (heading).",
+    "Manyetik kuzey ile uçağın manyetik başı (heading).",
+    "Gerçek kuzey ile en yakın boylam hattı."
+   ]
+  },
+  "15673": {
+   "text": "Bir büyük dairenin özellikleriyle ilgili aşağıdaki ifadeleri değerlendirin:",
+   "options": [
+    "Dünya yüzeyindeki iki mevki arasından geçen büyük daire, bu iki mevki arasındaki en kısa mesafedir.",
+    "3 cevap da doğrudur.",
+    "Enlem paralellerinin hepsi birer büyük dairedir.",
+    "Büyük daire, başlangıçtaki gerçek yönü korur."
+   ]
+  },
+  "15741": {
+   "text": "Hesaplanan baş açısı (heading) 246° gerçek, yerel manyetik sapma (variation) 5°W ve pusula deviasyonu 1°E ise, pusula başı (compass heading) nedir:",
+   "options": [
+    "250°.",
+    "241°.",
+    "242°.",
+    "252°."
+   ]
+  },
+  "15671": {
+   "text": "Bir uçak 45°N enlem paralelini izliyor. İzlenen rota hattı (track):",
+   "options": [
+    "Sabit rota hattı (rhumb line).",
+    "Sabit sürüklenmeli (drift) rota hattı.",
+    "Büyük daire.",
+    "Sabit baş açılı (heading) rota hattı."
+   ]
+  },
+  "15694": {
+   "text": "Dünya küresi üzerindeki aşağıdaki dairelerden hangisinin merkezi, Dünya'nın merkezinde değildir?",
+   "options": [
+    "Küçük daire.",
+    "Ekvator.",
+    "Büyük daire.",
+    "Boylamlar."
+   ]
+  },
+  "15886": {
+   "text": "Bir otomatik yön bulucunun (ADF) bileşenleri şunlardır: 1 Bir alıcı. 2 Bir kokpit göstergesi. 3 Bir yönsüz radyo feneri (NDB). 4 Bir çerçeve anten (loop antenna) 5 Bir sense anteni. Doğru ifade kombinasyonu:",
+   "options": [
+    "1, 2, 4 ve 5.",
+    "yukarıdakilerin hepsi.",
+    "1, 2, 3 ve 4.",
+    "2, 3, 4 ve 5."
+   ]
+  },
+  "15889": {
+   "text": "Bir DME, deniz seviyesinde (MSL) konumlanmıştır. FL 360'ta istasyonun tam üzerinden dikey olarak geçen bir uçak, yaklaşık olarak şu DME menzilini alır:",
+   "options": [
+    "6 NM",
+    "7 NM",
+    "11 NM",
+    "8 NM"
+   ]
+  },
+  "15796": {
+   "text": "Verilenler: Gerçek rota hattı (True Track) = 258°, rüzgâr yönü ve hızı 180/20. TAS = 110 kt ise gerekli yer hızı (ground speed) ve gerçek baş açısı (true heading) nedir?",
+   "options": [
+    "105 kt, 248°",
+    "100 kt, 258°",
+    "115 kt, 248°",
+    "110 kt, 258°"
+   ]
+  },
+  "15835": {
+   "text": "Yer hızı (groundspeed) 90 kt olan bir uçak, 2°'lik bir rota hatası (track error) ile 1 saat uçarsa, yaklaşık rota dışı (off-track) mesafeyi deniz mili cinsinden bulun.",
+   "options": [
+    "3 NM.",
+    "2 NM.",
+    "6 NM.",
+    "4 NM."
+   ]
+  },
+  "15905": {
+   "text": "Bir VOR frekansı ayarlandığında, VOR-CDI ibresinin tam skala sapması nedir?",
+   "options": [
+    "10°",
+    "2.5°",
+    "5°",
+    "1.25°"
+   ]
+  },
+  "15901": {
+   "text": "Uçaktaki DME cihazı, radyo fenerinden itibaren mesafeyi şu şekilde okur:",
+   "options": [
+    "Eğik (slant range)",
+    "Dönüş",
+    "Yamuk",
+    "Yatay"
+   ]
+  },
+  "15797": {
+   "text": "Verilenler: IAS 120 kt, FL 80, OAT +20°C. TAS nedir?",
+   "options": [
+    "141 kt.",
+    "120 kt.",
+    "102 kt.",
+    "132 kt."
+   ]
+  },
+  "15714": {
+   "text": "İstenen gerçek rota hattı (true track), gerçek baş açısı (true heading) ve fiili gerçek rota hattının aynı değere sahip olması mümkün müdür?",
+   "options": [
+    "Evet, sakin hava (still air) koşulunda.",
+    "Bu yalnızca kuzey veya güney yönünde uçarken mümkündür.",
+    "Evet, çünkü bu değerler her zaman eşittir.",
+    "Hayır, hiçbir durumda mümkün değildir."
+   ]
+  },
+  "15747": {
+   "text": "Manyetik sapma (variation) nasıl değişir?",
+   "options": [
+    "Manyetik kutuplar döner ve bu, sapmanın sayısal değerini artırır veya azaltır.",
+    "Manyetik sapma sabit kalır.",
+    "Manyetik kutuplar döner ve bu, sapmanın sayısal değerini azaltır.",
+    "Manyetik kutuplar döner ve bu, sapmanın sayısal değerini artırır."
+   ]
+  },
+  "15761": {
+   "text": "Bir uçağın uçuş planlama çizelgesine göre, belirli bir brüt kütlede seyir irtifasına ulaşma süresi 36 dakika ve kat edilen mesafe 157 NM'dir (rüzgârsız). Ortalama 60 kt'lik bir kuyruk rüzgârı (tailwind) bileşeniyle kat edilecek mesafe ne olur?",
+   "options": [
+    "193 NM",
+    "157 NM",
+    "128 NM",
+    "228 NM"
+   ]
+  },
+  "15802": {
+   "text": "Bir VFR uçuşu için gerçek rota (true course) = 017°, rüzgâr 340°/15 kt ve gerçek hava hızı (True Air Speed) = 210 kt ise, sürüklenme düzeltmesi (drift correction) ve yer hızı (ground speed) nedir?",
+   "options": [
+    "3°L, 198 kt",
+    "3°R, 208 kt",
+    "3°L, 208 kt",
+    "3°R, 198 kt"
+   ]
+  },
+  "15689": {
+   "text": "Dünya üzerinde bir mevkii tanımlamak için şunu vermek yeterlidir;",
+   "options": [
+    "Hem enlem hem boylam.",
+    "Enlem veya boylamdan biri.",
+    "Yalnızca boylam.",
+    "Yalnızca enlem."
+   ]
+  },
+  "15883": {
+   "text": "ADF ve NDB ile ilgili;",
+   "options": [
+    "NDB yer ekipmanıdır, ADF ise uçak üzerindeki (havada) bir ekipmandır.",
+    "ADF sivil bir ekipmandır, NDB ise askeri bir ekipmandır ve siviller tarafından da kullanılır.",
+    "NDB bir lokatördür (locator), ADF ise bir yol boyu (enroute) seyrüsefer yardımcısıdır.",
+    "ADF yer ekipmanıdır, NDB ise yer ekipmanı ya da uçak üzerinde bir ekipman olabilir."
+   ]
+  },
+  "15037": {
+   "text": "Gerçek baş açısı (true heading) 270°'dir. Manyetik sapma (variation) 10° Doğu'dur. Manyetik baş açısı (magnetic heading) nedir?",
+   "options": [
+    "260°",
+    "hesaplanamaz",
+    "270°",
+    "280°"
+   ]
+  },
+  "15693": {
+   "text": "Dünya üzerindeki iki nokta arasında her zaman en kısa mesafe olan hat türü nedir?",
+   "options": [
+    "Bir büyük daire.",
+    "Bir enlem paraleli.",
+    "Bir küçük daire.",
+    "Bir sabit rota hattı (rhumb line)."
+   ]
+  },
+  "15825": {
+   "text": "Bir uçak 20 dakikada (MIN) 100 kara mili (statute mile) kat ediyor; 215 NM kat etmesi ne kadar sürer?",
+   "options": [
+    "50 MIN.",
+    "80 MIN.",
+    "90 MIN.",
+    "100 MIN."
+   ]
+  },
+  "15767": {
+   "text": "58 deniz mili mesafeyi kat etmeniz 41 dakika sürüyorsa, yer hızınız (ground speed) nedir?",
+   "options": [
+    "85 kt.",
+    "87 kt.",
+    "77 kt.",
+    "93 kt."
+   ]
+  },
+  "15921": {
+   "text": "NAVSTAR/GPS uydu seyrüsefer sisteminin yörünge düzlemleri:",
+   "options": [
+    "ekvator düzlemine 55° eğimlidir",
+    "ekvator düzlemine paraleldir",
+    "Dünya eksenine 55° eğimlidir",
+    "ekvator düzlemine 90° eğimlidir"
+   ]
+  },
+  "15874": {
+   "text": "Bir VDF şu amaçla kullanılabilir;",
+   "options": [
+    "radar bulunmadığında ATC kontrolörüne uçakların kerterizlerini sağlamak için.",
+    "hassas yaklaşma amacıyla ILS yerine.",
+    "uçağın VHF üzerinden yayın yapamadığı acil durum tipi durumlarda.",
+    "180º belirsizliğini çözmek için radarla birlikte."
+   ]
+  },
+  "15869": {
+   "text": "Bireysel devletlerin tercihine bağlı olarak, haritada yükseklik ve irtifalarla ilgilenirken hangi birimlerin kullanılmasına izin verilir?",
+   "options": [
+    "Feet veya metre",
+    "Yalnızca feet",
+    "Kara mili (statute mile) veya metre",
+    "Yalnızca metre"
+   ]
+  },
+  "15678": {
+   "text": "Mevsimler şuna bağlıdır:",
+   "options": [
+    "Kutup ekseninin ekliptik düzlemle yaptığı eğim.",
+    "Dünya ile Güneş arasındaki değişken mesafe.",
+    "Dünya'nın kutup ekseni etrafındaki dönüşü.",
+    "Dünya'nın Güneş etrafındaki eliptik yörüngesi."
+   ]
+  },
+  "15875": {
+   "text": "bir VDF istasyonuna gerçek kerteriz için \"Q\" kodu ………. ; bir VDF istasyonuna manyetik kerteriz için \"Q\" kodu …….:",
+   "options": [
+    "QUJ / QDM",
+    "QTE/QUJ",
+    "QDR/QDM",
+    "QDM/QUJ"
+   ]
+  },
+  "15712": {
+   "text": "Verilenler: sapma (variation) 6° E, deviasyon (-4°), gerçek baş açısı (True Heading) 136 derece. Pusula başı (compass heading) nedir?",
+   "options": [
+    "134°.",
+    "126°.",
+    "138°.",
+    "130°."
+   ]
+  },
+  "15885": {
+   "text": "İstasyon civarında QDR 075° iken, manyetik baş açısı (magnetic heading) 295° ise, ADF göstergesindeki rölatif kerteriz nedir:",
+   "options": [
+    "320°",
+    "040°",
+    "140°",
+    "220°"
+   ]
+  },
+  "15699": {
+   "text": "Büyük daire ve sabit rota hattı (rhumb line) hakkında hangisi yanlıştır?",
+   "options": [
+    "Büyük daire rotası, başlangıçtaki gerçek yönünü korur.",
+    "Sabit rota hattı (rhumb line) rotası, iki nokta arasındaki büyük daire mesafesinden asla daha kısa olamaz.",
+    "İki nokta arasındaki büyük daire rotası, aynı noktalar arasındaki sabit rota hattı (rhumb line) rotasına kıyasla her zaman kutba daha yakındır.",
+    "Sabit rota hattı (rhumb line) rotası, başlangıçtaki gerçek yönünü korur."
+   ]
+  },
+  "15701": {
+   "text": "Hangisi doğrudur?",
+   "options": [
+    "0° enlem paraleli, 30° N enlem paralelinden daha uzundur.",
+    "Ekinoks, 23° 27' enlemdir.",
+    "0° enlem paraleli, 0° meridyeninden daha kısadır.",
+    "0° meridyeni, 30° W meridyeninden daha uzundur."
+   ]
+  },
+  "15759": {
+   "text": "Bir uçak 74 kt hızla uçuyor. 68 deniz millik bir mesafe için tahmini yol süresi (ETE) nedir?",
+   "options": [
+    "0h 55 Minutes.",
+    "0h 35 Minutes.",
+    "1h 45 Minutes.",
+    "0h 45 Minutes."
+   ]
+  },
+  "15834": {
+   "text": "Yer hızı (groundspeed) 120 kt olan bir uçak, 3°'lik bir rota hatası (track error) ile 10 dakika uçarsa, yaklaşık rota dışı (off-track) mesafeyi deniz mili cinsinden bulun.",
+   "options": [
+    "1 NM.",
+    "4 NM.",
+    "3 NM.",
+    "2 NM."
+   ]
+  },
+  "15755": {
+   "text": "Bir uçak, aynı seyir irtifasında 90 kt TAS ile 20 dakika uçuyor. 15 kt kuyruk rüzgârı (tailwind) varsa, kat edilen yer mesafesini hesaplayın.",
+   "options": [
+    "35NM",
+    "25NM",
+    "30NM",
+    "45NM"
+   ]
+  },
+  "15897": {
+   "text": "Bir dakikalık zaman aralığında, DME cihazınız uçağınızın bir VOR/DME radyo fenerine doğru dosdoğru 1.7 deniz mili yol aldığını gösteriyor; uçağın yer hızı (groundspeed) nedir?",
+   "options": [
+    "102 knots",
+    "100 knots",
+    "96 knots",
+    "110 knots"
+   ]
+  },
+  "15719": {
+   "text": "Aynı mevkiden geçen coğrafi meridyen ile manyetik meridyen arasındaki açısal fark _____'dır. Ancak öğrenciler bunu genellikle _____ ile karıştırır; oysa bu, aslında _____ ile _____ arasındaki açıdır.",
+   "options": [
+    "Sapma (Variation) – Deviasyon – Pusula Kuzeyi – Manyetik Kuzey.",
+    "Deviasyon – Sürüklenme (Drift) – Baş açısı (Heading) – Rota hattı (Track).",
+    "Manyetik düzeltme – Sapma (Variation) – Pusula Kuzeyi – Gerçek Kuzey.",
+    "Deviasyon – Sapma (Variation) – Manyetik Kuzey – Pusula Kuzeyi."
+   ]
+  },
+  "15752": {
+   "text": "\"A\" 49°S 180'E/W'den \"B\" 58°S 180'E/W'ye bir uçuş yapılacaktır. \"A\"dan \"B\"ye mesafe NM cinsinden yaklaşık olarak;",
+   "options": [
+    "540",
+    "1200",
+    "804",
+    "1000"
+   ]
+  },
+  "15916": {
+   "text": "Bir pilotun transponderin IDENT düğmesine basmasının sonucu nedir?",
+   "options": [
+    "Kontrolörün radar ekranında, uçağın transponder yankısının etrafında kısa süreliğine özel bir sembol belirmesini sağlar ve böylece uçağın kesin olarak tanımlanmasına imkân verir.",
+    "Transponderin Mode Charlie özelliğini seçer",
+    "Transponderin Mode Alpha özelliğini seçer",
+    "Pilotun transponderde doğru kodu seçtiğini kontrolöre teyit eder"
+   ]
+  },
+  "15776": {
+   "text": "20 deniz mili kat etmesi 10 dakika süren bir uçağın yer hızı (groundspeed) nedir?",
+   "options": [
+    "120 knot.",
+    "180 knot.",
+    "saatte 200 kilometre.",
+    "saatte 200 deniz mili."
+   ]
+  },
+  "15686": {
+   "text": "En yüksek boylam değeri nerede bulunur:",
+   "options": [
+    "Greenwich karşı meridyeninde.",
+    "kutuplara yakın yerde.",
+    "başlangıç meridyenine (prime meridian) yakın yerde.",
+    "ekvator boyunca."
+   ]
+  },
+  "15898": {
+   "text": "VOR hangi frekans aralığında çalışır?",
+   "options": [
+    "108 MHz – 117.95 MHz",
+    "1000 – 2000 MHz",
+    "190 – 1750 kHz",
+    "118 MHz – 137 MHz"
+   ]
+  },
+  "15829": {
+   "text": "Rüzgârsız koşul varsayılarak, TAS 100 kt ve 500 FT/MIN'lik bir alçalma hızını (rate of descent) koruyarak 10 000 FT alçalan bir uçak ne kadar mesafe kat eder?",
+   "options": [
+    "33.3 NM",
+    "19.2 NM",
+    "38.4 NM",
+    "16.0 NM"
+   ]
+  },
+  "15820": {
+   "text": "50 nm yol aldıktan sonra, rotanızın 2.5 nm dışında olduğunuzu fark ediyorsunuz. Rota hatanız (track error) nedir?",
+   "options": [
+    "3 derece",
+    "1 derece",
+    "2.5 derece",
+    "5 derece"
+   ]
+  },
+  "15910": {
+   "text": "Aşağıdaki olgulardan hangisi VOR alımını etkilemez?",
+   "options": [
+    "Kıyı kırılması (coastal refraction)",
+    "Bir VOR radyo fenerinin tam üzerindeki belirsizlik konisi (cone of ambiguity)",
+    "Verici rakımı ve alıcı irtifası",
+    "VOR radyo fenerini çevreleyen arazi"
+   ]
+  },
+  "15900": {
+   "text": "DME (Distance Measuring Equipment / Mesafe Ölçme Cihazı), aşağıdaki frekanslar içinde çalışır:",
+   "options": [
+    "962 – 1213 MHz",
+    "962 – 1213 kHz.",
+    "108 – 118 MHz",
+    "329 – 335 MHz"
+   ]
+  },
+  "15888": {
+   "text": "Aşağıdaki ifadelerden hangisi bir Yönsüz Radyo Fenerini (Non-Directional Beacon, NDB) en iyi şekilde tanımlar?",
+   "options": [
+    "Radyo sinyallerini tüm yönlere yayan, yer tabanlı bir verici",
+    "Bir kontrolöre VDF bilgisi sağlayan özel bir anten",
+    "Bir rölatif kerteriz göstergesi ve ADF ibresi",
+    "Bir VOR göstergesine NDB sinyalleriyle ilgili bilgi sağlayan anten kombinasyonu"
+   ]
+  }
+ }
+}

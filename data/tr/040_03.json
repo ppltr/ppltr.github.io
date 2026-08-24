@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "15142": {
+   "text": "Pilotun uçuş sırasında görev yapamaz hale gelmesine en sık sebep olan nedir?",
+   "options": [
+    "Akut gastrointestinal (mide-bağırsak) rahatsızlıklar.",
+    "Kardiyovasküler rahatsızlıklar.",
+    "Davranışsal rahatsızlıklar.",
+    "Kronik pulmoner (akciğer) rahatsızlıklar."
+   ]
+  },
+  "15176": {
+   "text": "Hipermetropi yaygın olarak ne olarak adlandırılır?",
+   "options": [
+    "Uzak görüşlülük.",
+    "Renk körlüğü.",
+    "Beslenme yetersizliği.",
+    "Yakın görüşlülük."
+   ]
+  },
+  "15232": {
+   "text": "Bir spinin dönüşü durdurulduğunda hissedilen nedir?",
+   "options": [
+    "Ters yönde bir spine girildiği hissi",
+    "Aynı yönde dönmeye devam edildiği hissi",
+    "Uçağın burnunun aniden aşağı düştüğü hissi",
+    "Uçağın anında dengeye geldiği hissi"
+   ]
+  },
+  "15132": {
+   "text": "Hiperventilasyon için aşağıdaki ifadelerden hangisi doğrudur?",
+   "options": [
+    "Kandaki karbondioksit azalması hiperventilasyona sebep olur.",
+    "Kandaki oksijen azalması hiperventilasyona sebep olur",
+    "Kese kâğıdı kullanımı hiperventilasyonun etkilerini değiştirmez.",
+    "Hiperventilasyon, vücut dokularındaki yetersiz oksijenden kaynaklanır."
+   ]
+  },
+  "15287": {
+   "text": "Pistte kalkışı beklerken kule, pilota kuyruk rüzgârı bileşeninin 12 kt olduğunu bildiriyor. El kitabına göre sınır 10 kt'dir. Pilot, pist uzun olduğu için yine de kalkış yapmaya karar veriyor. Bu ne tür bir hatadır?",
+   "options": [
+    "Bir ihlal",
+    "Tehlikeli davranış",
+    "Bir karar hatası",
+    "Bir muhakeme hatası"
+   ]
+  },
+  "15088": {
+   "text": "Karbon monoksit neden tehlikelidir?",
+   "options": [
+    "Hemoglobinin ona olan afinitesi, Oksijene olan afinitesinden 210 kat fazladır",
+    "Hemoglobinin ona olan afinitesi, Oksijene olan afinitesinden 110 kat fazladır",
+    "Hemoglobinin ona olan afinitesi, Oksijene olan afinitesinden 10 kat fazladır",
+    "Kokusu ve tadı deneyimsiz bir pilot tarafından kolayca fark edilemez"
+   ]
+  },
+  "15202": {
+   "text": "Aşağıdakilerden hangisi yaklaşma sırasında uçağın olması gerekenden alçakta olduğu illüzyonunu verir?",
+   "options": [
+    "Aşağı eğimli bir pist",
+    "Normalden daha dar bir pist",
+    "Aksi hâlde karanlık bir bölgede parlak aydınlatılmış bir havaalanı",
+    "Yukarı eğimli bir pist"
+   ]
+  },
+  "15074": {
+   "text": "Basınçlandırılmamış bir uçakla ve ilave oksijen kullanmadan tırmanan bir pilot, kritik eşiği yaklaşık olarak hangi irtifada geçer?",
+   "options": [
+    "22.000 ft.",
+    "5.000 ft.",
+    "25.000 ft.",
+    "38.000 ft."
+   ]
+  },
+  "15189": {
+   "text": "'Rod (Çubuk)' adı verilen alıcılar:",
+   "options": [
+    "'Koni'lere göre daha düşük ışık seviyelerine duyarlıdır",
+    "Optik sinir üzerinde yoğunlaşmıştır",
+    "Renk değişimlerine yüksek derecede duyarlıdır",
+    "Öncelikle gündüz kullanılır"
+   ]
+  },
+  "15184": {
+   "text": "Merceğin, görüntüyü retina üzerinde odaklamak için şeklini değiştirebilme yeteneğine ne denir?",
+   "options": [
+    "Akomodasyon",
+    "Otokinezi",
+    "Aklimatizasyon",
+    "Görme keskinliği (acuity)"
+   ]
+  },
+  "15113": {
+   "text": "Hiperventilasyon nedir?",
+   "options": [
+    "Kandan anormal miktarda CO2 kaybına yol açan aşırı solunum hızı ve derinliği.",
+    "Kanın O2 taşıma kapasitesinde azalma.",
+    "Hem sistolik hem diyastolik arteriyel kan basıncının yükselmesi.",
+    "O2'nin akciğerlerden kan dolaşımına difüzyonunu engelleyen bir durum."
+   ]
+  },
+  "15076": {
+   "text": "Pilotlar hangi irtifanın üzerinde ilave oksijen solumalıdır?",
+   "options": [
+    "10.000 ft.",
+    "20.000 ft.",
+    "8.000 ft.",
+    "2.000 ft."
+   ]
+  },
+  "15118": {
+   "text": "Staz Hipoksisi (Stagnant Hypoxia) nedir?",
+   "options": [
+    "Dolaşım sisteminin bir tür yetersizliğinden kaynaklanan zayıf kan dolaşımı nedeniyle vücutta oluşan oksijen yetersizliğidir.",
+    "Soluma havasındaki oksijenin kısmi basıncının yetersiz olmasından kaynaklanır.",
+    "Hücresel solunumdaki bozulma nedeniyle vücut dokularının mevcut oksijeni verimli kullanamamasıdır.",
+    "Kanın oksijen taşıma kapasitesindeki azalma nedeniyle oluşur."
+   ]
+  },
+  "15117": {
+   "text": "'Anemik hipoksi'nin diğer adı nedir?",
+   "options": [
+    "Hipemik hipoksi",
+    "Histotoksik hipoksi",
+    "Staz hipoksisi",
+    "Hipoksik hipoksi"
+   ]
+  },
+  "15043": {
+   "text": "'Bir gaz karışımının toplam basıncı, karışımı oluşturan gazların kısmi basınçlarının toplamına eşittir.' Yukarıdaki tanımı aşağıdaki kanunlardan hangisi açıklar?",
+   "options": [
+    "Dalton Kanunu",
+    "Charles Kanunu",
+    "Henry Kanunu",
+    "Boyle Kanunu"
+   ]
+  },
+  "15193": {
+   "text": "Mekânsal (uzaysal) yönelim için en önemli duyu hangisidir?",
+   "options": [
+    "Görme",
+    "Bütün duyular durumsal farkındalıkta rol oynar.",
+    "Kaba his (seat of the pants).",
+    "İşitme ve denge."
+   ]
+  },
+  "15180": {
+   "text": "Bir pist beklenenden daha genişse, pilot şu eğilimi gösterir...",
+   "options": [
+    "Normalden daha yüksek bir yaklaşma yapar, pistin sonunu aşma ihtimali doğar.",
+    "Normalden daha alçak bir yaklaşma yapar, pistin sonunu aşma ihtimali doğar.",
+    "Normalden daha yüksek bir yaklaşma yapar, piste kısa inme ihtimali doğar.",
+    "Normalden daha yüksek bir yaklaşma yapar, piste eksik inme (undershoot) ihtimali doğar."
+   ]
+  },
+  "15272": {
+   "text": "Orta düzeyde bir uyarılma (arousal) neye yol açar?",
+   "options": [
+    "Dış olaylara ve görevlerin yerine getirilmesine ilgi oluşturur",
+    "Dikkatin daralması nedeniyle performansın bozulmasına yol açar",
+    "Duyusal bilginin yavaş işlenmesine yol açar",
+    "Zaman içinde sağlığın bozulmasına yol açar"
+   ]
+  },
+  "15235": {
+   "text": "Aşağıdakilerden hangisi, uzun süreli bir dönüş sırasında pilotun baş hareketinin sebep olduğu illüzyondur?",
+   "options": [
+    "Coriolis illüzyonu",
+    "Perspektif illüzyonu",
+    "Yanlış ufuk illüzyonu",
+    "Odyogiral illüzyon"
+   ]
+  },
+  "15212": {
+   "text": "Ses şiddeti (loudness) hangi birimle ölçülür?",
+   "options": [
+    "Desibel.",
+    "Saniyedeki çevrim sayısı.",
+    "Paskal.",
+    "Hertz."
+   ]
+  },
+  "15236": {
+   "text": "Denge hakkında aşağıdaki ifadelerden hangisi doğrudur?",
+   "options": [
+    "Yarım daire kanalları açısal hareketlerin algılanmasından sorumludur.",
+    "Otolitler açısal hareketlerin algılanmasından sorumludur.",
+    "Yarım daire kanalları doğrusal hareketlerin algılanmasından sorumludur.",
+    "Vestibüler aparat dengeden sorumludur ve orta kulakta bulunur."
+   ]
+  },
+  "15094": {
+   "text": "Uçuş sırasında kokpite egzoz gazı sızması neye sebep olabilir?",
+   "options": [
+    "Karbon monoksit zehirlenmesi",
+    "Dehidrasyon (sıvı kaybı)",
+    "Jet-lag",
+    "Hidrosiyanik asit zehirlenmesi"
+   ]
+  },
+  "15135": {
+   "text": "Yüksek irtifanın sebep olabileceği hipoksi türü hangisidir?",
+   "options": [
+    "Hipoksik hipoksi",
+    "Staz hipoksisi",
+    "Histotoksik hipoksi",
+    "Anemik hipoksi"
+   ]
+  },
+  "15203": {
+   "text": "Görsel sistemin hangi parçası renkli görmeden sorumludur?",
+   "options": [
+    "Koniler",
+    "Çubuklar (Rod)",
+    "Kör nokta",
+    "Makula"
+   ]
+  },
+  "15207": {
+   "text": "Düz yatay uçuş sırasında bir ivmelenme neyin illüzyonuna yol açabilir?",
+   "options": [
+    "Bir tırmanış.",
+    "Bir alçalma.",
+    "Bir yatış (bank).",
+    "Ters uçuş."
+   ]
+  },
+  "15284": {
+   "text": "Bir pilotun kontrol listesi kullanması, SHELL Konsepti içinde hangi etkileşime örnektir?",
+   "options": [
+    "L ve S.",
+    "L ve E.",
+    "L ve H.",
+    "L ve L."
+   ]
+  },
+  "15163": {
+   "text": "Diğer tüm vücut fonksiyonlarını kontrol eden organ hangisidir?",
+   "options": [
+    "Beyin.",
+    "Omurilik.",
+    "Akciğerler.",
+    "Kalp."
+   ]
+  },
+  "15110": {
+   "text": "Atmosferdeki oksijen yüzdesi, hacimce %21'de şu şekilde sabit kalır:",
+   "options": [
+    "Atmosferin büyük bölümü boyunca",
+    "8.000 fite kadar",
+    "18.000 fite kadar",
+    "10.000 fite kadar"
+   ]
+  },
+  "15213": {
+   "text": "Kalıcı işitme kaybı, sürekli maruz kalınan neyden kaynaklanabilir?",
+   "options": [
+    "90 desibelin üzerindeki gürültü",
+    "Yarım daire kanallarındaki sıvıyı kaynatan aşırı sıcaklık",
+    "Kulak kirinin birikmesine yol açan tozlu ortamlar",
+    "60 desibelin üzerindeki gürültü"
+   ]
+  },
+  "15210": {
+   "text": "Bir uçağı kullanırken mekânsal bozukluk yaşadığınızdan şüpheleniyorsanız (ör. hızlı bir tırmanıştan düz uçuşa geçişten sonra geriye doğru takla atıyormuş hissi), doğru hareket tarzı ne olur....",
+   "options": [
+    "Uçağınızın aletlerine güvenmek.",
+    "Yönünüzü yeniden kazanmak için birkaç saniye gözlerinizi kapatmak.",
+    "Dışarı bakmaya yoğunlaşmak.",
+    "Duyularınıza güvenmek, çünkü aletler yanlış bilgi verebilir."
+   ]
+  },
+  "15165": {
+   "text": "Kırmızı ışığa duyarlı göz hücresi hangisidir?",
+   "options": [
+    "Koni",
+    "Eritrosit",
+    "Alfa hücreleri",
+    "Çubuk (Rod)"
+   ]
+  },
+  "15278": {
+   "text": "Bireyin stresi algılaması neye bağlıdır?",
+   "options": [
+    "Durumun ve onunla başa çıkma yeteneklerinin öznel değerlendirilmesine",
+    "Yalnızca mevcut durumun koşullarına",
+    "Pilotun artan uyarılma düzeyine",
+    "Durumun ve onunla başa çıkma yeteneklerinin nesnel değerlendirilmesine"
+   ]
+  },
+  "15140": {
+   "text": "Kan basıncı neyden dolayı yükselebilir?",
+   "options": [
+    "Hepsi",
+    "Sigara içmek",
+    "Stres",
+    "Yaş"
+   ]
+  },
+  "15052": {
+   "text": "Oksijen ve karbondioksit vücut boyunca nasıl taşınır?",
+   "options": [
+    "Dolaşım",
+    "Metabolizma",
+    "Oksidasyon",
+    "Difüzyon"
+   ]
+  },
+  "15050": {
+   "text": "Hemoglobinin karbon monoksite olan tercihi, oksijene göre kaç kat fazladır?",
+   "options": [
+    "210-250",
+    "150-180",
+    "100-120",
+    "120-80"
+   ]
+  },
+  "15242": {
+   "text": "Eğitim sırasında hareketlerin zihinsel ve fiziksel olarak tekrarlanması ;",
+   "options": [
+    "Karmaşık algısal-motor becerilerin kazanılması için en önemlisidir.",
+    "Öz kontrol için en önemlisidir.",
+    "Hata oranının artmasına yol açar.",
+    "Uygulamalı eğitimden daha etkilidir."
+   ]
+  },
+  "15274": {
+   "text": "Yorgunluk ve stres ;",
+   "options": [
+    "Hipoksiye toleransı düşürür.",
+    "Hipoksiyi hiçbir şekilde etkilemez.",
+    "15.000 fitin altında uçarken hipoksiye toleransı artırır.",
+    "Hipoksiye toleransı artırır."
+   ]
+  },
+  "15261": {
+   "text": "Aşağıdakilerden hangisi öğrenme türlerine dahil değildir?",
+   "options": [
+    "Tarama (scanning)",
+    "Taklit",
+    "İçgörü (insight)",
+    "Edimsel koşullanma"
+   ]
+  },
+  "15120": {
+   "text": "Bağırsakta hapsolmuş gazlar ne zaman şiddetli ağrıya sebep olabilir?",
+   "options": [
+    "Basınçlandırılmamış bir uçakla 18.000 FT üzerinde uçarken daha sık",
+    "Daha düşük irtifalarda",
+    "Kabin basınç irtifası 2.000 FT'yi aştığında hem alçalma hem de tırmanma sırasında",
+    "Yalnızca basınçlandırılmış uçaklarla daha yüksek uçuş seviyelerinde uçarken"
+   ]
+  },
+  "15269": {
+   "text": "Stres sonucunda zarar görme eğiliminde olan ilk kokpit aracı nedir?",
+   "options": [
+    "Kokpit iletişimi",
+    "Kokpit etkinliği",
+    "Kokpit uyumu (cohesion)",
+    "Kokpit sinerjisi"
+   ]
+  },
+  "15059": {
+   "text": "Kırmızı kan hücrelerinin (eritrositlerin) işlevi nedir?",
+   "options": [
+    "Oksijen taşınması",
+    "Bağışıklık savunması",
+    "Kan şekeri düzenlemesi",
+    "Kan pıhtılaşması"
+   ]
+  },
+  "15123": {
+   "text": "Aşağıdakilerden hangisi, vücut dokularındaki gaz kabarcıklarının sebep olduğu istenmeyen durumlara veya hasara yol açan hastalıktır?",
+   "options": [
+    "Dekompresyon Hastalığı",
+    "Hiperventilasyon",
+    "Karbon Monoksit Zehirlenmesi",
+    "Sinir Sistemi Bozuklukları"
+   ]
+  },
+  "15277": {
+   "text": "Aşağıdaki listeden çevresel stres kaynaklarını (stressor) seçin? 1-Sıcaklık 2-Nem 3-Boşanma 4-Dinlenme eksikliği 5-İş kaybı 6-Gürültü",
+   "options": [
+    "1, 2, 6",
+    "1, 2, 3, 5, 6",
+    "1, 2, 4, 6",
+    "1, 2, 3, 6"
+   ]
+  },
+  "15091": {
+   "text": "Aşağıdaki ifadeyi tamamlayın. İrtifada, atmosferdeki oksijenin basıncı:",
+   "options": [
+    "Deniz seviyesindekinden (MSL) daha düşüktür",
+    "Etkilenmez, çünkü kısmi basınç irtifadan bağımsızdır.",
+    "Deniz seviyesindekinden (MSL) daha yüksektir",
+    "Ortalama deniz seviyesindekiyle (MSL) aynıdır."
+   ]
+  },
+  "15256": {
+   "text": "Algı mekanizmasında beklentilerin başlıca olumsuz etkisi nedir?",
+   "options": [
+    "Beklentiler, olası alternatifler göz ardı edilirken dikkatin odağını genellikle belirli bir yöne yönlendirir",
+    "Dikkat alanı genişler, bu da gerekli kararlar konusunda belirsizliğe yol açar",
+    "Dikkatin bilinçsiz mekanizması, ilgili tüm bilgilere odaklanılmasına yol açar",
+    "Her zaman rutin hatalara yol açarlar"
+   ]
+  },
+  "15283": {
+   "text": "Karar verme sürecinin doğru sırası aşağıdakilerden hangisidir? I. Görevleri tüm ilgililere dağıtmak ve bunu iş yükünü paylaşmak için kullanmak. II. En önemli/acil sorunu belirlemek. III. Mevcut tüm bilgileri değerlendirmek ve her olası hareket tarzının seçeneklerini ve sonuçlarını tanımlamak. IV. Geri bildirim kullanarak sonuçları gözden geçirmek. V. Olası hareket tarzlarının seçeneklerini ve sonuçlarını değerlendirdikten sonra nihai kararı vermek.",
+   "options": [
+    "II-III-V-I-IV",
+    "V-VI-I-III-II",
+    "III-II-I-IV-V",
+    "I-II-IV-V-III"
+   ]
+  },
+  "19920": {
+   "text": "Rasmussen'in modeline göre, beceriye dayalı (skill-based) davranışta hatalar hangi türdendir?",
+   "options": [
+    "Rutin hatalar",
+    "Bilgi hataları",
+    "Yaratıcı hatalar",
+    "Kullanım (handling) hataları"
+   ]
+  },
+  "15145": {
+   "text": "Hareket hastalığının (motion sickness) başlamasına katkıda bulunan başlıca etkenlerden biri nedir?",
+   "options": [
+    "Görsel ve vestibüler duyusal girdiler arasındaki uyuşmazlık.",
+    "Stall'a girmek.",
+    "Yüksek g manevraları yapmak.",
+    "Dönüşlere hızlı yatarak girmek."
+   ]
+  },
+  "15150": {
+   "text": "Gastroenterit durumu bir pilotu nasıl etkiler?",
+   "options": [
+    "Uçmaya elverişsiz kılar",
+    "Uygun ilaç kullanılması koşuluyla uçmaya elverişli kılar",
+    "Bir saattir atak yaşanmamışsa uçmaya elverişli kılar",
+    "Uçmaya elverişli kılar"
+   ]
+  },
+  "15160": {
+   "text": "Aşağıdakilerden hangisi bayılmaya sebep olabilir?",
+   "options": [
+    "Ani bir şok.",
+    "İrtifa değişimi.",
+    "Aşırı titiz uçuş planlaması.",
+    "Çok hızlı bir göz taraması."
+   ]
+  },
+  "15268": {
+   "text": "En yüksek iş yükü talebi normalde ne zaman ortaya çıkar?",
+   "options": [
+    "Yaklaşma ve iniş",
+    "Seyir (cruise)",
+    "Tırmanış",
+    "Kalkış"
+   ]
+  },
+  "15053": {
+   "text": "Dünya atmosferinde, oksijenin havadaki oranı irtifayla nasıl değişir?",
+   "options": [
+    "Havadaki oksijen oranında irtifa değişimiyle bir değişiklik olmaz. Atmosfer boyunca sabit kalır.",
+    "Troposferde, havadaki oksijen oranı artan irtifayla azalır, ancak Stratosfer boyunca sabit kalır.",
+    "İrtifa arttıkça, havadaki oksijen oranı artar.",
+    "İrtifa arttıkça, havadaki oksijen oranı azalır."
+   ]
+  },
+  "15228": {
+   "text": "Gürültüye bağlı işitme kaybı nedir?",
+   "options": [
+    "Kokleadaki hasar nedeniyle işitme kaybı.",
+    "Orta kulaktaki hasar nedeniyle işitme kaybı.",
+    "Vestibüler aparattaki hasar nedeniyle işitme kaybı.",
+    "Kulak kemikçiklerindeki (ossicles) hasar nedeniyle işitme kaybı."
+   ]
+  },
+  "15205": {
+   "text": "Sağlıklı genç bir kişi hangi aralıktaki sesleri algılayabilir?",
+   "options": [
+    "20 ile 20.000 Hertz arası",
+    "50 ile 10.000 Hertz arası",
+    "700 ile 5.000 Hertz arası",
+    "500 ile 3.000 Hertz arası"
+   ]
+  },
+  "15167": {
+   "text": "Eğimli bir bulut oluşumu, belirsizleşmiş bir ufuk çizgisi ve yer ışıkları ile yıldızların yayıldığı karanlık bir manzara, hangi illüzyona yol açabilir?",
+   "options": [
+    "Otokinezi",
+    "Asansör illüzyonu",
+    "Coriolis illüzyonu",
+    "Yanlış ufuk"
+   ]
+  },
+  "15276": {
+   "text": "Karmaşık bir görevde yüksek uyarılma düzeyi:",
+   "options": [
+    "Dikkat aralığını daraltır",
+    "Hataları azaltır",
+    "Daha iyi karar vermeye yol açar",
+    "Performansı artırır"
+   ]
+  },
+  "15267": {
+   "text": "İyi brifingler çok önemlidir. Aşağıdakilerden hangisi kötü bir brifingin sonucu olabilir?",
+   "options": [
+    "Artan belirsizlik.",
+    "Azalan belirsizlik.",
+    "Bilginin iyi anlaşılması.",
+    "Bilginin iyi aktarılması."
+   ]
+  },
+  "15244": {
+   "text": "Hipovijilans (düşük tetiktelik):",
+   "options": [
+    "Operatörün dikkatinin gevşemesi sonucunda görevin sonunda ortaya çıkma eğilimindedir.",
+    "Esas olarak yoğun kalkış aşamasından birkaç dakika sonra ortaya çıkar.",
+    "Uçuşun herhangi bir anında ortaya çıkabilir.",
+    "Yalnızca belirli kişilik tiplerini etkiler."
+   ]
+  },
+  "15069": {
+   "text": "Aşağıdaki sistemlerden hangisi atardamarları, toplardamarları, kılcal damarları ve kalbi temel unsurlar olarak içerir?",
+   "options": [
+    "Dolaşım Sistemi",
+    "Sindirim Sistemi",
+    "Sinir Sistemi",
+    "Boşaltım Sistemi"
+   ]
+  },
+  "15082": {
+   "text": "Düşük irtifada, hiperventilasyonun en yaygın belirtileri arasında şunlar bulunur:",
+   "options": [
+    "Baş dönmesi, görme bozukluğu, kaygı, ayak, el ve dudaklar çevresinde karıncalanma",
+    "Hareket hastalığı, zayıf görme keskinliği, sıcaklık ve tüplü dalış",
+    "İyi hissetme duygusu, şok, sıcaklık ve zayıf görme keskinliği",
+    "Kaygı, tüplü dalış, titreşim ve zayıf görme keskinliği"
+   ]
+  },
+  "15935": {
+   "text": "Ekip Kaynak Yönetimi (CRM) Eğitimi esas olarak neyle ilgilenir?",
+   "options": [
+    "İnsan Faktörleri ve davranış",
+    "Kaza istatistikleri ve incelemesi",
+    "Durumsal Farkındalık",
+    "Teknik uzmanlık ve etkileşim"
+   ]
+  },
+  "15141": {
+   "text": "Pozitif G sırasında bir pilot önce neyi yaşar?",
+   "options": [
+    "Grileşme (grey-out)",
+    "Kızarma (red-out)",
+    "Bilinç kaybı",
+    "Kararma (black-out)"
+   ]
+  },
+  "15201": {
+   "text": "Bir pilot kokpitte fazla yüksekte oturduğunda aşağıdakilerden hangisi/hangileri gerçekleşir? i) İyi bir aşağı dış görüş ii) Aletlerin zayıf görünümü iii) Yukarı dış görüşün engellenmesi",
+   "options": [
+    "i, ii ve iii",
+    "Yalnızca ii ve iii",
+    "Yalnızca i ve ii",
+    "Yalnızca i"
+   ]
+  },
+  "15157": {
+   "text": "Pilotlar için tıbbi elverişlilik gerekliliklerini nerede bulabilirsiniz?",
+   "options": [
+    "JAR-FCL 3",
+    "JAR-FCL 4",
+    "JAR-FCL 2",
+    "JAR-FCL 1"
+   ]
+  },
+  "15257": {
+   "text": "Beynin algı ve öğrenme yoluyla çevreye karşı gösterdiği aktif farkındalık ve tetikteliğe ne ad verilir?",
+   "options": [
+    "Dikkat",
+    "Kaygı",
+    "Hiperaktivite",
+    "Meditasyon"
+   ]
+  },
+  "15128": {
+   "text": "Aşağıdaki belirtilerden hangisi hipoksiye işaret edebilir?",
+   "options": [
+    "Dudaklarda ve tırnaklarda mavi renk değişimi",
+    "Vücudun her yerinde mavi lekeler",
+    "Dizlerde ve ayaklarda eklem ağrısı",
+    "Vücudun üst bölgesinde kas krampları"
+   ]
+  },
+  "15130": {
+   "text": "İrtifayla basınç hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+   "options": [
+    "12.000 ft.'de basınç, deniz seviyesindeki değerinin 2/4'üdür.",
+    "36.000 ft.'ye gelindiğinde basınç, deniz seviyesindeki değerinin 1/4'üdür.",
+    "18.000 ft.'de basınç, deniz seviyesindeki değerinin 1/2'sidir.",
+    "8.000 ft.'de basınç, deniz seviyesindeki değerinin 3/4'üdür."
+   ]
+  },
+  "15097": {
+   "text": "Hipoksi nasıl tanımlanır?",
+   "options": [
+    "Vücudun ihtiyaçlarını karşılamak için yeterli Oksijenin bulunmadığı durum",
+    "Karbondioksitin hemoglobine bağlanmadığı durum",
+    "Karbon Monoksitin beyaz hücrelerde Oksijenin yerini aldığı durum",
+    "Bir kişinin dekompresyon hastalığı belirtileri göstermeye başladığı irtifa"
+   ]
+  },
+  "15247": {
+   "text": "Zihinsel Aşırı Yüklenme genellikle…",
+   "options": [
+    "Performansın düşmesine yol açar",
+    "Performansın hızında ve doğruluğunda kişiden kişiye değişen değişikliklere sebep olur",
+    "Performans üzerinde hiçbir etkisi yoktur",
+    "Daha iyi performansa yol açar"
+   ]
+  },
+  "15137": {
+   "text": "Bir arkadaşınızı uçuşa çıkarıyorsunuz ve 6.000 ft'te seyir yapıyorsunuz. Yolcunuz karıncalanma hissi, baş dönmesi ve görme bozuklukları yaşamaya başlıyor, ardından bilincini kaybediyor. Yolcunuz muhtemelen neden muzdarip?",
+   "options": [
+    "Hiperventilasyon.",
+    "Anjina.",
+    "Gıda zehirlenmesi.",
+    "Hipoksi."
+   ]
+  }
+ }
+}

@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "16294": {
+   "text": "Basınç merkezi tasarım gereği uçağın ağırlık merkezinin gerisindedir; bu, düz ve düzgün uçuşta şununla dengelenir:",
+   "options": [
+    "kuyruk düzleminin aşağı yönlü bir kuvvet üretmesiyle.",
+    "kuyruk düzleminde ne yukarı ne aşağı yönlü kuvvet olmamasıyla, çünkü uçak dengede olmayacaktır.",
+    "kuyruk düzleminde ne yukarı ne aşağı yönlü kuvvet olmamasıyla, çünkü uçak dengede olacaktır.",
+    "kuyruk düzleminin yukarı yönlü bir kuvvet üretmesiyle."
+   ]
+  },
+  "16130": {
+   "text": "Bir uçak sabit bir hücum açısını korurken hava hızını artırırsa bu şuna yol açar:",
+   "options": [
+    "hem taşıma kuvvetinin hem sürüklemenin artmasına.",
+    "taşıma kuvvetinin artmasına ama sürüklemenin azalmasına.",
+    "kanadın ürettiği taşıma kuvvetinde değişiklik olmamasına, ama gövde sürüklemesinin artmasına.",
+    "taşıma kuvvetinin azalmasına ama sürüklemenin artmasına."
+   ]
+  },
+  "16087": {
+   "text": "Hava basıncı:",
+   "options": [
+    "Her yönde etki eder.",
+    "İrtifa arttıkça artar.",
+    "İnç kare başına Paskal ile ölçülür.",
+    "Yalnızca dikey aşağı yönde etki eder."
+   ]
+  },
+  "16085": {
+   "text": "İçine batırılmış herhangi bir cismin üzerine etki eden hava basıncı:",
+   "options": [
+    "Statik Basınç olarak da bilinir.",
+    "Toplam Basınç olarak da bilinir.",
+    "İrtifada deniz seviyesinden daha yüksektir.",
+    "Dinamik Basınç olarak da bilinir."
+   ]
+  },
+  "16098": {
+   "text": "Ses altı hava akışında, hava bir venturiden geçerken kütle akışı … , hız … ve statik basınç … .",
+   "options": [
+    "Sabit kalır / önce artar sonra azalır / önce azalır sonra artar.",
+    "Önce azalır sonra artar / önce artar sonra azalır / önce artar sonra azalır.",
+    "Sabit kalır / önce artar sonra azalır / önce artar sonra azalır.",
+    "Önce azalır sonra artar / sabit kalır / önce artar sonra azalır."
+   ]
+  },
+  "16228": {
+   "text": "Stall açısı şuna göre değişir:",
+   "options": [
+    "slat ve flap",
+    "yatay kuyruk düzlemi",
+    "sıcaklık ve irtifa",
+    "yoğunluk ve basınç"
+   ]
+  },
+  "16097": {
+   "text": "Bir hava kütlesinin hızı artırılırsa:",
+   "options": [
+    "Kinetik enerji artar, dinamik basınç artar ve statik basınç azalır.",
+    "Kütle akışı sabit kalır, dinamik basınç azalır ve statik basınç artar.",
+    "Statik basınç sabit kalır ve kinetik enerji artar.",
+    "Dinamik basınç azalır ve statik basınç artar."
+   ]
+  },
+  "16309": {
+   "text": "Durgun havada koordineli bir dönüşte, uçağın yük faktörü şuna bağlıdır:",
+   "options": [
+    "Yatış açısı",
+    "Ağırlık",
+    "Dönüş oranı",
+    "Yoğunluk irtifası"
+   ]
+  },
+  "16141": {
+   "text": "Taşıma katsayısı en yüksek değerine şurada ulaşır:",
+   "options": [
+    "stall'da ya da stall'dan hemen önce.",
+    "temiz konfigürasyonda normal çalışma hızında (Vno).",
+    "temiz konfigürasyonda minimum sürükleme hızında.",
+    "düz ve düzgün uçuşta 4° ile 6° arası hücum açısında."
+   ]
+  },
+  "16251": {
+   "text": "Bir uçağın enine ekseni şöyle bir çizgidir:",
+   "options": [
+    "Ağırlık Merkezinden geçer ve kanat uçlarından geçen çizgiye paralel.",
+    "Kanat kökünün çeyrek veter noktasından geçer ve boyuna eksene dik açıdadır.",
+    "Basınç Merkezinden geçer ve hava akışı yönüne dik açıdadır.",
+    "Kanat uçlarından geçer."
+   ]
+  },
+  "16305": {
+   "text": "Bir uçağı koordineli döndüren kuvvet hangisidir?",
+   "options": [
+    "Taşıma kuvvetinin yatay bileşeni.",
+    "Sürükleme kuvveti.",
+    "İtki.",
+    "Taşıma kuvvetinin dikey bileşeni."
+   ]
+  },
+  "16133": {
+   "text": "Hücum açısı artarsa bir aerofoil çevresindeki hava akışı hakkında hangi ifade doğrudur?",
+   "options": [
+    "Durma noktası aşağı hareket eder",
+    "Basınç merkezi yukarı hareket eder",
+    "Durma noktası yukarı hareket eder",
+    "Basınç merkezi aşağı hareket eder"
+   ]
+  },
+  "16151": {
+   "text": "Bir uçağın hangi kısımları indüklenmiş sürüklemenin oluşumunu esas olarak etkiler?",
+   "options": [
+    "kanat uçları.",
+    "kanatçıkların dış kısmı.",
+    "iniş takımının alt kısmı.",
+    "gövdenin ön kısmı."
+   ]
+  },
+  "16207": {
+   "text": "Spin ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+   "options": [
+    "Spin'den çıkışta kanatçıklar nötr konumda tutulmalı ve yalnızca dümen kullanılmalıdır.",
+    "Stall'dan çıkış ters kanatçık kontrolü kullanılarak yapılır",
+    "Her uçak asla spin'e giremeyecek şekilde tasarlanmalıdır",
+    "Spin sırasında IAS sürekli artar."
+   ]
+  },
+  "16234": {
+   "text": "Statik olarak kararsız bir uçak:",
+   "options": [
+    "Asla dinamik olarak kararlı değildir.",
+    "Her zaman dinamik olarak kararlıdır.",
+    "Bazen dinamik olarak kararsızdır.",
+    "Bazen dinamik olarak kararlıdır."
+   ]
+  },
+  "16172": {
+   "text": "Bir eğitim uçağı kanadı için tipik stall hücum açısı yaklaşık:",
+   "options": [
+    "16°",
+    "45°",
+    "30°",
+    "4°"
+   ]
+  },
+  "16101": {
+   "text": "Bir aerofoilin hücum kenarından firar kenarına uzanan hayali düz çizgiye ne denir:",
+   "options": [
+    "Veter çizgisi",
+    "Maksimum kamber.",
+    "Aerofoil kalınlığı.",
+    "Ortalama kamber."
+   ]
+  },
+  "16206": {
+   "text": "Uçak spin'deyken, spin yönü aşağıdaki göstergelerden hangisine bakılarak en güvenilir şekilde belirlenir?",
+   "options": [
+    "Turn coordinator",
+    "Yön göstergesi.",
+    "Kayma göstergesi.",
+    "Yapay ufuk."
+   ]
+  },
+  "16219": {
+   "text": "Sabit IAS'ta düz ve düzgün uçuşu sürdürmek için, flaplar açıldığında hücum açısı ….. olmalıdır.",
+   "options": [
+    "Azaltılmış",
+    "kritik hücum açısında",
+    "Sabit tutulmalı",
+    "artırılmış"
+   ]
+  },
+  "16155": {
+   "text": "Hava hızı arttıkça, indüklenmiş sürükleme:",
+   "options": [
+    "Azalır.",
+    "Değişmez.",
+    "Uçağın ağırlığına bağlıdır.",
+    "Artar."
+   ]
+  },
+  "16088": {
+   "text": "Dinamik Basınç şu formülle ifade edilebilir:",
+   "options": [
+    "Q=1/2ρV2",
+    "Q = 2ρV",
+    "Q =ρV",
+    "Q=1/3ρV2"
+   ]
+  },
+  "16187": {
+   "text": "Sınır tabaka şunlardan oluşur:",
+   "options": [
+    "Laminer ve Türbülanslı akış.",
+    "Yalnızca düşük hızlarda türbülanslı akış.",
+    "Türbülanslı akış.",
+    "Laminer akış."
+   ]
+  },
+  "16276": {
+   "text": "Bir anti-balans tabının amacı:",
+   "options": [
+    "Pilotun uyguladığı yükü artırarak kontrol yüzeylerinin aşırı sapmasını önlemek.",
+    "Yalnızca yüksek hızlarda kontrolleri hareket ettirmek için gereken yükü azaltmak.",
+    "Tüm hızlarda kontrolleri hareket ettirmek için gereken yükü azaltmak.",
+    "Uçağı trimlemek."
+   ]
+  },
+  "16125": {
+   "text": "Düz ve düzgün uçuşta, kanadın üst yüzeyi üzerindeki hava akışı, kanattan etkilenmeyen hava akışıyla karşılaştırıldığında:",
+   "options": [
+    "daha yüksek bir hıza sahiptir.",
+    "bağıl bir hıza sahiptir.",
+    "azalmış bir hıza sahiptir.",
+    "aynı hıza sahiptir."
+   ]
+  },
+  "16244": {
+   "text": "Bir uçağa yön kararlılığı kazandıran yüzey:",
+   "options": [
+    "Dikey stabilize.",
+    "Dümen trim tabı.",
+    "Yatay kuyruk düzlemi.",
+    "Dümen."
+   ]
+  },
+  "16096": {
+   "text": "Düşük hız rejimlerinde, bir hava kütlesinin hızı artırılırsa:",
+   "options": [
+    "Kinetik enerji artar, dinamik basınç artar ve statik basınç azalır.",
+    "Kütle akışı sabit kalır, dinamik basınç azalır ve statik basınç artar.",
+    "Statik basınç sabit kalır ve kinetik enerji artar.",
+    "Dinamik basınç azalır ve statik basınç artar."
+   ]
+  },
+  "16211": {
+   "text": "Flaplar indirildiğinde kanadın stall hücum açısı:",
+   "options": [
+    "Azalır, ama CLMAx artar.",
+    "Azalır, ama CLMAx aynı kalır.",
+    "Artar ve CLMAX artar.",
+    "Aynı kalır, ama CLMAX artar."
+   ]
+  },
+  "16086": {
+   "text": "Statik basınç şu şekilde etki eder:",
+   "options": [
+    "Her yönde.",
+    "Yalnızca akış yönünde.",
+    "Yalnızca toplam basınç yönünde.",
+    "Yalnızca akış yönüne dik olarak."
+   ]
+  },
+  "16170": {
+   "text": "Bir uçak kanadı ne zaman stall'a girer:",
+   "options": [
+    "Kritik hücum açısı aşıldığında.",
+    "Alışılmadık derecede yüksek \"G\" kuvvetlerine maruz kaldığında.",
+    "Laminer hava akışı türbülanslı hale geldiğinde.",
+    "Görülen hava hızı çok düşük olduğunda."
+   ]
+  },
+  "16254": {
+   "text": "Bir uçağın normal (dikey) ekseni etrafındaki hareketine ne denir:",
+   "options": [
+    "yaw.",
+    "pitch.",
+    "roll.",
+    "yana kayma."
+   ]
+  },
+  "16165": {
+   "text": "Düz uçuşta hava hızı maksimum Taşıma/Sürükleme oranına karşılık gelen hızın altına düşerse, etkisi şu olur:",
+   "options": [
+    "İndüklenmiş sürükleme arttığı için sürükleme artar.",
+    "Parazit sürükleme azaldığı için sürükleme azalır.",
+    "Parazit sürükleme arttığı için sürükleme artar.",
+    "İndüklenmiş sürükleme azaldığı için sürükleme azalır."
+   ]
+  },
+  "16192": {
+   "text": "Bir uçağın stall karakteristiklerini iyileştirmek için kanat dışa doğru burulur (hücum açısı açıklık boyunca değişir). Buna ne denir...",
+   "options": [
+    "geometrik washout.",
+    "ok şekli.",
+    "aerodinamik washout.",
+    "V-form."
+   ]
+  },
+  "16161": {
+   "text": "Düz ve düzgün uçuşta hızı artırmak indüklenmiş sürüklemeyi (1)……….… ve parazit sürüklemeyi (2)………… eder.",
+   "options": [
+    "(1) azaltır ve (2) artırır.",
+    "(1) artırır ve (2) artırır.",
+    "(1) azaltır ve (2) azaltır.",
+    "(1) artırır ve (2) azaltır."
+   ]
+  },
+  "16063": {
+   "text": "Ağırlık ya da kütle hakkında aşağıdaki ifadelerden hangisi doğrudur?",
+   "options": [
+    "Bir cismin ağırlığı yer çekimi ivmesine bağlıdır.",
+    "SI sisteminde ağırlığın ölçü birimi kilogramdır.",
+    "SI sisteminde kütlenin ölçü birimi Newton'dur.",
+    "Bir cismin kütlesi yer çekimi ivmesine bağlıdır."
+   ]
+  },
+  "16150": {
+   "text": "Bir uçağın hangi kısmı indüklenmiş sürükleme üzerinde en büyük etkiye sahiptir?",
+   "options": [
+    "kanat ucu",
+    "motor kaportası",
+    "kanat kökü birleşimi",
+    "iniş takımı"
+   ]
+  },
+  "16245": {
+   "text": "Bir uçak kanadına dihedral verilmesinin amacı:",
+   "options": [
+    "Boyuna eksen etrafında enine kararlılık sağlamak.",
+    "Normal eksen etrafında yön kararlılığı sağlamak.",
+    "Normal eksen etrafında enine kararlılık sağlamak.",
+    "Enine eksen etrafında boyuna kararlılık sağlamak."
+   ]
+  },
+  "16236": {
+   "text": "Pitch yönünde bir bozulmadan sonra, uçak enine eksende artan genlikle salınım yapıyor. Bu durumda uçak:",
+   "options": [
+    "Statik olarak kararlı ama dinamik olarak kararsızdır.",
+    "Statik ve dinamik olarak kararlıdır.",
+    "Statik olarak kararsız ama dinamik olarak kararlıdır.",
+    "Statik ve dinamik olarak kararsızdır."
+   ]
+  },
+  "16092": {
+   "text": "Kütle akışının (I) ve gücün (II) SI birimleri şunlardır;",
+   "options": [
+    "(I) kg/s , (II) N.m/s",
+    "(I) kg/m² , (II) N.m/s",
+    "(I) kg/s , (II) kg.m/s",
+    "(I) kg/m² , (II) kg.m/s"
+   ]
+  },
+  "16153": {
+   "text": "Kanat taşıma kuvveti sıfır olduğunda, indüklenmiş sürüklemesi:",
+   "options": [
+    "SIFIR",
+    "DÜŞÜK",
+    "maksimum",
+    "yüksek"
+   ]
+  },
+  "16222": {
+   "text": "Yarıklı bir flap CLmax'ı şu şekilde artırır:",
+   "options": [
+    "aerofoilin kamberini artırarak ve sınır tabakayı iyileştirerek.",
+    "yalnızca aerofoilin kamberini artırarak.",
+    "yüzey sürtünmesini azaltarak.",
+    "kritik hücum açısını artırarak."
+   ]
+  },
+  "16252": {
+   "text": "I. Bir uçağın normal ekseni her zaman yere diktir. II. Normal eksen, uçağın diğer iki eksenine diktir. Doğru ifadeleri seçin.",
+   "options": [
+    "Yalnızca II",
+    "Hiçbiri",
+    "I ve II",
+    "Yalnızca I"
+   ]
+  },
+  "16148": {
+   "text": "Bir uçağın görülen hava hızı 50 kt'tan 100 kt'a çıkarılırsa, parazit sürükleme:",
+   "options": [
+    "Dört kat artar.",
+    "Dörtte birine iner.",
+    "İki kat artar.",
+    "Altı kat artar."
+   ]
+  },
+  "16074": {
+   "text": "Bir pistonlu motor uçağı atmosferin şu katmanında uçar:",
+   "options": [
+    "Troposfer.",
+    "Tropopoz.",
+    "Mezosfer.",
+    "Stratosfer."
+   ]
+  },
+  "16173": {
+   "text": "Bir uçağın stall'a girdiği hücum açısı:",
+   "options": [
+    "brüt ağırlıktan bağımsız olarak aynı kalır.",
+    "yük faktörü arttıkça artar",
+    "brüt ağırlıktaki bir artışla değişir.",
+    "CG öne alınırsa artar."
+   ]
+  },
+  "16169": {
+   "text": "Yer etkisinin iniş mesafesi üzerindeki etkisi:",
+   "options": [
+    "iniş mesafesini artırır",
+    "yalnızca iniş flapları tam açıksa iniş mesafesini artırır.",
+    "iniş mesafesini değiştirmez",
+    "İniş mesafesini azaltır"
+   ]
+  },
+  "16186": {
+   "text": "Her molekülün kendisinden önceki molekülün izlediği yolu takip ettiği düzgün hava akışına ne denir:",
+   "options": [
+    "Laminer akış.",
+    "Rüzgâr.",
+    "Serbest akış.",
+    "Türbülanslı akış."
+   ]
+  },
+  "16143": {
+   "text": "Pozitif kamberli bir aerofoil, yaklaşık şu hücum açısında taşıma kuvveti üretmeye başlar:",
+   "options": [
+    "Eksi 4 derece.",
+    "16 derece.",
+    "4 ila 6 derece.",
+    "0 derece."
+   ]
+  },
+  "16089": {
+   "text": "Bir uçağın ön yüzeyine uygulanan dinamik basınç şuna eşittir:",
+   "options": [
+    "Yoğunluğun yarısı çarpı gerçek hava hızının karesi.",
+    "Yoğunluğun yarısı çarpı görülen hava hızının karesi.",
+    "Gerçek hava hızının yarısı çarpı yoğunluğun karesi.",
+    "Yoğunluk çarpı hızın karesi."
+   ]
+  },
+  "16224": {
+   "text": "Flap ve slatlar",
+   "options": [
+    "taşıma katsayısını artırır, böylece uçak daha düşük hızda uçurulabilir",
+    "Sürüklemeyi azaltır",
+    "Kalkış sırasında burun-yukarı pitch momenti oluşturur",
+    "Uçağı yavaşlatmak için taşıma katsayısını azaltır."
+   ]
+  },
+  "16200": {
+   "text": "IAS cinsinden stall hızı aşağıdaki etkenlere göre değişir:",
+   "options": [
+    "Dönüşte artar, artan kütle ve ileri C.G. konumunda artar",
+    "Artan yük faktörü, buzlanma koşulları ve geri C.G. konumunda artar",
+    "Artan yük faktörü ve daha fazla flapla artar, ama dönüşteki yatış açısından dolayı artmaz",
+    "İleri C.G. konumunda, daha yüksek irtifada ve kanadın önünde bulunan bir motorun pervane rüzgârından dolayı azalır"
+   ]
+  },
+  "16209": {
+   "text": "Flaplar daha aşağı bir konuma alındığında taşıma kuvveti ve sürükleme nasıl değişir?",
+   "options": [
+    "Taşıma kuvveti artar, sürükleme artar",
+    "Taşıma kuvveti azalır, sürükleme azalır",
+    "Taşıma kuvveti artar, sürükleme azalır",
+    "Taşıma kuvveti azalır, sürükleme artar"
+   ]
+  },
+  "16214": {
+   "text": "Tam flap ne zaman seçilmelidir:",
+   "options": [
+    "İnişe kesin karar verildiğinde.",
+    "Kuvvetli bir baş rüzgârına karşı iniş yapılırken.",
+    "Pas geçiş (go-around) sırasında.",
+    "VFE'nin üzerinde."
+   ]
+  },
+  "16230": {
+   "text": "Bir uçak bir rüzgâr hamlesiyle uçuş yolundan saptırılıyor. Pilot müdahalesi olmadan orijinal uçuş yoluna dönme eğilimindeyse, uçağın şuna sahip olduğu söylenir:",
+   "options": [
+    "Pozitif Statik Kararlılık.",
+    "Nötr Statik Kararlılık.",
+    "Negatif Statik Kararlılık.",
+    "Kararsızlık."
+   ]
+  },
+  "16107": {
+   "text": "Taşıma kuvveti …………..'e diktir:",
+   "options": [
+    "bağıl hava akımı.",
+    "boyuna eksen.",
+    "ufuk.",
+    "veter çizgisi."
+   ]
+  },
+  "16253": {
+   "text": "Boyuna eksen etrafındaki dönüşe ne denir:",
+   "options": [
+    "roll",
+    "kayma",
+    "pitch",
+    "yaw"
+   ]
+  },
+  "16129": {
+   "text": "Bir kanadın hücum açısını değiştirerek, pilot uçağın şunlarını kontrol edebilir:",
+   "options": [
+    "Taşıma kuvvetini, hava hızını ve sürüklemeyi.",
+    "Taşıma kuvvetini ve sürüklemeyi, ama hava hızını değil.",
+    "Taşıma kuvvetini, brüt ağırlığını ve sürüklemeyi.",
+    "Taşıma kuvvetini ve hava hızını, ama sürüklemeyi değil."
+   ]
+  },
+  "16126": {
+   "text": "Aşağıdaki şekle göre, (V1) ve (V2) hızları bağıl rüzgâr/hava akımı (V) ile nasıl ilişkilidir?",
+   "options": [
+    "V1 = 0 ve V2 > V",
+    "V1 > V2 ve V2 < V",
+    "V1 = 0 ve V2 = V",
+    "V1 < V2 ve V2 < V"
+   ]
+  },
+  "16166": {
+   "text": "Bir uçağın Gerçek Hava Hızı (TAS) arttıkça:",
+   "options": [
+    "indüklenmiş sürükleme azalır ve parazit sürükleme artar.",
+    "indüklenmiş sürükleme azalır ve parazit sürükleme azalır.",
+    "indüklenmiş sürükleme artar ve parazit sürükleme artar.",
+    "parazit sürükleme azalır ve indüklenmiş sürükleme artar."
+   ]
+  },
+  "16280": {
+   "text": "Sabit irtifayı hedefleyerek hız artışı için trim yapıldığında, uçağın dış görünümü nasıl değişir?",
+   "options": [
+    "İrtifa dümeni sapması, yukarı sapan bir trim tab ile daha fazla aşağı yönde artırılır",
+    "Uçağın dış görünümü değişmez",
+    "İrtifa dümeni, hareketli bir yatay kuyruk düzlemi aracılığıyla daha fazla aşağı sapar",
+    "İrtifa dümeni, aşağı sapan bir trim tab ile daha fazla yukarı sapar"
+   ]
+  },
+  "16157": {
+   "text": "Listelenen kanat şekillerinden hangisi en düşük indüklenmiş sürüklemeye sahiptir?",
+   "options": [
+    "Eliptik şekil",
+    "Dikdörtgen şekil",
+    "Yamuk şekil",
+    "Çift yamuk şekil"
+   ]
+  },
+  "16288": {
+   "text": "Düz ve düzgün motorlu uçuşta bir uçak üzerine şu temel kuvvetler etki eder:",
+   "options": [
+    "İtki taşıma. sürükleme, ağırlık",
+    "Taşıma, sürükleme, ağırlık.",
+    "İtki taşıma, sürükleme.",
+    "İtki taşıma, ağırlık"
+   ]
+  },
+  "16160": {
+   "text": "Hangi eğri indüklenmiş sürüklemeyi temsil eder?",
+   "options": [
+    "1",
+    "3",
+    "2",
+    "4"
+   ]
+  },
+  "16152": {
+   "text": "Kanat ucu girdabının oluşumu uçuşun hangi aşamasında başlar?",
+   "options": [
+    "Rotasyon sırasında taşıma kuvveti üretilirken",
+    "Uçak hareket etmeye başlar başlamaz",
+    "Kalkış koşusunda kalkış gücü verilirken",
+    "Flaplar daha aşağı bir konuma alınırken"
+   ]
+  },
+  "16140": {
+   "text": "Taşıma Katsayısının en yüksek değeri şurada bulunur:",
+   "options": [
+    "Stall hücum açısında.",
+    "Dik dönüşler sırasında.",
+    "Taşıma sürüklemeye eşit olduğunda.",
+    "Negatif hücum açılarında."
+   ]
+  },
+  "16110": {
+   "text": "Dikey kuyruk neden simetrik aerofoil olarak tasarlanır?",
+   "options": [
+    "normal eksen etrafında yawı önlemek için",
+    "normal eksen etrafında sürtünme sürüklemesini önlemek için",
+    "enine eksen etrafında pitch'i önlemek için",
+    "dikey eksen etrafında rollü önlemek için"
+   ]
+  },
+  "16167": {
+   "text": "Uçağın tırmanmakta olması, bir hava akımındaki cismin toplam sürüklemesi üzerinde şu etkiyi yapar (AoA ve TAS sabit);",
+   "options": [
+    "toplam sürükleme azalır",
+    "önce artar sonra azalır",
+    "toplam sürükleme artar",
+    "hiçbir etkisi yoktur"
+   ]
+  },
+  "16136": {
+   "text": "Aerodinamik taşıma kuvvetinin kanat üzerinde etki ettiği nokta:",
+   "options": [
+    "basınç merkezi.",
+    "kanadın emme noktası.",
+    "kanadın maksimum kalınlık noktası.",
+    "c.g. konumu."
+   ]
+  },
+  "16289": {
+   "text": "Sabit hava hızında bir uçak üzerine etki eden kuvvetler göz önüne alındığında, hangi ifade doğrudur?",
+   "options": [
+    "Ağırlık her zaman Dünya'nın merkezine doğru dikey aşağı yönde etki eder.",
+    "Kanatların ürettiği taşıma kuvveti her zaman uçağın ağırlığının tersi yönünde etki eder.",
+    "İtki, bağıl hava akımına paralel etki eder ve sürüklemeden büyüktür.",
+    "Taşıma kuvveti veter çizgisine dik etki eder ve her zaman ağırlıktan büyük olmalıdır."
+   ]
+  },
+  "16109": {
+   "text": "Kamber çizgisi için hangi tanım doğrudur?",
+   "options": [
+    "Üst ve alt yüzeylere eşit uzaklıkta olan çizgidir.",
+    "Hücum kenarından firar kenarına en kısa çizgidir.",
+    "Kökten uca %25 veter boyunca geçen bağlantı çizgisidir.",
+    "Hücum kenarından firar kenarına düz çizgidir."
+   ]
+  },
+  "16272": {
+   "text": "Bir kontrol yüzeyine kütle balansı takılmasının amacı şu olabilir:",
+   "options": [
+    "\"Flutter\" adı verilen hızlı ve kontrolsüz salınımı önlemeye yardımcı olmak.",
+    "Pilota \"his\" vermek.",
+    "Yüzeyi kontrol etmek için gereken kuvvetleri hafifletmek.",
+    "Kontrol yüzeyini düz tutmak."
+   ]
+  }
+ }
+}

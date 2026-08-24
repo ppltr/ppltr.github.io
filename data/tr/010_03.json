@@ -1,0 +1,337 @@
+{
+ "questions": {
+  "14380": {
+   "text": "Bir uçağın geçiş seviyesinde veya üzerindeki dikey konumu nasıl rapor edilir:",
+   "options": [
+    "uçuş seviyesi olarak.",
+    "Pilotun tercihine göre.",
+    "irtifa olarak.",
+    "yükseklik olarak."
+   ]
+  },
+  "14381": {
+   "text": "Bir uçağın geçiş irtifasında veya altındaki dikey konumu nasıl rapor edilir:",
+   "options": [
+    "irtifa olarak.",
+    "yükseklik olarak.",
+    "pilotun tercihine göre.",
+    "uçuş seviyesi olarak."
+   ]
+  },
+  "14382": {
+   "text": "Bir Terminal Kontrol Sahası (TMA) altında uçarken hangi altimetre alt skala ayarı kullanılmalıdır?",
+   "options": [
+    "TMA veya CTA altında bulunan bir havaalanının QNH değeri",
+    "TMA veya CTA altında bulunan bir havaalanının QFE değeri.",
+    "Bölgesel QNH veya TMA altında bulunan bir havaalanının QNH değerinden hangisi düşükse o.",
+    "Bölgesel QNH."
+   ]
+  },
+  "14383": {
+   "text": "Hava trafik yönetiminde radarın işlevleri nelerdir?",
+   "options": [
+    "tanımlama, yönlendirme (vectoring), ayırma",
+    "tanımlama, yönlendirme, radar teması",
+    "tanımlama, yönlendirme",
+    "yönlendirme, ayırma"
+   ]
+  },
+  "14384": {
+   "text": "Bir AlP'nin üç bölümünün adları nelerdir?",
+   "options": [
+    "GEN, ENR ve AD",
+    "ENR, AD ve AGA",
+    "ENR, AGA ve GEN",
+    "AGA, AD ve GEN"
+   ]
+  },
+  "14385": {
+   "text": "Bir Kontrol Bölgesini (Control Zone) ne tanımlar?",
+   "options": [
+    "Yer seviyesi ile belirli bir irtifa veya uçuş seviyesi arasında, IFR trafiğine ve bazı VFR trafiğine ATC hizmeti sağlanan hava sahası bölümü.",
+    "Bir veya daha fazla havaalanı çevresinde ortak bir yaklaşma kontrolünün uygulandığı alan.",
+    "Bir havaalanının en uzun pistini merkez alan, 2000 fite kadar uzanan belirli yarıçaplı bir bölge.",
+    "Bir tehlike, yasak ya da kısıtlı alan."
+   ]
+  },
+  "14386": {
+   "text": "ICAO Annex 11 neyle ilgilidir?",
+   "options": [
+    "Hava Trafik Hizmetleri",
+    "Uçuş Kuralları (Rules of the Air)",
+    "Personel Lisanslandırma",
+    "Havaalanları"
+   ]
+  },
+  "14388": {
+   "text": "Bir Hava Trafik Müsaadesinin (Air Traffic Clearance) temel işlevlerinden biri nedir?",
+   "options": [
+    "Uçaklar arasında ayırmayı sağlamak",
+    "ATC'nin artık uçuştan sorumlu olduğunu teyit etmek",
+    "Uçuş bilgilerinin ATC tarafından kaydedildiğini teyit etmek",
+    "Bir uçuşun devam etmesine izin vermeyi kabul etmek"
+   ]
+  },
+  "14389": {
+   "text": "\"Kontrollü Hava Sahası\" teriminin tanımı nedir?",
+   "options": [
+    "İçinde hava trafik kontrol hizmeti sağlanan bir hava sahası.",
+    "Birden fazla pisti olan bir havaalanının hemen üzerindeki hava sahası.",
+    "Bir havaalanı çevresindeki hava sahası.",
+    "İçindeki tüm uçakların kontrol edildiği, belirli boyutlara sahip hava sahası."
+   ]
+  },
+  "14390": {
+   "text": "Ankara Uçuş Bilgi Bölgesinin (FIR) ICAO kodu nedir?",
+   "options": [
+    "LTAA",
+    "TCAA",
+    "LTBB",
+    "LTBA"
+   ]
+  },
+  "14391": {
+   "text": "İstanbul Uçuş Bilgi Bölgesinin (FIR) ICAO kodu nedir?",
+   "options": [
+    "LTBB",
+    "TCAA",
+    "LTAA",
+    "LTBA"
+   ]
+  },
+  "14392": {
+   "text": "Uluslararası anlaşmaya göre bir CTA'nın izin verilen en düşük seviyesi nedir?",
+   "options": [
+    "Yer veya su yüzeyinden 700 fitten aşağı olmamak üzere",
+    "Yer veya su yüzeyinden 500 fitten aşağı olmamak üzere",
+    "Yer veya su yüzeyinden 1500 fitten aşağı olmamak üzere",
+    "Yer veya su yüzeyinden 1 000 fitten aşağı olmamak üzere"
+   ]
+  },
+  "14393": {
+   "text": "Vorteks Türbülansı Kategorisi (Wake Turbulence Category) açısından orta kategori bir uçağın Azami Kalkış Kütlesi nedir?",
+   "options": [
+    "136 000 kg'nin altında ve 7000 kg'nin üzerinde",
+    "136 000 kg'nin altında ve 8000 kg'nin üzerinde",
+    "130 000 kg'nin altında ve 7000 kg'nin üzerinde",
+    "136 000 kg ile 7000 kg arasında (dahil)"
+   ]
+  },
+  "14394": {
+   "text": "\"LT D 21\" olarak etiketlenmiş bir alanın anlamı nedir?",
+   "options": [
+    "Bu alan, 21 numaralı Türk tehlikeli alanıdır",
+    "Bu alanda \"D\" hava sahası no. 21 tesis edilmiştir",
+    "Yerden FL 210'a kadar bir uçuşa yasak alan tesis edilmiştir",
+    "210 ft AGL'ye kadar bir alçak irtifa uçuş alanı tesis edilmiştir"
+   ]
+  },
+  "14395": {
+   "text": "Pistte aynı noktadan, ağır bir uçağın arkasından kalkan hafif bir uçak için asgari vorteks türbülansı ayırması nedir?",
+   "options": [
+    "2 dakika",
+    "2 deniz mili",
+    "5 deniz mili",
+    "5 dakika"
+   ]
+  },
+  "14396": {
+   "text": "İniş sırasında, önünde bir 'Heavy' uçak bulunan bir 'Light' uçak için en kısa mesafe nedir?",
+   "options": [
+    "6 NM",
+    "10 km",
+    "2 km",
+    "3 NM"
+   ]
+  },
+  "14398": {
+   "text": "ICAO düzenlemelerine göre bir CTA'nın en düşük noktası ne olabilir?",
+   "options": [
+    "Yer veya su yüzeyinden, 700 fitten az olmamak üzere belirtilen bir yükseklikten itibaren",
+    "Böyle bir düzenleme yoktur",
+    "En az 1000 fit amsl (ortalama deniz seviyesinden)",
+    "Yer veya su yüzeyinden belirtilen herhangi bir yükseklikten itibaren"
+   ]
+  },
+  "14399": {
+   "text": "Altimetre alt skalasına QNH ayarlandığında, bir uçağın ortalama deniz seviyesinden ölçülen dikey konumunu tanımlamak için hangi kelime kullanılır?",
+   "options": [
+    "İrtifa (Altitude)",
+    "Uçuş seviyesi (Flight level)",
+    "Yükseklik (Height)",
+    "Rakım (Elevation)"
+   ]
+  },
+  "14401": {
+   "text": "Kalkıştan önce transponderin arızalı olduğu anlaşılır ve onarımı mümkün değilse:",
+   "options": [
+    "onarımın yapılabileceği en yakın uygun havaalanına kalkışa izin verilir",
+    "uçuşa başlamanıza izin verilmez",
+    "uçuş yalnızca en doğrudan şekilde devam edebilir;",
+    "arızayı uçuş planında belirtmeniz gerekir, bundan sonra ATC uçuşun devamını sağlamaya çalışır;"
+   ]
+  },
+  "14402": {
+   "text": "Aşağıdakilerden hangisi şu ifadeyi doğru şekilde tamamlar? Bir Uçuş Bilgi Hizmeti ve Alarm Hizmeti, şu şekilde belirlenen hava sahasında sağlanır:",
+   "options": [
+    "Uçuş Bilgi Bölgeleri",
+    "TMA'lar",
+    "CTA'lar",
+    "Tavsiye Hatları (Advisory Routes)"
+   ]
+  },
+  "14403": {
+   "text": "Alarm hizmeti sağlanır.",
+   "options": [
+    "ATC'nin bilgisi dahilindeki tüm uçaklar için.",
+    "yalnızca MTOM'u 20000 kg ve üzeri olan uçaklar için.",
+    "yalnızca IFR'ye göre uçan uçaklar için.",
+    "yalnızca uçuş planıyla uçan uçaklar için."
+   ]
+  },
+  "14405": {
+   "text": "Bir uçağın inişi bildirilmiş ancak tahmini iniş zamanından 5 dakika sonra inememiş ve iletişim yeniden kurulamamıştır. Alarm Hizmetinin hangi safhası ilan edilmelidir?",
+   "options": [
+    "Alarm Safhası (Alert Phase)",
+    "Tehlike Safhası (Distress Phase)",
+    "Belirsizlik Safhası (Uncertainty Phase)",
+    "Acil Durum Safhası (Emergency Phase)"
+   ]
+  },
+  "14406": {
+   "text": "Bir uçağın ve içindekilerin güvenliği konusunda endişe duyulan bir durumda (alarm safhası); gerekli arama kurtarma birimlerini uyarma sorumluluğu kime aittir:",
+   "options": [
+    "Tehlike mesajını 121.5MHz üzerinden dahi alan hava trafik birimine.",
+    "Tehlikedeki pilota.",
+    "Sorumlu herhangi bir kişiye.",
+    "Kurtarma Koordinasyon Merkezine."
+   ]
+  },
+  "14407": {
+   "text": "Arama Kurtarma bağlamında \"Tehlike Safhası (Distress phase)\" terimi şu anlama gelir:",
+   "options": [
+    "Bir uçak ve içindekiler ciddi ve yakın bir tehlikeyle karşı karşıyadır ve acil yardıma ihtiyaç duymaktadır.",
+    "Bir uçuş acil servislerin yardımına ihtiyaç duymaktadır.",
+    "Bir uçak ve içindekilerin güvenliği konusunda endişe vardır.",
+    "Bir 'Pan Pan' çağrısı yapılmıştır."
+   ]
+  },
+  "14408": {
+   "text": "Bir uçaktan iletişim alınması gereken zamandan 30 dakika sonra hâlâ iletişim alınamamıştır. Alarm Hizmetinin hangi safhası ilan edilmelidir?",
+   "options": [
+    "Belirsizlik Safhası (Uncertainty Phase)",
+    "Tehlike Safhası (Distress Phase)",
+    "Alarm Safhası (Alert Phase)",
+    "Acil Durum Safhası (Emergency Phase)"
+   ]
+  },
+  "14410": {
+   "text": "Alarm Hizmetinin tanımı:",
+   "options": [
+    "Arama kurtarma yardımına ihtiyaç duyan uçaklar hakkında ilgili kuruluşları bilgilendirmek ve gerektiğinde bu kuruluşlara yardımcı olmak için sağlanan hizmet.",
+    "Karada konuşlu bir arama kurtarma koordinasyon birimi.",
+    "Savunma Bakanlığı'nın yetkisi altında, arama kurtarma imkânı sağlayan sivil ve askeri tüm kurumlar arasında bir iletişim ağı sağlayan hava trafik hizmeti kolu.",
+    "Özellikle arama kurtarmanın koordinasyonu için hava trafik hizmeti birimi."
+   ]
+  },
+  "14411": {
+   "text": "Bir kaza veya olayın soruşturulmasının tek amacı;",
+   "options": [
+    "Kaza veya olayların önlenmesidir",
+    "kaza veya olayların önlenmesi ve tasarımın iyileştirilmesi için üreticiye soruşturma verisi sağlanmasıdır.",
+    "kaza veya olayların önlenmesi ve sonraki mahkeme davaları için hukuki delil sağlanmasıdır.",
+    "kaza veya olayların önlenmesi ve kusurun tespit edilmesidir."
+   ]
+  },
+  "14412": {
+   "text": "Hayatta kalanlar yardıma ihtiyaç duyduklarını belirtmek için hangi yer işaretini oluştururlar?",
+   "options": [
+    "V",
+    "Y",
+    "N",
+    "X"
+   ]
+  },
+  "14413": {
+   "text": "Hayatta kalanlar tıbbi yardıma ihtiyaç duyduklarını belirtmek için hangi yer işaretini oluştururlar?",
+   "options": [
+    "X",
+    "i",
+    "y",
+    "N"
+   ]
+  },
+  "14414": {
+   "text": "Güvenliği (Security) hangi ICAO Annex'i kapsar?",
+   "options": [
+    "Annex 17",
+    "Annex 2",
+    "Annex 14",
+    "Annex 11"
+   ]
+  },
+  "14415": {
+   "text": "Uluslararası Havacılık VHF Tehlike Frekansı nedir?",
+   "options": [
+    "121.50 MHz",
+    "406.00 MHz",
+    "243.00 MHz",
+    "123.45 MHz"
+   ]
+  },
+  "14416": {
+   "text": "Acil durumda hangi SSR squawk kodu ayarlanmalıdır?",
+   "options": [
+    "7700",
+    "7600",
+    "7000",
+    "7777"
+   ]
+  },
+  "14417": {
+   "text": "Bir uçak güçlük yaşadığında, alarm safhasının tetiklenmesi kimin sorumluluğundadır:",
+   "options": [
+    "hava trafik kontrol ve uçuş bilgi merkezlerinin.",
+    "arama kurtarma koordinasyon merkezlerinin.",
+    "yalnızca kontrol merkezlerinin.",
+    "hava trafik koordinasyon merkezlerinin."
+   ]
+  },
+  "14418": {
+   "text": "Bir Devlet içinde Arama Kurtarma çalışmalarının koordinasyonundan hangi kuruluş sorumludur?",
+   "options": [
+    "Kurtarma Koordinasyon Merkezi",
+    "Yaklaşma Kontrol Merkezi",
+    "Hava Trafik Kontrol Merkezi",
+    "Uçuş Bilgi Merkezi"
+   ]
+  },
+  "14419": {
+   "text": "Radyo arızasını belirtmek için hangi SSR kodu seçilmelidir?",
+   "options": [
+    "7600",
+    "7000",
+    "7500",
+    "7700"
+   ]
+  },
+  "14420": {
+   "text": "Chicago Sözleşmesi Annex 13'e göre, bir kaza soruşturmasının başlatılmasından kim sorumludur?",
+   "options": [
+    "Kazanın gerçekleştiği devletin hükümeti.",
+    "Aynı uçak tipini işleten işletmeciler.",
+    "Uçak üreticisi.",
+    "Uçağın tescilli olduğu devletin kolluk kuvvetleri."
+   ]
+  },
+  "19918": {
+   "text": "Aşağıdaki durumlardan hangisinde bir ICAO uçağı, izin almadan başka bir sözleşmeci devletin hava sahasına uçuş yapabilir?",
+   "options": [
+    "Tarifesiz bir uçuş ise.",
+    "Yolcu taşımıyorsa.",
+    "Hiçbir zaman.",
+    "Tarifeli bir uçuş ise."
+   ]
+  }
+ }
+}

@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "15855": {
+   "text": "Direkt Merkatör ağı (graticule) şu tür bir projeksiyona dayanır:",
+   "options": [
+    "silindirik.",
+    "konsantrik.",
+    "konik.",
+    "küresel."
+   ]
+  },
+  "15754": {
+   "text": "100 kt TAS ile 20 kt kuyruk rüzgârı bileşeniyle 16 dk uçtuktan sonra kalkış havaalanına dönmeniz gerekiyor. Şu kadar sürede varırsınız:",
+   "options": [
+    "24 dk.",
+    "16 dk.",
+    "10 dk 40 sn.",
+    "20 dk."
+   ]
+  },
+  "15676": {
+   "text": "Ekvator hariç, enlem paralelleri:",
+   "options": [
+    "Sabit rota hatlarıdır (rhumb line).",
+    "Ne sabit rota hattı ne de büyük dairedir.",
+    "Büyük dairelerdir.",
+    "Hem sabit rota hattı hem de büyük dairedir."
+   ]
+  },
+  "15739": {
+   "text": "Verilen bir gerçek yönden manyetik yön hesaplanırken, batı sapması (variation):",
+   "options": [
+    "Toplanmalıdır.",
+    "Çarpılmalıdır.",
+    "Konuma bağlı olarak toplanmalı ya da çıkarılmalıdır.",
+    "Çıkarılmalıdır."
+   ]
+  },
+  "15830": {
+   "text": "120 kt yer hızıyla uçtuğunuzu düşünün. 15 dakika sonra rota hattından 5 NM saptığınızı fark ediyorsunuz. Rota hatası (track error) nedir?",
+   "options": [
+    "10°",
+    "8°",
+    "6°",
+    "4°"
+   ]
+  },
+  "15697": {
+   "text": "Sabit rota hattı (rhumb line) hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+   "options": [
+    "Tüm enlem paralelleri sabit rota hattıdır ama büyük daire değildir.",
+    "A'nın B'den sabit rota hattı kerterizi 090 (T) ise, B'nin A'dan sabit rota hattı kerterizi 270 (T)'dir.",
+    "Tüm meridyenler hem sabit rota hattı hem de yarım büyük dairedir.",
+    "Dünya yüzeyinde sabit yönlü bir hattır."
+   ]
+  },
+  "15837": {
+   "text": "Verilenler: Pist yönü 083°(M) Yüzey rüzgârı (W/V) 023° / 35 kt Etkin baş rüzgârı bileşenini hesaplayın.",
+   "options": [
+    "17.5 kt",
+    "30.3 kt",
+    "42.6 kt",
+    "32.2 kt"
+   ]
+  },
+  "15681": {
+   "text": "Alfa Havalimanı'nın koordinatları 48°50’N, 002°16.5’E'dir. Dünya'nın tam karşı tarafındaki (antipot) konumun koordinatları nedir?",
+   "options": [
+    "48°50’S, 177°43.5’W",
+    "48°50’S, 177°43.5’E",
+    "41°10’S, 177°43.5’W",
+    "41°10’S, 177°43.5’E"
+   ]
+  },
+  "15882": {
+   "text": "NDB için ayrılan frekanslar:",
+   "options": [
+    "190 kHz ile 1750 kHz arasıdır.",
+    "1.90 kHz ile 17.50 kHz arasıdır.",
+    "19 Hz ile 17500 Hz arasıdır.",
+    "1900 kHz ile 17500 kHz arasıdır."
+   ]
+  },
+  "15838": {
+   "text": "Verilenler: \"A\"dan \"B\"ye mesafe 100 NM'dir. Rota üzerinde 40 NM ilerlendiğinde alınan fix, rotanın 6 NM SOLUNDA. \"B\"ye ulaşmak için ne kadar baş açısı (heading) değişikliği yapılmalıdır?",
+   "options": [
+    "15° Sağ",
+    "6° Sağ",
+    "18° Sağ",
+    "9° Sağ"
+   ]
+  },
+  "15902": {
+   "text": "Bir DME istasyonundan ölçülen mesafe:",
+   "options": [
+    "eğik mesafedir (slant range).",
+    "yatay mesafedir (plan range).",
+    "istasyonun tam üzerinden geçerken yaklaşık sıfırdır.",
+    "yer mesafesidir (ground range)."
+   ]
+  },
+  "15706": {
+   "text": "Bir uçak 112° gerçek baş açısından (heading) 085° manyetik rota hattına sola dönüyor. Sürüklenme (drift) 4° Sol ve yerel sapma (variation) 6° D'dir. Dönüş derecesini hesaplayın.",
+   "options": [
+    "17°",
+    "37°",
+    "25°",
+    "29°"
+   ]
+  },
+  "15720": {
+   "text": "Manyetik Kuzey ile Gerçek Kuzey arasındaki açısal fark:",
+   "options": [
+    "Sapmadır (variation).",
+    "Deviasyondur.",
+    "Manyetik düzeltmedir.",
+    "Eğimdir (inclination)."
+   ]
+  },
+  "15894": {
+   "text": "Deniz seviyesindeki bir DME fenerinin, 3000 ft'te uçan bir uçağa göre teorik maksimum menzili için yaklaşık bir değer verin.",
+   "options": [
+    "70 deniz mili",
+    "3000 deniz mili",
+    "60 deniz mili",
+    "55 deniz mili"
+   ]
+  },
+  "15880": {
+   "text": "Aşağıdaki ifadelerden hangisi yanlıştır?",
+   "options": [
+    "QDR - istasyona doğru gerçek kerteriz",
+    "QTE - istasyondan gerçek kerteriz",
+    "QDR - istasyondan manyetik kerteriz",
+    "QDM - istasyona doğru manyetik kerteriz"
+   ]
+  },
+  "15703": {
+   "text": "Dünya elipsoidi üzerinde 00°N/S, 000°E/W ile 00°N/S, 180°E/W konumları arasındaki mesafeler hakkında hangi ifade doğrudur?",
+   "options": [
+    "Kuzey Kutbu üzerinden güzergâh, Ekvator boyunca güzergâhtan daha kısadır.",
+    "Güney Kutbu üzerinden güzergâh, Kuzey Kutbu üzerinden güzergâhtan daha kısadır.",
+    "Ekvator üzerinden güzergâh, Güney Kutbu üzerinden güzergâhtan daha kısadır.",
+    "Her iki kutup üzerinden güzergâh ile Ekvator üzerinden güzergâh eşit uzunluktadır."
+   ]
+  },
+  "15870": {
+   "text": "Bir seyrüsefer haritasında iki nokta arasında ölçülen mesafe 42 mm'dir (milimetre). Haritanın ölçeği 1 : 1 600 000'dir. Bu iki nokta arasındaki gerçek mesafe yaklaşık olarak:",
+   "options": [
+    "36.30 NM.",
+    "67.20 NM.",
+    "3.69 NM.",
+    "370.00 NM."
+   ]
+  },
+  "15769": {
+   "text": "180 NM'yi 27 dakikada uçarsanız, yer hızınız (ground speed) nedir?",
+   "options": [
+    "400 kt",
+    "360 kt",
+    "420 kt",
+    "480 kt"
+   ]
+  },
+  "15774": {
+   "text": "Havacılıkta kullanılan knot ölçü birimi ne anlama gelir?",
+   "options": [
+    "NM/sa.",
+    "m/sa.",
+    "Km/sa.",
+    "SM/sa."
+   ]
+  },
+  "15810": {
+   "text": "Gerçek rota (True Course)= 124°; TAS= 110 kt; W/V= 340°/15 kt; Sapma (Variation) 3°D; 120 ile 150 derece Baş Açısı (Heading) arasındaki Deviasyon= – 2°. Pusula Baş Açısı (Compass Heading) nedir?",
+   "options": [
+    "118°.",
+    "125°.",
+    "128°.",
+    "122°."
+   ]
+  },
+  "15784": {
+   "text": "Türk AIP'sine göre gece tanımı nedir?",
+   "options": [
+    "Gün batımından yarım saat sonra başlar, gün doğumundan yarım saat önce biter.",
+    "Gün batımından yarım saat önce başlar, gün doğumundan yarım saat sonra biter.",
+    "Gün batımından gün doğumuna kadardır.",
+    "Gün batımından bir saat sonra başlar, gün doğumundan bir saat önce biter."
+   ]
+  },
+  "15854": {
+   "text": "1200 ft'te uçuyorsunuz. Yer hızınız 125 kt ise, 10 NM'de 4000 ft'e ulaşmak için gereken tırmanma oranı nedir?",
+   "options": [
+    "Yaklaşık 580 ft/dk",
+    "Yaklaşık 1080 ft/dk",
+    "Yaklaşık 780 ft/dk",
+    "Yaklaşık 240 ft/dk"
+   ]
+  },
+  "15862": {
+   "text": "Bir harita üzerine çizilen düz bir çizgi 4.63 cm ölçüsündedir ve 150 NM'yi temsil eder. Harita ölçeği:",
+   "options": [
+    "1: 6 000 000.",
+    "1: 1 000 000.",
+    "1: 5 000 000.",
+    "1 : 3 000 000."
+   ]
+  },
+  "15827": {
+   "text": "Bir deniz milinde yaklaşık kaç fit vardır?",
+   "options": [
+    "6080",
+    "8060",
+    "1112",
+    "5060"
+   ]
+  },
+  "15891": {
+   "text": "Bir uçak, bir DME istasyonunun 12000 ft üzerinden tam üzerinden geçiyor. O anda DME okuması:",
+   "options": [
+    "yaklaşık 2 NM'dir.",
+    "dalgalanır ve anlamsızdır.",
+    "0 NM'dir.",
+    "FLAG/OFF'tur, uçak sessizlik konisi (cone of silence) içindedir."
+   ]
+  },
+  "15762": {
+   "text": "Uçuş planlama çizelgesi, rüzgârsız koşulda istenen seviyeye tırmanmak için 36 dakikada 157 NM kat edildiğini belirtiyor. Ortalama 60 knot kuyruk rüzgârıyla kat edilecek mesafe ne olur?",
+   "options": [
+    "193 NM",
+    "228 NM",
+    "157 NM",
+    "128 NM"
+   ]
+  },
+  "15903": {
+   "text": "VOR alımı şunlardan etkilenebilir: 1. VOR vericisinin hemen çevresindeki topografya. 2. VOR vericisinin deniz seviyesinden yüksekliği. 3. Uçağın irtifası ve VOR vericisinden eğik mesafesi (slant range). 4. Gök gürültülü fırtınalar ve diğer elektromanyetik girişimler. 5. Gece iyonosferin alçalması. 6. Sahil kırılması (coastal refraction). Doğru ifade kombinasyonu:",
+   "options": [
+    "1, 2 ve 3",
+    "1, 5 ve 6",
+    "3, 4 ve 6",
+    "2, 4 ve 5"
+   ]
+  },
+  "15850": {
+   "text": "240 kt yer hızıyla 16 NM yatay mesafede 12500 fitten 6500 fite alçalmak için gereken alçalma oranı (rate of descent) nedir?",
+   "options": [
+    "1500 fpm",
+    "1700 fpm",
+    "1100 fpm",
+    "1300 fpm"
+   ]
+  },
+  "15845": {
+   "text": "Bir Deniz Mili şuna eşittir",
+   "options": [
+    "6076 fit.",
+    "3281 yarda.",
+    "0.869 kara mili (statute mile).",
+    "1852 km."
+   ]
+  },
+  "15764": {
+   "text": "145 kt yer hızıyla 16 NM uçmak ne kadar sürer?",
+   "options": [
+    "6 dakika 37 saniye",
+    "7 dakika 55 saniye",
+    "7 dakika 05 saniye",
+    "5 dakika 25 saniye"
+   ]
+  },
+  "15724": {
+   "text": "Gerçek baş açısı (heading) 355 derece (T), sapma (variation) 12 derece B ve pusula baş açısı 002 derecedir. Uçağın manyetik baş açısı …. ve deviasyonu …..?",
+   "options": [
+    "007° (M); +5°.",
+    "007° (M); -5°.",
+    "343° (M); +19°.",
+    "343° (M); -7°."
+   ]
+  },
+  "15904": {
+   "text": "Ortalama deniz seviyesinden 400 ft yükseklikte bulunan bir VOR'dan, 2500 ft'te uçan bir uçakta bir pilotun elde edeceği yaklaşık teorik maksimum menzil nedir?",
+   "options": [
+    "88 NM",
+    "70 NM.",
+    "100 NM",
+    "3750 fit"
+   ]
+  },
+  "15749": {
+   "text": "Dünya yüzeyinde eşit manyetik sapma (variation) noktalarını birleştiren hatlara ne denir?",
+   "options": [
+    "izogonlardır.",
+    "izoklinlerdir.",
+    "izogrivlerdir.",
+    "izotaklardır."
+   ]
+  },
+  "15679": {
+   "text": "Ekliptik düzlemi ile Ekvator düzlemi arasındaki açı yaklaşık olarak:",
+   "options": [
+    "23.5°.",
+    "66.5°.",
+    "25.3°.",
+    "27.5°."
+   ]
+  },
+  "15899": {
+   "text": "VOR hangi radyo frekans bandında çalışır?",
+   "options": [
+    "Çok Yüksek Frekans (VHF)",
+    "Mikro Frekans",
+    "Düşük Frekans (LF)",
+    "Ultra Yüksek Frekans (UHF)"
+   ]
+  },
+  "15745": {
+   "text": "İzogonal, şu noktaları birleştiren bir hattır:",
+   "options": [
+    "Eşit manyetik sapma (variation).",
+    "Sıfır manyetik deviasyon.",
+    "Sıfır manyetik sapma (variation).",
+    "Eşit manyetik deviasyon."
+   ]
+  },
+  "15670": {
+   "text": "Sabit rota hattı (rhumb line) şudur:",
+   "options": [
+    "Dünya yüzeyinde tüm meridyenleri aynı açıyla kesen bir hat.",
+    "Merkatör projeksiyonunda en yakın kutba doğru dışbükey bir hat.",
+    "Lambert projeksiyonunda herhangi bir düz çizgi",
+    "Polikonik projeksiyonda iki nokta arasındaki en kısa mesafe."
+   ]
+  },
+  "15778": {
+   "text": "Ortalama güneş, gök ekvatoru (celestial equator) boyunca 8 saat 8 dakikada kaç derece hareket etmiştir?",
+   "options": [
+    "122º",
+    "56º",
+    "148º",
+    "18º"
+   ]
+  },
+  "15765": {
+   "text": "269 kt yer hızıyla 5 NM uçmak ne kadar sürer?",
+   "options": [
+    "1 DK 07 SN.",
+    "2 DK 30 SN.",
+    "1 DK 55 SN.",
+    "0 DK 34 SN."
+   ]
+  },
+  "15856": {
+   "text": "Harita projeksiyonları üretilirken şu projeksiyon yüzeyleri kullanılabilir:",
+   "options": [
+    "Düzlem, Silindir, Koni.",
+    "Parabol, Koni, Düzlem, Silindir.",
+    "Silindir, Küre, Düzlem.",
+    "Düzlem, Küre, Koni."
+   ]
+  },
+  "15777": {
+   "text": "5 SA 20 DK 20 SN, şu boylam farkına karşılık gelir:",
+   "options": [
+    "80°05'",
+    "75°00'",
+    "81°10'",
+    "78°45'"
+   ]
+  },
+  "15722": {
+   "text": "Bir rotanın iki noktası arasındaki uçuş için gerçek baş açısı (true heading) 200° ve sürüklenme açısı (drift angle) 10° Sağ'dır. Rüzgâr durumu değişmezse, aynı noktalar arasındaki dönüş uçuşu için gerçek baş açısı ne olur?",
+   "options": [
+    "40°.",
+    "50°.",
+    "20°.",
+    "30°."
+   ]
+  },
+  "15709": {
+   "text": "Pusula Baş Açısı (Compass Heading) = 233° Gerçek Rota Hattı (True Track) = 256° Sürüklenme Açısı (Drift Angle) = 10°Sağ Deviasyon = -3° Sapma (variation) nedir?",
+   "options": [
+    "16° D.",
+    "20° B.",
+    "36° D.",
+    "10° B."
+   ]
+  },
+  "15868": {
+   "text": "Bir haritada 6 cm, 15 km mesafeyi temsil ediyor. Haritanın ölçeği nedir?",
+   "options": [
+    "1:250 000.",
+    "1:500 000.",
+    "1:400 000.",
+    "1:300 000."
+   ]
+  },
+  "15821": {
+   "text": "Bir uçak rüzgârsız koşulda yarım saat uçuyor. Aynı süre içinde 20 kt kuyruk rüzgârıyla uçabileceği ek mesafeyi hesaplayın.",
+   "options": [
+    "10 NM",
+    "40 NM",
+    "20 NM",
+    "Hesaplanamaz"
+   ]
+  },
+  "15726": {
+   "text": "Gerçek Baş Açısı (True Heading)= 290°, Sapma (VAR)= - 12°, Deviasyon (DEV)= 8° D, sürüklenme 5° Sol'dur. Manyetik Rota Hattı (Magnetic Track)= ?",
+   "options": [
+    "297°.",
+    "293°.",
+    "302°.",
+    "295°."
+   ]
+  },
+  "15865": {
+   "text": "\"Ölçek\" terimini tanımlayın. Ölçek:",
+   "options": [
+    "Haritadaki bir mesafenin uzunluğu ile Dünya üzerindeki aynı mesafenin uzunluğu arasındaki orandır.",
+    "Ölçek sayısı ile doğadaki uzunluk birimi arasındaki orandır.",
+    "Haritalar, çizelgeler ve modeller için kullanılan tipik bir harita uzunluk birimidir.",
+    "Haritada kuzey-güney yönündeki bozulma (distortion) ile doğu-batı yönündeki bozulma arasındaki orandır."
+   ]
+  },
+  "15715": {
+   "text": "Manyetik baş açısı (heading): 060°, Manyetik sapma (variation): 8°B, Sürüklenme açısı (drift angle): 4° sağ, Gerçek rota hattı (true track) nedir?",
+   "options": [
+    "056°.",
+    "048°.",
+    "064°.",
+    "072°."
+   ]
+  },
+  "15831": {
+   "text": "160 NM uzaklıkta bir varış noktanız olduğunu düşünün. Yer hızınız 120 kt'dir. 20 dakika sonra rotanın 6 NM solunda olduğunuzu fark ediyorsunuz. Doğrudan varış noktasına ulaşmak için gereken baş açısı (heading) düzeltmesi nedir?",
+   "options": [
+    "12° Sağ",
+    "9° Sol",
+    "6° Sol",
+    "9° Sağ"
+   ]
+  },
+  "15738": {
+   "text": "Verilen bir gerçek yönden manyetik yön hesaplanırken, doğu sapması (variation)",
+   "options": [
+    "Çıkarılmalıdır.",
+    "Bölünmelidir.",
+    "Çarpılmalıdır.",
+    "Toplanmalıdır."
+   ]
+  },
+  "15877": {
+   "text": "Bir VHF yön bulucunun (direction finder) çalışması için gereken minimum uçak içi ekipman:",
+   "options": [
+    "118 MHz ile 136 MHz aralığında çalışan bir VHF verici-alıcıdır.",
+    "bir katot ışınlı tüptür (cathode-ray tube).",
+    "118 MHz ile 136 MHz aralığında çalışan bir VHF alıcıdır.",
+    "200 kHz ile 1750 kHz aralığında çalışan bir VHF pusuladır."
+   ]
+  },
+  "15805": {
+   "text": "TAS= 160 kt, GS= 140 kt, Baş Açısı (Heading)= 150°, Rota Hattı (Track)= 144°. Rüzgâr Hızı/Yönü (W/V) = ?",
+   "options": [
+    "186°/26 kt.",
+    "114°/36 kt.",
+    "186°/36 kt.",
+    "114°/26 kt."
+   ]
+  },
+  "15729": {
+   "text": "Gerçek Kuzey (True North) şudur",
+   "options": [
+    "Herhangi bir meridyen boyunca gerçek kuzey kutbuna doğru olan yön.",
+    "Gerçek kuzey kutbundan dışarıya doğru herhangi bir yöndür.",
+    "Kuzey yarımkürede kuzey kutbuna, güney yarımkürede güney kutbuna doğru, meridyen boyunca olan yön.",
+    "Bir meridyen boyunca olan yön."
+   ]
+  },
+  "15695": {
+   "text": "Aşağıdaki ifadelerden hangisi yanlıştır?",
+   "options": [
+    "Kraliyet yasasına (royal statute) göre 1 kara mili (statute mile) 6076 fite eşittir.",
+    "Sabit rota hatları (rhumb line), tüm meridyenleri aynı açıyla kesen hatlardır.",
+    "Dünya'nın merkezinden 1 yay dakikası, Dünya yüzeyinde 1 NM mesafeyi temsil eder.",
+    "Dünya'nın çevresi 40 000 km'dir."
+   ]
+  },
+  "15731": {
+   "text": "Gerçek Rota Hattı (True Track) 117°, Pusula Baş Açısı (Compass Heading) 139°, Sürüklenme Açısı (Drift Angle) 13° Sol ve deviasyon 4° D'dir. Sapma (variation) nedir?",
+   "options": [
+    "13° B",
+    "13° D",
+    "5° D",
+    "5° B"
+   ]
+  },
+  "15839": {
+   "text": "Verilenler: \"A\"dan \"B\"ye mesafe 90 NM'dir. Rota üzerinde 60 NM ilerlendiğinde alınan fix, rotanın 4 NM SAĞINDA. \"B\"ye ulaşmak için ne kadar baş açısı (heading) değişikliği yapılmalıdır?",
+   "options": [
+    "12° Sol",
+    "16° Sol",
+    "4° Sol",
+    "8° Sol"
+   ]
+  },
+  "15866": {
+   "text": "1:1.000.000 harita ölçeği verildiğinde, 11 inçlik bir harita mesafesi neyi temsil eder? (1 inç=2,54 cm)",
+   "options": [
+    "150 NM",
+    "220 NM",
+    "169 NM",
+    "110 NM"
+   ]
+  },
+  "15698": {
+   "text": "Küçük daire hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+   "options": [
+    "Tüm enlem paralelleri küçük dairedir.",
+    "Bir radyo dalgası asla küçük daireyi izlemez.",
+    "Düzlemi Dünya'nın merkezinden geçmez.",
+    "Küçük yayı, Dünya üzerindeki en kısa mesafeyi temsil etmez."
+   ]
+  },
+  "15863": {
+   "text": "Bir haritada 4.89 cm uzunluğundaki düz bir çizgi 185 NM'yi temsil eder. Bu haritanın ölçeği yaklaşık olarak:",
+   "options": [
+    "1 : 7 000 000",
+    "1 : 5 000 000",
+    "1 : 6 000 000",
+    "1 : 3 500 000"
+   ]
+  },
+  "15785": {
+   "text": "ICAO'nun gece tanımı nedir?",
+   "options": [
+    "Akşam sivil alacakaranlığın (civil twilight) bitişi ile sabah sivil alacakaranlığın başlangıcı arasındaki dönem, ya da yetkili otorite tarafından tanımlanan gün batımı ile gün doğumu arasındaki başka bir dönem.",
+    "Bir havacılık otoritesinin belirlediği herhangi bir dönem.",
+    "Gün batımından gün doğumuna kadar.",
+    "Gün batımından yarım saat sonra başlar, gün doğumundan yarım saat önce biter."
+   ]
+  },
+  "15923": {
+   "text": "Bir GPS'in üç boyutlu bir fix elde etmesi için gereken minimum uydu sayısı nedir?",
+   "options": [
+    "4",
+    "6",
+    "5",
+    "3"
+   ]
+  },
+  "15857": {
+   "text": "Merkatör Projeksiyonunda, sabit rota hattı (rhumb line) şu şekilde gösterilir:",
+   "options": [
+    "Düz çizgi",
+    "Ekvatora doğru dışbükey eğri",
+    "Kutuplara doğru içbükey eğri",
+    "Kutuplara doğru dışbükey eğri"
+   ]
+  },
+  "15743": {
+   "text": "Agonik hat, şunları birleştiren bir hattır:",
+   "options": [
+    "0° sapmaya (variation) sahip konumlar.",
+    "eşit manyetik yatay alan şiddetine sahip noktalar.",
+    "aynı sapmaya (variation) sahip konumlar.",
+    "eşit manyetik eğime (dip) sahip noktalar."
+   ]
+  },
+  "15813": {
+   "text": "Gerçek Rota Hattı (True Track)= 225°, TAS= 150 kt, W/V = 130°/25 kt. Gerçek Baş Açısı (True Heading)= ?",
+   "options": [
+    "215°.",
+    "225°.",
+    "235°.",
+    "245°."
+   ]
+  },
+  "15683": {
+   "text": "Dünya'nın kendi ekseni etrafındaki dönüş yönü öyledir ki:",
+   "options": [
+    "Kuzey Kutbu üzerindeki bir noktadan bakıldığında dönüş saat yönünün tersinedir.",
+    "Dünya yüzeyindeki herhangi bir nokta batıya doğru hareket eder.",
+    "Dünya yüzeyindeki herhangi bir nokta doğuya doğru hareket eder.",
+    "Dünya yüzeyindeki bir gözlemci, gün doğumunu izlerken her zaman Batı'ya bakar."
+   ]
+  },
+  "15771": {
+   "text": "ALFA ve BRAVO noktaları arasındaki mesafe 104 NM'dir. Bir uçak ilk 8 NM'yi 5 dakikada kat ederse, aynı yer hızıyla ALFA-BRAVO güzergâhının tamamını kat etmesi ne kadar sürer?",
+   "options": [
+    "1 saat 5 dakika.",
+    "59 dakika.",
+    "1 saat 10 dakika.",
+    "1 saat."
+   ]
+  },
+  "15893": {
+   "text": "Geleneksel bir DME tesisinde \"Fener Doygunluğu\" (Beacon Saturation), uçak sorgulama sayısı şunu aştığında meydana gelir:",
+   "options": [
+    "100",
+    "200",
+    "60",
+    "80"
+   ]
+  },
+  "15819": {
+   "text": "120 km/sa hız, knot cinsinden ifade edildiğinde",
+   "options": [
+    "65 kts.",
+    "60 kts.",
+    "58 kts.",
+    "50 kts."
+   ]
+  },
+  "15790": {
+   "text": "Bir uçak 028° Gerçek Rota Hattında (True Track) uçuyor. TAS = 140 kt ve varış noktasına mesafe 220 NM'dir. Rüzgâr yönü ve hızı 060/30 kt ise uçuş süresi nedir?",
+   "options": [
+    "1 saat 56 dakika",
+    "1 saat 42 dakika",
+    "1 saat 49 dakika",
+    "2 saat 06 dakika"
+   ]
+  },
+  "15842": {
+   "text": "Bir uçağın dikey hız göstergesi (vertical speed indicator) 400 ft/dk gösteriyorsa, metre/saniye cinsinden yaklaşık tırmanma oranı:",
+   "options": [
+    "2 m/sn.",
+    "13 m/sn.",
+    "4 m/sn.",
+    "1 m/sn."
+   ]
+  }
+ }
+}

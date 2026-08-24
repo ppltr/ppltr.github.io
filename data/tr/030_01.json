@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "14828": {
+   "text": "Ağırlık merkezi (CG) ön limitteyken aşağıdakilerden hangisi beklenir?",
+   "options": [
+    "Menzilde azalma.",
+    "Kalkışta sağa yalpalama (yaw) eğilimi.",
+    "İniş hızında azalma.",
+    "Stall hızında azalma."
+   ]
+  },
+  "14997": {
+   "text": "Gerçek iniş kütlesi planlanandan yüksekse,",
+   "options": [
+    "iniş mesafesi daha uzun olacaktır.",
+    "iniş mesafesi etkilenmeyecektir.",
+    "yaklaşma yolu daha dik olacak ve eşik hızı daha yüksek olacaktır.",
+    "yaklaşma yolu daha dik olacaktır."
+   ]
+  },
+  "14861": {
+   "text": "Özgül ağırlığı 0.72 olan 50lt yakıtın kütlesi nedir?",
+   "options": [
+    "36kg",
+    "72kg",
+    "63kg",
+    "69.4kg"
+   ]
+  },
+  "15018": {
+   "text": "Bir uçağın yakıt kapasitesi 72 Galon'dur. Yakıt tüketimi 15 Gal/saat ise uçağın havada kalış süresi (endurance) nedir?",
+   "options": [
+    "4 saat 48 dakika",
+    "4 saat 54 dakika",
+    "4 saat 32 dakika",
+    "3 saat 58 dakika"
+   ]
+  },
+  "14955": {
+   "text": "Mutlak tavan (absolute ceiling) nedir?",
+   "options": [
+    "Artık tırmanışın mümkün olmadığı maksimum irtifa",
+    "Uçağın 500ft/min ROC koruyabildiği maksimum irtifa.",
+    "Uçağın 100ft/min ROC koruyabildiği maksimum irtifa.",
+    "Uçağın tek motor arızalı (inoperative) uçabildiği maksimum irtifa."
+   ]
+  },
+  "14892": {
+   "text": "Bu hızlardan hangisi, Calibrated Air Speed (CAS) değerinden hava yoğunluğu ve irtifa düzeltmeleri yapılarak elde edilir?",
+   "options": [
+    "TAS (True Air Speed)",
+    "EAS (Equivalent Air Speed)",
+    "GS (Ground Speed)",
+    "IAS (Indicated Air Speed)"
+   ]
+  },
+  "15005": {
+   "text": "İnişte, bir uçağın gerçek hava hızı (TAS) gerçek yer hızından belirgin şekilde düşükse, uçak neyle karşı karşıyadır:",
+   "options": [
+    "Kuyruk rüzgârı.",
+    "Yan rüzgâr.",
+    "Azalmış atmosfer yoğunluğu.",
+    "Baş rüzgârı."
+   ]
+  },
+  "14836": {
+   "text": "Uçuş öncesi hesaplamada, CG uçuş sırasında limitlerinin dışına çıkarsa, dengeleninceye kadar yeniden düzenlenmelidir. Bunu nasıl yaparsınız?",
+   "options": [
+    "Hepsi.",
+    "Kütle çıkararak.",
+    "Kütle ekleyerek.",
+    "Uçaktaki yük veya bagaj başka bir konuma taşınarak."
+   ]
+  },
+  "14837": {
+   "text": "Hafif bir uçakta iniş takımı içeri alınırken burun tekerleği öne doğru hareket ederse, bu hareket uçaktaki ağırlık merkezinin (cg) konumunu nasıl etkiler?",
+   "options": [
+    "CG'nin öne hareket etmesine neden olur.",
+    "CG konumu değişir, ancak verilen bilgiyle yön söylenemez.",
+    "CG'nin geriye hareket etmesine neden olur.",
+    "CG konumunu etkilemez."
+   ]
+  },
+  "14972": {
+   "text": "Yatay uçuşta maksimum hız ne zaman gerçekleşir:",
+   "options": [
+    "Maksimum itki, toplam sürüklemeye eşit olduğunda.",
+    "İtki, hız arttıkça daha fazla artmadığında.",
+    "İtki, maksimum sürüklemeye eşit olduğunda.",
+    "İtki, minimum sürüklemeye eşit olduğunda."
+   ]
+  },
+  "14843": {
+   "text": "Hangi ağırlık tanımı mürettebatı ve bagaj ağırlıklarını içerir?",
+   "options": [
+    "Dry operating weight (kuru işletme ağırlığı).",
+    "Boş ağırlık.",
+    "Faydalı yük.",
+    "Traffic load (trafik yükü)."
+   ]
+  },
+  "14857": {
+   "text": "Maksimum yapısal iniş kütlesi aşılırsa:",
+   "options": [
+    "İnişte iniş takımı çökebilir.",
+    "Uçak performansla sınırlı iniş kütlesi içindeyse hasar oluşmaz.",
+    "Uçak düzenlenmiş (regulated) iniş kütlesi içindeyse hasar oluşmaz.",
+    "Uçak havalanamaz."
+   ]
+  },
+  "14851": {
+   "text": "İşletme ağırlığı (operating weight) şudur:",
+   "options": [
+    "kuru işletme ağırlığı ile yakıt ağırlığının toplamı.",
+    "sıfır yakıt ağırlığı.",
+    "kuru işletme ağırlığı, yakıt ağırlığı ve trafik yükünün toplamı.",
+    "kuru işletme ağırlığı, yakıt ağırlığı ve faydalı yükün toplamı."
+   ]
+  },
+  "14975": {
+   "text": "Aşağıdaki şekle göre, maksimum menzil için hangi hız uçulmalıdır?",
+   "options": [
+    "C",
+    "D",
+    "B",
+    "A"
+   ]
+  },
+  "15011": {
+   "text": "Yaklaşma ışıklarının bilinen kısa süreli arızalı olması hakkındaki bilgiyi aşağıdakilerden hangisinde bulmayı beklersiniz?",
+   "options": [
+    "NOTAM",
+    "ATCC yayınları",
+    "SIGMET",
+    "AIP"
+   ]
+  },
+  "14860": {
+   "text": "Aşağıdakilerden hangisi yakıt yüklemesinde kullanılan bir hacim birimi değildir?",
+   "options": [
+    "Oktan",
+    "Litre",
+    "US Galon",
+    "Imperial Galon"
+   ]
+  },
+  "14839": {
+   "text": "Bir yakıt tankı CG'nin arkasında konumlanmışsa, yakıt yandıkça:",
+   "options": [
+    "CG öne hareket eder, bu da burun aşağı moment yaratır",
+    "CG öne hareket eder, bu da burun yukarı moment yaratır",
+    "CG geriye hareket eder, bu da burun yukarı moment yaratır",
+    "CG geriye hareket eder, bu da burun aşağı moment yaratır"
+   ]
+  },
+  "14873": {
+   "text": "Kütle (ağırlık) ve denge hesaplanırken tüm momentler pozitifse, datum'un konumu şurada olur:",
+   "options": [
+    "Burun, ya da uçağın önü.",
+    "Ana tekerleklerin merkez hattı.",
+    "Uçak tipine bağlı olarak burun ya da kuyruk tekerleğinin merkez hattı.",
+    "Kanadın firar kenarı."
+   ]
+  },
+  "14887": {
+   "text": "Hava yoğunluğu, uçak performansını hangi şekilde etkileyebilir?",
+   "options": [
+    "Yoğunluk azalırsa, hava basıncı da azalır ve bu uçak performansını olumsuz etkiler.",
+    "Yoğunluğun performans üzerinde özel bir etkisi yoktur.",
+    "Yoğunluk artarsa, bu uçağın yüksek bir basınç irtifasında olduğu anlamına gelir ve bu performansı azaltır.",
+    "Yoğunlukta azalma varsa, bu havanın daha sıcak olduğu anlamına gelir, böylece motorlar kısa sürede ısınabilir ve bu performansı artırır."
+   ]
+  },
+  "14943": {
+   "text": "Kalkış flap ayarını 20° gibi yüksek flap'ten 10° gibi düşük flap'e değiştirmek normalde şu sonucu verir:",
+   "options": [
+    "daha uzun bir kalkış mesafesi ve daha iyi bir tırmanış.",
+    "daha kısa bir kalkış mesafesi ve daha iyi bir tırmanış.",
+    "daha iyi bir tırmanış ve eşit bir kalkış mesafesi.",
+    "daha kısa bir kalkış mesafesi ve eşit bir tırmanış."
+   ]
+  },
+  "14929": {
+   "text": "Bir uçak fazla yüklendiğinde aşağıdakilerden hangisi doğrudur? 1-Uçağın performansı artar 2-TORA artar 3-Gerekli iniş mesafesi artar 4-ROC artar 5-Havada kalış süresi (endurance) artar 6-Vs artar 7-Vmd artar",
+   "options": [
+    "3 - 6 - 7",
+    "1 - 3 - 4",
+    "1 - 6 - 7",
+    "2 - 3 - 5"
+   ]
+  },
+  "14969": {
+   "text": "Tırmanış sırasında, tırmanış açısı:",
+   "options": [
+    "rüzgârın tırmanış açısına etkisi yoktur.",
+    "kuyruk rüzgârında dikleşir, baş rüzgârında dikleşir.",
+    "baş rüzgârında azalır, kuyruk rüzgârında dikleşir.",
+    "baş rüzgârında dikleşir, kuyruk rüzgârında azalır."
+   ]
+  },
+  "14992": {
+   "text": "Bir pist 0.5 cm ıslak karla kaplıdır. Buna rağmen hafif ikimotorlu bir uçağın uçuş el kitabı bu koşullarda inişe izin vermektedir. İniş mesafesi, kuru bir pist ile karşılaştırıldığında:",
+   "options": [
+    "artmış olacaktır",
+    "azalmış olacaktır",
+    "önemli ölçüde azalmış olacaktır",
+    "değişmeyecektir"
+   ]
+  },
+  "14894": {
+   "text": "Aşağıdaki koşullardan hangisi Vmd hızını artırır?",
+   "options": [
+    "Kütle artışı ve flap yukarı konfigürasyonu",
+    "Yalnızca flap aşağı konfigürasyonu",
+    "Yalnızca kütle azalışı",
+    "Kütle azalışı ve flap aşağı konfigürasyonu"
+   ]
+  },
+  "14896": {
+   "text": "Bir havaalanının 2700 m uzunluğunda bir pisti ve bu pistin her iki ucunda 1400 m'lik clearway'i vardır. Kullanılabilir kalkış mesafesinin (take off distance available) maksimum değeri nedir?",
+   "options": [
+    "4050 m",
+    "4100 m",
+    "5500 m",
+    "2700 m"
+   ]
+  },
+  "14812": {
+   "text": "Ciddi şekilde aşırı yüklenmiş bir uçak: 1. Artan kalkış ve iniş mesafeleri gerektirir. 2. Daha yüksek bir stall hızına sahip olur. 3. Azalmış bir maksimum düz uçuş hızına sahip olur. 4. Artmış menzil ve havada kalış süresine sahip olur. 5. Azalmış bir tırmanma oranına ve işletme tavanına sahip olur. Yukarıdakilerden hangileri doğrudur?",
+   "options": [
+    "1, 2, 3, & 5.",
+    "1, 2, 3 & 4",
+    "2, 4 & 5.",
+    "1, 2, 4 & 5."
+   ]
+  },
+  "15017": {
+   "text": "265 US-GAL kaç eder? (Özgül ağırlık 0.80)",
+   "options": [
+    "803 kg.",
+    "940 kg.",
+    "895 kg.",
+    "862 kg."
+   ]
+  },
+  "14987": {
+   "text": "Farklı kütlelerdeki iki özdeş uçak, rölanti itkiyle alçalıyor. Aşağıdaki ifadelerden hangisi onların alçalma özelliklerini doğru şekilde tanımlar?",
+   "options": [
+    "Belirli bir hücum açısında, hem dikey hem de ileri hız daha ağır uçak için daha büyüktür.",
+    "Belirli bir hücum açısında, daha ağır uçak her zaman daha hafif uçaktan daha uzağa süzülür.",
+    "İki uçağın alçalma özellikleri arasında fark yoktur.",
+    "Belirli bir hücum açısında, daha hafif uçak her zaman daha ağır uçaktan daha uzağa süzülür."
+   ]
+  },
+  "14886": {
+   "text": "Dış hava sıcaklığı ISA'dan yüksekse, yoğunluk irtifası:",
+   "options": [
+    "basınç irtifasından daha yüksektir.",
+    "basınç irtifasından daha düşüktür.",
+    "basınç irtifasıyla ilgili değildir.",
+    "basınç irtifasına eşittir."
+   ]
+  },
+  "14813": {
+   "text": "Az miktarda buzla kirlenmiş bir kanat şunu üretir:",
+   "options": [
+    "Daha fazla sürükleme, daha fazla ağırlık ve daha az taşıma kuvveti.",
+    "Ağırlıkta artış ve sürüklemede azalış.",
+    "Hem taşıma kuvveti hem de sürükleme katsayısında artış.",
+    "Daha fazla ağırlık ve daha fazla taşıma kuvveti."
+   ]
+  },
+  "15022": {
+   "text": "Sakin havada (still air) mesafe 30 dakikada 189 Nm'dir. 30 kts baş rüzgârda ne kadar yer mesafesi uçulmuştur?",
+   "options": [
+    "174 NM",
+    "193 NM",
+    "188 NM",
+    "203 NM"
+   ]
+  },
+  "14870": {
+   "text": "Moment (denge) kolları, belirli bir noktadan kütlenin bulunduğu gövde istasyonuna kadar ölçülür. Bu nokta şu şekilde bilinir:",
+   "options": [
+    "datum.",
+    "eksen.",
+    "odak noktası.",
+    "uçağın ağırlık merkezi."
+   ]
+  },
+  "14967": {
+   "text": "Aşağıdakilerden hangisi kuyruk rüzgârından etkilenmez?",
+   "options": [
+    "Tırmanışla sınırlı kalkış kütlesi.",
+    "Kalkış koşusu.",
+    "Pistle sınırlı kalkış kütlesi.",
+    "Engelle sınırlı kalkış kütlesi."
+   ]
+  },
+  "14956": {
+   "text": "Sakin havayla karşılaştırıldığında, baş rüzgâr bileşeninin etkisi nedir?",
+   "options": [
+    "Baş rüzgâr, engellerle olan açıklığı artırır.",
+    "Baş rüzgâr, tırmanış açısını azaltır.",
+    "Baş rüzgâr, yer hızını artırır.",
+    "Baş rüzgâr, IAS'ı azaltır."
+   ]
+  },
+  "14865": {
+   "text": "Bir pilot, 50 litre AVGAS yükledikten sonra Kütle ve Denge çizelgesine 50 kg yazıyor. Hangi ifade doğrudur?",
+   "options": [
+    "Uçak beklenenden daha hafiftir.",
+    "Bu soruyu cevaplamak mümkün değildir çünkü AVGAS'ın yoğunluğu 1 kg/lt'nin üzerinde veya altında olabilir.",
+    "Uçak, Kütle ve Denge çizelgesinde belirtilenle aynı ağırlıktadır.",
+    "Uçak beklenenden daha ağırdır."
+   ]
+  },
+  "15026": {
+   "text": "ATS uçuş planında madde 10'da (donanım), uçağın çalışır durumda C modu transponder'a sahip olduğunu belirtmek için hangi harf yazılmalıdır?",
+   "options": [
+    "C",
+    "X",
+    "S",
+    "B"
+   ]
+  },
+  "15001": {
+   "text": "Uçağın iniş konfigürasyonunda kontrol edilebilir olduğu stall hızı ya da minimum düzenli uçuş hızı şu şekilde kısaltılır:",
+   "options": [
+    "VS0",
+    "VMC",
+    "VS",
+    "VS1"
+   ]
+  },
+  "15029": {
+   "text": "ICAO'nun ETA tanımı şudur:",
+   "options": [
+    "Varış noktasına tahmini varış zamanı.",
+    "Yol üzerinde tahmini süre.",
+    "Yol üzerindeki bir nokta veya fix'e tahmini varış zamanı.",
+    "Bir nokta veya fix'e gerçek varış zamanı."
+   ]
+  },
+  "15031": {
+   "text": "ATS uçuş planında Madde 15'te (Kruz hızı), Mach sayısı olarak ifade edilmediğinde, kruz hızı şu şekilde ifade edilir:",
+   "options": [
+    "TAS.",
+    "Yer hızı.",
+    "CAS.",
+    "IAS."
+   ]
+  },
+  "14877": {
+   "text": "Aşağıdaki tahterevallinin dengede olması için",
+   "options": [
+    "A = B x Fb / Fa",
+    "A = B x Fa / Fb",
+    "A = B ( Fa + Fb)",
+    "A = B + Fb / Fa"
+   ]
+  },
+  "14883": {
+   "text": "Verilenler: Toplam kütle: 7500 kg Ağırlık merkezi (cg) konumu istasyonu: 80.5 Arka cg limiti istasyonu: 79.5 CG konumunu arka limite taşımak için istasyon 150'deki arka kargo bölmesinden istasyon 30'daki ön kargo bölmesine ne kadar kargo taşınmalıdır?",
+   "options": [
+    "62.5 kg.",
+    "73.5 kg.",
+    "68.9 kg.",
+    "65.8 kg."
+   ]
+  },
+  "14964": {
+   "text": "Tırmanış açısının hesaplanmasıyla ilgili denklem hangisidir?",
+   "options": [
+    "(T-D)/W",
+    "(P-D)/W x TAS",
+    "(T-D)/W x TAS",
+    "(P-D)/L"
+   ]
+  },
+  "14936": {
+   "text": "İrtifayla birlikte artan bir baş rüzgâr bileşeni, sıfır rüzgâr koşuluyla karşılaştırıldığında (IAS'ın sabit olduğu varsayılarak)",
+   "options": [
+    "tırmanma oranına etkisi yoktur.",
+    "tırmanış açısını ve tırmanma oranını azaltır.",
+    "tırmanış sırasında uçuş yolu açısına herhangi bir etkisi yoktur.",
+    "tırmanış açısını ve tırmanma oranını iyileştirir."
+   ]
+  },
+  "14849": {
+   "text": "DOM ile ZFM arasındaki fark nedir?",
+   "options": [
+    "Trafik yükü",
+    "Trafik yükü ve mürettebat",
+    "Yalnızca yakıt",
+    "Yalnızca mürettebat"
+   ]
+  },
+  "14844": {
+   "text": "Dry Operating Mass (kuru işletme kütlesi), uçağın kütlesinden şunlar çıkarılmış halidir:",
+   "options": [
+    "kullanılabilir yakıt ve trafik yükü.",
+    "kullanılabilir yakıt, içme suyu ve tuvalet kimyasalları.",
+    "trafik yükü, içme suyu ve tuvalet kimyasalları.",
+    "kullanılabilir yakıt."
+   ]
+  },
+  "14895": {
+   "text": "Pistin sonunda, kalkış sırasında kullanılabilen dikdörtgen bir alana ……….. denir. Bu, uçağın ……………. yapmasına yardımcı olur. Pilot adayları bunu, iptal edilen bir kalkış durumunda kullanılabilen ………….. ile sıkça karıştırır.",
+   "options": [
+    "Clearway / ilk tırmanışı yapmasına / stopway.",
+    "İzole park alanı / bomba tehdidi sonrası kontrol edilmesine / stopway.",
+    "Runway End Safety Area / güvenle inmesine / clearway.",
+    "Stopway / güvenle durmasına / clearway."
+   ]
+  },
+  "15008": {
+   "text": "İniş için firar kenarı flap'i neden kullanılır?",
+   "options": [
+    "Yaklaşma hızı azalır ve daha dik bir yaklaşma yolu uçulur, bu da ön görüşü iyileştirir",
+    "Yaklaşma hızı artar ve daha dik bir yaklaşma yolu uçulur, bu da ön görüşü iyileştirir",
+    "Yaklaşma hızı azalır ve daha düz bir yaklaşma yolu uçulur, bu da ön görüşü iyileştirir",
+    "Yaklaşma hızı artar ve daha düz bir yaklaşma yolu uçulur, bu da ön görüşü iyileştirir"
+   ]
+  },
+  "14880": {
+   "text": "Ağırlık merkezinin konumu her zaman şu şekilde belirlenebilir:",
+   "options": [
+    "Toplam momenti toplam kütleye bölerek.",
+    "Toplam kütleden toplam momenti çıkararak.",
+    "Toplam momentten toplam kütleyi çıkararak.",
+    "Toplam kütleyi toplam momente bölerek."
+   ]
+  },
+  "14840": {
+   "text": "CG'nin konumu doğrudan şunu etkilemez:....",
+   "options": [
+    "Taşıma kuvveti üretimi",
+    "Manevra kabiliyeti",
+    "Stabilite",
+    "Kontrol edilebilirlik"
+   ]
+  },
+  "14808": {
+   "text": "Aşağıdaki durumlardan hangisi, belirli koşullar altında yapısal hasara yol açabilir?",
+   "options": [
+    "Bir uçağın maksimum toplam kütlesinin üzerinde uçurulması.",
+    "Normal kategorideki bir uçağın maksimum izin verilen kütlesinde uçurulması.",
+    "Bir uçağın maksimum iniş kütlesinin üzerinde uçurulması.",
+    "Utility kategorisindeki bir uçağın maksimum izin verilen kütlesinde uçurulması."
+   ]
+  },
+  "14931": {
+   "text": "Hangi parametre V1 hesaplamasını etkilemez?",
+   "options": [
+    "V2",
+    "Uçağın ağırlığı",
+    "VR",
+    "Pistin yukarı eğimi"
+   ]
+  },
+  "14925": {
+   "text": "Aynı eğim ve rüzgâr bileşeni değerleri varsa, aşağıdaki kombinasyonlardan hangisi en sınırlayıcı ağırlığı verir?",
+   "options": [
+    "kuyruk rüzgârı bileşenli yukarı eğimli bir pist",
+    "baş rüzgârı bileşenli aşağı eğimli bir pist",
+    "baş rüzgârı bileşenli yukarı eğimli bir pist",
+    "kuyruk rüzgârı bileşenli aşağı eğimli bir pist"
+   ]
+  },
+  "15007": {
+   "text": "İniş performansı hakkında doğru ifade hangisidir?",
+   "options": [
+    "Yer koşusu mesafesi, dokunuştan durmaya kadar olan yatay mesafedir",
+    "İniş mesafesi, fren bırakmadan ekran yüksekliğine (screen height) kadar olan yatay mesafedir",
+    "Yer koşusu mesafesi, fren bırakmadan ekran yüksekliğine kadar olan yatay mesafedir",
+    "İniş mesafesi, dokunuştan durmaya kadar olan yatay mesafedir"
+   ]
+  },
+  "14900": {
+   "text": "VR göz önüne alındığında, hangi ifade doğrudur?",
+   "options": [
+    "VR, rotasyonun başlatılması gereken hızdır.",
+    "VR altında motor arızası durumunda kalkış iptal edilmelidir.",
+    "VR, motor arızası durumunda yön kontrolü için en düşük hızdır.",
+    "VR, motor arızasından sonraki en düşük tırmanış hızıdır."
+   ]
+  },
+  "14829": {
+   "text": "Kruz uçuşunda, geriye hareket eden bir ağırlık merkezi:",
+   "options": [
+    "boyuna statik stabiliteyi azaltır",
+    "boyuna statik stabilite üzerinde etkisi olmaz",
+    "boyuna statik stabiliteyi artırır",
+    "manevra kabiliyetini değiştirmez"
+   ]
+  },
+  "14904": {
+   "text": "Pervane bıçaklarında stall olmayan akış koşulları varsayıldığında, kalkış koşusu sırasında pervanenin itkisi nasıl değişir? İtki:",
+   "options": [
+    "uçak hızı arttıkça azalır",
+    "kalkış ve tırmanış sırasında değişmez",
+    "uçak hızı arttıkça artar",
+    "yalnızca kütle değişimleriyle değişir"
+   ]
+  },
+  "14884": {
+   "text": "Varsayalım: Uçağın brüt kütlesi: 4750 kg Ağırlık merkezi istasyonu: 115.8 100 kg istasyon 30'dan istasyon 120'ye taşınırsa ağırlık merkezinin yeni konumu ne olur?",
+   "options": [
+    "İstasyon 117.69",
+    "İstasyon 122.23",
+    "İstasyon 118.33",
+    "İstasyon 118.25"
+   ]
+  },
+  "14858": {
+   "text": "Maximum Zero Fuel Mass (MZFM), en iyi şu şekilde tanımlanır:",
+   "options": [
+    "Uçağın kullanılabilir yakıtı olmadan maksimum izin verilen kütlesi.",
+    "Uçağın yolcu ve bagaj olmadan maksimum izin verilen kütlesi.",
+    "Uçağın mürettebat veya yakıt olmadan maksimum izin verilen kütlesi.",
+    "Uçağın yolcu veya yakıt olmadan maksimum izin verilen kütlesi."
+   ]
+  },
+  "14982": {
+   "text": "GS 120 knots. Yol üzerinde 8000 feet'ten 1000 feet'e alçalmanız gerekiyor. 500 feet/min alçalabiliyorsunuz. A noktasının üzerinde 1000 feet'te düzlenmek istiyorsanız, alçalmaya başlamak için A noktasına olan mesafe nedir?",
+   "options": [
+    "28 NM",
+    "40 NM",
+    "14 NM",
+    "33 NM"
+   ]
+  },
+  "14966": {
+   "text": "Aşağıdaki faktör kümelerinden hangisi tırmanışla sınırlı TOM'u artırır (her faktör bağımsız olarak değerlendirildiğinde)?",
+   "options": [
+    "Düşük flap ayarı, düşük PA, düşük OAT.",
+    "Yüksek flap ayarı, düşük PA, düşük OAT.",
+    "Düşük flap ayarı, yüksek PA, yüksek OAT.",
+    "Düşük flap ayarı, yüksek PA, düşük OAT."
+   ]
+  },
+  "14259": {
+   "text": "Kontrollü bir uçuş sırasında, gerçek TAS'ınız 150 kts ancak uçuş planınızdaki TAS 140 kts. ATCU'yu bilgilendirmeniz gerekir mi?",
+   "options": [
+    "Evet",
+    "Yalnızca CAS dışındaysanız",
+    "Hayır",
+    "Yalnızca ATC talep ederse"
+   ]
+  },
+  "14914": {
+   "text": "Kalkış koşusu için kullanılan, ilgili otoriteler tarafından belirlenen ve yeterli koşullara sahip pist uzunluğuna şu ad verilir:",
+   "options": [
+    "Take-off Run Distance Available (TORA)",
+    "Landing Distance Available (LDA)",
+    "Take-off Distance Available (TODA)",
+    "Accelarate and Stop Distance Available (ASDA)"
+   ]
+  },
+  "14905": {
+   "text": "Bir pistte clearway belirlenmemişse, ilk tırmanıştan sonra uçağın 50 ft'e şurada ulaşması gerekir:",
+   "options": [
+    "TORA bölümünde.",
+    "TODA bölümünde.",
+    "LDA bölümünde.",
+    "ASDA bölümünde."
+   ]
+  },
+  "14820": {
+   "text": "Yükler şu amaçla yeterince sabitlenmelidir:",
+   "options": [
+    "planlanmamış ağırlık merkezi (cg) hareketini ve uçak hasarını önlemek.",
+    "dik dönüşlere izin vermek.",
+    "iniş flare'i sırasında aşırı 'g' yüklenmesini önlemek.",
+    "kargoya herhangi bir hasarı önlemek."
+   ]
+  },
+  "14911": {
+   "text": "Rüzgâra karşı kalkışın temel nedeni şudur:",
+   "options": [
+    "Kalkış anında uçağın yer hızını azaltmak.",
+    "Kalkış mesafesini artırmak.",
+    "Uçağın yer hızını artırmak.",
+    "Kullanılabilir kalkış mesafesini (TODA) azaltmak."
+   ]
+  },
+  "15019": {
+   "text": "Saatlik yakıt akışı 31 US-GAL, uçaktaki toplam yakıt 260 Litre. Havada kalış süresi (endurance) nedir?",
+   "options": [
+    "2 HR 13 MIN.",
+    "8 HR 23 MIN.",
+    "2 HR 22 MIN.",
+    "8 HR 39 MIN."
+   ]
+  },
+  "14821": {
+   "text": "Sertifikasyon gereklilikleri, hafif bir uçak yüklenirken şunu şart koşar:",
+   "options": [
+    "C of G tanımlanan limitler içinde kalmalı ve Maximum Take-off Mass aşılmamalıdır.",
+    "Maximum Take-off Mass'ın aşılmaması ve CofG'nin C of G limitlerinin en az %5 içinde kalması.",
+    "Maksimum trafik yükü ve tam yakıtla uçağın izin verilen Maximum Takeoff Mass'ı aşmaması.",
+    "Tüm koltuklar, bagaj bölmeleri ve yakıt tankları C of G limitleri içinde yer alır, böylece uçağın limitlerinin ötesinde yüklenmesi imkânsız olur."
+   ]
+  },
+  "15009": {
+   "text": "Aşağıdakilerden hangisinde Arama ve Kurtarma organizasyonu ve prosedürlerinin ayrıntılarını bulmayı beklersiniz?",
+   "options": [
+    "AIP",
+    "NOTAM",
+    "SIGMET",
+    "ATCC yayınları"
+   ]
+  },
+  "14868": {
+   "text": "Ağırlık merkezi, bir uçak üzerindeki … noktasıdır ve bu noktadan toplam …'in dikey olarak … etkidiği kabul edilir.",
+   "options": [
+    "nokta; kütle; aşağı",
+    "nokta; moment; yukarı",
+    "datum; kütle; yukarı",
+    "datum; moment; aşağı"
+   ]
+  },
+  "14862": {
+   "text": "Hafif bir uçağa özgül ağırlığı 0.72 olan 30 litre AVGAS yüklenmiştir. Yakıt kütlesini kütle ve denge çizelgesine nasıl girersiniz?",
+   "options": [
+    "21.6 kg",
+    "30 kg",
+    "2.16 kg",
+    "30 lt"
+   ]
+  }
+ }
+}

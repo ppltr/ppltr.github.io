@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "14580": {
+   "text": "Motor yakıt sisteminde, bir karbüratörün şamandıra haznesindeki ortam basıncı ile karbüratörün venturisindeki statik basınç arasındaki ilişki nedir?",
+   "options": [
+    "Venturideki statik basınç, şamandıra haznesindeki ortam basıncından daha düşük olacaktır.",
+    "Şamandıra haznesinin ortam basıncı, venturideki dinamik basınca eşittir.",
+    "Hiçbir fark yoktur, çünkü ortam basıncı ve statik basınç terimleri aynı anlama gelir.",
+    "Venturideki statik basınç, şamandıra haznesindeki ortam basıncından daha büyük olacaktır."
+   ]
+  },
+  "14582": {
+   "text": "Karbüratör buzlanması beklenebilecek olsa bile, uçuşun hangi safhasında karbüratör ısıtması kapatılmalıdır?",
+   "options": [
+    "Kalkış sırasında",
+    "Seyir sırasında",
+    "Alçalma sırasında",
+    "Taksi sırasında"
+   ]
+  },
+  "14583": {
+   "text": "Karbüratörün hangi bölümlerinde buzlanma en olası şekilde meydana gelir?",
+   "options": [
+    "venturi ve gaz kelebeği valfi.",
+    "akselerasyon pompası ve ana ölçüm jiklesi.",
+    "ana hava besleme deliği ve ana deşarj memesi.",
+    "şamandıra haznesi ve yakıt giriş filtresi."
+   ]
+  },
+  "14584": {
+   "text": "Ciddi karbüratör buzlanması, şu koşullar altında yüksek olasılıkla ortaya çıkabilir: ……",
+   "options": [
+    "bağıl nemin %80'in üzerinde olduğu ve dış hava sıcaklığının -7°C ile 21°C arasında olduğu durumlarda.",
+    "bağıl nemin %80'in altında olduğu ve dış hava sıcaklığının -7°C ile 15°C arasında olduğu durumlarda.",
+    "bağıl nemin %50'nin üzerinde olduğu ve dış hava sıcaklığının -38°C ile -7°C arasında olduğu durumlarda.",
+    "bağıl nemin %50 olduğu ve dış hava sıcaklığının -7°C ile 30°C arasında olduğu durumlarda."
+   ]
+  },
+  "14585": {
+   "text": "Bazı karbüratörlere şu işlevi gören bir diffüzör takılır:",
+   "options": [
+    "Devir (rpm) arttıkça karışımın aşırı zenginleşmesini önler",
+    "Devir (rpm) azaldıkça karışımın aşırı zenginleşmesini önler",
+    "Devir (rpm) azaldıkça karışımın aşırı fakirleşmesini önler",
+    "Devir (rpm) arttıkça karışımın aşırı fakirleşmesini önler"
+   ]
+  },
+  "14586": {
+   "text": "Karbüratör venturisinin daraltılmış boğazı, içinden geçen havanın özelliklerini değiştirir. Bunlar:",
+   "options": [
+    "ortam basıncında düşüş ve hızda artış.",
+    "dinamik basınçta artış ve ortam basıncında artış.",
+    "dinamik basınçta düşüş ve hızda artış.",
+    "dinamik basınçta artış ve hızda düşüş."
+   ]
+  },
+  "14587": {
+   "text": "Bir karbüratör venturisindeki statik basınç, şamandıra haznesindeki ortam basıncıyla karşılaştırıldığında:",
+   "options": [
+    "daha düşük olacaktır.",
+    "yakıt-hava karışımının yoğunluğuna bağlı olarak daha yüksek veya daha düşük olacaktır.",
+    "aynı olacaktır.",
+    "daha yüksek olacaktır"
+   ]
+  },
+  "14588": {
+   "text": "Pistonlu motorlu bir uçakta rölanti kesme (idle cut off) valfinin işlevi nedir?",
+   "options": [
+    "Seçildiğinde karbüratördeki bir deşarj memesinden yakıt akışını engeller.",
+    "Yerde uzun süre rölantide kalınması nedeniyle silindir kafası sıcaklığı yükselirse motoru otomatik olarak durdurur.",
+    "Güç arttırıldığında yakıt akışını rölanti jiklesinden ana jikleye değiştirir.",
+    "Karbüratörün rölanti jiklesi aracılığıyla motorun düşük devirde çalışmasını kontrol eder."
+   ]
+  },
+  "14589": {
+   "text": "Karbüratör ısıtması uygulandığında:",
+   "options": [
+    "karışım zenginleşir.",
+    "fakir karışım nedeniyle devirde (rpm) düşüş olur.",
+    "karışım oranında herhangi bir değişiklik olmaz.",
+    "karışım fakirleşir."
+   ]
+  },
+  "14590": {
+   "text": "Karbüratör hava girişi \"sıcak hava\" ile beslendiğinde, motorun güç çıkışı şu nedenle azalır:",
+   "options": [
+    "Karışımın yoğunluğu daha düşük olacaktır.",
+    "Karışım daha fakir olacaktır.",
+    "Emme manifoldundaki hava basıncı artacaktır.",
+    "Karışımın yoğunluğu artacaktır."
+   ]
+  },
+  "14591": {
+   "text": "Pilot, pistonlu bir motorun karışım kolunu daha fakir bir konuma hareket ettirdiğinde, ...",
+   "options": [
+    "Yanma odasına giren yakıt miktarı azalır.",
+    "Karbüratöre giren hava hacmi artar.",
+    "Yanma odasına giren yakıt miktarı artar.",
+    "Karbüratöre giren hava hacmi azalır."
+   ]
+  },
+  "14592": {
+   "text": "Aşağıdaki ifadelerden hangileri karbüratör buzlanmasına neden olabilir?\n1. Karbüratör girişinde yüksek dinamik basınç\n2. Yakıt buharlaşması\n3. Venturi boğazında yüksek statik basınç\n4. Venturi boğazında yüksek dinamik basınç",
+   "options": [
+    "2 - 4",
+    "1 - 3",
+    "2 - 3",
+    "1 - 4"
+   ]
+  },
+  "14593": {
+   "text": "İstemeden ateşleme anahtarından bağlantısı kesilen bir manyeto:",
+   "options": [
+    "her iki manyeto anahtarı da kapatıldığında motorun çalışmaya devam etmesine neden olur.",
+    "diğer manyeto kapatıldığında motorun düzensiz ateşlemesine (misfire) neden olur.",
+    "her silindirde bir bujinin arızalanmasına neden olur.",
+    "diğer manyeto kapatıldığında motorun tamamen durmasına (dead cut) neden olur."
+   ]
+  },
+  "14594": {
+   "text": "Uçak motoru ateşleme sistemleri, bir kıvılcım güçlendirme (spark augmentation) düzeni içerir:",
+   "options": [
+    "Çünkü çalıştırma sırasında motorun dönüş hızı, manyetonun hava-yakıt karışımını ateşlemeye yetecek enerjiyi üretmesi için çok düşüktür",
+    "Hepsi.",
+    "Çalıştırma sırasındaki kıvılcım gecikmesi (spark-retard) sorununun üstesinden gelmek için",
+    "Çünkü yüksek motor devirlerinde, hava-yakıt karışımından azami gücü elde etmek için güçlü (fat) bir kıvılcım gereklidir"
+   ]
+  },
+  "14595": {
+   "text": "Pistonlu uçak motorlarına iki bağımsız ateşleme sistemi takılır;",
+   "options": [
+    "Daha verimli yanma ve güvenilirlik için.",
+    "Manyetolardan biri, diğeri devreye girmeden önce ateşlemeyi başlatmalıdır.",
+    "Biri kullanılır, diğeri yedek olarak kalır.",
+    "Yukarıdaki ifade yanlıştır."
+   ]
+  },
+  "14596": {
+   "text": "Bir impuls kaplini (impulse coupling), yüksek devirlerde çalışmaktan şununla önlenir;",
+   "options": [
+    "merkezkaç kuvveti.",
+    "çalışan manyetonun elektromanyetik etkisi.",
+    "bir sarmal (coil) yay.",
+    "motor yağ basıncı."
+   ]
+  },
+  "14597": {
+   "text": "Motor çalışırken bir manyetonun topraklama teli manyetodan ayrılırsa:",
+   "options": [
+    "Manyetolar kapatıldığında motor durmayacaktır.",
+    "Motor çalışmaya devam edecek, ancak ilgili silindir dışındaki tüm silindirlerde ateşleme yapacaktır.",
+    "Primer sargılar hasar görecektir.",
+    "Motor duracaktır."
+   ]
+  },
+  "14598": {
+   "text": "Motor aşırı ısınırsa, karışım buji ateşlemeden önce kendiliğinden tutuşabilir.",
+   "options": [
+    "Buna ön ateşleme (pre-ignition) denir.",
+    "Motorun soğumasına yardımcı olmak için gaz kelebeği açılmalıdır.",
+    "Motorun soğumasına yardımcı olmak için karışım fakirleştirilmelidir.",
+    "Buna detonasyon denir."
+   ]
+  },
+  "14599": {
+   "text": "Dört zamanlı bir motorun her silindirinde ateşleme şöyle gerçekleşir (TDC = Üst Ölü Nokta):",
+   "options": [
+    "her ikinci krank mili turunda ÜÖN'den önce.",
+    "her krank mili turunda ÜÖN'den önce.",
+    "her ikinci krank mili turunda ÜÖN'den sonra.",
+    "her krank mili turunda ÜÖN'den sonra."
+   ]
+  },
+  "14600": {
+   "text": "Bir uçak pistonlu motoru ateşleme sistemi bakımından, bujilere giden yüksek gerilim beslemesi şuradan kaynaklanır:",
+   "options": [
+    "manyetonun kendi kendine üretim yapan primer ve sekonder devresinden ve dağıtım sisteminden.",
+    "manyetodan ve ardından bataryayla dönüştürülür",
+    "bataryadan ve manyeto tarafından dönüştürülür.",
+    "çalıştırma ve düşük rölanti sırasında bataryadan, motor yüksek rölantide çalışmaya başladığında ise manyetodan."
+   ]
+  },
+  "14601": {
+   "text": "Manyetolar:",
+   "options": [
+    "Yüksek gerilimli kıvılcım üreten, kendi kendine yeten, motor tarafından tahrik edilen elektrik jeneratörleridir",
+    "Distribütörün içine takılıdır ve bujilerle aynı sırada ateşleme yapar",
+    "Bujiler için düşük gerilimli kıvılcım üretmek amacıyla kullanılır",
+    "Elektrik ekipmanını beslemek için kam milinden tahrik edilen jeneratörlerdir"
+   ]
+  },
+  "14602": {
+   "text": "Aşağıdaki ifadelerden hangisi bir impuls kaplini (Impulse Coupling) hakkında olgusal olarak doğrudur?",
+   "options": [
+    "Manyetonun dönüş hızını geçici olarak artırmak için bir yay kullanan mekanik bir düzenektir",
+    "Hepsi.",
+    "Motor çalıştırma sırasında manyetonun primer bobinine düşük gerilim sağlar",
+    "Distribütör rotorundaki bir arkadan gelen (trailing) fırçaya bir dizi yüksek gerilim darbesi sağlar"
+   ]
+  },
+  "14603": {
+   "text": "Ön ateşleme (pre-ignition):",
+   "options": [
+    "Genellikle yanma odasındaki sıcak bir noktadan kaynaklanır.",
+    "Bujilerde üretilen dev bir kıvılcım nedeniyle meydana gelir.",
+    "Detonasyon ile aynı şeydir.",
+    "Pinking olarak da bilinir."
+   ]
+  },
+  "14604": {
+   "text": "Bujiler yüksek gerilim beslemesini şuradan alır:",
+   "options": [
+    "uçağın elektrik sisteminden bağımsız bir manyetodan.",
+    "uçak bataryasından beslenen bir manyetodan.",
+    "uçağın elektrik sisteminden beslenen bir manyeto distribütöründen.",
+    "alternatörden."
+   ]
+  },
+  "14605": {
+   "text": "İmpuls kaplini (impulse coupling):",
+   "options": [
+    "motor çalıştırma sırasında düşük motor devrinde yüksek gerilim sağlar.",
+    "kondansatörün sekonder sargıya deşarjını hızlandırır, bu da soğuk bir yakıt-hava karışımını ateşlemeye yetecek bir kıvılcım yağmuru üretir.",
+    "zenginleştirilmiş bir çalıştırma karışımının ön ateşlemesinin oluşmamasını sağlamak için ateşlemeyi geciktirir.",
+    "soğuk bir motordaki yavaş yanmayı telafi etmek için ateşlemeyi avans yaptırır."
+   ]
+  },
+  "14606": {
+   "text": "Otto çevrimi genellikle \"sürekli çevrim\" olarak adlandırılır. Sürekli terimi, motorun sürekli ........ ihtiyacından gelir.",
+   "options": [
+    "ateşleme",
+    "temizlik",
+    "soğutma.",
+    "yağlama."
+   ]
+  },
+  "14607": {
+   "text": "Dead cut kontrolü sırasında devirde (rpm) aşırı düşüş olması neyi gösterir?",
+   "options": [
+    "Manyeto arızası",
+    "Priming pompası arızası",
+    "Batarya arızası",
+    "Alternatör arızası"
+   ]
+  },
+  "14608": {
+   "text": "Ateşleme anahtarı \"Off\" konumuna getirildiğinde bir manyeto ateşleme sisteminde ne olur?",
+   "options": [
+    "Primer devre toprağa bağlanır.",
+    "Sekonder devre kondansatör tarafından beslenir.",
+    "Kontak kesici (contact breaker) düşük gerilim devresini keser.",
+    "Yakıt beslemesi kesilir."
+   ]
+  },
+  "14609": {
+   "text": "Bir uçak pistonlu (reciprocating) motoru için manyeto ateşleme sisteminin batarya ateşleme sistemine göre başlıca avantajı nedir?",
+   "options": [
+    "Manyetonun kendi elektrik enerjisi kaynağı vardır ve bataryaya bağımlı değildir.",
+    "Manyeto enerjisini her zaman uçağın elektrik sisteminden aldığından, daha güvenilirdir.",
+    "İşletim güvenliği.",
+    "Üretim kolaylığı."
+   ]
+  },
+  "14610": {
+   "text": "Bir manyeto OFF konumuna getirildiğinde, primer devrede bulunan anahtar",
+   "options": [
+    "kapanır ve devre topraklanır.",
+    "kapanır ve yüksek gerilim devresi kapanır.",
+    "açılır ve devre topraklanır.",
+    "açılır, devre sürekliliğini keser."
+   ]
+  },
+  "14611": {
+   "text": "Aşağıdaki ifadelerden hangileri doğrudur?\nI. Manyeto dead-cut kontrolü düşük devirde (rpm) yapılır.\nII. Her manyeto, bir silindirdeki tüm bujileri besler.\nIII. Batarya manyeto tarafından beslenmez.\nIV. Manyetolar bujilere 13,2 V DC çıkış verir.",
+   "options": [
+    "I & III",
+    "II & IV",
+    "I & IV",
+    "I & II"
+   ]
+  },
+  "14612": {
+   "text": "Aşağıdaki ifadelerden hangileri doğrudur?\nI. Dört zamanlı çevrim sürekli bir çevrimdir.\nII. Her valf, pistonlu bir motorun 4 zamanı boyunca iki kez açılır.\nIII. Krank tertibatı; biyeli kol, piston ve silindiri içerir.\nIV. Dört zamanlı çevrim sürekli ateşlemeye bağlıdır.",
+   "options": [
+    "Yalnızca IV.",
+    "III ve IV.",
+    "II ve IV.",
+    "Yalnızca III."
+   ]
+  },
+  "14613": {
+   "text": "Aşağıdaki ifadelerden hangisi yardımcı kıvılcım güçlendirme yöntemleri hakkında doğrudur?",
+   "options": [
+    "Yüksek gerilim güçlendirici (booster) bobin, sekonder sargıda büyük bir akım indükler.",
+    "Yüksek gerilim güçlendirici (booster) bobin, primer sargıda büyük bir akım indükler.",
+    "Düşük gerilim güçlendirici (booster) bobin, sekonder sargıda büyük bir akım indükler.",
+    "İmpuls kaplini, motor çok hızlı dönerken kullanılır."
+   ]
+  },
+  "14550": {
+   "text": "Motor soğutması için hangi yöntem kullanılabilir?",
+   "options": [
+    "Zengin karışım ayarı",
+    "Fakir karışım ayarı",
+    "TAS'ı azaltmak",
+    "Gücü artırmak"
+   ]
+  },
+  "14614": {
+   "text": "Bir pistonlu motorun manifold basıncı göstergesi şunu ölçer;",
+   "options": [
+    "emme valfine yakın emme sistemindeki mutlak basıncı.",
+    "karbüratöre giren havanın mutlak basıncını.",
+    "karbüratörden çıkan yakıtın basıncını.",
+    "karbüratördeki vakumu."
+   ]
+  },
+  "14615": {
+   "text": "Tırmanış safhalarında en iyi güç ayarından daha zengin bir karışım ayarı kullanılmalıdır. Bunun sonucu;",
+   "options": [
+    "daha düşük silindir kafası sıcaklığıdır.",
+    "daha yüksek verimliliktir.",
+    "güç artışıdır.",
+    "daha yüksek torktur."
+   ]
+  },
+  "14616": {
+   "text": "Bir pistonlu motorun yakıt/hava karışım oranı, ideal olarak şu civarında olmalıdır:",
+   "options": [
+    "ağırlıkça 1:12.",
+    "hacimce 1:15.",
+    "hacimce 1:9.",
+    "ağırlıkça 1:7."
+   ]
+  },
+  "14617": {
+   "text": "Bir turbo şarj şundan oluşur;",
+   "options": [
+    "ortak bir mil üzerine monte edilmiş kompresör ve türbinden.",
+    "bir redüksiyon dişlisi aracılığıyla türbini tahrik eden kompresörden.",
+    "ayrı millere sahip kompresör ve türbinden.",
+    "bir redüksiyon dişlisi aracılığıyla kompresörü tahrik eden türbinden."
+   ]
+  },
+  "14618": {
+   "text": "Bir pistonlu motordaki turbo şarj sistemi normalde şununla tahrik edilir;",
+   "options": [
+    "egzoz sistemiyle.",
+    "bir elektrik motoruyla.",
+    "bir hidrolik motoruyla.",
+    "elektrikle etkinleştirilen, hidrolikle çalışan bir kavramayla."
+   ]
+  },
+  "14619": {
+   "text": "a. Gaz kelebeğini kısmak.\nb. Manyeto anahtarını kapatmak.\nc. Karışımı kesmek.\nYukarıda belirtilen işlemleri, motorun güvenli bir şekilde kapatılabilmesi için doğru sıraya koyun.",
+   "options": [
+    "a c b.",
+    "b a c.",
+    "c b a.",
+    "a b c."
+   ]
+  },
+  "14620": {
+   "text": "Soğuk bir motoru çalıştırdıktan sonra, yağ basıncı göstergesi yaklaşık 30 saniye içinde göstergede bir değer vermezse:",
+   "options": [
+    "motor derhal durdurulmalıdır.",
+    "uygun işlem için Pilot İşletme El Kitabına (POH) başvurulmalıdır.",
+    "yağ sıcaklığı hâlâ düşükse ve yağ seviyesi çalıştırmadan önce kontrol edilmişse bu göz ardı edilebilir.",
+    "motor devri (rpm) artırılmalı ve yağ basıncı yeniden kontrol edilmelidir."
+   ]
+  },
+  "14621": {
+   "text": "Bir pistonlu motor için EGT (Egzoz Gazı Sıcaklığı) göstergesi şunun için kullanılır;",
+   "options": [
+    "pilotun doğru karışımı ayarlamasına yardımcı olmak.",
+    "yakıt sıcaklığını kontrol etmek.",
+    "karbüratör giriş hava akışını kontrol etmek.",
+    "silindir kafası sıcaklığını kontrol etmek."
+   ]
+  },
+  "14622": {
+   "text": "Yüksek güç ayarlarında zenginleştirilmiş bir karışım şu nedenle istenir:",
+   "options": [
+    "yüksek güç ayarlarında hava daha yoğundur.",
+    "yüksek güç ayarlarında yetersiz yakıt, aşırı sıcak yağlama yağının silindir duvarlarından yıkanıp gitmesine neden olabilir.",
+    "özellikle hâkim yüksek basınç sistemleri ve normalden yüksek hava yoğunluğuyla ekstra güç üretilebilir.",
+    "yakıt bir soğutucu maddedir."
+   ]
+  },
+  "14623": {
+   "text": "Aşırı zengin bir karışım şununla tespit edilebilir;",
+   "options": [
+    "egzozdan çıkan siyah duman.",
+    "egzozdan çıkan beyaz duman.",
+    "egzozdan çıkan uzun mor bir alev.",
+    "yüksek silindir kafası sıcaklıkları."
+   ]
+  },
+  "14624": {
+   "text": "İrtifa arttıkça, bir pistonlu motorun karışım oranı şunun için ayarlanmalıdır;",
+   "options": [
+    "azalan hava yoğunluğunu telafi etmek için yakıt akışını azaltmak.",
+    "azalan hava basıncı ve yoğunluğunu telafi etmek için yakıt akışını artırmak.",
+    "karışım oranını artırmak.",
+    "artan hava yoğunluğunu telafi etmek için yakıt akışını azaltmak."
+   ]
+  },
+  "14625": {
+   "text": "İrtifa artırıldıkça, yakıt/hava karışımında bir ayarlama yapılması gerekir çünkü atmosferik:",
+   "options": [
+    "yoğunluk azalır ve yakıt/hava karışımı zenginleşir.",
+    "yoğunluk artar ve yakıt/hava karışımı fakirleşir.",
+    "yoğunluk azalır ve yakıt/hava karışımı fakirleşir.",
+    "yoğunluk artar ve yakıt/hava karışımı zenginleşir."
+   ]
+  },
+  "14626": {
+   "text": "Uçak tırmandıkça, yoğunluk _____ ve motora giren havanın ağırlığı _____. Bu nedenle karışım _____ hâle gelecektir.",
+   "options": [
+    "Azalır, azalır, zenginleşir",
+    "Azalır, azalır, fakirleşir",
+    "artar, azalır, fakirleşir",
+    "Azalır, artar, zenginleşir"
+   ]
+  },
+  "14627": {
+   "text": "Düşük motor devri (rpm) ve güç ayarlarında:",
+   "options": [
+    "Karışım zengin olmalıdır.",
+    "CHT normalde çok yüksek olacaktır.",
+    "Priming pompası açık olmalıdır.",
+    "Ateşleme daha avans olmalıdır."
+   ]
+  },
+  "14628": {
+   "text": "Kirlenme (fouling) olarak da bilinen, bujiler üzerindeki karbon birikintileri şu şekilde önlenebilir:",
+   "options": [
+    "motorun düşük devirde (rpm) uzun süre çalıştırılmasından kaçınarak.",
+    "motoru fakir bir karışımla sürekli olarak yüksek devirde (rpm) çalıştırmayarak.",
+    "motoru fakir bir karışımla yaklaşık 5 dakika yüksek devirde (rpm) çalıştırarak.",
+    "onları günlük olarak temizleyerek."
+   ]
+  },
+  "14632": {
+   "text": "Bir pistonlu motorda yakıt/hava karışımının detonasyonu genellikle şununla ilişkilendirilir:",
+   "options": [
+    "fakir karışımlar ve yüksek silindir kafası sıcaklıkları.",
+    "aşırı zengin karışımlar kullanılarak uzun süreli motor çalıştırma nedeniyle karbonlaşmış bujiler.",
+    "zengin karışımlar ve düşük silindir kafası sıcaklıkları.",
+    "geri tepme (backfiring) meydana geldiğinde çalıştırma sırasında tasarlanmış kesintili bir ateşleme sırası."
+   ]
+  },
+  "14633": {
+   "text": "Detonasyon:",
+   "options": [
+    "Pistonlara zarar verir",
+    "Dışarıdan tespit edilemez",
+    "Normal motor çalışmasının bir parçasıdır",
+    "'Piston slap' olarak da bilinir"
+   ]
+  },
+  "14634": {
+   "text": "Uzun süreli bir tırmanış sırasında motor yağ basıncının azaldığını ve yağ sıcaklığının arttığını fark edersiniz. Yağlama sisteminde herhangi bir arızayı göz ardı edersiniz. Bu durumda en muhtemel neden ve çözüm nedir?",
+   "options": [
+    "Düşük hava hızı ve yüksek motor devri kombinasyonu, yağlama sisteminin soğumasını azaltarak yağ viskozitesini düşürür. Gücü azaltmalı ve hava hızını artırmalısınız.",
+    "Tırmanışla ilişkili düşük hava hızı ve yüksek motor devri, yağlama sisteminin soğumasını azaltarak yağ viskozitesini artırır. Gücü artırmalı ve hava hızını azaltmalısınız.",
+    "Çok yüksek bir hava hızıyla tırmanıyorsunuz, bu da yağlama sisteminin aşırı soğumasına ve dolayısıyla yağ viskozitesinin düşmesine neden oluyor. Gücü artırmalı ama hava hızını azaltmalısınız.",
+    "Çok yüksek bir hava hızıyla tırmanıyorsunuz, bu da yağlama sisteminin aşırı soğumasına ve dolayısıyla yağ viskozitesinin artmasına neden oluyor. Gücü azaltmalı ve hava hızını azaltmalısınız."
+   ]
+  },
+  "14636": {
+   "text": "Uçuşta yüksek silindir kafası sıcaklıkları şu şekilde azaltılabilir:",
+   "options": [
+    "yanma odası sıcaklığını azaltmak için yakıt/hava karışımını zenginleştirerek.",
+    "daha soğuk havaya tırmanarak, böylece motor üzerindeki soğutma hava akışını artırarak.",
+    "motor üzerindeki soğutma hava akışını artıracak olan kaporta kapaklarını (cowl flaps) kapatarak.",
+    "motor çevresindeki soğutma hava akışını artırmak için güç ve hava hızını artırarak."
+   ]
+  },
+  "14637": {
+   "text": "Motor yağ yakıyorsa bu şununla tespit edilebilir;",
+   "options": [
+    "egzozdan çıkan mavi duman.",
+    "egzozdan çıkan beyaz duman.",
+    "egzozdan çıkan siyah duman.",
+    "düşük silindir kafası sıcaklıkları."
+   ]
+  },
+  "14638": {
+   "text": "Starter düğmesi (starter anahtarı) bırakıldıktan sonra starter uyarı ışığı yanık kalırsa:",
+   "options": [
+    "motor derhal durdurulmalıdır.",
+    "starteri elle devre dışı bırakın.",
+    "starterin otomatik ayrılması için çok düşük olduğundan motor devri (rpm) artırılmalıdır.",
+    "alternatör çıkış seviyesi kontrol edilmelidir."
+   ]
+  },
+  "14639": {
+   "text": "Bir pistonlu motorda, irtifa karışım kontrolünün amacı şudur:",
+   "options": [
+    "İrtifadaki azalmış hava yoğunluğu nedeniyle yakıt/hava oranındaki değişimleri düzeltmek.",
+    "İrtifada gaz kelebeği hızla açıldığında fakir kesilmeyi (weak cut) önlemek.",
+    "İrtifadaki azalmış hava yoğunluğu nedeniyle karışımı zenginleştirmek.",
+    "İrtifada azalmış egzoz geri basıncı nedeniyle karışımı fakirleştirmek."
+   ]
+  },
+  "14641": {
+   "text": "Motoru şu karışımla çalıştırmak en iyisidir:",
+   "options": [
+    "Hafif zengin, çünkü fazla yakıt motorun soğumasına yardımcı olur",
+    "Hafif fakir, çünkü fazla hava motorun soğumasına yardımcı olur",
+    "Hafif zengin, çünkü fazla hava motorun soğumasına yardımcı olur",
+    "Kimyasal olarak doğru, çünkü bu en verimlisidir"
+   ]
+  },
+  "14642": {
+   "text": "Priming pompasının kullanımdan sonra kilitlendiğinden emin olmak önemlidir çünkü:",
+   "options": [
+    "Yakıt süzgecinden emme manifolduna yakıt çekilmesine izin vererek aşırı zengin bir karışıma neden olabilir",
+    "Titreşimle kapanırsa, motorun durmasına neden olur",
+    "Yakıt deposundan karbüratöre yakıt çekilmesine neden olarak aşırı zengin bir karışıma yol açabilir",
+    "Bir yakıt sızıntısına neden olabilir, artan bir yangın riskiyle sonuçlanabilir"
+   ]
+  },
+  "14646": {
+   "text": "Egzoz gazı sıcaklığı göstergesi:",
+   "options": [
+    "Yanma odasına çekilen hava-yakıt karışımının çok fakir mi yoksa çok zengin mi olduğunu gösterebilir",
+    "Silindir kafası sıcaklığı göstergesiyle aynı işi yapar",
+    "DC bara hattından güç gerektirir",
+    "Motoru aşırı ısıdan korumak için tasarlanmış bir motor göstergesidir"
+   ]
+  },
+  "14648": {
+   "text": "Bir uçak motorunu kapatmanın normal yöntemi şudur:",
+   "options": [
+    "Gaz kelebeğini kapatmak ve karışımı ICO konumuna almak",
+    "Gaz kelebeğini kapatmak",
+    "Karışımı rölanti kesme (idle cut-off, ICO) konumuna almak",
+    "Starter anahtarını kapalı konuma almak"
+   ]
+  },
+  "14649": {
+   "text": "Sabit bir güç kolu ayarıyla tırmanış sırasında pistonlu motorun gücü azalır, çünkü şu azalır:",
+   "options": [
+    "Hava yoğunluğu.",
+    "Sıcaklık.",
+    "Nem.",
+    "Motor sıcaklığı."
+   ]
+  },
+  "14650": {
+   "text": "Deniz seviyesinde dört zamanlı bir pistonlu motorun güç çıkışı:",
+   "options": [
+    "Devir (rpm) arttıkça artar.",
+    "Başlangıçta artar, ardından devir (rpm) arttıkça sabit kalır.",
+    "Devir (rpm) arttıkça sabit kalır.",
+    "Silindire çekilen karışımın hacmiyle orantılıdır."
+   ]
+  },
+  "14651": {
+   "text": "Bir içten yanmalı motorun güç çıkışı şu şekilde artırılabilir",
+   "options": [
+    "Motor devrini (rpm) artırarak",
+    "Silindirin alanını azaltarak",
+    "Zaman (stroke) uzunluğunu azaltarak",
+    "Yakıt deposunun boyutunu artırarak"
+   ]
+  },
+  "14652": {
+   "text": "Motorun sıcaklığının azaltılmasına yardımcı olmak için:-",
+   "options": [
+    "Hava/yakıt karışımı zenginleştirilebilir.",
+    "Hava/yakıt karışımı fakirleştirilebilir.",
+    "Kaporta kapakları (cowl flaps) kapatılabilir.",
+    "Hava hızı azaltılabilir."
+   ]
+  },
+  "14653": {
+   "text": "Uçuş sırasında yakıt/hava karışımını doğru ayarlamak için, kontrol kolu motor devri (rpm) şu duruma gelene kadar fakir konuma hareket ettirilir:",
+   "options": [
+    "Düşer, ardından karışım kolu tepe devrin (rpm) hafifçe ZENGİN tarafına hareket ettirilir",
+    "Azalır. Karışım kolu sonra o konumda bırakılır",
+    "Yaklaşık 150 rpm azalır. Karışım kolu sonra fakir konuma doğru biraz daha hareket ettirilir",
+    "Yükselir, ardından karışım kolu o konumda bırakılır"
+   ]
+  },
+  "14654": {
+   "text": "Bir motoru çalıştırmadan önce yakıt priming pompası kullanıldığında, yakıt normalde doğrudan şuraya iletilir:",
+   "options": [
+    "emme manifolduna veya emme valfi ağzına.",
+    "yakıt enjektör manifoldunun besleme muhafazasına (shroud).",
+    "yanma odasına.",
+    "karbüratörün şamandıra haznesine."
+   ]
+  },
+  "14655": {
+   "text": "İrtifada yakıt/hava karışımını fakirleştirirken, en verimli karışımı elde etmek için kontrol kolu önce motor devri (rpm) şu duruma gelene kadar FAKİR konuma doğru hareket ettirilir:",
+   "options": [
+    "azalır. Karışım kolu sonra tepe devrin (rpm) hafifçe ZENGİN tarafına hareket ettirilir.",
+    "yaklaşık 50 rpm azalır. Karışım kolu sonra FAKİR konuma doğru biraz daha hareket ettirilir.",
+    "yaklaşık 50 rpm artar. Karışım kolu sonra FAKİR konuma doğru biraz daha hareket ettirilir.",
+    "artar. Karışım kolu sonra o konumda bırakılır."
+   ]
+  },
+  "14656": {
+   "text": "Bir motorun yakıt karışım kontrolü hakkındaki aşağıdaki ifadelerden hangileri doğrudur?\nI. Yakıt tasarrufu sağlar.\nII. Düşük irtifada gücü artırır.\nIII. Kokpitte gaz kelebeği kolunun yanındaki mavi kol ile ayarlanabilir.\nIV. Egzoz Gazı Sıcaklığı (EGT) veya RPM göstergesi kullanılarak doğru şekilde ayarlanabilir.",
+   "options": [
+    "I & IV",
+    "II & IV",
+    "I & III",
+    "I & II"
+   ]
+  },
+  "14658": {
+   "text": "İrtifa azaldıkça, yanma odasına giren yakıt karışımı, hava yoğunluğu …(ii)… iken …(i)… hâle gelir.\nYukarıdaki cümleyi doğru şekilde tamamlayacak dört yanıttan birini seçin;",
+   "options": [
+    "fakir / artar",
+    "fakir / azalır",
+    "zengin / artar",
+    "zengin / azalır"
+   ]
+  },
+  "14659": {
+   "text": "İrtifa arttıkça, yanma odasına giren yakıt karışımı, hava yoğunluğu …(ii)… iken …(i)… hâle gelir. Yukarıdaki cümleyi doğru şekilde tamamlayacak dört yanıttan birini seçin.",
+   "options": [
+    "(i) zenginleşiyor (ii) azalıyor.",
+    "(i) fakirleşiyor (ii) artıyor.",
+    "(i) fakirleşiyor (ii) azalıyor.",
+    "(i) zenginleşiyor (ii) artıyor."
+   ]
+  }
+ }
+}

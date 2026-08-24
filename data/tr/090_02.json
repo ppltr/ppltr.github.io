@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "16382": {
+   "text": "13500 sayısını iletmenin doğru yolu nedir?",
+   "options": [
+    "one three thousand five hundred",
+    "thirteen thousand five hundred",
+    "one three five zero zero",
+    "one three five hundred"
+   ]
+  },
+  "16383": {
+   "text": "23.500 feet'i bir irtifa ya da bulut yüksekliğini belirtmek için iletmenin doğru yolu nedir?",
+   "options": [
+    "Two three thousand five hundred feet",
+    "Two three five zero zero feet",
+    "Thirteen thousand five hundred.",
+    "One three thousand five hundred"
+   ]
+  },
+  "16384": {
+   "text": "OE-JVK çağrı adını iletmenin doğru yolu nedir?",
+   "options": [
+    "Oscar Echo Juliett Victor Kilo",
+    "Oscar Echo Jankee Victor Kilogramm",
+    "Omega Echo Jankee Victor Kilo",
+    "Omega Echo Juliett Victor Kilogramm"
+   ]
+  },
+  "16385": {
+   "text": "'AFFIRM' ifadesinin anlamı nedir?",
+   "options": [
+    "YES",
+    "WILCO",
+    "ROGER",
+    "AFFIRMATIVE"
+   ]
+  },
+  "16386": {
+   "text": "'Confirm' ifadesinin anlamı nedir?",
+   "options": [
+    "AFFIRM",
+    "WILCO",
+    "ROGER",
+    "AFFIRMATIVE"
+   ]
+  },
+  "16387": {
+   "text": "Bir istasyondan alınan manyetik kerterizi belirten Q kodu nedir?",
+   "options": [
+    "QDR",
+    "QFE",
+    "QTE",
+    "QDM"
+   ]
+  },
+  "16388": {
+   "text": "Bir istasyona gitmek için izlenecek manyetik baş açısını (heading) belirten Q kodu nedir?",
+   "options": [
+    "QDM",
+    "QFE",
+    "QTE",
+    "QDR"
+   ]
+  },
+  "16389": {
+   "text": "Yer hareket kontrolü (surface movement control) sağlayan hava istasyonunun telsiz çağrı adı nedir?",
+   "options": [
+    "GROUND",
+    "APPROACH",
+    "ARRIVAL",
+    "RADAR."
+   ]
+  },
+  "16390": {
+   "text": "Bir uçak, Tower'dan \"GO AROUND\" talimatını aldığında kendisinden beklenen tepki nedir?",
+   "options": [
+    "bulunduğu konumdan tereddüt etmeden pas geçme (missed approach) manevrası yapar.",
+    "proceed with your message",
+    "360 derecelik dönüş yapar.",
+    "uçağın önünden geçer."
+   ]
+  },
+  "16391": {
+   "text": "Altimetresinde QFE ayarlı bir uçak havaalanında yerdeyken altimetre ……………… gösterir.",
+   "options": [
+    "Sıfır",
+    "200'",
+    "QFE",
+    "Havaalanı rakımı"
+   ]
+  },
+  "16392": {
+   "text": "İletim sırasında bir hata yapıldığında, düzeltmek için söylenmesi gereken:",
+   "options": [
+    "\"correction\" dedikten sonra doğru talimat veya talebi söylemektir.",
+    "\"reclear\" dedikten sonra doğru talimat veya talebi söylemektir.",
+    "\"Cancel\"",
+    "\"disregard\""
+   ]
+  },
+  "16393": {
+   "text": "Bir mesajın tekrarını istediğinizde şunu söylemelisiniz:",
+   "options": [
+    "SAY AGAIN",
+    "WORDS TWICE",
+    "REPEAT MESSAGE",
+    "SPEAK SLOWER"
+   ]
+  },
+  "16394": {
+   "text": "Bir hava istasyonunun çağrı adını ne zaman atlayabilirsiniz?",
+   "options": [
+    "Karışıklığa yol açmayacaksa.",
+    "Yalnızca istasyon önce böyle yaparsa.",
+    "Asla.",
+    "Yalnızca izin verildiğinde."
+   ]
+  },
+  "16395": {
+   "text": "İniş takibi (landing roll) sırasında kule kontrolünden \"cleared to taxi to apron via backtrack\" talimatı alındığında pilot;",
+   "options": [
+    "Pisti terk etmek için 180 derece dönüp inişin ters yönünde pist üzerinde taksi yapmalıdır.",
+    "Taksiye devam edip pisti sonundan terk etmelidir.",
+    "Pisti arkadaki ilk taksi yolundan terk etmelidir.",
+    "Pisti öndeki ilk taksi yolundan terk etmelidir."
+   ]
+  },
+  "16396": {
+   "text": "Pilot veya kontrolör, talimat ya da taleplerden birini kaçırdığında en uygun çağrı nedir?",
+   "options": [
+    "Say again",
+    "Say twice",
+    "Speak slower",
+    "Say one more"
+   ]
+  },
+  "16397": {
+   "text": "Aşağıdakilerden hangisi havacılık radyo frekans bantları ayrımını gösterir?",
+   "options": [
+    "118.00 - 136.975 Mhz",
+    "128.00 - 131.975 Khz",
+    "118.25 - 221.650 Khz",
+    "108.05 - 131.250 Mhz"
+   ]
+  },
+  "16398": {
+   "text": "Aşağıdakilerden hangisi doğrudur?",
+   "options": [
+    "ROGER, son iletiminizin tamamını aldığım anlamına gelir.",
+    "WILCO, mesajı aldığım ve anladığım anlamına gelir.",
+    "\"With you\" ifadesi frekansta olduğunuz anlamına gelir.",
+    "Pist 18, \"Runway Eighteen\" şeklinde iletilir."
+   ]
+  },
+  "16399": {
+   "text": "Aşağıdaki kalemlerden hangisinin geri okunması (read back) gerekli DEĞİLDİR?",
+   "options": [
+    "Çakışan trafik bilgisi",
+    "Kullanılan pist",
+    "ATSU tarafından istenen herhangi bir kalem",
+    "Hız talimatları"
+   ]
+  },
+  "16400": {
+   "text": "Aşağıdaki listelerden hangisi tam olarak geri okunması gereken tüm ATC mesajlarını içerir?",
+   "options": [
+    "aktif bir piste girme, o pistte iniş yapma, o pistten kalkma, geri taksi (backtrack), geçme veya kısa bekleme (hold short) müsaadesi; hız talimatları, SSR talimatları.",
+    "ATC rota müsaadeleri, pist müsaadeleri, güncel hava raporları.",
+    "VDF bilgisi, frekans değişiklikleri, radar hizmeti türü, yaklaşma yardımcısının kullanılabilirliği.",
+    "seviye talimatları, altimetre ayarları, yer rüzgârı, pist bilgisi."
+   ]
+  },
+  "16401": {
+   "text": "Aşağıdaki listelerden hangisi tam olarak geri okunması gereken tüm ATC mesajlarını içerir?",
+   "options": [
+    "aktif bir piste girme, o pistte iniş yapma, o pistten kalkma, geri taksi (backtrack), geçme veya kısa bekleme (hold short) müsaadesi; hız talimatları, SSR talimatları.",
+    "ATC rota müsaadeleri, pist müsaadeleri, güncel hava raporları.",
+    "VDF bilgisi, frekans değişiklikleri, radar hizmeti türü, yaklaşma yardımcısının kullanılabilirliği.",
+    "seviye talimatları, altimetre ayarları, yer rüzgârı, pist bilgisi."
+   ]
+  },
+  "16402": {
+   "text": "Aşağıdaki listelerden hangisi tam olarak geri okunması gereken tüm ATC mesajlarını içerir?",
+   "options": [
+    "aktif bir piste girme müsaadesi, iniş ve kalkış müsaadesi, geri taksi (backtrack), geçme veya kısa bekleme (hold short); irtifalar, baş açıları (heading), rapor noktaları, transponder kodları, frekanslar.",
+    "ATC rota müsaadeleri, pist müsaadeleri, güncel hava raporları.",
+    "frekans değişiklikleri, radar hizmeti türü, yaklaşma yardımcısının kullanılabilirliği.",
+    "seviye talimatları, altimetre ayarları, yer rüzgârı, pist bilgisi."
+   ]
+  },
+  "16403": {
+   "text": "Aşağıdaki ifadelerden hangisi doğrudur?",
+   "options": [
+    "Bir ATSU ile iletişim kurulduktan sonra, iletime başlarken çağrı adını iletimin başına koyarsınız; geri okuma yaparken ise çağrı adınızı iletimin sonuna koymalısınız.",
+    "Bir yer istasyonuyla konuşurken, kontrolör size sona koymanızı söyleyene kadar çağrı adınızı mesajın başına koyarsınız.",
+    "Çağrı adının konumu, aldığınız hava trafik hizmetinin türüne bağlıdır.",
+    "Bir yer istasyonuna yanıt verirken çağrı adınızı mesajın başına koyarsınız."
+   ]
+  },
+  "16404": {
+   "text": "Aşağıdaki ifadelerden hangisi \"Standby\" ifadesinin anlamını en iyi açıklar?",
+   "options": [
+    "Bekleyin, sizi ben arayacağım.",
+    "Önerilen eylem için izin verildi.",
+    "SSR transponderde STANDBY'ı seçin.",
+    "Mevcut baş açısında (heading) devam edin ve dinlemeye devam edin."
+   ]
+  },
+  "16405": {
+   "text": "\"Bu iletimde (veya belirtilen mesajda) bir hata yapılmıştır. Doğrusu ...\" demek istediğinizde hangi ifade kullanılmalıdır:",
+   "options": [
+    "QNH 1017, correction QNH 1016",
+    "QNH 1017, negative I say again 1016",
+    "QNH 1017, negative 1016",
+    "QNH 1017, negative QNH 1016"
+   ]
+  },
+  "16406": {
+   "text": "\"Bilmek istiyorum...\" ya da \"Elde etmek istiyorum...\" demek istediğinizde hangi ifade kullanılmalıdır?",
+   "options": [
+    "Request",
+    "Acknowledge",
+    "Report",
+    "Confirm"
+   ]
+  },
+  "16407": {
+   "text": "Müsaadede bir hata olduğunu belirtip doğrusuyla değiştirmek için hangi kelime veya ifade kullanılmalıdır?",
+   "options": [
+    "Correction.",
+    "Cleared.",
+    "I Say Again.",
+    "Recleared."
+   ]
+  },
+  "16408": {
+   "text": "Altimetresinde QFE ayarlı bir uçak, uçuş halindeyken havaalanı basınç referansına (pressure datum) olan dikey ayrımını ………….. olarak bildirir.",
+   "options": [
+    "yükseklik",
+    "altimetre",
+    "irtifa",
+    "havaalanı"
+   ]
+  },
+  "16409": {
+   "text": "3671 kodunu, mode charlie ile squawk ediyorsunuz. Şu talebi alıyorsunuz: 'Golf Bravo Zulu, confirm squawk'. Nasıl yanıt vermelisiniz?",
+   "options": [
+    "'3671, Golf Bravo Zulu'",
+    "'Affirm squawk 3671 with mode charlie, Golf Bravo Zulu'",
+    "'Confirm squawking 3671, Golf Bravo Zulu'",
+    "'3671 with Charlie, Golf Bravo Zulu'"
+   ]
+  },
+  "16411": {
+   "text": "Bir ATSU'yu çağırıyorsunuz ve \"T BC Stand-By\" yanıtını alıyorsunuz; yapmanız gereken:",
+   "options": [
+    "hiçbir şey söylememeli, ileri bir müsaade olmadığını varsayıp çağrılana kadar beklemelisiniz.",
+    "frekansı değiştirmelisiniz.",
+    "müsaade almak için 5 dakika sonra ATSU'yu tekrar çağırmalısınız.",
+    "hemen onaylamalısınız; \"Stand-by T BC\"."
+   ]
+  },
+  "16412": {
+   "text": "Radyo kontrolünüz 'Readability 3' olarak bildiriliyor; iletiminiz:",
+   "options": [
+    "güçlükle okunuyor.",
+    "zamanın yalnızca yarısında okunuyor.",
+    "mükemmel okunuyor.",
+    "okunmuyor."
+   ]
+  },
+  "25449": {
+   "text": "\"CORRECT\" kelimesi ne anlama gelir:",
+   "options": [
+    "Doğrudur.",
+    "Son talimatımı doğru olarak tekrar et.",
+    "Konuşmamın son doğru ölümünü takip eden mesaj veya kalıp doğrudur.",
+    "Son talimatını düzelteceksin."
+   ]
+  },
+  "16413": {
+   "text": "\"Cleared for immediate take off\" talimatı ...",
+   "options": [
+    "taksiyi durdurmadan piste girme ve beklemeden kalkma içindir.",
+    "Bu, az önce inmiş bir uçağın arkasından kalkış yapılırken verilen bir talimattır.",
+    "Yalnızca kontrolsüz havaalanlarında verilebilen bir talimattır.",
+    "taksiyi durdurmadan piste giriş için verilir."
+   ]
+  },
+  "16414": {
+   "text": "Koşullu bir müsaade (conditional clearance) şunları içermelidir:",
+   "options": [
+    "çağrı adı, koşul, müsaade.",
+    "çağrı adı, havaalanı hava durumu, müsaade,",
+    "çağrı adı, kullanılan pist, müsaade.",
+    "çağrı adı, QNH, müsaade."
+   ]
+  },
+  "16415": {
+   "text": "Bir pilot ATC'den şu mesajı alıyor: \"TC-ABC, After departure cleared to zone boundary via Route Bravo, Climb to Altitude 2 500 feet, QNH 1005, Squawk 6521.\" Bu ne tür bir müsaadedir?",
+   "options": [
+    "Bir rota müsaadesi.",
+    "Bir hareket müsaadesi (departure clearance).",
+    "Bir koşullu müsaade.",
+    "Bir kalkış müsaadesi (take-off clearance)."
+   ]
+  },
+  "16416": {
+   "text": "CTR ne anlama gelir?",
+   "options": [
+    "Kontrol bölgesi",
+    "Kontrol sahası.",
+    "Merkezi trafik bölgesi.",
+    "Merkez bölgesi."
+   ]
+  },
+  "16417": {
+   "text": "'Readability 4' ne anlama gelir:",
+   "options": [
+    "mesajınız okunabilir.",
+    "mesajınız mükemmel okunabilir ve anlaşılmıştır.",
+    "mesajınız okunabilir ancak arka planda parazit var.",
+    "mesajınız güçlükle okunabilir."
+   ]
+  },
+  "16418": {
+   "text": "READABILITY 5 ne anlama gelir:",
+   "options": [
+    "mükemmel okunabilir",
+    "okunmuyor",
+    "okunabilir",
+    "arada bir okunabilir"
+   ]
+  },
+  "16419": {
+   "text": "Kontrolör tarafından verilen taksi talimatları, normalde şu olacak bir müsaade sınırı (clearance limit) içerir:",
+   "options": [
+    "kullanılan pistin bekleme noktası (holding point).",
+    "ara bir pistin bekleme noktası.",
+    "park alanının girişi.",
+    "kullanılan pistin eşiği (threshold)."
+   ]
+  },
+  "16420": {
+   "text": "Yerde radyo kontrolü istemek için yapılması gereken doğru çağrı:",
+   "options": [
+    "Esenboğa Tower TC-ABC RADIO CHECK 118.1",
+    "Esenboğa Tower TC-ABC READABILITY CHECK 118.1",
+    "Esenboğa Tower TC-ABC HOW DO YOU READ 118.1",
+    "TC-ABC RADIO CHECK"
+   ]
+  },
+  "16421": {
+   "text": "Kalkışa hazır olduğunuzda yapılması gereken doğru RTF çağrısı:",
+   "options": [
+    "Ready for departure.",
+    "Request departure clearance.",
+    "Request take off.",
+    "Roger take off."
+   ]
+  },
+  "16422": {
+   "text": "'take off' ifadesi bir pilot tarafından şu durumda kullanılır:",
+   "options": [
+    "yalnızca kalkış müsaadesini onaylamak için.",
+    "uçak havalandıktan sonra.",
+    "yalnızca acil müsaade talep etmek için.",
+    "asla. Yalnızca bir yer istasyonu tarafından kullanılır."
+   ]
+  },
+  "16423": {
+   "text": "Bir iletimin okunabilirliğinin (readability) 5 olması şu anlama gelir:",
+   "options": [
+    "Mükemmel okunabilir",
+    "Okunmuyor",
+    "Güçlükle okunabilir",
+    "Okunabilir"
+   ]
+  },
+  "16424": {
+   "text": "Kule tarafından \"take-off immidiately or vacate runway\" talimatı verildiğinde, pilot tarafından hangi hareket tarzı izlenmelidir?",
+   "options": [
+    "Mümkünse hemen kalkış yapmalı ya da pisti ilk taksi yolundan terk etmelidir (veya kule tarafından talimat verildiği şekilde)",
+    "Kalkış hazırlığını göz ardı ederek hemen kalkış yapmalıdır",
+    "Hemen bekleme noktasına geri dönmelidir",
+    "Geri okuma yapmadan hemen kalkış yapmalıdır"
+   ]
+  },
+  "16425": {
+   "text": "Motor çalıştırma ve taksi izni isteyebileceğiniz hava biriminin doğru çağrı adı aşağıdakilerden hangisidir?",
+   "options": [
+    "Tower",
+    "Control",
+    "Apron",
+    "Information"
+   ]
+  },
+  "16426": {
+   "text": "Radar ve kule kontrolü olan bir havaalanından ayrılırken doğru iletişim sırası aşağıdakilerden hangisidir?",
+   "options": [
+    "ATIS-Delivery- Ground -Tower-Approach",
+    "Apron- Ground -ATIS-approach-Tower",
+    "Delivery-ATIS -Ground -Approach-Tower",
+    "Ground -Apron-ATIS-Tower-Approach"
+   ]
+  },
+  "16427": {
+   "text": "Kalkışa hazır olunduğunu bildirmek için aşağıdaki ifadelerden hangisi kullanılmalıdır?",
+   "options": [
+    "Ready for departure",
+    "Ready to go",
+    "Ready to line-up",
+    "Ready for take-off"
+   ]
+  },
+  "16428": {
+   "text": "Bir mevki raporu (position report) şu bilgileri içermelidir:",
+   "options": [
+    "Uçak kimliği, mevki, seviye, zaman, sonraki mevki ve ETA.",
+    "Uçak kimliği, mevki, seviye, zaman, sonraki mevki ve ETA, IFR veya VFR.",
+    "Mevki, seviye, zaman, sonraki mevki ve ETA.",
+    "Uçak kimliği, mevki, seviye, zaman, sonraki mevki ve ETA, POB."
+   ]
+  },
+  "16429": {
+   "text": "TC-ABC uçağına 120.5 frekansı talimatı verilmiştir. Bu talimata uyacağını belirtmek için doğru yanıt nedir?",
+   "options": [
+    "120.5 TC-ABC",
+    "monitoring 120.5 TC-ABC",
+    "willco TC-ABC",
+    "checking 120.5 TC-ABC"
+   ]
+  },
+  "16430": {
+   "text": "CAVOK, \"Ceiling and visibility OK\" ifadesinin kısaltmasıdır; peki bunun sınırları nedir?",
+   "options": [
+    "5000 feet'in altında veya minimum sektör irtifasının altında (hangisi büyükse) bulut yok; CB, gökgürültülü fırtına veya yağış yok; görüş 10 km veya daha fazla, sığ sis veya alçaktan sürüklenen kar yok",
+    "Kalkış havaalanı için hiçbir alternatif (diversion) mevcut değildir",
+    "5000 feet'in altında veya minimum sektör irtifasının üstünde (hangisi büyükse) bulut yok; CB, gökgürültülü fırtına veya yağış yok; görüş 5 km veya daha fazla, sığ sis veya alçaktan sürüklenen kar yok",
+    "Pist kurudur"
+   ]
+  },
+  "16431": {
+   "text": "Bir havacılık rutin hava raporunda (METAR) görüş, düz dilde (plain language) nasıl ifade edilir:",
+   "options": [
+    "5000 m'ye kadar metre cinsinden, üzerinde kilometre cinsinden",
+    "Feet ve deniz mili cinsinden",
+    "1500 m'ye kadar metre cinsinden, üzerinde kilometre cinsinden",
+    "Yalnızca deniz mili cinsinden"
+   ]
+  },
+  "16432": {
+   "text": "Bir pilot, kalkış manevrasını iptal etmek zorunda olduğunu kontrol kulesine nasıl bildirmelidir?",
+   "options": [
+    "Stopping",
+    "Aborting take-off.",
+    "Cancelling take-off.",
+    "Abandoning take-off."
+   ]
+  },
+  "16433": {
+   "text": "ATC bana 1215'i squawk etmemi talimat ederse yapmam gereken hareket nedir?",
+   "options": [
+    "1215'i geri okurum ve transponderime 1215 kodunu ayarlarım",
+    "WILCO ve çağrı adımla geri okuma yaparım.",
+    "1215'i geri okurum ve altimetremi QNH 1215'e ayarlarım",
+    "121.5'i geri okurum ve radyo frekansımı 121.5 uluslararası acil durum frekansına ayarlarım"
+   ]
+  },
+  "16434": {
+   "text": "Radar ortamında, pilot tarafından verilen baş açısı (heading) bilgisi ve kontrolörler tarafından verilen baş açısı talimatları şu cinstendir:",
+   "options": [
+    "derece manyetik baş açısı (heading).",
+    "derece mutlak (absolute).",
+    "derece Celsius.",
+    "derece gerçek (true) baş açısı."
+   ]
+  },
+  "16435": {
+   "text": "Çakışan bir rota üzerindeki trafikle ilgili bilgi belirli bir sırayla verilir. Aşağıdaki sıralardan hangisi doğrudur:",
+   "options": [
+    "çakışan trafiğin 12 saatlik saat kadranına göre bağıl kerterizi; çakışan trafiğe olan mesafe ve uçuş yönü; çakışan trafiğin seviyesi ve uçak tipi.",
+    "çakışan trafiğin yönü ve bağıl hızı; çakışan trafiğin gerçek kuzeye göre bağıl kerterizi; çakışan trafiğe olan bağıl mesafe.",
+    "çakışan trafiğin bağıl hızı; çakışan trafiğin 12 saatlik saat kadranına göre bağıl kerterizi; çakışan trafiğe olan mesafe ve uçuş yönü; çakışan trafiğin seviyesi ve uçak tipi.",
+    "çakışan trafiğe olan mesafe; çakışan trafiğin seviyesi ve hızı; manyetik kuzeye göre bağıl kerteriz."
+   ]
+  },
+  "16436": {
+   "text": "Taksi sırasında pilot kontrolörden \"remain this frequency\" çağrısını aldığında, pilotun yapması gereken;",
+   "options": [
+    "Yeni bir talimat gelene kadar frekansı dinlemeye devam etmelidir",
+    "Dinlemeye devam etmeli ve bekleme noktasına vardığında Tower'a geçmelidir",
+    "Dinlemeye devam etmeli ve park alanına vardığında Ground Control'e geçmelidir.",
+    "Her 2 dakikada bir kuleyi tekrar çağırmalıdır"
+   ]
+  },
+  "16437": {
+   "text": "'SQUAWK 1244' ne anlama gelir:",
+   "options": [
+    "SSR transponderinizde 1244 kodunu seçin.",
+    "SSR transponderinizde 1244 MHz'i seçin.",
+    "Com 124.4 MHz'i seçin ve ident için squawk yapın.",
+    "124.4 MHz'de Squawk'a geçin, detaylarınız onlarda mevcut."
+   ]
+  },
+  "16438": {
+   "text": "SQUAWK IDENT ne anlama gelir:",
+   "options": [
+    "kontrol ünitesindeki IDENT düğmesine basın.",
+    "çağrı adınızı tekrar söyleyin.",
+    "SSR transponder modunu 'ALT' olarak seçin.",
+    "SSR transponder kodunu 7000 olarak seçin."
+   ]
+  },
+  "16439": {
+   "text": "\"Squawk Charlie\" ifadesi ne anlama gelir:",
+   "options": [
+    "transponderde 'ALT'ı seçin.",
+    "transponderde 7700'ü seçin.",
+    "transponderin AÇIK (ON) konumda olduğunu doğrulayın.",
+    "transponder."
+   ]
+  },
+  "16440": {
+   "text": "Transponderi ALT'a ayarlı bir uçağın kaptanına ATC'nin 'confirm your level' talebinde bulunmasının amacı şudur:",
+   "options": [
+    "kontrolörün radar ekranında görüntülenen Mode 'C' uçuş seviyesinin doğruluğunu kontrol etmek.",
+    "transponderin çalıştığını doğrulamak.",
+    "altimetre alt skala ayarını doğrulamak.",
+    "uçağın mevkiini doğrulamak."
+   ]
+  },
+  "16441": {
+   "text": "Transponder IDENT konumuna şu durumda seçilir:",
+   "options": [
+    "Kontrolörün talebi üzerine",
+    "Başka bir kontrol sahasına geçerken",
+    "Pilot ne zaman ihtiyaç duyarsa",
+    "Bir acil durum meydana geldiğinde"
+   ]
+  },
+  "16442": {
+   "text": "Görüşü ifade etmenin doğru yolu nedir?",
+   "options": [
+    "Görüş 1200 metre",
+    "Görüş 1.2 deniz mili",
+    "Görüş 1200 feet",
+    "Görüş 1.2 kilometre"
+   ]
+  },
+  "16443": {
+   "text": "Bir havacılık rutin hava raporunda (METAR) \"FEW\" terimi kullanıldığında, gökyüzünü kaplayan bulut miktarı:",
+   "options": [
+    "1/8 – 2/8",
+    "8/8",
+    "2/8 – 3/8",
+    "3/8 - 4/8"
+   ]
+  },
+  "16444": {
+   "text": "Bir havacılık rutin hava raporunda (METAR) \"Overcast\" terimi kullanıldığında, gökyüzünü kaplayan bulut miktarı:",
+   "options": [
+    "8/8",
+    "Bulut yok ama yer görüşü zayıf",
+    "5/8 veya daha az",
+    "5/8 veya daha fazla"
+   ]
+  },
+  "16445": {
+   "text": "Bir havacılık rutin hava raporunda (METAR) \"SCATTERED\" terimi kullanıldığında, gökyüzünü kaplayan bulut miktarı:",
+   "options": [
+    "3/8 - 4/8",
+    "8/8",
+    "2/8 - 3/8",
+    "5/8"
+   ]
+  },
+  "16447": {
+   "text": "Aşağıdaki seçeneklerden hangisi bir mevki raporu (Position Report) için doğru sıra ve içeriği verir?",
+   "options": [
+    "Çağrı adı, mevki, zaman, seviye veya irtifa, ETA ile birlikte sonraki mevki.",
+    "Rota, mevki, zaman, seviye veya irtifa, sonraki mevkideki ETA, çağrı adı.",
+    "Mevki, seviye veya irtifa, zaman, sonraki mevkideki ETA, çağrı adı.",
+    "Çağrı adı, rota, mevki, seviye, sonraki mevki ETA'sı, baş açısı (heading), talep."
+   ]
+  },
+  "16448": {
+   "text": "Aşağıdaki seçeneklerden hangisi bir mevki raporu (Position Report) için doğru sıra ve içeriği verir?",
+   "options": [
+    "Çağrı adı, mevki, zaman, seviye veya irtifa, ETA ile birlikte sonraki mevki.",
+    "Rota, mevki, zaman, seviye veya irtifa, sonraki mevkideki ETA, çağrı adı.",
+    "Mevki, seviye veya irtifa, zaman, sonraki mevkideki ETA, çağrı adı.",
+    "Çağrı adı, rota, mevki, seviye, sonraki mevki ETA'sı, baş açısı (heading), talep."
+   ]
+  },
+  "16449": {
+   "text": "Hangi transponder modu irtifa okuması verir:",
+   "options": [
+    "Mode Charlie.",
+    "Mode Delta.",
+    "Mode Bravo.",
+    "Mode Alpha."
+   ]
+  },
+  "16450": {
+   "text": "SSR transponder AÇIK (ON) konumdayken, ATC'nin 'TC-ABC verify your level' mesajı şu amaçla yapılır:",
+   "options": [
+    "kontrolöre görüntülenen Mode C seviye bilgisinin doğruluğunu kontrol etmek ve teyit etmek.",
+    "Mode C'nin AÇIK (ON) seçili olduğunu pilotla teyit etmek.",
+    "altimetre ayarınızı kontrol etmek.",
+    "uçağın mevkiini belirlemek."
+   ]
+  },
+  "16451": {
+   "text": "\"TC-ABC Squawk Ident\" mesajını alıyorsunuz. Yapmanız gereken:",
+   "options": [
+    "SSR transponderdeki özel mevki tanımlama (identification) işlevini çalıştırmak.",
+    "çağrı adınızı vererek yanıt vermek.",
+    "SSR transponderde ALT - irtifa raporlama özelliğini (Mode C) seçmek.",
+    "SSR transponderde STANDBY'ı seçmek."
+   ]
+  },
+  "16452": {
+   "text": "ATC'den gelen \"RECYCLE SQUAWK\" talimatına karşı hareketiniz şudur:",
+   "options": [
+    "kontrol ünitesindeki sayıları yeniden seçmek",
+    "STANDBY'a alıp tekrar AÇIK (ON) konuma getirmek",
+    "IDENT düğmesine basmak",
+    "sayıları 7000'e ayarlamak"
+   ]
+  }
+ }
+}

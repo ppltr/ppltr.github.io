@@ -1,0 +1,319 @@
+{
+ "questions": {
+  "15815": {
+   "text": "Litre ile US-GAL arasındaki oran nedir?",
+   "options": [
+    "1 US-GAL, 3.7853 litreye eşittir.",
+    "1 litre, 3.7853 US-GAL'e eşittir.",
+    "1 US-GAL, 4.55 litreye eşittir.",
+    "1 litre, 4.55 USGAL'e eşittir."
+   ]
+  },
+  "15775": {
+   "text": "A(28°00’N, 045°00’E) ile B(12°00’S, 045°00’E) arasındaki büyük daire mesafesi nedir?",
+   "options": [
+    "2400 NM",
+    "1960 NM",
+    "1440 NM",
+    "960 NM"
+   ]
+  },
+  "15795": {
+   "text": "Verilenler: True Track = 047°, rüzgâr yönü ve hızı 130/15. TAS = 130 kt ise sürüklenme açısı ve yer hızı nedir?",
+   "options": [
+    "7°L, 128 kt",
+    "7°R, 132 kt",
+    "7°R, 128 kt",
+    "7°L, 132 kt"
+   ]
+  },
+  "15758": {
+   "text": "Bir uçak, aynı meridyen boyunca 30 15’ güney enleminden 14 00’ güney enlemine doğru kuzeye uçuyor. Uçulan mesafe kilometre cinsinden nedir?",
+   "options": [
+    "1806 km",
+    "1890 km",
+    "1170km",
+    "6018 km"
+   ]
+  },
+  "15792": {
+   "text": "Alet ve pozisyon hatası olmadığı varsayılarak, ISA koşullarında FL 100'de IAS 150 kt ise TAS nedir?",
+   "options": [
+    "175 kt.",
+    "170 kt.",
+    "165 kt.",
+    "181 kt."
+   ]
+  },
+  "15770": {
+   "text": "82 NM'lik bir yer mesafesini 46 dakikada uçarsanız, yer hızınız;",
+   "options": [
+    "107 kt.",
+    "63 kt.",
+    "95 kt.",
+    "126 kt."
+   ]
+  },
+  "15851": {
+   "text": "Rüzgâr hızı 90 km/h ise, rüzgâr hızı knot cinsinden nedir?",
+   "options": [
+    "48.6 kts",
+    "33.4 kts",
+    "20.4 kts",
+    "54.6 kts"
+   ]
+  },
+  "15746": {
+   "text": "Belirli bir konumda, manyetik sapmanın (variation) değeri;",
+   "options": [
+    "zamanla yavaşça değişir.",
+    "gerçek baş açısına (true heading) bağlıdır.",
+    "takılı pusulanın türüne bağlıdır.",
+    "manyetik baş açısına (magnetic heading) bağlıdır."
+   ]
+  },
+  "15911": {
+   "text": "Bir uçağa takılan transponder, bir kontrolöre ne tür bir bilgi sağlamak için gerekli bir donanımdır?",
+   "options": [
+    "İkincil Gözetim Radarı (SSR) yansımaları",
+    "Alan Radarı yansımaları",
+    "Hassas Yaklaşma Radarı (PAR) yansımaları",
+    "Birincil radar yansımaları"
+   ]
+  },
+  "15832": {
+   "text": "Bir DR (dead reckoning) mevkiinin doğruluğunu belirleyen şu faktörleri düşünün: 1. Son mevki güncellemesinden bu yana geçen uçuş süresi. 2. Tahmin edilen rüzgârın doğruluğu. 3. TAS'ın doğruluğu. 4. Düzeltilmiş baş açısının (heading) doğruluğu. Yukarıdaki listeyi kullanarak, aşağıdakilerden hangisi en eksiksiz cevabı içerir?",
+   "options": [
+    "1 , 2 , 3 ve 4.",
+    "1 , 2 ve 3.",
+    "1 , 2 ve 4.",
+    "1 ve 2."
+   ]
+  },
+  "15791": {
+   "text": "088° TC ile 100 kts TAS hızında uçan bir uçak, 060 derecesinden 30 kts hızla esen bir rüzgârdan (060/30) etkileniyor. Sürüklenmeyi ve yer hızını hesaplayın.",
+   "options": [
+    "Sağ 8°, GS 74 kts.",
+    "Sol 13°, GS 64 kts.",
+    "Sağ 8°, GS 117 kts.",
+    "Sağ 13°, GS 128 kts."
+   ]
+  },
+  "15922": {
+   "text": "GPS'in üç ana segmenti nedir?",
+   "options": [
+    "Kontrol, Uzay, Kullanıcı",
+    "Dünya, Uzay, Ay",
+    "İzleme, Yukarı Bağlantı, Kontrol",
+    "Yer, Hava, Uzay"
+   ]
+  },
+  "15826": {
+   "text": "1,500 metrelik bir irtifa yaklaşık olarak",
+   "options": [
+    "4,900 ft.",
+    "4,100 ft.",
+    "4,000 ft.",
+    "3,600 ft."
+   ]
+  },
+  "15915": {
+   "text": "Özel SSR kodları şu şekildedir: acil durum______, telsiz arızası______, uçuşun seyrine kanunsuz müdahale_______.",
+   "options": [
+    "7700; 7600; 7500.",
+    "7500; 7600; 7700.",
+    "7600; 7500; 7700.",
+    "7700; 7600; 2000."
+   ]
+  },
+  "15808": {
+   "text": "Track= 300°, GS= 170 kt, W/V= 150°/30 kt. TAS'ı bulun?",
+   "options": [
+    "145 kt.",
+    "120 kt.",
+    "300 kt.",
+    "195 kt."
+   ]
+  },
+  "15782": {
+   "text": "Gün doğumu ile gün batımı arasındaki zaman aralığı neye bağlıdır;",
+   "options": [
+    "Güneşin deklinasyonu ve gözlemcinin enlemi.",
+    "Dünya ekseninin eğimi ve gözlemcinin boylamı.",
+    "Gözlemcinin enlemi ve boylamı.",
+    "Tarih ve gözlemcinin boylamı."
+   ]
+  },
+  "15840": {
+   "text": "30 NM yol aldıktan sonra, rotanızın 2 NM dışında olduğunuzu fark ediyorsunuz. Rota hatanız (track error) nedir?",
+   "options": [
+    "4°.",
+    "8°.",
+    "6°.",
+    "3°."
+   ]
+  },
+  "15853": {
+   "text": "Yer hızınız 80 kts ise, 2500 ft'ten 1000 ft'e 5 NM'de inmek için gereken alçalma oranı nedir?",
+   "options": [
+    "400 ft/min.",
+    "450 ft/min.",
+    "350 ft/min.",
+    "300 ft/min."
+   ]
+  },
+  "15804": {
+   "text": "Basınç irtifası= 10 000 feet; Sıcaklık= -30°C. IAS: 180. TAS'ı (True Air Speed) belirleyin.",
+   "options": [
+    "200 kt.",
+    "210 kt.",
+    "186 kt.",
+    "162 kt."
+   ]
+  },
+  "15672": {
+   "text": "Dünya, Güneş'ten en uzakta olduğu noktaya (Aphelion) yaklaşık olarak hangi tarihte ulaşır?",
+   "options": [
+    "Temmuz başı.",
+    "Eylül sonu.",
+    "Ocak başı.",
+    "Aralık sonu."
+   ]
+  },
+  "15779": {
+   "text": "Uluslararası Tarih Değiştirme Hattı şurada bulunur:",
+   "options": [
+    "180°E/W meridyeninde ya da bu meridyenin yakınında.",
+    "180°E/W meridyeni üzerindeki tüm enlemlerde.",
+    "Greenwich meridyeninde.",
+    "Görünür güneşin karşı meridyeninde (anti meridyen)."
+   ]
+  },
+  "15920": {
+   "text": "Nominal NAVSTAR GPS takımyıldızını (constellation) kaç uydu oluşturur?",
+   "options": [
+    "24",
+    "21",
+    "18",
+    "36"
+   ]
+  },
+  "15786": {
+   "text": "\"Standart zaman\" teriminin anlamı nedir?",
+   "options": [
+    "Bir ülke veya ülkenin bir bölümü için yasal makamlarca belirlenen zamandır.",
+    "Yalnızca ABD'de geçerli olan zaman dilimi sistemidir.",
+    "Yerel ortalama zaman (local mean time) için kullanılan bir ifadedir.",
+    "UTC için kullanılan başka bir terimdir."
+   ]
+  },
+  "15892": {
+   "text": "180°M baş açısında (heading) uçan bir uçak, bir VOR'dan 280°M kerteriz üzerindedir. VOR/ILS sağ/sol sapma ibresini TO göstergesiyle ortalamak için OMNI kerteriz seçicisinde (OBS) seçmeniz gereken kerteriz:",
+   "options": [
+    "100°",
+    "360°",
+    "45°",
+    "180°"
+   ]
+  },
+  "15713": {
+   "text": "Verilenler; gerçek rota hattı (true track) 070°, sapma (variation) 30°W, deviasyon +1°, sürüklenme (drift) 10°R. Pusula başını (compass heading) hesaplayın.",
+   "options": [
+    "089°",
+    "101°",
+    "091°",
+    "100°"
+   ]
+  },
+  "15812": {
+   "text": "True Track= 225°, TAS= 150 kt, W/V = 130°/25 kt. Yer hızı (Ground Speed) nedir?",
+   "options": [
+    "150 kt.",
+    "179 kt.",
+    "160 kt.",
+    "140 kt."
+   ]
+  },
+  "15732": {
+   "text": "True Track 344°, pusula başı (Compass Heading) 011°, deviasyon 3°E ve sapma (variation) 19°W ise, sürüklenme açısı (drift angle) nedir?",
+   "options": [
+    "11°L",
+    "11°R",
+    "5°R",
+    "5°L"
+   ]
+  },
+  "15907": {
+   "text": "Aşağıdakilerden hangisi bir VOR'un doğruluğunu etkilemez?",
+   "options": [
+    "Kadrant hatası (quadrantal error).",
+    "Yayılım hatası (propagation error).",
+    "VOR scalloping (dalgalanma).",
+    "Saha hatası (site error)."
+   ]
+  },
+  "15789": {
+   "text": "Bir uçak 240 kts IAS ile uçuyor. FL'i 150 ve OAT -20°C. 20 kts kuyruk rüzgârı (tailwind) var. 450 NM'yi uçmak ne kadar sürer?",
+   "options": [
+    "84 dakika.",
+    "68 dakika.",
+    "100 dakika.",
+    "1,4 dakika."
+   ]
+  },
+  "15733": {
+   "text": "True track 348°, sürüklenme (drift) 17° sol, sapma (variation) 32° W, deviasyon 4°E. Pusula başı (compass heading) nedir?",
+   "options": [
+    "033°.",
+    "007°.",
+    "359°.",
+    "337°."
+   ]
+  },
+  "15727": {
+   "text": "True Heading= 290°, VAR= - 12°, DEV= 8° E, sürüklenme (drift) 5° L. True Track nedir?",
+   "options": [
+    "285°.",
+    "302°.",
+    "288°.",
+    "273°."
+   ]
+  },
+  "15730": {
+   "text": "True Track 028°, pusula başı (Compass Heading) 005°, sürüklenme açısı (Drift Angle) 7°R ve sapma (Variation) 12°E ise, deviasyon nedir?",
+   "options": [
+    "4°E",
+    "18°E",
+    "18°W",
+    "4°W"
+   ]
+  },
+  "15849": {
+   "text": "T/O ve inişte 14kt yan rüzgâr (crosswind) sınırlaması olan bir uçağın PIC'i, üç operasyonel pist seçeneğine sahiptir. Yer rüzgârı 250/18kt olduğuna göre, aşağıdaki pistlerden hangileri uçağın sınırları içinde bir yan rüzgâr verir?",
+   "options": [
+    "22 ve 29",
+    "29 ve 33",
+    "Yalnızca 29",
+    "22, 29 ve 33"
+   ]
+  },
+  "15773": {
+   "text": "Uçağın TAS'ı 80kt. Rüzgâr bileşeni -15 kt (baş rüzgâr / headwind). Bir saatte kat edilen yer mesafesini hesaplayın?",
+   "options": [
+    "65NM",
+    "70 NM",
+    "80NM",
+    "95NM"
+   ]
+  },
+  "15917": {
+   "text": "Bir uçağa monte edilmiş transponderin kapasitesine uygulandığında 'Mode Charlie' ifadesinin anlamı nedir?",
+   "options": [
+    "Transponder hem kimlik hem de irtifa bilgisi sağlar",
+    "Transponder yalnızca QDM ve QDR bilgisi sağlar",
+    "Transponder yalnızca QDM bilgisi sağlar",
+    "Transponder yalnızca konum bilgisi sağlar"
+   ]
+  }
+ }
+}

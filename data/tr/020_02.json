@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "14502": {
+   "text": "Dizel motorlar, benzinli motorlarla karşılaştırıldığında;",
+   "options": [
+    "daha yüksek bir sıkıştırma oranına sahiptir.",
+    "aynı sıkıştırma oranına sahiptir.",
+    "değişken bir sıkıştırma oranına sahiptir.",
+    "daha düşük bir sıkıştırma oranına sahiptir."
+   ]
+  },
+  "14503": {
+   "text": "Bir tam Otto Çevrimi boyunca krank mili",
+   "options": [
+    "İki kez döner.",
+    "Silindir sayısına bağlı olarak birkaç kez döner.",
+    "Bir kez döner.",
+    "Dört kez döner."
+   ]
+  },
+  "14504": {
+   "text": "Pistonlu motorların dört zamanlı çevriminde krank mili iki tur atar. İlk turdaki zamanlar hangileridir?",
+   "options": [
+    "Emme ve sıkıştırma.",
+    "Güç ve egzoz.",
+    "Sıkıştırma ve güç.",
+    "Emme ve güç."
+   ]
+  },
+  "14505": {
+   "text": "Pistonlu motorların dört zamanlı çevriminde krank mili iki tur atar. İkinci turdaki zamanlar hangileridir?",
+   "options": [
+    "Güç ve egzoz.",
+    "Sıkıştırma ve güç.",
+    "Emme ve sıkıştırma.",
+    "Emme ve güç."
+   ]
+  },
+  "14506": {
+   "text": "Bir tam Otto Çevrimi için temel olan, her pistonun şu şekilde hareket etmesidir:",
+   "options": [
+    "iki kez yukarı, iki kez aşağı.",
+    "iki kez yukarı, bir kez aşağı.",
+    "dört kez yukarı, dört kez aşağı.",
+    "bir kez yukarı, bir kez aşağı."
+   ]
+  },
+  "14508": {
+   "text": "Dört zamanlı pistonlu motorlarda, supaplar tek tek şu zamanlarda açılır;",
+   "options": [
+    "Emme ve egzoz zamanlarında.",
+    "Güç ve egzoz zamanlarında.",
+    "Sıkıştırma ve güç zamanlarında.",
+    "Emme ve güç zamanlarında."
+   ]
+  },
+  "14509": {
+   "text": "Dört zamanlı bir motorda piston, etkin hacmi artıracak şekilde ne zaman aşağı iner?",
+   "options": [
+    "Emme, güç",
+    "Sıkıştırma, egzoz",
+    "Emme, sıkıştırma",
+    "Emme, egzoz"
+   ]
+  },
+  "14510": {
+   "text": "Bir pistonlu motorda en iyi verimi elde etmek için, güç zamanının sonunda emme ve egzoz supaplarının konumu şöyledir;",
+   "options": [
+    "emme supabı kapalı, egzoz supabı açık.",
+    "her iki supap da kapalı.",
+    "her iki supap da açık.",
+    "egzoz supabı kapalı, emme supabı açık."
+   ]
+  },
+  "14511": {
+   "text": "Pistonun doğrusal hareketi, hangi zamanda krank milinin dönme hareketine çevrilir?",
+   "options": [
+    "Güç.",
+    "Egzoz",
+    "Sıkıştırma.",
+    "Emme."
+   ]
+  },
+  "14512": {
+   "text": "Güç ünitesi (powerplant) şunlara göre sınıflandırılabilir:\nI. bir çevrimdeki zaman sayısına.\nII. ateşleme tipine.\nIII. yanmanın gerçekleştiği yere.",
+   "options": [
+    "Hepsi.",
+    "II ve III.",
+    "I ve II.",
+    "Yalnızca I."
+   ]
+  },
+  "14514": {
+   "text": "Dört zamanlı bir motorun doğru çalışma çevrimi:",
+   "options": [
+    "emme, sıkıştırma, güç, egzoz",
+    "egzoz, emme, güç, sıkıştırma",
+    "emme, güç, sıkıştırma, egzoz",
+    "egzoz, güç, emme, sıkıştırma"
+   ]
+  },
+  "14515": {
+   "text": "Krank grubu şunlardan oluşur",
+   "options": [
+    "Krank mili, biyel kolları ve pistonlar.",
+    "Krank mili, eksantrik mili, supaplar, supap yayları ve itici çubuklar.",
+    "Karter, krank mili, biyel kolları ve pistonlar.",
+    "Yağ filtresi, krank mili, pistonlar ve biyel kolları."
+   ]
+  },
+  "14516": {
+   "text": "Dört zamanlı bir pistonlu motorda krank mili:",
+   "options": [
+    "gidip gelme hareketini dönme hareketine çevirir.",
+    "doğrusal hareketi gidip gelme hareketine çevirir.",
+    "dönme hareketini gidip gelme hareketine çevirir.",
+    "supap boşluğunu kontrol eder."
+   ]
+  },
+  "14517": {
+   "text": "Pistonlu bir motorda krank mili:",
+   "options": [
+    "Gidip gelme hareketini dönme hareketine çevirir.",
+    "Eksantrik mili hızının yarısında döner.",
+    "Dönme hareketini gidip gelme hareketine çevirir.",
+    "Supap boşluğunu kontrol eder."
+   ]
+  },
+  "14518": {
+   "text": "Bir pistonun ÜÖN'si ile AÖN'si arasındaki mesafe:",
+   "options": [
+    "Bir zamanın (stroke) uzunluğudur.",
+    "Silindirin yüksekliğidir.",
+    "Yanma odasıdır.",
+    "Toplam hacimdir."
+   ]
+  },
+  "14519": {
+   "text": "Dört zamanlı bir motorda, yanma tamamlandıktan sonra güç zamanı sırasında silindir içindeki gazların sıcaklığı:",
+   "options": [
+    "Azalır",
+    "Sabit kalır",
+    "Charles Yasasını izler",
+    "Artar"
+   ]
+  },
+  "14520": {
+   "text": "Pistonlu bir motorda doğru supap zamanlamasını sağlamak için supaplar, şu hızda çalışan bir eksantrik mili aracılığıyla açılır;",
+   "options": [
+    "Krank mili hızının yarısında.",
+    "Motor hızının iki katında.",
+    "Motor hızıyla aynı hızda.",
+    "Krank mili hızının iki katında."
+   ]
+  },
+  "14521": {
+   "text": "Aşağıdakilerden hangisi dizel motorlar ile benzinli motorların ortak bir özelliği olabilir?",
+   "options": [
+    "Zamanların sırası",
+    "Yukarıdakilerin hepsi",
+    "Bujiler",
+    "Karışım ayarı"
+   ]
+  },
+  "14522": {
+   "text": "Aşağıdakilerden hangisi dizel motorun bir parçasıdır?",
+   "options": [
+    "Kızdırma bujisi",
+    "Karışım kolu",
+    "Karbüratör ısıtıcı kapsülü",
+    "Manyeto"
+   ]
+  },
+  "14523": {
+   "text": "Emme zamanı ile ilgili hangi ifade doğrudur;",
+   "options": [
+    "Emme supabı Üst Ölü Nokta'da açılır, aşağı inen piston karışımı çeker ve son olarak emme supabı Alt Ölü Nokta'da kapanır.",
+    "Emme supabı Üst Ölü Nokta'da kapanır, yukarı çıkan piston karışımı çeker ve son olarak emme supabı Alt Ölü Nokta'da açılır.",
+    "Emme supabı Üst Ölü Nokta'da kapanır, aşağı inen piston karışımı çeker ve son olarak emme supabı Alt Ölü Nokta'da açılır.",
+    "Emme supabı Üst Ölü Nokta'da açılır, yukarı çıkan piston karışımı sıkıştırır ve son olarak emme supabı Alt Ölü Nokta'da kapanır."
+   ]
+  },
+  "14524": {
+   "text": "Bir tam Otto Çevrimi içinde, dört zamanlı bir pistonlu motorun her bir supabı:",
+   "options": [
+    "Bir kez açılır.",
+    "Emme zamanında açılır.",
+    "Güç zamanında açılır.",
+    "İki kez açılır."
+   ]
+  },
+  "14525": {
+   "text": "Yatağına düzgün oturmayan bir basınç tahliye valfi şu sonuca yol açar;",
+   "options": [
+    "düşük yağ basıncı.",
+    "aşırı yağ tüketimi.",
+    "düşük yağ sıcaklığı.",
+    "yüksek yağ basıncı."
+   ]
+  },
+  "14526": {
+   "text": "Islak karterli bir motor:",
+   "options": [
+    "yağın tamamını, genellikle karterin bir parçasını oluşturan bir karterde depolar.",
+    "yağın tamamını ıslak kartere tahliye eder; burada süzülür, depolama tankına pompalanır ve yeniden dolaşıma sokulur.",
+    "yedek yağ miktarı taşınması yasal bir gereklilik olduğu için küçük bir depolama tankı kullanır.",
+    "karterdeki yağın bir kısmını bir depolama tankına geri gönderen bir tahliye pompası kullanır."
+   ]
+  },
+  "14527": {
+   "text": "Islak karterli bir yağlama sistemiyle tasarlanmış bir uçak pistonlu motoru:",
+   "options": [
+    "bir depolama tankı kullanmaz.",
+    "bir depolama tankından yer çekimiyle beslenir.",
+    "karterdeki yağı depolama tankından tamamlayan bir basınç pompası kullanır.",
+    "karterdeki yağı bir depolama tankına geri gönderen bir tahliye pompası kullanır."
+   ]
+  },
+  "14528": {
+   "text": "Yağın çalışır durumdaki bir motor yağ soğutucusundan geçmesine ya da onu baypas etmesine izin veren valf, hangi tahrik yöntemiyle çalışır?",
+   "options": [
+    "Sıcaklıkla tahrikli",
+    "Elektrikle tahrikli",
+    "Elle tahrikli",
+    "Basınçla tahrikli"
+   ]
+  },
+  "14530": {
+   "text": "Aşırı yağ basıncı şununla giderilebilir:",
+   "options": [
+    "Bir yağ basıncı tahliye valfi",
+    "Bir yağ tankı taşma borusu",
+    "Bir radyatör",
+    "Bir termal kesici"
+   ]
+  },
+  "14531": {
+   "text": "Belirli bir yağ türü için yağın viskozitesi şuna bağlıdır:",
+   "options": [
+    "yağ sıcaklığına.",
+    "dış basınca.",
+    "yağ miktarına.",
+    "yağ basıncına."
+   ]
+  },
+  "14532": {
+   "text": "İç soğutma için pistonlu motorlar özellikle şuna bağımlıdır;",
+   "options": [
+    "yağlama yağının dolaşımına.",
+    "zengin bir yakıt/hava karışımına.",
+    "fakir bir yakıt/hava karışımına.",
+    "düzgün çalışan bir termostata."
+   ]
+  },
+  "14533": {
+   "text": "Islak karterli bir yağlama sisteminde yağ normalde şurada depolanır:",
+   "options": [
+    "Motor karteri",
+    "Motor yağlama galerisi",
+    "Hem motor karteri hem de ayrı bir tank",
+    "Ayrı bir tank"
+   ]
+  },
+  "14534": {
+   "text": "Gerek ıslak gerekse kuru karterli bir pistonlu motorda, yağ basınç sensörü şurada bulunur:",
+   "options": [
+    "basınç pompasının çıkış tarafında.",
+    "basınç pompasının giriş tarafında.",
+    "tahliye pompasının çıkış tarafında.",
+    "tahliye pompasının giriş tarafında."
+   ]
+  },
+  "14535": {
+   "text": "Yağlamanın birincil amacı:",
+   "options": [
+    "Sürtünmeyi azaltmak ve iç soğutmaya yardımcı olmaktır.",
+    "Güç çıkışını artırmaktır.",
+    "Temizliğe yardımcı olmak ve motor ömrünü artırmaktır.",
+    "Titreşimi azaltmak ve verimi artırmaktır."
+   ]
+  },
+  "14536": {
+   "text": "Yağ basıncı göstergesindeki okuma:",
+   "options": [
+    "Basınç pompasının çıkış tarafındaki yağ basıncıdır.",
+    "Basınç pompasının giriş tarafındaki yağ basıncıdır.",
+    "Yağ tankı haznesindeki basınçtır.",
+    "Basınç pompası basıncı ile tahliye pompası basıncı arasındaki farktır."
+   ]
+  },
+  "14537": {
+   "text": "Bir akışkanın akmaya karşı gösterdiği direnç ……………. olarak adlandırılır ve sıcaklıkla ……………. orantılıdır; bu yüzden sıcaklığın azalması bir sıvının akmasını ……………. hale getirir.",
+   "options": [
+    "Viskozite – ters – daha zor.",
+    "Viskozite – doğru – daha kolay.",
+    "Viskozite – ters – daha kolay.",
+    "Akmazlık (disflowability) – doğru – daha zor."
+   ]
+  },
+  "14538": {
+   "text": "Tıkanmış bir motor yağ soğutucusunu baypas etmesine izin veren valf:",
+   "options": [
+    "basınçla tahriklidir.",
+    "yoğunlukla tahriklidir.",
+    "elle tahriklidir.",
+    "sıcaklıkla tahriklidir."
+   ]
+  },
+  "14539": {
+   "text": "Yağın çalışır durumdaki bir motor yağ soğutucusundan geçmesine ya da onu baypas etmesine izin veren valf:",
+   "options": [
+    "sıcaklıkla tahriklidir",
+    "pnömatik olarak tahriklidir.",
+    "elle tahriklidir.",
+    "basınçla tahriklidir"
+   ]
+  },
+  "14540": {
+   "text": "Aşağıdakilerden hangisi her yağ sisteminde zorunlu bir bileşen değildir?",
+   "options": [
+    "Yağ soğutucuları.",
+    "Yağ tankları.",
+    "Yağ hatları.",
+    "Filtreler."
+   ]
+  },
+  "14541": {
+   "text": "Aşağıdakilerden hangisi aşırı motor yağ basıncını önler?",
+   "options": [
+    "Bir yağ basıncı tahliye valfi.",
+    "Bir çekvalf (NRV).",
+    "Bir filtre baypas valfi.",
+    "Bir vernier termometre"
+   ]
+  },
+  "14565": {
+   "text": "Günümüzde uçak sistemlerinde ne tür hidrolik yağ kullanılır?",
+   "options": [
+    "Sentetik yağ",
+    "Bio-yağ",
+    "Bitkisel yağ",
+    "Mineral yağ"
+   ]
+  },
+  "14568": {
+   "text": "Aşağıdakilerden hangisi kuru karter sisteminin bir dezavantajıdır?",
+   "options": [
+    "Ağırlık",
+    "Sıcaklık kontrolü zorluğu",
+    "Depolama kapasitesi",
+    "Karterde oksidasyon"
+   ]
+  },
+  "14640": {
+   "text": "Kokpite monteli motor yağ sıcaklığı göstergesine iletilen bilgi, şurada bulunan bir sıcaklık sensöründen sağlanır:",
+   "options": [
+    "yağ soğutucusundan geçtikten sonra ancak motorun sıcak bölümlerine ulaşmadan önce.",
+    "motor karterinin içinde.",
+    "yağ soğutucusunun yukarı akışında (öncesinde).",
+    "motorun sıcak bölümlerinin içinde."
+   ]
+  },
+  "14647": {
+   "text": "Uçak düz uçuşta ve motor seyir devrinde çalışırken yağ basıncı göstergesi ibresinin dalgalanmasının en olası nedeni;",
+   "options": [
+    "Düşük yağ miktarıdır.",
+    "Düşük güç ayarıdır.",
+    "Gevşek bir elektrik bağlantısıdır.",
+    "Yağ tankında hava bulunmasıdır."
+   ]
+  },
+  "25447": {
+   "text": "Aşağıdakilerden hangisi kuru karter sisteminin bir dezavantajıdır?",
+   "options": [
+    "Ağırlık",
+    "Etkin bakım",
+    "Depolama kapasitesi",
+    "Sıcaklık kontrolü zorluğu"
+   ]
+  },
+  "14545": {
+   "text": "Hava saptırıcılar (baffles):",
+   "options": [
+    "Hava akışını silindirin tamamı etrafına yönlendiren hava kılavuzlarıdır.",
+    "Motor yağının soğumasına yardımcı olan hava açıklıklarıdır.",
+    "Motor etrafındaki hava akışını azaltır.",
+    "Yağın motora geçişini yavaşlatmak için yağlama sisteminin içine yerleştirilir."
+   ]
+  },
+  "14546": {
+   "text": "Pistonlu bir motor için soğutma havası şu yolla elde edilebilir;",
+   "options": [
+    "ram hava.",
+    "bir turbo şarj.",
+    "bir pnömatik sistem.",
+    "bir kompresör (supercharger)."
+   ]
+  },
+  "14547": {
+   "text": "Sıvı soğutmalı bir motorda kullanılan soğutucu sıvının sıcaklığı şununla kontrol edilir;",
+   "options": [
+    "Bir termostat",
+    "Radyatör",
+    "Yağ soğutucusu panjurları",
+    "Bir kaporta (cowling)"
+   ]
+  },
+  "14548": {
+   "text": "Motorun aşırı ısınmasının çeşitli sorunları nelerdir?",
+   "options": [
+    "Hepsi",
+    "Erken ateşleme",
+    "Detonasyon",
+    "Yağlama kaybı riski"
+   ]
+  },
+  "14549": {
+   "text": "Bir kaporta kapağının (gill) işlevi nedir?",
+   "options": [
+    "Motor bölmesine giren soğutma havasını artırır.",
+    "Kabine giren hava akışını artırır.",
+    "Motora giren hava akışını artırır.",
+    "Üretilen taşıma kuvvetini artırır."
+   ]
+  },
+  "14551": {
+   "text": "Aşağıdaki tasarım özelliklerinden hangisi bir uçak pistonlu motorunun hava soğutmasının etkinliğini artırmaz?",
+   "options": [
+    "Ana motor bileşenlerinin düşük iletkenlikli malzemelerle üretilmesi",
+    "Kaporta kapaklarının (cowl flap) ve gill'lerin takılması",
+    "Silindirlerin \"kanatçıklandırılması\" (fining)",
+    "Hava saptırıcıların (baffle) ve yönlendirici hava kanallarının takılması"
+   ]
+  },
+  "14552": {
+   "text": "Yakıt ikmali işlemine başlamadan önce, uçak ile yakıt tankeri arasındaki elektriksel potansiyel farkına karşı korunmak için hangi önlem alınmalıdır?",
+   "options": [
+    "Yakıt tankeri ile uçak arasına bir statik bağlama teli bağlamak,",
+    "Uçaktaki tüm elektrikli ekipmanı kapatmak,",
+    "Uçak ile yer arasına bir statik bağlama teli bağlamak,",
+    "Yakıt tankeri ile yer arasına bir statik bağlama teli bağlamak,"
+   ]
+  },
+  "14553": {
+   "text": "Uçuş öncesi kontrolde yakıt numunesinde kalıntı varsa ne yapılmalıdır?",
+   "options": [
+    "Ardışık tahliyelerden sonra hâlâ kirlenme varsa uçuş iptal edilmelidir.",
+    "Yalnızca az miktarda kalıntı görülüyorsa uçuş gerçekleştirilebilir.",
+    "Kısa bir süre sonra (15 dakika) kalıntı çözüleceği için uçuş gerçekleştirilebilir.",
+    "Hiçbir şey; ilk numuneyle tüm kalıntı giderilmiş olur."
+   ]
+  },
+  "14555": {
+   "text": "Uçak tanklarında yakıt, en olası şekilde şu kaynaktan gelen suyla kirlenir:",
+   "options": [
+    "Kısmen dolu tanklarda kalan atmosferik hava",
+    "Yağmurun içeri girmesine yol açan tank sızıntıları",
+    "Yakıt ikmali sırasındaki kirlenme",
+    "Düzgün oturmayan yakıt kapakları"
+   ]
+  },
+  "14556": {
+   "text": "Yakıt sisteminde su bulunup bulunmadığının düzenli olarak kontrol edilmesi önemlidir, çünkü suyun varlığı şuna neden olur:",
+   "options": [
+    "motor gücü kaybıyla sonuçlanan yakıt sistemi kirlenmesine.",
+    "eksik yanmaya.",
+    "yakıtın donmasına.",
+    "emme ve karbüratör venturisi buzlanmasına."
+   ]
+  },
+  "14557": {
+   "text": "Benzinli yakıt sisteminde su bulunup bulunmadığının düzenli olarak kontrol edilmesi önemlidir. Su varsa, bu esas olarak şuna neden olur...",
+   "options": [
+    "motor gücü kaybıyla sonuçlanan yakıt sistemi kirlenmesine.",
+    "yalnızca taksi sırasında motor gücü kaybına.",
+    "yakıt hatlarında buz oluşmasına.",
+    "hava girişi buzlanmasına."
+   ]
+  },
+  "14558": {
+   "text": "Pistonlu bir motordaki elektrikle çalışan yardımcı yakıt pompası şurada bulunur:",
+   "options": [
+    "Motor tahrikli pompanın yukarı akışında (öncesinde)",
+    "Yakıt tankının en alçak noktasında",
+    "Tanktan tanka yakıt aktarma hattında",
+    "Tank seçme valfinin yukarı akışında (öncesinde)"
+   ]
+  },
+  "14559": {
+   "text": "Yakıtta en yüksek nem emilimi hangi durumda görülür?",
+   "options": [
+    "Neredeyse boş tanklarda",
+    "Neredeyse dolu tanklarda",
+    "Islak çimenlik alanlarda park sırasında",
+    "Soğuk apronlarda park sırasında"
+   ]
+  },
+  "14560": {
+   "text": "Elektrikle çalışan bir takviye/alternatif pompanın normal konumu:",
+   "options": [
+    "yakıt tankının en alçak bölümüdür.",
+    "motor yangın bölmesinin ön tarafıdır.",
+    "tanktan tanka yakıt aktarma hattıdır.",
+    "motor tahrikli pompanın yukarı akışıdır (öncesidir)."
+   ]
+  },
+  "14561": {
+   "text": "Bir yakıt enjeksiyon sisteminin çalışması şununla izlenebilir",
+   "options": [
+    "Yakıt basıncı veya yakıt akış göstergeleri",
+    "Silindir kafası sıcaklık göstergesi",
+    "Yakıt sıcaklığı göstergesi",
+    "Yakıt miktarı ve egzoz gazı sıcaklığı göstergeleri"
+   ]
+  },
+  "14564": {
+   "text": "Tank havalandırmasının amacı nedir?",
+   "options": [
+    "Yakıt tüketiminin neden olduğu düşük basıncı önlemek",
+    "Park sırasında su tahliyesini önlemek",
+    "Uçuş sırasında yakıtı bir tank bölümünden diğerine dağıtmak",
+    "Yakıt ikmali sırasında doldurma ağzında yakıt dökülmesini önlemek"
+   ]
+  },
+  "14566": {
+   "text": "Yakıt ikmali sırasında doğru yakıt türünün kullanıldığından emin olmak için hem yakıtın kendisi hem de tank etiketleri renk koduyla belirtilir. 100 LL ile ilgili tüm etiketlerin ana rengi …(i)… ve yakıtın kendi rengi …(ii)… olmalıdır.",
+   "options": [
+    "(i) kırmızı (ii) mavi",
+    "(i) kırmızı (ii) saman rengi",
+    "(i) mavi (ii) saman rengi",
+    "(i) siyah (ii) kırmızı"
+   ]
+  },
+  "14567": {
+   "text": "Avgas 100 LL hangi renktedir?",
+   "options": [
+    "Mavi",
+    "Yeşil",
+    "Sarı",
+    "Kırmızı"
+   ]
+  },
+  "14569": {
+   "text": "Aşağıdakilerden hangisi Avgas 100 LL için doğru yakıt rengidir?",
+   "options": [
+    "Mavi",
+    "Siyah",
+    "Yeşil",
+    "Kırmızı"
+   ]
+  },
+  "14570": {
+   "text": "Yüksek kanatlı uçaklarda mekanik bir yakıt pompasına neden gerek olmayabilir?",
+   "options": [
+    "Yer çekimi nedeniyle",
+    "Yakıt süzgeci nedeniyle",
+    "Kesme valfi nedeniyle",
+    "Doldurma (priming) pompası nedeniyle"
+   ]
+  },
+  "14571": {
+   "text": "Bir karbüratörün venturisinden geçen hava akışı şuna neden olur;",
+   "options": [
+    "En dar noktada basınç düşüşüne ve hızda artışa.",
+    "En dar noktada basınç düşüşüne ve hızda düşüşe.",
+    "En dar noktada basınç düşüşüne ve sıcaklıkta artışa.",
+    "En dar noktada basınç artışına ve hızda düşüşe."
+   ]
+  },
+  "14572": {
+   "text": "Bir hızlandırma pompası, bir \"flat spot\"u önlemek için kullanılır. Bir flat spot şu durumda ortaya çıkar:",
+   "options": [
+    "Gaz kelebeği hızla açıldığında ve karışım geçici olarak yanmayı sürdüremeyecek kadar fakirleştiğinde",
+    "Gaz kelebeği kapatıldığında ve karışım geçici olarak aşırı zenginleştiğinde",
+    "Gaz kelebeği hızla kapatıldığında ve motor yakıtsız kaldığında",
+    "Gaz kelebeği hızla açıldığında ve karışım geçici olarak aşırı zenginleştiğinde"
+   ]
+  },
+  "14573": {
+   "text": "Hava bir venturinin daralan bölümüne girerken, hızı _____, statik veya ortam basıncı _____ ve sıcaklığı _____.",
+   "options": [
+    "artar, azalır, azalır",
+    "azalır, azalır, artar",
+    "azalır, artar, azalır",
+    "artar, artar, artar"
+   ]
+  },
+  "14574": {
+   "text": "+25° ortam sıcaklığında ve %50 bağıl nemde çalışırken ciddi karbüratör buzlanması hangi güç ayarında meydana gelme olasılığı taşır?",
+   "options": [
+    "iniş gücünde.",
+    "maksimum sürekli güçte.",
+    "seyir gücünde.",
+    "tırmanış gücünde."
+   ]
+  },
+  "14575": {
+   "text": "+30°C ortam sıcaklığında ve %50 bağıl nemde çalışırken ciddi karbüratör buzlanması hangi güç ayarında meydana gelme olasılığı taşır?",
+   "options": [
+    "İniş gücü",
+    "Kalkış gücü",
+    "Seyir gücü",
+    "Tırmanış gücü"
+   ]
+  },
+  "14577": {
+   "text": "Yakıt/hava karışım oranları zengin, ideal veya fakir olarak sınıflandırılabilir. Hangi oran zengin karışım olarak adlandırılabilir?",
+   "options": [
+    "8:1",
+    "20:1",
+    "15:1",
+    "12:1"
+   ]
+  },
+  "14578": {
+   "text": "Bir uçağın gaz kelebeği kolu, tüketilen yakıt miktarını kontrol ediyorsa:\nI. Bu bir enjeksiyonlu motordur.\nII. Bu bir karbüratörlü motordur.\nIII. Bu bir dizel motordur.\nYukarıda sıralanan ifadelerden hangisi kesinlikle doğrudur?",
+   "options": [
+    "Yalnızca I.",
+    "Yalnızca II.",
+    "Yalnızca III.",
+    "I ve III."
+   ]
+  },
+  "14579": {
+   "text": "Karbüratör buzunu gidermek için karbüratör ısıtması uygulanmalıdır. Ancak karbüratör ısıtması şu durumda asla kullanılmamalıdır……",
+   "options": [
+    "kalkış sırasında.",
+    "yaklaşma sırasında.",
+    "seyir sırasında.",
+    "iniş sırasında."
+   ]
+  }
+ }
+}

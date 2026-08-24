@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "16257": {
+   "text": "Kumanda kolunu çektiğinizde ne olur?",
+   "options": [
+    "İrtifa dümeni yukarı hareket eder ve burun-yukarı moment oluşturur.",
+    "İrtifa dümeni yukarı hareket eder ve burun-aşağı moment oluşturur.",
+    "Flaplar indirilir.",
+    "İrtifa dümeni aşağı hareket eder ve burun-yukarı moment oluşturur."
+   ]
+  },
+  "16304": {
+   "text": "Aşağıda dönüşteki kuvvetleri gösteren vektör diyagramını inceleyin. Aşağıdakilerden hangisi toplam taşıma kuvvetini temsil eder?",
+   "options": [
+    "B",
+    "W",
+    "C",
+    "A"
+   ]
+  },
+  "16131": {
+   "text": "Bir hava akımıyla çevrili olduğunda (v>0), keyfi şekilli herhangi bir cisim ne üretir?",
+   "options": [
+    "sürükleme.",
+    "sürüklemesiz taşıma kuvveti.",
+    "sürükleme ve taşıma kuvveti.",
+    "her hızda sabit sürükleme."
+   ]
+  },
+  "16239": {
+   "text": "Normal kararlı bir uçakta ağırlık merkezi nerede bulunur?",
+   "options": [
+    "Uçağın nötr noktasının yeterli asgari payla önünde.",
+    "Uçağın nötr noktası ile arka limit arasında.",
+    "Uçağın nötr noktasında.",
+    "Uçağın nötr noktasının arkasında."
+   ]
+  },
+  "16068": {
+   "text": "Deniz seviyesindeki basıncın ISA'ya eşit fakat sıcaklığın ISA'dan 10°C daha yüksek olduğu varsayıldığında, yoğunluk:",
+   "options": [
+    "ISA'dan düşük olur.",
+    "Etkilenmez.",
+    "ISA'dan yüksek olur.",
+    "ISA'ya göre olur."
+   ]
+  },
+  "16193": {
+   "text": "(Washout) Kanat burulması (geometrik ve aerodinamik) neyi sağlamak için kullanılır?",
+   "options": [
+    "Stall özelliklerini iyileştirmek.",
+    "VR'yi azaltmak.",
+    "VMO'yu artırmak.",
+    "Girişim sürüklemesini azaltmak."
+   ]
+  },
+  "16266": {
+   "text": "Kanatçık kumandasının birincil ve ikincil etkileri nelerdir?",
+   "options": [
+    "Roll ve yaw.",
+    "Yaw ve roll.",
+    "Pitch ve yaw.",
+    "Roll ve pitch."
+   ]
+  },
+  "16075": {
+   "text": "Uluslararası Standart Atmosfer neyi tanımlar?",
+   "options": [
+    "Tüm irtifalar için standartlaştırılmış sıcaklık, basınç ve yoğunluk değerlerini.",
+    "Tüm irtifalar için gerçek ortam sıcaklık, basınç ve yoğunluk koşullarını.",
+    "Yalnızca deniz seviyesindeki sıcaklık, basınç ve yoğunluk koşullarını.",
+    "Atmosferin tüm seviyelerinde mevcut olan gerçek sıcaklık, basınç ve yoğunluk koşullarının değerlerini."
+   ]
+  },
+  "16298": {
+   "text": "Sabit hızda bir tırmanışta itki:",
+   "options": [
+    "Aerodinamik sürüklemeden büyüktür.",
+    "Uçuş yolu boyunca ağırlık bileşenine eşittir.",
+    "Aerodinamik sürüklemeden küçüktür.",
+    "Aerodinamik sürüklemeye eşittir."
+   ]
+  },
+  "16174": {
+   "text": "Kritik hücum açısı:",
+   "options": [
+    "Ağırlıktan bağımsız olarak sabit kalır.",
+    "Ağırlık merkezi öne alınırsa artar.",
+    "Brüt ağırlıktaki bir artışla değişir.",
+    "Ağırlık merkezi arkaya alınırsa azalır."
+   ]
+  },
+  "16149": {
+   "text": "Uçağın toplam sürüklemesinin taşıma kuvveti üretiminden kaynaklanan kısmına ne denir?",
+   "options": [
+    "İndüklenmiş sürükleme; hava hızındaki değişimlerden büyük ölçüde etkilenir.",
+    "Parazit sürükleme; hava hızının karesiyle ters orantılıdır.",
+    "İndüklenmiş sürükleme; hava hızındaki değişimlerden etkilenmez.",
+    "Parazit sürükleme; hava hızındaki değişimlerden büyük ölçüde etkilenir."
+   ]
+  },
+  "16302": {
+   "text": "Taşıma kuvveti/sürükleme oranı neyi belirler?",
+   "options": [
+    "Rüzgârsız ve itkisiz koşulda, belirli bir irtifadan yatay planör mesafesini.",
+    "Belirli bir irtifaya kadar tırmanıştaki yatay mesafeyi.",
+    "Azami tırmanma oranını.",
+    "Dayanıklılık hızını."
+   ]
+  },
+  "16124": {
+   "text": "Düz ve seviye uçuşta kanadın üst yüzeyi üzerindeki hava akımı, kanattan etkilenmeyen hava akımıyla karşılaştırıldığında:",
+   "options": [
+    "Daha yüksek bir hıza sahiptir.",
+    "Aynı hıza sahiptir.",
+    "Azalmış bir hıza sahiptir.",
+    "Daha yüksek bir yoğunluğa sahiptir."
+   ]
+  },
+  "16295": {
+   "text": "Bir uçakta taşıma kuvveti/ağırlık çiftinden kaynaklanan burun-aşağı bir pitch momenti ve itki/sürükleme çiftinden kaynaklanan burun-yukarı bir pitch momenti vardır. Güç artırıldığında:",
+   "options": [
+    "Burnu yukarı kalkar.",
+    "Her iki çift de büyüklük olarak azalır ama dengeli kalır.",
+    "Her iki çift de büyüklük olarak artar ama dengeli kalır.",
+    "Burnu aşağı düşer."
+   ]
+  },
+  "16084": {
+   "text": "Hareket hâlindeki bir hava kütlesi kinetik enerjiye sahiptir. Böyle hareket eden bir hava kütlesinin yoluna konan bir cisim neye maruz kalır?",
+   "options": [
+    "Statik basınç ve dinamik basınca.",
+    "Dinamik basınç eksi statik basınca.",
+    "Dinamik basınca.",
+    "Statik basınca."
+   ]
+  },
+  "16270": {
+   "text": "Yukarı hareket eden kanatçığın aşağı hareket eden kanatçıktan daha fazla hareket ettiği diferansiyel kanatçık, hangisini önlemeye yardımcı olan bir tasarım özelliğidir?",
+   "options": [
+    "Ters yaw'ı önlemek için ters kanatçık sürüklemesini.",
+    "Yanal kararsızlığı.",
+    "Yanal pozitif kararlılığı.",
+    "Uçak eylemsizliğini."
+   ]
+  },
+  "16259": {
+   "text": "Pitch açısı hangi ikisi arasındaki açı olarak tanımlanır?",
+   "options": [
+    "Boyuna eksen ve yatay düzlem.",
+    "Veter hattı ve yatay düzlem.",
+    "Hız vektörü ekseni ve boyuna eksen.",
+    "Boyuna eksen ve veter hattı."
+   ]
+  },
+  "16083": {
+   "text": "[pt = toplam basınç; ps = statik basınç; q = dinamik basınç] için Bernoulli denklemi nasıl yazılabilir?",
+   "options": [
+    "pt - q = ps",
+    "pt + ps = q",
+    "pt = ps - q",
+    "pt = q - ps"
+   ]
+  },
+  "16197": {
+   "text": "Stall hızı Vs'nin (IAS) düşmesine ne yol açar?",
+   "options": [
+    "Ağırlığın azalması",
+    "Daha yüksek yük faktörü",
+    "Daha düşük yoğunluk",
+    "Daha düşük irtifa"
+   ]
+  },
+  "16142": {
+   "text": "Pozitif camber'li bir kanat profili yaklaşık hangi hücum açısında taşıma kuvveti üretmeye başlar?",
+   "options": [
+    "Negatif hücum açısında.",
+    "16 derecede.",
+    "4 ila 6 derecede.",
+    "0 derecede."
+   ]
+  },
+  "16138": {
+   "text": "Bir kanadın hücum açısı artırıldıkça, basınç merkezi kanat üzerindeki en ileri konumuna ne zaman ulaşır?",
+   "options": [
+    "Kanat stall'a girmeden hemen önce.",
+    "Uçak stall'a girerken.",
+    "Optimum hücum açısında.",
+    "Stall'dan kurtulmadan sonra."
+   ]
+  },
+  "16067": {
+   "text": "Atmosferik basınç neleri etkiler?",
+   "options": [
+    "İtki, taşıma kuvveti, sürükleme",
+    "İtki, taşıma kuvveti, sürükleme, ağırlık",
+    "Sürükleme, taşıma kuvveti, ağırlık",
+    "İtki, sürükleme, ağırlık"
+   ]
+  },
+  "16310": {
+   "text": "Yük faktörü hangi durumda 1'den (bir) küçüktür?",
+   "options": [
+    "Sabit tırmanma, planörle süzülme, alçalma ve iniş sırasında",
+    "Kurtarma öncesi kanatlar seviyede stall sırasında",
+    "Sabit seyir seviyesinde",
+    "Seyir, süzülme konumunda"
+   ]
+  },
+  "16279": {
+   "text": "Eller serbestken burun ağır uçma eğiliminde olan bir uçağı trimlemek için irtifa dümeni trim çarkının üstü nasıl hareket ettirilmelidir?",
+   "options": [
+    "Burnu kaldırmak için geriye hareket ettirilmeli; bu, irtifa dümeni trim tab'ının aşağı, irtifa dümeninin ise yukarı hareket etmesine neden olur.",
+    "Burnu kaldırmak için geriye hareket ettirilmeli; bu, irtifa dümeni trim tab'ının yukarı hareket etmesine ve burnun kalkmasına neden olur.",
+    "Burnu kaldırmak için geriye hareket ettirilmeli; bu, irtifa dümeni trim tab'ının yukarı, irtifa dümeninin de yukarı hareket etmesine neden olur.",
+    "Burnu kaldırmak için ileriye hareket ettirilmeli; bu, irtifa dümeni trim tab'ının aşağı, irtifa dümeninin ise yukarı hareket etmesine neden olur."
+   ]
+  },
+  "16246": {
+   "text": "Bazı uçaklarda neden dihedral kanat bulunur?",
+   "options": [
+    "Yanal kararlılığı artırmak için.",
+    "Yönsel kararlılığı artırmak için.",
+    "Yönsel kararlılığı azaltmak için.",
+    "Boyuna kararlılığı artırmak için."
+   ]
+  },
+  "16119": {
+   "text": "Hangi seçenek cümleyi en doğru şekilde tamamlar? Bir kanadın ürettiği taşıma kuvvetinin miktarı doğrudan neyle orantılıdır?",
+   "options": [
+    "Hava yoğunluğuyla.",
+    "Hava sıcaklığıyla.",
+    "Üzerinden akan havanın hızının kareköküyle.",
+    "Dinamik basınç eksi statik basınçla."
+   ]
+  },
+  "16297": {
+   "text": "15° duruş açısıyla yapılan sabit bir tırmanış sırasında stall hızı:",
+   "options": [
+    "Sabit seviye uçuşundakinden düşüktür.",
+    "15° banka açılı koordineli bir dönüştekiyle aynıdır.",
+    "Sabit seviye uçuşundakiyle aynı kalır.",
+    "Sabit seviye uçuşundakinden yüksektir."
+   ]
+  },
+  "16071": {
+   "text": "Uçak performansını etkileyen Dünya atmosferinin özellikleri nelerdir?",
+   "options": [
+    "Su buharı içeriği, sıcaklık, basınç ve yoğunluğu.",
+    "Azot içeriği, oksijen içeriği, sıcaklık ve basıncı.",
+    "Oksijen içeriği, basınç ve su buharı içeriği.",
+    "Sıcaklık, basınç ve nem."
+   ]
+  },
+  "16134": {
+   "text": "Hücum açısı sıfırdan kritik hücum açısına artarken, CL (taşıma kuvveti katsayısı) (I)....... ve durma noktası (II)....... yönünde hareket edecektir. Sırasıyla (I) ve (II):",
+   "options": [
+    "(I)-artar, (II)-aşağı",
+    "(I)-sabit kalır, (II)-yukarı",
+    "(I)-azalır, (II)-yukarı",
+    "(I)-artar, (II)-yukarı"
+   ]
+  },
+  "16269": {
+   "text": "'Diferansiyel Kanatçıklar' hangisini önlemeye yardımcı olan bir tasarım özelliğidir?",
+   "options": [
+    "Ters yaw'ı.",
+    "Ters roll'u.",
+    "Uçağın pozitif kararlılığını.",
+    "Boyuna eksen etrafındaki kararlılığı."
+   ]
+  },
+  "16248": {
+   "text": "Bozucu bir kuvvet uçağın roll yapmasına neden olursa:",
+   "options": [
+    "Kanat dihedrali uçağı kararlı hale getirir.",
+    "Kanat dihedralinin kararlılığa etkisi yoktur.",
+    "Kanat dihedrali yaw momentini artırır.",
+    "Kanat dihedrali uçağı kararsız hale getirir."
+   ]
+  },
+  "16190": {
+   "text": "Kritik hücum açısı (AoA) aşıldığında, taşıma kuvveti katsayısı (CL) (I)....... ve durma noktası (II)....... yönünde hareket edecektir.",
+   "options": [
+    "(I)-azalır, (II)-yukarı",
+    "(I)-sabit kalır, (II)-yukarı",
+    "(I)-azalır, (II)-aşağı",
+    "(I)-artar, (II)-yukarı"
+   ]
+  },
+  "16268": {
+   "text": "Diferansiyel kanatçık sapmasıyla hangi olgu önlenir?",
+   "options": [
+    "Ters yaw.",
+    "Sarmal dalışa duyarlılık.",
+    "Kanatçık tersine dönmesi.",
+    "Dönüş koordinasyonu."
+   ]
+  },
+  "16250": {
+   "text": "Bir uçak neyin etrafında döner?",
+   "options": [
+    "Ağırlık merkezi (CG).",
+    "İstikamet dümeni.",
+    "Ana iniş takımı.",
+    "Kanatları."
+   ]
+  },
+  "16235": {
+   "text": "Pozitif dinamik kararlılığın gerekliliklerinden biri nedir?",
+   "options": [
+    "Pozitif statik kararlılık",
+    "Küçük bir CG aralığı",
+    "Negatif statik kararlılık",
+    "Nötr statik kararlılık"
+   ]
+  },
+  "16293": {
+   "text": "Düz ve seviye uçuşta basınç merkezi ağırlık merkezinin arkasındadır. Düz ve seviye uçuşu sürdürmek için irtifa dümeni ve yatay kuyruktan gelen bileşke kuvvetin etki yönü nedir?",
+   "options": [
+    "Aşağı yönde.",
+    "İtki/sürükleme çiftine bağlı bir yönde.",
+    "Yatay yönde.",
+    "Yukarı yönde."
+   ]
+  },
+  "16135": {
+   "text": "Tüm aerodinamik kuvvetlerin tek bir noktada etki ettiği kabul edilebilir. Bu noktaya ne denir?",
+   "options": [
+    "Basınç merkezi.",
+    "Taşıma noktası.",
+    "Ağırlık merkezi.",
+    "Geçiş noktası."
+   ]
+  },
+  "16121": {
+   "text": "Gösterge Hava Hızı (IAS) azaltıldıkça, irtifayı korumak için pilotun ne yapması gerekir?",
+   "options": [
+    "Doğru taşıma kuvvetini korumak için hücum açısını artırmalıdır.",
+    "İtkiyi azaltmalıdır.",
+    "Sürüklemeyi artırmak için hız frenlerini açmalıdır.",
+    "Sürüklemeyi azaltmak için hücum açısını azaltmalıdır."
+   ]
+  },
+  "16229": {
+   "text": "Bir uçağın, sabit uçuş durumundan bozulduğunda kendisini orijinal uçuş durumuna geri getirecek kuvvetler geliştirme eğilimine ne denir?",
+   "options": [
+    "Kararlılık.",
+    "Kararsızlık.",
+    "Kumanda edilebilirlik.",
+    "Manevra kabiliyeti."
+   ]
+  },
+  "16256": {
+   "text": "İlgili eksenleri ve etraflarındaki hareketleri eşleştirin: I. Pitching II. Rolling III. Yawing IV. Boyuna eksen V. Yanal eksen VI. Dikey eksen",
+   "options": [
+    "I-V, II-IV, III-VI",
+    "I-V, II-VI, III-IV",
+    "I-VI, II-V, III-IV",
+    "I-IV, II-VI, III-V"
+   ]
+  },
+  "16073": {
+   "text": "Atmosferi oluşturan en bol dört gazın sırasıyla yüzdeleri nelerdir?",
+   "options": [
+    "Azot %78 Oksijen %21 Argon %0,95 Karbondioksit %0,05",
+    "Oksijen %78 Azot %21 Argon %0,95 Karbon Monoksit %0,05",
+    "Azot %78 Oksijen %21 Argon %0,95 Karbon Monoksit %0,05",
+    "Oksijen %78 Azot %21 Argon %0,95 Karbondioksit %0,05"
+   ]
+  },
+  "16185": {
+   "text": "Sınır tabaka (BL) hakkında aşağıdaki tanımlardan hangisi yanlıştır?",
+   "options": [
+    "Kabin duvarı üzerinde BL yoktur.",
+    "BL, hava katmanları arasındaki sürtünme (viskoz) kuvvetleriyle tanımlanır.",
+    "BL içinde ters akış olabilir.",
+    "BL, kanat yüzeyinin hemen üzerindeki çok ince bir hava akımı katmanıdır."
+   ]
+  },
+  "16220": {
+   "text": "Bir pilot hava hızını sabit tutarken flapları indiriyor. Seviye uçuşu sürdürmek için hücum açısı:",
+   "options": [
+    "Azaltılmalıdır.",
+    "Sabit tutulmalıdır ve gereken güç sabit kalır.",
+    "Sabit tutulmalıdır ama güç artırılmalıdır.",
+    "Artırılmalıdır."
+   ]
+  },
+  "16105": {
+   "text": "Hücum açısı hangi ikisi arasındaki açı olarak tanımlanabilir?",
+   "options": [
+    "Uçağın hız vektörü ve veter hattı",
+    "Kanat düzlemi ve dikey eksen",
+    "Serbest akış havası ve çeyrek veter hattı",
+    "Yanal eksen ve yatay düzlem"
+   ]
+  },
+  "16261": {
+   "text": "Bir uçağın burnu sola yaw yaparsa bu neye neden olur?",
+   "options": [
+    "Sola roll'a.",
+    "Sol kanatta taşıma kuvvetinin artmasına.",
+    "Sağ kanatta göreceli hava hızının azalmasına.",
+    "Sağa roll'a."
+   ]
+  },
+  "16300": {
+   "text": "Tırmanma açısı neyle orantılıdır?",
+   "options": [
+    "İtkinin sürüklemeyi aştığı miktarla.",
+    "Kanadın hücum açısıyla.",
+    "İtkinin ağırlığı aştığı miktarla.",
+    "Taşıma kuvvetinin ağırlığı aştığı miktarla."
+   ]
+  },
+  "16260": {
+   "text": "Yalnızca sol istikamet dümeni uygulamanın birincil ve ikincil etkileri nelerdir?",
+   "options": [
+    "Sol yaw ve sol roll.",
+    "Sağ yaw ve sağ roll.",
+    "Sağ yaw ve sol roll.",
+    "Sol yaw ve sağ roll."
+   ]
+  },
+  "16283": {
+   "text": "VNE nedir?",
+   "options": [
+    "Uçağın uçurulabileceği azami hava hızı.",
+    "Üzerinde flapların açılmaması gereken azami hız.",
+    "Stall'a yaklaşan manevraların yapılabileceği azami hava hızı.",
+    "Ancak bir dalışta aşılabilecek hava hızı."
+   ]
+  },
+  "16182": {
+   "text": "Stall'dan nasıl kurtulunur?",
+   "options": [
+    "Kumanda kolu itilir ve gaz artırılır",
+    "Kumanda kolu itilir ve gaz azaltılır",
+    "Ters istikamet dümeni-kanatçık girdileri uygulanır",
+    "Kumanda kolu çekilir ve gaz azaltılır"
+   ]
+  },
+  "16191": {
+   "text": "Bir stall uyarı sisteminin sensörü, neyin konumundaki bir değişiklikle etkinleşebilir?",
+   "options": [
+    "Durma noktasının.",
+    "Taşıma merkezinin.",
+    "Ağırlık merkezinin.",
+    "Geçiş bölgesinin."
+   ]
+  },
+  "16205": {
+   "text": "Düz ve seviye uçuşta bir uçağın stall hızı 60 kt IAS'dır. 60º bankalı seviye bir dönüşteki stall hızı nedir?",
+   "options": [
+    "85 kt",
+    "120 kt",
+    "43 kt",
+    "60 kt"
+   ]
+  },
+  "16290": {
+   "text": "Düz ve seviye uçuşta bir uçak ne zaman dengededir?",
+   "options": [
+    "Ağırlık taşıma kuvvetine ve sürükleme itkiye eşit olduğunda.",
+    "Ağırlık taşıma kuvveti çiftine ve sürükleme itki çiftine eşit olduğunda.",
+    "Ağırlık sürüklemeye ve taşıma kuvveti itkiye eşit olduğunda.",
+    "Taşıma kuvveti sürüklemeye ve itki ağırlığa eşit olduğunda."
+   ]
+  },
+  "16181": {
+   "text": "Aşağıdakilerden hangisi stall belirtisi değildir?",
+   "options": [
+    "Motor kumandasının tepki vermemesi",
+    "Stall korna sesinin çalması",
+    "Uçağın burnunun istem dışı düşmesi",
+    "Birincil kumandaların etkisinde azalma"
+   ]
+  },
+  "16103": {
+   "text": "Hücum açısı hangi ikisi arasındaki açıdır?",
+   "options": [
+    "Veter hattı ve gelen hava akımı.",
+    "Kanat ve uçağın gövdesi.",
+    "Veter hattı ve uçağın boyuna ekseni.",
+    "Bozulmamış hava akımı ve uçağın boyuna ekseni."
+   ]
+  },
+  "16303": {
+   "text": "6000 fitten, temiz konfigürasyondaki bir uçak için taşıma kuvveti/sürükleme oranı 8:1 olduğunda azami süzülme mesafesi yaklaşık 8 deniz milidir. Flaplar açılırsa:",
+   "options": [
+    "Azami süzülme mesafesi azalır.",
+    "Azami süzülme mesafesi etkilenmez.",
+    "Taşıma kuvveti/Sürükleme oranı etkilenmez ama daha düşük bir hava hızında elde edilir.",
+    "Azami süzülme mesafesi artar."
+   ]
+  },
+  "16081": {
+   "text": "İrtifayla birlikte havanın yoğunluğundaki değişiklikler göz önüne alındığında, aşağıdaki dört seçenekten hangisi doğrudur?",
+   "options": [
+    "İrtifa arttıkça basıncın azalması yoğunluğun azalmasına neden olur.",
+    "İrtifa arttıkça basıncın artması yoğunluğun azalmasına neden olur.",
+    "İrtifa arttıkça sıcaklığın azalması yoğunluğun artmasına neden olur.",
+    "İrtifa arttıkça sıcaklığın artması yoğunluğun artmasına neden olur."
+   ]
+  },
+  "16216": {
+   "text": "Flap açmanın süzülme mesafesine etkisi nedir?",
+   "options": [
+    "Sürükleme arttığı için süzülme mesafesi azalır.",
+    "Flap açmak süzülme mesafesini etkilemez.",
+    "Sürükleme azaldığı için süzülme mesafesi azalır.",
+    "Flaplar daha fazla taşıma kuvveti sağladığı için süzülme mesafesi artar."
+   ]
+  },
+  "16284": {
+   "text": "Kumanda yüzeyi flutter'ı neyle giderilebilir?",
+   "options": [
+    "Kumanda yüzeyinin kütle dengelenmesiyle.",
+    "Hava hızının artırılmasıyla.",
+    "Kumanda yüzeyinin aerodinamik dengelenmesiyle.",
+    "Kumanda yüzeyi bağlantı yapısının yapısal sertliğinin azaltılmasıyla."
+   ]
+  },
+  "16296": {
+   "text": "Düz sabit bir tırmanışta aşağıdaki ifadelerden hangisi doğrudur?",
+   "options": [
+    "Taşıma kuvveti ağırlıktan küçüktür, yük faktörü 1'den küçüktür.",
+    "Taşıma kuvveti ağırlıktan küçüktür, yük faktörü 1'e eşittir.",
+    "Taşıma kuvveti ağırlığa eşittir, yük faktörü 1'e eşittir.",
+    "Taşıma kuvveti ağırlığa eşittir, yük faktörü 1'den küçüktür."
+   ]
+  },
+  "16264": {
+   "text": "Kumanda kolunu sağa hareket ettirdiğinizde ne olur?",
+   "options": [
+    "Sağ kanatçık yukarı, sol kanatçık aşağı hareket eder",
+    "Sol kanatçık yukarı, sağ kanatçık aşağı hareket eder",
+    "Her iki kanatçık da aşağı hareket eder",
+    "Her iki kanatçık da yukarı hareket eder"
+   ]
+  },
+  "16120": {
+   "text": "Hücum açısı ve diğer faktörler sabit kalırken hava hızı iki katına çıkarsa taşıma kuvveti ne olur?",
+   "options": [
+    "Dört katına çıkar.",
+    "Aynı kalır.",
+    "Önceki değerinin dörtte biri olur.",
+    "İki katına çıkar."
+   ]
+  },
+  "16226": {
+   "text": "Slot'lar stall hücum açısını neden artırır?",
+   "options": [
+    "Kanat üzerindeki düzgün hava akımının bozulmasını geciktirdikleri için",
+    "Hücum kenarındaki etkisiz kanat alanını azalttıkları için",
+    "Hücum kenarındaki etkili kanat alanını artırdıkları için",
+    "Kanadın altındaki pozitif basınçlı hava akımını boşalttıkları için"
+   ]
+  },
+  "16137": {
+   "text": "Pozitif şekilli bir profilde hücum açısı arttıkça basınç merkezinin konumu hangi yönde hareket eder?",
+   "options": [
+    "Kritik hücum açısına ulaşana kadar öne hareket eder",
+    "Kanat uçlarına doğru hareket eder",
+    "Kritik hücum açısına ulaşana kadar arkaya hareket eder",
+    "Arkaya hareket eder"
+   ]
+  },
+  "16196": {
+   "text": "Uçak ağırlığındaki bir artış, diğer şeylerin yanı sıra neye neden olur?",
+   "options": [
+    "Stall hızında artışa neden olur.",
+    "Flapsız stall hızında artışa ama temiz konfigürasyon stall hızında azalmaya neden olur.",
+    "Stall hızında azalmaya neden olur.",
+    "Stall hızını etkilemez."
+   ]
+  },
+  "16077": {
+   "text": "Belirli bir günde, 4000 ft'de gerçek dış hava sıcaklığı 23°C ise, gerçek sıcaklık ile ISA sıcaklığı arasındaki yaklaşık fark nedir?",
+   "options": [
+    "16°C.",
+    "8°C.",
+    "15°C.",
+    "7°C."
+   ]
+  },
+  "16080": {
+   "text": "İrtifayla birlikte havanın yoğunluğundaki değişiklikler göz önüne alındığında, aşağıdakilerden hangisi doğrudur?",
+   "options": [
+    "İrtifa arttıkça basıncın azalması yoğunluğun azalmasına neden olur.",
+    "İrtifa arttıkça basıncın artması yoğunluğun azalmasına neden olur.",
+    "İrtifa arttıkça sıcaklığın azalması yoğunluğun artmasına neden olur.",
+    "İrtifa arttıkça sıcaklığın artması yoğunluğun artmasına neden olur."
+   ]
+  },
+  "16199": {
+   "text": "Aşağıdaki koşullardan hangisi stall hava hızının artmasına neden olur?",
+   "options": [
+    "Yük faktörü artmış, kanatta ağır buzlanma",
+    "Uçak ağırlığı artmış, güç artmış",
+    "Banka açısı azalmış, flap ayarı artmış",
+    "Güç artmış, flap ayarı artmış"
+   ]
+  },
+  "16231": {
+   "text": "Bir uçak, örneğin türbülans nedeniyle belirlenmiş uçuş yolundan saptığında, sonrasında aşağıdakilerden hangisini yaparsa pozitif kararlılığa sahip olduğu söylenir?",
+   "options": [
+    "Pilottan herhangi bir girdi olmadan orijinal uçuş yoluna geri döner.",
+    "Yer değiştirme, karşı kumanda kuvvetleriyle engellenene kadar bozulma yönünde pitch yapmaya devam eder.",
+    "Orijinal uçuş yolundan daha fazla uzaklaşır.",
+    "Yeni uçuş yolunda kalır."
+   ]
+  },
+  "16194": {
+   "text": "Bir uçak kanadına geometrik washout tasarlanmasının nedeni nedir?",
+   "options": [
+    "Kanadın iç kesiminin önce stall'a girmesini sağlamak.",
+    "İlerleyen kanat stall'ını ve kontrol kaybını önlemek.",
+    "Kanadın dış kesiminin önce stall'a girmesini sağlamak.",
+    "Kanatçıkların etkinliğini azaltmak."
+   ]
+  },
+  "16278": {
+   "text": "Bir uçuş kumanda yüzeyine basit bir trim tab takılmıştır. Trim tab uçuşta ayarlandıktan sonra, uçuş kumanda yüzeyinin herhangi bir hareketi neyle sonuçlanır?",
+   "options": [
+    "Trim tab konumunun kumanda yüzeyine göre sabit kalmasıyla",
+    "Trim tab'ın ana uçuş kumanda yüzeyinin tersi yönde hareket etmesiyle.",
+    "Trim tab konumunun hava akımına göre sabit kalmasıyla.",
+    "Trim tab'ın yeni bir konuma hareket etmesi ve yeniden ayarlanması gerekmesiyle."
+   ]
+  }
+ }
+}

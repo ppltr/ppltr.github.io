@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "14660": {
+   "text": "İrtifa arttıkça hava/yakıt karışımı...",
+   "options": [
+    "zenginleşir.",
+    "fakirleşir.",
+    "değişmez.",
+    "sıvı hale gelir."
+   ]
+  },
+  "14661": {
+   "text": "Yağ basıncının dalgalandığını ve normalden düşük gösterdiğini, yağ sıcaklığının da yükseldiğini fark ediyorsunuz. Ne yapmalısınız?",
+   "options": [
+    "Mümkün olan en kısa sürede iniş yapın.",
+    "Motor arızalanana kadar devam edin, sonra mecburi iniş yapın.",
+    "Göstergelerin arızalı olduğunu varsayıp uçuşa devam edin.",
+    "On saniye tam güç uygulayın."
+   ]
+  },
+  "14671": {
+   "text": "Pervaneyi elle çevirmek tehlikeli ve öldürücü olabilir, çünkü",
+   "options": [
+    "ateşleme anahtarı açıksa motor çalışmaya başlayabilir",
+    "Zararlı değildir",
+    "akü anahtarı açıksa motor çalışmaya başlayabilir",
+    "ana (master) anahtar açıksa motor çalışmaya başlayabilir"
+   ]
+  },
+  "14657": {
+   "text": "Sabit gaz kolu ayarı ve sabit hatveli (fixed pitch) bir pervane ile, hızlanma sırasında motor devri (RPM):",
+   "options": [
+    "Artar",
+    "Önce artar, sonra azalır",
+    "Azalır",
+    "Değişmeden kalır"
+   ]
+  },
+  "14662": {
+   "text": "Bir pervane kanadı boyunca burulmuştur, çünkü;",
+   "options": [
+    "Kökten uca kadar optimum hücum açısını korumak için.",
+    "Kanadın kökten uca doğru azalan doğrusal hızını telafi etmek için.",
+    "Kökten uca doğru kademeli olarak artan bir hatve (pitch) vermek için.",
+    "Kökten uca doğru kademeli olarak artan bir kanat açısı vermek için."
+   ]
+  },
+  "14663": {
+   "text": "Burulmamış bir pervane kanadı şuna neden olur;",
+   "options": [
+    "Kanat ucunda stall",
+    "Stabilitede artış",
+    "Stabilitede azalış",
+    "Flutter (titreşim)"
+   ]
+  },
+  "14664": {
+   "text": "Kokpitten bakıldığında saat yönünde dönen bir pervanede, asimetrik kanat etkisi şuna neden olur:",
+   "options": [
+    "Sola yaw",
+    "Kuyruğun düşmesi",
+    "Sola roll",
+    "Kuyruğun yükselmesi"
+   ]
+  },
+  "14665": {
+   "text": "Kokpitten bakıldığında saat yönünde dönen bir pervanede, slipstream (pervane rüzgârı) şuna neden olur:",
+   "options": [
+    "Sola yaw",
+    "Kuyruğun düşmesi",
+    "Sağa roll",
+    "Sağa yaw"
+   ]
+  },
+  "14666": {
+   "text": "Kokpitten bakıldığında saat yönünde dönen bir pervanede, tork reaksiyonu şuna neden olur:",
+   "options": [
+    "Sola roll",
+    "Kuyruğun düşmesi",
+    "Sağa roll",
+    "Kuyruğun yükselmesi"
+   ]
+  },
+  "14667": {
+   "text": "Asimetrik kanat etkisi esas olarak şundan kaynaklanır:",
+   "options": [
+    "pervane ekseninin bağıl hava akımına göre eğikliğinden.",
+    "yüksek hızdan.",
+    "büyük yaw açılarından.",
+    "büyük tırmanma açılarından."
+   ]
+  },
+  "14670": {
+   "text": "Pervane verimi, şunlar arasındaki oran olarak tanımlanabilir:",
+   "options": [
+    "pervanenin kullanılabilir gücü ve şaft gücü",
+    "itki ve maksimum itki",
+    "kullanılabilir güç ve maksimum güç",
+    "yakıt akışının termal gücü ve şaft gücü"
+   ]
+  },
+  "14673": {
+   "text": "Sağ el pervanesinde, kalkış koşusu sırasında tork etkisi, arkadan bakıldığında şu eğilimi gösterecektir:",
+   "options": [
+    "Uçağı sola roll ettirme",
+    "Uçağın burnunu yukarı pitch ettirme",
+    "Uçağın burnunu aşağı pitch ettirme",
+    "Uçağı sağa roll ettirme"
+   ]
+  },
+  "14674": {
+   "text": "Pervane burulma açısı (twist angle) ile ilgili hangi ifade doğrudur?",
+   "options": [
+    "En büyük kanat burulma açısı göbekte, en küçüğü uçtadır.",
+    "Kanat burulma açısı bağıl hava akımına göre değişir.",
+    "Kanat burulma açısı kanat boyunca değişmez.",
+    "En büyük kanat burulma açısı uçta, en küçüğü göbektedir."
+   ]
+  },
+  "14675": {
+   "text": "Hangi ifade doğrudur?\nI. Küçük kanat açılı bir pervane fine pitch'te olarak adlandırılır.\nII. Büyük kanat açılı bir pervane coarse pitch'te olarak adlandırılır.",
+   "options": [
+    "I doğru, II doğru.",
+    "I doğru, II yanlış.",
+    "I yanlış, II yanlış.",
+    "I yanlış, II doğru."
+   ]
+  },
+  "14676": {
+   "text": "Pilot, sabit hatveli (fix pitch) bir pervanenin güç çıkışını aşağıdakilerden hangisiyle izleyebilir?",
+   "options": [
+    "RPM göstergesi.",
+    "Yakıt tüketim göstergesi.",
+    "Karışım (mixture) kolu.",
+    "Yağ basıncı göstergesi."
+   ]
+  },
+  "16208": {
+   "text": "Pervane buzlanmasından tipik olarak hangi etkiler ortaya çıkar?",
+   "options": [
+    "Azalan güç çıkışı, azalan RPM.",
+    "Azalan güç çıkışı, artan RPM.",
+    "Artan güç çıkışı, azalan RPM.",
+    "Artan güç çıkışı, artan RPM."
+   ]
+  },
+  "14677": {
+   "text": "100 amper/saatlik bir akü, teoride 20 amperi en fazla ne kadar süre sağlayabilir:",
+   "options": [
+    "5 saat",
+    "6 saat",
+    "4 saat",
+    "2 saat."
+   ]
+  },
+  "14678": {
+   "text": "Bus-bar (bara) şudur:",
+   "options": [
+    "elektrik gücü için bir dağıtım noktası.",
+    "hareketli bobinli bir cihazın statoru.",
+    "iki veya daha fazla anahtarın birlikte çalıştırılmasını sağlayan bir cihaz.",
+    "yalnızca DC devrelerde kullanılabilen bir cihaz."
+   ]
+  },
+  "14679": {
+   "text": "Çift kutuplu (double-pole) bir elektrik sistemi:",
+   "options": [
+    "Akımı jeneratör veya alternatörden bileşene taşıyan bir kablo ve devreyi jeneratör veya alternatöre geri tamamlayan başka bir kablo gerektirir",
+    "Fail-safe'dir ve bu nedenle akü gerektirmez",
+    "Devreyi tamamlamak için dönüş akımının uçak gövdesinin metali üzerinden geri aktığı bir sistemdir",
+    "İletken olmayan malzemelerden yapılmış uçaklarda gerekli değildir"
+   ]
+  },
+  "14680": {
+   "text": "Röle (relay) şudur;",
+   "options": [
+    "elektromanyetik olarak çalıştırılan bir anahtar.",
+    "AC devreler için özel olarak tasarlanmış bir anahtar.",
+    "bir elektrik güvenlik anahtarı.",
+    "bir elektrik enerjisi dönüştürme birimi."
+   ]
+  },
+  "14681": {
+   "text": "Statik bir invertör (static inverter) şudur:",
+   "options": [
+    "DC'yi AC'ye çeviren bir birim.",
+    "AC'yi DC'ye çeviren bir birim.",
+    "statik yükün polaritesini ters çeviren bir cihaz.",
+    "yalnızca DC devrelerde kullanılabilen bir cihaz."
+   ]
+  },
+  "14682": {
+   "text": "24 V 60 AH'lik bir kurşun asit akünün merkezi baraya bağlı olduğunu varsayın. Aküden çekilen tüketim 6A'dir. Akünün dayanma süresi nedir?",
+   "options": [
+    "10 saat",
+    "4 dakika",
+    "4 saat",
+    "10 dakika"
+   ]
+  },
+  "14683": {
+   "text": "Başlatıcı nedenin ortadan kaldırıldığı varsayılırsa, sıfırlama (resetting) ile ilgili aşağıdaki ifadelerden hangileri doğru ya da yanlıştır?\nI. Sigorta (fuse) sıfırlanabilir değildir.\nII. Devre kesici (circuit breaker) sıfırlanabilir.",
+   "options": [
+    "I doğru, II doğru.",
+    "I yanlış, II doğru.",
+    "I doğru, II yanlış.",
+    "I yanlış, II yanlış."
+   ]
+  },
+  "14684": {
+   "text": "Aşağıda, orta-sıfır okumalı bir ampermetre kullanan hafif bir uçağın DC elektrik sistemine ait şema bulunmaktadır. Ampermetre ibresinin orta-sıfır konumunda olmasının en olası nedeni şudur:",
+   "options": [
+    "Akü tam doludur",
+    "Akü boşalmıştır",
+    "Alternatör arızalanmıştır",
+    "Tüm elektrik yükleri kapatılmıştır"
+   ]
+  },
+  "14685": {
+   "text": "Aşağıda hafif bir uçağın DC elektrik sistemine ait şema bulunmaktadır. Yük göstergesinin (loadmeter) ibresinin gösterilen konumda olmasının en olası nedeni şudur:",
+   "options": [
+    "Alternatör arızalanmıştır",
+    "Tüm elektrik yükleri kapatılmıştır",
+    "Akü boşalmıştır",
+    "Akü tam doludur"
+   ]
+  },
+  "14687": {
+   "text": "Sigortalar (fuse) şuna göre bir değerle derecelendirilir:",
+   "options": [
+    "Taşıyacakları amper sayısına.",
+    "Ohm cinsinden ölçülen dirençlerine.",
+    "Watt değerlerine.",
+    "Geçirecekleri volt sayısına."
+   ]
+  },
+  "14688": {
+   "text": "Uçuşta bir devre kesici (circuit breaker) devreyi kestiğinde;",
+   "options": [
+    "bir kez sıfırlanmalıdır",
+    "sıfırlanmamalıdır",
+    "en fazla 5 kez sıfırlanmalıdır",
+    "her kesintide sıfırlanmalıdır"
+   ]
+  },
+  "14689": {
+   "text": "(1) sigorta ve (2) devre kesici hakkında:",
+   "options": [
+    "(1) sıfırlanabilir değildir, (2) sıfırlanabilir.",
+    "(1) yüksek akımlar için uygun değildir, (2) yüksek akımlar için uygundur",
+    "(1) yüksek akımlar için uygundur, (2) yüksek akımlar için uygun değildir.",
+    "(1) ve (2) sıfırlanabilir değildir."
+   ]
+  },
+  "14690": {
+   "text": "Statik bir invertörün girişi ve çıkışı sırasıyla:",
+   "options": [
+    "DC ve AC.",
+    "DC ve DC.",
+    "AC ve DC.",
+    "AC ve AC."
+   ]
+  },
+  "14693": {
+   "text": "Teorik olarak, 100 Ah'lik bir akü 25 amperi ne kadar süre sağlar",
+   "options": [
+    "4 saat",
+    "25 dakika",
+    "100 dakika",
+    "25 saat"
+   ]
+  },
+  "14695": {
+   "text": "Paralel bağlanmış iki adet 12 volt 40 amper-saat kapasiteli akü, toplamda şu voltaj ve kapasiteyi verir:",
+   "options": [
+    "12 volt ve 80 amper-saat.",
+    "12 volt ve 40 amper-saat.",
+    "24 volt ve 20 amper-saat.",
+    "24 volt ve 40 amper-saat."
+   ]
+  },
+  "14696": {
+   "text": "Seri bağlanmış iki adet 12 volt 40 amper-saat kapasiteli akü, toplamda şu kapasiteyi verir:",
+   "options": [
+    "24 voltta 40 amper-saat.",
+    "12 voltta 40 amper-saat.",
+    "24 voltta 20 amper-saat.",
+    "12 voltta 80 amper-saat."
+   ]
+  },
+  "14697": {
+   "text": "Sıfır merkezli ampermetrenin ibresi göstergenin aşırı pozitif tarafındaysa uçuşta risk nedir?",
+   "options": [
+    "Akünün aşırı şarj olması",
+    "Risk yoktur",
+    "Alternatör arızası",
+    "Akünün boşalması"
+   ]
+  },
+  "14698": {
+   "text": "\"Açık devre\" (open circuit) bir elektrik besleme sisteminde oluştuğunda:",
+   "options": [
+    "süreklilik kaybı, çalışan bileşenlerin işlev görmesini engeller.",
+    "sigorta veya devre kesici (CB), çekilen aşırı akım nedeniyle devreyi izole eder.",
+    "ampermetrenin gösterdiği yük artar.",
+    "bileşen normal çalışır, ancak kapanmaz."
+   ]
+  },
+  "14699": {
+   "text": "Motor durduğunda, ana elektrik güç kaynağı:",
+   "options": [
+    "Akü.",
+    "Devre kesici.",
+    "Jeneratör veya alternatör.",
+    "Manyeto."
+   ]
+  },
+  "14700": {
+   "text": "Bourdon tüpü şunun ölçümü için uygundur...",
+   "options": [
+    "basınç.",
+    "hız.",
+    "ağırlık.",
+    "sıcaklık."
+   ]
+  },
+  "14701": {
+   "text": "Aşağıdaki cümleyi en doğru ifadeyi verecek şekilde tamamlayın. Sabit hava sıcaklığı ve hacminde, basıncı artırılırsa:",
+   "options": [
+    "yoğunluğu artar.",
+    "sıcaklık sabit kaldığı için yoğunluğu etkilenmez.",
+    "hacim sabit kaldığı için yoğunluğu etkilenmez.",
+    "yoğunluğu azalır."
+   ]
+  },
+  "14702": {
+   "text": "Yoğunluk:",
+   "options": [
+    "irtifa artışıyla azalır.",
+    "sıcaklık azalışıyla azalır.",
+    "irtifa artışıyla artar.",
+    "sıcaklık değişiminden etkilenmez."
+   ]
+  },
+  "14703": {
+   "text": "Basınçlandırılmamış bir uçakta kokpit içinde alternatif bir statik kaynak varsa, alternatif statik basınç:",
+   "options": [
+    "Dış statik kaynaktan daha düşük olacaktır",
+    "Pitot başlığından nem girişi nedeniyle güvenilmez olacaktır",
+    "Dış statik kaynaktan daha yüksek olacaktır",
+    "Hava hızı göstergesinde herhangi bir dalgalanma olduğu anda seçilmelidir"
+   ]
+  },
+  "14704": {
+   "text": "Basınçlandırılmamış bir uçağa kokpit içinde alternatif bir statik kaynak takılmışsa, dış statik kaynakla karşılaştırıldığında alternatif statik basınç:",
+   "options": [
+    "daha az olacaktır.",
+    "sıcaklık farkına duyarlı olacağından değişken olacaktır.",
+    "aynı olacaktır.",
+    "daha fazla olacaktır."
+   ]
+  },
+  "14705": {
+   "text": "Statik portların tıkanması durumunda aşağıdaki cihazlar kullanılamaz hale gelir: 1. Altimetre, 2. Düşey hız göstergesi, 3. Hava hızı göstergesi, 4. Yapay ufuk",
+   "options": [
+    "1, 2, 3",
+    "1, 2, 4",
+    "2, 3, 4",
+    "1, 3, 4"
+   ]
+  },
+  "14706": {
+   "text": "İçine daldırılan herhangi bir şey üzerine etki eden hava basıncı:",
+   "options": [
+    "Statik Basınç olarak da bilinir.",
+    "Toplam Basınç olarak da bilinir.",
+    "irtifada deniz seviyesinden daha büyüktür.",
+    "Dinamik Basınç olarak da bilinir."
+   ]
+  },
+  "14707": {
+   "text": "Pitot tüpü kullanılarak ölçülen basınç:",
+   "options": [
+    "toplam basınç",
+    "toplam basınç - statik basınç",
+    "dinamik basınç",
+    "statik basınç"
+   ]
+  },
+  "14708": {
+   "text": "Statik kaynak (vent) düzenli olarak boyanmalıdır, çünkü",
+   "options": [
+    "Asla boyanmamalıdır.",
+    "Boya korozyonu önler.",
+    "Bu buzlanmayı önler.",
+    "İyi bir boya daha az sürükleme oluşturur."
+   ]
+  },
+  "14709": {
+   "text": "Okla gösterilen, pitot-statik sisteme giren toplam basınç:",
+   "options": [
+    "statik basınç + dinamik basınç.",
+    "pitot + adyabatik basınç.",
+    "adyabatik + pitot basıncı.",
+    "pitot basıncı + dinamik basınç."
+   ]
+  },
+  "14710": {
+   "text": "Nem ve sıcaklık sabit kalırken hava basıncındaki bir azalmanın hava yoğunluğu üzerindeki etkisi ne olur?",
+   "options": [
+    "Hava yoğunluğu azalır.",
+    "Sabit hacimde hava yoğunluğu basınçtan bağımsızdır.",
+    "Hava yoğunluğu değişmeden kalır.",
+    "Hava yoğunluğu artar."
+   ]
+  },
+  "14711": {
+   "text": "Bir uçak uçuştayken, pitot tüpündeki ileri bakan delik tarafından algılanan basınç:",
+   "options": [
+    "Dinamik basınç artı statik basınç",
+    "Yalnızca dinamik basınç",
+    "Toplam basınç artı dinamik basınç",
+    "Yalnızca statik basınç"
+   ]
+  },
+  "14712": {
+   "text": "Havanın yoğunluğunun irtifa ile değişimi göz önüne alındığında, aşağıdaki dört seçenekten hangisi doğrudur?",
+   "options": [
+    "İrtifa arttıkça basınçtaki azalma yoğunluğun azalmasına neden olur.",
+    "İrtifa arttıkça basınçtaki artış yoğunluğun azalmasına neden olur.",
+    "İrtifa arttıkça sıcaklıktaki azalma yoğunluğun artmasına neden olur.",
+    "İrtifa arttıkça sıcaklıktaki artış yoğunluğun artmasına neden olur."
+   ]
+  },
+  "14713": {
+   "text": "Pitot tüpü tarafından hangi basınç algılanır?",
+   "options": [
+    "Toplam hava basıncı",
+    "Dinamik hava basıncı",
+    "Statik hava basıncı",
+    "Kabin hava basıncı"
+   ]
+  },
+  "14714": {
+   "text": "Yağ basıncı algılamak için hangi sensör uygundur?",
+   "options": [
+    "Bourdon tüpü",
+    "Diyafram",
+    "Aneroit kapsül",
+    "Körük"
+   ]
+  },
+  "14715": {
+   "text": "Bir uçuş seviyesi (flight level) şudur...",
+   "options": [
+    "basınç irtifası.",
+    "gerçek irtifa.",
+    "yoğunluk irtifası.",
+    "yer üzerindeki irtifa."
+   ]
+  },
+  "14716": {
+   "text": "Bir altimetre bir veya daha fazla aneroit kapsül içerir. Bu kapsülün içinde;",
+   "options": [
+    "çok düşük bir kalıntı basınç vardır ve dışında statik basınç vardır.",
+    "dinamik basınç vardır ve dışında statik basınç vardır.",
+    "statik basınç vardır ve dışında dinamik basınç vardır.",
+    "statik basınç vardır ve dışında çok düşük bir kalıntı basınç vardır."
+   ]
+  },
+  "14717": {
+   "text": "Bir altimetre:",
+   "options": [
+    "statik basınç kaynağına bağlı, sızdırmaz bir cihaz kutusundan oluşur. Cihaz kutusu, alçalma sırasında büzülen, sızdırmaz ve kısmen boşaltılmış bir aneroit kapsül içerir.",
+    "alçalma sırasında genişleyen, kısmen boşaltılmış bir kapsül içerir.",
+    "alçalma sırasında genişleyen bir barometrik kapsül içerir.",
+    "toplam basınç kaynağına bağlı, alçalma sırasında büzülen bir barometrik kapsül içerir."
+   ]
+  },
+  "14718": {
+   "text": "Bir altimetrede, kapsülün içinde ….. ve kutunun içinde ise ………. vardır.",
+   "options": [
+    "Vakum / Statik basınç",
+    "Statik basınç / Vakum basıncı",
+    "Statik basınç / Statik basınç",
+    "Vakum / Dinamik basınç"
+   ]
+  },
+  "14719": {
+   "text": "Altimetre yerel QNH'ye ayarlandığında hangi yüksekliği gösterir?",
+   "options": [
+    "Deniz seviyesi üzerindeki yükseklik.",
+    "Uçuş seviyesi.",
+    "Arazi üzerindeki yükseklik.",
+    "Havaalanı üzerindeki yükseklik."
+   ]
+  },
+  "14720": {
+   "text": "Sıcak bir hava bölgesinden daha soğuk bir hava bölgesine uçarken, altimetre:",
+   "options": [
+    "Olduğundan yüksek gösterir",
+    "Yer üzerindeki gerçek yüksekliği gösterir.",
+    "Öncekiyle aynı doğrulukta kalır.",
+    "Olduğundan düşük gösterir."
+   ]
+  },
+  "14721": {
+   "text": "Soğuk havada (standart atmosferden daha soğuk) uçarken, altimetre:",
+   "options": [
+    "olduğundan yüksek gösterir",
+    "yer üzerindeki gerçek yüksekliği gösterir.",
+    "öncekiyle aynı doğrulukta kalır.",
+    "olduğundan düşük gösterir."
+   ]
+  },
+  "14722": {
+   "text": "Standart atmosfer basıncına ayarlandığında, bir uçak altimetresi hangi irtifaları gösterir?",
+   "options": [
+    "Uçuş seviyelerini.",
+    "Yer yüzeyi üzerindeki gerçek irtifaları.",
+    "Bağıl irtifaları.",
+    "Mutlak irtifaları."
+   ]
+  },
+  "14723": {
+   "text": "Hangi cihaz histerezis hatasından etkilenebilir?",
+   "options": [
+    "Altimetre",
+    "Takometre",
+    "Doğrudan okumalı pusula",
+    "Düşey hız göstergesi"
+   ]
+  },
+  "14724": {
+   "text": "Bir düşey hız göstergesi (VSI) şunlar arasındaki farkı ölçer...",
+   "options": [
+    "anlık statik basınç ile önceki statik basınç.",
+    "toplam basınç ile statik basınç.",
+    "anlık toplam basınç ile önceki toplam basınç.",
+    "dinamik basınç ile toplam basınç."
+   ]
+  },
+  "14725": {
+   "text": "VSI, …X… basıncı algılayan ve bunu …Z… hızı göstermek için …Y… basıncındaki değişim oranına dönüştüren bir oran cihazıdır.",
+   "options": [
+    "X. statik Y. statik Z. Düşey",
+    "X. pitot Y. statik Z. düşey",
+    "X. pitot Y. pitot Z. düşey",
+    "X. statik Y. pitot Z. Vektörel"
+   ]
+  },
+  "14727": {
+   "text": "Bir uçak alçalırken, Düşey Hız Göstergesine giden statik vent tıkanırsa, gösterge:",
+   "options": [
+    "kısa bir gecikmeden sonra sıfır gösterir.",
+    "alçalma gösterir.",
+    "tırmanma gösterir.",
+    "aynı değeri göstermeye devam eder."
+   ]
+  },
+  "14728": {
+   "text": "Düşey Hız Göstergesinin (VSI) çalışma prensibi şudur:",
+   "options": [
+    "doğrudan bir statik vent üzerinden algılanan kapsül içindeki statik basıncı, ölçülü (kısıtlı) bir vent üzerinden algılanan cihaz kutusundaki statik basınçla karşılaştırır. VSI böylece statik basıncın yükseklikle değişim oranını algılayabilir.",
+    "yalnızca pitot tüpünden gelen toplam basıncı algılar ve toplam basıncın yükseklikle değişimini, dakikada fit veya saniyede metre cinsinden ölçülen bir tırmanma veya alçalma oranına dönüştürür.",
+    "pitot tüpünden gelen dinamik basıncı, statik ventlerden gelen statik basınçla karşılaştırır. VSI, ikisi arasındaki farkı dakikada fit veya saniyede metre cinsinden bir düşey hız olarak göstermek üzere kalibre edilmiştir.",
+    "pitot tüpünden gelen toplam basıncı, statik ventlerden gelen statik basınçla karşılaştırır. VSI, ikisi arasındaki farkı dakikada fit cinsinden bir düşey hız olarak göstermek üzere kalibre edilmiştir."
+   ]
+  },
+  "14726": {
+   "text": "Buzlanma koşullarında uçuş sırasında pitot ısıtıcısına giden güç kesilirse ve uçak sonrasında tırmanırsa, pitot tüpü buzla tıkanmış olması durumunda Altimetre, VSI ve ASI'nin gösterdiği değerler:",
+   "options": [
+    "Doğru gösterir, doğru gösterir, olduğundan yüksek gösterir",
+    "Doğru gösterir, doğru gösterir, olduğundan düşük gösterir",
+    "Olduğundan düşük gösterir, doğru gösterir, olduğundan yüksek gösterir",
+    "Doğru gösterir, olduğundan düşük gösterir, olduğundan yüksek gösterir"
+   ]
+  },
+  "14729": {
+   "text": "Basınçlandırılmamış bir uçakta, hava hızı göstergesine giden pitot toplam basınç hattındaki bir sızıntı, göstergenin:",
+   "options": [
+    "olduğundan düşük göstermesine neden olur.",
+    "tırmanmada olduğundan yüksek, alçalmada olduğundan düşük göstermesine neden olur.",
+    "olduğundan yüksek göstermesine neden olur.",
+    "tırmanmada olduğundan düşük, alçalmada olduğundan yüksek göstermesine neden olur."
+   ]
+  },
+  "14730": {
+   "text": "Bir hava hızı göstergesi bir kapsül içerir, bu kapsülün içinde;",
+   "options": [
+    "toplam basınç vardır ve dışında statik basınç vardır.",
+    "çok düşük bir kalıntı basınç vardır ve dışında statik basınç vardır.",
+    "dinamik basınç vardır ve dışında statik basınç vardır.",
+    "statik basınç vardır ve dışında dinamik basınç vardır."
+   ]
+  },
+  "14731": {
+   "text": "Kalibre edilmiş hava hızı (CAS):",
+   "options": [
+    "IAS artı cihaz ve pozisyon hata düzeltmesi",
+    "IAS artı sıkıştırılabilirlik düzeltmesi",
+    "IAS artı yoğunluk hata düzeltmesi",
+    "IAS artı basınç hata düzeltmesi"
+   ]
+  },
+  "14732": {
+   "text": "Tırmanma sırasında hava hızı göstergesinin toplam basınç probu tıkanır; pilot sabit bir gösterge hava hızı (IAS) koruyorsa, gerçek hava hızı (TAS):",
+   "options": [
+    "stall hızına ulaşana kadar azalır.",
+    "VMO'ya ulaşana kadar artar.",
+    "her 600 FT'de %1 artar.",
+    "her 600 FT'de %1 azalır."
+   ]
+  },
+  "14733": {
+   "text": "Eşdeğer Hava Hızı (EAS), Gösterge Hava Hızından (IAS) şunlar için düzeltme yapılarak elde edilir:",
+   "options": [
+    "pozisyon, cihaz ve sıkıştırılabilirlik hataları.",
+    "pozisyon ve cihaz hatası.",
+    "sıkıştırılabilirlik ve yoğunluk hatası.",
+    "pozisyon, cihaz ve yoğunluk hataları."
+   ]
+  },
+  "14734": {
+   "text": "Bir statik vent seyir irtifasında tıkanırsa, bu durum sonrasındaki bir alçalma sırasında barometrik cihazları nasıl etkiler? I. Altimetre II. ASI",
+   "options": [
+    "I. sabit kalır II. olduğundan yüksek gösterir",
+    "I. olduğundan düşük gösterir II. sabit kalır",
+    "I. olduğundan düşük gösterir II. olduğundan yüksek gösterir",
+    "I. sabit kalır II. olduğundan düşük gösterir"
+   ]
+  }
+ }
+}

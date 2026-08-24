@@ -1,0 +1,310 @@
+{
+ "questions": {
+  "16076": {
+   "text": "Uluslararası Standart Atmosfer, ortam sıcaklığının:",
+   "options": [
+    "yeryüzünden yükseklik arttıkça azaldığını varsayar.",
+    "yeryüzünden yükseklik azaldıkça aynı kaldığını varsayar.",
+    "yeryüzünden yükseklik arttıkça arttığını varsayar.",
+    "yalnızca bir inversiyon tabakası varsa yükseklikle azaldığını varsayar."
+   ]
+  },
+  "16233": {
+   "text": "Bir uçak, trim edilmiş duruşundan bozulduğunda — örneğin türbülanslı havaya girdiğinde — sonrasında şunu yaparsa nötr stabiliteye sahip olduğu söylenir:",
+   "options": [
+    "yeni duruşunda kalır.",
+    "orijinal duruşundan daha da uzaklaşır.",
+    "orijinal duruşunu hemen yeniden kurar.",
+    "sonunda orijinal duruşunda yerleşmeden önce orijinal duruşu etrafında salınır."
+   ]
+  },
+  "16212": {
+   "text": "Flap aşağı konfigürasyonundaki stall hücum açısı, flap yukarı konfigürasyonundaki stall hücum açısından …… .",
+   "options": [
+    "küçüktür.",
+    "CG konumuna bağlı olarak küçük ya da büyüktür.",
+    "aynıdır.",
+    "büyüktür."
+   ]
+  },
+  "16082": {
+   "text": "Sürtünmesiz, sıkıştırılamaz gazlar için Bernoulli denklemi şunu ifade eder:",
+   "options": [
+    "toplam basınç = dinamik basınç + statik basınç.",
+    "statik basınç = toplam basınç + dinamik basınç.",
+    "dinamik basınç = toplam basınç + statik basınç.",
+    "toplam basınç = dinamik basınç - statik basınç."
+   ]
+  },
+  "16225": {
+   "text": "Bir slat şunu yapar:",
+   "options": [
+    "stall'ı daha yüksek bir hücum açısına erteler.",
+    "kanadın üst yüzeyinde sınır tabakası emişi sağlar.",
+    "kanat profilinin camber'ını artırır ve akışı keskin hücum kenarı etrafında yönlendirir.",
+    "kanat alanını ve kanadın arka kısmının camber'ını artırarak taşıma kuvvetini artırır."
+   ]
+  },
+  "16227": {
+   "text": "Kritik hücum açısını ne artırır? Şunun kullanımı:",
+   "options": [
+    "slat",
+    "spoiler",
+    "gövdeye monteli hız frenleri",
+    "firar kenarı flapları"
+   ]
+  },
+  "16271": {
+   "text": "Diferansiyel kanatçık sapması:",
+   "options": [
+    "Sağ ve sol kanatlar arasındaki sürükleme farkını azaltır.",
+    "istenen roll hızını elde etmek için gereklidir.",
+    "kanatçıklar saptırıldığında toplam taşıma kuvvetini sabit tutmak için gereklidir.",
+    "CLmax'ı artırır."
+   ]
+  },
+  "16213": {
+   "text": "Yaklaşma ve iniş sırasında flapların ana işlevlerinden biri şudur:",
+   "options": [
+    "hava hızını artırmadan alçalma açısını artırmak.",
+    "hücum açısını artırmak.",
+    "daha yüksek bir gösterge hava hızında iniş temasına izin vermek.",
+    "hava hızını artırmadan alçalma açısını azaltmak."
+   ]
+  },
+  "16154": {
+   "text": "Sabit IAS'ta indüklenen sürükleme şundan etkilenir:",
+   "options": [
+    "Uçak ağırlığı.",
+    "Kanat veter hattı ile gövde merkez hattı arasındaki açı.",
+    "Uçağın kanat konumu.",
+    "Motor itkisi."
+   ]
+  },
+  "16111": {
+   "text": "Bir kanat profilinin bağıl kalınlığı şu şekilde ifade edilir:",
+   "options": [
+    "% veter.",
+    "İnç.",
+    "Metre.",
+    "Camber."
+   ]
+  },
+  "16114": {
+   "text": "Bir kanadın daralma oranı (taper ratio) şunlar arasındaki orandır:",
+   "options": [
+    "uç veteri ve kök veteri",
+    "kanat açıklığının karesi ve kanat alanı",
+    "ortalama geometrik veter ve kanat açıklığı",
+    "kök veteri ve uç veteri"
+   ]
+  },
+  "16118": {
+   "text": "Taşıma kuvveti formülündeki 'q' ve 'S' terimleri",
+   "options": [
+    "dinamik basınç ve kanat alanı",
+    "kütle akışı ve kanat alanı",
+    "dinamik basınç ve kanat yüklemesi",
+    "statik basınç ve dinamik basınç"
+   ]
+  },
+  "16102": {
+   "text": "Hücum açısı, şunlar arasındaki açıdır:",
+   "options": [
+    "Veter hattı ve bağıl hava akımı.",
+    "Veter hattı ve yatay düzlem.",
+    "Veter hattı ve uçağın boylamsal ekseni.",
+    "Camber hattı ve serbest akım."
+   ]
+  },
+  "16156": {
+   "text": "Aşağıdakilerden hangisi büyük indüklenen sürükleme üretmesi muhtemeldir?",
+   "options": [
+    "Küçük açıklık oranı",
+    "Daralan kanatlar",
+    "Büyük açıklık oranı",
+    "Düşük taşıma katsayıları"
+   ]
+  },
+  "16106": {
+   "text": "Bağıl hava akımı, uçağın hareketine _____ ve _____ .",
+   "options": [
+    "Paralel - Ters yönde",
+    "Paralel - Aynı yönde",
+    "Dik - Aynı yönde",
+    "Dik - Ters yönde"
+   ]
+  },
+  "16308": {
+   "text": "100 knot'ta sabit bir yatay dönüş sırasında, yük faktörü şu durumda artar: __________.",
+   "options": [
+    "yatış açısı arttığında",
+    "Hiçbir cevap doğru değil.",
+    "yatış açısı sabit kaldığında",
+    "yatış açısı azaldığında"
+   ]
+  },
+  "16299": {
+   "text": "Düz ve sabit bir tırmanma sırasında, sürükleme kuvvetiyle aynı yönde ek olarak hangi kuvvet etki eder ve bu, tırmanmanın yatay uçuşa göre daha fazla güç gerektirmesine yol açar?",
+   "options": [
+    "Ağırlık kuvvetinin uçuş yoluna göre geriye doğru bileşeni.",
+    "İtki kuvvetinin uçuş yoluna göre geriye doğru bileşeni.",
+    "Taşıma kuvvetinin uçuş yoluna göre ileriye doğru bileşeni.",
+    "Ağırlık kuvvetinin dikey bileşeni."
+   ]
+  },
+  "16168": {
+   "text": "Bir uçak yer etkisine girdiğinde:",
+   "options": [
+    "taşıma kuvveti artar ve sürükleme azalır",
+    "efektif hücum açısı azalır",
+    "indüklenen hücum açısı artar.",
+    "sürükleme ve taşıma kuvveti azalır"
+   ]
+  },
+  "16237": {
+   "text": "Boylamsal stabiliteyi sağlayan ana yüzey:",
+   "options": [
+    "Yatay stabilize",
+    "Dikey stabilize",
+    "Kanatçık",
+    "İrtifa dümeni"
+   ]
+  },
+  "16306": {
+   "text": "Standart (rate one) bir dönüş yapan uçağın 80 saniye sonundaki baş açısı değişimi nedir?",
+   "options": [
+    "240 derece",
+    "120 derece",
+    "160 derece",
+    "320 derece"
+   ]
+  },
+  "16275": {
+   "text": "Bir anti-balance tab'ın amacı şudur:",
+   "options": [
+    "Pilotun fiziksel kontrol yükünün, kontrol yüzeyi sapmasının artmasıyla artmasını sağlamak.",
+    "Kontrolleri hareket ettirmek için gereken yükü yalnızca yüksek hızlarda azaltmak.",
+    "Kontrolleri hareket ettirmek için gereken yükü tüm hızlarda azaltmak.",
+    "Uçağı trim etmek."
+   ]
+  },
+  "16100": {
+   "text": "(Subsonik) statik basınç:",
+   "options": [
+    "bir borudaki akışta çap azaldığında azalır.",
+    "hızın sıfır olduğu bir noktadaki basınçtır.",
+    "toplam basınç artı dinamik basınçtır.",
+    "bir borudaki akışta çap azaldığında artar."
+   ]
+  },
+  "16218": {
+   "text": "Düz ve seviyeli uçuşu sürdürmek için, flaplar içeri alındığında hücum açısı (AOA) ….. olmalıdır",
+   "options": [
+    "Artırılmalı",
+    "Kritik hücum açısında",
+    "Azaltılmalı",
+    "Sabit tutulmalı"
+   ]
+  },
+  "16263": {
+   "text": "Kumanda kolu sola hareket ettirildiğinde ne olur?",
+   "options": [
+    "Sol kanatçık yukarı, sağ kanatçık aşağı hareket eder",
+    "Her iki kanatçık da aşağı hareket eder",
+    "Her iki kanatçık da yukarı hareket eder",
+    "Sağ kanatçık yukarı, sol kanatçık aşağı hareket eder"
+   ]
+  },
+  "16117": {
+   "text": "Taşıma kuvveti formülündeki 'V' ve 'CL' terimleri şunu ifade eder:",
+   "options": [
+    "hız ve taşıma katsayısı",
+    "hız ve kanat alanı",
+    "dinamik basınç ve kanat yüklemesi",
+    "statik basınç ve dinamik basınç"
+   ]
+  },
+  "16061": {
+   "text": "Bir uçağın kütlesi şunun sonucudur:",
+   "options": [
+    "İçerdiği madde miktarı.",
+    "Ağırlığı",
+    "Ne kadar büyük olduğu.",
+    "Hacmi."
+   ]
+  },
+  "16274": {
+   "text": "Bir uçağa balance tab kontrollü bir istikamet dümeni takılmıştır. Arkadan bakıldığında, uçağı sola yatırmak (yaw) için istikamet dümeni pedalının ileri sola hareket ettirilmesi balance tab'ı nereye hareket ettirir?",
+   "options": [
+    "tab'ı sağa ve dümeni sola.",
+    "tab'ı sola ve dümeni sola.",
+    "tab'ı sağa ve dümeni sağa.",
+    "tab'ı sola ve dümeni sağa."
+   ]
+  },
+  "16249": {
+   "text": "Statik yanal stabilite şununla azalır:",
+   "options": [
+    "kanat anhedralini artırmak.",
+    "dikey kuyruk boyutunu artırmak.",
+    "alçak kanat yerine yüksek kanat montajı kullanmak.",
+    "kanat ok açısını artırmak"
+   ]
+  },
+  "16069": {
+   "text": "Hava, sabit sıcaklık ve hacimde tutulurken basıncı artırılırsa, yoğunluğu:",
+   "options": [
+    "artar.",
+    "yalnızca ortam sıcaklığındaki değişimlerle değişir.",
+    "hacim sabit olduğu için sabit kalır.",
+    "azalır."
+   ]
+  },
+  "16232": {
+   "text": "Stabil bir uçak:",
+   "options": [
+    "Herhangi bir bozucu kuvvet kalktıktan sonra orijinal durumuna dönme eğilimine sahiptir.",
+    "Spin yapmaz.",
+    "Stall yapması zordur.",
+    "Kontrol etmek için daha az çaba gerektirir."
+   ]
+  },
+  "16189": {
+   "text": "Stall uyarısı hangi hıza ulaşılmadan hemen önce etkinleşir?",
+   "options": [
+    "VS",
+    "VNE",
+    "VX",
+    "VR"
+   ]
+  },
+  "16255": {
+   "text": "Uçağın normal (dikey) ekseni etrafındaki hareketi şu şekilde bilinir:",
+   "options": [
+    "Yaw.",
+    "Side slip.",
+    "Pitch.",
+    "Roll."
+   ]
+  },
+  "16162": {
+   "text": "Hava hızı arttıkça indüklenen sürükleme _____ , parazit sürükleme _____ ve toplam sürükleme _____ .",
+   "options": [
+    "Azalır, Artar, Önce azalır sonra artar",
+    "Azalır, Azalır, Azalır",
+    "Artar, Azalır, Önce artar sonra azalır",
+    "Artar, Artar, Artar"
+   ]
+  },
+  "16202": {
+   "text": "Bir pilot yatay uçuşta dönüş yaptığında, stall hızı:",
+   "options": [
+    "yük faktörünün karekökü ile artar",
+    "Artan yatış açısıyla azalır",
+    "yük faktörünün karesi ile artar",
+    "flap açılmasıyla artar"
+   ]
+  }
+ }
+}

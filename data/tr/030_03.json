@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "14998": {
+   "text": "İniş konfigürasyonunda stall hızı 50 knot ise VREF ne olur?",
+   "options": [
+    "65 knot",
+    "69 knot",
+    "71 knot",
+    "75 knot"
+   ]
+  },
+  "14927": {
+   "text": "Aşağıdakilerden hangisi doğru sıradadır?",
+   "options": [
+    "V1 < VR < VLOF < V2",
+    "V1 < VR < V2 < VLOF",
+    "V1 < VLOF < VR < V2",
+    "VR < V1 < V2 < VLOF"
+   ]
+  },
+  "14872": {
+   "text": "CG'yi belirlemek için kullanılan datum, boylamsal eksen üzerinde:",
+   "options": [
+    "Ancak burun ile kuyruk arasında olmak zorunda değildir.",
+    "MAC'in hücum kenarı ile firar kenarı arasındadır.",
+    "Burun ile kuyruk arasındadır.",
+    "Yangın duvarındadır (fire wall)."
+   ]
+  },
+  "14852": {
+   "text": "Seyahat yakıtı (trip fuel), kalkış kütlesinden çıkarılırsa sonuç neyi aşmamalıdır?",
+   "options": [
+    "Azami iniş kütlesi",
+    "Sıfır yakıt kütlesi",
+    "Trafik yükü",
+    "Azami kalkış kütlesi"
+   ]
+  },
+  "14977": {
+   "text": "Tırmanma oranının sıfırdan büyük belirli bir değere düştüğü irtifayı tanımlamak için hangi terim kullanılır?",
+   "options": [
+    "Servis tavanı",
+    "Mutlak tavan",
+    "Aerodinamik tavan",
+    "Basınçlandırma tavanı"
+   ]
+  },
+  "15002": {
+   "text": "%1'lik bir aşağı eğim (down-slope), gerekli iniş mesafesine ne etki eder?",
+   "options": [
+    "%5 artırır",
+    "%10 azaltır",
+    "%10 artırır",
+    "%5 azaltır"
+   ]
+  },
+  "15021": {
+   "text": "Plana göre CAS 150 knot, TAS 180 knot ve GS 210 knot olacaktır. Uçuş planına hangi değer girilmelidir?",
+   "options": [
+    "180 knot",
+    "bunların ortalama bir değeri",
+    "210 knot",
+    "150 knot"
+   ]
+  },
+  "14913": {
+   "text": "Kalkış sırasında durmak için kullanılan pist uzantısı:",
+   "options": [
+    "Stopway",
+    "TORA",
+    "TODA",
+    "Clearway"
+   ]
+  },
+  "14932": {
+   "text": "V1'i hangi hız sınırlar?",
+   "options": [
+    "VR",
+    "VS",
+    "VLOF",
+    "V2"
+   ]
+  },
+  "14824": {
+   "text": "Bir uçağın stall hızı, aşağıdaki yükleme durumlarından hangisinde en yüksek olur:",
+   "options": [
+    "Yüksek brüt kütle ve ileri ağırlık merkezi.",
+    "Düşük brüt kütle ve geri ağırlık merkezi.",
+    "Düşük brüt kütle ve ileri ağırlık merkezi.",
+    "Yüksek brüt kütle ve geri ağırlık merkezi."
+   ]
+  },
+  "14885": {
+   "text": "Artan sürüklemenin uçak performansına etkisi nedir?",
+   "options": [
+    "Yakıt tüketimini artırır",
+    "Menzili artırır",
+    "Uçuş süresini artırır; flap ayarları daha iyi tırmanma performansı sağlar.",
+    "Tırmanma açısını artırır"
+   ]
+  },
+  "15020": {
+   "text": "Tek motorlu bir uçakla yapılan VFR uçuşunda boş kütle = 1764 lbs, ekipman = 35 lbs, pilot + ön koltuk yolcusu = 300 lbs, kargo = 350 lbs, blok yakıt = 360 lbs, seyahat yakıtı = 210 lbs ve taksi yakıtı 10 lbs ise kalkış kütlesi nedir?",
+   "options": [
+    "2799 lbs",
+    "2764 lbs",
+    "2659 lbs",
+    "2809 lbs"
+   ]
+  },
+  "14971": {
+   "text": "Azami menzil için TAS ile azami uçuş süresi (endurance) için TAS'ı, diğer faktörler sabit kalmak kaydıyla ele alalım,",
+   "options": [
+    "İkisi de artan irtifa ile artar.",
+    "Azami menzil için TAS artan irtifa ile artarken, azami uçuş süresi için TAS artan irtifa ile azalır.",
+    "İkisi de irtifadan bağımsız olarak sabit kalır.",
+    "İkisi de artan irtifa ile azalır."
+   ]
+  },
+  "14850": {
+   "text": "Hangi ifade yanlıştır?",
+   "options": [
+    "Sıfır yakıt ağırlığı, kuru operasyon ağırlığı ile kullanılabilir yükün toplamıdır.",
+    "Sıfır yakıt ağırlığı, uçağın ağırlığından kullanılabilir yakıt çıkarıldığındaki değerdir.",
+    "Sıfır yakıt ağırlığı, mürettebat ve bagajlarının ağırlığını içerir.",
+    "Sıfır yakıt ağırlığı, belirli miktarda yakıtı içerebilir."
+   ]
+  },
+  "14951": {
+   "text": "Flap açıkken tırmanma açısı, flap kapalıyken olana kıyasla normalde:",
+   "options": [
+    "Daha küçüktür.",
+    "Değişmez.",
+    "Daha büyüktür.",
+    "Orta flap ayarında artar, büyük flap ayarında azalır."
+   ]
+  },
+  "14961": {
+   "text": "Belirli bir irtifaya mümkün olan en kısa sürede ulaşmak istiyorsanız hangi hızı korursunuz?",
+   "options": [
+    "Vy hızı.",
+    "Vopt hızı.",
+    "Veco hızı.",
+    "Vx hızı."
+   ]
+  },
+  "14950": {
+   "text": "Diğer faktörler sabit kalmak kaydıyla, artan irtifa Vx ve Vy'yi TAS açısından nasıl etkiler?",
+   "options": [
+    "İkisi de artar.",
+    "İkisi de azalır.",
+    "İkisi de aynı kalır.",
+    "Vx azalır, Vy artar."
+   ]
+  },
+  "14945": {
+   "text": "Sabit kütleli bir pistonlu motorda, en iyi tırmanma açısı hızı (Vx), hangi hızda oluşur:",
+   "options": [
+    "Fazla itki en fazla olduğunda.",
+    "Ağırlık en az olduğunda.",
+    "Sürükleme en fazla olduğunda.",
+    "Fazla güç en fazla olduğunda."
+   ]
+  },
+  "14831": {
+   "text": "Bir uçak, C of G'si geri limitte olacak şekilde yükleniyor: I Stall hızı azalır, bu olumsuz bir faktördür. II Menzil ve uçuş süresi azalır, bunlar olumsuz faktörlerdir. III Stall riski artar, bu olumsuz bir faktördür. IV Kumanda kuvvetleri (stick forces) artar, bu olumsuz bir faktördür.",
+   "options": [
+    "Yalnızca II ve III doğrudur.",
+    "Yalnızca II ve IV doğrudur.",
+    "Yalnızca I ve IV doğrudur.",
+    "Yukarıdakilerin tümü doğrudur."
+   ]
+  },
+  "14970": {
+   "text": "Uçak emniyet irtifasına ve hızına ulaştığında tırmanma sırasında flaplar neden içeri alınır?",
+   "options": [
+    "Açık flaplar parazit sürüklemeyi artırır ve sürüklemedeki artış daha düşük tırmanma açısı ve ROC (tırmanma oranı) ile sonuçlanır.",
+    "Flapların içeri alınması tırmanma performansını etkilemez.",
+    "Düşük iş yükü nedeniyle pilot için en uygun zamandır.",
+    "Açık flaplar, motorun üretebileceği kullanılabilir gücü azaltır."
+   ]
+  },
+  "14297": {
+   "text": "Bir Rapor Noktası üzerine 1500Z'de varmayı planladınız. Ancak beklenmedik bir kuyruk rüzgârı nedeniyle 1505Z'de varacağınızı fark ediyorsunuz. İlgili ATCU'yu bilgilendirmeniz gerekir mi?",
+   "options": [
+    "Evet",
+    "Yalnızca VFR kurallarına göre uçuyorsanız",
+    "Yalnızca kontrollü hava sahası dışındaysanız",
+    "Hayır"
+   ]
+  },
+  "15004": {
+   "text": "Kütledeki bir artışın stall hızına ve gerekli iniş mesafesine etkisi nedir?",
+   "options": [
+    "Stall hızı artar ve iniş mesafesi artar",
+    "Stall hızı azalır ve iniş mesafesi artar",
+    "Stall hızı azalır ve iniş mesafesi azalır",
+    "Stall hızı artar ve iniş mesafesi azalır"
+   ]
+  },
+  "15033": {
+   "text": "ATS uçuş planında, tarifesiz bir uçuş için Madde 8'e (Uçuş Tipi) aşağıdaki harflerden hangisi girilmelidir:",
+   "options": [
+    "N.",
+    "X.",
+    "G.",
+    "N/S."
+   ]
+  },
+  "14995": {
+   "text": "Deniz seviyesindeki bir pistten operasyona kıyasla, aynı rüzgâr koşullarında yüksek basınç irtifasındaki bir pistten operasyon yapan bir uçak neye ihtiyaç duyar:",
+   "options": [
+    "Daha uzun kalkış koşusu ve daha uzun iniş mesafesi.",
+    "Daha kısa kalkış koşusu ama daha uzun iniş mesafesi.",
+    "Daha uzun kalkış koşusu ama daha kısa iniş mesafesi.",
+    "Daha kısa kalkış koşusu ve daha kısa iniş mesafesi."
+   ]
+  },
+  "14921": {
+   "text": "Kalkış koşusu sırasında motor arızası veya başka bir acil durum meydana geldiğinde, pilotun devam edip etmeyeceğine karar verdiği hız:",
+   "options": [
+    "V1",
+    "VS",
+    "VLOF",
+    "V2"
+   ]
+  },
+  "14907": {
+   "text": "Artan sıcaklık,",
+   "options": [
+    "TODR'yi artırır.",
+    "TODR'yi etkilemez.",
+    "Tırmanma açısını etkilemez.",
+    "Tırmanma açısını artırır."
+   ]
+  },
+  "14807": {
+   "text": "İvmesiz düz ve seviye uçuşta ağırlığı hangi kuvvet dengeler?",
+   "options": [
+    "Taşıma kuvveti",
+    "Sürükleme",
+    "Taşıma kuvveti ile sürüklemenin bileşkesi",
+    "İtki"
+   ]
+  },
+  "14826": {
+   "text": "Ağırlık merkezi (CG) ileri limite yakınsa etkisi ne olur?",
+   "options": [
+    "Tırmanma oranında azalma",
+    "İndüksiyon sürüklemesinde azalma",
+    "Özgül yakıt tüketiminde azalma",
+    "Daha iyi tırmanma oranı"
+   ]
+  },
+  "14991": {
+   "text": "Süzülme oranı 12 olduğunda, 4500 fitten motorsuz ne kadar süzülebiliriz?",
+   "options": [
+    "16.5 km",
+    "37.5 km",
+    "15.7 km",
+    "14.4 km"
+   ]
+  },
+  "15041": {
+   "text": "Bir havaalanından VFR kalkışı için asgari görüş mesafesi nedir?",
+   "options": [
+    "5 kilometre",
+    "5000 fit",
+    "8 kilometre",
+    "1500 metre"
+   ]
+  },
+  "14815": {
+   "text": "C of G limitlerini kim belirler?",
+   "options": [
+    "İmalatçı",
+    "JAA",
+    "Otorite Devleti",
+    "Sigortacılar"
+   ]
+  },
+  "15000": {
+   "text": "İniş konfigürasyonunda stall hızı neyle sertifikalandırılır:",
+   "options": [
+    "Flap iniş konfigürasyonunda ve iniş takımı aşağıda",
+    "Flap temiz konfigürasyonda ve iniş takımı yukarıda",
+    "Flap kalkış pozisyonunda ve iniş takımı aşağıda",
+    "Flap temiz konfigürasyonda ve iniş takımı aşağıda"
+   ]
+  },
+  "14979": {
+   "text": "Bir uçak, asgari süzülme açısı için gereken hızda güçsüz süzülüş yapıyor. Pilot pitch açısını artırırsa süzülme mesafesi:",
+   "options": [
+    "Azalır.",
+    "Uçak tipine bağlı olarak artabilir veya azalabilir.",
+    "Aynı kalır.",
+    "Artar."
+   ]
+  },
+  "14976": {
+   "text": "Aşağıdakilerden hangisi azami uçuş menzilini etkilemez?",
+   "options": [
+    "Baş açısı (heading)",
+    "Sıcaklık",
+    "İrtifa",
+    "Uçak kütlesi"
+   ]
+  },
+  "14876": {
+   "text": "Aşağıdaki tahterevallinin dengede olması için",
+   "options": [
+    "Fb = A x Fa / B",
+    "Fb = A + Fa / B",
+    "Fb = B x Fa / A",
+    "Fb = A x B / Fa"
+   ]
+  },
+  "14934": {
+   "text": "Kalkış koşusunda kuyruk rüzgârı ile:",
+   "options": [
+    "GS, IAS'tan yüksektir, bu yüzden uçak sakin rüzgâr koşullarına göre daha uzun bir koşuya ihtiyaç duyar",
+    "GS, IAS'tan düşüktür, bu yüzden uçak sakin rüzgâr koşullarına göre daha kısa bir koşuya ihtiyaç duyar",
+    "GS, IAS'tan yüksektir, bu yüzden uçak sakin rüzgâr koşullarına göre daha kısa bir koşuya ihtiyaç duyar",
+    "GS, IAS'tan düşüktür, bu yüzden uçak sakin rüzgâr koşullarına göre daha uzun bir koşuya ihtiyaç duyar"
+   ]
+  },
+  "14937": {
+   "text": "Bir burun rüzgârı bileşeni,",
+   "options": [
+    "Tırmanma açısına etkisi yoktur ve süzülme açısını artırır.",
+    "Süzülme açısına etkisi yoktur ve tırmanma açısını artırır.",
+    "Tırmanma ve süzülme açılarını artırır.",
+    "Tırmanma ve süzülme açılarına etkisi yoktur."
+   ]
+  },
+  "14819": {
+   "text": "İleri ve geri bir CG limiti belirlemenin temel nedeni nedir?",
+   "options": [
+    "Uçağın hem kararlı hem de kumanda edilebilir olmasını sağlamak",
+    "Aileron etkinliğini artırmak",
+    "Kararlılığı azaltmak ve kumanda edilebilirliği artırmak",
+    "Uçağın aşırı yüklenmemesini sağlamak"
+   ]
+  },
+  "14899": {
+   "text": "Kalkış karar hızı V1 göz önüne alındığında, aşağıdakilerden hangisi doğrudur?",
+   "options": [
+    "V1'e ulaşmadan önce bir motor arızası fark edilirse kalkış iptal edilmelidir.",
+    "V1'e ulaştıktan sonra bir motor arızası fark edilirse kalkış iptal edilmelidir.",
+    "V1 bazen rotasyon hızı VR'den büyüktür.",
+    "V1, asgari kalkış emniyet hızı olan V2min'den küçük olamaz."
+   ]
+  },
+  "14928": {
+   "text": "Aşağıdakilerden hangisi doğru değildir?",
+   "options": [
+    "Stopway uzunluğundaki artış daha uzun LDA ile sonuçlanır",
+    "Clearway, LDA'yı hesaba katmaz",
+    "Pist uzunluğu, izin verilen kalkış ağırlığını doğrudan etkiler",
+    "Clearway yalnızca kalkış için kullanılır"
+   ]
+  },
+  "15036": {
+   "text": "Bir ATS uçuş planı doldurulurken saatler hangi birimle ifade edilmelidir:",
+   "options": [
+    "UTC.",
+    "Yerel standart zaman.",
+    "Yerel ortalama zaman.",
+    "Orta Avrupa Zamanı."
+   ]
+  },
+  "14833": {
+   "text": "CG ileri limitin çok önündeyse pilot ne yaşayabilir?",
+   "options": [
+    "Rotasyon sırasında daha yüksek kumanda kuvveti",
+    "İniş sırasında kolay flare",
+    "Kalkış sırasında kuyruk çarpması",
+    "Rotasyon sırasında daha düşük kumanda kuvveti"
+   ]
+  },
+  "14834": {
+   "text": "CG geri limitin çok gerisindeyse pilot ne yaşayabilir?",
+   "options": [
+    "Rotasyon sırasında kuyruk çarpması",
+    "Fark yoktur.",
+    "Flare yapmada zorluk",
+    "Rotasyon sırasında daha yüksek çekme kuvveti"
+   ]
+  },
+  "14922": {
+   "text": "Kalkış hesaplamaları yapılırken:",
+   "options": [
+    "Pist eğimi, yüzey tipi ve durumu dikkate alınmalıdır.",
+    "Rüzgâr, bu hesaplamalar için önemli bir faktör değildir.",
+    "Havaalanının pist uzunluğu kalkış hesaplamalarını etkilemez.",
+    "Standart hava sıcaklığı ve deniz seviyesi standartları dikkate alınmalıdır"
+   ]
+  },
+  "14938": {
+   "text": "Mutlak tavan…",
+   "options": [
+    "Tırmanma oranının teorik olarak sıfır olduğu irtifadır.",
+    "Motorun uçuş sırasında yeniden çalıştırılabileceği en yüksek irtifadır",
+    "Tırmanma oranının, jet uçakları için 500 fpm olan belirli bir değere düştüğü irtifadır.",
+    "Tırmanma oranının, pervaneli uçaklar için 100 fpm olan belirli bir değere düştüğü irtifadır."
+   ]
+  },
+  "15003": {
+   "text": "%2'lik bir aşağı eğim (downslope), gerekli iniş mesafesine ne etki eder?",
+   "options": [
+    "%10 artırır.",
+    "%10 azaltır.",
+    "%5 azaltır.",
+    "%5 artırır."
+   ]
+  },
+  "14816": {
+   "text": "C of G limitleri imalatçı tarafından belirlenir ve:",
+   "options": [
+    "Zorunludur.",
+    "Yalnızca geri limiti vardır",
+    "Yalnızca bir kılavuzdur.",
+    "Yalnızca ileri limiti vardır."
+   ]
+  },
+  "14926": {
+   "text": "V1'i artırırken VR değişmeden kalırsa aşağıdaki mesafelerden hangisi artar?",
+   "options": [
+    "Hızlanma-Durma Mesafesi (Accelerate Stop Distance)",
+    "Kalkış koşusu",
+    "Kalkış mesafesi",
+    "Tüm Motorlu Kalkış Mesafesi"
+   ]
+  },
+  "14853": {
+   "text": "Azami Kalkış Kütlesi (MTOM) en iyi şekilde şöyle tanımlanır:",
+   "options": [
+    "Kalkış koşusunun başlangıcındaki izin verilen azami toplam kütle.",
+    "Rotasyon noktasındaki izin verilen azami toplam kütle.",
+    "Kalkıştan önceki izin verilen azami toplam kütle.",
+    "Taksi yapmadan önceki izin verilen azami toplam kütle."
+   ]
+  },
+  "14973": {
+   "text": "Yatay uçuşta azami hız ne zaman gerçekleşir:",
+   "options": [
+    "Azami itki, toplam sürüklemeye eşit olduğunda.",
+    "Sürükleme en az olduğunda.",
+    "İtki, artan hızla birlikte daha fazla artmadığında.",
+    "İtki, asgari sürüklemeye eşit olduğunda."
+   ]
+  },
+  "15023": {
+   "text": "Verilenler; AD = Hava mesafesi, GD = Yer mesafesi, TAS = Gerçek Hava Hızı, GS = Yer Hızı. Kat edilen yer mesafesini (GD) hesaplamak için aşağıdaki formüllerden hangisi doğrudur?",
+   "options": [
+    "GD = ( AD x GS ) / TAS",
+    "GD = ( AD – TAS ) / TAS",
+    "GD = AD x ( GS – TAS ) / GS",
+    "GD = TAS / ( GS x AD )"
+   ]
+  },
+  "14856": {
+   "text": "Azami İniş Kütlesi (MLM) en iyi şekilde şöyle tanımlanır.",
+   "options": [
+    "Normal işletme koşullarında inişte izin verilen azami toplam kütle.",
+    "Park yerine taksi yaparken izin verilen azami toplam kütle.",
+    "İnişe yaklaşmada izin verilen azami toplam kütle.",
+    "İnişte izin verilen azami toplam kütle."
+   ]
+  },
+  "14847": {
+   "text": "Trafik yükü şunları içerir:",
+   "options": [
+    "Hiçbiri.",
+    "Mürettebat ağırlığı ve bagaj ağırlıkları, ikram ekipmanları ve taşınabilir hijyen ekipmanı ağırlığı",
+    "İkram ekipmanları, taşınabilir hijyen ekipmanı ve aksesuarların ağırlığı.",
+    "Mürettebat ağırlığı ve bagaj ağırlıkları."
+   ]
+  },
+  "14924": {
+   "text": "Kalkış için uygun flap ayarı kullanıldığında (temiz kanat kalkışına kıyasla), kalkış koşusu ..., ve ilk tırmanmayı 50 fite tamamlamak için gereken yer mesafesi .... Gerekli kalkış mesafesi genel olarak ...",
+   "options": [
+    "azalır - daha uzun - azalır.",
+    "artar - daha kısa - değişmez.",
+    "azalır - daha kısa - azalır.",
+    "artar - daha uzun - artar."
+   ]
+  },
+  "14960": {
+   "text": "Yerde en kısa mesafeyi kat ederken en hızlı tırmanma oranına ulaşmak istiyorsanız hangi hızı korursunuz?",
+   "options": [
+    "Vx hızı.",
+    "Vopt hızı.",
+    "Veco hızı.",
+    "Vy hızı."
+   ]
+  },
+  "14863": {
+   "text": "0,72 özgül ağırlığa sahip 151 litre AVGAS doldurmanız isteniyor. Bu kaç kilogramdır?",
+   "options": [
+    "109 kg",
+    "151 kg",
+    "289 kg",
+    "131 kg"
+   ]
+  },
+  "15027": {
+   "text": "ICAO uçuş planında seyir hızı hangi birimle bildirilmelidir:",
+   "options": [
+    "TAS",
+    "GS",
+    "CAS",
+    "IAS"
+   ]
+  },
+  "14891": {
+   "text": "Aşağıdakilerden hangisi taşıma kuvvetini etkileyen faktörlerden biri değildir?",
+   "options": [
+    "Dikey stabilizatörün genişliği",
+    "Hücum açısı",
+    "Bağıl hava akımı",
+    "Kanat profilinin genişliği, uzunluğu ve şekli"
+   ]
+  },
+  "14953": {
+   "text": "Tırmanmakta olan ve sabit bir hava hızını koruyan bir uçağın kanadının ürettiği taşıma kuvveti:",
+   "options": [
+    "Ağırlıktan azdır.",
+    "Ağırlıktan bağımsızdır.",
+    "Ağırlığa eşittir.",
+    "Ağırlıktan fazladır."
+   ]
+  },
+  "15024": {
+   "text": "Bir uçak A ile B arasında uçmaktadır. Bu iki nokta arasındaki mesafe 600 NM'dir. Yakıt tüketimi 10 US-gal/saat'tir. Yer hızı 200 knot ve toplam yakıt 90 US-gal'dir. Uçakta kalan yakıt miktarı nedir?",
+   "options": [
+    "60 US-gal.",
+    "70 US-gal.",
+    "50 US-gal.",
+    "40 US-gal."
+   ]
+  },
+  "14842": {
+   "text": "Uçağın boş kütlesi hakkında hangisi doğrudur?",
+   "options": [
+    "Kuru operasyon kütlesinin bir bileşenidir.",
+    "Trafik yükü çıkarılmış gerçek kalkış kütlesidir.",
+    "Kuru operasyon kütlesinden trafik yükü çıkarılmış hâlidir.",
+    "Kuru operasyon kütlesinden yakıt yükü çıkarılmış hâlidir."
+   ]
+  },
+  "14888": {
+   "text": "Artan nem, hava yoğunluğunu ……… ve bu nedenle uçak performansını ……… .",
+   "options": [
+    "azaltır/azaltır",
+    "artırır/azaltır",
+    "artırır/artırır",
+    "azaltır/artırır"
+   ]
+  },
+  "14944": {
+   "text": "Pistonlu bir motor için servis tavanı:",
+   "options": [
+    "Uçağın 100 ft/dk azami tırmanma oranına ulaştığı irtifadır.",
+    "İtki ayarına bağlıdır ve artan itkiyle artar.",
+    "Düşük hız buffet'i ve yüksek hız buffet'i için hızların aynı olduğu irtifadır.",
+    "En iyi tırmanma oranının teorik olarak sıfır olduğu irtifadır."
+   ]
+  },
+  "14974": {
+   "text": "Azami seyir uçuş süresine (endurance) ulaşmak için hangi hızda uçulmalıdır?",
+   "options": [
+    "VMP",
+    "VMD",
+    "Azami hız.",
+    "VY."
+   ]
+  },
+  "15013": {
+   "text": "Gün batımı/gün doğumu saatleri hakkında bilgiyi nerede bulabiliriz?",
+   "options": [
+    "AIP",
+    "VOLMET",
+    "METAR",
+    "NOTAM"
+   ]
+  },
+  "14965": {
+   "text": "Aşağıdakilerden hangisi tırmanma açısını etkileyen bir faktör değildir?",
+   "options": [
+    "Rüzgâr",
+    "İrtifa",
+    "Fazla itki",
+    "Ağırlık"
+   ]
+  },
+  "14941": {
+   "text": "Bir uçak veya motorlu asma kanatla (powered hang glider) kısa bir pistten kalkışta, engellerden kurtulana kadar hangi hava hızında uçulmalıdır?",
+   "options": [
+    "En iyi tırmanma açısı hızı (Vx).",
+    "Manevra hızı (VA).",
+    "Asgari hız (VS).",
+    "En iyi tırmanma hızı (VY)."
+   ]
+  },
+  "14916": {
+   "text": "Daha yüksek bir uçak kütlesinin rotasyon hızına ve kalkış emniyet hızına etkisi ne olur?",
+   "options": [
+    "İkisini de artırır",
+    "Rotasyon hızını azaltır ve kalkış emniyet hızını artırır",
+    "Rotasyon hızını artırır ve kalkış emniyet hızını azaltır",
+    "İkisini de azaltır"
+   ]
+  },
+  "14893": {
+   "text": "Bu hızlardan hangisi, irtifa, hava sıcaklığı ve pozisyon hataları gibi faktörlere karşı düzeltilmemiş şekilde göstergeden okunur?",
+   "options": [
+    "IAS (Gösterge Hava Hızı)",
+    "TAS (Gerçek Hava Hızı)",
+    "EAS (Eşdeğer Hava Hızı)",
+    "CAS (Kalibre Edilmiş Hava Hızı)"
+   ]
+  },
+  "14962": {
+   "text": "Daha büyük bir flap ayarının tırmanma performansına etkisi ne olur?",
+   "options": [
+    "Sürükleme nedeniyle tırmanma açısını azaltır.",
+    "Taşıma kuvveti nedeniyle tırmanma açısını artırır.",
+    "Taşıma kuvveti nedeniyle tırmanma açısını azaltır.",
+    "Sürükleme nedeniyle tırmanma açısını artırır."
+   ]
+  }
+ }
+}

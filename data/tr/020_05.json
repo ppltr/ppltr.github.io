@@ -1,0 +1,607 @@
+{
+ "questions": {
+  "14735": {
+   "text": "Buzlanma şartlarında uçuşta pitot ısıtıcısının güç kaynağı arızalanır ve uçak sonrasında alçalmaya geçerse, buz pitot (toplam basınç) tüpünü tıkamış olsa (i) Altimetre, (ii) VSI ve (iii) ASI göstergeleri nasıl okur:",
+   "options": [
+    "(i) Doğru okur (ii) doğru okur (iii) düşük okur",
+    "(i) Doğru okur (ii) doğru okur (iii) yüksek okur",
+    "(i) Düşük okur (ii) doğru okur (iii) yüksek okur",
+    "(i) Doğru okur (ii) düşük okur (iii) yüksek okur"
+   ]
+  },
+  "14736": {
+   "text": "Alçalma sırasında hava hızı göstergesi ve altimetrenin statik kaynakları buzla tıkanırsa:",
+   "options": [
+    "her iki gösterge de yüksek okur.",
+    "her iki gösterge de düşük okur.",
+    "hava hızı göstergesi düşük okur, altimetre yüksek okur.",
+    "hava hızı göstergesi yüksek okur, altimetre düşük okur."
+   ]
+  },
+  "14737": {
+   "text": "Alet ve pozisyon hatalarını göz ardı ederek, Hava Hızı Göstergesi hangi şartlarda bir uçağın Gerçek Hava Hızını (True Airspeed) gösterir?",
+   "options": [
+    "Yalnızca ISA, deniz seviyesi şartlarında.",
+    "Herhangi bir irtifada, ancak yalnızca ISA şartları geçerliyken.",
+    "Herhangi bir irtifada, sıcaklık düşüş oranı ISA'ya uygun olduğu sürece.",
+    "Herhangi bir irtifa veya sıcaklıkta."
+   ]
+  },
+  "14738": {
+   "text": "Buzlanma şartlarında, seviye uçuş sırasında bir statik hava alığı tıkanırsa, sonrasında bir tırmanma sırasında (i) ALTİMETRE, (ii) VSI ve (iii) ASI nasıl etkilenir.",
+   "options": [
+    "(i) sabit kalır (ii) sabit kalır (iii) düşük okur",
+    "(i) yüksek okur (ii) düşük okur (iii) düşük okur",
+    "(i) düşük okur (ii) sabit kalır (iii) yüksek okur",
+    "(i) sabit kalır (ii) düşük okur (iii) yüksek okur"
+   ]
+  },
+  "14739": {
+   "text": "Analog bir hava hızı göstergesinde, beyaz yayın üst sınırı neyi gösterir:",
+   "options": [
+    "İniş pozisyonunda flap açıkken VFE hızını.",
+    "İniş pozisyonunda VS hızını.",
+    "Kalkış pozisyonunda VS hızını.",
+    "Kalkış pozisyonunda flap açıkken VFE hızını."
+   ]
+  },
+  "14740": {
+   "text": "Flap açıkken izin verilen maksimum hız:",
+   "options": [
+    "VFE",
+    "VLO",
+    "VNE",
+    "VNO"
+   ]
+  },
+  "14741": {
+   "text": "Hava hızı göstergesinin hız skalası renk kodludur. Yeşil bant:",
+   "options": [
+    "normal çalışma aralığıdır (Vno)",
+    "iniş takımını içeri çekme aralığıdır (Vlo), ki",
+    "ihtiyat aralığıdır (Vne)",
+    "flap açma aralığıdır (Vfe)"
+   ]
+  },
+  "14742": {
+   "text": "Gösterilen Hava Hızından (IAS) Kalibre Edilmiş Hava Hızını (CAS) hesaplamak için şunlar dikkate alınmalıdır:",
+   "options": [
+    "alet ve pozisyon hatası.",
+    "sıcaklık hatası.",
+    "Yoğunluk hatası",
+    "Sıkıştırılabilirlik hatası"
+   ]
+  },
+  "14743": {
+   "text": "Gerçek Hava Hızı (TAS), Eşdeğer Hava Hızına (EAS) yalnızca şu durumda eşittir:",
+   "options": [
+    "P = 1013,25 hPa ve OAT = 15°C.",
+    "P = 1013,25 hPa, OAT = 15°C ve TAS < 200 kt.",
+    "P = 1013,25 hPa ve OAT = 273° K.",
+    "P = 1013,25 hPa, OAT = 15°C ve TAS > 200 kt."
+   ]
+  },
+  "14744": {
+   "text": "VNE:",
+   "options": [
+    "asla aşılmaması gereken hızdır",
+    "sakin hava dışında ve dikkatle aşılmaması gereken maksimum hızdır",
+    "uçuş kumandalarının tam olarak saptırılabildiği hızdır",
+    "iniş pozisyonunda flap açıkken minimum hızdır"
+   ]
+  },
+  "14745": {
+   "text": "Pitot tüpüne hangi alet bağlıdır?",
+   "options": [
+    "Hava hızı göstergesi",
+    "Dönüş koordinatörü",
+    "Altimetre",
+    "Doğrudan Okumalı Pusula"
+   ]
+  },
+  "14746": {
+   "text": "Alet göstergelerinde kırmızı çizgiyle işaretlenen değerler genellikle nedir?",
+   "options": [
+    "Operasyonel sınırlar",
+    "Tavsiye edilen alanlar",
+    "Operasyonel alanlar",
+    "İhtiyat alanları"
+   ]
+  },
+  "14747": {
+   "text": "Hangi alet(ler) toplam basınca bağlıdır?",
+   "options": [
+    "Yalnızca hava hızı göstergesi.",
+    "Yalnızca klasik dikey hız göstergesi.",
+    "Klasik dikey hız göstergesi ve altimetre.",
+    "Hava hızı göstergesi, klasik tırmanma oranı göstergesi ve altimetre."
+   ]
+  },
+  "15807": {
+   "text": "Kalibre edilmiş hava hızı (CAS), gösterilen hava hızına (IAS) şunun uygulanmasıyla elde edilir:",
+   "options": [
+    "Bir alet ve pozisyon/basınç hatası düzeltmesi.",
+    "Bir sıkıştırılabilirlik ve yoğunluk düzeltmesi.",
+    "Bir sıkıştırılabilirlik düzeltmesi.",
+    "Bir alet ve yoğunluk düzeltmesi."
+   ]
+  },
+  "14748": {
+   "text": "Manyetik baş açısı:",
+   "options": [
+    "pusula baş açısı ile pusula sapmasının (deviation) toplamıdır.",
+    "her zaman Gerçek Kuzeye göre referanslanır.",
+    "dönüş hatalarından etkilenmez.",
+    "pusula baş açısı, pusula sapması (deviation) ve varyasyonun toplamıdır."
+   ]
+  },
+  "14749": {
+   "text": "Bir pilot, doğrudan okumalı pusula kullanarak 30 Kuzey enleminde TAS = 130 kt ile 1 oranında (rate 1) sağa dönerek Kuzeye çıkmak istiyor. Bunu sağlamak için dönüş yaklaşık hangi gösterilen baş açısında durdurulmalıdır:",
+   "options": [
+    "335",
+    "25",
+    "45",
+    "315"
+   ]
+  },
+  "14750": {
+   "text": "Kuzey yarımkürede bir uçak 090° manyetik baş açısında hızlanıyor. Doğrudan okumalı pusulanın göstergesi...",
+   "options": [
+    "daha küçük bir baş açısı gösterir.",
+    "daha büyük bir baş açısı gösterir.",
+    "ters rotayı gösterir.",
+    "sabit kalır."
+   ]
+  },
+  "14751": {
+   "text": "Kuzey yarımkürede bir uçak 030° baş açısından 180° baş açısına en kısa yoldan dönmeyi planlıyor. Dönüş yaklaşık hangi gösterilen manyetik baş açısında bitirilmelidir?",
+   "options": [
+    "210°.",
+    "150°.",
+    "180°.",
+    "360°."
+   ]
+  },
+  "14752": {
+   "text": "Kuzey yarımkürede bir uçak 270° baş açısından 360° baş açısına en kısa yoldan dönmeyi planlıyor. Dönüş, manyetik pusulanın yaklaşık hangi göstergesinde bitirilmelidir?",
+   "options": [
+    "330°",
+    "360°",
+    "270°",
+    "030°"
+   ]
+  },
+  "14753": {
+   "text": "Güney yönünde bir inişin ardından yavaşlama sırasında, kuzey yarımküre için yapılmış bir manyetik pusula şunu gösterir:",
+   "options": [
+    "görünür bir dönüş göstermez.",
+    "doğuya doğru görünür bir dönüş.",
+    "yalnızca kuzey enlemlerinde görünür bir dönüş göstermez.",
+    "batıya doğru görünür bir dönüş."
+   ]
+  },
+  "14754": {
+   "text": "Manyetik pusulaya yakın demirli (ferrous) cisimler:",
+   "options": [
+    "manyetik baş açısı göstergesinde önemli hatalara yol açar.",
+    "akı yoğunluğundaki değişimler nedeniyle manyetik pusulada küçük hatalara yol açar.",
+    "demirli eşyalar uçağa alınmadan önce baş açısı göstergesi manyetik pusulayla eşitlenmişse uçuş operasyonlarını etkilemez.",
+    "muhafazası manyetik alan bozulmasına karşı ekranlandığı için manyetik pusulayı etkilemez."
+   ]
+  },
+  "14756": {
+   "text": "Manyetik pusulalar \"dip\" (eğim) adı verilen bir sorundan muzdariptir, bu:",
+   "options": [
+    "yüksek enlemlerde mevcut olan yerin manyetik alanının dikey bileşeninden kaynaklanır.",
+    "tüm enlemlerde mevcut olan yerin manyetik alanının yatay bileşeninden kaynaklanır.",
+    "bir pusula taramasıyla (compass swing) giderilemeyen sapmadır (deviation).",
+    "iğnenin dönüşler sırasında eğilme eğilimidir."
+   ]
+  },
+  "14757": {
+   "text": "Yeryüzünün herhangi bir noktasındaki manyetik varyasyon şu açıdır:",
+   "options": [
+    "Manyetik alanın yatay bileşeni ile gerçek kuzey yönü arasındaki açı.",
+    "Pusula iğnesinin yerel düşeyle yaptığı açı",
+    "Pusula iğnesinin ufukla yaptığı açı.",
+    "Pusula iğnesinin sabit bir dönüş sırasında yaptığı açı."
+   ]
+  },
+  "14760": {
+   "text": "Kuzey Yarımkürede manyetik pusulaya başvururken, pilotlar şunu göz önünde bulundurmalıdır:",
+   "options": [
+    "dönüş hataları Kuzey ve Güney üzerinden dönerken maksimum, Doğu ve Batı üzerinden dönerken minimumdur.",
+    "hızlanma hataları uçak Manyetik Kutuplara yaklaştıkça artar, Manyetik Ekvatora yaklaştıkça azalır.",
+    "dönüş hataları uçak Manyetik Ekvatora yaklaştıkça artar, Manyetik Kutuplara yaklaştıkça azalır.",
+    "dönüş hataları Doğu ve Batı üzerinden dönerken maksimum, Kuzey ve Güney üzerinden dönerken minimumdur."
+   ]
+  },
+  "15742": {
+   "text": "Kuzey Yarımkürede sabit oranda seviye dönüş yapan doğrudan okumalı bir pusula, uçak hangi yönlerden dönerken en büyük dönüş hatasına maruz kalır:",
+   "options": [
+    "Kuzey ve Güney.",
+    "Güneydoğu ve Güneybatı.",
+    "Kuzeydoğu ve Kuzeybatı.",
+    "Doğu ve Batı."
+   ]
+  },
+  "14761": {
+   "text": "Dönmekte olan bir jiroskopun uzayda rijitliği (rigidity in space) olduğu söylenir. Rijitlik şunun bir fonksiyonudur:",
+   "options": [
+    "Devir (RPM), rotor kütlesi ve ağırlık merkezinin konumu..",
+    "Ağırlık merkezi konumu ve rotor kütlesi.",
+    "Devir (RPM) ve rotor kütlesi.",
+    "Devir (RPM) ve ağırlık merkezinin konumu."
+   ]
+  },
+  "14762": {
+   "text": "Jiroskopik aletleri çalıştırmak için vakum nasıl sağlanır?",
+   "options": [
+    "Motor tahrikli bir pompayla.",
+    "Uçuş öncesi doldurulan bir vakum rezervuarıyla.",
+    "Alternatif statik kaynakla.",
+    "Statik hava alığıyla."
+   ]
+  },
+  "14763": {
+   "text": "Yön göstergesi ve suni ufuk doğru çalışıyor gibi görünüyor ama vakum göstergesi sıfır gösteriyorsa, en olası sebep şudur:",
+   "options": [
+    "vakum göstergesinin arızası.",
+    "alet bara hattından gelen AC elektrik beslemesinin arızası.",
+    "alet bara hattından gelen DC elektrik beslemesinin arızası.",
+    "motor tahrikli vakum pompasının giriş tarafındaki filtrenin tıkanması."
+   ]
+  },
+  "14764": {
+   "text": "Alet panelinizde emme göstergesi (suction gauge) sistem arızası gösteriyor. Ancak jiro tahrikli aletler normal çalışıyor gibi görünüyor ve düşük vakum uyarı ışığı sönük. Arıza muhtemelen şuradadır:",
+   "options": [
+    "Emme göstergesinde",
+    "Jiro tahrikli alette",
+    "Düşük vakum uyarı ışığında",
+    "Emme sisteminde"
+   ]
+  },
+  "14765": {
+   "text": "Kuru bir vakum pompasının ıslak bir vakum pompasına kıyasla bir dezavantajı şudur:",
+   "options": [
+    "Kuru pompalar uyarı vermeden ani şekilde arızalanır",
+    "Kuru pompalar kirlenmeye toleranslıdır",
+    "Kuru pompalar düzenli yağlama gerektirir",
+    "Kuru pompalar daha az güvenilir olma eğilimindedir"
+   ]
+  },
+  "14766": {
+   "text": "Motor tahrikli bir vakum pompasının işlevi, yeterli hava akışını yaratmaktır:",
+   "options": [
+    "jiro rotorunun üzerinden geçirip onu döndürmek için.",
+    "jiroları çeviren bir spiral fan (impeller) içinden geçirmek için.",
+    "jiroları çeviren helisel bir darbe fanı (impulse impeller) içinden geçirmek için.",
+    "jiroları çeviren bir türbin üzerinden geçirmek için."
+   ]
+  },
+  "14767": {
+   "text": "Vakum pompa sistemi tarafından genellikle beslenen aletler: 1. Yön Göstergesi 2. Dönüş Koordinatörü 3. Tutum Göstergesi ya da Suni Ufuk 4. Altimetre 5. Manyetik Pusula",
+   "options": [
+    "1 ve 3",
+    "1, 3 ve 5",
+    "1, 3 ve 4",
+    "1 ve 2"
+   ]
+  },
+  "14768": {
+   "text": "Uçak tutumundaki değişimlere yavaş tepki veren vakum tahrikli jiroskopik aletlerin en olası nedeni şudur.",
+   "options": [
+    "motor tahrikli vakum pompası arızası.",
+    "vakum sisteminde kısmi bir sızıntı veya vakum sistemi hava filtresinde kısmi bir tıkanma.",
+    "jiro yataklarında yüksek sürtünme.",
+    "vakum basınç emniyet valfinin arızalanması sonucu aşırı sistem vakum basıncı."
+   ]
+  },
+  "14769": {
+   "text": "Bir jiroskopun uzayda rijitliği:",
+   "options": [
+    "dışarıdan bir kuvvetin etkisi olmadıkça eksenini uzayda sabit bir yöne bakar şekilde tutar.",
+    "manyetik ekvatorda minimumdur.",
+    "manyetik ekvatorda maksimumdur.",
+    "rotorun pirinçten (brass) yapılmasıyla azalır."
+   ]
+  },
+  "14771": {
+   "text": "Vakum sistemine hangi gösterge bağlıdır?",
+   "options": [
+    "Suni ufuk",
+    "Pusula",
+    "Dikey Hız göstergesi",
+    "Altimetre"
+   ]
+  },
+  "14772": {
+   "text": "Aşağıdakilerden hangileri hava ya da elektrikle tahrik edilen bir jiro kullanır? 1. Radyo Manyetik Gösterge 2. Ufuk Göstergesi 3. Dönüş Koordinatörü 4. Dönüş Oranı Göstergesi 5. Dikey Hız Göstergesi 6. Baş Açısı Göstergesi",
+   "options": [
+    "1,2,3,4 ve 6",
+    "1,3,4,5 ve 6",
+    "1,2,3 ,5 ve 6",
+    "2,3,4,5 ve 6"
+   ]
+  },
+  "14773": {
+   "text": "Aşağıdakilerden hangisi kuru vakum sisteminin bir bileşeni değildir?",
+   "options": [
+    "Bir sistem yağlama cihazı",
+    "Havayı temizleyen bir filtre",
+    "Bir vakum kontrolörü",
+    "Bir vakum üreteci"
+   ]
+  },
+  "14774": {
+   "text": "Elektrikle ya da yerde (ground) tahrik edilen bir jiro ile çalışan uçak aletleriyle ilgili en doğru ifadeyi aşağıdaki seçeneklerden hangisi tamamlar? Aşağıdaki uçak aletleri jiro ile tahrik edilir:",
+   "options": [
+    "Dönüş Koordinatörü, Suni Ufuk, Dönüş Göstergesi, Yön Göstergesi",
+    "Yön Göstergesi, Suni Ufuk. Yalnızca Dönüş Göstergesi.",
+    "Suni Ufuk, Dikey Hız Göstergesi ve ASI.",
+    "Yalnızca Dönüş Koordinatörü ve Suni Ufuk"
+   ]
+  },
+  "14775": {
+   "text": "Bir Yön Göstergesi (DI), manyetik pusula ile şu şekilde hizalanabilir:",
+   "options": [
+    "uçağın kanatları düz ve uçak ivmesiz uçuştayken kilitleme (caging) düğmesi kullanılarak DI azimut kadranı döndürülerek.",
+    "sıvı girdabının (liquid swirl) etkisini ortadan kaldırmak için.",
+    "bir dönüş sırasındaki ivmenin etkisini dengelemek için periyodik olarak.",
+    "kanatlar düzken ve uçak ivmeli ya da ivmesiz uçuştayken."
+   ]
+  },
+  "14778": {
+   "text": "(Dikkat! Lütfen açıklamaya bakın.)\nBir yön göstergesinin temel öğesi olan bağlı jiro (tied gyro), eksenini uçağın yatay ya da sapma (yawing) düzleminde tutar. Şu nedenle görünür sapmaya (drift) uğrar:",
+   "options": [
+    "dünyanın kendi ekseni etrafında dönmesi.",
+    "uzayda rijitliği.",
+    "motor devri değiştikçe vakum basıncındaki dalgalanmalar.",
+    "gimbal yataklarındaki hareketli parçaların yarattığı sürtünme."
+   ]
+  },
+  "14779": {
+   "text": "Bir DGI'de, jironun yeryüzüne göre hareketinden kaynaklanan hataya şu denir:",
+   "options": [
+    "transport wander (taşınma sapması)",
+    "enlem hatası",
+    "real wander (gerçek sapma)",
+    "earth rate (dünya oranı)"
+   ]
+  },
+  "14780": {
+   "text": "Aşağıdakilerden Yön Göstergesinin (DI) karakteristik özelliği olduğunu düşündüğünüz ifadeleri seçin.\n1. Jiro gimbal yataklarındaki mekanik sürtünme küçük olsa da gerçek sapma (real drift) üretir.\n2. Jiro, hızlanma sırasında eğilir ve rate 1'den büyük her dönüşte sapar.\n3. Hızlanma sırasında ya da bir dönüş sırasında etkilenmez.\n4. Jironun herhangi bir presesyonu, pilot tarafından slaving düğmesi kullanılarak düzeltilebilir.\n5. Dünyanın dönüşü ve uzaydaki hareketi, hizalandığı sabit uzay konumundan görünür sapma (apparent drift) üretir.",
+   "options": [
+    "1,2,3 ve 4.",
+    "2,3,4 ve 5.",
+    "1 ,3,4 ve 5",
+    "1,2,4 ve 5"
+   ]
+  },
+  "14781": {
+   "text": "Yön Göstergesi kalkıştan önce pistte hizalanmalıdır çünkü:",
+   "options": [
+    "manyetik kuzeyi algılama yöntemi yoktur",
+    "kullanılan pist değişmiş olabilir.",
+    "manyetik varyasyon kalkıştan bu yana değişmiş olabilir.",
+    "jiro bu noktada henüz doğru devrine ulaşmıştır."
+   ]
+  },
+  "14782": {
+   "text": "_____ etkisi, yön jirosunun gimbal hatasına neden olur.",
+   "options": [
+    "uçağın yatış ya da yunuslama tutumu",
+    "yatay gimbal halkasında çok yavaş presesyon",
+    "transport wander (taşınma sapması)",
+    "uçağın yeryüzüne göre rotası"
+   ]
+  },
+  "14783": {
+   "text": "Baş açısı göstergesinin jirosu uçuş operasyonları sırasında sürekli presesyona uğrar ve manyetik pusula ile düzenli olarak yeniden hizalanmalıdır:",
+   "options": [
+    "kanatlar düz, doğru ve sabit hızlı uçuştayken.",
+    "doğru sabit hızlı uçuş ya da sabit hızlı tırmanma veya alçalma sırasında.",
+    "kanatlar düz ve tüm gerekli olmayan elektrik yükleri kapalıyken.",
+    "kanatlar düz ve uçak hızlanma ya da yavaşlama sırasındayken."
+   ]
+  },
+  "14784": {
+   "text": "Doğru yön bilgisi elde etmek için bir yön jirosu şuna göre düzeltilir:",
+   "options": [
+    "doğrudan okumalı manyetik pusula",
+    "hava hızı göstergesi",
+    "suni ufuk",
+    "dönüş koordinatörü"
+   ]
+  },
+  "14785": {
+   "text": "Dört sarkaçlı kanattan oluşan bir kontrol sistemi şurada kullanılır;",
+   "options": [
+    "hava tahrikli bir suni ufukta.",
+    "bir jiromanyetik göstergede.",
+    "askıya alınmış (strap down) bir atalet sisteminde.",
+    "bir yön jirosu göstergesinde."
+   ]
+  },
+  "14786": {
+   "text": "Suni ufuk şu kategoriye aittir...",
+   "options": [
+    "jiro aletleri.",
+    "motor izleme aletleri.",
+    "kapsül aletleri.",
+    "elektrik sistemleri."
+   ]
+  },
+  "14787": {
+   "text": "Suni ufuktaki jiro:",
+   "options": [
+    "yatay düzlemde düşey eksen etrafında dönen bir yer jirosudur (earth gyro).",
+    "yatay düzlemde uçağın boyuna ekseni etrafında dönen bağlı bir jirodur (tied gyro).",
+    "düşey düzlemde uçağın boyuna ekseni etrafında dönen bir yer jirosudur (earth gyro).",
+    "düşey düzlemde uçağın enine ekseni etrafında dönen bir yer jirosudur (earth gyro)."
+   ]
+  },
+  "14788": {
+   "text": "Suni ufuk hangi hataya maruz kalır?",
+   "options": [
+    "İvme hatası",
+    "Gimbal hatası",
+    "Pitot tüpünün tıkanması",
+    "Histerezis hatası"
+   ]
+  },
+  "14789": {
+   "text": "Bir uçak sabit tutum ve yatışla 90 derece döndüğünde, pilot klasik bir suni ufukta şunu gözlemler:",
+   "options": [
+    "burun aşırı yukarıda ve yatış olması gerekenden az",
+    "tutum ve yatış doğru",
+    "burun aşırı yukarıda ve yatış doğru",
+    "burun aşırı yukarıda ve yatış olması gerekenden fazla"
+   ]
+  },
+  "14790": {
+   "text": "Hangi suni ufuk 40° sağa yatış ve burun aşağı tutum gösterir?",
+   "options": [
+    "3",
+    "2",
+    "1",
+    "4"
+   ]
+  },
+  "14791": {
+   "text": "Bir dönüş ve yatış (ya da dönüş ve kayma) koordinatörü şu bilgiyi sağlar...",
+   "options": [
+    "dönüşün oranı ve koordinasyonu, yani kayması (slip) ya da savrulması (skid).",
+    "dönüşün koordinasyonu ve kayma açısı.",
+    "uçağın dönüş oranı ve yatış açısı.",
+    "uçağın yunuslama ve yatış açısı."
+   ]
+  },
+  "14792": {
+   "text": "Bir dönüş göstergesi, dönüş oranını gösteren bir alettir. Dönüş oranı şunlara bağlıdır;\n1. yatış açısı.\n2. uçak hızı.\n3. uçak ağırlığı.\nDoğru ifadeleri bir araya getiren kombinasyon;",
+   "options": [
+    "1 ve 2.",
+    "Yalnızca 1.",
+    "1 ve 3.",
+    "2 ve 3."
+   ]
+  },
+  "14793": {
+   "text": "Bir dönüş göstergesinin jiroskopu tasarım özelliğinden daha düşük bir devirde (RPM) çalışırsa, uçağın gerçek dönüş oranı, dönüş göstergesinde gösterilen orana kıyasla nasıl olur?",
+   "options": [
+    "Uçağın gerçek dönüş oranı gösterilen orandan daha büyük olur",
+    "Dönüş göstergesi bir dönüş oranı göstermez",
+    "Uçağın gerçek dönüş oranı gösterilen orandan daha küçük olur",
+    "Uçağın gerçek dönüş oranı gösterilen oranla aynı olur"
+   ]
+  },
+  "14794": {
+   "text": "Yerde, sola bir dönüş sırasında, dönüş göstergesi şunu gösterir:",
+   "options": [
+    "ibre sola, bilye sağa",
+    "ibre ortada, bilye sağa",
+    "ibre sola, bilye sola",
+    "ibre ortada, bilye sola"
+   ]
+  },
+  "14795": {
+   "text": "2 dakikalık bir dairenin yatış açısı şuna bağlıdır...",
+   "options": [
+    "TAS.",
+    "Yer hızı.",
+    "IAS.",
+    "CAS."
+   ]
+  },
+  "14796": {
+   "text": "Dönüş oranı göstergesi şöyle bir jiroskop kullanır: 1 - dönen tekerleğin ekseni sapma (yaw) eksenine paraleldir. 2 - dönen tekerleğin ekseni yunuslama (pitch) eksenine paraleldir. 3 - dönen tekerleğin ekseni yuvarlanma (roll) eksenine paraleldir. 4 - bir serbestlik derecesine (degree of freedom) sahiptir. 5 - iki serbestlik derecesine sahiptir. Tüm doğru ifadeleri bir araya getiren kombinasyon: Not: bir jironun serbestlik derecesi(leri) rotorunun kendi dönüş eksenini hesaba katmaz.",
+   "options": [
+    "2, 4.",
+    "3, 5.",
+    "3, 4.",
+    "1, 5."
+   ]
+  },
+  "14797": {
+   "text": "Sağa dönüş sırasında kayma göstergesinin bilyesi (görünür düşey) sağa kaymıştır. Bilyeyi orta konuma geri getirmek için hangi eylemler yapılabilir?",
+   "options": [
+    "Yatışı azalt, dönüş oranını artır",
+    "Dönüş oranını azalt, yatışı azalt",
+    "Hızı azalt, yatışı artır",
+    "Yatışı artır, dönüş oranını artır"
+   ]
+  },
+  "14798": {
+   "text": "Dönüş ve Kayma Göstergesi ya da Dönüş Koordinatöründeki bilyenin amacı nedir?",
+   "options": [
+    "Bilye kayma ve savrulmayı gösterir",
+    "Bilye bir dönüşteki alçalma oranını gösterir",
+    "Bilye yatış açısını gösterir",
+    "Bilye dönüş oranını gösterir"
+   ]
+  },
+  "14799": {
+   "text": "Uçuşta, ibre-bilye göstergesinin ibresi ve bilyesi solda olduğunda, uçak:",
+   "options": [
+    "aşırı yatışla sola dönüyordur",
+    "yetersiz yatışla sağa dönüyordur",
+    "yetersiz yatışla sola dönüyordur",
+    "aşırı yatışla sağa dönüyordur"
+   ]
+  },
+  "14800": {
+   "text": "Geleneksel analog standart \"T\" düzeni aşağıdakilerden hangisini içermez:",
+   "options": [
+    "Dönüş koordinatörü",
+    "Yön göstergesi",
+    "Altimetre",
+    "Suni ufuk"
+   ]
+  },
+  "14801": {
+   "text": "Bir stall uyarı sistemi neyin ölçümüne dayanır:",
+   "options": [
+    "Aerodinamik hücum açısı (angle of attack).",
+    "Yer hızı ile IAS arasındaki fark.",
+    "Tutum",
+    "Hava hızı."
+   ]
+  },
+  "14802": {
+   "text": "Silindir kafası sıcaklık göstergesi:",
+   "options": [
+    "Sıcaklık bilgisini, iki farklı metalin birleştirilmesiyle oluşan bir problar aracılığıyla en sıcak motor silindirinden alır",
+    "Bilgisini, egzoz sistemi üzerinde silindir kafasından yaklaşık dört inç uzağa yerleştirilmiş bir probdan alır",
+    "Alet ibresini çalıştırmak için alternatif akım gerektirir",
+    "Öncelikle bir yakıt yönetim aletidir"
+   ]
+  },
+  "14803": {
+   "text": "Mekanik takometre:",
+   "options": [
+    "Bir sürükleme kabında (drag-cup) manyetik alan indüklenerek kadrandaki ibreye bağlı bir mili döndüren bir tork oluşturma prensibiyle çalışır",
+    "Doğrudan alternatör tahrikinden çalıştırılır",
+    "Doğrudan pervane milinden tahrik edilir. Dişliler dönüş hızını düşürür, böylece mil hızıyla orantılı bir gerilim üretmek için bir jeneratör kullanılabilir; bu gerilim RPM cinsinden kalibre edilmiş bir gösterge üzerinde gösterilir",
+    "Bir sürükleme kabında (drag-cup) oluşan sürtünmeyi kullanarak, bir saat yayının (hairspring) baskısına karşı ibreye bağlı bir mili döndürür"
+   ]
+  },
+  "14804": {
+   "text": "EFIS kısaltması neyin karşılığıdır?",
+   "options": [
+    "Electronic Flight Instrument System",
+    "Enhanced Flight Instrumentation System",
+    "Enhanced Flap Indicator System",
+    "Electric Flight Information System"
+   ]
+  },
+  "14805": {
+   "text": "Pilot yakıt akış göstergesinden hangi değeri elde edebilir?",
+   "options": [
+    "Zaman başına kullanılan yakıt hacmi",
+    "Yakıt miktarı",
+    "Yakıt basıncı",
+    "Yakıt sıcaklığı"
+   ]
+  }
+ }
+}

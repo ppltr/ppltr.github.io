@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "14421": {
+   "text": "Uçuşa Elverişlilik Sertifikası'nda (Certificate of Airworthiness, C of A) belirtilen bakım şemasına uygun olmayan şekilde yapılan uçak bakımı:",
+   "options": [
+    "C of A'nın geçerliliğini etkilemez.",
+    "gerekli bakım tamamlanana kadar C of A'yı geçersiz kılar.",
+    "gerekli bakım tamamlandıktan sonra ve uçak tekrar uçurulmadan önce C of A'nın yenilenmesini gerektirir.",
+    "bakım şemasına uyulmamış olacağından, önceki Certificate of Release to Service'i geçersiz kılar."
+   ]
+  },
+  "14422": {
+   "text": "Aşırı zorlanmaya (over stress) maruz kalmış bir uçak:",
+   "options": [
+    "bir sonraki uçuştan önce yetkili bir mühendis tarafından muayene edilmelidir.",
+    "bir sonraki uçuştan önce iki mühendis tarafından çift kontrol (duplicate inspection) yapılmalıdır.",
+    "biri sorumlu pilot (pilot in command) olmak üzere, tip üzerinde lisanslı en az iki pilot tarafından muayene edilmelidir.",
+    "sorumlu pilot tarafından muayene edilmelidir ve herhangi bir arıza bulunmazsa uçak teknik kütüğüne uygun bir kayıt girmesi gerekmez."
+   ]
+  },
+  "14423": {
+   "text": "Kanatlar üzerindeki eğilme yükü (bending load) sonucunda üst ve alt yüzeylerde iki temel yük oluşur, bunlar şöyle bilinir;",
+   "options": [
+    "Basma ve Gerilme Yükü",
+    "Burulma ve Kesme Yükü",
+    "Gerilme ve Kesme Yükü",
+    "Burulma ve Basma Yükü"
+   ]
+  },
+  "14426": {
+   "text": "Uçuşa Elverişlilik Sertifikası'nda (C of A) belirtilen bakım şemasından sapma:",
+   "options": [
+    "belirtilen bakım yapılana kadar C of A'yı geçersiz kılar.",
+    "C of A'yı geçersiz kılar ama sonraki herhangi bir Certificate of Release to Service'i geçersiz kılmaz.",
+    "C of A'yı etkilemez ama sonraki herhangi bir Certificate of Release to Service'i geçersiz kılar.",
+    "belirtilen bakım 50 uçuş saati içinde tamamlanmazsa yeni bir C of A düzenlenmesini gerektirir."
+   ]
+  },
+  "14427": {
+   "text": "Gerilme yükü (tensile load) altındaki bir çubukta uzunluk değişimi 10 cm ve çubuğun orijinal uzunluğu 30 cm ise Strain Ratio nedir?",
+   "options": [
+    "0.33",
+    "1.33",
+    "0.03",
+    "3"
+   ]
+  },
+  "14428": {
+   "text": "Strain, dış kuvvet nedeniyle oluşan uzunluk değişimidir. Strain Ratio nasıl tanımlanır?",
+   "options": [
+    "Uzunluk değişiminin orijinal uzunluğa oranı",
+    "Uzunluk değişiminin son uzunluğa oranı",
+    "Son uzunluğun orijinal uzunluğa oranı,",
+    "Orijinal uzunluğun son uzunluğa oranı,"
+   ]
+  },
+  "14429": {
+   "text": "Genel havacılık uçakları için geçerli bir yapısal emniyet faktörü nedir?",
+   "options": [
+    "1,5",
+    "21",
+    "6",
+    "1"
+   ]
+  },
+  "14430": {
+   "text": "Aşağıdakilerden hangisi Design Ultimate Load'ın en doğru tanımıdır?",
+   "options": [
+    "Design Limit Load'ın Safety Factor ile çarpımı.",
+    "Design Limit Load'ın Safety Factor'e bölümü.",
+    "Minimum kalkış yükünün Safety Factor'e bölümü",
+    "Maksimum kalkış yükünün Safety Factor ile çarpımı."
+   ]
+  },
+  "19919": {
+   "text": "Aşağıdakilerden hangisi bileşik bir yüktür (compound load)?",
+   "options": [
+    "Eğilme",
+    "Gerilme",
+    "Basma",
+    "Kesme"
+   ]
+  },
+  "14432": {
+   "text": "Bir monocoque yapı şöyle tanımlanabilir:",
+   "options": [
+    "hiçbir açıklığı ve iç destek yapısı olmayan, tüm öz ve dış yüklerin kaplama (skin) tarafından taşındığı bir yapı.",
+    "hiçbir açıklığı olmayan bir yapı",
+    "öz ve dış yükleri bütünleşik yük taşıyan kaplamaya orantılı olarak ileten yük taşıyıcı bir yapı içeren yapı.",
+    "yük taşıyan kaplamanın bütünlüğünü korumak için yapısal olarak güçlendirilmiş bazı açıklıklar içeren yapı."
+   ]
+  },
+  "14433": {
+   "text": "Bir 'monocoque' yapı:",
+   "options": [
+    "hiç açıklığa (aperture) sahip olmaz.",
+    "bazen 'Strained Skin' (gerilmiş kaplama) yapısı olarak adlandırılır.",
+    "birbirine kaynaklanmış ince cidarlı çelik borulardan oluşan bir iskelete sahip olur.",
+    "uçağın farklı bölümlerini ayırmak için yerleştirilmiş bulkhead'lere (bölme) sahip olur."
+   ]
+  },
+  "14434": {
+   "text": "Kaplamanın (skin) tüm yükü taşıdığı yapı;",
+   "options": [
+    "bir monocoque yapıdır.",
+    "bir kutu yapıdır.",
+    "bir semi-monocoque yapıdır.",
+    "bir semi-braced (yarı desteklenmiş) yapıdır."
+   ]
+  },
+  "14437": {
+   "text": "Semi-monocoque şöyle tanımlanabilir;",
+   "options": [
+    "iç yapı iskeleti içeren, desteklenmiş açıklıklara sahip gerilmiş bir kaplama (stressed skin).",
+    "gerilmiş bir kaplama üzerinde stringer ve longeron'larla desteklenen yük taşıyan former'lara sahip, açıklığı olmayan bir yapı.",
+    "hiç açıklığı olmayan bir yapı.",
+    "üçgen şekilli bir uzay çerçevesi (space frame) oluşturmak üzere birbirine kaynaklanmış ince cidarlı çelik borulardan oluşan bir iskelet."
+   ]
+  },
+  "14439": {
+   "text": "Bir monocoque yapının tanımı şudur:",
+   "options": [
+    "açıklığı ve destekleyici iç yapısı olmayan, bütünleşik gerilmiş bir kaplama.",
+    "hafif bir iç yapısal iskelet içeren gerilmiş bir kaplama.",
+    "hafif bir iç yapısal iskelet içeren, açıklığı olmayan bütünleşik gerilmiş bir kaplama.",
+    "yapısal olarak desteklenmiş açıklıklara sahip gerilmiş bir kaplama."
+   ]
+  },
+  "14440": {
+   "text": "Empennage (kuyruk grubu) şunu içermez:",
+   "options": [
+    "Kanatçık.",
+    "İrtifa dümeni.",
+    "İstikamet dümeni.",
+    "Dikey stabilize."
+   ]
+  },
+  "14441": {
+   "text": "Empennage normalde bir yatay yüzey, bir dikey stabilize (fin), bir istikamet dümeni ve bir irtifa dümeninden oluşur. Yön kontrolünü hangi parça sağlar?",
+   "options": [
+    "İstikamet dümeni",
+    "Dikey stabilize",
+    "İrtifa dümeni,",
+    "Yatay yüzey,"
+   ]
+  },
+  "14442": {
+   "text": "Empennage normalde bir yatay yüzey, bir dikey stabilize (fin), bir istikamet dümeni ve bir irtifa dümeninden oluşur. Yön kararlılığını hangi parça sağlar?",
+   "options": [
+    "Dikey stabilize",
+    "İstikamet dümeni",
+    "İrtifa dümeni",
+    "Yatay yüzey,"
+   ]
+  },
+  "14443": {
+   "text": "Empennage normalde bir yatay yüzey, bir dikey stabilize (fin), bir istikamet dümeni ve bir irtifa dümeninden oluşur. Boyuna (longitudinal) kontrolü hangi parça sağlar?",
+   "options": [
+    "İrtifa dümeni,",
+    "Dikey stabilize",
+    "İstikamet dümeni",
+    "Yatay yüzey,"
+   ]
+  },
+  "14444": {
+   "text": "Empennage normalde bir yatay yüzey, bir dikey stabilize (fin), bir istikamet dümeni ve bir irtifa dümeninden oluşur. Boyuna kararlılığı hangi parça sağlar?;",
+   "options": [
+    "Yatay kuyruk yüzeyi (tailplane),",
+    "Dikey stabilize",
+    "İstikamet dümeni",
+    "İrtifa dümeni,"
+   ]
+  },
+  "14445": {
+   "text": "Modern hafif uçak gövde (fuselage) yapımının en yaygın türü:",
+   "options": [
+    "Semi monocoque / gerilmiş kaplama (stressed skin)",
+    "Truss (kafes) veya iskelet yapımı",
+    "Ahşap ve kanvas (bez kaplama)",
+    "Monocoque"
+   ]
+  },
+  "14446": {
+   "text": "Kompozit bir yapısal bileşenin parçaları şunlardır:",
+   "options": [
+    "bir matris ve elyaflar (fibre).",
+    "iki ince metal levha ve ağır bir çekirdek malzemesi.",
+    "saf alüminyum kaplama tabakalı alüminyum alaşımı.",
+    "birbirine yapıştırılmış iki ahşap levha."
+   ]
+  },
+  "14447": {
+   "text": "Şekilde gösterilen yapı şöyle adlandırılır;",
+   "options": [
+    "Monocoque Yapı.",
+    "Truss Tipi Yapı.",
+    "Semi-Monocoque Yapı.",
+    "Framework Tipi Yapı."
+   ]
+  },
+  "14448": {
+   "text": "Şekilde gösterilen yapı şöyle adlandırılır;",
+   "options": [
+    "Semi-Monocoque Yapı.",
+    "Framework Tipi Yapı.",
+    "Truss Tipi Yapı.",
+    "Monocoque Yapı."
+   ]
+  },
+  "14449": {
+   "text": "Şekilde gösterilen yapı şöyle adlandırılır;",
+   "options": [
+    "Truss Tipi Yapı.",
+    "Bulkhead Tipi Yapı.",
+    "Semi-Monocoque Yapı.",
+    "Monocoque Yapı."
+   ]
+  },
+  "14451": {
+   "text": "Bir uçağın kuyruk grubunun ana bileşenleri nelerdir?",
+   "options": [
+    "Yatay kuyruk ve dikey kuyruk",
+    "Kanatçıklar ve irtifa dümeni",
+    "Direksiyon ve pedallar",
+    "İstikamet dümeni ve kanatçıklar"
+   ]
+  },
+  "14452": {
+   "text": "Semi-monocoque yapının monocoque yapıya göre büyük avantajı nedir?",
+   "options": [
+    "Daha iyi mukavemet/ağırlık oranı",
+    "Daha büyük uçuş yüklerine dayanır",
+    "Montajı daha kolaydır",
+    "Daha hafiftir"
+   ]
+  },
+  "14453": {
+   "text": "Sandviç yapıların avantajları nelerdir?",
+   "options": [
+    "Düşük ağırlık, yüksek rijitlik, yüksek kararlılık ve yüksek mukavemet",
+    "Yüksek sıcaklık dayanımı ve düşük ağırlık",
+    "Yüksek mukavemet ve iyi şekillendirilebilirlik",
+    "İyi şekillendirilebilirlik ve yüksek sıcaklık dayanımı"
+   ]
+  },
+  "14454": {
+   "text": "Aşağıdakilerden hangisi bir semi-monocoque uçaktaki yapıları tanımlar?",
+   "options": [
+    "stringer'lar, frame'ler, kaplama",
+    "kirişler, kaplama, sinirler",
+    "ön kiriş, arka kiriş, sinirler",
+    "stringer'lar, frame'ler, bağlantı elemanları (fitting)"
+   ]
+  },
+  "14455": {
+   "text": "Bir semi-monocoque gövdenin (fuselage) hangi parça(ları) eğilme yüklerini taşır?",
+   "options": [
+    "Stringer'lar",
+    "Sinir",
+    "Frame'ler",
+    "Kiriş"
+   ]
+  },
+  "14438": {
+   "text": "Aynı faydalı yük ağırlığı alındığında hangi yapı en ağır olur?",
+   "options": [
+    "Biplan",
+    "Fark yoktur",
+    "alçak kanat",
+    "yüksek kanat"
+   ]
+  },
+  "14457": {
+   "text": "Cantilever kanatlı modern bir hafif uçakta ağırlık şununla taşınır;",
+   "options": [
+    "bir veya daha fazla derin kiriş.",
+    "sinirler.",
+    "iç tel destekleme (bracing).",
+    "metal kaplama."
+   ]
+  },
+  "14458": {
+   "text": "Kanatta eğilme gerilmesine karşı ana yük taşıyan elemanlar;",
+   "options": [
+    "kirişlerdir.",
+    "frame'lerdir.",
+    "kaplamadır.",
+    "sinirlerdir."
+   ]
+  },
+  "14459": {
+   "text": "Şemada gösterilen kanadın bileşen parçaları şunlardır:",
+   "options": [
+    "A-Ön Kiriş B-Sinirler C-Arka Kiriş D-Stringer",
+    "A-Stringer'lar B-İkincil Kiriş C-Sinirler D-Alt kaplama",
+    "A-Ön Kiriş B-İkincil Kiriş C-Sinirler D-Metal kaplama",
+    "A-Ana Kiriş B-Sinirler C-Stringer D-Longeron"
+   ]
+  },
+  "14460": {
+   "text": "Kanattaki sinirlerin işlevi:",
+   "options": [
+    "kanada istenen aerodinamik şekli vermek",
+    "tüm kimyasal yüklere dayanmak.",
+    "kanada yakıt hücreleri takma seçeneği vermek",
+    "tüm yapısal yüklere dayanmak."
+   ]
+  },
+  "14462": {
+   "text": "Şekildeki kanat yapım türü şöyle adlandırılır:",
+   "options": [
+    "Cantilever Monoplan.",
+    "Desteklenmiş (braced) Monoplan.",
+    "Desteklenmiş (braced) Biplan",
+    "Biplan"
+   ]
+  },
+  "14463": {
+   "text": "Şekildeki kanat yapım türü şöyle adlandırılır;",
+   "options": [
+    "Desteklenmiş (braced) Monoplan.",
+    "Desteklenmiş (braced) Biplan",
+    "Cantilever Monoplan.",
+    "Biplan"
+   ]
+  },
+  "14464": {
+   "text": "Hangi yapısal elemanlar kanada profil şeklini verir?",
+   "options": [
+    "Sinirler",
+    "Kiriş",
+    "Kanat ucu (tip)",
+    "Kaplama tahtası (planking)"
+   ]
+  },
+  "14465": {
+   "text": "Aşağıdakilerden hangisi kanat yapısının bir parçası değildir?",
+   "options": [
+    "Frame",
+    "Sinir",
+    "Kiriş",
+    "Stringer"
+   ]
+  },
+  "14461": {
+   "text": "Kontrol yüzeylerinin yüksek hızda çırpınma (flutter) eğilimi şöyle önlenebilir:",
+   "options": [
+    "Kontrol yüzeyinin hücum kenarının önüne bir kütle dengesi (mass balance) takarak",
+    "Firar kenarına spring tab takarak",
+    "Hücum kenarında balance tab kullanarak",
+    "Firar kenarındaki servo tab'ları ayarlayarak"
+   ]
+  },
+  "14466": {
+   "text": "Bir uçuş kontrol kilidi (flying control lock):",
+   "options": [
+    "Rüzgârlı koşullarda hasarı önlemek için kontrolleri yerde kilitler.",
+    "Pilotun uçağı manevra ettirirken kontrollere hasar vermesini önlemek için kontrolleri yerde kilitler.",
+    "Türbülansın etkilerini azaltmak için kontrolleri uçuşta kilitler.",
+    "Aerodinamik yükleri etkisiz kılmak için kontrolleri uçuşta kilitler."
+   ]
+  },
+  "14467": {
+   "text": "Bir uçuş kontrol kilidi;",
+   "options": [
+    "yüksek rüzgâr koşullarında hasarı önlemek için kontrolleri yerde kilitlemek amacıyla kullanılır.",
+    "yalnızca irtifa dümenlerinde gereklidir.",
+    "hamleli (gusty) rüzgâr koşullarında uçarken her zaman kullanılmalıdır.",
+    "normal operasyonlar sırasında uçak gövdesini aşırı zorlamamak için kumanda kolunu tasarım sınırlarıyla kısıtlar."
+   ]
+  },
+  "14468": {
+   "text": "Dikey eksen etrafındaki hareket hangi tür uçuş kontrolüyle kontrol edilir?",
+   "options": [
+    "İstikamet dümeni",
+    "Flap'ler",
+    "İrtifa dümeni",
+    "Kanatçık"
+   ]
+  },
+  "14469": {
+   "text": "Daha düşük hava hızlarında artan taşıma kuvveti şu açılarak elde edilir:",
+   "options": [
+    "Firar kenarı flap'leri",
+    "Kanatçık",
+    "İstikamet dümeni",
+    "İrtifa dümeni"
+   ]
+  },
+  "14470": {
+   "text": "Bazı hafif uçakların kontrol yüzeylerinin firar kenarında, genellikle kanatçıklardan birinde, küçük sabit bir metal tab bulunur. Bunun amacı;",
+   "options": [
+    "lisanslı bir mühendisin yerde trim ayarı yapmasına imkân vermek.",
+    "pilotun yük değişimini telafi etmek için yerde yanal trim ayarı yapmasına imkân vermek.",
+    "üreticinin referans numarası için bir etiket olmak.",
+    "statik elektriği boşaltmak."
+   ]
+  },
+  "14472": {
+   "text": "Uçağın enine (lateral) ekseni etrafındaki dönüşü şöyle adlandırılır:",
+   "options": [
+    "Pitch (yunuslama)",
+    "Yaw (sapma)",
+    "Roll (yatış)",
+    "Yana kayma (side slip)"
+   ]
+  },
+  "14473": {
+   "text": "Uçağın boyuna (longitudinal) ekseni etrafındaki dönüşü şöyle bilinir:",
+   "options": [
+    "Roll (yatış)",
+    "Pitch (yunuslama)",
+    "Yaw (sapma)",
+    "Yana kayma (side slip)"
+   ]
+  },
+  "14478": {
+   "text": "Hangi tür flap'ler kamburluğun (camber) yanı sıra kanat alanını da artırır?",
+   "options": [
+    "Fowler flap.",
+    "Plain flap.",
+    "Split flap.",
+    "Slotted flap."
+   ]
+  },
+  "14479": {
+   "text": "Bir uçak burun yukarı (nose up) trim edilirken trim tab hangi yöne hareket eder?",
+   "options": [
+    "Aşağı hareket eder",
+    "CG konumuna bağlıdır",
+    "Yukarı hareket eder",
+    "İstikamet dümeni sapma yönünde"
+   ]
+  },
+  "14480": {
+   "text": "Aşağıdaki yöntemlerden hangisi \"Adverse Yaw\"ı önler?",
+   "options": [
+    "İstikamet dümeni kuplajı (rudder coupling)",
+    "Yaw damper",
+    "Winglet",
+    "Dikey stabilize"
+   ]
+  },
+  "14481": {
+   "text": "Aşağıdaki seçeneklerden hangisi bir uçağın tüm birincil uçuş kontrollerini belirtir?",
+   "options": [
+    "İrtifa dümeni, istikamet dümeni, kanatçık",
+    "İrtifa dümeni, istikamet dümeni, kanatçık, trim tab'ler, yüksek taşıma kanat düzenleri, güç kontrolleri",
+    "Flap'ler, slat'ler, speedbrake'ler",
+    "Uçağın kontrol edilmesine yardımcı olan uçak üzerindeki tüm hareketli parçalar"
+   ]
+  },
+  "14482": {
+   "text": "Diğer şeylerin yanı sıra, burun tekerleği shimmy'si (titreşimi) shimmy damper'daki yetersiz basınçtan ya da şundan kaynaklanabilir:",
+   "options": [
+    "torque link arızası.",
+    "aşırı frenlemeden kaynaklanan burun tekerleği lastiğinde düzleşme (flat spot).",
+    "aşırı lastik kayması (tyre creep).",
+    "burun tekerleği lastiğinde çok düşük basınç."
+   ]
+  },
+  "14483": {
+   "text": "Küçük uçaklarda burun ya da kuyruk tekerleği genellikle nasıl kontrol edilir?",
+   "options": [
+    "Pedallarla",
+    "Direksiyon ile",
+    "Kumanda kolu ile",
+    "Ağırlık hareketiyle"
+   ]
+  },
+  "14484": {
+   "text": "Bir tekerlek ve lastik takımında yangın çıkarsa ve söndürmek için acil müdahale gerekiyorsa, kullanılacak en güvenli söndürücü;",
+   "options": [
+    "kuru kimyevi tozdur.",
+    "su asittir (water acid).",
+    "bromotrifluoromethane (BTF)'dir.",
+    "Methyl bromide (CH3Br)'dir"
+   ]
+  },
+  "14485": {
+   "text": "Modern hafif uçaklardaki burun tekerleklerinin çoğu:",
+   "options": [
+    "oleo pnömatik amortisör ayaklarıdır (strut).",
+    "sıkıştırılmış kauçuk ayaklardır.",
+    "yay bobinli ayaklardır.",
+    "yaylı çelik ayaklardır."
+   ]
+  },
+  "14488": {
+   "text": "Bir lastiğin 'Ply Rating'i;",
+   "options": [
+    "lastiğin mukavemetinin bir göstergesidir.",
+    "lastiğin mukavemetiyle hiçbir ilgisi yoktur.",
+    "lastiğe kaç adet breaker şeridi gömüldüğünü gösterir.",
+    "rayon veya naylon kord sayısını belirtir."
+   ]
+  },
+  "14489": {
+   "text": "Hafif eğitim uçaklarının sabit iniş takımına sahip olmasının temel nedeni:",
+   "options": [
+    "sabit iniş takımının ek sürüklemesinden kaynaklanan performans düşüşünün, basitliği, düşük maliyeti ve kolay bakımıyla dengelenmesidir.",
+    "eğitim uçaklarının uygun bir yükseklikte desteklenmesi gerekmesidir.",
+    "eğitim uçaklarının inişte kinetik enerjinin sönümlenmesini sağlaması gerekmesidir.",
+    "eğitim uçaklarının yerde manevra yapması gerekmesidir."
+   ]
+  },
+  "14490": {
+   "text": "Bir oleo-pnömatik ayaktaki (strut) yağın ve azotun amaçları:",
+   "options": [
+    "yağ sönümleme işlevini, azot yay işlevini sağlar",
+    "yağ yay işlevini, azot sönümleme işlevini sağlar",
+    "yağ sönümleme ve yağlama işlevini sağlar, azot ısı dağıtma işlevini sağlar.",
+    "yağ sızdırmazlık ve yağlama işlevini sağlar, azot sönümleme işlevini sağlar."
+   ]
+  },
+  "14491": {
+   "text": "Birçok hafif uçağın iniş takımı ayakları, özellikle burun ayağı, sıkıştırılmış hava ve yağ kullanılarak yaylandırılır ve sönümlenir. Bu tür bir yapı şöyle bilinir;",
+   "options": [
+    "bir oleo.",
+    "bir seruodyne.",
+    "bir pnömatik ayak (strut).",
+    "bir hidrolik kriko."
+   ]
+  },
+  "14492": {
+   "text": "Lastik kayması (tyre creep) şununla tespit edilebilir;",
+   "options": [
+    "lastik yan duvarına ve teker flanşına boyanmış hizalama işaretleri.",
+    "teker flanşına boyanmış iki beyaz blok.",
+    "bir lastik basıncı kontrolü.",
+    "lastik yan duvarlarına boyanmış, çapsal olarak karşılıklı iki sarı ok."
+   ]
+  },
+  "14493": {
+   "text": "Lastik kayması şununla izlenebilir:",
+   "options": [
+    "lastik duvarına ve teker flanşına boyanmış ve bunların üzerinden geçen hizalama işaretleri.",
+    "şişirme valfinin konumu ve durumu.",
+    "lastik duvarındaki gerilme izleri ve olası lastik sönmesi.",
+    "lastik yan duvarına boyanmış, çapsal olarak karşılıklı iki sarı ok."
+   ]
+  },
+  "14494": {
+   "text": "Lastik kayması (tyre creep);",
+   "options": [
+    "lastik ve tekerlek üzerine boyanmış işaretlerin hizasının bozulmasıyla tanınabilir.",
+    "yapıştırıcıyla önlenebilir.",
+    "bir uçağın frenlere karşı hareket etmesini ifade eder.",
+    "lastik ve tekerlek üzerine çizgi boyayarak önlenebilir."
+   ]
+  },
+  "14495": {
+   "text": "Lastik üzerindeki kırmızı nokta neyi gösterir?",
+   "options": [
+    "Lastik Kayması (Tyre Creep)",
+    "Ply Rating",
+    "Awl Vent",
+    "Termal Tapa (Thermal Plug)"
+   ]
+  },
+  "14496": {
+   "text": "Bir uçak iniş takımındaki shimmy damper'ın işlevi nedir?",
+   "options": [
+    "Burun tekerleği titreşimlerini önlemek.",
+    "Yön pedallarındaki darbeleri azaltmak.",
+    "Ana ayak pistonu hareketini azaltmak.",
+    "Ana iniş takımı titreşimlerini önlemek."
+   ]
+  },
+  "14497": {
+   "text": "Toprak ve çimenle ağır şekilde kirlenmiş teker kapakları (wheel spat):",
+   "options": [
+    "kirlendiğinde normal operasyonları engellemeyecek belirli bir hacimle tasarlanmıştır.",
+    "bir sonraki uçuştan önce çıkarılmalı, temizlenmeli, tüm kirden arındırılmalı ve yeniden takılmalıdır.",
+    "bir sonraki uçuştan önce atılmalıdır.",
+    "teker dönüşüyle temizlenecek şekilde tasarlanmıştır."
+   ]
+  },
+  "14498": {
+   "text": "Lastik hasarı hakkında aşağıdaki ifadelerden hangisi yanlıştır?",
+   "options": [
+    "Class rating'e sahip bir pilot kendi uçağının lastiklerini değiştirebilir.",
+    "Lastikteki herhangi bir yabancı cisim hasarı (FOD), lastiğin değiştirilmesini gerektirir.",
+    "Zayıflamış bir kumaş katmanı, lastiğin değiştirilmesini gerektirir.",
+    "Kordlara kadar işleyen herhangi bir kesik, lastiğin değiştirilmesini gerektirir."
+   ]
+  },
+  "16287": {
+   "text": "Aşağıdaki yüklerden hangisi bir yer yükü (ground load) olarak kabul edilemez?",
+   "options": [
+    "Yer etkisinde asılı kalma (hovering) yükü",
+    "Çekme (towing) yükü",
+    "Yan rüzgârla ilgili yan yükler",
+    "İniş sırasındaki darbe yükleri"
+   ]
+  },
+  "20934": {
+   "text": "İniş takımının uçuş öncesi kontrolü lastik kaymasını, oleo sızıntılarını ve doğru lastik şişirme basıncını içerir, ancak ayrıca şunlara da dikkat edilmelidir:",
+   "options": [
+    "ana iniş takımı lastiklerinin diş desenlerinin eşleşmesi.",
+    "aquaplaning veya kayma nedeniyle oluşan lastik düzleşmeleri ve yan duvar durumu.",
+    "schreider şişirme valfinin tel kilitlemesi.",
+    "tekerin serbest dönüş durumu."
+   ]
+  },
+  "14499": {
+   "text": "Aşağıdakilerden hangisindeki bir artış, bir piston motorunun toplam güç çıkışını artırır?",
+   "options": [
+    "Hepsi.",
+    "Sıkıştırma oranı.",
+    "RPM.",
+    "Silindir sayısı."
+   ]
+  },
+  "14500": {
+   "text": "Bilinen buzlanma koşullarına uçuş dışında, bir dizel motorun emme sistemi;",
+   "options": [
+    "hiçbir zaman ısıtılmaz çünkü dizel motor bir enjeksiyon motorudur.",
+    "hava filtresinde buz oluşumunu önlemek için ısıtılması gerekir.",
+    "hiçbir zaman ısıtılmaz çünkü dizel motorlar çok yüksek sıcaklıklarda çalışır.",
+    "buharlaşma ısısı nedeniyle düşük güç ayarlarında ısıtılması gerekir."
+   ]
+  },
+  "14501": {
+   "text": "Swept Volume'ü 1800 cc ve Clearance Volume'ü 300 cc olan bir motorun Compression Ratio'sunu hesaplayın.",
+   "options": [
+    "7:1",
+    "9:1",
+    "6:1",
+    "5:1"
+   ]
+  }
+ }
+}

@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "14255": {
+   "text": "Yedek havaalanı (alternate aerodrome) nedir?",
+   "options": [
+    "Planlanan varış noktasına inmek uygulanabilir olmaktan çıkarsa veya sakıncalı hale gelirse, uçuşun yönelebileceği bir havaalanı.",
+    "İlk yönlendirme noktasına inmek uygulanabilir olmaktan çıkarsa veya sakıncalı hale gelirse, uçuşun yönelebileceği bir havaalanı.",
+    "Acil durumda iniş için kullanılabilecek herhangi bir havaalanı.",
+    "Gerekirse yakıt almak için uçağın inebileceği, ancak yolcu indirilip bindirilemeyeceği, planlanmış bir güzergâh üstü havaalanı."
+   ]
+  },
+  "14271": {
+   "text": "Yağ basıncı sınırlamalarını normalde hangi belgede bulursunuz?",
+   "options": [
+    "Uçuş El Kitabı veya Pilot İşletme El Kitabı",
+    "Tescil Sertifikası",
+    "Uçaktaki bilgi levhası (placard)",
+    "İşletme El Kitabı"
+   ]
+  },
+  "14319": {
+   "text": "Uçuş ekibinin sayısı ve bileşimi nerede belirtilir?",
+   "options": [
+    "JAR-OPS 1'de",
+    "JAR-FCL'de",
+    "C of A üzerinde",
+    "ICAO Ek 6 Bölüm 2'de"
+   ]
+  },
+  "14364": {
+   "text": "ATC aktif pist koşullarını \"wet wet wet\" olarak bildirirse, bundan pistin şu durumda olduğu anlaşılır:",
+   "options": [
+    "Pist ıslaktır ama birikmiş su yoktur.",
+    "Pist, derinliği en az 2 mm olan birikmiş su lekeleriyle kaplıdır.",
+    "Pist en az 2 mm birikmiş su ile kaplıdır.",
+    "Birikmiş suyla kirlenmiş görünür alanlara sahiptir."
+   ]
+  },
+  "14400": {
+   "text": "Pist yüzeyinde geniş su birikintileri görüldüğünde koşullar şu şekilde bildirilir:",
+   "options": [
+    "Flooded.",
+    "Braking action reduced.",
+    "Wet, wet, wet.",
+    "Damp, damp, damp."
+   ]
+  },
+  "14409": {
+   "text": "Güvenlik ve hayatta kalma teçhizatı nasıl olmalıdır?",
+   "options": [
+    "Kolayca tanınabilir olmalı",
+    "Yalnızca uçağın acil çıkışlarının yakınında bulundurulmalı",
+    "Her hafta kontrol edilmeli",
+    "Yolcu koltuklarının altında bulundurulmalı"
+   ]
+  },
+  "14554": {
+   "text": "Yangınlar, söndürülmesi gereken malzemeye göre sınıflandırılır. Elektrikle ilgili yangınlar ……. sınıfıdır.",
+   "options": [
+    "C Sınıfı yangınlar",
+    "D Sınıfı yangınlar",
+    "B Sınıfı yangınlar",
+    "A Sınıfı yangınlar"
+   ]
+  },
+  "15925": {
+   "text": "Şikago Sözleşmesi'nin ekleri (Annex) neleri içerir?",
+   "options": [
+    "Standartlar ve Tavsiye Edilen Uygulamalar.",
+    "Standartlar ve Düzenleyici Usuller.",
+    "Tavsiyeler ve Uyum Yöntemleri.",
+    "Arama ve Kurtarma Usulleri."
+   ]
+  },
+  "15926": {
+   "text": "Ticari hava taşımacılığında uçak işletimine uygulanan Şikago Sözleşmesi Eki hangisidir?",
+   "options": [
+    "Ek 6",
+    "Ek 1",
+    "Ek 9",
+    "Ek 2"
+   ]
+  },
+  "15927": {
+   "text": "ICAO Ek 6'ya göre bir uçak için \"uçuş süresi\" (flight time) tanımı nedir?",
+   "options": [
+    "Bir uçağın kalkış amacıyla ilk hareket ettiği andan, uçuşun sonunda nihai olarak durduğu ana kadar geçen toplam süre",
+    "Fren bırakma anından, inişten sonra uçağın pistte durduğu ana kadar geçen toplam süre",
+    "Motorun çalıştırıldığı andan durdurulduğu ana kadar geçen toplam süre",
+    "Kalkıştan motorun durdurulmasına kadar geçen toplam süre"
+   ]
+  },
+  "15928": {
+   "text": "Uçakta bulundurulması gereken tıbbi setlerle ilgili bilgiler hangi Ek'te yer alır?",
+   "options": [
+    "Ek 6",
+    "Ek 12",
+    "Ek 2",
+    "Ek 11"
+   ]
+  },
+  "15929": {
+   "text": "ICAO (International Civil Aviation Organization / Uluslararası Sivil Havacılık Teşkilatı) Ek 18, hangi konuyla ilgili bir belgedir?",
+   "options": [
+    "tehlikeli maddelerin hava yoluyla taşınmasının güvenliği",
+    "canlı hayvanların hava yoluyla taşınması",
+    "uçakların teknik işletim kullanımı",
+    "uçakların gürültü kirliliği"
+   ]
+  },
+  "15930": {
+   "text": "Aşağıdaki belgelerden hangisi, operasyonel personelin görevlerini yerine getirirken kullanacağı usulleri, talimatları ve rehberliği içerir?",
+   "options": [
+    "İşletme El Kitabı",
+    "Sefer Defteri",
+    "Uçuş El Kitabı.",
+    "Teknik Kayıt Defteri"
+   ]
+  },
+  "15931": {
+   "text": "Tahliye usulleriyle ilgili bilgiler nerede bulunabilir?",
+   "options": [
+    "İşletme El Kitabı.",
+    "İşletme Uçuş Planı.",
+    "Uçuş El Kitabı.",
+    "Sefer Defteri."
+   ]
+  },
+  "15932": {
+   "text": "Bir uçağın asgari teçhizat listesi nerede bulunur?",
+   "options": [
+    "İşletme El Kitabı.",
+    "JAR OPS.",
+    "Uçuş El Kitabı.",
+    "Uçuş kaydı."
+   ]
+  },
+  "15933": {
+   "text": "Acil tahliye usulleriyle ilgili bilgiler nerede bulunmalıdır?",
+   "options": [
+    "İşletme El Kitabı.",
+    "İşletme Uçuş Planı.",
+    "Uçuş El Kitabı.",
+    "Sefer Defteri."
+   ]
+  },
+  "15934": {
+   "text": "Bir uçaktan tahliye usulleriyle ilgili bilgiler nerede bulunabilir?",
+   "options": [
+    "İşletme El Kitabı.",
+    "İşletme Uçuş Planı.",
+    "Uçuş El Kitabı.",
+    "Sefer Defteri."
+   ]
+  },
+  "15936": {
+   "text": "Uçağınızın işletme sınırlamaları ve izin verilen kütlesiyle ilgili resmî veriler nerede bulunabilir?",
+   "options": [
+    "Uçağın Uçuş El Kitabı'nda.",
+    "Sivil Havacılık Otoritesi Resmî Gazetesi'nde.",
+    "Uçuşa Elverişlilik Sertifikası'nda ve Tescil Sertifikası'nda.",
+    "Bakım Kayıt Defteri'nde."
+   ]
+  },
+  "15937": {
+   "text": "Aşağıdaki belgelerden hangisi, uçağın güvenli işletimi için uçuş ekibi üyelerinin ihtiyaç duyduğu sınırlamaları, talimatları ve bilgileri içerir?",
+   "options": [
+    "Uçuş El Kitabı.",
+    "Sefer Defteri",
+    "Teknik Kayıt Defteri",
+    "İşletme El Kitabı"
+   ]
+  },
+  "15938": {
+   "text": "İşletmeci, bir uçak operasyonuyla meşgul olan veya meşgul olmayı teklif eden ……………. olabilir.",
+   "options": [
+    "bir kişi, kuruluş veya işletme",
+    "bir kişi veya işletme",
+    "bir işletme",
+    "bir kuruluş veya işletme"
+   ]
+  },
+  "15939": {
+   "text": "Bir uçağın sahibi, aşağıdakilere ilişkin kayıtların tutulmasını sağlamalıdır:\nI - uçağın ve tüm ömür sınırlı bileşenlerinin toplam servis süresi\nII - geçerli tüm zorunlu sürekli uçuşa elverişlilik bilgilerine uyumun güncel durumu\nIII - modifikasyonlar ve tamiratlara ilişkin uygun ayrıntılar\nIV - uçağın veya zorunlu revizyon ömrüne tabi bileşenlerinin son revizyondan bu yana geçen servis süresi",
+   "options": [
+    "I, II, III ve IV",
+    "I, III ve IV",
+    "I, II ve IV",
+    "I, II ve III"
+   ]
+  },
+  "15940": {
+   "text": "Bir işletmeci Hava Trafik Hizmetlerini (Air Traffic Services) ne zaman kullanmalıdır?",
+   "options": [
+    "Mevcut olduğunda her zaman",
+    "Yalnızca AOC tarafından gerektiriliyorsa",
+    "Kendi takdirine göre",
+    "Hava durumu VFR ise kullanmasına gerek yok"
+   ]
+  },
+  "15941": {
+   "text": "Kalkıştan önce tüm yolculara bilgilendirme yapılmasını sağlamaktan kim sorumludur?",
+   "options": [
+    "Sorumlu Pilot",
+    "Uçuş Dispeçeri",
+    "İşletmecinin Devleti",
+    "Bakım Müdürü"
+   ]
+  },
+  "15942": {
+   "text": "Başka bir taraf devletin hava sahasına giren ve inmeyi planlayan bir uçak ne yapmalıdır?",
+   "options": [
+    "Tescilli ve uçuşa elverişli olmalı, C of A dahil gerekli tüm ilgili belgeleri taşımalıdır",
+    "Yalnızca uçuş planının orijinal bir kopyasını taşıdığından emin olmalıdır",
+    "C of A'yı ve Uluslararası Müdahale İşaretleri Tablosu'nu taşımalıdır",
+    "İçine uçtuğu devletin hava sahasının C of A'sına uygun olmalıdır"
+   ]
+  },
+  "15943": {
+   "text": "Bir uçağın tarım, inşaat, fotoğrafçılık, ölçüm (surveying), gözlem ve devriye, arama ve kurtarma, hava reklamcılığı gibi özel hizmetler için kullanıldığı operasyonların genel adı nedir?",
+   "options": [
+    "Hava işi",
+    "Charter",
+    "Tarifeli sefer",
+    "Özel"
+   ]
+  },
+  "15944": {
+   "text": "Bir ICAO üye devleti uçağında aşağıdaki belgelerden hangisinin bulundurulması zorunlu değildir?",
+   "options": [
+    "Sürücü Belgeleri",
+    "Uçuş ekibi lisansları",
+    "Uçuşa Elverişlilik Sertifikası",
+    "Tescil Sertifikası"
+   ]
+  },
+  "15945": {
+   "text": "Bir ICAO üye devleti uçağında aşağıdaki belgelerden hangisinin bulundurulması zorunlu değildir?",
+   "options": [
+    "Uçuş ekibinin sürücü belgesi",
+    "Uçuş ekibi lisansları",
+    "Uçuşa Elverişlilik Sertifikası",
+    "Tescil Sertifikası"
+   ]
+  },
+  "15946": {
+   "text": "Bir işletmeci, her uçuş süresince yerde şunun bir kopyasının tutulmasını sağlamalıdır:",
+   "options": [
+    "işletme uçuş planı",
+    "uçuş rota çizelgesi",
+    "ATC uçuş planı",
+    "uçuş planı işleme"
+   ]
+  },
+  "15947": {
+   "text": "Otorite, PIC'den uçak belgelerini ibraz etmesini istemiştir. O…",
+   "options": [
+    "bunu makul bir süre içinde yapmalıdır.",
+    "bunları ibraz etmeyi reddedebilir",
+    "bunu yalnızca işletmeci tarafından yetkilendirilmişse yapar.",
+    "48 saatlik bir erteleme talep edebilir."
+   ]
+  },
+  "15948": {
+   "text": "Sorumlu pilot aşağıdakilerden emin olmadıkça bir uçuş başlatılamaz:\nI - gerekli bakımların yapılmış olması.\nII - taşınan yükün uygun şekilde dağıtılmış ve güvenli şekilde bağlanmış olması.\nIII - uçağın işletme sınırlamalarının aşılmayacak olması.",
+   "options": [
+    "I, II ve III",
+    "I ve III",
+    "II ve III",
+    "I ve II"
+   ]
+  },
+  "15949": {
+   "text": "Kokpitteki uçuş ekibi üyeleri emniyet kemerlerini ne zaman bağlı tutmalıdır?",
+   "options": [
+    "görev yerlerindeyken.",
+    "yalnızca kalkış ve iniş sırasında ve kumandanın güvenlik gereği gerekli gördüğü diğer zamanlarda.",
+    "yalnızca kalkış ve iniş sırasında.",
+    "kalkıştan inişe kadar."
+   ]
+  },
+  "15950": {
+   "text": "Uçuş öncesinde, uçağın ağırlığının uçuşun güvenle yapılmasına uygun olduğunu ve taşınan kargonun uygun şekilde dağıtılıp bağlandığını kim kontrol eder? (Ek 6, Bölüm I)",
+   "options": [
+    "Sorumlu pilot",
+    "Şirketin kargo teknisyenleri.",
+    "Uçaktaki teknisyen, yoksa yardımcı pilot.",
+    "İşletmeci."
+   ]
+  },
+  "15951": {
+   "text": "İnme niyetiyle bir uçağın yabancı bir devletin egemen hava sahasına girdiği bir uçuşun sorumlu pilotu.",
+   "options": [
+    "Uçuşa Elverişlilik Sertifikası dahil olmak üzere gerekli ve ilgili tüm belgelerin uçakta bulundurulduğundan, uçağın uçuşa elverişli durumda olduğundan ve doğru şekilde tescil edildiğinden emin olmuş olmalıdır",
+    "Uçağın Uçuşa Elverişlilik Sertifikası'nın geçerli olduğundan, uçak için bir tip derecesine (type rating) sahip olduğundan ve yabancı devlet tarafından düzenlenen bir Hava Hukuku sınavını geçmiş olduğundan emin olmalıdır",
+    "Uçağın Uçuşa Elverişlilik Sertifikası'nın geçerli olduğundan ve uçak için bir tip derecesine sahip olduğundan emin olmalıdır",
+    "Kalkıştan önce, pilot lisansının yabancı devlet tarafından geçerli kılındığından (validate) emin olmalıdır"
+   ]
+  },
+  "15952": {
+   "text": "Uçuşu planlamaktan ve hava durumunun uygun olduğundan emin olmaktan sorumlu kişi kimdir?",
+   "options": [
+    "Sorumlu pilot",
+    "Nöbetçi eğitmen",
+    "Operasyon Müdürü",
+    "Baş Uçuş Eğitmeni (CFI)"
+   ]
+  },
+  "15953": {
+   "text": "İnme niyetiyle bir uçağın yabancı bir devletin egemen hava sahasına girdiği bir uçuşun sorumlu pilotu, aşağıdakiler dahil gerekli ve ilgili tüm belgelerin uçakta bulundurulduğundan emin olmuş olmalıdır;\nI - Tescil Sertifikası\nII - Uçuşa Elverişlilik Sertifikası\nIII - Ekip Lisansları\nIV - Bakım Kayıtları",
+   "options": [
+    "I, II ve III",
+    "I, II ve IV",
+    "I, III ve IV",
+    "I, II, III ve IV"
+   ]
+  },
+  "15954": {
+   "text": "Uçağın nihai tasarrufuna ilişkin nihai yetki kimdedir?",
+   "options": [
+    "Sorumlu pilot.",
+    "İşletmeci.",
+    "Uçak kontrollü hava sahasında uçarken ATC kontrolörü",
+    "uçak sahibi."
+   ]
+  },
+  "15955": {
+   "text": "Bir uçakta yasa dışı müdahale eyleminin ardından sorumlu pilot raporu kime sunmalıdır?",
+   "options": [
+    "hem yerel otoriteye hem de işletmecinin devletinin otoritesine",
+    "yalnızca işletmecinin devletinin otoritesine",
+    "yalnızca yerel otoriteye",
+    "yasa dışı müdahale anında uçağın içinde işletildiği devletin otoritesine"
+   ]
+  },
+  "15957": {
+   "text": "Altimetre ayarının kolayca temin edilemediği bir meydandan kalkan bir uçağın pilotu, uçak altimetresini neye ayarlamalıdır?",
+   "options": [
+    "Meydanın rakımına.",
+    "En yakın kontrollü havalimanının altimetre ayarına.",
+    "Sıfır irtifasına.",
+    "1013.2 hPa'ya."
+   ]
+  },
+  "15958": {
+   "text": "Görev başındaki bir uçuş operasyon memuru (veya uçuş dispeçeri) neden sorumludur?",
+   "options": [
+    "sorumlu pilota uçuş hazırlığında yardımcı olmak ve gerekli bilgileri sağlamak",
+    "iniş sırasında yolculara yardımcı olmak",
+    "işletme uçuş planını hazırlamak",
+    "uçağı yüklemek"
+   ]
+  },
+  "15959": {
+   "text": "Sorumlu pilot, oksijen eksikliğinin mürettebat üyelerinin yeteneklerini bozabileceği veya yolcuları zararlı şekilde etkileyebileceği irtifalardaki tüm uçuşlar için, solunum oksijeninin yeterli miktarlarda …………………. için mevcut olmasını sağlamalıdır.",
+   "options": [
+    "mürettebat üyeleri ve yolcular",
+    "kabin ekibi üyeleri ve yolcular",
+    "yolcular",
+    "mürettebat üyeleri"
+   ]
+  },
+  "15960": {
+   "text": "VFR uçuş için, 10.000 ft altında asgari yatay görüş mesafesi nedir?",
+   "options": [
+    "5 km",
+    "300 m",
+    "1500 m",
+    "8 km"
+   ]
+  },
+  "15961": {
+   "text": "Bir gece uçuşu sırasında, önden soldan yaklaşık ters paralel rotada gelen bir uçağı gören bir pilot önce hangisini görür?",
+   "options": [
+    "kırmızı sabit ışık",
+    "yeşil ve beyaz yanıp sönen ışık",
+    "beyaz sabit ışık",
+    "yeşil sabit ışık"
+   ]
+  },
+  "15962": {
+   "text": "Bir havaalanının uçak hareket sahasında motorları çalışır durumda olan tüm uçaklar bunu göstermek için ışık gösterir. Bu amaçla aşağıdakilerden hangisi kullanılır?",
+   "options": [
+    "Kırmızı anti-çarpışma ışığı",
+    "Kuyruk ışığı.",
+    "Seyir ışıkları.",
+    "İniş ışığı."
+   ]
+  },
+  "15963": {
+   "text": "Uçaklar aşağıdaki ışıklarla donatılmış olmalıdır:",
+   "options": [
+    "Sağ kanat ucu: yeşil ışık, sol kanat ucu: kırmızı ışık, kuyruk: beyaz ışık.",
+    "Sol kanat ucu: beyaz ışık, sağ kanat ucu: beyaz ışık, kuyruk: turuncu ışık.",
+    "Sol kanat ucu: beyaz ışık, sağ kanat ucu: beyaz ışık, kuyruk: kırmızı ışık.",
+    "Sol kanat ucu: yeşil ışık, sağ kanat ucu: kırmızı ışık, kuyruk: beyaz ışık."
+   ]
+  },
+  "15964": {
+   "text": "Gündüz saatlerinde yapılan bir uçuş sırasında, bir pilot uçağın anti-çarpışma ışığının arızalandığını fark eder. Hangi hareket tarzını izlemelidir?",
+   "options": [
+    "Uçuş gün ışığında tamamlanabildiği sürece uçuşa devam etmeli ve ışığı en kısa fırsatta tamir ettirmelidir.",
+    "Ana meydanına dönmeli ve ışık tamir edilinceye kadar uçağı kullanılamaz ilan etmelidir.",
+    "En yakın uygun meydana pratik olarak mümkün olan en kısa sürede inmelidir.",
+    "En yakın havaalanına derhal inmelidir."
+   ]
+  },
+  "15965": {
+   "text": "Bir uçaktaki anti-çarpışma feneri (takılıysa) ne zaman çalışır durumda olmalıdır?",
+   "options": [
+    "Uçağın motoru çalışırken sürekli açık olmalıdır.",
+    "Kalkıştan kısa süre önce açılmalı ve uçak pisti terk ettiğinde kapatılmalıdır.",
+    "Uçak uçtuğu sürece sürekli.",
+    "Motor çalıştırıldıktan sonra açılmalı ve motor durdurulmadan önce kapatılmalıdır."
+   ]
+  },
+  "15966": {
+   "text": "Kırmızı seyir/pozisyon ışığının kapsama açısı nedir?",
+   "options": [
+    "110°",
+    "70°",
+    "140°",
+    "220°"
+   ]
+  },
+  "15967": {
+   "text": "Bir gece uçuşu sırasında, kokpitte bulunan bir gözlemci, sağ taraftan gelen bir uçağı gördüğünde önce hangisini görür?",
+   "options": [
+    "kırmızı sabit ışık",
+    "beyaz sabit ışık",
+    "yeşil sabit ışık",
+    "yeşil yanıp sönen ışık"
+   ]
+  },
+  "15968": {
+   "text": "Düzenleyici yeşil seyir ışığı, sağ (starboard) kanat ucunda bulunur ve kapsama açısı:",
+   "options": [
+    "110°.",
+    "220°.",
+    "70°.",
+    "140°."
+   ]
+  },
+  "15969": {
+   "text": "Uçak yeterli yakıt taşımadıkça bir uçuş başlatılamaz. Uçuş görsel uçuş kurallarına göre gündüz yapıldığında, taşınacak yakıt miktarı, planlanan iniş havaalanına uçuşa ve bunun ardından normal seyir irtifasında en az ……. dakika uçuşa izin vermelidir.",
+   "options": [
+    "30",
+    "90",
+    "45",
+    "60"
+   ]
+  },
+  "15970": {
+   "text": "Uçak yeterli yakıt taşımadıkça bir uçuş başlatılamaz. Uçuş görsel uçuş kurallarına göre gece yapıldığında, taşınacak yakıt miktarı, planlanan iniş havaalanına uçuşa ve bunun ardından normal seyir irtifasında en az ……. dakika uçuşa izin vermelidir.",
+   "options": [
+    "45",
+    "90",
+    "60",
+    "30"
+   ]
+  },
+  "15971": {
+   "text": "VFR uçuşu olarak işletilen uçaklar, aşağıdakileri ölçüp gösteren bir araçla donatılmış olmalıdır:\nI - manyetik baş açısı (heading)\nII - saat, dakika ve saniye cinsinden zaman\nIII - basınç irtifası\nIV - gösterge hava hızı\nV - uçak duruşu (attitude)",
+   "options": [
+    "I, II, III ve IV",
+    "I, II, III, IV ve V",
+    "I, II, IV ve V",
+    "I, II ve III"
+   ]
+  },
+  "15972": {
+   "text": "Ana asgari teçhizat listesi (MMEL) kim tarafından oluşturulur?",
+   "options": [
+    "uçağın üreticisi tarafından ve otorite tarafından kabul edilir",
+    "uçağın işletmecisi tarafından ve üretici tarafından kabul edilir",
+    "uçağın üreticisi tarafından, ancak otorite tarafından kabul edilmesine gerek yoktur",
+    "uçağın işletmecisi tarafından ve otorite tarafından kabul edilir"
+   ]
+  },
+  "15973": {
+   "text": "Asgari Teçhizat Listesi (MEL) hangi el kitabında yer alır?",
+   "options": [
+    "İşletme El Kitabı.",
+    "Operasyon Memurunun belgelerinde.",
+    "Bakım belgelerinde.",
+    "Uçak Uçuş El Kitabı."
+   ]
+  },
+  "15974": {
+   "text": "Uçağın planlanan uçuş için uygun şekilde donatılmış olduğundan emin olmak pilotun sorumluluğudur. Herhangi bir şüphe varsa pilot şuna başvurmalıdır:",
+   "options": [
+    "Asgari Teçhizat Listesi.",
+    "Bakım İnceleme Sertifikası.",
+    "Uçuşa Elverişlilik Sertifikası.",
+    "Pilot İşletme El Kitabı."
+   ]
+  },
+  "15975": {
+   "text": "M.E.L. (Asgari Teçhizat Listesi) kim tarafından hazırlanır?",
+   "options": [
+    "işletmeci",
+    "uçağın tescil devleti",
+    "uçak üreticisinin listesi",
+    "üretici"
+   ]
+  },
+  "15976": {
+   "text": "M.M.E.L. (Ana Asgari Teçhizat Listesi) kim tarafından hazırlanır?",
+   "options": [
+    "üretici.",
+    "uçağın tescil devleti",
+    "uçak üreticisinin listesi",
+    "işletmeci."
+   ]
+  },
+  "15978": {
+   "text": "JAR-OPS'a göre, bir kara uçağı kıyıdan şu mesafeden daha uzakta su üzerinde uçarken, uçaktaki her kişi için can yeleği zorunludur:",
+   "options": [
+    "50 NM",
+    "400 NM",
+    "100 NM",
+    "200 NM"
+   ]
+  },
+  "15979": {
+   "text": "Herhangi bir uçuşta taşınması gereken asgari güvenlik teçhizatı nedir?",
+   "options": [
+    "ilk yardım çantası, yedek elektrik sigortaları ve taşınabilir bir yangın söndürücü",
+    "ilk yardım çantası, duman kapüşonları ve bir yangın söndürücü",
+    "ilk yardım çantası, uçaktaki herkes için can yeleği ve bir yangın söndürücü",
+    "ilk yardım çantası, yangın baltası, uçaktaki herkes için taşınabilir oksijen ve bir yangın söndürücü"
+   ]
+  },
+  "15980": {
+   "text": "Herhangi bir telsiz haberleşme teçhizatıyla donatılmış bir uçak için, bu teçhizat havacılık acil durum frekansı ……………. üzerinden haberleşmeyi sağlamalıdır.",
+   "options": [
+    "121.5 MHz.",
+    "121.5 kHz.",
+    "212.5 MHz.",
+    "125 MHz."
+   ]
+  },
+  "15981": {
+   "text": "Bir uçak aşağıdakilerle donatılmış olmalıdır:\nI - ilk yardım çantaları\nII - taşınabilir yangın söndürücüler\nIII - her kişi için bir koltuk",
+   "options": [
+    "I, II ve III",
+    "I ve III",
+    "II ve III",
+    "I ve II"
+   ]
+  },
+  "15982": {
+   "text": "60 kişiyle bir genel taşımacılık uçağını (kara uçağı) işletmeyi planlıyorsunuz. Rota, kıyıdan 80 deniz mili uzaklıkta su üzerinden geçecektir. Uçakta bulunması gereken asgari onaylı can yeleği sayısı nedir?",
+   "options": [
+    "60",
+    "Can salı ile donatılmışsa hiç gerekmez",
+    "0",
+    "66"
+   ]
+  },
+  "15983": {
+   "text": "Konum belirlemek amacıyla manuel veya (çarpma sonucu) otomatik olarak etkinleştirildiğinde belirlenen frekanslarda ayırt edici sinyaller yayınlayan teçhizat hangisidir?",
+   "options": [
+    "Acil Durum Yer Belirleme Vericisi (ELT)",
+    "Mod C Transponder",
+    "Kokpit Ses Kayıt Cihazı (CVR)",
+    "Uçuş Veri Kayıt Cihazı (FDR)"
+   ]
+  },
+  "15984": {
+   "text": "Bir uçağın ve içindekilerin güvenliği konusunda belirsizliğin bulunduğu durum hangisidir?",
+   "options": [
+    "Belirsizlik evresi",
+    "Acil durum evresi",
+    "Alarm evresi",
+    "Tehlike evresi"
+   ]
+  },
+  "15985": {
+   "text": "Uçağın veya kişilerin emniyetini ya da güvenliğini tehlikeye atan bir acil durum, yerel düzenlemelerin veya usullerin ihlalini gerektiren bir hareketin yapılmasını zorunlu kılıyorsa, sorumlu pilot;",
+   "options": [
+    "tüm tedbirleri alır, ancak ilgili yerel otoriteyi gecikmeksizin bilgilendirir.",
+    "yerel düzenlemelerin veya usullerin ihlalini içermeyen tüm tedbirleri alır",
+    "herhangi bir otoriteye bildirimde bulunmadan tüm tedbirleri alır",
+    "yerel düzenlemelerin veya usullerin ihlalini içeren hiçbir tedbiri asla almaz"
+   ]
+  },
+  "15986": {
+   "text": "Arama ve kurtarma amaçları için tanımlandığı şekliyle \"tehlike\" (distress) sözcüğü özellikle şunu ifade eder:",
+   "options": [
+    "Bir uçak ve içindekiler ciddi ve yakın bir tehlikeyle karşı karşıyadır.",
+    "Bir uçağın ve içindekilerin güvenliği konusunda endişe vardır.",
+    "Bir uçak herhangi bir düzeydeki acil duruma tabidir.",
+    "Bir uçak ATC ile bağlantısını kaybetmiştir ve varış noktasına geç kalmaktadır."
+   ]
+  },
+  "15987": {
+   "text": "Aşağıdakilerden hangisi Arama ve Kurtarma Alarm Evreleridir?",
+   "options": [
+    "Belirsizlik evresi, Alarm evresi, Tehlike evresi",
+    "Tehlike evresi, Acele durum evresi, Alarm evresi",
+    "Alarm evresi, Tehlike evresi, Acele durum evresi",
+    "Acele durum evresi, Belirsizlik evresi, Alarm evresi"
+   ]
+  },
+  "15988": {
+   "text": "Aşağıdakilerden hangisi bir Arama ve Kurtarma Alarm Evresi değildir?",
+   "options": [
+    "Acele durum evresi.",
+    "Tehlike evresi.",
+    "Belirsizlik evresi.",
+    "Alarm Evresi."
+   ]
+  },
+  "15989": {
+   "text": "Aşağıdakilerden hangisi, bir uçağın veya deniz aracının ve içindeki kişilerin güvenliği konusunda endişenin bulunduğu durumdur?",
+   "options": [
+    "Alarm Evresi",
+    "Belirsizlik Evresi",
+    "Acil Durum Evresi",
+    "Tehlike Evresi"
+   ]
+  },
+  "15990": {
+   "text": "Aşağıdakilerden hangisi, bir uçak veya kişi dahil olmak üzere bir deniz aracının veya diğer aracın ciddi ve yakın bir tehlikeyle karşı karşıya olduğuna ve acil yardım gerektirdiğine dair makul bir kesinliğin bulunduğu durumdur?",
+   "options": [
+    "Tehlike Evresi",
+    "Belirsizlik Evresi",
+    "Acil Durum Evresi",
+    "Alarm Evresi"
+   ]
+  }
+ }
+}

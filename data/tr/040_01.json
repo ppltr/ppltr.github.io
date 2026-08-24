@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "15125": {
+   "text": "Aşağıdaki gazlardan hangisi hiperventilasyon semptomlarına neden olur?",
+   "options": [
+    "Karbondioksit.",
+    "Karbonmonoksit.",
+    "Azot.",
+    "Hidrojen."
+   ]
+  },
+  "15109": {
+   "text": "İrtifada hipoksinin en tehlikeli semptomları şunlardır:",
+   "options": [
+    "Öfori ve karar verme yeteneğinde bozulma",
+    "Sıcaklık hissi ve bulanık görme",
+    "Nefes darlığı ve gece görüşünde azalma",
+    "Hiperventilasyon."
+   ]
+  },
+  "15240": {
+   "text": "Gerçek duyusal uyaranların çarpıtılmasıyla karakterize yanlış algıya ne denir?",
+   "options": [
+    "Halüsinasyon.",
+    "Sıkılma tepkisi.",
+    "Serap.",
+    "Hayal kurma."
+   ]
+  },
+  "15169": {
+   "text": "Adaptasyon şudur;",
+   "options": [
+    "gözlerin yüksek veya düşük aydınlatma seviyelerine uyum sağlaması.",
+    "kristal lensin ışığı retina üzerinde odaklamak için ayarlanması.",
+    "pupilla çapının değişmesi.",
+    "ışığın korneada yansıması."
+   ]
+  },
+  "15231": {
+   "text": "Östaki borusunun amacı nedir?",
+   "options": [
+    "Kulak zarının her iki tarafında ortam basıncının eşitlenmesini sağlamak.",
+    "Vestibüler aparatın her iki tarafında ortam basıncının eşitlenmesini sağlamak.",
+    "Kulak zarının orta kulak tarafında ortam basıncının eşitlenmesini sağlamak.",
+    "Ses dalgalarını orta kulaktan işitme sinirine iletmek."
+   ]
+  },
+  "15190": {
+   "text": "Görsel referansların bulunmadığı durumlarda uzaysal yönelimi korumak için pilot şunu yapmalıdır:",
+   "options": [
+    "Uçak aletlerine güvenmeli",
+    "Somatosensöriyel sistemden gelen \"seat of the pants\" hissine güvenmeli",
+    "Bulutun üzerine çıkmak için hemen tırmanmalı",
+    "Vestibüler aparatının hissine güvenmeli"
+   ]
+  },
+  "15285": {
+   "text": "İnsan faktörleri tek bir disiplin değildir; farklı alanlardan bilgi alır. İnsan performansı disiplini olarak antropometri nedir?",
+   "options": [
+    "İnsan vücudu ölçüleri ve kas gücünün incelenmesi.",
+    "İnsan gruplarının gelişimi, yapısı ve işlevinin incelenmesi.",
+    "Hastalık ve yaralanmaları önleme, hafifletme veya tedavi etme bilimi ve sanatı.",
+    "Zihin ve davranış bilimi."
+   ]
+  },
+  "15171": {
+   "text": "Renk körlüğüne, daha doğru bir ifadeyle renk algısı bozukluğuna ne neden olur?",
+   "options": [
+    "Retinadaki renge duyarlı koni hücrelerinin yapısındaki bir kusur.",
+    "Kısalmış bir göz küresi.",
+    "Silyer kasların hatalı işleyişi.",
+    "Gözün lens dokusundaki bir kusur."
+   ]
+  },
+  "15121": {
+   "text": "Vücudun düşük atmosfer basıncının etkilerini tam olarak telafi edemediği alt sınırı hangi irtifa belirler?",
+   "options": [
+    "12000 feet",
+    "22000 feet",
+    "5000 feet",
+    "7000 feet"
+   ]
+  },
+  "15233": {
+   "text": "Küçük kemikler grubu olan kemikçikler (çekiç/malleus, örs/incus ve üzengi/stapes) nerede bulunur?",
+   "options": [
+    "Orta kulakta.",
+    "Vestibülde.",
+    "İç kulakta.",
+    "Yarım daire kanallarında."
+   ]
+  },
+  "15136": {
+   "text": "Uçuş ekibi ve yolcular yüksek irtifada neden oksijen eksikliği çekerler?",
+   "options": [
+    "İrtifadaki daha düşük atmosfer basıncı nedeniyle.",
+    "İrtifadaki hava seyreltik olduğu için.",
+    "İrtifa arttıkça havadaki oksijen oranının azalması nedeniyle,",
+    "İrtifayla birlikte sıcaklığın hızla düşmesi nedeniyle."
+   ]
+  },
+  "15103": {
+   "text": "Pilotlar yüksek irtifada uçarken neden takviye oksijen solumalıdır?",
+   "options": [
+    "Azalan atmosfer basıncı ve oksijenin kısmi basıncındaki düşüş",
+    "Troposferin üst sınırı",
+    "Hacimce oksijen oranındaki azalma",
+    "Azalan sıcaklık"
+   ]
+  },
+  "15258": {
+   "text": "Bilginin kodlandığı, depolandığı ve hatırlandığı zihinsel sürece ne ad verilir?",
+   "options": [
+    "Bellek",
+    "Pons",
+    "Serebellum",
+    "Omurilik"
+   ]
+  },
+  "15129": {
+   "text": "Oksijen ihtiyacı eşikleriyle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "options": [
+    "10 000 ft - 33 700 ft: basınç altında oksijen/hava karışımı",
+    "10 000 ft'e kadar - yalnızca hava",
+    "33 700 ft - 40 000 ft: %100 oksijen",
+    "40 000 ft üzeri - basınç altında %100 oksijen"
+   ]
+  },
+  "15172": {
+   "text": "Puslu koşullar bir pilotun şunu algılamasına yol açabilir:",
+   "options": [
+    "Uçak dışındaki nesneleri olduklarından daha uzakta",
+    "Uçak dışındaki nesneleri iyi görüş koşullarındakiyle tamamen aynı şekilde",
+    "Uçak dışındaki nesneleri olduklarından daha fazla sayıda",
+    "Uçak dışındaki nesneleri olduklarından daha yakında"
+   ]
+  },
+  "15079": {
+   "text": "İnsan beyni tamamen oksijensiz kaldıktan sonra ciddi hasar görmeden yaklaşık ne kadar süre hayatta kalabilir?",
+   "options": [
+    "4 dakika",
+    "14 dakika",
+    "8 dakika",
+    "1 dakika"
+   ]
+  },
+  "15092": {
+   "text": "Aşağıdaki ifadeyi tamamlayın. Atmosfer basıncı azalırsa, atmosferdeki oksijenin kısmi basıncı:",
+   "options": [
+    "azalır.",
+    "atmosfer basıncından bağımsız olduğu için etkilenmez.",
+    "aynı kalır.",
+    "artar."
+   ]
+  },
+  "15093": {
+   "text": "Aşağıdaki ifadeyi tamamlayın. ICAO Standart Atmosferinde (ISA), Troposferde irtifa arttıkça basınç:",
+   "options": [
+    "azalır.",
+    "basınç irtifadan bağımsız olduğu için etkilenmez.",
+    "aynı kalır.",
+    "o da artar."
+   ]
+  },
+  "15251": {
+   "text": "Mevcut uçuş durumunu izleme sürecine ne ad verilir...",
+   "options": [
+    "durumsal farkındalık.",
+    "öngörülü kontrol prosedürü.",
+    "sürekli uçuş kontrolü.",
+    "durumsal düşünme."
+   ]
+  },
+  "15221": {
+   "text": "\"Seat-of-the-Pants\" duyusu şu bölgelerdeki reseptörleri içerir:",
+   "options": [
+    "vücut bölümlerinin konumuna ve hareketine duyarlı kaslar, tendonlar ve eklemler",
+    "yalnızca kalça derisi",
+    "yarım daire kanalları",
+    "utrikulus ve sakkulus"
+   ]
+  },
+  "15217": {
+   "text": "Bir sesin şiddeti şu birimle ölçülür:",
+   "options": [
+    "Desibel",
+    "Saniyedeki döngü sayısı",
+    "Curie",
+    "Hertz"
+   ]
+  },
+  "15206": {
+   "text": "Düz ve seviye uçuşta ancak hızlanan bir pilot şu algıyı yaşayabilir...",
+   "options": [
+    "burun yukarı yunuslama.",
+    "burun aşağı yunuslama.",
+    "alçalma",
+    "dönüş."
+   ]
+  },
+  "15149": {
+   "text": "Tütün bağımlılığından sorumlu kimyasal madde şudur:",
+   "options": [
+    "nikotin",
+    "nikotin, katran ve karbonmonoksitin birleşimi",
+    "katran",
+    "karbonmonoksit"
+   ]
+  },
+  "15188": {
+   "text": "Gözde en iyi görme keskinliğine sahip olduğumuz bölge şudur:",
+   "options": [
+    "Fovea.",
+    "Periferik retina.",
+    "İris.",
+    "Pupilla."
+   ]
+  },
+  "15252": {
+   "text": "Öğrenmenin kalitesi:",
+   "options": [
+    "kişinin kendi performansının değeri hakkındaki geri bildirimle desteklenir",
+    "yaştan bağımsızdır",
+    "motivasyon düzeyinden bağımsızdır",
+    "uzun süreli bellek kapasitesine bağlıdır"
+   ]
+  },
+  "15179": {
+   "text": "Bir pilot, üst yüzeyi eğimli bir stratüs bulut tabakasının üzerinde uçuyorsa, görsel imgeyi büyük olasılıkla nasıl yanlış algılar?",
+   "options": [
+    "Pilot, bulut tabakasının üst yüzeyini \"gerçek\" ufuk sanabilir ve uçağın kanatlarını bulut yüzeyine paralel getiren bir tutum seçerek yatış uygulayabilir.",
+    "Pilot alçaldığını hissedip tırmanışa geçebilir.",
+    "Pilot tırmandığını hissedip alçalışa geçebilir.",
+    "Pilot eğimi alçalan bir bulut tabanı sanıp alternatif bir havaalanına yönelebilir."
+   ]
+  },
+  "15195": {
+   "text": "Algılama güçlükleri nedeniyle algılanan durum ile gerçek durum arasındaki farktan kaynaklanan duruma ne ad verilir?",
+   "options": [
+    "Uzaysal Yönelim Bozukluğu",
+    "Mandelbaum etkisi (Boş Alan Miyopisi)",
+    "Ardıl İmge Etkisi",
+    "Yanlış Ufuk Yanılsaması"
+   ]
+  },
+  "15181": {
+   "text": "Bir pilot, gece bir nesneyi en iyi şekilde görmek için:",
+   "options": [
+    "Nesnenin biraz yan tarafına bakmalı",
+    "Nesneden bakışını ayırıp tekrar tekrar ona bakmalı",
+    "Nesneye doğrudan ve yoğun şekilde bakmalı",
+    "Nesneye doğrudan bakıp birkaç kez göz kırpmalı"
+   ]
+  },
+  "15216": {
+   "text": "Östaki borusunun işlevi şudur:",
+   "options": [
+    "Dış kulak ile orta kulak arasındaki basıncı eşitlemek",
+    "Yarım daire kanallarında sıvı dolaşımını sağlamak",
+    "İç kulağı boğazın arkasına bağlamak",
+    "Orta kulak ile iç kulak arasındaki basıncı eşitlemek"
+   ]
+  },
+  "15218": {
+   "text": "Vestibüler aparatın temel işlevi şudur:",
+   "options": [
+    "Açısal ve doğrusal ivmeleri algılamak",
+    "Aşırı seslerin otolitlere zarar vermesini önlemek",
+    "Aşırı seslerin kulak zarına zarar vermesini önlemek",
+    "Sesi mekanik olarak koklaya iletmek"
+   ]
+  },
+  "15279": {
+   "text": "Uyarılmışlık (arousal) ile performans arasındaki ilişki şu anlama gelir:",
+   "options": [
+    "Performans hem düşük hem de aşırı uyarılmışlıkla bozulur",
+    "Performans düşük uyarılmışlıkla artar, aşırı uyarılmışlıkla bozulur",
+    "Performans hem düşük hem de aşırı uyarılmışlıkla artar",
+    "Performans düşük uyarılmışlıkla bozulur, aşırı uyarılmışlıkla artar"
+   ]
+  },
+  "15146": {
+   "text": "Sigara içmek, kırmızı kan hücrelerinin oksijen taşıma yeteneğini şu nedenle azaltır:",
+   "options": [
+    "hemoglobinin CO'ya karşı ilgisi (afinitesi) daha yüksektir.",
+    "CO alveollerde hapsolur ve iç solunumu kısıtlar.",
+    "CO daha büyük bir akciğer hacmi kaplar.",
+    "solunum yolu (inspiratuar yol) tıkanır."
+   ]
+  },
+  "15051": {
+   "text": "Henry Yasası, İnsan Performansı alanında şuna uygulanır:",
+   "options": [
+    "Dekompresyon Hastalığı (DCS)",
+    "Alveollerde oksijen ve karbondioksit değişimi",
+    "Kulak Barotravması",
+    "Hipoksi"
+   ]
+  },
+  "15100": {
+   "text": "Atmosfer basıncı azalırsa, atmosferdeki oksijenin kısmi basıncı:",
+   "options": [
+    "Azalır.",
+    "Atmosfer basıncından bağımsız olduğu için etkilenmez.",
+    "Aynı kalır.",
+    "Artar."
+   ]
+  },
+  "15072": {
+   "text": "Sağlıklı bir pilot, hipoksi etkilerinden etkilenmeden şu irtifaya kadar uçabilmelidir:",
+   "options": [
+    "10 000 feet",
+    "20 000 feet",
+    "18 000 feet",
+    "16 000 feet"
+   ]
+  },
+  "15175": {
+   "text": "Hipermetropi ve Miyopi normalde şu nedenle oluşur:",
+   "options": [
+    "Şekli bozulmuş göz küresi.",
+    "Kötü uyan gözlük camları.",
+    "Stres.",
+    "Göz yorgunluğu."
+   ]
+  },
+  "15219": {
+   "text": "Otolitler (Utrikulus ve Sakkulus) şunu algılar:",
+   "options": [
+    "Doğrusal İvme.",
+    "G kuvvetleri.",
+    "Doğrusal ve açısal ivme.",
+    "Açısal ivme."
+   ]
+  },
+  "15254": {
+   "text": "Yeterli bir durumsal farkındalık oluşturmak için gerekli üç bilişsel öğe nedir?",
+   "options": [
+    "Uçak nerede, nereden geldi, nereye gidiyor",
+    "Uçak nerede, nereye gidiyor, yakıt durumu nasıl",
+    "Uçak nerede, uçak nerede olabilir, güvenli menzil (endurance) nedir",
+    "Uçak nerede, hava durumu nasıl, yakıt durumu nasıl"
+   ]
+  },
+  "15224": {
+   "text": "Kulağın iki işlevi nedir?",
+   "options": [
+    "İşitme ve denge",
+    "Gürültüyü işitme ve dengeyi filtreleme",
+    "Denge ve gürültüyü filtreleme.",
+    "İşitme ve gürültüyü filtreleme"
+   ]
+  },
+  "15270": {
+   "text": "Hangi davranış, kişilerarası çatışmaların yapıcı bir şekilde çözülmesini en çok destekler?",
+   "options": [
+    "Aktif dinleme",
+    "Kendi bakış açısından vazgeçmek",
+    "Kendi bakış açısında ısrar etmek",
+    "Karşı argümanlarla yanıt vermek"
+   ]
+  },
+  "15065": {
+   "text": "Dekompresyon hastalığından (DCS) hangi gaz yasası sorumludur?",
+   "options": [
+    "Henry gaz yasası",
+    "Boyle-Mariotte gaz yasası",
+    "Bohr gaz yasası",
+    "Dalton gaz yasası"
+   ]
+  },
+  "15064": {
+   "text": "Vücutta oksijeni dağıtmaktan hangi vücut sistemi sorumludur?",
+   "options": [
+    "Dolaşım Sistemi.",
+    "Oksidasyon Sistemi.",
+    "Solunum Sistemi.",
+    "Sinir Sistemi."
+   ]
+  },
+  "15177": {
+   "text": "Bir pilot, farkında olmadığı belirgin bir aşağı eğime sahip bir pist için görsel yaklaşma yaparsa, muhtemel sonuç ne olur?",
+   "options": [
+    "Pilot, amaçlanandan daha dik bir yaklaşma uçar ve pistin ötesine geçme olasılığı doğar.",
+    "Pilot, amaçlanandan daha dik bir yaklaşma uçar ve pistin öncesine düşme olasılığı doğar.",
+    "Pilot, amaçlanandan daha sığ bir yaklaşma uçar ve pistin ötesine geçme olasılığı doğar.",
+    "Pilot, amaçlanandan daha sığ bir yaklaşma uçar ve pistin öncesine düşme olasılığı doğar."
+   ]
+  },
+  "15044": {
+   "text": "“Tüm gazlarda basınç, hacimle ters orantılıdır.” Yukarıdaki tanımı aşağıdaki yasalardan hangisi açıklar?",
+   "options": [
+    "Boyle Yasası",
+    "Charles Yasası",
+    "Henry Yasası",
+    "Dalton Yasası"
+   ]
+  },
+  "15086": {
+   "text": "Orta kulak barotravmasına genellikle şu eşlik eder;",
+   "options": [
+    "işitme yeteneğinde azalma ve artan basınç hissi.",
+    "kulakta çınlama.",
+    "baş dönmesi.",
+    "eklemlerde ağrı."
+   ]
+  },
+  "15152": {
+   "text": "Uykunun iki biyolojik işlevi nedir?",
+   "options": [
+    "Uyku vücudu ve beyni tazeler",
+    "Uyku vücut fonksiyonlarını azaltır ve uzun süreli bellek deposunu artırır",
+    "Uyku, vücudun iç ve dış ortamındaki homeostazı azaltır",
+    "Uyku kısa süreli belleği tazeler"
+   ]
+  },
+  "15083": {
+   "text": "Düşük irtifalarda yolcunuz anormal nefes almaya başlar ve hipoksi belirtilerinden bazılarını gösterirse, büyük olasılıkla şundan muzdariptir:",
+   "options": [
+    "Hiperventilasyon.",
+    "Hipotermi.",
+    "Karbonmonoksit zehirlenmesi.",
+    "Hareket hastalığı."
+   ]
+  },
+  "15156": {
+   "text": "Bir pilot pozitif G kuvvetine maruz kaldığında, vücudun tepkisi aşağıdakilerden hangisidir?",
+   "options": [
+    "Kan vücudun alt kısımlarında birikmeye başlar.",
+    "Göz küreleri dışarı doğru çıkıntı yapar.",
+    "Periferik görüş artar.",
+    "Beyin kan akışı ve damar basıncı artar."
+   ]
+  },
+  "15084": {
+   "text": "Atmosfer basıncı hangi irtifada deniz seviyesindekinin yaklaşık yarısına iner?",
+   "options": [
+    "18,000 ft.",
+    "8,000 ft.",
+    "10,000 ft.",
+    "36,000 ft."
+   ]
+  },
+  "15204": {
+   "text": "Düz yatay uçuş sırasında bir yavaşlama (deselerasyon) şu yanılsamaya yol açabilir...",
+   "options": [
+    "bir alçalma.",
+    "ters uçuş.",
+    "bir tırmanış.",
+    "bir yatış."
+   ]
+  },
+  "15057": {
+   "text": "Vücutta sabit bir kan akışını sürdüren mekanizmaya ne ad verilir:",
+   "options": [
+    "Dolaşım Sistemi",
+    "Sinir Sistemi",
+    "Üreme Sistemi",
+    "Solunum Sistemi"
+   ]
+  },
+  "20946": {
+   "text": "Kafein, kalp atış hızında artışa, huzursuzluğa/gerginliğe, uykusuzluğa, kaygıya ve bağırsak tahrişine neden olabilir. Aşırı tüketim şu miktarın üzerinde kabul edilir:",
+   "options": [
+    "250 mg/gün",
+    "150 mg/gün",
+    "40-65 mg/gün",
+    "3 mg/gün"
+   ]
+  },
+  "15168": {
+   "text": "Akomodasyon, lensin yakın nesnelerden gelen ışık ışınlarını Fovea üzerinde odaklama gücüdür. Akomodasyon şununla kontrol edilir:",
+   "options": [
+    "Silyer kaslar.",
+    "Retina.",
+    "Çubuk ve koni hücreleri.",
+    "İris."
+   ]
+  },
+  "15134": {
+   "text": "Kısmi basınç hakkında aşağıdaki ifadelerden hangisi doğrudur?",
+   "options": [
+    "Bir gaz karışımındaki tek tek gazların kısmi basınçlarının toplamı, toplam basınca eşittir.",
+    "Havadaki oksijenin kısmi basıncı her zaman yaklaşık %20'dir.",
+    "Bir karışımdaki bir gazın kısmi basıncı Boyle yasası kullanılarak hesaplanabilir.",
+    "Kısmi basınç, her 1000 fitte yaklaşık %2 azalır."
+   ]
+  },
+  "15133": {
+   "text": "Tırmanış ve/veya alçalma sırasındaki hava basıncı değişimlerinden kulağın hangi bölümü etkilenebilir?",
+   "options": [
+    "Östaki borusu ve timpanik membran (kulak zarı)",
+    "Yarım daire kanalları",
+    "Koklea",
+    "Sakkulus ve utrikulus"
+   ]
+  },
+  "15239": {
+   "text": "\"Chunking\" (öbekleme) şudur:",
+   "options": [
+    "Çalışma belleğinde tutulan ilgisiz öğelerin sayısını artırma yöntemi",
+    "Bir becerinin öğrenilmesindeki çağrışımsal aşama",
+    "Tuhaf bir kelime çağrışımı tekniği yöntemi",
+    "Dönüş süresini azaltmak için kontrol listesi maddelerinin gruplandırılması"
+   ]
+  },
+  "15106": {
+   "text": "Vücudun doğru işlev görmek için yeterli oksijene sahip olmadığı duruma ne ad verilir:",
+   "options": [
+    "Hipoksi.",
+    "Hiperglisemi.",
+    "Hiperventilasyon.",
+    "Hipotansiyon."
+   ]
+  },
+  "15290": {
+   "text": "Canlı unsur (liveware) - donanım arayüzü sorunlarından kaynaklanan bir hataya örnek hangisidir?",
+   "options": [
+    "Kötü tasarlanmış anahtarlar, kumandalar veya göstergeler.",
+    "Zihinsel baskı.",
+    "Gürültü paraziti.",
+    "Kullanıcı dostu olmayan bir prosedür."
+   ]
+  },
+  "15281": {
+   "text": "Bir kişi stres veya korku yaşadığında, kan dolaşımına adrenalin salgılanır ve bu ani şekilde şuna neden olur:",
+   "options": [
+    "Nabız hızında artış.",
+    "Nabız hızında azalış.",
+    "Bilinç kaybı.",
+    "Yorgunluk."
+   ]
+  },
+  "15259": {
+   "text": "Aşağıdakilerden hangisi dikkat mekanizmasının bir özelliği değildir?",
+   "options": [
+    "sınırsız",
+    "sınırlı",
+    "çaba gerektirir",
+    "zihinsel işlemeyi iyileştirir"
+   ]
+  },
+  "15154": {
+   "text": "Vücut sıcaklığının 35°C'nin altına düştüğü duruma ne ad verilir?",
+   "options": [
+    "Hipotermi",
+    "Translasyon",
+    "Termoregülasyon",
+    "Hipertermi"
+   ]
+  },
+  "15253": {
+   "text": "Uzun süreli belleğin üç bölümü şu şekilde sınıflandırılır:",
+   "options": [
+    "Anlamsal, olaysal ve işlemsel (prosedürel)",
+    "Statik, dinamik ve motor",
+    "Seçici, bölünmüş ve odaklanmış",
+    "Ultra kısa, kısa ve çalışma"
+   ]
+  },
+  "15237": {
+   "text": "Doğrusal hareketlerle ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+   "options": [
+    "Doğrusal ivme, burun aşağı yunuslama algısına neden olabilir.",
+    "Doğrusal ivmelenme veya yavaşlamaya dayalı yanılsamalar somatogravik yanılsamalardır.",
+    "Doğrusal yavaşlama, burun aşağı yunuslama algısına neden olabilir.",
+    "Doğrusal ivme, burun yukarı yunuslama algısına neden olabilir."
+   ]
+  },
+  "15047": {
+   "text": "Boyle yasası doğrudan şu durumda uygulanabilir;",
+   "options": [
+    "irtifa arttıkça vücutta hapsolmuş gazların genleşmesi.",
+    "irtifa arttıkça hipoksinin ortaya çıkması.",
+    "yüksek irtifada dekompresyon hastalığının ortaya çıkması.",
+    "irtifa arttıkça hiperventilasyon."
+   ]
+  },
+  "15220": {
+   "text": "Kulağın bölümleri şunlardır:",
+   "options": [
+    "Dış, orta ve iç",
+    "Kulak memesi, kulak kanalı ve kulak zarı",
+    "Koklea, otolitler ve timpanum",
+    "Örs, çekiç ve üzengi"
+   ]
+  },
+  "15211": {
+   "text": "Hangi durumda orta kulak ile ortam arasında basınç dengelenmesi SAĞLANAMAZ?",
+   "options": [
+    "Östaki borusu tıkalıdır",
+    "Tüm pencereler tamamen kapalıdır",
+    "Nefes alma yalnızca ağızla gerçekleşir",
+    "Hafif ve yavaş bir tırmanış sırasında"
+   ]
+  },
+  "15227": {
+   "text": "Coriolis yanılsaması nedir?",
+   "options": [
+    "Dönüşler sırasında baş hareketlerinden kaynaklanan şiddetli vertigo",
+    "Yaklaşma sırasında irtifanın yanlış yorumlanması",
+    "Gece sabit nesnelerin hareket ediyormuş gibi görünmesi",
+    "Güçlü ivmelenmeler nedeniyle renklerin yanlış algılanması"
+   ]
+  },
+  "15170": {
+   "text": "Astigmatizm şunun adıdır:",
+   "options": [
+    "Şekli bozuk bir kornea",
+    "Renk körlüğü",
+    "Çok kısa bir göz küresi",
+    "Lensin şekil değiştirme yeteneği"
+   ]
+  },
+  "15105": {
+   "text": "Atmosfer basıncının, havadaki oksijenin varlığından kaynaklanan bölümüne ne ad verilir:",
+   "options": [
+    "Oksijenin Kısmi Basıncı.",
+    "Vakum.",
+    "Hava Basıncı.",
+    "Sıvı Oksijen."
+   ]
+  },
+  "15126": {
+   "text": "Aşağıdakilerden hangisi hiperventilasyonun bir semptomu DEĞİLDİR?",
+   "options": [
+    "Siyanoz",
+    "Spazm",
+    "Karıncalanma",
+    "Bilinç bozukluğu"
+   ]
+  }
+ }
+}

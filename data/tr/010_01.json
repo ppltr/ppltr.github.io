@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "14227": {
+   "text": "Chicago Sözleşmesi'ne göre, uluslararası bir uçuşta uçakta bulundurulması gereken belgeler arasında aşağıdakilerden hangileri yer alır?",
+   "options": [
+    "Mürettebat lisansları, sefer defteri (journey log book) ve varsa kargo manifestosu ile kargonun ayrıntılı beyanı",
+    "Uçuşa Elverişlilik Sertifikası (C of A), Tescil Sertifikası (C of R) ve mürettebat pasaportları",
+    "Mürettebat lisansları ve kayıt defterleri, sefer defteri (journey log book) ve varsa Telsiz İstasyonu Lisansı",
+    "Tüm mürettebat ve yolcular için pasaportlar, Uçuşa Elverişlilik Sertifikası (C of A), Tescil Sertifikası (C of R)"
+   ]
+  },
+  "14228": {
+   "text": "Bir uçak, komşu bir devlette teknik iniş gerektirecek bir uçuş planlıyor. Hangi hava özgürlüğü (freedom of the air) kullanılmış olur?",
+   "options": [
+    "2. özgürlük",
+    "4. özgürlük",
+    "3. özgürlük",
+    "1. özgürlük"
+   ]
+  },
+  "14229": {
+   "text": "Bir devlet, başka bir taraf devletten gelen ziyaretçi bir uçağı izin almadan arayabilir mi?",
+   "options": [
+    "Evet",
+    "Yalnızca uçağın kabul edilemez yolcular taşıdığından makul şekilde şüphelenilirse",
+    "Yalnızca bir suçtan makul şekilde şüphelenilirse",
+    "Hayır"
+   ]
+  },
+  "14230": {
+   "text": "Uçak komutanı, bir kişinin uçak içinde ceza kanununa aykırı bir suç işlediğine ya da işlemek üzere olduğuna dair makul gerekçelere sahip olduğunda",
+   "options": [
+    "bu kişiyi yetkili makamlara teslim edebilir",
+    "bu kişiyi zapt etmek için yolculardan yardım isteyebilir",
+    "bu kişiden uçaktan inmesini isteyebilir",
+    "diğer mürettebat üyelerinin yardımını isteyemez veya buna izin veremez"
+   ]
+  },
+  "14231": {
+   "text": "Chicago Sözleşmesi şunu kabul eder:",
+   "options": [
+    "Her taraf devlet, kendi toprakları üzerindeki hava sahasında tam ve münhasır egemenliğe sahiptir",
+    "Her taraf devlet, kendi karasuları üzerindeki hava sahasında tam ve münhasır egemenliğe sahiptir",
+    "Her taraf devlet, kendi toprakları üzerindeki hava sahasında tam ama münhasır olmayan egemenliğe sahiptir",
+    "Her devlet, kendi toprakları üzerindeki hava sahasında FL660'a kadar egemenliğe sahiptir"
+   ]
+  },
+  "14232": {
+   "text": "Devletler tarafından, yabancı uçakların yerde yol açtığı zarardan mağdur olan kişilere yeterli tazminat sağlanmasını güvence altına alma isteğiyle imzalanan sözleşme:",
+   "options": [
+    "Roma Sözleşmesi",
+    "Paris Sözleşmesi",
+    "Varşova Sözleşmesi",
+    "Tokyo Sözleşmesi"
+   ]
+  },
+  "14233": {
+   "text": "Genellikle \"Chicago Sözleşmesi\" olarak bilinen sözleşmenin tam adı nedir?",
+   "options": [
+    "Uluslararası Sivil Havacılık Sözleşmesi",
+    "Uluslararası Sivil Ulaştırma Sözleşmesi",
+    "ICAO Sivil Havacılık Sözleşmesi",
+    "Sivil Ticari Havacılık Sözleşmesi"
+   ]
+  },
+  "14234": {
+   "text": "JAA'nın sorumluluklarını ve rolünü hangi kuruluş devralacaktır?",
+   "options": [
+    "EASA",
+    "EU",
+    "ECAC",
+    "IATA"
+   ]
+  },
+  "14235": {
+   "text": "Bir pilot, ICAO Standartları ve Tavsiye Edilen Uygulamaları ile bir devletin Ulusal Düzenlemeleri arasındaki farkların ayrıntılarını nerede bulabilir?",
+   "options": [
+    "O devletin Havacılık Bilgi Yayını'nda (AIP).",
+    "Genel Havacılık Güvenlik Bilinci Yayınlarında.",
+    "IATA Havaalanı Yer Hizmetleri El Kitabında (Airport Handling Manual)",
+    "O devletin Havacılık Bilgi Sirkülerlerinde (AIC)."
+   ]
+  },
+  "14236": {
+   "text": "Başka bir üye devletin toprakları üzerinden inmeden uçma özgürlüğü hangi hava haklarını kapsar?",
+   "options": [
+    "1. özgürlük",
+    "4. özgürlük",
+    "3. özgürlük",
+    "2. özgürlük"
+   ]
+  },
+  "14237": {
+   "text": "Bir devletin egemen hava sahasında uçan bir uçağın, o hava sahasında geçerli olan kural ve düzenlemelere uymasını sağlamaktan hangi kurum sorumludur?",
+   "options": [
+    "Uçağın içinde uçtuğu egemen hava sahasına sahip devlet.",
+    "Uçağın pilotunun sahip olduğu lisansı veren devlet.",
+    "Uçağın tescilli olduğu devlet.",
+    "Uçağın geçerli Uçuşa Elverişlilik Sertifikasını veren devlet."
+   ]
+  },
+  "14238": {
+   "text": "Chicago Sözleşmesi'nin aşağıdaki eklerinden (Annex) hangisi hava trafik hizmetleri (ATS) için uluslararası standartları ve tavsiye edilen uygulamaları içerir?",
+   "options": [
+    "Annex 11",
+    "Annex 6",
+    "Annex 10",
+    "Annex 14"
+   ]
+  },
+  "14239": {
+   "text": "Aşağıdakilerden hangisi ICAO üyeleri için zorunludur?",
+   "options": [
+    "ICAO, sözleşmenin herhangi bir ekindeki (Annex) standartlardan farklılıklar konusunda bilgilendirilmelidir",
+    "ICAO, ulusal düzenlemelerdeki değişiklikler konusunda bilgilendirilmelidir",
+    "ICAO, uluslararası havayolu bağlantılarındaki bilet fiyatlandırmasını onaylar",
+    "ICAO, yeni uçuş ekibi lisansları ve bu lisansların geçerliliğinin askıya alınması konusunda bilgilendirilmelidir"
+   ]
+  },
+  "14240": {
+   "text": "Hangi devletler EASA'ya tam üye olarak katılabilir?",
+   "options": [
+    "Tüm Avrupa Birliği devletleri.",
+    "Tüm ICAO taraf devletleri.",
+    "Tüm JAA devletleri.",
+    "Seçilmiş Avrupa devletleri."
+   ]
+  },
+  "14241": {
+   "text": "C of R (Tescil Sertifikası) şu şekilde olmalıdır:",
+   "options": [
+    "Her zaman uçakta bulundurulmalı ve verildiği orijinal biçimde olmalıdır",
+    "Kalkış havaalanında güvenli bir şekilde saklanmalıdır",
+    "Sorumlu pilot (Pilot-in-Command) tarafından imzalanmalıdır",
+    "Her zaman uçakta bulundurulmalı ve orijinalinin bir kopyası olabilir"
+   ]
+  },
+  "14242": {
+   "text": "Tescil Sertifikası şu şekilde olmalıdır:",
+   "options": [
+    "Her zaman uçakta bulundurulmalı ve verildiği orijinal biçimde olmalıdır",
+    "Kalkış havaalanında güvenli bir şekilde saklanmalıdır",
+    "Sorumlu pilot (Pilot-in-Command) tarafından imzalanmalıdır",
+    "Her zaman uçakta bulundurulmalı ve orijinalinin bir kopyası olabilir"
+   ]
+  },
+  "14243": {
+   "text": "Milliyet ve tescil işaretleri nelerden oluşur?",
+   "options": [
+    "Sayılardan veya harflerden ya da bunların bir birleşiminden.",
+    "Yalnızca harflerden.",
+    "Sayı ve harflerin bir birleşimi olmalıdır.",
+    "Yalnızca sayılardan."
+   ]
+  },
+  "14244": {
+   "text": "Hangi ICAO Eki (Annex) uçakların uçuşa elverişliliğini kapsar?",
+   "options": [
+    "Annex 8",
+    "Annex 14",
+    "Annex 12",
+    "Annex 9"
+   ]
+  },
+  "14245": {
+   "text": "Bir C of A'nın geçerliliği nerede belirtilir?",
+   "options": [
+    "C of A'nın kendisinde",
+    "Tescil Sertifikasında (C of R)",
+    "Uçak Uçuş El Kitabında (Aircraft Flight Manual)",
+    "Ulusal AIP'de"
+   ]
+  },
+  "14246": {
+   "text": "Aşağıdakilerden hangisi tescil işareti olarak kullanılamaz?",
+   "options": [
+    "Mors alfabesinde acil durum sinyalleri.",
+    "LLL, SSS, YYY gibi tekrarlı 3 harfli tüm işaretler.",
+    "Sinyal kodu olarak kullanılan 3 harfli kombinasyonlar (ITU tarafından belirlenen).",
+    "4 harfli Q-kodları."
+   ]
+  },
+  "14247": {
+   "text": "Aşağıdaki milliyet ve tescil işaretlerinden hangisine izin verilir?",
+   "options": [
+    "G-YLLL.",
+    "AS2PAN.",
+    "A81TTT.",
+    "N-YQNH."
+   ]
+  },
+  "14248": {
+   "text": "Bir uçağın tescil işaretini vermekten hangi devlet sorumludur?",
+   "options": [
+    "Tescil Devleti",
+    "İşletmeci Devleti",
+    "Tasarım Devleti",
+    "Üretim Devleti"
+   ]
+  },
+  "14249": {
+   "text": "Uçuşa Elverişlilik Sertifikasının verilmesinden kim sorumludur?",
+   "options": [
+    "Tescil devletinin otoritesi",
+    "İşletmeci",
+    "ICAO",
+    "JAA"
+   ]
+  },
+  "14250": {
+   "text": "Türkiye tescilli bir uçakla Almanya üzerinde uçuyorsunuz. Kimin Hava Kurallarına (Rules of the Air) uymalısınız?",
+   "options": [
+    "Almanya'nın",
+    "JAA'nın",
+    "Türkiye'nin",
+    "ICAO'nun"
+   ]
+  },
+  "14251": {
+   "text": "Bir havaalanından uçuştaki bir uçağa yöneltilen sürekli kırmızı ışık ne anlama gelir:",
+   "options": [
+    "Diğer uçaklara yol ver ve turlamaya devam et.",
+    "Mevcut turu tamamladıktan sonra finale geç.",
+    "İniş yapma, izin bekle.",
+    "İniş yapma, havaalanı inişe uygun değil."
+   ]
+  },
+  "14252": {
+   "text": "Kontrol kulelerinde elde tutulan bir sinyal lambası bulundurulmalıdır. Bu lamba hangi renklerde sinyal verebilmelidir?",
+   "options": [
+    "Beyaz, kırmızı veya yeşil",
+    "Beyaz, kırmızı, yeşil veya mavi",
+    "Yalnızca yeşil veya kırmızı",
+    "Yalnızca beyaz veya kırmızı"
+   ]
+  },
+  "14253": {
+   "text": "Bir yer yönlendirme görevlisi (marshaller), pilottan park frenlerini uygulamasını şu sinyalle ister:",
+   "options": [
+    "Kolu ve eli, parmaklar açık şekilde, vücudun önünde yatay olarak kaldırıp ardından yumruk yapmak.",
+    "Ellerini, parmaklar açık ve avuç içleri yere dönük şekilde yatay olarak hareket ettirmek",
+    "Kollarını başının üzerinde açarak çaprazlamak",
+    "Kollar aşağıda, avuç içleri içe dönük şekilde, kolları açık pozisyondan içe doğru hareket ettirmek."
+   ]
+  },
+  "14254": {
+   "text": "Tek motorlu pistonlu bir uçak ile bir turboprop uçak, aynı irtifada birbirlerine karşıdan yaklaşıyor. Çarpışmayı önlemek için hangi uçak rota hattını değiştirmelidir?",
+   "options": [
+    "Her iki uçak da rota hattını sağa değiştirmelidir",
+    "Turboprop uçak, tek motorlu pistonlu uçağa yol vermelidir",
+    "Tek motorlu pistonlu uçak, turboprop uçağa yol vermelidir",
+    "Her iki uçak da rota hattını sola değiştirmelidir"
+   ]
+  },
+  "14256": {
+   "text": "Sağ kolu aşağıda ve sol kolunu tekrar tekrar yukarı ve geriye hareket ettiren bir yer yönlendirme görevlisi (marshaller), uçağın pilotuna şunu işaret eder:",
+   "options": [
+    "Sancak (starboard) motor(lar)ı çalıştır veya iskeleye (port) dön.",
+    "Sancak (starboard) motor(lar)ı çalıştır veya sancağa (starboard) dön.",
+    "Başka bir yer yönlendirme görevlisinin rehberliğinde ilerle.",
+    "İskele (port) motorun devrini (RPM) artır."
+   ]
+  },
+  "14257": {
+   "text": "Havada verilen bir uçuş planı şu süre içinde sunulmalıdır:",
+   "options": [
+    "Bir CTA'ya veya hava yoluna girilmesi planlanan noktadan 10 dakika önce.",
+    "Bir CTA'ya veya hava yoluna girilmesi planlanan noktadan 30 dakika önce.",
+    "Bir CTA'ya veya hava yoluna girilmesi planlanan noktadan 15 dakika önce.",
+    "Bir CTA'ya veya hava yoluna girilmesi planlanan noktadan 60 dakika önce."
+   ]
+  },
+  "14258": {
+   "text": "Bir uçak, donanımı varsa, çarpışma önleyici ışığını (anti-collision light) şu durumda göstermelidir:",
+   "options": [
+    "Motorlar çalışırken yerde",
+    "Taksi yaparken, ancak çekilirken değil;",
+    "Uçuşta gündüz süresi dışında, ancak çekilirken yerde değil;",
+    "Gündüz süresi dışında motor çalıştırılırken. Gündüz süresince bu geçerli değildir;"
+   ]
+  },
+  "14260": {
+   "text": "Bir ATC biriminden müsaade alınması hariç, VFR uçuşları, aşağıdaki durumlarda bir CTR içindeki havaalanından kalkış veya iniş yapamaz ya da havaalanı trafik bölgesine veya trafik patternine giremez;",
+   "options": [
+    "tavan 1.500 ft'den az veya yer görüşü 5000 m'den azsa.",
+    "tavan 2.000 ft'den az veya yer görüşü 5000 m'den azsa.",
+    "tavan 1.000 ft'den az veya yer görüşü 8 km'den azsa.",
+    "tavan 1.000 ft'den az veya yer görüşü 5000 m'den azsa."
+   ]
+  },
+  "14264": {
+   "text": "'X' uçağı, 'Y' uçağına arkadan yaklaşıyor ve 'Y' uçağının uzatılmış merkez hattının 70°'lik açısı içindeyse, 'X' uçağı geçme (overtaking) pozisyonunda kabul edilir ve şu tarafa geçmelidir:",
+   "options": [
+    "'Y' uçağının sağına.",
+    "'Y' uçağının en uzak tarafına.",
+    "'Y' uçağının en yakın tarafına.",
+    "'Y' uçağının soluna."
+   ]
+  },
+  "14266": {
+   "text": "Gerçek veya tahmin edilen koşullar, görüşü ve bulut tabanını belirlenen asgari hava şartlarına eşit veya bunların üzerinde veriyorsa ve buluttan uzaklığın da belirlenen asgari değerlerin üzerinde olduğu görülüyorsa, geçerli hava koşulları şu şekilde adlandırılır:",
+   "options": [
+    "VMC.",
+    "VFR.",
+    "SMWP.",
+    "IMC."
+   ]
+  },
+  "14267": {
+   "text": "Görüş, buluttan uzaklık ve bulut tavanı belirlenen asgari değerlere eşit veya bunlardan daha iyiyse, ICAO bu koşulları şu şekilde tanımlar:",
+   "options": [
+    "VMC veya Görsel Meteorolojik Koşullar (Visual Meteorological Conditions).",
+    "CAVOK veya Bulut ve Görüş Uygun (Cloud and Visibility OK).",
+    "RVR veya Pist Görüş Menzili (Runway Visual Range).",
+    "IMC veya Aletli Meteorolojik Koşullar (Instrument Meteorological Conditions)."
+   ]
+  },
+  "14268": {
+   "text": "İki uçak birbirine karşıdan yaklaşıyorsa:",
+   "options": [
+    "Uçak tipinden bağımsız olarak her iki uçak da sağa dönmelidir",
+    "Daha büyük uçak sağa dönerek yol vermelidir",
+    "Motorlu bir uçak, sağa dönerek bir planöre yol vermelidir",
+    "Her iki uçak da sola dönmelidir"
+   ]
+  },
+  "14269": {
+   "text": "Başka bir uçağı geçiyorsanız, şu tarafından geçmelisiniz:",
+   "options": [
+    "Havada diğer uçağın sağından, ancak yerde solundan.",
+    "Hem havada hem yerde diğer uçağın sağından.",
+    "Hem havada hem yerde diğer uçağın solundan.",
+    "Havada diğer uçağın solundan, ancak yerde sağından."
+   ]
+  },
+  "14270": {
+   "text": "Bir uçak komutanı, gündüz uçuşu sırasında uçağın çarpışma önleyici ışığının arızalandığını fark ederse, doğru hareket tarzı şu olur:",
+   "options": [
+    "Işık en kısa fırsatta onarılmak kaydıyla gündüz operasyonlarına devam etmek.",
+    "Işığı, bir sonraki günün 'A Kontrolü' tamamlanmadan önce onarttırmak.",
+    "Uçuşu tamamlamak; bundan sonra ışık onarılana kadar uçak tekrar uçurulmamalıdır.",
+    "Mümkün olan en kısa sürede iniş yapmak ve ışığı onarttırmak."
+   ]
+  },
+  "14272": {
+   "text": "Müdahale (Interception)\nMüdahale sırasında telsiz teması kurulur ancak ortak bir dilde iletişim mümkün olmazsa, standart ifadeler ve telaffuzlar kullanılarak, her ifade iki kez iletilerek talimatları ve gerekli bilgileri aktarmaya çalışılmalıdır.\nMÜDAHALE EDEN uçağın kullanması için \"İnişe geç\" (\"Descend for landing\") anlamına gelen standart ifade şudur:",
+   "options": [
+    "DESCEND DEE-SEND",
+    "YOU LAND YOU-LAAND",
+    "DESCEND FOR LAND DEE-SEND FOR LAAND",
+    "LET DOWN LET-DAUN"
+   ]
+  },
+  "14273": {
+   "text": "Hiçbir uçak, kalabalık bir bölge üzerinde, uçağın 600 metre yakınındaki en yüksek sabit engelin 1000 ft üzerinden daha aşağıda uçamaz, ancak şu durumlar hariçtir:",
+   "options": [
+    "Kalkış veya iniş yaparken.",
+    "Pozisyonu belirlemeye çalışmak için tur atarken.",
+    "Yetkili bir uçuş eğitmeninin yönlendirmesi altında zorunlu iniş talimi yaparken.",
+    "Alçak irtifa seyrüsefer talimi sırasında."
+   ]
+  },
+  "14274": {
+   "text": "Geçiş hakkına sahip olan uçak şunu korumalıdır:",
+   "options": [
+    "Baş açısı (heading) ve hızı.",
+    "Baş açısı (heading), yüksekliği ve hızı.",
+    "Yüksekliği ve hızı.",
+    "Baş açısı (heading) ve yüksekliği."
+   ]
+  },
+  "14275": {
+   "text": "İniş için en yüksek önceliğe şu sahiptir:",
+   "options": [
+    "acil iniş yapan bir uçak.",
+    "acil tıbbi müdahaleye ihtiyaç duyan çok hasta bir kişiyi taşıyan bir Hava Ambulansı,",
+    "askeri bir uçak.",
+    "diplomatik bir uçuştaki bir uçak (Devlet Başkanı),"
+   ]
+  },
+  "14276": {
+   "text": "Bir uçağın sorumlu pilotu (PIC), gece uçuşu sırasında bir seyrüsefer ışığının arızalandığını fark eder. Ne yapmalıdır:",
+   "options": [
+    "Uygun bir Hava Trafik Kontrol Birimi tarafından planlanan varış noktasına devam etme izni verilmedikçe, pratik olarak mümkün olan en kısa sürede iniş yapmalıdır.",
+    "Planlanan varış noktasına devam etmeli, arızayı teknik kayıt defterine (technical log) işlemelidir; bu arıza bir sonraki uçuştan önce onarılmalıdır.",
+    "Her yöne dönük bir çarpışma önleyici ışığın hâlâ çalışır durumda olduğunu tespit etmeli ve eğer öyleyse seyrüsefer ışıklarını 'kapalı' konuma alıp planlanan varış noktasına devam etmelidir.",
+    "Kullanılmakta olan RTF frekansında bir Aciliyet Mesajı (Urgency Message) yayınlamalı ve ilk iniş noktasına kadar planlanan uçuşa devam etmelidir."
+   ]
+  },
+  "14277": {
+   "text": "İki uçak, neredeyse karşıdan karşıya sabit bir bağıl kerterizle yaklaşıyor; her iki uçak da çarpışmayı şu şekilde önlemelidir:",
+   "options": [
+    "Sağa dönerek.",
+    "Çarpışmayı önlemeyi en iyi sağlayacak yöne dönerek.",
+    "Sağa veya sola dönerek.",
+    "Sola dönerek."
+   ]
+  },
+  "14278": {
+   "text": "VFR Uçuşları, bir Kontrol Bölgesi (CTR) içindeki bir havaalanından kalkış veya iniş yapamaz ya da Havaalanı Trafik Bölgesine (ATZ) veya trafik patternine giremez:",
+   "options": [
+    "Tavan 450 m'den (1500 ft) az veya yer görüşü 5000 m'den azsa.",
+    "Tavan 450 m'den (1500 ft) az veya yer görüşü 8 km'den azsa.",
+    "Tavan 300 m'den (1000 ft) az veya yer görüşü 8 km'den azsa.",
+    "Tavan 300 m'den (1000 ft) az veya yer görüşü 5000 m'den azsa."
+   ]
+  },
+  "14279": {
+   "text": "Bir pilot, VMC'de VFR uçuşu sırasında telsiz haberleşme arızası yaşarsa hangi eylemi yapmalıdır?",
+   "options": [
+    "VMC'de uçmaya devam etmeli, en yakın uygun havaalanına inmeli ve varışını varış havaalanına bildirmelidir.",
+    "RAF Uçuş Bilgi El Kitabındaki telsiz arıza prosedürünü uygulamalı ve bir refakatçi (Shepherd) uçağın gelmesini beklemelidir.",
+    "En yakın havaalanına uçmalı, patternin ölü tarafında (dead side) tur atmalı ve kontrol kulesinden sabit yeşil ışık beklemelidir.",
+    "Varışına devam etmeli, körlemesine (blind) yayın yapmalı ve IMC'den kaçınmaya çalışmalıdır."
+   ]
+  },
+  "14280": {
+   "text": "VFR uçuşunun meteorolojik koşulları nelerdir?",
+   "options": [
+    "tavan 1.500 ft'de veya üzerinde ve yer görüşü 5 km'den az değilse.",
+    "tavan 1.500 ft'den az veya yer görüşü 5 km'den fazlaysa",
+    "tavan 1.500 ft'den fazla veya yer görüşü 3 km'den azsa.",
+    "tavan 2.000 ft'den az veya yer görüşü 5 km'den fazlaysa."
+   ]
+  },
+  "14281": {
+   "text": "ICAO Annex 2 neyle ilgilidir?",
+   "options": [
+    "Hava Kuralları",
+    "Havaalanları",
+    "Kolaylaştırma (Facilitation)",
+    "Personel Lisanslandırma"
+   ]
+  },
+  "14282": {
+   "text": "VFR uçuşuna ilişkin temel varsayım nedir?",
+   "options": [
+    "Uçuşun Görsel Meteorolojik Koşullarda (VMC) yapılacağı",
+    "Uçuşun FL 180'in üzerinde gerçekleşmeyeceği",
+    "Uçuşun yalnızca F veya G sınıfı hava sahasında gerçekleşeceği",
+    "Pilotun, uçağın VFR'de uçurulmasına izin veren doğru derecelendirmeye (rating) sahip olduğu"
+   ]
+  },
+  "14283": {
+   "text": "Bir havaalanı ATSU'sundan havadaki veya yerdeki bir uçağa yöneltilen yanıp sönen kırmızı ışık sinyali ne anlama gelir?",
+   "options": [
+    "İniş yapma, havaalanı inişe uygun değil. / İniş Alanından uzaklaş.",
+    "Mevcut turu tamamladıktan sonra finale geç. / Finaldeki trafik indikten sonra piste hizalan.",
+    "Diğer uçaklara yol ver ve turlamaya devam et. / Dur.",
+    "İniş yapma, tur at ve iniş izni bekle. / Başlangıç noktana geri dön."
+   ]
+  },
+  "14284": {
+   "text": "Bir havaalanı ATSU'sundan havadaki bir uçağa yöneltilen yanıp sönen kırmızı ışık sinyali ne anlama gelir?",
+   "options": [
+    "Havaalanı güvensiz, iniş yapma",
+    "Kalkışa izin verildi",
+    "İnişe izin verildi",
+    "Diğer uçaklara yol ver ve turlamaya devam et."
+   ]
+  },
+  "14285": {
+   "text": "ATC'den havadaki bir uçağa yöneltilen sabit yeşil ışık ne anlama gelir?",
+   "options": [
+    "İnişe izin verildi.",
+    "İniş önceliğine sahipsin.",
+    "Derhal iniş yap.",
+    "Bu havaalanına geri dön ve iniş müsaadesini bekle."
+   ]
+  },
+  "14286": {
+   "text": "Bir havaalanı ATSU'sundan havadaki bir uçağa yöneltilen yanıp sönen yeşil ışık sinyali ne anlama gelir?",
+   "options": [
+    "İniş için geri dön.",
+    "İnişe izin verildi",
+    "Havaalanı güvensiz, iniş yapma",
+    "Diğer uçaklara yol ver ve turlamaya devam et."
+   ]
+  },
+  "14287": {
+   "text": "Bir havaalanı ATSU'sundan yerdeki bir uçağa yöneltilen yanıp sönen kırmızı ışık sinyali ne anlama gelir?",
+   "options": [
+    "Kullanılan iniş alanından taksi yaparak uzaklaş",
+    "Taksiye izin verildi",
+    "Dur",
+    "Havaalanındaki başlangıç noktasına geri dön"
+   ]
+  },
+  "14288": {
+   "text": "Bir havaalanı ATSU'sundan havadaki bir uçağa yöneltilen sabit kırmızı ışık sinyali ne anlama gelir?",
+   "options": [
+    "Diğer uçaklara yol ver ve turlamaya devam et.",
+    "İniş yapma, havaalanı inişe uygun değil",
+    "İnişe izin verildi",
+    "Kalkışa izin verildi"
+   ]
+  },
+  "14289": {
+   "text": "Seyrüsefer ışıkları ne zaman gösterilmelidir?",
+   "options": [
+    "Gün batımından gün doğumuna kadar veya Otorite tarafından belirtildiğinde",
+    "Geceleyin",
+    "Sorumlu pilotun (Pilot-in-Command) açmayı mantıklı bulduğu her an",
+    "Havaalanının manevra alanında hareket ederken"
+   ]
+  },
+  "14290": {
+   "text": "İki veya daha fazla uçak final yaklaşmasındayken, bir ATCU'dan geçersiz kılan bir talimat olmadıkça veya acil bir durum yoksa, geçiş hakkına sahip olan uçak:",
+   "options": [
+    "Daha düşük irtifada olandır.",
+    "Daha yüksek irtifada olandır.",
+    "İrtifadan bağımsız olarak pist eşiğine en yakın olandır.",
+    "En yüksek alçalma oranına (rate of descent) sahip olandır."
+   ]
+  },
+  "14292": {
+   "text": "Hangi uçaklar geceleyin yalnızca tek bir kırmızı ışık göstererek uçmasına izin verilir?",
+   "options": [
+    "bir planör veya serbest balon",
+    "bir mikrolayt veya zeplin (airship)",
+    "bir helikopter veya serbest balon",
+    "bir planör, serbest balon veya zeplin (airship)"
+   ]
+  },
+  "14293": {
+   "text": "Listelenen uçaklardan hangisi, hava trafiğindeki diğer tüm katılımcılara karşı her zaman geçiş hakkına sahiptir?",
+   "options": [
+    "Tehlikedeki bir uçak.",
+    "İniş için final yaklaşmasındaki bir uçak.",
+    "Bir planörü çeken bir uçak.",
+    "Bir balon."
+   ]
+  },
+  "14295": {
+   "text": "ICAO Yarı Dairesel Kuralına (Semi-Circular Rule) uygun olarak VFR uçan ve 146 derece manyetik rota hattı izleyen bir uçak için aşağıdaki uçuş seviyelerinden hangisi uygun olur?",
+   "options": [
+    "FL 75",
+    "FL 85",
+    "FL 50",
+    "FL 295"
+   ]
+  },
+  "14296": {
+   "text": "Uluslararası hava trafiğinin bir yabancı devlete giriş ve çıkışını hangi hava kuralları düzenler?",
+   "options": [
+    "Yabancı devletin",
+    "IATA'nın",
+    "Uluslararası Kurallar ve Düzenlemeler",
+    "ICAO'nun"
+   ]
+  },
+  "14298": {
+   "text": "Tam önünüzde başka bir uçağın kırmızı ve yeşil ışığını görüyorsunuz. Ne yapmalısınız?",
+   "options": [
+    "Derhal sağa dön",
+    "Derhal tırman",
+    "Derhal alçal",
+    "Derhal sola dön"
+   ]
+  },
+  "14299": {
+   "text": "Kontrolsüz bir uçuş (VFR) için kalkışınız gecikiyor. Uçuş Planınızı hangi noktada yeniden sunmalısınız?",
+   "options": [
+    "EOBT'yi 60 dakika aştığında",
+    "EOBT'yi 90 dakika aştığında",
+    "EOBT'yi 45 dakika aştığında",
+    "Tahmini Park Yerinden Ayrılma Zamanını (Estimated Off-Blocks Time, EOBT) 30 dakika aştığında"
+   ]
+  },
+  "14300": {
+   "text": "Bir EASA pilot lisansı sahibi, geçerli bir belgeye sahip olmadıkça tek pilotlu bir uçakta sorumlu pilot olarak görev yapamaz;",
+   "options": [
+    "Uçurulacak uçağa uygun geçerli bir sınıf veya tip derecelendirmesiyle (rating) birlikte Sağlık Sertifikası.",
+    "Geçerli EASA tip derecelendirmesi (type rating).",
+    "Geçerli IFR tip derecelendirmesi (type rating).",
+    "Geçerli VFR tip derecelendirmesi (type rating)."
+   ]
+  },
+  "14301": {
+   "text": "Bir JAA pilot lisansı (A) sahibi, geçerli bir belgeye sahip olmadıkça tek pilotlu bir uçakta sorumlu pilot olarak görev yapamaz:",
+   "options": [
+    "Uçurulacak uçağa uygun geçerli bir sınıf veya tip derecelendirmesiyle (rating) birlikte Sağlık Sertifikası.",
+    "Geçerli JAA FCL tip derecelendirmesi (type rating).",
+    "Geçerli JAA OPS grup derecelendirmesi (rating).",
+    "Geçerli VFR tip derecelendirmesi (type rating)."
+   ]
+  },
+  "14302": {
+   "text": "İnvaziv bir tıbbi ameliyatın gerekli hale geldiği kendisine bildirilen bir lisans sahibi:",
+   "options": [
+    "Mümkün olduğunca hızlı şekilde havacılık sağlık otoritesinin görüşünü almalıdır.",
+    "Mümkün olduğunca hızlı şekilde kendi pratisyen hekiminin görüşünü almalıdır.",
+    "Yalnızca tedavi genel anestezi içeriyorsa havacılık sağlık otoritesini bilgilendirmelidir.",
+    "Bu tür bir eylem gönüllü olduğu için, havacılık sağlık otoritesine başvurmadan bu tedaviyi gerçekleştirmelidir."
+   ]
+  },
+  "14303": {
+   "text": "Bir PPL sahibi:",
+   "options": [
+    "Ücretli (revenue earning) bir uçuşta ne komutan ne de yardımcı pilot olarak görev yapamaz.",
+    "Özel bir uçuşta ücret karşılığında herhangi bir mürettebat üyesi olarak görev yapabilir.",
+    "Özel bir uçuşta ücret karşılığında komutan olarak görev yapabilir.",
+    "Ücretli (revenue earning) bir uçuşta yardımcı pilot olarak görev yapabilir."
+   ]
+  },
+  "14304": {
+   "text": "JAR-FCL 3'e göre, Sağlık sertifikası sınıfları şunlardır:",
+   "options": [
+    "1, 2",
+    "yalnızca sınıf 1",
+    "1, 2, 3, 4",
+    "1, 2, 3"
+   ]
+  },
+  "14305": {
+   "text": "JAR-FCL'ye göre, tek pilotlu tek motorlu sınıf derecelendirmeleri (class ratings) şu süre geçerlidir:",
+   "options": [
+    "iki yıl",
+    "lisansın verilmesinden sonra beş yıl",
+    "40 yaşına kadar iki yıl, sonrasında bir yıl",
+    "bir yıl"
+   ]
+  },
+  "14306": {
+   "text": "Bir Özel Pilot Lisansı (Private Pilot Licence) başvurusunda bulunan kişi en az şu yaşta olmalıdır:",
+   "options": [
+    "17 yaşında.",
+    "18 yaşında.",
+    "16 yaşında.",
+    "15 yaşında."
+   ]
+  }
+ }
+}

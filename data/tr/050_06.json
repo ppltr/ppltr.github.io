@@ -1,0 +1,319 @@
+{
+ "questions": {
+  "15422": {
+   "text": "Rüzgârın nedeni aşağıdakilerden hangisidir?",
+   "options": [
+    "Yatay basınç farkı.",
+    "Yüzey sürtünmesi.",
+    "Dünya'nın dönüşü.",
+    "Cephelerin karışması."
+   ]
+  },
+  "15534": {
+   "text": "Stratus bulutunun oluşturduğu yağış normal olarak nasıldır?",
+   "options": [
+    "Çisenti.",
+    "Hafif sağanak yağış.",
+    "Kuvvetli yağmur.",
+    "Kuvvetli sağanak yağış."
+   ]
+  },
+  "15580": {
+   "text": "Bir rotor bulutu bir Cb'nin önünde ne zaman bulunur?",
+   "options": [
+    "Olgun evre",
+    "Dağılma evresi",
+    "Başlangıç evresi",
+    "Cumulus evresi"
+   ]
+  },
+  "15511": {
+   "text": "Aşağıdaki bulut tiplerinden hangisi en az iki bulut katmanına yayılabilir?",
+   "options": [
+    "NS",
+    "SC",
+    "CI",
+    "ST"
+   ]
+  },
+  "15421": {
+   "text": "Dinamik basınç nedir?",
+   "options": [
+    "Hareketin neden olduğu basınç.",
+    "Merkezkaç kuvveti",
+    "İvme kuvveti.",
+    "Türbülans."
+   ]
+  },
+  "15356": {
+   "text": "Sıcaklık, dikey basınç değişimini nasıl etkiler?",
+   "options": [
+    "Soğuk havada, basıncın irtifayla azalma oranı sıcak havadakinden daha fazladır.",
+    "Sıcak havada, basıncın irtifayla azalma oranı soğuk havadakinden daha fazladır.",
+    "Sıcak hava, basıncın yükseklikle daha hızlı düşmesine neden olur.",
+    "Soğuk hava, basıncın yükseklikle daha yavaş düşmesine neden olur."
+   ]
+  },
+  "15340": {
+   "text": "Sıcaklığın günlük değişimi:",
+   "options": [
+    "bulut varlığında her yerde azalır.",
+    "rüzgâr hızı arttıkça her yerde artar.",
+    "çöl bölgelerinde ılıman çayır alanlarına göre daha azdır,",
+    "denizde karaya göre daha fazladır."
+   ]
+  },
+  "15383": {
+   "text": "Uluslararası Standart Atmosfer'de deniz seviyesindeki atmosfer basıncı nedir?",
+   "options": [
+    "1013.25hpa",
+    "29.29 inch hg",
+    "1012.35 hpa",
+    "101.25 hpa"
+   ]
+  },
+  "15642": {
+   "text": "METAR LIML 141120Z VRB02KT 5000 *BR* NSC 17/05 Q1025 NOSIG Yukarıdaki METAR'da altı çizili ifadenin (*BR*) anlamı nedir?",
+   "options": [
+    "Havada pus ve su buharı olduğu anlamına gelir.",
+    "3/8-4/8 bulutluluk olduğu anlamına gelir.",
+    "Sağanak yağmur olduğu anlamına gelir.",
+    "Kanatlarda buz birikmesi nedeniyle önlem alınması gerektiği anlamına gelir."
+   ]
+  },
+  "15473": {
+   "text": "Atmosferin alt seviyelerinde yükselen doymuş bir hava parselinde, sıcaklığın her 100 metrede azalma miktarı yaklaşık olarak nedir?",
+   "options": [
+    "0.6°C",
+    "0.35°C",
+    "1°C",
+    "1.5°C"
+   ]
+  },
+  "15425": {
+   "text": "Sık aralıklı izobarların anlamı nedir?",
+   "options": [
+    "Büyük bir basınç gradyanı ve kuvvetli rüzgârlar olduğunu gösterirler.",
+    "Büyük bir basınç gradyanı ve hafif rüzgârlar olduğunu gösterirler.",
+    "Zayıf bir basınç gradyanı ve kuvvetli rüzgârlar olduğunu gösterirler.",
+    "Zayıf bir basınç gradyanı ve hafif rüzgârlar olduğunu gösterirler."
+   ]
+  },
+  "15576": {
+   "text": "Yazın izole gök gürültülü fırtınalara (TS) ne sebep olur:",
+   "options": [
+    "konveksiyon.",
+    "soğuk cephe oklüzyonları.",
+    "sıcak cephe oklüzyonları.",
+    "soğuk cepheler."
+   ]
+  },
+  "15298": {
+   "text": "Troposferin tanımlayıcı özelliklerinden biri:",
+   "options": [
+    "atmosferin toplam kütlesinin %70'inden fazlasını içermesidir.",
+    "tropopozun ortalama yüksekliğinin yaklaşık 8 km ya da 26 250 feet olmasıdır.",
+    "tropopozun yüksekliğinin değişmemesidir",
+    "atmosferin kütlesinin atmosferin tüm katmanlarında aynı olmasıdır."
+   ]
+  },
+  "15610": {
+   "text": "Transmisometre neyi ölçer?",
+   "options": [
+    "Görüş.",
+    "Fren etkisi",
+    "Bulut tabanı.",
+    "Rüzgâr hızı."
+   ]
+  },
+  "15431": {
+   "text": "Kuzey Yarımküre'de, rüzgâra dik açıyla etki eden ve izobarlara paralel hale gelene kadar onu sağa saptıran kuvvet hangisidir?",
+   "options": [
+    "Coriolis.",
+    "Adveksiyon.",
+    "Basınç gradyanı.",
+    "Merkezkaç."
+   ]
+  },
+  "15492": {
+   "text": "Gaz halinden sıvı hale geçiş süreci şu şekilde bilinir:",
+   "options": [
+    "gizli ısının açığa çıktığı yoğuşma.",
+    "gizli ısının soğurulduğu yoğuşma.",
+    "gizli ısının açığa çıktığı buharlaşma.",
+    "gizli ısının soğurulduğu buharlaşma."
+   ]
+  },
+  "15541": {
+   "text": "Dolu hangi buluttan elde edilir?",
+   "options": [
+    "CB",
+    "TS",
+    "NS",
+    "SC."
+   ]
+  },
+  "15504": {
+   "text": "Bir pilotun başka şansı olmasa hangi bulutun içinden geçmeyi tercih etmesi gerekir?",
+   "options": [
+    "Stratus",
+    "Towering Cumulus",
+    "Altocumulus Lenticularis",
+    "Cumulonimbus"
+   ]
+  },
+  "15322": {
+   "text": "1650 feet AMSL irtifada +15°C sıcaklık ölçülmüştür. Standart Atmosfer'in sıcaklık gradyanı dikkate alındığında, 8200 feet irtifadaki sıcaklık ne olur?",
+   "options": [
+    "+2°C",
+    "-2°C",
+    "0°C",
+    "+4°C"
+   ]
+  },
+  "15591": {
+   "text": "Aşağıdaki alanlardan hangisinde rüzgâr kesmesi (windshear) yaşanabilir? I) Sürtünme Katmanı II) Bulut içinde III) Açık havada",
+   "options": [
+    "I, II, III",
+    "I, II",
+    "II",
+    "I"
+   ]
+  },
+  "15496": {
+   "text": "Orta seviye bulut ailesi altostratus, altocumulus ve nimbostratus'u içerir. Orta enlemlerde bunların taban yüksekliği şu aralıktadır:",
+   "options": [
+    "6500 ile 23000 feet arasında.",
+    "2000 ile 12000 feet arasında.",
+    "2000 ile 10000 feet arasında.",
+    "3000 ile 5000 feet arasında."
+   ]
+  },
+  "15581": {
+   "text": "Bir gök gürültülü fırtınanın döngüsünde hangi evre ağırlıklı olarak alçalan hava akımlarıyla karakterize edilir?",
+   "options": [
+    "Dağılma evresi",
+    "Başlangıç evresi",
+    "Olgun evre",
+    "Tornado evresi"
+   ]
+  },
+  "15424": {
+   "text": "Havanın yüksek basınçtan alçak basınca doğru hareket etmesine hangi tür kuvvet neden olur?",
+   "options": [
+    "Yatay Basınç Gradyanı.",
+    "Güneş ışınım enerjisi.",
+    "Coriolis kuvveti.",
+    "Merkezkaç kuvveti."
+   ]
+  },
+  "15617": {
+   "text": "Bir METAR'daki R20/0050 görüş grubu şu anlama gelir:",
+   "options": [
+    "Pist 20 için pist ölçüm ekipmanıyla ölçülen, mevcut pist görüşünün 50 metre olduğu.",
+    "Pist 20'de mevcut görüşün 5000 metreden az olduğu.",
+    "son 20 dakika içinde pist görüş mesafesi ekipmanıyla ölçülen bildirilen pist görüşünün 50 metre olduğu.",
+    "Pist 20 için pist görüş mesafesi ekipmanıyla ölçülen mevcut görüşün 500 metre olduğu."
+   ]
+  },
+  "15379": {
+   "text": "Standart atmosferde sıcaklık irtifayla azalır. Bu sıcaklık değişimine göre yoğunluğun irtifayla artması beklenir, ama azalır. Bunun nedeni nedir?",
+   "options": [
+    "Basınçtaki azalmanın sıcaklıktaki azalmadan daha baskın olması, yoğunluğun azalmasına neden olur.",
+    "Sıcaklığın hava yoğunluğu üzerinde etkisi yoktur.",
+    "Basıncın irtifayla artması yoğunluğu azaltır.",
+    "Bilim insanları bu konudaki araştırmalarına devam etmektedir"
+   ]
+  },
+  "15593": {
+   "text": "Bir havaalanından 5 knot baş rüzgârıyla kalkış yapıyorsunuz. 500 ft'i geçerken rüzgâr aniden 30 knot kuyruk rüzgârına dönüşüyor. En olası olarak ne beklersiniz?",
+   "options": [
+    "Tırmanış oranı azalır.",
+    "Gösterge Hava Hızı artar.",
+    "Hiçbir şey değişmez.",
+    "Tırmanış oranı artar."
+   ]
+  },
+  "15423": {
+   "text": "Rüzgârın nedeni nedir?",
+   "options": [
+    "yatay basınç farkları",
+    "çevresel sıcaklık düşüm oranı",
+    "basıncın irtifayla azalması",
+    "jet akımları"
+   ]
+  },
+  "15393": {
+   "text": "Aşağıdaki ifadelerden hangisi doğrudur?",
+   "options": [
+    "QNH, QFE'ye eşit olabilir",
+    "QNH her zaman QFE'ye eşittir",
+    "QNH her zaman QFE'den düşüktür",
+    "QNH her zaman QFE'den yüksektir"
+   ]
+  },
+  "15606": {
+   "text": "Üzerinden kuvvetli bir rüzgârın estiği bir tepeler silsilesinin yakınında alçak irtifada uçan bir uçak şunları yaşayabilir: 1- Herhangi bir rotor bölgesinin altında şiddetli türbülans. 2- Bazı düşük güçlü hafif uçakların tırmanma oranını tamamen alt edebilecek alçalan hava akımları. 3- Tepelerin doruğu üzerindeki bulutlarda normalden daha yüksek buzlanma riski.",
+   "options": [
+    "1, 2 ve 3 doğrudur.",
+    "yalnızca 2 ve 3 doğrudur.",
+    "yalnızca 1 ve 2 doğrudur.",
+    "yalnızca 1 ve 3 doğrudur."
+   ]
+  },
+  "15464": {
+   "text": "Havanın içerebileceği maksimum su buharı miktarı aşağıdakilerden hangisine bağlıdır?",
+   "options": [
+    "hava sıcaklığı",
+    "havanın kararlılığı",
+    "bağıl nem",
+    "çiy noktası"
+   ]
+  },
+  "15456": {
+   "text": "Atmosferde hiç su buharı olmasaydı, _____.",
+   "options": [
+    "hiç bulut ve yağış olmazdı.",
+    "Hiç jet akımı olmazdı.",
+    "Hiç yüzey rüzgârı olmazdı.",
+    "Hiç türbülans olmazdı."
+   ]
+  },
+  "15386": {
+   "text": "Altimetre her zaman şunu gösterir:",
+   "options": [
+    "Alt skalada ayarlanmış olan basınç seviyesine göre dikey mesafeyi.",
+    "Bölgesel QFE ayarlanmış, sıcaklık düzeltmeli uçuş seviyesini.",
+    "Alt skalaya QNH ayarlanmış haldeki, havaalanı üzerindeki irtifayı.",
+    "Alt skalaya 1013 ayarlanmış haldeki, MSL üzerindeki irtifayı."
+   ]
+  },
+  "15554": {
+   "text": "Görüş, inversiyon katmanının altında şu nedenle azalabilir:",
+   "options": [
+    "Dikey hava alışverişi yoktur",
+    "Hiç rüzgâr yoktur",
+    "Alçak basınç alanıdır",
+    "Katman kararsızdır"
+   ]
+  },
+  "15417": {
+   "text": "Bir pilot FL120'de uçarken diğer pilot 12000 ft irtifada uçmaktadır. Hangi ifade en olası doğrudur?",
+   "options": [
+    "Farklı altimetre ayarlarıyla farklı yüksekliklerde uçuyorlar.",
+    "Aynı altimetre ayarıyla aynı yükseklikte uçuyorlar.",
+    "Aynı altimetre ayarıyla farklı yüksekliklerde uçuyorlar.",
+    "Farklı altimetre ayarlarıyla aynı yükseklikte uçuyorlar."
+   ]
+  },
+  "15385": {
+   "text": "Tüm aneroid altimetreler şuna göre kalibre edilir;",
+   "options": [
+    "Uluslararası Standart Atmosfer (ISA) Koşulları",
+    "Şirket uçuş kuralları.",
+    "Bölgesel uçuş kuralları.",
+    "Ulusal uçuş kuralları."
+   ]
+  }
+ }
+}

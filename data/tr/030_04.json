@@ -1,0 +1,247 @@
+{
+  "questions": {
+    "14825": {
+      "text": "Belirli bir konfigürasyonda, bir uçağın stall hızı hangi yükleme durumunda en yüksek olur:",
+      "options": [
+        "izin verilen azami kütlede ve CG en ileride iken.",
+        "düşük bir toplam kütlede ve CG en ileride iken.",
+        "düşük bir toplam kütlede ve CG en geride iken.",
+        "izin verilen azami kütlede ve CG en geride iken."
+      ]
+    },
+    "14920": {
+      "text": "Kalkışta flap açmak unutulursa ne olur?",
+      "options": [
+        "Gerekli kalkış mesafesi artar.",
+        "Uçak yerden daha düşük bir hızda kalkar.",
+        "Gerekli kalkış mesafesi değişmez.",
+        "Gerekli kalkış mesafesi azalır."
+      ]
+    },
+    "14954": {
+      "text": "Kalkış flabıyla Vx ve Vy:",
+      "options": [
+        "temiz konfigürasyona göre daha düşüktür.",
+        "temiz konfigürasyonla aynıdır.",
+        "temiz konfigürasyona göre Vx artacak, Vy azalacak şekilde değişir.",
+        "temiz konfigürasyona göre daha yüksektir."
+      ]
+    },
+    "14875": {
+      "text": "Aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "Kol = Moment / Kuvvet",
+        "Kol = Kuvvet X Moment",
+        "Moment = Kuvvet / Kol",
+        "Kol = Kuvvet / Moment"
+      ]
+    },
+    "14903": {
+      "text": "Diğer etkenlerin sabit ve sınırlayıcı olmadığı varsayıldığında, pist eğimi izin verilen kalkış kütlesini nasıl etkiler?",
+      "options": [
+        "Aşağı eğim izin verilen kalkış kütlesini artırır.",
+        "İzin verilen kalkış kütlesi pist eğiminden etkilenmez.",
+        "Yukarı eğim izin verilen kalkış kütlesini artırır.",
+        "Aşağı eğim izin verilen kalkış kütlesini azaltır."
+      ]
+    },
+    "14832": {
+      "text": "Ağırlık merkezi (CG) ön limitin ilerisindeyse, pilot ne yapmalıdır?",
+      "options": [
+        "CG'yi limitler içine getirmek için yük kaydırmayı planlamalı.",
+        "Kumanda kolunu daha fazla itmeli.",
+        "Kumanda kolunu daha sert çekmeli.",
+        "Dikkatli kalkış yapmalı."
+      ]
+    },
+    "14952": {
+      "text": "Uçuş yolu açısı",
+      "options": [
+        "baş rüzgârıyla artar.",
+        "kord ile göreli hava akımı arasındaki açı olarak tanımlanır.",
+        "boyuna eksen ile göreli hava akımı arasındaki açı olarak tanımlanır.",
+        "baş rüzgârından etkilenmez."
+      ]
+    },
+    "14918": {
+      "text": "Havaalanı basınç irtifası azalırsa uçağın performansına etkisi ne olur?",
+      "options": [
+        "Gerekli kalkış mesafesini azaltır.",
+        "Hızlanma-durma mesafesini (accelerate-stop distance) artırır.",
+        "Gerekli kalkış mesafesini artırır.",
+        "Kalkış yer koşusunu (ground run) artırır."
+      ]
+    },
+    "15028": {
+      "text": "ICAO uçuş planında 90 knot'luk seyir hızı şu şekilde girilmelidir:",
+      "options": [
+        "N0090",
+        "N90",
+        "KN0090",
+        "090KN"
+      ]
+    },
+    "14963": {
+      "text": "Hangi atmosfer koşulları en iyi tırmanış performansını sağlar?",
+      "options": [
+        "Yüksek basınç, düşük sıcaklık, yüksek yoğunluk ve düşük nem",
+        "Düşük basınç, yüksek sıcaklık, yüksek yoğunluk ve düşük nem",
+        "Yüksek basınç, yüksek sıcaklık, yüksek yoğunluk ve yüksek nem",
+        "Düşük basınç, düşük sıcaklık, düşük yoğunluk ve düşük nem"
+      ]
+    },
+    "14915": {
+      "text": "Daha yüksek bir uçak kütlesi rotasyon hızına (VR) ve kalkış emniyet hızına (V2) ne gibi bir etki yapar?",
+      "options": [
+        "Her iki hızı da artırır.",
+        "Rotasyon hızını azaltır, kalkış emniyet hızını artırır.",
+        "Rotasyon hızını artırır, kalkış emniyet hızını azaltır.",
+        "Her iki hızı da azaltır."
+      ]
+    },
+    "14985": {
+      "text": "Süzülme menzilini en üst düzeye çıkarmak için uçak şu şekilde uçurulmalıdır:",
+      "options": [
+        "VMD'de düşük hücum açılarında.",
+        "VMD'de negatif hücum açısında.",
+        "VMP'de düşük hücum açılarında.",
+        "VMD'de yüksek hücum açılarında."
+      ]
+    },
+    "14867": {
+      "text": "Bir uçağın ağırlık merkezi, uçağın toplam kütlesinin etki ettiği kabul edilen noktadır. Ağırlık şu yönde etki eder:",
+      "options": [
+        "yerçekimi vektörüne paralel.",
+        "uçak içindeki kütle dağılımıyla belirlenen.",
+        "her zaman uçuş yoluna dik.",
+        "her zaman uçağın dikey eksenine paralel."
+      ]
+    },
+    "14898": {
+      "text": "Clearway şunun için kullanılabilir:",
+      "options": [
+        "Hiçbiri",
+        "Ani bir durumda bekleme",
+        "Taksi yapma",
+        "İniş"
+      ]
+    },
+    "14912": {
+      "text": "Rüzgâra karşı kalkış yapmanın temel nedeni şudur:",
+      "options": [
+        "kalkış mesafesini azaltmak.",
+        "kalkışın iptal edilmesi durumunda mevcut acil durum mesafesini azaltmak.",
+        "uçağın kalkacağı TAS'ı azaltmak.",
+        "kalkış sırasındaki stall hızını azaltmak."
+      ]
+    },
+    "14881": {
+      "text": "Burun tekerleğinde ölçülen ağırlık 90 pound'dur, ölçüm noktası datumdan 40 inç uzaktadır. Ana iniş takımları datumdan 95 inç uzaktadır ve her bir tarafta ana iniş takımlarında ölçülen ağırlık 700 pound'dur. CoG datumdan ne kadar uzaklıkta olur?",
+      "options": [
+        "91.6 inç.",
+        "93.2 inç.",
+        "88.7 inç.",
+        "90 inç."
+      ]
+    },
+    "15034": {
+      "text": "Bir pilot uçuş planı doldururken türbülans (wake turbulence) kategorisini belirtmelidir. Bu kategori hangi kütlenin bir fonksiyonudur?",
+      "options": [
+        "Azami sertifikalı kalkış kütlesi.",
+        "Azami sertifikalı iniş kütlesi.",
+        "Tahmini kalkış kütlesi.",
+        "Gerçek kalkış kütlesi."
+      ]
+    },
+    "14968": {
+      "text": "Hangi hız uçağın kısa sürede azami irtifaya ulaşmasını sağlar?",
+      "options": [
+        "VY",
+        "VMAX",
+        "V1",
+        "Vx"
+      ]
+    },
+    "15016": {
+      "text": "Bir bacağın tahmini toplam uçuş süresi 1 saat 27 dakikadır. 45 dakikalık navigasyon rezervi vardır. Uçağın yakıt tüketimi 5 US gallon/saattir. Bu uçuş için gereken toplam yakıt miktarı nedir?",
+      "options": [
+        "11 US gallon",
+        "12.6 US gallon",
+        "10.6 US gallon",
+        "3.5 US gallon"
+      ]
+    },
+    "14940": {
+      "text": "Gerekli taşıma kuvvetinin var olduğu varsayıldığında, uçağın tırmanış açısını hangi kuvvetler belirler?",
+      "options": [
+        "Ağırlık, sürükleme ve itki.",
+        "Yalnızca ağırlık ve sürükleme.",
+        "Yalnızca ağırlık ve itki.",
+        "Yalnızca itki ve sürükleme."
+      ]
+    },
+    "14923": {
+      "text": "Atmosferin yoğunluğu görece düşük olduğunda, ortaya çıkan azalma:",
+      "options": [
+        "Hem taşıma kuvvetinde hem de motor gücünde daha uzun bir kalkış mesafesi gerektirir.",
+        "Sürüklemede, motor gücü kaybını dengeleyerek ivmelenmeyi iyileştirir.",
+        "Sürüklemede, daha büyük flap açılarının kullanılmasına izin verir.",
+        "İtki ve sürüklemede, gerekli kalkış mesafesi üzerinde belirgin bir etkisi yoktur."
+      ]
+    },
+    "15012": {
+      "text": "Geçici tehlikeli bölgelerin (danger area) aktif olduğu tarih ve saatler aşağıdakilerden hangisinde bulunur?",
+      "options": [
+        "NOTAM",
+        "SIGMET",
+        "RAD/NAV haritaları",
+        "Yalnızca AIP"
+      ]
+    },
+    "14981": {
+      "text": "Azami menzil için süzülme şunu gerektirir:",
+      "options": [
+        "görece düşük bir hücum açısı.",
+        "nötr bir hücum açısı.",
+        "negatif bir hücum açısı.",
+        "yüksek bir hücum açısı."
+      ]
+    },
+    "14983": {
+      "text": "Süzülme sırasında uçağa etki eden kuvvetler nasıl dengelenebilir?",
+      "options": [
+        "Sürükleme, ağırlığın bir bileşenine eşittir.",
+        "Ağırlık taşıma kuvvetine eşittir.",
+        "Taşıma kuvveti sürüklemeye eşittir.",
+        "İtki yoksa sürükleme de yoktur."
+      ]
+    },
+    "14874": {
+      "text": "Datumdan bir kütlenin ağırlık merkezine (CG) olan mesafe şu şekilde bilinir:",
+      "options": [
+        "moment kolu veya denge kolu.",
+        "indeks.",
+        "moment.",
+        "kuvvet."
+      ]
+    },
+    "14823": {
+      "text": "Bir uçağın ağırlık merkezi (CG) uçuş sırasında öne kayarsa, irtifa dümeni (elevator) kontrolü:",
+      "options": [
+        "ağırlaşır ve uçağın yunuslama (pitch) ekseninde manevra yapması zorlaşır.",
+        "hafifler ve uçağın yunuslama (pitch) ekseninde manevra yapması zorlaşır.",
+        "hafifler ve uçağın yunuslama (pitch) ekseninde manevra yapması kolaylaşır.",
+        "ağırlaşır ve uçağın yunuslama (pitch) ekseninde manevra yapması kolaylaşır."
+      ]
+    },
+    "14835": {
+      "text": "Ağırlık merkezi (CG) arka limitin gerisindeyse, aşağıdakilerden hangisi bunun etkilerinden biri değildir?",
+      "options": [
+        "Uçağın burun yukarı kalkma eğilimi nedeniyle süzülme açısını korumak daha kolaydır.",
+        "Ekstra sürükleme nedeniyle menzil ve menzil süresini (endurance) azaltır.",
+        "Spin'den çıkış (spin recovery) daha zor hale gelir.",
+        "Boyuna statik stabiliteyi azaltır."
+      ]
+    }
+  }
+}

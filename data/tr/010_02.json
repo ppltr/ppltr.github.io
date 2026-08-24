@@ -1,0 +1,634 @@
+{
+ "questions": {
+  "14307": {
+   "text": "Tek pilotlu tek motorlu sınıf yetkilendirmeleri ne kadar süre geçerlidir?",
+   "options": [
+    "2 yıl",
+    "3 yıl",
+    "6 ay",
+    "1 yıl"
+   ]
+  },
+  "14308": {
+   "text": "Yetkilileri bilgilendirmeniz gerekmeden önce bir klinikte veya hastanede ne kadar süre geçirmiş olmanız gerekir?",
+   "options": [
+    "12 saatten fazla.",
+    "12 gün veya daha fazla.",
+    "En az 20 gün.",
+    "24 saat veya daha fazla."
+   ]
+  },
+  "14309": {
+   "text": "Bir JAR-FCL pilot lisansını Lisansın Verildiği Devlet'ten başka bir JAA üye devletine aktarmak için lisans sahibinin:",
+   "options": [
+    "Yeni devlette olağan olarak ikamet ediyor olması (yılda en az 185 gün) veya o devlette tam zamanlı bir işe girmiş olması",
+    "Yeni devletin vatandaşı olmuş olması gerekir.",
+    "Yeni devlette yılda en az 30 gün ikamet etmesi.",
+    "Yeni devlette en az 30 ardışık gün ikamet etmiş olması."
+   ]
+  },
+  "14310": {
+   "text": "Bir JAA Lisansı sahibi, bu lisansın verdiği hakları kullanabilmek için geçerli bir Sağlık Sertifikası'na sahip olmalıdır. Öngörülen Sağlık Sertifikası aşağıdakine uygun olarak düzenlenmelidir:",
+   "options": [
+    "JAR FCL- Part 3.",
+    "JAR OPS - Part 2.",
+    "JAR OPS - Part 1.",
+    "JAR FCL - Part 1."
+   ]
+  },
+  "14311": {
+   "text": "Yolcu taşımak isteyen bir PPL (A) sahibi, önceki _____ içinde en az 3 kalkış ve 3 iniş yapmış olmalıdır:",
+   "options": [
+    "90 gün",
+    "60 gün",
+    "31 gün",
+    "29 gün"
+   ]
+  },
+  "14312": {
+   "text": "Bir JAR FCL Özel Pilot Lisansı (Uçak) verilmesi için gereken asgari uçuş saati sayısı:",
+   "options": [
+    "45.",
+    "50.",
+    "35.",
+    "40."
+   ]
+  },
+  "14313": {
+   "text": "Bir öğrenci pilotun ilk solo uçuşunu yapabileceği asgari yaş:",
+   "options": [
+    "16 yaş.",
+    "19 yaş.",
+    "18 yaş.",
+    "17 yaş."
+   ]
+  },
+  "14314": {
+   "text": "Bir JAR-FCL PPL (A) adayının tamamlaması gereken asgari çift kumanda (dual) eğitim saati sayısı:",
+   "options": [
+    "25 saat",
+    "30 saat",
+    "10 saat",
+    "45 saat"
+   ]
+  },
+  "14315": {
+   "text": "Bir EASA FCL PPL(A) verilmesi için gereken asgari uçuş saati sayısı:",
+   "options": [
+    "45",
+    "50",
+    "35",
+    "40"
+   ]
+  },
+  "14316": {
+   "text": "Bir JAR-FCL PPL (A)'nın geçerlilik süresi:",
+   "options": [
+    "5 yıl",
+    "10 yıl",
+    "ömür boyu",
+    "3 yıl"
+   ]
+  },
+  "14317": {
+   "text": "Bir JAA PPL adayının uçması gereken asgari çift kumanda eğitim saati kaçtır?",
+   "options": [
+    "25 saat.",
+    "22 saat.",
+    "30 saat.",
+    "20 saat."
+   ]
+  },
+  "14318": {
+   "text": "Başka bir ülkenin hava sahasına girerken, sorumlu pilotun (Pilot-in-Command) lisansı aşağıdakilerden hangisinin otoritesi tarafından onaylanmış olmalıdır?",
+   "options": [
+    "Uçağın tescil edildiği devlet",
+    "Herhangi bir ICAO akit devleti",
+    "Herhangi bir JAA üye devleti",
+    "Üretici devlet"
+   ]
+  },
+  "14320": {
+   "text": "Türkiye'de pilot lisanslandırmasıyla ilgili talimatlar hangileridir?",
+   "options": [
+    "SHT-FCL, SHY-1",
+    "SHT-6A, SHY-1",
+    "SHT-1, SHY-3",
+    "SHT-1, SHY-2"
+   ]
+  },
+  "14321": {
+   "text": "Bir taksi yolu üzerinde 90° açıyla, bir çift paralel sarı çizgiyle birlikte bir çift paralel kesikli sarı çizgiden oluşan işaretleme neyi belirtir?",
+   "options": [
+    "Bir taksi yolunun sonundaki bekleme noktasını ve pist giriş noktasını; ATC'den önceden izin alınmadan uçağın hiçbir parçasının bu noktayı aşamayacağı yeri.",
+    "Bir apronun bir taksi yoluna çıkış noktasını.",
+    "Kalkış öncesi motor kontrol (run-up) alanının giriş noktasını.",
+    "İki taksi yolunun kesişimini."
+   ]
+  },
+  "14322": {
+   "text": "Havaalanı işaret levhaları aşağıdaki düzenlemede olmalıdır:",
+   "options": [
+    "bilgi levhaları; sarı veya siyah zemin üzerine siyah veya sarı yazı.",
+    "bilgi levhaları; turuncu zemin üzerine siyah yazı.",
+    "zorunlu talimat levhaları; kırmızı zemin üzerine siyah yazı.",
+    "zorunlu talimat levhaları; siyah zemin üzerine kırmızı yazı."
+   ]
+  },
+  "14323": {
+   "text": "Zorunlu olan tüm sabit havaalanı levhaları:",
+   "options": [
+    "Kırmızı zemin üzerine beyaz yazıdan oluşmalıdır.",
+    "Beyaz zemin üzerine kırmızı yazıdan oluşmalıdır.",
+    "Siyah zemin üzerine sarı yazıdan oluşmalıdır.",
+    "Siyah zemin üzerine kırmızı yazıdan oluşmalıdır."
+   ]
+  },
+  "14324": {
+   "text": "Bir acil duruma müdahale eden acil durum aracı hangi renk yanıp sönen ışık gösterir?",
+   "options": [
+    "Mavi",
+    "Sarı",
+    "Yeşil",
+    "Beyaz"
+   ]
+  },
+  "14325": {
+   "text": "Sivil havaalanı tanımlama fenerleri normalde şunlardan oluşur:",
+   "options": [
+    "İki harfli bir Mors grubu yanıp söndüren yeşil bir fener.",
+    "İki harfli bir Mors grubu yanıp söndüren mavi bir fener.",
+    "İki harfli bir Mors grubu yanıp söndüren kırmızı bir fener.",
+    "İki harfli bir Mors grubu yanıp söndüren beyaz bir fener."
+   ]
+  },
+  "14326": {
+   "text": "Kapalı bir pist nasıl belirtilir?",
+   "options": [
+    "Beyaz çarpı",
+    "Beyaz renkte \"CLOSED\" yazısı",
+    "Bariyer kullanılarak",
+    "Sarı çarpı"
+   ]
+  },
+  "14327": {
+   "text": "ICAO, sabit tek yönlü pist eşiği ışıklarının şu renkte olması gerektiğini belirtir:",
+   "options": [
+    "Yeşil.",
+    "Sırayla yeşil ve kırmızı.",
+    "Beyaz.",
+    "Kırmızı."
+   ]
+  },
+  "14328": {
+   "text": "ICAO, kaplamalı bir taksi yolu yüzeyinde işaretlenmesi gereken unsurun şu olduğunu belirtir:",
+   "options": [
+    "Orta hat.",
+    "Orta hat, kenarlar, giriş ve çıkış noktaları.",
+    "Orta hat ve kenarlar.",
+    "Kenarlar."
+   ]
+  },
+  "14329": {
+   "text": "Kenar ışıkları ……., orta hat ışıkları ………..ve işaretlemeler ……….. ise kesinlikle bir ………….. üzerindesinizdir.",
+   "options": [
+    "Mavi, yeşil, sarı, taksi yolu.",
+    "Beyaz, beyaz, sarı, pist.",
+    "Beyaz, kırmızı, beyaz, pist.",
+    "Beyaz, beyaz, beyaz, taksi yolu."
+   ]
+  },
+  "14330": {
+   "text": "Bir havaalanının işaret sahasında, tek bir sarı çapraz şeride sahip kırmızı bir kare şunu ifade eder:",
+   "options": [
+    "Manevra sahasının kötü durumu nedeniyle inişte özel dikkat gösterin.",
+    "Helikopterler faaliyette",
+    "Planörler faaliyette.",
+    "İnmeyin."
+   ]
+  },
+  "14331": {
+   "text": "Bir havaalanının işaret sahasında, beyaz bir \"dumb-bell\" (halter) şekli şunu ifade eder:",
+   "options": [
+    "Yalnızca sert zeminlerde inin ve taksi yapın.",
+    "İnmeyin.",
+    "Yalnızca sert zeminlerde inin.",
+    "İniş yönü, sapın çapraz kola (cross-arm) doğru olan yönüyle paraleldir."
+   ]
+  },
+  "14332": {
+   "text": "Pist yaklaşma ışıkları:",
+   "options": [
+    "Beyazdır ve parlaklığı ayarlanabilir",
+    "Kırmızıdır ve ayarlanamaz",
+    "Kırmızıdır ve ayarlanabilir",
+    "Beyazdır ve parlaklığı ayarlanamaz"
+   ]
+  },
+  "14333": {
+   "text": "Pist kenar ışıkları:",
+   "options": [
+    "Beyaz",
+    "Kırmızı",
+    "Mavi",
+    "Yeşil"
+   ]
+  },
+  "14334": {
+   "text": "Pist eşiği ışıkları şöyle olmalıdır:",
+   "options": [
+    "Piste yaklaşma yönünde yeşil gösteren sabit tek yönlü ışıklar.",
+    "Yeşil renkte sabit ışıklar.",
+    "Piste yaklaşma yönünde beyaz gösteren sabit tek yönlü ışıklar.",
+    "Yeşil veya beyaz renkte gösteren sabit ışıklar."
+   ]
+  },
+  "14335": {
+   "text": "Çıkış taksi yolu dışındaki taksi yolu orta hat ışıkları şöyle olmalıdır:",
+   "options": [
+    "Yeşil gösteren sabit ışıklar.",
+    "Beyaz gösteren sabit ışıklar.",
+    "Sarı gösteren sabit ışıklar.",
+    "Mavi gösteren sabit ışıklar."
+   ]
+  },
+  "14336": {
+   "text": "Taksi yolu kenar ışıkları şöyle olmalıdır:",
+   "options": [
+    "Mavi gösteren sabit ışıklar.",
+    "Mavi gösteren yanıp sönen ışıklar.",
+    "Sarı gösteren sabit ışıklar.",
+    "Yeşil gösteren sabit ışıklar."
+   ]
+  },
+  "14337": {
+   "text": "Kurtarma ve yangınla mücadele için havaalanı kategorisi şuna dayanır:",
+   "options": [
+    "Havaalanını normalde kullanan en uzun uçağın toplam uzunluğu ve azami gövde genişliği.",
+    "Havaalanını normalde kullanan en uzun uçağın toplam uzunluğu ve azami gövde ağırlığı.",
+    "Yalnızca en uzun uçağın azami genişliği",
+    "En uzun uçağın toplam uzunluğu."
+   ]
+  },
+  "14338": {
+   "text": "Pist kenar ışıkları şöyle olmalıdır:",
+   "options": [
+    "beyaz",
+    "kırmızı",
+    "yeşil",
+    "mavi"
+   ]
+  },
+  "14339": {
+   "text": "Kaplamalı taksi yolu işaretlemeleri hangi renktedir?",
+   "options": [
+    "Sarı.",
+    "Beyaz.",
+    "Yeşil.",
+    "Kırmızı."
+   ]
+  },
+  "14340": {
+   "text": "Taksi yolu orta hat ışıkları hangi renktedir?",
+   "options": [
+    "Yeşil",
+    "Mavi",
+    "Kırmızı",
+    "Sarı"
+   ]
+  },
+  "14341": {
+   "text": "Taksi yolu kenar ışıkları hangi renktedir?",
+   "options": [
+    "Mavi",
+    "Beyaz",
+    "Yeşil",
+    "Kırmızı"
+   ]
+  },
+  "14342": {
+   "text": "Pistlerdeki işaretlemeler hangi renktedir?",
+   "options": [
+    "Beyaz",
+    "Sarı veya beyaz",
+    "Yeşil",
+    "Sarı"
+   ]
+  },
+  "14343": {
+   "text": "Hangi renkler varış (destination) levhalarını gösterir?",
+   "options": [
+    "Sarı zemin üzerine siyah yazı",
+    "Kırmızı zemin üzerine beyaz yazı",
+    "Beyaz zemin üzerine kırmızı yazı",
+    "Siyah zemin üzerine sarı yazı"
+   ]
+  },
+  "14344": {
+   "text": "Hangi renkler konum (location) levhalarını gösterir?",
+   "options": [
+    "Siyah zemin üzerine sarı yazı",
+    "Kırmızı zemin üzerine beyaz yazı",
+    "Beyaz zemin üzerine kırmızı yazı",
+    "Sarı zemin üzerine siyah yazı"
+   ]
+  },
+  "14345": {
+   "text": "Uluslararası sivil havacılığa ilişkin Annex 14 neyi içerir?",
+   "options": [
+    "Havaalanları",
+    "Güvenlik",
+    "Kolaylaştırma",
+    "hiçbiri"
+   ]
+  },
+  "14346": {
+   "text": "Taksi yollarındaki işaretlemelerin rengi nedir?",
+   "options": [
+    "Sarı",
+    "Beyaz",
+    "Sarı veya beyaz",
+    "Yeşil"
+   ]
+  },
+  "14347": {
+   "text": "Bir havaalanı işaret karesinde yer alan ve manevra sahasının kötü durumu ya da başka bir nedenle inişe yaklaşırken veya inişte özel önlemler alınması gerektiğini belirtmek için kullanılan işaret:",
+   "options": [
+    "Bir sarı çapraza sahip yatay kırmızı bir kare.",
+    "İki kırmızı çapraza sahip yatay sarı bir kare.",
+    "Bir kırmızı çapraza sahip yatay sarı bir kare.",
+    "İki sarı çapraza sahip yatay kırmızı bir kare."
+   ]
+  },
+  "14348": {
+   "text": "Beyaz işaretlemeli bir yüzeyde taksi yaparken, şunun üzerinde ilerliyorsunuzdur:",
+   "options": [
+    "Pist",
+    "Park alanı",
+    "Taksi yolu",
+    "Hareket sahası"
+   ]
+  },
+  "14349": {
+   "text": "Chicago Sözleşmesi'ne ait aşağıdaki Annex'lerden hangisi havaalanı tasarımına ilişkin asgari şartnameleri içerir?",
+   "options": [
+    "Annex 14",
+    "Annex 6",
+    "Annex 10",
+    "Annex 11"
+   ]
+  },
+  "14350": {
+   "text": "Aşağıdakilerden hangisi pist sonu (runway end) ışıklarını doğru şekilde tanımlar?",
+   "options": [
+    "Sabit; tek yönlü; kırmızı.",
+    "Sabit; çok yönlü; yeşil.",
+    "Sabit; tek yönlü; yeşil.",
+    "Sabit; çok yönlü; kırmızı."
+   ]
+  },
+  "14351": {
+   "text": "Hangi işaret, uçak hareketine uygun olmayan bir pisti belirtir?",
+   "options": [
+    "beyaz \"X\"",
+    "Beyaz \"Y\"",
+    "sarı \"Y\"",
+    "sarı \"X\""
+   ]
+  },
+  "14352": {
+   "text": "Hangi işaret, uçak hareketine uygun olmayan bir taksi yolunu belirtir?",
+   "options": [
+    "sarı \"X\"",
+    "Beyaz \"Y\"",
+    "sarı \"Y\"",
+    "beyaz \"X\""
+   ]
+  },
+  "14353": {
+   "text": "Taksi yaparken ekte gösterilen levhayı fark ediyorsunuz. Bu bir _____ levhasıdır ve _____ ile görünür.",
+   "options": [
+    "Yön – Sarı zemin üzerine siyah yazı.",
+    "Bilgi – Siyah zemin üzerine sarı yazı.",
+    "Zorunlu – Kırmızı zemin üzerine beyaz yazı.",
+    "Konum – Sarı zemin üzerine siyah yazı."
+   ]
+  },
+  "14354": {
+   "text": "Bir Kontrol Bölgesi (CTR) yatay olarak en az şu kadar uzanmalıdır:",
+   "options": [
+    "İlgili havaalanı veya havaalanlarının merkezinden, yaklaşmaların yapılabileceği yönde 5 deniz mili.",
+    "İlgili havaalanı veya havaalanlarının merkezinden, yaklaşmaların yapılabileceği yönde 20 mil.",
+    "İlgili havaalanı veya havaalanlarının merkezinden, yaklaşmaların yapılabileceği yönde 15 mil.",
+    "İlgili havaalanı veya havaalanlarının merkezinden, yaklaşmaların yapılabileceği yönde 10 mil."
+   ]
+  },
+  "14355": {
+   "text": "Yeryüzünden belirli bir yükseklikten itibaren yukarı doğru uzanan kontrollü hava sahası:",
+   "options": [
+    "Kontrol sahası (CTA).",
+    "uçuş bilgi bölgesi (FIR)",
+    "Kontrol bölgesi (CTR).",
+    "Trafik pateni (traffic circuit)."
+   ]
+  },
+  "14356": {
+   "text": "Hafif bir uçak, Ağır (Heavy) veya Orta (Medium) kategorisindeki bir uçağın arkasından kalkış yapıyor. Ne kadarlık bir ayrım (separation) süresi gereklidir?",
+   "options": [
+    "2 dakika.",
+    "5 dakika.",
+    "3 dakika.",
+    "4 dakika."
+   ]
+  },
+  "14357": {
+   "text": "Uçuştaki bir uçaktan, konum ile operasyonel ve/veya meteorolojik raporlama gereksinimleri kapsamında hazırlanan bir rapor ___ olarak adlandırılır.",
+   "options": [
+    "Bir PIREP.",
+    "Bir konum raporu.",
+    "Bir NOTAM.",
+    "Bir SIGMET."
+   ]
+  },
+  "14358": {
+   "text": "Bir havaalanına varan veya oradan kalkan tüm kontrollü uçuşlar için bir Hava Trafik Kontrol Ünitesi tarafından sağlanan hizmete ne denir?",
+   "options": [
+    "Bir Yaklaşma Kontrol Hizmeti",
+    "Bir İkaz Hizmeti",
+    "Bir Uçuş Bilgi Hizmeti",
+    "Bir Saha Kontrol Hizmeti"
+   ]
+  },
+  "14359": {
+   "text": "Özel bir hava raporu bir hava trafik hizmetine şu durumda yapılmalıdır:",
+   "options": [
+    "Buzlanma, rüzgâr kesmesi ve türbülans, dağ dalgası veya öngörülmemiş diğer olaylar gibi herhangi bir şiddetli hava olayıyla karşılaşıldıktan ve bundan kurtulduktan sonra.",
+    "Buzlanma, rüzgâr kesmesi ve türbülans gibi herhangi bir orta şiddette hava olayıyla karşılaşıldıktan ve bundan kurtulduktan sonra.",
+    "Yalnızca öngörülen görüş mesafesi, uçak komutanının işletme koşullarını IMC'ye değiştirmesini gerektirecek ölçüde değişirse.",
+    "Öngörülen hava durumu uçuş öncesi tahminden sapma gösterirse."
+   ]
+  },
+  "14360": {
+   "text": "Hava trafik kontrol hizmeti hangi hizmetler tarafından yürütülür?",
+   "options": [
+    "TWR (meydan kontrol hizmeti) APP (yaklaşma kontrol hizmeti) ACC (saha kontrol hizmeti)",
+    "APP (yaklaşma kontrol hizmeti) ACC (saha kontrol hizmeti) FIS (uçuş bilgi hizmeti)",
+    "ALR (ikaz hizmeti) SAR (arama ve kurtarma hizmeti) TWR (meydan kontrol hizmeti)",
+    "FIS (uçuş bilgi hizmeti) AIS (havacılık bilgi hizmeti) AFS (havacılık sabit telekomünikasyon hizmeti)"
+   ]
+  },
+  "14361": {
+   "text": "Uçuş bilgi ve ikaz hizmetlerinin verildiği bir hava sahası şu şekilde adlandırılır:",
+   "options": [
+    "Uçuş bilgi bölgeleri (FIR).",
+    "Kontrollü hava sahası.",
+    "Danışma hatları (advisory routes) ve F sınıfı hava sahası.",
+    "Kontrolsüz hava sahası."
+   ]
+  },
+  "14362": {
+   "text": "Uçuş Bilgi Hizmeti (FIS) şunu sağlar:",
+   "options": [
+    "Uçuşların emniyetli ve verimli şekilde yürütülmesi için yararlı tavsiye ve bilgi.",
+    "FIR içinde havaalanı pist durumu, hava durumu ve rota frekanslarına ilişkin güncel bilgi.",
+    "Kontrollü hava sahası içindeki tüm uçaklara, tüm uçuşların emniyetli yürütülmesiyle ilgili bu tür bilgi.",
+    "Katılan uçaklar için emniyetli ayrım (separation)."
+   ]
+  },
+  "14363": {
+   "text": "ICAO, bir hafif veya orta uçağın ağır bir uçağın arkasından kalkışında ya da bir hafif uçağın orta bir uçağın arkasından kalkışında, uçaklar aynı pisti kullanıyorsa ve ikinci uçağın öngörülen uçuş yolu birinci uçağın öngörülen uçuş yolunu aynı irtifada veya 300 m'den (1000 ft) daha az bir mesafede altından kesecekse, aralarında asgari olarak ……….. uygulanmasını tavsiye eder. Bu ifadeyi doğru tamamlayan süreyi seçin.",
+   "options": [
+    "iki dakika.",
+    "dört dakika.",
+    "üç dakika.",
+    "bir dakika."
+   ]
+  },
+  "14366": {
+   "text": "AIP'nin hangi bölümünde 'konum göstergeleri' (location indicators) listesini bulabilirsiniz?",
+   "options": [
+    "GEN",
+    "AD",
+    "ENR",
+    "AGA"
+   ]
+  },
+  "14367": {
+   "text": "Aşağıdaki durumlardan hangisinde türbülans ayrımı (wake turbulence separation) uygulanır?",
+   "options": [
+    "Takip eden uçak, önden giden uçakla aynı yükseklikte veya ondan 1000 fitten daha az aşağıdayken",
+    "Takip eden uçak, önden giden uçakla aynı yükseklikte veya ondan 500 fitten daha az aşağıdayken",
+    "Takip eden uçak, önden giden uçakla aynı yükseklikte veya ondan 1000 fitten daha az yukarıdayken",
+    "700 fitin altında, finalde uçarken"
+   ]
+  },
+  "14368": {
+   "text": "Terminal Kontrol Sahaları (TMA) şöyle tanımlanabilir:",
+   "options": [
+    "Bir veya daha fazla büyük havaalanına bitişik, havayollarının ve diğer rotaların birleştiği hava sahası.",
+    "Yalnızca kalkan trafiğin kullanımına özgü hava sahası.",
+    "Yalnızca varan trafiğin kullanımına özgü hava sahası",
+    "IFR trafiğine açık olmayan, havayollarının birleştiği hava sahası."
+   ]
+  },
+  "14369": {
+   "text": "Tüm kontrollü varan ve kalkan uçuşlar için sağlanan hava trafik kontrol hizmeti:",
+   "options": [
+    "Bir Yaklaşma Kontrol Hizmeti.",
+    "Teslim (Delivery) Hizmeti",
+    "Bir Saha Kontrol Hizmeti.",
+    "Hassas Yaklaşma Radarı (PAR)."
+   ]
+  },
+  "14370": {
+   "text": "Yer seviyesinden belirli bir irtifaya kadar uzanan kontrollü hava sahası:",
+   "options": [
+    "Kontrol bölgesi (CTR).",
+    "Uçuş bilgi bölgesi.",
+    "Kontrol sahası (CTA).",
+    "Terminal kontrol sahası (TMA)."
+   ]
+  },
+  "14371": {
+   "text": "ICAO'nun radar yönlendirme (radar vectoring) tanımı:",
+   "options": [
+    "Radar kullanımına dayalı olarak uçaklara belirli baş açıları (heading) şeklinde seyrüsefer rehberliği sağlanması.",
+    "Radar kullanımına dayalı olarak baş açıları ve irtifalar verilmesi.",
+    "Radar kullanımına dayalı, belirlenmiş danışma baş açılarından türetilen çarpışma ve olumsuz hava koşullarından kaçınma.",
+    "Seyrüsefer ve çarpışmadan kaçınma amacıyla uçağın yön kontrolü."
+   ]
+  },
+  "14372": {
+   "text": "Bekleme, yaklaşma ve kalkış prosedürlerine ilişkin bilgi, AIP'nin şu bölümünde bulunur:",
+   "options": [
+    "ENR",
+    "GEN",
+    "MAP",
+    "AD"
+   ]
+  },
+  "14373": {
+   "text": "Bir seyrüsefer yardımcısı çevresinde tesis edilmesi gereken Asgari Sektör İrtifası (MSA), genel olarak şu yarıçaptaki bir sektör içinde geçerlidir:",
+   "options": [
+    "25 NM.",
+    "15 NM.",
+    "10 NM.",
+    "30 NM."
+   ]
+  },
+  "14374": {
+   "text": "Asgari Sektör İrtifası (MSA) şunun çevresinde tesis edilmelidir:",
+   "options": [
+    "seyrüsefer yardımcıları",
+    "havaalanı referans noktası (ARP)",
+    "kule",
+    "pist"
+   ]
+  },
+  "14375": {
+   "text": "'Hava Trafiği' (Air Traffic) terimi şöyle tanımlanır:",
+   "options": [
+    "Uçuş hâlindeki veya bir havaalanının manevra sahasında çalışan tüm uçaklar.",
+    "Kendi gücüyle manevra yapan herhangi bir uçak.",
+    "Havada olan uçaklar ve aktif bir pisti işgal edenler.",
+    "Havada olan uçaklar."
+   ]
+  },
+  "14376": {
+   "text": "Geçiş katmanı (transition layer) şöyle tanımlanır:",
+   "options": [
+    "Geçiş irtifası (transition altitude) ile geçiş seviyesi (transition level) arasındaki katman.",
+    "Geçiş irtifası ile planlanan işletme uçuş seviyesi arasındaki katman.",
+    "3000 ft irtifa ile geçiş irtifası arasındaki katman.",
+    "7000 ft irtifa ile geçiş irtifası arasındaki katman."
+   ]
+  },
+  "14377": {
+   "text": "Bir havaalanının geçiş irtifası şunun altında olmamalıdır:",
+   "options": [
+    "3000 ft",
+    "1000 ft",
+    "2500 ft",
+    "1500 ft"
+   ]
+  },
+  "14378": {
+   "text": "Hava Trafik Hizmetlerini sağlayan üniteler:",
+   "options": [
+    "Saha Kontrol Merkezi - Uçuş Bilgi Merkezi - Yaklaşma Kontrol Ofisi - Meydan Kontrol Kulesi ve Hava Trafik Hizmetleri raporlama ofisi.",
+    "Saha Kontrol Merkezi - Danışma Merkezi - Uçuş Bilgi Merkezi - Yaklaşma Kontrol Ofisi ve Kule.",
+    "Danışma Merkezi - Saha Kontrol Merkezi - Yaklaşma Kontrol Ofisi ve Meydan Kontrol Kulesi.",
+    "Saha Kontrol Merkezi - Uçuş Bilgi Bölgesi - Yaklaşma Kontrol Ofisi ve Kule."
+   ]
+  },
+  "14379": {
+   "text": "Bir Kontrol Bölgesinin (CTR) dikey uzanımı:",
+   "options": [
+    "Yer seviyesinden belirli bir üst sınıra kadar.",
+    "Yer seviyesinden 2000 ft irtifaya kadar.",
+    "1500 ft AGL'den TMA'nın tabanına kadar.",
+    "Yer seviyesinden 2000 ft AGL'ye kadar."
+   ]
+  }
+ }
+}

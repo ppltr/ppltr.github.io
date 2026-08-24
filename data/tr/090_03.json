@@ -1,0 +1,391 @@
+{
+ "questions": {
+  "16453": {
+   "text": "ATIS,",
+   "options": [
+    "Automatic Terminal Information Service.",
+    "Aerodrome Flight Information Service.",
+    "Aeronautical Information Service.",
+    "Air Traffic Service."
+   ]
+  },
+  "16454": {
+   "text": "Meydan ve hava durumu bilgisinin otomatik yayınını hangi havacılık muhabere hizmetinden alırsın?",
+   "options": [
+    "ATIS",
+    "AGCS",
+    "FIS",
+    "RIS"
+   ]
+  },
+  "16455": {
+   "text": "Straight-in yaklaşma yapılıyorsa FINAL çağrısı yaklaşık ne kadar mesafede yapılmalıdır?",
+   "options": [
+    "4 nm",
+    "25 nm",
+    "8 nm",
+    "10 nm"
+   ]
+  },
+  "16456": {
+   "text": "Eğer …………… mevcut değilse, meydana yapılan ilk çağrıda en son yayının alındığı teyit edilir.",
+   "options": [
+    "ATIS",
+    "RVR",
+    "Frekanslar",
+    "ONH"
+   ]
+  },
+  "16457": {
+   "text": "Backtrack yapmak istiyorsan telsiz mesajın şu olmalıdır:",
+   "options": [
+    "REQUEST BACKTRACK",
+    "REQUEST VACATE RUNWAY",
+    "BACKTRACKING",
+    "REPORTING BACKTRACK"
+   ]
+  },
+  "16458": {
+   "text": "FINAL çağrısı, uçak temas noktasına ……… NM kala finale döndüğünde yapılır.",
+   "options": [
+    "4",
+    "Hiçbiri",
+    "6",
+    "2"
+   ]
+  },
+  "16459": {
+   "text": "'ORBIT LEFT' talimatı şu anlama gelir:",
+   "options": [
+    "sola 360° dönüş yap.",
+    "en az 45° yatış açısı kullanarak sola çarpışma önleyici dönüşü hızla yap",
+    "standart sol el meydan turu.",
+    "çakışan trafikten kaçınmak için sola dön."
+   ]
+  },
+  "16460": {
+   "text": "Aksi bildirilmedikçe pilotlar ………..",
+   "options": [
+    "pist terk edilene kadar kule frekansında kalmalıdır",
+    "İniş koşusu sırasında yer (ground) frekansına geçmelidir",
+    "Pist terk edildikten sonra telsizi kapatmalıdır",
+    "Pistten döndükten sonra yer (ground) frekansına geçmelidir"
+   ]
+  },
+  "16461": {
+   "text": "'VACATE RIGHT' şu anlama gelir:",
+   "options": [
+    "pisti terk etmek için sağa dön.",
+    "kalkıştan sonra sağa dön.",
+    "bir sonraki pist çıkışı sağdadır.",
+    "pisti derhal boşalt."
+   ]
+  },
+  "16462": {
+   "text": "Meydan turundaki dört ana bacak hangileridir?",
+   "options": [
+    "Crosswind, downwind, base, final",
+    "Crosswind, downwind, final, pist üzeri",
+    "Kalkış, crosswind, downwind, final",
+    "Kalkış, crosswind, downwind, base,"
+   ]
+  },
+  "16463": {
+   "text": "\"Orbit right\" talimatı ne anlama gelir?",
+   "options": [
+    "Sağa 360° dönüşler yap",
+    "Pisti sağdan terk et",
+    "Sağ el meydan turu kullanılıyor",
+    "Diğer trafikten kaçınmak için sağa dön"
+   ]
+  },
+  "16464": {
+   "text": "Meydan turunda geciktirme amacıyla ya da öndeki/arkadaki trafikle gereken aralığı sağlamak için kulenin uçağa verdiği talimat nedir?",
+   "options": [
+    "Sağa/sola orbit yap",
+    "180 derece geri dön",
+    "Baş açısını koru",
+    "Pozisyonunu koru"
+   ]
+  },
+  "16465": {
+   "text": "Bir istasyona göre gerçek kerterizin Q kodu nedir?",
+   "options": [
+    "QTE",
+    "QFE",
+    "QNH",
+    "QDR"
+   ]
+  },
+  "16466": {
+   "text": "ATIS sağlanan bir yerde, gelen uçak yayının alındığını ne zaman teyit eder:",
+   "options": [
+    "meydana yapılan ilk çağrıda.",
+    "uygun olan herhangi bir zamanda.",
+    "downwind'deyken.",
+    "meydan üstü (overhead) çağrısını yaparken."
+   ]
+  },
+  "16467": {
+   "text": "Radar ve kule kontrolü bulunan bir havaalanına yaklaşırken doğru muhabere sırası aşağıdakilerden hangisidir?",
+   "options": [
+    "ATIS (varış) - Approach-Tower-Ground",
+    "Tower-Approach-ATIS- Ground",
+    "Approach-Tower- Ground -ATIS",
+    "ATIS-Approach-Tower- Ground"
+   ]
+  },
+  "16468": {
+   "text": "Blind Transmission (kör yayın) şudur:",
+   "options": [
+    "iki yönlü muhaberenin kurulamadığı ama çağrılan istasyonun yayını alabildiğine inanılan durumlarda yapılan yayın.",
+    "bir havacılık istasyonundan kendi frekansındaki tüm uçaklara yapılan yayın.",
+    "bir uçaktan, ilk yaklaşma irtifasından görerek yaklaşmanın tamamlanabileceği bir noktaya alçalmak üzere VDF kılavuzluğu almak için yapılan yayın.",
+    "belirli bir istasyona ya da istasyonlara yöneltilmemiş, hava seyrüsefer emniyetiyle ilgili bilgi yayını."
+   ]
+  },
+  "16469": {
+   "text": "\"Transmitting blind due receiver failure\" ifadesiyle başlayan bir mesaj nerede yayınlanır:",
+   "options": [
+    "Hâlihazırda kullanılan frekansta",
+    "Mevcut tüm havacılık istasyonlarında",
+    "Uluslararası acil durum frekansında",
+    "Bölgesel gözcü (guard) frekansında"
+   ]
+  },
+  "16470": {
+   "text": "Telsiz arızasından şüphelenirsen aşağıdaki kontrol dizilerinden hangisini önce yaparsın?",
+   "options": [
+    "Doğru frekans; doğru ses seviyesi; kulaklık fişleri; telsiz menzili içinde olmak; yer istasyonunun açık olduğunu kontrol et.",
+    "Doğru frekans; doğru squelch ayarı; kulaklık fişleri; telsiz sigortası; yer istasyonunun açık olduğunu kontrol et.",
+    "Doğru frekans; doğru ses seviyesi; kulaklık fişleri; telsiz sigortası; yer istasyonunun açık olduğunu kontrol et.",
+    "Doğru frekans; doğru ses seviyesi; mikrofon fişi; telsiz menzili içinde olmak; yer istasyonunun açık olduğunu kontrol et."
+   ]
+  },
+  "16471": {
+   "text": "Telsiz arızası durumunda SSR transponder şuna ayarlanmalıdır:",
+   "options": [
+    "7600",
+    "7000",
+    "7500",
+    "7700"
+   ]
+  },
+  "16472": {
+   "text": "Uçuş sırasında SSR transponder arızası olursa ne yapılmalıdır?",
+   "options": [
+    "Durum ATC ile irtibata geçilerek bildirilmelidir.",
+    "En kısa sürede uygun bir havaalanına inilmelidir.",
+    "7600 kodu squawk edilmelidir.",
+    "VMC'de devam edilmelidir"
+   ]
+  },
+  "16473": {
+   "text": "VMC'de uçarken muhabere arızası olan bir uçak VMC'de uçmaya devam eder ve:",
+   "options": [
+    "transponder'ı 7600'e ayarlar, en yakın uygun meydana iner ve varışını en hızlı yoldan ATC'ye bildirir.",
+    "mümkün olan en kısa sürede iner ve varışını en hızlı yoldan ATC'ye bildirir.",
+    "en yakın meydana iner.",
+    "mümkün olan en kısa sürede iner ve varışını ATC'ye bildirir."
+   ]
+  },
+  "16474": {
+   "text": "Aşağıdaki çağrılardan hangisi \"genel çağrı\"dır?",
+   "options": [
+    "ALL STATIONS Ankara CONTROL.",
+    "TC-EFG, TC-FGH over.",
+    "TC-ABC, TC-BCD, TC-CDE Ankara CONTROL.",
+    "TC-DEF Ankara CONTROL."
+   ]
+  },
+  "16475": {
+   "text": "……………… uluslararası havacılık acil durum frekansıdır.",
+   "options": [
+    "121.5 MHz",
+    "118.1 MHz",
+    "121.5 KHz",
+    "119.5 MHz"
+   ]
+  },
+  "16476": {
+   "text": "Ciddi ve/veya yakın bir tehlike altında olma ve derhal yardım gerektirme durumu hangi mesaj kategorisini tanımlar?",
+   "options": [
+    "Tehlike (Distress)",
+    "Acil durum (Emergency).",
+    "Uçuş emniyeti.",
+    "Acele durum (Urgency)."
+   ]
+  },
+  "16477": {
+   "text": "'ALL STATIONS' yayınını duyan bir pilot:",
+   "options": [
+    "sonradan teyit istenmedikçe cevap vermemelidir.",
+    "yayını teyit ederken 'ROGER AND OUT' yayınlamalıdır.",
+    "yayının alındığını 'ROGER' diyerek teyit etmelidir.",
+    "cevap olarak çağrı adını yayınlamalıdır."
+   ]
+  },
+  "16478": {
+   "text": "Acil durum hangi transponder koduyla bildirilir?",
+   "options": [
+    "7700",
+    "7400",
+    "7500",
+    "7600"
+   ]
+  },
+  "16479": {
+   "text": "Bir tehlike mesajında May Day ön ekinden sonra yayınlanacak bir sonraki unsur şudur:",
+   "options": [
+    "çağrılan istasyonun çağrı adı",
+    "uçaktaki kişi sayısı.",
+    "acil durumun niteliği.",
+    "biliniyorsa uçağın pozisyonu.."
+   ]
+  },
+  "16480": {
+   "text": "Uçak kaçırma hangi transponder koduyla bildirilir?",
+   "options": [
+    "7500",
+    "7400",
+    "7600",
+    "7700"
+   ]
+  },
+  "16481": {
+   "text": "Bir tehlike çağrısında, MAYDAY ön ekinin hemen ardından, koşullar elverirse uçak hangi bilgiyi yayınlamalıdır:",
+   "options": [
+    "Çağrılan istasyonun çağrı adı.",
+    "Acil durumun niteliği.",
+    "Uçak tipi.",
+    "Uçağın pozisyonu."
+   ]
+  },
+  "16482": {
+   "text": "Bir tehlike mesajının unsurlarından biri, pilotun uçağın pozisyonunu şu bağlamda yayınlamasıdır:",
+   "options": [
+    "mevcut ya da son bilinen pozisyon, seviye ve baş açısı.",
+    "son kesin pozisyon tespitinden itibaren geçen zaman ve izlenen rota.",
+    "ikincil gözetim radarı operatörünün verdiği son pozisyon.",
+    "istikamet bulucuya göre baş açısı ve mesafe"
+   ]
+  },
+  "16483": {
+   "text": "Acil durum yayınının doğru ön eki ya 'May Day' ya da 'Pan'dır ve şu şekilde yayınlanmalıdır:",
+   "options": [
+    "üç kez.",
+    "'Pan' kullanılırken iki kez, 'May Day' kullanılırken üç kez",
+    "iki kez.",
+    "bir kez."
+   ]
+  },
+  "16484": {
+   "text": "121.5 acil durum frekansı:",
+   "options": [
+    "acil durum usullerinin tatbikatı için kullanılamaz.",
+    "tehlike (distress) durumlarının tatbikatı için kullanılabilir ama acele durum (urgency) usulleri için kullanılamaz.",
+    "benzetimli acele durum (urgency) dâhil acil durum usullerinin tatbikatı için kullanılabilir ama tehlike (distress) durumları için kullanılamaz.",
+    "benzetimli acele durum (urgency) ya da tehlike (distress) durumları dâhil acil durum usullerinin tatbikatı için kullanılabilir."
+   ]
+  },
+  "16485": {
+   "text": "Bir MAYDAY çağrısının ilk yayını için kullanılacak frekans şudur:",
+   "options": [
+    "pilotun o an hizmet aldığı frekans.",
+    "en yakın meydanın yaklaşma frekansı.",
+    "herhangi bir uluslararası tehlike frekansı.",
+    "121.5 MHz tehlike frekansı."
+   ]
+  },
+  "16486": {
+   "text": "Acil durum mesajlarının iki kategorisi şunlardır:",
+   "options": [
+    "Acele durum (Urgency) ve Tehlike (Distress).",
+    "Acil durum (Emergency) ve tehlike (distress).",
+    "Acil (Urgent) ve Acil durum (Emergency)",
+    "PAN ve MAYDAY."
+   ]
+  },
+  "16487": {
+   "text": "Bir acele durum (urgency) çağrısının içeriği ne olmalıdır?",
+   "options": [
+    "PAN PAN, PAN PAN, PAN PAN, Çağrılan İstasyonun Çağrı Adı (zaman ve koşullar elverirse), Uçağın Çağrı Adı, Uçak Tipi, Acil Durumun Niteliği, Sorumlu Kişinin Niyeti, Pozisyon, Seviye ve Baş Açısı, Pilot Yeterliliği (mümkünse), Diğer Faydalı Bilgiler.",
+    "PAN, PAN, PAN, Çağrılan İstasyonun Çağrı Adı, Pozisyon, Acil Durumun Niteliği, Sorumlu Kişinin Niyeti, Havada Kalış Süresi.",
+    "MAYDAY, MAYDAY, MAYDAY, Pozisyon, Baş Açısı, Acil Durumun Niteliği, Sorumlu Kişinin Niyeti, Diğer Faydalı Bilgiler.",
+    "Çağrılan İstasyon, PAN PAN, PAN PAN, PAN PAN, Çağrı Adı, Pozisyon, Pilot Yeterliliği, Sorumlu Kişinin Niyeti."
+   ]
+  },
+  "16488": {
+   "text": "Bir tehlike (distress) çağrısının tam içeriği ne olmalıdır?",
+   "options": [
+    "MAYDAY, MAYDAY, MAYDAY, Çağrılan İstasyonun Çağrı Adı, Uçağın Çağrı Adı, Uçak Tipi, Acil Durumun Niteliği, Sorumlu Kişinin Niyeti, Pozisyon, Seviye ve Baş Açısı, Pilot Yeterliliği (mümkünse), Diğer Faydalı Bilgiler.",
+    "MAYDAY, MAYDAY, MAYDAY, Acil Durumun Niteliği, Sorumlu Kişinin Niyeti, Havada Kalış Süresi.",
+    "PAN PAN, PAN PAN, PAN PAN, Pozisyon, Baş Açısı, Acil Durumun Niteliği, Sorumlu Kişinin Niyeti, Pilot Yeterliliği, Diğer Faydalı Bilgiler.",
+    "Çağrılan İstasyon, MAYDAY, MAYDAY, MAYDAY, Çağrı Adı, Pozisyon, Sorumlu Kişinin Niyeti."
+   ]
+  },
+  "16489": {
+   "text": "Bir tehlike (distress) çağrısının tam içeriği ne olmalıdır?",
+   "options": [
+    "MAYDAY, MAYDAY, MAYDAY, Çağrılan İstasyonun Çağrı Adı, Uçak Tipi, Acil Durumun Niteliği, Sorumlu Pilotun Niyeti, Pozisyon, Seviye ve Baş Açısı, Pilot Yeterliliği (mümkünse), Diğer Faydalı Bilgiler.",
+    "MAYDAY, MAYDAY, MAYDAY, Acil Durumun Niteliği, Sorumlu Pilotun Niyeti, Havada Kalış Süresi.",
+    "Pozisyon, Baş Açısı, Acil Durumun Niteliği, Sorumlu Pilotun Niyeti, Pilot Yeterliliği, Diğer Faydalı Bilgiler.",
+    "Çağrılan İstasyon, MAYDAY, MAYDAY, MAYDAY, Çağrı Adı, Pozisyon, Sorumlu Pilotun Niyeti."
+   ]
+  },
+  "16490": {
+   "text": "ATC'nin \"Pass Your Message\" talimatına pilotun vereceği cevabın en doğru içeriği ve sırası ne olmalıdır?",
+   "options": [
+    "Uçağın Çağrı Adı, Uçak Tipi, Kalkış Noktası ve Varış Yeri, Mevcut Pozisyon, İrtifa ya da Seviye, Ek Ayrıntılar ve Niyet (ör. Uçuş Kuralları, Rotadaki Bir Sonraki Nokta.)",
+    "Uçak Tipi, Rota Bilgisi, Pozisyon, Baş Açısı, Seviye, Ek Ayrıntılar ve Niyetler, Uçağın Çağrı Adı.",
+    "Uçağın Çağrı Adı, Uçak Tipi, Pozisyon, Baş Açısı, Seviye, Talep.",
+    "Uçağın Çağrı Adı, Uçak Tipi, Kalkış Noktası ve Varış Yeri, Mevcut Pozisyonlar, Talep."
+   ]
+  },
+  "16491": {
+   "text": "Bir pilot tehlike mesajı duyduğunda:",
+   "options": [
+    "telsiz sessizliğini korumalı ama yardımın sağlandığından emin olmak için o frekansı dinlemelidir.",
+    "o frekanstaki acil durum telsiz trafiği nedeniyle ATC'den başka bir frekans istemelidir.",
+    "o frekansta telsiz sessizliği uygulanacağı için başka bir frekansa geçmelidir.",
+    "mesajı derhal teyit etmeli ve gerekirse mesajları aktarmayı teklif etmelidir."
+   ]
+  },
+  "16492": {
+   "text": "Bir acil durum mesajı yayınlarken pilotun uçağının pozisyonunu şu şekilde vermesi gerekir:",
+   "options": [
+    "Mevcut ya da son bilinen pozisyon, irtifa ya da seviye ve baş açısıyla birlikte.",
+    "Çağrılan istasyona göre DME mesafesi.",
+    "En yakın meydana ya da havaalanına göre pozisyon.",
+    "GPS pozisyonu"
+   ]
+  },
+  "16493": {
+   "text": "Bir acil durum mesajı yayınlarken pilotun uçağının pozisyonunu şu şekilde vermesi gerekir:",
+   "options": [
+    "Mevcut ya da son bilinen pozisyon, irtifa ya da seviye ve baş açısıyla birlikte.",
+    "En yakın meydana ya da havaalanına göre pozisyon.",
+    "Çağrılan istasyona göre DME mesafesi.",
+    "GPS pozisyonu."
+   ]
+  },
+  "16494": {
+   "text": "Aşağıdakilerden hangisi bir tehlike (distress) durumu örneğidir?",
+   "options": [
+    "Motor yangını",
+    "Yolculardan birinin rahatsızlanması",
+    "Telsiz arızası",
+    "Yakıt sızıntısı şüphesi"
+   ]
+  },
+  "16495": {
+   "text": "Tehlikedeki bir uçak aşağıdaki ifadelerden hangisini kullanır?",
+   "options": [
+    "MAYDAY-MAYDAY-MAYDAY",
+    "URGENCY-URGENCY",
+    "SOS-SOS-SOS",
+    "PAN-PAN-PAN"
+   ]
+  }
+ }
+}
