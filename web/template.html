@@ -86,6 +86,13 @@ button{cursor:pointer; background:none; border:none}
   text-transform:none; color:var(--ink-2)}
 #bWho .nm{display:none}
 #bWho{padding:4px 5px}
+/* Google girişi aranmasın diye üst çubukta duruyor; girince gizlenir */
+.gsign{display:inline-flex; align-items:center; gap:6px; padding:4px 10px 4px 8px;
+  border:1px solid var(--rule-2); border-radius:99px; text-transform:none;
+  font-family:var(--f-ui); font-size:12.5px; font-weight:600; letter-spacing:0}
+.gsign:hover{border-color:var(--accent)}
+.gsign svg{width:14px; height:14px; flex:none}
+@media (max-width:430px){ .gsign span{display:none} .gsign{padding:5px 8px} }
 
 .page{max-width:760px; margin:0 auto; padding:18px 14px 80px}
 @media (min-width:720px){ .page{padding:26px 20px 90px} }
@@ -565,6 +572,9 @@ kbd{font-family:var(--f-num); font-size:10px; background:var(--surface-2);
   </span>
   <span class="sp"></span>
   <button class="tbtn" id="bWho" type="button"></button>
+  <button class="tbtn gsign hidden" id="bLogin" type="button">
+    <svg viewBox="0 0 18 18" aria-hidden="true"><path fill="#4285F4" d="M17.6 9.2c0-.6-.1-1.3-.2-1.9H9v3.5h4.8a4.1 4.1 0 0 1-1.8 2.7v2.2h2.9c1.7-1.6 2.7-3.9 2.7-6.5Z"/><path fill="#34A853" d="M9 18c2.4 0 4.5-.8 6-2.2l-2.9-2.3c-.8.6-1.9.9-3.1.9-2.4 0-4.4-1.6-5.1-3.8H.9v2.3A9 9 0 0 0 9 18Z"/><path fill="#FBBC05" d="M3.9 10.7a5.4 5.4 0 0 1 0-3.4V5H.9a9 9 0 0 0 0 8l3-2.3Z"/><path fill="#EA4335" d="M9 3.6c1.3 0 2.5.5 3.4 1.3L15 2.3A9 9 0 0 0 .9 5l3 2.3C4.6 5.2 6.6 3.6 9 3.6Z"/></svg>
+    <span>Giriş</span></button>
   <button class="tbtn" id="bNotes" type="button">Konu</button>
   <button class="tbtn" id="bStats" type="button">Durum</button>
   <button class="tbtn" id="bTheme" type="button">Tema</button>
@@ -711,7 +721,7 @@ const ACCT = 'atpl.acct:';
 const Cloud = {
   acik: !!(FBCONF && FBCONF.apiKey),
   sdk: null, user: null, durum: '', mesgul: false,
-  sonEs: 0, sonCek: 0, kirli: false, pT: null,
+  sonEs: 0, sonCek: 0, kirli: false, pT: null, girisSonrasi: false,
 
   async yukle(){
     if (this.sdk) return this.sdk;
@@ -741,6 +751,7 @@ const Cloud = {
         if (!u){ paintWho(); paintCloud(); return; }
         // Giriş yapıldı: ad Google'daki ad soyad, resim Google profil resmi olur
         // ve bundan sonraki her kayıt bu profile — yani bu hesaba — yazılır.
+        this.girisSonrasi = true;   // bu eşitlemeden sonra kapsam gözden geçirilir
         const panel = !!el('pname');
         if (bindAccount(u)){
           paintWho();
@@ -868,7 +879,12 @@ const Cloud = {
     paintCloud();
     // Arka plan eşitlemesi ekranı boşuna sıçratmasın: yalnız buluttan gerçekten
     // yeni bir şey geldiyse tazele
-    if (!R && degisti){ paintWho(); home(); }
+    if (degisti){
+      // Girişten sonra gelen ilerleme seçili modülü bitirmiş olabilir
+      if (this.girisSonrasi){ this.girisSonrasi = false; reselectAfterSync(); }
+      if (!R){ paintWho(); home(); }
+      refreshSheet();      // açık Durum paneli eski sayıları göstermeye devam etmesin
+    }
   },
 
   /** Kaydın ardından buluta gönderimi geciktirir; yazma sayısını düşük tutar. */
@@ -1151,6 +1167,24 @@ function soloModule(){
 /** Henüz bitmemiş modüller — sırayla ya da rastgele seçmek için. */
 function openModules(){
   return SUBJ.map(s => moduleStat(s.c)).filter(m => m.total && m.left > 0);
+}
+/** Girişten sonra bulut ilerlemesi gelince kapsamı tazeler.
+ *
+ *  Kullanıcı giriş yaptığında başka cihazda çözdükleri iner; seçili modül o
+ *  anda bitmiş olabilir. Bitmişse en son çalışılan (turu olan) ve hâlâ soru
+ *  kalan modüle geçer, o da yoksa açık bir modül seçer. Elle kurulmuş çoklu
+ *  kapsama ve içinde iş kalan modüle dokunmaz — seçim kullanıcınındır. */
+function reselectAfterSync(){
+  const solo = soloModule();
+  if (!solo) return false;                       // çoklu/boş kapsam: karışma
+  if (moduleStat(solo).left > 0) return false;   // modülde iş var: karışma
+  const son = (S.runs || []).find(r => r.code && moduleStat(r.code).left > 0);
+  if (son){
+    F.pick = {}; F.pick[son.code] = [];
+    savePref();
+    return true;
+  }
+  return autoPickModule();
 }
 /** İlk ziyarette ya da modül bitince yeni bir modül seçer. */
 function autoPickModule(){
@@ -2051,9 +2085,23 @@ function bindCloud(){
 }
 function paintCloud(){
   const b = el('cloudBox');
-  if (!b) return;
-  b.innerHTML = cloudInner();
-  bindCloud();
+  if (b){ b.innerHTML = cloudInner(); bindCloud(); }
+  // Girişi aramak zorunda kalma: üst çubuktaki düğme yalnız girilmemişken durur
+  const g = el('bLogin');
+  if (g) g.classList.toggle('hidden', !Cloud.acik || !!Cloud.user);
+}
+
+/** Açık Durum panelini yeniden çizer — arka planda eşitleme bitince eski
+ *  sayılar ekranda kalmasın. Kaydırma konumu korunur, panel yerinden zıplamaz.
+ *  Yalnız Durum paneli tazelenir; Konu/rapor panelleri kendi içeriğini korur. */
+function refreshSheet(){
+  const sh = el('sheet');
+  if (!sh.classList.contains('on') || !el('pname')) return;
+  const kutu = sh.querySelector('.body');
+  const y = kutu ? kutu.scrollTop : 0;
+  openStats();
+  const yeni = sh.querySelector('.body');
+  if (yeni) yeni.scrollTop = y;
 }
 
 // ── Durum paneli ──
@@ -2427,6 +2475,7 @@ el('bTheme').onclick = () => {
 };
 el('bWho').onclick = openStats;
 el('bStats').onclick = openStats;
+el('bLogin').onclick = () => Cloud.girisYap();
 function paintWho(){
   el('bWho').innerHTML = avatar(ME) + '<span class="nm">' + esc(ME) + '</span>';
   el('bWho').title = ME + ' — profil ve durum';

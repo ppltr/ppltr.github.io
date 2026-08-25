@@ -274,6 +274,16 @@ soru, ayar, tur, geçilen sınav — bu profile, yani hesaba yazılır.
 - Girişteki yeniden adlandırma buluta **hemen yazmaz** (`renameProfile(…, true)`):
   hesabın belgesinde başka cihazın verisi olabilir, `setDoc` onu ezerdi. Ardından gelen
   `esitle()` önce çeker, kaynaştırır, sonra gönderir. Bu üçüncü parametreyi kaldırma.
+**Giriş üst çubukta durur** (`#bLogin`, Google logolu "Giriş"), Durum panelinde
+aranmaz; girince gizlenir. `paintCloud()` görünürlüğü yönetir.
+
+Girişten sonra gelen bulut ilerlemesi ekranı tazeler: `esitle()` değişiklik varsa
+`home()`'un yanında `refreshSheet()` de çağırır — açık Durum paneli eski sayılarla
+kalmasın (kaydırma konumu korunur). Ayrıca `girisSonrasi` bayrağı ile bir kez
+`reselectAfterSync()` çalışır: başka cihazda bitirilmiş bir modül seçiliyse en son
+çalışılan ve soru kalan modüle geçer. İçinde iş kalan modüle ve elle kurulmuş çoklu
+kapsama dokunmaz — seçim kullanıcınındır.
+
 - Bağ uid başına `atpl.acct:<uid>` içinde durur. Girişten sonra adı elle değiştirirsen
   bağ yeni ada taşınır ve sonraki giriş adı geri almaz; profil değiştirirsen hesap
   artık o profile yazar.
