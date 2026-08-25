@@ -94,8 +94,8 @@ button{cursor:pointer; background:none; border:none}
 .gsign svg{width:14px; height:14px; flex:none}
 @media (max-width:430px){ .gsign span{display:none} .gsign{padding:5px 8px} }
 
-.page{max-width:760px; margin:0 auto; padding:18px 14px 80px}
-@media (min-width:720px){ .page{padding:26px 20px 90px} }
+.page{max-width:760px; margin:0 auto; padding:14px 14px 24px}
+@media (min-width:720px){ .page{padding:22px 20px 32px} }
 h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text-wrap:balance}
 .sub{margin:0 0 18px; color:var(--ink-2); font-size:14px}
 
@@ -333,10 +333,10 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .note b{font-family:var(--f-num); color:var(--ink); font-weight:500}
 
 /* ── Soru ── */
-.prog{height:3px; background:var(--rule); border-radius:2px; overflow:hidden; margin-bottom:8px}
+.prog{height:3px; background:var(--rule); border-radius:2px; overflow:hidden; margin-bottom:6px}
 .prog i{display:block; height:100%; background:var(--accent); width:0; transition:width .25s ease}
 .prog i.retry{background:var(--bad)}
-.meta{display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:12px}
+.meta{display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:8px}
 .meta .lbl:first-of-type{margin-right:auto}
 /* Gezinme düğmesi ve paneli — kapalıyken hiç yer kaplamaz */
 .navb{display:inline-flex; align-items:center; gap:5px; padding:3px 8px; margin:-3px 0;
@@ -379,7 +379,7 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .backb:hover{background:var(--surface-2); color:var(--accent)}
 .card{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
   box-shadow:var(--shadow); overflow:hidden}
-.head{display:flex; align-items:center; gap:7px; flex-wrap:wrap; padding:9px 13px;
+.head{display:flex; align-items:center; gap:7px; flex-wrap:wrap; padding:7px 12px;
   background:var(--surface-2); border-bottom:1px solid var(--rule)}
 .head .who{font-size:11.5px; font-weight:500; color:var(--ink-2); min-width:0;
   overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
@@ -398,18 +398,18 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .askbtn.done{border-color:var(--ok); color:var(--ok)}
 .starbtn{font-size:15px; line-height:1; padding:2px 4px; color:var(--ink-3)}
 .starbtn.on{color:var(--accent)}
-.qt{font-family:var(--f-read); font-size:18px; line-height:1.5; padding:19px 15px 6px;
+.qt{font-family:var(--f-read); font-size:18px; line-height:1.45; padding:14px 14px 4px;
   white-space:pre-wrap; text-wrap:pretty}
 /* Çizimler bilerek beyaz zeminli: koyu temada da basılı bir şekil gibi durur */
 .figbox{margin:12px 15px 2px; padding:10px; background:#ffffff;
   border:1px solid var(--rule); border-radius:var(--r)}
 .figbox svg{display:block; width:100%; height:auto; max-height:min(46vh, 340px)}
 @media (min-width:720px){ .qt{font-size:19.5px} }
-.opts{display:flex; flex-direction:column; gap:7px; padding:11px}
-.opt{display:flex; gap:11px; align-items:flex-start; text-align:left; width:100%;
+.opts{display:flex; flex-direction:column; gap:6px; padding:9px}
+.opt{display:flex; gap:10px; align-items:flex-start; text-align:left; width:100%;
   background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
-  padding:12px; font-family:var(--f-read); font-size:16px; line-height:1.45;
-  min-height:50px; transition:border-color .1s, background .1s}
+  padding:10px 11px; font-family:var(--f-read); font-size:16px; line-height:1.4;
+  min-height:44px; transition:border-color .1s, background .1s}
 .opt:hover:not(:disabled){border-color:var(--rule-2); background:var(--surface-2)}
 .opt:disabled{cursor:default}
 .opt .k{flex:none; width:23px; height:23px; margin-top:1px; display:grid; place-items:center;
@@ -425,7 +425,7 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .opt.wrong .m{color:var(--bad)}
 .opt.sel{border-color:var(--accent)}
 .opt.sel .k{background:var(--accent); border-color:var(--accent); color:var(--on-accent)}
-.verdict{display:flex; gap:10px; align-items:flex-start; padding:12px 15px;
+.verdict{display:flex; gap:10px; align-items:flex-start; padding:10px 14px;
   border-top:1px solid var(--rule); background:var(--surface-2)}
 .verdict .p{font-family:var(--f-num); font-size:10px; letter-spacing:.1em;
   text-transform:uppercase; padding:3px 7px; border-radius:2px; flex:none}
@@ -435,12 +435,12 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .verdict .x b{font-family:var(--f-read); font-size:15px; font-weight:600; color:var(--ink)}
 .verdict .x s{display:block; margin-top:3px; font-family:var(--f-num); font-size:9.5px;
   letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); text-decoration:none}
-.acts{display:flex; gap:8px; margin-top:13px}
+.acts{display:flex; gap:8px; margin-top:10px}
 .acts .go{flex:1}
 @media (max-width:719px){
-  .acts{position:sticky; bottom:0; margin:13px -14px 0; padding:10px 14px;
+  .acts{position:sticky; bottom:0; margin:10px -14px 0; padding:8px 14px;
     background:var(--surface); border-top:1px solid var(--rule);
-    padding-bottom:calc(10px + env(safe-area-inset-bottom))}
+    padding-bottom:calc(8px + env(safe-area-inset-bottom))}
 }
 
 /* ── Özet ── */

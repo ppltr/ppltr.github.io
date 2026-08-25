@@ -133,6 +133,13 @@ eder. `nextQ` son soruda turu kazara bitirmez — ancak cevap verilmişse `next(
 **Klavye:** `A`–`E` ve `1`–`5` cevaplar, `←` `→` soru değiştirir, `Home`/`End` başa ve
 sona gider, `Enter` devam eder, `S` yıldızlar, `Esc` açık paneli kapatır.
 
+**Dikey yer ölçülüdür.** Soru ekranı uzun metinli sorularda ekrandan taşmasın diye
+sıkı tutuluyor: sayfa alt boşluğu 24px (eylem şeridi zaten `position:sticky`, altında
+80px ölü alana gerek yok), `.qt` 14px üst boşluk, `.opts` 9px/6px, `.opt` 10-11px iç
+boşluk. Yazı boyutları küçültülmedi — okunurluk sınavda önemli. Bu değerleri büyütmeden
+önce 375×812'de uzun bir soruyla (ör. 14634) ölç: aynı 30 soruda kaydırma gerektiren
+soru 13'ten 2'ye inmişti.
+
 **Gezinme paneli** soru sayacına (`#navBtn`) dokununca açılır (`navOpen`, çizimler arası
 korunur): ilk/önceki/sonraki/son düğmeleri, numara kutusu ve "Git". Kapalıyken hiç yer
 kaplamaz — kullanıcı kontrollerin arayüzü işgal etmesini istemedi, kalıcı bir gezinme
