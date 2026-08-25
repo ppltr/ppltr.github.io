@@ -82,7 +82,7 @@
    ]
   },
   "15582": {
-   "text": "Gökgürültülü fırtınada olası tehlikeler şunlardır:",
+   "text": "Gök gürültülü fırtınada olası tehlikeler şunlardır:",
    "options": [
     "Downburst, buzlanma, türbülans, dolu",
     "Buz taneleri, kararlılık, türbülans",
@@ -157,7 +157,7 @@
    "text": "Ozon tabakası ____ nedenidir.",
    "options": [
     "stratosferdeki enversiyonun.",
-    "gökgürültülü fırtınaların.",
+    "gök gürültülü fırtınaların.",
     "kutup cephelerinin",
     "jet akımlarının"
    ]
@@ -212,7 +212,7 @@
    "options": [
     "Kararlı bir hava tabakası",
     "Soğuk cephe",
-    "Hava kütlesi gökgürültülü fırtınaları",
+    "Hava kütlesi gök gürültülü fırtınaları",
     "Kararsız bir hava tabakası"
    ]
   },
