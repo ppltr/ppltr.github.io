@@ -1,0 +1,364 @@
+{
+ "questions": {
+  "90501": {
+   "text": "What are the three basic elements a balloon consists of?",
+   "options": [
+    "Envelope, basket and burner",
+    "Envelope, rotor and basket",
+    "Dome, propeller and burner",
+    "Basket, aileron and envelope",
+    "Envelope, frame and engine"
+   ]
+  },
+  "90502": {
+   "text": "What is the fundamental difference between a free balloon and a tethered balloon?",
+   "options": [
+    "A tethered balloon can only rise as high as the length of the rope securing it to the ground",
+    "A tethered balloon has no burner",
+    "A free balloon may only be flown at night",
+    "A tethered balloon is a heavier-than-air aircraft",
+    "A free balloon has no basket"
+   ]
+  },
+  "90503": {
+   "text": "Into how many types are airships classified, and what are they?",
+   "options": [
+    "Three: non-rigid, semi-rigid and rigid airships",
+    "Two: free and tethered airships",
+    "Two: powered and unpowered airships",
+    "Three: light, medium and heavy airships",
+    "Four: non-rigid, semi-rigid, rigid and amphibious"
+   ]
+  },
+  "90504": {
+   "text": "What distinguishes a rigid airship from the others?",
+   "options": [
+    "The entire envelope has a framework and the airship holds a fixed shape",
+    "The shape of the envelope changes according to the amount of gas inside it",
+    "The framework is present only in the lower part of the envelope",
+    "It has no engine and moves with the wind",
+    "An enclosed cabin is used instead of a basket"
+   ]
+  },
+  "90505": {
+   "text": "In a narrow-body (single-aisle) passenger aircraft, what is the maximum number of seats that can be on one side of the aisle?",
+   "options": [
+    "3",
+    "2",
+    "4",
+    "5",
+    "6"
+   ]
+  },
+  "90506": {
+   "text": "In a wide-body passenger aircraft, what is the maximum number of seats that can be in one seat row?",
+   "options": [
+    "10",
+    "6",
+    "8",
+    "12",
+    "14"
+   ]
+  },
+  "90507": {
+   "text": "When an aircraft with a capacity of 180 seats flies a distance of 2,000 kilometres, how many available seat-kilometres are offered?",
+   "options": [
+    "360,000",
+    "180,000",
+    "36,000",
+    "2,180",
+    "720,000"
+   ]
+  },
+  "90508": {
+   "text": "On a 2,000 km flight operated by a 180-seat aircraft, 150 fare-paying passengers were carried. What is the passenger load factor?",
+   "options": [
+    "83.3%",
+    "75.0%",
+    "90.0%",
+    "66.7%",
+    "120.0%"
+   ]
+  },
+  "90509": {
+   "text": "The seat pitch in an aircraft cabin varies within which range, depending on the class of service and the airline's business model?",
+   "options": [
+    "71 – 240 centimetres",
+    "50 – 120 centimetres",
+    "100 – 180 centimetres",
+    "40 – 90 centimetres",
+    "150 – 300 centimetres"
+   ]
+  },
+  "90510": {
+   "text": "What does the term \"aircraft utilisation\" refer to?",
+   "options": [
+    "The total block time an aircraft is placed into service on a given day",
+    "The total number of landings an aircraft performs over its lifetime",
+    "An aircraft's annual maintenance duration",
+    "The total number of passengers carried by an aircraft",
+    "The net time an aircraft spends airborne"
+   ]
+  },
+  "90511": {
+   "text": "What does a runway's designation number indicate?",
+   "options": [
+    "The runway's magnetic heading rounded to the nearest tenth",
+    "One percent of the runway's length in metres",
+    "The runway's heading relative to true north",
+    "The runway's sequence at the aerodrome",
+    "The runway's load-bearing capacity class"
+   ]
+  },
+  "90512": {
+   "text": "If an aerodrome has three parallel runways, how are they designated?",
+   "options": [
+    "36L, 36C and 36R",
+    "36A, 36B and 36C",
+    "36-1, 36-2 and 36-3",
+    "36L, 36M and 36R",
+    "36N, 36C and 36S"
+   ]
+  },
+  "90513": {
+   "text": "If the calculated runway heading results in a single-digit number, how is the designator written?",
+   "options": [
+    "A \"0\" is added in front",
+    "A \"0\" is added at the end",
+    "It is written as the single digit as is",
+    "It is rounded up to the next multiple of ten",
+    "It is expressed with a letter"
+   ]
+  },
+  "90514": {
+   "text": "In the CAT II precision approach category, within which limits do the decision height and runway visual range fall?",
+   "options": [
+    "Decision height 100–199 ft, RVR at least 300 m",
+    "Decision height 200 ft or more, RVR at least 550 m",
+    "Decision height below 50 ft, RVR at least 75 m",
+    "There is no decision height, there is no RVR limit",
+    "Decision height below 100 ft, RVR at least 175 m"
+   ]
+  },
+  "90515": {
+   "text": "According to SHT-OPS, a low visibility take-off (LVTO) refers to take-offs in which the runway visual range falls within which range?",
+   "options": [
+    "Less than 400 metres but not less than 75 metres",
+    "Less than 550 metres but not less than 300 metres",
+    "Less than 300 metres but not less than 50 metres",
+    "Less than 800 metres but not less than 400 metres",
+    "Less than 200 metres but not less than 100 metres"
+   ]
+  },
+  "90516": {
+   "text": "In the four-letter ICAO aerodrome code, what does the first letter represent?",
+   "options": [
+    "The communication region of the world",
+    "The city the aerodrome is affiliated with",
+    "The size classification of the aerodrome",
+    "The number of runways",
+    "The operating organisation"
+   ]
+  },
+  "90517": {
+   "text": "In which document are the rules and standards recommended for ground handling companies to apply defined?",
+   "options": [
+    "AHM – Airport Handling Manual",
+    "SGHA – Standard Ground Handling Agreement",
+    "AIP – Aeronautical Information Publication",
+    "MEL – Minimum Equipment List",
+    "AMM – Aircraft Maintenance Manual"
+   ]
+  },
+  "90518": {
+   "text": "Agreements between airlines and ground handling companies are made according to which standard?",
+   "options": [
+    "SGHA – Standard Ground Handling Agreement",
+    "AHM – Airport Handling Manual",
+    "IGOM – IATA Ground Operations Manual",
+    "ISAGO – IATA Safety Audit for Ground Operations",
+    "SARPs – Standards and Recommended Practices"
+   ]
+  },
+  "90519": {
+   "text": "In a blended-delivery digital course, how is a trainee's final score calculated?",
+   "options": [
+    "10% of the pre-test and 90% of the final exam",
+    "50% of the pre-test and 50% of the final exam",
+    "The final exam score only",
+    "90% of the pre-test and 10% of the final exam",
+    "The arithmetic mean of the pre-test and the final exam"
+   ]
+  },
+  "90520": {
+   "text": "Which years does the pilot phase of CORSIA cover?",
+   "options": [
+    "2021 – 2023",
+    "2024 – 2026",
+    "2027 – 2035",
+    "2016 – 2020",
+    "2019 – 2021"
+   ]
+  },
+  "90521": {
+   "text": "Which of the following is not one of the aircraft exempted from the scope of CORSIA?",
+   "options": [
+    "A scheduled passenger aircraft emitting 50,000 tonnes of carbon dioxide annually",
+    "Aircraft with a maximum take-off mass of less than 5,700 kilograms",
+    "Aircraft emitting less than 10,000 metric tonnes of carbon dioxide annually",
+    "Aircraft used for humanitarian aid purposes",
+    "Aircraft used for firefighting purposes"
+   ]
+  },
+  "90522": {
+   "text": "Which of the following is the international standard relating to the Environmental Management System?",
+   "options": [
+    "ISO 14001",
+    "ISO 9001",
+    "ISO 27001",
+    "ISO 45001",
+    "ISO 31000"
+   ]
+  },
+  "90523": {
+   "text": "In the calculation of the ecological footprint, what concept represents the \"supply\" side?",
+   "options": [
+    "Biocapacity",
+    "Carbon offsetting",
+    "Emissions trading",
+    "Sustainable development",
+    "Environmental impact assessment"
+   ]
+  },
+  "90524": {
+   "text": "How many goals does the United Nations 2030 Agenda for Sustainable Development consist of?",
+   "options": [
+    "17",
+    "10",
+    "12",
+    "20",
+    "25"
+   ]
+  },
+  "90525": {
+   "text": "What subject does Volume I of ICAO Annex 16 – Environmental Protection regulate?",
+   "options": [
+    "Aircraft noise",
+    "Aircraft CO2 emissions",
+    "CORSIA",
+    "Aircraft engine emissions",
+    "Aerodrome noise"
+   ]
+  },
+  "90526": {
+   "text": "Which convention did the Montreal Convention replace?",
+   "options": [
+    "The Warsaw Convention",
+    "The Chicago Convention",
+    "The Paris Convention",
+    "The Havana Convention",
+    "The Madrid Convention"
+   ]
+  },
+  "90527": {
+   "text": "Which organisation was established under the Paris Convention and tasked with preparing the convention's annexes?",
+   "options": [
+    "ICAN – International Commission for Air Navigation",
+    "ICAO – International Civil Aviation Organization",
+    "IATA – International Air Transport Association",
+    "ECAC – European Civil Aviation Conference",
+    "EASA – European Union Aviation Safety Agency"
+   ]
+  },
+  "90528": {
+   "text": "What does the term \"phraseology\" refer to in aviation?",
+   "options": [
+    "Standardised expressions that ensure communication is conducted accurately, concisely and unambiguously",
+    "Pre-flight meteorological briefing",
+    "The procedure for keeping aircraft maintenance records",
+    "The language proficiency test for pilot candidates",
+    "The alphabetic coding system used in the cockpit"
+   ]
+  },
+  "90529": {
+   "text": "What is the fundamental characteristic of a ramjet engine?",
+   "options": [
+    "It has no compressor or turbine; air is compressed by the forward motion of the vehicle",
+    "A turbine produces thrust by driving a propeller",
+    "It produces shaft power instead of exhaust gas",
+    "The fan and core turbine work together",
+    "It produces power using pistons inside cylinders"
+   ]
+  },
+  "90530": {
+   "text": "In piston aircraft engines, which type has its cylinders arranged horizontally and opposed, and is used in many light aircraft today?",
+   "options": [
+    "Boxer type",
+    "Star type",
+    "V type",
+    "In-line (row) type",
+    "Radial type"
+   ]
+  },
+  "90531": {
+   "text": "What is the function of the swash plate mechanism in helicopters?",
+   "options": [
+    "To continuously adjust the pitch angle of the rotor blades according to the pilot's control inputs",
+    "To keep the main rotor's rotational speed constant",
+    "To transmit power to the tail rotor",
+    "To regulate the engine's fuel mixture",
+    "To retract the landing gear"
+   ]
+  },
+  "90532": {
+   "text": "What allows a glider to continue climbing after it becomes airborne?",
+   "options": [
+    "An air current called a thermal",
+    "An auxiliary electric motor",
+    "The tail rotor",
+    "The thrust of the towing aircraft",
+    "Wingtip vortices"
+   ]
+  },
+  "90533": {
+   "text": "What must a candidate's age be to sit the air traffic controller licence examination?",
+   "options": [
+    "Must have reached 21 and not have reached 30",
+    "Must have reached 18",
+    "Must have reached 25 and not have reached 35",
+    "Must have reached 20 and not have reached 40",
+    "There is no age restriction"
+   ]
+  },
+  "90534": {
+   "text": "What is the minimum English language proficiency required for an air traffic controller licence?",
+   "options": [
+    "ICAO Level 4",
+    "ICAO Level 2",
+    "ICAO Level 3",
+    "ICAO Level 5",
+    "ICAO Level 6"
+   ]
+  },
+  "90535": {
+   "text": "By when must flight plans be submitted to the central flow management unit at the latest?",
+   "options": [
+    "No later than 3 hours before engine start time",
+    "No later than 30 minutes before engine start time",
+    "No later than 1 hour before take-off",
+    "1 day before the day of flight",
+    "At the moment of engine start"
+   ]
+  },
+  "90536": {
+   "text": "Which of the following correctly gives the three publication types of NOTAM?",
+   "options": [
+    "NOTAMN (new), NOTAMR (replacing), NOTAMC (cancelling)",
+    "NOTAMA (urgent), NOTAMB (information), NOTAMC (cancel)",
+    "NOTAMN (new), NOTAMS (special), NOTAMX (closed)",
+    "NOTAMR (routine), NOTAMU (urgent), NOTAMC (cancel)",
+    "NOTAMI (information), NOTAMD (change), NOTAMK (closure)"
+   ]
+  }
+ }
+}

@@ -1,0 +1,513 @@
+{
+ "questions": {
+  "27096": {
+   "text": "Which of the following is NOT one of the working positions of air traffic control?",
+   "options": [
+    "Pilot working position",
+    "Clearance delivery position",
+    "Ground working position",
+    "Tower working position"
+   ]
+  },
+  "27097": {
+   "text": "Which of the following is NOT an international civil aviation organization?",
+   "options": [
+    "ENAC",
+    "FAA",
+    "EASA",
+    "IATA",
+    "EUROCONTROL"
+   ]
+  },
+  "27098": {
+   "text": "Which ICAO Annex contains the standards for Personnel Licensing?",
+   "options": [
+    "Annex 1",
+    "Annex 3",
+    "Annex 7",
+    "Annex 11",
+    "Annex 19"
+   ]
+  },
+  "27099": {
+   "text": "Which ICAO Annex contains the regulations on Rules of the Air?",
+   "options": [
+    "Annex 2",
+    "Annex 18",
+    "Annex 5",
+    "Annex 14",
+    "Annex 10"
+   ]
+  },
+  "27100": {
+   "text": "Meteorological Service for International Air Navigation is covered in which ICAO Annex?",
+   "options": [
+    "Annex 3",
+    "Annex 9",
+    "Annex 16",
+    "Annex 12",
+    "Annex 1"
+   ]
+  },
+  "27101": {
+   "text": "Which ICAO Annex contains the standards for Aeronautical Charts?",
+   "options": [
+    "Annex 4",
+    "Annex 8",
+    "Annex 6",
+    "Annex 11",
+    "Annex 15"
+   ]
+  },
+  "27102": {
+   "text": "Units of Measurement to be Used in Air and Ground Operations are defined in which ICAO Annex?",
+   "options": [
+    "Annex 5",
+    "Annex 19",
+    "Annex 10",
+    "Annex 7",
+    "Annex 2"
+   ]
+  },
+  "27103": {
+   "text": "Provisions on Operation of Aircraft are covered in which ICAO Annex?",
+   "options": [
+    "Annex 6",
+    "Annex 18",
+    "Annex 11",
+    "Annex 14",
+    "Annex 8"
+   ]
+  },
+  "27104": {
+   "text": "Aircraft Nationality and Registration Marks are regulated under which ICAO Annex?",
+   "options": [
+    "Annex 7",
+    "Annex 16",
+    "Annex 12",
+    "Annex 5",
+    "Annex 3"
+   ]
+  },
+  "27105": {
+   "text": "Which ICAO Annex contains the standards for Airworthiness of Aircraft?",
+   "options": [
+    "Annex 8",
+    "Annex 18",
+    "Annex 14",
+    "Annex 10",
+    "Annex 6"
+   ]
+  },
+  "27106": {
+   "text": "Regulations on Facilitation are covered in which ICAO Annex?",
+   "options": [
+    "Annex 9",
+    "Annex 19",
+    "Annex 15",
+    "Annex 13",
+    "Annex 11"
+   ]
+  },
+  "27107": {
+   "text": "Which ICAO Annex covers the instruments, equipment, and procedures related to Aeronautical Telecommunications?",
+   "options": [
+    "Annex 10",
+    "Annex 16",
+    "Annex 12",
+    "Annex 7",
+    "Annex 4"
+   ]
+  },
+  "27108": {
+   "text": "Which ICAO Annex contains the standards for Air Traffic Services?",
+   "options": [
+    "Annex 11",
+    "Annex 18",
+    "Annex 14",
+    "Annex 6",
+    "Annex 2"
+   ]
+  },
+  "27109": {
+   "text": "Search and Rescue activities are regulated under which ICAO Annex?",
+   "options": [
+    "Annex 12",
+    "Annex 19",
+    "Annex 15",
+    "Annex 9",
+    "Annex 1"
+   ]
+  },
+  "27110": {
+   "text": "Aircraft Accident and Incident Investigation is addressed in which ICAO Annex?",
+   "options": [
+    "Annex 13",
+    "Annex 18",
+    "Annex 16",
+    "Annex 12",
+    "Annex 11"
+   ]
+  },
+  "27111": {
+   "text": "Which ICAO Annex contains the design and operating standards for Aerodromes?",
+   "options": [
+    "Annex 14",
+    "Annex 17",
+    "Annex 10",
+    "Annex 8",
+    "Annex 6"
+   ]
+  },
+  "27112": {
+   "text": "Aeronautical Information Services are regulated under which ICAO Annex?",
+   "options": [
+    "Annex 15",
+    "Annex 19",
+    "Annex 18",
+    "Annex 9",
+    "Annex 4"
+   ]
+  },
+  "27113": {
+   "text": "Provisions on Environmental Protection are covered in which ICAO Annex?",
+   "options": [
+    "Annex 16",
+    "Annex 18",
+    "Annex 17",
+    "Annex 14",
+    "Annex 13"
+   ]
+  },
+  "27114": {
+   "text": "Which ICAO Annex contains the standards for Aviation Security?",
+   "options": [
+    "Annex 17",
+    "Annex 19",
+    "Annex 16",
+    "Annex 14",
+    "Annex 10"
+   ]
+  },
+  "27115": {
+   "text": "The Safe Transport of Dangerous Goods by Air is regulated in which ICAO Annex?",
+   "options": [
+    "Annex 18",
+    "Annex 19",
+    "Annex 15",
+    "Annex 11",
+    "Annex 8"
+   ]
+  },
+  "27116": {
+   "text": "Safety Management is addressed under which ICAO Annex?",
+   "options": [
+    "Annex 19",
+    "Annex 17",
+    "Annex 13",
+    "Annex 6",
+    "Annex 1"
+   ]
+  },
+  "27117": {
+   "text": "What is the group of elements that enables control of the aircraft called?",
+   "options": [
+    "Control surfaces",
+    "Vertical stabilizer",
+    "Horizontal stabilizer",
+    "Spoiler",
+    "Flap"
+   ]
+  },
+  "27118": {
+   "text": "What are the surfaces on the wings that enable the aircraft to roll left and right called?",
+   "options": [
+    "Aileron",
+    "Flap",
+    "Spoiler",
+    "Rudder",
+    "Elevator"
+   ]
+  },
+  "27119": {
+   "text": "What is the surface on the vertical stabilizer that enables the aircraft's nose to turn left and right called?",
+   "options": [
+    "Rudder",
+    "Flap",
+    "Spoiler",
+    "Elevator",
+    "Aileron"
+   ]
+  },
+  "27120": {
+   "text": "What is the surface on the horizontal stabilizer that raises or lowers the aircraft's nose called?",
+   "options": [
+    "Elevator",
+    "Flap",
+    "Spoiler",
+    "Rudder",
+    "Aileron"
+   ]
+  },
+  "27121": {
+   "text": "What is the group of elements at the rear of the aircraft that provides its stability called?",
+   "options": [
+    "Tail",
+    "Flap",
+    "Spoiler",
+    "Aileron",
+    "Control surfaces"
+   ]
+  },
+  "27122": {
+   "text": "What are aircraft that can both take off from and land on ground, and also operate on water, called?",
+   "options": [
+    "Amphibious aircraft",
+    "Training aircraft",
+    "Civil aircraft",
+    "Commercial transport aircraft",
+    "General aviation aircraft"
+   ]
+  },
+  "27123": {
+   "text": "Into how many categories are aircraft divided according to their purpose of use?",
+   "options": [
+    "Two",
+    "Six",
+    "Five",
+    "Four",
+    "Three"
+   ]
+  },
+  "27124": {
+   "text": "Which of the following options correctly divides aircraft according to their purpose of use?",
+   "options": [
+    "General aviation aircraft and commercial transport aircraft",
+    "General aviation aircraft and business aircraft",
+    "Airline aircraft and amphibious aircraft",
+    "Commercial transport aircraft and amphibious aircraft",
+    "General aviation aircraft and amphibious aircraft"
+   ]
+  },
+  "27125": {
+   "text": "What are heavier-than-air aircraft that derive the lift required to stay airborne from one or more rotors called?",
+   "options": [
+    "Rotorcraft",
+    "Turbine-powered aeroplane",
+    "Piston-powered aeroplane",
+    "Unmanned aerial vehicle",
+    "Glider"
+   ]
+  },
+  "27126": {
+   "text": "Heavier-than-air, unpowered aircraft capable of free flight are called ____.",
+   "options": [
+    "Glider",
+    "Turbine-powered aeroplane",
+    "Amphibious aircraft",
+    "Unmanned aerial vehicle",
+    "Rotorcraft"
+   ]
+  },
+  "27127": {
+   "text": "The type of engine used in cases where exhaust thrust is not required, particularly in rotorcraft, is called _____.",
+   "options": [
+    "Turboshaft",
+    "Piston",
+    "Turbojet",
+    "Turboprop",
+    "Turbofan"
+   ]
+  },
+  "27128": {
+   "text": "The main stabilizing element of an aircraft is called ______.",
+   "options": [
+    "Tail",
+    "Engine",
+    "Spoiler",
+    "Flap",
+    "Wing"
+   ]
+  },
+  "27129": {
+   "text": "A ______ is a lighter-than-air aircraft.",
+   "options": [
+    "Airship",
+    "Rotorcraft",
+    "Unmanned aerial vehicle",
+    "Amphibious aircraft",
+    "Glider"
+   ]
+  },
+  "27130": {
+   "text": "Which of the following correctly describes an airship?",
+   "options": [
+    "Aircraft",
+    "Rotorcraft",
+    "Unmanned aerial vehicle",
+    "Glider",
+    "Amphibious aircraft"
+   ]
+  },
+  "27131": {
+   "text": "What is the element that provides the lift force in rotorcraft called?",
+   "options": [
+    "Rotor",
+    "Spoiler",
+    "Wing",
+    "Piston",
+    "Turbojet"
+   ]
+  },
+  "27132": {
+   "text": "Which of the following is the element that generates thrust in piston-powered aeroplanes?",
+   "options": [
+    "Propeller",
+    "Tail",
+    "Flap",
+    "Wing",
+    "Rotor"
+   ]
+  },
+  "27133": {
+   "text": "What are aircraft used in military, customs, and police services called?",
+   "options": [
+    "State aircraft",
+    "Amphibious aircraft",
+    "Heavier-than-air aircraft",
+    "Lighter-than-air aircraft",
+    "Civil aircraft"
+   ]
+  },
+  "27134": {
+   "text": "Which of the following are air navigation services?",
+   "options": [
+    "communication, navigation and surveillance, meteorological services, air traffic management, and other supporting aeronautical services",
+    "communication, navigation and surveillance, meteorological services, fuelling, and other supporting aeronautical services",
+    "communication, navigation and surveillance, check-in services, air traffic management, and other supporting aeronautical services",
+    "meteorological services, navigation and surveillance, ramp services, air traffic management, and other supporting aeronautical services",
+    "communication, navigation and surveillance, ramp services, air traffic management, and other supporting aeronautical services"
+   ]
+  },
+  "27135": {
+   "text": "Which of the following is NOT one of the main benefits aviation provides to the economy?",
+   "options": [
+    "Rising ticket prices",
+    "Boosting tourism",
+    "Development of logistics and trade",
+    "Direct economic contributions",
+    "Employment opportunities"
+   ]
+  },
+  "27136": {
+   "text": "Which of the following is true for an aircraft maintenance personnel in category B3?",
+   "options": [
+    "May only work on non-pressurised, piston-engined aeroplanes with a maximum take-off mass not exceeding 2000 kg.",
+    "May only work on non-pressurised, turbine-engined aeroplanes with a maximum take-off mass not exceeding 2000 kg.",
+    "May only work on pressurised, piston-engined aeroplanes with a maximum take-off mass not exceeding 7000 kg.",
+    "May only work on non-pressurised, piston-engined aeroplanes with a maximum take-off mass not exceeding 7000 kg.",
+    "May only work on pressurised, turbine-engined aeroplanes with a maximum take-off mass not exceeding 136000 kg."
+   ]
+  },
+  "27137": {
+   "text": "Which of the following is the common language of aviation?",
+   "options": [
+    "English",
+    "Chinese",
+    "Russian",
+    "French",
+    "Turkish"
+   ]
+  },
+  "27138": {
+   "text": "Why is English the common language of aviation?",
+   "options": [
+    "Because of the major influence of the United States and Anglo-Saxon countries on the development of aviation",
+    "Because it was inherited from the maritime industry",
+    "Because it is a language preferred only by pilots",
+    "Because it is mandated by international law",
+    "Because it is the official language in all countries"
+   ]
+  },
+  "27139": {
+   "text": "What is the time from when an aircraft first moves at the departure gate until it arrives at the destination gate called?",
+   "options": [
+    "Block time",
+    "Harvest time",
+    "Flight time",
+    "Duty time",
+    "Taxi time"
+   ]
+  },
+  "27140": {
+   "text": "What is the main reason for the rapid increase in the market share of low-cost carriers in the European market in the mid-1990s?",
+   "options": [
+    "Their success in attracting passengers and their ability to generate additional traffic",
+    "A decrease in the number of airports",
+    "Only short-haul flights being permitted",
+    "The lifting of international flight bans",
+    "An increase in state-supported subsidies"
+   ]
+  },
+  "27141": {
+   "text": "Which of the following is responsible for the operation and maintenance of communication, navigation, and surveillance systems?",
+   "options": [
+    "Air traffic safety electronics personnel",
+    "Cabin crew member",
+    "Pilot",
+    "Category B1 maintenance personnel",
+    "Dispatcher"
+   ]
+  },
+  "27142": {
+   "text": "500 km = ____ NM",
+   "options": [
+    "270",
+    "1000",
+    "250",
+    "370",
+    "170"
+   ]
+  },
+  "27143": {
+   "text": "Which of the following is the correct encoding of the word RİZE using the aviation alphabet?",
+   "options": [
+    "Romeo, India, Zulu, Echo",
+    "Romeo, India, Zulu, Elephant",
+    "Romeo, India, Zeplin, Echo",
+    "Romeo, Ireland, Zulu, Echo",
+    "Roger, India, Zulu, Echo"
+   ]
+  },
+  "27144": {
+   "text": "Which of the following is the correct encoding of the word VİZE using the aviation alphabet?",
+   "options": [
+    "Victor, India, Zulu, Echo",
+    "Victor, India, Zulu, Elephant",
+    "Victor, India, Zeplin, Echo",
+    "Victor, Ireland, Zulu, Echo",
+    "Viskey, India, Zulu, Echo"
+   ]
+  },
+  "27145": {
+   "text": "Whose responsibility is airworthiness?",
+   "options": [
+    "The state that issued the type certificate",
+    "The airline",
+    "The pilot",
+    "The operator",
+    "The state of registry of the aircraft"
+   ]
+  },
+  "27146": {
+   "text": "Whose responsibility is continuing airworthiness?",
+   "options": [
+    "The state of registry of the aircraft",
+    "The airline",
+    "The pilot",
+    "The operator",
+    "The state that issued the type certificate"
+   ]
+  }
+ }
+}

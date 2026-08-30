@@ -1,0 +1,354 @@
+{
+ "questions": {
+  "90701": {
+   "text": "How many parts does the Operations Manual consist of, and what are they?",
+   "options": [
+    "Four: General/Basic, Aircraft Operating, Route and Aerodrome, Training",
+    "Three: General, Aircraft Operating, Training",
+    "Five: General, Aircraft, Route, Training, Safety",
+    "Two: General and Aircraft Operating",
+    "Four: General, Maintenance, Cabin, Training"
+   ]
+  },
+  "90702": {
+   "text": "In which part of the Operations Manual are the Minimum Equipment List (MEL) and the Configuration Deviation List (CDL) found?",
+   "options": [
+    "Part B – Aircraft Operating Matters",
+    "Part A – General and Basic Information",
+    "Part C – Route and Aerodrome Instructions",
+    "Part D – Training",
+    "In a separate appendix, not in any part"
+   ]
+  },
+  "90703": {
+   "text": "Aerodrome operating minima and the instructions for their calculation are found in which part of the Operations Manual?",
+   "options": [
+    "Part C – Route and Aerodrome Instructions and Information",
+    "Part A – General and Basic Information",
+    "Part B – Aircraft Operating Matters",
+    "Part D – Training",
+    "In the Aircraft Flight Manual"
+   ]
+  },
+  "90704": {
+   "text": "Following a medical procedure requiring local anaesthesia, how much time must elapse at minimum before a flight crew member may report for duty?",
+   "options": [
+    "12 hours",
+    "24 hours",
+    "8 hours",
+    "48 hours",
+    "6 hours"
+   ]
+  },
+  "90705": {
+   "text": "What is the prescribed period for a flight crew member following a medical procedure requiring general anaesthesia?",
+   "options": [
+    "24 hours",
+    "12 hours",
+    "8 hours",
+    "72 hours",
+    "48 hours"
+   ]
+  },
+  "90706": {
+   "text": "After donating blood, how much time must elapse at minimum before a flight crew member may commence duty?",
+   "options": [
+    "24 hours",
+    "12 hours",
+    "8 hours",
+    "6 hours",
+    "48 hours"
+   ]
+  },
+  "90707": {
+   "text": "A flight crew member must not consume alcohol starting how many hours before commencing duty or standby?",
+   "options": [
+    "8 hours",
+    "12 hours",
+    "24 hours",
+    "4 hours",
+    "6 hours"
+   ]
+  },
+  "90708": {
+   "text": "What is the blood alcohol level limit above which a flight crew member may not commence duty?",
+   "options": [
+    "0.2 per mille",
+    "0.5 per mille",
+    "0.8 per mille",
+    "0.1 per mille",
+    "1.0 per mille"
+   ]
+  },
+  "90709": {
+   "text": "Integrating a flight data analysis programme into the safety management system is mandatory for organisations operating which aircraft?",
+   "options": [
+    "Aircraft with a maximum take-off mass exceeding 27,000 kilograms",
+    "Aircraft with a maximum take-off mass exceeding 5,700 kilograms",
+    "Aircraft with a maximum take-off mass exceeding 136,000 kilograms",
+    "All commercial air transport aircraft",
+    "Only multi-engine turbine aircraft"
+   ]
+  },
+  "90710": {
+   "text": "At the authority's request, within what maximum period must the operator provide all documents and records?",
+   "options": [
+    "Within 10 days",
+    "Within 24 hours",
+    "Within 30 days",
+    "Within 3 working days",
+    "Within 60 days"
+   ]
+  },
+  "90711": {
+   "text": "Under certification requirements, within what maximum time must an aircraft be capable of being evacuated with a full passenger load?",
+   "options": [
+    "90 seconds",
+    "60 seconds",
+    "120 seconds",
+    "45 seconds",
+    "180 seconds"
+   ]
+  },
+  "90712": {
+   "text": "Which of the following is correct regarding the flight recorder?",
+   "options": [
+    "It records the last 25 hours and recordings are retained for at least 60 days",
+    "It records the last 2 hours and recordings are retained for at least 30 days",
+    "It records the last 25 hours and recordings are retained for at least 6 months",
+    "It records the last 10 hours and recordings are retained for at least 60 days",
+    "There is no recording time limit; recordings are retained indefinitely"
+   ]
+  },
+  "90713": {
+   "text": "On which frequency does an Emergency Locator Transmitter (ELT) transmit its signal?",
+   "options": [
+    "406 MHz",
+    "121.5 kHz",
+    "243 MHz",
+    "500 kHz",
+    "118 MHz"
+   ]
+  },
+  "90714": {
+   "text": "What does a \"MINIMUM FUEL\" declaration mean?",
+   "options": [
+    "The usable fuel remaining has reached a level that leaves no allowance for unexpected delays; it is not an emergency",
+    "The aircraft has descended below final reserve fuel and an emergency landing is required",
+    "The fuel system is malfunctioning",
+    "Absolute landing priority is being requested from ATC",
+    "The destination cannot be reached without refuelling"
+   ]
+  },
+  "90715": {
+   "text": "What does a \"MAYDAY FUEL\" call indicate?",
+   "options": [
+    "It is certain that landing will occur with less than final reserve fuel remaining; it is an emergency",
+    "Fuel leaves no allowance for unexpected delays",
+    "A decision has been made to divert to an alternate aerodrome",
+    "The fuel gauge has malfunctioned",
+    "Refuelling has been delayed"
+   ]
+  },
+  "90716": {
+   "text": "How many sensitive pressure altimeters are required under the minimum equipment requirements for IFR flight?",
+   "options": [
+    "Two",
+    "One",
+    "Three",
+    "Four",
+    "An altimeter is not mandatory"
+   ]
+  },
+  "90717": {
+   "text": "In addition to IFR equipment, how many landing lights are mandatory for night flight?",
+   "options": [
+    "Two",
+    "One",
+    "Three",
+    "Four",
+    "A landing light is not mandatory"
+   ]
+  },
+  "90718": {
+   "text": "How is alternate aerodrome fuel calculated for propeller-driven aircraft?",
+   "options": [
+    "Fuel to fly to the most critical alternate plus 45 minutes; or 15% of the planned flight time at cruising levels plus an additional 45 minutes",
+    "Fuel to fly to the most critical alternate plus 30 minutes",
+    "10% of cruise time plus an additional 30 minutes",
+    "Fuel to fly to the alternate plus a 30-minute hold at 1,500 ft",
+    "Half the flight time to the destination aerodrome"
+   ]
+  },
+  "90719": {
+   "text": "For turbo-jet powered aircraft, under what conditions is holding over the alternate aerodrome assumed when calculating alternate fuel?",
+   "options": [
+    "At standard temperature, 30 minutes at 1,500 ft AGL above the alternate",
+    "At standard temperature, 45 minutes at 1,000 ft AGL above the alternate",
+    "30 minutes at sea level",
+    "30 minutes at 3,000 ft AGL above the alternate",
+    "45 minutes at 1,500 ft AGL above the alternate"
+   ]
+  },
+  "90720": {
+   "text": "Which of the following is not required for refuelling to be carried out while passengers are on board?",
+   "options": [
+    "All aircraft doors being open and the stairs connected",
+    "Qualified personnel being available to initiate and direct an evacuation",
+    "Two-way communication being established between the refuelling supervisor and the ground crew",
+    "Suitable fire-extinguishing equipment being available",
+    "At least one suitable door being ready for evacuation with its paths unobstructed"
+   ]
+  },
+  "90721": {
+   "text": "During ditching, when wave height is significant, how should the landing be made?",
+   "options": [
+    "Parallel to the swell direction and onto the back of the wave",
+    "Perpendicular to the wave and onto the crest of the wave",
+    "Always into wind regardless of conditions",
+    "Parallel to the swell direction and onto the front of the wave",
+    "At the highest possible speed, perpendicular to the wave"
+   ]
+  },
+  "90722": {
+   "text": "In which configuration should the aircraft be put down on the water during ditching?",
+   "options": [
+    "Landing gear up, wings level, nose slightly up, and at minimum safe speed",
+    "Landing gear down, wings level, nose down",
+    "Landing gear up, the aircraft stalled onto the water",
+    "Landing gear down, at maximum speed",
+    "Wings banked, nose down, landing gear up"
+   ]
+  },
+  "90723": {
+   "text": "Which of the following is correct regarding Runway Status Lights (RWSL)?",
+   "options": [
+    "They only indicate the status of the runway; they do not constitute clearance for take-off or runway entry",
+    "When illuminated green, they indicate that the runway may be entered",
+    "They are the visual equivalent of a take-off clearance issued by the tower",
+    "They operate only in low-visibility conditions",
+    "They are used to provide taxi guidance"
+   ]
+  },
+  "90724": {
+   "text": "The enhanced taxiway centreline marking extends back approximately how many metres from the runway-holding position?",
+   "options": [
+    "45 metres",
+    "15 metres",
+    "60 metres",
+    "90 metres",
+    "30 metres"
+   ]
+  },
+  "90725": {
+   "text": "If a carburettor fire occurs during engine start and the engine has not started, what should be done?",
+   "options": [
+    "Select mixture to Idle Cut-Off, open the throttle fully, and continue cranking to draw the flame into the engine",
+    "Enrich the mixture and stop cranking immediately",
+    "Run the engine at high power for a while",
+    "Leave the fuel on and fight the fire with an extinguisher",
+    "Leave the master switch on and inform the tower"
+   ]
+  },
+  "90726": {
+   "text": "Which of the following is the type of fire extinguisher required to be carried in the cockpit?",
+   "options": [
+    "At least one Halon 1211",
+    "At least one water-type extinguisher",
+    "At least two foam-type extinguishers",
+    "Dry powder for metal fires only",
+    "There is no requirement to carry an extinguisher"
+   ]
+  },
+  "90727": {
+   "text": "What is the typical diameter of a microburst?",
+   "options": [
+    "Less than 2.5 NM",
+    "Around 5 NM",
+    "Greater than 10 NM",
+    "Less than 1 NM",
+    "Around 20 NM"
+   ]
+  },
+  "90728": {
+   "text": "Approximately how long does a microburst last?",
+   "options": [
+    "10 – 15 minutes",
+    "1 – 2 minutes",
+    "30 – 45 minutes",
+    "2 – 3 hours",
+    "5 seconds – 1 minute"
+   ]
+  },
+  "90729": {
+   "text": "In large aircraft, what is the maximum airspeed that can occur within the core of a wake vortex?",
+   "options": [
+    "100 metres per second",
+    "10 metres per second",
+    "300 metres per second",
+    "100 kilometres per hour",
+    "30 metres per second"
+   ]
+  },
+  "90730": {
+   "text": "For noise abatement purposes, pilots should not turn during take-off and climb until reaching which altitude?",
+   "options": [
+    "500 feet",
+    "1,000 feet",
+    "300 feet",
+    "1,500 feet",
+    "700 feet"
+   ]
+  },
+  "90731": {
+   "text": "What is the maximum bank angle permitted for turns made on noise-preferential routes?",
+   "options": [
+    "15 degrees",
+    "25 degrees",
+    "30 degrees",
+    "10 degrees",
+    "20 degrees"
+   ]
+  },
+  "90732": {
+   "text": "Which of the following is correct regarding the selection of a take-off alternate?",
+   "options": [
+    "There is no distance or time requirement, such as 1 hour or 2 hours, depending on the number of engines",
+    "For single-engine aircraft, it must be within 1 hour at most",
+    "For multi-engine aircraft, it must be within 2 hours at most",
+    "It must be within 100 NM of the departure aerodrome at most",
+    "It must always be the same as the destination alternate"
+   ]
+  },
+  "90733": {
+   "text": "What is the maximum take-off mass threshold for the definition of a \"large aircraft\"?",
+   "options": [
+    "More than 5,700 kilograms",
+    "More than 2,000 kilograms",
+    "More than 7,000 kilograms",
+    "More than 27,000 kilograms",
+    "More than 136,000 kilograms"
+   ]
+  },
+  "90734": {
+   "text": "Which are the critical phases of flight during which portable electronic devices (PEDs) must be secured?",
+   "options": [
+    "Taxi, take-off, landing, and turbulence",
+    "Take-off and landing only",
+    "Turbulence only",
+    "The entire cruise phase",
+    "Night flights only"
+   ]
+  },
+  "90735": {
+   "text": "How many parts does ICAO Annex 6 (Operation of Aircraft) consist of?",
+   "options": [
+    "Three: International Commercial Air Transport – Aeroplanes, International General Aviation – Aeroplanes, International Operations – Helicopters",
+    "Two: Aeroplanes and Helicopters",
+    "Four: Commercial, General, Helicopter and UAV",
+    "It consists of one part",
+    "Five: Commercial, General, Helicopter, Balloon and Glider"
+   ]
+  }
+ }
+}

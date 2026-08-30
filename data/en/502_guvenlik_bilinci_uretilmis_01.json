@@ -1,0 +1,654 @@
+{
+ "questions": {
+  "95201": {
+   "text": "What is the name given to the measures taken to protect the public, passengers, crew, ground personnel, airport buildings and facilities, and air navigation and aviation communication infrastructures against unlawful acts?",
+   "options": [
+    "Aviation security",
+    "Aviation safety",
+    "Aviation quality control",
+    "Aviation surveillance",
+    "Aviation audit"
+   ]
+  },
+  "95202": {
+   "text": "Which of the following refers to the reduction of risks that directly affect aviation activities or flight operations and keeping them at an acceptable level?",
+   "options": [
+    "Aviation safety",
+    "Aviation security",
+    "Security culture",
+    "Security threat",
+    "Act of unlawful interference"
+   ]
+  },
+  "95203": {
+   "text": "Which of the following is the fundamental difference between aviation security and aviation safety?",
+   "options": [
+    "In security occurrences a rule is deliberately violated, whereas in safety occurrences it is a matter of negligence or error rather than intent",
+    "Security applies only on the ground, safety applies only in the air",
+    "Security protects passengers, while safety protects only the crew",
+    "Security is a national concept, while safety is only an international one",
+    "Security applies to commercial flights, safety applies to private flights"
+   ]
+  },
+  "95204": {
+   "text": "Aviation safety matters are related to the consequences of which of the following situations?",
+   "options": [
+    "Malfunction, manufacturing defect, negligence and forgetfulness",
+    "Sabotage, hijacking and hostage-taking",
+    "Cyberattack and armed attack",
+    "Smuggling and forgery",
+    "Strike and work slowdown"
+   ]
+  },
+  "95205": {
+   "text": "Which of the following is NOT among the attack methods used in threats against civil aviation?",
+   "options": [
+    "Aircraft maintenance records being kept incorrectly due to carelessness",
+    "Improvised explosive devices",
+    "Aircraft hijacking",
+    "Man-portable air defence system (MANPADS) attacks",
+    "Use of the aircraft as a weapon"
+   ]
+  },
+  "95206": {
+   "text": "Who are the persons who typically commit individual acts against aviation security?",
+   "options": [
+    "Persons seeking asylum, disgruntled employees or criminals",
+    "Only foreign national passengers",
+    "Only trained members of terrorist organizations",
+    "Only airport managers",
+    "Only transit passengers"
+   ]
+  },
+  "95207": {
+   "text": "Which of the following is the fundamental feature distinguishing organized threats from individual threats?",
+   "options": [
+    "Organizations having extensive resources and conducting systematic work on their actions",
+    "Organizations having more limited resources than individuals",
+    "Organization members receiving no training whatsoever",
+    "Organizations' actions always being predictable in advance",
+    "Organizations being able to act only on the ground"
+   ]
+  },
+  "95208": {
+   "text": "Although terrorist organizations are formed for various reasons such as political, ideological or religious ones, what is the common goal of all of them?",
+   "options": [
+    "To create fear in society, propagate their own philosophy and gain benefit",
+    "To increase the ticket revenues of airline companies",
+    "To raise international aviation standards",
+    "To train airport personnel",
+    "To regulate civil aviation traffic through legal means"
+   ]
+  },
+  "95209": {
+   "text": "Which of the following is NOT one of the reasons why civil aviation is an attractive target for terrorists?",
+   "options": [
+    "The possibility of intervention being very wide during attacks in flight",
+    "Attracting the attention of world public opinion",
+    "Providing an effective means of propaganda",
+    "Its international nature",
+    "High loss of life and property in attacks during flight"
+   ]
+  },
+  "95210": {
+   "text": "What is the name given to persons who are not citizens of the country they are in and who, for any reason, are sent by air to their own country or to another country?",
+   "options": [
+    "Deportees",
+    "Inadmissible passengers",
+    "Persons in transit for judicial reasons",
+    "Unruly passengers",
+    "Transit passengers"
+   ]
+  },
+  "95211": {
+   "text": "What is the name given to passengers whose entry into a country is refused by the competent authorities due to incomplete documents or an invalid visa?",
+   "options": [
+    "Inadmissible passengers",
+    "Deportees",
+    "Persons in transit for judicial reasons",
+    "Unruly passengers",
+    "Escorted passengers"
+   ]
+  },
+  "95212": {
+   "text": "Under which heading are persons such as suspects, defendants and detainees, who are subject to judicial proceedings and are transferred by air from one place to another, classified?",
+   "options": [
+    "Persons in transit for judicial reasons",
+    "Deportees",
+    "Inadmissible passengers",
+    "Unruly passengers",
+    "Insider threat"
+   ]
+  },
+  "95213": {
+   "text": "A passenger who unfastens the seatbelt and stands up before the seatbelt sign is switched off is classified in which group in terms of aviation security?",
+   "options": [
+    "Unruly passenger",
+    "Inadmissible passenger",
+    "Deportee",
+    "Person in transit for judicial reasons",
+    "Insider threat"
+   ]
+  },
+  "95214": {
+   "text": "Between 1948 and 1968, acts of unlawful interference against civil aviation were predominantly carried out for which purpose?",
+   "options": [
+    "Asylum-seeking",
+    "Political terrorism",
+    "Mass destruction",
+    "Economic gain",
+    "Propaganda"
+   ]
+  },
+  "95215": {
+   "text": "Between 1968 and 1994, acts of unlawful interference against civil aviation were predominantly carried out for which purpose?",
+   "options": [
+    "Political terrorism",
+    "Asylum-seeking",
+    "Mass destruction",
+    "Smuggling",
+    "Ransom"
+   ]
+  },
+  "95216": {
+   "text": "From 1994 to the present, acts of unlawful interference have generally been carried out for which purpose?",
+   "options": [
+    "Mass destruction",
+    "Asylum-seeking",
+    "Political terrorism",
+    "Piracy",
+    "Economic interest"
+   ]
+  },
+  "95217": {
+   "text": "Which of the following is the most frequently used attack tool in acts of unlawful interference?",
+   "options": [
+    "Explosive devices",
+    "Man-portable air defence systems (MANPADS)",
+    "Cyberattack software",
+    "Unmanned aerial vehicles",
+    "Chemical substances"
+   ]
+  },
+  "95218": {
+   "text": "Which of the following is NOT one of the components that make up an explosive device?",
+   "options": [
+    "Pressure gauge",
+    "Detonator",
+    "Power source",
+    "Initiator",
+    "Timer"
+   ]
+  },
+  "95219": {
+   "text": "What is the primary purpose in the analysis of a bomb threat?",
+   "options": [
+    "To assess the credibility of the threat and determine whether it is real",
+    "To identify the identity of the attacker",
+    "To determine the brand of the explosive",
+    "To calculate the commercial loss of the flight",
+    "To prepare a press statement"
+   ]
+  },
+  "95220": {
+   "text": "By whom and how should the analysis of a bomb threat be carried out?",
+   "options": [
+    "By trained personnel, without wasting time",
+    "By any personnel, during working hours",
+    "Only by airline company managers, after the flight",
+    "By the cabin crew, based on information from passengers",
+    "Only upon written request, within a week"
+   ]
+  },
+  "95221": {
+   "text": "When are aircraft hijacking acts most often carried out?",
+   "options": [
+    "After the aircraft's takeoff",
+    "During passenger boarding procedures",
+    "While the aircraft is parked on the apron",
+    "In the maintenance hangar",
+    "After the landing gear is extended"
+   ]
+  },
+  "95222": {
+   "text": "For what purposes did aircraft hijacking incidents originally begin?",
+   "options": [
+    "To seek asylum and commit piracy",
+    "Mass destruction and propaganda",
+    "Smuggling and tax evasion",
+    "Insurance fraud",
+    "Ransom and hostage trading"
+   ]
+  },
+  "95223": {
+   "text": "In the attack that took place at Paris Orly Airport on 27 September 1974, where was the explosive device placed?",
+   "options": [
+    "In a piece of luggage inside a locked locker",
+    "On the passenger boarding bridge",
+    "In a catering vehicle",
+    "In a container in the cargo warehouse",
+    "At the entrance of the control tower"
+   ]
+  },
+  "95224": {
+   "text": "In the attacks lasting approximately 5 days at London Heathrow Airport starting on 14 March 1994, which weapon was used and what was the outcome?",
+   "options": [
+    "Mortar; there was no serious material damage or injury, and a large number of flights were cancelled",
+    "Suicide bomber; 35 people lost their lives",
+    "Cyberattack; all systems were disabled",
+    "Man-portable air defence system; an aircraft was shot down",
+    "Chemical substance; the terminal was evacuated"
+   ]
+  },
+  "95225": {
+   "text": "The attack carried out at Domodedovo International Airport in Russia on 24 January 2011 targeted which area, and how many people lost their lives?",
+   "options": [
+    "Baggage claim area; 35 people",
+    "Check-in counters; 12 people",
+    "Apron; 50 people",
+    "Control tower; 8 people",
+    "Car park; 20 people"
+   ]
+  },
+  "95226": {
+   "text": "Which of the following describes the outcome of the attack that took place at Brussels Airport on 22 March 2016?",
+   "options": [
+    "33 people lost their lives, 250 people were injured, and the airport remained closed for months",
+    "2 people were injured, and the airport reopened the same day",
+    "35 people lost their lives, 150 people were injured",
+    "Only material damage occurred, and flights were cancelled",
+    "19 people lost their lives, and the airport closed for a week"
+   ]
+  },
+  "95227": {
+   "text": "How many aircraft were used as weapons in the attacks of 11 September 2001?",
+   "options": [
+    "4",
+    "2",
+    "3",
+    "5",
+    "6"
+   ]
+  },
+  "95228": {
+   "text": "How many people, excluding the hijackers, were reported to have lost their lives in the 11 September 2001 attacks?",
+   "options": [
+    "2.974",
+    "1.974",
+    "3.974",
+    "974",
+    "2.019"
+   ]
+  },
+  "95229": {
+   "text": "Where did the fourth aircraft crash in the 11 September 2001 attacks?",
+   "options": [
+    "Rural Pennsylvania",
+    "World Trade Center",
+    "Pentagon",
+    "White House",
+    "Atlantic Ocean"
+   ]
+  },
+  "95230": {
+   "text": "Which event is regarded as a turning point in terms of aviation security and completely changed the nature of threats?",
+   "options": [
+    "The 11 September 2001 attacks",
+    "The Paris Orly attack",
+    "The London Heathrow mortar attacks",
+    "The Domodedovo attack",
+    "The Brussels Airport attack"
+   ]
+  },
+  "95231": {
+   "text": "Which of the following is NOT counted among the current threats against civil aviation?",
+   "options": [
+    "The aircraft being delayed due to a technical malfunction",
+    "Cyberattacks",
+    "Unmanned aerial vehicles",
+    "Nuclear attacks",
+    "Biological and chemical attacks"
+   ]
+  },
+  "95232": {
+   "text": "Which of the following is NOT true for persons who constitute an insider threat?",
+   "options": [
+    "They are persons from outside the aviation sector who have never entered an airport",
+    "They may be members of a terrorist organization",
+    "They may assist in attacks in order to obtain a benefit",
+    "They may be used by criminal organizations because they do not have adequate security awareness",
+    "They are persons working in the aviation sector"
+   ]
+  },
+  "95233": {
+   "text": "In which year was the Convention on International Civil Aviation (Chicago Convention) signed?",
+   "options": [
+    "1944",
+    "1963",
+    "1970",
+    "1971",
+    "1974"
+   ]
+  },
+  "95234": {
+   "text": "What is the notable feature of the Chicago Convention in terms of aviation security?",
+   "options": [
+    "It contains no direct provision on aviation security",
+    "It contains all the implementation details of aviation security",
+    "It regulates only the subject of aviation security",
+    "It determines the format of airport access cards",
+    "It contains the technical standards of security screening"
+   ]
+  },
+  "95235": {
+   "text": "In which year was the Tokyo Convention on Offences and Certain Other Acts Committed on Board Aircraft signed?",
+   "options": [
+    "1963",
+    "1944",
+    "1970",
+    "1971",
+    "1988"
+   ]
+  },
+  "95236": {
+   "text": "Since the Tokyo Convention was considered not to contain adequate and up-to-date provisions, by which instrument was it replaced?",
+   "options": [
+    "The 2014 Montreal Protocol",
+    "The 2010 Beijing Protocol",
+    "The 1988 Montreal Protocol",
+    "The 1991 MEX Convention",
+    "The 1974 Annex 17"
+   ]
+  },
+  "95237": {
+   "text": "In which year was the Hague Convention for the Suppression of Unlawful Seizure of Aircraft signed?",
+   "options": [
+    "1970",
+    "1963",
+    "1971",
+    "1988",
+    "1991"
+   ]
+  },
+  "95238": {
+   "text": "By which instrument was the Hague Convention amended?",
+   "options": [
+    "The Beijing Protocol, signed in 2010",
+    "The 2014 Montreal Protocol",
+    "The 1988 Montreal Protocol",
+    "The 1991 MEX Convention",
+    "The 1944 Chicago Convention"
+   ]
+  },
+  "95239": {
+   "text": "In which year was the Montreal Convention for the Suppression of Unlawful Acts against the Safety of Civil Aviation signed?",
+   "options": [
+    "1971",
+    "1963",
+    "1970",
+    "1988",
+    "1991"
+   ]
+  },
+  "95240": {
+   "text": "Unlike other international conventions, which subjects did the Montreal Protocol adopted in 1988 address?",
+   "options": [
+    "The security of airport employees, facilities and aircraft",
+    "Only offences committed during flight",
+    "Only the marking of plastic explosives",
+    "Only the hijacking of aircraft",
+    "Only airspace sovereignty"
+   ]
+  },
+  "95241": {
+   "text": "In which year was the Convention on the Marking of Plastic Explosives for the Purpose of Detection concluded?",
+   "options": [
+    "1991",
+    "1971",
+    "1988",
+    "2001",
+    "2010"
+   ]
+  },
+  "95242": {
+   "text": "Which instruments did the Beijing Convention and the Beijing Protocol replace?",
+   "options": [
+    "The 1971 Montreal Convention and the 1988 Montreal Protocol",
+    "The 1944 Chicago Convention and the 1963 Tokyo Convention",
+    "The 1970 Hague Convention and the 1991 MEX Convention",
+    "Only the 1963 Tokyo Convention",
+    "Only ICAO Annex 17"
+   ]
+  },
+  "95243": {
+   "text": "How many Annexes have been published in addition to the main text of the Convention on International Civil Aviation?",
+   "options": [
+    "19",
+    "9",
+    "17",
+    "12",
+    "21"
+   ]
+  },
+  "95244": {
+   "text": "In which year was Annex 17, titled \"Security: Safeguarding International Civil Aviation Against Acts of Unlawful Interference\", adopted?",
+   "options": [
+    "1974",
+    "1944",
+    "1963",
+    "1971",
+    "1988"
+   ]
+  },
+  "95245": {
+   "text": "In which Annex is the structure of the reinforced cockpit door for the protection of the aircraft cockpit specified?",
+   "options": [
+    "Annex 6",
+    "Annex 9",
+    "Annex 14",
+    "Annex 17",
+    "Annex 15"
+   ]
+  },
+  "95246": {
+   "text": "In which Annex are the headings for inadmissible passengers and the control of travel documents regulated?",
+   "options": [
+    "Annex 9",
+    "Annex 6",
+    "Annex 17",
+    "Annex 14",
+    "Annex 15"
+   ]
+  },
+  "95247": {
+   "text": "Which of the following is ICAO Document 8973?",
+   "options": [
+    "Aviation Security Manual",
+    "Machine Readable Travel Documents",
+    "Air Traffic Management Manual",
+    "Airport Design Manual",
+    "Accident Investigation Manual"
+   ]
+  },
+  "95248": {
+   "text": "Which of the following is true regarding the content of ICAO Document 8973?",
+   "options": [
+    "It contains detailed explanations of the general principles set out in Annex 17, together with the implementation procedures of the standards and recommended practices",
+    "It contains only a list of convention texts",
+    "It is an abridged summary of Annex 17",
+    "It contains only accident statistics",
+    "It contains only examples of national legislation"
+   ]
+  },
+  "95249": {
+   "text": "Which elements do the quality control activities under the National Aviation Security Quality Control Programme cover?",
+   "options": [
+    "Comprehensive audits, tests and inspections",
+    "Training, certification and refresher training",
+    "Screening, search and manual checks",
+    "Planning, budgeting and reporting",
+    "Patrol, surveillance and escort"
+   ]
+  },
+  "95250": {
+   "text": "What is the purpose of the National Aviation Security Quality Control Programme?",
+   "options": [
+    "To determine the level of compliance of the applied legislation and security measures with the national civil aviation security programme",
+    "To determine the salaries of airport personnel",
+    "To regulate flight schedules",
+    "To increase airport capacity",
+    "To measure passenger satisfaction"
+   ]
+  },
+  "95251": {
+   "text": "Which of the following must be determined through the National Civil Aviation Security Training Programme?",
+   "options": [
+    "The certification requirements for screening personnel and instructors",
+    "The colour of airport access cards",
+    "The rest periods of the flight crew",
+    "Baggage fee tariffs",
+    "Apron parking positions"
+   ]
+  },
+  "95252": {
+   "text": "Which of the following is true regarding the Airport Security Programme?",
+   "options": [
+    "It is drawn up for each airport in a manner consistent with the national programme and containing features specific to that airport",
+    "It is prepared as a single, common text for all airports",
+    "It is prepared only for airports operating international flights",
+    "It is not required to be in writing",
+    "It is drawn up only in times of crisis"
+   ]
+  },
+  "95253": {
+   "text": "In Türkiye, with which document and in which year was the requirement for a National Civil Aviation Security Programme met?",
+   "options": [
+    "National Civil Aviation Security Programme - 1996",
+    "National Civil Aviation Quality Control Programme - 1986",
+    "Airport Security Programme - 2001",
+    "Central Security Board Regulation - 1974",
+    "National Training Programme - 2010"
+   ]
+  },
+  "95254": {
+   "text": "Which of the following is true regarding national aviation security legislation?",
+   "options": [
+    "Merely accepting international standards and rules is not sufficient; they must be transposed into the domestic legal and legislative system",
+    "Accepting international standards is sufficient on its own",
+    "National legislation is prepared independently of international legislation",
+    "National needs do not need to be taken into account",
+    "Regulation needs to be made only at a single level"
+   ]
+  },
+  "95255": {
+   "text": "By which body are ICAO's aviation security standards prepared?",
+   "options": [
+    "Aviation Security Panel",
+    "Council",
+    "Assembly",
+    "Airport Security Committee",
+    "Appropriate Authority"
+   ]
+  },
+  "95256": {
+   "text": "After which stages do ICAO aviation security standards enter into force?",
+   "options": [
+    "After the approval of the Council, ICAO's executive body, and the approval of member States",
+    "Only by a panel decision",
+    "Only by the approval of member States",
+    "By a simple majority of the Assembly",
+    "By the approval of airport security committees"
+   ]
+  },
+  "95257": {
+   "text": "According to Annex 17, which structures must the national organization include at a minimum?",
+   "options": [
+    "The appropriate authority, the national civil aviation security committee, the local authority and the airport security committee",
+    "Only the appropriate authority and the airport security committee",
+    "The appropriate authority, the quality control unit and the training unit",
+    "Only the national committee and the local authority",
+    "The appropriate authority, the airline operator and the air traffic service provider"
+   ]
+  },
+  "95258": {
+   "text": "According to Annex 17, which of the following is true regarding the appropriate authority appointed by a member State?",
+   "options": [
+    "The appointed authority must be notified to ICAO",
+    "It can only be the civil aviation authority; it cannot be another institution",
+    "It does not need to be notified to ICAO",
+    "It is appointed separately for each airport",
+    "It operates only during periods of crisis"
+   ]
+  },
+  "95259": {
+   "text": "Which institution has been designated as the civil aviation security authority in Türkiye and notified to ICAO?",
+   "options": [
+    "Directorate General of Civil Aviation (SHGM)",
+    "State Airports Authority (DHMİ)",
+    "Airport Civil Administration Authority",
+    "Central Security Board",
+    "Presidency of Migration Management"
+   ]
+  },
+  "95260": {
+   "text": "In Türkiye, which structure was established to carry out the duties of the National Civil Aviation Security Committee?",
+   "options": [
+    "The Central Security Board, established by Regulation No. 9707",
+    "Airport Security Committee",
+    "Training, Research and Inspection Unit",
+    "Airport Civil Administration Authority",
+    "Directorate General of Civil Aviation"
+   ]
+  },
+  "95261": {
+   "text": "In Türkiye, which structure was established to carry out secretariat services, prepare technical opinions, and conduct airport-level quality control activities in support of the airport security authority's duties?",
+   "options": [
+    "Training, Research and Inspection Unit",
+    "Central Security Board",
+    "Airport Security Committee",
+    "Aviation Security Panel",
+    "Board of Training, Research and Inspection Experts"
+   ]
+  },
+  "95262": {
+   "text": "Which of the following is the airport security authority empowered to do?",
+   "options": [
+    "To take and implement the necessary measures, and to inspect the operations of organizations",
+    "To determine flight schedules",
+    "To approve the aircraft maintenance programme",
+    "To sign international conventions",
+    "To amend ICAO standards"
+   ]
+  },
+  "95263": {
+   "text": "According to the responsibilities of the Airport Security Committee, how should security surveys and inspections be carried out?",
+   "options": [
+    "At unpredictable but frequent intervals",
+    "Once a year, announced in advance",
+    "Only after an incident",
+    "Only upon the request of the appropriate authority",
+    "Before every flight"
+   ]
+  },
+  "95264": {
+   "text": "Which of the following is one of the responsibilities of the Airport Security Committee?",
+   "options": [
+    "Identifying vulnerable areas, including essential equipment and facilities, and regularly reviewing their security",
+    "Amending international conventions",
+    "Preparing ICAO standards",
+    "Drafting and publishing the national programme",
+    "Issuing the aircraft type certificate"
+   ]
+  },
+  "95265": {
+   "text": "In terms of aviation security, into which sections are airports divided?",
+   "options": [
+    "Landside, airside and security restricted areas",
+    "Terminal, apron and car park",
+    "Domestic flights, international flights and cargo",
+    "Departing passengers, arriving passengers and transit",
+    "Civilian zone, military zone and free zone"
+   ]
+  }
+ }
+}

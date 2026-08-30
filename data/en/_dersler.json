@@ -1,0 +1,19 @@
+{
+  "_not": "Kaynağı Türkçe olan ders ve bölüm adlarının İngilizcesi. İngilizce kipte kullanılır; karşılığı olmayan kaynaktaki adıyla kalır.",
+  "subjects": {
+    "501": "Introduction to Aviation",
+    "502": "Security Awareness"
+  },
+  "sections": {
+    "01-01": "01 | Introduction to Aviation - Questions",
+    "01-02": "Course Notes Questions",
+    "01-03": "Generated from Course Notes",
+    "070-06": "Course Notes Questions (073)",
+    "070-07": "Generated from Course Notes",
+    "GB-01": "Acts of Unlawful Interference",
+    "GB-02": "Regulations",
+    "GB-03": "Organisation",
+    "GB-04": "Security Measures",
+    "GB-05": "Emergency Response and Security Culture"
+  }
+}

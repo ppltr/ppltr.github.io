@@ -1,0 +1,643 @@
+{
+ "questions": {
+  "27031": {
+   "text": "Which pilot licence allows the holder to fly for remuneration in certain commercial operations, as pilot-in-command on single-pilot flights or as co-pilot on multi-pilot flights?",
+   "options": [
+    "Commercial Pilot Licence",
+    "Balloon Pilot Licence",
+    "Light Aircraft Pilot Licence",
+    "Airline Transport Pilot Licence",
+    "Private Pilot Licence"
+   ]
+  },
+  "27032": {
+   "text": "Which licence is required to act as pilot-in-command on multi-pilot aircraft at airlines operating scheduled or non-scheduled passenger and cargo transport?",
+   "options": [
+    "Airline Transport Pilot Licence",
+    "Light Aircraft Pilot Licence",
+    "Balloon Pilot Licence",
+    "Private Pilot Licence",
+    "Commercial Pilot Licence"
+   ]
+  },
+  "27033": {
+   "text": "Which licence, classified according to ICAO and local regulations, is issued for operating unmanned aircraft of a certain class and weight for commercial or professional purposes?",
+   "options": [
+    "Unmanned Aircraft Pilot Licence",
+    "Balloon Pilot Licence",
+    "Airline Transport Pilot Licence",
+    "Commercial Pilot Licence",
+    "Private Pilot Licence"
+   ]
+  },
+  "27034": {
+   "text": "Which pilot licence is issued for flying hot air balloons, with training, flight time and privileges determined according to the type of balloon?",
+   "options": [
+    "Balloon Pilot Licence",
+    "Unmanned Aircraft Pilot Licence",
+    "Commercial Pilot Licence",
+    "Private Pilot Licence",
+    "Light Aircraft Pilot Licence"
+   ]
+  },
+  "27035": {
+   "text": "Which pilot licence does the abbreviation SPL refer to?",
+   "options": [
+    "Sailplane Pilot Licence",
+    "Multi-crew Pilot Licence",
+    "Very Light Aircraft Pilot Licence",
+    "Private Pilot Licence",
+    "Balloon Pilot Licence"
+   ]
+  },
+  "27036": {
+   "text": "Which pilot licence does the abbreviation UPL refer to?",
+   "options": [
+    "Very Light Aircraft Pilot Licence",
+    "Airline Transport Pilot Licence",
+    "Commercial Pilot Licence",
+    "Multi-crew Pilot Licence",
+    "Sailplane Pilot Licence"
+   ]
+  },
+  "27037": {
+   "text": "Which pilot licence does the abbreviation MPL refer to?",
+   "options": [
+    "Multi-crew Pilot Licence",
+    "Very Light Aircraft Pilot Licence",
+    "Balloon Pilot Licence",
+    "Sailplane Pilot Licence",
+    "Private Pilot Licence"
+   ]
+  },
+  "27038": {
+   "text": "Which personnel is authorised to perform aircraft maintenance by meeting the knowledge, experience, skill and training requirements laid down by civil aviation rules?",
+   "options": [
+    "Aircraft maintenance personnel",
+    "Ground handling personnel",
+    "Cabin crew member",
+    "Pilot",
+    "Air traffic controller"
+   ]
+  },
+  "27039": {
+   "text": "Which of the following organisations sets the rules and standards on which regulations concerning aircraft maintenance personnel are based?",
+   "options": [
+    "EASA",
+    "IATA",
+    "EUROCONTROL",
+    "CIA",
+    "ICAO"
+   ]
+  },
+  "27040": {
+   "text": "Into which of the following categories is aircraft maintenance personnel divided?",
+   "options": [
+    "A, B1, B2, B2L, B3, L, C",
+    "LAPL, SPL, MPL",
+    "PPL, CPL, ATPL",
+    "A1, A2, B1, B2",
+    "A, B, C, D, E"
+   ]
+  },
+  "27041": {
+   "text": "Which personnel is licensed and authorised to provide air traffic control services by meeting the medical, knowledge, experience, skill and training requirements laid down by civil aviation rules?",
+   "options": [
+    "Air traffic controller",
+    "Ground handling personnel",
+    "Aircraft maintenance personnel",
+    "Cabin crew member",
+    "Pilot"
+   ]
+  },
+  "27042": {
+   "text": "Which of the following is not among the duties of an air traffic controller?",
+   "options": [
+    "Carrying out aircraft maintenance and repair activities",
+    "Informing pilots about the movements of other aircraft",
+    "Ensuring safe separation is maintained between aircraft",
+    "Informing aircraft about the surrounding weather conditions",
+    "Directing the movements of aircraft within airspace and at aerodromes"
+   ]
+  },
+  "27043": {
+   "text": "Which personnel, licensed by the relevant civil aviation authority after meeting the knowledge, skill and experience requirements laid down in civil aviation rules, performs flight operations services?",
+   "options": [
+    "Flight operations officer",
+    "Cabin crew member",
+    "Aircraft maintenance personnel",
+    "Pilot",
+    "Air traffic controller"
+   ]
+  },
+  "27044": {
+   "text": "Which of the following is also used as another term for a flight operations officer?",
+   "options": [
+    "Dispatcher",
+    "Coordinator",
+    "Planner",
+    "Operator",
+    "Controller"
+   ]
+  },
+  "27045": {
+   "text": "Which of the following is not among the duties of a flight operations officer?",
+   "options": [
+    "Operating the flight controls and performing piloting duties of the aircraft",
+    "Coordinating with the relevant units for the aircraft's on-time departure",
+    "Reporting emergency-related problems to the competent authorities",
+    "Maintaining continuous contact with the pilot-in-command during the flight",
+    "Carrying out flight planning and monitoring the flight throughout its duration"
+   ]
+  },
+  "27046": {
+   "text": "Which of the following does the abbreviation ATSEP refer to?",
+   "options": [
+    "Air Traffic Safety Electronics Personnel",
+    "Aircraft Maintenance Personnel",
+    "Flight Operations Officer",
+    "Air Navigation Services Personnel",
+    "Air Traffic Control Personnel"
+   ]
+  },
+  "27047": {
+   "text": "In aviation, which of the following systems does the abbreviation CNS refer to?",
+   "options": [
+    "Communication, Navigation, Surveillance",
+    "Control, Navigation, Support",
+    "Communication, Network, Security",
+    "Control, Network, Safety",
+    "Control, Navigation, System"
+   ]
+  },
+  "27048": {
+   "text": "Which of the following is among the duties of Air Traffic Safety Electronics Personnel (ATSEP)?",
+   "options": [
+    "Installing, operating and maintaining communication, navigation and surveillance systems",
+    "Piloting aircraft",
+    "Preparing flight plans",
+    "Providing flight training to pilots",
+    "Directing aircraft within airspace"
+   ]
+  },
+  "27049": {
+   "text": "Which of the following is the primary duty of cabin crew on board an aircraft?",
+   "options": [
+    "Ensuring passenger safety within the passenger cabin",
+    "Providing air traffic control",
+    "Performing aircraft maintenance",
+    "Preparing the flight plan",
+    "Providing catering service to passengers"
+   ]
+  },
+  "27050": {
+   "text": "Which of the following is not among the duties of cabin crew?",
+   "options": [
+    "Operating the flight controls of the aircraft",
+    "Maintaining order within the passenger cabin",
+    "Providing catering services for passenger comfort",
+    "Ensuring safety in the passenger cabin",
+    "Ensuring passengers evacuate the aircraft safely in an emergency"
+   ]
+  },
+  "27051": {
+   "text": "Which of the following covers the mandatory training that cabin crew must receive?",
+   "options": [
+    "Convention on International Civil Aviation Annex 6 – Operation of Aircraft, International Commercial Air Transport – Aeroplanes, Part I",
+    "Convention on International Civil Aviation Annex 19 – Safety Management",
+    "Convention on International Civil Aviation Annex 14 – Aerodromes",
+    "Convention on International Civil Aviation Annex 11 – Air Traffic Services",
+    "Convention on International Civil Aviation Annex 1 – Personnel Licensing"
+   ]
+  },
+  "27052": {
+   "text": "Which of the following covers the training on dangerous goods that cabin crew must receive?",
+   "options": [
+    "Convention on International Civil Aviation Annex 18 – The Safe Transport of Dangerous Goods by Air",
+    "Convention on International Civil Aviation Annex 2 – Rules of the Air",
+    "Convention on International Civil Aviation Annex 11 – Air Traffic Services",
+    "Convention on International Civil Aviation Annex 9 – Facilitation",
+    "Convention on International Civil Aviation Annex 6 – Operation of Aircraft"
+   ]
+  },
+  "27053": {
+   "text": "Which of the following are rotary-wing aircraft?",
+   "options": [
+    "Gyroplane, Helicopter",
+    "Sailplane, Balloon",
+    "UAV, Rocket",
+    "Aeroplane, Airship",
+    "Aeroplane, Sailplane"
+   ]
+  },
+  "27054": {
+   "text": "Which of the following is one of IATA's core functions?",
+   "options": [
+    "Leading and representing the airline industry",
+    "Revoking pilot licences",
+    "Issuing pilot licences",
+    "Controlling airspace",
+    "Manufacturing aircraft"
+   ]
+  },
+  "27055": {
+   "text": "What is a Great Circle?",
+   "options": [
+    "The shortest distance between two points",
+    "A meridian",
+    "The equator",
+    "A parallel",
+    "The longest route"
+   ]
+  },
+  "27056": {
+   "text": "How many days before the flight does Strategic Flow Management begin?",
+   "options": [
+    "7 days or more before",
+    "50 days or more before",
+    "3 days before",
+    "1 day before",
+    "On the day of the flight"
+   ]
+  },
+  "27057": {
+   "text": "According to capacity differences, what is the passenger capacity of 'Mainline' aircraft?",
+   "options": [
+    "Over 100",
+    "At least 3",
+    "At most 19",
+    "Under 100",
+    "At most 50"
+   ]
+  },
+  "27058": {
+   "text": "According to ICAO codes, which letter do airports in our country start with?",
+   "options": [
+    "L",
+    "E",
+    "A",
+    "B",
+    "T"
+   ]
+  },
+  "27059": {
+   "text": "What is the other name of the Ibero-American Conference?",
+   "options": [
+    "Madrid Agreement",
+    "Hawaii Convention",
+    "Havana Convention",
+    "Paris Convention",
+    "Chicago Convention"
+   ]
+  },
+  "27060": {
+   "text": "What is the duty of flight operations officers (dispatchers)?",
+   "options": [
+    "Planning the flight and monitoring it throughout",
+    "Preparing maintenance schedules",
+    "Repairing the aircraft",
+    "Working in the tower",
+    "Loading baggage"
+   ]
+  },
+  "27061": {
+   "text": "What is the term for the time from when an aircraft first moves (for departure) until it arrives and parks at its destination?",
+   "options": [
+    "Block time",
+    "Harvest time",
+    "Flight time",
+    "Working hours",
+    "Taxi time"
+   ]
+  },
+  "27062": {
+   "text": "Which of the following is the main duty of cabin crew?",
+   "options": [
+    "Ensuring passenger safety",
+    "Making announcements",
+    "Entering the cockpit",
+    "Welcoming passengers with a smile",
+    "Serving refreshments"
+   ]
+  },
+  "27063": {
+   "text": "Which of the following is not one of the airline business models?",
+   "options": [
+    "Service",
+    "Hybrid carriers",
+    "Regional carriers",
+    "Full-service network carriers",
+    "Low-cost carriers"
+   ]
+  },
+  "27064": {
+   "text": "After manufacture, whose responsibility is the conformity of an aircraft's parts?",
+   "options": [
+    "The country of manufacture",
+    "The operator",
+    "The State of registry",
+    "The operating company",
+    "The pilot"
+   ]
+  },
+  "27065": {
+   "text": "Which of the following is not one of the implementation elements of CORSIA?",
+   "options": [
+    "CORSIA Ticket Sales System",
+    "CORSIA Eligible Fuels",
+    "CORSIA Chapter 3 State Pairs",
+    "CORSIA Central Registry"
+   ]
+  },
+  "27066": {
+   "text": "What is the service provided up until the passenger boards the aircraft?",
+   "options": [
+    "Check-in",
+    "Ramp",
+    "Transfer",
+    "Handling",
+    "Boarding"
+   ]
+  },
+  "27067": {
+   "text": "Where is aviation training provided?",
+   "options": [
+    "Vocational training courses, School education, In-service training",
+    "Only vocational high schools",
+    "Courses abroad",
+    "Only airlines",
+    "Only universities"
+   ]
+  },
+  "27068": {
+   "text": "Which of the following is not an aviation convention?",
+   "options": [
+    "Beijing",
+    "Warsaw",
+    "Madrid",
+    "Chicago",
+    "Paris"
+   ]
+  },
+  "27069": {
+   "text": "What are the types of maintenance according to their purpose?",
+   "options": [
+    "Preventive and corrective",
+    "Line and heavy",
+    "Line and base",
+    "Scheduled and unscheduled",
+    "Heavy and light"
+   ]
+  },
+  "27070": {
+   "text": "What is the maximum number of seats for air taxi operations?",
+   "options": [
+    "19",
+    "24",
+    "30",
+    "9",
+    "50"
+   ]
+  },
+  "27071": {
+   "text": "Which letter is used as the ICAO code for our country?",
+   "options": [
+    "T",
+    "R",
+    "E",
+    "A",
+    "L"
+   ]
+  },
+  "27072": {
+   "text": "What is the full name of the Paris Convention?",
+   "options": [
+    "Convention Relating to the Regulation of Aerial Navigation",
+    "France Civil Aviation Agreement",
+    "Convention on International Civil Aviation",
+    "European Aviation Agreement",
+    "Rules of the Air Agreement"
+   ]
+  },
+  "27073": {
+   "text": "Which of the following is the engine type used in rotary-wing aircraft?",
+   "options": [
+    "Turboshaft",
+    "Turboprop",
+    "Turbofan",
+    "Piston",
+    "Turbojet"
+   ]
+  },
+  "27074": {
+   "text": "Which of the following is a lighter-than-air aircraft?",
+   "options": [
+    "Balloon and Airship",
+    "Helicopter",
+    "Aeroplane",
+    "Sailplane",
+    "UAV"
+   ]
+  },
+  "27075": {
+   "text": "Which aircraft are provided with alerting services?",
+   "options": [
+    "All aircraft provided with air traffic control service",
+    "Only firefighting aircraft",
+    "Only aircraft on the ground",
+    "Only passenger aircraft",
+    "Only military aircraft"
+   ]
+  },
+  "27076": {
+   "text": "Which of the following is not included in an airline operator's certificate?",
+   "options": [
+    "Aircraft insurance value",
+    "The country to which the operator belongs",
+    "The aircraft types to be used",
+    "Operating conditions",
+    "The name of the operator"
+   ]
+  },
+  "27077": {
+   "text": "According to service type, which of the following airport categories is incorrect?",
+   "options": [
+    "Informal airport",
+    "Commercial service airport",
+    "Cargo service airport",
+    "General aviation airport"
+   ]
+  },
+  "27078": {
+   "text": "Which of the following is not within the scope of ATS (Air Traffic Services)?",
+   "options": [
+    "Meteorological Service (MET)",
+    "Alerting Service",
+    "Air Traffic Control (ATC)",
+    "Flight Information Service (FIS)"
+   ]
+  },
+  "27079": {
+   "text": "What is the duty of ATSEP?",
+   "options": [
+    "Maintenance and operation of CNS (Communication, Navigation, Surveillance) systems",
+    "Repairing the aircraft",
+    "Issuing tickets",
+    "Flying the aircraft",
+    "Ensuring passenger security"
+   ]
+  },
+  "27080": {
+   "text": "What can air traffic controllers change on aircraft?",
+   "options": [
+    "Flight heading, flight speed and flight altitude",
+    "Fuel quantity",
+    "Passenger number and baggage weight",
+    "Engine power and wing angle",
+    "Aircraft type and fuel quantity"
+   ]
+  },
+  "27081": {
+   "text": "Which of the following is not one of EASA's functions?",
+   "options": [
+    "Making decisions in favour of member states",
+    "Improving aviation safety",
+    "Providing advice to member states",
+    "Carrying out certification"
+   ]
+  },
+  "27082": {
+   "text": "Which of the following is not one of the 9 main headings in the ICAO statistics manual?",
+   "options": [
+    "Space mining",
+    "Aviation training",
+    "Commercial air transport services",
+    "Airport services",
+    "General aviation"
+   ]
+  },
+  "27083": {
+   "text": "Which of the following is not an air transport undertaking?",
+   "options": [
+    "General aviation operator",
+    "Air taxi operator",
+    "Airline operator",
+    "Cargo airline"
+   ]
+  },
+  "27084": {
+   "text": "What are the air traffic control services?",
+   "options": [
+    "Aerodrome, approach, area",
+    "Maintenance, repair, overhaul",
+    "Security, customs, passport",
+    "Passenger, cargo, ramp"
+   ]
+  },
+  "27085": {
+   "text": "Which of the following is not one of ICAO's objectives?",
+   "options": [
+    "Developing only military aviation",
+    "Preventing waste caused by unreasonable competition",
+    "Ensuring the safe development of international civil aviation",
+    "Improving flight safety"
+   ]
+  },
+  "27086": {
+   "text": "What are the types of maintenance according to where it is performed?",
+   "options": [
+    "Line maintenance and base maintenance",
+    "Preventive and corrective",
+    "Scheduled and unscheduled",
+    "Heavy and light"
+   ]
+  },
+  "27087": {
+   "text": "Which of the following is a feature of the Competency-Based Training Approach (CBTA)?",
+   "options": [
+    "Performance-based assessment is carried out.",
+    "It is based on rote memorisation.",
+    "It is exam-focused only.",
+    "It is theoretical only."
+   ]
+  },
+  "27088": {
+   "text": "Which of the following issues the aircraft's type certificate?",
+   "options": [
+    "The country of manufacture",
+    "The operating airline",
+    "The State of registry",
+    "The country where the aircraft lands"
+   ]
+  },
+  "27089": {
+   "text": "Which of the following is not one of the documents required for scheduled maintenance?",
+   "options": [
+    "The pilot's logbook",
+    "AMM (Aircraft Maintenance Manual)",
+    "IPC (Illustrated Parts Catalogue)",
+    "MEL (Minimum Equipment List)"
+   ]
+  },
+  "27090": {
+   "text": "What is the radio frequency range used in aviation?",
+   "options": [
+    "118.000 - 137.000 MHz",
+    "138.000 - 157.000 MHz",
+    "400-500 MHz",
+    "88-108 MHz",
+    "2.4 GHz"
+   ]
+  },
+  "27091": {
+   "text": "Which of the following is the type of maintenance performed during flight operations?",
+   "options": [
+    "Line maintenance",
+    "Light maintenance",
+    "Heavy maintenance",
+    "Corrective maintenance",
+    "Base maintenance"
+   ]
+  },
+  "27092": {
+   "text": "Which of the following is the element that provides the aircraft's stability?",
+   "options": [
+    "Tail",
+    "Fuselage",
+    "Engine",
+    "Landing gear",
+    "Wing"
+   ]
+  },
+  "27093": {
+   "text": "An aircraft is flying at 600 kt relative to the air mass it is in. If the aircraft has an 80 kt headwind, what is its groundspeed in kt?",
+   "options": [
+    "520 kt",
+    "610 kt",
+    "700 kt",
+    "680 kt",
+    "600 kt"
+   ]
+  },
+  "27094": {
+   "text": "Which of the following is a non-aeronautical service?",
+   "options": [
+    "Entertainment and advertising services",
+    "Ramp services",
+    "Ground handling services",
+    "Fuelling",
+    "Cargo services"
+   ]
+  },
+  "27095": {
+   "text": "Which of the following bodies issues the certificate of continuing airworthiness?",
+   "options": [
+    "The State of registry",
+    "ICAO",
+    "EASA",
+    "The country of manufacture",
+    "The maintenance organisation"
+   ]
+  }
+ }
+}

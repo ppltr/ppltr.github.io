@@ -1,0 +1,654 @@
+{
+ "questions": {
+  "26966": {
+   "text": "Into which two main groups are aviation activities in the world fundamentally divided?",
+   "options": [
+    "Civil aviation – state aviation",
+    "Commercial aviation – military aviation",
+    "National aviation – international aviation",
+    "Public aviation – private aviation",
+    "Passenger aviation – cargo aviation"
+   ]
+  },
+  "26967": {
+   "text": "According to the Convention on International Civil Aviation, which of the following is not a state aircraft?",
+   "options": [
+    "An aircraft engaged in commercial passenger transport",
+    "A military aircraft flying on behalf of the state",
+    "An aircraft used in police services",
+    "An aircraft used in customs services",
+    "An aircraft used in military services"
+   ]
+  },
+  "26968": {
+   "text": "Which of the following is defined as a civil aircraft?",
+   "options": [
+    "An aircraft not operating in the service of a state aircraft",
+    "An aircraft performing an official duty on behalf of the state",
+    "An aircraft used for military purposes",
+    "An aircraft performing duty in customs control",
+    "An aircraft used in police services"
+   ]
+  },
+  "26969": {
+   "text": "Which of the following is the fundamental purpose of civil aviation activities?",
+   "options": [
+    "To provide safe, economical, fast and environmentally sensitive transportation of people, and to carry out the work that can be accomplished through air transport",
+    "To ensure the development of aviation technologies",
+    "To control international airspace",
+    "To earn commercial profit only",
+    "To carry out only military and state duties"
+   ]
+  },
+  "26970": {
+   "text": "According to the ICAO Statistics Programme Reference Manual, which of the following is not among civil aviation activities?",
+   "options": [
+    "Military air operations",
+    "Aviation training",
+    "Air navigation services",
+    "General aviation",
+    "Commercial air transport services"
+   ]
+  },
+  "26971": {
+   "text": "According to the ICAO Statistics Programme Reference Manual, which of the following is not among civil aviation activities?",
+   "options": [
+    "Police air services",
+    "Regulatory functions",
+    "Civil aviation manufacturing",
+    "Aerodrome services",
+    "Maintenance and repair"
+   ]
+  },
+  "26972": {
+   "text": "Which of the following is the fundamental purpose of using the aviation alphabet?",
+   "options": [
+    "To prevent misunderstandings that may occur in verbal communication",
+    "To provide translation between national languages",
+    "To make military communication confidential",
+    "To increase the written use of abbreviations",
+    "To shorten communication time"
+   ]
+  },
+  "26973": {
+   "text": "Improper use of the aviation alphabet can lead to which of the following situations?",
+   "options": [
+    "Misunderstandings that will adversely affect flight safety",
+    "A decrease in air traffic density",
+    "An increase in training duration",
+    "An increase in communication costs",
+    "The cancellation of flight plans"
+   ]
+  },
+  "26974": {
+   "text": "Which of the following does Section 3 of Chapter 1 of the Convention on International Civil Aviation require?",
+   "options": [
+    "That aircraft be registered and hold certificates",
+    "Colour and paint standards for aircraft",
+    "That aircraft conduct international flights",
+    "That aircraft be insured",
+    "Maintenance intervals for aircraft"
+   ]
+  },
+  "26975": {
+   "text": "According to Article 20 of the Convention on International Civil Aviation, which of the following is mandatory?",
+   "options": [
+    "That the aircraft display its nationality and registration marks",
+    "That the aircraft's insurance certificate be visible",
+    "That the aircraft's flight plan be carried on board",
+    "That the aircraft's manufacturer be indicated",
+    "That the aircraft's maintenance records be kept on board"
+   ]
+  },
+  "26976": {
+   "text": "In the text, aircraft nationality and registration marks are likened to which element?",
+   "options": [
+    "The license plate on land vehicles",
+    "A flight license",
+    "A passport",
+    "A certificate of registration",
+    "An identity card"
+   ]
+  },
+  "26977": {
+   "text": "In which of the following is the general structure of the nationality mark and registration mark correctly given?",
+   "options": [
+    "The nationality mark consists of letters; the registration mark consists of letters, digits, or both",
+    "The nationality mark and the registration mark have the same structure",
+    "The nationality mark consists of symbols",
+    "The nationality mark consists only of digits",
+    "The nationality mark consists of digits; the registration mark consists only of letters"
+   ]
+  },
+  "26978": {
+   "text": "Which of the following is the aircraft nationality mark adopted for Turkey?",
+   "options": [
+    "TC",
+    "TY",
+    "TK",
+    "TU",
+    "TR"
+   ]
+  },
+  "26979": {
+   "text": "In an aircraft registration in the format \"TC-ABC\", what do the first two letters before the hyphen represent?",
+   "options": [
+    "The nationality mark",
+    "The operator code",
+    "The age of the aircraft",
+    "The aircraft type",
+    "The registration number"
+   ]
+  },
+  "26980": {
+   "text": "In an aircraft registration in the format \"TC-ABC\", what do the three letters after the hyphen represent?",
+   "options": [
+    "The registration mark",
+    "The ICAO code",
+    "The manufacturing country",
+    "The flight region",
+    "The nationality mark"
+   ]
+  },
+  "26981": {
+   "text": "In aviation, the units of measurement of which country are predominantly used for physical quantities such as distance, altitude and speed?",
+   "options": [
+    "The United States of America",
+    "Russia",
+    "Japan",
+    "France",
+    "Germany"
+   ]
+  },
+  "26982": {
+   "text": "Which of the following is the fundamental reason why British (Imperial) units of measurement are preferred in aviation?",
+   "options": [
+    "The extensive technological and operational contributions of the United States of America in the field of aviation",
+    "European countries making this system mandatory",
+    "The International System of Units having been banned",
+    "Being the same as the units of measurement used in maritime navigation",
+    "The metric system being complex"
+   ]
+  },
+  "26983": {
+   "text": "In aviation, particularly in air navigation and flight planning, which unit is used as the unit of distance measurement?",
+   "options": [
+    "Nautical mile",
+    "Yard",
+    "Mile",
+    "Metre",
+    "Kilometre"
+   ]
+  },
+  "26984": {
+   "text": "Which of the following has been determined by the International Civil Aviation Organization as the abbreviation for the nautical mile?",
+   "options": [
+    "NM",
+    "MI",
+    "KM",
+    "SM",
+    "NAUM"
+   ]
+  },
+  "26985": {
+   "text": "Which of the following statements regarding the correct writing of the nautical mile is true?",
+   "options": [
+    "It is correct to write it in capital letters",
+    "Capital letters are used only in maritime navigation",
+    "It must be written together with a number",
+    "It does not matter whether capital or lowercase letters are used",
+    "It must be written in lowercase letters"
+   ]
+  },
+  "26986": {
+   "text": "Many concepts and travel procedures used in aviation have been carried over from which sector?",
+   "options": [
+    "The maritime sector",
+    "The automotive sector",
+    "The space industry",
+    "Railway transport",
+    "Land transport"
+   ]
+  },
+  "26987": {
+   "text": "How many metres does one nautical mile (NM) equal in the SI system?",
+   "options": [
+    "1,852 metres",
+    "2,000 metres",
+    "1,900 metres",
+    "1,850 metres",
+    "1,800 metres"
+   ]
+  },
+  "26988": {
+   "text": "How many kilometres does one nautical mile (NM) correspond to?",
+   "options": [
+    "1.852 km",
+    "2 km",
+    "1.8 km",
+    "1.7 km",
+    "1.5 km"
+   ]
+  },
+  "26989": {
+   "text": "How many kilometres does a distance of 100 nautical miles (NM) equal?",
+   "options": [
+    "185.2 km",
+    "200 km",
+    "180 km",
+    "150.2 km",
+    "100 km"
+   ]
+  },
+  "26990": {
+   "text": "How many metres does a distance of 100 nautical miles (NM) correspond to?",
+   "options": [
+    "185,200 metres",
+    "180,000 metres",
+    "150,200 metres",
+    "100,000 metres",
+    "18,520 metres"
+   ]
+  },
+  "26991": {
+   "text": "Which of the following is the physical meaning of the nautical mile?",
+   "options": [
+    "The length equivalent to one minute of arc of a meridian",
+    "One thousandth of the Earth's circumference",
+    "The length of one degree of arc of a meridian",
+    "The length of one minute of arc of a parallel",
+    "One hundred-thousandth of the length of the Earth's equator"
+   ]
+  },
+  "26992": {
+   "text": "How many minutes does one degree equal?",
+   "options": [
+    "60 minutes",
+    "90 minutes",
+    "50 minutes",
+    "45 minutes",
+    "30 minutes"
+   ]
+  },
+  "26993": {
+   "text": "In aviation, which of the following does the concept of \"great circle distance\" refer to?",
+   "options": [
+    "The shortest distance between two different positions on the surface of a sphere",
+    "The circumferential length of a parallel",
+    "The total length of a meridian",
+    "The straight-line distance between two points on a plane",
+    "The longest distance between two points on the surface of a sphere"
+   ]
+  },
+  "26994": {
+   "text": "The great circle distance corresponds to which of the arcs connecting two positions on the surface of a sphere?",
+   "options": [
+    "The length of the shorter arc",
+    "The diameter of the sphere",
+    "The straight line between the two points",
+    "The case where the points are in exactly opposite positions",
+    "The length of the longer arc"
+   ]
+  },
+  "26995": {
+   "text": "Which of the following is the English equivalent of the concept \"great circle distance\"?",
+   "options": [
+    "Great circle distance",
+    "Sphere route",
+    "Global distance",
+    "Shortest route distance",
+    "Long circle distance"
+   ]
+  },
+  "26996": {
+   "text": "Aircraft try to carry out their flights between two points, as far as possible, along which distance?",
+   "options": [
+    "The arc that gives the great circle distance",
+    "The length of a meridian",
+    "The distance along a parallel",
+    "The longest arc distance",
+    "The straight-line distance on a plane"
+   ]
+  },
+  "26997": {
+   "text": "In aviation, the flight altitudes of aircraft are generally expressed in which unit of measurement?",
+   "options": [
+    "Foot (feet)",
+    "Yard",
+    "Nautical mile",
+    "Kilometre",
+    "Metre"
+   ]
+  },
+  "26998": {
+   "text": "According to the internationally accepted agreement, how many metres does 1 foot equal?",
+   "options": [
+    "0.3048 metres",
+    "1.524 metres",
+    "1 metre",
+    "0.3333 metres",
+    "0.3000 metres"
+   ]
+  },
+  "26999": {
+   "text": "Which of the following is the abbreviation for the unit \"feet\" used in altitude measurement?",
+   "options": [
+    "ft",
+    "m",
+    "F",
+    "feet",
+    "f"
+   ]
+  },
+  "27000": {
+   "text": "An altitude of 5 ft is equal to which of the following?",
+   "options": [
+    "1.524 metres",
+    "5 metres",
+    "3.048 metres",
+    "1.500 metres",
+    "1.200 metres"
+   ]
+  },
+  "27001": {
+   "text": "A flight altitude of 30,000 ft corresponds to approximately how many metres?",
+   "options": [
+    "9,144 metres",
+    "30,000 metres",
+    "10,000 metres",
+    "9,000 metres",
+    "8,500 metres"
+   ]
+  },
+  "27002": {
+   "text": "Which unit is used to measure the flight speed of aircraft?",
+   "options": [
+    "Knot",
+    "Nautical mile",
+    "Miles per hour",
+    "Metres per second",
+    "Kilometres per hour"
+   ]
+  },
+  "27003": {
+   "text": "Which of the following does one knot represent?",
+   "options": [
+    "One nautical mile travelled in one hour",
+    "One nautical mile travelled in one second",
+    "One nautical mile travelled in one minute",
+    "One statute mile travelled in one hour",
+    "One kilometre travelled in one hour"
+   ]
+  },
+  "27004": {
+   "text": "1 knot is approximately equal to what speed in kilometres per hour?",
+   "options": [
+    "1.852 km/h",
+    "3.600 km/h",
+    "2.000 km/h",
+    "1.500 km/h",
+    "1.000 km/h"
+   ]
+  },
+  "27005": {
+   "text": "A speed of 100 kt corresponds to approximately how many kilometres per hour?",
+   "options": [
+    "185.2 km/h",
+    "200 km/h",
+    "180 km/h",
+    "170 km/h",
+    "150 km/h"
+   ]
+  },
+  "27006": {
+   "text": "A headwind is defined as which of the following?",
+   "options": [
+    "Wind blowing from the front of the aircraft, in the direction opposite to the flight path",
+    "Wind that does not affect the speed of the aircraft",
+    "A constant wind independent of the ground",
+    "Wind blowing from behind the aircraft",
+    "Wind blowing from the side of the aircraft"
+   ]
+  },
+  "27007": {
+   "text": "Which of the following does a tailwind (the opposite of a headwind) refer to?",
+   "options": [
+    "Wind blowing in the same direction as the aircraft's flight path",
+    "Wind that reduces the aircraft's speed relative to the ground",
+    "Wind that is effective only during take-off",
+    "Wind blowing from the side of the aircraft",
+    "Wind blowing from the front of the aircraft"
+   ]
+  },
+  "27008": {
+   "text": "An aircraft is flying at 500 kt relative to the air mass it is in. If the aircraft experiences a headwind of 100 kt, what will its speed relative to the ground be, in kt?",
+   "options": [
+    "400 kt",
+    "300 kt",
+    "450 kt",
+    "500 kt",
+    "600 kt"
+   ]
+  },
+  "27009": {
+   "text": "An aircraft is flying at 500 kt relative to the air mass it is in. If the aircraft experiences a tailwind of 100 kt, what will its speed relative to the ground be, in kt?",
+   "options": [
+    "600 kt",
+    "580 kt",
+    "550 kt",
+    "500 kt",
+    "400 kt"
+   ]
+  },
+  "27010": {
+   "text": "The Mach number is defined as which of the following?",
+   "options": [
+    "The ratio of the aircraft's speed to the speed of sound in the medium in which it is flying",
+    "The aircraft's speed at sea level",
+    "The aircraft's speed in kilometres per hour",
+    "The difference between the aircraft's speed and the speed of sound",
+    "The aircraft's speed relative to the ground"
+   ]
+  },
+  "27011": {
+   "text": "An aircraft is flying at 500 kt in a medium where the speed of sound is 589 kt. Accordingly, what is the aircraft's Mach number, approximately?",
+   "options": [
+    "0.85",
+    "1.00",
+    "0.90",
+    "0.80",
+    "0.75"
+   ]
+  },
+  "27012": {
+   "text": "The minimum health conditions, language proficiency, limits of authority, knowledge level, skills, experience requirements and age limitations for authorized personnel serving in aviation activities are tied to international standards in which Annex of the Convention on International Civil Aviation?",
+   "options": [
+    "Annex 1 – Personnel Licensing",
+    "Annex 19 – Safety Management",
+    "Annex 11 – Air Traffic Services",
+    "Annex 6 – Operation of Aircraft",
+    "Annex 2 – Rules of the Air"
+   ]
+  },
+  "27013": {
+   "text": "The concept of piloting is defined as which of the following?",
+   "options": [
+    "The process of directing and controlling the aircraft during flight",
+    "Passenger and cargo loading activities",
+    "The control of airspace",
+    "The process of preparing the flight plan",
+    "The maintenance and repair operations of the aircraft"
+   ]
+  },
+  "27014": {
+   "text": "A pilot is defined as which of the following?",
+   "options": [
+    "A licensed person authorized to direct and control an aircraft",
+    "Aerodrome operating personnel",
+    "Personnel who conduct only military flights",
+    "Technical personnel responsible for the maintenance of the aircraft",
+    "An official who manages air traffic"
+   ]
+  },
+  "27015": {
+   "text": "Which of the following is not one of the types of pilot licence in civil aviation?",
+   "options": [
+    "Air Traffic Control Licence",
+    "Light Aircraft Pilot Licence (LAPL)",
+    "Airline Transport Pilot Licence (ATPL)",
+    "Commercial Pilot Licence (CPL)",
+    "Private Pilot Licence (PPL)"
+   ]
+  },
+  "27016": {
+   "text": "Which of the following is not one of the types of pilot licence in civil aviation?",
+   "options": [
+    "Aircraft Maintenance Licence",
+    "Commercial Pilot Licence (CPL)",
+    "Private Pilot Licence (PPL)",
+    "Unmanned Aircraft Pilot Licence (UAV/Remote Pilot Licence)",
+    "Balloon Pilot Licence (BPL)"
+   ]
+  },
+  "27017": {
+   "text": "Which of the following is the abbreviation for the Light Aircraft Pilot Licence?",
+   "options": [
+    "LAPL",
+    "BPL",
+    "ATPL",
+    "CPL",
+    "PPL"
+   ]
+  },
+  "27018": {
+   "text": "Which of the following is the abbreviation for the Private Pilot Licence?",
+   "options": [
+    "PPL",
+    "BPL",
+    "ATPL",
+    "CPL",
+    "LAPL"
+   ]
+  },
+  "27019": {
+   "text": "Which of the following is the abbreviation for the Commercial Pilot Licence?",
+   "options": [
+    "CPL",
+    "BPL",
+    "PPL",
+    "LAPL",
+    "ATPL"
+   ]
+  },
+  "27020": {
+   "text": "Which of the following is the abbreviation for the Airline Transport Pilot Licence?",
+   "options": [
+    "ATPL",
+    "BPL",
+    "LAPL",
+    "PPL",
+    "CPL"
+   ]
+  },
+  "27021": {
+   "text": "Which of the following is the abbreviation for the Balloon Pilot Licence?",
+   "options": [
+    "BPL",
+    "LAPL",
+    "PPL",
+    "ATPL",
+    "CPL"
+   ]
+  },
+  "27022": {
+   "text": "The pilot licence issued for unmanned aircraft is referred to as which of the following?",
+   "options": [
+    "UAV / Remote Pilot Licence",
+    "BPL",
+    "PPL",
+    "CPL",
+    "ATPL"
+   ]
+  },
+  "27023": {
+   "text": "Which of the following is the type of pilot who may fly as pilot-in-command, carrying at most 3 passengers, in a single-engine piston aeroplane or a touring motor glider with a maximum take-off mass not exceeding 2000 kilograms?",
+   "options": [
+    "Light Aircraft Pilot",
+    "Balloon Pilot",
+    "Airline Transport Pilot",
+    "Commercial Pilot",
+    "Private Pilot"
+   ]
+  },
+  "27024": {
+   "text": "Which of the following is the pilot who is authorized to fly an aeroplane, provided it is not for commercial purposes?",
+   "options": [
+    "Private Pilot",
+    "Balloon Pilot",
+    "UAV Pilot",
+    "Airline Transport Pilot",
+    "Commercial Pilot"
+   ]
+  },
+  "27025": {
+   "text": "Which of the following is the pilot who is authorized to fly an aeroplane for commercial purposes?",
+   "options": [
+    "Commercial Pilot",
+    "UAV Pilot",
+    "Balloon Pilot",
+    "Light Aircraft Pilot",
+    "Private Pilot"
+   ]
+  },
+  "27026": {
+   "text": "Which of the following is the type of pilot who operates the aircraft in commercial flight operations and is responsible for the flight?",
+   "options": [
+    "Airline Transport Pilot",
+    "Balloon Pilot",
+    "Light Aircraft Pilot",
+    "Private Pilot",
+    "Commercial Pilot"
+   ]
+  },
+  "27027": {
+   "text": "Which of the following is the pilot who has obtained a licence and authorization to operate unmanned aircraft that are remotely controlled or that fly automatically according to a pre-programmed flight plan?",
+   "options": [
+    "UAV Pilot",
+    "Balloon Pilot",
+    "Airline Transport Pilot",
+    "Commercial Pilot",
+    "Private Pilot"
+   ]
+  },
+  "27028": {
+   "text": "Which of the following is the pilot who has obtained a licence and authorization to operate an aircraft, usually fitted with a basket, that is filled with heated air or a gas lighter than air?",
+   "options": [
+    "Balloon Pilot",
+    "UAV Pilot",
+    "Commercial Pilot",
+    "Private Pilot",
+    "Light Aircraft Pilot"
+   ]
+  },
+  "27029": {
+   "text": "Which of the following is the pilot licence that permits the operation of light aircraft subject to certain weight and passenger capacity limitations, and that cannot be used for commercial purposes?",
+   "options": [
+    "Light Aircraft Pilot Licence",
+    "Balloon Pilot Licence",
+    "Airline Transport Pilot Licence",
+    "Commercial Pilot Licence",
+    "Private Pilot Licence"
+   ]
+  },
+  "27030": {
+   "text": "Which of the following is the pilot licence that grants the authority to fly an aircraft without commercial gain, but does not permit carrying passengers or cargo for remuneration?",
+   "options": [
+    "Private Pilot Licence",
+    "Light Aircraft Pilot Licence",
+    "Unmanned Aircraft Pilot Licence",
+    "Airline Transport Pilot Licence",
+    "Commercial Pilot Licence"
+   ]
+  }
+ }
+}

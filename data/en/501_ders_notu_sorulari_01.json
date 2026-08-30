@@ -1,0 +1,354 @@
+{
+ "questions": {
+  "50107": {
+   "text": "Which of the following aerodrome elements is located within the landside of an aerodrome?",
+   "options": [
+    "Check-in halls",
+    "Taxiways",
+    "Aprons",
+    "Air traffic control tower",
+    "Runways"
+   ]
+  },
+  "50108": {
+   "text": "In which of the following has the IATA (International Air Transportation Association) aerodrome code been used to identify an aerodrome?",
+   "options": [
+    "IST",
+    "LTBA",
+    "LTFM",
+    "YCBG",
+    "LTAI"
+   ]
+  },
+  "50109": {
+   "text": "For its flights to Istanbul, which type of aerodrome ground handling service must the Canada-based airline Air Toronto obtain in order to bear legal liability towards the local authorities in Turkey and to follow and oversee its Istanbul operations?",
+   "options": [
+    "Representation, management and supervision service",
+    "Ramp services",
+    "Passenger services",
+    "Flight operations service",
+    "Cargo and mail service"
+   ]
+  },
+  "50101": {
+   "text": "Which of the following is not one of the limited maintenance service types provided by ground handling companies?",
+   "options": [
+    "Catering services",
+    "Hangar space services",
+    "Services related to materials",
+    "Parking services",
+    "Routine services"
+   ]
+  },
+  "50102": {
+   "text": "Which of the following is not among RAMP services?",
+   "options": [
+    "Passenger control",
+    "Load management",
+    "Aircraft cleaning",
+    "Baggage tagging and routing",
+    "Refuelling"
+   ]
+  },
+  "50103": {
+   "text": "What is Scheduled Air Service?",
+   "options": [
+    "Flights operated systematically at fixed and regular intervals and available for anyone to use.",
+    "A service through which seat selection and boarding pass procedures can be carried out over the internet.",
+    "A service by which passengers can travel without paying a fare.",
+    "A service by which passengers hand over their suitcases.",
+    "A performance indicator representing the number of passengers carried for a fee."
+   ]
+  },
+  "50104": {
+   "text": "According to which basic elements are airlines' business models classified?",
+   "options": [
+    "According to the characteristics of the products and services offered",
+    "According to the type of aircraft used",
+    "According to the number of employees",
+    "According to flight distance",
+    "According to the number of passengers"
+   ]
+  },
+  "50105": {
+   "text": "Worldwide, entities intending to conduct commercial air transport operations must, if registered in the trade register of their country, obtain an operating licence from that country's civil aviation authority. In this context, which of the following information is not included in the operating licence?",
+   "options": [
+    "The value of the aircraft",
+    "Operating conditions",
+    "Permitted special operations",
+    "The country the operator is affiliated with",
+    "The name of the operator"
+   ]
+  },
+  "50106": {
+   "text": "What do passengers do during the check-in process?",
+   "options": [
+    "They receive their seat number on the aircraft, the time boarding will begin, and the boarding gate number.",
+    "They meet the pilot.",
+    "They purchase an aircraft ticket.",
+    "They choose a meal on board.",
+    "They shop at stores in the airport."
+   ]
+  },
+  "50110": {
+   "text": "At which stage of the journey does a passenger hand over to the airline's ground handling agent the suitcase or items they wish to have carried in the aircraft's hold, or that must be carried in the hold due to their size?",
+   "options": [
+    "Check-in",
+    "Ticketing",
+    "Baggage Control",
+    "Block Time",
+    "Security Control"
+   ]
+  },
+  "50111": {
+   "text": "Which of the following is not one of the components of the State Action Plan (SAP) initiated to contribute to ICAO member states' efforts to combat climate change?",
+   "options": [
+    "Engaging with Stakeholders Abroad",
+    "Focal Point Information",
+    "Expected Outcomes",
+    "Mitigation Measures",
+    "Baseline Scenario"
+   ]
+  },
+  "50112": {
+   "text": "Which of the following is ICAO Annex 16 - Environmental Protection - Volume III?",
+   "options": [
+    "Aircraft CO2 Emissions",
+    "Carbon Offsetting and Reduction Scheme for International Aviation",
+    "Aerodrome Noise",
+    "Aircraft Engine Emissions",
+    "Aircraft Noise"
+   ]
+  },
+  "50113": {
+   "text": "What is the term for a set of management principles aimed at identifying, evaluating, monitoring and reducing the adverse environmental impacts of an organisation's activities?",
+   "options": [
+    "Environmental Management System",
+    "Development Management",
+    "Balance Management",
+    "Sustainability Management",
+    "Compliance Management"
+   ]
+  },
+  "50114": {
+   "text": "What is CORSIA?",
+   "options": [
+    "Carbon Offsetting and Reduction Scheme for International Aviation",
+    "Effective Airspace Use Scheme",
+    "Aircraft Emission Assessment Scheme",
+    "Environmental Impact Review Scheme",
+    "Sustainability Audit Scheme"
+   ]
+  },
+  "50115": {
+   "text": "What is the concept of meeting the needs of the present generation without compromising the ability of future generations to meet their own needs, while balancing economic growth, environmental care and social welfare?",
+   "options": [
+    "Sustainability",
+    "Circular Approach",
+    "Zero Waste",
+    "Sociality",
+    "Economic Development"
+   ]
+  },
+  "50116": {
+   "text": "Which of the following correctly states ECAC's mission?",
+   "options": [
+    "To promote the continuous development of a safe, efficient and sustainable European air transport system.",
+    "To make regulations concerning civil aviation authorities",
+    "To carry out legal regulations concerning Air Navigation Service Providers",
+    "To make agreements with sister regional organisations",
+    "To make regulations to aviation rules based on technological developments"
+   ]
+  },
+  "50117": {
+   "text": "Which of the following subject headings is not one of the Annexes to the Chicago Convention?",
+   "options": [
+    "Aviation Training",
+    "Search and Rescue",
+    "Aeronautical Charts",
+    "Aircraft Nationality and Registration Marks",
+    "Rules of the Air"
+   ]
+  },
+  "50118": {
+   "text": "Which of the following is not considered one of ICAO's aims and objectives?",
+   "options": [
+    "To provide technical advisory services to the European Commission",
+    "To meet the global need for safe, orderly and economical air transport",
+    "To prevent the waste resulting from unreasonable competition",
+    "To ensure that the rights of contracting states are fully respected and that every contracting state has a fair opportunity to operate international airlines",
+    "To foster the development of all aspects of international civil aeronautics"
+   ]
+  },
+  "50119": {
+   "text": "In which of the following is the full name of the \"Warsaw Convention\" given correctly?",
+   "options": [
+    "Convention for the Unification of Certain Rules Relating to International Carriage by Air",
+    "Convention on the Regulation of International Air Transport",
+    "Convention on the Determination of International Air Transport Rules",
+    "International Passenger and Cargo Carriage Agreement",
+    "International Air Transport Agreement"
+   ]
+  },
+  "50120": {
+   "text": "In which of the following is the abbreviation of the European Union's aviation safety authority given correctly?",
+   "options": [
+    "EASA",
+    "ENAC",
+    "ECAC",
+    "EUROCONTROL",
+    "IATA"
+   ]
+  },
+  "50121": {
+   "text": "What is the purpose of Alerting Service?",
+   "options": [
+    "To notify appropriate organisations regarding aircraft in need of search and rescue and to assist those organisations as required.",
+    "To regulate aircraft ticket prices.",
+    "To monitor the speed of aircraft.",
+    "To coordinate services within the aerodrome.",
+    "To notify changes to flight routes."
+   ]
+  },
+  "50122": {
+   "text": "In how many stages is Air Traffic Flow Management provided?",
+   "options": [
+    "4",
+    "6",
+    "2",
+    "5",
+    "3"
+   ]
+  },
+  "50123": {
+   "text": "Which of the following is/are an incorrect statement regarding the provision of Flight Information Service within a Flight Information Region (FIR)?",
+   "options": [
+    "Under this service, all information related to the airspace is transmitted to all aircraft without discrimination.",
+    "It is provided to aircraft receiving air traffic control service.",
+    "Flight information service is provided to aircraft that can benefit from this information.",
+    "Under this service, all temporary or permanent information that may affect flight safety is transmitted to aircraft.",
+    "It is provided to aircraft not receiving control service but known to the relevant air traffic service units."
+   ]
+  },
+  "50124": {
+   "text": "Which Annex to the Convention on International Civil Aviation defines the standards and procedures relating to air traffic services?",
+   "options": [
+    "Annex 11",
+    "Annex 10",
+    "Annex 13",
+    "Annex 9",
+    "Annex 12"
+   ]
+  },
+  "50125": {
+   "text": "Which of the following is the air traffic control service that an aircraft receives during its cruise flight, carried out mostly under level flight conditions?",
+   "options": [
+    "Area control service",
+    "Approach control service",
+    "Ground control service",
+    "Flight information service",
+    "Aerodrome control service"
+   ]
+  },
+  "50126": {
+   "text": "Which of the following is not a characteristic of a type certificate?",
+   "options": [
+    "It is issued only for the airframe classification of the aircraft.",
+    "It contains information relating to the technical characteristics of the type design.",
+    "It is issued by the authority of the country carrying out production.",
+    "It is a document that contains the operating limitations.",
+    "It determines compliance with the design criteria and airworthiness rules for the aircraft, engine or propeller."
+   ]
+  },
+  "50127": {
+   "text": "Which of the following statements about corrective maintenance is correct?",
+   "options": [
+    "Fault rectification operations.",
+    "The operations to be performed and the materials required are largely known in advance.",
+    "It does not disrupt the aircraft's flight schedule.",
+    "It is a type of scheduled maintenance.",
+    "Engine air filter replacement and lubrication operations can be given as examples."
+   ]
+  },
+  "50128": {
+   "text": "Which of the following is not one of the main (base) maintenance activities?",
+   "options": [
+    "Pre-flight Maintenance",
+    "Maintenance control activities",
+    "Training activities",
+    "Workshop maintenance",
+    "Hangar maintenance"
+   ]
+  },
+  "50129": {
+   "text": "Which of the following is the maintenance operation performed within the scope of scheduled flight operations?",
+   "options": [
+    "Line maintenance",
+    "Minor maintenance",
+    "Base maintenance",
+    "Major maintenance",
+    "Workshop maintenance"
+   ]
+  },
+  "50130": {
+   "text": "Which of the following statements about line maintenance is incorrect?",
+   "options": [
+    "It is a type of maintenance carried out in a hangar.",
+    "Unscheduled maintenance makes up the largest part of line maintenance activities.",
+    "It is also referred to as transit maintenance.",
+    "Minor scheduled maintenance can also be carried out within the scope of line maintenance.",
+    "It refers to maintenance operations carried out while the aircraft performs its scheduled flights."
+   ]
+  },
+  "50131": {
+   "text": "Which of the following is the aviation personnel responsible for the operation and maintenance of communication, navigation and surveillance systems?",
+   "options": [
+    "Air traffic safety electronics personnel",
+    "Category B2 maintenance personnel",
+    "Flight operations officer",
+    "Category C maintenance personnel",
+    "Category A maintenance personnel"
+   ]
+  },
+  "50132": {
+   "text": "What is the name of the system that produces the lift force required to keep a rotary-wing aircraft airborne?",
+   "options": [
+    "Rotor",
+    "Rudder",
+    "Turboprop",
+    "Wing",
+    "Turbofan"
+   ]
+  },
+  "50133": {
+   "text": "Which of the following is a lighter-than-air aircraft?",
+   "options": [
+    "Airship",
+    "Seaplane",
+    "Unmanned aerial vehicle",
+    "Helicopter",
+    "Gyroplane"
+   ]
+  },
+  "50134": {
+   "text": "Which of the following is the main stabilising element of an aircraft?",
+   "options": [
+    "Tail",
+    "Landing gear",
+    "Wing",
+    "Engine",
+    "Fuselage"
+   ]
+  },
+  "50135": {
+   "text": "In piston engines, what is used to generate thrust?",
+   "options": [
+    "Propeller",
+    "Jet fuel",
+    "Compressor",
+    "Wind",
+    "Wings"
+   ]
+  }
+ }
+}

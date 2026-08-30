@@ -51,8 +51,13 @@ python3 scripts/build_web.py   # artifact sürümünü tazele
 
 ## Soru dili (İngilizce / Türkçe)
 
-Sınav soruları kaynakta İngilizcedir ve **varsayılan dil İngilizcedir** — sınavda öyle
-çıkıyor. Türkçesi `data/tr/*.json` içinde ayrı durur; kaynak dosyalara dokunulmaz.
+**Her sorunun iki dilde de karşılığı vardır ve kip içinde dil karışmaz.** Varsayılan
+İngilizcedir — sınavda öyle çıkıyor. Kaynak dosyalara dokunulmaz; karşılıklar ayrı
+klasörlerde durur:
+
+- `data/tr/*.json` — kaynağı İngilizce olan soruların Türkçesi (2.207 soru)
+- `data/en/*.json` — kaynağı Türkçe olan soruların İngilizcesi (501, 502, ders notu
+  soruları; 450 soru). Bunlar dosya düzeyinde `"lang": "tr"` taşır.
 
 ```json
 { "questions": { "14227": { "text": "Soru?", "options": ["Şık 1", "Şık 2"] } } }
@@ -61,11 +66,10 @@ Sınav soruları kaynakta İngilizcedir ve **varsayılan dil İngilizcedir** —
 - **Şıklar sırayla eşlenir.** Kaynakta doğru cevap ilk şıktır; çeviri aynı sırayı
   taşımak zorundadır. Sayı tutmazsa `init_db.py` ve `check_tr.py` derlemeyi durdurur —
   sıra kayarsa yanlış şık doğru diye işaretlenirdi.
-- Çevirisi olmayan soru Türkçe kipte de **İngilizce görünür**; yarım çeviri yüzünden
-  soru kaybolmaz.
-- Kaynağı zaten Türkçe olan dosyalar (501, 502, ders notu soruları) dosya düzeyinde
-  `"lang": "tr"` taşır. Bunlar çeviri kapsamı dışıdır, "çevrilmedi" diye sayılmazlar.
-- Ders/bölüm adları `data/tr/_dersler.json` içinde; karşılığı olmayan İngilizce kalır.
+- Bir dilde karşılığı eksik kalan soru o kipte **kaynak dilinde** görünür. Bu bir
+  gerileme sayılır: `check_tr.py` iki yönü de sayar, `init_db.py` eksik varsa uyarır.
+  Yeni soru eklerken diğer dildeki karşılığını da ekle.
+- Ders/bölüm adları `data/tr/_dersler.json` ve `data/en/_dersler.json` içinde.
 
 Çeviri eklendikten sonra:
 
@@ -77,15 +81,17 @@ python3 scripts/init_db.py && python3 scripts/build_web.py
 Uygulamada tercih `F.lang` (`'en'` varsayılan), Ayarlar'daki **Soru dili** satırından
 seçilir ve `S.pref` içinde saklanıp cihazlar arasında eşitlenir. Metin seçimi tek yerden
 geçer: `qText(q)` / `qOpts(q)` / `subjName(s)` / `secName(sc)`. Soru metnini doğrudan
-`q[3]`, şıkları `q[4]` diye okuma — dil süzgeci devre dışı kalır.
+`q[3]`, şıkları `q[4]` diye okuma — dil süzgeci devre dışı kalır. Seçim her çizimde
+yapıldığı için yarım kalan tura dönünce kalan sorular da seçili dilde gelir.
 
 **İlerleme dilden bağımsızdır.** Kayıt soru **id'sine** bağlı; dili değiştirmek
 çözülmüşleri sıfırlamaz ve aynı soruyu iki dilde iki kez sormaz. Şık dizilerinin uzunluğu
 iki dilde aynı olduğu için tur ortasında dil değiştirmek cevap konumlarını da bozmaz.
 
-Dışa aktarımda çeviri, soru satırının **10. ve 11. alanları**dır (`q[10]` metin,
-`q[11]` şıklar) ve yalnız çevirisi olan satırda bulunur — çevirisiz sorular bugünküyle
-aynı boyutta kalır.
+Dışa aktarımda soru satırı: `q[3]`/`q[4]` kaynak metin+şıklar, `q[10]`/`q[11]` Türkçesi,
+`q[12]`/`q[13]` İngilizcesi. **Kaynak dilin alanı boş bırakılır** — o dilde zaten
+`q[3]`/`q[4]` okunur, aynı metin iki kez gömülmez. Bölüm satırı da benzer:
+`[kod, kaynak ad, Türkçe ad, İngilizce ad]`, sondaki boşlar atılır.
 
 ## Tekrar grupları
 
@@ -99,13 +105,17 @@ Yeni ders eklerken hem metin benzerliğini hem de "cevabı aynı ama metni farkl
 
 Asıl kullanılan sürüm bu: tek dosya, sunucusuz, `localStorage` tabanlı.
 
-Varsayılanlar `DEFAULTS` sabitinde: `deck:'new'` (çözülmemişler), `count:0` (sınırsız tur).
-`pick` ilk açılışta `autoPickModule()` ile **rastgele bir modüle** ayarlanır.
+Varsayılanlar `DEFAULTS` sabitinde: `deck:'new'` (çözülmemişler), `count:0` (sınırsız tur),
+`pick:{}` (**tüm banka**).
 
-**Ana ekran modül odaklıdır** — kullanıcı bütün bankayı tek düğmede açan bir akış
-istemedi. Kart hangi modülde olunduğunu, ilerlemeyi ve kalan soruyu yazar; "Başla" o
-modülü açar. Modül bitince "Sıradaki modüle geç" çıkar. Bunu bozup "Başla · 2265 soru"
-gibi bir düğmeye dönme.
+**Kapsam varsayılan olarak bütün bankadır.** Açılışta modül daraltması yapılmaz —
+`autoPickModule()` yalnız "Sıradaki modüle geç" ve geçilen ders işaretlemesinde çalışır.
+"Başla" tek turda kapsamdaki bütün soruları açar; bölüm bölüm ya da 20'şerlik turlara
+bölme yoktur (tur uzunluğu Ayarlar'dan isteyerek daraltılabilir, varsayılanı Tümü).
+Kullanıcı bunu açıkça istedi; modül odaklı eski akışa geri döndürme.
+
+Sayaçlar **toplam / çözülmemiş** okur (çözülen/toplam değil): kimlik satırında
+`G.total`/`G.total - G.seen`, kapsam kutusunda `total` ve `counts['new']`.
 
 Ekran üç katmandır ve bu sırayı koru: (1) `.idline` — avatar + ad + toplam istatistik,
 tek satır, dokunulunca Durum paneli; (2) `.hero` — ilerleme halkası (`ringSvg`) + modül

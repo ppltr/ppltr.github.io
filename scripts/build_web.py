@@ -70,18 +70,26 @@ def export() -> dict:
     conn.row_factory = sqlite3.Row
 
     subjects, subj_idx, sec_idx = [], {}, {}
-    for r in conn.execute("SELECT code, name, name_tr, level FROM subjects ORDER BY code"):
+    for r in conn.execute(
+            "SELECT code, name, name_tr, name_en, level FROM subjects ORDER BY code"):
         subj_idx[r["code"]] = len(subjects)
         d = {"c": r["code"], "n": r["name"], "lv": r["level"] or "ppl", "sec": []}
         if r["name_tr"]:
-            d["nt"] = r["name_tr"]          # Türkçe ders adı; yoksa İngilizcesi kullanılır
+            d["nt"] = r["name_tr"]          # Türkçe ders adı
+        if r["name_en"]:
+            d["ne"] = r["name_en"]          # İngilizce ders adı (kaynağı Türkçe olanlar)
         subjects.append(d)
 
+    # Bölüm satırı: [kod, kaynak ad, Türkçe ad, İngilizce ad] — sondakiler boş olabilir
     for r in conn.execute(
-            "SELECT subject_code, code, name, name_tr FROM sections ORDER BY subject_code, code"):
+            "SELECT subject_code, code, name, name_tr, name_en FROM sections "
+            "ORDER BY subject_code, code"):
         s = subjects[subj_idx[r["subject_code"]]]
         sec_idx[(r["subject_code"], r["code"])] = len(s["sec"])
-        s["sec"].append([r["code"], r["name"]] + ([r["name_tr"]] if r["name_tr"] else []))
+        sat = [r["code"], r["name"], r["name_tr"] or "", r["name_en"] or ""]
+        while len(sat) > 2 and not sat[-1]:
+            sat.pop()
+        s["sec"].append(sat)
 
     figs, fig_of = export_figures()
     eksik = [q["id"] for q in conn.execute(
@@ -92,32 +100,38 @@ def export() -> dict:
               + ", ".join(str(x) for x in eksik[:10]), file=sys.stderr)
 
     qs = []
-    ceviri = 0
+    ceviri = ceviri_en = 0
     for r in conn.execute(
-        "SELECT q.id, q.subject_code, s.code AS sec, q.text, q.text_tr, q.lang, q.flagged, "
+        "SELECT q.id, q.subject_code, s.code AS sec, q.text, q.text_tr, q.text_en, q.lang, q.flagged, "
         "       (q.dup_of IS NOT NULL) AS dup, (q.origin = 'uretilmis') AS gen, "
         "       q.needs_figure AS fig "
         "FROM questions q LEFT JOIN sections s ON s.id = q.section_id "
         "ORDER BY q.subject_code, s.code, q.id"
     ):
         rows = conn.execute(
-            "SELECT text, text_tr FROM options WHERE question_id = ? ORDER BY ord",
+            "SELECT text, text_tr, text_en FROM options WHERE question_id = ? ORDER BY ord",
             (r["id"],)).fetchall()
         opts = [o["text"] for o in rows]
         row = [r["id"], subj_idx[r["subject_code"]],
                sec_idx.get((r["subject_code"], r["sec"]), 0),
                r["text"], opts, r["flagged"] or 0, r["dup"], r["gen"],
                r["fig"] or 0, fig_of.get(str(r["id"]), "")]
-        # Çeviri varsa 10. ve 11. alanlar eklenir; çevirisiz soruların satırı
-        # bugünküyle bit bit aynı kalır, artifact boşuna büyümez.
-        if r["text_tr"] and all(o["text_tr"] for o in rows):
-            row += [r["text_tr"], [o["text_tr"] for o in rows]]
+        # 10-11: Türkçe metin+şıklar, 12-13: İngilizce metin+şıklar.
+        # Kaynak dilin alanı boş bırakılır (q[3]/q[4] zaten o dildedir).
+        tr_var = bool(r["text_tr"]) and all(o["text_tr"] for o in rows)
+        en_var = bool(r["text_en"]) and all(o["text_en"] for o in rows)
+        row += [r["text_tr"] if tr_var else "", [o["text_tr"] for o in rows] if tr_var else ""]
+        row += [r["text_en"] if en_var else "", [o["text_en"] for o in rows] if en_var else ""]
+        while len(row) > 10 and not row[-1]:
+            row.pop()
+        if tr_var or r["lang"] == "tr":
             ceviri += 1
-        elif r["lang"] == "tr":
-            ceviri += 1              # kaynağı zaten Türkçe, çeviriye ihtiyacı yok
+        if en_var or r["lang"] != "tr":
+            ceviri_en += 1
         qs.append(row)
     conn.close()
-    return {"s": subjects, "q": qs, "n": export_notes(), "fg": figs, "tr": ceviri}
+    return {"s": subjects, "q": qs, "n": export_notes(), "fg": figs,
+            "tr": ceviri, "en": ceviri_en}
 
 
 def main() -> None:
@@ -154,7 +168,7 @@ def main() -> None:
     PAGES.parent.mkdir(parents=True, exist_ok=True)
     PAGES.write_text(html, encoding="utf-8")
     kb = OUT.stat().st_size / 1024
-    print(f"{OUT}  ({len(data['q'])} soru ({data['tr']} çevrili), {len(data['s'])} ders, "
+    print(f"{OUT}  ({len(data['q'])} soru (TR {data['tr']}, EN {data['en']}), {len(data['s'])} ders, "
           f"{len(data['n'])} not, {len(data['fg'])} çizim, {kb:.1f} KB"
           + (", bulut açık)" if fb != "null" else ", bulut kapalı)"))
     print(f"{PAGES}  (GitHub Pages için aynı dosya)")

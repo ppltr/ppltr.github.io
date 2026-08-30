@@ -1016,20 +1016,23 @@ const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
 const F = Object.assign({}, DEFAULTS);
 
 // ── Soru dili ────────────────────────────────────────────────────────
-// Kaynak dil İngilizce (sınavda öyle çıkıyor), varsayılan da o. Türkçe kipte
-// çevirisi olan soru Türkçe gelir, olmayan İngilizce kalır — yarım çeviri
-// yüzünden soru kaybolmasın.
+// Her sorunun iki dilde de karşılığı var: q[3]/q[4] kaynak metin, q[10]/q[11]
+// Türkçesi, q[12]/q[13] İngilizcesi. Kaynak dilin alanı boş bırakılır — o dilde
+// zaten q[3]/q[4] okunur. Seçilen dil ne olursa olsun bütün sorular o dilde
+// gelir; kip içinde dil karışmaz.
 //
 // İlerleme soru **id'sine** bağlıdır: dili değiştirmek çözülmüşleri sıfırlamaz
 // ve aynı soruyu iki dilde iki kez sormaz. Bir kez çözdüysen çözülmüştür.
+// Tur ortasında dil değişirse kalan sorular yeni dilde gelir — şık dizilerinin
+// uzunluğu iki dilde aynı olduğu için verilen cevaplar da yerinde kalır.
 const trMode = () => F.lang === 'tr';
-const qText = q => (trMode() && q[10]) ? q[10] : q[3];
-const qOpts = q => (trMode() && q[11]) ? q[11] : q[4];
-const subjName = s => (trMode() && s.nt) ? s.nt : s.n;
-const secName = sc => (trMode() && sc[2]) ? sc[2] : sc[1];
-// Türkçe gelen soru sayısı: çevrilmişler + kaynağı zaten Türkçe olanlar (501, 502,
-// ders notu soruları). Derleme sayıyor, burada yeniden hesaplanmıyor.
-const TRN = DB.tr || 0;
+const qText = q => (trMode() ? q[10] : q[12]) || q[3];
+const qOpts = q => (trMode() ? q[11] : q[13]) || q[4];
+const subjName = s => (trMode() ? s.nt : s.ne) || s.n;
+const secName = sc => (trMode() ? sc[2] : sc[3]) || sc[1];
+// Seçili dilde gelen soru sayısı — derleme sayıyor, burada hesaplanmıyor
+const TRN = DB.tr || 0, ENN = DB.en || 0;
+const langN = () => trMode() ? TRN : ENN;
 function savePref(){ S.pref = F; S.prefAt = Date.now(); save(); }
 
 const card = id => S.c[id];
@@ -1094,7 +1097,8 @@ function inScope(q){
     // Hangi kipte olursan ol iki dilde de ara: Türkçe kipteyken İngilizce
     // terimle, İngilizce kipteyken Türkçe kelimeyle arayabilesin
     const hep = q[0] + ' ' + q[3] + ' ' + q[4].join(' ') +
-      (q[10] ? ' ' + q[10] + ' ' + q[11].join(' ') : '');
+      (q[10] ? ' ' + q[10] + ' ' + q[11].join(' ') : '') +
+      (q[12] ? ' ' + q[12] + ' ' + q[13].join(' ') : '');
     if (!hep.toLocaleLowerCase('tr').includes(n)) return false;
   }
   return true;
@@ -1407,7 +1411,9 @@ function home(){
       avatar(ME) + '<span class="nm">' + esc(ME) + '</span>' +
       '<span class="sep"></span>' +
       '<span class="stats">' +
-        '<span class="mini"><b class="num">' + nf(G.seen) + '</b>/' + nf(G.total) + '</span>' +
+        '<span class="mini" title="Toplam soru / henüz çözmediğin">' +
+          '<b class="num">' + nf(G.total) + '</b>/<b class="num">' +
+          nf(G.total - G.seen) + '</b></span>' +
         (G.pct !== null ? '<span class="mini"><b class="num">%' + G.pct + '</b> isabet</span>' : '') +
         (G.streak ? '<span class="mini"><b class="num">' + G.streak + '</b> gün</span>' : '') +
       (Cloud.user
@@ -1429,17 +1435,19 @@ function home(){
           'Birini geri almak istersen listeden çıkar.</p>' +
         '<div class="hact"><button class="go" id="go">Geçtiğim sınavlar</button></div>' +
       '</div>';
-  } else if (firstRun && m){
+  } else if (firstRun && !m){
     hero =
       '<div class="hero welcome">' +
         '<div class="wtitle">Hoş geldin.</div>' +
         '<p class="wtext"><b class="num">' + nf(G.total) + '</b> soru, ' +
           SUBJ.filter(s => !isPassed(s.c) && moduleStat(s.c).total).length +
-          ' modül. Yanlış yaptığın soru kaydedilir ve ' +
-          'öğrenene kadar karşına çıkar.</p>' +
-        modPick('İlk modülün',
-          '<b>' + esc(m.code) + '</b> · ' + esc(m.name),
-          '<span class="num">' + m.total + '</span> soru · <i>değiştirmek için dokun</i>') +
+          ' ders. Hepsi tek turda karşına gelir; yanlış yaptığın soru kaydedilir ve ' +
+          'öğrenene kadar tekrar sorulur. İstediğin an bırakırsın, kaldığın yerden ' +
+          'devam edersin.</p>' +
+        modPick('Kapsam', 'Tüm modüller',
+          '<span class="num">' + nf(total) + '</span> soru · ' +
+            '<span class="num">' + nf(counts['new'] || 0) + '</span> çözülmemiş' +
+            ' · <i>daraltmak için dokun</i>') +
         '<div class="hact"><button class="go" id="go">Başla</button></div>' +
       '</div>';
   } else if (m){
@@ -1462,8 +1470,10 @@ function home(){
   } else {
     const ks = Object.keys(F.pick);
     const secN = Object.values(F.pick).reduce((a, b) => a + b.length, 0);
+    const kalan = counts['new'] || 0;          // kapsamda hiç görülmemiş soru
     let kapsam;
-    if (!ks.length) kapsam = 'Tüm modüller';
+    if (!ks.length) kapsam = 'Tüm modüller · <b>' + SUBJ.filter(x =>
+      !isPassed(x.c) && moduleStat(x.c).total).length + '</b> ders';
     else if (ks.length === 1){
       const s1 = SUBJ.find(x => x.c === ks[0]);
       kapsam = '<b>' + ks[0] + '</b> · ' + esc(s1 ? s1.n : '') +
@@ -1472,8 +1482,10 @@ function home(){
       (secN ? ' <span class="frag">' + secN + ' bölüm</span>' : '');
     hero =
       '<div class="hero">' +
-        modPick('Seçili kapsam', kapsam,
-          '<span class="num">' + nf(total) + '</span> soru · <i>değiştirmek için dokun</i>',
+        modPick(ks.length ? 'Seçili kapsam' : 'Kapsam', kapsam,
+          '<span class="num">' + nf(total) + '</span> soru · ' +
+            '<span class="num">' + nf(kalan) + '</span> çözülmemiş' +
+            ' · <i>değiştirmek için dokun</i>',
           ringSvg(cov, false)) +
         '<div class="hact"><button class="go" id="go"' + (ready ? '' : ' disabled') + '>' +
             (ready ? 'Başla · ' + (F.count ? Math.min(ready, F.count) : nf(ready)) + ' soru'
@@ -1530,13 +1542,12 @@ function home(){
             '">English</button>' +
           '<button type="button" data-lang="tr" class="' + (F.lang === 'tr' ? 'on' : '') +
             '">Türkçe</button>' +
-          '</div><div class="note">' + (trMode()
-            ? 'Sorular Türkçe geliyor.' + (TRN < QS.length
-                ? ' Çevirisi henüz olmayan <b class="num">' + nf(QS.length - TRN) +
-                  '</b> soru İngilizce kalır.' : '')
-            : 'Sınavda çıktığı dil — varsayılan bu. ' +
-              (TRN ? '<b class="num">' + nf(TRN) + '</b> sorunun Türkçesi hazır.' : '')) +
-          ' Dili değiştirmek ilerlemeni bozmaz: soru dilden bağımsız sayılır, ' +
+          '</div><div class="note">' +
+          (langN() >= QS.length
+            ? 'Bütün sorular seçtiğin dilde geliyor. '
+            : '<b class="num">' + nf(QS.length - langN()) + '</b> sorunun bu dilde ' +
+              'karşılığı henüz yok, onlar kaynak dilinde gelir. ') +
+          'Dili değiştirmek ilerlemeni bozmaz: soru dilden bağımsız sayılır, ' +
           'çözdüğün soru iki kez karşına çıkmaz.</div></div>' +
         '<div class="grp"><span class="lbl">Ara</span>' +
           '<input type="search" id="q" placeholder="kelime ya da soru ID" value="' + esc(F.q) + '"></div>' +
@@ -2510,8 +2521,8 @@ document.addEventListener('keydown', e => {
 });
 
 loadProfile();
-if (!Object.keys(F.pick).length && !S.pref) autoPickModule();
-if (!Object.keys(F.pick).length && !Object.keys(S.c).length) autoPickModule();
+// Kapsam varsayılan olarak TÜM banka: açılışta modül daraltması yapılmaz.
+// Kullanıcı isterse konu seçicisinden daraltır; seçim onun kararıdır.
 paintWho();
 if (S.runs[0] && !S.runs[0].done) resumeRun(S.runs[0].id); else home();
 Cloud.init();

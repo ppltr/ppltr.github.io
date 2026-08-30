@@ -16,7 +16,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = ROOT / "atpl.db"
 DATA_DIR = ROOT / "data"
-TR_DIR = DATA_DIR / "tr"          # Türkçe çeviriler; kaynak dosyalar İngilizce kalır
+TR_DIR = DATA_DIR / "tr"          # soruların Türkçe hâli
+EN_DIR = DATA_DIR / "en"          # soruların İngilizce hâli (kaynağı Türkçe olanlar için)
+# Her sorunun iki dilde de karşılığı olmalı: kaynağı İngilizceyse data/tr/ içinde
+# Türkçesi, kaynağı Türkçeyse data/en/ içinde İngilizcesi durur. Böylece seçilen
+# dil ne olursa olsun bütün sorular o dilde gelir, kip içinde karışma olmaz.
 
 SCHEMA = """
 PRAGMA foreign_keys = ON;
@@ -129,8 +133,11 @@ def migrate(conn: sqlite3.Connection) -> None:
         # kaynakta "Attention!" işaretli sorular: cevabı tartışmalı olabilir
         conn.execute("ALTER TABLE questions ADD COLUMN flagged INTEGER NOT NULL DEFAULT 0")
     if "text_tr" not in cols:
-        # Türkçe çeviri; boşsa uygulama İngilizce metne düşer
+        # Türkçe çeviri; boşsa uygulama kaynak metne düşer
         conn.execute("ALTER TABLE questions ADD COLUMN text_tr TEXT")
+    if "text_en" not in cols:
+        # İngilizce çeviri; kaynağı Türkçe olan sorular için
+        conn.execute("ALTER TABLE questions ADD COLUMN text_en TEXT")
     if "lang" not in cols:
         # sorunun **kaynak** dili: 'en' (sınav raporu) | 'tr' (ders notu, 501, 502).
         # Kaynağı Türkçe olan sorunun çeviriye ihtiyacı yoktur.
@@ -139,13 +146,19 @@ def migrate(conn: sqlite3.Connection) -> None:
     ocols = {r[1] for r in conn.execute("PRAGMA table_info(options)")}
     if "text_tr" not in ocols:
         conn.execute("ALTER TABLE options ADD COLUMN text_tr TEXT")
+    if "text_en" not in ocols:
+        conn.execute("ALTER TABLE options ADD COLUMN text_en TEXT")
 
     if "name_tr" not in scols:
         conn.execute("ALTER TABLE subjects ADD COLUMN name_tr TEXT")
+    if "name_en" not in scols:
+        conn.execute("ALTER TABLE subjects ADD COLUMN name_en TEXT")
 
     seccols = {r[1] for r in conn.execute("PRAGMA table_info(sections)")}
     if "name_tr" not in seccols:
         conn.execute("ALTER TABLE sections ADD COLUMN name_tr TEXT")
+    if "name_en" not in seccols:
+        conn.execute("ALTER TABLE sections ADD COLUMN name_en TEXT")
 
     conn.commit()
 
@@ -234,50 +247,53 @@ def import_file(conn: sqlite3.Connection, path: Path) -> int:
 
 
 def import_translations(conn: sqlite3.Connection) -> tuple[int, int]:
-    """data/tr/*.json içindeki Türkçe metinleri sorulara ve şıklara yazar.
+    """data/tr/ ve data/en/ içindeki çevirileri sorulara ve şıklara yazar.
 
     Şıklar **sırayla** eşlenir: kaynakta doğru cevap ilk sıradadır, çeviri de
     aynı sırayı taşımak zorundadır. Sayı tutmuyorsa dosya reddedilir — sessizce
     yanlış şıkka doğru cevap etiketi yapıştırmaktansa derleme dursun.
+
+    Döner: (Türkçesi olan soru sayısı, İngilizcesi olan soru sayısı).
     """
-    conn.execute("UPDATE questions SET text_tr = NULL")
-    conn.execute("UPDATE options SET text_tr = NULL")
-    if not TR_DIR.exists():
-        return 0, 0
+    conn.execute("UPDATE questions SET text_tr = NULL, text_en = NULL")
+    conn.execute("UPDATE options SET text_tr = NULL, text_en = NULL")
+    sayim = {"tr": 0, "en": 0}
 
-    ders = TR_DIR / "_dersler.json"
-    if ders.exists():
-        d = json.loads(ders.read_text(encoding="utf-8"))
-        for code, ad in d.get("subjects", {}).items():
-            conn.execute("UPDATE subjects SET name_tr = ? WHERE code = ?", (ad, code))
-        for code, ad in d.get("sections", {}).items():
-            conn.execute("UPDATE sections SET name_tr = ? WHERE code = ?", (ad, code))
-
-    nq = 0
-    for path in sorted(TR_DIR.glob("*.json")):
-        if path.name.startswith("_"):
+    for dil, klasor in (("tr", TR_DIR), ("en", EN_DIR)):
+        if not klasor.exists():
             continue
-        data = json.loads(path.read_text(encoding="utf-8"))
-        for sid, tr in data.get("questions", {}).items():
-            qid = int(sid)
-            row = conn.execute("SELECT id FROM questions WHERE id = ?", (qid,)).fetchone()
-            if row is None:
-                sys.exit(f"hata: {path.name} bilinmeyen soru id'si çeviriyor: {qid}")
-            opts = conn.execute(
-                "SELECT id FROM options WHERE question_id = ? ORDER BY ord", (qid,)).fetchall()
-            tops = tr.get("options", [])
-            if len(tops) != len(opts):
-                sys.exit(f"hata: {path.name} soru {qid}: {len(tops)} şık çevrilmiş, "
-                         f"kaynakta {len(opts)} şık var")
-            if not tr.get("text", "").strip() or any(not t.strip() for t in tops):
-                sys.exit(f"hata: {path.name} soru {qid}: boş çeviri")
-            conn.execute("UPDATE questions SET text_tr = ? WHERE id = ?", (tr["text"], qid))
-            for (oid,), t in zip(opts, tops):
-                conn.execute("UPDATE options SET text_tr = ? WHERE id = ?", (t, oid))
-            nq += 1
+        qcol, ocol = f"text_{dil}", f"text_{dil}"
+        ders = klasor / "_dersler.json"
+        if ders.exists():
+            d = json.loads(ders.read_text(encoding="utf-8"))
+            for code, ad in d.get("subjects", {}).items():
+                conn.execute(f"UPDATE subjects SET name_{dil} = ? WHERE code = ?", (ad, code))
+            for code, ad in d.get("sections", {}).items():
+                conn.execute(f"UPDATE sections SET name_{dil} = ? WHERE code = ?", (ad, code))
+
+        for path in sorted(klasor.glob("*.json")):
+            if path.name.startswith("_"):
+                continue
+            data = json.loads(path.read_text(encoding="utf-8"))
+            for sid, tr in data.get("questions", {}).items():
+                qid = int(sid)
+                row = conn.execute("SELECT id FROM questions WHERE id = ?", (qid,)).fetchone()
+                if row is None:
+                    sys.exit(f"hata: {path.name} bilinmeyen soru id'si çeviriyor: {qid}")
+                opts = conn.execute(
+                    "SELECT id FROM options WHERE question_id = ? ORDER BY ord", (qid,)).fetchall()
+                tops = tr.get("options", [])
+                if len(tops) != len(opts):
+                    sys.exit(f"hata: {path.name} soru {qid}: {len(tops)} şık çevrilmiş, "
+                             f"kaynakta {len(opts)} şık var")
+                if not tr.get("text", "").strip() or any(not t.strip() for t in tops):
+                    sys.exit(f"hata: {path.name} soru {qid}: boş çeviri")
+                conn.execute(f"UPDATE questions SET {qcol} = ? WHERE id = ?", (tr["text"], qid))
+                for (oid,), t in zip(opts, tops):
+                    conn.execute(f"UPDATE options SET {ocol} = ? WHERE id = ?", (t, oid))
+                sayim[dil] += 1
     conn.commit()
-    toplam = conn.execute("SELECT COUNT(*) FROM questions").fetchone()[0]
-    return nq, toplam
+    return sayim["tr"], sayim["en"]
 
 
 def rebuild_fts(conn: sqlite3.Connection) -> None:
@@ -302,7 +318,7 @@ def main() -> None:
         print(f"{path.name}: {n} soru içe aktarıldı")
 
     dups = apply_duplicates(conn)
-    ceviri, _ = import_translations(conn)
+    ceviri, ceviri_en = import_translations(conn)
     rebuild_fts(conn)
 
     q = conn.execute("SELECT COUNT(*) FROM questions").fetchone()[0]
@@ -318,8 +334,12 @@ def main() -> None:
     print(f"\n{DB_PATH}: toplam {q} soru, {o} şık")
     print(f"  {dups} tekrar işaretlendi → {q - dups} benzersiz soru")
     print(f"  {uret} soru ders notundan üretilmiş")
-    print(f"  {ceviri} sorunun Türkçe çevirisi var, {trsrc} soru zaten Türkçe kaynaklı")
-    print(f"  → Türkçe kipte {ceviri + trsrc}/{q} soru Türkçe geliyor")
+    print(f"  Türkçe: {ceviri} çeviri + {trsrc} zaten Türkçe = {ceviri + trsrc}/{q}")
+    print(f"  İngilizce: {ceviri_en} çeviri + {q - trsrc} zaten İngilizce = {ceviri_en + q - trsrc}/{q}")
+    eksik_tr, eksik_en = q - (ceviri + trsrc), q - (ceviri_en + q - trsrc)
+    if eksik_tr or eksik_en:
+        print(f"  UYARI: Türkçe {eksik_tr}, İngilizce {eksik_en} soru eksik — "
+              f"o sorular kip içinde diğer dilde görünür")
     if missing:
         print(f"UYARI: {missing} sorunun doğru cevabı işaretlenmemiş")
 

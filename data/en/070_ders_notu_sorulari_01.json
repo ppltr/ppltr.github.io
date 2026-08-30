@@ -1,0 +1,204 @@
+{
+ "questions": {
+  "57301": {
+   "text": "For at least how long is the operator required to retain flight preparation forms approved by the pilot?",
+   "options": [
+    "3 months",
+    "24 months",
+    "1 year",
+    "Until the pilot's next flight",
+    "Until the flight is completed"
+   ]
+  },
+  "57302": {
+   "text": "If a part separates from an aircraft during flight, does not injure anyone on the ground, and does not adversely affect the continuation of the flight, how does ICAO define this occurrence?",
+   "options": [
+    "Aircraft incident",
+    "Unexpected occurrence",
+    "Aircraft accident",
+    "A reportable occurrence",
+    "Aircraft malfunction"
+   ]
+  },
+  "57303": {
+   "text": "Which of the following documents is not required to be carried on board an aircraft registered in an ICAO member state?",
+   "options": [
+    "Passenger manifest",
+    "Flight crew licences",
+    "Certificate of Airworthiness (C of A)",
+    "Certificate of Registration (C of R)",
+    "Aircraft radio licence"
+   ]
+  },
+  "57304": {
+   "text": "The Pilot's Operating Handbook and Aircraft Flight Manual (POH-AFM)...",
+   "options": [
+    "Is produced specifically for each aircraft.",
+    "Is produced according to the aircraft's pilot.",
+    "Is produced specifically for flight training organisations.",
+    "Is produced specifically for operators.",
+    "Is produced specifically for each country."
+   ]
+  },
+  "57305": {
+   "text": "At an aerodrome, aircraft use a light to indicate to other aircraft that their engines are running while actively moving within the manoeuvring area. Which of the following is the light used for this purpose?",
+   "options": [
+    "Red anti-collision light",
+    "Navigation lights",
+    "Tail lights",
+    "Purple anti-collision light",
+    "Landing light"
+   ]
+  },
+  "57306": {
+   "text": "The ICAO flight plan is approved and signed by which of the following?",
+   "options": [
+    "Pilot-in-command",
+    "Air traffic controller",
+    "Flight Operations Officer",
+    "Supplier",
+    "Operator"
+   ]
+  },
+  "57307": {
+   "text": "Regarding refuelling at an aerodrome, which of the following is correct?",
+   "options": [
+    "It is carried out by an authorised fuel supply unit under the supervision of the pilot or a responsible person authorised by the operator.",
+    "It is carried out specifically by the pilot.",
+    "Although not the usual case, it may be carried out by an authorised oil company.",
+    "It may be carried out by any fuel supplier under the supervision of the pilot.",
+    "It may only be carried out by an authorised supplier."
+   ]
+  },
+  "57308": {
+   "text": "Which of the following is correct regarding VHF band radio?",
+   "options": [
+    "It is required to be carried on all aircraft.",
+    "It is only required on multi-engine passenger aircraft.",
+    "It is only required on diesel-engine aircraft.",
+    "It is only required on multi-engine aircraft.",
+    "It is only required on single-engine aircraft."
+   ]
+  },
+  "57309": {
+   "text": "Which of the following is a correct authority or responsibility of the PIC?",
+   "options": [
+    "The authority to offload a person who may endanger the safety of the aircraft",
+    "The authority to secure a person who may endanger the aircraft's centre of gravity",
+    "Planning annual leave for flight crew members",
+    "Arranging special catering service for passengers",
+    "Changing the flight route by negotiating with air traffic control"
+   ]
+  },
+  "57310": {
+   "text": "What does the transponder code 7500 indicate?",
+   "options": [
+    "Unlawful interference",
+    "Transponder failure",
+    "Navigation failure",
+    "Radio failure",
+    "Emergency"
+   ]
+  },
+  "57311": {
+   "text": "In the event of a transponder failure, which of the following is done?",
+   "options": [
+    "Air traffic unit is informed.",
+    "121.00 is selected instead.",
+    "Code 7777 is selected.",
+    "Code 7600 is selected.",
+    "Code 7400 is selected."
+   ]
+  },
+  "57312": {
+   "text": "On contaminated runways, which types of contaminants cause a runway to be considered contaminated?",
+   "options": [
+    "Water, slush, loose snow, snow compacted into a solid mass, and ice",
+    "Snow only",
+    "Slush only",
+    "Water only",
+    "Ice only"
+   ]
+  },
+  "57313": {
+   "text": "Under which conditions should the occurrence of aquaplaning (hydroplaning) be taken into account?",
+   "options": [
+    "In both take-off and landing operations",
+    "Only during take-off",
+    "Only while the aircraft is taking off",
+    "Only while the aircraft is on the ground",
+    "Only during landing"
+   ]
+  },
+  "57314": {
+   "text": "What is the main factor that causes dynamic hydroplaning?",
+   "options": [
+    "The depth of standing water on the runway",
+    "A strong headwind",
+    "The weight of the aircraft",
+    "A strong crosswind",
+    "The position of the runway lights"
+   ]
+  },
+  "57315": {
+   "text": "Noise abatement procedures are made mandatory by regulations for which operations?",
+   "options": [
+    "IFR operations",
+    "Both IFR and VFR operations",
+    "VFR operations",
+    "No operations",
+    "Only Light IFR operations"
+   ]
+  },
+  "57316": {
+   "text": "Which of the following situations requires that noise abatement procedures not be applied?",
+   "options": [
+    "When runway surface conditions are adversely affected by water, snow, slush, ice, etc.",
+    "When the crosswind component, including gusts, does not exceed 15 knots",
+    "When the crosswind component, including gusts, does not exceed 15 km",
+    "When the tailwind component, including gusts, does not exceed 5 knots",
+    "When the cloud base is higher than 500 ft above aerodrome elevation"
+   ]
+  },
+  "57317": {
+   "text": "Which type of aircraft is most affected by wake turbulence?",
+   "options": [
+    "Light-weight aircraft",
+    "No aircraft are affected",
+    "All aircraft are affected equally",
+    "Heavy-weight aircraft",
+    "Medium-weight aircraft"
+   ]
+  },
+  "57318": {
+   "text": "How long can wake turbulence persist?",
+   "options": [
+    "3 minutes or more",
+    "It disappears after being seen once",
+    "It disappears instantly",
+    "2 minutes",
+    "1 minute"
+   ]
+  },
+  "57319": {
+   "text": "In the wake turbulence category classification, what is the maximum certificated take-off mass for aircraft in the HEAVY category?",
+   "options": [
+    "136,000 kg or more",
+    "136,000 litres or more",
+    "146,000 kg or more",
+    "186,000 kg or more",
+    "Between 136,000 kg and 186,000 kg"
+   ]
+  },
+  "57320": {
+   "text": "Wake turbulence...",
+   "options": [
+    "Begins when the nosewheel lifts off and ends when the landing gear touches the runway.",
+    "Begins when lift-generating surfaces are deployed and ends when they are retracted.",
+    "Begins when the aircraft reaches 300 metres above the ground and ends when it descends through this altitude on landing.",
+    "Begins when the aircraft reaches 300 feet above the ground and ends when it descends through this altitude on landing.",
+    "Begins as soon as the aircraft starts its take-off roll and ends as soon as landing occurs."
+   ]
+  }
+ }
+}

@@ -1,0 +1,534 @@
+{
+ "questions": {
+  "95266": {
+   "text": "What is the term for the parts of an airport not directly involved in flight operations, lying outside the airside, starting from the beginning point of the main access road?",
+   "options": [
+    "Landside",
+    "Airside",
+    "Security restricted area",
+    "Demarcated area",
+    "Apron"
+   ]
+  },
+  "95267": {
+   "text": "Which of the following may enter the landside of an airport?",
+   "options": [
+    "Passengers, staff, passengers' relatives, well-wishers and greeters",
+    "Only passengers and authorised staff",
+    "Only staff with a valid entry pass",
+    "Only passengers who have passed security control",
+    "Only crew"
+   ]
+  },
+  "95268": {
+   "text": "Which of the following can be given as an example of the landside of an airport?",
+   "options": [
+    "Areas where the check-in counters are located",
+    "The ramp area",
+    "The baggage sorting area",
+    "Taxiways",
+    "Beyond the departure passport control checkpoint"
+   ]
+  },
+  "95269": {
+   "text": "Under Annex 17, which of the following is correct regarding taking security measures on the landside of an airport?",
+   "options": [
+    "Security measures must also be taken on the landside to reduce the risk of acts of unlawful interference",
+    "No security measures are needed on the landside",
+    "The landside is the responsibility of the law enforcement authorities only",
+    "Having cameras on the landside alone is sufficient",
+    "No additional measures are needed since the landside is considered a security restricted area"
+   ]
+  },
+  "95270": {
+   "text": "Which of the following can be given as an example of the airside of an airport?",
+   "options": [
+    "The arriving passenger baggage claim area",
+    "Car park areas",
+    "The terminal building entrance",
+    "Check-in counters",
+    "The airport's main access road"
+   ]
+  },
+  "95271": {
+   "text": "Which of the following is not considered part of a security restricted area?",
+   "options": [
+    "The airport car park",
+    "The ramp area",
+    "Baggage sorting areas",
+    "Cargo warehouses and mail centres",
+    "Catering and aircraft cleaning facilities located airside"
+   ]
+  },
+  "95272": {
+   "text": "At airports, what are persons subjected to in order to pass from the airside into a security restricted area?",
+   "options": [
+    "Access control and security control",
+    "Access control only",
+    "Security control only",
+    "Passport control only",
+    "They are not subjected to any control"
+   ]
+  },
+  "95273": {
+   "text": "Which of the following is correct regarding demarcated areas?",
+   "options": [
+    "They are established so that alternative measures can be applied and are clearly separated from security restricted areas",
+    "They are a subdivision of security restricted areas and the same measures apply",
+    "They are established only for scheduled commercial flights",
+    "They are found only inside the terminal building",
+    "They are areas where no security measures are applied at all"
+   ]
+  },
+  "95274": {
+   "text": "By what means can demarcated areas be separated from security restricted areas?",
+   "options": [
+    "By physical measures or by patrolling and surveillance",
+    "Only with a wall or wire fence",
+    "Only with camera systems",
+    "Only with warning signs",
+    "Only with access card readers"
+   ]
+  },
+  "95275": {
+   "text": "What procedures do aviation security measures basically consist of?",
+   "options": [
+    "Access control and security control",
+    "Screening and escorting",
+    "Inspection and testing",
+    "Patrolling and surveillance",
+    "Training and certification"
+   ]
+  },
+  "95276": {
+   "text": "What is the term for the methods used to detect prohibited articles in order to prevent acts of unlawful interference?",
+   "options": [
+    "Security control",
+    "Access control",
+    "Authorisation",
+    "Quality control",
+    "Background check"
+   ]
+  },
+  "95277": {
+   "text": "The authorisations that can be used to enter the airside of an airport are divided into which two main groups?",
+   "options": [
+    "The boarding passes used by passengers and the airport entry pass used by non-passengers",
+    "Passport and visa",
+    "Ticket and baggage tag",
+    "Apron plate and vehicle identification card",
+    "Uniform and identity badge"
+   ]
+  },
+  "95278": {
+   "text": "Where is it generally checked whether the identity information on passengers' boarding passes has been written correctly?",
+   "options": [
+    "At the check-in counters",
+    "At the aircraft door",
+    "At the car park entrance",
+    "At the baggage claim area",
+    "At the apron entrance"
+   ]
+  },
+  "95279": {
+   "text": "Which of the following is not among the information that must be found on an airport identity card?",
+   "options": [
+    "The person's blood type",
+    "The person's name and photograph",
+    "The name of the issuing organisation or airport",
+    "The areas the person is permitted to access",
+    "The expiry date"
+   ]
+  },
+  "95280": {
+   "text": "Which expression must be present on crew identity cards to distinguish them from other cards?",
+   "options": [
+    "The word \"Crew\" in English",
+    "The word \"Staff\" in English",
+    "The word \"Airside\" in English",
+    "The word \"Security\" in English",
+    "The word \"Visitor\" in English"
+   ]
+  },
+  "95281": {
+   "text": "What does the background check that must be carried out before issuing a person an identity card granting unescorted access to security restricted areas cover?",
+   "options": [
+    "Examination of the person's education, employment and criminal records",
+    "Examination of the person's medical report",
+    "Examination of the person's financial situation",
+    "Examination of the person's travel history",
+    "Examination of the person's driving licence details"
+   ]
+  },
+  "95282": {
+   "text": "What should be done regarding the identity card of a person who fails the background check?",
+   "options": [
+    "Depending on the situation, it must be immediately deactivated or withdrawn and returned to the issuing organisation",
+    "It must remain valid for one year",
+    "It should continue to be used only for escorted entries",
+    "It should remain with the person but the authorised areas should be narrowed",
+    "No action needs to be taken"
+   ]
+  },
+  "95283": {
+   "text": "What methods are used to check persons' authorisation to enter the areas they wish to access?",
+   "options": [
+    "Visual, electronic, hybrid and biometric",
+    "Visual, audible and written",
+    "Manual, automatic and semi-automatic",
+    "Physical, chemical and digital",
+    "Primary, secondary and additional"
+   ]
+  },
+  "95284": {
+   "text": "Which of the following situations causes an increase in risk in electronic access control?",
+   "options": [
+    "The system being used by unauthorised persons, password sharing, or failure to protect information security",
+    "The card reader operating too quickly",
+    "The doors being designed for more than one person",
+    "Visual control also being carried out",
+    "The use of a surveillance system"
+   ]
+  },
+  "95285": {
+   "text": "In hybrid access control, what is the most important point the security officer at the checkpoint must not forget?",
+   "options": [
+    "That electronic card readers can only verify the validity of authorisations",
+    "That electronic card readers also match the person with the card",
+    "That visual control is not necessary",
+    "That the card's expiry date cannot be read",
+    "That escorted entries are automatically approved"
+   ]
+  },
+  "95286": {
+   "text": "The data that can be used in biometric access control are specified in which numbered ICAO document?",
+   "options": [
+    "9303",
+    "8973",
+    "4444",
+    "9859",
+    "7300"
+   ]
+  },
+  "95287": {
+   "text": "According to the ICAO document, which biometric data are considered unique and specific to a single person?",
+   "options": [
+    "Fingerprints, facial features and iris pattern",
+    "Height, weight and eye colour",
+    "Voice tone, signature and handwriting",
+    "Blood type, DNA and dental structure",
+    "Gait, posture and facial expressions"
+   ]
+  },
+  "95288": {
+   "text": "Which of the following is correct regarding short-term temporary identity cards and documents at the airport?",
+   "options": [
+    "These documents do not permit entry into security restricted areas without an escort",
+    "These documents allow free entry into security restricted areas",
+    "These documents must have different features from airport identity cards",
+    "These documents can only be used on the landside",
+    "An expiry date is not required for these documents"
+   ]
+  },
+  "95289": {
+   "text": "Which of the following is correct regarding authorisation to enter the airport?",
+   "options": [
+    "No uniform or identity badge grants entry authorisation other than airport entry passes and authorisation documents",
+    "An airline uniform alone grants entry authorisation",
+    "A company identity badge substitutes for an entry pass",
+    "A crew uniform exempts from access control",
+    "A law enforcement uniform grants entry authorisation to all areas"
+   ]
+  },
+  "95290": {
+   "text": "Which of the following is correct regarding the validity of airport entry passes?",
+   "options": [
+    "It is valid only at the airport where it was issued and cannot be used at another airport",
+    "It is valid at all airports nationwide",
+    "It is valid at all international airports",
+    "It is valid at every airport served by the same airline",
+    "It is valid at all facilities in the province where the issuing organisation is located"
+   ]
+  },
+  "95291": {
+   "text": "In the event of improper use of an entry pass, who bears the responsibility?",
+   "options": [
+    "The card user together with the organisation or institution the staff member belongs to",
+    "Only the card user",
+    "Only the authority that issued the card",
+    "Only the airport operator",
+    "Only the officer at the security checkpoint"
+   ]
+  },
+  "95292": {
+   "text": "Which of the following is not among the situations requiring the immediate return of an airport entry pass to the issuing organisation?",
+   "options": [
+    "The staff member going on annual leave",
+    "Termination of employment",
+    "Change of employer",
+    "Expiry of the card's validity period",
+    "Cancellation of the card"
+   ]
+  },
+  "95293": {
+   "text": "In Turkey, an All Airports Entry Pass is issued to personnel working at a minimum of how many airports?",
+   "options": [
+    "3",
+    "2",
+    "4",
+    "5",
+    "10"
+   ]
+  },
+  "95294": {
+   "text": "In Turkey, what is the administrative fine applied for 2024 in the event of improper use of an airport entry pass?",
+   "options": [
+    "9,113 TL",
+    "18,222 TL",
+    "4,556 TL",
+    "36,444 TL",
+    "1,000 TL"
+   ]
+  },
+  "95295": {
+   "text": "What is the administrative fine applied for 2024 in the event a person resists screening or a manual search at security checkpoints despite being warned?",
+   "options": [
+    "18,222 TL",
+    "9,113 TL",
+    "4,556 TL",
+    "36,444 TL",
+    "2,500 TL"
+   ]
+  },
+  "95296": {
+   "text": "For which vehicles are vehicle entry permits issued?",
+   "options": [
+    "Only for vehicles with an operational need",
+    "For all vehicles arriving at the airport",
+    "Only for vehicles belonging to public institutions",
+    "Only for vehicles belonging to airline companies",
+    "Only for vehicles carrying passengers"
+   ]
+  },
+  "95297": {
+   "text": "As good practice, what is the recommended maximum validity period for vehicle entry authorisations?",
+   "options": [
+    "2 years",
+    "1 year",
+    "3 years",
+    "5 years",
+    "6 months"
+   ]
+  },
+  "95298": {
+   "text": "In Turkey, which documents must be carried and verified for vehicles entering security restricted areas?",
+   "options": [
+    "Apron plate and vehicle identification card",
+    "Only the apron plate",
+    "Only the vehicle identification card",
+    "Registration certificate and driving licence",
+    "Insurance policy and inspection certificate"
+   ]
+  },
+  "95299": {
+   "text": "Which of the following is not one of the security checkpoints at airports?",
+   "options": [
+    "Aircraft cockpit entry checkpoint",
+    "Airport main access road checkpoint",
+    "Terminal entry checkpoint",
+    "Passenger entry checkpoint",
+    "Apron entry checkpoint"
+   ]
+  },
+  "95300": {
+   "text": "Under Annex 17, when must non-passengers and the items they carry be screened?",
+   "options": [
+    "Before they enter security restricted areas",
+    "When they exit security restricted areas",
+    "Only at the end of the shift",
+    "Only when suspicion arises",
+    "After boarding the aircraft"
+   ]
+  },
+  "95301": {
+   "text": "Which of the following is correct regarding the method to be used when screening non-passengers?",
+   "options": [
+    "It must be carried out using a method capable of detecting the presence or trace of explosives",
+    "A visual check alone is sufficient",
+    "Only a metal detector should be used",
+    "Only identity verification should be carried out",
+    "Only camera recording should be taken"
+   ]
+  },
+  "95302": {
+   "text": "When the explosive detection method is applied as an additional method, how must the selection process be carried out?",
+   "options": [
+    "Unpredictable and random",
+    "Sequential and pre-announced",
+    "By selecting only suspicious persons",
+    "By selecting only foreign nationals",
+    "In turn for every person"
+   ]
+  },
+  "95303": {
+   "text": "In Turkey, which of the following is correct regarding the screening exemption granted to armed law enforcement officers on duty at the airport?",
+   "options": [
+    "The exemption covers only the items they carry in connection with their duties, and the checking of their entry passes continues",
+    "The exemption covers all their personal belongings and entry pass checking is not carried out either",
+    "The exemption is also valid outside working hours",
+    "The exemption also exempts them from access control",
+    "No separate registration procedure is required for the exemption"
+   ]
+  },
+  "95304": {
+   "text": "Which of the following is not one of the minimum security measures that must be applied to aircraft under ICAO Annex 17?",
+   "options": [
+    "Reporting the aircraft's commercial performance after the flight",
+    "Subjecting aircraft to a security search or security check before the flight",
+    "Checking items left behind by disembarking passengers on transit flights",
+    "Protecting the cockpit entrance from unauthorised persons during flight",
+    "Protection of the aircraft"
+   ]
+  },
+  "95305": {
+   "text": "What stages does the obligation of airport personnel to observe passengers and other persons cover?",
+   "options": [
+    "Every stage from the airport entry point to boarding the aircraft",
+    "Only the security checkpoint",
+    "Only the aircraft boarding gate",
+    "Only the terminal entrance",
+    "Only the apron area"
+   ]
+  },
+  "95306": {
+   "text": "What is the obligation of staff holding an airport entry pass regarding persons without a pass?",
+   "options": [
+    "To report persons without a pass to the security units or the competent authorities",
+    "To escort persons without a pass to the exit",
+    "To question and record the identity of persons without a pass",
+    "To issue a temporary pass to persons without a pass",
+    "They have no obligation"
+   ]
+  },
+  "95307": {
+   "text": "Which of the following can be given as an example of a suspicious event?",
+   "options": [
+    "Sighting a suspicious or unattended package",
+    "A flight being delayed",
+    "Baggage being lost",
+    "The check-in queue getting longer",
+    "An aircraft being taken in for maintenance"
+   ]
+  },
+  "95308": {
+   "text": "According to Annex 17 of the Chicago Convention, which reporting system must every member state establish?",
+   "options": [
+    "A confidential event reporting system",
+    "A publicly accessible event reporting system",
+    "A system that accepts only written applications",
+    "A closed system accessible only to the competent authority",
+    "A system only for airline companies"
+   ]
+  },
+  "95309": {
+   "text": "By what means can events assessed as being contrary to the rules at aviation facilities be reported?",
+   "options": [
+    "In writing, verbally, or by e-mail, and through the reporting sections on organisations' websites",
+    "Only by official letter",
+    "Only by face-to-face interview",
+    "Only through annual audit reports",
+    "Only through a notary"
+   ]
+  },
+  "95310": {
+   "text": "When reporting an event, how should the stages of the event be ordered?",
+   "options": [
+    "Chronologically",
+    "By importance",
+    "Alphabetically",
+    "Grouped by person",
+    "From end to beginning"
+   ]
+  },
+  "95311": {
+   "text": "Which of the following is not among the points to be observed when reporting an event?",
+   "options": [
+    "Adding personal comments and speculation to the report",
+    "Avoiding vague expressions",
+    "The statements being legible, clear and meaningful",
+    "Stating the identities of the victim, suspect and witnesses",
+    "Clearly writing when, how and from whom the information was obtained"
+   ]
+  },
+  "95312": {
+   "text": "What is the term for the totality of security-related norms, values, attitudes and assumptions reflected by the actions and behaviour of all units and personnel in an organisation's daily operations?",
+   "options": [
+    "Security culture",
+    "Security programme",
+    "Security measure",
+    "Security awareness",
+    "Security management system"
+   ]
+  },
+  "95313": {
+   "text": "Who is responsible for aviation security?",
+   "options": [
+    "Everyone, from the bottom to the top",
+    "Only the security unit",
+    "Only the competent authority",
+    "Only the airport operator",
+    "Only senior management"
+   ]
+  },
+  "95314": {
+   "text": "Which of the following is not an indicator of a weak security culture?",
+   "options": [
+    "Event reporting channels being open, known and trusted",
+    "Security being thought of as the responsibility of the security unit alone",
+    "Information or concerns about violations being concealed",
+    "Adopting a reactive rather than proactive approach to security and risk management",
+    "Security being seen as a burden for the organisation"
+   ]
+  },
+  "95315": {
+   "text": "In a weak security culture, which approach is adopted in security and risk management?",
+   "options": [
+    "A reactive approach instead of a proactive one",
+    "A proactive approach instead of a reactive one",
+    "Only a predictive approach",
+    "Only a participatory approach",
+    "Only a preventive approach"
+   ]
+  },
+  "95316": {
+   "text": "The emergence of an effective security culture is directly related to which of the following?",
+   "options": [
+    "Security being accepted as a core value rather than as an obligation or a burdensome task",
+    "Continuously increasing the security budget",
+    "Increasing the number of security personnel",
+    "Reducing the frequency of inspections",
+    "Removing the reporting requirement"
+   ]
+  },
+  "95317": {
+   "text": "Which of the following is correct regarding leadership in security culture?",
+   "options": [
+    "Leaders' decisions greatly influence the organisational security culture",
+    "Leaders have limited influence on organisational culture",
+    "Security culture is determined only by the behaviour of lower-level staff",
+    "Only leaders' budget decisions affect security",
+    "Security culture develops independently of leadership"
+   ]
+  },
+  "95318": {
+   "text": "Among the practical steps that must be taken to build a positive security culture, what should be done regarding reports notifying suspicious behaviour or negligence?",
+   "options": [
+    "A framework must be established that provides protection for the reports and their sources",
+    "The reports must be shared with the public",
+    "The identities of report submitters must be announced to all personnel",
+    "The reports should be evaluated only at the end of the year",
+    "Reporting should be limited to managers only"
+   ]
+  }
+ }
+}
