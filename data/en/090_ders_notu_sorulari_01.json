@@ -1,0 +1,203 @@
+{
+  "questions": {
+    "59001": {
+      "text": "What does the abbreviation \"HJ\" mean?",
+      "options": [
+        "Sunrise to sunset.",
+        "Service throughout day and night.",
+        "Specific working hours are assessed on request.",
+        "Sunset to sunrise.",
+        "No specific working hours."
+      ]
+    },
+    "59002": {
+      "text": "What is the difference between the QFE and QNH altimeter settings?",
+      "options": [
+        "QFE gives the aircraft's height above the aerodrome reference point, while QNH gives its altitude above sea level.",
+        "QFF gives the aircraft's height above the aerodrome reference point, while QNE gives its altitude above sea level.",
+        "QFE and QNH refer to the same altimeter setting.",
+        "QFE gives the altitude above the highest obstacle in the area, while QNH gives the aircraft's height above the aerodrome reference point.",
+        "QNH gives the aircraft's height above the aerodrome reference point, while QFE gives its altitude above sea level."
+      ]
+    },
+    "59003": {
+      "text": "When does an aircraft approaching an aerodrome acknowledge receipt of the ATIS information?",
+      "options": [
+        "On initial contact with the aerodrome.",
+        "When overhead the aerodrome.",
+        "When on the glide.",
+        "When downwind.",
+        "At any convenient time."
+      ]
+    },
+    "59004": {
+      "text": "How is visibility expressed in an aviation routine weather report (METAR)?",
+      "options": [
+        "In metres or kilometres.",
+        "In feet or km.",
+        "In metres up to 5000 m, in decametres above.",
+        "In nautical miles only.",
+        "In centimetres only."
+      ]
+    },
+    "59005": {
+      "text": "Which is the correct way of expressing visibility?",
+      "options": [
+        "Visibility 1200 metres",
+        "Visibility 1.2 nautical miles",
+        "Visibility 1.2 inches",
+        "Visibility 1.2 kilometres",
+        "Visibility 1200 feet"
+      ]
+    },
+    "59006": {
+      "text": "From which aeronautical communication service do you obtain automatically broadcast aerodrome and weather information?",
+      "options": [
+        "ATIS",
+        "ILS",
+        "AGCS",
+        "RIS",
+        "FIS"
+      ]
+    },
+    "59007": {
+      "text": "Which of the following is NOT an objective of ATS (Air Traffic Service)?",
+      "options": [
+        "Improving the fuel efficiency of aircraft",
+        "Ensuring safety on the manoeuvring area",
+        "Preventing collisions",
+        "Maintaining an orderly flow of air traffic",
+        "Providing meteorological briefing to pilots"
+      ]
+    },
+    "59008": {
+      "text": "What does the abbreviation \"FIS\" stand for?",
+      "options": [
+        "Flight information service",
+        "Flashing information service",
+        "Flight intake service",
+        "Flight information system",
+        "Flashing information system"
+      ]
+    },
+    "59009": {
+      "text": "What does the abbreviation \"HX\" mean?",
+      "options": [
+        "No specific working hours.",
+        "Sunrise to sunset",
+        "Sunset to sunrise",
+        "Service throughout day and night"
+      ]
+    },
+    "59010": {
+      "text": "If a controller gives you an instruction which you have understood and will comply with, what should the standard reply be?",
+      "options": [
+        "Wilco",
+        "Roger",
+        "Confirm",
+        "Verify",
+        "Say it"
+      ]
+    },
+    "59011": {
+      "text": "Information on relevant traffic on crossing tracks is passed in a specific order. Which of the following orders is correct?",
+      "options": [
+        "Position of the crossing traffic by the 12-hour clock, its distance and direction, and if known its level and speed.",
+        "Position of the crossing traffic by the 2-hour clock, its distance and direction, and if known its level and speed.",
+        "Relative speed of the crossing traffic, its relative bearing by the 12-hour clock, and if known its direction of flight and distance.",
+        "Distance from the crossing traffic, its speed and distance, relative bearing from magnetic north.",
+        "Direction and relative speed of the crossing traffic, its relative bearing from true north, and if known the relative distance."
+      ]
+    },
+    "59012": {
+      "text": "What does a series of green flashes from the tower to an aircraft in flight mean?",
+      "options": [
+        "Return for landing.",
+        "Hold over the aerodrome.",
+        "Wait for landing instruction / go.",
+        "Landing possible only from the opposite direction.",
+        "Fuel is available."
+      ]
+    },
+    "59013": {
+      "text": "What does a steady red light from the tower to an aircraft in flight mean?",
+      "options": [
+        "Do not land, continue circling, give way to other aircraft.",
+        "Continue landing, runway not available.",
+        "Civil landings not accepted.",
+        "Divert to the alternate aerodrome.",
+        "Orbit and then land."
+      ]
+    },
+    "59014": {
+      "text": "Which of the following is correct for a series of red flashes from the tower to an aircraft in flight?",
+      "options": [
+        "Do not land, aerodrome unsafe.",
+        "Move away from the aerodrome vicinity.",
+        "Wait until you see a green light.",
+        "Wait for landing instruction.",
+        "Landing must be made from the opposite direction."
+      ]
+    },
+    "59015": {
+      "text": "What does a series of white flashes from the tower to an aircraft on the ground mean?",
+      "options": [
+        "Return to starting point on the aerodrome.",
+        "Report your position by radio.",
+        "Continue holding.",
+        "Wait for taxi instruction.",
+        "Cleared to taxi or manoeuvre."
+      ]
+    },
+    "59016": {
+      "text": "The meaning of a \"Blind Transmission\" is:",
+      "options": [
+        "A transmission made when two-way communication cannot be established but it is believed that the called station is receiving the calls.",
+        "A transmission from an aeronautical station's frequency to microlight aircraft.",
+        "A transmission from an aeronautical station's frequency to all aircraft.",
+        "A broadcast of information concerning the safety of air navigation without calling any particular station or stations.",
+        "A transmission by an aircraft carrying out a VDF procedure, descending from the initial approach altitude to the position where the visual approach is completed."
+      ]
+    },
+    "59017": {
+      "text": "What is the VHF airband frequency range used in aviation?",
+      "options": [
+        "108 - 136.975 MHz",
+        "118 - 136.975 MHz",
+        "108 - 117.975 MHz",
+        "100 - 150 MHz",
+        "117.000 - 136.000 MHz"
+      ]
+    },
+    "59018": {
+      "text": "Which of the following shows the aeronautical radio (communication) frequency range?",
+      "options": [
+        "118.00 MHz - 136.975 MHz",
+        "118.25 kHz - 221.650 kHz",
+        "128.00 kHz - 131.975 kHz",
+        "121.50 MHz - 136.975 MHz",
+        "108.05 MHz - 131.250 MHz"
+      ]
+    },
+    "59019": {
+      "text": "By how much must transmitter power be increased to double the range of a VHF radio emission?",
+      "options": [
+        "Four times",
+        "Eight times",
+        "Three times",
+        "Two times",
+        "Six times"
+      ]
+    },
+    "59020": {
+      "text": "On which frequency can pilots request assistance in a distress situation?",
+      "options": [
+        "121.50 MHz",
+        "123.45 MHz",
+        "243.00 kHz",
+        "130.00 MHz",
+        "108.00 MHz"
+      ]
+    }
+  }
+}

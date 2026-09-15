@@ -249,6 +249,16 @@ Kullanıcı ders notu verdiğinde iş akışı:
 Üretilmiş sorular uygulamada "üretilmiş" etiketiyle görünür ve kapsam anahtarından
 kapatılabilir; gerçek sınav sorularıyla asla karıştırılmaz.
 
+**İki dil kuralı (her yeni soru dosyası için).** Uygulama iki dilli; her sorunun iki
+karşılığı olmalı, yoksa seçili dil ne olursa olsun kaynak dilinde görünür ve kip içinde
+dil karışır. Türkçe yazılmış ders notu/üretilmiş dosyaya dosya düzeyinde `"lang": "tr"`
+koy, İngilizcesini `data/en/<dosya-adı>_01.json` (65'lik parçalar, `{"questions":
+{"<id>": {"text", "options"}}}`) olarak yaz; İngilizce kaynaklı dosya için tersi
+`data/tr/`. Yeni bölüm kodlarının diğer dildeki adını `data/en/_dersler.json` ya da
+`data/tr/_dersler.json` içine ekle. `python3 scripts/check_tr.py` ikisini de doğrular —
+"toplam N/N ✓" görmeden gönderme. Şıkların sırası kaynakla birebir aynı kalmalı; doğru
+cevap ilk şık olduğu için kayan bir çeviri yanlış şıkkı doğru yapar.
+
 ## Bulut (Google girişi)
 
 Firebase Auth + Firestore. Yapılandırma `web/firebase-config.json`, `build_web.py`

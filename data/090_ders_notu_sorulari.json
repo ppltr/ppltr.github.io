@@ -1,0 +1,255 @@
+{
+  "subject_code": "090",
+  "lang": "tr",
+  "subject_name": "Communications",
+  "source": "SHGM Haberleşme ders notu - bölüm sonu soruları (B1-S 6, B2-S 5, B3-S 5, B4-S 4 = 20 soru)",
+  "answer_convention": "Kaynakta doğru cevap işaretli değildi; ders notu ve ICAO standartlarına göre belirlendi, şıklar doğru cevap başa (A) gelecek şekilde yeniden sıralandı.",
+  "id_convention": "Kaynakta soru ID'si yok; 59001'den başlayan yapay ID'ler verildi (59 = 090 ders notu).",
+  "sections": {
+    "090-B1": "Ders Notu · Terimler ve Meydan Hava Durumu",
+    "090-B2": "Ders Notu · Standart İfadeler ve Çağrı Adları",
+    "090-B3": "Ders Notu · Acil Durumlar ve VHF Esasları",
+    "090-B4": "Ders Notu · VHF Prensipleri ve Frekans Yönetimi"
+  },
+  "questions": [
+    {
+      "id": 59001,
+      "section": "090-B1",
+      "text": "\"HJ\" kısaltmasının anlamı nedir?",
+      "options": [
+        "Gündoğumundan, günbatımına.",
+        "Gündüz ve gece boyunca hizmet.",
+        "Özel çalışma saati aralığı talebe göre değerlendirilir.",
+        "Günbatımından, gündoğumuna.",
+        "Özel çalışma saati aralığı yok."
+      ]
+    },
+    {
+      "id": 59002,
+      "section": "090-B1",
+      "text": "QFE ve QNH altimetre ayarları arasındaki fark nedir?",
+      "options": [
+        "QFE, uçağın havaalanı referans noktası üzerindeki yüksekliği gösterirken, QNH deniz seviyesinden olan yüksekliği gösterir.",
+        "QFF, uçağın havaalanı referans noktası üzerindeki yüksekliğini gösterirken, QNE deniz seviyesinden olan yüksekliği gösterir.",
+        "QFE ve QNH, aynı altimetre ayarını ifade eder.",
+        "QFE, bölgede bulunan en yüksek mania üzerinden olan irtifayı gösterirken, QNH uçağın havaalanı referans noktası üzerindeki yüksekliğini gösterir.",
+        "QNH, uçağın havaalanı referans noktası üzerindeki yüksekliği gösterirken, QFE deniz seviyesinden olan yüksekliği gösterir."
+      ]
+    },
+    {
+      "id": 59003,
+      "section": "090-B1",
+      "text": "Meydana yaklaşan bir uçak ATIS bilgisinin alınıp, anlaşıldığını ne zaman bildirir?",
+      "options": [
+        "Meydanla ilk temasta.",
+        "Meydan üzerinde aradığı zaman.",
+        "Süzülüş yaptığı zaman.",
+        "Rüzgar altında.",
+        "Uygun olduğu bir zamanda."
+      ]
+    },
+    {
+      "id": 59004,
+      "section": "090-B1",
+      "text": "Bir havacılık rutin hava raporunda (METAR), görüş nasıl belirtilir?",
+      "options": [
+        "Metre veya kilometre.",
+        "Feet veya km olarak.",
+        "5000 m'ye kadar metre, üzerinde dekametre.",
+        "Sadece deniz mili.",
+        "Sadece santimetre."
+      ]
+    },
+    {
+      "id": 59005,
+      "section": "090-B1",
+      "text": "Görüşü söylemenin doğru yolu hangisidir?",
+      "options": [
+        "Görüş 1200 metre",
+        "Görüş 1.2 nautical miles",
+        "Görüş 1.2 inch",
+        "Görüş 1.2 kilometre",
+        "Görüş 1200 feet"
+      ]
+    },
+    {
+      "id": 59006,
+      "section": "090-B1",
+      "text": "Otomatik yayınlanan meydan ve hava durumu bilgisini, hangi havacılık haberleşme hizmetinden alırsınız?",
+      "options": [
+        "ATIS",
+        "ILS",
+        "AGCS",
+        "RIS",
+        "FIS"
+      ]
+    },
+    {
+      "id": 59007,
+      "section": "090-B2",
+      "text": "ATS (Hava Trafik Hizmeti) aşağıdaki amaçlardan hangisine hizmet etmez?",
+      "options": [
+        "Hava araçlarının yakıt verimliliğini artırmak",
+        "Manevra sahası üzerindeki güvenliği sağlamak",
+        "Çarpışmaları önlemek",
+        "Düzenli bir hava trafik akışını sürdürmek",
+        "Pilotlara meteorolojik brifing sağlamak"
+      ]
+    },
+    {
+      "id": 59008,
+      "section": "090-B2",
+      "text": "\"FIS\" kısaltması ne anlama gelir?",
+      "options": [
+        "Flight information service",
+        "Flashing information service",
+        "Flight intake service",
+        "Flight information system",
+        "Flashing information system"
+      ]
+    },
+    {
+      "id": 59009,
+      "section": "090-B2",
+      "text": "\"HX\" kısaltmasının anlamı nedir?",
+      "options": [
+        "Özel çalışma saati aralığı yok.",
+        "Gündoğumundan, günbatımına",
+        "Günbatımından, gündoğumuna",
+        "Gündüz ve gece boyunca hizmet"
+      ]
+    },
+    {
+      "id": 59010,
+      "section": "090-B2",
+      "text": "Eğer bir kontrolör size bir talimat verirse ve siz talimatı anladınız ve yerine getirecekseniz, standart cevap ne olmalıdır?",
+      "options": [
+        "Uygulayacağım (Wilco)",
+        "Tamam (Roger)",
+        "Onayla (Confirm)",
+        "Doğrula (Verify)",
+        "Söyle (Say it)"
+      ]
+    },
+    {
+      "id": 59011,
+      "section": "090-B2",
+      "text": "Kesişen rotalarda ilgili trafiğin bilgisi belirli bir sıralamayla verilir. Aşağıdaki sıralamalardan hangisi doğrudur?",
+      "options": [
+        "Kesişen trafiğin 12'li saat düzenine göre pozisyonu, kesişen trafiğin mesafesi ve istikameti, biliniyorsa irtifası ve sürati.",
+        "Kesişen trafiğin 2'li saat düzenine göre pozisyonu, kesişen trafiğin mesafesi ve istikameti, biliniyorsa irtifası ve sürati.",
+        "Kesişen trafiğin relative hızı, kesişen trafiğin 12'li saat düzenine göre relative kerterizi, biliniyorsa kesişen trafiğin uçuş istikameti ve mesafesi.",
+        "Kesişen trafikten mesafe, kesişen trafiğin hız ve mesafesi, manyetik kuzeye göre relative kerteriz.",
+        "Kesişen trafiğin istikameti ve relative hızı, kesişen trafiğin gerçek kuzeye göre relative kerterizi, biliniyorsa kesişen trafikten relative mesafe."
+      ]
+    },
+    {
+      "id": 59012,
+      "section": "090-B3",
+      "text": "Kuleden havadaki hava aracına gönderilen yeşil kesik kesik ışık ne anlama gelmektedir?",
+      "options": [
+        "İniş için geri dön.",
+        "Meydan üzerinde bekleme turu at.",
+        "İniş talimatı bekleme/git.",
+        "Ancak ters yönden iniş mümkün.",
+        "Yakıt satışı bulunmaktadır."
+      ]
+    },
+    {
+      "id": 59013,
+      "section": "090-B3",
+      "text": "Kuleden havadaki uçağa gönderilen sabit kırmızı ışık ne anlama gelmektedir?",
+      "options": [
+        "İnme, tura devam et, diğer hava aracına yol ver.",
+        "İnişe devam et, pist müsait değildir.",
+        "Sivil iniş kabul etmiyor.",
+        "Yedek meydana git.",
+        "Orbit at öyle in."
+      ]
+    },
+    {
+      "id": 59014,
+      "section": "090-B3",
+      "text": "Kuleden havadaki hava aracına gönderilen kırmızı kesik kesik ışık için aşağıdakilerden hangisi doğrudur?",
+      "options": [
+        "İnme, havalimanı kapalı.",
+        "Havalimanı çevresinden uzaklaş.",
+        "Yeşil ışık görene kadar bekle.",
+        "İniş talimatı bekle.",
+        "Zorunlu olarak ters yönde iniş yapılacak."
+      ]
+    },
+    {
+      "id": 59015,
+      "section": "090-B3",
+      "text": "Kuleden yerdeki hava aracına gönderilen, beyaz kesik kesik ışık ne anlama gelmektedir?",
+      "options": [
+        "Park yerine dön.",
+        "Telsiz çağrısı yaparak bulunduğun konumu bildir.",
+        "Beklemeye devam et.",
+        "Taksi için talimat bekle.",
+        "Taksi veya manevra serbest."
+      ]
+    },
+    {
+      "id": 59016,
+      "section": "090-B3",
+      "text": "\"Karşılıksız Yayın\"ın (Blind Transmission) anlamı;",
+      "options": [
+        "İki yönlü haberleşmenin sağlanamadığı, fakat çağrılan istasyonun, çağrıları aldığına inanılan durumlarda yapılan yayındır.",
+        "Bir havacılık istasyonunun frekansından çok hafif uçaklara yapılan yayındır.",
+        "Bir havacılık istasyonunun frekansından tüm uçaklara yapılan yayındır.",
+        "Herhangi bir istasyon ya da istasyonları çağırmadan, hava seyrüseferinin emniyeti ile ilgili bilgi yayınıdır.",
+        "İlk yaklaşma irtifasından, görerek yaklaşmanın tamamlandığı pozisyona kadar alçalmada olan, VDF çalışması yapan uçak tarafından yapılan yayındır."
+      ]
+    },
+    {
+      "id": 59017,
+      "section": "090-B4",
+      "text": "Havacılıkta kullanılan VHF hava bandı frekans aralığı nedir?",
+      "options": [
+        "108 - 136.975 MHz",
+        "118 - 136.975 MHz",
+        "108 - 117.975 MHz",
+        "100 - 150 MHz",
+        "117.000 - 136.000 MHz"
+      ]
+    },
+    {
+      "id": 59018,
+      "section": "090-B4",
+      "text": "Aşağıdakilerden hangisi havacılık telsiz frekans aralığını gösterir?",
+      "options": [
+        "118.00 MHz - 136.975 MHz",
+        "118.25 kHz - 221.650 kHz",
+        "128.00 kHz - 131.975 kHz",
+        "121.50 MHz - 136.975 MHz",
+        "108.05 MHz - 131.250 MHz"
+      ]
+    },
+    {
+      "id": 59019,
+      "section": "090-B4",
+      "text": "Bir VHF radyo emisyonunun menzilini iki katına çıkarmak için verici gücünün ne kadar artırılması gerekir?",
+      "options": [
+        "Dört katına",
+        "Sekiz katına",
+        "Üç katına",
+        "İki katına",
+        "Altı katına"
+      ]
+    },
+    {
+      "id": 59020,
+      "section": "090-B4",
+      "text": "Pilotlar, distress durumunda hangi frekansı kullanarak yardım talep edebilirler?",
+      "options": [
+        "121.50 MHz",
+        "123.45 MHz",
+        "243.00 kHz",
+        "130.00 MHz",
+        "108.00 MHz"
+      ]
+    }
+  ]
+}
