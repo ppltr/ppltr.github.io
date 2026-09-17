@@ -1,5 +1,5 @@
 {
-  "_aciklama": "Elle doğrulanmış tekrar grupları. Her grupta ilk ID kanonik; diğerleri dup_of ile ona bağlanır. Metin benzerliği ≥%60 olan tüm çiftler incelendi; cevabı FARKLI olanlar (sınav tuzakları) bilerek dışarıda bırakıldı.",
+  "_aciklama": "Elle doğrulanmış tekrar grupları. Her grupta ilk ID kanonik; diğerleri dup_of ile ona bağlanır. Metin benzerliği ≥%60 olan tüm çiftler incelendi; cevabı FARKLI olanlar (sınav tuzakları) bilerek dışarıda bırakıldı. Üretilmiş bir soru gerçek bir soruyla aynı bilgiyi soruyorsa gerçek soru kanoniktir; bu eşleşmeler dil-ötesi olduğu için metin taramasıyla değil, iki dilde tek tek karşılaştırılarak bulundu.",
   "gruplar": [
     {
       "ids": [
@@ -173,9 +173,10 @@
     {
       "ids": [
         16312,
-        16313
+        16313,
+        90935
       ],
-      "not": "090: çağrı adı kısaltma şartı"
+      "not": "090: çağrı adı kısaltma şartı — üretilmiş soru da aynı bilgiyi soruyor"
     },
     {
       "ids": [
@@ -246,9 +247,10 @@
     {
       "ids": [
         16352,
-        16485
+        16485,
+        90958
       ],
-      "not": "090: MAYDAY ilk yayını → o an kullanılan frekans"
+      "not": "090: MAYDAY ilk yayını → o an kullanılan frekans — üretilmiş soru da aynı bilgiyi soruyor"
     },
     {
       "ids": [
@@ -256,6 +258,84 @@
         16477
       ],
       "not": "090: ALL STATIONS → istenmedikçe cevap verilmez"
+    },
+    {
+      "ids": [
+        16388,
+        90907
+      ],
+      "not": "090: QDM = istasyona uçulacak manyetik baş — üretilmiş soru, dil-ötesi kavram tekrarı (ters yönden)"
+    },
+    {
+      "ids": [
+        16476,
+        90909,
+        90952
+      ],
+      "not": "090: Distress = ciddi/yakın tehlike, acil yardım gerekir — üretilmiş soru, dil-ötesi kavram tekrarı, iki soru"
+    },
+    {
+      "ids": [
+        16430,
+        90919
+      ],
+      "not": "090: CAVOK bulut şartı 5000 ft ya da MSA — üretilmiş soru, dil-ötesi kavram tekrarı"
+    },
+    {
+      "ids": [
+        16322,
+        90926
+      ],
+      "not": "090: karışıklık yoksa saatte yalnız dakika söylenir — üretilmiş soru, dil-ötesi kavram tekrarı"
+    },
+    {
+      "ids": [
+        16398,
+        90945
+      ],
+      "not": "090: ROGER = son yayının tamamını aldım — üretilmiş soru, dil-ötesi kavram tekrarı"
+    },
+    {
+      "ids": [
+        16495,
+        90954
+      ],
+      "not": "090: tehlike sinyali MAYDAY, üç kez — üretilmiş soru, dil-ötesi kavram tekrarı"
+    },
+    {
+      "ids": [
+        16487,
+        90955
+      ],
+      "not": "090: ivedilik çağrısı PAN PAN ile başlar, üç kez — üretilmiş soru, dil-ötesi kavram tekrarı"
+    },
+    {
+      "ids": [
+        16478,
+        90957
+      ],
+      "not": "090: acil durum transponder kodu 7700 — üretilmiş soru, dil-ötesi kavram tekrarı"
+    },
+    {
+      "ids": [
+        16480,
+        90963
+      ],
+      "not": "090: yasa dışı müdahale transponder kodu 7500 — üretilmiş soru, dil-ötesi kavram tekrarı"
+    },
+    {
+      "ids": [
+        59020,
+        90991
+      ],
+      "not": "090: tehlike/acil durum frekansı 121.5 MHz — üretilmiş soru, ders notu sorusuyla aynı"
+    },
+    {
+      "ids": [
+        16420,
+        90941
+      ],
+      "not": "090: telsiz kontrol çağrısı sırası — üretilmiş soru, dil-ötesi kavram tekrarı"
     },
     {
       "ids": [

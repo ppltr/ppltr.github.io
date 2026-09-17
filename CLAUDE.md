@@ -101,6 +101,23 @@ en değerli tuzakları (ör. 15613 METAR'da true north / 15666 ATIS'te magnetic 
 Yeni ders eklerken hem metin benzerliğini hem de "cevabı aynı ama metni farklı"
 çiftleri tara; karar insana ait.
 
+**Tarayıcılar dil-kördür.** `find_duplicates.py` ve `topic_gap.py` yalnız sorunun kaynak
+dilindeki metnine bakar; Türkçe ders notu/üretilmiş soru ile İngilizce banka arasında
+eşleşme kuramazlar. 090'da "tekrar yok" sonucu bu yüzden eksik çıktı: 96 üretilmiş
+sorudan 14'ü bankada zaten sorulan bilgiyi soruyordu. Dili karışık bir derste
+karşılaştırmayı iki dilde yap (`text_en` / `text_tr` sütunları) ve adayları tek tek oku.
+
+**Üretilmiş soru gerçek bir soruyla aynı bilgiyi soruyorsa gerçek soru kanoniktir**,
+üretilmiş olan ona bağlanır. Aynı bilgiyi ters yönden soranlar da tekrar sayılır
+(16388 "manyetik baş hangi Q kodu" / 90907 "QDM nedir"). Cevabı farklı olanlar yine
+tuzaktır, bağlanmaz: 90948 (fit, ×1.25) / 90949 (uçuş seviyesi, ×12) birbirinin çeldiricisi.
+
+Yan etkisi bilinerek kabul edildi: kanonik İngilizce bankadaysa (090-01…06), yalnız
+B1–B4 ders notu bölümleri seçiliyken o bilgi turda hiç çıkmaz; modülün tamamı seçiliyken
+kanonik soru gelir. 090'ın ders notu soruları (590xx, gerçek SHGM soruları) İngilizce
+bankaya bilerek bağlanmadı. 070'te 90725/90726, 502'de 95257 aynı durumda ama henüz
+bağlanmadı — kullanıcı yalnız 090'ı istedi.
+
 ## Çalışma uygulaması (`web/`)
 
 Asıl kullanılan sürüm bu: tek dosya, sunucusuz, `localStorage` tabanlı.
