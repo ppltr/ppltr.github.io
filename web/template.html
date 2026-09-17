@@ -159,6 +159,10 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .hero .hact{display:flex; justify-content:center; gap:8px; flex-wrap:wrap}
 .hero .hact .go{flex:0 1 20rem; min-width:11rem}
 .hero .hact .go2{flex:0 1 9rem}
+.hero .hact .go{min-width:0}
+.hero .hwarn{margin-top:9px; font-size:12px; line-height:1.5; color:var(--ink-3);
+  text-align:center}
+.hero .hwarn b{color:var(--ink-2); font-weight:600}
 .hero .hnext{display:block; width:100%; text-align:center; margin-top:9px; padding:9px;
   font-size:12.5px; color:var(--cyan); border-radius:var(--r)}
 .hero .hnext:hover{background:var(--surface-2)}
@@ -232,10 +236,19 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .go{flex:1; background:var(--accent); color:var(--on-accent); border-radius:var(--r);
   padding:15px 20px; font-size:16px; font-weight:600; text-align:center}
 .go:hover{filter:brightness(1.07)}
+/* Birincil düğmenin alt satırı — genel .sub rengini devralmasın diye ayrı ad */
+.go .gsub{display:block; margin-top:3px; color:var(--on-accent); opacity:.72;
+  font-family:var(--f-num); font-size:11px; font-weight:500; letter-spacing:.03em;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .go:disabled{opacity:.4; cursor:not-allowed; filter:none}
 .go2{flex:none; background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
   padding:15px 16px; font-size:14px; font-weight:500; color:var(--ink-2)}
 .go2:hover{border-color:var(--rule-2); color:var(--ink)}
+/* Sessiz üçüncül eylem — dokunma alanı büyük, görsel ağırlığı düşük */
+.go3{flex:none; background:none; border:1px solid transparent; border-radius:var(--r);
+  padding:15px 10px; font-size:12px; font-weight:500; color:var(--ink-3);
+  transition:color .12s, border-color .12s}
+.go3:hover{color:var(--bad); border-color:var(--rule)}
 
 /* ── Akordeon kutular ── */
 .box{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
@@ -336,8 +349,11 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .prog{height:3px; background:var(--rule); border-radius:2px; overflow:hidden; margin-bottom:6px}
 .prog i{display:block; height:100%; background:var(--accent); width:0; transition:width .25s ease}
 .prog i.retry{background:var(--bad)}
-.meta{display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:8px}
+.meta{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px}
 .meta .lbl:first-of-type{margin-right:auto}
+/* Deste adı en son kısalır: geri düğmesi ve sayaç hep tam görünür */
+.meta > .lbl{min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+@media (max-width:400px){ .meta > .lbl{display:none} }
 /* Gezinme düğmesi ve paneli — kapalıyken hiç yer kaplamaz */
 .navb{display:inline-flex; align-items:center; gap:5px; padding:3px 8px; margin:-3px 0;
   border-radius:99px; font-family:var(--f-num); font-size:11.5px; letter-spacing:.06em;
@@ -373,10 +389,12 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
   .card.fok, .card.fbad, .card.fnew{animation:none}
 }
 
-.backb{flex:none; width:28px; height:28px; margin:-4px 0 -4px -6px; display:grid;
-  place-items:center; border-radius:8px; font-family:var(--f-num); font-size:17px;
-  color:var(--ink-3)}
-.backb:hover{background:var(--surface-2); color:var(--accent)}
+.backb{flex:none; display:inline-flex; align-items:center; gap:5px; margin:-3px 0;
+  padding:4px 11px 4px 8px; border-radius:99px; background:var(--surface-2);
+  border:1px solid var(--rule-2); color:var(--ink-2); font-size:12px; font-weight:500;
+  white-space:nowrap; transition:border-color .12s, color .12s}
+.backb i{font-family:var(--f-num); font-style:normal; font-size:15px; line-height:1}
+.backb:hover{border-color:var(--accent); color:var(--accent)}
 .card{background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
   box-shadow:var(--shadow); overflow:hidden}
 .head{display:flex; align-items:center; gap:7px; flex-wrap:wrap; padding:7px 12px;
@@ -1283,7 +1301,17 @@ function scopeTitle(){
   return ks.length + ' modül';
 }
 function openRun(){
-  return S.runs.find(r => !r.done && !isPassed(runCode(r))) || null;
+  const acik = S.runs.filter(r => !r.done && !isPassed(runCode(r)));
+  // Cevap verilmiş tur öncelikli: yeni açılıp hiç dokunulmamış bir tur
+  // ana ekranda gerçek yarım turun önüne geçmesin.
+  return acik.find(r => (r.log || []).length) || acik[0] || null;
+}
+/** Hiç cevap verilmeden bırakılan turu kayıttan düşürür. */
+function dropEmptyRun(){
+  const rec = runRec();
+  if (!rec || rec.done || (rec.log || []).length) return;
+  S.runs = S.runs.filter(r => r.id !== rec.id);
+  save();
 }
 function runRec(){ return R ? S.runs.find(r => r.id === R.id) : null; }
 
@@ -1301,6 +1329,7 @@ function saveRun(){
 function start(){
   const list = buildQueue();
   if (!list.length) return;
+  yeniTur = false;
   S.runs = S.runs.filter(r => r.done || (r.log || []).length);   // boş bırakılanları at
   const id = 'r' + Date.now();
   R = { id, list, i:0, order:null, picked:null, orders:[], picks:[],
@@ -1315,6 +1344,7 @@ function start(){
 }
 /** Yarım kalan turu geri yükler; sorular silinmişse turu kapatır. */
 function resumeRun(id){
+  yeniTur = false;
   const rec = S.runs.find(r => r.id === id);
   if (!rec || rec.done) return home();
   const list = (rec.ids || []).map(x => BY_ID.get(x)).filter(Boolean);
@@ -1422,6 +1452,29 @@ function home(){
   const others = QS.filter(q => inToggles(q) && !matchPick(q));
   const otherWait = others.filter(q => inDeck(q, 'due') || inDeck(q, 'wrong')).length;
 
+  // ── Yarım kalan tur birincil eylemdir ──
+  // Kaldığı yerde 266 soru olan kullanıcıya "Başla · 266 soru" demek turu
+  // baştan başlatıyordu. Tur açıkken birincil düğme "Devam et"tir; yeni tur
+  // istemek ayrı, bilinçli bir adım (önce kapsam seçimi, sonra Başla).
+  const orun = openRun();
+  const devam = !!orun && !yeniTur && !allPassed;
+  const hact = (label, dis) => devam
+    ? '<div class="hact">' +
+        '<button class="go" id="go" type="button">Devam et' +
+          '<span class="gsub">' + esc(orun.title) + ' · ' + runSeen(orun) + '/' +
+          nf(orun.n0 || 0) + ' soru</span></button>' +
+        '<button class="go2" id="goNew" type="button">Yeni tur</button></div>'
+    : '<div class="hact">' +
+        '<button class="go" id="go" type="button"' + (dis ? ' disabled' : '') + '>' +
+          label + '</button>' +
+        (orun && !allPassed
+          ? '<button class="go2" id="goBack" type="button">Vazgeç</button>' : '') +
+      '</div>' +
+      (orun && !allPassed
+        ? '<div class="hwarn">Yarım kalan turun duruyor. Kapsamı seçip ' +
+          '<b>Başla</b> dersen yeni tur açılır; <b>Vazgeç</b> seni kaldığın ' +
+          'soruya döndürür.</div>' : '');
+
   // ── Kimlik satırı: tek satır, dokunulabilir ──
   const idline =
     '<button class="idline" id="topStat" type="button">' +
@@ -1450,7 +1503,8 @@ function home(){
         '<div class="wtitle">Hepsini geçtin.</div>' +
         '<p class="wtext">Bütün dersleri geçildi olarak işaretledin, kapsamda soru kalmadı. ' +
           'Birini geri almak istersen listeden çıkar.</p>' +
-        '<div class="hact"><button class="go" id="go">Geçtiğim sınavlar</button></div>' +
+        '<div class="hact"><button class="go" id="go" type="button">' +
+          'Geçtiğim sınavlar</button></div>' +
       '</div>';
   } else if (firstRun && !m){
     hero =
@@ -1465,7 +1519,7 @@ function home(){
           '<span class="num">' + nf(total) + '</span> soru · ' +
             '<span class="num">' + nf(counts['new'] || 0) + '</span> çözülmemiş' +
             ' · <i>daraltmak için dokun</i>') +
-        '<div class="hact"><button class="go" id="go">Başla</button></div>' +
+        hact('Başla', false) +
       '</div>';
   } else if (m){
     const done = m.left === 0;
@@ -1478,9 +1532,8 @@ function home(){
             '</span> soru' + (done ? ' · <b class="ok">modülü bitirdin</b>'
                                    : ' · <span class="num">' + m.left + '</span> kaldı'),
           ringSvg(pct, done)) +
-        '<div class="hact"><button class="go" id="go"' + (ready ? '' : ' disabled') + '>' +
-            (ready ? 'Başla · ' + (F.count ? Math.min(ready, F.count) : nf(ready)) + ' soru'
-                   : (done ? 'Bu modül bitti' : 'Bu destede soru yok')) + '</button></div>' +
+        hact(ready ? 'Başla · ' + (F.count ? Math.min(ready, F.count) : nf(ready)) + ' soru'
+                   : (done ? 'Bu modül bitti' : 'Bu destede soru yok'), !ready) +
         (done && openModules().length
           ? '<button class="hnext" id="mNext" type="button">Sıradaki modüle geç ›</button>' : '') +
       '</div>';
@@ -1504,9 +1557,8 @@ function home(){
             '<span class="num">' + nf(kalan) + '</span> çözülmemiş' +
             ' · <i>değiştirmek için dokun</i>',
           ringSvg(cov, false)) +
-        '<div class="hact"><button class="go" id="go"' + (ready ? '' : ' disabled') + '>' +
-            (ready ? 'Başla · ' + (F.count ? Math.min(ready, F.count) : nf(ready)) + ' soru'
-                   : 'Bu destede soru yok') + '</button></div>' +
+        hact(ready ? 'Başla · ' + (F.count ? Math.min(ready, F.count) : nf(ready)) + ' soru'
+                   : 'Bu destede soru yok', !ready) +
       '</div>';
   }
 
@@ -1522,9 +1574,9 @@ function home(){
       'type="button" title="Deste süzgeci olmadan, kapsamdaki her soru">' +
       '<b class="num">' + nf(total) + '</b>Tümü</button>';
 
-  // ── Yarım kalan tur: kaldığın yerden tek dokunuşla dön ──
-  const orun = openRun();
-  const resume = orun
+  // Hero'nun birincil düğmesi "Devam et" olduğunda şerit gereksiz; yalnız
+  // bütün dersler geçildiğinde hero başka bir işi yaptığı için çiziliyor.
+  const resume = orun && allPassed
     ? '<button class="resume" id="rGo" type="button">' +
         '<span class="rl"><b>Yarım kalan tur</b><span>' + esc(orun.title) + '</span></span>' +
         '<span class="rn"><b class="num">' + runSeen(orun) + '</b>/' + nf(orun.n0 || 0) +
@@ -1628,10 +1680,16 @@ function home(){
   });
   const hc = el('hClr');
   if (hc) hc.onclick = () => { S.runs = S.runs.filter(r => !r.done); save(); home(); };
-  el('go').onclick = allPassed
-    ? () => { openStats(); const h = el('passHead');
-              if (h) h.scrollIntoView({ block:'start' }); }
-    : start;
+  el('go').onclick = devam
+    ? () => resumeRun(orun.id)
+    : allPassed
+      ? () => { openStats(); const h = el('passHead');
+                if (h) h.scrollIntoView({ block:'start' }); }
+      : start;
+  const gn = el('goNew');
+  if (gn) gn.onclick = () => { yeniTur = true; pickOpen = true; home(); };
+  const gb = el('goBack');
+  if (gb) gb.onclick = () => { yeniTur = false; pickOpen = false; home(); };
   if (!allPassed) el('mPick').onclick = () => { pickOpen = !pickOpen; paintPicker(); };
   paintPicker();
   const mn = el('mNext');
@@ -1733,6 +1791,9 @@ function openBox(id){ const b = el(id); if (b) b.open = true; }
 
 // ── Konu ağacı (modül kutusunun içinde, varsayılan kapalı) ──
 let expanded = {}, pickOpen = false;
+// Yarım kalan tur varken "Başla" birincil eylem değildir; kullanıcı önce
+// "Yeni tur" diyip kapsamı seçer, bayrak o zaman kalkar.
+let yeniTur = false;
 function buildTree(){
   const t = el('tree');
   if (!t) return;                 // hepsi geçildiyse seçici çizilmez
@@ -1900,7 +1961,8 @@ function draw(){
     '<div class="prog"><i class="' + (retry ? 'retry' : '') + '" style="width:' +
       (R.i / R.list.length * 100) + '%"></i></div>' +
     '<div class="meta"><button class="backb" id="hb" type="button" ' +
-      'title="Ana ekran — tur kayıtlı kalır, geçmişten devam edersin">‹</button>' +
+      'title="Ana ekran — tur kayıtlı kalır, oradan devam edersin">' +
+      '<i>‹</i>Ana ekran</button>' +
       '<button class="navb' + (navOpen ? ' on' : '') + '" id="navBtn" type="button" ' +
         'aria-expanded="' + (navOpen ? 'true' : 'false') + '" ' +
         'title="Sorular arasında gez">Soru <b class="num">' + (R.i + 1) + '</b> / ' +
@@ -1940,13 +2002,13 @@ function draw(){
       '<button class="go" id="next" type="button"' + (R.picked === null ? ' disabled' : '') + '>' +
         (last ? 'Bitir' : (shown && R.order[R.picked] !== 0 ? 'Anladım, devam' : 'Sonraki')) + '</button>' +
       (R.picked === null ? '<button class="go2" id="skip" type="button">Atla</button>' : '') +
-      '<button class="go2" id="quit" type="button">Turu bitir</button></div>';
+      '<button class="go3" id="quit" type="button">Turu bitir</button></div>';
 
   el('view').querySelectorAll('.opt').forEach(b => b.onclick = () => {
     if (Date.now() - sonKaydirma < 400) return;   // kaydırma, seçim değil
     pick(+b.dataset.p);
   });
-  el('hb').onclick = () => { clearTimeout(advT); saveRun(); home(); };
+  el('hb').onclick = () => { clearTimeout(advT); saveRun(); dropEmptyRun(); home(); };
   el('ask').onclick = async () => {
     const b = el('ask'), eski = b.textContent;
     const ok = await copyText(askText());

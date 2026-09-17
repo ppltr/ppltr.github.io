@@ -123,6 +123,18 @@ kutusu + **tek** birincil düğme; (3) `.chiprow` — deste çipleri, sayısı s
 hiç çizilmez. İlk ziyarette (`G.seen === 0`) hero "Hoş geldin" sürümüne düşer ve çip
 satırı gizlenir. Ana ekranı sayı yığınına çevirme — kullanıcı tek birincil eylem istedi.
 
+**Yarım kalan tur varken birincil eylem "Devam et"tir, "Başla" değil.** Hero'nun eylem
+satırını tek bir yer üretir: `home()` içindeki `hact(label, disabled)`. `openRun()` bir
+tur döndürüyorsa `#go` "Devam et" olur (alt satırında turun adı ve `runSeen`/`n0`
+sayacı, `.gsub`) ve `resumeRun` çağırır; yanında ikincil `#goNew` "Yeni tur" durur.
+`#goNew` `yeniTur` bayrağını kaldırıp seçiciyi açar: kullanıcı kapsamı **eliyle** seçer,
+`#go` o zaman "Başla · N soru" olur, yanında `#goBack` "Vazgeç" ile eski turuna döner.
+Bayrak `start()` ve `resumeRun()` içinde sıfırlanır. Kaldığı yerde 266 soru kalmış
+kullanıcıya "Başla · 266 soru" demek turu baştan başlatıyordu; bu düzeni bozma.
+
+`.gsub` adı bilerek `.sub` değil: genel `.sub` kuralı rengi `--ink-2`'ye çeker ve alt
+satır pembe düğme üzerinde okunmaz olur.
+
 **Konu seçimi ayrı bir bölüm değil.** Modül kutusuna (`modPick`, `#mPick`) dokununca
 altında `#picker` açılır; kapsam yalnız oradan seçilir. Ayrı "Konular" akordeonu isteme,
 kullanıcı açıkça kaldırttı. Seçici içinde iki ayrı davranış var, ikisini de koru:
@@ -198,10 +210,22 @@ modüle geçer. Hepsi geçilirse ana ekran "Hepsini geçtin" boş durumuna düş
 **Turlar kalıcıdır.** Her `start()` bir kayıt açar (`S.runs`, en yeni başta, `RUN_MAX`
 tane tutulur). Her cevapta ve her soru geçişinde `saveRun()` çalışır; sekme gizlenince
 `flush()` bekleyen yazmayı hemen diske indirir. Açılışta `S.runs[0]` bitmemişse uygulama
-doğrudan o soruya döner — ana ekrana uğramaz. Soru ekranındaki `‹` (`#hb`) turu
-**kapatmaz**, ana ekrana döner; `Turu bitir` (`#quit`) kapatır ve raporu çizer.
+doğrudan o soruya döner — ana ekrana uğramaz. Soru ekranındaki **`‹ Ana ekran`**
+(`#hb`, `.backb`) turu **kapatmaz**, ana ekrana döner; `Turu bitir` (`#quit`, `.go3`)
+kapatır ve raporu çizer.
 
-Ana ekranda bitmemiş tur varsa kimlik satırının altında `.resume` şeridi çıkar. Tüm turlar
+**Soru ekranındaki ağırlık sırası: Sonraki > Atla > Turu bitir.** Geri düğmesi çerçeveli
+ve etiketli (`.backb`, dar ekranda etiket kalır, yerine deste adı gizlenir); `Turu bitir`
+sessiz üçüncül (`.go3`: çerçevesiz, 12px, `--ink-3`) ama dokunma alanı korunur.
+Kullanıcı tersini şikâyet etti — geri dönüşü görünmez, turu bitirmeyi göz önünde
+bulan düzene geri dönme.
+
+`openRun()` cevaplanmış turu öne alır, `dropEmptyRun()` (geri düğmesinde) hiç cevap
+verilmemiş turu kayıttan düşürür: yeni açılıp bırakılan boş tur ana ekranda gerçek
+yarım turun önüne geçmesin.
+
+Bitmemiş tur artık hero'nun birincil düğmesidir; `.resume` şeridi yalnız "hepsini
+geçtin" boş durumunda çizilir (hero orada başka iş yapıyor). Tüm turlar
 `Geçmiş` akordeonunda listelenir (`hisRow`): biteni açmak raporu gösterir (`report(rec,
 false)` — "Devam et" düğmesi yalnız `live` iken çizilir), bitmeyeni açmak `resumeRun()`
 ile kaldığı yerden sürdürür. Biten turların `ids`/`missed` alanları silinir, geri
