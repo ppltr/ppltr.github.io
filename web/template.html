@@ -882,7 +882,7 @@ const Cloud = {
     if (degisti){
       // Girişten sonra gelen ilerleme seçili modülü bitirmiş olabilir
       if (this.girisSonrasi){ this.girisSonrasi = false; reselectAfterSync(); }
-      if (!R){ paintWho(); home(); }
+      if (R) adoptRun(); else { paintWho(); home(); }
       refreshSheet();      // açık Durum paneli eski sayıları göstermeye devam etmesin
     }
   },
@@ -1357,6 +1357,23 @@ function step0(){
   draw();
   window.scrollTo({ top:0, behavior:'smooth' });
 }
+/**
+ * Eşitleme sonrası, içinde olduğun tur başka cihazda ilerlemişse oraya geç.
+ * Açılışta yerel (eski) tur hemen sürdürülüyor; bulut yanıtı sonra geliyor.
+ * O yanıt daha ileriyse kaldığın soru oradan devam etsin.
+ */
+function adoptRun(){
+  if (!R) return false;
+  const rec = S.runs.find(r => r.id === R.id);
+  if (!rec) return false;
+  if (rec.done){ home(); return true; }          // başka cihazda bitirilmiş
+  if ((rec.log || []).length > R.log.length || (rec.i || 0) > R.i){
+    resumeRun(R.id);
+    return true;
+  }
+  return false;
+}
+
 /** Tur içinde belirli bir soruya git (0 tabanlı, sınırlara kırpılır). */
 function goTo(i){
   if (!R) return;
@@ -1584,7 +1601,7 @@ function home(){
       '</div></details>' +
 
     '<div class="hint"><kbd>A</kbd>–<kbd>E</kbd> ya da <kbd>1</kbd>–<kbd>5</kbd> şık · ' +
-      '<kbd>←</kbd><kbd>→</kbd> soru değiştir · <kbd>Enter</kbd> devam · ' +
+      '<kbd>←</kbd><kbd>→</kbd> ya da parmakla kaydır · <kbd>Enter</kbd> devam · ' +
       '<kbd>S</kbd> yıldız<br>Tur bitince yanlış yaptıkların tekrar sorulur.</div>';
 
   buildTree();
@@ -1925,7 +1942,10 @@ function draw(){
       (R.picked === null ? '<button class="go2" id="skip" type="button">Atla</button>' : '') +
       '<button class="go2" id="quit" type="button">Turu bitir</button></div>';
 
-  el('view').querySelectorAll('.opt').forEach(b => b.onclick = () => pick(+b.dataset.p));
+  el('view').querySelectorAll('.opt').forEach(b => b.onclick = () => {
+    if (Date.now() - sonKaydirma < 400) return;   // kaydırma, seçim değil
+    pick(+b.dataset.p);
+  });
   el('hb').onclick = () => { clearTimeout(advT); saveRun(); home(); };
   el('ask').onclick = async () => {
     const b = el('ask'), eski = b.textContent;
@@ -2315,6 +2335,22 @@ function openStats(){
  * Geçilen sınavlar bir aç/kapa kararı olduğu için zaman damgasıyla son yazan
  * kazanır — birleştirmek kaldırdığın dersi geri getirirdi.
  */
+/**
+ * Aynı id'li iki tur kaydından hangisi daha ileri? Zaman damgasına bakmak
+ * yanlıştı: açılışta yerel tur `saveRun()` ile tN'sini tazeliyor, böylece
+ * başka cihazdaki gerçek ilerlemeyi yenip onu buluta geri yazıyordu.
+ * Ölçü artık cevaplanmış soru sayısı; eşitse biten kazanır, sonra konum,
+ * en son zaman damgası.
+ */
+function runIleri(a, b){
+  const la = (a.log || []).length, lb = (b.log || []).length;
+  if (la !== lb) return la > lb;
+  if (!!a.done !== !!b.done) return !!a.done;
+  const ia = a.i || 0, ib = b.i || 0;
+  if (ia !== ib) return ia > ib;
+  return (a.tN || 0) > (b.tN || 0);
+}
+
 function mergeState(t, p){
   Object.keys(p.c || {}).forEach(id => {
     const a = t.c[id], b = p.c[id];
@@ -2338,7 +2374,7 @@ function mergeState(t, p){
   (t.runs || []).concat(p.runs || []).forEach(r => {
     if (!r || !r.id) return;
     const v = byId[r.id];
-    if (!v || (r.tN || 0) > (v.tN || 0)) byId[r.id] = r;
+    if (!v || runIleri(r, v)) byId[r.id] = r;
   });
   t.runs = Object.keys(byId).map(k => byId[k])
     .sort((a, b) => (b.t0 || 0) - (a.t0 || 0)).slice(0, RUN_MAX);
@@ -2493,6 +2529,35 @@ function paintWho(){
 }
 el('bNotes').onclick = () => openNotes();
 el('veil').onclick = closeSheet;
+
+// ── Parmakla kaydırma: sola sonraki, sağa önceki soru ──
+// Telefonda ok tuşu yok ve gezinme paneli bulunması zor; kaydırma hiç yer
+// kaplamadan aynı işi yapar. Dikey kaydırmayı bozmamak için hareketin yatay
+// baskın, yeterince uzun ve yeterince hızlı olması aranır.
+let sonKaydirma = 0;
+(function(){
+  let x0 = null, y0 = null, bas = 0, iptal = false;
+  const ESIK = 55, EGIM = 1.5, SURE = 800;
+  addEventListener('touchstart', e => {
+    iptal = true;
+    if (!R || e.touches.length !== 1) return;
+    if (el('sheet') && el('sheet').classList.contains('on')) return;
+    const tg = e.target;
+    if (tg && tg.closest && tg.closest('input, textarea, select, .navpop, .figbox')) return;
+    iptal = false;
+    x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; bas = Date.now();
+  }, { passive: true });
+  addEventListener('touchend', e => {
+    if (iptal || x0 === null || !R){ x0 = null; return; }
+    const t2 = e.changedTouches[0];
+    const dx = t2.clientX - x0, dy = t2.clientY - y0;
+    x0 = null;
+    if (Date.now() - bas > SURE) return;
+    if (Math.abs(dx) < ESIK || Math.abs(dx) < Math.abs(dy) * EGIM) return;
+    sonKaydirma = Date.now();          // şıkka dokunma sanılmasın
+    if (dx < 0) nextQ(); else prevQ();
+  }, { passive: true });
+})();
 
 document.addEventListener('keydown', e => {
   const tg = e.target;

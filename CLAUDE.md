@@ -140,6 +140,12 @@ karıştırmadaki karşılığı `orderFor(i).indexOf(...)` ile bulunur.
 `goTo(i)` / `prevQ()` / `nextQ()` konumu değiştirir ve bekleyen otomatik geçişi iptal
 eder. `nextQ` son soruda turu kazara bitirmez — ancak cevap verilmişse `next()`'e düşer.
 
+**Parmakla kaydırma** telefonda tek gezinme yoludur: sola sonraki, sağa önceki soru.
+Dikey kaydırmayı bozmamak için hareket yatay baskın (1.5 kat), 55 pikselden uzun ve
+800 ms'den kısa olmalı; `.navpop`, `.figbox`, form alanları ve açık Durum paneli
+dışlanır. Kaydırma sonrası 400 ms boyunca şık tıklaması yok sayılır (`sonKaydirma`) —
+yoksa parmağın kalktığı şık seçilmiş olurdu. Bunu kaldırma, ok tuşları telefonda yok.
+
 **Klavye:** `A`–`E` ve `1`–`5` cevaplar, `←` `→` soru değiştirir, `Home`/`End` başa ve
 sona gider, `Enter` devam eder, `S` yıldızlar, `Esc` açık paneli kapatır.
 
@@ -320,8 +326,18 @@ cihaz kendi girişinde aynı adresi zaten alıyor. `avatar()` baş harfleri yaza
 üstüne serer; resim yüklenemezse `onerror` img'yi silip `pic` sınıfını kaldırır, baş
 harfler geri gelir. Çıkışta resim düşer, ad ve veri yerelde kalır.
 
+**Turlar zaman damgasına göre birleştirilmez, ilerlemeye göre birleşir** (`runIleri`):
+önce cevaplanmış soru sayısı, eşitse biten kayıt, sonra konum, en son `tN`. Zaman damgası
+ölçü alınınca şu oluyordu: açılışta yerel tur `resumeRun` → `step0` → `saveRun` ile
+`tN`'sini tazeliyor, böylece başka cihazdaki gerçek ilerlemeyi yeniyor **ve onu buluta
+geri yazarak siliyordu**. `runIleri`'yi tekrar `tN`'ye indirgeme.
+
+Açılışta yerel tur hemen sürdürülür, bulut yanıtı sonra gelir; bu yüzden `esitle()`
+değişiklik gördüğünde tur içindeysek `adoptRun()` çağırır: kayıt daha ileriyse
+`resumeRun` ile o konuma geçilir, başka cihazda bitirilmişse ana ekrana dönülür.
+
 Eşitleme çakışma çözmez, **kaynaştırır**: `mergeState(hedef, gelen)` kart bazında daha çok
-görülmüşü, gün sayaçlarında en büyüğü, turlarda son dokunulanı alır. Geçilen sınavlar
+görülmüşü, gün sayaçlarında en büyüğü alır. Geçilen sınavlar
 `S.pAt` zaman damgasıyla son yazana gider — birleştirmek kaldırılan dersi geri getirirdi.
 Ayarlar da bir tercih kümesidir, birleştirilemez: `S.prefAt` damgasıyla son kaydeden
 kazanır (`savePref` damgayı basar). Buluttan daha yeni ayar gelirse `merge()` `applyPref()`
