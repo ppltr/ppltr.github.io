@@ -168,10 +168,21 @@ boşluk. Yazı boyutları küçültülmedi — okunurluk sınavda önemli. Bu de
 önce 375×812'de uzun bir soruyla (ör. 14634) ölç: aynı 30 soruda kaydırma gerektiren
 soru 13'ten 2'ye inmişti.
 
-**Gezinme paneli** soru sayacına (`#navBtn`) dokununca açılır (`navOpen`, çizimler arası
-korunur): ilk/önceki/sonraki/son düğmeleri, numara kutusu ve "Git". Kapalıyken hiç yer
-kaplamaz — kullanıcı kontrollerin arayüzü işgal etmesini istemedi, kalıcı bir gezinme
-çubuğu ekleme.
+**Gezinme alt şeritte, dikeyde bedava.** `.foot` sticky kutusu iki şeyi sarar: açılır
+`#navPop` ve eylem satırı `.acts`. Eylem satırının solunda `.navgrp` durur — `◀`,
+`#navBtn` (`4/2547`), `▶` — yani önceki/sonraki her zaman görünür ve başparmağın altında,
+ama **yeni satır açmaz**, eylem düğmeleriyle aynı yüksekliği paylaşır. `#navBtn` panelı
+açar (`navOpen`, çizimler arası korunur): ilk/önceki/sonraki/son, numara kutusu ve "Git".
+Panel `.acts`'ın hemen üstünde açılır; "Git" tek atımlık olduğu için `navGo` paneli kapatır.
+Üst satırdaki sayaç artık salt bilgi (`.qpos`), düğme değil.
+
+Kullanıcı ilk turda bu düğmeleri bulamadığını söyledi — görünürlüğü geri alma. Ama
+kalıcı **ikinci** bir çubuk da ekleme; kural "hep görünür ama fazladan satır yok".
+`Atla` düğmesi kaldırıldı: `▶` zaten cevaplamadan geçiriyor ve son soruda turu kazara
+bitirmiyor (`nextQ`).
+
+Bağlama `el('view').querySelectorAll('[data-nav]')` üzerinden yapılır — düğmeler iki
+yerde (şeritte ve panelde), seçiciyi `#navPop` ile daraltma.
 
 **Soruyu yapay zekâya sorma.** Kart başlığındaki `Sor` düğmesi (`askBtn`) soruyu,
 gördüğün sıradaki şıkları, doğru cevabı ve verdiğin cevabı düz metne çevirip
@@ -214,11 +225,16 @@ doğrudan o soruya döner — ana ekrana uğramaz. Soru ekranındaki **`‹ Ana 
 (`#hb`, `.backb`) turu **kapatmaz**, ana ekrana döner; `Turu bitir` (`#quit`, `.go3`)
 kapatır ve raporu çizer.
 
-**Soru ekranındaki ağırlık sırası: Sonraki > Atla > Turu bitir.** Geri düğmesi çerçeveli
-ve etiketli (`.backb`, dar ekranda etiket kalır, yerine deste adı gizlenir); `Turu bitir`
-sessiz üçüncül (`.go3`: çerçevesiz, 12px, `--ink-3`) ama dokunma alanı korunur.
-Kullanıcı tersini şikâyet etti — geri dönüşü görünmez, turu bitirmeyi göz önünde
-bulan düzene geri dönme.
+**Soru ekranındaki ağırlık sırası: Sonraki > gezinme takımı > Turu bitir.** Geri düğmesi
+çerçeveli ve etiketli (`.backb`, dar ekranda etiket kalır, yerine deste adı gizlenir);
+`Turu bitir` sessiz üçüncül (`.go3`: çerçevesiz, 12px, `--ink-3`) ama dokunma alanı
+korunur. Kullanıcı tersini şikâyet etti — geri dönüşü görünmez, turu bitirmeyi göz
+önünde bulan düzene geri dönme.
+
+`.acts .go` **tek satırda kalmalı** (`white-space:nowrap`): "Anladım, devam" 375px'te
+sarınca alt şerit 70px'ten 95px'e çıkıyor ve soruya kalan yer daralıyor. 420px altında
+yazı 15px'e, `.navgrp`/`.go3` iç boşlukları birer punto küçülür. Bu ölçüleri değiştirirsen
+375×812'de "Anladım, devam" ile yeniden ölç.
 
 `openRun()` cevaplanmış turu öne alır, `dropEmptyRun()` (geri düğmesinde) hiç cevap
 verilmemiş turu kayıttan düşürür: yeni açılıp bırakılan boş tur ana ekranda gerçek

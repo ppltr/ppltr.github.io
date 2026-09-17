@@ -355,18 +355,11 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .meta > .lbl{min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 @media (max-width:400px){ .meta > .lbl{display:none} }
 /* Gezinme düğmesi ve paneli — kapalıyken hiç yer kaplamaz */
-.navb{display:inline-flex; align-items:center; gap:5px; padding:3px 8px; margin:-3px 0;
-  border-radius:99px; font-family:var(--f-num); font-size:11.5px; letter-spacing:.06em;
-  text-transform:uppercase; color:var(--ink-3); border:1px solid transparent;
-  transition:border-color .12s, color .12s}
-.navb:hover{border-color:var(--rule-2); color:var(--ink-2)}
-.navb.on{border-color:var(--accent); color:var(--accent)}
-.navb b{color:var(--ink-2); font-weight:500}
-.navb.on b{color:var(--accent)}
-.navb .cv{display:inline-block; transition:transform .15s}
-.navb.on .cv{transform:rotate(90deg)}
+.qpos{flex:none; font-family:var(--f-num); font-size:11.5px; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--ink-3); white-space:nowrap}
+.qpos b{color:var(--ink-2); font-weight:500}
 .navpop{background:var(--surface); border:1px solid var(--rule-2); border-radius:var(--r);
-  padding:10px 11px; margin:-4px 0 12px; box-shadow:var(--shadow)}
+  padding:10px 11px; margin:0 0 8px; box-shadow:var(--shadow)}
 .navpop.hidden{display:none}
 .navrow{display:flex; align-items:center; gap:6px; flex-wrap:wrap}
 .nb{flex:none; min-width:38px; height:34px; display:grid; place-items:center;
@@ -453,13 +446,35 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .verdict .x b{font-family:var(--f-read); font-size:15px; font-weight:600; color:var(--ink)}
 .verdict .x s{display:block; margin-top:3px; font-family:var(--f-num); font-size:9.5px;
   letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); text-decoration:none}
-.acts{display:flex; gap:8px; margin-top:10px}
-.acts .go{flex:1}
+/* Alt şerit: gezinme paneli + eylem satırı tek sticky kutuda durur ki
+   panel açılınca düğmelerin hemen üstünde çıksın. */
+.foot{margin-top:10px}
+.acts{display:flex; gap:8px; align-items:stretch}
+/* Birincil düğme tek satırda kalmalı: sarması alt şeridi yükseltir ve
+   soruya ayrılan dikey yeri yer. Dar ekranda yazı bir punto küçülür. */
+.acts .go{flex:1; min-width:0; white-space:nowrap; overflow:hidden;
+  text-overflow:ellipsis}
 @media (max-width:719px){
-  .acts{position:sticky; bottom:0; margin:10px -14px 0; padding:8px 14px;
+  .foot{position:sticky; bottom:0; margin:10px -14px 0; padding:8px 14px;
     background:var(--surface); border-top:1px solid var(--rule);
     padding-bottom:calc(8px + env(safe-area-inset-bottom))}
 }
+@media (max-width:420px){
+  .acts .go{font-size:15px; padding-left:10px; padding-right:10px}
+  .acts .navgrp .nvb{padding:0 8px}
+  .acts .go3{padding-left:7px; padding-right:7px}
+}
+/* Gezinme takımı — eylem satırının solunda, dikeyde hiç yer kaplamaz */
+.navgrp{flex:none; display:flex; align-items:stretch; background:var(--surface);
+  border:1px solid var(--rule); border-radius:var(--r); overflow:hidden}
+.navgrp .nvb{display:grid; place-items:center; padding:0 10px; color:var(--ink-2);
+  font-size:13px; border-right:1px solid var(--rule);
+  transition:color .12s, background .12s}
+.navgrp .nvb:last-child{border-right:none}
+.navgrp .nvb:hover:not(:disabled){color:var(--accent); background:var(--surface-2)}
+.navgrp .nvb:disabled{opacity:.3}
+.navgrp .nn{font-family:var(--f-num); font-size:11.5px; padding:0 7px; white-space:nowrap}
+.navgrp .nn.on{color:var(--accent); background:var(--accent-soft)}
 
 /* ── Özet ── */
 .score{font-family:var(--f-num); font-size:54px; font-weight:500; line-height:1;
@@ -1963,12 +1978,24 @@ function draw(){
     '<div class="meta"><button class="backb" id="hb" type="button" ' +
       'title="Ana ekran — tur kayıtlı kalır, oradan devam edersin">' +
       '<i>‹</i>Ana ekran</button>' +
-      '<button class="navb' + (navOpen ? ' on' : '') + '" id="navBtn" type="button" ' +
-        'aria-expanded="' + (navOpen ? 'true' : 'false') + '" ' +
-        'title="Sorular arasında gez">Soru <b class="num">' + (R.i + 1) + '</b> / ' +
-        '<b class="num">' + R.list.length + '</b><span class="cv">›</span></button>' +
+      '<span class="qpos">Soru <b class="num">' + (R.i + 1) + '</b> / ' +
+        '<b class="num">' + R.list.length + '</b></span>' +
       '<span class="lbl"' + (retry ? ' style="color:var(--bad)"' : '') + '>' +
         (retry ? 'Yanlış turu ' + R.round : deckName()) + '</span></div>' +
+    '<div class="card"><div class="head"><span class="lbl">' + esc(s.c) + '</span>' +
+      '<span class="who">' + esc(secName(sec)) + '</span><span class="sp"></span>' +
+      (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
+      (q[8] && !figOf(q) ? '<span class="tag fig">şekil gerekli</span>' : '') +
+      (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') +
+      (q[5] ? '<span class="tag flag">tartışmalı</span>' : '') +
+      askBtn() +
+      '<button class="starbtn' + (st.has(q[0]) ? ' on' : '') + '" id="star" type="button" ' +
+        'title="Yıldızla (S)">' + (st.has(q[0]) ? '★' : '☆') + '</button>' +
+      '<span class="lbl num">' + q[0] + '</span></div>' +
+      '<div class="qt">' + esc(qText(q)) + '</div>' +
+      (figOf(q) ? '<div class="figbox">' + figOf(q) + '</div>' : '') +
+      '<div class="opts">' + opts + '</div>' + verdict + '</div>' +
+    '<div class="foot">' +
     '<div class="navpop' + (navOpen ? '' : ' hidden') + '" id="navPop">' +
       '<div class="navrow">' +
         '<button class="nb" data-nav="first" type="button" title="İlk soru (Home)">⏮</button>' +
@@ -1985,24 +2012,21 @@ function draw(){
         '<kbd>A</kbd>–<kbd>E</kbd> ya da <kbd>1</kbd>–<kbd>5</kbd> ile cevapla, ' +
         '<kbd>←</kbd><kbd>→</kbd> ile gez</div>' +
     '</div>' +
-    '<div class="card"><div class="head"><span class="lbl">' + esc(s.c) + '</span>' +
-      '<span class="who">' + esc(secName(sec)) + '</span><span class="sp"></span>' +
-      (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
-      (q[8] && !figOf(q) ? '<span class="tag fig">şekil gerekli</span>' : '') +
-      (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') +
-      (q[5] ? '<span class="tag flag">tartışmalı</span>' : '') +
-      askBtn() +
-      '<button class="starbtn' + (st.has(q[0]) ? ' on' : '') + '" id="star" type="button" ' +
-        'title="Yıldızla (S)">' + (st.has(q[0]) ? '★' : '☆') + '</button>' +
-      '<span class="lbl num">' + q[0] + '</span></div>' +
-      '<div class="qt">' + esc(qText(q)) + '</div>' +
-      (figOf(q) ? '<div class="figbox">' + figOf(q) + '</div>' : '') +
-      '<div class="opts">' + opts + '</div>' + verdict + '</div>' +
     '<div class="acts">' +
+      '<div class="navgrp">' +
+        '<button class="nvb" data-nav="prev" type="button" title="Önceki soru (←)"' +
+          (R.i === 0 ? ' disabled' : '') + '>◀</button>' +
+        '<button class="nvb nn' + (navOpen ? ' on' : '') + '" id="navBtn" type="button" ' +
+          'aria-expanded="' + (navOpen ? 'true' : 'false') + '" ' +
+          'title="Soru numarasına git">' + (R.i + 1) + '/' + R.list.length + '</button>' +
+        '<button class="nvb" data-nav="next" type="button" ' +
+          'title="Sonraki soru (→) — cevaplamadan atlar"' +
+          (R.i === R.list.length - 1 ? ' disabled' : '') + '>▶</button>' +
+      '</div>' +
       '<button class="go" id="next" type="button"' + (R.picked === null ? ' disabled' : '') + '>' +
         (last ? 'Bitir' : (shown && R.order[R.picked] !== 0 ? 'Anladım, devam' : 'Sonraki')) + '</button>' +
-      (R.picked === null ? '<button class="go2" id="skip" type="button">Atla</button>' : '') +
-      '<button class="go3" id="quit" type="button">Turu bitir</button></div>';
+      '<button class="go3" id="quit" type="button">Turu bitir</button></div>' +
+    '</div>';
 
   el('view').querySelectorAll('.opt').forEach(b => b.onclick = () => {
     if (Date.now() - sonKaydirma < 400) return;   // kaydırma, seçim değil
@@ -2026,7 +2050,7 @@ function draw(){
     el('navBtn').setAttribute('aria-expanded', navOpen ? 'true' : 'false');
     if (navOpen) el('navNo').focus();
   };
-  el('navPop').querySelectorAll('[data-nav]').forEach(b => b.onclick = () => {
+  el('view').querySelectorAll('[data-nav]').forEach(b => b.onclick = () => {
     const d = b.dataset.nav;
     if (d === 'first') goTo(0);
     else if (d === 'prev') prevQ();
@@ -2035,7 +2059,9 @@ function draw(){
   });
   const navGo = () => {
     const v = parseInt(el('navNo').value, 10);
-    if (!isNaN(v)) goTo(v - 1);
+    if (isNaN(v)) return;
+    navOpen = false;          // tek atımlık iş, panel açık kalmasın
+    goTo(v - 1);
   };
   el('navGo').onclick = navGo;
   el('navNo').onkeydown = e => {
@@ -2043,7 +2069,6 @@ function draw(){
     e.stopPropagation();
   };
   el('next').onclick = next;
-  const sk = el('skip'); if (sk) sk.onclick = next;
   el('quit').onclick = done;
   el('star').onclick = () => {
     const i = S.star.indexOf(q[0]);
