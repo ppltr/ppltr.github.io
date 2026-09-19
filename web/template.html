@@ -342,6 +342,15 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
   font-weight:500; color:var(--ink-2)}
 .seg button + button{border-left:1px solid var(--rule)}
 .seg button.on{background:var(--accent); color:var(--on-accent)}
+#aiSel{display:grid; grid-template-columns:repeat(3, 1fr); gap:1px; background:var(--rule);
+  border:1px solid var(--rule); border-radius:var(--r); overflow:hidden}
+#aiSel button{border:none; border-left:none; background:var(--surface-2); padding:8px 4px;
+  font-size:12px; font-weight:500; color:var(--ink-2); text-align:center}
+#aiSel button + button{border-left:none}
+#aiSel button.on{background:var(--accent); color:var(--on-accent)}
+@media (min-width:540px){
+  #aiSel{grid-template-columns:repeat(6, 1fr)}
+}
 .note{font-size:12.5px; color:var(--ink-2); margin-top:6px}
 .note b{font-family:var(--f-num); color:var(--ink); font-weight:500}
 
@@ -714,6 +723,12 @@ function loadProfile(){
   try{ const p = JSON.parse(raw || 'null'); if (p && p.v === 2) S = Object.assign(blank(), p); }catch(e){}
   if (!Array.isArray(S.runs)) S.runs = [];
   if (!Array.isArray(S.passed)) S.passed = [];
+  // Eski varsayılan 'claude' idi; yeni varsayılan 'gemini'. Kullanıcı özellikle
+  // seçmediyse (eski oturumdan kalan varsayılan) bir defaya mahsus gemini'ye taşınır.
+  if (!S.prefV && S.pref && S.pref.ai === 'claude'){
+    delete S.pref.ai;
+  }
+  S.prefV = 1;
   applyPref();
 }
 /** S.pref → F. Açılışta ve buluttan daha yeni bir ayar seti geldiğinde çalışır. */
@@ -1045,7 +1060,7 @@ function bindAccount(u){
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
                    hideFlag:false, count:0, mode:'study', order:'smart',
-                   sound:true, ai:'claude', lang:'en' };
+                   sound:true, ai:'gemini', lang:'en' };
 const F = Object.assign({}, DEFAULTS);
 
 // ── Soru dili ────────────────────────────────────────────────────────
@@ -1884,18 +1899,20 @@ function toggleSection(code, sec){
 // sayfa olarak yayınlanıyor. Bunun yerine metin panoya kopyalanır ve
 // seçilen sohbetin sorgu adresi yeni sekmede açılır.
 const AI = {
-  claude:     ['Claude',     'https://claude.ai/new?q='],
-  chatgpt:    ['ChatGPT',    'https://chatgpt.com/?q='],
-  perplexity: ['Perplexity', 'https://www.perplexity.ai/search?q='],
-  google:     ['Google',     'https://www.google.com/search?q='],
+  gemini:     ['Gemini',     'https://gemini.google.com/app?q=',      'Gemini\'ye sor'],
+  claude:     ['Claude',     'https://claude.ai/new?q=',             'Claude\'a sor'],
+  chatgpt:    ['ChatGPT',    'https://chatgpt.com/?q=',              'ChatGPT\'ye sor'],
+  grok:       ['Grok',       'https://grok.com/?q=',                 'Grok\'a sor'],
+  perplexity: ['Perplexity', 'https://www.perplexity.ai/search?q=', 'Perplexity\'ye sor'],
+  google:     ['Google',     'https://www.google.com/search?q=',     'Google\'a sor'],
 };
 const URL_MAX = 7000;              // uzun soruda adres yerine yalnız kopyala
 
 /** Kart başlığındaki "Sor" düğmesi. Adres çok uzunsa yalnız kopyalar. */
 function askBtn(){
-  const ai = AI[F.ai] || AI.claude;
+  const ai = AI[F.ai] || AI.gemini;
   const url = ai[1] + encodeURIComponent(askText());
-  const ttl = ai[0] + '\'a sor — metin panoya da kopyalanır';
+  const ttl = (ai[2] || (ai[0] + '\'a sor')) + ' — metin panoya da kopyalanır';
   return url.length <= URL_MAX
     ? '<a class="askbtn" id="ask" href="' + esc(url) + '" target="_blank" ' +
       'rel="noopener noreferrer" title="' + esc(ttl) + '">Sor</a>'
