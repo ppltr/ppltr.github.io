@@ -205,7 +205,7 @@ yerde (şeritte ve panelde), seçiciyi `#navPop` ile daraltma.
 gördüğün sıradaki şıkları, doğru cevabı ve verdiğin cevabı düz metne çevirip
 (`askText`) panoya kopyalar ve seçilen sohbeti yeni sekmede açar. Düğme gerçek bir
 `<a target="_blank">`; `window.open` sandbox'ta engellenebiliyor. Sağlayıcı `AI`
-sözlüğünde (Gemini varsayılan; Claude, ChatGPT, Grok, Perplexity, Google), seçim
+sözlüğünde (ChatGPT varsayılan; Claude, Gemini, Grok, Perplexity, Google), seçim
 `F.ai` ile Ayarlar'dan yapılır.
 
 **Satır içi API eklemeyi deneme.** Bu dosya herkese açık statik bir sayfa olarak

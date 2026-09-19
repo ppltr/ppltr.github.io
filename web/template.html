@@ -723,12 +723,13 @@ function loadProfile(){
   try{ const p = JSON.parse(raw || 'null'); if (p && p.v === 2) S = Object.assign(blank(), p); }catch(e){}
   if (!Array.isArray(S.runs)) S.runs = [];
   if (!Array.isArray(S.passed)) S.passed = [];
-  // Eski varsayılan 'claude' idi; yeni varsayılan 'gemini'. Kullanıcı özellikle
-  // seçmediyse (eski oturumdan kalan varsayılan) bir defaya mahsus gemini'ye taşınır.
-  if (!S.prefV && S.pref && S.pref.ai === 'claude'){
-    delete S.pref.ai;
+  // Varsayılan ChatGPT yapıldı; önceki varsayılanlardan ('claude' veya 'gemini') kalan tercihler temizlenir
+  if ((S.prefV || 0) < 2){
+    if (S.pref && (S.pref.ai === 'claude' || S.pref.ai === 'gemini')){
+      delete S.pref.ai;
+    }
+    S.prefV = 2;
   }
-  S.prefV = 1;
   applyPref();
 }
 /** S.pref → F. Açılışta ve buluttan daha yeni bir ayar seti geldiğinde çalışır. */
@@ -1060,7 +1061,7 @@ function bindAccount(u){
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
                    hideFlag:false, count:0, mode:'study', order:'smart',
-                   sound:true, ai:'gemini', lang:'en' };
+                   sound:true, ai:'chatgpt', lang:'en' };
 const F = Object.assign({}, DEFAULTS);
 
 // ── Soru dili ────────────────────────────────────────────────────────
@@ -1662,7 +1663,7 @@ function home(){
             (F.ai === k ? 'on' : '') + '">' + AI[k][0] + '</button>').join('') + '</div>' +
           '<div class="note">Soru kartındaki <b>Sor</b> düğmesi soruyu, şıkları, doğru ' +
           'cevabı ve senin cevabını metne çevirip panoya kopyalar ve burayı yeni sekmede ' +
-          'açar. Sekme açılmazsa metin panonda hazır bekler.</div></div>' +
+          'açar (Gemini ve Grok URL parametresi almadığı için açılan sayfada <b>Cmd+V / Ctrl+V</b> ile yapıştırınız).</div></div>' +
         '<div class="grp"><span class="lbl">Geri bildirim</span>' +
           '<button class="switch' + (F.sound ? ' on' : '') + '" id="swSound" type="button">' +
             '<span class="knob"></span><span>Cevapta ses çal</span></button>' +
@@ -1899,10 +1900,10 @@ function toggleSection(code, sec){
 // sayfa olarak yayınlanıyor. Bunun yerine metin panoya kopyalanır ve
 // seçilen sohbetin sorgu adresi yeni sekmede açılır.
 const AI = {
-  gemini:     ['Gemini',     'https://gemini.google.com/app?q=',      'Gemini\'ye sor'],
-  claude:     ['Claude',     'https://claude.ai/new?q=',             'Claude\'a sor'],
   chatgpt:    ['ChatGPT',    'https://chatgpt.com/?q=',              'ChatGPT\'ye sor'],
-  grok:       ['Grok',       'https://grok.com/?q=',                 'Grok\'a sor'],
+  claude:     ['Claude',     'https://claude.ai/new?q=',             'Claude\'a sor'],
+  gemini:     ['Gemini',     'https://gemini.google.com/app',        'Gemini\'ye sor — panodan yapıştırın'],
+  grok:       ['Grok',       'https://grok.com/',                    'Grok\'a sor — panodan yapıştırın'],
   perplexity: ['Perplexity', 'https://www.perplexity.ai/search?q=', 'Perplexity\'ye sor'],
   google:     ['Google',     'https://www.google.com/search?q=',     'Google\'a sor'],
 };
@@ -1910,8 +1911,9 @@ const URL_MAX = 7000;              // uzun soruda adres yerine yalnız kopyala
 
 /** Kart başlığındaki "Sor" düğmesi. Adres çok uzunsa yalnız kopyalar. */
 function askBtn(){
-  const ai = AI[F.ai] || AI.gemini;
-  const url = ai[1] + encodeURIComponent(askText());
+  const ai = AI[F.ai] || AI.chatgpt;
+  const noQ = ai[1].indexOf('?q=') < 0 && ai[1].indexOf('?query=') < 0;
+  const url = noQ ? ai[1] : (ai[1] + encodeURIComponent(askText()));
   const ttl = (ai[2] || (ai[0] + '\'a sor')) + ' — metin panoya da kopyalanır';
   return url.length <= URL_MAX
     ? '<a class="askbtn" id="ask" href="' + esc(url) + '" target="_blank" ' +
@@ -2053,12 +2055,14 @@ function draw(){
   el('ask').onclick = async () => {
     const b = el('ask'), eski = b.textContent;
     const ok = await copyText(askText());
-    b.textContent = ok ? 'Kopyalandı' : 'Kopyalanamadı';
+    const ai = AI[F.ai] || AI.chatgpt;
+    const noQ = ai[1].indexOf('?q=') < 0 && ai[1].indexOf('?query=') < 0;
+    b.textContent = ok ? (noQ ? 'Kopyalandı (Yapıştır)' : 'Kopyalandı') : 'Kopyalanamadı';
     b.classList.add('done');
     setTimeout(() => {
       const c = el('ask');
       if (c){ c.textContent = eski; c.classList.remove('done'); }
-    }, 1800);
+    }, 2000);
   };
   el('navBtn').onclick = () => {
     navOpen = !navOpen;
