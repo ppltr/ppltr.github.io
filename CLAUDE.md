@@ -113,8 +113,8 @@ karşılaştırmayı iki dilde yap (`text_en` / `text_tr` sütunları) ve adayla
 tuzaktır, bağlanmaz: 90948 (fit, ×1.25) / 90949 (uçuş seviyesi, ×12) birbirinin çeldiricisi.
 
 Yan etkisi bilinerek kabul edildi: kanonik İngilizce bankadaysa (090-01…06), yalnız
-B1–B4 ders notu bölümleri seçiliyken o bilgi turda hiç çıkmaz; modülün tamamı seçiliyken
-kanonik soru gelir. 090'ın ders notu soruları (590xx, gerçek SHGM soruları) İngilizce
+"Ders Notundan Üretilmiş" (090-U) seçiliyken o bilgi turda hiç çıkmaz; modülün tamamı
+seçiliyken kanonik soru gelir. 090'ın ders notu soruları (590xx, gerçek SHGM soruları) İngilizce
 bankaya bilerek bağlanmadı. 070'te 90725/90726, 502'de 95257 aynı durumda ama henüz
 bağlanmadı — kullanıcı yalnız 090'ı istedi.
 
@@ -349,6 +349,18 @@ Kullanıcı ders notu verdiğinde iş akışı:
 
 Üretilmiş sorular uygulamada "üretilmiş" etiketiyle görünür ve kapsam anahtarından
 kapatılabilir; gerçek sınav sorularıyla asla karıştırılmaz.
+
+**Üretilmiş sorular kendi bölümünde durur: "Ders Notundan Üretilmiş"** (İngilizcesi
+"Generated from Course Notes", `data/en/_dersler.json`). Ders notu soruları ayrı
+bölümde kalır: 070-06 / 070-07, 01-02 / 01-03, 090-B1…B4 / 090-U. Kod, konu seçicide ders
+notu bölümlerinin **arkasına** düşecek biçimde seçilir (bölümler koda göre sıralanır;
+090'da `-07` B'lerin önüne düşerdi, o yüzden `-U`). 090'da üretilmişler önce B1–B4'e
+karışmıştı ve kullanıcı konu seçicide onları ayrı bulamadığını söyledi. Konuya göre
+kimlik aralıkları dosyanın `id_convention` alanında yazılı. Seçim bölüm **koduyla**
+saklandığı için (`F.pick`), yeni bölüm eklemek kayıtlı seçimleri bozmaz.
+
+502 bu kurala henüz uymuyor: 118 üretilmiş soru, 25 SHGM örnek sorusuyla aynı GB-01…05
+konu bölümlerinde. Kullanıcı yalnız 090'ı istedi; 502'ye dokunmadan önce sor.
 
 **İki dil kuralı (her yeni soru dosyası için).** Uygulama iki dilli; her sorunun iki
 karşılığı olmalı, yoksa seçili dil ne olursa olsun kaynak dilinde görünür ve kip içinde
