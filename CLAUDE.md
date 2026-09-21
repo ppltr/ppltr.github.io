@@ -243,6 +243,14 @@ büyütürsen gidilen süre sayılır, küçültürsen düşünme süresi kaybol
   kimlik satırında toplam çalışma süresi ("12 sa çalışma"; dar ekranda satır sarılır),
   Durum panelinde boşta bugün / son 7 gün / toplam, tur raporunda turun boşta süresi
   (yalnız `bosTam` turda — boşta ölçümü baştan beri açık).
+- **Soru başı ortalama** iki sayacın yanında: tur sayacının solunda `#tort` çalışma
+  süresine göre, `#tstat`'ın sonunda toplam (çalışma + boşta) süreye göre. Bölen, taban
+  anından beri verilen cevap sayısıdır (`R.log.length - ort0.n`). `rec.ort0 = {n, s, b}`
+  yeni turda sıfırdır; süre ölçümü baştan açık olmayan eski tur ilk açıldığında o anki
+  cevap sayısı ve süreler taban alınır — eski cevaplar zamanlanmadığı için ortalamaya
+  karışsalar ortalama yanlış çıkardı. İlk cevaba kadar ortalama gizli. Yer açmak için
+  400 piksel altında üst satırdaki "Soru" kelimesi düşer (`.qw`); sıra alt şeritte de
+  yazıyor. 360 pikselde ölçüldü: satır 332 pikselin 274'ünü kullanıyor.
 - **Toplam süre** `S.sure[cihaz] = {t, g:{gün: ms}}` içinde, boşta süre `S.bos[cihaz]` aynı
   biçimde; cihaz kimliği `atpl.cihaz`.
   Her cihaz yalnız kendi sayacını artırır; `mergeState` cihaz bazında **en büyüğü** alır,

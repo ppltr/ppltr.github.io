@@ -391,6 +391,12 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
   .tmr:hover{border-color:var(--accent); color:var(--accent)}
   .tmr.off:hover{border-color:var(--due); color:var(--due); filter:brightness(1.1)}
 }
+/* Sayaç ve yanındaki soru başı ortalama tek blok: araları açılmasın */
+.tmrbox{flex:none; display:flex; align-items:center; gap:7px}
+.tort{font-family:var(--f-num); font-size:10.5px; letter-spacing:.02em; color:var(--ink-3);
+  white-space:nowrap; font-variant-numeric:tabular-nums}
+.tort b{font-weight:500; color:var(--ink-2)}
+@media (max-width:400px){ .qpos .qw{display:none} }   /* sıra altta da yazıyor */
 .qpos{flex:none; font-family:var(--f-num); font-size:11.5px; letter-spacing:.06em;
   text-transform:uppercase; color:var(--ink-3); white-space:nowrap}
 .qpos b{color:var(--ink-2); font-weight:500}
@@ -1525,11 +1531,12 @@ function start(){
   const id = 'r' + Date.now();
   R = { id, list, i:0, order:null, picked:null, orders:[], picks:[],
         log:[], t0:Date.now(), round:1, missed:[], sure:0, durdu:false, sureTam:true,
-        bos:0, bosTam:true };
+        bos:0, bosTam:true, ort0:{ n:0, s:0, b:0 } };
   S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle(), code:soloModule() || '',
                    deck:deckName(),
                    n0:list.length, ids:list.map(q => q[0]), i:0, round:1,
-                   missed:[], log:[], done:false, sure:0, sureTam:true, bos:0, bosTam:true });
+                   missed:[], log:[], done:false, sure:0, sureTam:true, bos:0, bosTam:true,
+                   ort0:{ n:0, s:0, b:0 } });
   if (S.runs.length > RUN_MAX) S.runs.length = RUN_MAX;
   save();
   step0();
@@ -1541,11 +1548,15 @@ function resumeRun(id){
   if (!rec || rec.done) return home();
   const list = (rec.ids || []).map(x => BY_ID.get(x)).filter(Boolean);
   if (!list.length){ rec.done = true; save(); return home(); }
+  // Soru başı ortalamanın tabanı: süre ölçümü turun başından beri açık değilse
+  // ortalama bu andan sonraki cevaplarla hesaplanır — eski cevaplar zamanlanmadı.
+  if (!rec.ort0) rec.ort0 = rec.sureTam && rec.bosTam ? { n:0, s:0, b:0 }
+    : { n:(rec.log || []).length, s:rec.sure || 0, b:rec.bos || 0 };
   R = { id:rec.id, list, i:Math.min(rec.i || 0, list.length), order:null, picked:null,
         orders:[], picks:[], log:(rec.log || []).slice(), t0:rec.t0,
         round:rec.round || 1, missed:(rec.missed || []).slice(),
         sure:rec.sure || 0, durdu:!!rec.durdu, sureTam:!!rec.sureTam,
-        bos:rec.bos || 0, bosTam:!!rec.bosTam };
+        bos:rec.bos || 0, bosTam:!!rec.bosTam, ort0:rec.ort0 };
   // Bu turda verilmiş cevapları geri kur: kayıtta kaynak şık indeksi var,
   // yeni karıştırmada karşılığı bulunur. Böylece geri gidince cevap görünür
   // ve yeniden puanlanmaz.
@@ -2155,13 +2166,22 @@ function tmrBoya(t){
   t.setAttribute('aria-label', (R.durdu ? 'Sayaç durdu, ' : 'Tur süresi, ') +
     saat((R.sure || 0) + (R.durdu ? 0 : bekleyenSure())));
   t.querySelector('.tv').textContent = saat((R.sure || 0) + (R.durdu ? 0 : bekleyenSure()));
-  // Küçük satır: bu turda boşta geçen ve toplam (çalışma + boşta)
+  // Küçük satır: bu turda boşta geçen, toplam (çalışma + boşta) ve iki ortalama:
+  // sayacın yanında çalışma süresine, toplamın yanında toplam süreye göre soru başı.
+  const bos = (R.bos || 0) + (R.durdu ? 0 : bekleyenBos());
+  const cal = (R.sure || 0) + (R.durdu ? 0 : bekleyenSure());
+  const o = R.ort0 || { n:0, s:0, b:0 };
+  const n = R.log.length - o.n;               // taban anından beri verilen cevap
+  const to = el('tort');
+  if (to){
+    to.hidden = n < 1;
+    if (n >= 1) to.innerHTML = '<b>' + saat(Math.max(0, cal - o.s) / n) + '</b>/soru';
+  }
   const ts = el('tstat');
   if (ts){
-    const bos = (R.bos || 0) + (R.durdu ? 0 : bekleyenBos());
-    const cal = (R.sure || 0) + (R.durdu ? 0 : bekleyenSure());
     ts.innerHTML = '<span class="bz' + (bos >= 1000 ? ' on' : '') + '">boşta <b>' + saat(bos) +
-      '</b></span> · toplam <b>' + saat(cal + bos) + '</b>';
+      '</b></span> · toplam <b>' + saat(cal + bos) + '</b>' +
+      (n >= 1 ? ' · <b>' + saat(Math.max(0, cal + bos - o.s - o.b) / n) + '</b>/soru' : '');
   }
 }
 /** Elle durdur / sürdür. Durmadan önceki süre tura yazılır. */
@@ -2218,17 +2238,19 @@ function draw(){
   el('view').innerHTML =
     '<div class="progrow"><div class="prog"><i class="' + (retry ? 'retry' : '') + '" style="width:' +
       (R.i / R.list.length * 100) + '%"></i></div>' +
-      '<span class="tstat" id="tstat" title="Bu turda ekran açıkken hiç dokunmadan geçen süre ' +
-        've turun toplamı (çalışma + boşta)"></span></div>' +
+      '<span class="tstat" id="tstat" title="Bu turda ekran açıkken hiç dokunmadan geçen süre, ' +
+        'turun toplamı (çalışma + boşta) ve toplama göre bir soruya düşen ortalama"></span></div>' +
     '<div class="meta"><button class="backb" id="hb" type="button" ' +
       'title="Ana ekran — tur kayıtlı kalır, oradan devam edersin">' +
       '<i>‹</i>Ana ekran</button>' +
-      '<span class="qpos">Soru <b class="num">' + (R.i + 1) + '</b> / ' +
+      '<span class="qpos"><span class="qw">Soru </span><b class="num">' + (R.i + 1) + '</b> / ' +
         '<b class="num">' + R.list.length + '</b></span>' +
       '<span class="lbl"' + (retry ? ' style="color:var(--bad)"' : '') + '>' +
         (retry ? 'Yanlış turu ' + R.round : deckName()) + '</span>' +
+      '<span class="tmrbox"><span class="tort" id="tort" hidden ' +
+        'title="Çalışma süresine göre bir soruya düşen ortalama (bu tur)"></span>' +
       '<button class="tmr" id="tmr" type="button"><span class="ti" aria-hidden="true">' +
-        '</span><span class="tv num"></span></button></div>' +
+        '</span><span class="tv num"></span></button></span></div>' +
     '<div class="card"><div class="head"><span class="lbl">' + esc(s.c) + '</span>' +
       '<span class="who">' + esc(secName(sec)) + '</span><span class="sp"></span>' +
       (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
