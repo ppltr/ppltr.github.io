@@ -224,6 +224,7 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .dchip.due b{color:var(--due)} .dchip.wrong b{color:var(--bad)}
 .dchip.new b{color:var(--cyan)} .dchip.star b{color:var(--accent)}
 .dchip.leech b{color:var(--bad)}
+.dchip.slow b{color:var(--due)}
 .dchip.on{background:var(--accent); border-color:var(--accent); color:var(--on-accent)}
 .dchip.on b{color:var(--on-accent)}
 
@@ -442,6 +443,7 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .tag.fig{color:var(--ink-2)} .tag.gen{color:var(--cyan)}
 .tag.flag{color:var(--accent-ink); background:var(--accent-soft)}
 .tag.box{color:var(--due); background:var(--due-soft)}
+.tag.slow{color:var(--due)}
 .askbtn{flex:none; display:inline-flex; align-items:center; padding:3px 9px;
   border-radius:99px; border:1px solid var(--rule-2); background:var(--surface);
   color:var(--ink-2); font-family:var(--f-num); font-size:10.5px; font-weight:500;
@@ -546,6 +548,19 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .rdot.ok{background:var(--ok)} .rdot.bad{background:var(--bad)}
 .rrow .q{font-family:var(--f-read); font-size:14px; line-height:1.45}
 .rrow .a{font-size:12px; color:var(--ink-2); margin-top:3px}
+.rrow .rtm{flex:none; margin-left:auto; padding-left:8px; font-family:var(--f-num);
+  font-size:11px; color:var(--ink-3); font-variant-numeric:tabular-nums}
+.rrow .rtm.slow{color:var(--due)}
+/* Durum: soru başına süre listesi */
+.qtlist{display:flex; flex-direction:column; gap:4px}
+.qtrow{display:flex; align-items:center; gap:10px; padding:7px 10px; border-radius:8px;
+  background:var(--surface-2); border:1px solid var(--rule)}
+.qtrow .qtx{flex:1; min-width:0; font-size:12.5px; color:var(--ink-2); overflow:hidden;
+  text-overflow:ellipsis; white-space:nowrap}
+.qtrow .qtv{flex:none; text-align:right; font-family:var(--f-num); line-height:1.25}
+.qtrow .qtv b{display:block; font-size:13px; font-weight:500; color:var(--ink)}
+.qtrow .qtv b.slow{color:var(--due)}
+.qtrow .qtv i{display:block; font-style:normal; font-size:10px; color:var(--ink-3)}
 .rrow .a b{color:var(--ok); font-weight:600} .rrow .a i{color:var(--bad); font-style:normal}
 
 /* ── Paneller ── */
@@ -685,6 +700,9 @@ const KEYS = ['A','B','C','D','E'];
 const DAY = 864e5;
 const BOX_MS = [10*6e4, DAY, 3*DAY, 7*DAY, 16*DAY, 35*DAY];
 const LEECH = 4, MASTER = 2;
+// Son denemesi bundan uzun süren soru "Uzun sürenler" destesine girer.
+// Metinlerde "1 dakika" yazıyor (çip ipucu, Durum notu); değiştirirsen onları da.
+const YAVAS_MS = 60e3;
 
 const el = id => document.getElementById(id);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -1043,6 +1061,9 @@ let sureDegisti = false;
 // Boşta süresi: ekran açık (sayfa görünür, bilgisayar uyanık) ama BOS_MS'den uzun
 // süre hiç dokunulmamış aralık. Saniye tıkıyla biriktirilir ki uyku sayılmasın.
 let bekBos = 0, sonTik = Date.now();
+// En son kapanan boşta aralık: soru süresi, cevaptan hemen önce biten uzun
+// hareketsizliği "düşünme" sayabilsin diye (bkz. soruSureYaz).
+let sonBos = null;
 
 /** S.sure ya da S.bos içinde bu cihazın sayacını artırır (gün kaydıyla). */
 function sayacEkle(ad, d){
@@ -1080,7 +1101,7 @@ function etkinKapat(an){
   sonEtkin = an; bekBos = 0;
   if (d <= 0) return;
   if (d <= BOS_MS) sureEkle(d);
-  else bosEkle(bos);
+  else { bosEkle(bos); sonBos = { an, ms:bos, bas:an - d }; }
 }
 /** Şu an boştaysan henüz yazılmamış boşta süresi — ekran için. */
 function bekleyenBos(){
@@ -1337,6 +1358,7 @@ function inDeck(q, deck){
     case 'new':   return !k;
     case 'star':  return stars().has(q[0]);
     case 'leech': return !!k && k[3] >= LEECH;
+    case 'slow':  { const t = S.qt && S.qt[q[0]]; return !!t && t[2] >= YAVAS_MS; }
     default:      return true;
   }
 }
@@ -1416,7 +1438,10 @@ function autoPickModule(){
 
 function buildQueue(){
   let pool = scoped().filter(q => inDeck(q, F.deck));
-  if (F.order === 'smart'){
+  if (F.deck === 'slow' && F.order === 'smart'){
+    // Uzun sürenler en yavaştan başlar: amaç önce en çok zaman yiyeni kısaltmak
+    pool.sort((a, b) => S.qt[b[0]][2] - S.qt[a[0]][2]);
+  } else if (F.order === 'smart'){
     pool = pool.map(q => {
       const k = card(q[0]);
       return { q, key: k ? -(Date.now() - k[1]) : 1e15 + Math.random() };
@@ -1531,7 +1556,7 @@ function start(){
   const id = 'r' + Date.now();
   R = { id, list, i:0, order:null, picked:null, orders:[], picks:[],
         log:[], t0:Date.now(), round:1, missed:[], sure:0, durdu:false, sureTam:true,
-        bos:0, bosTam:true, ort0:{ n:0, s:0, b:0 } };
+        bos:0, bosTam:true, ort0:{ n:0, s:0, b:0 }, qAcc:{}, qGor:null };
   S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle(), code:soloModule() || '',
                    deck:deckName(),
                    n0:list.length, ids:list.map(q => q[0]), i:0, round:1,
@@ -1556,7 +1581,7 @@ function resumeRun(id){
         orders:[], picks:[], log:(rec.log || []).slice(), t0:rec.t0,
         round:rec.round || 1, missed:(rec.missed || []).slice(),
         sure:rec.sure || 0, durdu:!!rec.durdu, sureTam:!!rec.sureTam,
-        bos:rec.bos || 0, bosTam:!!rec.bosTam, ort0:rec.ort0 };
+        bos:rec.bos || 0, bosTam:!!rec.bosTam, ort0:rec.ort0, qAcc:{}, qGor:null };
   // Bu turda verilmiş cevapları geri kur: kayıtta kaynak şık indeksi var,
   // yeni karıştırmada karşılığı bulunur. Böylece geri gidince cevap görünür
   // ve yeniden puanlanmaz.
@@ -1626,6 +1651,8 @@ function nextQ(){
 function pick(pos){
   if (!R || R.picked !== null) return;
   const q = R.list[R.i], ok = R.order[pos] === 0;
+  const w = R.qGor && R.qGor.id === q[0] ? R.qGor.w : null;
+  soruKapat(); soruSureYaz(q[0], w);           // grade() kaydı diske yazmadan önce
   R.picked = pos; R.picks[R.i] = pos;
   grade(q[0], ok);
   R.log.push({ id:q[0], ok, pick:R.order[pos], round:R.round });
@@ -1645,6 +1672,7 @@ function home(){
   const total = scoped().length;
   const counts = {}; DECKS.forEach(d => counts[d.k] = deckCount(d.k));
   const leech = deckCount('leech');
+  const slow = deckCount('slow');
   const G = globalStat();
   const cov = G.total ? Math.round(G.seen / G.total * 100) : 0;
   const solo = soloModule();
@@ -1778,6 +1806,9 @@ function home(){
     (leech ? '<button class="dchip leech" data-deck="leech" type="button" ' +
       'title="' + LEECH + ' kez ve üzeri yanlış yaptıkların">' +
       '<b class="num">' + leech + '</b>Takıldıklarım</button>' : '') +
+    (slow ? '<button class="dchip slow' + (F.deck === 'slow' ? ' on' : '') + '" data-deck="slow" ' +
+      'type="button" title="Son denemede 1 dakikadan uzun sürdüğün sorular; en yavaştan başlar">' +
+      '<b class="num">' + slow + '</b>Uzun sürenler</button>' : '') +
     '<button class="dchip' + (F.deck === 'all' ? ' on' : '') + '" data-deck="all" ' +
       'type="button" title="Deste süzgeci olmadan, kapsamdaki her soru">' +
       '<b class="num">' + nf(total) + '</b>Tümü</button>';
@@ -2184,6 +2215,45 @@ function tmrBoya(t){
       (n >= 1 ? ' · <b>' + saat(Math.max(0, cal + bos - o.s - o.b) / n) + '</b>/soru' : '');
   }
 }
+// ── Soru başına süre ──
+// Soruyu gördüğün andan cevapladığın ana kadar geçen ÇALIŞMA süresi — tur
+// sayacıyla aynı ölçü: boşta, gizli ve elle durdurulmuş süre girmez. Geri gidip
+// gelince parçalar toplanır. Yalnız turun ilk denemesi kaydedilir: yanlış
+// turundaki tekrar, cevabı az önce gördüğün için hızlıdır ve ortalamayı bozar.
+// S.qt[id] = [toplam ms, kaç kez, son ms, en uzun ms]
+function aktifSimdi(){ return (R.sure || 0) + (R.durdu ? 0 : bekleyenSure()); }
+/** Açık parçayı kapatıp o sorunun birikimine ekler. */
+function soruKapat(){
+  if (!R || !R.qGor) return;
+  const g = R.qGor; R.qGor = null;
+  R.qAcc[g.id] = (R.qAcc[g.id] || 0) + Math.max(0, aktifSimdi() - g.t);
+}
+/** Ekrandaki soru cevaplanmamışsa onun parçasını açar. */
+function soruAc(){
+  if (!R) return;
+  const id = R.list[R.i][0];
+  if (R.qGor && R.qGor.id === id) return;      // aynı soru yeniden çizildi
+  soruKapat();
+  if (R.picked === null) R.qGor = { id, t:aktifSimdi(), w:Date.now() };
+}
+/** Cevap anında sorunun süresini kaydeder. `w`: bu soru ekrana geldiği an.
+ *  Uzun hareketsizlik (> BOS_MS) çalışmaya girmez; ama cevaptan en çok 5 sn
+ *  önce bittiyse ve soru ekrandayken başladıysa kâğıtta hesap yapıyor ya da
+ *  düşünüyordun demektir — o zaman BOS_MS'ye kadarı soruya eklenir. Yoksa uzun
+ *  düşünülen soru "0 sn" diye kaydedilip en kısa sürenlere düşerdi. Üst sınır,
+ *  başından kalkıp gittiğin süreyi soruya abartılı yazmamak için. */
+function soruSureYaz(id, w){
+  let ms = Math.round(R.qAcc[id] || 0);
+  if (sonBos && w && Date.now() - sonBos.an <= 5000 && sonBos.bas >= w - 1000)
+    ms += Math.min(sonBos.ms, BOS_MS);
+  delete R.qAcc[id];
+  if (R.round !== 1) return;
+  if (!S.qt || typeof S.qt !== 'object') S.qt = {};
+  const t = S.qt[id] || [0, 0, 0, 0];
+  t[0] += ms; t[1]++; t[2] = ms; t[3] = Math.max(t[3], ms);
+  S.qt[id] = t;
+}
+
 /** Elle durdur / sürdür. Durmadan önceki süre tura yazılır. */
 function tmrCevir(){
   if (!R) return;
@@ -2256,6 +2326,9 @@ function draw(){
       (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
       (q[8] && !figOf(q) ? '<span class="tag fig">şekil gerekli</span>' : '') +
       (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') +
+      (S.qt && S.qt[q[0]] && S.qt[q[0]][2] >= YAVAS_MS
+        ? '<span class="tag slow" title="Son denemede bu soru ' + saat(S.qt[q[0]][2]) +
+          ' sürdü">uzun sürdü ' + saat(S.qt[q[0]][2]) + '</span>' : '') +
       (q[5] ? '<span class="tag flag">tartışmalı</span>' : '') +
       askBtn() +
       '<button class="starbtn' + (st.has(q[0]) ? ' on' : '') + '" id="star" type="button" ' +
@@ -2301,10 +2374,11 @@ function draw(){
     if (Date.now() - sonKaydirma < 400) return;   // kaydırma, seçim değil
     pick(+b.dataset.p);
   });
-  el('hb').onclick = () => { clearTimeout(advT); saveRun(); dropEmptyRun(); home(); };
+  el('hb').onclick = () => { clearTimeout(advT); soruKapat(); saveRun(); dropEmptyRun(); home(); };
   tmrBoya(el('tmr'));
   el('tmr').onclick = tmrCevir;
   hovCapa = imlec ? imlec.slice() : null;   // imleç bu noktadan kıpırdayınca vurgu açılır
+  soruAc();
   el('ask').onclick = async () => {
     const b = el('ask'), eski = b.textContent;
     const ok = await copyText(askText());
@@ -2361,6 +2435,7 @@ function deckName(){
   const d = DECKS.find(x => x.k === F.deck);
   if (d) return d.t;
   if (F.deck === 'leech') return 'Takıldıklarım';
+  if (F.deck === 'slow') return 'Uzun sürenler';
   const ks = Object.keys(F.pick);
   return ks.length ? ks.join(', ') : 'Tüm dersler';
 }
@@ -2420,12 +2495,17 @@ function report(rec, live){
         const tries = log.filter(x => x.id === id);
         const firstOk = tries[0].ok;
         const fixed = tries.length > 1 && tries[tries.length - 1].ok;
+        // Süre yalnız tur biter bitmez: geçmişten açılan eski turda son deneme
+        // başka bir tura ait olabilir
+        const tm = live && S.qt && S.qt[id] ? S.qt[id][2] : null;
         return '<div class="rrow"><span class="rdot ' + (firstOk ? 'ok' : 'bad') + '"></span>' +
           '<div style="min-width:0"><div class="q">' + esc(qText(q)) + '</div><div class="a">' +
           (firstOk ? '<b>' + esc(qOpts(q)[0]) + '</b>'
                    : '<i>İlk seçimin: ' + esc(qOpts(q)[tries[0].pick]) + '</i> · <b>Doğru: ' +
                      esc(qOpts(q)[0]) + '</b>' + (fixed ? ' · sonra bildin' : '')) +
-          '</div></div></div>';
+          '</div></div>' +
+          (tm !== null ? '<span class="rtm' + (tm >= YAVAS_MS ? ' slow' : '') + '">' + saat(tm) +
+            '</span>' : '') + '</div>';
       };
       const bad = seen.filter(id => !log.filter(x => x.id === id)[0].ok);
       const good = seen.filter(id => log.filter(x => x.id === id)[0].ok);
@@ -2534,6 +2614,34 @@ function sureOzet(ad){
   o.top += acik; o.bugun += acik; o.hafta += acik;
   return o;
 }
+/** Durum panelinde soru başına süre: en uzun ve en kısa sürenler (ortalamaya
+ *  göre). Liste bütün derslerden; geçilen ders ve kapalı süzgeçler dışarıda. */
+function qtBlok(){
+  const L = Object.keys(S.qt || {}).map(id => {
+    const q = BY_ID.get(+id), t = S.qt[id];
+    return q && Array.isArray(t) && t[1] > 0 && inToggles(q) ? { q, ort: t[0] / t[1], t } : null;
+  }).filter(Boolean);
+  if (!L.length) return '';
+  const genel = L.reduce((a, x) => a + x.t[0], 0) / L.reduce((a, x) => a + x.t[1], 0);
+  const satir = x => '<div class="qtrow"><span class="qtx">' + esc(qText(x.q)) + '</span>' +
+    '<span class="qtv"><b' + (x.t[2] >= YAVAS_MS ? ' class="slow"' : '') + '>' + saat(x.ort) +
+    '</b><i>' + x.t[1] + ' kez · son ' + saat(x.t[2]) + '</i></span></div>';
+  const uzun = L.slice().sort((a, b) => b.ort - a.ort).slice(0, 8);
+  const kisa = L.length >= 10 ? L.slice().sort((a, b) => a.ort - b.ort).slice(0, 5) : [];
+  const slowN = L.filter(x => x.t[2] >= YAVAS_MS).length;
+  return '<div class="lbl" style="margin:16px 0 7px">Soru başına süre</div>' +
+    '<div class="note" style="margin-bottom:9px">Ölçülen <b>' + L.length + '</b> soruda ortalama <b>' +
+      saat(genel) + '</b>. Soruyu gördüğün andan cevaplayana kadar geçen çalışma süresi; ' +
+      'boşta ve durdurulmuş süre girmez, yanlış turundaki tekrar sayılmaz.</div>' +
+    '<div class="lbl" style="margin:0 0 5px">En uzun sürenler</div>' +
+    '<div class="qtlist">' + uzun.map(satir).join('') + '</div>' +
+    (kisa.length ? '<div class="lbl" style="margin:12px 0 5px">En kısa sürenler</div>' +
+      '<div class="qtlist">' + kisa.map(satir).join('') + '</div>' : '') +
+    (slowN ? '<div class="note" style="margin-top:10px"><b style="color:var(--due)">' + slowN +
+      '</b> sorunun son denemesi 1 dakikayı geçti. <button class="tbtn" id="goSlow" type="button" ' +
+      'title="Bütün derslerdeki uzun sürenlerle, en yavaştan başlayan bir tur açar">' +
+      'Bunlara çalış</button></div>' : '');
+}
 function openStats(){
   let seen = 0, wrong = 0, tot = 0;
   Object.keys(S.c).forEach(id => { const k = S.c[id]; tot += k[2]; wrong += k[3]; seen++; });
@@ -2609,6 +2717,7 @@ function openStats(){
     '<div class="note" style="margin:0 0 14px">Çalışma yalnız sayfa açık ve sen başındayken ' +
       'sayılır; 3 dakika hiç dokunmazsan o ara boşta sayılır. Bilgisayar uyurken geçen süre ' +
       'ikisine de girmez. Telefon ve bilgisayar ayrı ayrı sayılıp toplanır.</div>' +
+    qtBlok() +
     '<div class="note" style="margin-bottom:16px">Gördüğün soru: <b>' + seenScoped +
       '</b> / ' + nf(scopedIds.size) +
       ((S.passed || []).length ? ' <span class="lbl">(geçtiklerin hariç)</span>' : '') +
@@ -2679,6 +2788,9 @@ function openStats(){
   const ps = el('prof'); if (ps) ps.onchange = e => switchProfile(e.target.value);
   const gl = el('goLeech');
   if (gl) gl.onclick = () => { closeSheet(); F.deck = 'leech'; savePref(); start(); };
+  // Liste bütün derslerden geldiği için tur da bütün dersleri kapsar
+  const gs = el('goSlow');
+  if (gs) gs.onclick = () => { closeSheet(); F.pick = {}; F.deck = 'slow'; savePref(); start(); };
 
   // Geçilen sınav çipleri — panel yeniden çizilmez, dokunuş anında yansır
   const passSum = () => {
@@ -2777,6 +2889,14 @@ function mergeState(t, p){
   }
   // Süre cihaz başına artan bir sayaç: aynı cihazın iki kopyasından büyüğü
   // doğrudur, farklı cihazlar ayrı anahtarda durur ve toplamda ikisi de sayılır.
+  // Soru süreleri: kart gibi, daha çok denenmiş kayıt kazanır
+  if (p.qt && typeof p.qt === 'object'){
+    if (!t.qt || typeof t.qt !== 'object') t.qt = {};
+    Object.keys(p.qt).forEach(id => {
+      const a = t.qt[id], b = p.qt[id];
+      if (Array.isArray(b) && b.length === 4 && (!a || b[1] > a[1])) t.qt[id] = b;
+    });
+  }
   ['sure', 'bos'].forEach(ad => {
     if (!p[ad] || typeof p[ad] !== 'object') return;
     if (!t[ad] || typeof t[ad] !== 'object') t[ad] = {};

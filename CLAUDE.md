@@ -251,6 +251,26 @@ büyütürsen gidilen süre sayılır, küçültürsen düşünme süresi kaybol
   karışsalar ortalama yanlış çıkardı. İlk cevaba kadar ortalama gizli. Yer açmak için
   400 piksel altında üst satırdaki "Soru" kelimesi düşer (`.qw`); sıra alt şeritte de
   yazıyor. 360 pikselde ölçüldü: satır 332 pikselin 274'ünü kullanıyor.
+- **Soru başına süre** (kullanıcı uzun süren soruları ayrıca bulup üzerinde durmak istedi):
+  `S.qt[id] = [toplam ms, kaç kez, son ms, en uzun ms]`. Ölçü tur sayacıyla aynı çalışma
+  süresidir (`aktifSimdi`); soru ekrana gelince `soruAc` parça açar, başka soruya geçince
+  `soruKapat` birikime ekler, cevapta `soruSureYaz` kaydeder. Geri gidip gelince parçalar
+  toplanır. Yalnız turun **ilk denemesi** kaydedilir; yanlış turundaki tekrar hızlıdır ve
+  ortalamayı bozar. Eşitlemede kart gibi daha çok denenmiş kayıt kazanır.
+- **Uzun düşünme sıfır sayılmasın.** 3 dakikadan uzun hiç dokunmadan geçen süre çalışmaya
+  girmez; ama bu boşluk soru ekrandayken başlayıp cevaptan en çok 5 sn önce bittiyse
+  (telefonda kâğıtta hesap) `BOS_MS`'ye kadarı soruya eklenir (`sonBos`). Yoksa en uzun
+  düşünülen soru "0 sn" diye kaydedilip en kısa sürenlere düşüyordu. Üst sınır, uzakta
+  geçen süreyi soruya abartılı yazmamak için; dönüp yeniden okuyunca boşluk eklenmez.
+- **Uzun sürenler destesi** (`'slow'`): son denemesi `YAVAS_MS`'yi (1 dk) geçen sorular.
+  Ortalama değil son deneme: hızlanınca deste kendiliğinden boşalsın. Akıllı sırada en
+  yavaştan başlar. Ana ekranda çip, kartta "uzun sürdü" etiketi, tur biter bitmez raporda
+  her sorunun süresi (geçmişten açılan raporda yok: son deneme başka tura ait olabilir),
+  Durum panelinde ortalamaya göre en uzun 8 ve (10+ ölçümde) en kısa 5 soru. Oradaki
+  "Bunlara çalış" kapsamı bütün derslere açar, çünkü liste bütün derslerden gelir.
+- **Bulut belgesi tek parça, 1 MiB sınırlı:** profilin tamamı Firestore'da tek `data`
+  alanında. En büyük parça tur günlükleri (`runs[].log`). Bu yüzden süre günlük
+  kayıtlarına değil soru başına özete yazıldı; yeni alan eklerken boyutu düşün.
 - **Toplam süre** `S.sure[cihaz] = {t, g:{gün: ms}}` içinde, boşta süre `S.bos[cihaz]` aynı
   biçimde; cihaz kimliği `atpl.cihaz`.
   Her cihaz yalnız kendi sayacını artırır; `mergeState` cihaz bazında **en büyüğü** alır,
