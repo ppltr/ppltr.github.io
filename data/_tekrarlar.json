@@ -123,9 +123,10 @@
     {
       "ids": [
         16346,
-        16354
+        16354,
+        90912
       ],
-      "not": "090: hangi mesajlar read back edilir → All"
+      "not": "090: hangi mesajlar read back edilir → All; hava bilgisinde pist ve QNH tekrar edilir, hava edilmez (90912) — ikinci gözden geçirme"
     },
     {
       "ids": [
@@ -174,9 +175,10 @@
       "ids": [
         16312,
         16313,
-        90935
+        90935,
+        90934
       ],
-      "not": "090: çağrı adı kısaltma şartı — üretilmiş soru da aynı bilgiyi soruyor"
+      "not": "090: çağrı adı kısaltma şartı — üretilmiş soru da aynı bilgiyi soruyor; ilk temasta tam çağrı adı aynı kuralın ilk yarısı (90934) — ikinci gözden geçirme"
     },
     {
       "ids": [
@@ -248,9 +250,10 @@
       "ids": [
         16352,
         16485,
-        90958
+        90958,
+        90959
       ],
-      "not": "090: MAYDAY ilk yayını → o an kullanılan frekans — üretilmiş soru da aynı bilgiyi soruyor"
+      "not": "090: MAYDAY ilk yayını → o an kullanılan frekans — üretilmiş soru da aynı bilgiyi soruyor; 121.5 ne zaman: aynı kuralın öbür yüzü (90959) — ikinci gözden geçirme"
     },
     {
       "ids": [
@@ -270,16 +273,18 @@
       "ids": [
         16476,
         90909,
-        90952
+        90952,
+        90953
       ],
-      "not": "090: Distress = ciddi/yakın tehlike, acil yardım gerekir — üretilmiş soru, dil-ötesi kavram tekrarı, iki soru"
+      "not": "090: Distress = ciddi/yakın tehlike, acil yardım gerekir — üretilmiş soru, dil-ötesi kavram tekrarı, iki soru; urgency/distress farkı: acil yardım gerekip gerekmemesi (90953) — ikinci gözden geçirme"
     },
     {
       "ids": [
         16430,
-        90919
+        90919,
+        90920
       ],
-      "not": "090: CAVOK bulut şartı 5000 ft ya da MSA — üretilmiş soru, dil-ötesi kavram tekrarı"
+      "not": "090: CAVOK bulut şartı 5000 ft ya da MSA — üretilmiş soru, dil-ötesi kavram tekrarı; NOT soru biçimi aynı listeyi soruyor (90920) — ikinci gözden geçirme"
     },
     {
       "ids": [
@@ -336,6 +341,48 @@
         90941
       ],
       "not": "090: telsiz kontrol çağrısı sırası — üretilmiş soru, dil-ötesi kavram tekrarı"
+    },
+    {
+      "ids": [
+        59007,
+        90903
+      ],
+      "not": "090: ATS/ATC amacı — çarpışmayı önlemek, düzenli akış; NOT soru biçimi ters yönden — ikinci gözden geçirme"
+    },
+    {
+      "ids": [
+        16345,
+        90937
+      ],
+      "not": "090: Tip 1 çağrı adı kısaltması, kural ve örnek (TC-ABC → T-BC) — ikinci gözden geçirme"
+    },
+    {
+      "ids": [
+        16426,
+        90992
+      ],
+      "not": "090: frekans değişim sırası; kalkış yarısı 16426, varış yarısı 16467 — ikinci gözden geçirme"
+    },
+    {
+      "ids": [
+        16382,
+        90925
+      ],
+      "not": "090: sayılar rakam rakam okunur (16381 ve 16382 çeldiricileri) — ikinci gözden geçirme"
+    },
+    {
+      "ids": [
+        90922,
+        90943
+      ],
+      "not": "090: RVR tekrar edilmez — iki üretilmiş soru, 90922 daha kapsamlı — ikinci gözden geçirme"
+    },
+    {
+      "ids": [
+        90948,
+        90976
+      ],
+      "not": "090: menzil = 1,25 × √yükseklik(ft); 30 000 ft ≈ 200 NM bunun uygulaması — ikinci gözden geçirme"
     },
     {
       "ids": [

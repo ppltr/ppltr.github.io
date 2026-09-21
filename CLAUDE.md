@@ -108,9 +108,33 @@ sorudan 14'ü bankada zaten sorulan bilgiyi soruyordu. Dili karışık bir derst
 karşılaştırmayı iki dilde yap (`text_en` / `text_tr` sütunları) ve adayları tek tek oku.
 
 **Üretilmiş soru gerçek bir soruyla aynı bilgiyi soruyorsa gerçek soru kanoniktir**,
-üretilmiş olan ona bağlanır. Aynı bilgiyi ters yönden soranlar da tekrar sayılır
-(16388 "manyetik baş hangi Q kodu" / 90907 "QDM nedir"). Cevabı farklı olanlar yine
-tuzaktır, bağlanmaz: 90948 (fit, ×1.25) / 90949 (uçuş seviyesi, ×12) birbirinin çeldiricisi.
+üretilmiş olan ona bağlanır. Gerçek sorular (ATPL TV ve ders notu) hiçbir zaman
+üretilmiş bir soru yüzünden gizlenmez; kullanıcı ikisinin de kalmasını istedi. Tekrar
+sayılanlar:
+
+- Aynı bilgiyi **ters yönden** sormak (16388 "manyetik baş hangi Q kodu" / 90907 "QDM nedir").
+- **Kural ve örnek**: kuralı soran ile onu bir örneğe uygulayan (16345 TC-ABC → T-BC /
+  90937 Tip 1 kısaltma kuralı; 16322 / 90926 saatte yalnız dakika).
+- **"Hangisi değildir" biçimi**: doğru şıkları tam olarak başka bir sorunun cevabı olan
+  soru (16430 CAVOK tanımı / 90920 CAVOK'un parçası olmayan; 59007 / 90903 ATS amacı).
+- Bir kuralın iki yüzü (16352 tehlike çağrısı o anki frekansta / 90959 121.5 ne zaman).
+- Üretilmişler arasında da aynı ölçü: kapsamlı olan ya da kuralı soran kalır, dar olan
+  ya da örnek olan gizlenir (90922 / 90943, 90948 / 90976).
+
+Cevabı farklı olanlar yine tuzaktır, bağlanmaz: 90948 (fit, ×1.25) / 90949 (uçuş
+seviyesi, ×12) birbirinin çeldiricisi. Yalnız konusu aynı olan da bağlanmaz: 90915 ATIS
+yayınının içeriğini sorar, 16454 ATIS'in ne olduğunu — ayrı bilgi.
+
+090'da iki tur inceleme yapıldı (2026-09): önce iki dilde benzerlik adaylarıyla, sonra
+82 görünür üretilmiş sorunun 203 gerçek soruyla tek tek karşılaştırılmasıyla. Sonuç:
+96 üretilmişin 25'i gizli, 71'i bankada ve ders notu sorularında sorulmayan bir bilgiyi
+soruyor — çoğu B3/B4'teki VHF tekniği (yayılım, menzil, 8.33 kHz, parazit, anten,
+frekans yönetimi); ATPL TV bankasında bu konularda yalnız 4 soru var.
+
+**Kaynakta çelişki:** ders notu antenler için hem "büyük uçakta kuyrukta dikey
+stabilizatörde" (B3) hem "gövdenin üst ve alt kısmında" (B4) diyor; 90972 ve 90995 bunları
+ayrı ayrı soruyor. Gerçekte VHF antenleri gövdededir, kuyruktaki çoğunlukla HF'dir. Sınav
+notu izlediği için sorular olduğu gibi bırakıldı.
 
 Yan etkisi bilinerek kabul edildi: kanonik İngilizce bankadaysa (090-01…06), yalnız
 "Ders Notundan Üretilmiş" (090-U) seçiliyken o bilgi turda hiç çıkmaz; modülün tamamı
