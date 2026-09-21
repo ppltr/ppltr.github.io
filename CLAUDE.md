@@ -226,7 +226,25 @@ büyütürsen gidilen süre sayılır, küçültürsen düşünme süresi kaybol
 - **Rapor ve geçmiş satırı** etkin süreyi ve soru başına ortalamayı yalnız `sureTam`
   turlarda yazar (sayaç baştan beri açık). Sayaçtan önce başlamış turun eski cevapları
   zamanlanmadığı için ortalama yanıltıcı çıkıyordu; o turlar duvar saatine düşer.
-- **Toplam süre** `S.sure[cihaz] = {t, g:{gün: ms}}` içinde, cihaz kimliği `atpl.cihaz`.
+- **Boşta süre** (kullanıcı "ekran açık kaldı, ne kadar boşa harcadım" diye istedi): sayfa
+  görünür ve bilgisayar uyanıkken `BOS_MS`'den uzun hiç dokunulmayan aralık. Saniye tıkı
+  (`tik`) uyanık süreyi `bekBos`'ta biriktirir; aralık kapanırken `BOS_MS`'yi aşmışsa bu
+  kısım `bosEkle` ile boşta sayılır. Görünürken iki tık arası `UYKU_MS`'yi (5 sn) aşarsa
+  bilgisayar uyudu ya da sayfa dondu demektir: aralık uykudan önceki son tıkta kapanır,
+  uyku ne çalışma ne boşta sayılır. Görünür olunca `sonTik` de sıfırlanmalı, yoksa arka
+  planda seyrekleşen tık sahte uyku sanılır. Elle durdurulmuş turda boşta tura yazılmaz.
+- **Aralık, kapandığı andaki duruma yazılır** (tur açık mı, durdu mu). Doğruluğu yakalama
+  evresindeki `pointerdown`/`keydown` sağlar: tıklama durumu değiştirmeden önce aralık
+  kapanır. `home()` gibi programla yapılan geçişlerde `etkinKapat` **çağırma** — eşitleme
+  ekranı tazeledikçe boşluk 3 dakikadan kısa parçalara bölünür ve boşta hiç yakalanmaz.
+  Testte `.click()` `pointerdown` üretmez; önce `PointerEvent('pointerdown')` gönder.
+- **Ekranda:** soru ekranında ilerleme çubuğunun yanında `#tstat` "boşta · toplam"
+  (bu tur; toplam = çalışma + boşta, dikeyde yer yemesin diye çubukla aynı satırda),
+  kimlik satırında toplam çalışma süresi ("12 sa çalışma"; dar ekranda satır sarılır),
+  Durum panelinde boşta bugün / son 7 gün / toplam, tur raporunda turun boşta süresi
+  (yalnız `bosTam` turda — boşta ölçümü baştan beri açık).
+- **Toplam süre** `S.sure[cihaz] = {t, g:{gün: ms}}` içinde, boşta süre `S.bos[cihaz]` aynı
+  biçimde; cihaz kimliği `atpl.cihaz`.
   Her cihaz yalnız kendi sayacını artırır; `mergeState` cihaz bazında **en büyüğü** alır,
   toplam hepsinin toplamıdır. Tek sayıyla tutup en büyüğü almak, telefon ve bilgisayarın
   aynı gün çalışmasında birini silerdi; toplayarak birleştirmek her eşitlemede ikiye

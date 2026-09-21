@@ -121,7 +121,7 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
     column-gap:10px; row-gap:1px; border-radius:16px; padding:9px 13px}
   .idline .ava{grid-row:1 / span 2}
   .idline .nm{grid-column:2; grid-row:1}
-  .idline .stats{grid-column:2; grid-row:2; gap:9px}
+  .idline .stats{grid-column:2; grid-row:2; gap:2px 9px; flex-wrap:wrap}   /* süre uzayınca taşmasın */
   .idline .chev{grid-column:3; grid-row:1 / span 2}
   .idline .sep{display:none}
 }
@@ -356,6 +356,14 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 
 /* ── Soru ── */
 .prog{height:3px; background:var(--rule); border-radius:2px; overflow:hidden; margin-bottom:6px}
+/* İlerleme çubuğu ve yanında küçük süre satırı: boşta · toplam. Aynı satırda
+   durur ki soru ekranı dikeyde uzamasın. */
+.progrow{display:flex; align-items:center; gap:10px; margin-bottom:6px}
+.progrow .prog{flex:1; margin-bottom:0}
+.tstat{flex:none; font-family:var(--f-num); font-size:10.5px; letter-spacing:.02em;
+  color:var(--ink-3); white-space:nowrap; font-variant-numeric:tabular-nums}
+.tstat b{font-weight:500; color:var(--ink-2)}
+.tstat .bz.on b{color:var(--due)}
 .prog i{display:block; height:100%; background:var(--accent); width:0; transition:width .25s ease}
 .prog i.retry{background:var(--bad)}
 .meta{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px}
@@ -1016,6 +1024,9 @@ function flush(){ flushLocal(); Cloud.schedule(); }
 // alır, toplam hepsinin toplamıdır — telefonla bilgisayar aynı gün kullanılınca
 // ikisi de sayılır, biri ötekini ezmez.
 const BOS_MS = 3 * 60e3;
+// Görünürken iki saniye tıkı arası bunu aşarsa bilgisayar uyudu ya da sayfa dondu
+// demektir; o ara ne çalışma ne boşta sayılır.
+const UYKU_MS = 5000;
 const CIHAZ = (() => {
   let id = ls.get('atpl.cihaz');
   if (!id){ id = Math.random().toString(36).slice(2, 10); ls.set('atpl.cihaz', id); }
@@ -1023,10 +1034,14 @@ const CIHAZ = (() => {
 })();
 let sonEtkin = document.visibilityState === 'visible' ? Date.now() : null;
 let sureDegisti = false;
+// Boşta süresi: ekran açık (sayfa görünür, bilgisayar uyanık) ama BOS_MS'den uzun
+// süre hiç dokunulmamış aralık. Saniye tıkıyla biriktirilir ki uyku sayılmasın.
+let bekBos = 0, sonTik = Date.now();
 
-function sureEkle(d){
-  if (!S.sure || typeof S.sure !== 'object') S.sure = {};
-  const k = S.sure[CIHAZ] || (S.sure[CIHAZ] = { t:0, g:{} });
+/** S.sure ya da S.bos içinde bu cihazın sayacını artırır (gün kaydıyla). */
+function sayacEkle(ad, d){
+  if (!S[ad] || typeof S[ad] !== 'object') S[ad] = {};
+  const k = S[ad][CIHAZ] || (S[ad][CIHAZ] = { t:0, g:{} });
   if (!k.g || typeof k.g !== 'object') k.g = {};
   const g = today();
   if (!(g in k.g)){                         // yeni gün: 120 günden eskisini at
@@ -1035,15 +1050,49 @@ function sureEkle(d){
   }
   k.t = (k.t || 0) + d;
   k.g[g] = (k.g[g] || 0) + d;
-  if (R && !R.durdu) R.sure = (R.sure || 0) + d;
   sureDegisti = true;
 }
-/** Son etkinlikten bu yana geçen aralığı kapatır; BOS_MS'yi aşmıyorsa sayar. */
+function sureEkle(d){
+  sayacEkle('sure', d);
+  if (R && !R.durdu) R.sure = (R.sure || 0) + d;
+}
+/** Elle durdurulmuş turda boşta süresi tura yazılmaz: bilerek ara verdin. */
+function bosEkle(d){
+  sayacEkle('bos', d);
+  if (R && !R.durdu) R.bos = (R.bos || 0) + d;
+}
+/** Son tıktan bu yana geçen parça — aralık kapanırken eklenir. */
+function tikArtigi(an){
+  return Math.max(0, Math.min(an - Math.max(sonTik, sonEtkin || 0), UYKU_MS));
+}
+/** Son etkinlikten bu yana geçen aralığı kapatır: BOS_MS'yi aşmıyorsa çalışma,
+ *  aşıyorsa içindeki uyanık süre boşta sayılır. */
 function etkinKapat(an){
-  if (sonEtkin === null) return;
+  if (sonEtkin === null){ bekBos = 0; return; }
   const d = an - sonEtkin;
-  sonEtkin = an;
-  if (d > 0 && d <= BOS_MS) sureEkle(d);
+  const bos = Math.min(d, bekBos + tikArtigi(an));
+  sonEtkin = an; bekBos = 0;
+  if (d <= 0) return;
+  if (d <= BOS_MS) sureEkle(d);
+  else bosEkle(bos);
+}
+/** Şu an boştaysan henüz yazılmamış boşta süresi — ekran için. */
+function bekleyenBos(){
+  if (sonEtkin === null || document.visibilityState !== 'visible') return 0;
+  const an = Date.now();
+  if (an - sonEtkin <= BOS_MS) return 0;
+  return Math.min(an - sonEtkin, bekBos + tikArtigi(an));
+}
+/** Saniyede bir: uyanık görünür süreyi biriktirir, uykuyu yakalar. */
+function tik(){
+  const an = Date.now(), d = an - sonTik;
+  if (document.visibilityState === 'visible' && sonEtkin !== null){
+    if (d > UYKU_MS){                       // uyku ya da donma: aralığı uykudan önce kapat
+      etkinKapat(sonTik);
+      sonEtkin = null;
+    } else bekBos += an - Math.max(sonTik, sonEtkin);
+  }
+  sonTik = an;
 }
 /** Açık aralıkta henüz yazılmamış süre — ekrandaki sayaç için. */
 function bekleyenSure(){
@@ -1057,7 +1106,7 @@ function bekleyenSure(){
 function etkinlik(e){
   if (document.visibilityState !== 'visible') return;
   const an = Date.now();
-  if (sonEtkin === null){ sonEtkin = an; return; }
+  if (sonEtkin === null){ sonEtkin = an; bekBos = 0; return; }
   const sel = e.type === 'pointermove' || e.type === 'scroll' ||
               e.type === 'wheel' || e.type === 'touchmove';
   if (sel && an - sonEtkin < 1000) return;
@@ -1073,6 +1122,7 @@ function sureYaz(){
   const rec = runRec();
   if (!rec) return;
   rec.sure = Math.round(R.sure || 0);
+  rec.bos = Math.round(R.bos || 0);
   if (R.durdu) rec.durdu = true; else delete rec.durdu;
 }
 /** Sayfa gizlenirken ya da kapanırken: açık aralığı kapat, süreyi kaydet. */
@@ -1084,13 +1134,13 @@ function sureBirak(){
 addEventListener('pagehide', () => { sureBirak(); flushLocal(); Cloud.simdiGonder(); });
 addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'hidden'){ sureBirak(); flushLocal(); Cloud.simdiGonder(); }
-  else { sonEtkin = Date.now(); Cloud.donusteCek(); }
+  else { sonEtkin = sonTik = Date.now(); bekBos = 0; Cloud.donusteCek(); }
 });
 // Dakikada bir, süre değiştiyse yerel diske yaz; buluta gizlenişte ya da bir
 // sonraki cevapla gider. Tarayıcı çökerse en çok bir dakika kaybolur.
 setInterval(() => { if (sureDegisti){ sureYaz(); flushLocal(); } }, 60e3);
 // Soru ekranındaki sayaç saniyede bir tazelenir — yalnız görüntü, kayıt değil.
-setInterval(() => { const t = el('tmr'); if (t && R) tmrBoya(t); }, 1000);
+setInterval(() => { tik(); const t = el('tmr'); if (t && R) tmrBoya(t); }, 1000);
 addEventListener('online', () => { if (Cloud.kirli) Cloud.gonderGuvenli(); });
 // Sekme saatlerce açık kalırsa başka cihazdaki ilerleme de gelsin; donusteCek
 // tur ortasında ve 30 sn'den yeni çekişte kendisi geri dönüyor.
@@ -1474,11 +1524,12 @@ function start(){
   S.runs = S.runs.filter(r => r.done || (r.log || []).length);   // boş bırakılanları at
   const id = 'r' + Date.now();
   R = { id, list, i:0, order:null, picked:null, orders:[], picks:[],
-        log:[], t0:Date.now(), round:1, missed:[], sure:0, durdu:false, sureTam:true };
+        log:[], t0:Date.now(), round:1, missed:[], sure:0, durdu:false, sureTam:true,
+        bos:0, bosTam:true };
   S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle(), code:soloModule() || '',
                    deck:deckName(),
                    n0:list.length, ids:list.map(q => q[0]), i:0, round:1,
-                   missed:[], log:[], done:false, sure:0, sureTam:true });
+                   missed:[], log:[], done:false, sure:0, sureTam:true, bos:0, bosTam:true });
   if (S.runs.length > RUN_MAX) S.runs.length = RUN_MAX;
   save();
   step0();
@@ -1493,7 +1544,8 @@ function resumeRun(id){
   R = { id:rec.id, list, i:Math.min(rec.i || 0, list.length), order:null, picked:null,
         orders:[], picks:[], log:(rec.log || []).slice(), t0:rec.t0,
         round:rec.round || 1, missed:(rec.missed || []).slice(),
-        sure:rec.sure || 0, durdu:!!rec.durdu, sureTam:!!rec.sureTam };
+        sure:rec.sure || 0, durdu:!!rec.durdu, sureTam:!!rec.sureTam,
+        bos:rec.bos || 0, bosTam:!!rec.bosTam };
   // Bu turda verilmiş cevapları geri kur: kayıtta kaynak şık indeksi var,
   // yeni karıştırmada karşılığı bulunur. Böylece geri gidince cevap görünür
   // ve yeniden puanlanmaz.
@@ -1617,6 +1669,7 @@ function home(){
           '<b>Başla</b> dersen yeni tur açılır; <b>Vazgeç</b> seni kaldığın ' +
           'soruya döndürür.</div>' : '');
 
+  const topSure = sureOzet().top;         // bütün cihazların toplam çalışma süresi
   // ── Kimlik satırı: tek satır, dokunulabilir ──
   const idline =
     '<button class="idline" id="topStat" type="button">' +
@@ -1628,6 +1681,8 @@ function home(){
           nf(G.total - G.seen) + '</b></span>' +
         (G.pct !== null ? '<span class="mini"><b class="num">%' + G.pct + '</b> isabet</span>' : '') +
         (G.streak ? '<span class="mini"><b class="num">' + G.streak + '</b> gün</span>' : '') +
+        (topSure >= 6e4 ? '<span class="mini" title="Toplam çalışma süresi, bütün cihazlar">' +
+          '<b class="num">' + sureMetni(topSure) + '</b> çalışma</span>' : '') +
       (Cloud.user
         ? '<span class="csync ' + (Cloud.durum ? 'err' : Cloud.kirli ? 'wait' : 'ok') +
           '" title="' + (Cloud.durum ? 'Eşitlenemedi' :
@@ -2100,6 +2155,14 @@ function tmrBoya(t){
   t.setAttribute('aria-label', (R.durdu ? 'Sayaç durdu, ' : 'Tur süresi, ') +
     saat((R.sure || 0) + (R.durdu ? 0 : bekleyenSure())));
   t.querySelector('.tv').textContent = saat((R.sure || 0) + (R.durdu ? 0 : bekleyenSure()));
+  // Küçük satır: bu turda boşta geçen ve toplam (çalışma + boşta)
+  const ts = el('tstat');
+  if (ts){
+    const bos = (R.bos || 0) + (R.durdu ? 0 : bekleyenBos());
+    const cal = (R.sure || 0) + (R.durdu ? 0 : bekleyenSure());
+    ts.innerHTML = '<span class="bz' + (bos >= 1000 ? ' on' : '') + '">boşta <b>' + saat(bos) +
+      '</b></span> · toplam <b>' + saat(cal + bos) + '</b>';
+  }
 }
 /** Elle durdur / sürdür. Durmadan önceki süre tura yazılır. */
 function tmrCevir(){
@@ -2153,8 +2216,10 @@ function draw(){
 
   const last = R.i === R.list.length - 1 && !R.missed.length;
   el('view').innerHTML =
-    '<div class="prog"><i class="' + (retry ? 'retry' : '') + '" style="width:' +
+    '<div class="progrow"><div class="prog"><i class="' + (retry ? 'retry' : '') + '" style="width:' +
       (R.i / R.list.length * 100) + '%"></i></div>' +
+      '<span class="tstat" id="tstat" title="Bu turda ekran açıkken hiç dokunmadan geçen süre ' +
+        've turun toplamı (çalışma + boşta)"></span></div>' +
     '<div class="meta"><button class="backb" id="hb" type="button" ' +
       'title="Ana ekran — tur kayıtlı kalır, oradan devam edersin">' +
       '<i>‹</i>Ana ekran</button>' +
@@ -2285,13 +2350,14 @@ function done(){
   if (rec){
     rec.i = R.i; rec.round = R.round; rec.log = R.log.slice();
     rec.tN = Date.now(); rec.done = true;
-    rec.sure = Math.round(R.sure || 0); delete rec.durdu;
+    rec.sure = Math.round(R.sure || 0); rec.bos = Math.round(R.bos || 0); delete rec.durdu;
     delete rec.ids; delete rec.missed;        // bitmiş tur geri yüklenmez
     if (!rec.log.length) S.runs.splice(S.runs.indexOf(rec), 1);
     save();
   }
   const live = R ? { log:R.log, round:R.round, t0:R.t0, tN:Date.now(),
-                     sure:Math.round(R.sure || 0), sureTam:R.sureTam } : null;
+                     sure:Math.round(R.sure || 0), sureTam:R.sureTam,
+                     bos:Math.round(R.bos || 0), bosTam:R.bosTam } : null;
   R = null;
   if (!live || !live.log.length) return home();
   report(live, true);
@@ -2321,7 +2387,9 @@ function report(rec, live){
       '<div class="lbl" style="margin-top:5px">İlk denemede <span class="num">' + ok +
         '</span> / <span class="num">' + first.length + '</span> doğru</div>' +
       (sure && log.length ? '<div class="note" style="margin-top:6px">Soru başına ortalama ' +
-        '<b>' + sureMetni(sure / log.length) + '</b></div>' : '') +
+        '<b>' + sureMetni(sure / log.length) + '</b>' +
+        (rec.bosTam ? ' · ekran açık ama boşta <b>' + sureMetni(rec.bos || 0) + '</b>' : '') +
+        '</div>' : '') +
       (rounds > 1 ? '<div class="note" style="margin-top:8px">Yanlış yaptıkların tekrar soruldu, ' +
         'hepsini bilene kadar devam edildi.</div>' : '') + '</div>' +
     (() => {
@@ -2426,10 +2494,11 @@ const msg = m => { const b = el('bakMsg'); if (!b) return; b.textContent = m;
 
 /** Bütün cihazların süresi: bugün, son 7 gün, toplam ve gün gün. Bu
  *  cihazda açık olan (henüz yazılmamış) aralık da katılır. */
-function sureOzet(){
+function sureOzet(ad){
+  ad = ad || 'sure';
   const bug = today(), hafta = new Date(Date.now() - 6 * DAY).toISOString().slice(0, 10);
   const o = { top:0, bugun:0, hafta:0, gun:{} };
-  Object.values(S.sure || {}).forEach(k => {
+  Object.values(S[ad] || {}).forEach(k => {
     if (!k || typeof k !== 'object') return;
     o.top += +k.t || 0;
     Object.keys(k.g || {}).forEach(d => {
@@ -2439,7 +2508,7 @@ function sureOzet(){
       if (d >= hafta) o.hafta += ms;
     });
   });
-  const acik = bekleyenSure();
+  const acik = ad === 'bos' ? bekleyenBos() : bekleyenSure();
   o.top += acik; o.bugun += acik; o.hafta += acik;
   return o;
 }
@@ -2473,7 +2542,7 @@ function openStats(){
     const d = new Date(Date.now() - i*DAY).toISOString().slice(0,10);
     days.push([d, (S.day[d] || [0,0])[0]]);
   }
-  const sureT = sureOzet();
+  const sureT = sureOzet(), bosT = sureOzet('bos');
   const mx = Math.max(1, ...days.map(d => d[1]));
   const lvl = n => !n ? '' : n < mx*.25 ? 'l1' : n < mx*.5 ? 'l2' : n < mx*.8 ? 'l3' : 'l4';
   let streak = 0;
@@ -2504,6 +2573,7 @@ function openStats(){
     '<div class="lbl" style="margin-bottom:7px">Son 45 gün</div>' +
     '<div class="heat">' + days.map(d => '<i class="' + lvl(d[1]) + '" title="' + d[0] +
       ' · ' + d[1] + ' soru' + (sureT.gun[d[0]] >= 6e4 ? ' · ' + sureMetni(sureT.gun[d[0]]) : '') +
+      (bosT.gun[d[0]] >= 6e4 ? ' · boşta ' + sureMetni(bosT.gun[d[0]]) : '') +
       '"></i>').join('') + '</div>' +
     '<div class="lbl" style="margin:14px 0 7px">Çalışma süresi</div>' +
     '<div class="stat4 st3">' +
@@ -2511,8 +2581,12 @@ function openStats(){
       '<div class="s"><span class="lbl">Son 7 gün</span><div class="v">' + sureMetni(sureT.hafta) + '</div></div>' +
       '<div class="s"><span class="lbl">Toplam</span><div class="v">' + sureMetni(sureT.top) + '</div></div>' +
     '</div>' +
-    '<div class="note" style="margin:-6px 0 14px">Yalnız sayfa açık ve sen başındayken sayılır; ' +
-      '3 dakika hiç dokunmazsan o ara sayılmaz. Telefon ve bilgisayar ayrı ayrı sayılıp toplanır.</div>' +
+    '<div class="note" style="margin:-6px 0 6px"><b style="color:var(--due)">Boşta</b> ' +
+      '(ekran açık, hiç dokunmadın): bugün <b>' + sureMetni(bosT.bugun) + '</b> · son 7 gün <b>' +
+      sureMetni(bosT.hafta) + '</b> · toplam <b>' + sureMetni(bosT.top) + '</b></div>' +
+    '<div class="note" style="margin:0 0 14px">Çalışma yalnız sayfa açık ve sen başındayken ' +
+      'sayılır; 3 dakika hiç dokunmazsan o ara boşta sayılır. Bilgisayar uyurken geçen süre ' +
+      'ikisine de girmez. Telefon ve bilgisayar ayrı ayrı sayılıp toplanır.</div>' +
     '<div class="note" style="margin-bottom:16px">Gördüğün soru: <b>' + seenScoped +
       '</b> / ' + nf(scopedIds.size) +
       ((S.passed || []).length ? ' <span class="lbl">(geçtiklerin hariç)</span>' : '') +
@@ -2681,17 +2755,18 @@ function mergeState(t, p){
   }
   // Süre cihaz başına artan bir sayaç: aynı cihazın iki kopyasından büyüğü
   // doğrudur, farklı cihazlar ayrı anahtarda durur ve toplamda ikisi de sayılır.
-  if (p.sure && typeof p.sure === 'object'){
-    if (!t.sure || typeof t.sure !== 'object') t.sure = {};
-    Object.keys(p.sure).forEach(cz => {
-      const b = p.sure[cz];
+  ['sure', 'bos'].forEach(ad => {
+    if (!p[ad] || typeof p[ad] !== 'object') return;
+    if (!t[ad] || typeof t[ad] !== 'object') t[ad] = {};
+    Object.keys(p[ad]).forEach(cz => {
+      const b = p[ad][cz];
       if (!b || typeof b !== 'object') return;
-      const a = t.sure[cz] || (t.sure[cz] = { t:0, g:{} });
+      const a = t[ad][cz] || (t[ad][cz] = { t:0, g:{} });
       if (!a.g) a.g = {};
       a.t = Math.max(a.t || 0, +b.t || 0);
       Object.keys(b.g || {}).forEach(d => { a.g[d] = Math.max(a.g[d] || 0, +b.g[d] || 0); });
     });
-  }
+  });
   // Ayarlar bir tercih kümesidir, birleştirilemez — en son kaydedilen kazanır
   if (p.pref && (p.prefAt || 0) > (t.prefAt || 0)){
     t.pref = Object.assign({}, p.pref);
