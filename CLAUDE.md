@@ -203,80 +203,72 @@ yoksa parmağın kalktığı şık seçilmiş olurdu. Bunu kaldırma, ok tuşlar
 sona gider, `Enter` devam eder, `S` yıldızlar, `P` tur sayacını durdurup sürdürür,
 `Esc` açık paneli kapatır.
 
-**Etkin süre.** Süre yalnız sen sayfadayken sayılır: sayfa görünür olmalı ve iki
-etkinlik (dokunma, tuş, fare, kaydırma) arası `BOS_MS` (3 dk) geçmemeli. Geçerse aradaki
-sürenin **hiçbiri** sayılmaz (başından kalktın), geçmezse **tamamı** sayılır (soruyu
-düşünüyordun). Sayaç açık aralığı da gösterir, `BOS_MS` dolunca o kısım geri düşer ve
-çip `.bosta` olur. Kullanıcı "bilgisayarı bırakıp gidince saymasın" dedi; eşiği
-büyütürsen gidilen süre sayılır, küçültürsen düşünme süresi kaybolur.
+**Etkin süre: sayaçlar saniye saniye birikir ve HİÇ GERİ GİTMEZ.** Bir an çalışma
+sayılır eğer sayfa görünür, bilgisayar uyanık ve son dokunuştan (tuş, fare, kaydırma)
+bu yana `BOS_MS` (3 dk) geçmemişse. `BOS_MS` dolunca sayaçlar durur ve solar (`.bosta`,
+`.dur`); ekran açık kaldıkça sonrası "boşta" sayılır, dokunduğun an kaldığı yerden sürer.
+İlk `BOS_MS` çalışma sayılır, çünkü hareketsizlik kâğıtta hesap da olabilir, kalkıp gitmek
+de. Önceki model 3 dakikayı aşan boşluğun tamamını geriye dönük siliyordu: ekrandaki sayı
+geri düşüyor, uzun düşünülen soru "0 sn" kaydediliyordu. Kullanıcı "toplam ve boşta
+sayaçları işe yaramıyor" dedi ve kusursuz bir sayaç istedi; geriye dönük silmeye geri
+dönme. Bedeli: kalkıp gidince en çok 3 dakika çalışma sayılır.
 
-- Dinleyiciler `window`'da **yakalama evresinde**: aralık, tıklamanın değiştireceği
-  durumdan (tur açık mı, sayaç durdu mu) önce kapanmalı. `pointerdown`/`keydown` hemen,
-  fare ve kaydırma seli saniyede bir işlenir (`etkinlik`).
-- Gizlenişte ve `pagehide`'da `sureBirak()` aralığı kapatır ve `sonEtkin`'i siler —
-  gizliyken geçen süre sayılmaz. "Sor" ile açılan sohbet sekmesinde geçen süre de
-  sayılmaz; kullanıcı "sayfada aktif olduğumuz süre" dedi.
-- **Tur sayacı** soru ekranının üst satırındaki `#tmr` çipidir: `R.sure` (ms) ve elle
-  durdurma `R.durdu`, ikisi de tur kaydında (`rec.sure`, `rec.durdu`) saklanır, sayfa
-  yenilenince ve başka cihazda sürer. Elle durdurma yalnız turu durdurur, toplam süre
-  saymaya devam eder. Simge yapılacak eylemi gösterir ve CSS ile çizilir — iOS ⏸'yi
-  renkli emojiye çeviriyor.
-- `sureYaz()` tur kaydına süreyi yazarken `tN`'ye dokunmaz; birleştirmede turun ilerlemesi
-  ölçülürken yalnız süre değişikliği sayılmasın.
-- **Rapor ve geçmiş satırı** etkin süreyi ve soru başına ortalamayı yalnız `sureTam`
-  turlarda yazar (sayaç baştan beri açık). Sayaçtan önce başlamış turun eski cevapları
-  zamanlanmadığı için ortalama yanıltıcı çıkıyordu; o turlar duvar saatine düşer.
-- **Boşta süre** (kullanıcı "ekran açık kaldı, ne kadar boşa harcadım" diye istedi): sayfa
-  görünür ve bilgisayar uyanıkken `BOS_MS`'den uzun hiç dokunulmayan aralık. Saniye tıkı
-  (`tik`) uyanık süreyi `bekBos`'ta biriktirir; aralık kapanırken `BOS_MS`'yi aşmışsa bu
-  kısım `bosEkle` ile boşta sayılır. Görünürken iki tık arası `UYKU_MS`'yi (5 sn) aşarsa
-  bilgisayar uyudu ya da sayfa dondu demektir: aralık uykudan önceki son tıkta kapanır,
-  uyku ne çalışma ne boşta sayılır. Görünür olunca `sonTik` de sıfırlanmalı, yoksa arka
-  planda seyrekleşen tık sahte uyku sanılır. Elle durdurulmuş turda boşta tura yazılmaz.
-- **Aralık, kapandığı andaki duruma yazılır** (tur açık mı, durdu mu). Doğruluğu yakalama
-  evresindeki `pointerdown`/`keydown` sağlar: tıklama durumu değiştirmeden önce aralık
-  kapanır. `home()` gibi programla yapılan geçişlerde `etkinKapat` **çağırma** — eşitleme
-  ekranı tazeledikçe boşluk 3 dakikadan kısa parçalara bölünür ve boşta hiç yakalanmaz.
-  Testte `.click()` `pointerdown` üretmez; önce `PointerEvent('pointerdown')` gönder.
-- **Ekranda:** soru ekranında ilerleme çubuğunun yanında `#tstat` "boşta · toplam"
-  (bu tur; toplam = çalışma + boşta, dikeyde yer yemesin diye çubukla aynı satırda),
-  kimlik satırında toplam çalışma süresi ("12 sa çalışma"; dar ekranda satır sarılır),
-  Durum panelinde boşta bugün / son 7 gün / toplam, tur raporunda turun boşta süresi
-  (yalnız `bosTam` turda — boşta ölçümü baştan beri açık).
-- **Soru başı ortalama** iki sayacın yanında: tur sayacının solunda `#tort` çalışma
-  süresine göre, `#tstat`'ın sonunda toplam (çalışma + boşta) süreye göre. Bölen, taban
-  anından beri verilen cevap sayısıdır (`R.log.length - ort0.n`). `rec.ort0 = {n, s, b}`
-  yeni turda sıfırdır; süre ölçümü baştan açık olmayan eski tur ilk açıldığında o anki
-  cevap sayısı ve süreler taban alınır — eski cevaplar zamanlanmadığı için ortalamaya
-  karışsalar ortalama yanlış çıkardı. İlk cevaba kadar ortalama gizli. Yer açmak için
-  400 piksel altında üst satırdaki "Soru" kelimesi düşer (`.qw`); sıra alt şeritte de
-  yazıyor. 360 pikselde ölçüldü: satır 332 pikselin 274'ünü kullanıyor.
-- **Soru başına süre** (kullanıcı uzun süren soruları ayrıca bulup üzerinde durmak istedi):
-  `S.qt[id] = [toplam ms, kaç kez, son ms, en uzun ms]`. Ölçü tur sayacıyla aynı çalışma
-  süresidir (`aktifSimdi`); soru ekrana gelince `soruAc` parça açar, başka soruya geçince
-  `soruKapat` birikime ekler, cevapta `soruSureYaz` kaydeder. Geri gidip gelince parçalar
-  toplanır. Yalnız turun **ilk denemesi** kaydedilir; yanlış turundaki tekrar hızlıdır ve
-  ortalamayı bozar. Eşitlemede kart gibi daha çok denenmiş kayıt kazanır.
-- **Uzun düşünme sıfır sayılmasın.** 3 dakikadan uzun hiç dokunmadan geçen süre çalışmaya
-  girmez; ama bu boşluk soru ekrandayken başlayıp cevaptan en çok 5 sn önce bittiyse
-  (telefonda kâğıtta hesap) `BOS_MS`'ye kadarı soruya eklenir (`sonBos`). Yoksa en uzun
-  düşünülen soru "0 sn" diye kaydedilip en kısa sürenlere düşüyordu. Üst sınır, uzakta
-  geçen süreyi soruya abartılı yazmamak için; dönüp yeniden okuyunca boşluk eklenmez.
+- `akit(an)` son tıktan `an`'a kadar geçen süreyi dağıtır (son dokunuştan sonraki ilk
+  `BOS_MS` çalışma, ötesi boşta). Saniyede bir ve **her dokunuşta** çağrılır;
+  dinleyiciler `window`'da yakalama evresinde olduğu için süre, tıklamanın değiştireceği
+  durumdan (tur, soru, duraklatma) önce o anki duruma yazılır. Durum değiştiren her yer
+  de önce `akit` çağırır: `soruAc`, `soruKapat`, `tmrCevir`, `done`.
+- Görünürken iki tık arası `UYKU_MS`'yi (5 sn) aşarsa bilgisayar uyudu ya da sayfa dondu:
+  o ara hiçbir yere yazılmaz. Görünür olunca `sonTik` de sıfırlanır, yoksa arka planda
+  seyrekleşen tık sahte uyku sanılır. Gizlenişte ve `pagehide`'da `sureBirak()` yazar ve
+  sayımı durdurur. "Sor" ile açılan sohbet sekmesinde geçen süre sayılmaz; kullanıcı
+  "sayfada aktif olduğumuz süre" dedi.
+- Testte `.click()` `pointerdown` üretmez; önce `PointerEvent('pointerdown')` gönder.
+
+**Soru ekranında iki sayaç var, ikisi de sağda, üst üste:**
+
+- **Soru sayacı** (`#qtm`, ilerleme çubuğuyla aynı satırda, dikeyde yer yemez): "bu soru
+  0:12 · ort 0:35". Her yeni soruda 0:00'dan başlar; süre `sureEkle` ile ekrandaki
+  cevaplanmamış soruya (`R.qAcik`) akar, geri gidip gelince toplanır. Cevapta donar
+  (`.bitti`) ve geri dönünce o sorunun süresi görünür (`R.qSon`). 1 dakikayı geçince
+  turuncu (`.uzun`, `YAVAS_MS`), duraklatılınca ya da boştayken soluk (`.dur`). "ort", bu
+  turda cevaplanan soruların **kendi sürelerinin** ortalamasıdır (`R.qTop / R.qN`, yalnız
+  ilk deneme); tur süresini cevap sayısına bölmek, cevaplanmamış sorunun ve cevaptan sonra
+  doğru şıkkı okumanın süresini de katıp şişiriyordu. Ekrandaki sorunun birikimi tur
+  kaydında (`rec.qAn`) — sayfa yenilenince sıfırlanmaz. `role="timer"`, `aria-live="off"`:
+  ekran okuyucu her saniyeyi okumasın.
+- **Tur sayacı** (`#tmr` çipi, üst satırda): turda çalışılan süre (`R.sure`). Dokununca ya
+  da `P` ile iki sayaç birlikte durur/sürer (`R.durdu`, tur kaydında saklanır). Elle
+  durdurma site toplamını durdurmaz. Simge yapılacak eylemi gösterir ve CSS ile çizilir —
+  iOS ⏸'yi renkli emojiye çeviriyor.
+- Canlı "boşta · toplam" satırı ve ikinci ortalama **kaldırıldı**: kullanıcı işe
+  yaramadığını söyledi. Boşta süre yalnız Durum panelinde ve tur raporunda.
+- `sureYaz()` tur kaydına süreleri yazarken `tN`'ye dokunmaz; birleştirmede turun
+  ilerlemesi ölçülürken yalnız süre değişikliği sayılmasın.
+
+**Kayıtlar ve özetler:**
+
+- **Rapor**: turun çalışma süresi ve soru başı ortalama (`qTop/qN`; yoksa eski hesap),
+  boşta süresi (`bosTam` turda). Süre yalnız `sureTam` turda, yoksa duvar saati.
+- **Soru başına süre** `S.qt[id] = [toplam ms, kaç kez, son ms, en uzun ms]`, cevapta
+  `soruSureYaz`. Yalnız turun ilk denemesi kaydedilir; yanlış turundaki tekrar hızlıdır.
+  Eşitlemede kart gibi daha çok denenmiş kayıt kazanır.
 - **Uzun sürenler destesi** (`'slow'`): son denemesi `YAVAS_MS`'yi (1 dk) geçen sorular.
   Ortalama değil son deneme: hızlanınca deste kendiliğinden boşalsın. Akıllı sırada en
   yavaştan başlar. Ana ekranda çip, kartta "uzun sürdü" etiketi, tur biter bitmez raporda
   her sorunun süresi (geçmişten açılan raporda yok: son deneme başka tura ait olabilir),
   Durum panelinde ortalamaya göre en uzun 8 ve (10+ ölçümde) en kısa 5 soru. Oradaki
   "Bunlara çalış" kapsamı bütün derslere açar, çünkü liste bütün derslerden gelir.
+- **Toplam ve boşta süre** `S.sure[cihaz]` / `S.bos[cihaz]` = `{t, g:{gün: ms}}`, cihaz
+  kimliği `atpl.cihaz`. Her cihaz yalnız kendi sayacını artırır; `mergeState` cihaz
+  bazında **en büyüğü** alır, toplam hepsinin toplamıdır. Tek sayıyla tutup en büyüğü
+  almak, telefon ve bilgisayarın aynı gün çalışmasında birini silerdi; toplayarak
+  birleştirmek her eşitlemede ikiye katlardı. Gün kayıtları 120 günde budanır. Kimlik
+  satırında toplam çalışma ("12 sa çalışma"; dar ekranda satır sarılır), Durum panelinde
+  çalışma ve boşta için bugün / son 7 gün / toplam.
 - **Bulut belgesi tek parça, 1 MiB sınırlı:** profilin tamamı Firestore'da tek `data`
   alanında. En büyük parça tur günlükleri (`runs[].log`). Bu yüzden süre günlük
   kayıtlarına değil soru başına özete yazıldı; yeni alan eklerken boyutu düşün.
-- **Toplam süre** `S.sure[cihaz] = {t, g:{gün: ms}}` içinde, boşta süre `S.bos[cihaz]` aynı
-  biçimde; cihaz kimliği `atpl.cihaz`.
-  Her cihaz yalnız kendi sayacını artırır; `mergeState` cihaz bazında **en büyüğü** alır,
-  toplam hepsinin toplamıdır. Tek sayıyla tutup en büyüğü almak, telefon ve bilgisayarın
-  aynı gün çalışmasında birini silerdi; toplayarak birleştirmek her eşitlemede ikiye
-  katlardı. Gün kayıtları 120 günde budanır. Durum panelinde bugün / son 7 gün / toplam.
 
 **Şık vurgusu imleç kıpırdayınca açılır.** Yeni soruda, son dokunulan yerdeki ya da
 hareketsiz imlecin altındaki şık "seçili" gibi yanıyordu; kullanıcı bunu "odak kalıyor"
