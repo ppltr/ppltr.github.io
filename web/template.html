@@ -364,6 +364,25 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .meta > .lbl{min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 @media (max-width:400px){ .meta > .lbl{display:none} }
 /* Gezinme düğmesi ve paneli — kapalıyken hiç yer kaplamaz */
+/* Tur sayacı: dokununca durur/sürer. Simge yapılacak eylemi gösterir —
+   sayarken duraklat (iki çubuk), dururken oynat (üçgen). Emoji değil CSS:
+   iOS ⏸'yi renkli emojiye çeviriyor. */
+.tmr{flex:none; display:inline-flex; align-items:center; gap:6px; margin:-3px 0;
+  padding:4px 10px 4px 9px; border-radius:99px; background:var(--surface-2);
+  border:1px solid var(--rule-2); color:var(--ink-2); font-size:12px; white-space:nowrap;
+  transition:border-color .12s, color .12s, background .12s}
+.tmr .tv{font-family:var(--f-num); font-variant-numeric:tabular-nums; font-weight:500;
+  min-width:2.6em; text-align:right}
+.tmr .ti{width:8px; height:9px; border-left:3px solid currentColor;
+  border-right:3px solid currentColor; box-sizing:border-box}
+.tmr.off{color:var(--due); border-color:var(--due); background:var(--due-soft)}
+.tmr.off .ti{width:0; height:0; border-right:0; border-left:8px solid currentColor;
+  border-top:5px solid transparent; border-bottom:5px solid transparent}
+.tmr.bosta .tv{opacity:.45}
+@media (hover:hover) and (pointer:fine){
+  .tmr:hover{border-color:var(--accent); color:var(--accent)}
+  .tmr.off:hover{border-color:var(--due); color:var(--due); filter:brightness(1.1)}
+}
 .qpos{flex:none; font-family:var(--f-num); font-size:11.5px; letter-spacing:.06em;
   text-transform:uppercase; color:var(--ink-3); white-space:nowrap}
 .qpos b{color:var(--ink-2); font-weight:500}
@@ -430,7 +449,12 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
   background:var(--surface); border:1px solid var(--rule); border-radius:var(--r);
   padding:10px 11px; font-family:var(--f-read); font-size:16px; line-height:1.4;
   min-height:44px; transition:border-color .1s, background .1s}
-.opt:hover:not(:disabled){border-color:var(--rule-2); background:var(--surface-2)}
+/* Üzerine gelme vurgusu yalnız gerçek farede ve imleç yeni çizimden sonra
+   kıpırdayınca (.hov). Dokunmatik ekranda son dokunulan yerdeki yeni şık, masaüstünde
+   de hareketsiz imlecin altındaki şık yeni soruda "seçili" gibi kalıyordu. */
+@media (hover:hover) and (pointer:fine){
+  .opts.hov .opt:hover:not(:disabled){border-color:var(--rule-2); background:var(--surface-2)}
+}
 .opt:disabled{cursor:default}
 .opt .k{flex:none; width:23px; height:23px; margin-top:1px; display:grid; place-items:center;
   border:1px solid var(--rule-2); border-radius:3px; font-family:var(--f-num);
@@ -552,6 +576,8 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
   font-variant-numeric:tabular-nums}
 .stat4 .s .v.ok{color:var(--ok)} .stat4 .s .v.bad{color:var(--bad)}
 .stat4 .s .v.due{color:var(--due)}
+.stat4.st3{grid-template-columns:repeat(3, 1fr)}
+.stat4.st3 .s .v{font-size:17px}
 .tbl{width:100%; border-collapse:collapse; font-size:12.5px}
 .tbl th{text-align:left; font-family:var(--f-num); font-size:9.5px; letter-spacing:.11em;
   text-transform:uppercase; color:var(--ink-3); font-weight:500; padding:0 8px 7px;
@@ -977,11 +1003,94 @@ function flushLocal(){
   ls.set(keyOf(ME), JSON.stringify(S));
 }
 function flush(){ flushLocal(); Cloud.schedule(); }
-addEventListener('pagehide', () => { flushLocal(); Cloud.simdiGonder(); });
+
+// ── Etkin süre ──────────────────────────────────────────────────────
+// Süre yalnız sen sayfadayken sayılır: sayfa görünür olmalı ve iki etkinlik
+// (dokunma, tuş, fare, kaydırma) arası BOS_MS'yi geçmemeli. Geçerse aradaki
+// sürenin HİÇBİRİ sayılmaz — bilgisayarın başından kalkıp gittin demektir.
+// Geçmezse tamamı sayılır — soruyu okuyup düşünüyordun demektir. Ekrandaki
+// sayaç açık aralığı da gösterir; BOS_MS dolunca o kısım geri düşer.
+//
+// Toplam süre cihaz başına ayrı sayaçta durur: S.sure[cihaz] = {t, g:{gün: ms}}.
+// Her cihaz yalnız kendi sayacını artırır, eşitleme cihaz bazında en büyüğü
+// alır, toplam hepsinin toplamıdır — telefonla bilgisayar aynı gün kullanılınca
+// ikisi de sayılır, biri ötekini ezmez.
+const BOS_MS = 3 * 60e3;
+const CIHAZ = (() => {
+  let id = ls.get('atpl.cihaz');
+  if (!id){ id = Math.random().toString(36).slice(2, 10); ls.set('atpl.cihaz', id); }
+  return id;
+})();
+let sonEtkin = document.visibilityState === 'visible' ? Date.now() : null;
+let sureDegisti = false;
+
+function sureEkle(d){
+  if (!S.sure || typeof S.sure !== 'object') S.sure = {};
+  const k = S.sure[CIHAZ] || (S.sure[CIHAZ] = { t:0, g:{} });
+  if (!k.g || typeof k.g !== 'object') k.g = {};
+  const g = today();
+  if (!(g in k.g)){                         // yeni gün: 120 günden eskisini at
+    const sin = new Date(Date.now() - 120 * DAY).toISOString().slice(0, 10);
+    Object.keys(k.g).forEach(x => { if (x < sin) delete k.g[x]; });
+  }
+  k.t = (k.t || 0) + d;
+  k.g[g] = (k.g[g] || 0) + d;
+  if (R && !R.durdu) R.sure = (R.sure || 0) + d;
+  sureDegisti = true;
+}
+/** Son etkinlikten bu yana geçen aralığı kapatır; BOS_MS'yi aşmıyorsa sayar. */
+function etkinKapat(an){
+  if (sonEtkin === null) return;
+  const d = an - sonEtkin;
+  sonEtkin = an;
+  if (d > 0 && d <= BOS_MS) sureEkle(d);
+}
+/** Açık aralıkta henüz yazılmamış süre — ekrandaki sayaç için. */
+function bekleyenSure(){
+  if (sonEtkin === null) return 0;
+  const d = Date.now() - sonEtkin;
+  return d > 0 && d <= BOS_MS ? d : 0;
+}
+/** Kullanıcı bir şey yaptı. Tıklama ve tuş yakalama evresinde hemen işlenir:
+ *  aralık, tıklamanın değiştireceği durumdan (tur açık mı, sayaç durdu mu)
+ *  ÖNCE kapanmalı. Fare ve kaydırma seli saniyede bire indirilir. */
+function etkinlik(e){
+  if (document.visibilityState !== 'visible') return;
+  const an = Date.now();
+  if (sonEtkin === null){ sonEtkin = an; return; }
+  const sel = e.type === 'pointermove' || e.type === 'scroll' ||
+              e.type === 'wheel' || e.type === 'touchmove';
+  if (sel && an - sonEtkin < 1000) return;
+  etkinKapat(an);
+}
+['pointerdown', 'keydown', 'pointermove', 'wheel', 'scroll', 'touchmove', 'focus']
+  .forEach(t => addEventListener(t, etkinlik, { capture:true, passive:true }));
+
+/** Açık turun süresini kaydına geçirir. tN'ye dokunmaz: birleştirmede turun
+ *  ne kadar ilerlediği ölçülürken yalnız süre değişikliği sayılmasın. */
+function sureYaz(){
+  sureDegisti = false;
+  const rec = runRec();
+  if (!rec) return;
+  rec.sure = Math.round(R.sure || 0);
+  if (R.durdu) rec.durdu = true; else delete rec.durdu;
+}
+/** Sayfa gizlenirken ya da kapanırken: açık aralığı kapat, süreyi kaydet. */
+function sureBirak(){
+  etkinKapat(Date.now());
+  sonEtkin = null;                          // gizliyken geçen süre sayılmaz
+  if (sureDegisti){ sureYaz(); Cloud.schedule(); }
+}
+addEventListener('pagehide', () => { sureBirak(); flushLocal(); Cloud.simdiGonder(); });
 addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'hidden'){ flushLocal(); Cloud.simdiGonder(); }
-  else Cloud.donusteCek();
+  if (document.visibilityState === 'hidden'){ sureBirak(); flushLocal(); Cloud.simdiGonder(); }
+  else { sonEtkin = Date.now(); Cloud.donusteCek(); }
 });
+// Dakikada bir, süre değiştiyse yerel diske yaz; buluta gizlenişte ya da bir
+// sonraki cevapla gider. Tarayıcı çökerse en çok bir dakika kaybolur.
+setInterval(() => { if (sureDegisti){ sureYaz(); flushLocal(); } }, 60e3);
+// Soru ekranındaki sayaç saniyede bir tazelenir — yalnız görüntü, kayıt değil.
+setInterval(() => { const t = el('tmr'); if (t && R) tmrBoya(t); }, 1000);
 addEventListener('online', () => { if (Cloud.kirli) Cloud.gonderGuvenli(); });
 // Sekme saatlerce açık kalırsa başka cihazdaki ilerleme de gelsin; donusteCek
 // tur ortasında ve 30 sn'den yeni çekişte kendisi geri dönüyor.
@@ -1355,6 +1464,7 @@ function saveRun(){
   rec.missed = R.missed.slice();
   rec.log = R.log.slice();
   rec.tN = Date.now();
+  sureYaz();
   save();
 }
 function start(){
@@ -1364,11 +1474,11 @@ function start(){
   S.runs = S.runs.filter(r => r.done || (r.log || []).length);   // boş bırakılanları at
   const id = 'r' + Date.now();
   R = { id, list, i:0, order:null, picked:null, orders:[], picks:[],
-        log:[], t0:Date.now(), round:1, missed:[] };
+        log:[], t0:Date.now(), round:1, missed:[], sure:0, durdu:false, sureTam:true };
   S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle(), code:soloModule() || '',
                    deck:deckName(),
                    n0:list.length, ids:list.map(q => q[0]), i:0, round:1,
-                   missed:[], log:[], done:false });
+                   missed:[], log:[], done:false, sure:0, sureTam:true });
   if (S.runs.length > RUN_MAX) S.runs.length = RUN_MAX;
   save();
   step0();
@@ -1382,7 +1492,8 @@ function resumeRun(id){
   if (!list.length){ rec.done = true; save(); return home(); }
   R = { id:rec.id, list, i:Math.min(rec.i || 0, list.length), order:null, picked:null,
         orders:[], picks:[], log:(rec.log || []).slice(), t0:rec.t0,
-        round:rec.round || 1, missed:(rec.missed || []).slice() };
+        round:rec.round || 1, missed:(rec.missed || []).slice(),
+        sure:rec.sure || 0, durdu:!!rec.durdu, sureTam:!!rec.sureTam };
   // Bu turda verilmiş cevapları geri kur: kayıtta kaynak şık indeksi var,
   // yeni karıştırmada karşılığı bulunur. Böylece geri gidince cevap görünür
   // ve yeniden puanlanmaz.
@@ -1685,7 +1796,8 @@ function home(){
 
     '<div class="hint"><kbd>A</kbd>–<kbd>E</kbd> ya da <kbd>1</kbd>–<kbd>5</kbd> şık · ' +
       '<kbd>←</kbd><kbd>→</kbd> ya da parmakla kaydır · <kbd>Enter</kbd> devam · ' +
-      '<kbd>S</kbd> yıldız<br>Tur bitince yanlış yaptıkların tekrar sorulur.</div>';
+      '<kbd>S</kbd> yıldız · <kbd>P</kbd> sayacı durdur<br>' +
+      'Tur bitince yanlış yaptıkların tekrar sorulur.</div>';
 
   buildTree();
   el('sw').innerHTML = [
@@ -1797,9 +1909,10 @@ function runPct(r){
 function hisRow(r){
   const pct = runPct(r);
   const dot = !r.done ? 'live' : pct === null ? '' : pct >= 75 ? 'ok' : pct >= 50 ? 'mid' : 'bad';
-  const alt = r.done
+  const alt = (r.done
     ? stamp(r.t0) + ' · ' + runSeen(r) + ' soru'
-    : stamp(r.t0) + ' · ' + runSeen(r) + ' / ' + (r.n0 || 0) + ' soru';
+    : stamp(r.t0) + ' · ' + runSeen(r) + ' / ' + (r.n0 || 0) + ' soru') +
+    (r.sureTam && r.sure >= 6e4 ? ' · ' + sureMetni(r.sure) : '');
   return '<button class="hisrow" data-run="' + r.id + '" type="button">' +
     '<span class="hdot ' + dot + '"></span>' +
     '<span class="hi"><b>' + esc(r.title || 'Tur') + '</b><i>' + alt + '</i></span>' +
@@ -1961,6 +2074,54 @@ async function copyText(s){
 }
 
 // ── Soru ekranı ──
+// ── Tur sayacı ──
+/** 3:07 · 1:02:45 */
+function saat(ms){
+  const t = Math.floor(ms / 1000), h = Math.floor(t / 3600);
+  const p2 = x => String(x).padStart(2, '0');
+  return (h ? h + ':' + p2(Math.floor(t % 3600 / 60)) : Math.floor(t / 60)) + ':' + p2(t % 60);
+}
+/** 40 sn · 45 dk · 2 sa 5 dk */
+function sureMetni(ms){
+  if (ms < 6e4) return Math.max(0, Math.round(ms / 1000)) + ' sn';
+  const dk = Math.round(ms / 6e4), sa = Math.floor(dk / 60);
+  return sa ? sa + ' sa' + (dk % 60 ? ' ' + dk % 60 + ' dk' : '') : dk + ' dk';
+}
+/** Sayaç çipini günceller: süre, durdu mu, boşta mı. */
+function tmrBoya(t){
+  if (!t || !R) return;
+  const bosta = !R.durdu && sonEtkin !== null && Date.now() - sonEtkin > BOS_MS;
+  t.classList.toggle('off', !!R.durdu);
+  t.classList.toggle('bosta', bosta);
+  t.setAttribute('aria-pressed', R.durdu ? 'true' : 'false');
+  t.title = R.durdu ? 'Sayaç durdu · devam etmek için dokun (P)'
+    : bosta ? 'Bir süredir hareket yok, bu süre sayılmıyor · dokununca sürer'
+    : 'Bu turda geçen süre · durdurmak için dokun (P)';
+  t.setAttribute('aria-label', (R.durdu ? 'Sayaç durdu, ' : 'Tur süresi, ') +
+    saat((R.sure || 0) + (R.durdu ? 0 : bekleyenSure())));
+  t.querySelector('.tv').textContent = saat((R.sure || 0) + (R.durdu ? 0 : bekleyenSure()));
+}
+/** Elle durdur / sürdür. Durmadan önceki süre tura yazılır. */
+function tmrCevir(){
+  if (!R) return;
+  etkinKapat(Date.now());
+  R.durdu = !R.durdu;
+  sureYaz(); save();
+  tmrBoya(el('tmr'));
+}
+
+// Yeni soruda şık, hareketsiz imlecin altında kaldığı için "seçili" gibi
+// yanıyordu. Vurgu artık imleç çizimden sonra gerçekten kıpırdayınca açılır.
+let imlec = null, hovCapa = null;
+addEventListener('pointermove', e => {
+  if (e.pointerType !== 'mouse') return;
+  imlec = [e.clientX, e.clientY];
+  const o = el('opts');
+  if (!o || o.classList.contains('hov')) return;
+  if (!hovCapa || Math.abs(imlec[0] - hovCapa[0]) + Math.abs(imlec[1] - hovCapa[1]) > 4)
+    o.classList.add('hov');
+}, { passive:true });
+
 function draw(){
   const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
   const shown = R.picked !== null && F.mode === 'study';
@@ -2000,7 +2161,9 @@ function draw(){
       '<span class="qpos">Soru <b class="num">' + (R.i + 1) + '</b> / ' +
         '<b class="num">' + R.list.length + '</b></span>' +
       '<span class="lbl"' + (retry ? ' style="color:var(--bad)"' : '') + '>' +
-        (retry ? 'Yanlış turu ' + R.round : deckName()) + '</span></div>' +
+        (retry ? 'Yanlış turu ' + R.round : deckName()) + '</span>' +
+      '<button class="tmr" id="tmr" type="button"><span class="ti" aria-hidden="true">' +
+        '</span><span class="tv num"></span></button></div>' +
     '<div class="card"><div class="head"><span class="lbl">' + esc(s.c) + '</span>' +
       '<span class="who">' + esc(secName(sec)) + '</span><span class="sp"></span>' +
       (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
@@ -2013,7 +2176,7 @@ function draw(){
       '<span class="lbl num">' + q[0] + '</span></div>' +
       '<div class="qt">' + esc(qText(q)) + '</div>' +
       (figOf(q) ? '<div class="figbox">' + figOf(q) + '</div>' : '') +
-      '<div class="opts">' + opts + '</div>' + verdict + '</div>' +
+      '<div class="opts" id="opts">' + opts + '</div>' + verdict + '</div>' +
     '<div class="foot">' +
     '<div class="navpop' + (navOpen ? '' : ' hidden') + '" id="navPop">' +
       '<div class="navrow">' +
@@ -2052,6 +2215,9 @@ function draw(){
     pick(+b.dataset.p);
   });
   el('hb').onclick = () => { clearTimeout(advT); saveRun(); dropEmptyRun(); home(); };
+  tmrBoya(el('tmr'));
+  el('tmr').onclick = tmrCevir;
+  hovCapa = imlec ? imlec.slice() : null;   // imleç bu noktadan kıpırdayınca vurgu açılır
   el('ask').onclick = async () => {
     const b = el('ask'), eski = b.textContent;
     const ok = await copyText(askText());
@@ -2114,15 +2280,18 @@ function deckName(){
 
 function done(){
   clearTimeout(advT);
+  if (R) etkinKapat(Date.now());            // son sorudaki süre de tura yazılsın
   const rec = runRec();
   if (rec){
     rec.i = R.i; rec.round = R.round; rec.log = R.log.slice();
     rec.tN = Date.now(); rec.done = true;
+    rec.sure = Math.round(R.sure || 0); delete rec.durdu;
     delete rec.ids; delete rec.missed;        // bitmiş tur geri yüklenmez
     if (!rec.log.length) S.runs.splice(S.runs.indexOf(rec), 1);
     save();
   }
-  const live = R ? { log:R.log, round:R.round, t0:R.t0, tN:Date.now() } : null;
+  const live = R ? { log:R.log, round:R.round, t0:R.t0, tN:Date.now(),
+                     sure:Math.round(R.sure || 0), sureTam:R.sureTam } : null;
   R = null;
   if (!live || !live.log.length) return home();
   report(live, true);
@@ -2134,17 +2303,25 @@ function report(rec, live){
   const first = log.filter(x => x.round === 1);
   const ok = first.filter(x => x.ok).length;
   const pct = first.length ? Math.round(ok / first.length * 100) : 0;
-  const mins = Math.max(1, Math.round(((rec.tN || Date.now()) - rec.t0) / 6e4));
+  // Etkin süre: sayfada ve başında olduğun süre. Yalnız süresi baştan ölçülen
+  // turda (sureTam) yazılır; sayaçtan önce başlamış turun önceki cevapları
+  // zamanlanmadığı için hem süre hem ortalama eksik çıkardı. O turlar eski
+  // davranışla duvar saatine düşer.
+  const sure = rec.sureTam && typeof rec.sure === 'number' ? rec.sure : null;
+  const sureYazi = sure !== null ? sureMetni(sure)
+    : Math.max(1, Math.round(((rec.tN || Date.now()) - rec.t0) / 6e4)) + ' dakika';
   const seen = [...new Set(log.map(x => x.id))];
 
   el('view').innerHTML =
     '<div class="card"><div style="padding:24px 16px; text-align:center">' +
-      '<div class="lbl">' + (live ? 'Tur bitti' : esc(rec.title || 'Tur')) + ' · ' + mins +
-        ' dakika' + (rounds > 1 ? ' · ' + rounds + ' tur' : '') + '</div>' +
+      '<div class="lbl">' + (live ? 'Tur bitti' : esc(rec.title || 'Tur')) + ' · ' + sureYazi +
+        (rounds > 1 ? ' · ' + rounds + ' tur' : '') + '</div>' +
       '<div class="score" style="color:' + (pct >= 75 ? 'var(--ok)' : pct >= 50 ? 'var(--ink)' : 'var(--bad)') +
         '">%' + pct + '</div>' +
       '<div class="lbl" style="margin-top:5px">İlk denemede <span class="num">' + ok +
         '</span> / <span class="num">' + first.length + '</span> doğru</div>' +
+      (sure && log.length ? '<div class="note" style="margin-top:6px">Soru başına ortalama ' +
+        '<b>' + sureMetni(sure / log.length) + '</b></div>' : '') +
       (rounds > 1 ? '<div class="note" style="margin-top:8px">Yanlış yaptıkların tekrar soruldu, ' +
         'hepsini bilene kadar devam edildi.</div>' : '') + '</div>' +
     (() => {
@@ -2247,6 +2424,25 @@ function refreshSheet(){
 const msg = m => { const b = el('bakMsg'); if (!b) return; b.textContent = m;
   setTimeout(() => { const x = el('bakMsg'); if (x) x.textContent = ''; }, 3500); };
 
+/** Bütün cihazların süresi: bugün, son 7 gün, toplam ve gün gün. Bu
+ *  cihazda açık olan (henüz yazılmamış) aralık da katılır. */
+function sureOzet(){
+  const bug = today(), hafta = new Date(Date.now() - 6 * DAY).toISOString().slice(0, 10);
+  const o = { top:0, bugun:0, hafta:0, gun:{} };
+  Object.values(S.sure || {}).forEach(k => {
+    if (!k || typeof k !== 'object') return;
+    o.top += +k.t || 0;
+    Object.keys(k.g || {}).forEach(d => {
+      const ms = +k.g[d] || 0;
+      o.gun[d] = (o.gun[d] || 0) + ms;
+      if (d === bug) o.bugun += ms;
+      if (d >= hafta) o.hafta += ms;
+    });
+  });
+  const acik = bekleyenSure();
+  o.top += acik; o.bugun += acik; o.hafta += acik;
+  return o;
+}
 function openStats(){
   let seen = 0, wrong = 0, tot = 0;
   Object.keys(S.c).forEach(id => { const k = S.c[id]; tot += k[2]; wrong += k[3]; seen++; });
@@ -2277,6 +2473,7 @@ function openStats(){
     const d = new Date(Date.now() - i*DAY).toISOString().slice(0,10);
     days.push([d, (S.day[d] || [0,0])[0]]);
   }
+  const sureT = sureOzet();
   const mx = Math.max(1, ...days.map(d => d[1]));
   const lvl = n => !n ? '' : n < mx*.25 ? 'l1' : n < mx*.5 ? 'l2' : n < mx*.8 ? 'l3' : 'l4';
   let streak = 0;
@@ -2306,7 +2503,16 @@ function openStats(){
       '<div class="s"><span class="lbl">Seri</span><div class="v">' + streak + ' gün</div></div></div>' +
     '<div class="lbl" style="margin-bottom:7px">Son 45 gün</div>' +
     '<div class="heat">' + days.map(d => '<i class="' + lvl(d[1]) + '" title="' + d[0] +
-      ' · ' + d[1] + ' soru"></i>').join('') + '</div>' +
+      ' · ' + d[1] + ' soru' + (sureT.gun[d[0]] >= 6e4 ? ' · ' + sureMetni(sureT.gun[d[0]]) : '') +
+      '"></i>').join('') + '</div>' +
+    '<div class="lbl" style="margin:14px 0 7px">Çalışma süresi</div>' +
+    '<div class="stat4 st3">' +
+      '<div class="s"><span class="lbl">Bugün</span><div class="v">' + sureMetni(sureT.bugun) + '</div></div>' +
+      '<div class="s"><span class="lbl">Son 7 gün</span><div class="v">' + sureMetni(sureT.hafta) + '</div></div>' +
+      '<div class="s"><span class="lbl">Toplam</span><div class="v">' + sureMetni(sureT.top) + '</div></div>' +
+    '</div>' +
+    '<div class="note" style="margin:-6px 0 14px">Yalnız sayfa açık ve sen başındayken sayılır; ' +
+      '3 dakika hiç dokunmazsan o ara sayılmaz. Telefon ve bilgisayar ayrı ayrı sayılıp toplanır.</div>' +
     '<div class="note" style="margin-bottom:16px">Gördüğün soru: <b>' + seenScoped +
       '</b> / ' + nf(scopedIds.size) +
       ((S.passed || []).length ? ' <span class="lbl">(geçtiklerin hariç)</span>' : '') +
@@ -2472,6 +2678,19 @@ function mergeState(t, p){
   if ((p.pAt || 0) > (t.pAt || 0)){
     t.passed = (p.passed || []).slice();
     t.pAt = p.pAt;
+  }
+  // Süre cihaz başına artan bir sayaç: aynı cihazın iki kopyasından büyüğü
+  // doğrudur, farklı cihazlar ayrı anahtarda durur ve toplamda ikisi de sayılır.
+  if (p.sure && typeof p.sure === 'object'){
+    if (!t.sure || typeof t.sure !== 'object') t.sure = {};
+    Object.keys(p.sure).forEach(cz => {
+      const b = p.sure[cz];
+      if (!b || typeof b !== 'object') return;
+      const a = t.sure[cz] || (t.sure[cz] = { t:0, g:{} });
+      if (!a.g) a.g = {};
+      a.t = Math.max(a.t || 0, +b.t || 0);
+      Object.keys(b.g || {}).forEach(d => { a.g[d] = Math.max(a.g[d] || 0, +b.g[d] || 0); });
+    });
   }
   // Ayarlar bir tercih kümesidir, birleştirilemez — en son kaydedilen kazanır
   if (p.pref && (p.prefAt || 0) > (t.prefAt || 0)){
@@ -2691,6 +2910,7 @@ document.addEventListener('keydown', e => {
   else if (k === 's' || k === 'S'){
     const b = el('star'); if (b){ b.click(); e.preventDefault(); }
   }
+  else if (k === 'p' || k === 'P'){ tmrCevir(); e.preventDefault(); }
 });
 
 loadProfile();

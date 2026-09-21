@@ -176,7 +176,44 @@ dışlanır. Kaydırma sonrası 400 ms boyunca şık tıklaması yok sayılır (
 yoksa parmağın kalktığı şık seçilmiş olurdu. Bunu kaldırma, ok tuşları telefonda yok.
 
 **Klavye:** `A`–`E` ve `1`–`5` cevaplar, `←` `→` soru değiştirir, `Home`/`End` başa ve
-sona gider, `Enter` devam eder, `S` yıldızlar, `Esc` açık paneli kapatır.
+sona gider, `Enter` devam eder, `S` yıldızlar, `P` tur sayacını durdurup sürdürür,
+`Esc` açık paneli kapatır.
+
+**Etkin süre.** Süre yalnız sen sayfadayken sayılır: sayfa görünür olmalı ve iki
+etkinlik (dokunma, tuş, fare, kaydırma) arası `BOS_MS` (3 dk) geçmemeli. Geçerse aradaki
+sürenin **hiçbiri** sayılmaz (başından kalktın), geçmezse **tamamı** sayılır (soruyu
+düşünüyordun). Sayaç açık aralığı da gösterir, `BOS_MS` dolunca o kısım geri düşer ve
+çip `.bosta` olur. Kullanıcı "bilgisayarı bırakıp gidince saymasın" dedi; eşiği
+büyütürsen gidilen süre sayılır, küçültürsen düşünme süresi kaybolur.
+
+- Dinleyiciler `window`'da **yakalama evresinde**: aralık, tıklamanın değiştireceği
+  durumdan (tur açık mı, sayaç durdu mu) önce kapanmalı. `pointerdown`/`keydown` hemen,
+  fare ve kaydırma seli saniyede bir işlenir (`etkinlik`).
+- Gizlenişte ve `pagehide`'da `sureBirak()` aralığı kapatır ve `sonEtkin`'i siler —
+  gizliyken geçen süre sayılmaz. "Sor" ile açılan sohbet sekmesinde geçen süre de
+  sayılmaz; kullanıcı "sayfada aktif olduğumuz süre" dedi.
+- **Tur sayacı** soru ekranının üst satırındaki `#tmr` çipidir: `R.sure` (ms) ve elle
+  durdurma `R.durdu`, ikisi de tur kaydında (`rec.sure`, `rec.durdu`) saklanır, sayfa
+  yenilenince ve başka cihazda sürer. Elle durdurma yalnız turu durdurur, toplam süre
+  saymaya devam eder. Simge yapılacak eylemi gösterir ve CSS ile çizilir — iOS ⏸'yi
+  renkli emojiye çeviriyor.
+- `sureYaz()` tur kaydına süreyi yazarken `tN`'ye dokunmaz; birleştirmede turun ilerlemesi
+  ölçülürken yalnız süre değişikliği sayılmasın.
+- **Rapor ve geçmiş satırı** etkin süreyi ve soru başına ortalamayı yalnız `sureTam`
+  turlarda yazar (sayaç baştan beri açık). Sayaçtan önce başlamış turun eski cevapları
+  zamanlanmadığı için ortalama yanıltıcı çıkıyordu; o turlar duvar saatine düşer.
+- **Toplam süre** `S.sure[cihaz] = {t, g:{gün: ms}}` içinde, cihaz kimliği `atpl.cihaz`.
+  Her cihaz yalnız kendi sayacını artırır; `mergeState` cihaz bazında **en büyüğü** alır,
+  toplam hepsinin toplamıdır. Tek sayıyla tutup en büyüğü almak, telefon ve bilgisayarın
+  aynı gün çalışmasında birini silerdi; toplayarak birleştirmek her eşitlemede ikiye
+  katlardı. Gün kayıtları 120 günde budanır. Durum panelinde bugün / son 7 gün / toplam.
+
+**Şık vurgusu imleç kıpırdayınca açılır.** Yeni soruda, son dokunulan yerdeki ya da
+hareketsiz imlecin altındaki şık "seçili" gibi yanıyordu; kullanıcı bunu "odak kalıyor"
+diye bildirdi. Gerçek odak değildi, üzerine gelme vurgusuydu. `.opt:hover` artık yalnız
+`@media (hover:hover) and (pointer:fine)` içinde ve `.opts.hov` iken çalışır: `draw()`
+imlecin o anki yerini `hovCapa`'ya alır, fare oradan 4 pikselden fazla kıpırdayınca
+`.hov` eklenir. Kuralı düz `.opt:hover`'a geri çevirme.
 
 **Dikey yer ölçülüdür.** Soru ekranı uzun metinli sorularda ekrandan taşmasın diye
 sıkı tutuluyor: sayfa alt boşluğu 24px (eylem şeridi zaten `position:sticky`, altında
