@@ -320,6 +320,13 @@ yayınlanıyor; API anahtarı gömmek anahtarı sızdırır ve faturayı kullan�
 Artifact çalışma zamanının yetenekleri de (`artifact`, `downloads`, `mcp`, `self`)
 dil modeli çağrısı içermiyor. Kopyala-ve-aç yolu bilinçli tercihtir.
 
+**"Sor" sayılır** (kullanıcı hangi soruda kaç kez sorduğunu görmek istedi):
+`S.sor[id] = [kaç kez, son an]`, `sorSay` tıklamada **eşzamanlı ve ilk iş** olarak çalışır —
+bağlantı yeni sekme açınca sayfa gizlenir, kayıt `flushLocal` ile o an diske iner.
+Düğmenin içinde küçük sayı (`askEtiket`, `.askn`); "Kopyalandı" yazısından sonra etiket
+`innerHTML` ile yeniden kurulur, `textContent` sayıyı silerdi. Durum panelinde en çok
+sorulan 8 soru (`sorBlok`). Eşitlemede büyük sayı, eşitse son soran kazanır.
+
 Şekil gerektiren soruda metne "şekil metne aktarılamadı" notu eklenir — yoksa model
 görmediği bir çizim hakkında uydurur. Adres `URL_MAX`'i aşarsa düğme yalnız kopyalar.
 

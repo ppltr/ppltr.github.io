@@ -451,6 +451,9 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
   transition:border-color .12s, color .12s}
 .askbtn:hover{border-color:var(--accent); color:var(--accent)}
 .askbtn.done{border-color:var(--ok); color:var(--ok)}
+.askbtn .askn{font-style:normal; margin-left:5px; padding:0 5px; border-radius:99px;
+  background:var(--surface-2); color:var(--ink-2); font-size:9.5px; letter-spacing:0;
+  line-height:15px}
 .starbtn{font-size:15px; line-height:1; padding:2px 4px; color:var(--ink-3)}
 .starbtn.on{color:var(--accent)}
 .qt{font-family:var(--f-read); font-size:18px; line-height:1.45; padding:14px 14px 4px;
@@ -2119,6 +2122,22 @@ const AI = {
 };
 const URL_MAX = 7000;              // uzun soruda adres yerine yalnız kopyala
 
+// ── "Sor" istatistiği: hangi soruyu yapay zekâya kaç kez sordun ──
+// S.sor[id] = [kaç kez, son an]. Eşitlemede kart gibi büyük sayı kazanır.
+function sorSay(id){
+  if (!S.sor || typeof S.sor !== 'object') S.sor = {};
+  const k = S.sor[id] || [0, 0];
+  k[0]++; k[1] = Date.now();
+  S.sor[id] = k;
+  save();
+}
+/** Düğmenin içi: "Sor" ya da "Kopyala" ve daha önce sorduysan kaç kez. */
+function askEtiket(kopyala){
+  const n = R && S.sor && S.sor[R.list[R.i][0]] ? S.sor[R.list[R.i][0]][0] : 0;
+  return (kopyala ? 'Kopyala' : 'Sor') +
+    (n ? '<i class="askn" title="Bu soruyu ' + n + ' kez sordun">' + n + '</i>' : '');
+}
+
 /** Kart başlığındaki "Sor" düğmesi. Adres çok uzunsa yalnız kopyalar. */
 function askBtn(){
   const ai = AI[F.ai] || AI.chatgpt;
@@ -2127,9 +2146,9 @@ function askBtn(){
   const ttl = (ai[2] || (ai[0] + '\'a sor')) + ' — metin panoya da kopyalanır';
   return url.length <= URL_MAX
     ? '<a class="askbtn" id="ask" href="' + esc(url) + '" target="_blank" ' +
-      'rel="noopener noreferrer" title="' + esc(ttl) + '">Sor</a>'
+      'rel="noopener noreferrer" title="' + esc(ttl) + '">' + askEtiket(false) + '</a>'
     : '<button class="askbtn" id="ask" type="button" ' +
-      'title="Soru çok uzun — panoya kopyalanır">Kopyala</button>';
+      'title="Soru çok uzun — panoya kopyalanır">' + askEtiket(true) + '</button>';
 }
 
 /** Soruyu, şıkları, doğru cevabı ve verilen cevabı düz metne çevirir. */
@@ -2380,7 +2399,8 @@ function draw(){
   hovCapa = imlec ? imlec.slice() : null;   // imleç bu noktadan kıpırdayınca vurgu açılır
   soruAc();
   el('ask').onclick = async () => {
-    const b = el('ask'), eski = b.textContent;
+    const b = el('ask'), kopyala = b.tagName === 'BUTTON';
+    sorSay(q[0]);
     const ok = await copyText(askText());
     const ai = AI[F.ai] || AI.chatgpt;
     const noQ = ai[1].indexOf('?q=') < 0 && ai[1].indexOf('?query=') < 0;
@@ -2388,7 +2408,7 @@ function draw(){
     b.classList.add('done');
     setTimeout(() => {
       const c = el('ask');
-      if (c){ c.textContent = eski; c.classList.remove('done'); }
+      if (c){ c.innerHTML = askEtiket(kopyala); c.classList.remove('done'); }
     }, 2000);
   };
   el('navBtn').onclick = () => {
@@ -2642,6 +2662,23 @@ function qtBlok(){
       'title="Bütün derslerdeki uzun sürenlerle, en yavaştan başlayan bir tur açar">' +
       'Bunlara çalış</button></div>' : '');
 }
+/** Durum panelinde: yapay zekâya en çok sorduğun sorular. */
+function sorBlok(){
+  const L = Object.keys(S.sor || {}).map(id => {
+    const q = BY_ID.get(+id), k = S.sor[id];
+    return q && Array.isArray(k) && k[0] > 0 && inToggles(q) ? { q, k } : null;
+  }).filter(Boolean);
+  if (!L.length) return '';
+  const top = L.reduce((a, x) => a + x.k[0], 0);
+  const satir = x => '<div class="qtrow"><span class="qtx">' + esc(qText(x.q)) + '</span>' +
+    '<span class="qtv"><b>' + x.k[0] + ' kez</b><i>son ' + stamp(x.k[1]) + '</i></span></div>';
+  return '<div class="lbl" style="margin:16px 0 7px">Yapay zekâya sorduğun sorular</div>' +
+    '<div class="note" style="margin-bottom:9px"><b>Sor</b> düğmesine toplam <b>' + top +
+      '</b> kez, <b>' + L.length + '</b> farklı soruda bastın. Çok sorduğun soru, konuyu ' +
+      'henüz oturtamadığın yerdir.</div>' +
+    '<div class="qtlist">' + L.sort((a, b) => b.k[0] - a.k[0] || b.k[1] - a.k[1])
+      .slice(0, 8).map(satir).join('') + '</div>';
+}
 function openStats(){
   let seen = 0, wrong = 0, tot = 0;
   Object.keys(S.c).forEach(id => { const k = S.c[id]; tot += k[2]; wrong += k[3]; seen++; });
@@ -2717,7 +2754,7 @@ function openStats(){
     '<div class="note" style="margin:0 0 14px">Çalışma yalnız sayfa açık ve sen başındayken ' +
       'sayılır; 3 dakika hiç dokunmazsan o ara boşta sayılır. Bilgisayar uyurken geçen süre ' +
       'ikisine de girmez. Telefon ve bilgisayar ayrı ayrı sayılıp toplanır.</div>' +
-    qtBlok() +
+    qtBlok() + sorBlok() +
     '<div class="note" style="margin-bottom:16px">Gördüğün soru: <b>' + seenScoped +
       '</b> / ' + nf(scopedIds.size) +
       ((S.passed || []).length ? ' <span class="lbl">(geçtiklerin hariç)</span>' : '') +
@@ -2889,6 +2926,15 @@ function mergeState(t, p){
   }
   // Süre cihaz başına artan bir sayaç: aynı cihazın iki kopyasından büyüğü
   // doğrudur, farklı cihazlar ayrı anahtarda durur ve toplamda ikisi de sayılır.
+  // "Sor" sayıları: büyük sayı kazanır, eşitse son soran
+  if (p.sor && typeof p.sor === 'object'){
+    if (!t.sor || typeof t.sor !== 'object') t.sor = {};
+    Object.keys(p.sor).forEach(id => {
+      const a = t.sor[id], b = p.sor[id];
+      if (Array.isArray(b) && b.length === 2 &&
+          (!a || b[0] > a[0] || (b[0] === a[0] && b[1] > a[1]))) t.sor[id] = b;
+    });
+  }
   // Soru süreleri: kart gibi, daha çok denenmiş kayıt kazanır
   if (p.qt && typeof p.qt === 'object'){
     if (!t.qt || typeof t.qt !== 'object') t.qt = {};
