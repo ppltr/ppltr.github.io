@@ -300,6 +300,9 @@ bitirmiyor (`nextQ`).
 Bağlama `el('view').querySelectorAll('[data-nav]')` üzerinden yapılır — düğmeler iki
 yerde (şeritte ve panelde), seçiciyi `#navPop` ile daraltma.
 
+**Soru kartının başlığında ders kodu yok** (ör. "090"): bölüm adıyla başlar. Kullanıcı
+gereksiz bulup kaldırttı; ders, bölüm adından ve üst satırdaki desteden anlaşılıyor.
+
 **Soruyu yapay zekâya sorma.** Kart başlığındaki `Sor` düğmesi (`askBtn`) soruyu,
 gördüğün sıradaki şıkları, doğru cevabı ve verdiğin cevabı düz metne çevirip
 (`askText`) panoya kopyalar ve seçilen sohbeti yeni sekmede açar. Düğme gerçek bir

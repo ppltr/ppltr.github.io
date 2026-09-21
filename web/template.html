@@ -2311,7 +2311,7 @@ function draw(){
         (retry ? 'Yanlış turu ' + R.round : deckName()) + '</span>' +
       '<button class="tmr" id="tmr" type="button"><span class="ti" aria-hidden="true">' +
         '</span><span class="tv num"></span></button></div>' +
-    '<div class="card"><div class="head"><span class="lbl">' + esc(s.c) + '</span>' +
+    '<div class="card"><div class="head">' +
       '<span class="who">' + esc(secName(sec)) + '</span><span class="sp"></span>' +
       (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
       (q[8] && !figOf(q) ? '<span class="tag fig">şekil gerekli</span>' : '') +
