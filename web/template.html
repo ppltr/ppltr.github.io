@@ -166,6 +166,22 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .hero .hnext{display:block; width:100%; text-align:center; margin-top:9px; padding:9px;
   font-size:12.5px; color:var(--cyan); border-radius:var(--r)}
 .hero .hnext:hover{background:var(--surface-2)}
+.hero .hnext.sr{color:var(--ink-2); font-size:12px}
+.hero .hnext.sr b{color:var(--cyan)}
+/* Speedrun listesi: sıkı satırlar, cevap yeşil ve tek bakışta */
+.srnote{font-size:11.5px; color:var(--ink-3); margin:-2px 0 8px}
+.srlist{padding:0}
+.srrow{padding:10px 13px; border-bottom:1px solid var(--rule)}
+.srrow:last-child{border-bottom:none}
+.srrow .srh{display:flex; align-items:center; gap:7px; margin-bottom:4px}
+.srrow .srh .who{flex:1; min-width:0; font-size:11px; color:var(--ink-3); overflow:hidden;
+  text-overflow:ellipsis; white-space:nowrap}
+.srrow .srn{font-size:11px; color:var(--ink-3); min-width:1.6em}
+.srrow .q{font-family:var(--f-read); font-size:14.5px; line-height:1.42; color:var(--ink)}
+.srrow .a{display:flex; gap:7px; margin-top:5px; font-size:13.5px; line-height:1.4;
+  color:var(--ok); font-weight:600}
+.srrow .a i{flex:none; font-style:normal}
+.srrow .srfig{margin:8px 0 2px; max-width:320px}
 .hero.welcome{text-align:left}
 .hero .wtitle{font-size:20px; font-weight:700; letter-spacing:-.02em; margin-bottom:6px}
 .hero .wtext{margin:0 0 15px; font-size:13.5px; color:var(--ink-2); line-height:1.55}
@@ -1646,7 +1662,7 @@ function next(){ clearTimeout(advT); if (R){ R.i++; step0(); } }
 
 // ── Ana ekran ──
 function home(){
-  R = null;
+  R = null; srAcik = false;
   const total = scoped().length;
   const counts = {}; DECKS.forEach(d => counts[d.k] = deckCount(d.k));
   const leech = deckCount('leech');
@@ -1669,7 +1685,14 @@ function home(){
   // istemek ayrı, bilinçli bir adım (önce kapsam seçimi, sonra Başla).
   const orun = openRun();
   const devam = !!orun && !yeniTur && !allPassed;
-  const hact = (label, dis) => devam
+  // Speedrun: kapsamdaki (deste süzgeciyle) soruları yalnız metin + doğru
+  // cevap olarak listeler; ilerlemeye dokunmaz. Sayı Başla ile aynı havuz.
+  const srN = ready;
+  const srLink = srN
+    ? '<button class="hnext sr" id="goSr" type="button" title="Kapsamdaki soruları ' +
+      'yalnız soru ve doğru cevap olarak, şıksız, hızlıca oku">⚡ Speedrun · <b class="num">' +
+      nf(srN) + '</b> soru — yalnız soru ve doğru cevap ›</button>' : '';
+  const hact = (label, dis) => (devam
     ? '<div class="hact">' +
         '<button class="go" id="go" type="button">Devam et' +
           '<span class="gsub">' + esc(orun.title) + ' · ' + runSeen(orun) + '/' +
@@ -1684,7 +1707,7 @@ function home(){
       (orun && !allPassed
         ? '<div class="hwarn">Yarım kalan turun duruyor. Kapsamı seçip ' +
           '<b>Başla</b> dersen yeni tur açılır; <b>Vazgeç</b> seni kaldığın ' +
-          'soruya döndürür.</div>' : '');
+          'soruya döndürür.</div>' : '')) + srLink;
 
   const topSure = sureOzet().top;         // bütün cihazların toplam çalışma süresi
   // ── Kimlik satırı: tek satır, dokunulabilir ──
@@ -1912,6 +1935,8 @@ function home(){
   paintPicker();
   const mn = el('mNext');
   if (mn) mn.onclick = () => { autoPickModule(); F.deck = 'new'; home(); };
+  const gsr = el('goSr');
+  if (gsr) gsr.onclick = speedrun;
   const ma = el('mAll');
   if (ma) ma.onclick = () => {
     F.pick = {}; F.deck = deckCount('due') ? 'due' : 'wrong'; savePref(); home();
@@ -2451,6 +2476,51 @@ function done(){
   R = null;
   if (!live || !live.log.length) return home();
   report(live, true);
+}
+
+// ── Speedrun: yalnız soru + doğru cevap, kaydırılabilir liste ──
+// Şık yok, cevap yok, puan yok: kapsamı baştan sona hızlıca okuyup geçmek
+// için. Havuz Başla ile aynı (kapsam + deste + süzgeçler), tur uzunluğu
+// sınırı uygulanmaz. Sıra banka sırası (ders → bölüm → kimlik) — okurken
+// konular bir arada dursun. İlerlemeye dokunmaz; toplam süre sayar.
+let srAcik = false;
+function srMetin(list){
+  const baslik = scopeTitle() + ' · ' + deckName() + ' · ' + list.length + ' soru';
+  return 'Speedrun · ' + baslik + '\n\n' + list.map((q, i) =>
+    (i + 1) + '. ' + qText(q) + '\n→ ' + qOpts(q)[0]).join('\n\n') + '\n';
+}
+function speedrun(){
+  const list = scoped().filter(q => inDeck(q, F.deck));
+  if (!list.length) return;
+  R = null; srAcik = true; yeniTur = false;
+  const row = (q, i) => {
+    const s = SUBJ[q[1]], sec = s.sec[q[2]];
+    return '<div class="srrow"><div class="srh"><span class="srn num">' + (i + 1) + '</span>' +
+      '<span class="who">' + esc(secName(sec)) + '</span>' +
+      (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') +
+      '<span class="lbl num">' + q[0] + '</span></div>' +
+      '<div class="q">' + esc(qText(q)) + '</div>' +
+      (figOf(q) ? '<div class="figbox srfig">' + figOf(q) + '</div>' : '') +
+      '<div class="a"><i>✓</i>' + esc(qOpts(q)[0]) + '</div></div>';
+  };
+  el('view').innerHTML =
+    '<div class="meta"><button class="backb" id="hb" type="button" title="Ana ekran">' +
+      '<i>‹</i>Ana ekran</button>' +
+      '<span class="qpos">Speedrun · <b class="num">' + nf(list.length) + '</b> soru</span>' +
+      '<button class="tbtn" id="srCopy" type="button" title="Soru ve doğru cevapları düz ' +
+        'metin olarak panoya kopyalar">Kopyala</button></div>' +
+    '<div class="srnote">' + esc(scopeTitle()) + ' · ' + esc(deckName()) +
+      ' · yalnız soru ve doğru cevap; okumak ilerlemeye işlenmez</div>' +
+    '<div class="card srlist">' + list.map(row).join('') + '</div>' +
+    '<div class="acts"><button class="go2" id="back" type="button">Ana ekran</button></div>';
+  el('hb').onclick = home;
+  el('back').onclick = home;
+  el('srCopy').onclick = async () => {
+    const b = el('srCopy'), ok = await copyText(srMetin(list));
+    b.textContent = ok ? 'Kopyalandı' : 'Kopyalanamadı';
+    setTimeout(() => { const c = el('srCopy'); if (c) c.textContent = 'Kopyala'; }, 2000);
+  };
+  window.scrollTo({ top:0 });
 }
 
 /** Tur raporu — hem tur biter bitmez hem de geçmişten açılınca çizilir. */
@@ -3127,7 +3197,9 @@ document.addEventListener('keydown', e => {
   if (tg && tg.matches && tg.matches('input, select, textarea')) return;
   if (e.key === 'Escape'){
     if (navOpen && R){ el('navBtn').click(); return; }
-    closeSheet(); return;
+    if (el('sheet').classList.contains('on')){ closeSheet(); return; }
+    if (srAcik){ home(); return; }
+    return;
   }
   if (!R) return;
   const k = e.key;
