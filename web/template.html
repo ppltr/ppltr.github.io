@@ -166,12 +166,20 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .hero .hnext{display:block; width:100%; text-align:center; margin-top:9px; padding:9px;
   font-size:12.5px; color:var(--cyan); border-radius:var(--r)}
 .hero .hnext:hover{background:var(--surface-2)}
-.hero .hnext.sr{color:var(--ink-2); font-size:12px}
-.hero .hnext.sr b{color:var(--cyan)}
-/* Speedrun ve Düz metin bağlantıları yan yana, eylem satırının altında */
-.hero .srlinks{display:flex; gap:4px; margin-top:6px}
-.hero .srlinks .hnext{margin-top:0; flex:1}
-.hero .srlinks .hnext + .hnext{flex:0 0 auto}
+/* İkincil: Speedrun — tam genişlik, çerçeveli, tek satır */
+.hero .hsec{display:flex; width:100%; align-items:center; justify-content:center; gap:6px;
+  margin-top:8px; padding:11px 14px; border-radius:var(--r); background:var(--surface);
+  border:1px solid var(--rule-2); color:var(--ink); font-size:14px; font-weight:600;
+  white-space:nowrap; overflow:hidden; transition:border-color .12s}
+.hero .hsec:hover{border-color:var(--accent)}
+.hero .hsec .ic{font-size:13px}
+.hero .hsec .hs{font-weight:400; font-size:12px; color:var(--ink-3); overflow:hidden;
+  text-overflow:ellipsis}
+.hero .hsec .hs b{color:var(--ink-2); font-weight:500}
+/* Üçüncül: Düz metin — küçük yazı bağlantısı */
+.hero .hmini{display:block; width:100%; text-align:center; margin-top:4px; padding:6px;
+  font-size:11.5px; color:var(--ink-3); border-radius:var(--r)}
+.hero .hmini:hover{color:var(--accent); background:var(--surface-2)}
 .hero.welcome{text-align:left}
 .hero .wtitle{font-size:20px; font-weight:700; letter-spacing:-.02em; margin-bottom:6px}
 .hero .wtext{margin:0 0 15px; font-size:13.5px; color:var(--ink-2); line-height:1.55}
@@ -1679,14 +1687,16 @@ function home(){
   // Speedrun: kapsamdaki (deste süzgeciyle) soruları yalnız metin + doğru
   // cevap olarak listeler; ilerlemeye dokunmaz. Sayı Başla ile aynı havuz.
   const srN = ready;
+  // Sıra: birincil (Başla/Devam et) → ikincil çerçeveli tam genişlik (Speedrun)
+  // → üçüncül küçük yazı bağlantısı (Düz metin). Üçü aynı boyda görünmesin.
   const srLink = srN
-    ? '<div class="srlinks">' +
-      '<button class="hnext sr" id="goSr" type="button" title="Her soruda yalnız doğru ' +
+    ? '<button class="hsec" id="goSr" type="button" title="Her soruda yalnız doğru ' +
         'cevap tek şık olarak gelir; basınca doğru sayılır ve sonraki soruya geçer">' +
-        '⚡ Speedrun · <b class="num">' + (F.count ? Math.min(srN, F.count) : nf(srN)) +
-        '</b> soru</button>' +
-      '<button class="hnext sr" id="goTxt" type="button" title="Kapsamdaki soruların ' +
-        'metni ve doğru cevabı, kopyalanabilir düz metin">Düz metin ›</button></div>' : '';
+        '<span class="ic" aria-hidden="true">⚡</span>Speedrun' +
+        '<span class="hs">· <b class="num">' + (F.count ? Math.min(srN, F.count) : nf(srN)) +
+        '</b> soru · yalnız doğru cevap</span></button>' +
+      '<button class="hmini" id="goTxt" type="button" title="Kapsamdaki soruların ' +
+        'metni ve doğru cevabı, kopyalanabilir düz metin">Düz metin ›</button>' : '';
   const hact = (label, dis) => (devam
     ? '<div class="hact">' +
         '<button class="go" id="go" type="button">Devam et' +

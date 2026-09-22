@@ -307,6 +307,13 @@ yerde (şeritte ve panelde), seçiciyi `#navPop` ile daraltma.
 **Soru kartının başlığında ders kodu yok** (ör. "090"): bölüm adıyla başlar. Kullanıcı
 gereksiz bulup kaldırttı; ders, bölüm adından ve üst satırdaki desteden anlaşılıyor.
 
+**Hero'da eylem hiyerarşisi üç basamak, aynı boyda görünmesin:** birincil pembe düğme
+(Başla / Devam et), ikincil Speedrun (`.hsec`: tam genişlik, çerçeveli, tek satır, sayı ve
+"yalnız doğru cevap" gri alt bilgi), üçüncül Düz metin (`.hmini`: küçük gri yazı bağlantısı).
+İlk sürümde ikisi de aynı boy yazı bağlantısıydı ve Speedrun üç satıra kırılıyordu;
+kullanıcı "UI UX çok kötü" dedi. Speedrun'u yazı bağlantısına düşürme, Düz metin'i düğmeye
+çıkarma.
+
 **Speedrun** (`start(true)`, ana ekranda eylem satırının altındaki `#goSr`): normal tur
 gibi akar, tek fark her soruda yalnız doğru cevabın **tek şık** olarak gelmesi (`orderFor`
 `R.sr` iken `[0]` döner, şık etiketi "✓"). Şıkka basmak ya da `Enter` doğru saymak ve 260 ms
