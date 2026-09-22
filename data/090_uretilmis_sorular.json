@@ -5,795 +5,220 @@
   "source": "SHGM Haberleşme ders notundan üretilmiş sorular (gerçek sınav sorusu değildir)",
   "origin": "uretilmis",
   "answer_convention": "Doğru cevap ilk şıktır (A).",
-  "id_convention": "90901+ bandı: ders notundan üretilmiş sorular (909 = 090). Hepsi tek bölümde (090-U); ders notundaki konuya göre kimlik aralıkları: B1 Terimler ve Meydan Hava Durumu 90901–90924 · B2 Standart İfadeler ve Çağrı Adları 90925–90945 · B3 Acil Durumlar ve VHF Esasları 90946–90973 · B4 VHF Prensipleri ve Frekans Yönetimi 90974–90996.",
+  "id_convention": "91001+ bandı: ders notundan üretilmiş sorular, ikinci nesil. İlk nesil (90901–90996, 96 soru) 2026-09-22'de silindi; o kimlikler yeniden KULLANILMAZ — ilerleme, süre ve Sor kayıtları soru kimliğine bağlıdır, eski kayıt yeni soruya yapışırdı. Sıra ders notunu izler: B1 91001–91007 · B2 91008–91012 · B3 91013–91021 · B4 91022–91030.",
+  "selection": "Yalnız ders notunda geçen, sınavlık ve 183 ATPL TV + 20 ders notu sorusunun hiçbirinde sorulmayan bilgiler; her aday iki dilde tek tek karşılaştırıldı. Not: 91016 ve 91029 ders notunun ifadesini izler (ELT tespit frekansı 406 MHz; SAR frekansı 123,1 MHz).",
   "sections": {
     "090-U": "Ders Notundan Üretilmiş"
   },
   "questions": [
     {
-      "id": 90901,
+      "id": 91001,
       "section": "090-U",
-      "text": "\"Hava trafiği\" terimi neyi kapsar?",
-      "options": [
-        "Bir meydanın manevra sahası üzerindeki ve uçuştaki bütün hava araçlarını",
-        "Yalnızca uçuştaki hava araçlarını",
-        "Yalnızca kontrollü hava sahasındaki hava araçlarını",
-        "Apron ve park sahasındaki bütün araçları",
-        "Yalnızca IFR uçuş planı olan hava araçlarını"
-      ]
-    },
-    {
-      "id": 90902,
-      "section": "090-U",
-      "text": "Hava trafik kontrol müsaadesi kısaltılarak \"müsaade\" dendiğinde, uçuşun hangi parçasına ait olduğunu belirtmek için başına hangi kelimeler gelebilir?",
-      "options": [
-        "Taksi, kalkış, yol, yaklaşma veya iniş",
-        "Sadece kalkış veya iniş",
-        "Sadece yol",
-        "Görerek, aletli veya karma",
-        "Kule, yaklaşma veya yer"
-      ]
-    },
-    {
-      "id": 90903,
-      "section": "090-U",
-      "text": "Hava trafik kontrol hizmetinin amacı aşağıdakilerden hangisidir?",
-      "options": [
-        "Hava araçları arasında çarpışmaları önlemek, manevra sahasında düzenli bir trafik akışını sürdürmek ve hızlandırmak",
-        "Pilotlara uçuş planı hazırlamak",
-        "Havaalanı pistlerinin bakımını düzenlemek",
-        "Hava araçlarının yakıt tüketimini denetlemek",
-        "Meteorolojik tahmin üretmek"
-      ]
-    },
-    {
-      "id": 90904,
-      "section": "090-U",
-      "text": "Pist görüş mesafesi (RVR) nasıl tanımlanır?",
-      "options": [
-        "Pist merkez hattı üzerindeki uçağın pilotunun pist işaretlerini, pisti belirleyen ışıkları veya merkez hattını görebilme uzaklığı",
-        "Kuledeki kontrolörün pistin sonunu görebilme uzaklığı",
-        "Uçağın yaklaşma hattında meydanı ilk gördüğü mesafe",
-        "Meteoroloji istasyonundan ölçülen yatay görüş",
-        "Pist ışıklarının gece görünebildiği azami mesafe"
-      ]
-    },
-    {
-      "id": 90905,
-      "section": "090-U",
-      "text": "\"H24\" kısaltması ne anlama gelir?",
+      "text": "\"H24\" kısaltmasının anlamı nedir?",
       "options": [
         "Gündüz ve gece boyunca sürekli hizmet",
-        "Gündoğumundan günbatımına hizmet",
-        "Günbatımından gündoğumuna hizmet",
+        "Gündoğumundan günbatımına",
+        "Günbatımından gündoğumuna",
         "Belirli bir çalışma saati yok",
-        "Günde 24 kez yayın"
+        "Operasyonel ihtiyaca göre hizmet"
       ]
     },
     {
-      "id": 90906,
+      "id": 91002,
       "section": "090-U",
-      "text": "\"HN\" kısaltması ne anlama gelir?",
+      "text": "\"HN\" kısaltmasının anlamı nedir?",
       "options": [
         "Günbatımından gündoğumuna",
         "Gündoğumundan günbatımına",
-        "Gündüz ve gece boyunca hizmet",
+        "Gündüz ve gece boyunca sürekli hizmet",
         "Belirli bir çalışma saati yok",
-        "Yalnızca talep üzerine hizmet"
+        "Operasyonel ihtiyaca göre hizmet"
       ]
     },
     {
-      "id": 90907,
+      "id": 91003,
       "section": "090-U",
-      "text": "QDM nedir?",
-      "options": [
-        "Bir istasyona uçmak için kullanılan manyetik yön",
-        "İstasyondan uçağa olan gerçek kerteriz",
-        "Uçağın istasyona olan mesafesi",
-        "Meydan referans noktası üzerindeki yükseklik",
-        "Deniz seviyesine göre altimetre ayarı"
-      ]
-    },
-    {
-      "id": 90908,
-      "section": "090-U",
-      "text": "Rüzgâr varken QDM kullanılarak uçma istikameti nasıl elde edilir?",
-      "options": [
-        "QDM'ye bir rüzgâr düzeltme açısı uygulanarak",
-        "QDM olduğu gibi uçularak",
-        "QDM'nin tersi alınarak",
-        "QDM'ye manyetik sapma eklenerek",
-        "QDM yerine QNH kullanılarak"
-      ]
-    },
-    {
-      "id": 90909,
-      "section": "090-U",
-      "text": "Bir hava aracının ciddi veya yakın tehlike içinde olduğunu ifade eden mesajlara ne ad verilir?",
-      "options": [
-        "Distress mesajları",
-        "Urgency mesajları",
-        "Uçuş düzenleme mesajları",
-        "Meteorolojik mesajlar",
-        "Yön bulma mesajları"
-      ]
-    },
-    {
-      "id": 90910,
-      "section": "090-U",
-      "text": "Bir hava aracının, diğer araçların veya hava aracındaki bir kişinin emniyeti ile ilgili mesajlar hangi kategoridedir?",
-      "options": [
-        "Urgency mesajları",
-        "Distress mesajları",
-        "Uçuş emniyeti mesajları",
-        "Uçuş düzenleme mesajları",
-        "Meteorolojik mesajlar"
-      ]
-    },
-    {
-      "id": 90911,
-      "section": "090-U",
-      "text": "Havadaki bir pilot meydan hava durumu bilgisini genellikle hangi frekanstan talep eder?",
-      "options": [
-        "Yaklaşma kontrol frekansından",
-        "Yer kontrol frekansından",
-        "Acil durum frekansından",
-        "Uçuş bilgi servisi HF frekansından",
-        "Apron kontrol frekansından"
-      ]
-    },
-    {
-      "id": 90912,
-      "section": "090-U",
-      "text": "Verilen hava durumu bilgisi kullanılan pisti de kapsıyorsa, pilot QNH ile birlikte neyi tekrar eder?",
-      "options": [
-        "Kullanılan pist istikametini",
-        "Görüş mesafesini",
-        "Rüzgâr hızını",
-        "Bulut tabanını",
-        "Sıcaklık ve çiy noktasını"
-      ]
-    },
-    {
-      "id": 90913,
-      "section": "090-U",
-      "text": "ATIS için ayrılmış uygun bir frekansın bulunmadığı havaalanlarında ATIS bilgileri nereden yayınlanabilir?",
-      "options": [
-        "Meydanın VOR tanıtma ses kanalı üzerinden",
-        "Kule frekansından sürekli olarak",
-        "121.5 MHz üzerinden",
-        "NDB tanıtma sinyali üzerinden",
-        "Yalnızca telefonla"
-      ]
-    },
-    {
-      "id": 90914,
-      "section": "090-U",
-      "text": "Mevcut ATIS yayını \"INFORMATION ALPHA\" ise, güncellenen yeni yayın nasıl adlandırılır?",
+      "text": "Geçerli ATIS yayını \"INFORMATION ALPHA\" ise, onun yerini alan yeni yayın nasıl tanımlanır?",
       "options": [
         "INFORMATION BRAVO",
-        "INFORMATION ALPHA TWO",
+        "INFORMATION ALPHA olarak kalır, yalnız saat bilgisi değişir",
         "INFORMATION ZULU",
-        "INFORMATION ALPHA (aynı kalır)",
-        "INFORMATION ONE"
+        "Yayın numarasıyla: INFORMATION 2",
+        "Pilotun ilk temasta söylediği kodla"
       ]
     },
     {
-      "id": 90915,
+      "id": 91004,
       "section": "090-U",
-      "text": "Aşağıdakilerden hangisi ATIS yayınının içeriğinde yer almaz?",
+      "text": "Ayrılmış bir ATIS frekansı bulunmayan meydanlarda ATIS yayını nereden yapılabilir?",
       "options": [
-        "Uçağın kalkış müsaadesi",
-        "Havalimanı adı ve saat",
-        "Alfabetik kod",
-        "Kullanılacak pist ve rüzgâr bilgisi",
-        "Görüş mesafesi ve diğer hava şartları"
+        "VOR tanıtma (ses) kanalından",
+        "Kule frekansından sürekli olarak",
+        "121,5 MHz üzerinden",
+        "NDB taşıyıcı sinyalinden",
+        "Yalnız telefonla verilir"
       ]
     },
     {
-      "id": 90916,
+      "id": 91005,
       "section": "090-U",
-      "text": "ATIS ile VOLMET arasındaki temel fark nedir?",
+      "text": "VOLMET yayını ATIS'ten hangi yönüyle ayrılır?",
       "options": [
-        "ATIS tek bir havalimanı için bilgi verirken VOLMET civardaki birkaç havalimanı için bilgi sunar",
-        "ATIS HF'den, VOLMET yalnızca VHF'den yayınlanır",
-        "VOLMET yalnızca pist durumunu, ATIS yalnızca hava durumunu verir",
-        "ATIS pilot tarafından talep edilir, VOLMET sürekli yayınlanır",
-        "Aralarında fark yoktur"
+        "ATIS tek havalimanının, VOLMET civardaki birkaç havalimanının hava bilgisini verir",
+        "VOLMET yalnız kullanılan pisti bildirir",
+        "ATIS HF üzerinden, VOLMET yalnız VHF üzerinden yayınlanır",
+        "VOLMET yalnız pilot talebiyle yayınlanır",
+        "VOLMET yayınının kodu ilk temasta kontrolöre söylenir"
       ]
     },
     {
-      "id": 90917,
+      "id": 91006,
       "section": "090-U",
-      "text": "VOLMET yayınında geçen \"NOSIG\" ifadesi ne anlama gelir?",
+      "text": "Meteorolojik yayında geçen \"NOSIG\" ifadesi ne anlama gelir?",
       "options": [
-        "2 saat içinde beklenen önemli bir hava olayı yoktur",
-        "Sinyal alınamıyor",
-        "Meydan kapalıdır",
-        "Görüş sıfırdır",
-        "Yayın geçerliliğini yitirmiştir"
+        "Önümüzdeki 2 saat içinde önemli bir hava değişikliği beklenmiyor",
+        "Meydanda görüş sınırsız",
+        "Sinyal alınamıyor, yayını tekrar dinleyin",
+        "Yayın geçerliliğini yitirdi, yeni kodu bekleyin",
+        "Meydanda belirgin bir hava olayı yaşanıyor"
       ]
     },
     {
-      "id": 90918,
+      "id": 91007,
       "section": "090-U",
-      "text": "VOLMET yayınları hangi frekans bantları üzerinden yapılır?",
+      "text": "Pist görüş mesafesi (RVR) pist boyunca hangi noktalarda ölçülür?",
       "options": [
-        "HF veya VHF",
-        "Yalnızca HF",
-        "Yalnızca UHF",
-        "Yalnızca VHF",
-        "MF ve LF"
+        "Teker koyma bölgesi, pist ortası ve pist sonu",
+        "Yalnız pist başında",
+        "Pist başı ve pist sonunda",
+        "Yalnız teker koyma bölgesinde",
+        "Kulenin bulunduğu nokta ve pist ortasında"
       ]
     },
     {
-      "id": 90919,
+      "id": 91008,
       "section": "090-U",
-      "text": "CAVOK ifadesindeki bulut şartı aşağıdakilerden hangisidir?",
+      "text": "Telsiz haberleşmesinde önerilen konuşma hızı nedir?",
       "options": [
-        "5000 ft altında veya MSA altında hiç bulut yoktur",
-        "10 000 ft altında hiç bulut yoktur",
-        "Gökyüzünde hiç bulut yoktur",
-        "Yalnızca sirüs bulutu vardır",
-        "Bulut tabanı 1500 ft üzerindedir"
+        "Dakikada yaklaşık 100 kelime",
+        "Dakikada yaklaşık 50 kelime",
+        "Dakikada yaklaşık 150 kelime",
+        "Dakikada yaklaşık 200 kelime",
+        "Hız önemli değildir, anlaşılırlık yeterlidir"
       ]
     },
     {
-      "id": 90920,
+      "id": 91009,
       "section": "090-U",
-      "text": "Aşağıdakilerden hangisi CAVOK'un şartlarından biri değildir?",
+      "text": "Frekans değiştirdikten sonra ilk çağrıyı yapmadan önce ne yapılmalıdır?",
       "options": [
-        "Rüzgâr hızının 10 knot altında olması",
-        "Görüş mesafesinin 10 km ve daha fazla olması",
-        "5000 ft veya MSA altında bulut olmaması",
-        "Kümülonimbus bulutu olmaması",
-        "Hiçbir önemli hava olayının olmaması"
+        "Frekans yaklaşık 5 saniye dinlenip boş olduğundan emin olunur",
+        "Hemen çağrı yapılır, beklemek gereksizdir",
+        "Önce eski frekansta ayrıldığı bildirilir",
+        "Konuşma düğmesine iki kez basılarak frekans denenir",
+        "Transponder kodu yeniden bağlanır"
       ]
     },
     {
-      "id": 90921,
+      "id": 91010,
       "section": "090-U",
-      "text": "RVR pist boyunca hangi üç nokta için hesaplanır?",
+      "text": "Tip 2 hava aracı çağrı adı neyden oluşur?",
       "options": [
-        "Touchdown zone, midpoint ve stop end",
-        "Pist başı, pist ortası ve apron",
-        "Threshold, taksi yolu çıkışı ve kule",
-        "Yaklaşma ışıkları, threshold ve midpoint",
-        "İlk yaklaşma noktası, karar irtifası ve threshold"
+        "İşleticinin telsiz tanımlayıcısı ve tescil işaretinin son dört karakteri",
+        "Yalnız ICAO tescil işareti",
+        "İşleticinin telsiz tanımlayıcısı ve uçuş numarası",
+        "Uçak tipi ve tescil işaretinin son iki karakteri",
+        "Tescil işaretinin ilk karakteri ve son iki karakteri"
       ]
     },
     {
-      "id": 90922,
+      "id": 91011,
       "section": "090-U",
-      "text": "RVR bilgisinin telsizde iletilmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+      "text": "Tip 3 çağrı adı (işletici telsiz tanımlayıcısı ve uçuş numarası, örneğin \"Turkish 1234\") nasıl kısaltılır?",
       "options": [
-        "Metre cinsinden sıralanır, fonetik alfabeyle okunmaz ve readback gerekmez",
-        "Feet cinsinden verilir ve mutlaka readback yapılır",
-        "Fonetik alfabeyle hecelenerek okunur",
-        "Yalnızca kilometre cinsinden verilir",
-        "Her rakam fonetik olarak tekrar edilmelidir"
+        "Kısaltılmaz",
+        "Yalnız uçuş numarası söylenir",
+        "Tanımlayıcı ve uçuş numarasının son iki rakamı söylenir",
+        "Tanımlayıcının ilk harfi ve uçuş numarası söylenir",
+        "Yer istasyonu kısalttıysa yalnız tanımlayıcı söylenir"
       ]
     },
     {
-      "id": 90923,
+      "id": 91012,
       "section": "090-U",
-      "text": "Pist yüzey durumu raporlarında pistin kuru (dry) veya nemli (damp) olduğu neden genellikle ifade edilmez?",
+      "text": "ATC kontrolündeki bir hava aracı kendi isteğiyle frekans değiştirmek isterse ne yapmalıdır?",
       "options": [
-        "Başka bir şey söylenmediğinde pistin zaten kuru veya nemli olduğu anlaşılır",
-        "Bu bilgi yalnızca NOTAM ile verilir",
-        "Kuru ve nemli pist performansı etkilemez",
-        "Bu bilgi yalnızca gece verilir",
-        "Bu bilgi uçuş planında yer alır"
+        "Önce ilgili ATC biriminden müsaade alır",
+        "Yeni frekansa geçip oradan bildirir",
+        "Frekansı değiştirmeden önce 7600 bağlar",
+        "Eski frekansta karşılıksız yayın yaparak ayrıldığını bildirir",
+        "Yalnız acil durumda frekans değiştirebilir"
       ]
     },
     {
-      "id": 90924,
+      "id": 91013,
       "section": "090-U",
-      "text": "Pist yüzeyi kar veya buzla kaplıysa pilota ek olarak hangi rapor verilir?",
+      "text": "Telsiz arızasında fiziki kontrollere rağmen ilk istasyonla temas kurulamazsa hangi sırayla denenir?",
       "options": [
-        "Fren performansı raporu; pist sürtünme katsayısı düşükten yükseğe kategorilenir",
-        "Pist uzunluğu raporu",
-        "Yaklaşma ışıklarının durumu",
-        "Kule görüşü",
-        "Pist eğimi"
+        "Başka bir ATC biriminin frekansı, rota üzerindeki başka bir istasyon, rota üzerindeki diğer uçaklar",
+        "Rota üzerindeki diğer uçaklar, başka bir ATC birimi, rota üzerindeki başka bir istasyon",
+        "Yalnız 121,5 MHz denenir",
+        "Rota üzerindeki başka bir istasyon, diğer uçaklar, başka bir ATC birimi",
+        "Hiçbiri denenmez; 7600 bağlanıp beklenir"
       ]
     },
     {
-      "id": 90925,
+      "id": 91014,
       "section": "090-U",
-      "text": "Telsiz konuşmasında 53 148 sayısı nasıl ifade edilir?",
+      "text": "Uçaktaki VHF telsizin yaklaşık sinyal menzili (NM) uçuş yüksekliğinden nasıl hesaplanır?",
       "options": [
-        "Beş, üç, bir, dört, sekiz",
-        "Elli üç bin yüz kırk sekiz",
-        "Elli üç, yüz kırk sekiz",
-        "Elli üç, bir dört sekiz",
-        "Beş, üç bin, yüz kırk sekiz"
+        "Yüksekliğin (ft) karekökü × 1,25",
+        "Yükseklik (ft) × 1,25",
+        "Yüksekliğin (ft) karekökü × 12",
+        "Yükseklik (ft) / 100",
+        "Yüksekliğin (ft) karekökü / 1,25"
       ]
     },
     {
-      "id": 90926,
+      "id": 91015,
       "section": "090-U",
-      "text": "Havacılıkta zaman iletilirken, yanlış anlama ihtimali yoksa hangi bilgi söylenir?",
+      "text": "Tehlike haberleşmesini yönlendiren istasyon, frekanstaki diğer trafiğe sessizlik uygulatmak için hangi ifadeyi kullanır?",
       "options": [
-        "Yalnızca dakika",
-        "Saat ve dakika",
-        "Saat, dakika ve saniye",
-        "Yalnızca saat",
-        "Yerel saat ve UTC birlikte"
+        "\"Stop transmitting, MAYDAY\"",
+        "\"All stations, radio silence\"",
+        "\"Break break\"",
+        "\"Distress traffic ended\"",
+        "\"Standby all stations\""
       ]
     },
     {
-      "id": 90927,
+      "id": 91016,
       "section": "090-U",
-      "text": "Havacılıkta zaman hangi referansa göre ifade edilir?",
+      "text": "Tehlike durumu sona erdiğinde frekanstaki sessizlik hangi ifadeyle kaldırılır?",
       "options": [
-        "24 saatlik zaman dilimine göre UTC (GMT veya Zulu)",
-        "12 saatlik zaman dilimine göre yerel saat",
-        "Kalkış meydanının yerel saati",
-        "Varış meydanının yerel saati",
-        "Pilotun seçtiği herhangi bir saat dilimi"
+        "\"Distress traffic ended\"",
+        "\"Cancel distress\"",
+        "\"Stop transmitting, MAYDAY\"",
+        "\"All stations, resume normal operations\"",
+        "\"Roger, MAYDAY\""
       ]
     },
     {
-      "id": 90928,
+      "id": 91017,
       "section": "090-U",
-      "text": "Frekans değiştirildiğinde gönderim yapmadan önce ne yapılmalıdır?",
-      "options": [
-        "Yaklaşık 5 saniye frekans dinlenerek başka bir iletişimin kesilmeyeceğinden emin olunmalıdır",
-        "Hemen çağrı yapılmalıdır",
-        "Önce radyo kontrolü istenmelidir",
-        "Bir dakika beklenmelidir",
-        "Önce acil durum frekansı dinlenmelidir"
-      ]
-    },
-    {
-      "id": 90929,
-      "section": "090-U",
-      "text": "Telsiz iletişiminde doğru konuşma hızı nedir?",
-      "options": [
-        "Dakikada 100 kelime",
-        "Dakikada 50 kelime",
-        "Dakikada 150 kelime",
-        "Dakikada 200 kelime",
-        "Mümkün olduğunca hızlı"
-      ]
-    },
-    {
-      "id": 90930,
-      "section": "090-U",
-      "text": "Konuşma butonunun kullanımında en sık yapılan hata nedir?",
-      "options": [
-        "Konuşmayı bitirmeden butonu bırakmak",
-        "Butona konuşmaya başlamadan önce basmak",
-        "Butonu çok uzun basılı tutmak",
-        "Butona iki kez basmak",
-        "Butonu konuşma bittikten sonra bırakmak"
-      ]
-    },
-    {
-      "id": 90931,
-      "section": "090-U",
-      "text": "Mikrofon dudaklardan çok uzaktaysa ne olur?",
-      "options": [
-        "Ses şiddeti zayıflar ve mikrofon kokpitteki diğer sesleri de alarak mesajı anlaşılmaz hale getirir",
-        "Ses bozulur ve mesaj anlaşılmaz olur",
-        "Frekans kendiliğinden değişir",
-        "Sinyal menzili artar",
-        "Hiçbir etkisi olmaz"
-      ]
-    },
-    {
-      "id": 90932,
-      "section": "090-U",
-      "text": "Mikrofon dudaklara çok yakınsa ne olur?",
-      "options": [
-        "Ses bozulur ve mesaj anlaşılmaz olur",
-        "Ses şiddeti zayıflar",
-        "Kokpit gürültüsü mesaja karışır",
-        "Sinyal menzili düşer",
-        "Squelch devreye girer"
-      ]
-    },
-    {
-      "id": 90933,
-      "section": "090-U",
-      "text": "Uzun bir telsiz mesajında ara sıra boşluk vermek neyi sağlar?",
-      "options": [
-        "Frekansın hâlâ boş olup olmadığını ve anlaşılmayan bölümlerin tekrarının gerekip gerekmediğini kontrol etmeyi",
-        "Mesajın daha hızlı iletilmesini",
-        "Konuşma butonunun soğumasını",
-        "Kontrolörün mesajı kaydetmesini",
-        "Frekansın otomatik değişmesini"
-      ]
-    },
-    {
-      "id": 90934,
-      "section": "090-U",
-      "text": "Bir havacılık yer istasyonuyla ilk temasta hangi çağrı adları kullanılır?",
-      "options": [
-        "Havacılık yer istasyonunun ve hava aracının tam çağrı adları",
-        "Yalnızca hava aracının kısaltılmış çağrı adı",
-        "Yalnızca yer istasyonunun adı",
-        "Uçağın tescil işaretinin son iki harfi",
-        "Operatörün adı tek başına"
-      ]
-    },
-    {
-      "id": 90935,
-      "section": "090-U",
-      "text": "Kısaltılmış çağrı adları ne zaman kullanılabilir?",
-      "options": [
-        "Yer istasyonu karışıklık oluşmayacağına karar verip kısaltmayı önce kendisi kullandıktan sonra",
-        "Pilot uygun gördüğü her zaman",
-        "İlk temastan itibaren",
-        "Yalnızca acil durumlarda",
-        "Frekans yoğun olduğunda pilotun kararıyla"
-      ]
-    },
-    {
-      "id": 90936,
-      "section": "090-U",
-      "text": "Bir havacılık yer istasyonunun çağrı adı nasıl oluşur?",
-      "options": [
-        "İstasyonun adı ve ardından sağlanan hizmet türünü belirten bir son ek",
-        "Yalnızca meydanın ICAO kodu",
-        "Kontrolörün adı ve soyadı",
-        "Frekans numarası ve meydan adı",
-        "Ülke kodu ve meydan adı"
-      ]
-    },
-    {
-      "id": 90937,
-      "section": "090-U",
-      "text": "Tip 1 hava aracı çağrı adı (ICAO tescil işareti) nasıl kısaltılır?",
-      "options": [
-        "Tescil işaretinin ilk karakteri ve ardından son iki karakteri",
-        "Tescil işaretinin son üç karakteri",
-        "Tescil işaretinin ilk iki karakteri",
-        "Yalnızca son karakter",
-        "Kısaltılamaz"
-      ]
-    },
-    {
-      "id": 90938,
-      "section": "090-U",
-      "text": "Operatörün telsiz tanımlayıcısı ve uçuş numarasından oluşan Tip 3 çağrı adı nasıl kısaltılır?",
-      "options": [
-        "Bu tip çağrı adı için herhangi bir kısaltma yoktur",
-        "Yalnızca uçuş numarası söylenir",
-        "Yalnızca operatör tanımlayıcısı söylenir",
-        "Uçuş numarasının son iki rakamı söylenir",
-        "Operatör tanımlayıcısı ve uçuş numarasının ilk rakamı söylenir"
-      ]
-    },
-    {
-      "id": 90939,
-      "section": "090-U",
-      "text": "Tip 2 çağrı adı nelerden oluşur?",
-      "options": [
-        "Operatörün telsiz tanımlayıcısı ve ardından ICAO tescil işaretinin son dört karakteri",
-        "Yalnızca ICAO tescil işareti",
-        "Operatörün telsiz tanımlayıcısı ve uçuş numarası",
-        "Uçağın tipi ve tescil işareti",
-        "Meydan adı ve uçuş numarası"
-      ]
-    },
-    {
-      "id": 90940,
-      "section": "090-U",
-      "text": "Hava trafik kontrolün kontrolündeki bir uçak kendi isteğiyle frekans değiştirmek isterse ne yapmalıdır?",
-      "options": [
-        "Öncelikle ilgili hava trafik kontrol biriminden müsaade almalıdır",
-        "Karşılıksız yayın yaparak frekansı değiştirmelidir",
-        "Doğrudan yeni frekansa geçip çağrı yapmalıdır",
-        "121.5 MHz üzerinden bildirmelidir",
-        "Transponder kodunu değiştirmelidir"
-      ]
-    },
-    {
-      "id": 90941,
-      "section": "090-U",
-      "text": "Bir pilotun radyo kontrol çağrısı hangi sırayla yapılır?",
-      "options": [
-        "Aranan istasyonun çağrı adı, uçak çağrı adı, \"Radyo kontrolü\" kelimeleri, kullanılan frekans",
-        "Uçak çağrı adı, kullanılan frekans, aranan istasyon, \"Radyo kontrolü\"",
-        "\"Radyo kontrolü\", kullanılan frekans, uçak çağrı adı",
-        "Kullanılan frekans, aranan istasyon, \"Radyo kontrolü\"",
-        "Uçak çağrı adı ve \"Radyo kontrolü\" yeterlidir"
-      ]
-    },
-    {
-      "id": 90942,
-      "section": "090-U",
-      "text": "Yer istasyonu radyo kontrol çağrısına yanıt verirken hangi bilgileri vermelidir?",
-      "options": [
-        "Kontrol talebinde bulunan uçağın çağrı adı, yanıt veren istasyonun çağrı adı ve çağrının duyma seviyesi",
-        "Yalnızca duyma seviyesi",
-        "Yalnızca kendi çağrı adı ve frekansı",
-        "Meydan hava durumu ve kullanılan pist",
-        "Uçağın çağrı adı ve QNH"
-      ]
-    },
-    {
-      "id": 90943,
-      "section": "090-U",
-      "text": "Aşağıdakilerden hangisi pilot tarafından kelimesi kelimesine tekrar edilmesi gerekenler arasında değildir?",
-      "options": [
-        "Pist görüş mesafesi (RVR) değerleri",
-        "Transponder kodu",
-        "Altimetre ayarı",
-        "Frekans değişikliği",
-        "Kalkış ve iniş müsaadesi"
-      ]
-    },
-    {
-      "id": 90944,
-      "section": "090-U",
-      "text": "Pilotun müsaadeyi kelimesi kelimesine tekrar etmesi kontrolöre ayrıca neyi teyit eder?",
-      "options": [
-        "Müsaadenin doğru uçağa verildiğini ve yalnızca o uçağın müsaade konusunda işlem yapacağını",
-        "Pilotun frekansı doğru ayarladığını",
-        "Uçağın transponderının çalıştığını",
-        "Pilotun ATIS bilgisine sahip olduğunu",
-        "Uçağın yakıtının yeterli olduğunu"
-      ]
-    },
-    {
-      "id": 90945,
-      "section": "090-U",
-      "text": "\"Roger\" ifadesi ne anlama gelir?",
-      "options": [
-        "Son yayınını aldım",
-        "Talimatı anladım ve uygulayacağım",
-        "Tekrar et",
-        "Doğrula",
-        "Bekle"
-      ]
-    },
-    {
-      "id": 90946,
-      "section": "090-U",
-      "text": "Aşağıdakilerden hangisi telsiz haberleşme sorununun insan hatasından kaynaklanan sebeplerine örnektir?",
-      "options": [
-        "Alıcının sesinin çok kısılmış veya yanlış frekansın seçilmiş olması",
-        "Anten arızası",
-        "Vericinin tamamen bozulması",
-        "Yer istasyonunun elektrik kesintisi",
-        "Atmosferdeki sıcaklık terselmesi"
-      ]
-    },
-    {
-      "id": 90947,
-      "section": "090-U",
-      "text": "Telsiz arızası şüphesinde yapılan fiziki kontroller arasında squelch ile ilgili neye dikkat edilir?",
-      "options": [
-        "Squelch seviyesinin gereğinden yüksek olmamasına",
-        "Squelch'in tamamen kapalı olmasına",
-        "Squelch'in en yüksek seviyede olmasına",
-        "Squelch'in acil durum frekansına ayarlı olmasına",
-        "Squelch'in transponder ile eşleşmesine"
-      ]
-    },
-    {
-      "id": 90948,
-      "section": "090-U",
-      "text": "Uçağın feet cinsinden yüksekliğinden sinyal menzili nasıl hesaplanır?",
-      "options": [
-        "Yüksekliğin karekökü 1,25 ile çarpılır",
-        "Yükseklik 1,25 ile çarpılır",
-        "Yüksekliğin karekökü 12 ile çarpılır",
-        "Yükseklik 100'e bölünür",
-        "Yüksekliğin karesi alınır"
-      ]
-    },
-    {
-      "id": 90949,
-      "section": "090-U",
-      "text": "Uçuş seviyesinden sinyal menzili yaklaşık olarak nasıl bulunur?",
-      "options": [
-        "Uçuş seviyesinin karekökü 12 ile çarpılarak",
-        "Uçuş seviyesi 12 ile çarpılarak",
-        "Uçuş seviyesinin karekökü 1,25 ile çarpılarak",
-        "Uçuş seviyesi 100 ile çarpılarak",
-        "Uçuş seviyesi ikiye bölünerek"
-      ]
-    },
-    {
-      "id": 90950,
-      "section": "090-U",
-      "text": "Fiziki kontrollerden sonra yer istasyonuyla iki yönlü iletişim kurulamazsa ilk olarak ne denenir?",
-      "options": [
-        "Kule, Yaklaşma veya Yer kontrol gibi başka bir hava trafik kontrol biriminin frekansıyla temas kurmak",
-        "Rota üzerindeki diğer uçaklarla iletişim kurmak",
-        "Transponderı 7500'e almak",
-        "Uçuşu derhal sonlandırmak",
-        "121.5 MHz'den MAYDAY çağrısı yapmak"
-      ]
-    },
-    {
-      "id": 90951,
-      "section": "090-U",
-      "text": "Telsiz arızasında bütün istasyon denemeleri sonuç vermezse son olarak kiminle iletişim kurulmaya çalışılır?",
-      "options": [
-        "Rota üzerindeki diğer uçaklarla",
-        "Meydan işleticisiyle",
-        "Arama-kurtarma merkeziyle",
-        "Askerî istasyonlarla",
-        "Havayolu operasyon merkeziyle"
-      ]
-    },
-    {
-      "id": 90952,
-      "section": "090-U",
-      "text": "Distress durumu nasıl tanımlanır?",
-      "options": [
-        "Ciddi ve/veya yakın bir tehlike içinde olma ve dışarıdan acil yardıma ihtiyaç duyma durumu",
-        "Bir kişinin güvenliğini tehdit eden ancak acil yardım gerektirmeyen durum",
-        "Telsizin geçici olarak arızalanması",
-        "Uçağın planlanan rotadan sapması",
-        "Yakıtın alternatif meydana yetmeyecek olması"
-      ]
-    },
-    {
-      "id": 90953,
-      "section": "090-U",
-      "text": "Urgency durumunu distress durumundan ayıran temel özellik nedir?",
-      "options": [
-        "Urgency'de emniyet tehdit altındadır ancak dışarıdan acil yardıma ihtiyaç duyulmaz",
-        "Urgency yalnızca yerdeki uçaklar için geçerlidir",
-        "Urgency'de transponder 7700'e alınır, distress'te alınmaz",
-        "Urgency çağrısı yalnızca 121.5 MHz'den yapılır",
-        "Urgency durumunda sessizlik kuralı uygulanır"
-      ]
-    },
-    {
-      "id": 90954,
-      "section": "090-U",
-      "text": "Distress durumunun radyotelefoni sinyali nedir ve mesajın başında kaç kez söylenir?",
-      "options": [
-        "MAYDAY, üç kez",
-        "PAN PAN, üç kez",
-        "MAYDAY, bir kez",
-        "SOS, üç kez",
-        "EMERGENCY, iki kez"
-      ]
-    },
-    {
-      "id": 90955,
-      "section": "090-U",
-      "text": "Urgency çağrısı hangi uluslararası telsiz ön ekiyle başlar?",
-      "options": [
-        "PAN PAN, PAN PAN, PAN PAN",
-        "MAYDAY, MAYDAY, MAYDAY",
-        "SECURITE, SECURITE, SECURITE",
-        "ALL STATIONS",
-        "ATTENTION, ATTENTION"
-      ]
-    },
-    {
-      "id": 90956,
-      "section": "090-U",
-      "text": "Bir pilot karşılık alamayan bir urgency mesajı duyarsa ne yapmalıdır?",
-      "options": [
-        "Mesajı anladığını belirterek ve durumu teyit ederek arama yapılan yer istasyonuna iletmelidir",
-        "Frekansı hemen değiştirmelidir",
-        "Sessiz kalmalıdır",
-        "Kendisi MAYDAY çağrısı yapmalıdır",
-        "Transponderı 7700'e almalıdır"
-      ]
-    },
-    {
-      "id": 90957,
-      "section": "090-U",
-      "text": "Acil durum haberleşmesini yapmadan önce transpondere hangi kod girilir?",
-      "options": [
-        "7700",
-        "7500",
-        "7600",
-        "2000",
-        "1200"
-      ]
-    },
-    {
-      "id": 90958,
-      "section": "090-U",
-      "text": "Distress çağrısı hangi frekanstan yapılır?",
-      "options": [
-        "Hali hazırda kullanımda olan frekanstan; başka bir frekansın daha etkili olacağı ikazı alınmadıkça orada kalınır",
-        "Her zaman 121.5 MHz'den",
-        "Her zaman 243 MHz'den",
-        "Kalkış meydanının kule frekansından",
-        "Yaklaşma kontrol frekansından"
-      ]
-    },
-    {
-      "id": 90959,
-      "section": "090-U",
-      "text": "121.5 MHz ne zaman kullanılır?",
-      "options": [
-        "İletişim halinde olunan frekansta etkili bir yardım sunulamıyorsa",
-        "Her acil durumda önce",
-        "Yalnızca askerî uçaklar tarafından",
-        "Yalnızca telsiz kontrolü için",
-        "Yalnızca gece uçuşlarında"
-      ]
-    },
-    {
-      "id": 90960,
-      "section": "090-U",
-      "text": "Distress halindeki uçak veya onu yönlendiren istasyon frekansta zorunlu sessizlik uygularken hangi ifadeyi kullanır?",
-      "options": [
-        "Stop transmitting, Mayday",
-        "Cancel distress",
-        "Distress traffic ended",
-        "Standby all stations",
-        "Radio silence"
-      ]
-    },
-    {
-      "id": 90961,
-      "section": "090-U",
-      "text": "Distress durumu bittiğinde pilot hangi ifadeyi kullanır?",
-      "options": [
-        "Cancel distress",
-        "Distress traffic ended",
-        "Stop transmitting, Mayday",
-        "Mayday over",
-        "All clear"
-      ]
-    },
-    {
-      "id": 90962,
-      "section": "090-U",
-      "text": "Yönlendiren istasyon sessizlik durumunu hangi ifadeyle sonlandırır?",
-      "options": [
-        "Distress traffic ended",
-        "Cancel distress",
-        "Stop transmitting, Mayday",
-        "Resume normal operations",
-        "Silence finished"
-      ]
-    },
-    {
-      "id": 90963,
-      "section": "090-U",
-      "text": "Uçak kaçırılma durumunda transpondere hangi kod girilir?",
-      "options": [
-        "7500",
-        "7700",
-        "7600",
-        "7000",
-        "1200"
-      ]
-    },
-    {
-      "id": 90964,
-      "section": "090-U",
-      "text": "ELT sisteminin askerî havacılık için kullandığı acil durum frekansı nedir?",
-      "options": [
-        "243 MHz",
-        "121.5 MHz",
-        "406 MHz",
-        "123.1 MHz",
-        "118.0 MHz"
-      ]
-    },
-    {
-      "id": 90965,
-      "section": "090-U",
-      "text": "ELT sinyalinin arama-kurtarma ekiplerince tespit edilebilmesi için kullanılan frekans hangisidir?",
+      "text": "ELT (acil durum yer belirleme vericisi) sinyalinin arama-kurtarma sistemince tespit edilmesi için kullanılan frekans hangisidir?",
       "options": [
         "406 MHz",
-        "121.5 MHz",
+        "121,5 MHz",
         "243 MHz",
-        "123.45 MHz",
-        "136.975 MHz"
+        "123,1 MHz",
+        "118,1 MHz"
       ]
     },
     {
-      "id": 90966,
+      "id": 91018,
       "section": "090-U",
-      "text": "Havacılıkta hangi modülasyon türü kullanılır?",
+      "text": "Havacılık sesli telsiz haberleşmesinde hangi modülasyon türü kullanılır?",
       "options": [
         "Her zaman genlik modülasyonu (AM)",
         "Her zaman frekans modülasyonu (FM)",
@@ -803,363 +228,147 @@
       ]
     },
     {
-      "id": 90967,
+      "id": 91019,
       "section": "090-U",
-      "text": "Telsiz sesli haberleşmesinde hangi frekans bantları kullanılır?",
+      "text": "VHF hava bandının 108–117,975 MHz bölümü ne için kullanılır?",
       "options": [
-        "Çok Yüksek Frekans (VHF) ve Yüksek Frekans (HF)",
-        "Yalnızca Ultra Yüksek Frekans (UHF)",
-        "Düşük Frekans (LF) ve Orta Frekans (MF)",
-        "Yalnızca VHF",
-        "Süper Yüksek Frekans (SHF)"
+        "Seyrüsefer yardımcıları (VOR, ILS)",
+        "Sesli haberleşme",
+        "Acil durum frekansları",
+        "Askerî haberleşme",
+        "Transponder (SSR) sinyalleri"
       ]
     },
     {
-      "id": 90968,
+      "id": 91020,
       "section": "090-U",
-      "text": "Radyo dalgası hangi hızla ilerler?",
+      "text": "118–136,975 MHz haberleşme bandını düzenleyen ICAO belgesi hangisidir?",
       "options": [
-        "Işık hızında",
-        "Ses hızında",
-        "Uçağın hızında",
-        "Rüzgâr hızına bağlı olarak",
-        "Frekansına göre değişen hızda"
+        "Annex 10, Volume V",
+        "Annex 2",
+        "Annex 6",
+        "Annex 11",
+        "Doc 4444"
       ]
     },
     {
-      "id": 90969,
+      "id": 91021,
       "section": "090-U",
-      "text": "Kanal aralığının tarihsel gelişimi hangi sırayla olmuştur?",
+      "text": "Havadaki bir uçağa kuleden gönderilen sabit yeşil ışık ne anlama gelir?",
       "options": [
-        "100 kHz → 50 kHz → 25 kHz → 8.33 kHz",
-        "8.33 kHz → 25 kHz → 50 kHz → 100 kHz",
-        "50 kHz → 100 kHz → 25 kHz → 8.33 kHz",
-        "25 kHz → 8.33 kHz → 50 kHz → 100 kHz",
-        "100 kHz → 25 kHz → 50 kHz → 8.33 kHz"
+        "İniş serbest",
+        "İniş için geri dön",
+        "Diğer uçağa yol ver, tura devam et",
+        "Meydan emniyetsiz, inme",
+        "İn ve apron'a git"
       ]
     },
     {
-      "id": 90970,
+      "id": 91022,
       "section": "090-U",
-      "text": "8.33 kHz kapasiteli bir radyoda frekans kaç basamaklı girilmelidir?",
+      "text": "VHF radyo dalgalarının yayılma özelliği aşağıdakilerden hangisidir?",
       "options": [
-        "Net bir biçimde 6 basamaklı",
-        "5 basamaklı",
-        "5 veya 6 basamaklı",
-        "4 basamaklı",
-        "7 basamaklı"
+        "Açık görüş hattı (line of sight) boyunca yayılır; menzil büyük ölçüde irtifaya bağlıdır",
+        "İyonosferden yansıyarak ufkun ötesine ulaşır",
+        "Yer dalgası olarak yüzeyi izler, irtifadan bağımsızdır",
+        "Yalnız gece uzun menzile ulaşır",
+        "Bulutlardan yansıyarak yayılır"
       ]
     },
     {
-      "id": 90971,
+      "id": 91023,
       "section": "090-U",
-      "text": "Bulutlarda uçan bir uçakta radyo alıcısında cızırtı oluşmasının sebebi nedir?",
+      "text": "VHF haberleşmenin HF'ye göre daha gürültüsüz ve kararlı olmasının nedeni nedir?",
       "options": [
-        "Atmosferdeki parçacıklarla sürtünme sonucu biriken statik elektrik yükünün titreşim veya kontrol yüzeyi hareketiyle voltaj değişimine yol açması",
-        "Bulutların radyo dalgalarını tamamen emmesi",
-        "Kontrolörün mikrofonunun bozuk olması",
-        "Yer istasyonunun gücünün yetersiz olması",
-        "Frekansın yanlış girilmesi"
-      ]
-    },
-    {
-      "id": 90972,
-      "section": "090-U",
-      "text": "Büyük uçaklarda haberleşme antenleri nerede yer alır?",
-      "options": [
-        "Kuyruk kısmında, dikey stabilizatörde",
-        "Kanat uçlarında",
-        "Burun konisinde",
-        "Motor kaportalarında",
-        "İniş takımı kapaklarında"
-      ]
-    },
-    {
-      "id": 90973,
-      "section": "090-U",
-      "text": "Hava bandının seyrüsefer için kullanılan bölümü hangi aralıktadır?",
-      "options": [
-        "108 - 117.975 MHz",
-        "118 - 136.975 MHz",
-        "121.5 - 123.1 MHz",
-        "30 - 108 MHz",
-        "137 - 300 MHz"
-      ]
-    },
-    {
-      "id": 90974,
-      "section": "090-U",
-      "text": "VHF haberleşmesinde \"line of sight\" (görüş hattı) prensibi ne anlama gelir?",
-      "options": [
-        "Sinyallerin yalnızca verici ile alıcı arasında doğrudan bir görüş hattı varsa etkili biçimde iletilebildiğini",
-        "Pilotun kuleyi görebildiği mesafede iletişim kurulabildiğini",
-        "Sinyallerin iyonosferden yansıyarak ulaştığını",
-        "Yalnızca gündüz iletişim kurulabildiğini",
-        "Antenin pilotun görüş hattında olması gerektiğini"
-      ]
-    },
-    {
-      "id": 90975,
-      "section": "090-U",
-      "text": "VHF haberleşmesinin HF'ye göre daha gürültüsüz ve kararlı olmasının sebebi nedir?",
-      "options": [
-        "İyonosferik yansımalarla uğraşmaması",
+        "İyonosferik yansımaya bağlı olmaması",
         "Daha yüksek güçle yayın yapması",
         "Daha uzun dalga boyu kullanması",
         "Frekans modülasyonu kullanması",
-        "Uydular üzerinden iletilmesi"
+        "Uydu üzerinden aktarılması"
       ]
     },
     {
-      "id": 90976,
+      "id": 91024,
       "section": "090-U",
-      "text": "30 000 ft'te uçan bir uçak için tipik VHF haberleşme menzili yaklaşık ne kadardır?",
+      "text": "Dağlık bölgelerde VHF kör bölgelerini gidermek için ne yapılır?",
       "options": [
-        "200 deniz mili",
-        "50 deniz mili",
-        "500 deniz mili",
-        "1000 deniz mili",
-        "20 deniz mili"
+        "Aktarıcı (repeater) istasyonlar kurulur",
+        "HF frekansına geçilir",
+        "Verici gücü artırılır",
+        "121,5 MHz kullanılır",
+        "Kanal aralığı 8,33 kHz'e düşürülür"
       ]
     },
     {
-      "id": 90977,
+      "id": 91025,
       "section": "090-U",
-      "text": "VHF yer istasyonları neden genellikle yüksek arazilerde veya kontrol kulelerinin üst kısımlarında konumlandırılır?",
+      "text": "8,33 kHz kanal aralığı 25 kHz aralığına göre ne sağlar?",
       "options": [
-        "VHF sinyalleri görüş hattı ile yayıldığından yükseklik menzili artırır",
-        "Rüzgârdan korunmak için",
-        "İyonosferik yansımayı artırmak için",
-        "Parazitten tamamen kurtulmak için",
-        "Yasal zorunluluk olduğu için"
+        "Üç kat daha fazla kanal; Avrupa hava sahasında zorunludur",
+        "Üç kat daha uzun menzil",
+        "Daha yüksek verici gücü",
+        "İyonosferik yansımayı ortadan kaldırır",
+        "Frekans girişini iki basamağa indirir"
       ]
     },
     {
-      "id": 90978,
+      "id": 91026,
       "section": "090-U",
-      "text": "VHF iletişiminde pilotun mikrofon mesafesi ve konuşmaya başlamadan önceki bekleme süresi ne olmalıdır?",
+      "text": "8,33 kHz kanal aralığını destekleyen bir telsize frekans kaç basamakla girilir?",
       "options": [
-        "Yaklaşık 2–3 cm mesafe, 1 saniyelik bekleme",
-        "Yaklaşık 10 cm mesafe, 5 saniyelik bekleme",
-        "Dudaklara temas, beklemeden",
-        "Yaklaşık 20 cm mesafe, 2 saniyelik bekleme",
-        "Mesafe önemsiz, 10 saniyelik bekleme"
+        "Altı basamak",
+        "Beş basamak",
+        "Beş veya altı basamak",
+        "Dört basamak",
+        "Yedi basamak"
       ]
     },
     {
-      "id": 90979,
+      "id": 91027,
       "section": "090-U",
-      "text": "8.33 kHz kanal aralığı sisteminin 25 kHz sisteme göre sağladığı fayda nedir?",
+      "text": "Aynı frekansı kullanan iki yer istasyonu arasında en az ne kadar mesafe bırakılır?",
       "options": [
-        "Üç kat daha fazla kanal kapasitesi yaratır ve paraziti azaltır",
-        "Menzili üç katına çıkarır",
-        "Verici gücünü azaltır",
-        "İyonosferik yansımayı önler",
-        "Frekans girişini kolaylaştırır"
-      ]
-    },
-    {
-      "id": 90980,
-      "section": "090-U",
-      "text": "8.33 kHz kanal aralığı sistemi nerede zorunludur?",
-      "options": [
-        "Avrupa hava sahasında",
-        "Yalnızca okyanus aşırı uçuşlarda",
-        "Yalnızca Kuzey Amerika'da",
-        "Yalnızca askerî hava sahasında",
-        "Hiçbir yerde zorunlu değildir"
-      ]
-    },
-    {
-      "id": 90981,
-      "section": "090-U",
-      "text": "Aşağıdakilerden hangisi VHF haberleşmesinin dezavantajıdır?",
-      "options": [
-        "Uzun menzilde zayıflaması ve dağlık alanlarda kör bölgelerin oluşması",
-        "Yüksek gürültü seviyesi",
-        "Anten uyumunun zor olması",
-        "Yalnızca dijital veri taşıyabilmesi",
-        "İyonosferik yansımaya bağımlı olması"
-      ]
-    },
-    {
-      "id": 90982,
-      "section": "090-U",
-      "text": "Uçak ile yer birimi arasında otomatik veri mesajları gönderen ve bazı durumlarda VHF kanalını kullanan sistem hangisidir?",
-      "options": [
-        "ACARS",
-        "ATIS",
-        "VOLMET",
-        "ELT",
-        "SSR"
-      ]
-    },
-    {
-      "id": 90983,
-      "section": "090-U",
-      "text": "118.000–137.000 MHz aralığındaki hava bandı hangi ICAO belgesi kapsamında düzenlenmiştir?",
-      "options": [
-        "Annex 10 Volume V",
-        "Annex 2",
-        "Annex 6 Part II",
-        "Annex 11",
-        "Doküman 4444"
-      ]
-    },
-    {
-      "id": 90984,
-      "section": "090-U",
-      "text": "Aynı frekansı kullanan iki istasyon arasında en az ne kadar mesafe bırakılır?",
-      "options": [
-        "150–200 deniz mili",
-        "50–100 deniz mili",
-        "10–20 deniz mili",
-        "500 deniz mili",
+        "150–200 NM",
+        "50–100 NM",
+        "10–20 NM",
+        "500 NM",
         "Mesafe şartı yoktur"
       ]
     },
     {
-      "id": 90985,
+      "id": 91028,
       "section": "090-U",
-      "text": "Dağlık bölgelerde sinyalin yönlendirilmesi için ne kurulur?",
+      "text": "Aynı frekansta iki istasyonun aynı anda yayın yapmasıyla oluşan parazit türü hangisidir?",
       "options": [
-        "Repeater istasyonlar",
-        "HF vericileri",
-        "Uydu bağlantısı",
-        "NDB istasyonları",
-        "Radar istasyonları"
+        "Ortak kanal paraziti (co-channel interference)",
+        "Komşu kanal paraziti (adjacent channel interference)",
+        "Statik parazit",
+        "Yankı (echo)",
+        "Yan bant paraziti"
       ]
     },
     {
-      "id": 90986,
-      "section": "090-U",
-      "text": "Sıcaklık terselmesi veya yoğun nem nedeniyle sinyal zayıflaması yaşandığında pilot ne yapmalıdır?",
-      "options": [
-        "\"Say again\" ifadesiyle mesajı tekrar talep etmeli ve sinyal kalitesini rapor etmelidir",
-        "Frekansı 121.5 MHz'e değiştirmelidir",
-        "Transponderı 7600'e almalıdır",
-        "Uçuşa devam edip sessiz kalmalıdır",
-        "Karşılıksız yayın yapmalıdır"
-      ]
-    },
-    {
-      "id": 90987,
-      "section": "090-U",
-      "text": "\"Co-channel interference\" nedir?",
-      "options": [
-        "Aynı frekansta iki istasyonun aynı anda konuşması",
-        "Yakın frekanstaki yayınların karışması",
-        "Atmosferik statik parazit",
-        "Uçağın kendi elektrik sisteminden kaynaklanan parazit",
-        "Anten arızasından kaynaklanan sinyal kaybı"
-      ]
-    },
-    {
-      "id": 90988,
-      "section": "090-U",
-      "text": "\"Adjacent channel interference\" nedir?",
-      "options": [
-        "Yakın frekanstaki yayınların karışması",
-        "Aynı frekansta iki istasyonun aynı anda konuşması",
-        "Yer eğriliğinden kaynaklanan sinyal kaybı",
-        "Statik elektrik cızırtısı",
-        "Yanlış frekans seçilmesi"
-      ]
-    },
-    {
-      "id": 90989,
-      "section": "090-U",
-      "text": "Frekans tahsisi yapılırken merkez frekansın yanı sıra ne hesaba katılır?",
-      "options": [
-        "Yan bant genişliği",
-        "Uçağın tipi",
-        "Pilotun lisans türü",
-        "Meydanın rakımı",
-        "Günün saati"
-      ]
-    },
-    {
-      "id": 90990,
+      "id": 91029,
       "section": "090-U",
       "text": "Arama-kurtarma operasyonlarında yaygın olarak kullanılan frekans hangisidir?",
       "options": [
-        "123.100 MHz",
-        "121.500 MHz",
-        "243.000 MHz",
-        "118.100 MHz",
-        "136.975 MHz"
+        "123,1 MHz",
+        "121,5 MHz",
+        "243 MHz",
+        "118,1 MHz",
+        "136,975 MHz"
       ]
     },
     {
-      "id": 90991,
+      "id": 91030,
       "section": "090-U",
-      "text": "Tehlike çağrılarında ve haberleşme kaybında dinlenmesi zorunlu olan frekans hangisidir?",
+      "text": "ACARS nedir?",
       "options": [
-        "121.500 MHz",
-        "123.100 MHz",
-        "118.000 MHz",
-        "406 MHz",
-        "243 MHz"
-      ]
-    },
-    {
-      "id": 90992,
-      "section": "090-U",
-      "text": "Bir uçağın rotasında frekans değişimleri tipik olarak hangi sırayla gerçekleşir?",
-      "options": [
-        "GROUND → TOWER → DEPARTURE → ENROUTE → APPROACH → TOWER → GROUND",
-        "TOWER → GROUND → ENROUTE → DEPARTURE → APPROACH",
-        "APPROACH → TOWER → GROUND → ENROUTE → DEPARTURE",
-        "GROUND → ENROUTE → TOWER → APPROACH → DEPARTURE",
-        "DEPARTURE → GROUND → TOWER → ENROUTE → APPROACH"
-      ]
-    },
-    {
-      "id": 90993,
-      "section": "090-U",
-      "text": "Frekans değişimleri hangi talimatlarla gerçekleştirilir?",
-      "options": [
-        "\"Contact\" veya \"monitor\"",
-        "\"Roger\" veya \"wilco\"",
-        "\"Standby\" veya \"hold\"",
-        "\"Say again\" veya \"confirm\"",
-        "\"Cleared\" veya \"approved\""
-      ]
-    },
-    {
-      "id": 90994,
-      "section": "090-U",
-      "text": "Aşağıdakilerden hangisi haberleşme güvenliği kapsamında yürütülen çalışmalardan biri değildir?",
-      "options": [
-        "Pilotlara uçuş planı hazırlanması",
-        "Yetkisiz yayınların engellenmesi",
-        "Parazit kaynaklarının tespiti",
-        "Düzenli bakım çalışmaları",
-        "Sürekli spektrum taraması"
-      ]
-    },
-    {
-      "id": 90995,
-      "section": "090-U",
-      "text": "Uçak VHF antenleri neden genellikle gövdenin hem üst hem alt kısmına yerleştirilir?",
-      "options": [
-        "Hem yer hem hava istasyonuyla iletişimi kolaylaştırmak için",
-        "Ağırlık dengesini sağlamak için",
-        "Buzlanmayı önlemek için",
-        "Radar görünürlüğünü artırmak için",
-        "Yalnızca estetik nedenlerle"
-      ]
-    },
-    {
-      "id": 90996,
-      "section": "090-U",
-      "text": "Bazı büyük uçaklarda birden fazla VHF telsiz sistemi bulunmasının amacı nedir?",
-      "options": [
-        "Biri arızalandığında diğerinin yedek olarak devreye girmesi",
-        "Aynı anda iki kontrolörle konuşabilmek",
-        "Menzili iki katına çıkarmak",
-        "HF haberleşmesi yapabilmek",
-        "Yolcu eğlence sistemini beslemek"
+        "Uçakla yer birimi arasında otomatik dijital veri mesajları ileten, bazı durumlarda VHF kanalını kullanan sistem",
+        "Otomatik meydan hava durumu yayını",
+        "Uydu tabanlı acil durum vericisi",
+        "İkincil gözetim radarının bir modu",
+        "Yer istasyonlarının yön bulma hizmeti"
       ]
     }
   ]

@@ -103,8 +103,8 @@ Yeni ders eklerken hem metin benzerliğini hem de "cevabı aynı ama metni farkl
 
 **Tarayıcılar dil-kördür.** `find_duplicates.py` ve `topic_gap.py` yalnız sorunun kaynak
 dilindeki metnine bakar; Türkçe ders notu/üretilmiş soru ile İngilizce banka arasında
-eşleşme kuramazlar. 090'da "tekrar yok" sonucu bu yüzden eksik çıktı: 96 üretilmiş
-sorudan 14'ü bankada zaten sorulan bilgiyi soruyordu. Dili karışık bir derste
+eşleşme kuramazlar. 090'ın ilk nesil üretilmiş setinde "tekrar yok" sonucu bu yüzden eksik
+çıktı: 96 sorudan 25'i bankada zaten sorulan bilgiyi soruyordu. Dili karışık bir derste
 karşılaştırmayı iki dilde yap (`text_en` / `text_tr` sütunları) ve adayları tek tek oku.
 
 **Üretilmiş soru gerçek bir soruyla aynı bilgiyi soruyorsa gerçek soru kanoniktir**,
@@ -112,35 +112,39 @@ karşılaştırmayı iki dilde yap (`text_en` / `text_tr` sütunları) ve adayla
 üretilmiş bir soru yüzünden gizlenmez; kullanıcı ikisinin de kalmasını istedi. Tekrar
 sayılanlar:
 
-- Aynı bilgiyi **ters yönden** sormak (16388 "manyetik baş hangi Q kodu" / 90907 "QDM nedir").
+- Aynı bilgiyi **ters yönden** sormak ("manyetik baş hangi Q kodu" / "QDM nedir").
 - **Kural ve örnek**: kuralı soran ile onu bir örneğe uygulayan (16345 TC-ABC → T-BC /
-  90937 Tip 1 kısaltma kuralı; 16322 / 90926 saatte yalnız dakika).
+  "Tip 1 kısaltma kuralı nedir").
 - **"Hangisi değildir" biçimi**: doğru şıkları tam olarak başka bir sorunun cevabı olan
-  soru (16430 CAVOK tanımı / 90920 CAVOK'un parçası olmayan; 59007 / 90903 ATS amacı).
-- Bir kuralın iki yüzü (16352 tehlike çağrısı o anki frekansta / 90959 121.5 ne zaman).
-- Üretilmişler arasında da aynı ölçü: kapsamlı olan ya da kuralı soran kalır, dar olan
-  ya da örnek olan gizlenir (90922 / 90943, 90948 / 90976).
+  soru (16430 CAVOK tanımı / "CAVOK'un parçası olmayan"; 59007 ATS amacı).
+- Bir kuralın iki yüzü (16352 tehlike çağrısı o anki frekansta / "121.5 ne zaman").
+- Üretilmişler arasında da aynı ölçü: kapsamlı olan ya da kuralı soran kalır.
 
-Cevabı farklı olanlar yine tuzaktır, bağlanmaz: 90948 (fit, ×1.25) / 90949 (uçuş
-seviyesi, ×12) birbirinin çeldiricisi. Yalnız konusu aynı olan da bağlanmaz: 90915 ATIS
-yayınının içeriğini sorar, 16454 ATIS'in ne olduğunu — ayrı bilgi.
+Cevabı farklı olanlar yine tuzaktır, bağlanmaz (ör. menzil formülünün fit ×1,25 ve uçuş
+seviyesi ×12 sürümleri birbirinin çeldiricisidir). Yalnız konusu aynı olan da bağlanmaz:
+ATIS yayınının içeriğini soran ile ATIS'in ne olduğunu soran ayrı bilgidir.
 
-090'da iki tur inceleme yapıldı (2026-09): önce iki dilde benzerlik adaylarıyla, sonra
-82 görünür üretilmiş sorunun 203 gerçek soruyla tek tek karşılaştırılmasıyla. Sonuç:
-96 üretilmişin 25'i gizli, 71'i bankada ve ders notu sorularında sorulmayan bir bilgiyi
-soruyor — çoğu B3/B4'teki VHF tekniği (yayılım, menzil, 8.33 kHz, parazit, anten,
-frekans yönetimi); ATPL TV bankasında bu konularda yalnız 4 soru var.
+**Üretilmiş soru azdır, seçilmiştir; tekrar bağlamaktan önce hiç yazmamak gelir.**
+Kullanıcı 2026-09-22'de "zaten çok soru var, anlamsız sorulara vakit harcamayayım" diyip
+090'ın 96 soruluk ilk nesil setini sildirdi. Yerine **en çok 30** soru: yalnız ders notunda
+geçen, sınavlık (kısaltma, frekans, sayı, tanım, ifade) ve 203 gerçek sorunun hiçbirinde
+sorulmayan bilgiler; her aday iki dilde tek tek karşılaştırıldı. Aynı ölçüyü başka derse
+uygula: önce gerçek soruların tamamını oku, sonra boşlukları say, sonra yaz. Ders notunun
+tartışmalı ya da kendiyle çelişen yerlerinden (090'da antenlerin yeri) soru üretme.
 
-**Kaynakta çelişki:** ders notu antenler için hem "büyük uçakta kuyrukta dikey
-stabilizatörde" (B3) hem "gövdenin üst ve alt kısmında" (B4) diyor; 90972 ve 90995 bunları
-ayrı ayrı soruyor. Gerçekte VHF antenleri gövdededir, kuyruktaki çoğunlukla HF'dir. Sınav
-notu izlediği için sorular olduğu gibi bırakıldı.
+**Emekli kimlikler yeniden kullanılmaz.** İlerleme (`S.c`), soru süresi (`S.qt`) ve "Sor"
+sayısı (`S.sor`) soru kimliğine bağlıdır; silinen 90901–90996 bandı yeni soruya verilirse
+kullanıcının eski kaydı yeni soruya yapışır (çözülmemiş soru "yanlışlarım"da çıkar). 090'ın
+ikinci nesli 91001+ bandında; dosyanın `id_convention` alanı bunu yazar. `init_db.py`
+tam içe aktarımda JSON'da olmayan soruları veritabanından **düşürür** (`prune_removed`),
+tek dosya verilince düşürmez. Uygulama silinen kimliğe dayanıklı: `report()` günlükteki
+kimliği `BY_ID`'de arar, `qtBlok`/`sorBlok` bulunmayanı atlar.
 
 Yan etkisi bilinerek kabul edildi: kanonik İngilizce bankadaysa (090-01…06), yalnız
 "Ders Notundan Üretilmiş" (090-U) seçiliyken o bilgi turda hiç çıkmaz; modülün tamamı
 seçiliyken kanonik soru gelir. 090'ın ders notu soruları (590xx, gerçek SHGM soruları) İngilizce
-bankaya bilerek bağlanmadı. 070'te 90725/90726, 502'de 95257 aynı durumda ama henüz
-bağlanmadı — kullanıcı yalnız 090'ı istedi.
+bankaya bilerek bağlanmadı. 070'te 90725/90726, 502'de 95257 gerçek soruyla aynı bilgiyi
+soruyor ama henüz bağlanmadı — kullanıcı yalnız 090'ı istedi.
 
 ## Çalışma uygulaması (`web/`)
 
@@ -429,7 +433,9 @@ notu bölümlerinin **arkasına** düşecek biçimde seçilir (bölümler koda g
 090'da `-07` B'lerin önüne düşerdi, o yüzden `-U`). 090'da üretilmişler önce B1–B4'e
 karışmıştı ve kullanıcı konu seçicide onları ayrı bulamadığını söyledi. Konuya göre
 kimlik aralıkları dosyanın `id_convention` alanında yazılı. Seçim bölüm **koduyla**
-saklandığı için (`F.pick`), yeni bölüm eklemek kayıtlı seçimleri bozmaz.
+saklandığı için (`F.pick`), yeni bölüm eklemek kayıtlı seçimleri bozmaz. 090-U'da 30
+soru var (91001–91030), hepsi görünür; hangi bilgiyi neden sorduğu dosyanın `selection`
+alanında.
 
 502 bu kurala henüz uymuyor: 118 üretilmiş soru, 25 SHGM örnek sorusuyla aynı GB-01…05
 konu bölümlerinde. Kullanıcı yalnız 090'ı istedi; 502'ye dokunmadan önce sor.

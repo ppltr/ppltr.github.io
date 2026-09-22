@@ -2466,7 +2466,9 @@ function report(rec, live){
   const sure = rec.sureTam && typeof rec.sure === 'number' ? rec.sure : null;
   const sureYazi = sure !== null ? sureMetni(sure)
     : Math.max(1, Math.round(((rec.tN || Date.now()) - rec.t0) / 6e4)) + ' dakika';
-  const seen = [...new Set(log.map(x => x.id))];
+  // Bankadan silinmiş soru (ör. emekli üretilmiş kimlikler) raporu çökertmesin;
+  // sayılar günlükten geldiği için isabet yüzdesi değişmez.
+  const seen = [...new Set(log.map(x => x.id))].filter(id => BY_ID.has(id));
 
   el('view').innerHTML =
     '<div class="card"><div style="padding:24px 16px; text-align:center">' +

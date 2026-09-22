@@ -246,6 +246,24 @@ def import_file(conn: sqlite3.Connection, path: Path) -> int:
     return len(data["questions"])
 
 
+def prune_removed(conn: sqlite3.Connection, keep: set[int]) -> int:
+    """JSON'dan çıkarılmış soruları veritabanından da düşürür.
+
+    data/*.json tek doğruluk kaynağıdır; bir soru dosyadan silinince atpl.db'de
+    kalması onu uygulamaya geri sokardı. Yalnız tam içe aktarımda (dosya adı
+    verilmeden) çalışır — tek dosya güncellenirken öteki derslerin soruları
+    "eksik" sanılmasın. Şıklar ON DELETE CASCADE ile gider.
+    """
+    rows = conn.execute("SELECT id FROM questions").fetchall()
+    gone = [r[0] for r in rows if r[0] not in keep]
+    if gone:
+        conn.executemany("DELETE FROM questions WHERE id = ?", [(i,) for i in gone])
+        conn.execute("UPDATE questions SET dup_of = NULL WHERE dup_of IS NOT NULL "
+                     "AND dup_of NOT IN (SELECT id FROM questions)")
+        conn.commit()
+    return len(gone)
+
+
 def import_translations(conn: sqlite3.Connection) -> tuple[int, int]:
     """data/tr/ ve data/en/ içindeki çevirileri sorulara ve şıklara yazar.
 
@@ -316,6 +334,14 @@ def main() -> None:
         n = import_file(conn, path)
         total += n
         print(f"{path.name}: {n} soru içe aktarıldı")
+
+    if len(sys.argv) == 1:                    # tam içe aktarım: JSON'da olmayan gider
+        keep: set[int] = set()
+        for path in paths:
+            keep.update(q["id"] for q in json.loads(path.read_text(encoding="utf-8"))["questions"])
+        gone = prune_removed(conn, keep)
+        if gone:
+            print(f"JSON'dan çıkarılmış {gone} soru veritabanından düşürüldü")
 
     dups = apply_duplicates(conn)
     ceviri, ceviri_en = import_translations(conn)

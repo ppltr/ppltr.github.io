@@ -1,653 +1,303 @@
 {
   "questions": {
-    "90901": {
-      "text": "What does the term \"air traffic\" cover?",
-      "options": [
-        "All aircraft in flight or operating on the manoeuvring area of an aerodrome",
-        "Only aircraft in flight",
-        "Only aircraft in controlled airspace",
-        "All vehicles on the apron and parking area",
-        "Only aircraft with an IFR flight plan"
-      ]
-    },
-    "90902": {
-      "text": "When an air traffic control clearance is abbreviated to \"clearance\", which words may precede it to indicate the portion of flight it relates to?",
-      "options": [
-        "Taxi, take-off, en-route, approach or landing",
-        "Only take-off or landing",
-        "Only en-route",
-        "Visual, instrument or mixed",
-        "Tower, approach or ground"
-      ]
-    },
-    "90903": {
-      "text": "What is the purpose of the air traffic control service?",
-      "options": [
-        "To prevent collisions between aircraft and to maintain and expedite an orderly flow of traffic on the manoeuvring area",
-        "To prepare flight plans for pilots",
-        "To organise runway maintenance",
-        "To monitor aircraft fuel consumption",
-        "To produce meteorological forecasts"
-      ]
-    },
-    "90904": {
-      "text": "How is Runway Visual Range (RVR) defined?",
-      "options": [
-        "The range over which the pilot of an aircraft on the runway centre line can see the runway markings, the lights delineating the runway or the centre line",
-        "The distance from which the tower controller can see the runway end",
-        "The distance at which the aircraft on the approach first sees the aerodrome",
-        "The horizontal visibility measured at the meteorological station",
-        "The maximum distance at which runway lights are visible at night"
-      ]
-    },
-    "90905": {
+    "91001": {
       "text": "What does the abbreviation \"H24\" mean?",
       "options": [
         "Continuous service throughout day and night",
-        "Service from sunrise to sunset",
-        "Service from sunset to sunrise",
+        "Sunrise to sunset",
+        "Sunset to sunrise",
         "No specific working hours",
-        "Broadcast 24 times a day"
+        "Service according to operational requirement"
       ]
     },
-    "90906": {
+    "91002": {
       "text": "What does the abbreviation \"HN\" mean?",
       "options": [
         "Sunset to sunrise",
         "Sunrise to sunset",
-        "Service throughout day and night",
+        "Continuous service throughout day and night",
         "No specific working hours",
-        "Service on request only"
+        "Service according to operational requirement"
       ]
     },
-    "90907": {
-      "text": "What is QDM?",
-      "options": [
-        "The magnetic heading to fly to a station",
-        "The true bearing from the station to the aircraft",
-        "The aircraft's distance from the station",
-        "Height above the aerodrome reference point",
-        "The altimeter setting referenced to sea level"
-      ]
-    },
-    "90908": {
-      "text": "With wind present, how is the heading to fly obtained from QDM?",
-      "options": [
-        "By applying a wind correction angle to the QDM",
-        "By flying the QDM as it is",
-        "By taking the reciprocal of the QDM",
-        "By adding magnetic variation to the QDM",
-        "By using QNH instead of QDM"
-      ]
-    },
-    "90909": {
-      "text": "What are messages stating that an aircraft is in serious or imminent danger called?",
-      "options": [
-        "Distress messages",
-        "Urgency messages",
-        "Flight regularity messages",
-        "Meteorological messages",
-        "Direction-finding messages"
-      ]
-    },
-    "90910": {
-      "text": "Into which category do messages concerning the safety of an aircraft, another vehicle or a person on board fall?",
-      "options": [
-        "Urgency messages",
-        "Distress messages",
-        "Flight safety messages",
-        "Flight regularity messages",
-        "Meteorological messages"
-      ]
-    },
-    "90911": {
-      "text": "From which frequency does an airborne pilot usually request aerodrome weather information?",
-      "options": [
-        "The approach control frequency",
-        "The ground control frequency",
-        "The emergency frequency",
-        "The HF flight information frequency",
-        "The apron control frequency"
-      ]
-    },
-    "90912": {
-      "text": "If the weather information given also covers the runway in use, what does the pilot read back together with the QNH?",
-      "options": [
-        "The runway direction in use",
-        "The visibility",
-        "The wind speed",
-        "The cloud base",
-        "Temperature and dew point"
-      ]
-    },
-    "90913": {
-      "text": "At aerodromes where no suitable dedicated ATIS frequency is available, where may ATIS be broadcast?",
-      "options": [
-        "On the voice channel of the aerodrome VOR identification",
-        "Continuously on the tower frequency",
-        "On 121.5 MHz",
-        "On the NDB identification signal",
-        "By telephone only"
-      ]
-    },
-    "90914": {
-      "text": "If the current ATIS broadcast is \"INFORMATION ALPHA\", how is the updated new broadcast identified?",
+    "91003": {
+      "text": "If the current ATIS broadcast is \"INFORMATION ALPHA\", how is the new broadcast that replaces it identified?",
       "options": [
         "INFORMATION BRAVO",
-        "INFORMATION ALPHA TWO",
+        "It stays INFORMATION ALPHA, only the time changes",
         "INFORMATION ZULU",
-        "INFORMATION ALPHA (unchanged)",
-        "INFORMATION ONE"
+        "By a broadcast number: INFORMATION 2",
+        "By the code the pilot states on initial contact"
       ]
     },
-    "90915": {
-      "text": "Which of the following is NOT part of an ATIS broadcast?",
+    "91004": {
+      "text": "At aerodromes with no dedicated ATIS frequency, where may the ATIS be broadcast?",
       "options": [
-        "The aircraft's take-off clearance",
-        "Aerodrome name and time",
-        "Alphabetic code letter",
-        "Runway in use and wind information",
-        "Visibility and other weather conditions"
+        "On the voice channel of the VOR identification",
+        "Continuously on the tower frequency",
+        "On 121.5 MHz",
+        "On the NDB carrier",
+        "It is given by telephone only"
       ]
     },
-    "90916": {
-      "text": "What is the basic difference between ATIS and VOLMET?",
+    "91005": {
+      "text": "How does a VOLMET broadcast differ from ATIS?",
       "options": [
-        "ATIS gives information for a single aerodrome, while VOLMET covers several aerodromes in the area",
-        "ATIS is broadcast on HF, VOLMET only on VHF",
-        "VOLMET gives only runway state, ATIS only weather",
-        "ATIS is requested by the pilot, VOLMET is broadcast continuously",
-        "There is no difference"
+        "ATIS gives information for a single aerodrome, VOLMET for several aerodromes in the area",
+        "VOLMET reports only the runway in use",
+        "ATIS is broadcast on HF, VOLMET on VHF only",
+        "VOLMET is broadcast only on pilot request",
+        "The VOLMET code is reported to the controller on initial contact"
       ]
     },
-    "90917": {
-      "text": "What does \"NOSIG\" in a VOLMET broadcast mean?",
+    "91006": {
+      "text": "What does \"NOSIG\" in a meteorological broadcast mean?",
       "options": [
-        "No significant weather change is expected within 2 hours",
-        "No signal is being received",
-        "The aerodrome is closed",
-        "Visibility is zero",
-        "The broadcast is no longer valid"
+        "No significant change in the weather is expected within the next 2 hours",
+        "Unlimited visibility at the aerodrome",
+        "No signal received, listen to the broadcast again",
+        "The broadcast has expired, wait for the new code",
+        "Significant weather is occurring at the aerodrome"
       ]
     },
-    "90918": {
-      "text": "On which frequency bands are VOLMET broadcasts made?",
-      "options": [
-        "HF or VHF",
-        "HF only",
-        "UHF only",
-        "VHF only",
-        "MF and LF"
-      ]
-    },
-    "90919": {
-      "text": "What is the cloud condition included in CAVOK?",
-      "options": [
-        "No cloud below 5000 ft or below MSA",
-        "No cloud below 10 000 ft",
-        "No cloud at all in the sky",
-        "Only cirrus cloud present",
-        "Cloud base above 1500 ft"
-      ]
-    },
-    "90920": {
-      "text": "Which of the following is NOT a condition of CAVOK?",
-      "options": [
-        "Wind speed below 10 knots",
-        "Visibility 10 km or more",
-        "No cloud below 5000 ft or MSA",
-        "No cumulonimbus",
-        "No significant weather"
-      ]
-    },
-    "90921": {
-      "text": "For which three points along the runway is RVR assessed?",
+    "91007": {
+      "text": "At which points along the runway is Runway Visual Range (RVR) assessed?",
       "options": [
         "Touchdown zone, midpoint and stop end",
-        "Runway threshold, runway centre and apron",
-        "Threshold, taxiway exit and tower",
-        "Approach lights, threshold and midpoint",
-        "Initial approach fix, decision altitude and threshold"
+        "At the runway threshold only",
+        "At the threshold and the stop end",
+        "In the touchdown zone only",
+        "At the tower position and the midpoint"
       ]
     },
-    "90922": {
-      "text": "Which of the following is correct about transmitting RVR information by radio?",
+    "91008": {
+      "text": "What is the recommended rate of speech in radio communication?",
       "options": [
-        "It is given in metres, is not spoken using the phonetic alphabet and does not need to be read back",
-        "It is given in feet and must always be read back",
-        "It is spelled out using the phonetic alphabet",
-        "It is given in kilometres only",
-        "Every digit must be repeated phonetically"
+        "About 100 words per minute",
+        "About 50 words per minute",
+        "About 150 words per minute",
+        "About 200 words per minute",
+        "Speed does not matter as long as the speech is intelligible"
       ]
     },
-    "90923": {
-      "text": "Why is a dry or damp runway usually not stated in runway surface condition reports?",
+    "91009": {
+      "text": "What should be done after changing frequency, before making the first call?",
       "options": [
-        "Unless otherwise stated, the runway is understood to be dry or damp",
-        "This information is given only by NOTAM",
-        "Dry and damp runways do not affect performance",
-        "This information is given only at night",
-        "This information is included in the flight plan"
+        "Listen on the frequency for about 5 seconds to make sure it is clear",
+        "Call immediately, there is no need to wait",
+        "First report leaving on the old frequency",
+        "Press the transmit button twice to test the frequency",
+        "Reset the transponder code"
       ]
     },
-    "90924": {
-      "text": "If the runway surface is covered with snow or ice, what additional report is given to the pilot?",
+    "91010": {
+      "text": "What does a Type 2 aircraft call sign consist of?",
       "options": [
-        "A braking action report; the runway friction coefficient is categorised from low to high",
-        "A runway length report",
-        "The status of the approach lights",
-        "Tower visibility",
-        "Runway slope"
+        "The operator's radiotelephony designator followed by the last four characters of the registration",
+        "The ICAO registration marking only",
+        "The operator's radiotelephony designator followed by the flight number",
+        "The aircraft type followed by the last two characters of the registration",
+        "The first character and the last two characters of the registration"
       ]
     },
-    "90925": {
-      "text": "How is the number 53 148 spoken in radiotelephony?",
+    "91011": {
+      "text": "How is a Type 3 call sign (operator's radiotelephony designator followed by the flight number, e.g. \"Turkish 1234\") abbreviated?",
       "options": [
-        "Five, three, one, four, eight",
-        "Fifty-three thousand one hundred and forty-eight",
-        "Fifty-three, one hundred and forty-eight",
-        "Fifty-three, one four eight",
-        "Five, three thousand, one hundred and forty-eight"
-      ]
-    },
-    "90926": {
-      "text": "When transmitting time in aviation, what is spoken if there is no possibility of confusion?",
-      "options": [
-        "Minutes only",
-        "Hours and minutes",
-        "Hours, minutes and seconds",
-        "Hours only",
-        "Local time and UTC together"
-      ]
-    },
-    "90927": {
-      "text": "To which reference is time expressed in aviation?",
-      "options": [
-        "UTC on the 24-hour clock (also called GMT or Zulu)",
-        "Local time on the 12-hour clock",
-        "Local time of the departure aerodrome",
-        "Local time of the destination aerodrome",
-        "Any time zone chosen by the pilot"
-      ]
-    },
-    "90928": {
-      "text": "What should be done before transmitting after changing frequency?",
-      "options": [
-        "Listen on the frequency for about 5 seconds to make sure no other transmission will be interrupted",
-        "Call immediately",
-        "First request a radio check",
-        "Wait one minute",
-        "First listen on the emergency frequency"
-      ]
-    },
-    "90929": {
-      "text": "What is the correct speaking rate in radio communication?",
-      "options": [
-        "100 words per minute",
-        "50 words per minute",
-        "150 words per minute",
-        "200 words per minute",
-        "As fast as possible"
-      ]
-    },
-    "90930": {
-      "text": "What is the most common error in using the transmit button?",
-      "options": [
-        "Releasing the button before finishing the message",
-        "Pressing the button before starting to speak",
-        "Holding the button too long",
-        "Pressing the button twice",
-        "Releasing the button after the message is finished"
-      ]
-    },
-    "90931": {
-      "text": "What happens if the microphone is too far from the lips?",
-      "options": [
-        "The voice level weakens and the microphone also picks up other cockpit noise, making the message hard to understand",
-        "The voice is distorted and the message becomes unintelligible",
-        "The frequency changes by itself",
-        "The signal range increases",
-        "There is no effect"
-      ]
-    },
-    "90932": {
-      "text": "What happens if the microphone is too close to the lips?",
-      "options": [
-        "The voice is distorted and the message becomes unintelligible",
-        "The voice level weakens",
-        "Cockpit noise mixes into the message",
-        "The signal range decreases",
-        "The squelch opens"
-      ]
-    },
-    "90933": {
-      "text": "What is the purpose of leaving occasional pauses in a long radio message?",
-      "options": [
-        "To check whether the frequency is still clear and whether any part of the message needs repeating",
-        "To transmit the message faster",
-        "To let the transmit button cool down",
-        "To let the controller record the message",
-        "To change frequency automatically"
-      ]
-    },
-    "90934": {
-      "text": "Which call signs are used on initial contact with an aeronautical ground station?",
-      "options": [
-        "The full call signs of both the aeronautical ground station and the aircraft",
-        "Only the aircraft's abbreviated call sign",
-        "Only the name of the ground station",
-        "The last two letters of the aircraft registration",
-        "The operator's name alone"
-      ]
-    },
-    "90935": {
-      "text": "When may abbreviated call signs be used?",
-      "options": [
-        "Only after the ground station has decided no confusion will arise and has used the abbreviation first",
-        "Whenever the pilot considers it appropriate",
-        "From the initial contact onwards",
-        "Only in emergencies",
-        "At the pilot's discretion when the frequency is busy"
-      ]
-    },
-    "90936": {
-      "text": "How is the call sign of an aeronautical ground station formed?",
-      "options": [
-        "The name of the station followed by a suffix indicating the type of service provided",
-        "Only the ICAO code of the aerodrome",
-        "The controller's first and last name",
-        "The frequency number and the aerodrome name",
-        "The country code and the aerodrome name"
-      ]
-    },
-    "90937": {
-      "text": "How is a Type 1 aircraft call sign (the ICAO registration marking) abbreviated?",
-      "options": [
-        "The first character of the registration followed by its last two characters",
-        "The last three characters of the registration",
-        "The first two characters of the registration",
-        "Only the last character",
-        "It cannot be abbreviated"
-      ]
-    },
-    "90938": {
-      "text": "How is a Type 3 call sign (the operator's radiotelephony designator followed by the flight number) abbreviated?",
-      "options": [
-        "There is no abbreviated form for this type of call sign",
+        "It is not abbreviated",
         "Only the flight number is spoken",
-        "Only the operator designator is spoken",
-        "The last two digits of the flight number are spoken",
-        "The operator designator and the first digit of the flight number are spoken"
+        "The designator followed by the last two digits of the flight number",
+        "The first letter of the designator followed by the flight number",
+        "Only the designator, once the ground station has abbreviated it"
       ]
     },
-    "90939": {
-      "text": "What does a Type 2 call sign consist of?",
+    "91012": {
+      "text": "What must an aircraft under ATC control do if it wishes to change frequency on its own initiative?",
       "options": [
-        "The operator's radiotelephony designator followed by the last four characters of the ICAO registration marking",
-        "Only the ICAO registration marking",
-        "The operator's radiotelephony designator and the flight number",
-        "The aircraft type and the registration marking",
-        "The aerodrome name and the flight number"
+        "First obtain permission from the ATC unit concerned",
+        "Change to the new frequency and report from there",
+        "Set 7600 before changing frequency",
+        "Make a blind transmission on the old frequency announcing the change",
+        "It may change frequency only in an emergency"
       ]
     },
-    "90940": {
-      "text": "What must an aircraft under air traffic control do if it wishes to change frequency on its own initiative?",
+    "91013": {
+      "text": "In a radio failure, if contact with the first station cannot be established despite the physical checks, in what order are other stations tried?",
       "options": [
-        "First obtain permission from the relevant air traffic control unit",
-        "Make a blind transmission and change frequency",
-        "Switch directly to the new frequency and call",
-        "Report on 121.5 MHz",
-        "Change the transponder code"
+        "Another ATC unit's frequency, then another station on the route, then other aircraft on the route",
+        "Other aircraft on the route, then another ATC unit, then another station on the route",
+        "Only 121.5 MHz is tried",
+        "Another station on the route, then other aircraft, then another ATC unit",
+        "None; set 7600 and wait"
       ]
     },
-    "90941": {
-      "text": "In what order is a pilot's radio check call made?",
+    "91014": {
+      "text": "How is the approximate VHF signal range (NM) calculated from the aircraft's height?",
       "options": [
-        "Call sign of the station called, aircraft call sign, the words \"Radio check\", the frequency in use",
-        "Aircraft call sign, frequency in use, station called, \"Radio check\"",
-        "\"Radio check\", frequency in use, aircraft call sign",
-        "Frequency in use, station called, \"Radio check\"",
-        "Aircraft call sign and \"Radio check\" are sufficient"
+        "Square root of the height (ft) × 1.25",
+        "Height (ft) × 1.25",
+        "Square root of the height (ft) × 12",
+        "Height (ft) / 100",
+        "Square root of the height (ft) / 1.25"
       ]
     },
-    "90942": {
-      "text": "What information should a ground station give when replying to a radio check call?",
+    "91015": {
+      "text": "Which phrase does the station controlling distress traffic use to impose silence on the other traffic on the frequency?",
       "options": [
-        "The call sign of the aircraft requesting the check, the call sign of the replying station, and the readability of the call",
-        "Only the readability",
-        "Only its own call sign and frequency",
-        "Aerodrome weather and runway in use",
-        "The aircraft call sign and the QNH"
+        "\"Stop transmitting, MAYDAY\"",
+        "\"All stations, radio silence\"",
+        "\"Break break\"",
+        "\"Distress traffic ended\"",
+        "\"Standby all stations\""
       ]
     },
-    "90943": {
-      "text": "Which of the following is NOT among the items the pilot must read back verbatim?",
+    "91016": {
+      "text": "When the distress situation is over, which phrase lifts the silence on the frequency?",
       "options": [
-        "Runway Visual Range (RVR) values",
-        "Transponder code",
-        "Altimeter setting",
-        "Frequency change",
-        "Take-off and landing clearance"
+        "\"Distress traffic ended\"",
+        "\"Cancel distress\"",
+        "\"Stop transmitting, MAYDAY\"",
+        "\"All stations, resume normal operations\"",
+        "\"Roger, MAYDAY\""
       ]
     },
-    "90944": {
-      "text": "What else does the pilot's verbatim read-back of a clearance confirm to the controller?",
+    "91017": {
+      "text": "Which frequency is used so that the ELT (emergency locator transmitter) signal can be detected by the search and rescue system?",
       "options": [
-        "That the clearance was given to the correct aircraft and that only that aircraft will act on it",
-        "That the pilot has set the frequency correctly",
-        "That the aircraft transponder is operating",
-        "That the pilot has the ATIS information",
-        "That the aircraft has sufficient fuel"
-      ]
-    },
-    "90945": {
-      "text": "What does the word \"Roger\" mean?",
-      "options": [
-        "I have received all of your last transmission",
-        "I understand the instruction and will comply",
-        "Say again",
-        "Verify",
-        "Standby"
-      ]
-    },
-    "90946": {
-      "text": "Which of the following is an example of a communication problem caused by human error?",
-      "options": [
-        "The receiver volume turned down too low or the wrong frequency selected",
-        "Antenna failure",
-        "Complete transmitter failure",
-        "Power failure at the ground station",
-        "Temperature inversion in the atmosphere"
-      ]
-    },
-    "90947": {
-      "text": "In the physical checks made when radio failure is suspected, what is checked regarding the squelch?",
-      "options": [
-        "That the squelch level is not set higher than necessary",
-        "That the squelch is fully closed",
-        "That the squelch is at the highest level",
-        "That the squelch is set to the emergency frequency",
-        "That the squelch matches the transponder"
-      ]
-    },
-    "90948": {
-      "text": "How is signal range calculated from the aircraft's height in feet?",
-      "options": [
-        "The square root of the height multiplied by 1.25",
-        "The height multiplied by 1.25",
-        "The square root of the height multiplied by 12",
-        "The height divided by 100",
-        "The height squared"
-      ]
-    },
-    "90949": {
-      "text": "How is signal range approximately found from the flight level?",
-      "options": [
-        "By multiplying the square root of the flight level by 12",
-        "By multiplying the flight level by 12",
-        "By multiplying the square root of the flight level by 1.25",
-        "By multiplying the flight level by 100",
-        "By dividing the flight level by two"
-      ]
-    },
-    "90950": {
-      "text": "If two-way communication with the ground station cannot be established after the physical checks, what is tried first?",
-      "options": [
-        "Contacting on the frequency of another air traffic control unit such as Tower, Approach or Ground",
-        "Communicating with other aircraft on the route",
-        "Setting the transponder to 7500",
-        "Terminating the flight immediately",
-        "Making a MAYDAY call on 121.5 MHz"
-      ]
-    },
-    "90951": {
-      "text": "In a radio failure, if all attempts to contact stations fail, with whom is contact attempted last?",
-      "options": [
-        "Other aircraft on the route",
-        "The aerodrome operator",
-        "The rescue coordination centre",
-        "Military stations",
-        "The airline operations centre"
-      ]
-    },
-    "90952": {
-      "text": "How is a distress condition defined?",
-      "options": [
-        "A condition of being threatened by serious and/or imminent danger and of requiring immediate assistance",
-        "A condition threatening the safety of a person but not requiring immediate assistance",
-        "A temporary radio failure",
-        "The aircraft deviating from its planned route",
-        "Fuel insufficient to reach the alternate aerodrome"
-      ]
-    },
-    "90953": {
-      "text": "What is the basic feature that distinguishes an urgency condition from a distress condition?",
-      "options": [
-        "In urgency, safety is threatened but immediate assistance from outside is not required",
-        "Urgency applies only to aircraft on the ground",
-        "In urgency the transponder is set to 7700, in distress it is not",
-        "An urgency call is made only on 121.5 MHz",
-        "The silence rule is applied in an urgency condition"
-      ]
-    },
-    "90954": {
-      "text": "What is the radiotelephony distress signal and how many times is it spoken at the start of the message?",
-      "options": [
-        "MAYDAY, three times",
-        "PAN PAN, three times",
-        "MAYDAY, once",
-        "SOS, three times",
-        "EMERGENCY, twice"
-      ]
-    },
-    "90955": {
-      "text": "With which international radio prefix does an urgency call begin?",
-      "options": [
-        "PAN PAN, PAN PAN, PAN PAN",
-        "MAYDAY, MAYDAY, MAYDAY",
-        "SECURITE, SECURITE, SECURITE",
-        "ALL STATIONS",
-        "ATTENTION, ATTENTION"
-      ]
-    },
-    "90956": {
-      "text": "What should a pilot do on hearing an urgency message that is not answered?",
-      "options": [
-        "Acknowledge the message, confirm the situation and relay it to the ground station called",
-        "Change frequency immediately",
-        "Remain silent",
-        "Make a MAYDAY call himself",
-        "Set the transponder to 7700"
-      ]
-    },
-    "90957": {
-      "text": "Which code is set on the transponder before making the emergency transmission?",
-      "options": [
-        "7700",
-        "7500",
-        "7600",
-        "2000",
-        "1200"
-      ]
-    },
-    "90958": {
-      "text": "On which frequency is a distress call made?",
-      "options": [
-        "On the frequency in use at the time; the aircraft stays on it unless advised that another frequency would provide more effective assistance",
-        "Always on 121.5 MHz",
-        "Always on 243 MHz",
-        "On the tower frequency of the departure aerodrome",
-        "On the approach control frequency"
-      ]
-    },
-    "90959": {
-      "text": "When is 121.5 MHz used?",
-      "options": [
-        "When effective assistance cannot be provided on the frequency in use with the controller",
-        "First, in every emergency",
-        "By military aircraft only",
-        "For radio checks only",
-        "On night flights only"
-      ]
-    },
-    "90960": {
-      "text": "Which phrase does the aircraft in distress, or the station controlling it, use to impose silence on the frequency?",
-      "options": [
-        "Stop transmitting, Mayday",
-        "Cancel distress",
-        "Distress traffic ended",
-        "Standby all stations",
-        "Radio silence"
-      ]
-    },
-    "90961": {
-      "text": "Which phrase does the pilot use when the distress condition has ended?",
-      "options": [
-        "Cancel distress",
-        "Distress traffic ended",
-        "Stop transmitting, Mayday",
-        "Mayday over",
-        "All clear"
-      ]
-    },
-    "90962": {
-      "text": "With which phrase does the controlling station end the imposed silence?",
-      "options": [
-        "Distress traffic ended",
-        "Cancel distress",
-        "Stop transmitting, Mayday",
-        "Resume normal operations",
-        "Silence finished"
-      ]
-    },
-    "90963": {
-      "text": "Which transponder code is set in the event of unlawful interference (hijack)?",
-      "options": [
-        "7500",
-        "7700",
-        "7600",
-        "7000",
-        "1200"
-      ]
-    },
-    "90964": {
-      "text": "Which emergency frequency does the ELT system use for military aviation?",
-      "options": [
-        "243 MHz",
-        "121.5 MHz",
         "406 MHz",
+        "121.5 MHz",
+        "243 MHz",
         "123.1 MHz",
-        "118.0 MHz"
+        "118.1 MHz"
       ]
     },
-    "90965": {
-      "text": "Which frequency is used so that the ELT signal can be detected by search and rescue teams?",
+    "91018": {
+      "text": "Which type of modulation is used in aeronautical voice radio communication?",
       "options": [
-        "406 MHz",
+        "Always amplitude modulation (AM)",
+        "Always frequency modulation (FM)",
+        "FM on VHF, AM on HF",
+        "AM by day, FM by night",
+        "Phase modulation"
+      ]
+    },
+    "91019": {
+      "text": "What is the 108–117.975 MHz part of the VHF airband used for?",
+      "options": [
+        "Navigation aids (VOR, ILS)",
+        "Voice communication",
+        "Emergency frequencies",
+        "Military communication",
+        "Transponder (SSR) signals"
+      ]
+    },
+    "91020": {
+      "text": "Which ICAO document regulates the 118–136.975 MHz communication band?",
+      "options": [
+        "Annex 10, Volume V",
+        "Annex 2",
+        "Annex 6",
+        "Annex 11",
+        "Doc 4444"
+      ]
+    },
+    "91021": {
+      "text": "What does a steady green light from the tower to an aircraft in flight mean?",
+      "options": [
+        "Cleared to land",
+        "Return for landing",
+        "Give way to other aircraft and continue circling",
+        "Aerodrome unsafe, do not land",
+        "Land and proceed to the apron"
+      ]
+    },
+    "91022": {
+      "text": "Which of the following describes the propagation of VHF radio waves?",
+      "options": [
+        "They propagate along the line of sight; range depends largely on altitude",
+        "They reach beyond the horizon by reflection from the ionosphere",
+        "They follow the surface as ground waves, independent of altitude",
+        "They reach long range only at night",
+        "They propagate by reflection from clouds"
+      ]
+    },
+    "91023": {
+      "text": "Why is VHF communication less noisy and more stable than HF?",
+      "options": [
+        "It does not depend on ionospheric reflection",
+        "It transmits with higher power",
+        "It uses a longer wavelength",
+        "It uses frequency modulation",
+        "It is relayed via satellite"
+      ]
+    },
+    "91024": {
+      "text": "What is done to cover VHF blind spots in mountainous areas?",
+      "options": [
+        "Repeater stations are installed",
+        "Communication is switched to HF",
+        "Transmitter power is increased",
+        "121.5 MHz is used",
+        "Channel spacing is reduced to 8.33 kHz"
+      ]
+    },
+    "91025": {
+      "text": "What does 8.33 kHz channel spacing provide compared with 25 kHz spacing?",
+      "options": [
+        "Three times as many channels; it is mandatory in European airspace",
+        "Three times the range",
+        "Higher transmitter power",
+        "It eliminates ionospheric reflection",
+        "It reduces frequency entry to two digits"
+      ]
+    },
+    "91026": {
+      "text": "How many digits are entered for a frequency on a radio that supports 8.33 kHz channel spacing?",
+      "options": [
+        "Six digits",
+        "Five digits",
+        "Five or six digits",
+        "Four digits",
+        "Seven digits"
+      ]
+    },
+    "91027": {
+      "text": "What is the minimum separation between two ground stations using the same frequency?",
+      "options": [
+        "150–200 NM",
+        "50–100 NM",
+        "10–20 NM",
+        "500 NM",
+        "There is no separation requirement"
+      ]
+    },
+    "91028": {
+      "text": "Which type of interference is caused by two stations transmitting at the same time on the same frequency?",
+      "options": [
+        "Co-channel interference",
+        "Adjacent channel interference",
+        "Static interference",
+        "Echo",
+        "Sideband interference"
+      ]
+    },
+    "91029": {
+      "text": "Which frequency is commonly used in search and rescue operations?",
+      "options": [
+        "123.1 MHz",
         "121.5 MHz",
         "243 MHz",
-        "123.45 MHz",
+        "118.1 MHz",
         "136.975 MHz"
+      ]
+    },
+    "91030": {
+      "text": "What is ACARS?",
+      "options": [
+        "A system that exchanges automatic digital data messages between the aircraft and the ground unit, in some cases over a VHF channel",
+        "An automatic aerodrome weather broadcast",
+        "A satellite-based emergency transmitter",
+        "A mode of secondary surveillance radar",
+        "The direction-finding service of ground stations"
       ]
     }
   }
