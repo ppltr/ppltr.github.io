@@ -168,20 +168,10 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .hero .hnext:hover{background:var(--surface-2)}
 .hero .hnext.sr{color:var(--ink-2); font-size:12px}
 .hero .hnext.sr b{color:var(--cyan)}
-/* Speedrun listesi: sıkı satırlar, cevap yeşil ve tek bakışta */
-.srnote{font-size:11.5px; color:var(--ink-3); margin:-2px 0 8px}
-.srlist{padding:0}
-.srrow{padding:10px 13px; border-bottom:1px solid var(--rule)}
-.srrow:last-child{border-bottom:none}
-.srrow .srh{display:flex; align-items:center; gap:7px; margin-bottom:4px}
-.srrow .srh .who{flex:1; min-width:0; font-size:11px; color:var(--ink-3); overflow:hidden;
-  text-overflow:ellipsis; white-space:nowrap}
-.srrow .srn{font-size:11px; color:var(--ink-3); min-width:1.6em}
-.srrow .q{font-family:var(--f-read); font-size:14.5px; line-height:1.42; color:var(--ink)}
-.srrow .a{display:flex; gap:7px; margin-top:5px; font-size:13.5px; line-height:1.4;
-  color:var(--ok); font-weight:600}
-.srrow .a i{flex:none; font-style:normal}
-.srrow .srfig{margin:8px 0 2px; max-width:320px}
+/* Speedrun ve Düz metin bağlantıları yan yana, eylem satırının altında */
+.hero .srlinks{display:flex; gap:4px; margin-top:6px}
+.hero .srlinks .hnext{margin-top:0; flex:1}
+.hero .srlinks .hnext + .hnext{flex:0 0 auto}
 .hero.welcome{text-align:left}
 .hero .wtitle{font-size:20px; font-weight:700; letter-spacing:-.02em; margin-bottom:6px}
 .hero .wtext{margin:0 0 15px; font-size:13.5px; color:var(--ink-2); line-height:1.55}
@@ -1545,7 +1535,8 @@ function saveRun(){
   sureYaz();
   save();
 }
-function start(){
+function start(sr){
+  sr = sr === true;                         // onclick olay nesnesi geçirir, o sayılmaz
   const list = buildQueue();
   if (!list.length) return;
   yeniTur = false;
@@ -1553,9 +1544,9 @@ function start(){
   const id = 'r' + Date.now();
   R = { id, list, i:0, order:null, picked:null, orders:[], picks:[],
         log:[], t0:Date.now(), round:1, missed:[], sure:0, durdu:false, sureTam:true,
-        bos:0, bosTam:true, qTop:0, qN:0, qAcc:{}, qAcik:null, qSon:{} };
-  S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle(), code:soloModule() || '',
-                   deck:deckName(),
+        bos:0, bosTam:true, qTop:0, qN:0, qAcc:{}, qAcik:null, qSon:{}, sr };
+  S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle() + (sr ? ' · Speedrun' : ''),
+                   code:soloModule() || '', deck:deckName(), sr,
                    n0:list.length, ids:list.map(q => q[0]), i:0, round:1,
                    missed:[], log:[], done:false, sure:0, sureTam:true, bos:0, bosTam:true,
                    qTop:0, qN:0 });
@@ -1575,7 +1566,7 @@ function resumeRun(id){
         round:rec.round || 1, missed:(rec.missed || []).slice(),
         sure:rec.sure || 0, durdu:!!rec.durdu, sureTam:!!rec.sureTam,
         bos:rec.bos || 0, bosTam:!!rec.bosTam, qTop:rec.qTop || 0, qN:rec.qN || 0,
-        qAcc:{}, qAcik:null, qSon:{} };
+        qAcc:{}, qAcik:null, qSon:{}, sr:!!rec.sr };
   if (Array.isArray(rec.qAn)) R.qAcc[rec.qAn[0]] = rec.qAn[1] || 0;
   // Bu turda verilmiş cevapları geri kur: kayıtta kaynak şık indeksi var,
   // yeni karıştırmada karşılığı bulunur. Böylece geri gidince cevap görünür
@@ -1589,7 +1580,7 @@ function resumeRun(id){
 }
 /** Sorunun şık sırası — bir kez üretilir, geri gidip gelince değişmez. */
 function orderFor(i){
-  if (!R.orders[i]) R.orders[i] = optOrder(R.list[i]);
+  if (!R.orders[i]) R.orders[i] = R.sr ? [0] : optOrder(R.list[i]);
   return R.orders[i];
 }
 function step0(){
@@ -1655,14 +1646,14 @@ function pick(pos){
   draw();
   feedback(ok);
   clearTimeout(advT);
-  if (F.mode === 'exam') advT = setTimeout(next, 150);
+  if (F.mode === 'exam' || R.sr) advT = setTimeout(next, R.sr ? 260 : 150);
   else if (ok) advT = setTimeout(next, 580);
 }
 function next(){ clearTimeout(advT); if (R){ R.i++; step0(); } }
 
 // ── Ana ekran ──
 function home(){
-  R = null; srAcik = false;
+  R = null;
   const total = scoped().length;
   const counts = {}; DECKS.forEach(d => counts[d.k] = deckCount(d.k));
   const leech = deckCount('leech');
@@ -1689,9 +1680,13 @@ function home(){
   // cevap olarak listeler; ilerlemeye dokunmaz. Sayı Başla ile aynı havuz.
   const srN = ready;
   const srLink = srN
-    ? '<button class="hnext sr" id="goSr" type="button" title="Kapsamdaki soruları ' +
-      'yalnız soru ve doğru cevap olarak, şıksız, hızlıca oku">⚡ Speedrun · <b class="num">' +
-      nf(srN) + '</b> soru — yalnız soru ve doğru cevap ›</button>' : '';
+    ? '<div class="srlinks">' +
+      '<button class="hnext sr" id="goSr" type="button" title="Her soruda yalnız doğru ' +
+        'cevap tek şık olarak gelir; basınca doğru sayılır ve sonraki soruya geçer">' +
+        '⚡ Speedrun · <b class="num">' + (F.count ? Math.min(srN, F.count) : nf(srN)) +
+        '</b> soru</button>' +
+      '<button class="hnext sr" id="goTxt" type="button" title="Kapsamdaki soruların ' +
+        'metni ve doğru cevabı, kopyalanabilir düz metin">Düz metin ›</button></div>' : '';
   const hact = (label, dis) => (devam
     ? '<div class="hact">' +
         '<button class="go" id="go" type="button">Devam et' +
@@ -1936,7 +1931,9 @@ function home(){
   const mn = el('mNext');
   if (mn) mn.onclick = () => { autoPickModule(); F.deck = 'new'; home(); };
   const gsr = el('goSr');
-  if (gsr) gsr.onclick = speedrun;
+  if (gsr) gsr.onclick = () => start(true);
+  const gtx = el('goTxt');
+  if (gtx) gtx.onclick = openSrText;
   const ma = el('mAll');
   if (ma) ma.onclick = () => {
     F.pick = {}; F.deck = deckCount('due') ? 'due' : 'wrong'; savePref(); home();
@@ -2295,7 +2292,7 @@ addEventListener('pointermove', e => {
 
 function draw(){
   const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
-  const shown = R.picked !== null && F.mode === 'study';
+  const shown = R.picked !== null && F.mode === 'study' && !R.sr;
   const k = card(q[0]), st = stars();
   const retry = R.round > 1;
 
@@ -2307,7 +2304,7 @@ function draw(){
     } else if (pos === R.picked) cls += ' sel';
     return '<button class="' + cls + '" data-p="' + pos + '"' +
       (R.picked !== null ? ' disabled' : '') + ' type="button">' +
-      '<span class="k">' + KEYS[pos] + '</span><span>' + esc(qOpts(q)[oi]) + '</span>' +
+      '<span class="k">' + (R.sr ? '✓' : KEYS[pos]) + '</span><span>' + esc(qOpts(q)[oi]) + '</span>' +
       (mark ? '<span class="m">' + mark + '</span>' : '') + '</button>';
   }).join('');
 
@@ -2333,7 +2330,7 @@ function draw(){
       '<span class="qpos">Soru <b class="num">' + (R.i + 1) + '</b> / ' +
         '<b class="num">' + R.list.length + '</b></span>' +
       '<span class="lbl"' + (retry ? ' style="color:var(--bad)"' : '') + '>' +
-        (retry ? 'Yanlış turu ' + R.round : deckName()) + '</span>' +
+        (retry ? 'Yanlış turu ' + R.round : R.sr ? 'Speedrun' : deckName()) + '</span>' +
       '<button class="tmr" id="tmr" type="button"><span class="ti" aria-hidden="true">' +
         '</span><span class="tv num"></span></button></div>' +
     '<div class="card"><div class="head">' +
@@ -2478,49 +2475,36 @@ function done(){
   report(live, true);
 }
 
-// ── Speedrun: yalnız soru + doğru cevap, kaydırılabilir liste ──
-// Şık yok, cevap yok, puan yok: kapsamı baştan sona hızlıca okuyup geçmek
-// için. Havuz Başla ile aynı (kapsam + deste + süzgeçler), tur uzunluğu
-// sınırı uygulanmaz. Sıra banka sırası (ders → bölüm → kimlik) — okurken
-// konular bir arada dursun. İlerlemeye dokunmaz; toplam süre sayar.
-let srAcik = false;
+// ── Speedrun: tek şıklı tur ──
+// Normal tur gibi akar; fark, her soruda yalnız doğru cevabın tek şık olarak
+// gelmesi. Şıkka basmak doğru saymak ve otomatik geçmektir. Kapsamı baştan
+// sona hızlıca okuyup geçmek için; ilerlemeye normal tur gibi işlenir
+// (kullanıcı "doğru cevap seçmiş olacağız" dedi). Kayıtta `sr:true`.
+/** Kapsamdaki soru + doğru cevap düz metni — ayrı "Düz metin" bağlantısından. */
 function srMetin(list){
   const baslik = scopeTitle() + ' · ' + deckName() + ' · ' + list.length + ' soru';
-  return 'Speedrun · ' + baslik + '\n\n' + list.map((q, i) =>
+  return baslik + '\n\n' + list.map((q, i) =>
     (i + 1) + '. ' + qText(q) + '\n→ ' + qOpts(q)[0]).join('\n\n') + '\n';
 }
-function speedrun(){
+/** Düz metin paneli: metin kutuda, kopyala düğmesi. Tur uzunluğu sınırı yok. */
+function openSrText(){
   const list = scoped().filter(q => inDeck(q, F.deck));
   if (!list.length) return;
-  R = null; srAcik = true; yeniTur = false;
-  const row = (q, i) => {
-    const s = SUBJ[q[1]], sec = s.sec[q[2]];
-    return '<div class="srrow"><div class="srh"><span class="srn num">' + (i + 1) + '</span>' +
-      '<span class="who">' + esc(secName(sec)) + '</span>' +
-      (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') +
-      '<span class="lbl num">' + q[0] + '</span></div>' +
-      '<div class="q">' + esc(qText(q)) + '</div>' +
-      (figOf(q) ? '<div class="figbox srfig">' + figOf(q) + '</div>' : '') +
-      '<div class="a"><i>✓</i>' + esc(qOpts(q)[0]) + '</div></div>';
-  };
-  el('view').innerHTML =
-    '<div class="meta"><button class="backb" id="hb" type="button" title="Ana ekran">' +
-      '<i>‹</i>Ana ekran</button>' +
-      '<span class="qpos">Speedrun · <b class="num">' + nf(list.length) + '</b> soru</span>' +
-      '<button class="tbtn" id="srCopy" type="button" title="Soru ve doğru cevapları düz ' +
-        'metin olarak panoya kopyalar">Kopyala</button></div>' +
-    '<div class="srnote">' + esc(scopeTitle()) + ' · ' + esc(deckName()) +
-      ' · yalnız soru ve doğru cevap; okumak ilerlemeye işlenmez</div>' +
-    '<div class="card srlist">' + list.map(row).join('') + '</div>' +
-    '<div class="acts"><button class="go2" id="back" type="button">Ana ekran</button></div>';
-  el('hb').onclick = home;
-  el('back').onclick = home;
+  const m = srMetin(list);
+  el('sheetBody').innerHTML =
+    '<h2>Düz metin<span class="sp"></span><span class="lbl">' + nf(list.length) + ' soru</span></h2>' +
+    '<div class="note" style="margin-bottom:8px">Kapsamdaki soruların metni ve doğru cevabı: ' +
+      esc(scopeTitle()) + ' · ' + esc(deckName()) + '. Seçili dilde; dili Ayarlar\'dan değiştir.</div>' +
+    '<div style="display:flex; gap:7px; margin-bottom:8px">' +
+      '<button class="tbtn" id="srCopy" type="button">Kopyala</button></div>' +
+    '<textarea id="srTa" readonly spellcheck="false" style="min-height:60vh"></textarea>';
+  el('srTa').value = m;
+  el('sheet').classList.add('on');
   el('srCopy').onclick = async () => {
-    const b = el('srCopy'), ok = await copyText(srMetin(list));
-    b.textContent = ok ? 'Kopyalandı' : 'Kopyalanamadı';
-    setTimeout(() => { const c = el('srCopy'); if (c) c.textContent = 'Kopyala'; }, 2000);
+    const b = el('srCopy'), ok = await copyText(m);
+    b.textContent = ok ? 'Kopyalandı' : 'Kopyalanamadı — kutudan seç';
+    setTimeout(() => { const c = el('srCopy'); if (c) c.textContent = 'Kopyala'; }, 2200);
   };
-  window.scrollTo({ top:0 });
 }
 
 /** Tur raporu — hem tur biter bitmez hem de geçmişten açılınca çizilir. */
@@ -3197,9 +3181,7 @@ document.addEventListener('keydown', e => {
   if (tg && tg.matches && tg.matches('input, select, textarea')) return;
   if (e.key === 'Escape'){
     if (navOpen && R){ el('navBtn').click(); return; }
-    if (el('sheet').classList.contains('on')){ closeSheet(); return; }
-    if (srAcik){ home(); return; }
-    return;
+    closeSheet(); return;
   }
   if (!R) return;
   const k = e.key;
@@ -3210,7 +3192,10 @@ document.addEventListener('keydown', e => {
     if (p < R.order.length && R.picked === null){ pick(p); e.preventDefault(); }
     return;
   }
-  if (k === 'Enter'){ if (R.picked !== null){ next(); e.preventDefault(); } }
+  if (k === 'Enter'){
+    if (R.picked !== null) next(); else if (R.sr) pick(0);
+    e.preventDefault();
+  }
   else if (k === 'ArrowRight'){ nextQ(); e.preventDefault(); }
   else if (k === 'ArrowLeft'){ prevQ(); e.preventDefault(); }
   else if (k === 'Home'){ goTo(0); e.preventDefault(); }

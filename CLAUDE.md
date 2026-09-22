@@ -307,13 +307,19 @@ yerde (şeritte ve panelde), seçiciyi `#navPop` ile daraltma.
 **Soru kartının başlığında ders kodu yok** (ör. "090"): bölüm adıyla başlar. Kullanıcı
 gereksiz bulup kaldırttı; ders, bölüm adından ve üst satırdaki desteden anlaşılıyor.
 
-**Speedrun** (`speedrun()`, ana ekranda eylem satırının altındaki `#goSr` bağlantısı):
-kapsamdaki soruları yalnız metin + doğru cevap olarak, şıksız, kaydırılabilir tek listede
-gösterir — bütün seti hızlıca okuyup geçmek için. Havuz Başla ile aynı (kapsam + deste +
-süzgeçler), tur uzunluğu sınırı uygulanmaz, sıra banka sırası. **İlerlemeye işlenmez**
-(`R` null kalır, `grade` çağrılmaz); yalnız toplam süre sayar. "Kopyala" aynı listeyi düz
-metin olarak panoya verir (`srMetin`: "N. soru ⏎ → cevap"). `Esc` ve `‹ Ana ekran` çıkar;
-`srAcik` bayrağı `home()`'da düşer. Kullanıcı bunu "speedrun modu" diye istedi, adı öyle kalsın.
+**Speedrun** (`start(true)`, ana ekranda eylem satırının altındaki `#goSr`): normal tur
+gibi akar, tek fark her soruda yalnız doğru cevabın **tek şık** olarak gelmesi (`orderFor`
+`R.sr` iken `[0]` döner, şık etiketi "✓"). Şıkka basmak ya da `Enter` doğru saymak ve 260 ms
+sonra otomatik geçmektir; karar satırı çizilmez. Kapsamı baştan sona hızlıca okuyup geçmek
+için. **İlerlemeye normal tur gibi işlenir** — kullanıcı "doğru cevap seçmiş olacağız"
+dedi; salt okuma listesi istemedi. Kayıt `rec.sr`, başlık "… · Speedrun", geçmişten
+sürdürülür. `start(sr)` `sr === true` ile kontrol eder: `onclick = start` olay nesnesi
+geçirir, o speedrun sayılmasın.
+
+**Düz metin** (`#goTxt` → `openSrText()`): kapsamdaki soruların metni ve doğru cevabı,
+Durum panelinin yerinde bir kutuda + Kopyala (`srMetin`: "N. soru ⏎ → cevap"). Tur
+uzunluğu sınırı uygulanmaz, seçili dilde. Speedrun'dan **ayrı** bağlantı; kullanıcı ikisinin
+karışmasını istemedi.
 
 **Soruyu yapay zekâya sorma.** Kart başlığındaki `Sor` düğmesi (`askBtn`) soruyu,
 gördüğün sıradaki şıkları, doğru cevabı ve verdiğin cevabı düz metne çevirip
