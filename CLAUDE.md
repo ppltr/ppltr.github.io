@@ -164,6 +164,16 @@ okundu; 16'sı gizlendi. Ayrıca eski gruplardan cevabı farklı olan iki soru g
   çağrı adının atlanması, MAYDAY'den sonraki öğe, CORRECTION'ın QNH örneği (16405 —
   soru "hata için hangi ifade", cevap yine correction).
 
+**040 (Human Performance) aynı tanımla tarandı (2026-09-24).** 251 soru tek tek okundu →
+212 görünür. Yeni gizlenen 5: 15052 (dolaşım), 15103 (ek O2 gereği → basınç), 15085
+(yarı basınç 18.000 ft), 15116 (hipoksi nedir), 15198 (yukarı eğimli pist → sığ yaklaşma;
+15191 "izlenim: overshoot" tuzak olduğu için açık). Eski gruplardan ters yönden sorulan
+ya da farklı soru olan 7'si geri açıldı: 15065 (DCS → Henry), 15141 (pozitif G → önce
+grey-out), 15192 (çevresel görme → çubuklar), 15238 (doğrusal ivme → otolitler), 15235
+(dönüşte baş hareketi → Coriolis), 15067 (cardiovascular = ?), 15069 (atardamar, toplardamar,
+kılcal, kalp → hangi sistem). Duman/CO (15146 ↔ 15088) ve hipoksik hipoksi (15124 ↔ 15135)
+çiftleri soru kökü farklı olduğu için bağlanmadı.
+
 ## Çalışma uygulaması (`web/`)
 
 Asıl kullanılan sürüm bu: tek dosya, sunucusuz, `localStorage` tabanlı.

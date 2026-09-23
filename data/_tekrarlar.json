@@ -644,20 +644,12 @@
     },
     {
       "ids": [
-        15051,
-        15065
-      ],
-      "not": "Henry yasası → dekompresyon hastalığı"
-    },
-    {
-      "ids": [
         15057,
         15061,
         15064,
-        15067,
-        15069
+        15052
       ],
-      "not": "Dolaşım sistemi — beş farklı yazımla aynı soru"
+      "not": "Kanı/oksijeni vücutta dolaştıran sistem → Circulatory System (15052 'Circulation' aynı soru)"
     },
     {
       "ids": [
@@ -699,9 +691,10 @@
     {
       "ids": [
         15080,
-        15136
+        15136,
+        15103
       ],
-      "not": "Yükseklikte O2 azlığı → atmosfer basıncı düşük"
+      "not": "Yükseklikte O2 azlığı / ek oksijen gereği → atmosfer basıncı düşük"
     },
     {
       "ids": [
@@ -733,13 +726,6 @@
     },
     {
       "ids": [
-        15138,
-        15141
-      ],
-      "not": "Pozitif G → önce grey-out"
-    },
-    {
-      "ids": [
         15139,
         15150
       ],
@@ -765,13 +751,6 @@
         15203
       ],
       "not": "Renk görme → koniler"
-    },
-    {
-      "ids": [
-        15182,
-        15192
-      ],
-      "not": "Çevresel görme + düşük ışık → çubuklar"
     },
     {
       "ids": [
@@ -832,17 +811,24 @@
     },
     {
       "ids": [
-        15219,
-        15238
+        15084,
+        15085
       ],
-      "not": "Otolitler → doğrusal ivme"
+      "not": "Basınç / O2 kısmi basıncı deniz seviyesinin yarısı → 18.000 ft"
     },
     {
       "ids": [
-        15227,
-        15235
+        15097,
+        15116
       ],
-      "not": "Dönüşte baş hareketi → Coriolis illüzyonu"
+      "not": "Hipoksi nedir → yetersiz oksijen"
+    },
+    {
+      "ids": [
+        15178,
+        15198
+      ],
+      "not": "Yukarı eğimli pist → alçak ve sığ yaklaşma (15191 'izlenim: overshoot' ayrı, tuzak)"
     },
     {
       "ids": [
