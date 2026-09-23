@@ -1,273 +1,273 @@
 {
   "questions": {
     "91101": {
-      "text": "Telsiz haberleşmesinde \"broadcast\" (yayın) nedir?",
+      "text": "BROADCAST terimi, bilginin şu olduğunu anlatır:",
       "options": [
-        "Hava seyrüseferiyle ilgili, belirli bir istasyona yöneltilmemiş bilgi yayını",
-        "İki yönlü haberleşme kurulamadığında, çağrılan istasyonun aldığına inanılarak yapılan gönderme",
-        "Tek bir istasyona yöneltilen ve tekrar edilmesi gereken mesaj",
-        "Her istasyonun sırayla cevap vermesi gereken genel çağrı"
+        "belirli bir istasyona yöneltilmemiştir",
+        "belirli bir istasyona yöneltilmiştir",
+        "haberleşmenin kurulamadığı ama çağrılan istasyonun yayını alabildiğine inanılan durumlarda gönderilir",
+        "tekrar (readback) gerektirir"
       ]
     },
     "91102": {
-      "text": "\"AFIS\" kısaltmasının açılımı nedir?",
+      "text": "AFIS kısaltması ne anlama gelir?",
       "options": [
-        "Aerodrome Flight Information Service",
-        "Automatic Flight Information Service",
-        "Aeronautical Fixed Information System",
-        "Airport Frequency Identification Signal"
+        "Meydan uçuş bilgi hizmeti (Aerodrome flight information service).",
+        "Meydan yanıp sönen tanıtma işareti (Aerodrome flashing identification signal).",
+        "Otomatik uçuş bilgi hizmeti (Automatic flight information service).",
+        "Havacılık uçuş bilgi sistemi (Aeronautical flight information system)."
       ]
     },
     "91103": {
-      "text": "Rüzgârsız hâlde bir yön bulma istasyonuna ulaşmak için uçulacak gerçek başı veren Q kodu hangisidir?",
+      "text": "Bir telsiz yön bulma istasyonu, uçağa o istasyona gitmesi için gerçek başı (rüzgârsız) bildirirken hangi Q kodunu kullanır?",
       "options": [
-        "QUJ",
-        "QTE",
-        "QDM",
-        "QDR"
+        "QUJ.",
+        "QGE.",
+        "QTF.",
+        "QDM."
       ]
     },
     "91104": {
-      "text": "Aşağıdakilerden hangisi mesaj kategorilerini en yüksek öncelikten başlayarak doğru sıralar?",
+      "text": "Havacılık gezici hizmetinde aşağıdaki mesajların öncelik sırası şöyledir:",
       "options": [
-        "Tehlike (distress), acele durum (urgency), yön bulma",
-        "Acele durum (urgency), tehlike (distress), yön bulma",
-        "Yön bulma, tehlike (distress), acele durum (urgency)",
-        "Tehlike (distress), uçuş emniyeti, acele durum (urgency)"
+        "Tehlike mesajı, acele mesajı, yön bulma mesajı.",
+        "Yön bulma mesajı, tehlike mesajı, acele mesajı.",
+        "Tehlike mesajı, uçuş emniyeti mesajı, acele mesajı.",
+        "Meteoroloji mesajı, yön bulma mesajı, uçuş düzeni mesajı."
       ]
     },
     "91105": {
-      "text": "Meteorolojik mesajlar öncelik sırasında nerede yer alır?",
+      "text": "Havacılık gezici hizmetinde aşağıdaki mesajların öncelik sırası şöyledir:",
       "options": [
-        "Uçuş emniyeti mesajlarının altında, uçuş düzenliliği mesajlarının üstünde",
-        "Uçuş emniyeti mesajlarının üstünde",
-        "Uçuş düzenliliği mesajlarının altında",
-        "Acele durum (urgency) mesajlarıyla aynı"
+        "Uçuş emniyeti mesajı, meteoroloji mesajı, uçuş düzeni mesajı.",
+        "Uçuş düzeni mesajı, tehlike mesajı, meteoroloji mesajı.",
+        "Meteoroloji mesajı, yön bulma mesajı, uçuş emniyeti mesajı.",
+        "Uçuş emniyeti mesajı, yön bulma mesajı, acele mesajı."
       ]
     },
     "91106": {
-      "text": "Pilot saha kontrol merkezine \"Request radar vectors to avoid adverse weather\" diyor. Bu hangi mesaj kategorisidir?",
+      "text": "Saha kontrol merkezine gönderilen REQUEST RADAR VECTORS TO CIRCUMNAVIGATE ADVERSE WEATHER (kötü havanın etrafından dolaşmak için radar vektörü istiyorum) mesajı şudur:",
       "options": [
-        "Uçuş emniyeti mesajı",
-        "Meteorolojik mesaj",
-        "Acele durum (urgency) mesajı",
-        "Yön bulma mesajı"
+        "Uçuş emniyeti mesajı.",
+        "Meteoroloji mesajı.",
+        "Acele mesajı.",
+        "Yön bulmayla ilgili mesaj."
       ]
     },
     "91107": {
-      "text": "Acilen gereken uçak parçaları ve malzemeleriyle ilgili bir mesaj hangi kategoriye girer?",
+      "text": "Acilen gereken uçak parçaları ve malzemeyle ilgili bir mesaj şudur:",
       "options": [
-        "Uçuş düzenliliği (flight regularity) mesajı",
-        "Acele durum (urgency) mesajı",
-        "Uçuş emniyeti mesajı",
-        "Tehlike (distress) mesajı"
+        "Uçuş düzeni mesajı.",
+        "Uçuş güvenliği (security) mesajı.",
+        "Acele mesajı.",
+        "Uçuş emniyeti mesajı."
       ]
     },
     "91108": {
-      "text": "Karşılıksız yayın (blind transmission) kaç kez yapılmalıdır?",
+      "text": "Pilotun kör yayın (blind transmission) yapması gerekirse bu yayın şöyle yapılmalıdır:",
       "options": [
-        "İki kez, belirlenmiş frekansta",
-        "Bir kez, belirlenmiş frekansta",
-        "Üç kez, yalnız 121.5 MHz'te",
-        "Kullanılabilen her frekansta birer kez"
+        "Belirlenmiş frekansta iki kez.",
+        "Belirlenmiş frekansta yalnız bir kez.",
+        "Yalnız acil durum frekansında.",
+        "Yalnız VFR uçuşlarda."
       ]
     },
     "91109": {
-      "text": "Alıcı arızası nedeniyle karşılıksız yayın yaparken pilot başka neyi bildirmelidir?",
+      "text": "Uçağın telsiz alıcısı arızalanırsa uçak şunu yapmalıdır:",
       "options": [
-        "Bir sonraki planlanan yayının zamanını",
-        "Kalan yakıtla uçuş süresini dakika olarak",
-        "Kontrolörün telsizle teyit etmesi isteğini",
-        "Sorumlu pilotun adını"
+        "Kullanılan frekansta, planlanan saatte ya da noktalarda TRANSMITTING BLIND DUE TO RECEIVER FAILURE ifadesiyle yayın yapmalı ve bir sonraki yayının saatini bildirmelidir. SSR varsa 7600'e ayarlanmalıdır.",
+        "yukarıdaki gibi, ama squawk 7700.",
+        "yukarıdaki gibi, ama 7500.",
+        "yukarıdaki gibi, ama 7777."
       ]
     },
     "91110": {
-      "text": "ATC \"Report flight conditions\" diyor. Doğru cevap hangisidir?",
+      "text": "REPORT FLIGHT CONDITIONS (uçuş koşullarını bildir) mesajına cevabınız şöyle olmalıdır:",
       "options": [
-        "\"VMC\" ya da \"IMC\"",
-        "\"VFR\" ya da \"IFR\"",
-        "\"Smooth\" ya da \"turbulent\"",
-        "\"Good\" ya da \"bad\""
+        "VMC / IMC",
+        "SMOOTH / TURBULENT",
+        "GOOD / BAD",
+        "VFR / IFR"
       ]
     },
     "91111": {
-      "text": "\"BREAK BREAK\" ifadesi neyi belirtir?",
+      "text": "BREAK BREAK ifadesi şunu belirtmek için kullanılır:",
       "options": [
-        "Çok yoğun bir ortamda farklı uçaklara verilen mesajlar arasındaki ayrımı",
-        "Tek bir mesajın bölümleri arasındaki ayrımı",
-        "Yayının bittiğini, cevap beklenmediğini",
-        "Frekansın hemen boşaltılması gerektiğini"
+        "Çok yoğun bir ortamda farklı uçaklara verilen mesajlar arasındaki ayrım.",
+        "Bir mesajın bölümleri arasındaki ayrım.",
+        "Mesajın sonu.",
+        "Kol uçuşunu dağıtın."
       ]
     },
     "91112": {
-      "text": "Mesaj metni ile diğer bölümleri arasında belirgin bir ayrım yoksa, bölümleri ayırmak için hangi kelime kullanılır?",
+      "text": "Bir mesajın bölümlerini ayırmak için hangi sözcük kullanılır?",
       "options": [
         "BREAK",
         "BREAK BREAK",
         "I SAY AGAIN",
-        "OVER"
+        "REPEAT"
       ]
     },
     "91113": {
-      "text": "\"CANCEL\" kelimesi ne anlama gelir?",
+      "text": "CANCEL terimi şu anlama gelir:",
       "options": [
-        "Daha önce verilen müsaadeyi iptal et",
-        "O yayını gönderilmemiş say",
-        "Bir hata yapıldı, doğrusu şudur",
-        "Uçuş planınız silindi"
+        "Daha önce verilen müsaadeyi iptal et.",
+        "Mesajı gönderilmemiş say.",
+        "Uçuşunuz işletmeciniz tarafından iptal edildi.",
+        "Son müsaadenizde bir düzeltme var."
       ]
     },
     "91114": {
-      "text": "ATC'nin kullandığı \"CHECK\" ne anlama gelir?",
+      "text": "Uçağa verilen CHECK mesajı şunu yapmanız gerektiği anlamına gelir:",
       "options": [
-        "Bir sistemi ya da usulü kontrol et; normalde cevap beklenmez",
-        "Son mesajı alıp anladığını teyit et",
-        "Son müsaadeyi tekrar et",
-        "Pozisyonunu bildir"
+        "Bir sistemi ya da usulü kontrol edin.",
+        "Son mesajı aldığınızı ve anladığınızı teyit edin.",
+        "Gereken bilgiyi ATC'ye iletin.",
+        "Olduğunuz yerde kalın."
       ]
     },
     "91115": {
-      "text": "\"İzin verilmedi\" anlamında hangi kelime kullanılır?",
+      "text": "PERMISSION NOT GRANTED (izin verilmedi) ifadesinin karşılığı olan sözcük:",
       "options": [
         "NEGATIVE",
         "NOT APPROVED",
-        "UNABLE",
-        "DISREGARD"
+        "NEVER",
+        "CORRECTION"
       ]
     },
     "91116": {
-      "text": "\"MONITOR (frekans)\" talimatı ne anlama gelir?",
+      "text": "MONITOR talimatının tanımı:",
       "options": [
-        "O frekansı dinle",
-        "O frekansta iki yönlü temas kur",
-        "O frekansta telsiz kontrolü yap",
-        "O frekansta pozisyon raporunu ver"
+        "… frekansını dinle.",
+        "İzleniyorsunuz.",
+        "… frekansında haberleşme kur.",
+        "… frekansındaki ışık işaretlerine dikkat et."
       ]
     },
     "91117": {
-      "text": "\"CONFIRM\" ne anlama gelir?",
+      "text": "HAVE I CORRECTLY RECEIVED THE FOLLOWING (aşağıdakini doğru aldım mı) ifadesinin karşılığı olan sözcük:",
       "options": [
-        "Şunun doğrulanmasını istiyorum: (müsaade, talimat, eylem, bilgi)",
-        "Mesajın kaynağıyla kontrol edip teyit et",
-        "Evet",
-        "Son yayınınızın tamamını aldım"
+        "CONFIRM",
+        "ACKNOWLEDGE",
+        "VERIFY",
+        "ARE YOU SURE"
       ]
     },
     "91118": {
-      "text": "Genel olarak bir radar istasyonunun çağrı adı eki nedir?",
+      "text": "Bir radar istasyonunun (genel) çağrı adı şöyle olur:",
       "options": [
         "RADAR",
         "CONTROL",
-        "DIRECTOR",
-        "APPROACH"
+        "CENTRE",
+        "SPARKS"
       ]
     },
     "91119": {
-      "text": "Kalkan trafiği yöneten yaklaşma kontrol radar biriminin çağrı adı eki nedir?",
+      "text": "Kalkışta radar hizmeti alırken haberleştiğiniz istasyonun çağrı adı şöyle olur:",
       "options": [
         "DEPARTURE",
-        "TOWER",
-        "RADAR",
-        "DELIVERY"
+        "CONTROL",
+        "DIRECTOR",
+        "RADAR"
       ]
     },
     "91120": {
-      "text": "Uçuş bilgi hizmeti veren istasyonun çağrı adı eki nedir?",
+      "text": "Uçuş bilgi hizmeti veren bir istasyonun telsiz çağrı adı hangisidir?",
       "options": [
         "INFORMATION",
-        "CONTROL",
-        "RADIO",
-        "CENTRE"
+        "FLIGHT CENTRE",
+        "FLIGHT INFORMATION CENTRE",
+        "CONTROL"
       ]
     },
     "91121": {
-      "text": "HEAVY türbülans kategorisindeki ANKAIR 512 çağrı adlı uçak ilk çağrısını yapıyor. Çağrı adı nasıl söylenir?",
+      "text": "Çağrı adı FASTAIR 285 olan, 136 tondan ağır bir uçağın ilk çağrısı şöyle olur:",
       "options": [
-        "\"ANKAIR 512 HEAVY\"",
-        "\"HEAVY ANKAIR 512\"",
-        "\"ANKAIR 512 WIDEBODY\"",
-        "\"ANKAIR 512\"; HEAVY kelimesi yalnız yerde kullanılır"
+        "FASTAIR 285 HEAVY",
+        "FASTAIR 285",
+        "HEAVY FASTAIR 285",
+        "FASTAIR 285 WIDEBODY"
       ]
     },
     "91122": {
-      "text": "Düz arazi üzerinde FL50'de uçarken bir yer istasyonuyla yaklaşık hangi mesafeye kadar sağlam VHF teması beklenir?",
+      "text": "FL50'de, düz arazi üzerinde sağlam VHF teması bekleyebileceğiniz en uzak mesafe hangisidir?",
       "options": [
         "Yaklaşık 85 NM",
         "Yaklaşık 8 NM",
-        "Yaklaşık 27 NM",
-        "Yaklaşık 600 NM"
+        "Yaklaşık 15 NM",
+        "Yaklaşık 150 NM"
       ]
     },
     "91123": {
-      "text": "Mikrofon düğmesi gönderme konumunda takılı kalırsa ne olur?",
+      "text": "Mikrofon düğmesinin gönderme konumunda takılı kalmasının (açık kalmasının) sonucu nedir?",
       "options": [
-        "Frekans kapanır, diğer istasyonlar kullanamaz",
-        "Hiçbir şey; diğer istasyonlar yine de üzerine konuşabilir",
-        "Yalnız pilotun kendi alıcısı etkilenir",
-        "Bütün istasyonlar için okunabilirlik artar"
+        "Frekans başkaları tarafından kullanılamaz.",
+        "Hiçbir sonucu yoktur.",
+        "Diğer istasyonlar WORDS TWICE (sözcükleri iki kez söyleme) tekniğini kullanmak zorunda kalır.",
+        "Bütün istasyonlar için okunabilirlik iyileşir."
       ]
     },
     "91124": {
-      "text": "\"Readability 2\" ne anlama gelir?",
+      "text": "READABILITY 2 ifadesi ne anlama gelir?",
       "options": [
-        "Arada bir okunuyor",
-        "Zorlukla okunuyor",
-        "Okunamıyor",
-        "Okunuyor"
+        "Arada bir okunuyor.",
+        "Okunuyor ama zorlukla.",
+        "Okunuyor.",
+        "Okunmuyor."
       ]
     },
     "91125": {
-      "text": "ATC \"Hold short of runway 24\" diyor. Doğru cevap hangisidir?",
+      "text": "Kullanılan pistin önünde beklemesi (hold short) söylenen bir uçak, bu talimata uyacağını hangi doğru ifadeyle belirtir?",
       "options": [
-        "\"Holding short (runway 24)\" ve çağrı adı",
-        "\"Wilco\" ve çağrı adı",
-        "\"Roger\" ve çağrı adı",
-        "\"Will stop before the runway\" ve çağrı adı"
+        "Holding short.",
+        "Wilco.",
+        "Will stop before.",
+        "Roger."
       ]
     },
     "91126": {
-      "text": "ATC fren katsayısını 20 (0,20) olarak bildiriyor. Bu hangi frenleme etkisine karşılık gelir?",
+      "text": "ATC'nin BRAKING CO-EFFICIENT 20 ifadesi, frenleme etkisinin şöyle olduğunu gösterir:",
       "options": [
-        "Zayıf (poor)",
-        "Orta (medium)",
-        "Orta ile zayıf arası (medium to poor)",
-        "İyi (good)"
+        "zayıf (poor)",
+        "orta (medium)",
+        "iyi (good)",
+        "orta ile zayıf arası (medium to poor)"
       ]
     },
     "91127": {
-      "text": "Acele durum (urgency) mesajı normalde ilk önce hangi frekansta yayınlanır?",
+      "text": "Acele (urgency) durumunda ilk kullanılacak frekans:",
       "options": [
-        "O an kullanılmakta olan hava-yer frekansında",
-        "121.5 MHz'te",
-        "En yakın radar biriminin frekansında",
-        "Saha kontrol merkezinin frekansında"
+        "O anda kullanılan hava-yer frekansı.",
+        "En yakın radar istasyonunun frekansı.",
+        "Saha kontrol merkezinin frekansı.",
+        "uluslararası tehlike frekansı"
       ]
     },
     "91128": {
-      "text": "\"I SAY AGAIN\" ne anlama gelir?",
+      "text": "Bir şeyi açıklık ya da vurgu için tekrarlarken hangi ifade kullanılır?",
       "options": [
-        "Açıklık ya da vurgu için tekrarlıyorum",
-        "Son yayınının tamamını ya da şu bölümünü tekrar et",
-        "Son talimatımı tekrar et (read back)",
-        "O yayını gönderilmemiş say"
+        "I SAY AGAIN",
+        "ONCE MORE",
+        "I REPEAT",
+        "WORDS TWICE"
       ]
     },
     "91129": {
-      "text": "\"Bana şu bilgiyi ver\" anlamında hangi kelime kullanılır?",
+      "text": "Hangi ifade “aşağıdaki bilgiyi bana ilet” anlamına gelir?",
       "options": [
         "REPORT",
+        "SAY AGAIN",
         "REQUEST",
-        "CONFIRM",
-        "VERIFY"
+        "CHECK"
       ]
     },
     "91130": {
-      "text": "Aşağıdakilerden hangisi acele durum (urgency) hâlini tanımlar?",
+      "text": "Acele (urgency) durumunu en iyi hangisi tanımlar?",
       "options": [
-        "Bir uçağın, aracın ya da uçaktaki veya görüş alanındaki bir kişinin emniyetini ilgilendiren ama acil yardım gerektirmeyen durum",
-        "Ciddi ve/veya yakın tehlike içinde olup acil yardım gerektiren durum",
-        "Uçak yerdeyken meydana gelen her türlü acil durum",
-        "Hemen yön değiştirmeyi gerektiren her durum"
+        "Bir uçağın, aracın ya da kişinin emniyetiyle ilgili, hemen yardım gerektirmeyen durum.",
+        "Hemen yardım gerektiren ciddi ve yakın tehlike.",
+        "Emniyetle ilgili, her zaman hemen yardım gerektiren durum.",
+        "Uçağın olağan dışı duruşu (attitude)."
       ]
     }
   }
