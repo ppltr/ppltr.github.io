@@ -1905,7 +1905,7 @@ function home(){
   buildTree();
   el('sw').innerHTML = [
     ['hideDup','Tekrar eden soruları gizle', QS.filter(q => q[6] && notPassed(q)).length],
-    ['gen',    'Ders notundan üretilmişler', QS.filter(q => q[7] && notPassed(q)).length],
+    ['gen',    'Üretilmiş ve ek sorular', QS.filter(q => q[7] && notPassed(q)).length],
     ['hideFlag','Tartışmalıları gizle',      QS.filter(q => q[5] && notPassed(q)).length],
   ].map(([k,x,n]) => '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k +
     '" type="button"><span class="knob"></span><span>' + x + '</span>' +
@@ -2182,7 +2182,8 @@ function askText(){
   if (trMode() && q[10]) L.push('', 'Sorunun İngilizce aslı: ' + q[3],
     ...q[4].map((t, i) => '  ' + (i === 0 ? '(doğru) ' : '') + t));
   if (q[8]) L.push('', 'Not: Bu soruda bir şekil var, metne aktarılamadı.');
-  if (q[7]) L.push('Not: Bu soru ders notundan üretilmiştir, gerçek sınav sorusu değildir.');
+  if (q[7]) L.push('Not: Bu soru çalışma için yazılmıştır (ders notundan ya da EASA/JAA ' +
+                   'havuzundaki bir konudan); metni gerçek sınav sorusu değildir.');
   return L.join('\n');
 }
 async function copyText(s){

@@ -486,6 +486,18 @@ saklandığı için (`F.pick`), yeni bölüm eklemek kayıtlı seçimleri bozmaz
 soru var (91001–91030), hepsi görünür; hangi bilgiyi neden sorduğu dosyanın `selection`
 alanında.
 
+**090-X · Ek Sorular (EASA/JAA Havuzu)** (91101–91130, `data/090_ek_sorular.json`, kaynak dili
+İngilizce, Türkçesi `data/tr/090_04.json`). Kullanıcı Dauntless sitesinin EASA ATPL 091 örnek
+sorularını ve bir JAA listesini verip "bizde olmayan iyi soruları ekle, hepsini ekleme, JAA'da
+temkinli ol" dedi. ~110 sorudan 30'u alındı: 24 EASA, 6 JAA (yalnız ICAO tanımıyla birebir
+doğrulananlar). **Metinler kendi ifademizle yazıldı**: Dauntless koşulları içeriğin kamuya açık
+kullanımını yasaklıyor, site herkese açık. Listelerde cevap anahtarı yoktu; cevaplar Annex 10
+Vol II, Doc 9432, Doc 4444'e göre. `origin: uretilmis` (metin gerçek sınav metni değil) —
+kapsam anahtarı bu yüzden "Üretilmiş ve ek sorular" oldu, "Sor" notu da ikisini kapsıyor.
+Alınmayanlar: bankada olanlar, düşük değerliler, JAA'nın DISREGARD sorusu — ICAO/CAP 413
+tanımı ("o yayını gönderilmemiş say") bankadaki ATPL TV sorusu 16320'nin cevabıyla çelişiyor
+(16320 bunu yanlış şık sayıyor); gerçek sınavın hangisini doğru saydığı bilinmiyor.
+
 502 bu kurala henüz uymuyor: 118 üretilmiş soru, 25 SHGM örnek sorusuyla aynı GB-01…05
 konu bölümlerinde. Kullanıcı yalnız 090'ı istedi; 502'ye dokunmadan önce sor.
 

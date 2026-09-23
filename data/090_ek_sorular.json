@@ -1,0 +1,344 @@
+{
+  "subject_code": "090",
+  "subject_name": "Communications",
+  "source": "EASA ATPL 091 VFR Communication ve JAA örnek havuzundaki konulardan, bankada olmayanlar seçilip kendi ifademizle yazıldı. Gerçek sınav metni değildir; kaynak sitenin koşulları metnin kamuya açık kopyalanmasını yasaklıyor. Cevaplar ICAO Annex 10 Vol II, Doc 9432 ve Doc 4444'e göre.",
+  "origin": "uretilmis",
+  "answer_convention": "Doğru cevap ilk şıktır (A).",
+  "id_convention": "91101+ bandı: 090 ek sorular (090-X). 90901–90996 emekli, yeniden kullanılmaz; 91001–91030 ders notundan üretilmiş (090-U).",
+  "selection": "Kullanıcının verdiği ~110 soruluk listeden 30'u: 24'ü EASA listesinden, 6'sı JAA listesinden (BREAK, I SAY AGAIN, REPORT, urgency tanımı, parça mesajı = flight regularity, INFORMATION ekı) — JAA'dan yalnız ICAO tanımıyla birebir doğrulananlar. Bankada zaten olanlar, düşük değerliler (RVR açılımı, MHz = 1.000.000 Hz) ve bankayla çelişen JAA DISREGARD sorusu alınmadı.",
+  "sections": {
+    "090-X": "Supplementary · EASA/JAA Pool"
+  },
+  "questions": [
+    {
+      "id": 91101,
+      "section": "090-X",
+      "text": "In radiotelephony, what is a \"broadcast\"?",
+      "options": [
+        "A transmission of information relating to air navigation that is not addressed to a specific station",
+        "A transmission made when two-way communication cannot be established but the called station is believed to be receiving",
+        "A message addressed to one station that must be read back",
+        "A call to all stations that each station must acknowledge in turn"
+      ]
+    },
+    {
+      "id": 91102,
+      "section": "090-X",
+      "text": "What does the abbreviation \"AFIS\" stand for?",
+      "options": [
+        "Aerodrome Flight Information Service",
+        "Automatic Flight Information Service",
+        "Aeronautical Fixed Information System",
+        "Airport Frequency Identification Signal"
+      ]
+    },
+    {
+      "id": 91103,
+      "section": "090-X",
+      "text": "Which Q code gives the true heading to steer, with zero wind, to reach a direction-finding station?",
+      "options": [
+        "QUJ",
+        "QTE",
+        "QDM",
+        "QDR"
+      ]
+    },
+    {
+      "id": 91104,
+      "section": "090-X",
+      "text": "Which list shows message categories in the correct order of priority, highest first?",
+      "options": [
+        "Distress, urgency, direction finding",
+        "Urgency, distress, direction finding",
+        "Direction finding, distress, urgency",
+        "Distress, flight safety, urgency"
+      ]
+    },
+    {
+      "id": 91105,
+      "section": "090-X",
+      "text": "Where do meteorological messages rank in the order of priority?",
+      "options": [
+        "Below flight safety messages and above flight regularity messages",
+        "Above flight safety messages",
+        "Below flight regularity messages",
+        "Equal to urgency messages"
+      ]
+    },
+    {
+      "id": 91106,
+      "section": "090-X",
+      "text": "A pilot tells the area control centre: \"Request radar vectors to avoid adverse weather.\" Which message category is this?",
+      "options": [
+        "Flight safety message",
+        "Meteorological message",
+        "Urgency message",
+        "Direction-finding message"
+      ]
+    },
+    {
+      "id": 91107,
+      "section": "090-X",
+      "text": "A message about aircraft parts and materials that are urgently required belongs to which category?",
+      "options": [
+        "Flight regularity message",
+        "Urgency message",
+        "Flight safety message",
+        "Distress message"
+      ]
+    },
+    {
+      "id": 91108,
+      "section": "090-X",
+      "text": "How many times should a blind transmission be sent?",
+      "options": [
+        "Twice, on the designated frequency",
+        "Once, on the designated frequency",
+        "Three times, on 121.5 MHz only",
+        "Once on every available frequency"
+      ]
+    },
+    {
+      "id": 91109,
+      "section": "090-X",
+      "text": "When transmitting blind because of receiver failure, what else should the pilot include?",
+      "options": [
+        "The time of the next intended transmission",
+        "The remaining fuel endurance in minutes",
+        "A request for the controller to acknowledge by radio",
+        "The name of the pilot-in-command"
+      ]
+    },
+    {
+      "id": 91110,
+      "section": "090-X",
+      "text": "ATC asks you to \"Report flight conditions\". Which reply is correct?",
+      "options": [
+        "\"VMC\" or \"IMC\"",
+        "\"VFR\" or \"IFR\"",
+        "\"Smooth\" or \"turbulent\"",
+        "\"Good\" or \"bad\""
+      ]
+    },
+    {
+      "id": 91111,
+      "section": "090-X",
+      "text": "What does \"BREAK BREAK\" indicate?",
+      "options": [
+        "Separation between messages to different aircraft in a very busy environment",
+        "Separation between portions of one message",
+        "The end of the transmission, no reply expected",
+        "That the frequency must be vacated immediately"
+      ]
+    },
+    {
+      "id": 91112,
+      "section": "090-X",
+      "text": "Which word separates portions of a message when there is no clear distinction between the text and the other portions?",
+      "options": [
+        "BREAK",
+        "BREAK BREAK",
+        "I SAY AGAIN",
+        "OVER"
+      ]
+    },
+    {
+      "id": 91113,
+      "section": "090-X",
+      "text": "What does the word \"CANCEL\" mean?",
+      "options": [
+        "Annul the previously transmitted clearance",
+        "Consider that transmission as not sent",
+        "An error has been made; the correct version follows",
+        "Your flight plan has been deleted"
+      ]
+    },
+    {
+      "id": 91114,
+      "section": "090-X",
+      "text": "What does \"CHECK\" mean when used by ATC?",
+      "options": [
+        "Examine a system or procedure; no answer is normally expected",
+        "Confirm that you have received and understood the last message",
+        "Read back the last clearance",
+        "Report your position"
+      ]
+    },
+    {
+      "id": 91115,
+      "section": "090-X",
+      "text": "Which word is used to mean \"permission not granted\"?",
+      "options": [
+        "NEGATIVE",
+        "NOT APPROVED",
+        "UNABLE",
+        "DISREGARD"
+      ]
+    },
+    {
+      "id": 91116,
+      "section": "090-X",
+      "text": "What does the instruction \"MONITOR (frequency)\" mean?",
+      "options": [
+        "Listen out on that frequency",
+        "Establish two-way contact on that frequency",
+        "Make a radio check on that frequency",
+        "Transmit your position report on that frequency"
+      ]
+    },
+    {
+      "id": 91117,
+      "section": "090-X",
+      "text": "What does \"CONFIRM\" mean?",
+      "options": [
+        "I request verification of: (clearance, instruction, action, information)",
+        "Check and confirm with the originator",
+        "Yes",
+        "I have received all of your last transmission"
+      ]
+    },
+    {
+      "id": 91118,
+      "section": "090-X",
+      "text": "What is the call sign suffix of a radar station in general?",
+      "options": [
+        "RADAR",
+        "CONTROL",
+        "DIRECTOR",
+        "APPROACH"
+      ]
+    },
+    {
+      "id": 91119,
+      "section": "090-X",
+      "text": "What is the call sign suffix of the approach control radar unit handling departing traffic?",
+      "options": [
+        "DEPARTURE",
+        "TOWER",
+        "RADAR",
+        "DELIVERY"
+      ]
+    },
+    {
+      "id": 91120,
+      "section": "090-X",
+      "text": "What is the call sign suffix of a station providing flight information service?",
+      "options": [
+        "INFORMATION",
+        "CONTROL",
+        "RADIO",
+        "CENTRE"
+      ]
+    },
+    {
+      "id": 91121,
+      "section": "090-X",
+      "text": "An aircraft in the HEAVY wake turbulence category, call sign ANKAIR 512, makes its initial call. How should the call sign be said?",
+      "options": [
+        "\"ANKAIR 512 HEAVY\"",
+        "\"HEAVY ANKAIR 512\"",
+        "\"ANKAIR 512 WIDEBODY\"",
+        "\"ANKAIR 512\"; the word HEAVY is used only on the ground"
+      ]
+    },
+    {
+      "id": 91122,
+      "section": "090-X",
+      "text": "Over flat terrain, up to about what distance can you expect reliable VHF contact with a ground station when flying at FL50?",
+      "options": [
+        "About 85 NM",
+        "About 8 NM",
+        "About 27 NM",
+        "About 600 NM"
+      ]
+    },
+    {
+      "id": 91123,
+      "section": "090-X",
+      "text": "What is the consequence of a microphone button stuck in the transmit position?",
+      "options": [
+        "The frequency is blocked and other stations cannot use it",
+        "Nothing; other stations can still transmit over it",
+        "Only the pilot's own receiver is affected",
+        "Readability improves for all stations"
+      ]
+    },
+    {
+      "id": 91124,
+      "section": "090-X",
+      "text": "What does \"Readability 2\" mean?",
+      "options": [
+        "Readable now and then",
+        "Readable but with difficulty",
+        "Unreadable",
+        "Readable"
+      ]
+    },
+    {
+      "id": 91125,
+      "section": "090-X",
+      "text": "ATC instructs: \"Hold short of runway 24.\" What is the correct acknowledgement?",
+      "options": [
+        "\"Holding short (runway 24)\" followed by the call sign",
+        "\"Wilco\" followed by the call sign",
+        "\"Roger\" followed by the call sign",
+        "\"Will stop before the runway\" followed by the call sign"
+      ]
+    },
+    {
+      "id": 91126,
+      "section": "090-X",
+      "text": "ATC reports a braking coefficient of 20 (0.20). What braking action does this correspond to?",
+      "options": [
+        "Poor",
+        "Medium",
+        "Medium to poor",
+        "Good"
+      ]
+    },
+    {
+      "id": 91127,
+      "section": "090-X",
+      "text": "On which frequency should an urgency message normally be transmitted first?",
+      "options": [
+        "The air-ground frequency in use at the time",
+        "121.5 MHz",
+        "The frequency of the nearest radar unit",
+        "The area control centre frequency"
+      ]
+    },
+    {
+      "id": 91128,
+      "section": "090-X",
+      "text": "What does \"I SAY AGAIN\" mean?",
+      "options": [
+        "I repeat for clarity or emphasis",
+        "Repeat all, or the following part, of your last transmission",
+        "Read back my last instruction",
+        "Consider that transmission as not sent"
+      ]
+    },
+    {
+      "id": 91129,
+      "section": "090-X",
+      "text": "Which word means \"pass me the following information\"?",
+      "options": [
+        "REPORT",
+        "REQUEST",
+        "CONFIRM",
+        "VERIFY"
+      ]
+    },
+    {
+      "id": 91130,
+      "section": "090-X",
+      "text": "Which of the following describes an urgency condition?",
+      "options": [
+        "A condition concerning the safety of an aircraft, vehicle or a person on board or within sight, which does not require immediate assistance",
+        "A condition of serious and/or imminent danger requiring immediate assistance",
+        "Any emergency that occurs while the aircraft is on the ground",
+        "Any condition that requires an immediate diversion"
+      ]
+    }
+  ]
+}
