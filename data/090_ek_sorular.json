@@ -4,10 +4,11 @@
   "source": "Kullanıcının açık kaynaklardan derleyip verdiği EASA ve JAA soru listeleri; soru metni ve şıklar olduğu gibi. Listelerde cevap yoktu, doğru şık ICAO Annex 10 Vol II, Doc 9432 ve Doc 4444'e göre işaretlendi ve başa alındı.",
   "origin": "banka",
   "answer_convention": "Doğru cevap ilk şıktır (A).",
-  "id_convention": "91101–91134: 090 ek sorular (090-X). 90901–90996 emekli, yeniden kullanılmaz; 91001–91030 ders notundan üretilmiş (090-U).",
+  "id_convention": "91101–91134: 090 ek sorular; EASA listesinden gelenler 090-X, JAA listesinden gelenler 090-Y bölümünde. 90901–90996 emekli, yeniden kullanılmaz; 91001–91030 ders notundan üretilmiş (090-U).",
   "selection": "~120 soruluk listeden 34'ü: 25'i EASA, 9'u JAA (her sorunun 'src' alanında listedeki numarası). 91109 (EASA Q416) gizli: şıkları yalnız squawk koduyla ayrılıyor, yani 16471'in sorduğu 'telsiz arızası → 7600'ı soruyor; 'bir sonraki yayının saati' bilgisini 91131 (JAA Q290) soruyor. Alınmayanların her biri için bankadaki karşılık ya da gerekçe 'alinmayanlar' alanında. JAA Q298 DISREGARD bankadaki 16320 ile çeliştiği için alınmadı.",
   "sections": {
-    "090-X": "Supplementary · EASA/JAA Pool"
+    "090-X": "Supplementary · EASA",
+    "090-Y": "Supplementary · JAA"
   },
   "alinmayanlar": {
     "EASA Q212": "var: 16329 (ALL STATIONS → cevap verilmez)",
@@ -173,7 +174,7 @@
     },
     {
       "id": 91107,
-      "section": "090-X",
+      "section": "090-Y",
       "src": "JAA Q262",
       "text": "A message concerning aircraft parts and material urgently required is:",
       "options": [
@@ -233,7 +234,7 @@
     },
     {
       "id": 91112,
-      "section": "090-X",
+      "section": "090-Y",
       "src": "JAA Q302",
       "text": "Which word is used to separate portions of a message?",
       "options": [
@@ -329,7 +330,7 @@
     },
     {
       "id": 91120,
-      "section": "090-X",
+      "section": "090-Y",
       "src": "JAA Q350",
       "text": "Which radiotelephony callsign is associated with a station providing flight information service?",
       "options": [
@@ -425,7 +426,7 @@
     },
     {
       "id": 91128,
-      "section": "090-X",
+      "section": "090-Y",
       "src": "JAA Q314",
       "text": "Which phrase is used when repeating something for clarity or emphasis?",
       "options": [
@@ -437,7 +438,7 @@
     },
     {
       "id": 91129,
-      "section": "090-X",
+      "section": "090-Y",
       "src": "JAA Q330",
       "text": "Which phrase means “pass me the following information”?",
       "options": [
@@ -449,7 +450,7 @@
     },
     {
       "id": 91130,
-      "section": "090-X",
+      "section": "090-Y",
       "src": "JAA Q430",
       "text": "Which statement best describes urgency?",
       "options": [
@@ -461,7 +462,7 @@
     },
     {
       "id": 91131,
-      "section": "090-X",
+      "section": "090-Y",
       "src": "JAA Q290",
       "text": "During a TRANSMITTING BLIND DUE TO RECEIVER FAILURE transmission en route, the aircraft should additionally:",
       "options": [
@@ -485,7 +486,7 @@
     },
     {
       "id": 91133,
-      "section": "090-X",
+      "section": "090-Y",
       "src": "JAA Q222",
       "text": "Which words are normally unnecessary in VHF radiotelephony?",
       "options": [
@@ -497,7 +498,7 @@
     },
     {
       "id": 91134,
-      "section": "090-X",
+      "section": "090-Y",
       "src": "JAA Q346",
       "text": "Which callsign suffix identifies an Area Control Centre without radar?",
       "options": [

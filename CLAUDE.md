@@ -486,8 +486,11 @@ saklandığı için (`F.pick`), yeni bölüm eklemek kayıtlı seçimleri bozmaz
 soru var (91001–91030), hepsi görünür; hangi bilgiyi neden sorduğu dosyanın `selection`
 alanında.
 
-**090-X · Ek Sorular (EASA/JAA Havuzu)** (91101–91130, `data/090_ek_sorular.json`, kaynak dili
-İngilizce, Türkçesi `data/tr/090_04.json`). Kullanıcı açık kaynaklardan kendi derlediği bir EASA
+**090-X "Supplementary · EASA" ve 090-Y "Supplementary · JAA"** (91101–91134,
+`data/090_ek_sorular.json`, kaynak dili İngilizce, Türkçesi `data/tr/090_04.json`; Türkçe adları
+"Ek Sorular · EASA" / "Ek Sorular · JAA"). Önce tek bölümdü ("EASA/JAA Pool"); kullanıcı kartın
+başlığında sorunun hangi listeden geldiğinin anlaşılmadığını söyledi, bölüm `src`'ye göre
+ikiye ayrıldı. Yeni soru eklerken bölümü `src`'nin önekine göre seç. Kullanıcı açık kaynaklardan kendi derlediği bir EASA
 ve bir JAA soru listesini metin olarak verip "bizde olmayan iyi soruları ekle, hepsini ekleme,
 JAA'da temkinli ol" dedi. 120 sorudan 34'ü alındı (91101–91134): 25 EASA, 9 JAA (yalnız ICAO
 tanımıyla birebir doğrulananlar); her sorunun `src` alanı listedeki numarasını yazar. Kalan
