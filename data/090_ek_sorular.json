@@ -4,8 +4,8 @@
   "source": "Kullanıcının açık kaynaklardan derleyip verdiği EASA ve JAA soru listeleri; soru metni ve şıklar olduğu gibi. Listelerde cevap yoktu, doğru şık ICAO Annex 10 Vol II, Doc 9432 ve Doc 4444'e göre işaretlendi ve başa alındı.",
   "origin": "banka",
   "answer_convention": "Doğru cevap ilk şıktır (A).",
-  "id_convention": "91101–91134: 090 ek sorular; EASA listesinden gelenler 090-X, JAA listesinden gelenler 090-Y bölümünde. 90901–90996 emekli, yeniden kullanılmaz; 91001–91030 ders notundan üretilmiş (090-U).",
-  "selection": "~120 soruluk listeden 34'ü: 25'i EASA, 9'u JAA (her sorunun 'src' alanında listedeki numarası). 91109 (EASA Q416) gizli: şıkları yalnız squawk koduyla ayrılıyor, yani 16471'in sorduğu 'telsiz arızası → 7600'ı soruyor; 'bir sonraki yayının saati' bilgisini 91131 (JAA Q290) soruyor. Alınmayanların her biri için bankadaki karşılık ya da gerekçe 'alinmayanlar' alanında. JAA Q298 DISREGARD bankadaki 16320 ile çeliştiği için alınmadı.",
+  "id_convention": "91101–91134: 090 ek sorular; EASA listesinden gelenler 090-X, JAA listesinden gelenler 090-Y bölümünde. 91103 ve 91121 PPL dışı diye çıkarıldı, emekli. 90901–90996 da emekli; emekli kimlik yeniden kullanılmaz. 91001–91030 ders notundan üretilmiş (090-U).",
+  "selection": "~120 soruluk listeden 32'si: 23'ü EASA, 9'u JAA (her sorunun 'src' alanında listedeki numarası). 91109 (EASA Q416) gizli: şıkları yalnız squawk koduyla ayrılıyor, yani 16471'in sorduğu 'telsiz arızası → 7600'ı soruyor; 'bir sonraki yayının saati' bilgisini 91131 (JAA Q290) soruyor. Alınmayanların her biri için bankadaki karşılık ya da gerekçe 'alinmayanlar' alanında. JAA Q298 DISREGARD bankadaki 16320 ile çeliştiği için alınmadı.",
   "sections": {
     "090-X": "Supplementary · EASA",
     "090-Y": "Supplementary · JAA"
@@ -19,6 +19,7 @@
     "EASA Q236": "var: 59001 (HJ)",
     "EASA Q244": "var: 16341 (QNH, birebir)",
     "EASA Q248": "var: 16388 (QDM, ters yönden)",
+    "EASA Q252": "91103 olarak eklendi, çıkarıldı: QUJ havayolu/ATPL düzeyi; gerçek PPL sorularında yön bulma kodlarından yalnız QDM, QDR, QTE var",
     "EASA Q256": "var: 16408 / 16339 (QFE → height)",
     "EASA Q272": "var: 16382 (13 500)",
     "EASA Q276": "var: 16321 (DECIMAL, birebir)",
@@ -31,6 +32,7 @@
     "EASA Q332": "var: 16398 (ROGER)",
     "EASA Q340": "var: 16358 (CORRECT)",
     "EASA Q352": "var: 16379 / 16384 (tescil harflerini fonetik okuma, aynı kalıp)",
+    "EASA Q356": "91121 olarak eklendi, çıkarıldı: HEAVY (136 t üstü) havayolu/ATPL düzeyi; ne gerçek PPL sorularında ne PPL ders notunda var",
     "EASA Q364": "var: 91022 + 91122 (VHF menzili irtifaya bağlı)",
     "EASA Q372": "var: 16474 (ALL STATIONS)",
     "EASA Q376": "var: 16420 (RADIO CHECK + frekans)",
@@ -99,6 +101,7 @@
     "JAA Q446": "var: 59018 (118–136.975)",
     "JAA Q450": "alınmadı: HF bant sınırı, radyo teorisi"
   },
+  "kapsam": "Listeler ATPL bankasının 091 VFR Communications dersinden; müfredatı PPL Communications ile aynı. Kullanıcı yalnız PPL istiyor: bir soru ancak konusu gerçek SHGM PPL sorularında ya da PPL ders notunda geçiyorsa kalır.",
   "questions": [
     {
       "id": 91101,
@@ -122,18 +125,6 @@
         "Aerodrome flashing identification signal.",
         "Automatic flight information service.",
         "Aeronautical flight information system."
-      ]
-    },
-    {
-      "id": 91103,
-      "section": "090-X",
-      "src": "EASA Q252",
-      "text": "A radio direction finding station will use the following Q code to pass a true heading (no wind) to an aircraft to head for that station:",
-      "options": [
-        "QUJ.",
-        "QGE.",
-        "QTF.",
-        "QDM."
       ]
     },
     {
@@ -338,18 +329,6 @@
         "FLIGHT CENTRE",
         "FLIGHT INFORMATION CENTRE",
         "CONTROL"
-      ]
-    },
-    {
-      "id": 91121,
-      "section": "090-X",
-      "src": "EASA Q356",
-      "text": "The initial call from an aircraft, callsign FASTAIR 285 weighing more than 136 tonnes would be:",
-      "options": [
-        "FASTAIR 285 HEAVY",
-        "FASTAIR 285",
-        "HEAVY FASTAIR 285",
-        "FASTAIR 285 WIDEBODY"
       ]
     },
     {

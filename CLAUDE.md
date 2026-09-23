@@ -497,8 +497,18 @@ başlığında sorunun hangi listeden geldiğinin anlaşılmadığını söyledi
 ikiye ayrıldı. Yeni soru eklerken bölümü `src`'nin önekine göre seç. Kullanıcı açık kaynaklardan kendi derlediği bir EASA
 ve bir JAA soru listesini metin olarak verip "bizde olmayan iyi soruları ekle, hepsini ekleme,
 JAA'da temkinli ol" dedi. 120 sorudan 34'ü alındı (91101–91134): 25 EASA, 9 JAA (yalnız ICAO
-tanımıyla birebir doğrulananlar); her sorunun `src` alanı listedeki numarasını yazar. Kalan
-86'nın her biri için bankadaki karşılık (ör. "var: 16376") ya da alınmama gerekçesi dosyanın
+tanımıyla birebir doğrulananlar); her sorunun `src` alanı listedeki numarasını yazar.
+
+**Yalnız PPL.** Kullanıcı sonra "bunlar ATPL mi PPL mi, ben sadece PPL istiyordum" dedi.
+Listeler ATPL bankasının *091 VFR Communications* dersinden (paylaştığı Dauntless adresi
+`groundschooleasa/atpl/…/vfr_communication`); bu dersin müfredatı EASA PPL Communications ile
+aynı başlıklar, IFR (092) sorusu yok. Ölçü: bir soru ancak konusu **gerçek SHGM PPL
+sorularında ya da PPL ders notunda** geçiyorsa kalır. Bu ölçüyle 91103 (QUJ) ve 91121 (HEAVY,
+136 t) çıkarıldı, kimlikleri emekli → 32 soru (23 EASA, 9 JAA), 31 görünür. ATPL havuzundan
+yeni soru eklerken aynı ölçüyü uygula; havayolu işletmesine özgü bilgiyi (ağır uçak, IFR
+usulü, şirket mesajı) alma.
+
+Kalan 86'nın her biri için bankadaki karşılık (ör. "var: 16376") ya da alınmama gerekçesi dosyanın
 `alinmayanlar` alanında — liste yeniden taranırsa oradan başla. Kullanıcı "diğerlerinin önemli
 olmadığından emin misin" diye sorunca liste tek tek eşlendi ve 4 soru daha eklendi (91131–91134).
 

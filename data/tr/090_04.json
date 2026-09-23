@@ -18,15 +18,6 @@
         "Havacılık uçuş bilgi sistemi (Aeronautical flight information system)."
       ]
     },
-    "91103": {
-      "text": "Bir telsiz yön bulma istasyonu, uçağa o istasyona gitmesi için gerçek başı (rüzgârsız) bildirirken hangi Q kodunu kullanır?",
-      "options": [
-        "QUJ.",
-        "QGE.",
-        "QTF.",
-        "QDM."
-      ]
-    },
     "91104": {
       "text": "Havacılık gezici hizmetinde aşağıdaki mesajların öncelik sırası şöyledir:",
       "options": [
@@ -178,15 +169,6 @@
         "FLIGHT CENTRE",
         "FLIGHT INFORMATION CENTRE",
         "CONTROL"
-      ]
-    },
-    "91121": {
-      "text": "Çağrı adı FASTAIR 285 olan, 136 tondan ağır bir uçağın ilk çağrısı şöyle olur:",
-      "options": [
-        "FASTAIR 285 HEAVY",
-        "FASTAIR 285",
-        "HEAVY FASTAIR 285",
-        "FASTAIR 285 WIDEBODY"
       ]
     },
     "91122": {
