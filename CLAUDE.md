@@ -489,8 +489,16 @@ alanında.
 **090-X · Ek Sorular (EASA/JAA Havuzu)** (91101–91130, `data/090_ek_sorular.json`, kaynak dili
 İngilizce, Türkçesi `data/tr/090_04.json`). Kullanıcı açık kaynaklardan kendi derlediği bir EASA
 ve bir JAA soru listesini metin olarak verip "bizde olmayan iyi soruları ekle, hepsini ekleme,
-JAA'da temkinli ol" dedi. ~120 sorudan 30'u alındı: 24 EASA, 6 JAA (yalnız ICAO tanımıyla
-birebir doğrulananlar); her sorunun `src` alanı listedeki numarasını yazar.
+JAA'da temkinli ol" dedi. 120 sorudan 34'ü alındı (91101–91134): 25 EASA, 9 JAA (yalnız ICAO
+tanımıyla birebir doğrulananlar); her sorunun `src` alanı listedeki numarasını yazar. Kalan
+86'nın her biri için bankadaki karşılık (ör. "var: 16376") ya da alınmama gerekçesi dosyanın
+`alinmayanlar` alanında — liste yeniden taranırsa oradan başla. Kullanıcı "diğerlerinin önemli
+olmadığından emin misin" diye sorunca liste tek tek eşlendi ve 4 soru daha eklendi (91131–91134).
+
+**91109 (EASA Q416) gizli, 16471'e bağlı.** Şıkları "as above but squawk 7700" biçiminde; soru
+yalnız squawk kodunu ölçüyor, yani 16471'in "telsiz arızası → 7600" sorusu. Asıl eklenmek
+istenen "bir sonraki yayının saatini bildir" bilgisini 91131 (JAA Q290) soruyor. Şıkları ortak
+metni tekrar edip tek öğede ayrılan havuz sorularında tekrarı o öğeye bakarak ara.
 
 **Soru metni ve şıklar listedeki gibi, birebir.** İlk sürümde metinleri kendi ifademle yeniden
 yazmıştım; kullanıcı "metinleri olduğu gibi kullan, saçma iş yapma" deyip geri aldırdı. Yazım

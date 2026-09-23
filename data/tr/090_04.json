@@ -269,6 +269,42 @@
         "Emniyetle ilgili, her zaman hemen yardım gerektiren durum.",
         "Uçağın olağan dışı duruşu (attitude)."
       ]
+    },
+    "91131": {
+      "text": "Yolda TRANSMITTING BLIND DUE TO RECEIVER FAILURE yayını yaparken uçak ayrıca şunu yapmalıdır:",
+      "options": [
+        "Bir sonraki yayının planlanan saatini bildirmeli.",
+        "En yakın meydana inmeli.",
+        "Hemen base bacağına girmeli.",
+        "Kalkış meydanına dönmeli."
+      ]
+    },
+    "91132": {
+      "text": "Bir ATC rota müsaadesi her zaman tekrar edilmeli (read back) midir?",
+      "options": [
+        "Evet, ilgili ATS makamınca aksine izin verilmedikçe.",
+        "Hayır, haberleşme kanalı aşırı yüklüyse.",
+        "Hayır, ATC rota müsaadesi yayımlanmış bir biçimde (ör. SID) veriliyorsa.",
+        "Hayır, ATC müsaadesinin içeriği açıksa ve karışıklık olası değilse."
+      ]
+    },
+    "91133": {
+      "text": "VHF telsiz haberleşmesinde normalde hangi sözcükler gereksizdir?",
+      "options": [
+        "OUT ve OVER",
+        "OUT ve ROGER",
+        "GO AHEAD ve I SAY AGAIN",
+        "STANDBY ve VERIFY"
+      ]
+    },
+    "91134": {
+      "text": "Radarı olmayan bir saha kontrol merkezini (Area Control Centre) hangi çağrı adı eki tanıtır?",
+      "options": [
+        "CONTROL",
+        "APPROACH",
+        "CENTRE",
+        "AREA"
+      ]
     }
   }
 }

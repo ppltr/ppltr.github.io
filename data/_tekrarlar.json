@@ -358,6 +358,13 @@
     },
     {
       "ids": [
+        16471,
+        91109
+      ],
+      "not": "090: telsiz arızası → 7600. 91109 (EASA Q416) şıkları yalnız squawk koduyla ayrılıyor; ATPL TV kanonik"
+    },
+    {
+      "ids": [
         14492,
         14493,
         14494
