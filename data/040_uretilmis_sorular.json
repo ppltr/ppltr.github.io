@@ -1,0 +1,183 @@
+{
+  "subject_code": "040",
+  "lang": "tr",
+  "subject_name": "Human Performance and Limitations",
+  "source": "İnsan Performansı ders notundan üretilmiş sorular (gerçek sınav sorusu değildir)",
+  "origin": "uretilmis",
+  "answer_convention": "Doğru cevap ilk şıktır (A).",
+  "id_convention": "90401+ bandı: 040 ders notundan üretilmiş sorular. Sıra ders notunu izler: B1 90401 · B2 90402–90405 · B3 90406–90408 · B4 90409–90410 · B5 90411 · B6 90412 · B7 90413–90414. Silinen kimlik yeniden kullanılmaz (ilerleme, süre ve Sor kayıtları kimliğe bağlı).",
+  "selection": "Kullanıcı 2026-09-24'te 'mutlaka olmalı dediğin birkaç soru, çok ekleme' dedi. Ölçü: yalnız ders notunda geçen, sınavlık (terim, sayı, tanım) ve 251 ATPL TV + 20 ders notu sorusunun hiçbirinde — ters yönden bile — sorulmayan bilgi; her aday iki dilde bütün bankaya karşı tarandı (histotoksik ve kâğıt torba yalnız çeldirici olarak geçiyordu). 23 adaydan 14'ü alındı. Bilerek yazılmayanlar, yeniden eklemeden önce düşün: difüzyon kanunu, fonksiyonel rezidüel kapasite, trombosit, alkaloz/pH, barodentalji, karanlık uyumunda yaşlanma, durumsal farkındalığın dört unsuru, CRM nesilleri, otomasyon tatmini. Not: 90407 (rodların karanlığa uyumu ~30 dk) ders metninde 'parlak ışığa uyum' diye yanlış yazılmıştı; notta düzeltildi, soru doğru bilgiyle yazıldı. Kaynağın kendiyle çeliştiği yerlerden (gece uçuşunda oksijen, REM süresi) soru üretilmedi.",
+  "sections": {
+    "040-U": "Ders Notundan Üretilmiş"
+  },
+  "questions": [
+    {
+      "id": 90401,
+      "section": "040-U",
+      "text": "Atmosferin fizyolojik bölümlerinde 12.000 ft ile 50.000 ft arasındaki bölge nasıl adlandırılır?",
+      "options": [
+        "Fizyolojik yetersizlik bölgesi",
+        "Fizyolojik bölge",
+        "Kısmi uzay eşdeğer bölgesi",
+        "Tam uzay eşdeğer bölgesi",
+        "Tropopoz bölgesi"
+      ]
+    },
+    {
+      "id": 90402,
+      "section": "040-U",
+      "text": "Siyanür zehirlenmesi ya da alkol gibi nedenlerle hücrelerin mevcut oksijeni kullanamaması hangi hipoksi türüdür?",
+      "options": [
+        "Histotoksik hipoksi",
+        "Hipoksik hipoksi",
+        "Hipemik (anemik) hipoksi",
+        "Stagnant hipoksi",
+        "Hiperventilasyon"
+      ]
+    },
+    {
+      "id": 90403,
+      "section": "040-U",
+      "text": "Akut hiperventilasyon vakasında kandaki karbondioksit seviyesini artırmak için en etkili yöntem nedir?",
+      "options": [
+        "Kâğıt bir torbaya derin nefes alıp vermek",
+        "%100 oksijen solumak",
+        "Solunum hızını artırmak",
+        "İrtifayı hemen artırmak",
+        "Bol su içmek"
+      ]
+    },
+    {
+      "id": 90404,
+      "section": "040-U",
+      "text": "Ağız ve burun kapalıyken zorlu nefes vererek orta kulak ve sinüsler ile dış ortam arasındaki basınç farkını eşitleme manevrasına ne ad verilir?",
+      "options": [
+        "Valsalva manevrası",
+        "Coriolis manevrası",
+        "Frenzel manevrası",
+        "Östaki manevrası",
+        "Somatogravik manevra"
+      ]
+    },
+    {
+      "id": 90405,
+      "section": "040-U",
+      "text": "Aşısı yaklaşık on yıl etkili olan ve uluslararası pilotlar için standart bir gereksinim sayılan hastalık hangisidir?",
+      "options": [
+        "Sarı humma",
+        "Sıtma",
+        "Kolera",
+        "Tifo",
+        "Hepatit A"
+      ]
+    },
+    {
+      "id": 90406,
+      "section": "040-U",
+      "text": "Aşağıdakilerden hangisi yağda çözünen vitaminlerdir?",
+      "options": [
+        "A, D, E, K",
+        "C ve B grubu",
+        "A, B, C, D",
+        "B, C, K",
+        "D, E, C"
+      ]
+    },
+    {
+      "id": 90407,
+      "section": "040-U",
+      "text": "Rod hücrelerinin karanlığa tam olarak uyum sağlaması yaklaşık ne kadar sürer?",
+      "options": [
+        "30 dakika",
+        "10 saniye",
+        "1 dakika",
+        "5 dakika",
+        "2 saat"
+      ]
+    },
+    {
+      "id": 90408,
+      "section": "040-U",
+      "text": "Yaşlanmayla birlikte göz merceğinin esnekliğini kaybetmesi sonucu yakındaki nesnelerin net görülememesine ne ad verilir?",
+      "options": [
+        "Presbitlik",
+        "Miyop",
+        "Hipermetrop",
+        "Astigmatizm",
+        "Katarakt"
+      ]
+    },
+    {
+      "id": 90409,
+      "section": "040-U",
+      "text": "Yavaş ve uzun süreli bir dönüşten düz uçuşa geçen pilotun, düz uçarken kendini yatışta sanması hangi vestibüler illüzyondur?",
+      "options": [
+        "Leans",
+        "Coriolis illüzyonu",
+        "Somatogravik illüzyon",
+        "Somatojiral illüzyon",
+        "Otokinezi"
+      ]
+    },
+    {
+      "id": 90410,
+      "section": "040-U",
+      "text": "Jet-lag açısından hangi yöne yapılan uçuşlara uyum daha zordur?",
+      "options": [
+        "Doğuya — gün kısalır, uyum için daha çok zaman gerekir",
+        "Batıya — gün kısalır",
+        "Batıya — biyolojik saat ileri kayar",
+        "Kuzeye — gün ışığı süresi değişir",
+        "İki yön de aynı derecede zordur"
+      ]
+    },
+    {
+      "id": 90411,
+      "section": "040-U",
+      "text": "Hans Selye'nin Genel Adaptasyon Sendromu modeline göre organizmanın strese verdiği tepkinin üç aşaması sırasıyla nedir?",
+      "options": [
+        "Alarm, direnç, tükenme",
+        "Direnç, alarm, tükenme",
+        "Alarm, tükenme, direnç",
+        "Uyarılma, direnç, gevşeme",
+        "Algılama, alarm, uyum"
+      ]
+    },
+    {
+      "id": 90412,
+      "section": "040-U",
+      "text": "Kalkış, alçalma ve iniş gibi kritik uçuş evrelerinde görev dışı konuşmaları yasaklayan kurala ne ad verilir?",
+      "options": [
+        "Steril kokpit kuralı",
+        "Readback kuralı",
+        "Kapalı kokpit kuralı",
+        "Sessiz kabin kuralı",
+        "Çapraz kontrol kuralı"
+      ]
+    },
+    {
+      "id": 90413,
+      "section": "040-U",
+      "text": "FORDEC karar verme modelinde 'R' harfi neyi ifade eder?",
+      "options": [
+        "Riskler ve faydalar (Risks & Benefits)",
+        "Gözden geçirme (Review)",
+        "Tepki (Reaction)",
+        "Kaynaklar (Resources)",
+        "Rota (Route)"
+      ]
+    },
+    {
+      "id": 90414,
+      "section": "040-U",
+      "text": "Maslow'un ihtiyaçlar hiyerarşisinde en üst basamak hangisidir?",
+      "options": [
+        "Kendini gerçekleştirme",
+        "Saygı ihtiyaçları",
+        "Aidiyet ve sevgi ihtiyaçları",
+        "Güvenlik ihtiyaçları",
+        "Fizyolojik ihtiyaçlar"
+      ]
+    }
+  ]
+}

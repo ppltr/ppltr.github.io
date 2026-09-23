@@ -57,7 +57,7 @@ klasörlerde durur:
 
 - `data/tr/*.json` — kaynağı İngilizce olan soruların Türkçesi (2.207 soru)
 - `data/en/*.json` — kaynağı Türkçe olan soruların İngilizcesi (501, 502, ders notu
-  soruları; 450 soru). Bunlar dosya düzeyinde `"lang": "tr"` taşır.
+  soruları; 520 soru). Bunlar dosya düzeyinde `"lang": "tr"` taşır.
 
 ```json
 { "questions": { "14227": { "text": "Soru?", "options": ["Şık 1", "Şık 2"] } } }
@@ -171,8 +171,31 @@ okundu; 16'sı gizlendi. Ayrıca eski gruplardan cevabı farklı olan iki soru g
 ya da farklı soru olan 7'si geri açıldı: 15065 (DCS → Henry), 15141 (pozitif G → önce
 grey-out), 15192 (çevresel görme → çubuklar), 15238 (doğrusal ivme → otolitler), 15235
 (dönüşte baş hareketi → Coriolis), 15067 (cardiovascular = ?), 15069 (atardamar, toplardamar,
-kılcal, kalp → hangi sistem). Duman/CO (15146 ↔ 15088) ve hipoksik hipoksi (15124 ↔ 15135)
-çiftleri soru kökü farklı olduğu için bağlanmadı.
+kılcal, kalp → hangi sistem). Kullanıcı bu listeyi onayladı ("böyle daha iyi").
+
+Aynı gün 040 ders notunun 20 bölüm sonu sorusu eklendi (54001–54020, 040-B1…B7). Üçü
+ATPL TV sorusuyla aynı soru + aynı cevap; ders notu kanonik: 54008 ← 15192 (zayıf ışık →
+rodlar), 54011 ← 15230 (kulak zarının arkasındaki kemik → çekiç), 54012 ← 15205 (20–20.000
+Hz).
+
+**040 son tur (2026-09-24, kullanıcı: "ders notu soruları temel alınacak").** 271 soru doğru
+cevaba göre kümelendi (İngilizce ve Türkçe cevap benzerliği), ayrıca cevap anahtar kelimesi
+ortak ve içerik kelimeleri benzeyen çiftler tarandı; her aday iki dilde okundu. Tek yeni bağ:
+15124 → 15135 (yüksek irtifa / solunan havada düşük O2 kısmi basıncı → hipoksik hipoksi; ipucu
+farklı yazılmış ama aynı şey). 040: 208 ATPL TV + 20 ders notu = **228 görünür**. Bilerek açık
+kalanlar, yeniden bağlama: 15055 ↔ 15056 (hemoglobinin görevi O2 + CO2, alyuvarınki yalnız
+O2), 15146 ↔ 15088 (sigara/CO — biri mekanizmayı, öbürü 210 katı soruyor), 15113 ↔ 15132
+(cevaplarda neden-sonuç ters), 54006 ↔ 15108 (760 mmHg / 1013,25 mb — birim farklı), 54007 ↔
+15124/15135 (ters yön: türden nedene).
+
+**040-U: 14 üretilmiş soru (90401–90414, 2026-09-24).** Kullanıcı "mutlaka olmalı dediğin
+birkaç soru, çok ekleme" dedi; 23 adaydan 14 seçildi, ölçü ve elenenler dosyanın `selection`
+alanında. 8'e indirme teklifini kullanıcı reddetti: "14'ün hepsi kalsın" — budama. Hepsi bankada hiç sorulmayan bilgi: fizyolojik yetersizlik bölgesi, histotoksik
+hipoksi, kâğıt torba, Valsalva, sarı humma aşısı, ADEK, karanlığa uyum 30 dk, presbitlik,
+leans, jet-lag doğu, Selye'nin üç aşaması, steril kokpit, FORDEC'te R, Maslow'un tepesi.
+040 toplam: 208 ATPL TV + 20 ders notu + 14 üretilmiş = **242 görünür**. Elenen 9 adayı
+(difüzyon, FRC, trombosit, alkaloz, barodentalji, yaşlanma, SA dört unsur, CRM nesilleri,
+otomasyon tatmini) kullanıcı istemeden ekleme.
 
 ## Çalışma uygulaması (`web/`)
 
@@ -472,12 +495,32 @@ Kullanıcı ders notu verdiğinde iş akışı:
    alanı zorunlu**, ID'ler mevcutlarla çakışmasın, doğru cevap ilk şık olsun
 5. `python3 scripts/init_db.py && python3 scripts/build_web.py`
 
+**Ders notu yazımı.** Not ham metin olarak değil düzenlenmiş hâliyle girer: başlıklar,
+tablolar, listeler; kaynaktaki "Detaylı bilgi için butonların üzerine gelin" gibi etkileşim
+kalıntıları ve tekrar eden paragraflar atılır. Ders metnindeki hata ya da çelişki sessizce
+silinmez: düzeltilir ve `> Ders metninde: …` kutusuyla belirtilir. ATPL TV bankasında farklı
+geçen bilgi (040'ta kısa süreli bellek 10–20 sn, bağırsak gazı 18.000 ft) `> Soru bankası: …`
+kutusuyla yanına yazılır. Bölüm sonu soruları nota değil `data/<ders>_ders_notu_sorulari.json`
+dosyasına girer; kaynakta cevap işaretli değilse ders notuna göre belirlenir. **Kullanıcının
+elinde cevap anahtarı var:** ders notunda karşılığı olmayan ya da iki şıkkı savunulabilen
+soruları kaynaktaki harfleriyle listeleyip kullanıcıya sor, tahminle gönderme. 040'ta dört soru
+soruldu; 54010'da tahmin yanlıştı ("Konlar ve rod hücreleri" değil "Sadece rod hücreleri").
+Kullanıcıdan gelen cevaplar dosyanın `answer_convention` alanına yazılır.
+
+Uygulamadaki `md()` küçük bir çeviricidir: başlık (`#`–`####`), tablo, düz liste (iç içe
+yok, girintili madde aynı listeye düşer), alıntı, kalın/italik, bağlantı. Sarılan liste
+maddesinin devam satırı **girintili** yazılır, aynı maddeye eklenir (2026-09-24'e kadar
+ayrı paragrafa düşüyordu; 090/502 notlarında 94 yer bozuktu). `##` başlığı zaten üst çizgi
+taşır; önüne `---` koyma, çift çizgi olur. Boşluklar tek boşluğa iner; hizalama gerekiyorsa
+U+2003 (em boşluk) kullan — 040'taki kör nokta deneyi böyle.
+
 Üretilmiş sorular uygulamada "üretilmiş" etiketiyle görünür ve kapsam anahtarından
 kapatılabilir; gerçek sınav sorularıyla asla karıştırılmaz.
 
 **Üretilmiş sorular kendi bölümünde durur: "Ders Notundan Üretilmiş"** (İngilizcesi
 "Generated from Course Notes", `data/en/_dersler.json`). Ders notu soruları ayrı
-bölümde kalır: 070-06 / 070-07, 01-02 / 01-03, 090-B1…B4 / 090-U. Kod, konu seçicide ders
+bölümde kalır: 070-06 / 070-07, 01-02 / 01-03, 090-B1…B4 / 090-U, 040-B1…B7 / 040-U. Kod, konu
+seçicide ders
 notu bölümlerinin **arkasına** düşecek biçimde seçilir (bölümler koda göre sıralanır;
 090'da `-07` B'lerin önüne düşerdi, o yüzden `-U`). 090'da üretilmişler önce B1–B4'e
 karışmıştı ve kullanıcı konu seçicide onları ayrı bulamadığını söyledi. Konuya göre

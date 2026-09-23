@@ -825,10 +825,38 @@
     },
     {
       "ids": [
+        15135,
+        15124
+      ],
+      "not": "Yüksek irtifa / solunan havada düşük O2 kısmi basıncı → hipoksik hipoksi (15124 bozuk yazılmış, şıkları anlamsız)"
+    },
+    {
+      "ids": [
         15178,
         15198
       ],
       "not": "Yukarı eğimli pist → alçak ve sığ yaklaşma (15191 'izlenim: overshoot' ayrı, tuzak)"
+    },
+    {
+      "ids": [
+        54008,
+        15192
+      ],
+      "not": "Zayıf ışığa duyarlı retina hücresi → rodlar (ders notu kanonik)"
+    },
+    {
+      "ids": [
+        54011,
+        15230
+      ],
+      "not": "Kulak zarının arkasındaki ilk kemikçik → çekiç (ders notu kanonik)"
+    },
+    {
+      "ids": [
+        54012,
+        15205
+      ],
+      "not": "İnsan işitme aralığı → 20–20.000 Hz (ders notu kanonik)"
     },
     {
       "ids": [

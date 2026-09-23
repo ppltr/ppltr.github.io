@@ -1,0 +1,144 @@
+{
+  "questions": {
+    "90401": {
+      "text": "In the physiological divisions of the atmosphere, what is the zone between 12,000 ft and 50,000 ft called?",
+      "options": [
+        "The physiologically deficient zone",
+        "The physiological zone",
+        "The partial space-equivalent zone",
+        "The total space-equivalent zone",
+        "The tropopause zone"
+      ]
+    },
+    "90402": {
+      "text": "Which type of hypoxia occurs when the cells cannot use the oxygen available to them, for example in cyanide poisoning or after alcohol?",
+      "options": [
+        "Histotoxic hypoxia",
+        "Hypoxic hypoxia",
+        "Hypemic (anaemic) hypoxia",
+        "Stagnant hypoxia",
+        "Hyperventilation"
+      ]
+    },
+    "90403": {
+      "text": "In a case of acute hyperventilation, what is the most effective way to raise the carbon dioxide level in the blood?",
+      "options": [
+        "Breathing deeply into a paper bag",
+        "Breathing 100% oxygen",
+        "Increasing the breathing rate",
+        "Climbing to a higher altitude immediately",
+        "Drinking plenty of water"
+      ]
+    },
+    "90404": {
+      "text": "What is the name of the manoeuvre in which, with the mouth and nose closed, a forced exhalation is used to equalise the pressure difference between the middle ear and sinuses and the surrounding air?",
+      "options": [
+        "Valsalva manoeuvre",
+        "Coriolis manoeuvre",
+        "Frenzel manoeuvre",
+        "Eustachian manoeuvre",
+        "Somatogravic manoeuvre"
+      ]
+    },
+    "90405": {
+      "text": "Vaccination against which disease is effective for about ten years and is a standard requirement for international pilots?",
+      "options": [
+        "Yellow fever",
+        "Malaria",
+        "Cholera",
+        "Typhoid",
+        "Hepatitis A"
+      ]
+    },
+    "90406": {
+      "text": "Which of the following are the fat-soluble vitamins?",
+      "options": [
+        "A, D, E, K",
+        "C and the B group",
+        "A, B, C, D",
+        "B, C, K",
+        "D, E, C"
+      ]
+    },
+    "90407": {
+      "text": "Approximately how long does it take the rod cells to adapt fully to darkness?",
+      "options": [
+        "30 minutes",
+        "10 seconds",
+        "1 minute",
+        "5 minutes",
+        "2 hours"
+      ]
+    },
+    "90408": {
+      "text": "What is the name of the condition in which, with ageing, the lens of the eye loses its elasticity and near objects can no longer be seen clearly?",
+      "options": [
+        "Presbyopia",
+        "Myopia",
+        "Hypermetropia",
+        "Astigmatism",
+        "Cataract"
+      ]
+    },
+    "90409": {
+      "text": "A pilot who returns to level flight after a slow, prolonged turn feels banked while actually flying level. Which vestibular illusion is this?",
+      "options": [
+        "The leans",
+        "Coriolis illusion",
+        "Somatogravic illusion",
+        "Somatogyral illusion",
+        "Autokinesis"
+      ]
+    },
+    "90410": {
+      "text": "In terms of jet lag, flights in which direction are harder to adapt to?",
+      "options": [
+        "Eastward — the day becomes shorter and the body needs more time to adapt",
+        "Westward — the day becomes shorter",
+        "Westward — the body clock shifts forward",
+        "Northward — the length of daylight changes",
+        "Both directions are equally difficult"
+      ]
+    },
+    "90411": {
+      "text": "According to Hans Selye's General Adaptation Syndrome, what are the three stages of the body's response to stress, in order?",
+      "options": [
+        "Alarm, resistance, exhaustion",
+        "Resistance, alarm, exhaustion",
+        "Alarm, exhaustion, resistance",
+        "Arousal, resistance, relaxation",
+        "Perception, alarm, adaptation"
+      ]
+    },
+    "90412": {
+      "text": "What is the name of the rule that prohibits non-essential conversation during critical phases of flight such as take-off, descent and landing?",
+      "options": [
+        "The sterile cockpit rule",
+        "The readback rule",
+        "The closed cockpit rule",
+        "The quiet cabin rule",
+        "The cross-check rule"
+      ]
+    },
+    "90413": {
+      "text": "In the FORDEC decision-making model, what does the letter 'R' stand for?",
+      "options": [
+        "Risks and benefits",
+        "Review",
+        "Reaction",
+        "Resources",
+        "Route"
+      ]
+    },
+    "90414": {
+      "text": "What is the top level of Maslow's hierarchy of needs?",
+      "options": [
+        "Self-actualisation",
+        "Esteem needs",
+        "Belonging and love needs",
+        "Safety needs",
+        "Physiological needs"
+      ]
+    }
+  }
+}

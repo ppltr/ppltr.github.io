@@ -3076,6 +3076,14 @@ function md(src){
   const out = [];
   let i = 0, list = null;
   const closeList = () => { if (list){ out.push('</' + list + '>'); list = null; } };
+  // Liste maddesinin girintili devam satırları aynı maddeye eklenir; yoksa sarılan
+  // madde ikiye bölünür, devamı listenin dışında ayrı paragraf olarak düşerdi
+  const devam = ilk => {
+    const buf = [ilk];
+    while (i + 1 < lines.length && /^\s+\S/.test(lines[i+1]) &&
+           !/^\s*([-*+]|\d+[.)])\s/.test(lines[i+1])){ buf.push(lines[i+1].trim()); i++; }
+    return buf.join(' ');
+  };
   while (i < lines.length){
     const l = lines[i];
     if (/^\s*\|/.test(l) && /^\s*\|?[\s:-]*-[\s:|-]*$/.test(lines[i+1] || '')){
@@ -3108,10 +3116,10 @@ function md(src){
     }
     else if ((m = l.match(/^\s*[-*+]\s+(.*)$/))){
       if (list !== 'ul'){ closeList(); out.push('<ul>'); list = 'ul'; }
-      out.push('<li>' + inline(m[1]) + '</li>');
+      out.push('<li>' + inline(devam(m[1])) + '</li>');
     } else if ((m = l.match(/^\s*\d+[.)]\s+(.*)$/))){
       if (list !== 'ol'){ closeList(); out.push('<ol>'); list = 'ol'; }
-      out.push('<li>' + inline(m[1]) + '</li>');
+      out.push('<li>' + inline(devam(m[1])) + '</li>');
     } else if (!l.trim()){ closeList(); }
     else {
       closeList();

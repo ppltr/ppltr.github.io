@@ -1,0 +1,259 @@
+{
+  "subject_code": "040",
+  "lang": "tr",
+  "subject_name": "Human Performance and Limitations",
+  "source": "İnsan Performansı ders notu - bölüm sonu soruları (B1-S 5, B2-S 2, B3-S 3, B4-S 2, B5-S 2, B6-S 3, B7-S 3 = 20 soru)",
+  "answer_convention": "Kaynakta doğru cevap işaretli değildi; ders notuna göre belirlendi, şıklar doğru cevap başa (A) gelecek şekilde yeniden sıralandı, diğer şıkların sırası korundu. Emin olunamayan dört sorunun cevabı kullanıcının cevap anahtarından alındı (2026-09-24): 54003 'İnsan hataları ve sistemdeki güvenlik açıkları', 54005 'Yavaşlar' (ders notunda karşılığı yok), 54009 'Optik sinirin başlangıç noktasında' ('Retina' değil), 54010 'Sadece rod hücreleri' (ilk tahmin 'Konlar ve rod hücreleri' yanlıştı).",
+  "id_convention": "Kaynakta soru ID'si yok; 54001'den başlayan yapay ID'ler verildi (54 = 040 ders notu).",
+  "sections": {
+    "040-B1": "Ders Notu · İnsan Faktörleri ve Fizyolojik Temeller",
+    "040-B2": "Ders Notu · İrtifa, Sağlık ve Hijyen",
+    "040-B3": "Ders Notu · Beslenme ve Görme",
+    "040-B4": "Ders Notu · İşitme, Denge ve Yanılsamalar",
+    "040-B5": "Ders Notu · Sinir Sistemi, Stres ve Performans",
+    "040-B6": "Ders Notu · Durumsal Farkındalık ve İletişim",
+    "040-B7": "Ders Notu · Karar Verme, Liderlik ve CRM"
+  },
+  "questions": [
+    {
+      "id": 54001,
+      "section": "040-B1",
+      "text": "Uçak kazalarında insan faktörünün en çok etkili olduğu safha hangisidir?",
+      "options": [
+        "Alçalma, ilk yaklaşma ve son yaklaşma",
+        "Uçuşun tamamı",
+        "Seyir hâli",
+        "Kalkış koşusu ve tırmanış",
+        "Kalkış ve yükselme"
+      ]
+    },
+    {
+      "id": 54002,
+      "section": "040-B1",
+      "text": "SHELL modelinin ana bileşenleri nelerdir?",
+      "options": [
+        "Software, Hardware, Environment, Liveware, Liveware",
+        "System, Hardware, Environment, Learning, Liveware",
+        "Safety, Human, Engineering, Learning, Logistics",
+        "Safety, Hardware, Engineering, Learning, Liveware",
+        "Software, Hardware, Education, Liveware, Liveware"
+      ]
+    },
+    {
+      "id": 54003,
+      "section": "040-B1",
+      "text": "İsviçre peyniri modelinde 'delikler' ne anlama gelir?",
+      "options": [
+        "İnsan hataları ve sistemdeki güvenlik açıkları",
+        "Teknik arızalar ve malzeme yorgunluğu",
+        "Proses hataları ve organizasyon eksiklikleri",
+        "Fiziksel uçak hasarları",
+        "Çevresel faktörler ve hava koşulları"
+      ]
+    },
+    {
+      "id": 54004,
+      "section": "040-B1",
+      "text": "ICAO, hangi aşamalarda insan faktörlerine dikkat edilmesini öngörmektedir?",
+      "options": [
+        "Havacılık faaliyetlerinin tüm aşamalarında",
+        "Yalnızca eğitim ve operasyonel uygulamalarda",
+        "Yalnızca uçuş ve bakım sırasında",
+        "Yalnızca tasarım ve sertifikasyon aşamasında",
+        "Yalnızca teknik ekipman kullanımında ve bakımında"
+      ]
+    },
+    {
+      "id": 54005,
+      "section": "040-B1",
+      "text": "8000 ft irtifada beyin işlevleri nasıl etkilenir?",
+      "options": [
+        "Yavaşlar",
+        "Hızlanır",
+        "Düzensizleşir",
+        "Değişmez",
+        "Daha verimli çalışır"
+      ]
+    },
+    {
+      "id": 54006,
+      "section": "040-B2",
+      "text": "Deniz seviyesindeki atmosfer basıncı ne kadardır?",
+      "options": [
+        "760 mmHg",
+        "850 mmHg",
+        "660 mmHg",
+        "500 mmHg",
+        "920 mmHg"
+      ]
+    },
+    {
+      "id": 54007,
+      "section": "040-B2",
+      "text": "Hipoksik hipoksinin en yaygın nedeni nedir?",
+      "options": [
+        "Alveollerdeki oksijen parsiyel basıncının azalması",
+        "Kan akışının azalması",
+        "Metabolik bozukluklar",
+        "Karbon monoksit zehirlenmesi",
+        "Anemi"
+      ]
+    },
+    {
+      "id": 54008,
+      "section": "040-B3",
+      "text": "Retinada yer alan ve zayıf ışıklara duyarlı olan hücreler hangileridir?",
+      "options": [
+        "Rodlar",
+        "Optik sinir hücreleri",
+        "İris hücreleri",
+        "Kornea hücreleri",
+        "Konlar"
+      ]
+    },
+    {
+      "id": 54009,
+      "section": "040-B3",
+      "text": "Kör nokta, gözün hangi bölgesinde bulunur?",
+      "options": [
+        "Optik sinirin başlangıç noktasında",
+        "Lens",
+        "İris",
+        "Retina",
+        "Kornea"
+      ]
+    },
+    {
+      "id": 54010,
+      "section": "040-B3",
+      "text": "Karanlık adaptasyonu süreci, gözün hangi hücrelerinin uyum sağlamasıyla tamamlanır?",
+      "options": [
+        "Sadece rod hücreleri",
+        "İris hücreleri",
+        "Konlar ve rod hücreleri",
+        "Kornea hücreleri",
+        "Sadece kon hücreleri"
+      ]
+    },
+    {
+      "id": 54011,
+      "section": "040-B4",
+      "text": "Hangi kemikçik kulak zarından aldığı titreşimleri önce alır ve diğer kemikçiklere iletir?",
+      "options": [
+        "Çekiç",
+        "Örs",
+        "Yarım daire kanalları",
+        "Stapes",
+        "Üzengi"
+      ]
+    },
+    {
+      "id": 54012,
+      "section": "040-B4",
+      "text": "İnsanlar genellikle hangi frekans aralığındaki sesleri duyarlar?",
+      "options": [
+        "20 Hz ile 20.000 Hz",
+        "10 Hz ile 10.000 Hz",
+        "30 Hz ile 15.000 Hz",
+        "40 Hz ile 25.000 Hz",
+        "50 Hz ile 30.000 Hz"
+      ]
+    },
+    {
+      "id": 54013,
+      "section": "040-B5",
+      "text": "Merkezi Sinir Sistemi'nde omuriliğin temel işlevi nedir?",
+      "options": [
+        "Beyin ve vücudun geri kalanı arasında bilgi iletimini sağlamak",
+        "Hafızayı kontrol etmek",
+        "Vücuttaki tüm işlevleri düzenlemek",
+        "Duyusal bilgileri işlemek",
+        "Vücudu stresli durumlara hazırlamak"
+      ]
+    },
+    {
+      "id": 54014,
+      "section": "040-B5",
+      "text": "Otonom Sinir Sistemi'nin hangi alt bölümü 'savaş ya da kaç' tepkisini veren stresli durumlara hazırlar?",
+      "options": [
+        "Sempatik Sistem",
+        "Çevresel Sinir Sistemi",
+        "Parasempatik Sistem",
+        "Somatik Sinir Sistemi",
+        "Merkezi Sinir Sistemi"
+      ]
+    },
+    {
+      "id": 54015,
+      "section": "040-B6",
+      "text": "Mod farkındalığı, aşağıdakilerden hangisi ile ilgili değildir?",
+      "options": [
+        "Hava trafik kontrol kurallarının uygulanması.",
+        "Uçuş yönetim sisteminin durumunun izlenmesi.",
+        "Uçak konfigürasyonunun bilinmesi.",
+        "Hedef sürat ve uygun irtifanın takibi.",
+        "Otopilot modlarının anlaşılması."
+      ]
+    },
+    {
+      "id": 54016,
+      "section": "040-B6",
+      "text": "Çevresel farkındalık aşağıdakilerden hangisini içermez?",
+      "options": [
+        "Yakıt seviyesinin izlenmesi.",
+        "Arazi farkındalığı.",
+        "ATC frekansının doğru ayarlanması.",
+        "Diğer uçakların konumunun farkında olmak.",
+        "Mevcut ve tahmini hava durumunun bilinmesi."
+      ]
+    },
+    {
+      "id": 54017,
+      "section": "040-B6",
+      "text": "Mekansal oryantasyon aşağıdakilerden hangisini içerir?",
+      "options": [
+        "Coğrafi konumun ve uçak durumunun (örn. tırmanış, alçalış) bilinmesi.",
+        "Hava trafik kontrol sistemlerinin verimliliği.",
+        "Uçuş sırasında mürettebatın iletişim becerileri.",
+        "Uçuş sırasında karşılaşılan olaylara acil müdahale.",
+        "Uçak yakıt tüketiminin hesaplanması."
+      ]
+    },
+    {
+      "id": 54018,
+      "section": "040-B7",
+      "text": "Havacılıkta otomasyonun temel amacı nedir?",
+      "options": [
+        "İnsan hatalarını minimize etmek",
+        "Uçuş süresini kısaltmak",
+        "Eğitim maliyetlerini düşürmek",
+        "Pilotların iş yükünü artırmak",
+        "Uçuşları daha eğlenceli hale getirmek"
+      ]
+    },
+    {
+      "id": 54019,
+      "section": "040-B7",
+      "text": "Cam kokpit, aşağıdakilerden hangisini ifade eder?",
+      "options": [
+        "Bilgisayar destekli uçuş ve seyrüsefer göstergeleri",
+        "Basit uçuş göstergeleri",
+        "Geleneksel analog göstergeler",
+        "Analog motor kontrol göstergeleri",
+        "Manuel kontrol sistemleri"
+      ]
+    },
+    {
+      "id": 54020,
+      "section": "040-B7",
+      "text": "Otomasyonun havacılıkta hangi dezavantajı yoktur?",
+      "options": [
+        "Pilotlar arasında iletişimin güçlenmesi",
+        "Manuel kontrol eksikliği",
+        "Mod hatası",
+        "Performans ve etki arasındaki farkın geç fark edilmesi",
+        "Durum muhakemesi kaybı"
+      ]
+    }
+  ]
+}

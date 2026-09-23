@@ -1,0 +1,204 @@
+{
+  "questions": {
+    "54001": {
+      "text": "In which phase of flight does the human factor play the greatest role in aircraft accidents?",
+      "options": [
+        "Descent, initial approach and final approach",
+        "The whole flight",
+        "Cruise",
+        "Take-off run and climb",
+        "Take-off and ascent"
+      ]
+    },
+    "54002": {
+      "text": "What are the main components of the SHELL model?",
+      "options": [
+        "Software, Hardware, Environment, Liveware, Liveware",
+        "System, Hardware, Environment, Learning, Liveware",
+        "Safety, Human, Engineering, Learning, Logistics",
+        "Safety, Hardware, Engineering, Learning, Liveware",
+        "Software, Hardware, Education, Liveware, Liveware"
+      ]
+    },
+    "54003": {
+      "text": "In the Swiss cheese model, what do the 'holes' represent?",
+      "options": [
+        "Human errors and safety gaps in the system",
+        "Technical failures and material fatigue",
+        "Process errors and organisational deficiencies",
+        "Physical damage to the aircraft",
+        "Environmental factors and weather conditions"
+      ]
+    },
+    "54004": {
+      "text": "At which stages does ICAO require attention to be paid to human factors?",
+      "options": [
+        "At all stages of aviation activities",
+        "Only in training and operational practice",
+        "Only during flight and maintenance",
+        "Only at the design and certification stage",
+        "Only in the use and maintenance of technical equipment"
+      ]
+    },
+    "54005": {
+      "text": "How are brain functions affected at an altitude of 8000 ft?",
+      "options": [
+        "They slow down",
+        "They speed up",
+        "They become irregular",
+        "They do not change",
+        "They work more efficiently"
+      ]
+    },
+    "54006": {
+      "text": "What is the atmospheric pressure at sea level?",
+      "options": [
+        "760 mmHg",
+        "850 mmHg",
+        "660 mmHg",
+        "500 mmHg",
+        "920 mmHg"
+      ]
+    },
+    "54007": {
+      "text": "What is the most common cause of hypoxic hypoxia?",
+      "options": [
+        "A reduced partial pressure of oxygen in the alveoli",
+        "Reduced blood flow",
+        "Metabolic disorders",
+        "Carbon monoxide poisoning",
+        "Anaemia"
+      ]
+    },
+    "54008": {
+      "text": "Which cells of the retina are sensitive to dim light?",
+      "options": [
+        "Rods",
+        "Optic nerve cells",
+        "Iris cells",
+        "Corneal cells",
+        "Cones"
+      ]
+    },
+    "54009": {
+      "text": "In which part of the eye is the blind spot located?",
+      "options": [
+        "Where the optic nerve begins",
+        "Lens",
+        "Iris",
+        "Retina",
+        "Cornea"
+      ]
+    },
+    "54010": {
+      "text": "The dark adaptation process is completed by the adaptation of which cells of the eye?",
+      "options": [
+        "Rods only",
+        "Iris cells",
+        "Cones and rods",
+        "Corneal cells",
+        "Cones only"
+      ]
+    },
+    "54011": {
+      "text": "Which ossicle is the first to receive the vibrations from the eardrum and pass them on to the other ossicles?",
+      "options": [
+        "Hammer",
+        "Anvil",
+        "Semicircular canals",
+        "Stapes",
+        "Stirrup"
+      ]
+    },
+    "54012": {
+      "text": "Within which frequency range do humans generally hear sounds?",
+      "options": [
+        "20 Hz to 20,000 Hz",
+        "10 Hz to 10,000 Hz",
+        "30 Hz to 15,000 Hz",
+        "40 Hz to 25,000 Hz",
+        "50 Hz to 30,000 Hz"
+      ]
+    },
+    "54013": {
+      "text": "What is the main function of the spinal cord in the central nervous system?",
+      "options": [
+        "To carry information between the brain and the rest of the body",
+        "To control memory",
+        "To regulate all functions of the body",
+        "To process sensory information",
+        "To prepare the body for stressful situations"
+      ]
+    },
+    "54014": {
+      "text": "Which subdivision of the autonomic nervous system prepares the body for stressful situations with the 'fight or flight' response?",
+      "options": [
+        "The sympathetic system",
+        "The peripheral nervous system",
+        "The parasympathetic system",
+        "The somatic nervous system",
+        "The central nervous system"
+      ]
+    },
+    "54015": {
+      "text": "Which of the following is not related to mode awareness?",
+      "options": [
+        "Applying air traffic control rules.",
+        "Monitoring the status of the flight management system.",
+        "Knowing the aircraft configuration.",
+        "Tracking the target speed and the appropriate altitude.",
+        "Understanding the autopilot modes."
+      ]
+    },
+    "54016": {
+      "text": "Which of the following is not part of environmental awareness?",
+      "options": [
+        "Monitoring the fuel level.",
+        "Terrain awareness.",
+        "Setting the ATC frequency correctly.",
+        "Being aware of the position of other aircraft.",
+        "Knowing the current and forecast weather."
+      ]
+    },
+    "54017": {
+      "text": "Which of the following does spatial orientation include?",
+      "options": [
+        "Knowing the geographical position and the aircraft state (e.g. climbing, descending).",
+        "The efficiency of air traffic control systems.",
+        "The crew's communication skills during flight.",
+        "Emergency response to events encountered in flight.",
+        "Calculating the aircraft's fuel consumption."
+      ]
+    },
+    "54018": {
+      "text": "What is the main purpose of automation in aviation?",
+      "options": [
+        "To minimise human error",
+        "To shorten flight time",
+        "To reduce training costs",
+        "To increase pilot workload",
+        "To make flights more enjoyable"
+      ]
+    },
+    "54019": {
+      "text": "What does the term 'glass cockpit' refer to?",
+      "options": [
+        "Computer-aided flight and navigation displays",
+        "Simple flight instruments",
+        "Traditional analogue instruments",
+        "Analogue engine control instruments",
+        "Manual control systems"
+      ]
+    },
+    "54020": {
+      "text": "Which of the following is not a disadvantage of automation in aviation?",
+      "options": [
+        "Stronger communication between pilots",
+        "Lack of manual control",
+        "Mode error",
+        "Late recognition of the gap between performance and effect",
+        "Loss of situational judgement"
+      ]
+    }
+  }
+}
