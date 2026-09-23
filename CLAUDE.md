@@ -257,10 +257,14 @@ dönme. Bedeli: kalkıp gidince en çok 3 dakika çalışma sayılır.
   "sayfada aktif olduğumuz süre" dedi.
 - Testte `.click()` `pointerdown` üretmez; önce `PointerEvent('pointerdown')` gönder.
 
-**Soru ekranında iki sayaç var, ikisi de sağda, üst üste:**
+**Soru ekranında iki sayaç var, üst bilgi satırında (`.meta`) sağda, yan yana:**
 
-- **Soru sayacı** (`#qtm`, ilerleme çubuğuyla aynı satırda, dikeyde yer yemez): "bu soru
-  0:12 · ort 0:35". Her yeni soruda 0:00'dan başlar; süre `sureEkle` ile ekrandaki
+- **Soru sayacı** (`#qtm`, tur sayacı çipinin hemen solunda): "bu soru 0:12 · ort 0:35".
+  Önce ilerleme çubuğuyla aynı satırdaydı; kullanıcı 2026-09-24'te "progress bar'ın yanında
+  olmasın" dedi — çubuk tam genişlik kalır, sayacı oraya geri koyma. Yeni satır da açılmaz:
+  400px altında "Soru 4 / 2547" (`.qpos`) gizlenir (alt şeritteki `#navBtn` aynı sayıyı
+  gösteriyor) ve etiket "soru"ya kısalır; satır yine sığmazsa (320px, saatleri aşan tur)
+  `tmrBoya` taşmayı ölçüp `.dar` ekler, "ort" düşer, süre hep görünür. Her yeni soruda 0:00'dan başlar; süre `sureEkle` ile ekrandaki
   cevaplanmamış soruya (`R.qAcik`) akar, geri gidip gelince toplanır. Cevapta donar
   (`.bitti`) ve geri dönünce o sorunun süresi görünür (`R.qSon`). 1 dakikayı geçince
   turuncu (`.uzun`, `YAVAS_MS`), duraklatılınca ya da boştayken soluk (`.dur`). "ort", bu

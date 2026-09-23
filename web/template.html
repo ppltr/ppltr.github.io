@@ -371,11 +371,10 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 
 /* ── Soru ── */
 .prog{height:3px; background:var(--rule); border-radius:2px; overflow:hidden; margin-bottom:6px}
-/* İlerleme çubuğu ve yanında soru sayacı. Aynı satırda durur ki soru ekranı
-   dikeyde uzamasın; sağda, tur sayacının tam üstünde — iki sayaç tek sütun. */
-.progrow{display:flex; align-items:center; gap:12px; margin-bottom:6px}
-.progrow .prog{flex:1; margin-bottom:0}
-.qtm{flex:none; font-family:var(--f-num); font-size:10.5px; letter-spacing:.03em;
+/* Soru sayacı üst bilgi satırında, tur sayacının hemen solunda: iki sayaç yan yana,
+   yeni satır açmaz. İlerleme çubuğunun yanına koyma — kullanıcı istemedi, çubuk tam
+   genişlik kalır. Satıra sığmazsa "ort" düşer (.dar, tmrBoya ölçer), süre hep görünür. */
+.qtm{flex:none; margin-left:auto; font-family:var(--f-num); font-size:10.5px; letter-spacing:.03em;
   color:var(--ink-3); white-space:nowrap; font-variant-numeric:tabular-nums}
 .qtm .qv{display:inline-block; min-width:2.6em; text-align:right; font-size:12.5px;
   font-weight:600; color:var(--ink); transition:color .2s}
@@ -383,13 +382,16 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .qtm.bitti .qv{color:var(--ink-2); font-weight:500}
 .qtm.uzun .qv{color:var(--due)}
 .qtm.dur .qv{opacity:.45}
+.qtm.dar .qo{display:none}
 .prog i{display:block; height:100%; background:var(--accent); width:0; transition:width .25s ease}
 .prog i.retry{background:var(--bad)}
 .meta{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px}
 .meta .lbl:first-of-type{margin-right:auto}
 /* Deste adı en son kısalır: geri düğmesi ve sayaç hep tam görünür */
 .meta > .lbl{min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
-@media (max-width:400px){ .meta > .lbl{display:none} }
+/* Dar ekranda "Soru 4 / 2547" da gizlenir — alt şeritteki gezinme düğmesi aynı sayıyı
+   gösteriyor; yer iki sayaca kalır. */
+@media (max-width:400px){ .meta > .lbl, .meta > .qpos, .qtm .qb{display:none} }
 /* Gezinme düğmesi ve paneli — kapalıyken hiç yer kaplamaz */
 /* Tur sayacı: dokununca durur/sürer. Simge yapılacak eylemi gösterir —
    sayarken duraklat (iki çubuk), dururken oynat (üçgen). Emoji değil CSS:
@@ -2239,8 +2241,12 @@ function tmrBoya(){
     q.classList.toggle('dur', acik && (R.durdu || bosta));
     q.classList.toggle('bitti', !acik);
     q.classList.toggle('uzun', ms !== null && ms >= YAVAS_MS);
-    q.innerHTML = 'bu soru <b class="qv">' + (ms === null ? '–' : saat(ms)) + '</b>' +
+    q.innerHTML = '<span class="qb">bu </span>soru <b class="qv">' +
+      (ms === null ? '–' : saat(ms)) + '</b>' +
       (ort !== null ? '<span class="qo"> · ort ' + saat(ort) + '</span>' : '');
+    // Satıra sığmıyorsa (dar telefon, saatleri aşan tur) ortalama düşer, süre kalır
+    q.classList.remove('dar');
+    if (q.parentNode.scrollWidth > q.parentNode.clientWidth) q.classList.add('dar');
     q.title = (acik ? 'Bu soruda geçen çalışma süresi; her yeni soruda sıfırdan başlar'
                     : 'Bu soruya harcadığın süre') +
       (ort !== null ? ' · ort: bu turda cevapladığın soruların ortalaması' : '') +
@@ -2331,9 +2337,8 @@ function draw(){
 
   const last = R.i === R.list.length - 1 && !R.missed.length;
   el('view').innerHTML =
-    '<div class="progrow"><div class="prog"><i class="' + (retry ? 'retry' : '') + '" style="width:' +
+    '<div class="prog"><i class="' + (retry ? 'retry' : '') + '" style="width:' +
       (R.i / R.list.length * 100) + '%"></i></div>' +
-      '<span class="qtm" id="qtm" role="timer" aria-live="off"></span></div>' +
     '<div class="meta"><button class="backb" id="hb" type="button" ' +
       'title="Ana ekran — tur kayıtlı kalır, oradan devam edersin">' +
       '<i>‹</i>Ana ekran</button>' +
@@ -2341,6 +2346,7 @@ function draw(){
         '<b class="num">' + R.list.length + '</b></span>' +
       '<span class="lbl"' + (retry ? ' style="color:var(--bad)"' : '') + '>' +
         (retry ? 'Yanlış turu ' + R.round : R.sr ? 'Speedrun' : deckName()) + '</span>' +
+      '<span class="qtm" id="qtm" role="timer" aria-live="off"></span>' +
       '<button class="tmr" id="tmr" type="button"><span class="ti" aria-hidden="true">' +
         '</span><span class="tv num"></span></button></div>' +
     '<div class="card"><div class="head">' +
