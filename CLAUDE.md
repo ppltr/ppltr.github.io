@@ -142,9 +142,24 @@ kimliği `BY_ID`'de arar, `qtBlok`/`sorBlok` bulunmayanı atlar.
 
 Yan etkisi bilinerek kabul edildi: kanonik İngilizce bankadaysa (090-01…06), yalnız
 "Ders Notundan Üretilmiş" (090-U) seçiliyken o bilgi turda hiç çıkmaz; modülün tamamı
-seçiliyken kanonik soru gelir. 090'ın ders notu soruları (590xx, gerçek SHGM soruları) İngilizce
-bankaya bilerek bağlanmadı. 070'te 90725/90726, 502'de 95257 gerçek soruyla aynı bilgiyi
+seçiliyken kanonik soru gelir. 070'te 90725/90726, 502'de 95257 gerçek soruyla aynı bilgiyi
 soruyor ama henüz bağlanmadı — kullanıcı yalnız 090'ı istedi.
+
+**Gerçek sorular arasında da aynı ölçü (2026-09-23, 090).** Kullanıcı tam modül turunda
+"hâlâ tekrar eden sorular var" dedi. Önceki kurallar yalnız metin benzerliğine bakıyordu;
+aynı bilgiyi başka kelimelerle, ters yönden ya da farklı sayılı örnekle soran ATPL TV
+soruları görünür kalmıştı (ör. Hezarfen/Çorlu/Yeşilköy/TC-ABC frekans değişimi cevabı dört
+kez, AFFIRM üç yönden). 200 görünür sorunun hepsi tek tek okundu, 29'u gizlendi → 171.
+
+- **ATPL TV ile ders notu sorusu aynıysa ders notu kanoniktir** (590xx). Kullanıcı "ders
+  notu soruları önemli ve kalmalı" demişti; B1–B4 bölümleri boşalmasın. İngilizce metinler
+  zaten neredeyse aynı. Önceki "590xx bilerek bağlanmadı" kararı bununla kalktı.
+- Bağlanmayanlar: farklı sayıyla farklı cevap veren sayı/saat örnekleri (1500 ft, 13 500,
+  23 500 ft; 1300, 1500, 1020, 16:15), aynı kökte farklı doğru listeli readback soruları
+  (16400/16402, 16311), METAR görüşünün eşiği ile birimi (16431 "5000 m'ye kadar metre" /
+  59004 "metre veya km" — biri öbürünü vermiyor), tanım ile ondan çıkarım isteyen uygulama
+  (16476 distress tanımı / 16494 motor yangını örneği), ORBIT anlamı ile gecikme için orbit
+  (16459/16464), QFE/QNH karşılaştırması (59002).
 
 ## Çalışma uygulaması (`web/`)
 

@@ -99,9 +99,10 @@
         16332,
         16343,
         16344,
-        16404
+        16404,
+        16334
       ],
-      "not": "090: STANDBY = wait and I will call you — dört kez"
+      "not": "090: STANDBY = wait and I will call you — dört kez; \"wait and I will call you\" → STANDBY ters yönden (16334) — üçüncü gözden geçirme (2026-09-23)"
     },
     {
       "ids": [
@@ -203,9 +204,10 @@
       "ids": [
         16330,
         16392,
-        16407
+        16407,
+        16405
       ],
-      "not": "090: hata düzeltme → CORRECTION"
+      "not": "090: hata düzeltme → CORRECTION; QNH örneğiyle (16405) — üçüncü gözden geçirme (2026-09-23)"
     },
     {
       "ids": [
@@ -237,11 +239,13 @@
     },
     {
       "ids": [
+        59010,
+        16327,
         16333,
         16359,
         16378
       ],
-      "not": "090: WILCO = understood, will comply — üç kez"
+      "not": "090: WILCO = anladım, uygulayacağım — cevap ve anlam iki yönden; ders notu kanonik — üçüncü gözden geçirme (2026-09-23)"
     },
     {
       "ids": [
@@ -256,6 +260,151 @@
         16477
       ],
       "not": "090: ALL STATIONS → istenmedikçe cevap verilmez"
+    },
+    {
+      "ids": [
+        59001,
+        16373
+      ],
+      "not": "090: HJ = gündoğumundan günbatımına; ders notu kanonik, ATPL TV kopyası gizli — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        59003,
+        16466,
+        16456
+      ],
+      "not": "090: ATIS alındığı ilk temasta bildirilir; ders notu kanonik, ATPL TV kopyası gizli — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        59005,
+        16442
+      ],
+      "not": "090: görüş \"1200 metres\" diye söylenir; ders notu kanonik, ATPL TV kopyası gizli — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        59006,
+        16454
+      ],
+      "not": "090: otomatik meydan ve hava yayını → ATIS; ders notu kanonik, ATPL TV kopyası gizli — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        59008,
+        16372
+      ],
+      "not": "090: FIS = Flight Information Service; ders notu kanonik, ATPL TV kopyası gizli — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        59009,
+        16374
+      ],
+      "not": "090: HX = belirli çalışma saati yok; ders notu kanonik, ATPL TV kopyası gizli — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        59011,
+        16435
+      ],
+      "not": "090: kesişen trafik bilgisi sırası 12'li saat → mesafe → yön → seviye; ders notu kanonik, ATPL TV kopyası gizli — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        59016,
+        16468
+      ],
+      "not": "090: blind transmission tanımı; ders notu kanonik, ATPL TV kopyası gizli — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        59018,
+        16353,
+        16397
+      ],
+      "not": "090: haberleşme bandı 118–136.975 MHz; ders notu kanonik, ATPL TV kopyası gizli, iki kopya — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        59020,
+        16475
+      ],
+      "not": "090: uluslararası acil durum frekansı 121.5 MHz; ders notu kanonik, ATPL TV kopyası gizli — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        16429,
+        16325,
+        16326,
+        16360
+      ],
+      "not": "090: frekans değişimi talimatına cevap = frekans + çağrı adı — dört örnek, aynı kural — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        16335,
+        16338
+      ],
+      "not": "090: etkili mesaj için sabit ses seviyesi — birebir aynı — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        16345,
+        16349
+      ],
+      "not": "090: TC-ABC kısaltması T-BC (Tango Bravo Charlie) — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        16321,
+        16381
+      ],
+      "not": "090: ondalıkta DECIMAL her zaman söylenir — kural ve örnek (118.1) — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        16363,
+        16385,
+        16386
+      ],
+      "not": "090: AFFIRM = evet (AFFIRMATIVE değil) — üç yönden aynı bilgi — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        16361,
+        16394
+      ],
+      "not": "090: yer istasyonu çağrı adı karışıklık olmayacaksa atlanabilir — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        16433,
+        16437
+      ],
+      "not": "090: SQUAWK NNNN = transponderde o kodu seç — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        16356,
+        16461
+      ],
+      "not": "090: VACATE left/right = pisti o yana dönerek terk et (ORBIT sol/sağ gibi) — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        16341,
+        16364
+      ],
+      "not": "090: QNH = irtifa (yerde meydan rakımı) — ters yönden — üçüncü gözden geçirme (2026-09-23)"
+    },
+    {
+      "ids": [
+        16479,
+        16481
+      ],
+      "not": "090: MAYDAY ön ekinden sonra çağrılan istasyonun çağrı adı — birebir aynı — üçüncü gözden geçirme (2026-09-23)"
     },
     {
       "ids": [
