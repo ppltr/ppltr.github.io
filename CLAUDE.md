@@ -107,22 +107,26 @@ eşleşme kuramazlar. 090'ın ilk nesil üretilmiş setinde "tekrar yok" sonucu 
 çıktı: 96 sorudan 25'i bankada zaten sorulan bilgiyi soruyordu. Dili karışık bir derste
 karşılaştırmayı iki dilde yap (`text_en` / `text_tr` sütunları) ve adayları tek tek oku.
 
-**Üretilmiş soru gerçek bir soruyla aynı bilgiyi soruyorsa gerçek soru kanoniktir**,
-üretilmiş olan ona bağlanır. Gerçek sorular (ATPL TV ve ders notu) hiçbir zaman
-üretilmiş bir soru yüzünden gizlenmez; kullanıcı ikisinin de kalmasını istedi. Tekrar
-sayılanlar:
+**Tekrar tanımı — kullanıcının sözüyle (2026-09-23): "ya soru aynı veya çok benzer, cevap
+aynı."** Yalnız **soru metni aynı ya da çok benzer VE cevabı aynı** olan sorular gizlenir.
+Aşağıdakiler tekrar **değildir**, görünür kalır:
 
-- Aynı bilgiyi **ters yönden** sormak ("manyetik baş hangi Q kodu" / "QDM nedir").
-- **Kural ve örnek**: kuralı soran ile onu bir örneğe uygulayan (16345 TC-ABC → T-BC /
-  "Tip 1 kısaltma kuralı nedir").
-- **"Hangisi değildir" biçimi**: doğru şıkları tam olarak başka bir sorunun cevabı olan
-  soru (16430 CAVOK tanımı / "CAVOK'un parçası olmayan"; 59007 ATS amacı).
-- Bir kuralın iki yüzü (16352 tehlike çağrısı o anki frekansta / "121.5 ne zaman").
-- Üretilmişler arasında da aynı ölçü: kapsamlı olan ya da kuralı soran kalır.
+- **Ters yönden** sormak ("WILCO ne demek" / "anladım-uygulayacağım için ne denir";
+  "QNH nedir" / "irtifanın Q kodu"). Kullanıcı: "farklı yönden sorması sorun değil."
+- **Aynı konuda farklı soru** (QDM / QDR; ORBIT LEFT / ORBIT RIGHT; VACATE LEFT / RIGHT).
+- **Kural ile örneği** (DECIMAL her zaman söylenir / 118.1 nasıl okunur).
+- **Aynı kalıpta farklı sayı** — cevap metni farklıdır (Hezarfen 118.025 / Çorlu 120.375
+  frekans değişimi cevabı; 1500 ft / 13 500 / 23 500 ft; saat örnekleri).
+- Cevabı farklı olan benzer sorular — sınav tuzağıdır (menzil ×1,25 / ×12).
 
-Cevabı farklı olanlar yine tuzaktır, bağlanmaz (ör. menzil formülünün fit ×1,25 ve uçuş
-seviyesi ×12 sürümleri birbirinin çeldiricisidir). Yalnız konusu aynı olan da bağlanmaz:
-ATIS yayınının içeriğini soran ile ATIS'in ne olduğunu soran ayrı bilgidir.
+Bir önceki geçişte (aynı gün) ters yön, kural-örnek ve farklı sayılı sorular da bağlanmıştı;
+kullanıcı "aynı konu değil, aynı şeyi soran aynı cevabı olanları gizle" diyip geri aldırdı.
+Bu listeyi yeniden genişletme.
+
+**Üretilmiş soru gerçek bir soruyla aynıysa gerçek soru kanoniktir**, üretilmiş olan ona
+bağlanır. Gerçek sorular (ATPL TV ve ders notu) hiçbir zaman üretilmiş bir soru yüzünden
+gizlenmez. Üretilmiş soru yazarken ölçü daha geniştir: gerçek bir sorunun zaten sorduğu
+bilgiyi (ters yönden de olsa) yeniden sorma — orada amaç gizlemek değil, hiç yazmamaktır.
 
 **Üretilmiş soru azdır, seçilmiştir; tekrar bağlamaktan önce hiç yazmamak gelir.**
 Kullanıcı 2026-09-22'de "zaten çok soru var, anlamsız sorulara vakit harcamayayım" diyip
@@ -145,21 +149,20 @@ Yan etkisi bilinerek kabul edildi: kanonik İngilizce bankadaysa (090-01…06), 
 seçiliyken kanonik soru gelir. 070'te 90725/90726, 502'de 95257 gerçek soruyla aynı bilgiyi
 soruyor ama henüz bağlanmadı — kullanıcı yalnız 090'ı istedi.
 
-**Gerçek sorular arasında da aynı ölçü (2026-09-23, 090).** Kullanıcı tam modül turunda
-"hâlâ tekrar eden sorular var" dedi. Önceki kurallar yalnız metin benzerliğine bakıyordu;
-aynı bilgiyi başka kelimelerle, ters yönden ya da farklı sayılı örnekle soran ATPL TV
-soruları görünür kalmıştı (ör. Hezarfen/Çorlu/Yeşilköy/TC-ABC frekans değişimi cevabı dört
-kez, AFFIRM üç yönden). 200 görünür sorunun hepsi tek tek okundu, 29'u gizlendi → 171.
+**090'da gerçek sorular arasındaki tekrarlar (2026-09-23).** Kullanıcı tam modül turunda
+"hâlâ tekrar eden sorular var" dedi; eski gruplar metin benzerliğine bakıyordu ve ATPL TV
+ile ders notu soruları bilerek bağlanmamıştı. Yukarıdaki tanımla 200 görünür soru tek tek
+okundu; 16'sı gizlendi. Ayrıca eski gruplardan cevabı farklı olan iki soru geri açıldı
+(16463 ORBIT RIGHT; 16428 konum raporunun sırasını değil içeriğini soruyor) → 185 görünür.
 
 - **ATPL TV ile ders notu sorusu aynıysa ders notu kanoniktir** (590xx). Kullanıcı "ders
   notu soruları önemli ve kalmalı" demişti; B1–B4 bölümleri boşalmasın. İngilizce metinler
   zaten neredeyse aynı. Önceki "590xx bilerek bağlanmadı" kararı bununla kalktı.
-- Bağlanmayanlar: farklı sayıyla farklı cevap veren sayı/saat örnekleri (1500 ft, 13 500,
-  23 500 ft; 1300, 1500, 1020, 16:15), aynı kökte farklı doğru listeli readback soruları
-  (16400/16402, 16311), METAR görüşünün eşiği ile birimi (16431 "5000 m'ye kadar metre" /
-  59004 "metre veya km" — biri öbürünü vermiyor), tanım ile ondan çıkarım isteyen uygulama
-  (16476 distress tanımı / 16494 motor yangını örneği), ORBIT anlamı ile gecikme için orbit
-  (16459/16464), QFE/QNH karşılaştırması (59002).
+- Bağlananlar: HJ, HX, FIS, ATIS'in ilk temasta bildirilmesi, otomatik yayın = ATIS, görüş
+  1200 metres, blind transmission, 118–136.975 bandı (üç kopya), 121.5, kesişen trafik
+  sırası, "anladım-uygulayacağım" → Wilco, sabit ses seviyesi, TC-ABC → T-BC, istasyon
+  çağrı adının atlanması, MAYDAY'den sonraki öğe, CORRECTION'ın QNH örneği (16405 —
+  soru "hata için hangi ifade", cevap yine correction).
 
 ## Çalışma uygulaması (`web/`)
 
