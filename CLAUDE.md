@@ -280,10 +280,14 @@ dönme. Bedeli: kalkıp gidince en çok 3 dakika çalışma sayılır.
   "sayfada aktif olduğumuz süre" dedi.
 - Testte `.click()` `pointerdown` üretmez; önce `PointerEvent('pointerdown')` gönder.
 
-**Soru ekranında iki sayaç var, ikisi de sağda, üst üste:**
+**Soru ekranında iki sayaç var, üst bilgi satırında (`.meta`) sağda, yan yana:**
 
-- **Soru sayacı** (`#qtm`, ilerleme çubuğuyla aynı satırda, dikeyde yer yemez): "bu soru
-  0:12 · ort 0:35". Her yeni soruda 0:00'dan başlar; süre `sureEkle` ile ekrandaki
+- **Soru sayacı** (`#qtm`, tur sayacı çipinin hemen solunda): "bu soru 0:12 · ort 0:35".
+  Önce ilerleme çubuğuyla aynı satırdaydı; kullanıcı 2026-09-24'te "progress bar'ın yanında
+  olmasın" dedi — çubuk tam genişlik kalır, sayacı oraya geri koyma. Yeni satır da açılmaz:
+  400px altında "Soru 4 / 2547" (`.qpos`) gizlenir (alt şeritteki `#navBtn` aynı sayıyı
+  gösteriyor) ve etiket "soru"ya kısalır; satır yine sığmazsa (320px, saatleri aşan tur)
+  `tmrBoya` taşmayı ölçüp `.dar` ekler, "ort" düşer, süre hep görünür. Her yeni soruda 0:00'dan başlar; süre `sureEkle` ile ekrandaki
   cevaplanmamış soruya (`R.qAcik`) akar, geri gidip gelince toplanır. Cevapta donar
   (`.bitti`) ve geri dönünce o sorunun süresi görünür (`R.qSon`). 1 dakikayı geçince
   turuncu (`.uzun`, `YAVAS_MS`), duraklatılınca ya da boştayken soluk (`.dur`). "ort", bu
@@ -528,6 +532,45 @@ kimlik aralıkları dosyanın `id_convention` alanında yazılı. Seçim bölüm
 saklandığı için (`F.pick`), yeni bölüm eklemek kayıtlı seçimleri bozmaz. 090-U'da 30
 soru var (91001–91030), hepsi görünür; hangi bilgiyi neden sorduğu dosyanın `selection`
 alanında.
+
+**090-X "Supplementary · EASA" ve 090-Y "Supplementary · JAA"** (91101–91134,
+`data/090_ek_sorular.json`, kaynak dili İngilizce, Türkçesi `data/tr/090_04.json`; Türkçe adları
+"Ek Sorular · EASA" / "Ek Sorular · JAA"). Önce tek bölümdü ("EASA/JAA Pool"); kullanıcı kartın
+başlığında sorunun hangi listeden geldiğinin anlaşılmadığını söyledi, bölüm `src`'ye göre
+ikiye ayrıldı. Yeni soru eklerken bölümü `src`'nin önekine göre seç. Kullanıcı açık kaynaklardan kendi derlediği bir EASA
+ve bir JAA soru listesini metin olarak verip "bizde olmayan iyi soruları ekle, hepsini ekleme,
+JAA'da temkinli ol" dedi. 120 sorudan 34'ü alındı (91101–91134): 25 EASA, 9 JAA (yalnız ICAO
+tanımıyla birebir doğrulananlar); her sorunun `src` alanı listedeki numarasını yazar.
+
+**Yalnız PPL.** Kullanıcı sonra "bunlar ATPL mi PPL mi, ben sadece PPL istiyordum" dedi.
+Listeler ATPL bankasının *091 VFR Communications* dersinden (paylaştığı Dauntless adresi
+`groundschooleasa/atpl/…/vfr_communication`); bu dersin müfredatı EASA PPL Communications ile
+aynı başlıklar, IFR (092) sorusu yok. Ölçü: bir soru ancak konusu **gerçek SHGM PPL
+sorularında ya da PPL ders notunda** geçiyorsa kalır. Bu ölçüyle 91103 (QUJ) ve 91121 (HEAVY,
+136 t) çıkarıldı, kimlikleri emekli → 32 soru (23 EASA, 9 JAA), 31 görünür. ATPL havuzundan
+yeni soru eklerken aynı ölçüyü uygula; havayolu işletmesine özgü bilgiyi (ağır uçak, IFR
+usulü, şirket mesajı) alma.
+
+Kalan 86'nın her biri için bankadaki karşılık (ör. "var: 16376") ya da alınmama gerekçesi dosyanın
+`alinmayanlar` alanında — liste yeniden taranırsa oradan başla. Kullanıcı "diğerlerinin önemli
+olmadığından emin misin" diye sorunca liste tek tek eşlendi ve 4 soru daha eklendi (91131–91134).
+
+**91109 (EASA Q416) gizli, 16471'e bağlı.** Şıkları "as above but squawk 7700" biçiminde; soru
+yalnız squawk kodunu ölçüyor, yani 16471'in "telsiz arızası → 7600" sorusu. Asıl eklenmek
+istenen "bir sonraki yayının saatini bildir" bilgisini 91131 (JAA Q290) soruyor. Şıkları ortak
+metni tekrar edip tek öğede ayrılan havuz sorularında tekrarı o öğeye bakarak ara.
+
+**Soru metni ve şıklar listedeki gibi, birebir.** İlk sürümde metinleri kendi ifademle yeniden
+yazmıştım; kullanıcı "metinleri olduğu gibi kullan, saçma iş yapma" deyip geri aldırdı. Yazım
+kusurları (`The phrase BREAK BREAK used to indicate`, `as above but squawk 7700`) da kaynaktaki
+gibi kalır — düzeltme, yeniden yazma. Yalnız doğru şık başa alınır (bankanın kuralı), diğer
+şıklar listedeki sırayı korur. Listelerde cevap yoktu; doğru şık Annex 10 Vol II, Doc 9432,
+Doc 4444'e göre işaretlendi. Gerçek havuz sorusu oldukları için `origin: banka`: "üretilmiş"
+etiketi almazlar, üretilmiş anahtarı kapatılınca gizlenmezler.
+
+Alınmayanlar: bankada olanlar, düşük değerliler (RVR açılımı, MHz), JAA Q298 DISREGARD — ICAO/
+CAP 413 tanımı ("o yayını gönderilmemiş say") bankadaki ATPL TV sorusu 16320'nin cevabıyla
+çelişiyor (16320 bunu yanlış şık sayıyor); gerçek sınavın hangisini doğru saydığı bilinmiyor.
 
 502 bu kurala henüz uymuyor: 118 üretilmiş soru, 25 SHGM örnek sorusuyla aynı GB-01…05
 konu bölümlerinde. Kullanıcı yalnız 090'ı istedi; 502'ye dokunmadan önce sor.

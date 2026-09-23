@@ -1,0 +1,491 @@
+{
+  "subject_code": "090",
+  "subject_name": "Communications",
+  "source": "Kullanıcının açık kaynaklardan derleyip verdiği EASA ve JAA soru listeleri; soru metni ve şıklar olduğu gibi. Listelerde cevap yoktu, doğru şık ICAO Annex 10 Vol II, Doc 9432 ve Doc 4444'e göre işaretlendi ve başa alındı.",
+  "origin": "banka",
+  "answer_convention": "Doğru cevap ilk şıktır (A).",
+  "id_convention": "91101–91134: 090 ek sorular; EASA listesinden gelenler 090-X, JAA listesinden gelenler 090-Y bölümünde. 91103 ve 91121 PPL dışı diye çıkarıldı, emekli. 90901–90996 da emekli; emekli kimlik yeniden kullanılmaz. 91001–91030 ders notundan üretilmiş (090-U).",
+  "selection": "~120 soruluk listeden 32'si: 23'ü EASA, 9'u JAA (her sorunun 'src' alanında listedeki numarası). 91109 (EASA Q416) gizli: şıkları yalnız squawk koduyla ayrılıyor, yani 16471'in sorduğu 'telsiz arızası → 7600'ı soruyor; 'bir sonraki yayının saati' bilgisini 91131 (JAA Q290) soruyor. Alınmayanların her biri için bankadaki karşılık ya da gerekçe 'alinmayanlar' alanında. JAA Q298 DISREGARD bankadaki 16320 ile çeliştiği için alınmadı.",
+  "sections": {
+    "090-X": "Supplementary · EASA",
+    "090-Y": "Supplementary · JAA"
+  },
+  "alinmayanlar": {
+    "EASA Q212": "var: 16329 (ALL STATIONS → cevap verilmez)",
+    "EASA Q216": "var: 16474 (genel çağrı = ALL STATIONS)",
+    "EASA Q224": "var: 16376 (READ BACK, birebir)",
+    "EASA Q228": "var: 59009 (HX)",
+    "EASA Q232": "var: 050 15619 (RVR açılımı)",
+    "EASA Q236": "var: 59001 (HJ)",
+    "EASA Q244": "var: 16341 (QNH, birebir)",
+    "EASA Q248": "var: 16388 (QDM, ters yönden)",
+    "EASA Q252": "91103 olarak eklendi, çıkarıldı: QUJ havayolu/ATPL düzeyi; gerçek PPL sorularında yön bulma kodlarından yalnız QDM, QDR, QTE var",
+    "EASA Q256": "var: 16408 / 16339 (QFE → height)",
+    "EASA Q272": "var: 16382 (13 500)",
+    "EASA Q276": "var: 16321 (DECIMAL, birebir)",
+    "EASA Q280": "var: 16366 (16:15, birebir)",
+    "EASA Q288": "var: 16469 (receiver failure → kullanılan frekans, birebir)",
+    "EASA Q292": "alınmadı: fonetik alfabe 'yalnız koşullar kötüyse' — çağrı adları her zaman fonetik söylendiği için yanıltıcı, ICAO karşılığı doğrulanamadı",
+    "EASA Q296": "var: 16369 (VERIFY; ATPL TV cevabı 'check and confirm your last message', bu listede o çeldirici)",
+    "EASA Q312": "var: 16452 (RECYCLE)",
+    "EASA Q316": "var: 16358 (CORRECT, ters yönden)",
+    "EASA Q332": "var: 16398 (ROGER)",
+    "EASA Q340": "var: 16358 (CORRECT)",
+    "EASA Q352": "var: 16379 / 16384 (tescil harflerini fonetik okuma, aynı kalıp)",
+    "EASA Q356": "91121 olarak eklendi, çıkarıldı: HEAVY (136 t üstü) havayolu/ATPL düzeyi; ne gerçek PPL sorularında ne PPL ders notunda var",
+    "EASA Q364": "var: 91022 + 91122 (VHF menzili irtifaya bağlı)",
+    "EASA Q372": "var: 16474 (ALL STATIONS)",
+    "EASA Q376": "var: 16420 (RADIO CHECK + frekans)",
+    "EASA Q380": "var: 16420 (RADIO CHECK)",
+    "EASA Q388": "var: 16403 (tekrarın sonunda kendi çağrı adın)",
+    "EASA Q400": "var: 16430 (CAVOK, birebir)",
+    "EASA Q404": "alınmadı: kaynağa göre değişir (METAR gerçek, ATC/ATIS manyetik); 050'de bu ayrım soruluyor",
+    "EASA Q412": "var: 16471 (7600)",
+    "EASA Q416": "91109 olarak eklendi, sonra gizlendi: şıkları yalnız squawk koduyla ayrılıyor → 16471 ile aynı",
+    "EASA Q420": "alınmadı: düşük değer (ifadeyi uçağın kullandığı zaten sorunun içinde)",
+    "EASA Q424": "var: 16480 (7500)",
+    "EASA Q428": "var: 16487 (urgency mesajının içeriği)",
+    "EASA Q436": "var: 16487 (urgency mesajının içeriği)",
+    "EASA Q440": "var: 59020 (121.5)",
+    "EASA Q444": "alınmadı: UHF bant sınırı; RT usulü değil radyo teorisi, VHF karşılığı 16370'te",
+    "EASA Q448": "alınmadı: radyo dalgası kuramı, RT usulü değil",
+    "JAA Q214": "var: 16422 (TAKE OFF yalnız kalkış müsaadesinde)",
+    "JAA Q218": "alınmadı: air-ground tanımı, düşük değer (hizmet türleri 16367'de)",
+    "JAA Q226": "alınmadı: VASIS haberleşme değil, Air Law/meydan ışıkları konusu",
+    "JAA Q230": "alınmadı: UTC açılımı, düşük değer",
+    "JAA Q234": "alınmadı: UTC açılımı, düşük değer",
+    "JAA Q238": "alınmadı: EAT bir IFR kavramı, haberleşme değil",
+    "JAA Q242": "alınmadı: IMC açılımı, düşük değer",
+    "JAA Q246": "alınmadı: cevabı belirsiz",
+    "JAA Q250": "var: 16465 (QTE, ters yönden)",
+    "JAA Q254": "var: 16339 / 16408 (QFE)",
+    "JAA Q258": "alınmadı: radio-teletype, güncel değil ve cevabı belirsiz",
+    "JAA Q266": "alınmadı: 91106 ile aynı kalıp ve aynı cevap (flight safety message)",
+    "JAA Q270": "var: 16382 (13 500)",
+    "JAA Q274": "var: 16380 (QNH 1001, birebir)",
+    "JAA Q278": "var: 16322 (09:20, birebir)",
+    "JAA Q282": "var: 16469 / 91131 (TRANSMITTING BLIND ifadesi soru kökünde)",
+    "JAA Q286": "var: 16335 + 91008 (sabit ses, konuşma hızı)",
+    "JAA Q294": "var: 91009 (konuşmadan önce frekansı dinle)",
+    "JAA Q298": "alınmadı: ICAO tanımı bankadaki 16320'nin cevabıyla çelişiyor",
+    "JAA Q306": "var: 16437 (SQUAWK kod)",
+    "JAA Q310": "var: 91111 (BREAK BREAK, EASA Q304)",
+    "JAA Q318": "var: 16334 (STANDBY)",
+    "JAA Q322": "var: 16457 (REQUEST BACKTRACK)",
+    "JAA Q326": "var: 16330 (CORRECTION)",
+    "JAA Q334": "var: 16356 (VACATE LEFT)",
+    "JAA Q338": "var: 16406 (REQUEST)",
+    "JAA Q342": "var: 16425 (TOWER)",
+    "JAA Q354": "var: 16348 (Kartal BAHT → Kartal HT, aynı kural)",
+    "JAA Q358": "var: 16345 / 16312 (çağrı adı kısaltma)",
+    "JAA Q362": "var: 59018 (118–136.975)",
+    "JAA Q366": "alınmadı: ICAO sırası değil; bankada 16490 'pass your message' sırası var",
+    "JAA Q370": "var: 91022 + 91122 (VHF menzili)",
+    "JAA Q374": "var: 16417 (Readability 4)",
+    "JAA Q378": "var: 16340 (Readability 5)",
+    "JAA Q382": "var: 16412 (Readability 3)",
+    "JAA Q386": "alınmadı: iki şık da kabul edilebilir, cevap belirsiz",
+    "JAA Q390": "var: 16400 / 16402 (tekrar edilecekler)",
+    "JAA Q394": "var: 16360 / 16429 (frekans değişimi tekrarı)",
+    "JAA Q398": "var: 91005 (VOLMET)",
+    "JAA Q402": "var: 16444 (OVERCAST 8/8)",
+    "JAA Q406": "var: 16430 (CAVOK)",
+    "JAA Q410": "var: 050 15668 (SIGMET)",
+    "JAA Q414": "var: 16471 (7600)",
+    "JAA Q418": "var: 16471 (7600)",
+    "JAA Q422": "var: 16469 (kör yayın → kullanılan frekans)",
+    "JAA Q426": "var: 91127 (EASA Q432)",
+    "JAA Q434": "var: 91130 (JAA Q430, aynı soru)",
+    "JAA Q438": "var: 16483 / 16487 (PAN PAN üç kez)",
+    "JAA Q442": "alınmadı: MHz tanımı, düşük değer",
+    "JAA Q446": "var: 59018 (118–136.975)",
+    "JAA Q450": "alınmadı: HF bant sınırı, radyo teorisi"
+  },
+  "kapsam": "Listeler ATPL bankasının 091 VFR Communications dersinden; müfredatı PPL Communications ile aynı. Kullanıcı yalnız PPL istiyor: bir soru ancak konusu gerçek SHGM PPL sorularında ya da PPL ders notunda geçiyorsa kalır.",
+  "questions": [
+    {
+      "id": 91101,
+      "section": "090-X",
+      "src": "EASA Q220",
+      "text": "The term BROADCAST means that the information:",
+      "options": [
+        "is not addressed to a specific station",
+        "is addressed to a specific station",
+        "is sent in circumstances where communication cannot be established but where it is believed that the called station is able to receive the transmission",
+        "requires a Readback"
+      ]
+    },
+    {
+      "id": 91102,
+      "section": "090-X",
+      "src": "EASA Q240",
+      "text": "What does the abbreviation AFIS mean?",
+      "options": [
+        "Aerodrome flight information service.",
+        "Aerodrome flashing identification signal.",
+        "Automatic flight information service.",
+        "Aeronautical flight information system."
+      ]
+    },
+    {
+      "id": 91104,
+      "section": "090-X",
+      "src": "EASA Q260",
+      "text": "The order of priority of the following messages in the aeronautical mobile service is:",
+      "options": [
+        "Distress message, urgency message, direction finding message.",
+        "Direction finding message, distress message, urgency message.",
+        "Distress message, flight safety message, urgency message.",
+        "Meteorological message, direction finding message, flight regularity message."
+      ]
+    },
+    {
+      "id": 91105,
+      "section": "090-X",
+      "src": "EASA Q268",
+      "text": "The order of priority of the following messages in the aeronautical mobile service is:",
+      "options": [
+        "Flight safety message, meteorological message, flight regularity message.",
+        "Flight regularity message, distress message, meteorological message.",
+        "Meteorological message, direction finding message, flight safety message.",
+        "Flight safety message, direction finding message, urgency message."
+      ]
+    },
+    {
+      "id": 91106,
+      "section": "090-X",
+      "src": "EASA Q264",
+      "text": "The message addressed to an Area Control Centre REQUEST RADAR VECTORS TO CIRCUMNAVIGATE ADVERSE WEATHER is:",
+      "options": [
+        "A flight safety message.",
+        "A meteorological message.",
+        "An urgency message.",
+        "A message relating to direction finding."
+      ]
+    },
+    {
+      "id": 91107,
+      "section": "090-Y",
+      "src": "JAA Q262",
+      "text": "A message concerning aircraft parts and material urgently required is:",
+      "options": [
+        "A flight regularity message.",
+        "A flight security message.",
+        "An urgency message.",
+        "A flight safety message."
+      ]
+    },
+    {
+      "id": 91108,
+      "section": "090-X",
+      "src": "EASA Q284",
+      "text": "In the event that a pilot is required to make a blind transmission, this should be made:",
+      "options": [
+        "Twice on the designated frequency.",
+        "Only once on the designated frequency.",
+        "On the emergency frequency only.",
+        "During VFR flights only."
+      ]
+    },
+    {
+      "id": 91109,
+      "section": "090-X",
+      "src": "EASA Q416",
+      "text": "If an aircraft radio receiver fails the aircraft should:",
+      "options": [
+        "transmit using the phrase TRANSMITTING BLIND DUE TO RECEIVER FAILURE at the scheduled time or positions on the frequency in use and state the time of the next transmission. The SSR, if fitted, should be selected to 7600.",
+        "as above but squawk 7700.",
+        "as above but 7500.",
+        "as above but 7777."
+      ]
+    },
+    {
+      "id": 91110,
+      "section": "090-X",
+      "src": "EASA Q300",
+      "text": "Your reply to the message REPORT FLIGHT CONDITIONS should be:",
+      "options": [
+        "VMC / IMC",
+        "SMOOTH / TURBULENT",
+        "GOOD / BAD",
+        "VFR / IFR"
+      ]
+    },
+    {
+      "id": 91111,
+      "section": "090-X",
+      "src": "EASA Q304",
+      "text": "The phrase BREAK BREAK used to indicate:",
+      "options": [
+        "Separation between messages to different aircraft in a very busy environment.",
+        "Separation between portions of a message.",
+        "The end of a message.",
+        "Split your formation flying."
+      ]
+    },
+    {
+      "id": 91112,
+      "section": "090-Y",
+      "src": "JAA Q302",
+      "text": "Which word is used to separate portions of a message?",
+      "options": [
+        "BREAK",
+        "BREAK BREAK",
+        "I SAY AGAIN",
+        "REPEAT"
+      ]
+    },
+    {
+      "id": 91113,
+      "section": "090-X",
+      "src": "EASA Q308",
+      "text": "The term CANCEL means:",
+      "options": [
+        "Annul the previously transmitted clearance.",
+        "Consider the message as not sent.",
+        "Your flight has been cancelled by your operator.",
+        "There is a correction to your last clearance."
+      ]
+    },
+    {
+      "id": 91114,
+      "section": "090-X",
+      "src": "EASA Q320",
+      "text": "The message CHECK to an aircraft means that you should:",
+      "options": [
+        "Examine a system or procedure.",
+        "Confirm that you received and understood the last message.",
+        "Pass the required information to ATC.",
+        "Stay where you are."
+      ]
+    },
+    {
+      "id": 91115,
+      "section": "090-X",
+      "src": "EASA Q324",
+      "text": "Word for the expression PERMISSION NOT GRANTED is:",
+      "options": [
+        "NEGATIVE",
+        "NOT APPROVED",
+        "NEVER",
+        "CORRECTION"
+      ]
+    },
+    {
+      "id": 91116,
+      "section": "090-X",
+      "src": "EASA Q328",
+      "text": "The definition of the instruction MONITOR is:",
+      "options": [
+        "Listen out on frequency...",
+        "You are being watched.",
+        "Establish communications on frequency...",
+        "Watch out for visual signals on frequency..."
+      ]
+    },
+    {
+      "id": 91117,
+      "section": "090-X",
+      "src": "EASA Q336",
+      "text": "The word for the expression HAVE I CORRECTLY RECEIVED THE FOLLOWING is:",
+      "options": [
+        "CONFIRM",
+        "ACKNOWLEDGE",
+        "VERIFY",
+        "ARE YOU SURE"
+      ]
+    },
+    {
+      "id": 91118,
+      "section": "090-X",
+      "src": "EASA Q344",
+      "text": "The callsign for a radar station (general) would be:",
+      "options": [
+        "RADAR",
+        "CONTROL",
+        "CENTRE",
+        "SPARKS"
+      ]
+    },
+    {
+      "id": 91119,
+      "section": "090-X",
+      "src": "EASA Q348",
+      "text": "The callsign of the station that you would be communicating with when receiving a radar service on departure would be:",
+      "options": [
+        "DEPARTURE",
+        "CONTROL",
+        "DIRECTOR",
+        "RADAR"
+      ]
+    },
+    {
+      "id": 91120,
+      "section": "090-Y",
+      "src": "JAA Q350",
+      "text": "Which radiotelephony callsign is associated with a station providing flight information service?",
+      "options": [
+        "INFORMATION",
+        "FLIGHT CENTRE",
+        "FLIGHT INFORMATION CENTRE",
+        "CONTROL"
+      ]
+    },
+    {
+      "id": 91122,
+      "section": "090-X",
+      "src": "EASA Q360",
+      "text": "Which is the maximum distance at which you might expect solid VHF contact over flat terrain at flight level 50:",
+      "options": [
+        "About 85 NM",
+        "About 8 NM",
+        "About 15 NM",
+        "About 150 NM"
+      ]
+    },
+    {
+      "id": 91123,
+      "section": "090-X",
+      "src": "EASA Q368",
+      "text": "What is the consequence of a microphone button stuck on transmit (switched on)?",
+      "options": [
+        "The frequency can not be used by others.",
+        "None.",
+        "Other stations will have to use the WORD TWICE technique.",
+        "Readability will improve for all stations."
+      ]
+    },
+    {
+      "id": 91124,
+      "section": "090-X",
+      "src": "EASA Q384",
+      "text": "What is meant by the phrase READABILITY 2?",
+      "options": [
+        "Readable now and then.",
+        "Readable but with difficulty.",
+        "Readable.",
+        "Unreadable."
+      ]
+    },
+    {
+      "id": 91125,
+      "section": "090-X",
+      "src": "EASA Q392",
+      "text": "An aircraft is instructed to hold short of the runway-in-use. What is the correct phraseology to indicate it will follow this instruction?",
+      "options": [
+        "Holding short.",
+        "Wilco.",
+        "Will stop before.",
+        "Roger."
+      ]
+    },
+    {
+      "id": 91126,
+      "section": "090-X",
+      "src": "EASA Q408",
+      "text": "The phrase BRAKING CO-EFFICIENT 20 from ATC means that the braking action is:",
+      "options": [
+        "poor",
+        "medium",
+        "good",
+        "medium to poor"
+      ]
+    },
+    {
+      "id": 91127,
+      "section": "090-X",
+      "src": "EASA Q432",
+      "text": "In an urgency condition the frequency to use first is:",
+      "options": [
+        "The air-ground frequency currently in use.",
+        "The frequency of the nearest radar station.",
+        "The frequency of the area control centre.",
+        "the international distress frequency"
+      ]
+    },
+    {
+      "id": 91128,
+      "section": "090-Y",
+      "src": "JAA Q314",
+      "text": "Which phrase is used when repeating something for clarity or emphasis?",
+      "options": [
+        "I SAY AGAIN",
+        "ONCE MORE",
+        "I REPEAT",
+        "WORDS TWICE"
+      ]
+    },
+    {
+      "id": 91129,
+      "section": "090-Y",
+      "src": "JAA Q330",
+      "text": "Which phrase means “pass me the following information”?",
+      "options": [
+        "REPORT",
+        "SAY AGAIN",
+        "REQUEST",
+        "CHECK"
+      ]
+    },
+    {
+      "id": 91130,
+      "section": "090-Y",
+      "src": "JAA Q430",
+      "text": "Which statement best describes urgency?",
+      "options": [
+        "A condition concerning the safety of an aircraft, vehicle or person that does not require immediate assistance.",
+        "Serious and imminent danger requiring immediate assistance.",
+        "A condition concerning safety that always requires immediate assistance.",
+        "An abnormal aircraft attitude."
+      ]
+    },
+    {
+      "id": 91131,
+      "section": "090-Y",
+      "src": "JAA Q290",
+      "text": "During a TRANSMITTING BLIND DUE TO RECEIVER FAILURE transmission en route, the aircraft should additionally:",
+      "options": [
+        "State the time of the next intended transmission.",
+        "Land at the nearest aerodrome.",
+        "Join the base leg immediately.",
+        "Return to the departure aerodrome."
+      ]
+    },
+    {
+      "id": 91132,
+      "section": "090-X",
+      "src": "EASA Q396",
+      "text": "Shall an ATC route clearance always be read back:",
+      "options": [
+        "Yes, unless authorized otherwise by ATS authority concerned.",
+        "No, if the communication channel is overloaded.",
+        "No, if the ATC route clearance is transmitted in a published form (e.g. SID).",
+        "No, if the content of the ATC clearance is clear and no confusion is likely to arise."
+      ]
+    },
+    {
+      "id": 91133,
+      "section": "090-Y",
+      "src": "JAA Q222",
+      "text": "Which words are normally unnecessary in VHF radiotelephony?",
+      "options": [
+        "OUT and OVER",
+        "OUT and ROGER",
+        "GO AHEAD and I SAY AGAIN",
+        "STANDBY and VERIFY"
+      ]
+    },
+    {
+      "id": 91134,
+      "section": "090-Y",
+      "src": "JAA Q346",
+      "text": "Which callsign suffix identifies an Area Control Centre without radar?",
+      "options": [
+        "CONTROL",
+        "APPROACH",
+        "CENTRE",
+        "AREA"
+      ]
+    }
+  ]
+}
