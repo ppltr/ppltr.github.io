@@ -1900,7 +1900,8 @@ function home(){
       '</div></details>' +
 
     '<div class="hint"><kbd>A</kbd>–<kbd>E</kbd> ya da <kbd>1</kbd>–<kbd>5</kbd> şık · ' +
-      '<kbd>←</kbd><kbd>→</kbd> ya da parmakla kaydır · <kbd>Enter</kbd> devam · ' +
+      '<kbd>←</kbd><kbd>→</kbd> ya da parmakla kaydır · <kbd>Boşluk</kbd> ana düğme · ' +
+      '<kbd>Enter</kbd> devam · ' +
       '<kbd>S</kbd> yıldız · <kbd>P</kbd> sayacı durdur<br>' +
       'Tur bitince yanlış yaptıkların tekrar sorulur.</div>';
 
@@ -3206,6 +3207,20 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape'){
     if (navOpen && R){ el('navBtn').click(); return; }
     closeSheet(); return;
+  }
+  // Boşluk = ekrandaki pembe ana düğme: ana ekranda Başla / Devam et, soruda Sonraki /
+  // Anladım, devam / Bitir, raporda Devam et. Fareyle tıklanıp odakta kalan şıkkı ya da
+  // düğmeyi değil onu tetikler. Klavyeyle (Tab) odaklanmış düğmede tarayıcının kendi
+  // davranışı kalır. Basılı tutmak soruları art arda atlatmasın diye tekrarlar yok sayılır.
+  if (e.key === ' ' && !el('sheet').classList.contains('on') &&
+      !(tg && tg.matches && tg.matches(':focus-visible') && tg !== document.body)){
+    const ana = el('view').querySelector('.go');
+    if (!ana) return;
+    e.preventDefault();                      // sayfa kaymasın
+    if (e.repeat) return;
+    if (!ana.disabled) ana.click();
+    else if (R && R.sr && R.picked === null) pick(0);   // Speedrun: tek şık = doğru
+    return;
   }
   if (!R) return;
   const k = e.key;

@@ -258,6 +258,16 @@ yoksa parmağın kalktığı şık seçilmiş olurdu. Bunu kaldırma, ok tuşlar
 sona gider, `Enter` devam eder, `S` yıldızlar, `P` tur sayacını durdurup sürdürür,
 `Esc` açık paneli kapatır.
 
+**Boşluk (Space) = ekrandaki pembe ana düğme** (kullanıcı istedi, 2026-09-24): `#view`
+içindeki ilk `.go` — ana ekranda `#go` (Başla / Devam et), soruda `#next` (Sonraki /
+Anladım, devam / Bitir), raporda `#again`. Geri gidip cevaplı soruda ya da yanlıştan sonra
+basınca sonraki soruya geçer. Düğme pasifse (cevaplanmamış soru) hiçbir şey olmaz, sayfa da
+kaymaz; Speedrun'da tek şıkkı seçer. Ana düğme olarak yalnız `.go` sınıfı sayılır — başka
+bir düğmeye `.go` verirsen Boşluk ona basar. Dokunulmayan durumlar: Durum paneli açıkken,
+form alanında, **Tab ile odaklanmış** (`:focus-visible`) düğmede tarayıcının kendi davranışı
+kalır. Fareyle tıklanan şıkta odak kalsa da Boşluk ana düğmeye gider. Basılı tutma
+(`e.repeat`) yok sayılır, yoksa sorular art arda atlanırdı.
+
 **Etkin süre: sayaçlar saniye saniye birikir ve HİÇ GERİ GİTMEZ.** Bir an çalışma
 sayılır eğer sayfa görünür, bilgisayar uyanık ve son dokunuştan (tuş, fare, kaydırma)
 bu yana `BOS_MS` (3 dk) geçmemişse. `BOS_MS` dolunca sayaçlar durur ve solar (`.bosta`,
