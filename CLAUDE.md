@@ -258,15 +258,13 @@ yoksa parmağın kalktığı şık seçilmiş olurdu. Bunu kaldırma, ok tuşlar
 sona gider, `Enter` devam eder, `S` yıldızlar, `P` tur sayacını durdurup sürdürür,
 `Esc` açık paneli kapatır.
 
-**Boşluk (Space) = ekrandaki pembe ana düğme** (kullanıcı istedi, 2026-09-24): `#view`
-içindeki ilk `.go` — ana ekranda `#go` (Başla / Devam et), soruda `#next` (Sonraki /
-Anladım, devam / Bitir), raporda `#again`. Geri gidip cevaplı soruda ya da yanlıştan sonra
-basınca sonraki soruya geçer. Düğme pasifse (cevaplanmamış soru) hiçbir şey olmaz, sayfa da
-kaymaz; Speedrun'da tek şıkkı seçer. Ana düğme olarak yalnız `.go` sınıfı sayılır — başka
-bir düğmeye `.go` verirsen Boşluk ona basar. Dokunulmayan durumlar: Durum paneli açıkken,
-form alanında, **Tab ile odaklanmış** (`:focus-visible`) düğmede tarayıcının kendi davranışı
-kalır. Fareyle tıklanan şıkta odak kalsa da Boşluk ana düğmeye gider. Basılı tutma
-(`e.repeat`) yok sayılır, yoksa sorular art arda atlanırdı.
+**Nokta (`.`) = Enter**, yalnız soru ekranında: cevaplı soruda (geri dönülmüş ya da yanlış
+yapılmış) sonraki adım, Speedrun'da cevaplanmamış soruda tek şıkkı işaretler, cevaplanmamış
+normal soruda bir şey yapmaz. `e.key === '.'` bakılır, `e.code === 'Period'` değil — Türkçe
+Q klavyede o fiziksel tuş "ç" yazar; sayısal tuş takımının noktası `NumpadDecimal`. Basılı
+tutma (`e.repeat`) yok sayılır. **Boşluk tuşuna bir şey bağlama:** 2026-09-24'te Boşluk "ekrandaki
+pembe ana düğme" yapılmıştı (ana ekranda Başla, raporda Devam et dahil); kullanıcı "daha
+kötü" deyip geri aldırdı ve yerine noktayı istedi.
 
 **Etkin süre: sayaçlar saniye saniye birikir ve HİÇ GERİ GİTMEZ.** Bir an çalışma
 sayılır eğer sayfa görünür, bilgisayar uyanık ve son dokunuştan (tuş, fare, kaydırma)
