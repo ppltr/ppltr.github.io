@@ -8,7 +8,9 @@ Sonra aynı dosya yolunu Artifact olarak yeniden yayımla — link değişmez.
 çalışma anında yapılır.
 """
 
+import base64
 import json
+import shutil
 import sqlite3
 import sys
 from pathlib import Path
@@ -19,6 +21,7 @@ TPL = ROOT / "web" / "template.html"
 OUT = ROOT / "web" / "atpl-soru-bankasi.html"
 PAGES = ROOT / "docs" / "index.html"        # GitHub Pages /docs kökünden yayımlar
 NOTES_DIR = ROOT / "notes"
+ICONS_DIR = ROOT / "web" / "icons"       # site ikonu kaynağı; docs/ köküne kopyalanır
 
 # Ders notu dosyasındaki kod, soru bankasındaki ders koduna eşlenir
 FIG_DIR = ROOT / "figures"
@@ -159,14 +162,20 @@ def main() -> None:
         fb = json.dumps(conf, ensure_ascii=False, separators=(",", ":"))
 
     tpl = TPL.read_text(encoding="utf-8")
-    for yer in ("__DATA__", "__FIREBASE__"):
+    for yer in ("__DATA__", "__FIREBASE__", "__FAVICON__"):
         if yer not in tpl:
             sys.exit(f"hata: şablonda {yer} yer tutucusu yok")
 
-    html = tpl.replace("__DATA__", blob).replace("__FIREBASE__", fb)
+    # Favicon satır içi gömülür: tek dosya sürümü (artifact) de ikonu taşısın
+    fav = ICONS_DIR / "favicon.svg"
+    fav_uri = "data:image/svg+xml;base64," + base64.b64encode(fav.read_bytes()).decode()
+    html = tpl.replace("__DATA__", blob).replace("__FIREBASE__", fb).replace("__FAVICON__", fav_uri)
     OUT.write_text(html, encoding="utf-8")
     PAGES.parent.mkdir(parents=True, exist_ok=True)
     PAGES.write_text(html, encoding="utf-8")
+    for f in ICONS_DIR.iterdir():               # Pages yalnız docs/ klasörünü yayımlar
+        if f.is_file():
+            shutil.copy2(f, PAGES.parent / f.name)
     kb = OUT.stat().st_size / 1024
     print(f"{OUT}  ({len(data['q'])} soru (TR {data['tr']}, EN {data['en']}), {len(data['s'])} ders, "
           f"{len(data['n'])} not, {len(data['fg'])} çizim, {kb:.1f} KB"
