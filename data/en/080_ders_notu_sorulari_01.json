@@ -1,0 +1,304 @@
+{
+  "questions": {
+    "58001": {
+      "text": "Airflow describes how molecules flow around an object. Which of the following is the name of the phenomenon that causes the low pressure on the upper surface of the wing during two-dimensional airflow?",
+      "options": [
+        "Upwash",
+        "Turbulent flow",
+        "Laminar flow",
+        "Venturi effect",
+        "Downwash"
+      ]
+    },
+    "58002": {
+      "text": "Which of the following is the distance measured along the chord line between the leading edge and the trailing edge?",
+      "options": [
+        "Chord",
+        "The maximum thickness of the wing.",
+        "Mean camber line",
+        "Aspect ratio",
+        "Wing span"
+      ]
+    },
+    "58003": {
+      "text": "What is the angle between the chord line and the relative wind called?",
+      "options": [
+        "Angle of attack",
+        "Chord",
+        "Wing span",
+        "Wing angle of incidence",
+        "Sweep angle"
+      ]
+    },
+    "58004": {
+      "text": "Which of the following is perpendicular to the lift and parallel to the drag on an aerofoil section?",
+      "options": [
+        "Flight path.",
+        "Longitudinal axis.",
+        "The upper surface of the aerofoil section.",
+        "Relative airflow.",
+        "Chord line."
+      ]
+    },
+    "58005": {
+      "text": "In straight and level flight, the air flowing over the upper surface of the wing, compared with the air flowing along its lower surface:",
+      "options": [
+        "Has a higher velocity.",
+        "Both airflows are the same.",
+        "Has a higher density.",
+        "Has a lower velocity.",
+        "The air flowing over the upper surface of the wing has a lower pressure."
+      ]
+    },
+    "58006": {
+      "text": "In which phase of flight does wing tip vortex development begin?",
+      "options": [
+        "During rotation, while lift is being generated",
+        "While moving the flaps to a lower position",
+        "While adjusting take-off power during take-off",
+        "The moment the aircraft starts moving on the runway",
+        "As soon as the aircraft starts moving"
+      ]
+    },
+    "58007": {
+      "text": "Which of the following is correct regarding the relationship between wing span and induced drag?",
+      "options": [
+        "Induced drag is inversely proportional to the aspect ratio.",
+        "Induced drag is directly proportional to the wing span.",
+        "Induced drag is not related to the aspect ratio.",
+        "As the wing span increases, induced drag first increases and then decreases.",
+        "Induced drag is directly proportional to the square of the wing span."
+      ]
+    },
+    "58008": {
+      "text": "What is the boundary layer on aircraft wings?",
+      "options": [
+        "A thin layer in which the air molecules close to the wing surface slow down",
+        "A layer of ice forming on the upper surface of the wing",
+        "A dense layer of air forming on the lower surface of the wing",
+        "The area where the airflow over the wing speeds up",
+        "It increases drag."
+      ]
+    },
+    "58009": {
+      "text": "Flaps and slats …………………………. .",
+      "options": [
+        "increase the lift coefficient so that the aircraft can fly at low speeds.",
+        "provide a nose-up movement during take-off.",
+        "The approach speed is independent of the flap configuration.",
+        "reduce drag.",
+        "reduce the lift coefficient in order to slow the aircraft down."
+      ]
+    },
+    "58010": {
+      "text": "An aircraft that has deviated from its flight path due to turbulence is described as positively stable in which of the following cases?",
+      "options": [
+        "When it returns to its original position without pilot intervention.",
+        "When it continues to deviate in the direction of the disturbance until opposing forces are applied that balance the forces that caused the deviation.",
+        "When it returns to its former position with pilot intervention.",
+        "When it deviates even further from its original position after the disturbance.",
+        "When it maintains the new flight path after the deviation."
+      ]
+    },
+    "58011": {
+      "text": "The tendency of an aircraft to generate forces that return it to its original flight condition after its steady flight condition has been disturbed is called:",
+      "options": [
+        "Stability.",
+        "Manoeuvrability.",
+        "Controllability.",
+        "Instability.",
+        "Ability to be controlled."
+      ]
+    },
+    "58012": {
+      "text": "Which of the following indicates that an aircraft has static stability?",
+      "options": [
+        "It tends to return by itself to its previous position when the force is removed.",
+        "It is difficult to stall.",
+        "Fewer pilot inputs are needed to control it.",
+        "It is dynamically stable.",
+        "It will not enter a spin."
+      ]
+    },
+    "58013": {
+      "text": "Which of the following surfaces provides directional stability to the aircraft?",
+      "options": [
+        "Vertical stabiliser.",
+        "Rudder trim tab.",
+        "Horizontal stabiliser.",
+        "Aileron.",
+        "Rudder."
+      ]
+    },
+    "58014": {
+      "text": "Which of the following correctly defines the purpose of the trim tab?",
+      "options": [
+        "To eliminate the loads transmitted from the control surfaces to the control column, depending on the flight attitude being flown.",
+        "To create loads that give the pilot a feel for the control surfaces at high speeds.",
+        "To increase the effectiveness of the control surfaces.",
+        "To make it harder for the pilot to move the control surfaces.",
+        "To increase control effectiveness only at high speeds."
+      ]
+    },
+    "58015": {
+      "text": "About which axis does an aircraft perform a pitching movement?",
+      "options": [
+        "Lateral axis",
+        "Longitudinal axis",
+        "Vertical axis",
+        "Normal axis",
+        "Vertical axis"
+      ]
+    },
+    "58016": {
+      "text": "Which of the following correctly defines the lateral axis of an aircraft?",
+      "options": [
+        "The line passing through the centre of gravity, parallel to the line joining the wing tips.",
+        "The line perpendicular to the longitudinal axis, passing through the ¼ chord point of the wing root.",
+        "The line passing through the wing tips.",
+        "The line perpendicular to the direction of airflow, passing through the centre of pressure (CP).",
+        "The line passing through the exact middle of the wing root."
+      ]
+    },
+    "58017": {
+      "text": "Yaw control is used to control which movement of the aircraft?",
+      "options": [
+        "Movement of the nose to the right or left",
+        "Nose-down movement of the aircraft",
+        "Movement of the nose up or down",
+        "Movement of the wings up or down",
+        "Rolling movement to the right or left"
+      ]
+    },
+    "58018": {
+      "text": "Why is the vertical tail profile designed to be symmetrical?",
+      "options": [
+        "To prevent yaw about the normal axis",
+        "To increase yaw about the lateral axis",
+        "To prevent pitching about the lateral axis",
+        "To prevent surface drag about the normal axis",
+        "To prevent rolling about the vertical axis"
+      ]
+    },
+    "58019": {
+      "text": "Which speed is the upper limit of the normal operating speed range?",
+      "options": [
+        "Vno",
+        "Vne",
+        "VX",
+        "Vs1",
+        "Vfe"
+      ]
+    },
+    "58020": {
+      "text": "How does the mass of an aircraft affect the Manoeuvring Load Diagram?",
+      "options": [
+        "An increase in mass increases the limit manoeuvring load factors.",
+        "A decrease in mass reduces the limit manoeuvring load factors.",
+        "An increase in mass does not change the limit manoeuvring speed.",
+        "A decrease in mass reduces the aerodynamic performance of the aircraft.",
+        "An increase in mass allows the aircraft to reach higher speeds."
+      ]
+    },
+    "58021": {
+      "text": "What does the VFE speed mean?",
+      "options": [
+        "The maximum speed at which the flaps can be used safely",
+        "The most economical cruise speed.",
+        "Maximum speed",
+        "Stall speed",
+        "The speed that must never be exceeded"
+      ]
+    },
+    "58022": {
+      "text": "Which of the following correctly defines the VNE speed?",
+      "options": [
+        "The maximum permissible airspeed at which the aeroplane can fly.",
+        "The maximum speed at which the flaps may be deployed.",
+        "The speed that must not be exceeded under any circumstances, except in a dive.",
+        "Maximum climb speed.",
+        "The maximum speed that can be reached in flight manoeuvres in conditions close to the stall."
+      ]
+    },
+    "58023": {
+      "text": "How can the asymmetric blade effect that an aircraft encounters at low speeds be reduced?",
+      "options": [
+        "By using adjustable propeller designs",
+        "By keeping the propeller RPM constant.",
+        "By reducing the propeller speed",
+        "By climbing to higher altitudes",
+        "By increasing engine power"
+      ]
+    },
+    "58024": {
+      "text": "How is the \"torque reaction\" that occurs while the aircraft's propeller is rotating managed?",
+      "options": [
+        "By using the control surfaces",
+        "By fixing the propellers",
+        "By reducing engine power",
+        "By changing the propeller's direction of rotation",
+        "By using only the flaps."
+      ]
+    },
+    "58025": {
+      "text": "Which of the following is not a type of propeller?",
+      "options": [
+        "High speed",
+        "Variable pitch.",
+        "Fixed pitch",
+        "Semi-variable pitch",
+        "Constant speed"
+      ]
+    },
+    "58026": {
+      "text": "What is the purpose of the \"blade twist\" used in propellers?",
+      "options": [
+        "To increase the aerodynamic efficiency of the propellers",
+        "To cool the engine",
+        "To reduce the propeller weight.",
+        "To make the propellers rotate faster",
+        "To enable the aircraft to climb to higher altitudes"
+      ]
+    },
+    "58027": {
+      "text": "Which of the following is not one of the methods used against icing on propellers?",
+      "options": [
+        "Spraying pressurised air",
+        "Anti-icing systems",
+        "De-icing fluids",
+        "Increasing the engine RPM.",
+        "Blade heating systems"
+      ]
+    },
+    "58028": {
+      "text": "How is the load factor determined in level flight?",
+      "options": [
+        "It is the ratio of the lift force to the weight force.",
+        "It is the ratio of the thrust force to drag.",
+        "It is the ratio of the lift force to the bank angle.",
+        "It is the ratio of the weight force to drag.",
+        "It is the ratio of the weight force to the lift force."
+      ]
+    },
+    "58029": {
+      "text": "During a steady climb at constant speed, ...........",
+      "options": [
+        "the lift force is less than the weight force.",
+        "the lift force is greater than the weight force.",
+        "the lift force increases continuously.",
+        "thrust is equal to drag.",
+        "thrust is less than drag."
+      ]
+    },
+    "58030": {
+      "text": "How is the load factor determined in a banked coordinated turn?",
+      "options": [
+        "1/cos (bank angle)",
+        "Lift / Drag",
+        "In banked coordinated turns, the load factor is independent of the bank angle",
+        "Weight / Lift",
+        "1/sin (bank angle)"
+      ]
+    }
+  }
+}

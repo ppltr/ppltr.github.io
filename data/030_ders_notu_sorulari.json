@@ -1,0 +1,256 @@
+{
+  "subject_code": "030",
+  "lang": "tr",
+  "subject_name": "Flight Performance and Planning",
+  "source": "SHGM KDM platformu, Uçak Uçuş Performansı ve Planlama 1 (U 01 E UO 075) — bölüm sonu soruları (B1 3, B2 6, B3 3, B4 8 = 20 soru). Ders notu: notes/030-ders-notlari.md",
+  "answer_convention": "Doğru cevap platformun sınav uygulamasının kendi cevap anahtarından (correct_answer) alındı; tahmin yok. Şıklar doğru cevap başa (A) gelecek şekilde yeniden sıralandı, diğer şıkların sırası alındıkları yüklemedeki sırada korundu. Hesap soruları (tırmanma oranı, kafa rüzgarı mesafesi, yakıt/kütle çevirmeleri, Vref = 1,3 × VS0) elle doğrulandı, anahtar tutarlı.",
+  "id_convention": "Kaynakta soru ID'si yok; 53001'den başlayan yapay ID'ler verildi (53 = 030 ders notu). Bölümler: B1 Ağırlık ve Denge, B2 Performans, B3 Uçuş Planlama ve İzleme, B4 Ağırlık Limitleri ve Dönüşüm Örnekleri.",
+  "sections": {
+    "020-B1": "Ders Notu · Ağırlık ve Denge",
+    "020-B2": "Ders Notu · Performans",
+    "020-B3": "Ders Notu · Uçuş Planlama ve İzleme",
+    "020-B4": "Ders Notu · Ağırlık Limitleri ve Dönüşüm Örnekleri"
+  },
+  "questions": [
+    {
+      "id": 53001,
+      "section": "020-B1",
+      "text": "Belirli bir konfigürasyonda, uçak nasıl yüklenirse, stall sürati en yüksek olacaktır?",
+      "options": [
+        "izin verilen maksimum ağırlık ile CG en ileride.",
+        "düşük toplam ağırlık ile CG en geride.",
+        "düşük toplam ağırlık ile CG en ileride.",
+        "izin verilen maksimum ağırlık ile CG en geride.",
+        "izin verilen maksimum ağırlık ile CG limit dışında."
+      ]
+    },
+    {
+      "id": 53002,
+      "section": "020-B1",
+      "text": "Aşağıdakilerden hangisi ağırlık merkezi (CG) yerinin sınırlar içerisinde yer değiştirmesine sebep olur?",
+      "options": [
+        "Yakıt tüketimi",
+        "Yuvarlanma",
+        "Sapma",
+        "Yunuslama",
+        "İniş takımlarının açılması."
+      ]
+    },
+    {
+      "id": 53003,
+      "section": "020-B1",
+      "text": "Ağırlık merkezinin datuma göre mesafesi aşağıdakilerden hangisine eşittir?",
+      "options": [
+        "Toplam moment / toplam kütle.",
+        "Toplam moment indeksi.",
+        "Toplam kütle x toplam moment",
+        "Toplam kütle",
+        "Toplam moment"
+      ]
+    },
+    {
+      "id": 53004,
+      "section": "020-B2",
+      "text": "İniş konfigürasyonunda uçağın stall sürati 50 knot ise Vref değeri ne olacaktır?",
+      "options": [
+        "65 knots",
+        "71 knots",
+        "75 knots",
+        "69 knots",
+        "73 knots"
+      ]
+    },
+    {
+      "id": 53005,
+      "section": "020-B2",
+      "text": "Daha yüksek uçak ağırlığı, dönüş sürati ve emniyet kalkış sürati değerlerini nasıl etkileyecektir?",
+      "options": [
+        "Her iki sürat de artacaktır.",
+        "Dönüş sürati artacak, emniyet kalkış sürati düşecektir.",
+        "Dönüş sürati düşecek, emniyet kalkış sürati artacaktır.",
+        "Kalkış mesafesi de artacaktır.",
+        "Her iki süratte düşecektir."
+      ]
+    },
+    {
+      "id": 53006,
+      "section": "020-B2",
+      "text": "Hangi performans değişkeni pist eğiminden bağımsızdır?",
+      "options": [
+        "VR Rotasyon sürati",
+        "Kalkış mesafesi",
+        "VS Stall sürati",
+        "V1 Karar sürati",
+        "İniş mesafesi"
+      ]
+    },
+    {
+      "id": 53007,
+      "section": "020-B2",
+      "text": "Üzerinde az miktarda buz birikmesi ile oluşan kanat kirliliği;",
+      "options": [
+        "Daha fazla sürükleme kuvveti, daha fazla ağırlık kuvveti ve daha az taşıma kuvveti üretir.",
+        "Ağırlıkta artışa ve sürükleme kuvvetinde azalmaya sebep olur.",
+        "Hem taşıma hem de sürükleme katsayısını azaltır.",
+        "Hem taşıma hem de sürükleme katsayısını artırır.",
+        "Kanat üzerindeki hava akımını bozarak stall hızını artırır."
+      ]
+    },
+    {
+      "id": 53008,
+      "section": "020-B2",
+      "text": "Hangisi, iniş mesafesini etkileyen faktörlerden değildir?",
+      "options": [
+        "Motor devir sayısı",
+        "Pistin eğimi ve hydroplaning (su yastığı) etkisi,",
+        "Rüzgarın etkisi,",
+        "Fren sistemi sıcaklığı.",
+        "İniş ağırlığı ve iniş hızının etkisi,"
+      ]
+    },
+    {
+      "id": 53009,
+      "section": "020-B2",
+      "text": "Kalkış koşusu:",
+      "options": [
+        "Fren bırakma ile VLOF hızına ulaşması arasındaki mesafedir.",
+        "Fren bırakma ile uçağın havalanması arasındaki mesafedir.",
+        "Fren bırakma ile tırmanışa başlama arasındaki mesafedir.",
+        "Fren bırakma ile uçağın pistten kalkıp 400 ft'e tırmandığı mesafedir.",
+        "Fren bırakma ile uçağın pistten kalkıp 50 ft'e tırmandığı mesafedir."
+      ]
+    },
+    {
+      "id": 53010,
+      "section": "020-B3",
+      "text": "12 dakikada 5500 feet tırmanabilen bir uçağın ortalama tırmanma oranı aşağıdakilerden hangisidir?",
+      "options": [
+        "460 fpm",
+        "500 fpm",
+        "660 fpm",
+        "480 fpm",
+        "580 fpm"
+      ]
+    },
+    {
+      "id": 53011,
+      "section": "020-B3",
+      "text": "Seyir hızı 90 Knot olan bir uçağın hızı, ICAO Uçuş Planındaki ilgili bölüme aşağıdaki şıklardan hangisinde olduğu gibi yazılır?",
+      "options": [
+        "N0090",
+        "K090",
+        "N090",
+        "KN0090",
+        "KN090"
+      ]
+    },
+    {
+      "id": 53012,
+      "section": "020-B3",
+      "text": "Bir uçak sakin havada 189 NM mesafeyi 30 dakika uçabiliyor ise, 30 KT kafa rüzgarında ne kadar mesafeyi uçabilir?",
+      "options": [
+        "174 NM",
+        "203 NM",
+        "159 NM",
+        "193 NM",
+        "188 NM"
+      ]
+    },
+    {
+      "id": 53013,
+      "section": "020-B4",
+      "text": "Özgül ağırlığı 0.72 olan 50 lt. yakıtın, kg. cinsinden değeri nedir?",
+      "options": [
+        "36 kg",
+        "54 kg",
+        "72 kg",
+        "63 kg",
+        "69.4 kg"
+      ]
+    },
+    {
+      "id": 53014,
+      "section": "020-B4",
+      "text": "Bir hava aracı A ile B arasında uçmaktadır. Bu iki nokta arası mesafe 600 NM’dır. Yakıt tüketimi 1 saatte 10 US-galonudur. Uçakta toplam 90 US-gal yakıt varsa ve yer hızı (GS) 200 knot ise kalan yakıt miktarı ne olur?",
+      "options": [
+        "60 US-gal",
+        "40 US-gal",
+        "70 US-gal",
+        "30 US-gal",
+        "50 US-gal"
+      ]
+    },
+    {
+      "id": 53015,
+      "section": "020-B4",
+      "text": "151 Litre AVGAS kaç kilogramdır? (Özgül ağırlık 0,72)",
+      "options": [
+        "109 kg",
+        "151 kg",
+        "131 kg",
+        "289 kg",
+        "119 kg"
+      ]
+    },
+    {
+      "id": 53016,
+      "section": "020-B4",
+      "text": "US-GAL ve litre arasındaki bağıntı nedir?",
+      "options": [
+        "1 US-GAL= 3.7853 litre.",
+        "1 litre= 4.55 USGAL.",
+        "1 litre=3.7853 US-GAL.",
+        "1 US-GAL = 4.55 litre.",
+        "1 Imperial GAL = 4.55 litre."
+      ]
+    },
+    {
+      "id": 53017,
+      "section": "020-B4",
+      "text": "34 dakikada 15 litre yakıt harcanıyorsa, yakıt tüketim oranı nedir?",
+      "options": [
+        "26,4 litre/saat",
+        "68 litre/saat",
+        "12 litre/dakika",
+        "24 litre/saat",
+        "30 litre/saat"
+      ]
+    },
+    {
+      "id": 53018,
+      "section": "020-B4",
+      "text": "Tüketimi 25gal/saat olan bir uçak 80 galon yakıtla maksimum ne kadar havada kalır?",
+      "options": [
+        "3 saat 12 dakika",
+        "2 saat 43 dakika",
+        "3 saat 5 dakika",
+        "2 saat 12 dakika",
+        "3 saat 45 dakika"
+      ]
+    },
+    {
+      "id": 53019,
+      "section": "020-B4",
+      "text": "72 Galon yakıt kapasiteli bir uçağın sarfiyatı 15 Gal/saat ise maksimum havada kalma süresi nedir?",
+      "options": [
+        "4 saat 48 dakika",
+        "4 saat 32 dakika",
+        "5 saat 12 dakika",
+        "3 saat 58 dakika",
+        "4 saat 54 dakika"
+      ]
+    },
+    {
+      "id": 53020,
+      "section": "020-B4",
+      "text": "Aşağıdakilerden hangisi faydalı yükü ( useful load ) doğru olarak tanımlamaktadır?",
+      "options": [
+        "Kullanılabilir yakıt ve trafik yükünün toplamıdır.",
+        "Kalkış kütlesi ile kullanılabilir yakıtın farkıdır.",
+        "Kalkış kütlesi ile trafik yükünün farkıdır.",
+        "Maksimum kalkış kütlesi ile boş ağırlık arasındaki farktır.",
+        "Kullanılabilir yakıt yüküdür."
+      ]
+    }
+  ]
+}

@@ -373,11 +373,12 @@
     },
     {
       "ids": [
+        52010,
         14724,
         14725,
         14728
       ],
-      "not": "020: VSI çalışma prensibi — üç kez"
+      "not": "020: VSI çalışma prensibi — üç kez + 020: VSI anlık statik / önceki statik"
     },
     {
       "ids": [
@@ -417,13 +418,6 @@
     },
     {
       "ids": [
-        14530,
-        14541
-      ],
-      "not": "020: aşırı yağ basıncı → basınç tahliye valfi"
-    },
-    {
-      "ids": [
         14567,
         14569
       ],
@@ -452,13 +446,6 @@
     },
     {
       "ids": [
-        14571,
-        14586
-      ],
-      "not": "020: venturide basınç düşer, hız artar"
-    },
-    {
-      "ids": [
         14703,
         14704
       ],
@@ -466,17 +453,11 @@
     },
     {
       "ids": [
-        14432,
-        14439
-      ],
-      "not": "020: monocoque tanımı — açıklık ve iç yapı yok"
-    },
-    {
-      "ids": [
+        52015,
         14716,
         14718
       ],
-      "not": "020: altimetre kapsülünde vakum, dışında statik"
+      "not": "020: altimetre kapsülünde vakum, dışında statik + 020: aneroid kapsülü içi çok düşük basınç, dışı statik"
     },
     {
       "ids": [
@@ -494,13 +475,6 @@
     },
     {
       "ids": [
-        14659,
-        14660
-      ],
-      "not": "020: irtifa artınca karışım zenginleşir"
-    },
-    {
-      "ids": [
         14972,
         14973
       ],
@@ -508,10 +482,11 @@
     },
     {
       "ids": [
+        53005,
         14915,
         14916
       ],
-      "not": "Yüksek kütle → VR ve V2 ikisi de artar — aynı soru iki yazım"
+      "not": "030: yüksek kütle → VR ve V2 artar (Yüksek kütle → VR ve V2 ikisi de artar — aynı soru iki yazım)"
     },
     {
       "ids": [
@@ -550,10 +525,11 @@
     },
     {
       "ids": [
+        53001,
         14824,
         14825
       ],
-      "not": "Stall hızı en yüksek: max kütle + ön CG"
+      "not": "030: stall hızı en yüksek: maks. kütle + ön CG (Stall hızı en yüksek: max kütle + ön CG)"
     },
     {
       "ids": [
@@ -564,10 +540,11 @@
     },
     {
       "ids": [
+        53003,
         14879,
         14880
       ],
-      "not": "CG konumu = toplam moment / toplam kütle"
+      "not": "030: CG konumu = toplam moment / toplam kütle (CG konumu = toplam moment / toplam kütle)"
     },
     {
       "ids": [
@@ -930,11 +907,12 @@
     },
     {
       "ids": [
+        55004,
         15359,
         15360,
         15361
       ],
-      "not": "Eş basınç çizgisi → izobar (üç yazım)"
+      "not": "050: eş basınç çizgisi → izobar (Eş basınç çizgisi → izobar (üç yazım))"
     },
     {
       "ids": [
@@ -946,10 +924,11 @@
     },
     {
       "ids": [
+        55001,
         15308,
         15309
       ],
-      "not": "Ekvatordan kutba: tropopoz alçalır, sıcaklığı artar"
+      "not": "050: ekvatordan kutba tropopoz alçalır, sıcaklığı artar (Ekvatordan kutba: tropopoz alçalır, sıcaklığı artar)"
     },
     {
       "ids": [
@@ -988,10 +967,11 @@
     },
     {
       "ids": [
+        55008,
         15374,
         15375
       ],
-      "not": "Kalkış performansı → soğuk kuru hava"
+      "not": "050: kalkış için en iyi: soğuk kuru hava (Kalkış performansı → soğuk kuru hava)"
     },
     {
       "ids": [
@@ -999,13 +979,6 @@
         15391
       ],
       "not": "QNH tanımı → standart atmosferle MSL'e indirgenmiş QFE"
-    },
-    {
-      "ids": [
-        15422,
-        15423
-      ],
-      "not": "Rüzgârın nedeni → yatay basınç farkı"
     },
     {
       "ids": [
@@ -1051,19 +1024,11 @@
     },
     {
       "ids": [
-        15541,
-        15542,
-        15543,
-        15544
-      ],
-      "not": "Dolu (GR/SHGR) → CB (dört yazım)"
-    },
-    {
-      "ids": [
+        55018,
         15548,
         15549
       ],
-      "not": "Sis bildirimi → görüş 1000 m altı"
+      "not": "050: sis bildirimi 1 km altı (Sis bildirimi → görüş 1000 m altı)"
     },
     {
       "ids": [
@@ -1196,6 +1161,7 @@
     },
     {
       "ids": [
+        58003,
         16102,
         16103,
         16104,
@@ -1242,13 +1208,6 @@
     },
     {
       "ids": [
-        16124,
-        16125
-      ],
-      "not": "Kanat üstünde hava akımı daha hızlıdır"
-    },
-    {
-      "ids": [
         16254,
         16255
       ],
@@ -1264,6 +1223,7 @@
     },
     {
       "ids": [
+        58013,
         16243,
         16244
       ],
@@ -1284,13 +1244,6 @@
         16270
       ],
       "not": "Diferansiyel aileron → adverse yaw'ı önler (dört yazım)"
-    },
-    {
-      "ids": [
-        16230,
-        16231
-      ],
-      "not": "Bozulmadan sonra kendiliğinden eski hâline dönme → pozitif kararlılık"
     },
     {
       "ids": [
@@ -1468,6 +1421,843 @@
         16128
       ],
       "not": "Taşıma → üstte alçak, altta yüksek basınç"
+    },
+    {
+      "ids": [
+        51006,
+        14415
+      ],
+      "not": "010: VHF acil durum frekansı 121.5 — ders notu kanonik"
+    },
+    {
+      "ids": [
+        51007,
+        14380
+      ],
+      "not": "010: geçiş irtifası/seviyesi üstünde dikey konum → flight level — ders notu kanonik"
+    },
+    {
+      "ids": [
+        51009,
+        14231
+      ],
+      "not": "010: Şikago Md.1 tam ve münhasır egemenlik — ders notu kanonik"
+    },
+    {
+      "ids": [
+        51015,
+        14345
+      ],
+      "not": "010: Annex 14 = Aerodromes — ders notu kanonik (14349 ters yön, açık)"
+    },
+    {
+      "ids": [
+        51016,
+        14339,
+        14346
+      ],
+      "not": "010: taksi yolu işaretlemeleri sarı — ders notu kanonik"
+    },
+    {
+      "ids": [
+        58004,
+        16108
+      ],
+      "not": "080: aerofoil kesitinde lifte dik, drag'e paralel çizgi → uçuş yolu"
+    },
+    {
+      "ids": [
+        58006,
+        16152
+      ],
+      "not": "080: kanat ucu vorteksi rotasyonda lift oluşurken başlar"
+    },
+    {
+      "ids": [
+        58009,
+        16224
+      ],
+      "not": "080: flap ve slat CL'yi artırır, düşük hızda uçuş"
+    },
+    {
+      "ids": [
+        58011,
+        16229
+      ],
+      "not": "080: bozulmadan sonra eski hâle dönme eğilimi → stabilite"
+    },
+    {
+      "ids": [
+        58014,
+        16277
+      ],
+      "not": "080: trim tab amacı → kumanda yüklerini sıfırlamak"
+    },
+    {
+      "ids": [
+        58016,
+        16251
+      ],
+      "not": "080: yanal eksen = kanat uçlarına paralel, CG'den geçen çizgi"
+    },
+    {
+      "ids": [
+        58018,
+        16110
+      ],
+      "not": "080: dikey kuyruk simetrik profil → normal eksende sapmayı önlemek"
+    },
+    {
+      "ids": [
+        58022,
+        16283
+      ],
+      "not": "080: VNE tanımı → izin verilen maksimum hız"
+    },
+    {
+      "ids": [
+        58028,
+        16285
+      ],
+      "not": "080: yük faktörü n = lift / weight"
+    },
+    {
+      "ids": [
+        58029,
+        16296
+      ],
+      "not": "080: sabit tırmanışta lift < weight"
+    },
+    {
+      "ids": [
+        52005,
+        14640
+      ],
+      "not": "020: yağ sıcaklık sensörü yağ soğutucudan sonra"
+    },
+    {
+      "ids": [
+        52007,
+        14632
+      ],
+      "not": "020: detonasyon → fakir karışım + yüksek silindir başı sıcaklığı"
+    },
+    {
+      "ids": [
+        52008,
+        14723
+      ],
+      "not": "020: histerezis hatası → altimetre"
+    },
+    {
+      "ids": [
+        52012,
+        14727
+      ],
+      "not": "020: alçalmada statik tıkanırsa VSI gecikmeyle sıfır"
+    },
+    {
+      "ids": [
+        52024,
+        14497
+      ],
+      "not": "020: toprakla kirli tekerlek tozlukları uçuşu etkilemez"
+    },
+    {
+      "ids": [
+        52026,
+        14757
+      ],
+      "not": "020: varyasyon tanımı"
+    },
+    {
+      "ids": [
+        52030,
+        14754
+      ],
+      "not": "020: demirli cisimler pusulada önemli hata yapar"
+    },
+    {
+      "ids": [
+        52035,
+        14784
+      ],
+      "not": "020: istikamet cayrosu manyetik pusulaya göre düzeltilir"
+    },
+    {
+      "ids": [
+        53002,
+        14838
+      ],
+      "not": "030: yakıt tüketimi CG'yi limit içinde kaydırır"
+    },
+    {
+      "ids": [
+        53004,
+        14998
+      ],
+      "not": "030: VS0 50 kt → VREF 65 kt"
+    },
+    {
+      "ids": [
+        53006,
+        14933
+      ],
+      "not": "030: VR pist eğiminden bağımsız"
+    },
+    {
+      "ids": [
+        53007,
+        14813
+      ],
+      "not": "030: az buz → daha çok sürükleme/ağırlık, daha az lift"
+    },
+    {
+      "ids": [
+        53008,
+        15006
+      ],
+      "not": "030: motor devri iniş mesafesini etkilemez"
+    },
+    {
+      "ids": [
+        53009,
+        14908
+      ],
+      "not": "030: kalkış koşusu = fren bırakmadan yerden kesilmeye"
+    },
+    {
+      "ids": [
+        53010,
+        14939
+      ],
+      "not": "030: 12 dk'da 5500 ft → 460 fpm"
+    },
+    {
+      "ids": [
+        53011,
+        15028
+      ],
+      "not": "030: 90 kt → N0090"
+    },
+    {
+      "ids": [
+        53012,
+        15022
+      ],
+      "not": "030: 189 NM sakin hava, 30 kt kafa rüzgârı → 174 NM"
+    },
+    {
+      "ids": [
+        53013,
+        14861
+      ],
+      "not": "030: 50 L, SG 0,72 → 36 kg"
+    },
+    {
+      "ids": [
+        53014,
+        15024
+      ],
+      "not": "030: 600 NM, 200 kt, 10 gal/sa, 90 gal → kalan 60 gal"
+    },
+    {
+      "ids": [
+        53015,
+        14863
+      ],
+      "not": "030: 151 L AVGAS (0,72) → 109 kg"
+    },
+    {
+      "ids": [
+        53019,
+        15018
+      ],
+      "not": "030: 72 gal, 15 gal/sa → 4 sa 48 dk"
+    },
+    {
+      "ids": [
+        55002,
+        15304
+      ],
+      "not": "050: troposfer kutuplarda ekvatordan ince"
+    },
+    {
+      "ids": [
+        55003,
+        15434
+      ],
+      "not": "050: sırt rüzgâra dönükken alçak basınç solda"
+    },
+    {
+      "ids": [
+        55006,
+        15564
+      ],
+      "not": "050: depresyonun sıcak sektörü → kötü görüş"
+    },
+    {
+      "ids": [
+        55007,
+        15519
+      ],
+      "not": "050: CB → alçak basınç"
+    },
+    {
+      "ids": [
+        55011,
+        15573
+      ],
+      "not": "050: gökgürültülü fırtına: yüksek ELR + nem"
+    },
+    {
+      "ids": [
+        55014,
+        15570
+      ],
+      "not": "050: soğuk oklüzyonda soğuk hava cephenin gerisinde"
+    },
+    {
+      "ids": [
+        55015,
+        15431
+      ],
+      "not": "050: KYK'de rüzgâr sağa → Coriolis"
+    },
+    {
+      "ids": [
+        55016,
+        15593
+      ],
+      "not": "050: 5 kt kafa → 30 kt kuyruk: tırmanış oranı azalır"
+    },
+    {
+      "ids": [
+        55017,
+        15504
+      ],
+      "not": "050: başka seçenek yoksa stratus"
+    },
+    {
+      "ids": [
+        55019,
+        15553
+      ],
+      "not": "050: gece-gündüz hızlı sis: adveksiyon"
+    },
+    {
+      "ids": [
+        55020,
+        15594
+      ],
+      "not": "050: şeffaf buz: büyük su damlaları"
+    },
+    {
+      "ids": [
+        55022,
+        15600
+      ],
+      "not": "050: en çok buzlanma: yağmur üreten bulut altı, OAT<0"
+    },
+    {
+      "ids": [
+        55023,
+        15648
+      ],
+      "not": "050: LTXX METAR yorumu"
+    },
+    {
+      "ids": [
+        55025,
+        15645
+      ],
+      "not": "050: LTAI METAR işba (çiy noktası) −3 °C"
+    },
+    {
+      "ids": [
+        56003,
+        15691
+      ],
+      "not": "060: dünya ekseninin yörünge düzlemine eğimi 66,5°"
+    },
+    {
+      "ids": [
+        56004,
+        15778
+      ],
+      "not": "060: 8 sa 8 dk → 122° boylam"
+    },
+    {
+      "ids": [
+        56008,
+        15860
+      ],
+      "not": "060: Lambert: standart paralel dışında ölçek büyür"
+    },
+    {
+      "ids": [
+        56009,
+        15769
+      ],
+      "not": "060: 180 NM / 27 dk → 400 kt"
+    },
+    {
+      "ids": [
+        56011,
+        15764
+      ],
+      "not": "060: 16 NM @145 kt → 6 dk 37 sn"
+    },
+    {
+      "ids": [
+        56012,
+        15853
+      ],
+      "not": "060: 2500→1000 ft, 5 NM, 80 kt → 400 ft/dk"
+    },
+    {
+      "ids": [
+        56013,
+        15835
+      ],
+      "not": "060: 90 kt, 2° hata, 1 saat → 3 NM"
+    },
+    {
+      "ids": [
+        56014,
+        15837
+      ],
+      "not": "060: RWY 083 / 023° 35 kt → baş rüzgârı 17,5 kt"
+    },
+    {
+      "ids": [
+        56016,
+        15880
+      ],
+      "not": "060: QDR istasyona gerçek yol yanlış"
+    },
+    {
+      "ids": [
+        56018,
+        15888
+      ],
+      "not": "060: NDB tanımı"
+    },
+    {
+      "ids": [
+        56019,
+        15900
+      ],
+      "not": "060: DME 962–1213 MHz"
+    },
+    {
+      "ids": [
+        56024,
+        15917
+      ],
+      "not": "060: Mod C → kimlik + irtifa"
+    },
+    {
+      "ids": [
+        56025,
+        15916
+      ],
+      "not": "060: IDENT düğmesi"
+    },
+    {
+      "ids": [
+        14251,
+        14288
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14260,
+        14278
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14314,
+        14317
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14333,
+        14338
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14336,
+        14341
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14335,
+        14340
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14327,
+        14334
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14326,
+        14351
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14358,
+        14369
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14361,
+        14402
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14266,
+        14267
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14312,
+        14315
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14392,
+        14398
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14305,
+        14307
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14593,
+        14597
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        52002,
+        14530,
+        14541
+      ],
+      "not": "tur1: tekrar taraması (020: aşırı yağ basıncı → basınç tahliye valfi / 020: aşırı yağ basıncını önleyen yağ basınç tahliye valfi)"
+    },
+    {
+      "ids": [
+        14526,
+        14533
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14556,
+        14557
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        52001,
+        14571,
+        14586
+      ],
+      "not": "tur1: tekrar taraması (020: venturide basınç düşer, hız artar / 020: venturi boğazı → ortam basıncı düşer, hız artar)"
+    },
+    {
+      "ids": [
+        14441,
+        14468
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        52016,
+        14451
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        52018,
+        14457
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        52022,
+        14485
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14650,
+        14651
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        52004,
+        14602
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        52003,
+        14600,
+        14604
+      ],
+      "not": "tur1: tekrar taraması (020: buji yüksek gerilimi manyetodan)"
+    },
+    {
+      "ids": [
+        14608,
+        14610
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14653,
+        14655
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14621,
+        14646
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14666,
+        14673
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14683,
+        14689
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14681,
+        14690
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14760,
+        15742
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14763,
+        14764
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        15568,
+        15577
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        55012,
+        15597
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        15422,
+        15423,
+        15424
+      ],
+      "not": "tur1: tekrar taraması (Rüzgârın nedeni → yatay basınç farkı)"
+    },
+    {
+      "ids": [
+        55013,
+        15470
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        15367,
+        15369
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        55024,
+        15541,
+        15542,
+        15543,
+        15544
+      ],
+      "not": "tur1: tekrar taraması (Dolu (GR/SHGR) → CB (dört yazım))"
+    },
+    {
+      "ids": [
+        56002,
+        15679
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        56007,
+        15855
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        15877,
+        15878
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        58005,
+        16124,
+        16125
+      ],
+      "not": "tur1: tekrar taraması (Kanat üstünde hava akımı daha hızlıdır)"
+    },
+    {
+      "ids": [
+        16216,
+        16303
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14432,
+        14433,
+        14439
+      ],
+      "not": "tur1: tekrar taraması (020: monocoque tanımı — açıklık ve iç yapı yok)"
+    },
+    {
+      "ids": [
+        14254,
+        14268,
+        14277
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14356,
+        14363,
+        14395
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14550,
+        14636,
+        14652
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14659,
+        14625,
+        14626,
+        14660
+      ],
+      "not": "tur1: tekrar taraması (020: irtifa artınca karışım zenginleşir)"
+    },
+    {
+      "ids": [
+        14707,
+        14713
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        14709,
+        14711
+      ],
+      "not": "tur1: tekrar taraması"
+    },
+    {
+      "ids": [
+        58010,
+        16230,
+        16231,
+        16232,
+        58012
+      ],
+      "not": "tur1: tekrar taraması (Bozulmadan sonra kendiliğinden eski hâline dönme → pozitif kararlılık)"
+    },
+    {
+      "ids": [
+        14745,
+        14747
+      ],
+      "not": "tur2: tekrar taraması"
     }
   ]
 }

@@ -1,0 +1,254 @@
+{
+  "questions": {
+    "56001": {
+      "text": "When do the shortest night and the shortest day occur in the Northern Hemisphere?",
+      "options": [
+        "21 June shortest night / 21 December shortest day",
+        "21 June shortest day / 21 December shortest day",
+        "23 September shortest night / 21 March shortest day",
+        "21 June shortest day / 21 December shortest night",
+        "21 June shortest night / 21 December shortest night"
+      ]
+    },
+    "56002": {
+      "text": "What is the average axial tilt of the Earth in degrees?",
+      "options": [
+        "The Earth's axial tilt is 23.5 degrees.",
+        "The Earth's axial tilt is 27.5 degrees.",
+        "The Earth's axial tilt is 25.5 degrees.",
+        "The Earth's axial tilt is 29.5 degrees.",
+        "The Earth's axial tilt is 20.5 degrees."
+      ]
+    },
+    "56003": {
+      "text": "What is the angle of inclination of the Earth's axis of rotation to its orbital plane?",
+      "options": [
+        "66.5°",
+        "23.5°",
+        "90°",
+        "45°",
+        "33.5°"
+      ]
+    },
+    "56004": {
+      "text": "How many degrees of longitude does the Sun cover along the equator in 8 hours 8 minutes?",
+      "options": [
+        "122°",
+        "100°",
+        "148°",
+        "56°",
+        "18°"
+      ]
+    },
+    "56005": {
+      "text": "What is it called when the magnetic field lines change due to metal structures in or around the aircraft's magnetic field, affecting magnetic measurements?",
+      "options": [
+        "Magnetic shadow zones",
+        "Accuracy of navigation systems",
+        "Static electrification effect",
+        "Electronic equipment",
+        "Electric currents"
+      ]
+    },
+    "56006": {
+      "text": "Which of the following statements about compass errors is not correct?",
+      "options": [
+        "Turning error is greatest on east/west headings.",
+        "Compass errors can be affected by magnetic dip.",
+        "Acceleration error is smallest on north/south headings.",
+        "Turning error is greatest when turning through north and south.",
+        "Acceleration error is greatest on east/west headings."
+      ]
+    },
+    "56007": {
+      "text": "By which of the following methods is the Mercator projection obtained?",
+      "options": [
+        "Cylindrical method",
+        "Conical method",
+        "Spherical method",
+        "Concentric method",
+        "Planar (Azimuthal) method"
+      ]
+    },
+    "56008": {
+      "text": "Which of the following statements about the Lambert Conformal projection is correct?",
+      "options": [
+        "The scale outside the standard parallels is larger than the scale between them.",
+        "The scale outside the standard parallels is smaller than the scale between them.",
+        "The scale is minimum at the standard parallels.",
+        "The scale is constant over the whole chart.",
+        "The scale is completely constant between the standard parallels."
+      ]
+    },
+    "56009": {
+      "text": "If we cover 180 NM in 27 minutes, what is our ground speed?",
+      "options": [
+        "400 kt",
+        "420 kt",
+        "480 kt",
+        "360 kt",
+        "340 kt"
+      ]
+    },
+    "56010": {
+      "text": "An aircraft flying on a compass heading of 358° drifts 4 degrees to the right. If the compass deviation is 2 degrees east (E) and the variation is 7 degrees west (W), what is the true track?",
+      "options": [
+        "357°",
+        "007°",
+        "359°",
+        "349°",
+        "049°"
+      ]
+    },
+    "56011": {
+      "text": "How much time is required to cover 16 NM at a ground speed of 145 kt?",
+      "options": [
+        "6 minutes 37 seconds",
+        "3 minutes 55 seconds",
+        "6 hours 37 minutes",
+        "5 minutes 25 seconds",
+        "7 minutes 55 seconds"
+      ]
+    },
+    "56012": {
+      "text": "What should the rate of descent be in order to descend from 2500 feet to 1000 feet within 5 nautical miles at 80 kt?",
+      "options": [
+        "400 ft/min.",
+        "451 m/min.",
+        "450 ft/min.",
+        "350 ft/min.",
+        "300 ft/min."
+      ]
+    },
+    "56013": {
+      "text": "An aircraft with a ground speed of 90 kt flies for 1 hour with a 2-degree track error. How many nautical miles will it be off the intended track?",
+      "options": [
+        "3 NM",
+        "2 NM",
+        "4 NM",
+        "6 NM",
+        "9 NM"
+      ]
+    },
+    "56014": {
+      "text": "Runway direction 083° (M), surface wind W/V 023° (M) / 35 kt. Calculate the headwind component.",
+      "options": [
+        "17.5 kt",
+        "22.2 kt",
+        "32.2 kt",
+        "30.3 kt",
+        "42.6 kt"
+      ]
+    },
+    "56015": {
+      "text": "Which of the following is not one of the three different types of electromagnetic wave that propagate between the transmitting station and the receiving station?",
+      "options": [
+        "Sea Wave",
+        "Sky Wave",
+        "Direct Waves (Space Wave)",
+        "Space Waves (Space Wave)",
+        "Ground Wave"
+      ]
+    },
+    "56016": {
+      "text": "Which of the following is incorrect?",
+      "options": [
+        "QDR is the true track to the station",
+        "QDM is the magnetic track to the station",
+        "QTE is the true track from the station",
+        "QDR is the magnetic track from the station",
+        "QDM is the reciprocal magnetic bearing of QDR."
+      ]
+    },
+    "56017": {
+      "text": "What is the error called when VHF signals encounter an obstacle and bend and spread around it?",
+      "options": [
+        "Diffraction",
+        "Refraction",
+        "Convection",
+        "Reflection",
+        "Interference (Static Interference)"
+      ]
+    },
+    "56018": {
+      "text": "Which of the following best describes an NDB?",
+      "options": [
+        "It is a ground-based transmitter that sends radio signals in all directions.",
+        "It consists of an RBI and an ADF indicator.",
+        "It is the antenna that provides ADF information to the VOR indicator.",
+        "It is the antenna that provides NDB information to the VOR indicator.",
+        "It is a special antenna that gives the controller VHF direction information."
+      ]
+    },
+    "56019": {
+      "text": "On which frequencies does DME (Distance Measuring Equipment) operate?",
+      "options": [
+        "962-1213 MHz",
+        "962 to 1213 kHz.",
+        "3 kHz to 300 MHz",
+        "329 to 335 MHz",
+        "108 to 118 MHz"
+      ]
+    },
+    "56020": {
+      "text": "Which statement about DME is correct?",
+      "options": [
+        "DME operates in the UHF band between 960-1215 MHz.",
+        "DME range is unlimited.",
+        "DME provides distance information from the ground station in km.",
+        "The distance given by DME is known as the true distance.",
+        "The distance given by DME is known as the bird's-eye distance."
+      ]
+    },
+    "56021": {
+      "text": "What is the accuracy (margin of error) of the DME system?",
+      "options": [
+        "In general, DME accuracy is calculated as + or – 0.25 NM plus 1.25% of the measured distance.",
+        "In general, DME accuracy is calculated as + or – 5 NM plus 25% of the measured distance.",
+        "In general, DME accuracy is calculated as + or – 25 NM plus 5% of the measured distance.",
+        "In general, DME accuracy is calculated as + or – 25 km plus 25% of the measured distance.",
+        "In general, DME accuracy is calculated as + or – 10 NM plus 12.5% of the measured distance."
+      ]
+    },
+    "56022": {
+      "text": "SSR works in conjunction with which of the following?",
+      "options": [
+        "Transponder",
+        "Radio altimeter",
+        "ILS",
+        "NDB",
+        "VOR"
+      ]
+    },
+    "56023": {
+      "text": "What does the special radar code 7500 mean?",
+      "options": [
+        "Hijacking",
+        "Emergency landing",
+        "Radio failure",
+        "Radio communication failure",
+        "Emergency"
+      ]
+    },
+    "56024": {
+      "text": "What information does transponder Mode C provide?",
+      "options": [
+        "Identification and altitude information.",
+        "Telephone information",
+        "Only QDM information",
+        "Only QDM and QDR information",
+        "Tail number"
+      ]
+    },
+    "56025": {
+      "text": "What happens when the transponder IDENT button is pressed?",
+      "options": [
+        "A special symbol appears around the aircraft on the radar screen, and identification is established.",
+        "The transponder operates like Mode C.",
+        "The transponder operates like Mode A.",
+        "A star symbol appears around the aircraft on the radar screen, after which the aircraft symbol is awaited.",
+        "It is confirmed that the aircraft has entered the correct code."
+      ]
+    }
+  }
+}

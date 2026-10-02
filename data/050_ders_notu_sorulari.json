@@ -1,0 +1,320 @@
+{
+  "subject_code": "050",
+  "lang": "tr",
+  "subject_name": "Meteorology",
+  "source": "SHGM KDM platformu, Meteoroloji 1 (U 01 E UO 137) — bölüm sonu soruları (B1 2, B2 6, B3 2, B4 3, B5 1, B6 2, B7 3, B8 3, B9 3 = 25 soru). Platformda bu ders için ders metni yayımlanmamış (yalnız sınavlar var); bu yüzden notes/ altında 050 ders notu yoktur.",
+  "answer_convention": "Doğru cevap platformun sınav uygulamasının kendi cevap anahtarından (correct_answer) alındı; tahmin yok. Şıklar doğru cevap başa (A) gelecek şekilde yeniden sıralandı. Platformda 'Bir depresyonun sıcak sektöründen…' sorusunun 5. şıkkı metin yerine 'false' olarak geliyordu; anlamsız yer tutucu olduğundan 4 şıkla alındı. Kaynak yazım kusurları ('İşari', 'Izotak', 'işba sıcaklığı' = çiy noktası) olduğu gibi bırakıldı. 'Kalkış performansı' (soğuk kuru hava) ve QFE/QNH soruları kaynak anahtarıyla alındı.",
+  "id_convention": "Kaynakta soru ID'si yok; 55001'den başlayan yapay ID'ler verildi (55 = 050 ders notu / bölüm sonu). 55101 = Meteoroloji 2 (UO 138) tek İngilizce bölüm sonu sorusu (data/050_meteoroloji2_bolum_sonu.json).",
+  "sections": {
+    "050-B1": "Ders Notu · Atmosfer",
+    "050-B2": "Ders Notu · Atmosferde Basınç, Yoğunluk ve Sıcaklık",
+    "050-B3": "Ders Notu · Altimetre ve Hataları",
+    "050-B4": "Ders Notu · Termodinamik",
+    "050-B5": "Ders Notu · Hava Kütleleri ve Cepheler",
+    "050-B6": "Ders Notu · Rüzgâr",
+    "050-B7": "Ders Notu · Bulut, Sis ve Yağış",
+    "050-B8": "Ders Notu · Uçuştaki Tehlikeler",
+    "050-B9": "Ders Notu · Meteorolojik Bilgi"
+  },
+  "questions": [
+    {
+      "id": 55001,
+      "section": "050-B1",
+      "text": "Ekvatordan kutuplara kadar tropopoz ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "options": [
+        "Tropopoz azalır, tropopoz sıcaklığı artar.",
+        "Tropopoz azalır, tropopoz sıcaklığı azalır.",
+        "Tropopoz değişmez, sıcaklığı artar.",
+        "Tropopoz artar, tropopoz sıcaklığı artar.",
+        "Tropopoz artar, tropopoz sıcaklığı azalır."
+      ]
+    },
+    {
+      "id": 55002,
+      "section": "050-B1",
+      "text": "Aşağıdakilerden hangisi Troposfer ile ilgili doğrudur?",
+      "options": [
+        "Kalınlığı; kutuplarda, ekvatora göre daha incedir.",
+        "Atmosfer ağırlığının ve su buharının yarısını içerir.",
+        "Kutuplarda, ekvatora göre daha soğuktur.",
+        "Kalınlığı ekvatorlarda daha azdır.",
+        "Her 200 metre yükselme sonrası hava sıcaklığı 0.65°C’lik düşüş gösterir."
+      ]
+    },
+    {
+      "id": 55003,
+      "section": "050-B2",
+      "text": "Arkanız rüzgara dönük bir şekilde kuzey yarımkürede ayaktayken düşük basınç nerededir?",
+      "options": [
+        "Solunuzdadır.",
+        "Arkanızdadır.",
+        "Önünüzdedir.",
+        "Belirlenemez.",
+        "Sağınızdadır."
+      ]
+    },
+    {
+      "id": 55004,
+      "section": "050-B2",
+      "text": "Eşit basınç noktalarını birleştiren hatlara ne denir?",
+      "options": [
+        "Izobar",
+        "Izotak",
+        "Izostar",
+        "Izoterm",
+        "Izotop"
+      ]
+    },
+    {
+      "id": 55005,
+      "section": "050-B2",
+      "text": "Deniz seviyesinde atmosferik basıncın 1013 hPa olduğunu varsayarsak, 350 feet irtifada basınç yaklaşık olarak kaçtır?",
+      "options": [
+        "1000 hPa",
+        "1002 hPa",
+        "1040 hPa",
+        "1026 hPa",
+        "990 hPa"
+      ]
+    },
+    {
+      "id": 55006,
+      "section": "050-B2",
+      "text": "Bir depresyonun sıcak sektöründen geçecek şekilde bir rota planladınız. Bu bize ne sağlayacaktır?",
+      "options": [
+        "Aşırı yayılımlı stratüs bulutunun altında ve üzerinde kötü görüş",
+        "Yayılmış kümülüform bulutların altında iyi görüş",
+        "Stratüs üzerinde düşük görüş fakat altında orta-iyi görüş",
+        "Stratiform bulutun üzerinde ve altında iyi görüş"
+      ]
+    },
+    {
+      "id": 55007,
+      "section": "050-B2",
+      "text": "CB bulutlarını nerede beklersiniz?",
+      "options": [
+        "Alçak basınç alanlarında",
+        "Yüksek basınç alanlarında",
+        "Yüksek basınç sırtlarında",
+        "CB oluşumu basınç sistemlerinden bağımsızdır.",
+        "Hepsi"
+      ]
+    },
+    {
+      "id": 55008,
+      "section": "050-B2",
+      "text": "Hangisi (diğer tüm faktörleri sabit) kalkış performansı için daha iyidir?",
+      "options": [
+        "Soğuk kuru hava",
+        "Sıcak ve nemli hava",
+        "Soğuk nemli hava",
+        "Sıcak kuru hava",
+        "Sıcak nemli hava"
+      ]
+    },
+    {
+      "id": 55009,
+      "section": "050-B3",
+      "text": "Eğer bir meydan deniz seviyesinden 270 feet yüksekte ve QNH 1024 ise QFE ne olacaktır?",
+      "options": [
+        "1014 hPa",
+        "1034 hPa",
+        "1013 hPa",
+        "1006 hPa",
+        "1021 hPa"
+      ]
+    },
+    {
+      "id": 55010,
+      "section": "050-B3",
+      "text": "QFE bağlamış olan bir altimetre neyi gösterir?",
+      "options": [
+        "Hava meydanından olan yüksekliği gösterir.",
+        "Rüzgarın deniz seviyesine göre yönünü gösterir.",
+        "Deniz seviyesinden olan yüksekliği gösterir.",
+        "1013 mb (hPa) üzerindeki yüksekliği gösterir.",
+        "Hava meydanı ile deniz seviyesi arasındaki farkı gösterir."
+      ]
+    },
+    {
+      "id": 55011,
+      "section": "050-B4",
+      "text": "Diğerlerine oranla aşağıdaki durumların hangisinde gökgürültülü fırtına oluşma ihtimali en fazladır?",
+      "options": [
+        "Yüksek ELR oranı ve yüksek nem içeriği",
+        "Yüksek SALR oranı ve düşük nem",
+        "Yüksek DALR oranı ve düşük nem içeriği",
+        "Düşük SALR oranı ve yüksek nem",
+        "Alçak ELR oranı ve düşük bağıl nem"
+      ]
+    },
+    {
+      "id": 55012,
+      "section": "050-B4",
+      "text": "Orografik şekilde yükselmeye zorlanan kararsız hava aşağıdakilerden hangisini üretebilir?",
+      "options": [
+        "Dikey gelişen bulut üretir.",
+        "Sis üretir.",
+        "Kalın stratiform tipi bulut üretir.",
+        "Lentiküler bulut üretir.",
+        "Alçak stratüs tabakası üretir."
+      ]
+    },
+    {
+      "id": 55013,
+      "section": "050-B4",
+      "text": "Bir hava parselinin sıcaklığı düştüğü zaman bağıl nem nasıl değişir?",
+      "options": [
+        "artar",
+        "değişmez",
+        "basınca bağlı olarak değişmez.",
+        "aynı kalır",
+        "azalır"
+      ]
+    },
+    {
+      "id": 55014,
+      "section": "050-B5",
+      "text": "Soğuk oklüzyonda en soğuk hava kütlesi nerede bulunur?",
+      "options": [
+        "Cephenin gerisinde",
+        "Cephenin sınırında",
+        "Cephenin ilerisinde",
+        "Cephenin merkezinde",
+        "Cephenin üst seviyelerinde"
+      ]
+    },
+    {
+      "id": 55015,
+      "section": "050-B6",
+      "text": "Aşağıdaki kuvvetlerin hangisi kuzey yarım kürede rüzgara dik açı ile etki ederek isobarlara paralel oluncaya kadar sağ tarafa saptırır?",
+      "options": [
+        "Koriolis kuvveti",
+        "Sürtünme kuvveti",
+        "Yerçekimi kuvveti",
+        "Basınç gradyan kuvveti",
+        "Merkezkaç kuvveti"
+      ]
+    },
+    {
+      "id": 55016,
+      "section": "050-B6",
+      "text": "5 kt kafa rüzgarı ile kalkış gerçekleştirdiniz. 500 feet'i geçerken rüzgar bir anda 30 kt kuyruk rüzgarına dönüyor. Aşağıdakilerden hangisini beklersiniz?",
+      "options": [
+        "Tırmanış oranı azalır.",
+        "İşari hava sürati artar.",
+        "Tırmanış oranı artar.",
+        "Geçici taşıma kuvveti kaybı yaşanır.",
+        "Bir değişim olmaz."
+      ]
+    },
+    {
+      "id": 55017,
+      "section": "050-B7",
+      "text": "Eğer başka bir alternatifi yoksa bir pilot aşağıdaki bulutlardan hangisine girmeyi tercih etmelidir?",
+      "options": [
+        "Stratus",
+        "Towering Cumulus",
+        "Altocumulus Lenticularis",
+        "CB Congestus",
+        "Cumulonimbus"
+      ]
+    },
+    {
+      "id": 55018,
+      "section": "050-B7",
+      "text": "Sis görüş mesafesi hangi değerin altındayken rapor edilir?",
+      "options": [
+        "1 km",
+        "1000 feet",
+        "3 km",
+        "5 km",
+        "5000 feet"
+      ]
+    },
+    {
+      "id": 55019,
+      "section": "050-B7",
+      "text": "Gece ve gündüz olmak üzere hızla oluşabilen sis çeşidi aşağıdakilerden hangisidir?",
+      "options": [
+        "Adveksiyon",
+        "Vadi sisi",
+        "Radyasyon",
+        "Kırağı",
+        "Deniz üzeri pus"
+      ]
+    },
+    {
+      "id": 55020,
+      "section": "050-B8",
+      "text": "Aşağıdakilerden hangisi şeffaf buzlanmanın oluşmasına sebep olur?",
+      "options": [
+        "Büyük su tanecikleri",
+        "Kar kristalleri",
+        "Küçük su damlacıkları",
+        "Sis",
+        "Çisenti"
+      ]
+    },
+    {
+      "id": 55021,
+      "section": "050-B8",
+      "text": "Donma seviyesinin altında sıvı formda kalabilen ( 0 / -40 ) , hava aracına temas ettiğinde buzlanmaya neden olan taneciğe ne denir?",
+      "options": [
+        "Aşırı soğutulmuş su taneciği",
+        "Buz taneciği",
+        "Su buharı",
+        "Su taneciği",
+        "Donmuş su zerreciği"
+      ]
+    },
+    {
+      "id": 55022,
+      "section": "050-B8",
+      "text": "Aşağıdaki durumlardan hangisinde uçak buzlanmaya en duyarlı durumdadır?",
+      "options": [
+        "OAT sıfır derecenin altında olduğunda, yağmur üreten bir bulutun altında yapılan düz uçuş esnasında",
+        "NS seviyesi altında kar yağışı içinde uçarken",
+        "OAT +20°C iken yoğun yağmur altında uçarken",
+        "Yoğun CI bulutları içerisinde uçarken",
+        "OAT sıfır derecenin altında olduğunda, dolu üreten bir bulutun yanına yapılan düz uçuş esnasında"
+      ]
+    },
+    {
+      "id": 55023,
+      "section": "050-B9",
+      "text": "Aşağıdaki seçeneklerden hangisi verilen METAR'ın yorumlamasıdır? LTXX 010120Z 00000KT 0200 R14/0800 R16/P1500 FZFG VV001 M03/M03 Q1022 BECMG 0800 =",
+      "options": [
+        "14 pisti için RVR 800 metre, dikey görüş 100 feet, rüzgar sakin, meteorolojik görüş, sonraki 2 saat içerisinde 800 metreye çıkacak",
+        "14 pisti için RVR 1500 metre ve yatay görüş 800 metre",
+        "14 pisti için RVR 800 metre, dikey görüş 100 metre, rüzgar sakin, meteorolojik görüş, sonraki 2 saat içerisinde 800 metreye çıkacak",
+        "Meteorolojik görüş 200 metre, 16 pisti için RVR 1500 metre, sıcaklık -3°C, dikey görüş 100 metre",
+        "Meteorolojik görüş 200 feet, 16 pisti için RVR 1500 metreden fazla, dikey görüş 100 feet, kırağı sis"
+      ]
+    },
+    {
+      "id": 55024,
+      "section": "050-B9",
+      "text": "Aşağıdaki bulut tiplerinden hangisi GR tipi yağış oluşturmaya daha yatkındır?",
+      "options": [
+        "CB",
+        "NS",
+        "AS",
+        "AC",
+        "TCU"
+      ]
+    },
+    {
+      "id": 55025,
+      "section": "050-B9",
+      "text": "METAR LTAI 141020Z 01011KT CAVOK 16/M03 Q1019 NOSIG Yukarıda verilen METAR raporuna göre işba sıcaklığı kaç derecedir?",
+      "options": [
+        "-3°C",
+        "3°C",
+        "16°C",
+        "-16°C",
+        "Hiçbiri"
+      ]
+    }
+  ]
+}

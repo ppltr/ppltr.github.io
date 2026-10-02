@@ -1,0 +1,321 @@
+{
+  "subject_code": "060",
+  "lang": "tr",
+  "subject_name": "Navigation",
+  "source": "SHGM KDM platformu, Seyrüsefer 1 (U 01 E UO 027) — bölüm sonu soruları (B1 3, B2 1, B3 2, B4 2, B5 4, B6 3, B7 3, B8 3, B9 4 = 25 soru). Ders notu: notes/060-ders-notlari.md. Seyrüsefer 2 (UO 139, UO 140) derslerinde sınavlar tanımlı ama platformda soru yok, ders metni yayımlanmamış.",
+  "answer_convention": "Doğru cevap platformun sınav uygulamasının kendi cevap anahtarından (correct_answer) alındı; tahmin yok. Şıklar doğru cevap başa (A) gelecek şekilde yeniden sıralandı. Hesap soruları (yer hızı 180 NM/27 dk = 400 kt; 16 NM @145 kt = 6 dk 37 sn; TT = 358 + 2E − 7W + 4 sağ drift = 357°; 2° × 90 NM = 3 NM; yan rüzgâr bileşeni 35·cos60 = 17,5 kt) elle doğrulandı, anahtar tutarlı. Kaynak kusurları olduğu gibi bırakıldı: 'KYK' = kuzey yarım küre; 7500 sorusunda 'Radyo Arızası' ile 'Telsiz Arızası' iki ayrı şık; DME sorusunda kuşbakışı mesafe şıkkı (yanlış).",
+  "id_convention": "Kaynakta soru ID'si yok; 56001'den başlayan yapay ID'ler verildi (56 = 060 ders notu). Bölüm sırası ders notu bölümleriyle aynıdır (B1 Güneş Sistemi … B9 Radar ve GNSS).",
+  "sections": {
+    "060-B1": "Ders Notu · Güneş Sistemi ve Dünya",
+    "060-B2": "Ders Notu · Zaman ve Zaman Dönüşümleri, Yönler, Mesafe",
+    "060-B3": "Ders Notu · Manyetizma ve Pusulalar ile Hava Aracı Manyetizması",
+    "060-B4": "Ders Notu · Coğrafi Hatların Harita Üzerinde Temsili ve Havacılıkta Kullanımı",
+    "060-B5": "Ders Notu · Hesabı Seyrüsefer ve Uygulama Yöntemleri",
+    "060-B6": "Ders Notu · Uçuş Boyunca Seyrüsefer ve Temel Radyo Yayılma Teorisi",
+    "060-B7": "Ders Notu · Yer Yön Bulucusu, NDB",
+    "060-B8": "Ders Notu · VOR ve DME",
+    "060-B9": "Ders Notu · Radar ve GNSS"
+  },
+  "questions": [
+    {
+      "id": 56001,
+      "section": "060-B1",
+      "text": "KYK den en kısa gece ve en kısa gündüz ne zaman yaşanır?",
+      "options": [
+        "21 Haziran en kısa gece / 21 Aralık en kısa gündüz",
+        "21 Haziran en kısa gündüz / 21 Aralık en kısa gündüz",
+        "23 Eylül en kısa gece / 21 Mart en kısa gündüz",
+        "21 Haziran en kısa gündüz / 21 Aralık en kısa gece",
+        "21 Haziran en kısa gece / 21 Aralık en kısa gece"
+      ]
+    },
+    {
+      "id": 56002,
+      "section": "060-B1",
+      "text": "Dünya'nın eksen eğikliği ortalama kaç derecedir?",
+      "options": [
+        "Dünya'nın eksen eğikliği 23.5 derecedir.",
+        "Dünya'nın eksen eğikliği 27.5 derecedir.",
+        "Dünya'nın eksen eğikliği 25.5 derecedir.",
+        "Dünya'nın eksen eğikliği 29.5 derecedir.",
+        "Dünya'nın eksen eğikliği 20.5 derecedir."
+      ]
+    },
+    {
+      "id": 56003,
+      "section": "060-B1",
+      "text": "Dünyanın dönüş ekseninin yörünge düzlemine göre eğim açısı aşağıdakilerden hangisidir?",
+      "options": [
+        "66,5°",
+        "23,5°",
+        "90°",
+        "45°",
+        "33,5°"
+      ]
+    },
+    {
+      "id": 56004,
+      "section": "060-B2",
+      "text": "Güneş, 8 saat 8 dakika boyunca ekvator hattı üzerinde kaç boylam geçmiştir?",
+      "options": [
+        "122º",
+        "100º",
+        "148º",
+        "56º",
+        "18º"
+      ]
+    },
+    {
+      "id": 56005,
+      "section": "060-B3",
+      "text": "Hava aracının manyetik alan içinde veya çevresindeki metal yapılar sebebiyle manyetik alan çizgilerinin değişiklik göstermesi ve manyetik ölçümlerini etkilemesine ne denir?",
+      "options": [
+        "Manyetik Gölge Bölgeleri",
+        "Navigasyon Sistemlerinin Doğruluğu",
+        "Statik elektriklenme etkisi",
+        "Elektronik Ekipmanlar",
+        "Elektrik Akımlar"
+      ]
+    },
+    {
+      "id": 56006,
+      "section": "060-B3",
+      "text": "Pusula hataları ile ilgili hangisi doğru değildir?",
+      "options": [
+        "Dönme hatası doğu/batı yönlerde en büyüktür.",
+        "Pusula hataları manyetik eğimden etkilenebilir.",
+        "Hızlanma hatası kuzey/güney yönlerde en azdır.",
+        "Kuzey ve güneye dönüşlerde dönme hatası en büyüktür.",
+        "Hızlanma hatası doğu/batı başlarda en büyüktür."
+      ]
+    },
+    {
+      "id": 56007,
+      "section": "060-B4",
+      "text": "Merkator projeksiyon aşağıdaki yöntemlerden hangisi ile elde edilmektedir?",
+      "options": [
+        "Silindirik yöntem",
+        "Konik yöntem",
+        "Küresel yöntem",
+        "Eş merkezli yöntem",
+        "Düzlemsel (Azimutal) yöntem"
+      ]
+    },
+    {
+      "id": 56008,
+      "section": "060-B4",
+      "text": "Lambert Konformal projeksiyon ile ilgili hangisi doğrudur?",
+      "options": [
+        "Standart paralellerin dışındaki ölçek, arasındaki ölçekten büyüktür.",
+        "Standart paralellerin dışındaki ölçek, arasındaki ölçekten küçüktür.",
+        "Ölçek standart paralellerde minimumdur.",
+        "Ölçek tüm haritada sabittir.",
+        "Standart paraleller arasında ölçek tamamen sabittir."
+      ]
+    },
+    {
+      "id": 56009,
+      "section": "060-B5",
+      "text": "27 dakikada 180 NM kat ediyorsak yer hızımız nedir?",
+      "options": [
+        "400 kt",
+        "420 kt",
+        "480 kt",
+        "360 kt",
+        "340 kt"
+      ]
+    },
+    {
+      "id": 56010,
+      "section": "060-B5",
+      "text": "358 pusula başında seyreden bir uçak, sağ tarafına 4 derece sürüklenmektedir. Pusula sapması 2 derece doğu (E) ve varyasyon 7 derece batı (W) olduğu durum için, gerçek yol (True Track) nedir?",
+      "options": [
+        "357°",
+        "007°",
+        "359°",
+        "349°",
+        "049°"
+      ]
+    },
+    {
+      "id": 56011,
+      "section": "060-B5",
+      "text": "145 kt yer hızı ile 16NM mesafeyi kat etmek için gerekli zaman nedir?",
+      "options": [
+        "6 dakika 37 saniye",
+        "3 dakika 55 saniye",
+        "6 saat 37 dakika",
+        "5 dakika 25 saniye",
+        "7 dakika 55 saniye"
+      ]
+    },
+    {
+      "id": 56012,
+      "section": "060-B5",
+      "text": "2500 feet'den 1000 feet'e 5 deniz mili içerisinde 80 kt ile alçalabilmek için, alçalma oranı ne olmalıdır?",
+      "options": [
+        "400 ft/min.",
+        "451 mt/min.",
+        "450 ft/min.",
+        "350 ft/min.",
+        "300 ft/min."
+      ]
+    },
+    {
+      "id": 56013,
+      "section": "060-B6",
+      "text": "Yer sürati 90 kt olan bir hava aracı, 2 derecelik bir rota hatası ile 1 saat boyunca ilerliyor ise hedeflenen rotadan kaç deniz mili sapar?",
+      "options": [
+        "3 NM",
+        "2 NM",
+        "4 NM",
+        "6 NM",
+        "9 NM"
+      ]
+    },
+    {
+      "id": 56014,
+      "section": "060-B6",
+      "text": "Pist yönü 083°(M) Yer rüzgarı W/V 023° (M) / 35 kt Baş rüzgarı bileşenini hesaplayınız.",
+      "options": [
+        "17.5 kt",
+        "22.2 kt",
+        "32.2 kt",
+        "30.3 kt",
+        "42.6 kt"
+      ]
+    },
+    {
+      "id": 56015,
+      "section": "060-B6",
+      "text": "Aşağıdakilerden hangisi verici istasyon ile alıcı istasyon arasında yayılan üç farklı elektromanyetik dalgadan biri değildir?",
+      "options": [
+        "Deniz Dalgaları ( Sea Wave)",
+        "Gök Dalgaları (Sky Wave)",
+        "Direk Dalgalar (Space Wave)",
+        "Uzay Dalgaları (Space Wave)",
+        "Yer Dalgaları (Ground Wave)"
+      ]
+    },
+    {
+      "id": 56016,
+      "section": "060-B7",
+      "text": "Aşağıdakilerden hangisi yanlıştır?",
+      "options": [
+        "QDR İstasyona gerçek yol",
+        "QDM İstasyona manyetik yol",
+        "QTE İstasyondan gerçek yol",
+        "QDR İstasyondan manyetik yol",
+        "QDM, QDR’nin ters manyetik kerterizidir."
+      ]
+    },
+    {
+      "id": 56017,
+      "section": "060-B7",
+      "text": "VHF sinyallerinin bir engel(mania) ile karşılaştığında engelin etrafında bükülmesi ve yayılması hatasına ne denir?",
+      "options": [
+        "Kırınım (Diffraction)",
+        "Kesilme (Refraction)",
+        "Yükselme (Convection)",
+        "Yansıma (Reflection)",
+        "Parazit (Statik Parazit)"
+      ]
+    },
+    {
+      "id": 56018,
+      "section": "060-B7",
+      "text": "Aşağıdakilerden hangisi NDB'yi en iyi tanımlar?",
+      "options": [
+        "Radyo sinyallerini bütün yönlere ileten, yeryüzüne konumlandırılmış bir vericidir.",
+        "RBI ve ADF göstergesinden oluşur.",
+        "VOR göstergesine ADF bilgisi sağlayan antendir.",
+        "VOR göstergesine NDB bilgisi sağlayan antendir.",
+        "Kontrolöre VHF yön bilgisi veren özel bir antendir."
+      ]
+    },
+    {
+      "id": 56019,
+      "section": "060-B8",
+      "text": "DME (Mesafe Ölçme Ekipmanı) hangi frekanslarda çalışır?",
+      "options": [
+        "962-1213 MHz",
+        "962 ila 1213 kHz.",
+        "3 kHz ila 300 MHz",
+        "329 ila 335 MHz",
+        "108 ila 118 MHz"
+      ]
+    },
+    {
+      "id": 56020,
+      "section": "060-B8",
+      "text": "DME ile alakalı hangi ifade doğrudur?",
+      "options": [
+        "DME, 960-1215 MHz arası UHF bandında çalışmaktadır.",
+        "DME menzili sınırsızdır.",
+        "DME, yer istasyonundan km biriminde mesafe bilgisi sağlar.",
+        "DME tarafından verilen mesafe gerçek mesafe olarak bilinir.",
+        "DME tarafından verilen mesafe kuşbakışı mesafe olarak bilinir."
+      ]
+    },
+    {
+      "id": 56021,
+      "section": "060-B8",
+      "text": "DME sisteminin yanılma payı (doğruluğu) nasıldır?",
+      "options": [
+        "Genel bir değerlendirme olarak, DME sistemlerinin doğruluğu: + veya – 0,25 NM artı ölçülen mesafenin %1,25'i olarak hesaplanmaktadır.",
+        "Genel bir değerlendirme olarak, DME sistemlerinin doğruluğu: + veya – 5 NM artı ölçülen mesafenin %25'i olarak hesaplanmaktadır.",
+        "Genel bir değerlendirme olarak, DME sistemlerinin doğruluğu: + veya – 25 NM artı ölçülen mesafenin %5'i olarak hesaplanmaktadır.",
+        "Genel bir değerlendirme olarak, DME sistemlerinin doğruluğu: + veya – 25 KM artı ölçülen mesafenin %25'i olarak hesaplanmaktadır.",
+        "Genel bir değerlendirme olarak, DME sistemlerinin doğruluğu: + veya – 10 NM artı ölçülen mesafenin %12,5'i olarak hesaplanmaktadır."
+      ]
+    },
+    {
+      "id": 56022,
+      "section": "060-B9",
+      "text": "SSR, aşağıdakilerden hangisi ile ilintili olarak çalışır?",
+      "options": [
+        "Transponder",
+        "Radyo altimetre",
+        "ILS",
+        "NDB",
+        "VOR"
+      ]
+    },
+    {
+      "id": 56023,
+      "section": "060-B9",
+      "text": "Özel radar kodlarından 7500 ne anlama gelir ?",
+      "options": [
+        "Kaçırılma",
+        "Emergency İniş",
+        "Radyo Arızası",
+        "Telsiz Arızası",
+        "Acil Durum"
+      ]
+    },
+    {
+      "id": 56024,
+      "section": "060-B9",
+      "text": "Transponder Mod C hangi bilgileri sağlar?",
+      "options": [
+        "Tanımlama ve irtifa bilgisi.",
+        "Telefon bilgisi",
+        "Sadece QDM bilgisi",
+        "Sadece QDM ve QDR bilgisi",
+        "Kuyruk numarası"
+      ]
+    },
+    {
+      "id": 56025,
+      "section": "060-B9",
+      "text": "Transponder IDENT butonuna basılırsa ne olur?",
+      "options": [
+        "Radar ekranında uçağın etrafında özel bir sembol görünür, tanımlama sağlanmış olur.",
+        "Transponder Mod C gibi çalışır.",
+        "Transponder Mod A gibi çalışır.",
+        "Radar ekranında uçağın etrafında yıldız sembolü görünür, ardından uçak sembolü beklenir.",
+        "Uçağın doğru kodu girdiği doğrulanmış olur."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "subject_code": "050",
+  "subject_name": "Meteorology",
+  "source": "SHGM KDM platformu, Meteoroloji 2 (U 01 E UO 138) — Yağış bölüm sonu sınavı (1 soru; platformda yalnız bu soru tanımlı, soru metni İngilizce). Ders metni yayımlanmamıştır.",
+  "answer_convention": "Doğru cevap platformun cevap anahtarından alındı. Platformda 5. şık 'false' yer tutucusu olarak geliyordu, atıldı.",
+  "id_convention": "55101; Türkçe karşılığı data/tr/050_meteoroloji2_bolum_sonu_01.json.",
+  "sections": {
+    "050-B10": "Course Notes · Precipitation (Meteorology 2)"
+  },
+  "questions": [
+    {
+      "id": 55101,
+      "section": "050-B10",
+      "text": "The processes and/or effects which cause clouds to release precipitation are",
+      "options": [
+        "coalescence process and Bergeron-Findeisen process.",
+        "advection effect and coalescence process.",
+        "convection effect and advection effect.",
+        "Bergeron-Findeisen process and convection effect."
+      ]
+    }
+  ]
+}

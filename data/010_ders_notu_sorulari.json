@@ -1,0 +1,199 @@
+{
+  "subject_code": "010",
+  "lang": "tr",
+  "subject_name": "Air Law",
+  "source": "SHGM KDM platformu, Hava Hukuku 1 (U 01 E UO 026) dersi — bölüm sonu soruları (B1-S 2, B2-S 2, B3-S 2, B4-S 2, B5-S 4, B6-S 2, B7-S 6 = 20 soru). Ham döküm: notes/hava_hukuku_1_TASLAK.md",
+  "answer_convention": "Kaynakta doğru cevap işaretli değildi ve şıklar her yüklemede karışıyordu; doğru cevap ders notuna ve ICAO Annex'lerine göre belirlendi, şıklar doğru cevap başa (A) gelecek şekilde yeniden sıralandı, diğer şıkların sırası korundu. İki savunulabilir-şıklı soru kullanıcının cevap anahtarıyla teyit edildi (2026-09-24): 51001 '52' (ders notu B1.1-1 ile uyumlu), 51002 'askeri hava araçlarının paylaşımı' ('havayolu özelleştirmesi' değil).",
+  "id_convention": "Kaynakta soru ID'si yok; 51001'den başlayan yapay ID'ler verildi (51 = 010 ders notu).",
+  "sections": {
+    "010-B1": "Ders Notu · Şikago Sözleşmesi ve ICAO",
+    "010-B2": "Ders Notu · Annex 1, 7, 8 · Lisans, Tescil, Uçuşa Elverişlilik",
+    "010-B3": "Ders Notu · Annex 2 Hava Kuralları",
+    "010-B4": "Ders Notu · Altimetre Ayarı ve SSR Transponder",
+    "010-B5": "Ders Notu · Annex 11 Hava Trafik Hizmetleri",
+    "010-B6": "Ders Notu · Arama Kurtarma ve Annex 13 Kaza Soruşturması",
+    "010-B7": "Ders Notu · Annex 14 Meydanlar"
+  },
+  "questions": [
+    {
+      "id": 51001,
+      "section": "010-B1",
+      "text": "1944'te Chicago'da düzenlenen konferansa kaç ülke katılmıştır?",
+      "options": ["52", "50", "1952", "55", "44"]
+    },
+    {
+      "id": 51002,
+      "section": "010-B1",
+      "text": "Aşağıdakilerden hangisi ICAO'nun temel işlevlerinden biri değildir?",
+      "options": [
+        "Üye ülkeler arasında askeri hava araçlarının paylaşımını düzenlemek",
+        "Havayolu şirketlerinin özelleştirilmesini sağlamak",
+        "Havacılıktan kaynaklı çevresel zararların azaltılması için çalışmalar yapmak",
+        "Havacılık emniyeti ve güvenliği için standartlar geliştirmek",
+        "Uluslararası hava taşımacılığının düzenli gelişimini sağlamak"
+      ]
+    },
+    {
+      "id": 51003,
+      "section": "010-B2",
+      "text": "Alet Yetkisinin (IR) geçerlilik süresi ne kadardır?",
+      "options": ["12 ay", "18 ay", "24 ay", "36 ay", "48 ay"]
+    },
+    {
+      "id": 51004,
+      "section": "010-B2",
+      "text": "ICAO Annex 8 temel olarak hangi konudaki standartları belirler?",
+      "options": ["Uçuşa Elverişlilik", "Havalimanları", "Meteoroloji Hizmetleri", "Hava Kuralları", "Personel Lisanslandırma"]
+    },
+    {
+      "id": 51005,
+      "section": "010-B3",
+      "text": "ICAO Annex tanımlarına göre, \"hava sahasının belirli boyutlar dahilinde, uçuşların belirli koşullarla sınırlandırıldığı bölümüne\" ne ad verilir?",
+      "options": [
+        "Tahditli Bölge (Restricted Area)",
+        "Kontrollü Hava Sahası",
+        "Yasak Bölge (Prohibited Area)",
+        "Uyarı Sahası (Warning Area)",
+        "Tehlikeli Bölge (Danger Area)"
+      ]
+    },
+    {
+      "id": 51006,
+      "section": "010-B3",
+      "text": "Eğer sorumlu pilot önceden verilmiş rota/seviyeden ayrılmaya zorlanırsa, sorumlu pilot (mümkünse veya fırsat bulur bulmaz) uyarılarını VHF acil durum frekansında vermelidir. Bu VHF acil durum frekansı aşağıdakilerden hangisidir?",
+      "options": ["121.500 MHz", "125.100 MHz", "7700 MHz", "Notice to air navigation", "7500 MHz"]
+    },
+    {
+      "id": 51007,
+      "section": "010-B4",
+      "text": "Geçiş irtifasının üzerindeki bir uçağın dikey konumu ne ile ifade edilir?",
+      "options": ["Uçuş Seviyesi (Flight Level)", "Basınç yüksekliği", "Yükseklik", "İrtifa", "Uçuş Tabakası"]
+    },
+    {
+      "id": 51008,
+      "section": "010-B4",
+      "text": "ATC tarafından aksi belirtilmedikçe, bir hava aracı transponderını hangi modda çalıştırmalıdır?",
+      "options": ["On / Alt (Mod C)", "Mode A", "Sadece Mod A", "Off", "Standby"]
+    },
+    {
+      "id": 51009,
+      "section": "010-B5",
+      "text": "Şikago Sözleşmesi'nin 1. maddesine göre devletlerin kendi toprakları üzerindeki hava sahası yetkisi nedir?",
+      "options": [
+        "Tam ve münhasır egemenlik",
+        "Sınırlı haklar",
+        "Uluslararası hava sahalarının ortak kullanımı",
+        "Paylaşımlı kontrol",
+        "Kısmi egemenlik"
+      ]
+    },
+    {
+      "id": 51010,
+      "section": "010-B5",
+      "text": "Aşağıdakilerden hangisi FIR, CTA ve CTR ile ilgili doğru bir ifadedir?",
+      "options": [
+        "FIR, içinde uçuş bilgi ve uyarı hizmeti sağlanan temel hava sahası birimidir; CTA, yol boyu kontrollü uçuşlara ATC hizmeti verir; CTR, havaalanlarının çevresinde yaklaşan ve kalkan uçaklara ATC hizmeti sağlar.",
+        "CTR, FIR'in tamamını kapsayan en büyük hava sahası birimidir; CTA sadece havaalanı çevresinde kurulur.",
+        "CTA ve CTR'de uçuş bilgi hizmeti sağlanmaz; FIR'ler yalnızca askeri trafik içindir.",
+        "FIR sadece kontrollü hava sahasıdır; CTA ve CTR yalnızca açık FIR'larda bulunur.",
+        "FIR yalnızca kontrollü hava sahasını kapsar."
+      ]
+    },
+    {
+      "id": 51011,
+      "section": "010-B5",
+      "text": "Hava trafik hizmetlerine ilişkin genel hükümler esas olarak neyi amaçlar?",
+      "options": [
+        "Hava trafiğinde emniyet ve düzenin sağlanmasını",
+        "Yakıt tüketiminin azaltılmasını",
+        "Askeri uçuşların önceliklendirilmesini",
+        "Pilotların yalnızca görerek uçuş yapmasını",
+        "Pilot sorumluluğunun kaldırılmasını"
+      ]
+    },
+    {
+      "id": 51012,
+      "section": "010-B5",
+      "text": "Bir hava sahasının \"Kontrollü Hava Sahası\" olması neyi zorunlu kılar?",
+      "options": [
+        "Uçuş planı doldurulması ve ATC izni alınması",
+        "Uçağın kırmızı olması",
+        "Pilotun çok tecrübeli olması",
+        "ATC gözetimi altında uçuş yapılmasını",
+        "Uçağın çift motorlu olması"
+      ]
+    },
+    {
+      "id": 51013,
+      "section": "010-B6",
+      "text": "Aşağıdakilerden hangisi \"Ciddi Yaralanma\" tanımı kapsamına girer?",
+      "options": [
+        "Vücut yüzeyinin %5'inden fazlasını etkileyen üçüncü derece yanık",
+        "Uçuş sırasında yolcunun kendi isteğiyle yaptığı basit el kesikleri",
+        "Küçük çentik ve sıyrıklarla sınırlı deri yaralanmaları",
+        "Burun kemiğinde meydana gelen basit kırık",
+        "Kabinde oluşan hafif baş ağrısı"
+      ]
+    },
+    {
+      "id": 51014,
+      "section": "010-B6",
+      "text": "Bir kazada bir kişinin maruz kaldığı yaralanmanın \"ciddi yaralanma\" olarak tanımlanması için, yaralanma tarihinden itibaren 7 gün içinde başlamak üzere en az ne kadar süreyle hastanede kalmayı gerektirmelidir?",
+      "options": ["48 saatten fazla", "36 saatten fazla", "72 saatten fazla", "24 saatten fazla", "12 saatten fazla"]
+    },
+    {
+      "id": 51015,
+      "section": "010-B7",
+      "text": "ICAO Annex 14 – Aerodromes ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+      "options": [
+        "Annex 14, havaalanlarının tasarımı, yapımı, işletmesi ve emniyeti ile ilgili standart ve önerilen uygulamaları belirler.",
+        "Annex 14, meteorolojik hizmetlerin organizasyonunu düzenler.",
+        "Annex 14 sadece askeri havaalanları için uygulanır.",
+        "ICAO Annex 19'u kapsar.",
+        "Annex 14 yalnızca hava trafik kontrol hizmetlerini kapsar."
+      ]
+    },
+    {
+      "id": 51016,
+      "section": "010-B7",
+      "text": "Taksi yolu kavşak bekleme işareti ne renk kesikli hattır?",
+      "options": ["Sarı", "Yeşil", "Mavi", "Kırmızı", "Beyaz"]
+    },
+    {
+      "id": 51017,
+      "section": "010-B7",
+      "text": "Rüzgar tulumunun havaalanındaki temel görevi en uygun hangi seçenekte açıklanmıştır?",
+      "options": [
+        "Rüzgarın yönünü ve yaklaşık şiddetini göstererek, pilotların iniş ve kalkış yönü seçiminde görsel destek sağlamaktır.",
+        "Rüzgar tulumunun bulunduğu meydanın ICAO kodunu göstermek",
+        "Pist eğimini göstermek, uçaklara hangi tırmanış performansını kullanacaklarını bildirmek ve ağırlık hesaplatmaktır.",
+        "Telsiz frekansını göstermek, pilotlara hangi kontrol ünitesini arayacaklarını bildirmek ve iletişimi kolaylaştırmaktır.",
+        "Pist yüzey durumunu göstermek, pilotlara frenleme raporunu okumak ve sürtünme katsayısını işaretlemektir."
+      ]
+    },
+    {
+      "id": 51018,
+      "section": "010-B7",
+      "text": "Sadece uçakların kalkış, iniş ve taksi yapması için ayrılan, apron hariç tutulan alana ne denir?",
+      "options": ["Manevra Sahası", "Pist", "Heliport Alanı", "Terminal Alanı", "Hareket Sahası"]
+    },
+    {
+      "id": 51019,
+      "section": "010-B7",
+      "text": "Rüzgar tulumunun turuncu-beyaz gibi zıt renklerde olmasının temel amacı nedir?",
+      "options": [
+        "Arka plandan kolayca ayırt edilebilmesini sağlamak",
+        "Pist kenar ışıkları",
+        "Yağmuru engellemek",
+        "Rüzgarı hızlandırmak",
+        "Pilotun moralini düzeltmek"
+      ]
+    },
+    {
+      "id": 51020,
+      "section": "010-B7",
+      "text": "180 derece istikametinde 3 paralel pistten ortadaki pist nasıl ifade edilir?",
+      "options": ["18 C", "19 M", "19 C", "18 R", "18 M"]
+    }
+  ]
+}

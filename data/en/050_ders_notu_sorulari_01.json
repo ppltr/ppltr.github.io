@@ -1,0 +1,253 @@
+{
+  "questions": {
+    "55001": {
+      "text": "Which of the following statements about the tropopause, from the equator to the poles, is correct?",
+      "options": [
+        "The tropopause height decreases and the tropopause temperature increases.",
+        "The tropopause height decreases and the tropopause temperature decreases.",
+        "The tropopause height does not change and its temperature increases.",
+        "The tropopause height increases and the tropopause temperature increases.",
+        "The tropopause height increases and the tropopause temperature decreases."
+      ]
+    },
+    "55002": {
+      "text": "Which of the following is correct about the troposphere?",
+      "options": [
+        "Its thickness is less at the poles than at the equator.",
+        "It contains half of the weight of the atmosphere and of the water vapour.",
+        "It is colder at the poles than at the equator.",
+        "Its thickness is less at the equator.",
+        "The air temperature falls by 0.65°C for every 200 metres of climb."
+      ]
+    },
+    "55003": {
+      "text": "Standing in the northern hemisphere with your back to the wind, where is the low pressure?",
+      "options": [
+        "On your left.",
+        "Behind you.",
+        "In front of you.",
+        "It cannot be determined.",
+        "On your right."
+      ]
+    },
+    "55004": {
+      "text": "What are the lines joining points of equal pressure called?",
+      "options": [
+        "Isobar",
+        "Isotach",
+        "Isostar",
+        "Isotherm",
+        "Isotope"
+      ]
+    },
+    "55005": {
+      "text": "Assuming the atmospheric pressure at sea level is 1013 hPa, approximately what is the pressure at an altitude of 350 feet?",
+      "options": [
+        "1000 hPa",
+        "1002 hPa",
+        "1040 hPa",
+        "1026 hPa",
+        "990 hPa"
+      ]
+    },
+    "55006": {
+      "text": "You have planned a route that passes through the warm sector of a depression. What will this give us?",
+      "options": [
+        "Poor visibility below and above extensive stratus cloud",
+        "Good visibility below widespread cumuliform clouds",
+        "Poor visibility above the stratus but moderate to good visibility below it",
+        "Good visibility above and below stratiform cloud"
+      ]
+    },
+    "55007": {
+      "text": "Where would you expect to find CB clouds?",
+      "options": [
+        "In areas of low pressure",
+        "In areas of high pressure",
+        "In high pressure ridges",
+        "CB formation is independent of pressure systems.",
+        "All of these"
+      ]
+    },
+    "55008": {
+      "text": "All other factors being equal, which of the following is better for take-off performance?",
+      "options": [
+        "Cold dry air",
+        "Warm and humid air",
+        "Cold humid air",
+        "Warm dry air",
+        "Warm humid air"
+      ]
+    },
+    "55009": {
+      "text": "If an aerodrome is 270 feet above sea level and the QNH is 1024, what will the QFE be?",
+      "options": [
+        "1014 hPa",
+        "1034 hPa",
+        "1013 hPa",
+        "1006 hPa",
+        "1021 hPa"
+      ]
+    },
+    "55010": {
+      "text": "What does an altimeter set to QFE show?",
+      "options": [
+        "It shows the height above the aerodrome.",
+        "It shows the direction of the wind relative to sea level.",
+        "It shows the height above sea level.",
+        "It shows the height above 1013 mb (hPa).",
+        "It shows the difference between the aerodrome and sea level."
+      ]
+    },
+    "55011": {
+      "text": "Compared with the others, in which of the following conditions is a thunderstorm most likely to occur?",
+      "options": [
+        "High ELR and high moisture content",
+        "High SALR and low humidity",
+        "High DALR and low moisture content",
+        "Low SALR and high humidity",
+        "Low ELR and low relative humidity"
+      ]
+    },
+    "55012": {
+      "text": "Which of the following can unstable air that is forced to rise orographically produce?",
+      "options": [
+        "Vertically developing cloud",
+        "Fog",
+        "Thick stratiform-type cloud",
+        "Lenticular cloud",
+        "Low stratus layer"
+      ]
+    },
+    "55013": {
+      "text": "How does relative humidity change when the temperature of an air parcel falls?",
+      "options": [
+        "Increases",
+        "Does not change",
+        "Does not change depending on pressure",
+        "Stays the same",
+        "Decreases"
+      ]
+    },
+    "55014": {
+      "text": "In a cold occlusion, where is the coldest air mass found?",
+      "options": [
+        "Behind the front",
+        "At the boundary of the front",
+        "Ahead of the front",
+        "At the centre of the front",
+        "At the upper levels of the front"
+      ]
+    },
+    "55015": {
+      "text": "Which of the following forces acts at right angles to the wind in the Northern Hemisphere and deflects it to the right until it is parallel to the isobars?",
+      "options": [
+        "Coriolis force",
+        "Friction force",
+        "Gravity force",
+        "Pressure gradient force",
+        "Centrifugal force"
+      ]
+    },
+    "55016": {
+      "text": "You take off with a 5 kt headwind. While passing 500 feet, the wind suddenly changes to a 30 kt tailwind. Which of the following would you expect?",
+      "options": [
+        "Rate of climb decreases.",
+        "Indicated airspeed increases.",
+        "Rate of climb increases.",
+        "A temporary loss of lift occurs.",
+        "No change occurs."
+      ]
+    },
+    "55017": {
+      "text": "If there is no other alternative, which of the following clouds should a pilot prefer to enter?",
+      "options": [
+        "Stratus",
+        "Towering Cumulus",
+        "Altocumulus Lenticularis",
+        "CB Congestus",
+        "Cumulonimbus"
+      ]
+    },
+    "55018": {
+      "text": "Below which visibility value is fog reported?",
+      "options": [
+        "1 km",
+        "1000 feet",
+        "3 km",
+        "5 km",
+        "5000 feet"
+      ]
+    },
+    "55019": {
+      "text": "Which of the following is a fog type that can form rapidly both at night and during the day?",
+      "options": [
+        "Advection",
+        "Valley fog",
+        "Radiation",
+        "Hoar frost",
+        "Mist over the sea"
+      ]
+    },
+    "55020": {
+      "text": "Which of the following causes clear ice to form?",
+      "options": [
+        "Large water droplets",
+        "Snow crystals",
+        "Small water droplets",
+        "Fog",
+        "Drizzle"
+      ]
+    },
+    "55021": {
+      "text": "What is the name of the particle that can remain in liquid form below the freezing level (0 / -40) and causes icing when it comes into contact with an aircraft?",
+      "options": [
+        "Supercooled water droplet",
+        "Ice particle",
+        "Water vapour",
+        "Water droplet",
+        "Frozen water particle"
+      ]
+    },
+    "55022": {
+      "text": "In which of the following situations is an aircraft most susceptible to icing?",
+      "options": [
+        "While flying level below a rain-producing cloud when the OAT is below zero",
+        "While flying in snowfall below the NS level",
+        "While flying under heavy rain when the OAT is +20°C",
+        "While flying inside dense CI clouds",
+        "While flying level next to a hail-producing cloud when the OAT is below zero"
+      ]
+    },
+    "55023": {
+      "text": "Which of the following is the interpretation of the given METAR? LTXX 010120Z 00000KT 0200 R14/0800 R16/P1500 FZFG VV001 M03/M03 Q1022 BECMG 0800 =",
+      "options": [
+        "RVR 800 metres for runway 14, vertical visibility 100 feet, wind calm, meteorological visibility will improve to 800 metres within the next 2 hours",
+        "For runway 14, RVR 1500 metres and horizontal visibility 800 metres",
+        "RVR 800 metres for runway 14, vertical visibility 100 metres, wind calm, meteorological visibility will improve to 800 metres within the next 2 hours",
+        "Meteorological visibility 200 metres, RVR 1500 metres for runway 16, temperature -3°C, vertical visibility 100 metres",
+        "Meteorological visibility 200 feet, RVR more than 1500 metres for runway 16, vertical visibility 100 feet, freezing fog"
+      ]
+    },
+    "55024": {
+      "text": "Which of the following cloud types is more likely to produce GR-type precipitation?",
+      "options": [
+        "CB",
+        "NS",
+        "AS",
+        "AC",
+        "TCU"
+      ]
+    },
+    "55025": {
+      "text": "METAR LTAI 141020Z 01011KT CAVOK 16/M03 Q1019 NOSIG According to the METAR given above, what is the dew point temperature?",
+      "options": [
+        "-3°C",
+        "3°C",
+        "16°C",
+        "-16°C",
+        "None of the above"
+      ]
+    }
+  }
+}

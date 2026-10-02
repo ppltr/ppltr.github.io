@@ -1,0 +1,380 @@
+{
+  "subject_code": "080",
+  "lang": "tr",
+  "subject_name": "Principles of Flight",
+  "source": "SHGM KDM platformu, Uçak Uçuş Prensipleri 1 (U 01 E UO 071) — bölüm sonu soruları (B1-S 3, B2-S 4, B3-S 2, B4-S 4, B5-S 5, B6-S 4, B7-S 5, B8-S 3 = 30 soru). Ders notu: notes/080-ders-notlari.md",
+  "answer_convention": "Doğru cevap platformun sınav uygulamasının kendi cevap anahtarından (correct_answer) alındı; tahmin yok. Şıklar doğru cevap başa (A) gelecek şekilde yeniden sıralandı, diğer şıkların sırası alındıkları yüklemedeki sırada korundu (platform şıkları her yüklemede karıştırıyor). Kaynak yazım kusurları olduğu gibi bırakıldı: 58015'te 'Dikey eksen' iki kez geçer; 58025'te 'Habit hatveli' = sabit hatveli. 58027'de platform 'Basınçlı hava püskürtülmesi'ni doğru sayıyor ('Motor devrini artırmak' da yöntem değil, yani iki şık savunulabilir); anahtara uyuldu.",
+  "id_convention": "Kaynakta soru ID'si yok; 58001'den başlayan yapay ID'ler verildi (58 = 080 ders notu).",
+  "sections": {
+    "080-B1": "Ders Notu · Temel Kavramlar, Kanunlar ve Tanımlar",
+    "080-B2": "Ders Notu · Aerodinamik Etkiler ve Stall",
+    "080-B3": "Ders Notu · Kaldırma Artırımı, Sınır Tabaka, Flaplar",
+    "080-B4": "Ders Notu · Düz Uçuşta Denge ve Stabilite",
+    "080-B5": "Ders Notu · Kontrol",
+    "080-B6": "Ders Notu · Sınırlamalar",
+    "080-B7": "Ders Notu · Pervaneler",
+    "080-B8": "Ders Notu · Uçuş Mekaniği"
+  },
+  "questions": [
+    {
+      "id": 58001,
+      "section": "080-B1",
+      "text": "Hava akımı, bir cisim etrafında moleküllerin nasıl akış gösterdiğini açıklar. Aşağıdakilerden hangisi, iki boyutlu hava akışı sırasında kanat üst yüzeyindeki basıncın düşük olmasına neden olan fenomenin adıdır?",
+      "options": [
+        "Upwash",
+        "Turbulent akış",
+        "Laminar akış",
+        "Venturi etkisi",
+        "Downwash"
+      ]
+    },
+    {
+      "id": 58002,
+      "section": "080-B1",
+      "text": "Hücum ve firar kenarları arasında, kordo hattı boyunca ölçülen mesafe aşağıdakilerden hangisidir?",
+      "options": [
+        "Kordo",
+        "Kanadın maksimum kalınlığı.",
+        "Ortalama bombe hattı",
+        "Açıklık oranı",
+        "Kanat açıklığı"
+      ]
+    },
+    {
+      "id": 58003,
+      "section": "080-B1",
+      "text": "Kordo hattı ile nisbî rüzgâr arasındaki açıya ne isim verilir?",
+      "options": [
+        "Hücum açısı",
+        "Kordo",
+        "Kanat açıklığı",
+        "Kanat eğim açısı",
+        "Süpürme açısı"
+      ]
+    },
+    {
+      "id": 58004,
+      "section": "080-B2",
+      "text": "Aşağıdakilerden hangisi bir kanat profili kesitinde; kaldırma kuvvetine dik, sürükleme kuvvetine ise paraleldir?",
+      "options": [
+        "Uçuş yolu.",
+        "Uzunlamasına eksen.",
+        "Kanat profili kesitinin üst yüzeyi.",
+        "Bağıl hava akışı.",
+        "Kord hattı."
+      ]
+    },
+    {
+      "id": 58005,
+      "section": "080-B2",
+      "text": "Düz uçuş konumunda, kanadın üst yüzeyinden akan hava, alt yüzeyinden akan havaya göre;",
+      "options": [
+        "Daha yüksek hıza sahiptir.",
+        "Her iki hava akımıda aynıdır.",
+        "Daha yüksek yoğunluğa sahiptir.",
+        "Daha düşük bir hıza sahiptir.",
+        "Kanadın üst yüzeyinden akan hava daha düşük basınca sahiptir."
+      ]
+    },
+    {
+      "id": 58006,
+      "section": "080-B2",
+      "text": "Kanat ucu vorteks gelişimi uçuşun hangi aşamasında başlar?",
+      "options": [
+        "Burun kaldırma sırasında, kaldırma (lift) oluşurken",
+        "Flaplar daha düşük pozisyona alınırken",
+        "Kalkış sırasında kalkış gücünü ayarlarken",
+        "Uçak pistte hareket etmeye başladığı anda",
+        "Uçak hareket etmeye başlar başlamaz"
+      ]
+    },
+    {
+      "id": 58007,
+      "section": "080-B2",
+      "text": "Kanat açıklığı ve indüklenmiş sürükleme arasındaki ilişkiyle ilgili aşağıda verilenlerden hangisi doğrudur?",
+      "options": [
+        "İndüklenmiş sürükleme, kanat açıklığı oranıyla ters orantılıdır.",
+        "İndüklenmiş sürükleme, kanat açıklığıyla doğru orantılıdır.",
+        "İndüklenmiş sürüklemenin, kanat açıklığı oranı ile ilgisi yoktur.",
+        "Kanat açıklığı arttıkça indüklenmiş sürükleme önce artar sonra azalır.",
+        "İndüklenmiş sürükleme, kanat açıklığının karesiyle doğru orantılıdır."
+      ]
+    },
+    {
+      "id": 58008,
+      "section": "080-B3",
+      "text": "Uçak kanatlarındaki sınır tabakası nedir?",
+      "options": [
+        "Kanat yüzeyine yakın hava moleküllerinin yavaşladığı ince tabaka",
+        "Kanadın üst yüzeyinde oluşan buz tabakası",
+        "Kanadın alt yüzeyinde oluşan yoğun hava tabakası",
+        "Kanat üzerindeki hava akışının hızlandığı alan",
+        "Sürüklenmeyi artırır."
+      ]
+    },
+    {
+      "id": 58009,
+      "section": "080-B3",
+      "text": "Flaplar ve slatlar…………………………. .",
+      "options": [
+        "uçağın düşük süratlerde uçabilmesi için, kaldırma katsayısını arttırır.",
+        "kalkış sırasında, burun yukarı hareketi sağlar.",
+        "Yaklaşma sürati flaplı konfigürasyondan bağımsızdır.",
+        "sürüklemeyi azaltır.",
+        "uçağın süratini düşürmek için, kaldırma katsayısını düşürür."
+      ]
+    },
+    {
+      "id": 58010,
+      "section": "080-B4",
+      "text": "Türbülans nedeniyle uçuş hattından sapan bir uçak, sonrasında aşağıdaki reaksiyonlardan hangisini gösterdiğinde pozitif kararlı olarak tanımlanacaktır ?",
+      "options": [
+        "Pilot müdahalesi olmaksızın orjinal konumuna geri döndüğünde.",
+        "Sapmaya sebep olan kuvvetleri dengeleyecek karşı kuvvetler uygulanıncaya kadar etki yönünde sapmaya devam ettiğinde.",
+        "Pilot müdahalesiyle eski konumuna döndüğünde.",
+        "Etki sonrasında orjinal konumundan daha çok saptığında.",
+        "Sapma sonrasındaki yeni uçuş hattını koruduğunda."
+      ]
+    },
+    {
+      "id": 58011,
+      "section": "080-B4",
+      "text": "Bir uçağın düzgün (sabit) uçuş konumunun bozulması sonrasında, orijinal uçuş konumuna dönmek için kuvvetler üretme eğilimine ne ad verilir?",
+      "options": [
+        "Stabilite (kararlılık).",
+        "Manevra kabiliyeti.",
+        "Kontrol edilebilirlik.",
+        "Kararsızlık.",
+        "Kontrol edilebilme."
+      ]
+    },
+    {
+      "id": 58012,
+      "section": "080-B4",
+      "text": "Aşağıdakilerden hangisi uçağın statik kararlılığa sahip olduğunu gösterir?",
+      "options": [
+        "Kuvvet kaldırıldığında kendiliğinden bir önceki konumuna dönme eğilimine sahiptir.",
+        "Stall olması zordur.",
+        "Kontrolü için daha az pilot girdisi gerekir.",
+        "Dinamik kararlıdır.",
+        "Viril (spin) konumuna girmeyecektir."
+      ]
+    },
+    {
+      "id": 58013,
+      "section": "080-B4",
+      "text": "Uçağa istikamet kararlılığı sağlayan yüzey aşağıdakilerden hangisidir?",
+      "options": [
+        "Dikey stabilize.",
+        "Rudder trim tabı.",
+        "Yatay stabilize.",
+        "Kanatçık",
+        "Rudder."
+      ]
+    },
+    {
+      "id": 58014,
+      "section": "080-B5",
+      "text": "Trim tabının kullanım amacı aşağıdakilerden hangisinde doğru olarak tanımlanmıştır?",
+      "options": [
+        "Uçulan uçuş konumuna bağlı olarak kumanda yüzeylerinden lövyeye uygulanan yükleri ortadan kaldırmak.",
+        "Yüksek hızlarda pilotun kumanda yüzeylerini hissini sağlayacak yükleri oluşturmak.",
+        "Kumanda yüzeylerinin etkinliğini arttırmak.",
+        "Pilota kontrol yüzeylerini hareket ettirilmesini zorlaştırmak.",
+        "Yalnızca yüksek süratlerde kumanda etkinliğini artırmak."
+      ]
+    },
+    {
+      "id": 58015,
+      "section": "080-B5",
+      "text": "Uçak, hangi eksen etrafında yunuslama (pitch) hareketi yapar?",
+      "options": [
+        "Yanal eksen",
+        "Boylamsal eksen",
+        "Dikey eksen",
+        "Normal eksen",
+        "Dikey eksen"
+      ]
+    },
+    {
+      "id": 58016,
+      "section": "080-B5",
+      "text": "Bir uçağın yanal ekseni aşağıdaki seçeneklerden hangisinde doğru olarak tanımlanmıştır?",
+      "options": [
+        "Kanat uçlarını birleştiren çizgiye paralel ağırlık merkezinden geçen çizgidir.",
+        "Uzunlamasına eksene dik olacak şekilde, kanat kökünün ¼ kordo noktasından geçen çizgidir.",
+        "Kanat uçlarından geçen çizgidir.",
+        "Hava akımı yönüne dik olacak şekilde, basınç merkezinden (CP) geçen çizgidir.",
+        "Kanat kökünün tam ortasından geçen çizgidir."
+      ]
+    },
+    {
+      "id": 58017,
+      "section": "080-B5",
+      "text": "Yaw kontrolü, uçağın hangi hareketini kontrol etmek için kullanılır?",
+      "options": [
+        "Burnunun sağa veya sola hareketini",
+        "Uçağın burun aşağı hareketini kontrol etmek için.",
+        "Burnunun yukarı veya aşağı hareketini",
+        "Kanatların yukarı veya aşağı hareketini",
+        "Sağa veya sola yatış hareketini"
+      ]
+    },
+    {
+      "id": 58018,
+      "section": "080-B5",
+      "text": "Dikey kuyruk profili neden simetrik olarak tasarlanır?",
+      "options": [
+        "normal eksen etrafında sapmayı (yaw) engellemek için",
+        "Yanal eksen etrafında sapmayı artırmak için.",
+        "yanal eksen etrafında yunuslamayı (pitch) engellemek için",
+        "normal eksen etrafında yüzey sürüklemesini engellemek için",
+        "düşey eksen etrafında yuvarlanmayı (roll) engellemek için"
+      ]
+    },
+    {
+      "id": 58019,
+      "section": "080-B6",
+      "text": "Normal Operasyon Hız Aralığının Üst Sınırı Hangi Hızdır?",
+      "options": [
+        "Vno",
+        "Vne",
+        "VX.",
+        "Vs1",
+        "Vfe"
+      ]
+    },
+    {
+      "id": 58020,
+      "section": "080-B6",
+      "text": "Hava Aracının Kütlesi Manoeuvring Load Diagram'ı Nasıl Etkiler?",
+      "options": [
+        "Kütlenin artması, limit manevra yük faktörlerini artırır.",
+        "Kütlenin azalması, limit manevra yük faktörlerini azaltır.",
+        "Kütlenin artması limit manevra hızını değiştirmez.",
+        "Kütlenin azalması, hava aracının aerodinamik performansını düşürür.",
+        "Kütlenin artması, hava aracının daha yüksek hızlara çıkmasını sağlar."
+      ]
+    },
+    {
+      "id": 58021,
+      "section": "080-B6",
+      "text": "Vfe Hızı Ne Anlama Gelir?",
+      "options": [
+        "Flapların güvenli kullanılabileceği maksimum hız",
+        "En ekonomik seyir hızı.",
+        "Maksimum sürat",
+        "Stall hızı",
+        "Asla aşılmaması gereken hız"
+      ]
+    },
+    {
+      "id": 58022,
+      "section": "080-B6",
+      "text": "Aşağıdakilerden hangisinde VNE hızı doğru olarak tanımlanmıştır?",
+      "options": [
+        "Uçağın uçabileceği müsaade edilen maksimum hava hızı.",
+        "Flapların devreye sokulabileceği maksimum hız.",
+        "Dalış pozisyonu dışında hiçbir şekilde geçilmemesi gereken sürat.",
+        "Maksimum tırmanış hızı.",
+        "Uçuş manevralarında stall konumuna yakın durumlarda ulaşılabilecek maksimum hız."
+      ]
+    },
+    {
+      "id": 58023,
+      "section": "080-B7",
+      "text": "Hava aracının düşük hızlarda karşılaştığı asymmetric blade effect nasıl azaltılabilir?",
+      "options": [
+        "Ayarlanabilir pervane tasarımları kullanarak",
+        "Pervane devrini sabit tutarak.",
+        "Pervanenin hızını azaltarak",
+        "Uçağı daha yüksek irtifalara çıkararak",
+        "Motor gücünü artırarak"
+      ]
+    },
+    {
+      "id": 58024,
+      "section": "080-B7",
+      "text": "Hava aracının pervanesi dönerken oluşan \"torque reaction\" nasıl yönetilir?",
+      "options": [
+        "Kontrol yüzeylerini kullanarak",
+        "Pervaneleri sabitleyerek",
+        "Motor gücünü azaltarak",
+        "Pervanenin dönüş yönünü değiştirerek",
+        "Yalnızca flap kullanarak."
+      ]
+    },
+    {
+      "id": 58025,
+      "section": "080-B7",
+      "text": "Hangisi pervane çeşitlerinden değildir?",
+      "options": [
+        "Yüksek hızlı",
+        "Değişken hatveli.",
+        "Habit hatveli",
+        "Yarı değişken hatveli",
+        "Sabit hızlı"
+      ]
+    },
+    {
+      "id": 58026,
+      "section": "080-B7",
+      "text": "Pervanelerde kullanılan \"blade twist\" fenomeninin amacı nedir?",
+      "options": [
+        "Pervanelerin aerodinamik verimliliğini artırmak",
+        "Motorun soğutulmasını sağlamak",
+        "Pervane ağırlığını azaltmak.",
+        "Pervanelerin daha hızlı dönmesini sağlamak",
+        "Uçağın daha yüksek irtifalara çıkmasını sağlamak"
+      ]
+    },
+    {
+      "id": 58027,
+      "section": "080-B7",
+      "text": "Pervanelerde buzlanmaya karşı kullanılan yöntemlerden birisi değildir?",
+      "options": [
+        "Basınçlı hava püskürtülmesi",
+        "Anti buz sistemleri",
+        "Buz çözücü sıvılar",
+        "Motor devrini artırmak.",
+        "Pal ısıtma sistemleri"
+      ]
+    },
+    {
+      "id": 58028,
+      "section": "080-B8",
+      "text": "Düz uçuşta Yük Faktörü nasıl bulunur?",
+      "options": [
+        "Taşıma kuvvetinin Ağırlık kuvvetine oranıdır.",
+        "İtki kuvvetinin Sürüklemeye oranıdır.",
+        "Taşıma kuvvetinin yatış açısına oranıdır.",
+        "Ağırlık kuvvetinin Sürüklemeye oranıdır.",
+        "Ağırlık kuvvetinin Taşıma kuvvetine oranıdır."
+      ]
+    },
+    {
+      "id": 58029,
+      "section": "080-B8",
+      "text": "Sabit hızla düzgün tırmanma sırasında…...........",
+      "options": [
+        "Kaldırma kuvveti Ağırlık kuvvetinden küçük olur.",
+        "Kaldırma kuvveti Ağırlık kuvvetinden büyük olur.",
+        "Kaldırma kuvveti devamlı olarak artar.",
+        "İtki Sürüklemeye eşit olur.",
+        "İtki, Sürüklemeden küçük olur."
+      ]
+    },
+    {
+      "id": 58030,
+      "section": "080-B8",
+      "text": "Yatarak koordine dönüşte Yük Faktörü nasıl bulunur?",
+      "options": [
+        "1/Cos (Yatış Açısı)",
+        "Taşıma / Sürükleme",
+        "Yatarak koordine dönüşlerde yük faktörü yatış açısından bağımsızdır",
+        "Ağırlık / Taşıma",
+        "1/Sin (Yatış Açısı)"
+      ]
+    }
+  ]
+}

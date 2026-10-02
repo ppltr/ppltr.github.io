@@ -1,0 +1,204 @@
+{
+  "questions": {
+    "51001": {
+      "text": "How many states attended the conference held in Chicago in 1944?",
+      "options": [
+        "52",
+        "50",
+        "1952",
+        "55",
+        "44"
+      ]
+    },
+    "51002": {
+      "text": "Which of the following is NOT one of the basic functions of ICAO?",
+      "options": [
+        "Regulating the sharing of military aircraft between member states",
+        "Ensuring the privatisation of airline companies",
+        "Working to reduce the environmental harm caused by aviation",
+        "Developing standards for aviation safety and security",
+        "Ensuring the orderly development of international air transport"
+      ]
+    },
+    "51003": {
+      "text": "What is the validity period of an Instrument Rating (IR)?",
+      "options": [
+        "12 months",
+        "18 months",
+        "24 months",
+        "36 months",
+        "48 months"
+      ]
+    },
+    "51004": {
+      "text": "ICAO Annex 8 primarily sets standards on which subject?",
+      "options": [
+        "Airworthiness",
+        "Aerodromes",
+        "Meteorological Services",
+        "Rules of the Air",
+        "Personnel Licensing"
+      ]
+    },
+    "51005": {
+      "text": "According to the ICAO Annex definitions, what is \"a portion of airspace of defined dimensions within which flight is restricted in accordance with certain specified conditions\" called?",
+      "options": [
+        "Restricted Area",
+        "Controlled Airspace",
+        "Prohibited Area",
+        "Warning Area",
+        "Danger Area"
+      ]
+    },
+    "51006": {
+      "text": "If the pilot-in-command is forced to deviate from the assigned route/level, the pilot-in-command shall (if possible, or as soon as the opportunity arises) transmit warnings on the VHF emergency frequency. Which of the following is this VHF emergency frequency?",
+      "options": [
+        "121.500 MHz",
+        "125.100 MHz",
+        "7700 MHz",
+        "Notice to air navigation",
+        "7500 MHz"
+      ]
+    },
+    "51007": {
+      "text": "How is the vertical position of an aircraft above the transition altitude expressed?",
+      "options": [
+        "Flight Level",
+        "Pressure altitude",
+        "Height",
+        "Altitude",
+        "Flight layer"
+      ]
+    },
+    "51008": {
+      "text": "Unless otherwise instructed by ATC, in which mode should an aircraft operate its transponder?",
+      "options": [
+        "On / Alt (Mode C)",
+        "Mode A",
+        "Mode A only",
+        "Off",
+        "Standby"
+      ]
+    },
+    "51009": {
+      "text": "According to Article 1 of the Chicago Convention, what authority do states have over the airspace above their territory?",
+      "options": [
+        "Complete and exclusive sovereignty",
+        "Limited rights",
+        "Shared use of international airspace",
+        "Shared control",
+        "Partial sovereignty"
+      ]
+    },
+    "51010": {
+      "text": "Which of the following statements about FIR, CTA and CTR is correct?",
+      "options": [
+        "The FIR is the basic airspace unit within which flight information service and alerting service are provided; the CTA provides ATC service to en-route controlled flights; the CTR provides ATC service to arriving and departing aircraft in the vicinity of aerodromes.",
+        "The CTR is the largest airspace unit, covering the whole FIR; the CTA is established only around aerodromes.",
+        "No flight information service is provided in CTAs and CTRs; FIRs are for military traffic only.",
+        "The FIR is controlled airspace only; CTAs and CTRs exist only in open FIRs.",
+        "The FIR covers controlled airspace only."
+      ]
+    },
+    "51011": {
+      "text": "What is the primary objective of the general provisions on air traffic services?",
+      "options": [
+        "Ensuring safety and order in air traffic",
+        "Reducing fuel consumption",
+        "Prioritising military flights",
+        "Having pilots fly only by visual reference",
+        "Removing pilot responsibility"
+      ]
+    },
+    "51012": {
+      "text": "What does the designation of an airspace as \"Controlled Airspace\" make mandatory?",
+      "options": [
+        "Filing a flight plan and obtaining an ATC clearance",
+        "The aircraft being red",
+        "The pilot being highly experienced",
+        "Flying under ATC supervision",
+        "The aircraft being twin-engined"
+      ]
+    },
+    "51013": {
+      "text": "Which of the following falls within the definition of \"Serious Injury\"?",
+      "options": [
+        "Third-degree burns affecting more than 5% of the body surface",
+        "Minor hand cuts that a passenger voluntarily inflicts on themselves during flight",
+        "Skin injuries limited to small nicks and abrasions",
+        "A simple fracture of the nasal bone",
+        "A mild headache occurring in the cabin"
+      ]
+    },
+    "51014": {
+      "text": "For an injury sustained by a person in an accident to be defined as a \"serious injury\", it must require hospitalisation that commences within 7 days from the date the injury was received and lasts at least how long?",
+      "options": [
+        "More than 48 hours",
+        "More than 36 hours",
+        "More than 72 hours",
+        "More than 24 hours",
+        "More than 12 hours"
+      ]
+    },
+    "51015": {
+      "text": "Which of the following statements about ICAO Annex 14 – Aerodromes is correct?",
+      "options": [
+        "Annex 14 sets the standards and recommended practices on the design, construction, operation and safety of aerodromes.",
+        "Annex 14 regulates the organisation of meteorological services.",
+        "Annex 14 applies only to military aerodromes.",
+        "It covers ICAO Annex 19.",
+        "Annex 14 covers air traffic control services only."
+      ]
+    },
+    "51016": {
+      "text": "What colour is the dashed line of the taxiway intersection holding position marking?",
+      "options": [
+        "Yellow",
+        "Green",
+        "Blue",
+        "Red",
+        "White"
+      ]
+    },
+    "51017": {
+      "text": "Which option best describes the primary function of the windsock at an aerodrome?",
+      "options": [
+        "To show the direction and approximate strength of the wind, providing pilots with visual support in choosing the landing and take-off direction.",
+        "To show the ICAO code of the aerodrome where the windsock is located",
+        "To show the runway slope, tell aircraft which climb performance to use and have them calculate weight.",
+        "To show the radio frequency, tell pilots which control unit to contact and facilitate communication.",
+        "To show the runway surface condition, read the braking report to pilots and mark the friction coefficient."
+      ]
+    },
+    "51018": {
+      "text": "What is the area reserved exclusively for the take-off, landing and taxiing of aircraft, excluding aprons, called?",
+      "options": [
+        "Manoeuvring Area",
+        "Runway",
+        "Heliport Area",
+        "Terminal Area",
+        "Movement Area"
+      ]
+    },
+    "51019": {
+      "text": "What is the main purpose of a windsock having contrasting colours such as orange and white?",
+      "options": [
+        "To make it easily distinguishable from the background",
+        "Runway edge lights",
+        "To prevent rain",
+        "To speed up the wind",
+        "To improve the pilot's morale"
+      ]
+    },
+    "51020": {
+      "text": "How is the middle runway of three parallel runways on a heading of 180 degrees designated?",
+      "options": [
+        "18 C",
+        "19 M",
+        "19 C",
+        "18 R",
+        "18 M"
+      ]
+    }
+  }
+}

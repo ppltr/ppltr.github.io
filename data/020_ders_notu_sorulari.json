@@ -1,0 +1,501 @@
+{
+  "subject_code": "020",
+  "lang": "tr",
+  "subject_name": "Aircraft General Knowledge",
+  "source": "SHGM KDM platformu, Uçak Genel Bilgisi 1 (U 01 E UO 078) — bölüm sonu soruları (B1 7, B2 4, B3 4, B4 3, B5 7, B6 5, B7 6, B8 2, B9 2 = 40 soru). Ders notu: notes/020-ders-notlari.md",
+  "answer_convention": "Doğru cevap platformun sınav uygulamasının kendi cevap anahtarından (correct_answer) alındı; tahmin yok. Şıklar doğru cevap başa (A) gelecek şekilde yeniden sıralandı, diğer şıkların sırası alındıkları yüklemedeki sırada korundu. Kaynak yazım ve içerik kusurları olduğu gibi bırakıldı: 'Elektirkli', 'Konveskiyon', 'True Air Speed' ile 'Gerçek Hava Sürati' iki ayrı şıkta, iniş takımı sorusunda alakasız 'Kumanda yüzeylerinin aerodinamik yüklerini azaltmak.' şıkkı vb.",
+  "id_convention": "Kaynakta soru ID'si yok; 52001'den başlayan yapay ID'ler verildi (52 = 020 ders notu). Bölüm sırası ders notu bölümlerinin sırasıdır: B1 Pistonlu Motorlar, B2 Alet ve Gösterge Sistemleri, B3 Aerodinamik Parametrelerin Ölçümü, B4 Uçak Gövdesi, B5 Uçak Sistemleri, B6 Manyetizma, B7 Cayroskopik Aletler, B8 İletişim/Uyarı, B9 Göstergeler.",
+  "sections": {
+    "020-B1": "Ders Notu · Pistonlu Motorlar",
+    "020-B2": "Ders Notu · Alet ve Gösterge Sistemleri",
+    "020-B3": "Ders Notu · Aerodinamik Parametrelerin Ölçümü",
+    "020-B4": "Ders Notu · Uçak Gövdesi ve Yapısı",
+    "020-B5": "Ders Notu · Uçak Sistemleri",
+    "020-B6": "Ders Notu · Manyetizma ve Direkt Okumalı Pusula",
+    "020-B7": "Ders Notu · Cayroskopik Aletler",
+    "020-B8": "Ders Notu · İletişim, Uyarı ve Yakınlık Sistemleri",
+    "020-B9": "Ders Notu · Göstergeler, Entegre Cihazlar, Elektronik Ekranlar"
+  },
+  "questions": [
+    {
+      "id": 52001,
+      "section": "020-B1",
+      "text": "Karbüratör içindeki venturi boğazının dar kesitinden geçmekte olan havada aşağıdaki değişimlerden hangisi olur?",
+      "options": [
+        "Ortam basıncı düşer, hızı artar.",
+        "Dinamik basıncı azalır, hızı artar.",
+        "Dinamik basıncı artar, hızı azalır.",
+        "Motor devrini azaltıp tırmanışı durdurarak.",
+        "Dinamik basıncı ve ortam basıncı artar."
+      ]
+    },
+    {
+      "id": 52002,
+      "section": "020-B1",
+      "text": "Aşağıdakilerden hangisi aşırı yağ basıncını engeller?",
+      "options": [
+        "Yağ basınç tahliye valfi",
+        "Verniyeli ısı göstergesi",
+        "Filtre baypas valfi",
+        "Geri dönüşsüz valf",
+        "Yağ sıcaklık regülatörü"
+      ]
+    },
+    {
+      "id": 52003,
+      "section": "020-B1",
+      "text": "Bujiler için ihtiyaç duyulan yüksek voltaj nereden sağlanır?",
+      "options": [
+        "Manyeto",
+        "Ateşleme bobini",
+        "Dinamo",
+        "Jeneratör",
+        "Alternatör"
+      ]
+    },
+    {
+      "id": 52004,
+      "section": "020-B1",
+      "text": "Uçak motoru ateşleme sisteminde impuls coupling’in temel işlevi aşağıdakilerden hangisidir?",
+      "options": [
+        "Motorun ilk çalıştırılması esnasında manyetonun bujilerin ihtiyaç duyduğu elektriği üretebilmek amacı ile manyeto dönüsünü arttırmak.",
+        "İkincil sarmalın kapasitör deşarjını hızlandırarak, soğuk haldeki yakıt hava karışımına çoklu kıvılcımlar gönderilmesini sağlar.",
+        "Ateşleme zamanlamasını mekanik olarak geciktirip ilk çalıştırmayı kolaylaştırır.",
+        "Soğuk motordaki yavaş yanma işini telafi edici şekilde ateşlemeyi artırmak.",
+        "Motor ilk çalıştırma sırasında zengin karışımın erken ateşlemesini geciktirerek önlemeye yarar."
+      ]
+    },
+    {
+      "id": 52005,
+      "section": "020-B1",
+      "text": "Yağ sıcaklığı göstergesine sıcaklık bilgisi ileten sensörün yeri aşağıdakilerden hangisidir?",
+      "options": [
+        "Yağ soğutucusundan sonra, basınç pompasından önce",
+        "Motorun sıcak bölmesinde",
+        "Yağ soğutucusundan önce",
+        "Yağ filtresi çıkışında",
+        "Motor yağ karterinde"
+      ]
+    },
+    {
+      "id": 52006,
+      "section": "020-B1",
+      "text": "Uçak motor kaportasının ve hava yönlendirme kanatçıklarının işlevi hangisidir?",
+      "options": [
+        "Havayı silindir başları etrafına çekerek soğutma işlemi yapmak ve sürüklemeyi azaltmak.",
+        "Motor titreşimini tamamen ortadan kaldırmak.",
+        "İnsanları çalışmakta olan motordan korumak.",
+        "Kanat kökü hücum kenarlarının ideal hücum açısında düzgün hava akışı almasını sağlamak.",
+        "Motor arızası oluşması durumunda tehlikeyi kontrol altına almak."
+      ]
+    },
+    {
+      "id": 52007,
+      "section": "020-B1",
+      "text": "Pistonlu motorlarda hava yakıt karışımı kaynaklı detonasyon aşağıdakilerden hangisi sebebiyle oluşur?",
+      "options": [
+        "Fakir karışım ve yüksek silindir başı hararetinden kaynaklanır.",
+        "Zengin karışım ve düşük silindir başı hararetinden kaynaklanır.",
+        "Motor çalıştırma sırasında motor geri tepmesi durumunda oluşur.",
+        "İrtifa arttıkça hava yoğunluğu azalır ve karışım zenginleşir.",
+        "Motorun aşırı zengin karışımda uzun süre çalıştırılması sonrasında bujilerde karbon birikmesi sonucu oluşur."
+      ]
+    },
+    {
+      "id": 52008,
+      "section": "020-B2",
+      "text": "Aşağıdakilerden hangi alet, gecikme (hysteresis) hatasından etkilenir?",
+      "options": [
+        "Altimetre",
+        "Dikey sürat göstergesi (VSI)",
+        "Barometre",
+        "Direk okumalı pusula",
+        "Takometre"
+      ]
+    },
+    {
+      "id": 52009,
+      "section": "020-B2",
+      "text": "Aşağıdakilerden hangisi temel uçuş aletlerindendir?",
+      "options": [
+        "Varyometre",
+        "Yük Göstergesi",
+        "Batarya Göstergesi",
+        "Ampermetre",
+        "CHT"
+      ]
+    },
+    {
+      "id": 52010,
+      "section": "020-B2",
+      "text": "Varyometre (dikey hız göstergesi) hangi basınçların farkı ile çalışır?",
+      "options": [
+        "Anlık statik / bir önceki statik",
+        "Anlık dinamik / bir önceki dinamik",
+        "Anlık statik / bir önceki dinamik",
+        "Anlık dinamik / bir önceki statik",
+        "Statik basınç farkı"
+      ]
+    },
+    {
+      "id": 52011,
+      "section": "020-B2",
+      "text": "Hangisi altimetre hatalarından değildir?",
+      "options": [
+        "Orografik Hatalar",
+        "Sıcaklık Hatası",
+        "Manevra Sebepli Hata",
+        "Sürtünme Hataları",
+        "Pozisyon (Basınç) Hataları"
+      ]
+    },
+    {
+      "id": 52012,
+      "section": "020-B3",
+      "text": "Alçalma sırasında, statik basınç sisteminde tıkanıklık oluşursa, dikey hız göstergesi aşağıdaki hatalardan hangisi ile karşılaşır.",
+      "options": [
+        "Kısa bir gecikme sonrasında sıfır okuma gösterir.",
+        "Aynı değeri göstermeye devam eder.",
+        "Tırmanma gösterir.",
+        "Alçalma gösterir.",
+        "Bir süre sonra sıfır değerine döner."
+      ]
+    },
+    {
+      "id": 52013,
+      "section": "020-B3",
+      "text": "Toplam basınç veya statik basınç ve dinamik basıncın algılanmasını sağlayan alet nedir?",
+      "options": [
+        "Pitot tüpü",
+        "Vakum göstergesi",
+        "Sürat göstergesi",
+        "Pitot-statik sistem",
+        "Statik port"
+      ]
+    },
+    {
+      "id": 52014,
+      "section": "020-B3",
+      "text": "Bir uçağın, içinde bulunduğu hava kütlesine göre belirtilen süratine ne denir?",
+      "options": [
+        "Gerçek Hava Sürati (TAS)",
+        "Okunan Sürat (IAS)",
+        "Kalibre Edilmiş Sürat (CAS)",
+        "True Air Speed (TAS)",
+        "Standart Hava Sürati (SAS)"
+      ]
+    },
+    {
+      "id": 52015,
+      "section": "020-B3",
+      "text": "Altimetrelerde sıvısız barometre (aneroid) kapsülleri bulunur. Kapsülün ………….... .",
+      "options": [
+        "içinde çok düşük miktarda kalibre edilmiş basınç, kapsülün dışında statik basınç mevcuttur.",
+        "içinde statik basınç bulunmaz, dışında kalıntı basınç mevcuttur.",
+        "Kapsül içi düşük basınçlıdır ve dışı statik basınca maruzdur.",
+        "içinde dinamik basınç, dış kısmında statik basınç mevcuttur.",
+        "içinde toplam basınç, dışında statik basınç mevcuttur."
+      ]
+    },
+    {
+      "id": 52016,
+      "section": "020-B4",
+      "text": "Kuyruk ( kuyruk takımı ) nasıl medyana gelir?",
+      "options": [
+        "yatay ve dikey stabilizeler ve bunlara irtibatlanmış olan uçuş kumanda parçaları",
+        "yatay stabilizeler ve bunlara irtibatlanmış olan uçuş kumanda parçaları",
+        "Yalnızca yatay stabilizelerden oluşur.",
+        "kuyrukta yatay ve dikey stabilizeler bulunmaz",
+        "dikey stabilizeler ve bunlara irtibatlanmış olan uçuş kumanda parçaları"
+      ]
+    },
+    {
+      "id": 52017,
+      "section": "020-B4",
+      "text": "İstikamet Dümeni (Rudder) ne işe yarar ?",
+      "options": [
+        "İstikamet (Yaw), istikamet dümeni (rudder) ile sağlanır ve pedallarla kontrol edilir.",
+        "İstikamet, kanatçıklarla sağlanır ve lövye ile kontrol edilir.",
+        "İstikamet (Roll), istikamet dümeni (rudder) ile sağlanır ve pedallarla kontrol edilir.",
+        "İstikamet (Yaw), istikamet dümeni (elevatör) ile sağlanır ve pedallarla kontrol edilir.",
+        "İstikamet (Pitch), istikamet dümeni (rudder) ile sağlanır ve pedallarla kontrol edilir."
+      ]
+    },
+    {
+      "id": 52018,
+      "section": "020-B4",
+      "text": "Destek kirişli kanatlı bir hafif hava aracında ağırlık aşağıdakilerden hangisi ile taşınır?",
+      "options": [
+        "Kanat ana kirişi ile",
+        "Metal dış yüzey ile",
+        "Kanat bağlantı pimi ile",
+        "Kanat içi profillerle",
+        "İç tel gergiler ile"
+      ]
+    },
+    {
+      "id": 52019,
+      "section": "020-B5",
+      "text": "Pitot tüpünün uçuş sırasında buzlanmasını önlemek için hangi yöntem kullanılır?",
+      "options": [
+        "Elektirkli ısıtıcılar",
+        "Pnömatik sistem",
+        "Buz dedektörleri",
+        "Sıvı püskürtme",
+        "Kimyasal buz çözücüler"
+      ]
+    },
+    {
+      "id": 52020,
+      "section": "020-B5",
+      "text": "Ön cam buz koruma sistemi nasıl çalışır?",
+      "options": [
+        "Elektirkli ısıtıcılar",
+        "Motor egzoz sıcaklığı ile",
+        "Sıvı püskürtme",
+        "Pnömatik sistem",
+        "Dinamik Basınç etkisi ile"
+      ]
+    },
+    {
+      "id": 52021,
+      "section": "020-B5",
+      "text": "Sürekli ısı veya sıvı uygulaması yapılarak buzlanmanın oluşmasını önlemek üzere çalışan sisteme ne nedir?",
+      "options": [
+        "Anti – icing",
+        "Buz Dedektörleri",
+        "De – icing",
+        "Ice prevention",
+        "Termal Dedektörleri"
+      ]
+    },
+    {
+      "id": 52022,
+      "section": "020-B5",
+      "text": "Aşağıdakilerden hangisi uçaklarda yere temas anında dikey bileşen kaynaklı ilk şoku sönümleyen, yardımcı iniş takımında bulunan sistemlerden biridir?",
+      "options": [
+        "Hidro / Oleo pnömatik amörtisörlü dikmelerdir.",
+        "Hidro amörtisörlü dikmelerdir.",
+        "Ön teker lastik basıncı iledir.",
+        "Pnömatik amörtisörlü dikmelerdir.",
+        "Mekanik yaylı amortisörlerdir."
+      ]
+    },
+    {
+      "id": 52023,
+      "section": "020-B5",
+      "text": "Hangisi lastikte gözlemlenebilecek hasarlardan değildir?",
+      "options": [
+        "Yansıma",
+        "Renk değişimi",
+        "Kesikler",
+        "Aşınma",
+        "Yabancı Madde"
+      ]
+    },
+    {
+      "id": 52024,
+      "section": "020-B5",
+      "text": "Toprak ve çimle aşırı kirlenmiş lastik tozlukları (gear cover cap);",
+      "options": [
+        "Kirli olduğu durumda normal uçuşu etkilemeyecek bir hacimde olacak şekilde tasarlanmıştır.",
+        "Uygun bir zamanda pilot tarafından temizlenmeli ve geri takılmalıdır.",
+        "Sadece ağır bakım sırasında değiştirilmelidir.",
+        "Bir sonraki uçuş öncesinde çıkarılmalıdır.",
+        "Yetkili bir teknisyen tarafından aylık bakımlarda temizlenmelidir."
+      ]
+    },
+    {
+      "id": 52025,
+      "section": "020-B5",
+      "text": "Uçağın yere dokunduğu her duruma, etkin hareket yeteneğine sahip olabilmesi için düzenlenmiş tekerlekli aksama ne isim verilir?",
+      "options": [
+        "İniş Takımı",
+        "Elevatör",
+        "Kokpit",
+        "Kumanda yüzeylerinin aerodinamik yüklerini azaltmak.",
+        "Hatve"
+      ]
+    },
+    {
+      "id": 52026,
+      "section": "020-B6",
+      "text": "Yatay düzlemde hakiki yani coğrafi meridyenle manyetik meridyen arasında kalan açıya ne denir ?",
+      "options": [
+        "Varyasyon",
+        "Konveskiyon",
+        "Sapma açısı",
+        "Radyasyon",
+        "Deviasyon"
+      ]
+    },
+    {
+      "id": 52027,
+      "section": "020-B6",
+      "text": "Aşağıdakilerden hangisi pusulaların genel özelliklerindendir?",
+      "options": [
+        "Dünyanın magnetik etkisi altında çalışır.",
+        "Gece şartlarında kullanımı mümkün değildir.",
+        "İçindeki parçaların daha kolay hareket etmesi için özellikle civa kullanılır.",
+        "Pusula sapmalarını azaltmak için sıvı ile doldurulmuştur.",
+        "Herhangi bir başka magnetik ya da mekanik etki olmadığı sürece, dünyanın güney manyetik noktasını gösterir."
+      ]
+    },
+    {
+      "id": 52028,
+      "section": "020-B6",
+      "text": "Manyetik meridyen ile o an pusulanın gösterdiği istikamet arasındaki açıya ne denir ?",
+      "options": [
+        "Deviasyon",
+        "Konveskiyon",
+        "Pusula sapması",
+        "Radyasyon",
+        "Varyasyon"
+      ]
+    },
+    {
+      "id": 52029,
+      "section": "020-B6",
+      "text": "Hangisi mıknatısın temel özelliklerinden biri değildir ?",
+      "options": [
+        "İki kutbu birleştiren hatta elektriksel gerçek eksen denilmektedir.",
+        "Aynı kutuplar birbirini iter, farklı kutuplar birbirini çeker.",
+        "İki mıknatısın çekme ve itme kuvveti aralarındaki mesafenin karesi ile ters orantılıdır.",
+        "Mıknatısın daima iki kutbu vardır.",
+        "Manyetik alan çizgilerinin görülmesi"
+      ]
+    },
+    {
+      "id": 52030,
+      "section": "020-B6",
+      "text": "Demir esaslı objelerin manyetik pusulaya yakınlığı aşağıdakilerden hangisine sebep olur?",
+      "options": [
+        "Manyetik istikamet göstergesinde önemli hatalara sebep olur.",
+        "Cihaz kutusu manyetik alan bozulmalarına karşı korumalı olduğundan manyetik pusulayı etkilemez.",
+        "Manyetik alan yoğunluğundaki değişimler sebebiyle manyetik pusulada küçük hatalara sebep olur.",
+        "Elektrik akımına bağlı sapmalara neden olur.",
+        "Demir esaslı obje kokpite alınmadan önce istikamet cayrosu manyetik pusula ile ayarlanmış ise uçuş operasyonunu etkilemez."
+      ]
+    },
+    {
+      "id": 52031,
+      "section": "020-B7",
+      "text": "Bir cismin sabit bir noktaya göre yerinin zamana karşı değişimine ne denir?",
+      "options": [
+        "Hareket ( devinim)",
+        "Durma ( stabilite )",
+        "Yer değiştirme",
+        "Zaman Döngüsü",
+        "Hareketlenme Algısı"
+      ]
+    },
+    {
+      "id": 52032,
+      "section": "020-B7",
+      "text": "Uçaklarda cayro ile çalışan göstergelerin, cayro dönüş RPM'i standart dönüş hızından daha düşük çalışması durumunda cayro tabanlı göstergelerde ne gibi hatalar meydana gelir?",
+      "options": [
+        "Cayro tabanlı göstergeler hatalı gösterir.",
+        "Cayro tabanlı göstergeler gecikmeli ve hatalı çalışır.",
+        "Sadece suni ufuk göstergesi etkilenir.",
+        "Cayro tabanlı göstergelere bir etkisi yoktur.",
+        "Cayro tabanlı göstergeler olması gereken değerlerde çalışır."
+      ]
+    },
+    {
+      "id": 52033,
+      "section": "020-B7",
+      "text": "Aşağıda verilenlerden hangisi cayroskobik prensiple çalışan uçuş aletlerindendir?",
+      "options": [
+        "Dönüş koordinatörü",
+        "EGT",
+        "Altimetre",
+        "Sürat saati",
+        "Varyometre"
+      ]
+    },
+    {
+      "id": 52034,
+      "section": "020-B7",
+      "text": "Hangisi cayroskopik bir alet değildir ?",
+      "options": [
+        "Tırmanış Alçalış göstergesi (Rate of Climb and descent)",
+        "Altimetre",
+        "İstikamet göstergesi (Directional Gyro Indicator-DGI)",
+        "Dönüş koordinatörüdür (Turn Coordinator).",
+        "Suni ufuk göstergesi (Artificial Horizon Indicator-AI)"
+      ]
+    },
+    {
+      "id": 52035,
+      "section": "020-B7",
+      "text": "Doğru istikamet bilgisi için, istikamet göstergesi neye göre düzeltilir?",
+      "options": [
+        "manyetik pusulaya göre",
+        "sürat göstergesi",
+        "manyetik kuzeye göre",
+        "suni ufuk",
+        "dönüş koordinatörü"
+      ]
+    },
+    {
+      "id": 52036,
+      "section": "020-B7",
+      "text": "Dönüş-kayış göstergesinde veya dönüş koordinatöründe, 360 derece dönüşün tamamlanma süresi kaç dakika veya saniye ile belirlenmektedir?",
+      "options": [
+        "2 dakika",
+        "15 saniye",
+        "1 dakika",
+        "30 saniye",
+        "5 dakika"
+      ]
+    },
+    {
+      "id": 52037,
+      "section": "020-B8",
+      "text": "Uçak veya yer istasyonu göndereceği veya alacağı bilgiyi önce uyduya gönderip uydunun bu bilgiyi ilgili istasyona göndermesi ile haberleşmenin sağlandığı sistem nedir?",
+      "options": [
+        "Satcom",
+        "Utkom",
+        "Uydu haberleşme sistemi",
+        "Atcom",
+        "Batcom"
+      ]
+    },
+    {
+      "id": 52038,
+      "section": "020-B8",
+      "text": "VHF ne demektir?",
+      "options": [
+        "Çok yüksek frekans (very high frequency-VHF)",
+        "Değişken yüksek frekans (variable high frequency-VHF)",
+        "Görsel yüksek frekans (visiual high frequency-VHF)",
+        "Çok yüksek uçuş (very high flight-VHF)",
+        "Hava haberleşmesinde kullanılan çok yüksek frekans bandı"
+      ]
+    },
+    {
+      "id": 52039,
+      "section": "020-B9",
+      "text": "Pilotun dikkati görsel olarak çeken, olağan dışı bir durumda arıza veya duruma göre master coution veya master warning lambaları ve onlarla beraber varsa arıza nevi bildirme ışık panel lambalarını devreye sokan uyarıcı sistemlerin geneline ne isim verilir?",
+      "options": [
+        "Görsel (Visual) Uyarı",
+        "Duyusal (Sensory) Uyarı",
+        "Kinetik Uyarı",
+        "İkaz ışıklı uyarı sistemi",
+        "İşitsel (Aural) Uyarı"
+      ]
+    },
+    {
+      "id": 52040,
+      "section": "020-B9",
+      "text": "Normal uçuş şartları dışında meydana gelebilecek veya gelmiş bir durumu ikaz ve ihbar ederek pilotun durumsal farkındalığını oluşturmak ve artırmak için yapılmış sistemler aşağıdakilerden hangisidir?",
+      "options": [
+        "Uçuş uyarı sistemleri",
+        "Uçuş saat sistemleri",
+        "Uçuş sistemleri",
+        "İkaz ve uyarı sistemleri",
+        "Avionik sistemler"
+      ]
+    }
+  ]
+}

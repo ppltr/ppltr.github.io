@@ -1,0 +1,404 @@
+{
+  "questions": {
+    "52001": {
+      "text": "Which of the following changes occurs in the air passing through the narrow section of the venturi throat inside the carburettor?",
+      "options": [
+        "Its ambient pressure decreases and its speed increases.",
+        "Its dynamic pressure decreases and its speed increases.",
+        "Its dynamic pressure increases and its speed decreases.",
+        "By reducing engine RPM and stopping the climb.",
+        "Its dynamic pressure and its ambient pressure increase."
+      ]
+    },
+    "52002": {
+      "text": "Which of the following prevents excessive oil pressure?",
+      "options": [
+        "Oil pressure relief valve",
+        "Vernier temperature gauge",
+        "Filter bypass valve",
+        "Non-return valve",
+        "Oil temperature regulator"
+      ]
+    },
+    "52003": {
+      "text": "Where does the high voltage required by the spark plugs come from?",
+      "options": [
+        "Magneto",
+        "Ignition coil",
+        "Dynamo",
+        "Generator",
+        "Alternator"
+      ]
+    },
+    "52004": {
+      "text": "What is the main function of the impulse coupling in an aircraft engine ignition system?",
+      "options": [
+        "To increase the magneto rotation speed during initial engine start so that the magneto can generate the electricity the spark plugs need.",
+        "It speeds up the capacitor discharge of the secondary winding, so that multiple sparks are sent to the cold fuel-air mixture.",
+        "It mechanically retards the ignition timing to make the initial start easier.",
+        "To advance the ignition in order to compensate for the slow burning in a cold engine.",
+        "It prevents premature ignition of the rich mixture during initial engine start by delaying the ignition."
+      ]
+    },
+    "52005": {
+      "text": "Where is the sensor that sends temperature information to the oil temperature gauge located?",
+      "options": [
+        "After the oil cooler, before the pressure pump",
+        "In the hot section of the engine",
+        "Before the oil cooler",
+        "At the oil filter outlet",
+        "In the engine oil sump"
+      ]
+    },
+    "52006": {
+      "text": "What is the function of the aircraft engine cowling and the air baffles?",
+      "options": [
+        "To draw air around the cylinder heads for cooling and to reduce drag.",
+        "To completely eliminate engine vibration.",
+        "To protect people from the running engine.",
+        "To ensure that the wing root leading edges receive smooth airflow at the ideal angle of attack.",
+        "To bring the danger under control in the event of an engine failure."
+      ]
+    },
+    "52007": {
+      "text": "In piston engines, detonation related to the air-fuel mixture is caused by which of the following?",
+      "options": [
+        "It is caused by a lean mixture and high cylinder head temperature.",
+        "It is caused by a rich mixture and low cylinder head temperature.",
+        "It occurs when the engine kicks back during engine starting.",
+        "As altitude increases, air density decreases and the mixture becomes richer.",
+        "It results from carbon build-up on the spark plugs after the engine has been run for a long time on an excessively rich mixture."
+      ]
+    },
+    "52008": {
+      "text": "Which of the following instruments is affected by hysteresis (lag) error?",
+      "options": [
+        "Altimeter",
+        "Vertical speed indicator (VSI)",
+        "Barometer",
+        "Direct reading compass",
+        "Tachometer"
+      ]
+    },
+    "52009": {
+      "text": "Which of the following is one of the basic flight instruments?",
+      "options": [
+        "Variometer",
+        "Load indicator",
+        "Battery indicator",
+        "Ammeter",
+        "CHT"
+      ]
+    },
+    "52010": {
+      "text": "The variometer (vertical speed indicator) works on the difference between which pressures?",
+      "options": [
+        "Instantaneous static / previous static",
+        "Instantaneous dynamic / previous dynamic",
+        "Instantaneous static / previous dynamic",
+        "Instantaneous dynamic / previous static",
+        "Static pressure difference"
+      ]
+    },
+    "52011": {
+      "text": "Which of the following is not an altimeter error?",
+      "options": [
+        "Orographic errors",
+        "Temperature error",
+        "Manoeuvre-induced error",
+        "Friction errors",
+        "Position (pressure) errors"
+      ]
+    },
+    "52012": {
+      "text": "If the static pressure system becomes blocked during descent, which of the following errors will the vertical speed indicator experience?",
+      "options": [
+        "After a short delay it shows a zero reading.",
+        "It continues to show the same value.",
+        "It shows a climb.",
+        "It shows a descent.",
+        "After some time it returns to zero."
+      ]
+    },
+    "52013": {
+      "text": "Which device senses total pressure, or static pressure and dynamic pressure?",
+      "options": [
+        "Pitot tube",
+        "Vacuum gauge",
+        "Airspeed indicator",
+        "Pitot-static system",
+        "Static port"
+      ]
+    },
+    "52014": {
+      "text": "What is the speed of an aircraft relative to the air mass it is in called?",
+      "options": [
+        "True Airspeed (TAS)",
+        "Indicated Airspeed (IAS)",
+        "Calibrated Airspeed (CAS)",
+        "True Air Speed (TAS)",
+        "Standard Airspeed (SAS)"
+      ]
+    },
+    "52015": {
+      "text": "Altimeters contain aneroid (liquid-free barometer) capsules. The capsule ………….... .",
+      "options": [
+        "has a very small amount of calibrated pressure inside and static pressure outside the capsule.",
+        "has no static pressure inside and has residual pressure outside.",
+        "has low pressure inside and is exposed to static pressure on the outside.",
+        "has dynamic pressure inside and static pressure outside.",
+        "has total pressure inside and static pressure outside."
+      ]
+    },
+    "52016": {
+      "text": "What is the tail (empennage) made up of?",
+      "options": [
+        "horizontal and vertical stabilisers and the flight control components attached to them",
+        "horizontal stabilisers and the flight control components attached to them",
+        "It consists only of horizontal stabilisers.",
+        "there are no horizontal and vertical stabilisers on the tail",
+        "vertical stabilisers and the flight control components attached to them"
+      ]
+    },
+    "52017": {
+      "text": "What is the rudder used for?",
+      "options": [
+        "Directional control (yaw) is provided by the rudder and controlled with the pedals.",
+        "Directional control is provided by the ailerons and controlled with the control column.",
+        "Directional control (roll) is provided by the rudder and controlled with the pedals.",
+        "Directional control (yaw) is provided by the rudder (elevator) and controlled with the pedals.",
+        "Directional control (pitch) is provided by the rudder and controlled with the pedals."
+      ]
+    },
+    "52018": {
+      "text": "In a light aircraft with a cantilever wing, the weight is carried by which of the following?",
+      "options": [
+        "By the main wing spar",
+        "By the metal outer skin",
+        "By the wing attachment pin",
+        "By the ribs inside the wing",
+        "By the internal wire bracing"
+      ]
+    },
+    "52019": {
+      "text": "Which method is used to prevent icing of the pitot tube during flight?",
+      "options": [
+        "Electric heaters",
+        "Pneumatic system",
+        "Ice detectors",
+        "Fluid spraying",
+        "Chemical de-icers"
+      ]
+    },
+    "52020": {
+      "text": "How does the windscreen ice protection system work?",
+      "options": [
+        "Electric heaters",
+        "By engine exhaust heat",
+        "Fluid spraying",
+        "Pneumatic system",
+        "By the effect of dynamic pressure"
+      ]
+    },
+    "52021": {
+      "text": "What is the name of the system that operates by the continuous application of heat or fluid to prevent ice from forming?",
+      "options": [
+        "Anti-icing",
+        "Ice detectors",
+        "De-icing",
+        "Ice prevention",
+        "Thermal detectors"
+      ]
+    },
+    "52022": {
+      "text": "Which of the following is one of the systems in the auxiliary landing gear of aeroplanes that absorbs the initial shock caused by the vertical component at the moment of ground contact?",
+      "options": [
+        "Hydro / oleo-pneumatic shock-absorbing struts.",
+        "Hydro shock-absorbing struts.",
+        "By the nose wheel tyre pressure.",
+        "Pneumatic shock-absorbing struts.",
+        "Mechanical spring shock absorbers."
+      ]
+    },
+    "52023": {
+      "text": "Which of the following is not a type of damage that can be observed on a tyre?",
+      "options": [
+        "Reflection",
+        "Discolouration",
+        "Cuts",
+        "Wear",
+        "Foreign matter"
+      ]
+    },
+    "52024": {
+      "text": "Tyre dust covers (gear cover caps) that are heavily contaminated with soil and grass;",
+      "options": [
+        "are designed to be of a volume that will not affect normal flight when dirty.",
+        "should be cleaned by the pilot at a suitable time and refitted.",
+        "should be replaced only during heavy maintenance.",
+        "should be removed before the next flight.",
+        "should be cleaned by an authorised technician during monthly maintenance."
+      ]
+    },
+    "52025": {
+      "text": "What is the name given to the wheeled assembly arranged so that the aircraft has effective mobility in every situation in which it is in contact with the ground?",
+      "options": [
+        "Landing gear",
+        "Elevator",
+        "Cockpit",
+        "To reduce the aerodynamic loads on the control surfaces.",
+        "Pitch"
+      ]
+    },
+    "52026": {
+      "text": "What is the angle between the true (geographic) meridian and the magnetic meridian in the horizontal plane called?",
+      "options": [
+        "Variation",
+        "Convection",
+        "Deflection angle",
+        "Radiation",
+        "Deviation"
+      ]
+    },
+    "52027": {
+      "text": "Which of the following is one of the general characteristics of compasses?",
+      "options": [
+        "It works under the magnetic influence of the Earth.",
+        "It cannot be used in night conditions.",
+        "Mercury is specifically used inside it so that the parts move more easily.",
+        "It is filled with liquid to reduce compass deviations.",
+        "Unless there is some other magnetic or mechanical influence, it points to the Earth's south magnetic point."
+      ]
+    },
+    "52028": {
+      "text": "What is the angle between the magnetic meridian and the direction indicated by the compass at that moment called?",
+      "options": [
+        "Deviation",
+        "Convection",
+        "Compass deflection",
+        "Radiation",
+        "Variation"
+      ]
+    },
+    "52029": {
+      "text": "Which of the following is not one of the basic properties of a magnet?",
+      "options": [
+        "The line joining the two poles is called the electrical true axis.",
+        "Like poles repel each other, unlike poles attract each other.",
+        "The attraction and repulsion force between two magnets is inversely proportional to the square of the distance between them.",
+        "A magnet always has two poles.",
+        "The visibility of magnetic field lines"
+      ]
+    },
+    "52030": {
+      "text": "Which of the following does the proximity of iron-based objects to the magnetic compass cause?",
+      "options": [
+        "It causes significant errors in the magnetic heading indicator.",
+        "Because the instrument case is protected against magnetic field disturbances, it does not affect the magnetic compass.",
+        "It causes small errors in the magnetic compass due to changes in magnetic field density.",
+        "It causes deviations related to electric current.",
+        "If the directional gyro was set using the magnetic compass before the iron-based object was brought into the cockpit, it does not affect flight operations."
+      ]
+    },
+    "52031": {
+      "text": "What is the change in position of a body relative to a fixed point over time called?",
+      "options": [
+        "Motion (movement)",
+        "Rest (stability)",
+        "Displacement",
+        "Time cycle",
+        "Perception of movement"
+      ]
+    },
+    "52032": {
+      "text": "In aircraft, if the gyro spin rate (RPM) of gyro-driven instruments is lower than the standard spin speed, what errors occur in gyro-based instruments?",
+      "options": [
+        "Gyro-based instruments give incorrect indications.",
+        "Gyro-based instruments operate with a lag and give incorrect indications.",
+        "Only the artificial horizon is affected.",
+        "Gyro-based instruments are not affected.",
+        "Gyro-based instruments operate at their correct values."
+      ]
+    },
+    "52033": {
+      "text": "Which of the following is a flight instrument that operates on the gyroscopic principle?",
+      "options": [
+        "Turn coordinator",
+        "EGT",
+        "Altimeter",
+        "Airspeed indicator",
+        "Variometer"
+      ]
+    },
+    "52034": {
+      "text": "Which of the following is not a gyroscopic instrument?",
+      "options": [
+        "Rate of Climb and Descent indicator",
+        "Altimeter",
+        "Heading indicator (Directional Gyro Indicator, DGI)",
+        "Turn Coordinator",
+        "Artificial Horizon Indicator (AI)"
+      ]
+    },
+    "52035": {
+      "text": "For correct heading information, the heading indicator is corrected by reference to which of the following?",
+      "options": [
+        "The magnetic compass",
+        "The airspeed indicator",
+        "Magnetic north",
+        "The artificial horizon",
+        "The turn coordinator"
+      ]
+    },
+    "52036": {
+      "text": "In a turn-and-slip indicator or turn coordinator, the time required to complete a 360-degree turn is defined as how many minutes or seconds?",
+      "options": [
+        "2 minutes",
+        "15 seconds",
+        "1 minute",
+        "30 seconds",
+        "5 minutes"
+      ]
+    },
+    "52037": {
+      "text": "What is the name of the system in which communication is achieved by an aircraft or ground station first sending the information it will send or receive to a satellite, and the satellite then forwarding this information to the relevant station?",
+      "options": [
+        "Satcom",
+        "Utcom",
+        "Satellite communication system",
+        "Atcom",
+        "Batcom"
+      ]
+    },
+    "52038": {
+      "text": "What does VHF stand for?",
+      "options": [
+        "Very high frequency (VHF)",
+        "Variable high frequency (VHF)",
+        "Visual high frequency (VHF)",
+        "Very high flight (VHF)",
+        "The very high frequency band used in aviation communication"
+      ]
+    },
+    "52039": {
+      "text": "What is the general name for the warning systems that visually attract the pilot's attention and, in an abnormal situation, depending on the failure or condition, activate the master caution or master warning lights and, where fitted, the panel lights indicating the type of failure?",
+      "options": [
+        "Visual warning",
+        "Sensory warning",
+        "Kinetic warning",
+        "Caution-light warning system",
+        "Aural warning"
+      ]
+    },
+    "52040": {
+      "text": "Which of the following refers to the systems designed to give caution and warning of a situation that may occur, or has occurred, outside normal flight conditions, in order to create and enhance the pilot's situational awareness?",
+      "options": [
+        "Flight warning systems",
+        "Flight clock systems",
+        "Flight systems",
+        "Caution and warning systems",
+        "Avionic systems"
+      ]
+    }
+  }
+}

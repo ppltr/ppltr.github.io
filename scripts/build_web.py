@@ -24,7 +24,7 @@ NOTES_DIR = ROOT / "notes"
 FIG_DIR = ROOT / "figures"
 FBCONF = ROOT / "web" / "firebase-config.json"
 NOTE_SUBJECT = {"073": "070"}
-NOTE_SKIP = {"annex-kart-promptlari.md"}    # üretim promptları, çalışma notu değil
+NOTE_SKIP = {"annex-kart-promptlari.md", "hava_hukuku_1_TASLAK.md"}    # üretim promptları, çalışma notu değil
 
 
 def export_notes() -> list:

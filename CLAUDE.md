@@ -188,6 +188,14 @@ O2), 15146 ↔ 15088 (sigara/CO — biri mekanizmayı, öbürü 210 katı soruyo
 (cevaplarda neden-sonuç ters), 54006 ↔ 15108 (760 mmHg / 1013,25 mb — birim farklı), 54007 ↔
 15124/15135 (ters yön: türden nedene).
 
+**040 dördüncü tur (2026-09-24, kullanıcı "242 çok değil mi, baştan bak"):** 242 görünür soru
+sıfırdan okundu, yeni tekrar çıkmadı; kalan yakınlıklar ters yön / farklı cevap (tanım
+gereği açık). 242'nin nedeni banka değil havuz: ATPL TV 040 havuzu 15043–15290 kesintisiz
+248 kimlik + 3, ilk içe aktarımdan beri aynı; öteki derslerle aynı ölçekte. PPL dışı konu
+yok — kaynak zaten PPL Turkey havuzu ve EASA PPL 040 müfredatı bütün bölümleri kapsıyor;
+ATPL kokan ama havuzda olan sorular: 15071/15087/15129 (35.000–40.000 ft eşikleri), 19920
+(Rasmussen), 15285 (antropometri), 15157 (JAR-FCL 3). Kullanıcı istemeden gizleme.
+
 **040-U: 14 üretilmiş soru (90401–90414, 2026-09-24).** Kullanıcı "mutlaka olmalı dediğin
 birkaç soru, çok ekleme" dedi; 23 adaydan 14 seçildi, ölçü ve elenenler dosyanın `selection`
 alanında. 8'e indirme teklifini kullanıcı reddetti: "14'ün hepsi kalsın" — budama. Hepsi bankada hiç sorulmayan bilgi: fizyolojik yetersizlik bölgesi, histotoksik
@@ -196,6 +204,17 @@ leans, jet-lag doğu, Selye'nin üç aşaması, steril kokpit, FORDEC'te R, Masl
 040 toplam: 208 ATPL TV + 20 ders notu + 14 üretilmiş = **242 görünür**. Elenen 9 adayı
 (difüzyon, FRC, trombosit, alkaloz, barodentalji, yaşlanma, SA dört unsur, CRM nesilleri,
 otomasyon tatmini) kullanıcı istemeden ekleme.
+
+**KDM ders notu soruları (2026-10-01).** SHGM KDM platformundan (010, 020, 030, 050, 060, 080)
+bölüm sonu soruları cevap anahtarıyla çekildi: `data/<ders>_ders_notu_sorulari.json` +
+`data/en/..._01.json`; kimlik bantları 51 (010), 52 (020), 53 (030), 55 (050; 55101 İngilizce
+kaynaklı, Türkçesi `data/tr/050_meteoroloji2_bolum_sonu_01.json`), 56 (060), 58 (080). Ders notları
+`notes/020|030|060|080-ders-notlari.md`; 050 için platformda ders metni yok (UO 137/138 yalnız
+sınav). Bu sorular ATPL TV ile aynı olduğunda **ders notu kanoniktir**, ATPL TV kopyası gizlenir
+(010, 020, 040, 050, 060, 080 iki turda, komşu + bölüm süpürmesi + cevap kümesi taramasıyla tarandı;
+her aday çift iki bağımsız hakemle doğrulandı). Bu çeviriler (İngilizce) ayrıca iki aşamalı
+gözden geçirildi. Haberleşme (090), prosedür (070), 030, 501, 502 kullanıcı "geçtim" dediği için
+tekrar taramasına alınmadı. Bilerek ayrı bırakılanlar: 14605↔52004 (sonuç/mekanizma farklı cevap).
 
 ## Çalışma uygulaması (`web/`)
 

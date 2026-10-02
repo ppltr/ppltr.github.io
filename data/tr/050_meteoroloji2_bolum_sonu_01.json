@@ -1,0 +1,13 @@
+{
+  "questions": {
+    "55101": {
+      "text": "Bulutların yağış bırakmasına neden olan süreçler ve/veya etkiler şunlardır:",
+      "options": [
+        "birleşme (koalesans) süreci ve Bergeron-Findeisen süreci.",
+        "adveksiyon etkisi ve birleşme (koalesans) süreci.",
+        "konveksiyon etkisi ve adveksiyon etkisi.",
+        "Bergeron-Findeisen süreci ve konveksiyon etkisi."
+      ]
+    }
+  }
+}

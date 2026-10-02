@@ -19,7 +19,6 @@
     "010-05": "Havaalanları",
     "010-06": "Hava Trafik Hizmetleri ve Yönetimi",
     "010-07": "Havacılık Emniyeti ve Güvenliği",
-
     "020-01": "Gövde Yükleri",
     "020-02": "Gövde ve Kuyruk Takımı",
     "020-03": "Kanatlar",
@@ -44,7 +43,6 @@
     "020-22": "Suni Ufuk",
     "020-23": "Dönüş Göstergesi",
     "020-24": "Diğer Göstergeler",
-
     "030-01": "Ağırlık ve Ağırlık Merkezi Sınırları",
     "030-02": "Terimler",
     "030-03": "Ağırlık Merkezi Hesapları",
@@ -55,7 +53,6 @@
     "030-08": "Alçalma ve Süzülüş",
     "030-09": "İniş",
     "030-10": "Uçuş Planlama",
-
     "040-01": "Solunum ve Dolaşım",
     "040-02": "İrtifanın Etkileri",
     "040-03": "Sağlık ve Hijyen",
@@ -65,7 +62,6 @@
     "040-07": "Kokpit İlişkileri ve İletişim",
     "040-08": "Stres Yönetimi ve Karar Verme",
     "040-09": "İnsan Hatası ve Kavramlar",
-
     "050-01": "Atmosfer",
     "050-02": "Basınç, Sıcaklık ve Yoğunluk",
     "050-03": "Altimetre Ayarları",
@@ -75,7 +71,6 @@
     "050-07": "Hava Kütleleri ve Cepheler",
     "050-08": "Uçuş Tehlikeleri",
     "050-09": "Meteorolojik Bilgi",
-
     "060-01": "Yeryüzü",
     "060-02": "Yön",
     "060-03": "Manyetizma",
@@ -90,13 +85,11 @@
     "060-12": "VOR/DME",
     "060-13": "RADAR",
     "060-14": "GPS",
-
     "070-01": "ICAO Ek 6, Bölüm II – Uçak İşletmeciliği",
     "070-02": "ICAO Ek 12 – Arama ve Kurtarma",
     "070-03": "ICAO Ek 13 – Uçak Kaza İncelemesi",
     "070-04": "Gürültü Azaltma",
     "070-05": "Özel Operasyonel Usuller ve Tehlikeler",
-
     "080-01": "Temeller, Yasalar ve Tanımlar",
     "080-02": "Taşıma Kuvveti",
     "080-03": "Sürükleme",
@@ -106,7 +99,6 @@
     "080-07": "Kontrol",
     "080-08": "Sınırlamalar",
     "080-09": "Uçuş Mekaniği",
-
     "090-01": "Telsiz Telefon ve Muhabere",
     "090-02": "Kalkış Usulleri",
     "090-03": "Seyir Usulleri",
@@ -114,6 +106,7 @@
     "090-05": "Muhabere Arızası",
     "090-06": "Tehlike ve Acele Durum Usulleri",
     "090-X": "Ek Sorular · EASA",
-    "090-Y": "Ek Sorular · JAA"
+    "090-Y": "Ek Sorular · JAA",
+    "050-B10": "Ders Notu · Yağış (Meteoroloji 2)"
   }
 }

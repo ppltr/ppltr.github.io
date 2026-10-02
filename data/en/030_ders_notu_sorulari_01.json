@@ -1,0 +1,204 @@
+{
+  "questions": {
+    "53001": {
+      "text": "In a given configuration, how should the aircraft be loaded for the stall speed to be highest?",
+      "options": [
+        "with maximum permitted mass and the CG furthest forward.",
+        "with low total mass and the CG furthest aft.",
+        "with low total mass and the CG furthest forward.",
+        "with maximum permitted mass and the CG furthest aft.",
+        "with maximum permitted mass and the CG outside the limits."
+      ]
+    },
+    "53002": {
+      "text": "Which of the following causes the position of the centre of gravity (CG) to shift within the limits?",
+      "options": [
+        "Fuel consumption",
+        "Rolling",
+        "Yawing",
+        "Pitching",
+        "Extension of the landing gear"
+      ]
+    },
+    "53003": {
+      "text": "Which of the following is equal to the distance of the centre of gravity from the datum?",
+      "options": [
+        "Total moment / total mass",
+        "Total moment index",
+        "Total mass x total moment",
+        "Total mass",
+        "Total moment"
+      ]
+    },
+    "53004": {
+      "text": "If the stall speed of the aircraft in the landing configuration is 50 knots, what will the Vref value be?",
+      "options": [
+        "65 knots",
+        "71 knots",
+        "75 knots",
+        "69 knots",
+        "73 knots"
+      ]
+    },
+    "53005": {
+      "text": "How will a higher aircraft mass affect the rotation speed and the take-off safety speed?",
+      "options": [
+        "Both speeds will increase.",
+        "The rotation speed will increase and the take-off safety speed will decrease.",
+        "The rotation speed will decrease and the take-off safety speed will increase.",
+        "The take-off distance will also increase.",
+        "Both speeds will decrease."
+      ]
+    },
+    "53006": {
+      "text": "Which performance variable is independent of runway slope?",
+      "options": [
+        "VR Rotation speed",
+        "Take-off distance",
+        "VS Stall speed",
+        "V1 Decision speed",
+        "Landing distance"
+      ]
+    },
+    "53007": {
+      "text": "Wing contamination caused by a small amount of ice accumulating on the wing:",
+      "options": [
+        "produces more drag, more weight and less lift.",
+        "causes an increase in weight and a decrease in drag.",
+        "reduces both the lift and drag coefficients.",
+        "increases both the lift and drag coefficients.",
+        "increases the stall speed by disturbing the airflow over the wing."
+      ]
+    },
+    "53008": {
+      "text": "Which of the following is not a factor affecting the landing distance?",
+      "options": [
+        "Engine RPM",
+        "Runway slope and the hydroplaning (water cushion) effect",
+        "The effect of wind",
+        "Brake system temperature",
+        "The effect of landing mass and landing speed"
+      ]
+    },
+    "53009": {
+      "text": "Take-off run:",
+      "options": [
+        "is the distance between brake release and the aircraft reaching VLOF speed.",
+        "is the distance between brake release and the aircraft becoming airborne.",
+        "is the distance between brake release and the start of the climb.",
+        "is the distance between brake release and the aircraft lifting off the runway and climbing to 400 ft.",
+        "is the distance between brake release and the aircraft lifting off the runway and climbing to 50 ft."
+      ]
+    },
+    "53010": {
+      "text": "What is the average rate of climb of an aircraft that can climb 5500 feet in 12 minutes?",
+      "options": [
+        "460 fpm",
+        "500 fpm",
+        "660 fpm",
+        "480 fpm",
+        "580 fpm"
+      ]
+    },
+    "53011": {
+      "text": "Which of the following shows how a cruising speed of 90 knots is entered in the relevant field of the ICAO flight plan?",
+      "options": [
+        "N0090",
+        "K090",
+        "N090",
+        "KN0090",
+        "KN090"
+      ]
+    },
+    "53012": {
+      "text": "If an aircraft can fly 189 NM in 30 minutes in still air, how far can it fly in 30 minutes in a 30 kt headwind?",
+      "options": [
+        "174 NM",
+        "203 NM",
+        "159 NM",
+        "193 NM",
+        "188 NM"
+      ]
+    },
+    "53013": {
+      "text": "What is the mass in kg of 50 litres of fuel with a specific gravity of 0.72?",
+      "options": [
+        "36 kg",
+        "54 kg",
+        "72 kg",
+        "63 kg",
+        "69.4 kg"
+      ]
+    },
+    "53014": {
+      "text": "An aircraft is flying between A and B. The distance between the two points is 600 NM. The fuel consumption is 10 US gallons per hour. If the aircraft has 90 US gal of fuel in total and the ground speed (GS) is 200 knots, how much fuel will remain?",
+      "options": [
+        "60 US-gal",
+        "40 US-gal",
+        "70 US-gal",
+        "30 US-gal",
+        "50 US-gal"
+      ]
+    },
+    "53015": {
+      "text": "How many kilograms is 151 litres of AVGAS? (Specific gravity 0.72)",
+      "options": [
+        "109 kg",
+        "151 kg",
+        "131 kg",
+        "289 kg",
+        "119 kg"
+      ]
+    },
+    "53016": {
+      "text": "What is the relationship between US-GAL and litres?",
+      "options": [
+        "1 US-GAL = 3.7853 litres.",
+        "1 litre = 4.55 US-GAL.",
+        "1 litre = 3.7853 US-GAL.",
+        "1 US-GAL = 4.55 litres.",
+        "1 Imperial GAL = 4.55 litres."
+      ]
+    },
+    "53017": {
+      "text": "If 15 litres of fuel are consumed in 34 minutes, what is the fuel consumption rate?",
+      "options": [
+        "26.4 litres/hour",
+        "68 litres/hour",
+        "12 litres/minute",
+        "24 litres/hour",
+        "30 litres/hour"
+      ]
+    },
+    "53018": {
+      "text": "What is the maximum time an aircraft with a fuel consumption of 25 gal/hour can remain airborne with 80 gallons of fuel?",
+      "options": [
+        "3 hours 12 minutes",
+        "2 hours 43 minutes",
+        "3 hours 5 minutes",
+        "2 hours 12 minutes",
+        "3 hours 45 minutes"
+      ]
+    },
+    "53019": {
+      "text": "If an aircraft with a fuel capacity of 72 gallons has a fuel consumption of 15 gal/hour, what is the maximum endurance?",
+      "options": [
+        "4 hours 48 minutes",
+        "4 hours 32 minutes",
+        "5 hours 12 minutes",
+        "3 hours 58 minutes",
+        "4 hours 54 minutes"
+      ]
+    },
+    "53020": {
+      "text": "Which of the following correctly defines the useful load?",
+      "options": [
+        "The sum of usable fuel and traffic load.",
+        "The difference between take-off mass and usable fuel.",
+        "The difference between take-off mass and traffic load.",
+        "The difference between maximum take-off mass and empty mass.",
+        "The usable fuel load."
+      ]
+    }
+  }
+}
