@@ -411,67 +411,114 @@ add("azami-menzil-guc", [14975], svg(470, 300,
 # ── 050 · Bulut biçimleri ────────────────────────────────────────────
 # 1 kümülüs · 2 altokümülüs lentikülaris · 3 altokümülüs kastellanus
 # 4 kümülonimbus kapillatus
-def _cloud_cumulus(x, y):
-    return (path(f"M{x - 46},{y} L{x + 46},{y}", 2.4) +
-            path(f"M{x - 46},{y} C{x - 52},{y - 26} {x - 34},{y - 34} {x - 24},{y - 30} "
-                 f"C{x - 22},{y - 52} {x + 4},{y - 56} {x + 10},{y - 36} "
-                 f"C{x + 26},{y - 44} {x + 48},{y - 26} {x + 46},{y} Z", 2.4))
+# Dört panel, 2×2: telefonda her bulut büyük görünsün diye tek sıra yerine ızgara.
+# Her panel bulutun AYIRT EDİCİ özelliğini öne çıkarır:
+#   kümülüs      — düz taban + kabarık (karnabahar) tepe
+#   lentikülaris — yumuşak, keskin uçlu mercek biçimi; üst üste dizilir
+#   kastellanus  — ortak ince tabandan yükselen, genişliğinden uzun kuleler
+#   kapillatus   — çok yüksek bulut; tepesi lifli/saçaklı (buz kristali), örslü
+_PW, _PH = 216, 178          # panel genişliği / yüksekliği
 
 
-def _cloud_lenticularis(x, y):
-    return (path(f"M{x - 54},{y} C{x - 30},{y - 26} {x + 30},{y - 26} {x + 54},{y} "
-                 f"C{x + 28},{y + 12} {x - 28},{y + 12} {x - 54},{y} Z", 2.4) +
-            path(f"M{x - 34},{y - 34} C{x - 18},{y - 48} {x + 18},{y - 48} {x + 34},{y - 34} "
-                 f"C{x + 16},{y - 26} {x - 16},{y - 26} {x - 34},{y - 34} Z", 2.2))
+def _cloud_cumulus(cx, by):
+    pts = [(cx - 72, by), (cx - 62, by - 32), (cx - 34, by - 56), (cx + 2, by - 70),
+           (cx + 36, by - 58), (cx + 62, by - 34), (cx + 74, by)]
+    rad = [18, 22, 24, 24, 22, 18]
+    d = f"M{pts[0][0]},{pts[0][1]} " + " ".join(
+        f"A{r},{r} 0 0 1 {x},{y}" for r, (x, y) in zip(rad, pts[1:])) + " Z"
+    return path(d, 2.6)
 
 
-def _cloud_castellanus(x, y):
-    body = path(f"M{x - 56},{y} L{x + 56},{y}", 2.4)
-    top = f"M{x - 56},{y} L{x - 56},{y - 8} "
-    for i in range(4):
-        bx = x - 56 + 28 * i
-        hh = (26, 36, 30, 22)[i]
-        top += (f"C{bx + 2},{y - 8 - hh} {bx + 26},{y - 8 - hh} {bx + 28},{y - 8} ")
-    top += f"L{x + 56},{y} Z"
-    return body + path(top, 2.4)
+def _lens(cx, y, w, h):
+    return path(f"M{cx - w / 2},{y} C{cx - w / 4},{y - h} {cx + w / 4},{y - h} {cx + w / 2},{y} "
+                f"C{cx + w / 4},{y + h * 0.5} {cx - w / 4},{y + h * 0.5} {cx - w / 2},{y} Z", 2.6)
 
 
-def _cloud_cb(x, y):
-    return (path(f"M{x - 44},{y} L{x + 44},{y}", 2.4) +
-            path(f"M{x - 44},{y} L{x - 30},{y - 60} L{x + 28},{y - 60} L{x + 44},{y} Z", 2.4) +
-            path(f"M{x - 30},{y - 60} C{x - 62},{y - 66} {x - 66},{y - 84} {x - 40},{y - 88} "
-                 f"L{x + 38},{y - 88} C{x + 66},{y - 84} {x + 60},{y - 66} {x + 28},{y - 60} Z",
-                 2.4) +
-            "".join(line(x - 34 + 12 * i, y - 88, x - 30 + 12 * i, y - 96, 1.2)
-                    for i in range(7)))
+def _cloud_lenticularis(cx, by):
+    return _lens(cx, by - 6, 150, 34) + _lens(cx + 6, by - 48, 108, 28) + _lens(cx - 4, by - 82, 70, 18)
 
 
-add("bulut-dortlu", [15525, 15526, 15527, 15528], svg(560, 220, "".join([
-    _cloud_cumulus(80, 170), txt(80, 202, "1", 16, weight="700"),
-    _cloud_lenticularis(220, 158), txt(220, 202, "2", 16, weight="700"),
-    _cloud_castellanus(360, 170), txt(360, 202, "3", 16, weight="700"),
-    _cloud_cb(500, 170), txt(500, 202, "4", 16, weight="700"),
+def _cloud_castellanus(cx, by):
+    band = by - 14                                   # ince ortak taban
+    h = [46, 66, 54, 72]                             # kule yükseklikleri (genişlikten uzun)
+    d = f"M{cx - 82},{by} L{cx - 82},{band} L{cx - 74},{band}"
+    for i, hh in enumerate(h):
+        xl = cx - 72 + 38 * i
+        xr = xl + 30
+        top = band - hh
+        d += f" L{xl},{top + 15} A15,15 0 0 1 {xr},{top + 15} L{xr},{band} L{xr + 8},{band}"
+    d += f" L{cx + 82},{band} L{cx + 82},{by} Z"
+    return path(d, 2.6)
+
+
+def _bez(p0, p1, p2, p3, t):
+    u = 1 - t
+    x = u**3 * p0[0] + 3 * u * u * t * p1[0] + 3 * u * t * t * p2[0] + t**3 * p3[0]
+    y = u**3 * p0[1] + 3 * u * u * t * p1[1] + 3 * u * t * t * p2[1] + t**3 * p3[1]
+    dx = 3 * u * u * (p1[0] - p0[0]) + 6 * u * t * (p2[0] - p1[0]) + 3 * t * t * (p3[0] - p2[0])
+    dy = 3 * u * u * (p1[1] - p0[1]) + 6 * u * t * (p2[1] - p1[1]) + 3 * t * t * (p3[1] - p2[1])
+    return x, y, dx, dy
+
+
+def _cloud_cb(cx, by):
+    def P(x, y): return (cx + x, by + y)
+    # üst kenar üç Bézier parçası: sol örs, orta kubbe (yükselen akım), sağ örs
+    top = [(P(-90, -104), P(-74, -106), P(-48, -109), P(-26, -112)),
+           (P(-26, -112), P(-16, -127), P(16, -127), P(26, -112)),
+           (P(26, -112), P(48, -109), P(74, -106), P(90, -104))]
+    # gövde yukarı doğru genişler (kümülüs gibi kabarır), ince örs plakasına bağlanır
+    d = (f"M{cx - 28},{by} C{cx - 30},{by - 14} {cx - 32},{by - 30} {cx - 33},{by - 44} "
+         f"A22,22 0 0 1 {cx - 36},{by - 72} A20,20 0 0 1 {cx - 34},{by - 98} "
+         f"C{cx - 52},{by - 99} {cx - 74},{by - 101} {cx - 90},{by - 104} ")
+    d += " ".join(f"C{b[1][0]:.1f},{b[1][1]:.1f} {b[2][0]:.1f},{b[2][1]:.1f} {b[3][0]:.1f},{b[3][1]:.1f}"
+                  for b in top)
+    d += (f" C{cx + 74},{by - 101} {cx + 52},{by - 99} {cx + 34},{by - 98} "
+          f"A20,20 0 0 1 {cx + 36},{by - 72} A22,22 0 0 1 {cx + 33},{by - 44} "
+          f"C{cx + 32},{by - 30} {cx + 30},{by - 14} {cx + 28},{by} Z")
+    out = path(d, 2.6)
+    # lifli (kapillatus) tepe: üst kenar boyunca dışa bakan kısa tüycükler
+    for seg, ts in zip(top, ([.25, .5, .75], [.3, .5, .7], [.25, .5, .75])):
+        for t in ts:
+            x, y, dx, dy = _bez(*seg, t)
+            n = math.hypot(dx, dy) or 1
+            nx, ny = dy / n, -dx / n                 # dışa (yukarı) normal
+            out += line(x, y, x + nx * 12 + 2.5, y + ny * 12, 1.8)
+    return out
+
+
+def _clouds_panel(n, ox, oy, cloud):
+    cx, by = ox + _PW / 2, oy + _PH - 22
+    return (f'<rect x="{ox + 6}" y="{oy + 6}" width="{_PW - 12}" height="{_PH - 12}" rx="7" '
+            f'stroke="{GREY}" stroke-width="2"/>' +
+            txt(ox + 24, oy + 30, str(n), 20, weight="700") + cloud(cx, by))
+
+
+add("bulut-dortlu", [15525, 15526, 15527, 15528], svg(2 * _PW, 2 * _PH, "".join([
+    _clouds_panel(1, 0, 0, _cloud_cumulus),
+    _clouds_panel(2, _PW, 0, _cloud_lenticularis),
+    _clouds_panel(3, 0, _PH, _cloud_castellanus),
+    _clouds_panel(4, _PW, _PH, _cloud_cb),
 ])))
 
 
 # ── 050 · 15571 / 20939 Oklüzyon cephesi ─────────────────────────────
 # Aynı taraftaki üçgen + yarım daire dizisi = oklüzyon.
 def _front_line():
-    y = 110
-    out = line(50, y, 430, y, 3)
-    x = 82
+    y = 70
+    out = line(22, y, 438, y, 3.2)
+    x = 62
     flip = True
-    while x < 410:
+    while x < 420:
         if flip:
-            out += poly([(x - 15, y), (x + 15, y), (x, y - 26)], 2, fill=INK)
+            out += poly([(x - 18, y), (x + 18, y), (x, y - 36)], 2, fill=INK)
         else:
-            out += path(f"M{x - 15},{y} A15,15 0 0 1 {x + 15},{y} Z", 2, fill=INK)
-        x += 62
+            out += path(f"M{x - 18},{y} A18,18 0 0 1 {x + 18},{y} Z", 2, fill=INK)
+        x += 66
         flip = not flip
     return out
 
 
-add("cephe-okluzyon", [15571, 20939], svg(480, 190, _front_line()))
+add("cephe-okluzyon", [15571, 20939], svg(460, 96, _front_line()))
 
 
 # ── 050 · 15611 Rüzgâr oku: 270 dereceden 65 kt ──────────────────────
@@ -479,22 +526,22 @@ add("cephe-okluzyon", [15571, 20939], svg(480, 190, _front_line()))
 # Kuzey yarım kürede tüyler kuzey (yukarı) tarafa çizilir.
 # 65 kt = 1 flama (50) + 1 tam tüy (10) + 1 yarım tüy (5)
 def _wind_barb():
-    sx, sy = 340, 158
-    out = circle(sx, sy, 7, 2.6)
-    out += line(sx - 7, sy, 120, sy, 2.6)
+    sx, sy = 270, 108
+    out = circle(sx, sy, 8, 3)
+    out += line(sx - 8, sy, 40, sy, 3)
     # flama (50 kt) — en dış uçta, dolu üçgen
-    out += poly([(120, sy), (120, sy - 40), (146, sy)], 2, fill=INK)
+    out += poly([(40, sy), (40, sy - 44), (68, sy)], 2, fill=INK)
     # tam tüy (10 kt)
-    out += line(170, sy, 152, sy - 36, 2.8)
+    out += line(96, sy, 78, sy - 40, 3.2)
     # yarım tüy (5 kt)
-    out += line(196, sy, 187, sy - 18, 2.8)
+    out += line(124, sy, 115, sy - 20, 3.2)
     # kuzey oku
-    out += arrow(418, 126, 418, 62, w=2.2, head=12)
-    out += txt(418, 50, "N", 15, weight="700")
+    out += arrow(382, 108, 382, 44, w=2.6, head=13)
+    out += txt(382, 30, "N", 17, weight="700")
     return out
 
 
-add("ruzgar-oku-65kt-270", [15611], svg(470, 210, _wind_barb()))
+add("ruzgar-oku-65kt-270", [15611], svg(420, 140, _wind_barb()))
 
 
 # ── 080 · 16126 Kanat profilinde V1 ve V2 ────────────────────────────

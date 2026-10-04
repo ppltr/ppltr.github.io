@@ -515,6 +515,14 @@ olmayan soru kalırsa betik hata verir, `build_web.py` de uyarı basar.
 hiçbir soru gizlenmiyor. Eski kayıtlardaki `hideFig` `loadProfile`'da siliniyor. Çizimi
 olmayan bir soru eklenirse kartta "şekil gerekli" rozeti çıkar — o zaman çizimini üret.
 
+**050 (Meteoroloji) şekilli soruları (2026-10-04).** 411 sorunun hepsinin metni tek tek tarandı;
+şekil gerektiren yalnız 15525–15528 (bulut biçimleri), 15571 / 20939 (oklüzyon cephesi, 20939
+gizli kopya) ve 15611 (rüzgâr oku, 65 kt 270°) — hepsinin çizimi var, başka şekilsiz soru
+yok. Bulut çizimi 2×2 panel (telefonda her bulut büyük görünsün) ve her panel bulutun ayırt
+edici özelliğini taşır; sıra cevap anahtarıyla aynı: 1 kümülüs (kabarık tepe), 2 altokümülüs
+lentikülaris (üst üste mercek), 3 altokümülüs kastellanus (ortak tabandan kuleler), 4 kümülonimbus
+kapillatus (örs + lifli tepe). Sırayı değiştirme: 15525–15528'in doğru şıkları bu numaralara bağlı.
+
 ## Soru üretimi
 
 Kullanıcı ders notu verdiğinde iş akışı:
