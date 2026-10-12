@@ -1,0 +1,129 @@
+{
+ "_aciklama": "Kullanıcının Air Law sınavında karşılaştığını hatırladığı soru konuları (2026-10-12). yildiz=true olanları kullanıcı sınavla eşleştirdi (kesin). Diğerleri 'benzer aday / hatırlanan konu': kesin metin bulunmadıkça aday olarak işaretlenir. Hiçbiri resmî SHGM çıkmış sorusu diye sunulmaz.",
+ "ipuclari": [
+  {
+   "id": "kabotaj",
+   "yildiz": false,
+   "konu": "Cabotage: devletin iç hat taşımacılığını kendi işletmecileriyle sınırlandırma hakkı",
+   "ipucu_kaynaklar": [
+    "pplqbankal soru 16",
+    "quizvds"
+   ],
+   "soru_idleri": [
+    61078
+   ],
+   "durum": "benzer_aday"
+  },
+  {
+   "id": "icao-chicago",
+   "yildiz": false,
+   "konu": "ICAO / Chicago Convention ile kuruluş (kesin soru hatırlanmıyor)",
+   "ipucu_kaynaklar": [
+    "furious",
+    "dauntless"
+   ],
+   "soru_idleri": [
+    61072
+   ],
+   "durum": "benzer_aday"
+  },
+  {
+   "id": "lisans-yetkileri",
+   "yildiz": false,
+   "konu": "PPL/CPL/ATPL ayrıcalıkları: ticari taşımacılık, kaptanlık, yardımcı pilotluk (tam soru belirsiz)",
+   "ipucu_kaynaklar": [],
+   "soru_idleri": [
+    61080,
+    61079,
+    27032,
+    14303
+   ],
+   "durum": "benzer_aday"
+  },
+  {
+   "id": "transition-tirmanis",
+   "yildiz": false,
+   "konu": "Tırmanışta/alçalışta altitude–flight level geçişi (yalnız 'aradaki katmanın adı' değil)",
+   "ipucu_kaynaklar": [
+    "linx-airlaw soru 117",
+    "ppla-qb-scribd"
+   ],
+   "soru_idleri": [
+    61060,
+    61035
+   ],
+   "durum": "benzer_aday"
+  },
+  {
+   "id": "tl-kim-belirler",
+   "yildiz": true,
+   "konu": "Transition Level'ı kim belirler? Doğru: Approach Control Office or the Aerodrome Control Tower (kullanıcı 'ATC Authority' demişti)",
+   "ipucu_kaynaklar": [
+    "oxford010 bölüm 10 soru 2",
+    "caab-airlaw soru 174"
+   ],
+   "soru_idleri": [
+    61002
+   ],
+   "durum": "kullanici_dogruladi_yeniden_yazim"
+  },
+  {
+   "id": "aip-bolumleri",
+   "yildiz": false,
+   "konu": "AIP bölümleri: seçeneklerde General – En-route – Aerodromes açılımları",
+   "ipucu_kaynaklar": [
+    "ppla-qb-scribd"
+   ],
+   "soru_idleri": [
+    14384
+   ],
+   "durum": "benzer_aday"
+  },
+  {
+   "id": "aerodrome-code3",
+   "yildiz": true,
+   "konu": "Aerodrome (Reference) Code 3: referans saha uzunluğu 1.200 m dâhil, 1.800 m hariç",
+   "ipucu_kaynaklar": [
+    "topicwise200q soru 185"
+   ],
+   "soru_idleri": [
+    61001
+   ],
+   "durum": "kullanici_dogruladi_yeniden_yazim"
+  },
+  {
+   "id": "ditching",
+   "yildiz": false,
+   "konu": "Ditching: suya bilinçli acil inişin tanımı",
+   "ipucu_kaynaklar": [],
+   "soru_idleri": [
+    61081
+   ],
+   "durum": "benzer_aday"
+  },
+  {
+   "id": "tora-tanimi",
+   "yildiz": true,
+   "konu": "TORA tanımı: soru kökünde TORA parantez içinde; cevap kalkış koşusuna uygun, kullanılabilir ilan edilmiş pist uzunluğu",
+   "ipucu_kaynaklar": [
+    "pplhavuz soru 48",
+    "lahmacun soru 390"
+   ],
+   "soru_idleri": [
+    14909
+   ],
+   "durum": "kullanici_dogruladi_mevcut_esdeger"
+  },
+  {
+   "id": "manyetik-rota-fl",
+   "yildiz": false,
+   "konu": "Manyetik rota → Flight Level: seçenekler FL ile başlıyor, hiçbiri 5 ile bitmiyor; IFR/non-RVSM'ye benziyor (146° VFR → FL75 sorusu DEĞİL)",
+   "ipucu_kaynaklar": [
+    "pc2-010 soru 4"
+   ],
+   "soru_idleri": [],
+   "durum": "kesin_soru_bulunamadi",
+   "not": "Derece ve koşullar belirsiz. 010-PC2 kullanım kısıtından dolayı taranmadı; 146° VFR → FL75 sorusuyla eşleştirilmedi. IFR/RVSM ayırma kuralları bulunan adaylar kesin sınav sorusu sayılmadı."
+  }
+ ]
+}

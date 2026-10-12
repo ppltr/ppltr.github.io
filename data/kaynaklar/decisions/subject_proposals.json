@@ -1,0 +1,1600 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-12",
+  "purpose": "Screened proposal counts for other subjects only. No bank questions or history changed. new is a proposed distinct type awaiting EN/TR writing and current technical verification, not an active addition.",
+  "sources": [
+    {
+      "id": "x-tc-tp13014",
+      "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+      "permission_url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+      "permission": "Explicit personal/public noncommercial reproduction permission with accurate attribution and no official/endorsement claim; commercial permission separate.",
+      "scanned": 80,
+      "coverage": "All sample questions21-100 and the answer-key page. Figures/maps not fully visually checked. 2006 Toronto VNC not supplied.",
+      "version": "Fourth edition2008, TP13014E05/2009"
+    },
+    {
+      "id": "x-sonyaklasma",
+      "scanned": 50,
+      "coverage": "Previously extracted public10-question sample per requested subject; authenticated bank not accessed. Current AirLaw page HTTP200; full-bank counts not inferred.",
+      "permission": "AI answer citations allowed in llms.txt are not permission to bulk republish the sample bank. Novel wording held. Public sample references only."
+    }
+  ],
+  "counts_by_subject": {
+    "020": {
+      "new": 5,
+      "existing": 15,
+      "review": 1
+    },
+    "030": {
+      "existing": 14,
+      "review": 1,
+      "new": 1
+    },
+    "050": {
+      "existing": 25,
+      "new": 10,
+      "review": 4,
+      "out_of_scope": 2
+    },
+    "060": {
+      "existing": 13,
+      "review": 10
+    },
+    "080": {
+      "review": 3,
+      "existing": 11,
+      "new": 2
+    }
+  },
+  "screened_proposal_total": 18,
+  "active_additions": 0,
+  "bounded_coverage": "130 actual candidates, not a projection of whole source banks; 13 TC candidates outside requested5subjects.",
+  "dispositions": [
+    {
+      "source": "x-tc-tp13014",
+      "no": "21",
+      "page": "8",
+      "key": "x-tc-tp13014:21",
+      "subject": "080",
+      "status": "review",
+      "reason": "Coordinated-turn stall/spin wording needs aerodynamic review; source may suggest deterministic direction without yaw/asymmetry."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "22",
+      "page": "8",
+      "key": "x-tc-tp13014:22",
+      "subject": "080",
+      "status": "review",
+      "reason": "Old broad Va definition lacks current limitations: a single axis/input, current mass and repeated/reversed controls. Hold for precise independent adaptation."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "23",
+      "page": "8",
+      "key": "x-tc-tp13014:23",
+      "subject": "080",
+      "status": "existing",
+      "bank_id": 16199,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "24",
+      "page": "8",
+      "key": "x-tc-tp13014:24",
+      "subject": "080",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "IAS stall speed versus altitude at constant mass/configuration/load factor",
+      "topic_tr": "Aynı kütle ve konfigürasyonda irtifa değişiminin IAS stall hızına etkisi",
+      "answer": "does not change with altitude",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 24, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 16200,
+      "distinctness_evidence": "Existing stall-factor list does not ask whether IAS stall speed changes solely with altitude."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "25",
+      "page": "8",
+      "key": "x-tc-tp13014:25",
+      "subject": "080",
+      "status": "existing",
+      "bank_id": 16201,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "26",
+      "page": "9",
+      "key": "x-tc-tp13014:26",
+      "subject": "020",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Low-octane fuel and detonation in a high-compression engine",
+      "topic_tr": "Yüksek sıkıştırmalı motorda düşük oktanlı yakıtın detonasyon riski",
+      "answer": "detonation",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 26, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 14632,
+      "distinctness_evidence": "Existing weak-mixture/high-temperature detonation condition differs from low-octane fuel in a high-compression engine."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "27",
+      "page": "9",
+      "key": "x-tc-tp13014:27",
+      "subject": "020",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "One magneto fails in dual ignition",
+      "topic_tr": "Çift ateşlemede tek manyeto arızasının güç üzerindeki etkisi",
+      "answer": "slight power loss",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 27, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 14597,
+      "distinctness_evidence": "Existing broken magneto grounding wire prevents shutdown; genuine one-magneto failure in dual ignition has a different effect."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "28",
+      "page": "9",
+      "key": "x-tc-tp13014:28",
+      "subject": "020",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Carburetor heat: pressure and mixture effects",
+      "topic_tr": "Karbüratör ısıtmasının manifold basıncı ve karışıma birlikte etkisi",
+      "answer": "decreases manifold pressure and enriches mixture",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 28, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 14589,
+      "distinctness_evidence": "Existing question tests richer mixture only; new type additionally tests manifold-pressure decrease."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "29",
+      "page": "9",
+      "key": "x-tc-tp13014:29",
+      "subject": "020",
+      "status": "existing",
+      "bank_id": 14584,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "30",
+      "page": "9",
+      "key": "x-tc-tp13014:30",
+      "subject": "020",
+      "status": "existing",
+      "bank_id": 14575,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "31",
+      "page": "9",
+      "key": "x-tc-tp13014:31",
+      "subject": "020",
+      "status": "existing",
+      "bank_id": 14628,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "32",
+      "page": "9",
+      "key": "x-tc-tp13014:32",
+      "subject": "080",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Ground effect reduces induced drag",
+      "topic_tr": "Yer etkisinin indüklenmiş sürüklemeyi azaltma mekanizması",
+      "answer": "decrease in induced drag",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 32, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 16168,
+      "distinctness_evidence": "Existing bank asks lift/total-drag direction; new type asks induced-drag mechanism."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "33",
+      "page": "10",
+      "key": "x-tc-tp13014:33",
+      "subject": "020",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Standard-pressure altimeter true altitude requires standard conditions",
+      "topic_tr": "Standart basınç ayarlı altimetrede gerçek irtifa için gereken atmosfer koşulu",
+      "answer": "standard atmosphere conditions",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 33, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 14721,
+      "distinctness_evidence": "Existing cold-air altimeter error differs from required combined standard conditions for true altitude at standard pressure."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "34",
+      "page": "10",
+      "key": "x-tc-tp13014:34",
+      "subject": "020",
+      "status": "existing",
+      "reason": "Independent semantic review found the same tested rule/calculation in the bank. Changed units or numerical context alone are not a new type.",
+      "topic": "Altimeter setting entered one inch too high",
+      "topic_tr": "Altimetre alt ölçeğinin yanlışlıkla yüksek ayarlanması ve okuma hatası",
+      "answer": "1000 ft too high",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 34, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "bank_id": 15408
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "35",
+      "page": "10",
+      "key": "x-tc-tp13014:35",
+      "subject": "040",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "36",
+      "page": "10",
+      "key": "x-tc-tp13014:36",
+      "subject": "040",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "37",
+      "page": "10",
+      "key": "x-tc-tp13014:37",
+      "subject": "040",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "38",
+      "page": "10",
+      "key": "x-tc-tp13014:38",
+      "subject": "040",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "39",
+      "page": "10",
+      "key": "x-tc-tp13014:39",
+      "subject": "040",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "40",
+      "page": "11",
+      "key": "x-tc-tp13014:40",
+      "subject": "070",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "41",
+      "page": "11",
+      "key": "x-tc-tp13014:41",
+      "subject": "070",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "42",
+      "page": "11",
+      "key": "x-tc-tp13014:42",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15593,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "43",
+      "page": "11",
+      "key": "x-tc-tp13014:43",
+      "subject": "020",
+      "status": "existing",
+      "bank_id": 14739,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "44",
+      "page": "11",
+      "key": "x-tc-tp13014:44",
+      "subject": "020",
+      "status": "review",
+      "reason": "Required turn-coordinator diagram has not been visually checked; do not activate a text-only item."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "45",
+      "page": "11",
+      "key": "x-tc-tp13014:45",
+      "subject": "020",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Compass deceleration error greatest east/west",
+      "topic_tr": "Manyetik pusula yavaşlama hatasının doğu-batı başlarında en büyük olması",
+      "answer": "east and west",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 45, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 14753,
+      "distinctness_evidence": "Existing southerly-heading deceleration gives no apparent turn; east/west headings produce the maximum error."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "46",
+      "page": "12",
+      "key": "x-tc-tp13014:46",
+      "subject": "030",
+      "status": "existing",
+      "reason": "Independent semantic review found the same tested rule/calculation in the bank. Changed units or numerical context alone are not a new type.",
+      "topic": "Pressure altitude from elevation and QNH",
+      "topic_tr": "Meydan yüksekliği ve QNH ile basınç irtifası hesabı",
+      "answer": "5000 ft",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 46, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "bank_id": 15410
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "47",
+      "page": "12",
+      "key": "x-tc-tp13014:47",
+      "subject": "030",
+      "status": "existing",
+      "bank_id": 15381,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "48",
+      "page": "12",
+      "key": "x-tc-tp13014:48",
+      "subject": "030",
+      "status": "existing",
+      "bank_id": 15837,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "49",
+      "page": "12",
+      "key": "x-tc-tp13014:49",
+      "subject": "030",
+      "status": "review",
+      "reason": "Requires original take-off performance table and grass/headwind corrections, diagram not visually checked."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "50",
+      "page": "13",
+      "key": "x-tc-tp13014:50",
+      "subject": "030",
+      "status": "existing",
+      "bank_id": 14882,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "51",
+      "page": "13",
+      "key": "x-tc-tp13014:51",
+      "subject": "050",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Relative humidity definition as fraction of saturation",
+      "topic_tr": "Bağıl nemin mevcut/saturasyon nemi oranı olarak tanımı",
+      "answer": "actual water-vapour amount relative to saturation at that temperature",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 51, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 15468,
+      "distinctness_evidence": "Existing humidity-dependence question does not test the actual/saturation ratio definition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "52",
+      "page": "13",
+      "key": "x-tc-tp13014:52",
+      "subject": "050",
+      "status": "existing",
+      "reason": "Independent semantic review found the same tested rule/calculation in the bank. Changed units or numerical context alone are not a new type.",
+      "topic": "Steady rain and nimbostratus",
+      "topic_tr": "Sürekli yağış ile nimbostratus ilişkisi",
+      "answer": "nimbostratus",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 52, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "bank_id": 15536
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "53",
+      "page": "13",
+      "key": "x-tc-tp13014:53",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15465,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "54",
+      "page": "13",
+      "key": "x-tc-tp13014:54",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15337,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "55",
+      "page": "14",
+      "key": "x-tc-tp13014:55",
+      "subject": "050",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Radiation fog mechanism via ground cooling",
+      "topic_tr": "Radyasyon sisinin geceleri yerden soğuma ile oluşma mekanizması",
+      "answer": "ground cools air in contact with it at night",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 55, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 15552,
+      "distinctness_evidence": "Existing favorable humidity/wind/sky conditions differ from the cooling mechanism that forms radiation fog."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "56",
+      "page": "14",
+      "key": "x-tc-tp13014:56",
+      "subject": "050",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Northern-hemisphere circulation around high and low pressure",
+      "topic_tr": "Kuzey yarımkürede yüksek ve alçak basınç çevresindeki dolaşımın birlikte ayırt edilmesi",
+      "answer": "clockwise around high, counterclockwise around low",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 56, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 15436,
+      "distinctness_evidence": "Existing low-pressure circulation does not test clockwise high-pressure circulation or the high/low contrast."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "57",
+      "page": "14",
+      "key": "x-tc-tp13014:57",
+      "subject": "050",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Friction: wind change when descending to surface",
+      "topic_tr": "Yüzeye alçalırken sürtünme nedeniyle rüzgârın yön ve hız değişimi",
+      "answer": "backs and decreases in the northern hemisphere",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 57, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 15437,
+      "distinctness_evidence": "Existing backing terminology does not test combined direction/speed change on descending into surface friction."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "58",
+      "page": "14",
+      "key": "x-tc-tp13014:58",
+      "subject": "050",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Diurnal surface wind change",
+      "topic_tr": "Gündüz karışımıyla yüzey rüzgârının yön ve hız değişimi",
+      "answer": "normally veers and increases in the northern hemisphere",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 58, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 15343,
+      "distinctness_evidence": "Existing diurnal temperature variation question does not test daylight surface-wind mixing and combined direction/speed change."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "59",
+      "page": "14",
+      "key": "x-tc-tp13014:59",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15322,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "60",
+      "page": "14",
+      "key": "x-tc-tp13014:60",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15574,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "61",
+      "page": "14",
+      "key": "x-tc-tp13014:61",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15344,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "62",
+      "page": "15",
+      "key": "x-tc-tp13014:62",
+      "subject": "050",
+      "status": "existing",
+      "reason": "The cooled-from-below stability and fog/layer-cloud outcomes are already covered by the existing questions in combination; no new rule introduced.",
+      "topic": "Weather associated with air cooled from below",
+      "topic_tr": "Alttan soğuyan hava kütlesinin tipik görüş/bulut özellikleri",
+      "answer": "fog, poor visibility, layer cloud",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 62, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "bank_id": 15337,
+      "related_bank_ids": [
+        15336,
+        15503
+      ]
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "63",
+      "page": "15",
+      "key": "x-tc-tp13014:63",
+      "subject": "050",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Front as transition between air masses",
+      "topic_tr": "Cephenin iki hava kütlesi arasındaki geçiş bölgesi olarak tanımı",
+      "answer": "narrow transition zone between air masses",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 63, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 15565,
+      "distinctness_evidence": "Existing cold-front density/lifting questions do not test the definition of the boundary between air masses."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "64",
+      "page": "15",
+      "key": "x-tc-tp13014:64",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15565,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "65",
+      "page": "15",
+      "key": "x-tc-tp13014:65",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15560,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "66",
+      "page": "15",
+      "key": "x-tc-tp13014:66",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15636,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "67",
+      "page": "15",
+      "key": "x-tc-tp13014:67",
+      "subject": "050",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Altimeter error moving low to high pressure without reset",
+      "topic_tr": "Basınç ayarı güncellenmeden alçaktan yüksek basınca geçişte altimetre hatası",
+      "answer": "indicates too low",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 67, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 15413,
+      "distinctness_evidence": "Existing high-to-low-pressure effect is the reverse condition and opposite indication error; preserved separately."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "68",
+      "page": "15",
+      "key": "x-tc-tp13014:68",
+      "subject": "050",
+      "status": "review",
+      "reason": "Canadian FD table encoding/interpolation; regional format and prerequisites need review."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "69",
+      "page": "16",
+      "key": "x-tc-tp13014:69",
+      "subject": "050",
+      "status": "out_of_scope",
+      "reason": "Canadian GFA publication threshold is jurisdiction/product specific, not a Turkish PPL question type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "70",
+      "page": "16",
+      "key": "x-tc-tp13014:70",
+      "subject": "050",
+      "status": "review",
+      "reason": "Requires original GFA weather charts and image-based displacement measurement, not checked."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "71",
+      "page": "16",
+      "key": "x-tc-tp13014:71",
+      "subject": "050",
+      "status": "out_of_scope",
+      "reason": "Canadian GFA issue/outlook durations are regional product rules."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "72",
+      "page": "16",
+      "key": "x-tc-tp13014:72",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15665,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "73",
+      "page": "16",
+      "key": "x-tc-tp13014:73",
+      "subject": "050",
+      "status": "review",
+      "reason": "P6SM visibility unit/Canadian TAF context should be reviewed for Turkish PPL applicability."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "74",
+      "page": "16",
+      "key": "x-tc-tp13014:74",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15655,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "75",
+      "page": "17",
+      "key": "x-tc-tp13014:75",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15658,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "76",
+      "page": "17",
+      "key": "x-tc-tp13014:76",
+      "subject": "050",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Compare observed wind with contemporaneous TAF",
+      "topic_tr": "Eş zamanlı METAR rüzgârını TAF tahminiyle karşılaştırma",
+      "answer": "observed winds weaker than forecast",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 76, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 15658,
+      "distinctness_evidence": "Existing single TAF decoding does not test comparing the forecast wind against a METAR observation."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "77",
+      "page": "17",
+      "key": "x-tc-tp13014:77",
+      "subject": "050",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "METAR ceiling: ignore scattered layer, use broken layer",
+      "topic_tr": "METAR tavanı seçerken SCT katmanını dışlayıp BKN tabanını kullanma",
+      "answer": "10000 ft AGL in the supplied report",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 77, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 15643,
+      "distinctness_evidence": "Existing multi-layer cloud decoding does not explicitly select ceiling while excluding a lower scattered layer."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "78",
+      "page": "17",
+      "key": "x-tc-tp13014:78",
+      "subject": "050",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Negative-temperature METAR temperature/dewpoint spread",
+      "topic_tr": "Negatif sıcaklıklı METAR’da sıcaklık-çiğ noktası aralığının hesabı",
+      "answer": "4 degrees Celsius",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 78, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 15625,
+      "distinctness_evidence": "Existing temperature/dewpoint-group reading does not calculate a spread between two negative temperatures."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "79",
+      "page": "17",
+      "key": "x-tc-tp13014:79",
+      "subject": "050",
+      "status": "review",
+      "reason": "Canadian Axxxx inch-Hg altimeter encoding differs from the application’s ordinary Qxxxx convention; hold applicability."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "80",
+      "page": "17",
+      "key": "x-tc-tp13014:80",
+      "subject": "050",
+      "status": "existing",
+      "bank_id": 15612,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "81",
+      "page": "18",
+      "key": "x-tc-tp13014:81",
+      "subject": "060",
+      "status": "existing",
+      "bank_id": 15722,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "82",
+      "page": "18",
+      "key": "x-tc-tp13014:82",
+      "subject": "060",
+      "status": "existing",
+      "bank_id": 15775,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "83",
+      "page": "18",
+      "key": "x-tc-tp13014:83",
+      "subject": "010",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "84",
+      "page": "18",
+      "key": "x-tc-tp13014:84",
+      "subject": "060",
+      "status": "review",
+      "reason": "Missing 2006 Toronto VNC chart; cannot verify terrain colours or chart answer."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "85",
+      "page": "19",
+      "key": "x-tc-tp13014:85",
+      "subject": "060",
+      "status": "existing",
+      "bank_id": 15796,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "86",
+      "page": "19",
+      "key": "x-tc-tp13014:86",
+      "subject": "010",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "87",
+      "page": "19",
+      "key": "x-tc-tp13014:87",
+      "subject": "060",
+      "status": "review",
+      "reason": "Missing 2006 Toronto VNC; magnetic track measurement cannot be verified."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "88",
+      "page": "19",
+      "key": "x-tc-tp13014:88",
+      "subject": "060",
+      "status": "review",
+      "reason": "Missing 2006 Toronto VNC distance; climb allowance must be carried into a new figure-complete exercise."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "89",
+      "page": "20",
+      "key": "x-tc-tp13014:89",
+      "subject": "030",
+      "status": "new",
+      "reason": "Distinct missing PPL question type; proposal only, no active addition.",
+      "topic": "Multi-leg fuel including two ground/climb allowances and final reserve",
+      "topic_tr": "Ara duraklı uçuşta iki taksi-kalkış-tırmanış payı ve son rezervin yakıt hesabına katılması",
+      "answer": "16.9 US gal under original Canadian day-VFR assumption; rewrite with explicitly supplied reserve duration",
+      "answer_verification": {
+        "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+        "ref": "TP13014E question 89, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+      },
+      "needs_before_activation": [
+        "Write independent EN/TR stem/options/explanations; confirm modern FAA/EASA technical references and needed local assumptions."
+      ],
+      "nearest_bank_id": 15016,
+      "distinctness_evidence": "Existing single-leg trip plus reserve arithmetic lacks separate ground/takeoff/climb allowances at two stops."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "90",
+      "page": "20",
+      "key": "x-tc-tp13014:90",
+      "subject": "060",
+      "status": "existing",
+      "bank_id": 15804,
+      "reason": "Same tested rule/calculation already exists; changed numbers or word order alone do not create a new type."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "91",
+      "page": "20",
+      "key": "x-tc-tp13014:91",
+      "subject": "060",
+      "status": "review",
+      "reason": "Missing 2006 Toronto VNC obstacle information."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "92",
+      "page": "20",
+      "key": "x-tc-tp13014:92",
+      "subject": "060",
+      "status": "review",
+      "reason": "Canadian radio-station/frequency information depends on unavailable2006VNC and is potentially stale."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "93",
+      "page": "21",
+      "key": "x-tc-tp13014:93",
+      "subject": "060",
+      "status": "review",
+      "reason": "Missing 2006 Toronto VNC distances for the ETA exercise."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "94",
+      "page": "21",
+      "key": "x-tc-tp13014:94",
+      "subject": "060",
+      "status": "review",
+      "reason": "Opening/closing-angle problem depends on the unavailable 2006 VNC. Potentially overlaps bank15831, retain for review rather than guess."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "95",
+      "page": "21",
+      "key": "x-tc-tp13014:95",
+      "subject": "010",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "96",
+      "page": "21",
+      "key": "x-tc-tp13014:96",
+      "subject": "060",
+      "status": "review",
+      "reason": "Requires unavailable 2006 VNC radial. TO/FROM variant retained for review, not merged with bank15892."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "97",
+      "page": "21",
+      "key": "x-tc-tp13014:97",
+      "subject": "060",
+      "status": "review",
+      "reason": "Canadian facility-specific DF service may be stale; original aerodrome facilities have not been verified."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "98",
+      "page": "22",
+      "key": "x-tc-tp13014:98",
+      "subject": "010",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "99",
+      "page": "22",
+      "key": "x-tc-tp13014:99",
+      "subject": "010",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-tc-tp13014",
+      "no": "100",
+      "page": "22",
+      "key": "x-tc-tp13014:100",
+      "subject": "010",
+      "status": "out_of_scope",
+      "reason": "Outside the five requested subject proposals; human-performance/operations or Canadian aerodrome/air-law-specific material retained in source audit, no active addition."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "1",
+      "page": "",
+      "key": "x-sonyaklasma:020:1",
+      "subject": "020",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-1",
+      "status": "existing",
+      "bank_id": 15742,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "2",
+      "page": "",
+      "key": "x-sonyaklasma:020:2",
+      "subject": "020",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-2",
+      "status": "existing",
+      "bank_id": 14771,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "3",
+      "page": "",
+      "key": "x-sonyaklasma:020:3",
+      "subject": "020",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-3",
+      "status": "existing",
+      "bank_id": 14711,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "4",
+      "page": "",
+      "key": "x-sonyaklasma:020:4",
+      "subject": "020",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-4",
+      "status": "existing",
+      "bank_id": 14722,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "5",
+      "page": "",
+      "key": "x-sonyaklasma:020:5",
+      "subject": "020",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-5",
+      "status": "existing",
+      "bank_id": 14705,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "6",
+      "page": "",
+      "key": "x-sonyaklasma:020:6",
+      "subject": "020",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-6",
+      "status": "existing",
+      "bank_id": 14604,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "7",
+      "page": "",
+      "key": "x-sonyaklasma:020:7",
+      "subject": "020",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-7",
+      "status": "existing",
+      "bank_id": 14583,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "8",
+      "page": "",
+      "key": "x-sonyaklasma:020:8",
+      "subject": "020",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-8",
+      "status": "existing",
+      "bank_id": 14569,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "9",
+      "page": "",
+      "key": "x-sonyaklasma:020:9",
+      "subject": "020",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-9",
+      "status": "existing",
+      "bank_id": 14695,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "10",
+      "page": "",
+      "key": "x-sonyaklasma:020:10",
+      "subject": "020",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-10",
+      "status": "existing",
+      "bank_id": 14478,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "1",
+      "page": "",
+      "key": "x-sonyaklasma:030:1",
+      "subject": "030",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-1",
+      "status": "existing",
+      "bank_id": 14959,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "2",
+      "page": "",
+      "key": "x-sonyaklasma:030:2",
+      "subject": "030",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-2",
+      "status": "existing",
+      "bank_id": 14941,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "3",
+      "page": "",
+      "key": "x-sonyaklasma:030:3",
+      "subject": "030",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-3",
+      "status": "existing",
+      "bank_id": 15027,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "4",
+      "page": "",
+      "key": "x-sonyaklasma:030:4",
+      "subject": "030",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-4",
+      "status": "existing",
+      "bank_id": 15036,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "5",
+      "page": "",
+      "key": "x-sonyaklasma:030:5",
+      "subject": "030",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-5",
+      "status": "existing",
+      "bank_id": 15004,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "6",
+      "page": "",
+      "key": "x-sonyaklasma:030:6",
+      "subject": "030",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-6",
+      "status": "existing",
+      "bank_id": 14995,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "7",
+      "page": "",
+      "key": "x-sonyaklasma:030:7",
+      "subject": "030",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-7",
+      "status": "existing",
+      "bank_id": 14980,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "8",
+      "page": "",
+      "key": "x-sonyaklasma:030:8",
+      "subject": "030",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-8",
+      "status": "existing",
+      "bank_id": 14886,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "9",
+      "page": "",
+      "key": "x-sonyaklasma:030:9",
+      "subject": "030",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-9",
+      "status": "existing",
+      "bank_id": 14861,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "10",
+      "page": "",
+      "key": "x-sonyaklasma:030:10",
+      "subject": "030",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-10",
+      "status": "existing",
+      "bank_id": 14880,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "1",
+      "page": "",
+      "key": "x-sonyaklasma:050:1",
+      "subject": "050",
+      "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-1",
+      "status": "existing",
+      "bank_id": 15295,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "2",
+      "page": "",
+      "key": "x-sonyaklasma:050:2",
+      "subject": "050",
+      "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-2",
+      "status": "existing",
+      "bank_id": 15413,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "3",
+      "page": "",
+      "key": "x-sonyaklasma:050:3",
+      "subject": "050",
+      "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-3",
+      "status": "existing",
+      "bank_id": 15476,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "4",
+      "page": "",
+      "key": "x-sonyaklasma:050:4",
+      "subject": "050",
+      "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-4",
+      "status": "existing",
+      "bank_id": 15435,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "5",
+      "page": "",
+      "key": "x-sonyaklasma:050:5",
+      "subject": "050",
+      "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-5",
+      "status": "existing",
+      "bank_id": 15552,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "6",
+      "page": "",
+      "key": "x-sonyaklasma:050:6",
+      "subject": "050",
+      "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-6",
+      "status": "existing",
+      "bank_id": 15560,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "7",
+      "page": "",
+      "key": "x-sonyaklasma:050:7",
+      "subject": "050",
+      "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-7",
+      "status": "existing",
+      "bank_id": 15584,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "8",
+      "page": "",
+      "key": "x-sonyaklasma:050:8",
+      "subject": "050",
+      "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-8",
+      "status": "existing",
+      "bank_id": 15645,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "9",
+      "page": "",
+      "key": "x-sonyaklasma:050:9",
+      "subject": "050",
+      "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-9",
+      "status": "existing",
+      "bank_id": 15632,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "10",
+      "page": "",
+      "key": "x-sonyaklasma:050:10",
+      "subject": "050",
+      "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-10",
+      "status": "existing",
+      "bank_id": 15657,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "1",
+      "page": "",
+      "key": "x-sonyaklasma:060:1",
+      "subject": "060",
+      "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-1",
+      "status": "existing",
+      "bank_id": 15901,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "2",
+      "page": "",
+      "key": "x-sonyaklasma:060:2",
+      "subject": "060",
+      "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-2",
+      "status": "review",
+      "reason": "Potential missing definition (track for060; stagnation point name for080). All-rights-reserved sample has no explicit bank reuse licence; retain topic for independent official-reference authoring, not source wording transfer."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "3",
+      "page": "",
+      "key": "x-sonyaklasma:060:3",
+      "subject": "060",
+      "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-3",
+      "status": "existing",
+      "bank_id": 15760,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "4",
+      "page": "",
+      "key": "x-sonyaklasma:060:4",
+      "subject": "060",
+      "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-4",
+      "status": "existing",
+      "bank_id": 15776,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "5",
+      "page": "",
+      "key": "x-sonyaklasma:060:5",
+      "subject": "060",
+      "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-5",
+      "status": "existing",
+      "bank_id": 15840,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "6",
+      "page": "",
+      "key": "x-sonyaklasma:060:6",
+      "subject": "060",
+      "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-6",
+      "status": "existing",
+      "bank_id": 15739,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "7",
+      "page": "",
+      "key": "x-sonyaklasma:060:7",
+      "subject": "060",
+      "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-7",
+      "status": "existing",
+      "bank_id": 15745,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "8",
+      "page": "",
+      "key": "x-sonyaklasma:060:8",
+      "subject": "060",
+      "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-8",
+      "status": "existing",
+      "bank_id": 15923,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "9",
+      "page": "",
+      "key": "x-sonyaklasma:060:9",
+      "subject": "060",
+      "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-9",
+      "status": "existing",
+      "bank_id": 15915,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "10",
+      "page": "",
+      "key": "x-sonyaklasma:060:10",
+      "subject": "060",
+      "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-10",
+      "status": "existing",
+      "bank_id": 15898,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "1",
+      "page": "",
+      "key": "x-sonyaklasma:080:1",
+      "subject": "080",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-1",
+      "status": "review",
+      "reason": "Potential missing definition (track for060; stagnation point name for080). All-rights-reserved sample has no explicit bank reuse licence; retain topic for independent official-reference authoring, not source wording transfer."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "2",
+      "page": "",
+      "key": "x-sonyaklasma:080:2",
+      "subject": "080",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-2",
+      "status": "existing",
+      "bank_id": 58002,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "3",
+      "page": "",
+      "key": "x-sonyaklasma:080:3",
+      "subject": "080",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-3",
+      "status": "existing",
+      "bank_id": 16305,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "4",
+      "page": "",
+      "key": "x-sonyaklasma:080:4",
+      "subject": "080",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-4",
+      "status": "existing",
+      "bank_id": 16291,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "5",
+      "page": "",
+      "key": "x-sonyaklasma:080:5",
+      "subject": "080",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-5",
+      "status": "existing",
+      "bank_id": 16285,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "6",
+      "page": "",
+      "key": "x-sonyaklasma:080:6",
+      "subject": "080",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-6",
+      "status": "existing",
+      "bank_id": 16246,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "7",
+      "page": "",
+      "key": "x-sonyaklasma:080:7",
+      "subject": "080",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-7",
+      "status": "existing",
+      "bank_id": 16269,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "8",
+      "page": "",
+      "key": "x-sonyaklasma:080:8",
+      "subject": "080",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-8",
+      "status": "existing",
+      "bank_id": 16224,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "9",
+      "page": "",
+      "key": "x-sonyaklasma:080:9",
+      "subject": "080",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-9",
+      "status": "existing",
+      "bank_id": 16183,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    },
+    {
+      "source": "x-sonyaklasma",
+      "no": "10",
+      "page": "",
+      "key": "x-sonyaklasma:080:10",
+      "subject": "080",
+      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-10",
+      "status": "existing",
+      "bank_id": 16161,
+      "reason": "Same tested knowledge/conditions already present; sample wording or option order does not justify a new question."
+    }
+  ]
+}

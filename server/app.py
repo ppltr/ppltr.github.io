@@ -346,6 +346,8 @@ async def api_answer(request: Request, run_id: int):
             return JSONResponse({"error": "soru bu turda değil"}, status_code=400)
 
         q = db.question(conn, qid)
+        if not q:
+            return JSONResponse({"error": "soru yok veya incelemede"}, status_code=404)
         order = display_order(run["seed"], qid, len(q["options"]))
         if pos < 0 or pos >= len(order):
             return JSONResponse({"error": "geçersiz şık"}, status_code=400)
