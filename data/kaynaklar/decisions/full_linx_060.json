@@ -1,0 +1,2763 @@
+{
+ "schema_version": 1,
+ "audit_date": "2026-10-13",
+ "subject": "060",
+ "purpose": "FullsamefamilyLinxbank factualgapscan; compare operativeconditions withall3051currentbank andpendingcore/CAABcandidates; preserveidentity/history and authornewfactsindependently.",
+ "sources": [
+  {
+   "id": "x-linx-060",
+   "name": "LinxAviation publicly linked historical SerbiaPPL(A) 060 bank factual audit",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "scanned": 150,
+   "sha256": "696eafdcff0fbb5cb6c0794244fffa545167c006d7f4901913f9c85f9f2d985f",
+   "version": "Public2020upload;historical SerbiaCAD reviewbank with diagrams,notcurrentSHGMexam",
+   "permission": "Publictechnicalfactscan only; originalbankwording/options and third-partychartimages notrepublished.",
+   "coverage": "All150numberedquestions inspected plus embeddedappendices; originalsourcecharts visuallychecked. Numbering1–150complete; extraction excludes spurious3) continuation inNavQ139.",
+   "question_numbers_complete": true,
+   "raw_copy_tracked": false,
+   "figure_pages_visually_inspected": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+   ],
+   "disposition_counts": {
+    "existing": 107,
+    "duplicate_new": 30,
+    "review": 12,
+    "new": 1
+   }
+  }
+ ],
+ "candidates": [
+  {
+   "key": "linx-060:gps-waypoint-distance",
+   "section": "060-05",
+   "text": "An aircraft stays at the same location with the same GPS satellite solution. The pilot only selects a more distant waypoint, without changing receiver mode or integrity requirements. Does that selection alone make the satellite-derived aircraft position less accurate?",
+   "options": [
+    "No; fix accuracy is not determined by distance to the selected waypoint",
+    "Yes; position error necessarily doubles when waypoint distance doubles",
+    "Yes; a waypoint outside VOR range makes the GPS fix invalid",
+    "No; every GPS fix is perfectly accurate regardless of reception"
+   ],
+   "tr_text": "Uçak aynı konumda ve aynı GPS uydu çözümüyle kalıyor. Pilot yalnız daha uzak bir waypoint seçiyor; alıcı modu ve bütünlük şartı değişmiyor. Bu seçim tek başına uydudan hesaplanan uçak konumunun doğruluğunu azaltır mı?",
+   "tr_options": [
+    "Hayır; konum doğruluğunu seçilen waypoint’e uzaklık belirlemez",
+    "Evet; waypoint mesafesi iki kat olunca konum hatası mutlaka iki kat olur",
+    "Evet; VOR menzili dışındaki waypoint GPS konumunu geçersiz yapar",
+    "Hayır; alımdan bağımsız her GPS konumu kusursuzdur"
+   ],
+   "explanation_tr": "Konum çözümü uydu ölçümleri, geometri ve alım koşullarına dayanır; yalnız hedefi değiştirmek bu çözümü bozmaz. VOR’un açısal hatasının mesafeyle büyüyen yanal etkisi farklıdır. GPS’in hata yapmayacağı sonucunu çıkarma.",
+   "explanation_en": "The fix comes from satellite measurements and their geometry/reception. Merely changing the destination does not degrade that unchanged solution. VOR angular bearing error has a different distance-dependent lateral effect; GPS can still have errors.",
+   "sources": [
+    {
+     "source": "x-linx-060",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+     "no": "142",
+     "page": "20 (PDF)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.gps.gov/gps-accuracy",
+     "section": "AccuracyFAQs:receiverpositionaccuracy depends onsatellitegeometry,signalblockage,atmosphere andreceiver; waypointselection changesnoneofthestatedsame-solutionfactors"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/pilots/FAA-H-8083-15B.pdf",
+     "section": "Chapter9 p9-25 satelliteposition independent ofgroundnavigationstation/selectedwaypointdistance"
+    }
+   ],
+   "nearest_bank_ids": [
+    15923,
+    15905
+   ],
+   "distinctness_evidence": "15923 fixesatellitecount;15905 VORangularCDI;fullgps-cdi testsdisplayunits. This askspositionaccuracy when only waypointdistancechanges.",
+   "adapted": true,
+   "adaptation_only": true,
+   "original_answer_verified": false
+  },
+  {
+   "key": "linx-060:gps-vhf-interference",
+   "section": "060-05",
+   "text": "A GPS receiver repeatedly loses satellite signals while a nearby VHF transmitter is keyed, then recovers after transmission stops. Which cause should be considered?",
+   "options": [
+    "Radio-frequency interference, including possible transmitter harmonics",
+    "GPS needs VHF voice transmissions to calculate altitude",
+    "Selecting a distant waypoint consumes the satellite signals",
+    "All GPS signals stop worldwide whenever any aircraft transmits"
+   ],
+   "tr_text": "GPS alıcısı yakındaki VHF vericisiyle yayın yapılınca uydu sinyallerini tekrar tekrar kaybediyor; yayın bitince toparlanıyor. Hangi neden değerlendirilmelidir?",
+   "tr_options": [
+    "Verici harmonikleri dâhil olası radyo frekans paraziti",
+    "GPS irtifa hesaplamak için VHF ses yayınına ihtiyaç duyar",
+    "Uzak waypoint seçimi uydu sinyallerini tüketir",
+    "Her uçak yayınında dünyadaki tüm GPS sinyalleri kesilir"
+   ],
+   "explanation_tr": "Bazı VHF yayınlarının harmonikleri GPS alımını etkileyebilir. Yayınla eşzamanlı kayıp bu olasılığı düşündürür; cihaz/kurulum ve uygun arıza giderme usulüyle kontrol edilir. Bu soru evrensel bir problemli frekans listesi varsaymaz.",
+   "explanation_en": "Some VHF transmissions can produce harmonic interference with GPS reception. Correlated loss suggests this possibility and warrants approved equipment/installation checks. It does not establish a universal list of affected frequencies.",
+   "sources": [
+    {
+     "source": "x-linx-060",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+     "no": "149",
+     "page": "20 (PDF)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/pilots/FAA-H-8083-15B.pdf",
+     "section": "Chapter9 GPSerrors p9-31:receivers/transceivers/mobileradios interference;someVHFtransmissions harmonicinterference; isolationmethods"
+    }
+   ],
+   "nearest_bank_ids": [
+    15923,
+    15903
+   ],
+   "distinctness_evidence": "Existing satellite-count and VOR terrain-range questions do not test on-boardVHF harmonicinterference withGPS. OtherGPSantenna question concernsphysicalshadowing,nottransmission-coupledinterference.",
+   "adapted": true,
+   "adaptation_only": true,
+   "original_answer_verified": false
+  }
+ ],
+ "existing_notes": [],
+ "decisions": [
+  {
+   "subject": "060",
+   "bank_id": 15691,
+   "key": "x-linx-060:1",
+   "source": "x-linx-060",
+   "no": "1",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q18: Semantic match: current question 15691 already tests What is the inclination of the Earth’s axis to its orbital plane?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "18",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:2",
+   "source": "x-linx-060",
+   "no": "2",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "43",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66049,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15670,
+   "key": "x-linx-060:3",
+   "source": "x-linx-060",
+   "no": "3",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q42: Semantic match: current question 15670 already tests A Rhumb line is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "42",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15716,
+   "key": "x-linx-060:4",
+   "source": "x-linx-060",
+   "no": "4",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q41: Semantic match: current question 15716 already tests Magnetic Variation is the angle between:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "41",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15745,
+   "key": "x-linx-060:5",
+   "source": "x-linx-060",
+   "no": "5",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q40: Semantic match: current question 15745 already tests An Isogonal is a line joining points of:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "40",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:6",
+   "source": "x-linx-060",
+   "no": "6",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "39",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66026,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15680,
+   "key": "x-linx-060:7",
+   "source": "x-linx-060",
+   "no": "7",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q38: Semantic match: current question 15680 already tests The circumference of the earth is approximately ;; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "38",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15696,
+   "key": "x-linx-060:8",
+   "source": "x-linx-060",
+   "no": "8",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q37: Semantic match: current question 15696 already tests Which of the following statements on the shape of the Earth is correct?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "37",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15687,
+   "key": "x-linx-060:9",
+   "source": "x-linx-060",
+   "no": "9",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q53: Semantic match: current question 15687 already tests The planets move around the Sun:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "53",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15683,
+   "key": "x-linx-060:10",
+   "source": "x-linx-060",
+   "no": "10",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q35: Semantic match: current question 15683 already tests The direction of the Earth's rotation on its axis is such that:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "35",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15687,
+   "key": "x-linx-060:11",
+   "source": "x-linx-060",
+   "no": "11",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q44: Semantic match: current question 15687 already tests The planets move around the Sun:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "44",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15678,
+   "key": "x-linx-060:12",
+   "source": "x-linx-060",
+   "no": "12",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q33: Semantic match: current question 15678 already tests Seasons are due to the:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "33",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15693,
+   "key": "x-linx-060:13",
+   "source": "x-linx-060",
+   "no": "13",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q32: Semantic match: current question 15693 already tests What type of line will always be the shortest distance between two points on the Earth?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "32",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15697,
+   "key": "x-linx-060:14",
+   "source": "x-linx-060",
+   "no": "14",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q57: Semantic match: current question 15697 already tests Which of these statements about a rhumb line is false?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "57",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:15",
+   "source": "x-linx-060",
+   "no": "15",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "56",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66026,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:16",
+   "source": "x-linx-060",
+   "no": "16",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q55: Numberofallgreatcirclesonsphereisnotthe samequestionasthe shortest-pathproperty15673;basiccountisretainedforPPLscope review,not falselydeclaredanexistingduplicate.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "55",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15673,
+   "key": "x-linx-060:17",
+   "source": "x-linx-060",
+   "no": "17",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q60: Semantic match: current question 15673 already tests Consider the following statements on the properties of a great circle:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "60",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15694,
+   "key": "x-linx-060:18",
+   "source": "x-linx-060",
+   "no": "18",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q34: Semantic match: current question 15694 already tests Which of the following circles on the Earth's globe does not have the center at the Earth's center?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "34",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15670,
+   "key": "x-linx-060:19",
+   "source": "x-linx-060",
+   "no": "19",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q36: Semantic match: current question 15670 already tests A Rhumb line is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "36",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15697,
+   "key": "x-linx-060:20",
+   "source": "x-linx-060",
+   "no": "20",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q69: Semantic match: current question 15697 already tests Which of these statements about a rhumb line is false?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "69",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15778,
+   "key": "x-linx-060:21",
+   "source": "x-linx-060",
+   "no": "21",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q68: Semantic match: current question 15778 already tests How many degrees has the mean sun moved along the celestial equator in 8 hours and 8 minutes ?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "68",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15778,
+   "key": "x-linx-060:22",
+   "source": "x-linx-060",
+   "no": "22",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q67: Semantic match: current question 15778 already tests How many degrees has the mean sun moved along the celestial equator in 8 hours and 8 minutes ?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "67",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15036,
+   "key": "x-linx-060:23",
+   "source": "x-linx-060",
+   "no": "23",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q66: Semantic match: current question 15036 already tests When completing an ATS flight plan, clock times are to be expressed in :; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "66",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:24",
+   "source": "x-linx-060",
+   "no": "24",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "65",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66054,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:25",
+   "source": "x-linx-060",
+   "no": "25",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q64: Solar relative bearing cannot be uniquely determined from month/route alone; time/date/location assumptions are missing.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "64",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15690,
+   "key": "x-linx-060:26",
+   "source": "x-linx-060",
+   "no": "26",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q63: Semantic match: current question 15690 already tests What is the angular distance in degrees for latitudes?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "63",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15690,
+   "key": "x-linx-060:27",
+   "source": "x-linx-060",
+   "no": "27",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q45: Semantic match: current question 15690 already tests What is the angular distance in degrees for latitudes?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "45",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15692,
+   "key": "x-linx-060:28",
+   "source": "x-linx-060",
+   "no": "28",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q61: Semantic match: current question 15692 already tests What is the latitude change from A 50°50’47″N, 004°21’09″E to B 34°24’36″N, 004°21’09″E?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "61",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15775,
+   "key": "x-linx-060:29",
+   "source": "x-linx-060",
+   "no": "29",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q70: Semantic match: current question 15775 already tests What is the great circle distance between A(28°00’N, 045°00’E) and B(12°00’S, 045°00’E)?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "70",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15756,
+   "key": "x-linx-060:30",
+   "source": "x-linx-060",
+   "no": "30",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q59: Semantic match: current question 15756 already tests An Aircraft at latitude 02°30’N tracks 180°(T) for 666 km. The final latitude will be:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "59",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15684,
+   "key": "x-linx-060:31",
+   "source": "x-linx-060",
+   "no": "31",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q58: Semantic match: current question 15684 already tests The distance of 1 NM is equivalent to; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "58",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "original_answer_verified": false,
+   "key": "x-linx-060:32",
+   "source": "x-linx-060",
+   "no": "32",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "49",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 66028,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "original_answer_verified": false,
+   "key": "x-linx-060:33",
+   "source": "x-linx-060",
+   "no": "33",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "48",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 66028,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "original_answer_verified": false,
+   "key": "x-linx-060:34",
+   "source": "x-linx-060",
+   "no": "34",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "47",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 66028,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "original_answer_verified": false,
+   "key": "x-linx-060:35",
+   "source": "x-linx-060",
+   "no": "35",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "51",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 66028,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "original_answer_verified": false,
+   "key": "x-linx-060:36",
+   "source": "x-linx-060",
+   "no": "36",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "62",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 66028,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:37",
+   "source": "x-linx-060",
+   "no": "37",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q54: CAD PDF names an external figure that is not embedded in this linked bank. Exact original diagram answer is unverified; no access barriers bypassed.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "54",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15684,
+   "key": "x-linx-060:38",
+   "source": "x-linx-060",
+   "no": "38",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q15: Semantic match: current question 15684 already tests The distance of 1 NM is equivalent to; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "15",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15845,
+   "key": "x-linx-060:39",
+   "source": "x-linx-060",
+   "no": "39",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q14: Semantic match: current question 15845 already tests One Nautical Mile equals to; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "14",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15819,
+   "key": "x-linx-060:40",
+   "source": "x-linx-060",
+   "no": "40",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q13: Semantic match: current question 15819 already tests A velocity 120 km/h, expressed in knots, is; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "13",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15828,
+   "key": "x-linx-060:41",
+   "source": "x-linx-060",
+   "no": "41",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q12: Semantic match: current question 15828 already tests Approximately how many kilometres are in 70 nautical miles?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "12",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15695,
+   "key": "x-linx-060:42",
+   "source": "x-linx-060",
+   "no": "42",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q11: Semantic match: current question 15695 already tests Which of the following statements is incorrect?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "11",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15825,
+   "key": "x-linx-060:43",
+   "source": "x-linx-060",
+   "no": "43",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q10: Semantic match: current question 15825 already tests An aircraft travels 100 statute miles in 20 MIN, how long does it take to travel 215 NM?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "10",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:44",
+   "source": "x-linx-060",
+   "no": "44",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "1",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66029,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15868,
+   "key": "x-linx-060:45",
+   "source": "x-linx-060",
+   "no": "45",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q8: Semantic match: current question 15868 already tests On a chart, 6 cm represents the distance 15 km. What is the scale of the chart?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "8",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15861,
+   "key": "x-linx-060:46",
+   "source": "x-linx-060",
+   "no": "46",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q16: Semantic match: current question 15861 already tests A pilot is working with a VFR chart whose scale is 1:500 000. How long in cm would a straight line drawn on the chart between two positions that are 36 NM apart on the ground measure?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "16",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:47",
+   "source": "x-linx-060",
+   "no": "47",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q6: CAD PDF names an external figure that is not embedded in this linked bank. Exact original diagram answer is unverified; no access barriers bypassed.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "6",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15861,
+   "key": "x-linx-060:48",
+   "source": "x-linx-060",
+   "no": "48",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q5: Semantic match: current question 15861 already tests A pilot is working with a VFR chart whose scale is 1:500 000. How long in cm would a straight line drawn on the chart between two positions that are 36 NM apart on the ground measure?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "5",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:49",
+   "source": "x-linx-060",
+   "no": "49",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q4: CAD PDF names an external figure that is not embedded in this linked bank. Exact original diagram answer is unverified; no access barriers bypassed.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "4",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:50",
+   "source": "x-linx-060",
+   "no": "50",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "EmbeddedchartPDF23scale1:200000:9cm→18km→9.72NM(using1.852),approximatelysource9.66by1.86. Existing15870 alreadyconvertschartlength throughpublishedscale togroundNM;sameconditions/method. Historicalsourceexactrounding retainedforreview metadata.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "4",
+    "stem_similarity": 0.9194
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 15870,
+   "original_answer_verified": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15771,
+   "key": "x-linx-060:51",
+   "source": "x-linx-060",
+   "no": "51",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q3: Semantic match: current question 15771 already tests The distance between the points ALFA and BRAVO is 104 NM. If an aircraft covers first 8 NM in 5 minutes, what time does it take to travel the entire route ALFA-BRAVO with the same groundspeed?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "3",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15016,
+   "key": "x-linx-060:52",
+   "source": "x-linx-060",
+   "no": "52",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q31: Semantic match: current question 15016 already tests Total estimated flight time of a leg is 1 hour 27 minutes. We have 45 minutes navigational reserve. The aeroplane's fuel consumption is 5 US gallon / hour. What is the total amount of fuel required for this fli; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "31",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15016,
+   "key": "x-linx-060:53",
+   "source": "x-linx-060",
+   "no": "53",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q24: Semantic match: current question 15016 already tests Total estimated flight time of a leg is 1 hour 27 minutes. We have 45 minutes navigational reserve. The aeroplane's fuel consumption is 5 US gallon / hour. What is the total amount of fuel required for this fli; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "24",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15016,
+   "key": "x-linx-060:54",
+   "source": "x-linx-060",
+   "no": "54",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q26: Semantic match: current question 15016 already tests Total estimated flight time of a leg is 1 hour 27 minutes. We have 45 minutes navigational reserve. The aeroplane's fuel consumption is 5 US gallon / hour. What is the total amount of fuel required for this fli; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "26",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15826,
+   "key": "x-linx-060:55",
+   "source": "x-linx-060",
+   "no": "55",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q9: Semantic match: current question 15826 already tests An altitude 1,500 meters is approximately; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "9",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15826,
+   "key": "x-linx-060:56",
+   "source": "x-linx-060",
+   "no": "56",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q50: Semantic match: current question 15826 already tests An altitude 1,500 meters is approximately; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "50",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:57",
+   "source": "x-linx-060",
+   "no": "57",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "2",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66048,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15826,
+   "key": "x-linx-060:58",
+   "source": "x-linx-060",
+   "no": "58",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q30: Semantic match: current question 15826 already tests An altitude 1,500 meters is approximately; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "30",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 19915,
+   "key": "x-linx-060:59",
+   "source": "x-linx-060",
+   "no": "59",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q29: Covered knowledge type: current bank 19915 tests If the QFE at ÇORLU (660 feet above sea level) is 980 hPa, what is the approximate QNH ? (1 mb= 30 feet). Source wording/numbers were read separately; only the existing knowledge type is linked, not an exact wording match.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "29",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15410,
+   "key": "x-linx-060:60",
+   "source": "x-linx-060",
+   "no": "60",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q28: Semantic match: current question 15410 already tests Altimeter reads 10000ft when set to 1003 hPa QNH. What does it read when you reset the altimeter to standard pressure setting? (1hPa : 27 ft); different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "28",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15410,
+   "key": "x-linx-060:61",
+   "source": "x-linx-060",
+   "no": "61",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q27: Semantic match: current question 15410 already tests Altimeter reads 10000ft when set to 1003 hPa QNH. What does it read when you reset the altimeter to standard pressure setting? (1hPa : 27 ft); different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "27",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15410,
+   "key": "x-linx-060:62",
+   "source": "x-linx-060",
+   "no": "62",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q17: Semantic match: current question 15410 already tests Altimeter reads 10000ft when set to 1003 hPa QNH. What does it read when you reset the altimeter to standard pressure setting? (1hPa : 27 ft); different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "17",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15774,
+   "key": "x-linx-060:63",
+   "source": "x-linx-060",
+   "no": "63",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q25: Semantic match: current question 15774 already tests What does a measuring unit knot used in aviation mean?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "25",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15847,
+   "key": "x-linx-060:64",
+   "source": "x-linx-060",
+   "no": "64",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q52: Semantic match: current question 15847 already tests The equivalent of 70 m/sec is approximately:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "52",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15847,
+   "key": "x-linx-060:65",
+   "source": "x-linx-060",
+   "no": "65",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q23: Semantic match: current question 15847 already tests The equivalent of 70 m/sec is approximately:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "23",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15819,
+   "key": "x-linx-060:66",
+   "source": "x-linx-060",
+   "no": "66",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q22: Semantic match: current question 15819 already tests A velocity 120 km/h, expressed in knots, is; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "22",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15842,
+   "key": "x-linx-060:67",
+   "source": "x-linx-060",
+   "no": "67",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q21: Semantic match: current question 15842 already tests If a vertical speed indicator of an aircraft shows 400 ft/min, the approximate rate of-climb in meters-per-second is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "21",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15776,
+   "key": "x-linx-060:68",
+   "source": "x-linx-060",
+   "no": "68",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q20: Semantic match: current question 15776 already tests What is the groundspeed of an aircraft which has taken 10 minutes to cover 20 nautical miles?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "20",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15794,
+   "key": "x-linx-060:69",
+   "source": "x-linx-060",
+   "no": "69",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q19: Semantic match: current question 15794 already tests Given the following information calculate the wind velocity: HDG: 054°T, TAS: 225 kt, Track: 059°T, GS: 208 kt; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "19",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15772,
+   "key": "x-linx-060:70",
+   "source": "x-linx-060",
+   "no": "70",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q78: Semantic match: current question 15772 already tests The distance of the route from the point X to the point Y via the control point Z is 84 km. If an aircraft covers the first segment X-Z (35 km) in 50 minutes, what will be the total time of flight between the p; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "78",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15766,
+   "key": "x-linx-060:71",
+   "source": "x-linx-060",
+   "no": "71",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q7: Semantic match: current question 15766 already tests How many NM would an aircraft travel in 1 MIN 45 SEC if GS is 135 kt?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "7",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15017,
+   "key": "x-linx-060:72",
+   "source": "x-linx-060",
+   "no": "72",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q46: Semantic match: current question 15017 already tests 265 US-GAL equals? (Specific gravity 0.80); different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "46",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15017,
+   "key": "x-linx-060:73",
+   "source": "x-linx-060",
+   "no": "73",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q123: Semantic match: current question 15017 already tests 265 US-GAL equals? (Specific gravity 0.80); different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "123",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15815,
+   "key": "x-linx-060:74",
+   "source": "x-linx-060",
+   "no": "74",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q122: Semantic match: current question 15815 already tests What is the ratio between the litre and the US-GAL?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "122",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 66003,
+   "key": "x-linx-060:75",
+   "source": "x-linx-060",
+   "no": "75",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q121: Semantic match: current question 66003 already tests A pilot compares three things after a windy flight: the route drawn before departure, the direction in which the nose pointed, and the path reconstructed from actual position fixes. Which navigation term applie; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "121",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15725,
+   "key": "x-linx-060:76",
+   "source": "x-linx-060",
+   "no": "76",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "WindtrianglePDF28 inspected:mark3 isangle geographicNorth toaircraft headingvector. Existing15725/15037 alreadydistinguish trueheading frommagnetic/compassreferences;readinganew drawinglabel doesnotintroduceadifferent referenceconversionrule.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "120",
+    "stem_similarity": 0.9
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15725,
+   "key": "x-linx-060:77",
+   "source": "x-linx-060",
+   "no": "77",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q120: Semantic match: current question 15725 already tests True heading, magnetic heading, and deviation are given as 136°, 140° and +3° , respectively. What are the values of variation and compass heading?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "120",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15741,
+   "key": "x-linx-060:78",
+   "source": "x-linx-060",
+   "no": "78",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q119: Semantic match: current question 15741 already tests With a calculated heading of 246° true, a local magnetic variation of 5°W and a compass deviation of 1°E, the compass heading is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "119",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15704,
+   "key": "x-linx-060:79",
+   "source": "x-linx-060",
+   "no": "79",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q118: Semantic match: current question 15704 already tests A Wind Correction Angle is the angle difference between:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "118",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15716,
+   "key": "x-linx-060:80",
+   "source": "x-linx-060",
+   "no": "80",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q106: Semantic match: current question 15716 already tests Magnetic Variation is the angle between:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "106",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15737,
+   "key": "x-linx-060:81",
+   "source": "x-linx-060",
+   "no": "81",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q116: Semantic match: current question 15737 already tests What is the Compass Deviation angle?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "116",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15796,
+   "key": "x-linx-060:82",
+   "source": "x-linx-060",
+   "no": "82",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q124: Semantic match: current question 15796 already tests Given, True Track = 258°, wind direction and velocity is 180/20. What is the ground speed and true heading Required if TAS = 110 kt?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "124",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15796,
+   "key": "x-linx-060:83",
+   "source": "x-linx-060",
+   "no": "83",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q114: Semantic match: current question 15796 already tests Given, True Track = 258°, wind direction and velocity is 180/20. What is the ground speed and true heading Required if TAS = 110 kt?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "114",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15796,
+   "key": "x-linx-060:84",
+   "source": "x-linx-060",
+   "no": "84",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q111: Semantic match: current question 15796 already tests Given, True Track = 258°, wind direction and velocity is 180/20. What is the ground speed and true heading Required if TAS = 110 kt?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "111",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15704,
+   "key": "x-linx-060:85",
+   "source": "x-linx-060",
+   "no": "85",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q110: Semantic match: current question 15704 already tests A Wind Correction Angle is the angle difference between:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "110",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15704,
+   "key": "x-linx-060:86",
+   "source": "x-linx-060",
+   "no": "86",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q86: Semantic match: current question 15704 already tests A Wind Correction Angle is the angle difference between:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "86",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:87",
+   "source": "x-linx-060",
+   "no": "87",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "108",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66032,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15716,
+   "key": "x-linx-060:88",
+   "source": "x-linx-060",
+   "no": "88",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q130: Semantic match: current question 15716 already tests Magnetic Variation is the angle between:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "130",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15716,
+   "key": "x-linx-060:89",
+   "source": "x-linx-060",
+   "no": "89",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q115: Semantic match: current question 15716 already tests Magnetic Variation is the angle between:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "115",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15745,
+   "key": "x-linx-060:90",
+   "source": "x-linx-060",
+   "no": "90",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q117: Semantic match: current question 15745 already tests An Isogonal is a line joining points of:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "117",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15745,
+   "key": "x-linx-060:91",
+   "source": "x-linx-060",
+   "no": "91",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q136: Semantic match: current question 15745 already tests An Isogonal is a line joining points of:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "136",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15743,
+   "key": "x-linx-060:92",
+   "source": "x-linx-060",
+   "no": "92",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q137: Semantic match: current question 15743 already tests An Agonic line is a line that connects ;; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "137",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:93",
+   "source": "x-linx-060",
+   "no": "93",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q112: CAD PDF names an external figure that is not embedded in this linked bank. Exact original diagram answer is unverified; no access barriers bypassed.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "112",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15739,
+   "key": "x-linx-060:94",
+   "source": "x-linx-060",
+   "no": "94",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q113: Semantic match: current question 15739 already tests When calculating magnetic direction from a given true direction, westerly variation should be:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "113",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15735,
+   "key": "x-linx-060:95",
+   "source": "x-linx-060",
+   "no": "95",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q135: Semantic match: current question 15735 already tests Variation in a position is 13 W and true course is 136 degrees. Consider the following statements:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "135",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15725,
+   "key": "x-linx-060:96",
+   "source": "x-linx-060",
+   "no": "96",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q134: Semantic match: current question 15725 already tests True heading, magnetic heading, and deviation are given as 136°, 140° and +3° , respectively. What are the values of variation and compass heading?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "134",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15714,
+   "key": "x-linx-060:97",
+   "source": "x-linx-060",
+   "no": "97",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q133: Semantic match: current question 15714 already tests Is it possible for a desired true track, true heading and actual true track to have the same value?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "133",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15737,
+   "key": "x-linx-060:98",
+   "source": "x-linx-060",
+   "no": "98",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q125: Semantic match: current question 15737 already tests What is the Compass Deviation angle?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "125",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15722,
+   "key": "x-linx-060:99",
+   "source": "x-linx-060",
+   "no": "99",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q131: Semantic match: current question 15722 already tests The true heading for a flight between two points of a route is 200° and the drift angle is 10°Right. What will be the true heading for a return flight between the same points, if the wind condition remains unaf; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "131",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:100",
+   "source": "x-linx-060",
+   "no": "100",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "138",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66045,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15877,
+   "key": "x-linx-060:101",
+   "source": "x-linx-060",
+   "no": "101",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-traficom-060 Q81: Semantic match: current question 15877 already tests The minimum airborne equipment required for operation of a VHF direction finder is a:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-traficom-060",
+    "no": "81",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15882,
+   "key": "x-linx-060:102",
+   "source": "x-linx-060",
+   "no": "102",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q128: Semantic match: current question 15882 already tests Allocated frequencies for NDB are ;; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "128",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:103",
+   "source": "x-linx-060",
+   "no": "103",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q127: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "127",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:104",
+   "source": "x-linx-060",
+   "no": "104",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q126: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "126",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:105",
+   "source": "x-linx-060",
+   "no": "105",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "review",
+   "reason": "SourcecallsADF D figureNav11,but D appears inNav10 onPDF26;exact originaldiagramreference is malformed. BasicRBreadout/MH+RBmethod already15885,so noredundantadaptation.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "104",
+    "stem_similarity": 0.9778
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:106",
+   "source": "x-linx-060",
+   "no": "106",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q104: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "104",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:107",
+   "source": "x-linx-060",
+   "no": "107",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q132: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "132",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:108",
+   "source": "x-linx-060",
+   "no": "108",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q107: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "107",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:109",
+   "source": "x-linx-060",
+   "no": "109",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q109: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "109",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:110",
+   "source": "x-linx-060",
+   "no": "110",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q85: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "85",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:111",
+   "source": "x-linx-060",
+   "no": "111",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q84: Exact original intercept geometry/course and acceptable intercept angle require the source figure. Bearing arithmetic is not asserted as a unique intercept heading.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "84",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:112",
+   "source": "x-linx-060",
+   "no": "112",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q83: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "83",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "original_answer_verified": false,
+   "key": "x-linx-060:113",
+   "source": "x-linx-060",
+   "no": "113",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "82",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 66045,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:114",
+   "source": "x-linx-060",
+   "no": "114",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q81: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "81",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:115",
+   "source": "x-linx-060",
+   "no": "115",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "LinxPDF26fixedcard H arrow RB225°,givenMH320°→QDM185°:sameMH+RBmod360method15885. Linxcorrectfirst185°; CADQ71correctfirst005°is a copied wronganswer. PreservebankID and recordsource discrepancy,notnewtype.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "71",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "original_answer_verified": true,
+   "verification_evidence": "320+225=545;545mod360=185;inspectedPDF26Hfixedcard225°",
+   "source_conflict": "Linx115A185° differsCAD71A005° for samegivenMH320°/diagramH;do notinheritCAD answer."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:116",
+   "source": "x-linx-060",
+   "no": "116",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q79: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "79",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:117",
+   "source": "x-linx-060",
+   "no": "117",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q87: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "87",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:118",
+   "source": "x-linx-060",
+   "no": "118",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q77: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "77",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:119",
+   "source": "x-linx-060",
+   "no": "119",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q76: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "76",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "bank_id": 15885,
+   "key": "x-linx-060:120",
+   "source": "x-linx-060",
+   "no": "120",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q75: Semantic match: current question 15885 already tests On the QDR of 075° (in the vicinity of the station) with a magnetic heading of 295°, the relative bearing on the ADF indicator is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "75",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:121",
+   "source": "x-linx-060",
+   "no": "121",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "74",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66055,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15890,
+   "key": "x-linx-060:122",
+   "source": "x-linx-060",
+   "no": "122",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q73: Semantic match: current question 15890 already tests An aircraft is required to approach a VOR station via the 264° radial. In order to obtain correct sense indications the deviation indicator should be set to:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "73",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:123",
+   "source": "x-linx-060",
+   "no": "123",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "72",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66027,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:124",
+   "source": "x-linx-060",
+   "no": "124",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "95",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66056,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:125",
+   "source": "x-linx-060",
+   "no": "125",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "97",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66052,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 66002,
+   "key": "x-linx-060:126",
+   "source": "x-linx-060",
+   "no": "126",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q80: Semantic match: current question 66002 already tests An aircraft is on the 123° magnetic radial of an identified, serviceable VOR, with a magnetic heading of 303°. Which OBS setting will centre the CDI and show a FROM indication?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "80",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15890,
+   "key": "x-linx-060:127",
+   "source": "x-linx-060",
+   "no": "127",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q103: Semantic match: current question 15890 already tests An aircraft is required to approach a VOR station via the 264° radial. In order to obtain correct sense indications the deviation indicator should be set to:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "103",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15905,
+   "key": "x-linx-060:128",
+   "source": "x-linx-060",
+   "no": "128",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q102: Semantic match: current question 15905 already tests What is the full scale deflection of the VOR-CDI needle when a VOR frequency is set?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "102",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:129",
+   "source": "x-linx-060",
+   "no": "129",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "101",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66027,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "original_answer_verified": false,
+   "key": "x-linx-060:130",
+   "source": "x-linx-060",
+   "no": "130",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "100",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 66058,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "original_answer_verified": false,
+   "key": "x-linx-060:131",
+   "source": "x-linx-060",
+   "no": "131",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "99",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 66058,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "original_answer_verified": false,
+   "key": "x-linx-060:132",
+   "source": "x-linx-060",
+   "no": "132",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "98",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 66058,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "original_answer_verified": false,
+   "key": "x-linx-060:133",
+   "source": "x-linx-060",
+   "no": "133",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "88",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 66058,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "original_answer_verified": false,
+   "key": "x-linx-060:134",
+   "source": "x-linx-060",
+   "no": "134",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "96",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 66058,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:135",
+   "source": "x-linx-060",
+   "no": "135",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "105",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66035,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15902,
+   "key": "x-linx-060:136",
+   "source": "x-linx-060",
+   "no": "136",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q94: Semantic match: current question 15902 already tests The measured range from a DME station is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "94",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15891,
+   "key": "x-linx-060:137",
+   "source": "x-linx-060",
+   "no": "137",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q93: Semantic match: current question 15891 already tests An aircraft passes overhead a DME station at 12000 feet above the station. At that time, the DME reading will be:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "93",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 15891,
+   "key": "x-linx-060:138",
+   "source": "x-linx-060",
+   "no": "138",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-060 Q92: Semantic match: current question 15891 already tests An aircraft passes overhead a DME station at 12000 feet above the station. At that time, the DME reading will be:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "92",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:139",
+   "source": "x-linx-060",
+   "no": "139",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "EmbeddedhistoricalchartPDF24 displaysVAR3°E(2005),airwaydirections magnetic;same magnetic/true reference conversion type15735. Originalhistoricalchart isnotcurrent navigationauthority.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "91",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 15735,
+   "original_answer_verified": true
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:140",
+   "source": "x-linx-060",
+   "no": "140",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "90",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66042,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:141",
+   "source": "x-linx-060",
+   "no": "141",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "89",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66040,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:142",
+   "source": "x-linx-060",
+   "no": "142",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "new",
+   "reason": "Positionfixerror versusselectedwaypointdistance is distinct fromVORangular bearingerror andGPSCDIlinear-unitdisplay; independentlyauthoredbelow.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "63",
+    "stem_similarity": 0.4267
+   },
+   "representative_key": "linx-060:gps-waypoint-distance"
+  },
+  {
+   "subject": "060",
+   "bank_id": 15673,
+   "key": "x-linx-060:143",
+   "source": "x-linx-060",
+   "no": "143",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "A shortest-surface directleg onasphere isgreatcircle already15673/15693. SimplynamingGPS doesnotchangethe geometricalrule;model-specificlegtypes notgeneralised.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "114",
+    "stem_similarity": 0.4396
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:144",
+   "source": "x-linx-060",
+   "no": "144",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "97",
+    "stem_similarity": 0.4423
+   },
+   "bank_id": 66052,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15704,
+   "key": "x-linx-060:145",
+   "source": "x-linx-060",
+   "no": "145",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "review",
+   "reason": "Altitude-only receptionclaim isvague;GPSskyvisibility/airframe-or-terrainmasking andsatellitegeometry matter,notasimpleVHFgroundstationhorizonrule. Differentcontextretainedratherthanfalselymergedwithantennaquestion.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "86",
+    "stem_similarity": 0.4194
+   }
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:146",
+   "source": "x-linx-060",
+   "no": "146",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-traficom-060 Q120: No option states a generally correct contemporary GPS limitation. Published database/antenna/RAIM facts must be checked independently.",
+   "same_family_comparison": {
+    "source": "x-traficom-060",
+    "no": "120",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "060",
+   "bank_id": 66025,
+   "key": "x-linx-060:147",
+   "source": "x-linx-060",
+   "no": "147",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "25",
+    "stem_similarity": 0.4565
+   },
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:148",
+   "source": "x-linx-060",
+   "no": "148",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-traficom-060",
+    "no": "121",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 66041,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "060",
+   "bank_id": 15882,
+   "key": "x-linx-060:149",
+   "source": "x-linx-060",
+   "no": "149",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "review",
+   "reason": "SourceexactVHFfrequencylistcontains121.17entry andhasnotbeenprimaryverified;genericharmonic-interferencecause is separatelyverified andindependentlyauthoredbelow. Noexactfrequency memorisation activated.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "128",
+    "stem_similarity": 0.48
+   },
+   "representative_key": "linx-060:gps-vhf-interference"
+  },
+  {
+   "subject": "060",
+   "key": "x-linx-060:150",
+   "source": "x-linx-060",
+   "no": "150",
+   "page": "21 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-060",
+    "no": "95",
+    "stem_similarity": 0.4646
+   },
+   "bank_id": 66040,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  }
+ ],
+ "cross_manifest_links": [
+  {
+   "representative_key": "caab-060:wgs84",
+   "target_candidate_key": "caab-060:wgs84",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:axis",
+   "target_candidate_key": "full-060:axis",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:cdi-distance",
+   "target_candidate_key": "full-060:cdi-distance",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:chart-coordinates",
+   "target_candidate_key": "full-060:chart-coordinates",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:chart-distance-method",
+   "target_candidate_key": "full-060:chart-distance-method",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:compass-point",
+   "target_candidate_key": "full-060:compass-point",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:dme-pair",
+   "target_candidate_key": "full-060:dme-pair",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:gps-cdi",
+   "target_candidate_key": "full-060:gps-cdi",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:gps-gs",
+   "target_candidate_key": "full-060:gps-gs",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:gps-update",
+   "target_candidate_key": "full-060:gps-update",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:ndb-homing",
+   "target_candidate_key": "full-060:ndb-homing",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:obstacle-unit-clearance",
+   "target_candidate_key": "full-060:obstacle-unit-clearance",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:prime",
+   "target_candidate_key": "full-060:prime",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:reverse-sensing",
+   "target_candidate_key": "full-060:reverse-sensing",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:utc-offset",
+   "target_candidate_key": "full-060:utc-offset",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:vor-identify",
+   "target_candidate_key": "full-060:vor-identify",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:vor-passage",
+   "target_candidate_key": "full-060:vor-passage",
+   "target_subject": "060"
+  },
+  {
+   "representative_key": "full-060:vor-position",
+   "target_candidate_key": "full-060:vor-position",
+   "target_subject": "060"
+  }
+ ],
+ "summary_counts": {
+  "existing": 107,
+  "duplicate_new": 30,
+  "review": 12,
+  "new": 1
+ },
+ "final_audit_counts": {
+  "scanned": 150,
+  "new_candidates": 2,
+  "decisions": {
+   "existing": 138,
+   "review": 11,
+   "new": 1
+  }
+ }
+}

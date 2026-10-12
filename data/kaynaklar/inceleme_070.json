@@ -1,4 +1,1405 @@
 {
  "ders": "070",
- "sorular": []
+ "sorular": [
+  {
+   "kaynak": "x-linx-070",
+   "no": "1",
+   "sayfa": "2",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Sırbistan raporlama muhatapları yereldir; Türkiye için aynı otoriteler kullanılamaz.",
+   "neden": "Sırbistan raporlama muhatapları yereldir; Türkiye için aynı otoriteler kullanılamaz."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "3",
+   "sayfa": "2",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Accident istisnası ile bildirim gerekliliği aynı değildir; doğal ölüm koşulu modern Annex13/EU996 ile netleştirilmeli.",
+   "neden": "Accident istisnası ile bildirim gerekliliği aynı değildir; doğal ölüm koşulu modern Annex13/EU996 ile netleştirilmeli."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "4",
+   "sayfa": "2",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "9",
+   "sayfa": "3",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "MEL varlığı/uygulanabilirlik koşulu olmadan belge gereğini tek cevapla seçmek yanıltır.",
+   "neden": "MEL varlığı/uygulanabilirlik koşulu olmadan belge gereğini tek cevapla seçmek yanıltır."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "16",
+   "sayfa": "4",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Sırbistan yerel123.5MHz yayını Türkiye için genellenmedi.",
+   "neden": "Sırbistan yerel123.5MHz yayını Türkiye için genellenmedi."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "21",
+   "sayfa": "5",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Manila/nylon bağlama gevşekliği malzeme/üretici talimatına bağlı; sahaya özgü talimatı genelleme.",
+   "neden": "Manila/nylon bağlama gevşekliği malzeme/üretici talimatına bağlı; sahaya özgü talimatı genelleme."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "22",
+   "sayfa": "5",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "23",
+   "sayfa": "5",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Devre kesiciyi otomatik resetleme güvenli evrensel kural değildir;14688 eski kayıt da ayrıca cevap incelemesi gerektirir.",
+   "neden": "Devre kesiciyi otomatik resetleme güvenli evrensel kural değildir;14688 eski kayıt da ayrıca cevap incelemesi gerektirir."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "24",
+   "sayfa": "5",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Mekanik ses ve duran pervane tek arızayı kesinleştirmez; kaynak cevabı doğrudan kopyalanmadı.",
+   "neden": "Mekanik ses ve duran pervane tek arızayı kesinleştirmez; kaynak cevabı doğrudan kopyalanmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "25",
+   "sayfa": "5",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Sessiz durma/windmilling tek başına yakıt açlığını kesinleştirmez; teşhis koşulu eksik.",
+   "neden": "Sessiz durma/windmilling tek başına yakıt açlığını kesinleştirmez; teşhis koşulu eksik."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "26",
+   "sayfa": "5",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "CHT düşük limit ve motor/POH prosedürü yok; tüm uçaklara bir yaklaşma güç talimatı verilemez.",
+   "neden": "CHT düşük limit ve motor/POH prosedürü yok; tüm uçaklara bir yaklaşma güç talimatı verilemez."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "27",
+   "sayfa": "5",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Mevcut14648 aynı kural/koşul tipini kapsar; yeni kayıt eklenmedi.",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "29",
+   "sayfa": "6",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Rezervuarların yerleşimi/gösterge kalibrasyonu/erişimi verilmedi; en güvenilir yöntemin genel cevabı inceleme.",
+   "neden": "Rezervuarların yerleşimi/gösterge kalibrasyonu/erişimi verilmedi; en güvenilir yöntemin genel cevabı inceleme."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "30",
+   "sayfa": "6",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Mevcut14553 aynı kural/koşul tipini kapsar; yeni kayıt eklenmedi.",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "31",
+   "sayfa": "6",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Su/fine-dirt filtre ayırma etkinliği filtre tasarımına bağlı; tek enzor kirletici belirsiz.",
+   "neden": "Su/fine-dirt filtre ayırma etkinliği filtre tasarımına bağlı; tek enzor kirletici belirsiz."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "35",
+   "sayfa": "6",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Tank/kapağın havalandırma tasarımı eksik; tüm yakıtın kesin sifonlanacağı evrensel iddia doğrulanmadı.",
+   "neden": "Tank/kapağın havalandırma tasarımı eksik; tüm yakıtın kesin sifonlanacağı evrensel iddia doğrulanmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "37",
+   "sayfa": "7",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Refuel bonding/grounding ve plastik kap kullanımı tasarıma bağlı;020 doğrulanmış bonding tipiyle daha sonra ilişki kurulabilir.",
+   "neden": "Refuel bonding/grounding ve plastik kap kullanımı tasarıma bağlı;020 doğrulanmış bonding tipiyle daha sonra ilişki kurulabilir."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "38",
+   "sayfa": "7",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "39",
+   "sayfa": "7",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "AVGASyoğunluğu varsayımı belirtilmemiş; tam verili030yakıt-kütle hesabı farklı kayıttır.",
+   "neden": "AVGASyoğunluğu varsayımı belirtilmemiş; tam verili030yakıt-kütle hesabı farklı kayıttır."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "40",
+   "sayfa": "7",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Yoğunluk/sıcaklık değeri verilmeden53LAVGASkütlesi kesin hesaplanamaz;030tam verili dönüşüm alıştırmaları ayrı.",
+   "neden": "Yoğunluk/sıcaklık değeri verilmeden53LAVGASkütlesi kesin hesaplanamaz;030tam verili dönüşüm alıştırmaları ayrı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "41",
+   "sayfa": "7",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "42",
+   "sayfa": "7",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "44",
+   "sayfa": "8",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Yakıt alternatifi her motor/POHiçin yalnız oktana göre seçilemez; onaylı yakıt gereği belirsiz.",
+   "neden": "Yakıt alternatifi her motor/POHiçin yalnız oktana göre seçilemez; onaylı yakıt gereği belirsiz."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "52",
+   "sayfa": "9",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Mevcut14620 aynı kural/koşul tipini kapsar; yeni kayıt eklenmedi.",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "53",
+   "sayfa": "9",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Kickback aşırıprimer ile tek başına açıklanmaz; ateşleme zamanlaması ve arıza koşulu gerekli.",
+   "neden": "Kickback aşırıprimer ile tek başına açıklanmaz; ateşleme zamanlaması ve arıza koşulu gerekli."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "55",
+   "sayfa": "9",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "56",
+   "sayfa": "9",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Normal vakum aralığı kuruluma bağlı;5inHgevrensel limit olarak doğrulanmadı.",
+   "neden": "Normal vakum aralığı kuruluma bağlı;5inHgevrensel limit olarak doğrulanmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "57",
+   "sayfa": "9",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Vakum düşük eşik değeri kuruluma bağlı;2inHgevrensel kural yapılmaz.",
+   "neden": "Vakum düşük eşik değeri kuruluma bağlı;2inHgevrensel kural yapılmaz."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "58",
+   "sayfa": "9",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "60",
+   "sayfa": "10",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Pusula ayarı için yıllık genel periyot tip/otoriteye bağlı;020 compass-swing amacı ayrı kabul edildi.",
+   "neden": "Pusula ayarı için yıllık genel periyot tip/otoriteye bağlı;020 compass-swing amacı ayrı kabul edildi."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "61",
+   "sayfa": "10",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "63",
+   "sayfa": "10",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Mevcut14494 aynı kural/koşul tipini kapsar; yeni kayıt eklenmedi.",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "64",
+   "sayfa": "10",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Kaynağın directionalbraking anahtarı standarddifferentialbraking terimiyle çelişir; bağımsız tanım için tam dayanak inceleme.",
+   "neden": "Kaynağın directionalbraking anahtarı standarddifferentialbraking terimiyle çelişir; bağımsız tanım için tam dayanak inceleme."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "67",
+   "sayfa": "11",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "73",
+   "sayfa": "11",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "77",
+   "sayfa": "12",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "80",
+   "sayfa": "12",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "İntake yangınında motor tipinin AFM/POH kontrol sırası gerekir; tek evrenselmarş/gaztalimatı yazılmadı.",
+   "neden": "İntake yangınında motor tipinin AFM/POH kontrol sırası gerekir; tek evrenselmarş/gaztalimatı yazılmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "87",
+   "sayfa": "13",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Groundcarbheat unfilteredairdust risk / powerleverorder differs from nearbygenericgovernor oriceclearance topic; new020candidateexactlink under review.",
+   "neden": "Groundcarbheat unfilteredairdust risk / powerleverorder differs from nearbygenericgovernor oriceclearance topic; new020candidateexactlink under review."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "88",
+   "sayfa": "14",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "89",
+   "sayfa": "14",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "90",
+   "sayfa": "14",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Groundcarbheat unfilteredairdust risk / powerleverorder differs from nearbygenericgovernor oriceclearance topic; new020candidateexactlink under review.",
+   "neden": "Groundcarbheat unfilteredairdust risk / powerleverorder differs from nearbygenericgovernor oriceclearance topic; new020candidateexactlink under review."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "91",
+   "sayfa": "14",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Left-zeroammeter alternatör yükü ve batarya şarjının birlikte yorumu bağlama bağlı; currentchargetype020inceleme.",
+   "neden": "Left-zeroammeter alternatör yükü ve batarya şarjının birlikte yorumu bağlama bağlı; currentchargetype020inceleme."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "92",
+   "sayfa": "14",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Kaynağınzero normalcevabı, yük varken alternatör başarısızlığına da işaret edebilir; koşul eksik.",
+   "neden": "Kaynağınzero normalcevabı, yük varken alternatör başarısızlığına da işaret edebilir; koşul eksik."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "93",
+   "sayfa": "14",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Left-zeroammeter-zero test koşulu ve kurulum ilişkisi yeni020adaylar ile ayrıca inceleme.",
+   "neden": "Left-zeroammeter-zero test koşulu ve kurulum ilişkisi yeni020adaylar ile ayrıca inceleme."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "94",
+   "sayfa": "15",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "100",
+   "sayfa": "16",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "107",
+   "sayfa": "17",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Oksijen süresi güncel Part-NCO.OP.190 sağlık/irtifa şartlarıyla bağlama konmadan genellenmez.",
+   "neden": "Oksijen süresi güncel Part-NCO.OP.190 sağlık/irtifa şartlarıyla bağlama konmadan genellenmez."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "108",
+   "sayfa": "17",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Oksijen taşıma/kullanım koşulları ve operasyon rejimi eksik; aynı ülke varsayımı yapılmaz.",
+   "neden": "Oksijen taşıma/kullanım koşulları ve operasyon rejimi eksik; aynı ülke varsayımı yapılmaz."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "110",
+   "sayfa": "17",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Mevcut16207 aynı kural/koşul tipini kapsar; yeni kayıt eklenmedi.",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "111",
+   "sayfa": "17",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Spiral dive ve spin farklıdır; ilk güç/kanat/yük sırası için AFMbağlamı tamamlanmadı.",
+   "neden": "Spiral dive ve spin farklıdır; ilk güç/kanat/yük sırası için AFMbağlamı tamamlanmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "114",
+   "sayfa": "18",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Mevcut16209 aynı kural/koşul tipini kapsar; yeni kayıt eklenmedi.",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "120",
+   "sayfa": "18",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "ÖzgünOP-1görsel CADPDFde yok; benzerTraficomfigürünün aynı çizim olduğu varsayılmadı.",
+   "neden": "ÖzgünOP-1görsel CADPDFde yok; benzerTraficomfigürünün aynı çizim olduğu varsayılmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "123",
+   "sayfa": "19",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "KökA/BsorarkenşıkA/Ekullanıyor; görüntü eksik. Bağımsız26/28beyazarrows/yellowchevrons tamamlandı.",
+   "neden": "KökA/BsorarkenşıkA/Ekullanıyor; görüntü eksik. Bağımsız26/28beyazarrows/yellowchevrons tamamlandı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "130",
+   "sayfa": "20",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Gece yaklaşma kıstasları farklı referanslara bağlı; her şeyi gündüzle aynı saymak belirsiz.",
+   "neden": "Gece yaklaşma kıstasları farklı referanslara bağlı; her şeyi gündüzle aynı saymak belirsiz."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "131",
+   "sayfa": "20",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "VASIglidepath takibiyle obstacleclearance/izinliunder-slope durumu bağlamı eksik.",
+   "neden": "VASIglidepath takibiyle obstacleclearance/izinliunder-slope durumu bağlamı eksik."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "132",
+   "sayfa": "20",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "VASI özel tesis/tip bilgisi ve engel açıklığı gerekir; evrensel SHALLifadesi doğrulanmadı.",
+   "neden": "VASI özel tesis/tip bilgisi ve engel açıklığı gerekir; evrensel SHALLifadesi doğrulanmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "134",
+   "sayfa": "20",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Tri-colourVASIparçaları özgün sistem bağlamıyla incelenmeli; PAPI97ile karıştırılmadı.",
+   "neden": "Tri-colourVASIparçaları özgün sistem bağlamıyla incelenmeli; PAPI97ile karıştırılmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "135",
+   "sayfa": "20",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Tri-colourVASIamber/high bilgi tipi korunur; güncel hedefPPLtipi/tesis bağlamı inceleme.",
+   "neden": "Tri-colourVASIamber/high bilgi tipi korunur; güncel hedefPPLtipi/tesis bağlamı inceleme."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "136",
+   "sayfa": "20",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Tri-colourVASIgreen/on-slope tipi korunur; standartPAPIredwhite ile birleştirilmedi.",
+   "neden": "Tri-colourVASIgreen/on-slope tipi korunur; standartPAPIredwhite ile birleştirilmedi."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "137",
+   "sayfa": "21",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "PulsatingVASI tesisi farklı; hangi renk/pulsefazı modern primer grafiğiyle kontrol tamamlanmadı.",
+   "neden": "PulsatingVASI tesisi farklı; hangi renk/pulsefazı modern primer grafiğiyle kontrol tamamlanmadı."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "144",
+   "sayfa": "21",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Taxiway üzerindekiwhiteX güncelSERAyellowtaxiway işaretiyle farklıdır; mevcutrunwaywhitecrossile sessizbirleştirme yok.",
+   "neden": "Taxiway üzerindekiwhiteX güncelSERAyellowtaxiway işaretiyle farklıdır; mevcutrunwaywhitecrossile sessizbirleştirme yok."
+  },
+  {
+   "kaynak": "x-linx-070",
+   "no": "147",
+   "sayfa": "22",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
+   "konu": "Özgünfirstoptiontaksiyi de pistlerle sınırlandırarak currentSERAile çelişiyor. Kaynak soru incelemede; bağımsız güncel kurallı uyarlama ayrı kayıttır.",
+   "neden": "Özgünfirstoptiontaksiyi de pistlerle sınırlandırarak currentSERAile çelişiyor. Kaynak soru incelemede; bağımsız güncel kurallı uyarlama ayrı kayıttır."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "2",
+   "sayfa": "3",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "MELin varlığı/uygulanabilirliği ve belge taşıma koşulları belirtilmemiş; genel tek doğru cevap kurulamaz.",
+   "neden": "MELin varlığı/uygulanabilirliği ve belge taşıma koşulları belirtilmemiş; genel tek doğru cevap kurulamaz."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "8",
+   "sayfa": "4",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Finlandiya yerel frekansı ve geçerlilik dönemi; Türkiye/EASA geneline taşınmaz.",
+   "neden": "Finlandiya yerel frekansı ve geçerlilik dönemi; Türkiye/EASA geneline taşınmaz."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "10",
+   "sayfa": "4",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Kumandaların hangi yüzeyinin sorulduğu belirtilmemiş; net12 kuyruk-rüzgâr tipi ayrı kabul edildi.",
+   "neden": "Kumandaların hangi yüzeyinin sorulduğu belirtilmemiş; net12 kuyruk-rüzgâr tipi ayrı kabul edildi."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "11",
+   "sayfa": "4",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Kuvvetli rüzgârda keskin dönüş riski; belirli yön/kanat koşulu net değil, genel enolası iddiası doğrulanmadı.",
+   "neden": "Kuvvetli rüzgârda keskin dönüş riski; belirli yön/kanat koşulu net değil, genel enolası iddiası doğrulanmadı."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "18",
+   "sayfa": "6",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "25",
+   "sayfa": "7",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Oksijen sorusunda süre/sağlık değerlendirmesi/Part-NCO koşulu eksik; tek13.000ft cevabı evrensel kural yapılmaz.",
+   "neden": "Oksijen sorusunda süre/sağlık değerlendirmesi/Part-NCO koşulu eksik; tek13.000ft cevabı evrensel kural yapılmaz."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "32",
+   "sayfa": "8",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "33",
+   "sayfa": "8",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Heavy/Super, MTOM eşikleri ve RECAT ayrımı belirtilmemiş; kategori adları kaynakta hatalı.",
+   "neden": "Heavy/Super, MTOM eşikleri ve RECAT ayrımı belirtilmemiş; kategori adları kaynakta hatalı."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "37",
+   "sayfa": "9",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "42",
+   "sayfa": "10",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Part-NCO/ELA1 istisnası belirtilmediği için tescilli tüm uçaklara1söndürücü genellemesi yapılamaz.",
+   "neden": "Part-NCO/ELA1 istisnası belirtilmediği için tescilli tüm uçaklara1söndürücü genellemesi yapılamaz."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "50",
+   "sayfa": "11",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "55",
+   "sayfa": "12",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "61",
+   "sayfa": "13",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "63",
+   "sayfa": "13",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Rüzgâr kuvveti ve uçak limitleri verilmeden rüzgârın genelde tehlikesiz olduğu söylenemez.",
+   "neden": "Rüzgâr kuvveti ve uçak limitleri verilmeden rüzgârın genelde tehlikesiz olduğu söylenemez."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "65",
+   "sayfa": "13",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "67",
+   "sayfa": "13",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "69",
+   "sayfa": "14",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Mevcut16017 aynı bilgi/ilgili koşulu kapsar; yeni soru eklenmedi.",
+   "neden": "Farklı faz/çıktı/kavram veya mevcut yaygınlık soruluyor; önceki tam eşleşme iddiası kaldırılıp kaynak sorusu incelemede korundu."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "74",
+   "sayfa": "15",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Eski Finlandiya meydan güzergâhı ve uygulanabilir ekipman şartları; güncel yerel kaynak/ELA1-su şartı gerekli.",
+   "neden": "Eski Finlandiya meydan güzergâhı ve uygulanabilir ekipman şartları; güncel yerel kaynak/ELA1-su şartı gerekli."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "77",
+   "sayfa": "15",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "78",
+   "sayfa": "15",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Olay türü ve ülke/raporlama rejimi eksik; ASAPile azami saat arasındaki ayrım doğrulanmadı.",
+   "neden": "Olay türü ve ülke/raporlama rejimi eksik; ASAPile azami saat arasındaki ayrım doğrulanmadı."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "79",
+   "sayfa": "15",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "IMCye girişte önce kontrol/gösterge/yardım gerekir;180dönüşün koşulları eksik. Belirsiz evrensel talimat aktif soru yapılmadı.",
+   "neden": "IMCye girişte önce kontrol/gösterge/yardım gerekir;180dönüşün koşulları eksik. Belirsiz evrensel talimat aktif soru yapılmadı."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "80",
+   "sayfa": "15",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Gürültü bölgesi işaretinin sembolü ve harita sistemi yok; yerel özellik genellenmez.",
+   "neden": "Gürültü bölgesi işaretinin sembolü ve harita sistemi yok; yerel özellik genellenmez."
+  },
+  {
+   "kaynak": "x-traficom-070",
+   "no": "81",
+   "sayfa": "16",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+   "konu": "Olay raporlama yükümlülüğü ve kapsamı/ülke belirtilmemiş; şartları netleşmeden aktif soru yapılmaz.",
+   "neden": "Olay raporlama yükümlülüğü ve kapsamı/ülke belirtilmemiş; şartları netleşmeden aktif soru yapılmaz."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "5",
+   "sayfa": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "8",
+   "sayfa": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Yakıt alternatifi her motor/POHiçin yalnız oktana göre seçilemez; onaylı yakıt gereği belirsiz.",
+   "neden": "Yakıt alternatifi her motor/POHiçin yalnız oktana göre seçilemez; onaylı yakıt gereği belirsiz."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "10",
+   "sayfa": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "11",
+   "sayfa": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "12",
+   "sayfa": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Yoğunluk/sıcaklık değeri verilmeden53LAVGASkütlesi kesin hesaplanamaz;030tam verili dönüşüm alıştırmaları ayrı.",
+   "neden": "Yoğunluk/sıcaklık değeri verilmeden53LAVGASkütlesi kesin hesaplanamaz;030tam verili dönüşüm alıştırmaları ayrı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "15",
+   "sayfa": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Sırbistan raporlama muhatapları yereldir; Türkiye için aynı otoriteler kullanılamaz.",
+   "neden": "Sırbistan raporlama muhatapları yereldir; Türkiye için aynı otoriteler kullanılamaz."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "16",
+   "sayfa": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "22",
+   "sayfa": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Normal vakum aralığı kuruluma bağlı;5inHgevrensel limit olarak doğrulanmadı.",
+   "neden": "Normal vakum aralığı kuruluma bağlı;5inHgevrensel limit olarak doğrulanmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "24",
+   "sayfa": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Vakum düşük eşik değeri kuruluma bağlı;2inHgevrensel kural yapılmaz.",
+   "neden": "Vakum düşük eşik değeri kuruluma bağlı;2inHgevrensel kural yapılmaz."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "25",
+   "sayfa": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Kaynağın directionalbraking anahtarı standarddifferentialbraking terimiyle çelişir; bağımsız tanım için tam dayanak inceleme.",
+   "neden": "Kaynağın directionalbraking anahtarı standarddifferentialbraking terimiyle çelişir; bağımsız tanım için tam dayanak inceleme."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "26",
+   "sayfa": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Bağımsız ikinci inceleme: farklı kaynak koşulu",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "29",
+   "sayfa": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "31",
+   "sayfa": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Kickback aşırıprimer ile tek başına açıklanmaz; ateşleme zamanlaması ve arıza koşulu gerekli.",
+   "neden": "Kickback aşırıprimer ile tek başına açıklanmaz; ateşleme zamanlaması ve arıza koşulu gerekli."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "32",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Bağımsız ikinci inceleme: farklı kaynak koşulu",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "34",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "35",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Accident istisnası ile bildirim gerekliliği aynı değildir; doğal ölüm koşulu modern Annex13/EU996 ile netleştirilmeli.",
+   "neden": "Accident istisnası ile bildirim gerekliliği aynı değildir; doğal ölüm koşulu modern Annex13/EU996 ile netleştirilmeli."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "41",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Tank/kapağın havalandırma tasarımı eksik; tüm yakıtın kesin sifonlanacağı evrensel iddia doğrulanmadı.",
+   "neden": "Tank/kapağın havalandırma tasarımı eksik; tüm yakıtın kesin sifonlanacağı evrensel iddia doğrulanmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "45",
+   "sayfa": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Su/fine-dirt filtre ayırma etkinliği filtre tasarımına bağlı; tek enzor kirletici belirsiz.",
+   "neden": "Su/fine-dirt filtre ayırma etkinliği filtre tasarımına bağlı; tek enzor kirletici belirsiz."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "47",
+   "sayfa": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Rezervuarların yerleşimi/gösterge kalibrasyonu/erişimi verilmedi; en güvenilir yöntemin genel cevabı inceleme.",
+   "neden": "Rezervuarların yerleşimi/gösterge kalibrasyonu/erişimi verilmedi; en güvenilir yöntemin genel cevabı inceleme."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "48",
+   "sayfa": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "49",
+   "sayfa": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Bağımsız ikinci inceleme: farklı kaynak koşulu",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "50",
+   "sayfa": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "CHT düşük limit ve motor/POH prosedürü yok; tüm uçaklara bir yaklaşma güç talimatı verilemez.",
+   "neden": "CHT düşük limit ve motor/POH prosedürü yok; tüm uçaklara bir yaklaşma güç talimatı verilemez."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "51",
+   "sayfa": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Sessiz durma/windmilling tek başına yakıt açlığını kesinleştirmez; teşhis koşulu eksik.",
+   "neden": "Sessiz durma/windmilling tek başına yakıt açlığını kesinleştirmez; teşhis koşulu eksik."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "52",
+   "sayfa": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Mekanik ses ve duran pervane tek arızayı kesinleştirmez; kaynak cevabı doğrudan kopyalanmadı.",
+   "neden": "Mekanik ses ve duran pervane tek arızayı kesinleştirmez; kaynak cevabı doğrudan kopyalanmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "53",
+   "sayfa": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Devre kesiciyi otomatik resetleme güvenli evrensel kural değildir;14688 eski kayıt da ayrıca cevap incelemesi gerektirir.",
+   "neden": "Devre kesiciyi otomatik resetleme güvenli evrensel kural değildir;14688 eski kayıt da ayrıca cevap incelemesi gerektirir."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "54",
+   "sayfa": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "55",
+   "sayfa": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Manila/nylon bağlama gevşekliği malzeme/üretici talimatına bağlı; sahaya özgü talimatı genelleme.",
+   "neden": "Manila/nylon bağlama gevşekliği malzeme/üretici talimatına bağlı; sahaya özgü talimatı genelleme."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "56",
+   "sayfa": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Bağımsız ikinci inceleme: farklı kaynak koşulu",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "59",
+   "sayfa": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Oksijen süresi güncel Part-NCO.OP.190 sağlık/irtifa şartlarıyla bağlama konmadan genellenmez.",
+   "neden": "Oksijen süresi güncel Part-NCO.OP.190 sağlık/irtifa şartlarıyla bağlama konmadan genellenmez."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "60",
+   "sayfa": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Oksijen taşıma/kullanım koşulları ve operasyon rejimi eksik; aynı ülke varsayımı yapılmaz.",
+   "neden": "Oksijen taşıma/kullanım koşulları ve operasyon rejimi eksik; aynı ülke varsayımı yapılmaz."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "62",
+   "sayfa": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Bağımsız ikinci inceleme: farklı kaynak koşulu",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "63",
+   "sayfa": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Spiral dive ve spin farklıdır; ilk güç/kanat/yük sırası için AFMbağlamı tamamlanmadı.",
+   "neden": "Spiral dive ve spin farklıdır; ilk güç/kanat/yük sırası için AFMbağlamı tamamlanmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "67",
+   "sayfa": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "68",
+   "sayfa": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Pusula ayarı için yıllık genel periyot tip/otoriteye bağlı;020 compass-swing amacı ayrı kabul edildi.",
+   "neden": "Pusula ayarı için yıllık genel periyot tip/otoriteye bağlı;020 compass-swing amacı ayrı kabul edildi."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "70",
+   "sayfa": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Refuel bonding/grounding ve plastik kap kullanımı tasarıma bağlı;020 doğrulanmış bonding tipiyle daha sonra ilişki kurulabilir.",
+   "neden": "Refuel bonding/grounding ve plastik kap kullanımı tasarıma bağlı;020 doğrulanmış bonding tipiyle daha sonra ilişki kurulabilir."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "71",
+   "sayfa": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "72",
+   "sayfa": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "MEL varlığı/uygulanabilirlik koşulu olmadan belge gereğini tek cevapla seçmek yanıltır.",
+   "neden": "MEL varlığı/uygulanabilirlik koşulu olmadan belge gereğini tek cevapla seçmek yanıltır."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "73",
+   "sayfa": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "AVGASyoğunluğu varsayımı belirtilmemiş; tam verili030yakıt-kütle hesabı farklı kayıttır.",
+   "neden": "AVGASyoğunluğu varsayımı belirtilmemiş; tam verili030yakıt-kütle hesabı farklı kayıttır."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "75",
+   "sayfa": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Sırbistan yerel123.5MHz yayını Türkiye için genellenmedi.",
+   "neden": "Sırbistan yerel123.5MHz yayını Türkiye için genellenmedi."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "94",
+   "sayfa": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Gece yaklaşma kıstasları farklı referanslara bağlı; her şeyi gündüzle aynı saymak belirsiz.",
+   "neden": "Gece yaklaşma kıstasları farklı referanslara bağlı; her şeyi gündüzle aynı saymak belirsiz."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "95",
+   "sayfa": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "VASIglidepath takibiyle obstacleclearance/izinliunder-slope durumu bağlamı eksik.",
+   "neden": "VASIglidepath takibiyle obstacleclearance/izinliunder-slope durumu bağlamı eksik."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "96",
+   "sayfa": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "VASI özel tesis/tip bilgisi ve engel açıklığı gerekir; evrensel SHALLifadesi doğrulanmadı.",
+   "neden": "VASI özel tesis/tip bilgisi ve engel açıklığı gerekir; evrensel SHALLifadesi doğrulanmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "98",
+   "sayfa": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Tri-colourVASIparçaları özgün sistem bağlamıyla incelenmeli; PAPI97ile karıştırılmadı.",
+   "neden": "Tri-colourVASIparçaları özgün sistem bağlamıyla incelenmeli; PAPI97ile karıştırılmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "99",
+   "sayfa": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Tri-colourVASIamber/high bilgi tipi korunur; güncel hedefPPLtipi/tesis bağlamı inceleme.",
+   "neden": "Tri-colourVASIamber/high bilgi tipi korunur; güncel hedefPPLtipi/tesis bağlamı inceleme."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "100",
+   "sayfa": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Tri-colourVASIgreen/on-slope tipi korunur; standartPAPIredwhite ile birleştirilmedi.",
+   "neden": "Tri-colourVASIgreen/on-slope tipi korunur; standartPAPIredwhite ile birleştirilmedi."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "101",
+   "sayfa": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "PulsatingVASI tesisi farklı; hangi renk/pulsefazı modern primer grafiğiyle kontrol tamamlanmadı.",
+   "neden": "PulsatingVASI tesisi farklı; hangi renk/pulsefazı modern primer grafiğiyle kontrol tamamlanmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "105",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "107",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Groundcarbheat unfilteredairdust risk / powerleverorder differs from nearbygenericgovernor oriceclearance topic; new020candidateexactlink under review.",
+   "neden": "Groundcarbheat unfilteredairdust risk / powerleverorder differs from nearbygenericgovernor oriceclearance topic; new020candidateexactlink under review."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "108",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Bağımsız ikinci inceleme: farklı kaynak koşulu",
+   "neden": "Mevcut kayıt farklı hedef/koşul soruyor; bu tam-eşleşme iddiası kaldırıldı. Özgün koşul ve birincil cevap inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "110",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Groundcarbheat unfilteredairdust risk / powerleverorder differs from nearbygenericgovernor oriceclearance topic; new020candidateexactlink under review.",
+   "neden": "Groundcarbheat unfilteredairdust risk / powerleverorder differs from nearbygenericgovernor oriceclearance topic; new020candidateexactlink under review."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "112",
+   "sayfa": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "113",
+   "sayfa": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "ÖzgünOP-3A görseli CADPDFde yok; harflerin göstergesi tahmin edilmedi.",
+   "neden": "ÖzgünOP-3A görseli CADPDFde yok; harflerin göstergesi tahmin edilmedi."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "115",
+   "sayfa": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "KökA/BsorarkenşıkA/Ekullanıyor; görüntü eksik. Bağımsız26/28beyazarrows/yellowchevrons tamamlandı.",
+   "neden": "KökA/BsorarkenşıkA/Ekullanıyor; görüntü eksik. Bağımsız26/28beyazarrows/yellowchevrons tamamlandı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "116",
+   "sayfa": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "ÖzgünOP-1görsel CADPDFde yok; benzerTraficomfigürünün aynı çizim olduğu varsayılmadı.",
+   "neden": "ÖzgünOP-1görsel CADPDFde yok; benzerTraficomfigürünün aynı çizim olduğu varsayılmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "121",
+   "sayfa": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "122",
+   "sayfa": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Left-zeroammeter alternatör yükü ve batarya şarjının birlikte yorumu bağlama bağlı; currentchargetype020inceleme.",
+   "neden": "Left-zeroammeter alternatör yükü ve batarya şarjının birlikte yorumu bağlama bağlı; currentchargetype020inceleme."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "125",
+   "sayfa": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "İntake yangınında motor tipinin AFM/POH kontrol sırası gerekir; tek evrenselmarş/gaztalimatı yazılmadı.",
+   "neden": "İntake yangınında motor tipinin AFM/POH kontrol sırası gerekir; tek evrenselmarş/gaztalimatı yazılmadı."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "128",
+   "sayfa": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "133",
+   "sayfa": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "138",
+   "sayfa": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Left-zeroammeter-zero test koşulu ve kurulum ilişkisi yeni020adaylar ile ayrıca inceleme.",
+   "neden": "Left-zeroammeter-zero test koşulu ve kurulum ilişkisi yeni020adaylar ile ayrıca inceleme."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "139",
+   "sayfa": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Kaynağınzero normalcevabı, yük varken alternatör başarısızlığına da işaret edebilir; koşul eksik.",
+   "neden": "Kaynağınzero normalcevabı, yük varken alternatör başarısızlığına da işaret edebilir; koşul eksik."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "144",
+   "sayfa": "17",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Özgün ilk seçenek taksiyi de pistlerle sınırlandırarak güncel SERA ile çelişiyor. Kaynak soru incelemede; bağımsız güncel kurallı uyarlama ayrı kayıttır.",
+   "neden": "Özgün ilk seçenek taksiyi de pistlerle sınırlandırarak güncel SERA ile çelişiyor. Kaynak soru incelemede; bağımsız güncel kurallı uyarlama ayrı kayıttır."
+  },
+  {
+   "kaynak": "x-cad-070",
+   "no": "147",
+   "sayfa": "17",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "konu": "Taxiway üzerindekiwhiteX güncelSERAyellowtaxiway işaretiyle farklıdır; mevcutrunwaywhitecrossile sessizbirleştirme yok.",
+   "neden": "Taxiway üzerindekiwhiteX güncelSERAyellowtaxiway işaretiyle farklıdır; mevcutrunwaywhitecrossile sessizbirleştirme yok."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "1",
+   "sayfa": "3",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "3",
+   "sayfa": "3",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "4",
+   "sayfa": "3",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Gürültü azaltmada evrensel high/late yaklaşma uçağa özgü stabil yaklaşma ve publishedusule bağlıdır.",
+   "neden": "Gürültü azaltmada evrensel high/late yaklaşma uçağa özgü stabil yaklaşma ve publishedusule bağlıdır."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "5",
+   "sayfa": "4",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Alçak tırmanış dönüşü gürültü ile emniyet/genel kural ayrımı eksik;51modernpublished-safety-priority kabul edildi.",
+   "neden": "Alçak tırmanış dönüşü gürültü ile emniyet/genel kural ayrımı eksik;51modernpublished-safety-priority kabul edildi."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "6",
+   "sayfa": "4",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Köy üzerinden tek evrensel irtifa/rota yok;51modern noiseusulü seçildi.",
+   "neden": "Köy üzerinden tek evrensel irtifa/rota yok;51modern noiseusulü seçildi."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "7",
+   "sayfa": "4",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı.",
+   "neden": "PPL ile ilgili olabilecek özgün koşul/kaynak anahtarı veya yakın kayıt ayrımı tamamlanmadı; tahminli cevap aktif bankaya konmadı."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "8",
+   "sayfa": "4",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Pumping throttle riskinin motor karbüratör/akseleratör pompası/AFM koşulu eksik; universal engine-start prose aktif yapılmadı.",
+   "neden": "Pumping throttle riskinin motor karbüratör/akseleratör pompası/AFM koşulu eksik; universal engine-start prose aktif yapılmadı."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "9",
+   "sayfa": "4",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Motor tipi/power-source belirtilmeden intake/cablefire tekolasılık seçilemez.",
+   "neden": "Motor tipi/power-source belirtilmeden intake/cablefire tekolasılık seçilemez."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "12",
+   "sayfa": "5",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Söndürücü kullanım mesafesi ürün/üreticiye bağlı;1–1.5mher cihaz için genellenmedi.",
+   "neden": "Söndürücü kullanım mesafesi ürün/üreticiye bağlı;1–1.5mher cihaz için genellenmedi."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "14",
+   "sayfa": "5",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Motor yangını ile elektriksigortası ayrımı korunur; heater/vent davranışı AFM/POH ve duman kaynağına bağlı.",
+   "neden": "Motor yangını ile elektriksigortası ayrımı korunur; heater/vent davranışı AFM/POH ve duman kaynağına bağlı."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "18",
+   "sayfa": "6",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Kök motor yangını derken panelden duman var; kaynak teşhisi ve ilk işlem belirsiz,15electricalilebirleştirilmedi.",
+   "neden": "Kök motor yangını derken panelden duman var; kaynak teşhisi ve ilk işlem belirsiz,15electricalilebirleştirilmedi."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "19",
+   "sayfa": "6",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "22",
+   "sayfa": "7",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "İlk headwindgain ile sonraki flightpath/equilibrium ayırımı için net zaman durumu gerekli; yeni tek TASgenellemesi yapılmadı.",
+   "neden": "İlk headwindgain ile sonraki flightpath/equilibrium ayırımı için net zaman durumu gerekli; yeni tek TASgenellemesi yapılmadı."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "23",
+   "sayfa": "7",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Decreasingtailwindvsheadwinddeğişimi ilk/sonraki durum belirsiz; conditions remain separate in review.",
+   "neden": "Decreasingtailwindvsheadwinddeğişimi ilk/sonraki durum belirsiz; conditions remain separate in review."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "25",
+   "sayfa": "8",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "OPR-001 nokta2 özgün microburst görselindeki konumu ayrı doğrulamak gerekir; genel microburst tipi65011ile tam eşleşme iddiası yok.",
+   "neden": "OPR-001 nokta2 özgün microburst görselindeki konumu ayrı doğrulamak gerekir; genel microburst tipi65011ile tam eşleşme iddiası yok."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "26",
+   "sayfa": "8",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor.",
+   "neden": "Son semantik kontrolde önceki yakın-konu eşleşmesinin aynı koşulu kapsamadığı görüldü. Ayrım kaybedilmedi; güncel cevap/bağlam veya ek aday doğrulaması bekliyor."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "30",
+   "sayfa": "9",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Microburstte universalVY hedefi güncel kaçış usulüne göre doğru olmayabilir; uçak özel prosedürü gerekiyor.",
+   "neden": "Microburstte universalVY hedefi güncel kaçış usulüne göre doğru olmayabilir; uçak özel prosedürü gerekiyor."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "38",
+   "sayfa": "11",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Jetblast için evrensel200m mesafe uçağa/itkiye bağlıdır;20fizikseljetblastgereği ayrı kabul edildi.",
+   "neden": "Jetblast için evrensel200m mesafe uçağa/itkiye bağlıdır;20fizikseljetblastgereği ayrı kabul edildi."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "40",
+   "sayfa": "11",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Hasat edilmiş tarla her araziyi otomatik en uygun yapmaz; yüzey/engel/uzunluk eksik.",
+   "neden": "Hasat edilmiş tarla her araziyi otomatik en uygun yapmaz; yüzey/engel/uzunluk eksik."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "44",
+   "sayfa": "12",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Tarla renk/crop durumu emniyet için yeterli veri değil;39alan inceleme fırsatı bağımsız kabul edildi.",
+   "neden": "Tarla renk/crop durumu emniyet için yeterli veri değil;39alan inceleme fırsatı bağımsız kabul edildi."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "45",
+   "sayfa": "12",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Aşırı ısınmış frenlerde yaklaşma yönü gerekli bilgi tipi; teker/tyreüretici güncel prosedürü ve primerdayanak tamamlanmadan aktif değil.",
+   "neden": "Aşırı ısınmış frenlerde yaklaşma yönü gerekli bilgi tipi; teker/tyreüretici güncel prosedürü ve primerdayanak tamamlanmadan aktif değil."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "46",
+   "sayfa": "12",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Sıcak wheelburstaxial yönü PPLilgili, fakat üretici güvenlik dayanağı ve örnek şartı eksik; kayıp yerine incelemede.",
+   "neden": "Sıcak wheelburstaxial yönü PPLilgili, fakat üretici güvenlik dayanağı ve örnek şartı eksik; kayıp yerine incelemede."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "49",
+   "sayfa": "13",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Eski%25toplamrunway kriteri currentGRFthirdscondition ayrımını atlıyor; yeni güncel kural gibi kopyalanmadı.",
+   "neden": "Eski%25toplamrunway kriteri currentGRFthirdscondition ayrımını atlıyor; yeni güncel kural gibi kopyalanmadı."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "50",
+   "sayfa": "13",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Eski25%kritery currentRCC/thirdsuygulamasıyla bağlamlanmalı.",
+   "neden": "Eski25%kritery currentRCC/thirdsuygulamasıyla bağlamlanmalı."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "55",
+   "sayfa": "14",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Frictionratio temelmatematik olsa da currentGRFbraking/friction ayrımı ve ayrıPPLgerekli tip değeri inceleme.",
+   "neden": "Frictionratio temelmatematik olsa da currentGRFbraking/friction ayrımı ve ayrıPPLgerekli tip değeri inceleme."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "56",
+   "sayfa": "14",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Contaminatedrunwayapproach/flap/brakemax prosedürü AFM/POHye bağlı;54hafifuçak skidreaction ayrı kabul edildi.",
+   "neden": "Contaminatedrunwayapproach/flap/brakemax prosedürü AFM/POHye bağlı;54hafifuçak skidreaction ayrı kabul edildi."
+  },
+  {
+   "kaynak": "x-austro-070",
+   "no": "57",
+   "sayfa": "14",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf",
+   "konu": "Mevcut15585 aynı bilgi/ilgili koşulu kapsar; yeni soru eklenmedi.",
+   "neden": "Farklı faz/çıktı/kavram veya mevcut yaygınlık soruluyor; önceki tam eşleşme iddiası kaldırılıp kaynak sorusu incelemede korundu."
+  }
+ ]
 }

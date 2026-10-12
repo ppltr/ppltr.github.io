@@ -1,4 +1,949 @@
 {
  "ders": "030",
- "sorular": []
+ "sorular": [
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "1",
+   "sayfa": "1 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "Annex-levelreference isgeneralregulatorycontext;originalsingleanswerunchecked;currentmass/CGlimitsalready14821.",
+   "neden": "Annex-levelreference isgeneralregulatorycontext;originalsingleanswerunchecked;currentmass/CGlimitsalready14821."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "3",
+   "sayfa": "1 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "Originaloperatoractual/standardmassrule isambiguousamongmultiplemethodoptions;no CATstandardmassrule generalisedtoPPL.",
+   "neden": "Originaloperatoractual/standardmassrule isambiguousamongmultiplemethodoptions;no CATstandardmassrule generalisedtoPPL."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "20",
+   "sayfa": "2 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "Standardadult/child/infantmassoperatorrule context;actualPPLloadmassesremainrequired and no genericstandardmassanswerassigned.",
+   "neden": "Standardadult/child/infantmassoperatorrule context;actualPPLloadmassesremainrequired and no genericstandardmassanswerassigned."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "31",
+   "sayfa": "4 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "SourceLMC5percentlimitoptionsdonotdefineanacceptableuniversalPPLexceedance;limitsmaynotbeignored.",
+   "neden": "SourceLMC5percentlimitoptionsdonotdefineanacceptableuniversalPPLexceedance;limitsmaynotbeignored."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "43",
+   "sayfa": "5 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "SpecificCAP696SEP1externaldiagramgeometrynotembedded;noexactundercarriage/firewalldistance inferred.",
+   "neden": "SpecificCAP696SEP1externaldiagramgeometrynotembedded;noexactundercarriage/firewalldistance inferred."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "46",
+   "sayfa": "5 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "OriginalCAP cargo-zone/dimension/running-load constraints require full original chart. The independently specified floor/pallet calculation does not imply those different physical-fit or running-load answers.",
+   "neden": "OriginalCAP cargo-zone/dimension/running-load constraints require full original chart. The independently specified floor/pallet calculation does not imply those different physical-fit or running-load answers."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "47",
+   "sayfa": "5 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "OriginalCAP cargo-zone/dimension/running-load constraints require full original chart. The independently specified floor/pallet calculation does not imply those different physical-fit or running-load answers.",
+   "neden": "OriginalCAP cargo-zone/dimension/running-load constraints require full original chart. The independently specified floor/pallet calculation does not imply those different physical-fit or running-load answers."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "50",
+   "sayfa": "6 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "SpecificCAP696SEP1wheel/CGgeometryrequirespublishedfigure;genericCGlimits alreadybank.",
+   "neden": "SpecificCAP696SEP1wheel/CGgeometryrequirespublishedfigure;genericCGlimits alreadybank."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "51",
+   "sayfa": "6 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "SpecificCAP696SEP1fuel-centroid/firewallgeometryrequiresfigure;noguessedmeasurement.",
+   "neden": "SpecificCAP696SEP1fuel-centroid/firewallgeometryrequiresfigure;noguessedmeasurement."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "53",
+   "sayfa": "6 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "CAPenvelopewordinglowerforwardCGlimitrequiresoriginalenvelope;noexactlabelanswer.",
+   "neden": "CAPenvelopewordinglowerforwardCGlimitrequiresoriginalenvelope;noexactlabelanswer."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "56",
+   "sayfa": "6 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "CAP696MEP1wheelgeometryexactdiagramunverified.",
+   "neden": "CAP696MEP1wheelgeometryexactdiagramunverified."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "57",
+   "sayfa": "6 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "CAP696MEP1nosewheelgeometryexactdiagramunverified.",
+   "neden": "CAP696MEP1nosewheelgeometryexactdiagramunverified."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "61",
+   "sayfa": "6 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "OriginalCAP cargo-zone/dimension/running-load constraints require full original chart. The independently specified floor/pallet calculation does not imply those different physical-fit or running-load answers.",
+   "neden": "OriginalCAP cargo-zone/dimension/running-load constraints require full original chart. The independently specified floor/pallet calculation does not imply those different physical-fit or running-load answers."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "62",
+   "sayfa": "7 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "OriginalCAP cargo-zone/dimension/running-load constraints require full original chart. The independently specified floor/pallet calculation does not imply those different physical-fit or running-load answers.",
+   "neden": "OriginalCAP cargo-zone/dimension/running-load constraints require full original chart. The independently specified floor/pallet calculation does not imply those different physical-fit or running-load answers."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "64",
+   "sayfa": "7 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "SampleaircraftspecificCAPfuelcapacity chartunverified;nogenericcapacityquantitymemorisation.",
+   "neden": "SampleaircraftspecificCAPfuelcapacity chartunverified;nogenericcapacityquantitymemorisation."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "74",
+   "sayfa": "8 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "NeutralstabilitydoesnotuniversallylocateCGatonefixedcertifiedlimit;aircraftstability/neutralpointdata absent.",
+   "neden": "NeutralstabilitydoesnotuniversallylocateCGatonefixedcertifiedlimit;aircraftstability/neutralpointdata absent."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "78",
+   "sayfa": "8 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "OPSmanualfuel/oildefaultdensityneedsaircraft/operatorcontext;activeexercisesprovideactualdensityexplicitly.",
+   "neden": "OPSmanualfuel/oildefaultdensityneedsaircraft/operatorcontext;activeexercisesprovideactualdensityexplicitly."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "103",
+   "sayfa": "11 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "Combinescommercial4-yearintervalwithhangarconditions;oneall-optionanswerisnotuniversallyPPLcorrect.",
+   "neden": "Combinescommercial4-yearintervalwithhangarconditions;oneall-optionanswerisnotuniversallyPPLcorrect."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "104",
+   "sayfa": "11 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "OriginalCAP cargo-zone/dimension/running-load constraints require full original chart. The independently specified floor/pallet calculation does not imply those different physical-fit or running-load answers.",
+   "neden": "OriginalCAP cargo-zone/dimension/running-load constraints require full original chart. The independently specified floor/pallet calculation does not imply those different physical-fit or running-load answers."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "156",
+   "sayfa": "15 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "HistoricalNOTAMclassI/IItypesandobsoleteformcategoriesneedcurrentAIMverification.",
+   "neden": "HistoricalNOTAMclassI/IItypesandobsoleteformcategoriesneedcurrentAIMverification."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "193",
+   "sayfa": "21 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "MinimumFLcombinescoldtemperaturetruealtitudecorrectionwithoutreferenceprofileandrouteIFR/VFRconditions;noexactnumericanswer.",
+   "neden": "MinimumFLcombinescoldtemperaturetruealtitudecorrectionwithoutreferenceprofileandrouteIFR/VFRconditions;noexactnumericanswer."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "219",
+   "sayfa": "24 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "Computerplannerweather/anti-iceassumptionsaresoftware-specific;no universalautomaticallowance.",
+   "neden": "Computerplannerweather/anti-iceassumptionsaresoftware-specific;no universalautomaticallowance."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "220",
+   "sayfa": "24 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "Computerflightplanfiling/reroutingbehaviourdependssoftware/service;no universalcapability.",
+   "neden": "Computerflightplanfiling/reroutingbehaviourdependssoftware/service;no universalcapability."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "232",
+   "sayfa": "26 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "RVSMapplicability/equipment/airspacerulesrequired;genericPPLVFRlevelnot substitutedforIFR/RVSMcase.",
+   "neden": "RVSMapplicability/equipment/airspacerulesrequired;genericPPLVFRlevelnot substitutedforIFR/RVSMcase."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "247",
+   "sayfa": "27 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "ATSrouteDCTencodingneedsfullroute/forminstructions;nooriginalstringasserted.",
+   "neden": "ATSrouteDCTencodingneedsfullroute/forminstructions;nooriginalstringasserted."
+  },
+  {
+   "kaynak": "x-caab-cpl-030",
+   "no": "248",
+   "sayfa": "28 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "Currentflightplanroute-speedchangethreshold/Machcontextmustbeverified;existingcontrolledTASreportcase14259notsamefielddefinition.",
+   "neden": "Currentflightplanroute-speedchangethreshold/Machcontextmustbeverified;existingcontrolledTASreportcase14259notsamefielddefinition."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "1",
+   "sayfa": "1 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Same operativeknowledgeconditionsasCPL030Q1;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). Annex-levelreference isgeneralregulatorycontext;originalsingleanswerunchecked;currentmass/CGlimitsalready14821.",
+   "neden": "Same operativeknowledgeconditionsasCPL030Q1;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). Annex-levelreference isgeneralregulatorycontext;originalsingleanswerunchecked;currentmass/CGlimitsalready14821."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "2",
+   "sayfa": "1 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Same operativeknowledgeconditionsasCPL030Q3;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). Originaloperatoractual/standardmassrule isambiguousamongmultiplemethodoptions;no CATstandardmassrule generalisedtoPPL.",
+   "neden": "Same operativeknowledgeconditionsasCPL030Q3;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). Originaloperatoractual/standardmassrule isambiguousamongmultiplemethodoptions;no CATstandardmassrule generalisedtoPPL."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "12",
+   "sayfa": "2 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Same operativeknowledgeconditionsasCPL030Q20;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). Standardadult/child/infantmassoperatorrule context;actualPPLloadmassesremainrequired and no genericstandardmassanswerassigned.",
+   "neden": "Same operativeknowledgeconditionsasCPL030Q20;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). Standardadult/child/infantmassoperatorrule context;actualPPLloadmassesremainrequired and no genericstandardmassanswerassigned."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "19",
+   "sayfa": "4 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Same operativeknowledgeconditionsasCPL030Q31;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). SourceLMC5percentlimitoptionsdonotdefineanacceptableuniversalPPLexceedance;limitsmaynotbeignored.",
+   "neden": "Same operativeknowledgeconditionsasCPL030Q31;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). SourceLMC5percentlimitoptionsdonotdefineanacceptableuniversalPPLexceedance;limitsmaynotbeignored."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "23",
+   "sayfa": "4 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Same operativeknowledgeconditionsasCPL030Q53;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). CAPenvelopewordinglowerforwardCGlimitrequiresoriginalenvelope;noexactlabelanswer.",
+   "neden": "Same operativeknowledgeconditionsasCPL030Q53;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). CAPenvelopewordinglowerforwardCGlimitrequiresoriginalenvelope;noexactlabelanswer."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "28",
+   "sayfa": "5 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Same operativeknowledgeconditionsasCPL030Q74;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). NeutralstabilitydoesnotuniversallylocateCGatonefixedcertifiedlimit;aircraftstability/neutralpointdata absent.",
+   "neden": "Same operativeknowledgeconditionsasCPL030Q74;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). NeutralstabilitydoesnotuniversallylocateCGatonefixedcertifiedlimit;aircraftstability/neutralpointdata absent."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "32",
+   "sayfa": "5 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Same operativeknowledgeconditionsasCPL030Q78;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). OPSmanualfuel/oildefaultdensityneedsaircraft/operatorcontext;activeexercisesprovideactualdensityexplicitly.",
+   "neden": "Same operativeknowledgeconditionsasCPL030Q78;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). OPSmanualfuel/oildefaultdensityneedsaircraft/operatorcontext;activeexercisesprovideactualdensityexplicitly."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "46",
+   "sayfa": "7 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Same operativeknowledgeconditionsasCPL030Q103;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). Combinescommercial4-yearintervalwithhangarconditions;oneall-optionanswerisnotuniversallyPPLcorrect.",
+   "neden": "Same operativeknowledgeconditionsasCPL030Q103;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). Combinescommercial4-yearintervalwithhangarconditions;oneall-optionanswerisnotuniversallyPPLcorrect."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "87",
+   "sayfa": "12 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Hydroplaningbraking/contaminantdepth/tyre-pressureoptionsmixmodel assumptions;commonPPLwet-runwayhazards alreadyexisting070.",
+   "neden": "Hydroplaningbraking/contaminantdepth/tyre-pressureoptionsmixmodel assumptions;commonPPLwet-runwayhazards alreadyexisting070."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "89",
+   "sayfa": "13 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Hydroplaningtrigger/pressure/contaminantdensitymodelrequirescurrentAFM/primaryvalidation;notallweathercasesuniversal.",
+   "neden": "Hydroplaningtrigger/pressure/contaminantdensitymodelrequirescurrentAFM/primaryvalidation;notallweathercasesuniversal."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "98",
+   "sayfa": "14 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Source5percentper1percentslopeassertionnotuniversalforPOHlandingperformance;bank15002notusedasauthority.",
+   "neden": "Source5percentper1percentslopeassertionnotuniversalforPOHlandingperformance;bank15002notusedasauthority."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "111",
+   "sayfa": "16 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Contaminationthresholds/GRFdefinitionschanged;historical25percent/3mmruleisnotunqualifiedcurrentPPLdefinition.",
+   "neden": "Contaminationthresholds/GRFdefinitionschanged;historical25percent/3mmruleisnotunqualifiedcurrentPPLdefinition."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "112",
+   "sayfa": "17 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Hydroplaningcoefficientandtyre-pressureformula areapproximateandconditiondependent;no universal aircraftvalue.",
+   "neden": "Hydroplaningcoefficientandtyre-pressureformula areapproximateandconditiondependent;no universal aircraftvalue."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "120",
+   "sayfa": "18 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "ConstantMachdescentandengine/configuration/atmosphericlayerunspecified;not aPPLIAS/TASrulegeneralisation.",
+   "neden": "ConstantMachdescentandengine/configuration/atmosphericlayerunspecified;not aPPLIAS/TASrulegeneralisation."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "127",
+   "sayfa": "19 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "RunwayslopeonlydownhillregulatoryfactorisnotuniversalprivatePOHrule.",
+   "neden": "RunwayslopeonlydownhillregulatoryfactorisnotuniversalprivatePOHrule."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "129",
+   "sayfa": "19 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "SourceomitsIAS/TAS/engineclassandoffersno normallyaspiratedpistonVxIASincrease/Vydecreasepair;notfalsematchedtobasicpistoncase.",
+   "neden": "SourceomitsIAS/TAS/engineclassandoffersno normallyaspiratedpistonVxIASincrease/Vydecreasepair;notfalsematchedtobasicpistoncase."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "139",
+   "sayfa": "21 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "CLdependsIAS/AoA/mass/configuration;stemonlyaltitudechange cannotuniquelyselectCL.",
+   "neden": "CLdependsIAS/AoA/mass/configuration;stemonlyaltitudechange cannotuniquelyselectCL."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "170",
+   "sayfa": "24 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Maximumgroundrangespeedheadwindadjustmentrequirespower/fuelflow/propeller-efficiencymodel;no universaljet/propeller answer.",
+   "neden": "Maximumgroundrangespeedheadwindadjustmentrequirespower/fuelflow/propeller-efficiencymodel;no universaljet/propeller answer."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "171",
+   "sayfa": "24 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "VLOislandinggearsafe-operatingspeed,separatefromVLE;newAGKgear-speedtypewouldneedglobalverification beforeactiveaddition.",
+   "neden": "VLOislandinggearsafe-operatingspeed,separatefromVLE;newAGKgear-speedtypewouldneedglobalverification beforeactiveaddition."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "178",
+   "sayfa": "25 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "HeadwindbestglidespeedadjustmentrequiresPOH/model guidance;genericgroundglideangleeffectalready14984.",
+   "neden": "HeadwindbestglidespeedadjustmentrequiresPOH/model guidance;genericgroundglideangleeffectalready14984."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "187",
+   "sayfa": "26 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Brakeheat/rejectedtakeoffriskisvalidPPLhazard butsourceRTO/fusibleplugcontextnotgenericprivateaircraft;preserveforPOH-specificreview.",
+   "neden": "Brakeheat/rejectedtakeoffriskisvalidPPLhazard butsourceRTO/fusibleplugcontextnotgenericprivateaircraft;preserveforPOH-specificreview."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "200",
+   "sayfa": "28 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "HistoricACN/PCNstrengthwordingissupersededbyACR/PCRreportingsystem;no obsoleteunqualifiedanswer.",
+   "neden": "HistoricACN/PCNstrengthwordingissupersededbyACR/PCRreportingsystem;no obsoleteunqualifiedanswer."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "204",
+   "sayfa": "28 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "TyrespeedisgroundspeedratherthanTAS,butactualtyremodelV1/VLOFconditiondependsPOH;preserveforPPL-specificvalidation.",
+   "neden": "TyrespeedisgroundspeedratherthanTAS,butactualtyremodelV1/VLOFconditiondependsPOH;preserveforPPL-specificvalidation."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "275",
+   "sayfa": "37 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Same operativeknowledgeconditionsasCPL030Q232;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). RVSMapplicability/equipment/airspacerulesrequired;genericPPLVFRlevelnot substitutedforIFR/RVSMcase.",
+   "neden": "Same operativeknowledgeconditionsasCPL030Q232;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). RVSMapplicability/equipment/airspacerulesrequired;genericPPLVFRlevelnot substitutedforIFR/RVSMcase."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "287",
+   "sayfa": "39 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "HistoricalTAS/timeATCdeviationthresholdneedspecificcurrentrule;existing14259/14297reportcases retainedwithoutunverifiedoldnumericthreshold.",
+   "neden": "HistoricalTAS/timeATCdeviationthresholdneedspecificcurrentrule;existing14259/14297reportcases retainedwithoutunverifiedoldnumericthreshold."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "288",
+   "sayfa": "40 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Same operativeknowledgeconditionsasCPL030Q247;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). ATSrouteDCTencodingneedsfullroute/forminstructions;nooriginalstringasserted.",
+   "neden": "Same operativeknowledgeconditionsasCPL030Q247;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). ATSrouteDCTencodingneedsfullroute/forminstructions;nooriginalstringasserted."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "289",
+   "sayfa": "40 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "Same operativeknowledgeconditionsasCPL030Q248;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). Currentflightplanroute-speedchangethreshold/Machcontextmustbeverified;existingcontrolledTASreportcase14259notsamefielddefinition.",
+   "neden": "Same operativeknowledgeconditionsasCPL030Q248;sourcequestionandoption-contentindividuallycompared(no shuffling/word-onlynewcopy). Currentflightplanroute-speedchangethreshold/Machcontextmustbeverified;existingcontrolledTASreportcase14259notsamefielddefinition."
+  },
+  {
+   "kaynak": "x-caab-atpl-030",
+   "no": "296",
+   "sayfa": "41 (PDF)",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "ATCclearanceas-filedroute/FIRboundaryinterpretationneedsfullclearanceandpublishedIFRrouteconditions;notgenericVFRPPLsource.",
+   "neden": "ATCclearanceas-filedroute/FIRboundaryinterpretationneedsfullclearanceandpublishedIFRrouteconditions;notgenericVFRPPLsource."
+  },
+  {
+   "kaynak": "x-linx-030",
+   "no": "12",
+   "sayfa": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "konu": "Question-by-question operative-condition comparison with x-cad-030 Q66: Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred.",
+   "neden": "Question-by-question operative-condition comparison with x-cad-030 Q66: Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred."
+  },
+  {
+   "kaynak": "x-linx-030",
+   "no": "13",
+   "sayfa": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "konu": "Question-by-question operative-condition comparison with x-cad-030 Q65: The copied aft-CG combination has contradictory range/stick-force statements in source and bank14831; current primary evidence required before changing existing ID or activating a duplicate.",
+   "neden": "Question-by-question operative-condition comparison with x-cad-030 Q65: The copied aft-CG combination has contradictory range/stick-force statements in source and bank14831; current primary evidence required before changing existing ID or activating a duplicate."
+  },
+  {
+   "kaynak": "x-linx-030",
+   "no": "23",
+   "sayfa": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "konu": "Question-by-question operative-condition comparison with x-cad-030 Q70: Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred.",
+   "neden": "Question-by-question operative-condition comparison with x-cad-030 Q70: Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred."
+  },
+  {
+   "kaynak": "x-linx-030",
+   "no": "28",
+   "sayfa": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "konu": "Question-by-question operative-condition comparison with x-cad-030 Q25: CG envelope is aircraft-specific; source generalises which boundary moves with mass. Consult the supplied AFM; do not activate an aircraft-independent rule.",
+   "neden": "Question-by-question operative-condition comparison with x-cad-030 Q25: CG envelope is aircraft-specific; source generalises which boundary moves with mass. Consult the supplied AFM; do not activate an aircraft-independent rule."
+  },
+  {
+   "kaynak": "x-linx-030",
+   "no": "52",
+   "sayfa": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "konu": "Question-by-question operative-condition comparison with x-cad-030 Q55: Optimum powered cruise range speed in wind depends on propeller efficiency/fuel-flow model and POH; a universal numerical speed adjustment is not asserted.",
+   "neden": "Question-by-question operative-condition comparison with x-cad-030 Q55: Optimum powered cruise range speed in wind depends on propeller efficiency/fuel-flow model and POH; a universal numerical speed adjustment is not asserted."
+  },
+  {
+   "kaynak": "x-linx-030",
+   "no": "68",
+   "sayfa": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "konu": "Question-by-question operative-condition comparison with x-cad-030 Q40: The fixed slope percentage is not aircraft-independent; no supplied POH supports this universal numerical factor. Existing15002 is not used as authority.",
+   "neden": "Question-by-question operative-condition comparison with x-cad-030 Q40: The fixed slope percentage is not aircraft-independent; no supplied POH supports this universal numerical factor. Existing15002 is not used as authority."
+  },
+  {
+   "kaynak": "x-linx-030",
+   "no": "72",
+   "sayfa": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "konu": "Question-by-question operative-condition comparison with x-cad-030 Q5: Landing-distance weight exponent is not a universal POH rule; source percentage withheld rather than applying it to every light aircraft.",
+   "neden": "Question-by-question operative-condition comparison with x-cad-030 Q5: Landing-distance weight exponent is not a universal POH rule; source percentage withheld rather than applying it to every light aircraft."
+  },
+  {
+   "kaynak": "x-linx-030",
+   "no": "117",
+   "sayfa": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "konu": "Question-by-question operative-condition comparison with x-cad-030 Q102: Cruise IAS versus altitude at unchanged throttle depends on engine/propeller/mixture/power assumptions; original stem underdetermines performance.",
+   "neden": "Question-by-question operative-condition comparison with x-cad-030 Q102: Cruise IAS versus altitude at unchanged throttle depends on engine/propeller/mixture/power assumptions; original stem underdetermines performance."
+  },
+  {
+   "kaynak": "x-linx-030",
+   "no": "126",
+   "sayfa": "21 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "konu": "Question-by-question operative-condition comparison with x-cad-030 Q122: CAD PDF names an external figure that is not embedded in this linked bank. Exact original diagram answer is unverified; no access barriers bypassed.",
+   "neden": "Question-by-question operative-condition comparison with x-cad-030 Q122: CAD PDF names an external figure that is not embedded in this linked bank. Exact original diagram answer is unverified; no access barriers bypassed."
+  },
+  {
+   "kaynak": "x-traficom-030",
+   "no": "11",
+   "sayfa": "3 (PDF; original source)",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred.",
+   "neden": "Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred."
+  },
+  {
+   "kaynak": "x-traficom-030",
+   "no": "21",
+   "sayfa": "5 (PDF; original source)",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred.",
+   "neden": "Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred."
+  },
+  {
+   "kaynak": "x-traficom-030",
+   "no": "26",
+   "sayfa": "6 (PDF; original source)",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "CG envelope is aircraft-specific; source generalises which boundary moves with mass. Consult the supplied AFM; do not activate an aircraft-independent rule.",
+   "neden": "CG envelope is aircraft-specific; source generalises which boundary moves with mass. Consult the supplied AFM; do not activate an aircraft-independent rule."
+  },
+  {
+   "kaynak": "x-traficom-030",
+   "no": "61",
+   "sayfa": "12 (PDF; original source)",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "The fixed slope percentage is not aircraft-independent; no supplied POH supports this universal numerical factor. Existing15002 is not used as authority.",
+   "neden": "The fixed slope percentage is not aircraft-independent; no supplied POH supports this universal numerical factor. Existing15002 is not used as authority."
+  },
+  {
+   "kaynak": "x-traficom-030",
+   "no": "65",
+   "sayfa": "12 (PDF; original source)",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "Landing-distance weight exponent is not a universal POH rule; source percentage withheld rather than applying it to every light aircraft.",
+   "neden": "Landing-distance weight exponent is not a universal POH rule; source percentage withheld rather than applying it to every light aircraft."
+  },
+  {
+   "kaynak": "x-traficom-030",
+   "no": "142",
+   "sayfa": "27 (PDF; original source)",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "Historical source states an unconditional45-minute reserve. Current operating regime/night-day conditions must be specified; not activated.",
+   "neden": "Historical source states an unconditional45-minute reserve. Current operating regime/night-day conditions must be specified; not activated."
+  },
+  {
+   "kaynak": "x-traficom-030",
+   "no": "143",
+   "sayfa": "27 (PDF; original source)",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "Historical Finnish briefing-location conventions/OPSreference; no contemporary generic AIP-Supplement filing-location answer adopted.",
+   "neden": "Historical Finnish briefing-location conventions/OPSreference; no contemporary generic AIP-Supplement filing-location answer adopted."
+  },
+  {
+   "kaynak": "x-traficom-030",
+   "no": "144",
+   "sayfa": "27 (PDF; original source)",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "Source does not offer a clear standard AIP AD chart-location option and refers to a named historicalFinnish aerodrome; original retained as malformed/context-specific.",
+   "neden": "Source does not offer a clear standard AIP AD chart-location option and refers to a named historicalFinnish aerodrome; original retained as malformed/context-specific."
+  },
+  {
+   "kaynak": "x-traficom-030",
+   "no": "147",
+   "sayfa": "28 (PDF; original source)",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "Historical source states an unconditional45-minute reserve. Current operating regime/night-day conditions must be specified; not activated.",
+   "neden": "Historical source states an unconditional45-minute reserve. Current operating regime/night-day conditions must be specified; not activated."
+  },
+  {
+   "kaynak": "x-traficom-030",
+   "no": "154",
+   "sayfa": "29 (PDF; original source)",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "Premature rotation is a valid PPL hazard but source lacks aircraft/rotation-technique assumptions. Current14900 definesVR; independent check againstPOH/AFH required before assigning a universally correctdistanceanswer.",
+   "neden": "Premature rotation is a valid PPL hazard but source lacks aircraft/rotation-technique assumptions. Current14900 definesVR; independent check againstPOH/AFH required before assigning a universally correctdistanceanswer."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "5",
+   "sayfa": "3 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Landing-distance weight exponent is not a universal POH rule; source percentage withheld rather than applying it to every light aircraft.",
+   "neden": "Landing-distance weight exponent is not a universal POH rule; source percentage withheld rather than applying it to every light aircraft."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "25",
+   "sayfa": "5 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "CG envelope is aircraft-specific; source generalises which boundary moves with mass. Consult the supplied AFM; do not activate an aircraft-independent rule.",
+   "neden": "CG envelope is aircraft-specific; source generalises which boundary moves with mass. Consult the supplied AFM; do not activate an aircraft-independent rule."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "40",
+   "sayfa": "6 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "The fixed slope percentage is not aircraft-independent; no supplied POH supports this universal numerical factor. Existing15002 is not used as authority.",
+   "neden": "The fixed slope percentage is not aircraft-independent; no supplied POH supports this universal numerical factor. Existing15002 is not used as authority."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "55",
+   "sayfa": "8 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Optimum powered cruise range speed in wind depends on propeller efficiency/fuel-flow model and POH; a universal numerical speed adjustment is not asserted.",
+   "neden": "Optimum powered cruise range speed in wind depends on propeller efficiency/fuel-flow model and POH; a universal numerical speed adjustment is not asserted."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "65",
+   "sayfa": "9 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "The copied aft-CG combination has contradictory range/stick-force statements in source and bank14831; current primary evidence required before changing existing ID or activating a duplicate.",
+   "neden": "The copied aft-CG combination has contradictory range/stick-force statements in source and bank14831; current primary evidence required before changing existing ID or activating a duplicate."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "66",
+   "sayfa": "9 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred.",
+   "neden": "Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "70",
+   "sayfa": "9 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred.",
+   "neden": "Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "97",
+   "sayfa": "12 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "102",
+   "sayfa": "13 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Cruise IAS versus altitude at unchanged throttle depends on engine/propeller/mixture/power assumptions; original stem underdetermines performance.",
+   "neden": "Cruise IAS versus altitude at unchanged throttle depends on engine/propeller/mixture/power assumptions; original stem underdetermines performance."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "117",
+   "sayfa": "14 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "118",
+   "sayfa": "14 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "119",
+   "sayfa": "14 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "120",
+   "sayfa": "15 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "121",
+   "sayfa": "15 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "122",
+   "sayfa": "15 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "CAD PDF names an external figure that is not embedded in this linked bank. Exact original diagram answer is unverified; no access barriers bypassed.",
+   "neden": "CAD PDF names an external figure that is not embedded in this linked bank. Exact original diagram answer is unverified; no access barriers bypassed."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "124",
+   "sayfa": "15 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "127",
+   "sayfa": "15 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "128",
+   "sayfa": "16 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "130",
+   "sayfa": "16 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "131",
+   "sayfa": "16 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "135",
+   "sayfa": "16 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "139",
+   "sayfa": "17 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "140",
+   "sayfa": "17 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "141",
+   "sayfa": "17 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "142",
+   "sayfa": "17 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-cad-030",
+   "no": "148",
+   "sayfa": "18 (PDF; original source)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method.",
+   "neden": "Original external CAD chart is not embedded, so the original numeric/diagram answer remains unverified. The independently specified representative retains the relevant missing PPL method."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "32",
+   "sayfa": "9 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Requires a specific dated historical aircraft weighing record; independently authored general weighing question is separate.",
+   "neden": "Requires a specific dated historical aircraft weighing record; independently authored general weighing question is separate."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "39",
+   "sayfa": "11 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Rain-water contamination changesperformance differently from the existing ice question14813. Exact quantitativeeffects depend on aircraft/airfoil/POH; preserve the source type for review rather than call it an ice duplicate.",
+   "neden": "Rain-water contamination changesperformance differently from the existing ice question14813. Exact quantitativeeffects depend on aircraft/airfoil/POH; preserve the source type for review rather than call it an ice duplicate."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "44",
+   "sayfa": "12 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Steady unaccelerated nonlevel flight needs force vectors rather than a vague four-scalar equality; original wording retained for review.",
+   "neden": "Steady unaccelerated nonlevel flight needs force vectors rather than a vague four-scalar equality; original wording retained for review."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "60",
+   "sayfa": "17 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Source asks chart-selectedclimbairspeed,whereas authoredROCtablediffers. Exactoriginalspeed remainschartdependent; VyIAS-altitudetype iscoveredseparately.",
+   "neden": "Source asks chart-selectedclimbairspeed,whereas authoredROCtablediffers. Exactoriginalspeed remainschartdependent; VyIAS-altitudetype iscoveredseparately."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "77",
+   "sayfa": "23 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Chart-selectedclimbairspeedgivenmass/OATis not interchangeablewithgenericVyIAStrend;exactoriginalPOHairspeedretainedforreview.",
+   "neden": "Chart-selectedclimbairspeedgivenmass/OATis not interchangeablewithgenericVyIAStrend;exactoriginalPOHairspeedretainedforreview."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "89",
+   "sayfa": "26 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical country-specific chart/airspace limits are not a current operational answer. Generic interpretation is retained separately.",
+   "neden": "Historical country-specific chart/airspace limits are not a current operational answer. Generic interpretation is retained separately."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "90",
+   "sayfa": "26 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical country-specific chart/airspace limits are not a current operational answer. Generic interpretation is retained separately.",
+   "neden": "Historical country-specific chart/airspace limits are not a current operational answer. Generic interpretation is retained separately."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "91",
+   "sayfa": "26 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review.",
+   "neden": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "92",
+   "sayfa": "27 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review.",
+   "neden": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "93",
+   "sayfa": "27 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review.",
+   "neden": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "94",
+   "sayfa": "27 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review.",
+   "neden": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "95",
+   "sayfa": "27 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review.",
+   "neden": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "96",
+   "sayfa": "28 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review.",
+   "neden": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "97",
+   "sayfa": "28 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review.",
+   "neden": "Historical named navaid/FIC frequency must not be memorised as current; source-specific chart question retained for review."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "101",
+   "sayfa": "29 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical NOTAM validity/figure not independently current; no operational answer asserted.",
+   "neden": "Historical NOTAM validity/figure not independently current; no operational answer asserted."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "105",
+   "sayfa": "30 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical flight-plan training/type letter can depend on filing conventions. Missing full original form; no answer inferred.",
+   "neden": "Historical flight-plan training/type letter can depend on filing conventions. Missing full original form; no answer inferred."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "106",
+   "sayfa": "30 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Original country reporting-point and routing chart/form needed; not reproduced as a present operational route.",
+   "neden": "Original country reporting-point and routing chart/form needed; not reproduced as a present operational route."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "108",
+   "sayfa": "31 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical flight-plan training/type letter can depend on filing conventions. Missing full original form; no answer inferred.",
+   "neden": "Historical flight-plan training/type letter can depend on filing conventions. Missing full original form; no answer inferred."
+  },
+  {
+   "kaynak": "x-austro-030",
+   "no": "111",
+   "sayfa": "31 (PDF; original source)",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+   "konu": "Historical country-specific chart/airspace limits are not a current operational answer. Generic interpretation is retained separately.",
+   "neden": "Historical country-specific chart/airspace limits are not a current operational answer. Generic interpretation is retained separately."
+  }
+ ]
 }

@@ -1,0 +1,382 @@
+{
+ "schema_version": 1,
+ "audit_date": "2026-10-13",
+ "subject_code": "020",
+ "sources": [
+  {
+   "id": "x-cad-070",
+   "ad": "Serbia CAD PPL(A) —070",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+   "tur": "pdf"
+  },
+  {
+   "id": "x-caab-cpl-040",
+   "ad": "Bangladesh CAAB CPL HumanPerformance",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "tur": "pdf"
+  },
+  {
+   "id": "x-caab-atpl-040",
+   "ad": "Bangladesh CAAB ATPL HumanPerformance",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "tur": "pdf"
+  }
+ ],
+ "candidates": [
+  {
+   "key": "agk:power-lever-order",
+   "section": "020-13",
+   "text": "In a conventional piston aeroplane with a constant-speed propeller, both RPM and manifold pressure need changing. Following the usual POH sequence, what is the order for (1) reducing power and (2) increasing power?",
+   "options": [
+    "(1) Reduce manifold pressure before RPM; (2) increase RPM before manifold pressure.",
+    "(1) Reduce RPM before manifold pressure; (2) increase manifold pressure before RPM.",
+    "(1) Reduce RPM before manifold pressure; (2) increase RPM before manifold pressure.",
+    "(1) Reduce manifold pressure before RPM; (2) increase manifold pressure before RPM."
+   ],
+   "tr_text": "Constant-speed pervaneli geleneksel piston uçakta hem devir hem manifold basıncı değiştirilecek. Olağan POH sırasına göre (1) güç azaltırken ve (2) artırırken sıra nasıldır?",
+   "tr_options": [
+    "(1) Önce manifold basıncı, sonra devir azaltılır; (2) önce devir, sonra manifold basıncı artırılır.",
+    "(1) Önce devir, sonra manifold basıncı azaltılır; (2) önce manifold basıncı, sonra devir artırılır.",
+    "(1) Önce devir, sonra manifold basıncı azaltılır; (2) önce devir, sonra manifold basıncı artırılır.",
+    "(1) Önce manifold basıncı, sonra devir azaltılır; (2) önce manifold basıncı, sonra devir artırılır."
+   ],
+   "explanation_en": "The sequence avoids an excessive pressure/load for the selected RPM. Use the actual AFM/POH settings and procedure; this is different from a governor’s response at an unchangedRPMselection.",
+   "explanation_tr": "Sıra, seçili devre göre aşırı basınç/yük oluşmasını önlemeye yardım eder. Gerçek AFM/POH ayarları uygulanır; sabit devir seçimine governor tepkisiyle aynı soru değildir.",
+   "sources": [
+    {
+     "source": "x-cad-070",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+     "no": "105",
+     "page": "13 (PDF1-based)"
+    },
+    {
+     "source": "x-cad-070",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+     "no": "110",
+     "page": "13(PDF1-based)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "section": "PHAK Ch7, Constant-SpeedPropeller, p.7-7; inspected primary passage2026-10-13."
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_id": 14673,
+   "distinctness_evidence": "Coreagk:cs-throttle changes throttle while leaving selectedRPMfixed. This tests the pilot’s two-control SEQUENCE in opposite power-change directions;14673 does not test this sequence."
+  },
+  {
+   "key": "agk:takeoff-fine-high-rpm",
+   "section": "020-13",
+   "text": "For normal take-off in a conventional piston aeroplane with a constant-speed propeller, which propeller selection normally makes maximum approved take-off power available?",
+   "options": [
+    "Fine pitch/high selected RPM, as specified by the POH.",
+    "Coarse pitch/low selected RPM for maximum cruise economy.",
+    "Feathered propeller and minimum selected RPM.",
+    "Any pitch with the propeller lever left at the previous cruise setting."
+   ],
+   "tr_text": "Constant-speed pervaneli geleneksel piston uçakta normal kalkış için hangi seçim onaylı azami kalkış gücünü normalde kullanılabilir kılar?",
+   "tr_options": [
+    "POH’ın belirttiği fine pitch/yüksek seçili devir.",
+    "Azami seyir ekonomisi için coarse pitch/düşük seçili devir.",
+    "Feather edilmiş pervane ve asgari seçili devir.",
+    "Pervane kolu önceki seyir ayarında bırakılarak herhangi bir hatve."
+   ],
+   "explanation_en": "Low blade pitch at low forward speed permits high RPM and maximum take-off power. The governor adjusts pitch as speed changes; highRPMdoes not mean the blade angle is frozen throughout the roll.",
+   "explanation_tr": "Düşük ileri süratte küçük hatve yüksek devre ve azami kalkış gücüne izin verir. Sürat değiştikçe governor hatveyi düzenler; yüksek devir, kalkış boyunca açının sabit kalması demek değildir.",
+   "sources": [
+    {
+     "source": "x-cad-070",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+     "no": "112",
+     "page": "14 (PDF1-based)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/13_afh_ch12.pdf",
+     "section": "FAA-H-8083-3C Ch12, TakeoffClimbandCruise, p.12-6; inspected primary passage2026-10-13."
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_id": 14675,
+   "distinctness_evidence": "14675 defines fine/coarse blade-angle names; this adds the TAKE-OFFoperating selection and power purpose. Core runwayacceleration question asks changing blade angle at constantRPM, a different target."
+  },
+  {
+   "key": "agk:ground-carbheat-dust",
+   "section": "020-10",
+   "text": "In a light aeroplane whose carburettor heat draws unfiltered alternate air, why should prolonged use on a dusty taxi surface be avoided except as needed by the POH to check heat or clear suspected ice?",
+   "options": [
+    "Dust and foreign particles can enter the engine through the unfiltered intake.",
+    "It prevents the magnetos from generating sparks at idle.",
+    "It always makes the fuel-air mixture leaner and causes fuel starvation.",
+    "It automatically disconnects the oil-cooler bypass valve."
+   ],
+   "tr_text": "Karbüratör ısıtması filtrelenmemiş alternatif hava alan hafif uçakta, POH’a göre kontrol veya şüpheli buzu giderme dışında tozlu taksi yüzeyinde uzun kullanım neden önlenir?",
+   "tr_options": [
+    "Filtrelenmemiş emişten toz ve yabancı parçacıklar motora girebilir.",
+    "Rölantide manyetoların kıvılcım üretmesini engeller.",
+    "Karışımı daima fakirleştirip yakıt kesilmesi yaratır.",
+    "Yağ soğutucusu bypass valfini otomatik ayırır."
+   ],
+   "explanation_en": "Many carbheat intakes bypass the normal filter. A brief prescribed ground check or actual suspected ice still requires the POH procedure; the dust caution is not a rule to ignore icing on the ground.",
+   "explanation_tr": "Birçok carbheat girişi normal filtreyi bypass eder. Öngörülen kısa yer kontrolünde veya buz şüphesinde POH uygulanır; toz uyarısı yerdeki buzu görmezden gelme kuralı değildir.",
+   "sources": [
+    {
+     "source": "x-cad-070",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+     "no": "107",
+     "page": "13 (PDF1-based)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.tsb-bst.gc.ca/eng/rapports-reports/aviation/2000/a00a0071/a00a0071.html",
+     "section": "TSB Canada A00A0071, quoted aircraftPOHNormalProcedures: prolongedgroundcarbheatavoidedbecauseintakeunfiltered; corroborated CAA NZFlightInstructorGuideTaxiing; inspected primary passage2026-10-13."
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_id": 14579,
+   "distinctness_evidence": "14579 tests take-off power restriction and coreagk:ground-carb-ice tests clearing ice whiletaxiing. This asks the DIFFERENTunfiltered-airforeign-particlehazard, withicingexceptionpreserved."
+  },
+  {
+   "key": "agk:oleo-extension-check",
+   "section": "020-05",
+   "text": "During a pre-flight walkaround, how can a pilot normally assess whether an oleo-pneumatic landing-gear strut appears correctly charged without performing servicing?",
+   "options": [
+    "Inspect the exposed strut extension and compare it with the aircraft’s specified limits under the stated loading conditions.",
+    "Drain all the hydraulic fluid and judge the amount collected.",
+    "Assume a fully compressed strut is always correct when the aircraft is parked.",
+    "Use the same fixed extension measurement for every aircraft type."
+   ],
+   "tr_text": "Uçuş öncesi walkaround sırasında pilot servis işlemi yapmadan oleo-pnömatik dikmenin uygun şarjlı göründüğünü normalde nasıl değerlendirir?",
+   "tr_options": [
+    "Görünen dikme uzamasını kontrol edip belirtilen yük koşullarında uçağın verilen sınırlarıyla karşılaştırır.",
+    "Hidrolik sıvının tamamını boşaltıp toplanan miktara bakar.",
+    "Park hâlindeki dikmenin tamamen basık olmasını daima doğru kabul eder.",
+    "Her uçak tipinde aynı sabit uzama ölçüsünü kullanır."
+   ],
+   "explanation_en": "Gas charge supports the aircraft and affects static extension. Correct values depend on the aircraft and load; a doubtful strut needs the prescribed maintenance check rather than pilot guesswork.",
+   "explanation_tr": "Gaz şarjı uçağı destekler ve durgun uzamayı etkiler. Doğru değer uçak ve yüke bağlıdır; şüpheli dikmede tahmin yerine öngörülen bakım kontrolü gerekir.",
+   "sources": [
+    {
+     "source": "x-cad-070",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+     "no": "67",
+     "page": "9 (PDF1-based)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-31B_Aviation_Maintenance_Technician_Handbook.pdf",
+     "section": "FAA-H-8083-31B Ch13, ShockStrutServicing, p.13-13 steps10:manufacturer pressureor specified lower-strutextension measurement; inspected primary passage2026-10-13."
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_id": 14490,
+   "distinctness_evidence": "14490 tests oilDAMPINGversusgasSPRINGfunction. This adds pilotWALKAROUNDinspection ofCHARGE/EXTENSION, a different action andobservablecondition."
+  },
+  {
+   "key": "agk:centre-zero-positive-charge",
+   "section": "020-14",
+   "text": "A conventional centre-zero ammeter in the battery lead deflects positively shortly after engine start. The alternator is operating and electrical loads are small. What does this positive indication normally mean?",
+   "options": [
+    "Current is flowing into the battery to recharge it after starting.",
+    "The alternator has failed and the battery is discharging.",
+    "The indicator is a loadmeter showing all aircraft consumers only.",
+    "A positive reading always proves dangerous overcharging."
+   ],
+   "tr_text": "Akü hattındaki geleneksel centre-zero ampermetre motor çalıştıktan kısa süre sonra pozitif sapıyor. Alternatör çalışıyor; elektrik yükleri az. Bu pozitif gösterge normalde ne anlama gelir?",
+   "tr_options": [
+    "Çalıştırmadan sonra aküyü şarj etmek için aküye akım girdiğini.",
+    "Alternatörün arızalandığını ve akünün boşaldığını.",
+    "Göstergenin yalnız bütün uçak tüketicilerini ölçen loadmeter olduğunu.",
+    "Her pozitif değerin tehlikeli aşırı şarjı kesin kanıtladığını."
+   ],
+   "explanation_en": "A battery-lead ammeter indicates charging versus discharging, not total alternator load. A normal temporary charge after the starter is different from an excessive persistent positive reading; limits follow the POH.",
+   "explanation_tr": "Akü hattı ampermetresi şarj/deşarj akışını gösterir; toplam alternatör yükü değildir. Starter sonrası normal geçici şarj, aşırı ve sürekli pozitif değerden farklıdır; POH sınırları uygulanır.",
+   "sources": [
+    {
+     "source": "x-cad-070",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+     "no": "121",
+     "page": "14 (PDF1-based)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-31B_Aviation_Maintenance_Technician_Handbook.pdf",
+     "section": "FAA-H-8083-31B Ch9, BatteryCircuit / Figure9-84:positivecurrentbus-to-batterycharges;negativecurrentbattery-to-buspowersloads; inspected primary passage2026-10-13."
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_id": 14697,
+   "distinctness_evidence": "14697 asks EXCESSIVEpositiveovercharging and14684 asks centre-zeroFULLYCHARGED. This explicitly adds normalPOST-STARTpositiveCHARGE, withmagnitude/timeconditionschangingtheanswer."
+  },
+  {
+   "key": "agk:standard-t-layout",
+   "section": "020-15",
+   "text": "In the conventional basicT arrangement of four primary flight indications, which is the correct layout?",
+   "options": [
+    "Airspeed left, attitude top centre, altitude right, heading directly below attitude.",
+    "Altitude left, heading top centre, airspeed right, attitude below heading.",
+    "Vertical speed left, engineRPMtop centre, fuel pressure right, attitude below RPM.",
+    "Heading left, airspeed top centre, attitude right, altitude below airspeed."
+   ],
+   "tr_text": "Dört temel uçuş göstergesinin geleneksel basic T düzeninde doğru yerleşim hangisidir?",
+   "tr_options": [
+    "Solda sürat, üst ortada attitude, sağda irtifa; attitude’un doğrudan altında heading.",
+    "Solda irtifa, üst ortada heading, sağda sürat; heading altında attitude.",
+    "Solda düşey sürat, üst ortada motor devri, sağda yakıt basıncı; devir altında attitude.",
+    "Solda heading, üst ortada sürat, sağda attitude; sürat altında irtifa."
+   ],
+   "explanation_en": "TheT places attitude at the centre of the scan with speed and altitude beside it and heading beneath. Other instruments and exact displays may vary; this defines the conventional basicT, not every aircraft panel.",
+   "explanation_tr": "T düzeni taramanın merkezine attitude’u, yanlarına sürat ve irtifayı, altına heading’i koyar. Diğer alet ve ekranlar değişebilir; burada geleneksel basic T tanımlanır.",
+   "sources": [
+    {
+     "source": "x-caab-cpl-040",
+     "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+     "no": "192",
+     "page": "46(PDF1-based)"
+    },
+    {
+     "source": "x-caab-atpl-040",
+     "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+     "no": "235",
+     "page": "72(PDF1-based)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-31B_Aviation_Maintenance_Technician_Handbook.pdf",
+     "section": "FAA-H-8083-31B Ch10, FlightInstruments / Figure10-4, p.10-2; FAA BasicT guidance hfcc.dot.gov Ch5 section5.1 inspected; inspected primary passage2026-10-13."
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_id": 14705,
+   "distinctness_evidence": "Coreagk:pfd-core lists displayed flight quantities but does not ask PHYSICALSTANDARDTplacement. Current14705 asks pitot/staticconnections, notlayout."
+  },
+  {
+   "key": "agk:sea-level-takeoff-mixture",
+   "section": "020-12",
+   "text": "For normal take-off at sea level in a conventional manually controlled, float-carburettor piston engine, with no contrary AFM/POH requirement, what mixture setting is normally used?",
+   "options": [
+    "FULL RICH.",
+    "IDLE CUT-OFF.",
+    "FULL LEAN.",
+    "The previous high-altitude lean setting without a check."
+   ],
+   "tr_text": "Manuel karışım kontrollü, şamandıralı karbüratörlü geleneksel piston motorda deniz seviyesindeki normal kalkışta AFM/POH aksini istemiyorsa hangi karışım ayarı kullanılır?",
+   "tr_options": [
+    "FULL RICH.",
+    "IDLE CUT-OFF.",
+    "FULL LEAN.",
+    "Kontrol etmeden önceki yüksek irtifa fakir ayarı."
+   ],
+   "explanation_en": "A conventional carburettor is calibrated for sea-level pressure with mixtureFULLRICH. High-elevation operation can require approved leaning, so sea-level and high-altitude take-offs must not be merged.",
+   "explanation_tr": "Geleneksel karbüratör, deniz seviyesi basıncında FULL RICH ile kalibre edilir. Yüksek meydanda onaylı fakirleştirme gerekebilir; iki koşul aynı değildir.",
+   "sources": [
+    {
+     "source": "x-cad-070",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+     "no": "104",
+     "page": "13 (PDF1-based)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "section": "PHAK Ch7, MixtureControl, p.7-9; conventional sea-level calibration /FULLRICH versus highelevationroughness; inspected primary passage2026-10-13."
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_id": 14652,
+   "distinctness_evidence": "14652 asks enrichment toCOOLanengine. This asks TAKE-OFFatSEALEVEL, a specified operating setting, and contrasts highfieldleaning conditions."
+  },
+  {
+   "key": "agk:high-field-rich-runup",
+   "section": "020-10",
+   "text": "At a high-elevation aerodrome a conventional carburetted engine runs roughly during the run-up. The magneto check gives no evidence of a single-magneto fault, and carburettor heat makes the roughness worse. If there is no other fault indication, which approved adjustment should be evaluated under the POH?",
+   "options": [
+    "A leaner mixture setting appropriate to the field conditions.",
+    "An even richer mixture, regardless of the field elevation.",
+    "A higher-than-approved manifold pressure to force the engine smooth.",
+    "An automatic assumption that every case is carburettor ice."
+   ],
+   "tr_text": "Yüksek irtifalı meydanda geleneksel karbüratörlü motor run-up’ta düzensiz çalışıyor. Manyeto kontrolünde tek manyeto arızası belirtisi yok; karbüratör ısıtması düzensizliği artırıyor. Başka arıza belirtisi yoksa POH’a göre hangi ayar değerlendirilmelidir?",
+   "tr_options": [
+    "Meydan koşullarına uygun, izin verilen daha fakir karışım ayarı.",
+    "Meydan irtifasından bağımsız daha da zengin karışım.",
+    "Motoru zorla düzeltmek için onaylı sınırın üzerinde manifold basıncı.",
+    "Her durumda otomatik olarak karbüratör buzu kabulü."
+   ],
+   "explanation_en": "At high elevation an unadjusted rich mixture may foul plugs and cause roughness. Heat lowers intake density and further enriches the mixture. Evaluate the approved leaning procedure; unresolved roughness requires investigation before take-off.",
+   "explanation_tr": "Yüksek meydanda ayarsız zengin karışım bujileri kirletip düzensizlik yaratabilir. Isıtma, emiş yoğunluğunu düşürüp daha da zenginleştirir. İzin verilen fakirleştirme değerlendirilir; düzelmeyen düzensizlikte kalkıştan önce arıza araştırılır.",
+   "sources": [
+    {
+     "source": "x-cad-070",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf",
+     "no": "127",
+     "page": "15 (PDF1-based)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "section": "PHAK Ch7, MixtureControl p.7-9 and CarburetorHeat pp.7-10–7-11; highelevationrunup roughness andheat-enrichment passages read; inspected primary passage2026-10-13."
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_id": 14624,
+   "distinctness_evidence": "14624 gives a genericaltitudeleaning rule;14589 givesheat-enrichment. This adds the diagnosticCONJUNCTIONofhighfieldrunup,normalmagcheck andWORSEwithHEAT, distinct from carb-ice recovery wherepowerimproves afterclearing."
+  },
+  {
+   "key": "agk:rapid-decompression-fog",
+   "section": "020-24",
+   "text": "A pressurised cabin loses pressure rapidly and a brief mist forms. What physical process can explain this mist?",
+   "options": [
+    "Rapid expansion cools the cabin air, allowing water vapour to condense.",
+    "The oxygen percentage must rise until visible oxygen droplets form.",
+    "Rapid decompression always heats the air enough to evaporate every droplet.",
+    "The cabin pressure must become higher than outside pressure because mist exists."
+   ],
+   "tr_text": "Basınçlı kabin basıncını hızla kaybediyor ve kısa süreli sis oluşuyor. Bu sisi hangi fiziksel süreç açıklayabilir?",
+   "tr_options": [
+    "Hızlı genleşme kabin havasını soğutur; su buharı yoğuşabilir.",
+    "Oksijen oranı görünür oksijen damlaları oluşturana kadar yükselir.",
+    "Hızlı dekompresyon havayı daima bütün damlaları buharlaştıracak kadar ısıtır.",
+    "Sis bulunduğu için kabin basıncı dış basınçtan yüksek olmak zorundadır."
+   ],
+   "explanation_en": "Fast pressure loss can produce a rapid temperature drop and condensation if the humidity permits. Mist is a possible effect; its absence does not exclude decompression.",
+   "explanation_tr": "Hızlı basınç kaybı sıcaklığı hızla düşürüp nem uygunsa yoğuşma oluşturabilir. Sis olası bir etkidir; görülmemesi dekompresyonu dışlamaz.",
+   "sources": [
+    {
+     "source": "x-caab-cpl-040",
+     "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+     "no": "281",
+     "page": "52(PDF1-based)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "section": "PHAK Ch7, CabinPressurisation / ExplosiveDecompression, p.7-36, fog due torapidtemperaturedrop andrelativehumiditychange; inspected primary passage2026-10-13."
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_id": 15115,
+   "distinctness_evidence": "15483 weathercondensation and15115 oxygenpartialpressure do not test RAPIDPRESSURELOSScabinfog. Basic pressurisation andphysicalsign retained without advanced controller engineering."
+  }
+ ],
+ "existing_notes": [],
+ "decisions": [],
+ "scope_evidence": {
+  "source_row_accounting": "These coordinated cross-subject candidate references are already counted in parent070 and040 manifests. No additional raw source rows are counted here. Parent resolves their pending cross-subject keys after020 compilation."
+ },
+ "final_audit_counts": {
+  "scanned": 0,
+  "new_candidates": 9,
+  "decisions": {}
+ }
+}

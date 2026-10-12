@@ -1,0 +1,32 @@
+{
+ "ders": "090",
+ "anahtarlar": {
+  "x-cad-090:94": 69001,
+  "x-traficom-090:1": 69002,
+  "x-traficom-090:100": 69003,
+  "x-traficom-090:11": 69004,
+  "x-traficom-090:118": 69005,
+  "x-traficom-090:121": 69006,
+  "x-traficom-090:127": 69007,
+  "x-traficom-090:32": 69008,
+  "x-traficom-090:5": 69009,
+  "x-traficom-090:54": 69010,
+  "x-traficom-090:57": 69011,
+  "x-traficom-090:69": 69012,
+  "x-traficom-090:71": 69013,
+  "x-traficom-090:73": 69014,
+  "x-traficom-090:75": 69015,
+  "x-traficom-090:77": 69016,
+  "x-traficom-090:80": 69017,
+  "x-traficom-090:84": 69018,
+  "x-traficom-090:88": 69019,
+  "x-traficom-090:93": 69020,
+  "x-traficom-090:94": 69021,
+  "x-traficom-090:95": 69022,
+  "x-traficom-090:96": 69023,
+  "x-traficom-090:97": 69024,
+  "x-traficom-090:98": 69025,
+  "qa090:complete-icao-alphabet": 16379,
+  "qa090:complete-numeral-pronunciation": 16380
+ }
+}

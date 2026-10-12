@@ -59,10 +59,75 @@ class CompilerSafetyTest(unittest.TestCase):
         self.assertEqual(first, (self.data / "010_ek_kaynak_sorulari.json").read_bytes())
         self.assertEqual(original, (self.data / "010_original.json").read_bytes())
 
+    def test_later_source_can_match_previous_addition_in_same_subject(self):
+        self.run_compile()
+        output = self.data / "010_ek_kaynak_sorulari.json"
+        before = output.read_bytes()
+        qid = json.loads(before)["questions"][0]["id"]
+        self.doc["decisions"].append({"source": "s", "no": "3", "key": "s:3",
+            "status": "existing", "bank_id": qid, "reason": "Already added in the previous scan"})
+        self.doc["existing_notes"] = [{**self.candidate, "key": "existing:prior",
+            "bank_id": qid, "sources": [{"source": "s", "url": "https://example.org/bank", "no": "3"}]}]
+        for _ in range(2):
+            report = self.run_compile()
+            self.assertEqual(before, output.read_bytes())
+            decision = next(d for d in report["kararlar"] if d["key"] == "s:3")
+            self.assertEqual((decision["status"], decision["question_id"]), ("existing", qid))
+            self.assertEqual(report["yeni_benzersiz"], 1)
+        refs = json.loads((self.data / "_kaynak_notlari.json").read_text())["notlar"][str(qid)]["src"]
+        self.assertEqual(sum(r["k"] == "s" and r["no"] == "3" for r in refs), 1)
+
     def test_unresolved_duplicate_is_review_without_guessing(self):
         self.doc["decisions"][0]["representative_key"] = "missing:representative"
         report = self.run_compile()
         self.assertEqual(report["inceleme"], 2)
+
+    def test_combined_source_links_two_conditions_without_merging_ids(self):
+        self.put("data/020_other.json", {"subject_code": "020", "questions": [
+            {"id": 43, "text": "A different configuration?", "options": ["Other", "Wrong"]}]})
+        before = (self.data / "020_other.json").read_bytes()
+        self.doc["decisions"].append({"source": "s", "no": "3", "status": "existing",
+            "bank_id": 42, "additional_bank_ids": [43, 43], "reason": "Both conditions already covered"})
+        report = self.run_compile()
+        self.assertEqual(report["taranan"], 3)
+        self.assertEqual(report["yeni_benzersiz"], 1)
+        notes = json.loads((self.data / "_kaynak_notlari.json").read_text())["notlar"]
+        for qid in (42, 43):
+            self.assertEqual(sum(r["no"] == "3" for r in notes[str(qid)]["src"]), 1)
+        self.assertEqual(notes["43"]["also_subjects"], ["010"])
+        self.assertEqual(before, (self.data / "020_other.json").read_bytes())
+
+    def test_unknown_additional_condition_is_rejected_before_writes(self):
+        self.doc["decisions"].append({"source": "s", "no": "3", "status": "existing",
+            "bank_id": 42, "additional_bank_ids": [999], "reason": "Incomplete match"})
+        with self.assertRaisesRegex(ValueError, "ek koşul referansı"):
+            self.run_compile()
+        self.assertFalse((self.data / "010_ek_kaynak_sorulari.json").exists())
+
+    def test_explicit_section_correction_keeps_question_and_id(self):
+        from kaynak_derle import question_hash
+        self.run_compile()
+        output = self.data / "010_ek_kaynak_sorulari.json"
+        before = json.loads(output.read_text())["questions"][0]
+        self.candidate["section"] = "010-04"
+        self.candidate["correction"] = {"kind": "clarification",
+            "previous_sha256": question_hash(before), "reason": "Only the topic section was misclassified"}
+        for _ in range(2):
+            self.run_compile()
+            after = json.loads(output.read_text())["questions"][0]
+            self.assertEqual(after, {**before, "section": "010-04"})
+
+    def test_section_correction_cannot_also_replace_content(self):
+        from kaynak_derle import question_hash
+        self.run_compile()
+        output = self.data / "010_ek_kaynak_sorulari.json"
+        before = json.loads(output.read_text())["questions"][0]
+        self.candidate.update(section="010-04", text="A different condition?")
+        self.candidate["correction"] = {"kind": "clarification",
+            "previous_sha256": question_hash(before), "reason": "This attempts to move and replace the question"}
+        with self.assertRaisesRegex(ValueError, "içeriği değişti"):
+            self.run_compile()
+        self.assertEqual(json.loads(output.read_text())["questions"][0], before)
 
     def test_missing_verification_fails_before_writing(self):
         del self.candidate["answer_verification"]

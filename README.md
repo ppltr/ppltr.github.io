@@ -1,21 +1,22 @@
 # PPL Soru Bankası
 
-SQLite tabanlı **PPL** soru bankası (ATPL TV'deki *PPL Turkey (English)* sınav
-raporlarından çevrildi). Bankanın tamamı şu an PPL seviyesindedir; ATPL soruları
-ileride eklenecek — `subjects.level` sütunu bunun için hazır (`ppl` / `atpl`). **2.514 soru, 10 ders** (226 tekrar işaretli → 2.288 benzersiz; 71'i ders notundan üretilmiş).
+SQLite tabanlı **PPL** çalışma uygulaması. İlk banka ATPL TV'deki *PPL Turkey (English)* sınav raporlarından çevrildi; ders notları ve kaynak taramalarından doğrulanmış, bağımsız yazılmış alıştırmalarla genişletildi. **3.572 kayıt, 11 ders; mevcut 380 tekrar bağlantısı çıkarılınca 3.192 görünür benzersiz soru.** 233 kayıt ders notlarından, 638 kayıt ek kaynak çalışmalarından gelir.
 
-| Ders | Soru | Benzersiz | Bölüm |
-|---|---|---|---|
-| 050 \| Meteorology | 385 | 346 | 9 |
-| 020 \| Aircraft General Knowledge | 347 | 325 | 24 |
-| 501 \| Havacılığa Giriş | 252 | 251 | 3 |
-| 040 \| Human Performance and Limitations | 251 | **210** | 9 |
-| 060 \| Navigation | 245 | 231 | 14 |
-| 080 \| Principles of Flight | 244 | **197** | 9 |
-| 030 \| Flight Performance and Planning | 237 | 220 | 10 |
-| 070 \| Operational Procedures | 193 | 183 | 7 |
-| 090 \| Communications | 183 | **150** | 6 |
-| 010 \| Air Law | 177 | 175 | 7 |
+Aşağıdaki sayılar sorunun ana dersine göre fiziksel kayıt sayılarıdır. Ortak konular aynı soru kimliğiyle birden fazla derste gösterilebilir; bu bağlar toplam soru sayısını artırmaz.
+
+| Ders | Kayıt | Benzersiz | Bölüm |
+|---|---:|---:|---:|
+| 010 · Air Law | 285 | 259 | 15 |
+| 020 · Aircraft General Knowledge | 500 | 439 | 34 |
+| 030 · Flight Performance and Planning | 307 | 274 | 15 |
+| 040 · Human Performance and Limitations | 384 | 341 | 18 |
+| 050 · Meteorology | 538 | 475 | 20 |
+| 060 · Navigation | 330 | 300 | 24 |
+| 070 · Operational Procedures | 237 | 227 | 8 |
+| 080 · Principles of Flight | 306 | 242 | 20 |
+| 090 · Communications | 290 | 241 | 13 |
+| 501 · Havacılığa Giriş | 252 | 251 | 3 |
+| 502 · Güvenlik Bilinci | 143 | 143 | 5 |
 
 ```
 atpl.db                                 # veritabanı (script ile üretilir)
@@ -594,3 +595,104 @@ python3 scripts/check_tr.py
 python3 scripts/init_db.py
 python3 scripts/build_web.py
 ```
+
+## 2026-10-13 · Diğer PPL derslerinde tam kaynak taraması
+
+**521 yeni benzersiz soru eklendi.** Bu sayı 12 Ekim'deki 29 soruya ilavedir; önceki Air Law 88 kaydı da bu yeni sayıya dahil değildir. Önceki 3.051 sorunun kimlik ve soru içeriği aynen korundu. Son durum 3.572 ham / 3.192 görünür benzersiz kayıttır.
+
+Bu tur önceki sınırlı örneklemeyi genişletir: normal erişimle incelenebilen yayımlanmış PDF'lerin 020–090 bölümleri baştan sona işlendi. **8.647 gerçek kaynak soru satırı** incelendi. Aynı sorunun farklı bankalarda tekrarlanması taranan satır sayısına dahildir; eklenen benzersiz kayıt sayısına dahil değildir. Bu sayı bütün güncel SHGM/PPL sınav bankasının kesin eksik sayısı olarak yorumlanamaz.
+
+| Ders | Taranan kaynak satırı | Bu tur eklenen benzersiz kayıt |
+|---|---:|---:|
+| 020 · Aircraft General Knowledge | 1804 | **106** |
+| 030 · Flight Performance and Planning | 1177 | **48** |
+| 040 · Human Performance | 1394 | **96** |
+| 050 · Meteorology | 1318 | **116** |
+| 060 · Navigation | 1481 | **57** |
+| 070 · Operational Procedures | 442 | **43** |
+| 080 · Principles of Flight | 607 | **30** |
+| 090 · Communications | 424 | **25** |
+| **Toplam** | **8.647** | **521** |
+
+### Kaynak kapsamı ve sayım
+
+Traficom, Serbia CAD ve Austro'nun yayımlanmış bölümlerinde toplam 3.244; CAAB'nin açık AGK, CPL composite ve ATPL composite dosyalarında 4.203; Linx'in diğer sekiz dersinde 1.200 soru satırı incelendi. Austro belgeleri tarihsel yayımlanmış alt kümedir; güncel ticari AirCademy bankasının tamamına erişildiği iddia edilmez.
+
+4.142 kaynak satırı başlangıçtaki bankaya, 1.624 satır bu tur kabul edilen yeni soru tiplerine bağlandı. 1.537 satır belirsizlik, eski/eksik şekil veya doğrulanamayan koşullar nedeniyle incelemede; 1.344 satır PPL kapsamı dışında tutuldu. İnceleme ve kapsam dışı kayıtlar aktif teste alınmadı. Ayrıntılı karar/gerekçe ve kimlik bağları `data/kaynaklar/decisions/full*.json`, makine tarafından yeniden üretilen sonuç `data/kaynaklar/rapor_tam_tarama_20261013.json` içindedir.
+
+Aşağıdaki “İlk kaynakla eklenen” sütunu her yeni kaydı yalnız ilk kaynak URL'sine sayar; toplamı 521'dir. “Yeni tipe bağlanan” kaynak satırı sayısıdır, benzersiz yeni soru sayısı değildir. Fintraffic uçuş planı formu soru bankası değildir; soru taramasına 0 sayılmış, Z uçuş kuralları alıştırmasının birincil dayanağı olarak kullanılmıştır.
+
+| Kaynak / yayımlanmış dosya | Taranan | Başlangıçta mevcut | Yeni tipe bağlanan | İlk kaynakla eklenen | İnceleme | Kapsam dışı |
+|---|---:|---:|---:|---:|---:|---:|
+| [ref-fpl-fintraffic](https://www.ais.fi/sites/default/files/2023-11/Instructions%20for%20completing%20the%20FPL%2005NOV20_1.pdf) | 0 | 0 | 0 | 1 | 0 | 0 |
+| [x-austro-020](https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK_EN.pdf) | 162 | 107 | 27 | 19 | 27 | 1 |
+| [x-austro-030](https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf) | 112 | 51 | 42 | 15 | 19 | 0 |
+| [x-austro-040](https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-20-HPL_EN.pdf) | 76 | 43 | 15 | 12 | 18 | 0 |
+| [x-austro-050](https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf) | 130 | 75 | 44 | 29 | 11 | 0 |
+| [x-austro-060](https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-90-NAV_EN.pdf) | 225 | 147 | 43 | 20 | 34 | 1 |
+| [x-austro-070](https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-60-OPR_EN.pdf) | 57 | 12 | 18 | 10 | 27 | 0 |
+| [x-austro-080](https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf) | 149 | 112 | 23 | 12 | 14 | 0 |
+| [x-caab-agk-020, x-caab-agk-080](https://ops.caab.gov.bd/file-manager/cpl-ir--agk-29072019.pdf) | 1200 | 131 | 93 | 54 | 394 | 582 |
+| [x-caab-atpl-030, x-caab-atpl-040, x-caab-atpl-050, x-caab-atpl-060](https://ops.caab.gov.bd/file-manager/atplcomposit.pdf) | 1503 | 559 | 326 | 57 | 229 | 389 |
+| [x-caab-cpl-030, x-caab-cpl-040, x-caab-cpl-050, x-caab-cpl-060](https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf) | 1500 | 575 | 363 | 98 | 224 | 338 |
+| [x-cad-020](https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Aircraft%20%20general%20knowledge.pdf) | 150 | 101 | 22 | 0 | 27 | 0 |
+| [x-cad-030](https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf) | 148 | 109 | 13 | 10 | 26 | 0 |
+| [x-cad-040](https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Human%20performance.pdf) | 150 | 88 | 28 | 0 | 34 | 0 |
+| [x-cad-050](https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf) | 150 | 99 | 26 | 6 | 22 | 3 |
+| [x-cad-060](https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf) | 138 | 103 | 16 | 10 | 19 | 0 |
+| [x-cad-070](https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf) | 150 | 52 | 35 | 19 | 63 | 0 |
+| [x-cad-080](https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Principles%20of%20flight.pdf) | 150 | 129 | 16 | 8 | 5 | 0 |
+| [x-cad-090](https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf) | 137 | 85 | 29 | 1 | 22 | 1 |
+| [x-linx-020](https://linxaviation.rs/wp-content/uploads/2020/12/Aircraft_general_knowledge.pdf) | 150 | 101 | 22 | 0 | 27 | 0 |
+| [x-linx-030](https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf) | 150 | 111 | 30 | 0 | 9 | 0 |
+| [x-linx-040](https://linxaviation.rs/wp-content/uploads/2020/12/Human_performance.pdf) | 150 | 80 | 30 | 2 | 40 | 0 |
+| [x-linx-050](https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf) | 150 | 97 | 27 | 1 | 23 | 3 |
+| [x-linx-060](https://linxaviation.rs/wp-content/uploads/2020/12/Navigation.pdf) | 150 | 107 | 32 | 2 | 11 | 0 |
+| [x-linx-070](https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf) | 150 | 52 | 36 | 0 | 62 | 0 |
+| [x-linx-080](https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf) | 150 | 126 | 17 | 1 | 7 | 0 |
+| [x-linx-090](https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf) | 150 | 97 | 29 | 0 | 23 | 1 |
+| [x-traficom-020](https://www.traficom.fi/sites/default/files/media/file/PPL020ENG%2011102018.pdf) | 159 | 114 | 28 | 27 | 17 | 0 |
+| [x-traficom-030](https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf) | 165 | 113 | 33 | 3 | 10 | 9 |
+| [x-traficom-040](https://www.traficom.fi/sites/default/files/media/file/PPL040ENG%2011102018.pdf) | 159 | 99 | 31 | 26 | 29 | 0 |
+| [x-traficom-050](https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf) | 144 | 106 | 25 | 24 | 12 | 1 |
+| [x-traficom-060](https://www.traficom.fi/sites/default/files/media/file/32088-PPL060ENG.pdf) | 170 | 127 | 31 | 3 | 11 | 1 |
+| [x-traficom-070](https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf) | 85 | 28 | 30 | 21 | 23 | 4 |
+| [x-traficom-080](https://www.traficom.fi/sites/default/files/media/file/PPL080ENG%2011102018.pdf) | 141 | 113 | 13 | 6 | 5 | 10 |
+| [x-traficom-090](https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf) | 137 | 93 | 31 | 24 | 13 | 0 |
+| **Toplam** | 8647 | 4142 | 1624 | 521 | 1537 | 1344 |
+
+Önceki Scribd, QuizVDS, Furious, PDFCoffee, Dauntless ve Son Yaklaşma erişim/toplu aktarım sınırlamaları kaynak envanterinde korunur; kapalı içerik yeni baştan sona taramaya sayılmadı. Austro'nun İngilizce Communications dosyası bulunamadı (404; 0 soru). CAAB ATPL-FOOL ZIP dosyası normal erişimde zaman aşımı ve SSL sertifika doğrulama hatası verdi (0 soru); erişim engeli veya sertifika doğrulaması aşılmadı.
+
+### İçerik, tekrar ve cevap denetimi
+
+Kaynakların korumalı soru kökleri, seçenekleri ve şekilleri toplu olarak yayımlanmadı. PPL açısından gerekli farklı bilgi/koşullar bağımsız soru ifadeleriyle yazıldı. Her yeni kayıt İngilizce ve Türkçe dört seçenek, kısa iki dilli açıklama, kaynak URL'si ve varsa sayfa/soru numarası, ayrıca cevap doğrulaması için birincil dokümanın bölüm bağlantısını içerir. Sayısal örnekler verilen senaryo ve birimlerle kontrol edildi. Yeni Türkçe kayıtlardaki ondalık ve cümle boşlukları da son yazım denetiminde düzeltildi; değerler ve seçenek sırası korunur. Yeni kaynaklı soruların doğru cevabı JSON'da ilk seçenektir; uygulama seçenekleri karıştırır.
+
+Konu benzerliği tek başına tekrar sayılmadı. Açık/kapalı pitot tahliyesi, kuzey/güney yarımküre pusula hataları, sabit hatveli/sabit devirli pervane, IFR/VFR ve farklı uçuş koşulları ayrı tutuldu. Beyaz yayın VS0 ve yeşil yayın VS1 alt sınırları iki ayrı kimliktir; bunları birlikte soran üçüncü tekrar eklenmedi. Kaynağın bir satırı iki ayrı koşulu içeriyorsa iki mevcut kimliğe kaynak bağı eklenebilir; çözüm kimlikleri birleştirilmez. Ortak dersler `also_subjects` ile aynı ID'yi kullanır.
+
+İkinci içerik denetiminde yalnız yeni taslaklardan 11 tekrar elendi. Bunlar ve kısa gerekçeleri sonuç raporunun `ikincil_incelemede_elenen` alanında kayıtlıdır: düşük RPM'de buji kirlenmesi, karşılıklı yatay motor, batarya/starter, ana taşıyıcı yapı, oktan/detonasyon, altimetre basınç referansı, master kapalıyken elle pervane tehlikesi, motor arızasında önce uçuş kontrolü, ASI alt sınırlarının birleşik tekrarı, hafif yan rüzgârda vorteks ve alçalışta karışımın fakirleşmesi. Mevcut banka sorusu silinmedi veya azaltılmadı.
+
+VASI'nin iki sırası ile PAPI'nin dört birimi ayrı doğrulandı. VASI'de yakın beyaz/uzak kırmızı doğru süzülüş hattıdır; ikisi kırmızı hattın altı, ikisi beyaz hattın üstüdür. Sağ yönlü yer oku sağ trafik dönüşünü belirtir. Üç yeni sorunun yanlış alt bölüm etiketi metin/seçenek/ID korunarak düzeltildi; eski/yeni hash ve neden `data/kaynaklar/duzeltmeler.json` içindedir.
+
+Kullanıcının doğruladığı Air Law yıldızları **61001 (Transition Level'ı kim belirler), 61002 (Code 3), 14909 (TORA)** olarak korundu. Diğer hatırlanan konular benzer aday etiketinde kalır; hatırlanmayan manyetik derece ve sınavdaki tam soru metni kesinleştirilmiş sayılmadı. Hiçbir kayıt resmî SHGM çıkmış sorusu diye sunulmaz.
+
+### Tekrarlanabilir derleme ve doğrulama
+
+Son tam taramayı üretmek için aşağıdaki komutları kullanın. Önceki tarihli dar örneklem komutları bu turun manifestlerini kapsamaz.
+
+```bash
+python3 scripts/tam_tarama.py --derle --rapor
+python3 scripts/make_figures.py
+python3 scripts/check_tr.py
+python3 scripts/init_db.py
+python3 scripts/check_figures.py
+python3 scripts/build_web.py
+python3 -m unittest discover -s scripts -p 'test_kaynak*.py'
+node scripts/test_kaynak_web.cjs
+.venv/bin/python server/test_flow.py
+```
+
+`tam_tarama.py` yayımlanmış dosyaların gerçek satır sayılarını ve başlangıçtaki 3.051 soru hashini kontrol eder; eksik manifesti tam tarama saymaz. Aynı kaynak/koşulun çapraz ders bağları gerçek tahsis edilmiş ID'ler üzerinden çözülür. Yeniden derleme veri JSON'larında değişiklik üretmez. Eksik doğrulama, yanlış kimlik, habersiz içerik değişimi veya aynı kimliğin yeniden kullanımı derlemeyi durdurur. Açık gerekçeli alt bölüm düzeltmesinde de soru kimliği korunur.
+
+33 Python regresyon testi, JS kapsam/kimlik/inceleme ayrımı, sunucu kullanıcı/çözüm/geçmiş akışı ve grafik API testi geçti. Her 3.572 kaydın iki dili tamdır; şekil isteyen 40 sorunun tamamı 32 üretilmiş çizime bağlanır. SQLite bütünlük ve yabancı anahtar kontrolleri temizdir. Mevcut 380 tekrar bağı ve kullanıcı geçmiş veritabanı değişmedi. Tarayıcıda eski çalışma oturumunun aynı ID/zamanla açılması, ayrı QA profilinde yeni grafikli sorunun iki dili, cevap/açıklama/kaynak ve tekrar turu doğrulandı. `qa/full-subject-expansion-tr.jpg` yeni soru ekranıdır.
+
+Yerel SQLite, bağımsız HTML ve GitHub Pages için `docs/index.html` yeniden üretildi. Çalışma yerel `codex/ppl-airlaw-expansion` dalındadır.

@@ -2,13 +2,22 @@
  "subject_code": "060",
  "subject_name": "Navigation",
  "origin": "ek",
- "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
+ "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-13)",
  "answer_convention": "İki dilde aynı sırada; ilk şık doğru. Belirsiz cevap aktif bankada yok.",
  "id_convention": "Kalıcı idler_060.json; eski veya emekli kimlik yeniden kullanılmaz.",
  "sections": {
+  "060-01": "The Earth",
   "060-02": "Direction",
+  "060-04": "Distance",
+  "060-05": "Time",
   "060-07": "Practical Navigation",
-  "060-12": "VOR/DME"
+  "060-08": "Projections",
+  "060-09": "Charts",
+  "060-10": "Ground D/F",
+  "060-11": "NDB/ADF",
+  "060-12": "VOR/DME",
+  "060-13": "RADAR",
+  "060-14": "GPS"
  },
  "questions": [
   {
@@ -42,6 +51,635 @@
     "Heading",
     "Planned course",
     "VOR radial"
+   ]
+  },
+  {
+   "id": 66004,
+   "section": "060-05",
+   "text": "For a basic GPS position solution, the receiver clock error is unknown but receiver height is supplied accurately from an independent source. With suitable geometry and no integrity-monitoring requirement in this exercise, what minimum satellite count can solve latitude, longitude and clock error?",
+   "options": [
+    "Three",
+    "Four in every case, even with known height",
+    "Two",
+    "One"
+   ]
+  },
+  {
+   "id": 66005,
+   "section": "060-05",
+   "text": "A conventional Mode A squawk consists of four digits, each from 0 to 7. How many different four-digit codes are possible?",
+   "options": [
+    "4,096",
+    "10,000",
+    "2,048",
+    "Only the three emergency codes"
+   ]
+  },
+  {
+   "id": 66006,
+   "section": "060-05",
+   "text": "What does attenuation of a radio-navigation signal mean?",
+   "options": [
+    "A reduction in signal strength or power",
+    "A change in propagation direction at a boundary",
+    "Bending of waves around an obstacle",
+    "A mandatory increase in carrier frequency"
+   ]
+  },
+  {
+   "id": 66007,
+   "section": "060-01",
+   "text": "Where is the inclination (dip) of the geomagnetic field approximately zero, so dip-related magnetic-compass errors are least?",
+   "options": [
+    "At the magnetic equator",
+    "At both geographic poles",
+    "At every point on the geographic equator, irrespective of the magnetic field",
+    "At the magnetic poles"
+   ]
+  },
+  {
+   "id": 66008,
+   "section": "060-05",
+   "text": "An aircraft flies a level arc at a constant slant range from a DME station. Why can a conventional DME-derived groundspeed read near zero although the aircraft is moving rapidly?",
+   "options": [
+    "It measures change of range, which is near zero along the arc",
+    "It measures indicated airspeed and that must be zero",
+    "DME works only while parked",
+    "It directly measures wind speed, which must be zero"
+   ]
+  },
+  {
+   "id": 66009,
+   "section": "060-05",
+   "text": "Ignore Earth curvature. An aircraft is 3 NM vertically above a DME antenna and 4 NM horizontally from it. What uncorrected DME slant range should it indicate?",
+   "options": [
+    "5 NM",
+    "4 NM",
+    "3 NM",
+    "7 NM"
+   ]
+  },
+  {
+   "id": 66010,
+   "section": "060-05",
+   "text": "For reliable aircraft GPS reception, what is the main reason to give the antenna an unobstructed view of the sky?",
+   "options": [
+    "Airframe masking can block required satellite signals",
+    "GPS must see the runway visually",
+    "It must receive a signal transmitted by the magnetic compass",
+    "A clear view eliminates all ionospheric and integrity errors"
+   ]
+  },
+  {
+   "id": 66011,
+   "section": "060-05",
+   "text": "A GPS displays geometric altitude and the pressure altimeter displays altitude with the applicable QNH setting. Which statement is correct for assigned barometric altitudes or flight levels?",
+   "options": [
+    "GPS altitude can differ and does not replace the correctly set barometric altimeter",
+    "GPS geometric altitude is always identical to QNH altitude",
+    "The GPS altitude automatically becomes the assigned flight level",
+    "Any difference proves the pressure altimeter is faulty"
+   ]
+  },
+  {
+   "id": 66012,
+   "section": "060-04",
+   "text": "An exercise defines climb gradient as height gained divided by horizontal ground distance. Use 1 NM=6,000 ft. At 100 kt groundspeed and a 5% climb gradient, what rate of climb is required?",
+   "options": [
+    "500 ft/min",
+    "300 ft/min",
+    "5,000 ft/min",
+    "50 ft/min"
+   ]
+  },
+  {
+   "id": 66013,
+   "section": "060-05",
+   "text": "With other propagation conditions comparable, how does lowering frequency generally affect the useful range of a ground wave?",
+   "options": [
+    "It generally increases the range",
+    "It always reduces the range to zero",
+    "It changes the wave into a GPS signal",
+    "It leaves the range independent of frequency"
+   ]
+  },
+  {
+   "id": 66014,
+   "section": "060-02",
+   "text": "On a normal Mercator chart, what generally happens to local scale as absolute latitude increases away from the equator?",
+   "options": [
+    "It increases; distances must use the latitude scale appropriate to the area",
+    "It remains identical at every latitude",
+    "It decreases to zero toward the poles",
+    "Only longitude names change, with no scale effect"
+   ]
+  },
+  {
+   "id": 66015,
+   "section": "060-05",
+   "text": "What distinguishes Mode S surveillance addressing from the conventional four-digit Mode A squawk?",
+   "options": [
+    "A unique ICAO aircraft address allows selective interrogation",
+    "The four squawk digits become decimal digits 0–9",
+    "Mode S never transmits aircraft identity",
+    "Mode S is a VOR bearing display"
+   ]
+  },
+  {
+   "id": 66016,
+   "section": "060-05",
+   "text": "In ADF navigation, what is quadrantal error primarily associated with?",
+   "options": [
+    "Distortion of the received field by the aircraft’s characteristics",
+    "The geographic meridians converging",
+    "An incorrect QNH setting",
+    "Earth’s magnetic variation alone"
+   ]
+  },
+  {
+   "id": 66017,
+   "section": "060-05",
+   "text": "What is the pilot-relevant purpose of Receiver Autonomous Integrity Monitoring (RAIM) in a GPS receiver?",
+   "options": [
+    "To assess solution integrity and warn when required integrity cannot be assured",
+    "To update the navigation database automatically",
+    "To guarantee zero position error in all conditions",
+    "To select QNH from the satellites"
+   ]
+  },
+  {
+   "id": 66018,
+   "section": "060-05",
+   "text": "Why is a sense antenna combined with the loop antenna in a conventional ADF?",
+   "options": [
+    "To resolve the loop’s 180° directional ambiguity",
+    "To measure barometric altitude",
+    "To correct every coastal and night effect",
+    "To provide a DME distance reply"
+   ]
+  },
+  {
+   "id": 66019,
+   "section": "060-05",
+   "text": "A civil aircraft has normal VOR equipment and a compatible DME, but no TACAN airborne azimuth equipment. From a TACAN-only facility, which navigation information can it normally obtain?",
+   "options": [
+    "DME distance, but not TACAN azimuth through its VOR receiver",
+    "Both TACAN bearing and distance through the VOR receiver alone",
+    "VOR bearing, but no distance",
+    "No distance because all TACAN signals are incompatible with civil DME"
+   ]
+  },
+  {
+   "id": 66020,
+   "section": "060-05",
+   "text": "A VOR being used for navigation transmits T-E-S-T instead of its normal identification during maintenance. What should the pilot do?",
+   "options": [
+    "Do not rely on it for navigation; use another verified source and applicable notices",
+    "Continue because a centred CDI guarantees serviceability",
+    "Treat TEST as the normal station identifier",
+    "Increase the volume to make the bearing accurate"
+   ]
+  },
+  {
+   "id": 66021,
+   "section": "060-05",
+   "text": "A VDF bearing is explicitly reported as Class B. Under the accuracy classes in UK CAA CAP 413, what bearing accuracy is represented?",
+   "options": [
+    "Within±5°",
+    "Within±2°",
+    "Within±10°",
+    "Exact, with no possible bearing error"
+   ]
+  },
+  {
+   "id": 66022,
+   "section": "060-05",
+   "text": "For a short-leg exercise, ignore convergence. A VOR radial is 090° relative to the station’s published magnetic reference, whose declination is 10°E. Local variation at the aircraft is 7°E. What TRUE bearing FROM the station corresponds to this radial?",
+   "options": [
+    "100°T",
+    "097°T",
+    "080°T",
+    "083°T"
+   ]
+  },
+  {
+   "id": 66023,
+   "section": "060-05",
+   "text": "A VOR can be received beyond its published protected service volume. What does reception alone establish there?",
+   "options": [
+    "Only that a signal is being received; protected strength, quality and interference freedom are not assured",
+    "Full protected navigation coverage at every receivable distance",
+    "That terrain can no longer obstruct the signal",
+    "That the theoretical line-of-sight formula guarantees certified accuracy"
+   ]
+  },
+  {
+   "id": 66024,
+   "section": "060-05",
+   "text": "Use propagation speedc=300,000,000 m/s. What wavelength corresponds to a 100 MHz radio signal?",
+   "options": [
+    "3 m",
+    "300 m",
+    "0.3 m",
+    "3,000 m"
+   ]
+  },
+  {
+   "id": 66025,
+   "section": "060-02",
+   "text": "What does WGS 84 describe in GPS positioning, and why should a plotted chart’s coordinate datum be compatible?",
+   "options": [
+    "A global geodetic reference; using a different chart datum can displace a correctly calculated position",
+    "The local QNH; it determines flight levels",
+    "A Mercator projection with constant scale everywhere",
+    "A guarantee that every database entry is current"
+   ]
+  },
+  {
+   "id": 66026,
+   "section": "060-01",
+   "text": "Which pair of points defines the Earth rotation axis, which is perpendicular to the equatorial plane?",
+   "options": [
+    "The geographic North and South Poles",
+    "The magnetic North and South Poles",
+    "Greenwich and its antipodal point",
+    "The two intersections of the Equator and magnetic equator"
+   ]
+  },
+  {
+   "id": 66027,
+   "section": "060-12",
+   "text": "A conventional VOR CDI has 10° full-scale deflection to either side. Aircraft distance from the station is 60 NM (horizontal range; ignore height). The needle is one-fifth of full deflection. Using 1-in-60, approximately how far is the aircraft from the selected course?",
+   "options": [
+    "2 NM",
+    "1 NM",
+    "5 NM",
+    "10 NM"
+   ]
+  },
+  {
+   "id": 66028,
+   "section": "060-09",
+   "text": "Read point P on the fictional north-up graticule. Each small interval equals 6 arcminutes. What are its coordinates?",
+   "options": [
+    "51°42′N, 007°54′E",
+    "51°54′N, 007°42′E",
+    "51°48′N, 007°54′E",
+    "51°42′N, 007°36′E"
+   ],
+   "needs_figure": true
+  },
+  {
+   "id": 66029,
+   "section": "060-09",
+   "text": "On a direct Mercator chart, which graduated margin should be used to convert a divider-measured route length into nautical miles?",
+   "options": [
+    "The latitude scale near the route latitude",
+    "The longitude scale at any latitude",
+    "The latitude scale at the Equator regardless of route latitude",
+    "The compass-rose degree scale"
+   ]
+  },
+  {
+   "id": 66030,
+   "section": "060-09",
+   "text": "Which radio navigation aid is shown by the fictional chart symbol X?",
+   "options": [
+    "VOR/DME",
+    "NDB without DME",
+    "VOR without DME",
+    "A civilian aerodrome beacon"
+   ],
+   "needs_figure": true
+  },
+  {
+   "id": 66031,
+   "section": "060-05",
+   "text": "At the end of evening civil twilight, what is the position of the Sun centre relative to the unobstructed geometric horizon?",
+   "options": [
+    "6° below it",
+    "6° above it",
+    "12° below it",
+    "18° below it"
+   ]
+  },
+  {
+   "id": 66032,
+   "section": "060-02",
+   "text": "On a 16-point compass rose, north is 000° and each adjacent point is 22.5° apart. What direction in degrees is WNW?",
+   "options": [
+    "292.5°",
+    "247.5°",
+    "270°",
+    "337.5°"
+   ]
+  },
+  {
+   "id": 66033,
+   "section": "060-08",
+   "text": "What does a conformal aeronautical chart projection preserve locally?",
+   "options": [
+    "Angles and shapes of sufficiently small areas",
+    "The area of every region without distortion",
+    "An identical distance scale everywhere",
+    "Every great circle as a straight line"
+   ]
+  },
+  {
+   "id": 66034,
+   "section": "060-05",
+   "text": "Ignoring time elapsed and local deviations of the date line, an aircraft crosses the International Date Line westward from 179°W to 179°E. What local calendar-date adjustment is required?",
+   "options": [
+    "Add one day",
+    "Subtract one day",
+    "Add two days",
+    "No date adjustment because UTC also jumps by 24 hours"
+   ]
+  },
+  {
+   "id": 66035,
+   "section": "060-12",
+   "text": "For a normally paired VOR/DME installation with DME HOLD not selected, what happens when the pilot tunes the VOR frequency?",
+   "options": [
+    "The equipment selects the associated paired DME UHF channel",
+    "DME measures only VOR signal strength",
+    "The pilot must always manually enter an unrelated DME frequency",
+    "The DME range is reset to zero regardless of position"
+   ]
+  },
+  {
+   "id": 66036,
+   "section": "060-12",
+   "text": "Which measured quantity is used by DME to calculate distance after accounting for the ground station fixed reply delay?",
+   "options": [
+    "The elapsed time between airborne interrogation and received reply",
+    "The phase difference between two 30 Hz bearing signals",
+    "The strength of the VOR carrier alone",
+    "The difference between compass and magnetic heading"
+   ]
+  },
+  {
+   "id": 66037,
+   "section": "060-10",
+   "text": "For a fixed transmitted radio frequency, what Doppler changes occur when transmitter and receiver first approach each other and then move apart?",
+   "options": [
+    "Received frequency is higher during approach and lower during recession",
+    "Lower during approach and higher during recession",
+    "It remains unchanged in both cases",
+    "Only signal amplitude changes; frequency cannot change"
+   ]
+  },
+  {
+   "id": 66038,
+   "section": "060-10",
+   "text": "What is the approximate propagation speed of radio electromagnetic waves in free space?",
+   "options": [
+    "300,000 km/s",
+    "300 km/s",
+    "3,000 km/s",
+    "300,000 m/s"
+   ]
+  },
+  {
+   "id": 66039,
+   "section": "060-05",
+   "text": "At the March and September equinoxes, what is the Sun approximate declination?",
+   "options": [
+    "0°; over the Equator",
+    "23.5°N at both equinoxes",
+    "23.5°S at both equinoxes",
+    "90°; over a geographic pole"
+   ]
+  },
+  {
+   "id": 66040,
+   "section": "060-14",
+   "text": "A GPS navigation display is configured to show cross-track error in nautical miles. What does a lateral CDI deflection represent?",
+   "options": [
+    "A linear distance from the active selected track",
+    "An angular bearing error from the GPS satellite",
+    "Magnetic variation in degrees",
+    "Vertical distance above the waypoint"
+   ]
+  },
+  {
+   "id": 66041,
+   "section": "060-14",
+   "text": "An aviation GPS displays GS derived from satellite navigation without an air-data input. What speed is this?",
+   "options": [
+    "Velocity over the ground",
+    "True airspeed relative to the air mass",
+    "Indicated airspeed from pitot pressure",
+    "Wind speed alone"
+   ]
+  },
+  {
+   "id": 66042,
+   "section": "060-14",
+   "text": "An aviation GPS moving-map database is expired. The pilot needs to check airspace and named waypoints for a VFR flight. What is the appropriate action?",
+   "options": [
+    "Update using the approved database procedure and cross-check current charts; do not treat stale data as current",
+    "Change the GPS clock date to make the database appear current",
+    "Manually edit all published waypoint records to override the provider",
+    "Assume the satellite position fix automatically updates airspace and waypoint definitions"
+   ]
+  },
+  {
+   "id": 66043,
+   "section": "060-04",
+   "text": "Assume a spherical Earth where 1° of latitude is 60 NM. Two points lie on 60°N at 020°E and 030°E. What is the distance along that parallel (rhumb line)? Usecos 60°=0.5.",
+   "options": [
+    "300 NM",
+    "600 NM",
+    "150 NM",
+    "1,200 NM"
+   ]
+  },
+  {
+   "id": 66044,
+   "section": "060-10",
+   "text": "Which list contains three physical carrier properties that can be varied to modulate a radio signal?",
+   "options": [
+    "Amplitude, frequency and phase",
+    "Amplitude, frequency and propagation speed",
+    "Amplitude, wavelength and propagation speed",
+    "Frequency, phase and propagation speed"
+   ]
+  },
+  {
+   "id": 66045,
+   "section": "060-11",
+   "text": "In a constant crosswind, a pilot continuously turns to keep the fixed-card ADF needle straight ahead while approaching an NDB. What track normally results?",
+   "options": [
+    "A curved homing track toward the beacon",
+    "The original straight desired track with automatic wind correction",
+    "A straight track away from the beacon",
+    "An orbit at constant distance from the beacon"
+   ]
+  },
+  {
+   "id": 66046,
+   "section": "060-11",
+   "text": "Compared with daytime, why can LF/MF NDB/ADF bearings be less reliable at night even when reception range increases?",
+   "options": [
+    "Sky-wave or distant-station interference can disturb the bearing",
+    "VOR radials automatically replace all NDB bearings at night",
+    "The ADF needle changes from magnetic to true north at night",
+    "The NDB always stops transmitting when the Sun sets"
+   ]
+  },
+  {
+   "id": 66047,
+   "section": "060-11",
+   "text": "A pilot tracks inbound to an NDB on desired QDM 090°. Magnetic heading is 095°, and fixed-card ADF initially reads 355° (5° left). With heading held constant, the ADF later reads 358° and the beacon is stationary. What does the bearing geometry show?",
+   "options": [
+    "QDM has become 093°; the aircraft is north/left of the desired 090° inbound line and needs a rightward intercept correction",
+    "QDM has become 087°; the aircraft is south/right of the desired line",
+    "QDM remains 090° because heading is unchanged",
+    "The ADF relative bearing alone proves that the NDB has moved"
+   ]
+  },
+  {
+   "id": 66048,
+   "section": "060-09",
+   "text": "In a fictional chart exercise, terrain elevation is 600 ft AMSL and a tower is 100 m high AGL. The planning instruction requires 1,000 ft above its top. Use 1 m=3.28 ft and ignore altimeter errors and other constraints. What minimum planned altitude is needed?",
+   "options": [
+    "1,928 ft AMSL",
+    "1,328 ft AMSL",
+    "1,600 ft AMSL",
+    "328 ft AMSL"
+   ]
+  },
+  {
+   "id": 66049,
+   "section": "060-01",
+   "text": "Which conventional reference meridian is assigned longitude 000°?",
+   "options": [
+    "The Greenwich prime meridian",
+    "The magnetic meridian through magnetic north",
+    "The Equator",
+    "Every meridian through a geographic pole"
+   ]
+  },
+  {
+   "id": 66050,
+   "section": "060-13",
+   "text": "What distinguishes conventional primary surveillance radar from secondary surveillance radar (SSR)?",
+   "options": [
+    "Primary uses an airframe-reflected echo; SSR uses a response to interrogation from a transponder",
+    "Primary always requires Mode C; SSR requires no onboard equipment",
+    "Primary measures only airspeed; SSR measures only wind",
+    "Both require the receiving pilot to transmit the callsign by voice for each sweep"
+   ]
+  },
+  {
+   "id": 66051,
+   "section": "060-13",
+   "text": "A conventional primary radar receives an aircraft echo. How is target range derived, and how is bearing derived?",
+   "options": [
+    "Range from pulse round-trip time; bearing from antenna orientation",
+    "Range from antenna orientation; bearing from pulse round-trip time",
+    "Both from Mode C pressure altitude",
+    "Both from aircraft compass heading"
+   ]
+  },
+  {
+   "id": 66052,
+   "section": "060-12",
+   "text": "A pilot flies away from a VOR on the 270° radial using a conventional CDI, but leaves OBS set to 090° with TO showing. What is the effect of this reciprocal-course setup on lateral corrections?",
+   "options": [
+    "Reverse sensing: steering toward the needle can move the aircraft farther from the intended outbound radial",
+    "The OBS changes automatically to 270°",
+    "The receiver changes the aircraft magnetic heading",
+    "The CDI is always centred whenever TO appears"
+   ]
+  },
+  {
+   "id": 66053,
+   "section": "060-05",
+   "text": "Under the conventional astronomical definition with a level unobstructed horizon, which part of the Sun disk defines sunrise and sunset?",
+   "options": [
+    "The upper edge appearing at sunrise and disappearing at sunset",
+    "The centre crossing the horizon at both events",
+    "The lower edge crossing the horizon at both events",
+    "The centre reaching 6° below the horizon"
+   ]
+  },
+  {
+   "id": 66054,
+   "section": "060-05",
+   "text": "For this exercise, local standard time is UTC+3 h. A departure is planned for 01:20 local on 16 October. What UTC date and time should be entered?",
+   "options": [
+    "15 October,22:20 UTC",
+    "16 October,22:20 UTC",
+    "16 October,04:20 UTC",
+    "15 October,04:20 UTC"
+   ]
+  },
+  {
+   "id": 66055,
+   "section": "060-12",
+   "text": "Before using a tuned VOR for course guidance, what should the pilot positively verify?",
+   "options": [
+    "The station actual transmitted identifier or correctly decoded identifier agrees with the intended charted station",
+    "The frequency alone is sufficient without identification",
+    "An expected name displayed from an outdated database is always sufficient",
+    "The CDI needle is centred, regardless of identifier"
+   ]
+  },
+  {
+   "id": 66056,
+   "section": "060-12",
+   "text": "While tracking inbound on an identified, serviceable VOR and then continuing through it on the same line, which indication most directly confirms station passage after the overhead ambiguity?",
+   "options": [
+    "The TO/FROM indication changes from TO to FROM",
+    "DME necessarily reads exactly zero",
+    "The CDI must remain perfectly centred through the cone of ambiguity",
+    "The VOR identifier changes automatically"
+   ]
+  },
+  {
+   "id": 66057,
+   "section": "060-12",
+   "text": "In a conventional VOR receiver, which comparison provides the radial bearing information?",
+   "options": [
+    "The phase difference between the reference and variable 30 Hz signals",
+    "The ground station reply delay to an interrogation pulse",
+    "The difference between aircraft IAS and TAS",
+    "The distance from the aircraft to four GPS satellites"
+   ]
+  },
+  {
+   "id": 66058,
+   "section": "060-12",
+   "text": "A serviceable VOR receiver has OBS 090°. The aircraft is east of the station, on radial 085° (five degrees north of the 090° radial). Ignore overhead ambiguity. Which conventional CDI indications are expected?",
+   "options": [
+    "FROM, needle right of centre",
+    "TO, needle right of centre",
+    "FROM, needle left of centre",
+    "TO, needle centred"
+   ]
+  },
+  {
+   "id": 66059,
+   "section": "060-05",
+   "text": "A GPS receiver repeatedly loses satellite signals while a nearby VHF transmitter is keyed, then recovers after transmission stops. Which cause should be considered?",
+   "options": [
+    "Radio-frequency interference, including possible transmitter harmonics",
+    "GPS needs VHF voice transmissions to calculate altitude",
+    "Selecting a distant waypoint consumes the satellite signals",
+    "All GPS signals stop worldwide whenever any aircraft transmits"
+   ]
+  },
+  {
+   "id": 66060,
+   "section": "060-05",
+   "text": "An aircraft stays at the same location with the same GPS satellite solution. The pilot only selects a more distant waypoint, without changing receiver mode or integrity requirements. Does that selection alone make the satellite-derived aircraft position less accurate?",
+   "options": [
+    "No; fix accuracy is not determined by distance to the selected waypoint",
+    "Yes; position error necessarily doubles when waypoint distance doubles",
+    "Yes; a waypoint outside VOR range makes the GPS fix invalid",
+    "No; every GPS fix is perfectly accurate regardless of reception"
    ]
   }
  ]

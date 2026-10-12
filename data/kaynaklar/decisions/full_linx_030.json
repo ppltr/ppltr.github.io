@@ -1,0 +1,2664 @@
+{
+ "schema_version": 1,
+ "audit_date": "2026-10-13",
+ "subject": "030",
+ "purpose": "FullsamefamilyLinxbank factualgapscan; compare operativeconditions withall3051currentbank andpendingcore/CAABcandidates; preserveidentity/history and authornewfactsindependently.",
+ "sources": [
+  {
+   "id": "x-linx-030",
+   "name": "LinxAviation publicly linked historical SerbiaPPL(A) 030 bank factual audit",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "scanned": 150,
+   "sha256": "76ab94585d0e20d63ef9feb0b30c3f5d7634269261256ff36c922fa8fa8eee43",
+   "version": "Public2020upload;historical SerbiaCAD reviewbank with diagrams,notcurrentSHGMexam",
+   "permission": "Publictechnicalfactscan only; originalbankwording/options and third-partychartimages notrepublished.",
+   "coverage": "All150numberedquestions inspected plus embeddedappendices; originalsourcecharts visuallychecked. Numbering1–150complete; extraction excludes spurious3) continuation inNavQ139.",
+   "question_numbers_complete": true,
+   "raw_copy_tracked": false,
+   "figure_pages_visually_inspected": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+   ],
+   "disposition_counts": {
+    "existing": 111,
+    "review": 10,
+    "duplicate_new": 29
+   }
+  }
+ ],
+ "candidates": [],
+ "existing_notes": [],
+ "decisions": [
+  {
+   "subject": "030",
+   "bank_id": 14856,
+   "key": "x-linx-030:1",
+   "source": "x-linx-030",
+   "no": "1",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q7: Semantic match: current question 14856 already tests Maximum Landing Mass (MLM) is best defined as.; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "7",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 68001,
+   "key": "x-linx-030:2",
+   "source": "x-linx-030",
+   "no": "2",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q82: Semantic match: current question 68001 already tests An aeroplane is below the AFM/POH manoeuvring speed (VA) for its actual mass, in smooth air. Which statement about the structural protection associated with VA is correct?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "82",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:3",
+   "source": "x-linx-030",
+   "no": "3",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "81",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 62062,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14430,
+   "key": "x-linx-030:4",
+   "source": "x-linx-030",
+   "no": "4",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q80: Semantic match: current question 14430 already tests Which of the following is the most accurate definition of the Design Ultimate Load?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "80",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14812,
+   "key": "x-linx-030:5",
+   "source": "x-linx-030",
+   "no": "5",
+   "page": "2 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q79: Semantic match: current question 14812 already tests An aircraft which has been grossly overloaded will: 1.require increased take-off and landing distances. 2. Have a higher stalling speed. 3. Have a reduced maximum level flight speed. 4. Have increased range and; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "79",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14858,
+   "key": "x-linx-030:6",
+   "source": "x-linx-030",
+   "no": "6",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q78: Semantic match: current question 14858 already tests Maximum Zero Fuel Mass (MZFM) is best defined as.; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "78",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14853,
+   "key": "x-linx-030:7",
+   "source": "x-linx-030",
+   "no": "7",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q77: Semantic match: current question 14853 already tests Maximum Take Off Mass (MTOM) is defined best as:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "77",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14808,
+   "key": "x-linx-030:8",
+   "source": "x-linx-030",
+   "no": "8",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q76: Semantic match: current question 14808 already tests Which of the following situations may, under certain conditions, result in structural damage occurring?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "76",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14744,
+   "key": "x-linx-030:9",
+   "source": "x-linx-030",
+   "no": "9",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q75: Semantic match: current question 14744 already tests VNE is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "75",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:10",
+   "source": "x-linx-030",
+   "no": "10",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "74",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 63043,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14875,
+   "key": "x-linx-030:11",
+   "source": "x-linx-030",
+   "no": "11",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q67: Semantic match: current question 14875 already tests Which one of the following is correct?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "67",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:12",
+   "source": "x-linx-030",
+   "no": "12",
+   "page": "3 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q66: Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "66",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:13",
+   "source": "x-linx-030",
+   "no": "13",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q65: The copied aft-CG combination has contradictory range/stick-force statements in source and bank14831; current primary evidence required before changing existing ID or activating a duplicate.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "65",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14821,
+   "key": "x-linx-030:14",
+   "source": "x-linx-030",
+   "no": "14",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q64: Semantic match: current question 14821 already tests Certification requirements stipulate that when loading a light aircraft:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "64",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14854,
+   "key": "x-linx-030:15",
+   "source": "x-linx-030",
+   "no": "15",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q63: Semantic match: current question 14854 already tests The Maximum Take-off Mass of an aircraft may be limited by:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "63",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14844,
+   "key": "x-linx-030:16",
+   "source": "x-linx-030",
+   "no": "16",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q62: Semantic match: current question 14844 already tests Dry Operating Mass is the mass of the aeroplane less; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "62",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14824,
+   "key": "x-linx-030:17",
+   "source": "x-linx-030",
+   "no": "17",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-traficom-030 Q15: Semantic match: current question 14824 already tests The stalling speed of an aeroplane will be highest when it is loaded with a:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "15",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14822,
+   "key": "x-linx-030:18",
+   "source": "x-linx-030",
+   "no": "18",
+   "page": "4 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-traficom-030 Q16: Semantic match: current question 14822 already tests When the centre of gravity is at the forward limit, an aeroplane will be:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "16",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14882,
+   "key": "x-linx-030:19",
+   "source": "x-linx-030",
+   "no": "19",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-traficom-030 Q17: Semantic match: current question 14882 already tests A four-seater aeroplane reference plane is the plane of the spinner. Empty aircraft weight and oil filled into the aircraft equal 1521.2 pounds, associated torque is 134855 pound-inch. Fuel filled into the plan; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "17",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:20",
+   "source": "x-linx-030",
+   "no": "20",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "58",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 63041,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14847,
+   "key": "x-linx-030:21",
+   "source": "x-linx-030",
+   "no": "21",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q109: Semantic match: current question 14847 already tests Traffic load includes:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "109",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14835,
+   "key": "x-linx-030:22",
+   "source": "x-linx-030",
+   "no": "22",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-traficom-030 Q20: Semantic match: current question 14835 already tests If the Centre of Gravity is in behind of the aft limit, which one of the following is not one of its effects?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "20",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:23",
+   "source": "x-linx-030",
+   "no": "23",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q70: Original mass-category drawing is required; the definition types are already in14858/14856/53020, but no exact diagram label answer is inferred.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "70",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:24",
+   "source": "x-linx-030",
+   "no": "24",
+   "page": "5 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "22",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63026,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14871,
+   "key": "x-linx-030:25",
+   "source": "x-linx-030",
+   "no": "25",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-traficom-030 Q23: Semantic match: current question 14871 already tests What is used as the aircraft reference for the C of G limit, and upon which axis is that limit found? Axis Reference; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "23",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14816,
+   "key": "x-linx-030:26",
+   "source": "x-linx-030",
+   "no": "26",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-traficom-030 Q24: Semantic match: current question 14816 already tests C of G limits are set by the manufacturer and:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "24",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:27",
+   "source": "x-linx-030",
+   "no": "27",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "25",
+    "stem_similarity": 0.9943
+   },
+   "bank_id": 63027,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:28",
+   "source": "x-linx-030",
+   "no": "28",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q25: CG envelope is aircraft-specific; source generalises which boundary moves with mass. Consult the supplied AFM; do not activate an aircraft-independent rule.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "25",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14858,
+   "key": "x-linx-030:29",
+   "source": "x-linx-030",
+   "no": "29",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q24: Semantic match: current question 14858 already tests Maximum Zero Fuel Mass (MZFM) is best defined as.; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "24",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14915,
+   "key": "x-linx-030:30",
+   "source": "x-linx-030",
+   "no": "30",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q23: Semantic match: current question 14915 already tests What effect will a higher aircraft mass have on rotate speed (VR) and take-off safety speed(V2)?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "23",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14925,
+   "key": "x-linx-030:31",
+   "source": "x-linx-030",
+   "no": "31",
+   "page": "6 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q22: Semantic match: current question 14925 already tests Which of the following combinations will give the most limiting weight if identical slope and wind component values exist?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "22",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14909,
+   "key": "x-linx-030:32",
+   "source": "x-linx-030",
+   "no": "32",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q21: Semantic match: current question 14909 already tests That part of a runway surface which is used for normal operations during take off, excluding any clearway or stopway, is referred to as:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "21",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14919,
+   "key": "x-linx-030:33",
+   "source": "x-linx-030",
+   "no": "33",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q20: Semantic match: current question 14919 already tests What will be the influence on the aeroplane performance if aerodrome pressure altitude is increased?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "20",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14918,
+   "key": "x-linx-030:34",
+   "source": "x-linx-030",
+   "no": "34",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q11: Semantic match: current question 14918 already tests What will be the effect on an aeroplane's performance if aerodrome pressure altitude is decreased?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "11",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14923,
+   "key": "x-linx-030:35",
+   "source": "x-linx-030",
+   "no": "35",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q10: Semantic match: current question 14923 already tests When the density of the atmosphere is relatively low, the resulting reduction in:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "10",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14911,
+   "key": "x-linx-030:36",
+   "source": "x-linx-030",
+   "no": "36",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q9: Semantic match: current question 14911 already tests The main reason for taking off into wind is to:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "9",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14929,
+   "key": "x-linx-030:37",
+   "source": "x-linx-030",
+   "no": "37",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q8: Semantic match: current question 14929 already tests Which of the following listed below is correct, when an aircraft is extra loaded? 1-Performance of aircraft increase 2-TORA increase 3-Landing distance required increase 4-ROC increase 5-endurance increase 6-Vs; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "8",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14634,
+   "key": "x-linx-030:38",
+   "source": "x-linx-030",
+   "no": "38",
+   "page": "7 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q34: Semantic match: current question 14634 already tests During a prolonged climb you notice that the engine oil pressure is reducing and the oil temperature is rising. You discount any failure of the lubrication system. What then, is the most probable cause and reme; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "34",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14961,
+   "key": "x-linx-030:39",
+   "source": "x-linx-030",
+   "no": "39",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q29: Semantic match: current question 14961 already tests What speed would you maintain if you wish to reach a given altitude in the shortest possible time?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "29",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14961,
+   "key": "x-linx-030:40",
+   "source": "x-linx-030",
+   "no": "40",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q26: Semantic match: current question 14961 already tests What speed would you maintain if you wish to reach a given altitude in the shortest possible time?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "26",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:41",
+   "source": "x-linx-030",
+   "no": "41",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "127",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63029,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14949,
+   "key": "x-linx-030:42",
+   "source": "x-linx-030",
+   "no": "42",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q30: Semantic match: current question 14949 already tests Increasing the mass (and, therefore, weight) of the aircraft will:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "30",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:43",
+   "source": "x-linx-030",
+   "no": "43",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "31",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 63035,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:44",
+   "source": "x-linx-030",
+   "no": "44",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "2",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 63047,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14953,
+   "key": "x-linx-030:45",
+   "source": "x-linx-030",
+   "no": "45",
+   "page": "8 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q33: Semantic match: current question 14953 already tests The lift produced by the wing of an aeroplane that is climbing and maintaining a constant airspeed will be:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "33",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:46",
+   "source": "x-linx-030",
+   "no": "46",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "131",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63033,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14941,
+   "key": "x-linx-030:47",
+   "source": "x-linx-030",
+   "no": "47",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q35: Semantic match: current question 14941 already tests At takeoff from a short airfield with an airplane or a powered hang glider, which airspeed should you fly until cleared of obstacles?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "35",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14828,
+   "key": "x-linx-030:48",
+   "source": "x-linx-030",
+   "no": "48",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q36: Semantic match: current question 14828 already tests With the centre of gravity on the forward limit which of the following is to be expected?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "36",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14975,
+   "key": "x-linx-030:49",
+   "source": "x-linx-030",
+   "no": "49",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q37: Semantic match: current question 14975 already tests What speed, from the figure below, should be flown for maximum range?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "37",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 14975,
+   "key": "x-linx-030:50",
+   "source": "x-linx-030",
+   "no": "50",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q38: Semantic match: current question 14975 already tests What speed, from the figure below, should be flown for maximum range?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "38",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14985,
+   "key": "x-linx-030:51",
+   "source": "x-linx-030",
+   "no": "51",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q39: Semantic match: current question 14985 already tests In order to maximise the glide range, the aircraft should be flown:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "39",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:52",
+   "source": "x-linx-030",
+   "no": "52",
+   "page": "9 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q55: Optimum powered cruise range speed in wind depends on propeller efficiency/fuel-flow model and POH; a universal numerical speed adjustment is not asserted.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "55",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14809,
+   "key": "x-linx-030:53",
+   "source": "x-linx-030",
+   "no": "53",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q41: Semantic match: current question 14809 already tests Which of the following cases will result in a reduced performance and possibly exceed the structural limitations of the aircraft?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "41",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14984,
+   "key": "x-linx-030:54",
+   "source": "x-linx-030",
+   "no": "54",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q28: Semantic match: current question 14984 already tests In headwind the glide angle ………. and flyable distance ………; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "28",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14974,
+   "key": "x-linx-030:55",
+   "source": "x-linx-030",
+   "no": "55",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q43: Semantic match: current question 14974 already tests What speed must be flown to attain the maximum cruise endurance?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "43",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14986,
+   "key": "x-linx-030:56",
+   "source": "x-linx-030",
+   "no": "56",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q44: Semantic match: current question 14986 already tests The maximum glide range will be achieved by:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "44",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14812,
+   "key": "x-linx-030:57",
+   "source": "x-linx-030",
+   "no": "57",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q45: Semantic match: current question 14812 already tests An aircraft which has been grossly overloaded will: 1.require increased take-off and landing distances. 2. Have a higher stalling speed. 3. Have a reduced maximum level flight speed. 4. Have increased range and; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "45",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14813,
+   "key": "x-linx-030:58",
+   "source": "x-linx-030",
+   "no": "58",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q46: Semantic match: current question 14813 already tests A wing contaminated by a small amount of ice will produce:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "46",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14987,
+   "key": "x-linx-030:59",
+   "source": "x-linx-030",
+   "no": "59",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q47: Semantic match: current question 14987 already tests Two identical aeroplanes at different masses are descending at idle thrust. Which of the following statements correctly describes their descent characteristics ?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "47",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14975,
+   "key": "x-linx-030:60",
+   "source": "x-linx-030",
+   "no": "60",
+   "page": "10 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q48: Semantic match: current question 14975 already tests What speed, from the figure below, should be flown for maximum range?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "48",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14963,
+   "key": "x-linx-030:61",
+   "source": "x-linx-030",
+   "no": "61",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q49: Semantic match: current question 14963 already tests Which atmospheric conditions provide best climb performance?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "49",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14978,
+   "key": "x-linx-030:62",
+   "source": "x-linx-030",
+   "no": "62",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q50: Semantic match: current question 14978 already tests A constant tailwind; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "50",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14974,
+   "key": "x-linx-030:63",
+   "source": "x-linx-030",
+   "no": "63",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q51: Semantic match: current question 14974 already tests What speed must be flown to attain the maximum cruise endurance?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "51",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 14807,
+   "key": "x-linx-030:64",
+   "source": "x-linx-030",
+   "no": "64",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q52: Semantic match: current question 14807 already tests Which force compensates the weight in unaccelerated straight and level flight?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "52",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 15004,
+   "key": "x-linx-030:65",
+   "source": "x-linx-030",
+   "no": "65",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q53: Semantic match: current question 15004 already tests What is the effect of an increase in mass on the stalling speed and landing distance required?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "53",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 15005,
+   "key": "x-linx-030:66",
+   "source": "x-linx-030",
+   "no": "66",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q15: Semantic match: current question 15005 already tests When landing, if an aircraft's true air speed is significantly less than the true ground speed then the aircraft is experiencing:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "15",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14999,
+   "key": "x-linx-030:67",
+   "source": "x-linx-030",
+   "no": "67",
+   "page": "11 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q42: Semantic match: current question 14999 already tests In the landing configuration, if the speed of the aeroplane at threshold is greater than Vref;; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "42",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:68",
+   "source": "x-linx-030",
+   "no": "68",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q40: The fixed slope percentage is not aircraft-independent; no supplied POH supports this universal numerical factor. Existing15002 is not used as authority.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "40",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14994,
+   "key": "x-linx-030:69",
+   "source": "x-linx-030",
+   "no": "69",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q32: Semantic match: current question 14994 already tests Compared to landing on a level runway, what would be the effect of landing on a downward sloping runway?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "32",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14998,
+   "key": "x-linx-030:70",
+   "source": "x-linx-030",
+   "no": "70",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q3: Semantic match: current question 14998 already tests If the stalling speed in the landing configuration is 50 knots, VREF would be:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "3",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 14998,
+   "key": "x-linx-030:71",
+   "source": "x-linx-030",
+   "no": "71",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q4: Semantic match: current question 14998 already tests If the stalling speed in the landing configuration is 50 knots, VREF would be:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "4",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:72",
+   "source": "x-linx-030",
+   "no": "72",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q5: Landing-distance weight exponent is not a universal POH rule; source percentage withheld rather than applying it to every light aircraft.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "5",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14911,
+   "key": "x-linx-030:73",
+   "source": "x-linx-030",
+   "no": "73",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q6: Semantic match: current question 14911 already tests The main reason for taking off into wind is to:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "6",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14882,
+   "key": "x-linx-030:74",
+   "source": "x-linx-030",
+   "no": "74",
+   "page": "12 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-traficom-030 Q67: Semantic match: current question 14882 already tests A four-seater aeroplane reference plane is the plane of the spinner. Empty aircraft weight and oil filled into the aircraft equal 1521.2 pounds, associated torque is 134855 pound-inch. Fuel filled into the plan; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "67",
+    "stem_similarity": 0.9873
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:75",
+   "source": "x-linx-030",
+   "no": "75",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "68",
+    "stem_similarity": 0.9888
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63041,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14879,
+   "key": "x-linx-030:76",
+   "source": "x-linx-030",
+   "no": "76",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Fully suppliedmass/arm data use the existing totalmoment/totalmass CGmethod14879; source numericresult is not a newtype. Fuelmass conversion is explicitly available in diagram17table as6lb/USgal,notassumed universal.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "69",
+    "stem_similarity": 0.9412
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14882,
+   "key": "x-linx-030:77",
+   "source": "x-linx-030",
+   "no": "77",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-traficom-030 Q70: Semantic match: current question 14882 already tests A four-seater aeroplane reference plane is the plane of the spinner. Empty aircraft weight and oil filled into the aircraft equal 1521.2 pounds, associated torque is 134855 pound-inch. Fuel filled into the plan; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "70",
+    "stem_similarity": 0.9841
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:78",
+   "source": "x-linx-030",
+   "no": "78",
+   "page": "13 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-traficom-030",
+    "no": "71",
+    "stem_similarity": 0.9907
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63024,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14715,
+   "key": "x-linx-030:79",
+   "source": "x-linx-030",
+   "no": "79",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q12: Semantic match: current question 14715 already tests A flight level is a...; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "12",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14890,
+   "key": "x-linx-030:80",
+   "source": "x-linx-030",
+   "no": "80",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q27: Semantic match: current question 14890 already tests The Density Altitude; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "27",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14715,
+   "key": "x-linx-030:81",
+   "source": "x-linx-030",
+   "no": "81",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q14: Semantic match: current question 14715 already tests A flight level is a...; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "14",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 62005,
+   "key": "x-linx-030:82",
+   "source": "x-linx-030",
+   "no": "82",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q1: Semantic match: current question 62005 already tests Ignoring instrument and position errors, a pressure altimeter is set to 1013.25 hPa. Which atmospheric conditions make its pressure-altitude indication agree with true altitude above mean sea level throughout t; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "1",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14886,
+   "key": "x-linx-030:83",
+   "source": "x-linx-030",
+   "no": "83",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q16: Semantic match: current question 14886 already tests If the outside air temperature is higher than ISA, the Density Altitude is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "16",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 62005,
+   "key": "x-linx-030:84",
+   "source": "x-linx-030",
+   "no": "84",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q17: Semantic match: current question 62005 already tests Ignoring instrument and position errors, a pressure altimeter is set to 1013.25 hPa. Which atmospheric conditions make its pressure-altitude indication agree with true altitude above mean sea level throughout t; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "17",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14886,
+   "key": "x-linx-030:85",
+   "source": "x-linx-030",
+   "no": "85",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q18: Semantic match: current question 14886 already tests If the outside air temperature is higher than ISA, the Density Altitude is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "18",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:86",
+   "source": "x-linx-030",
+   "no": "86",
+   "page": "14 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "19",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 63034,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 15410,
+   "key": "x-linx-030:87",
+   "source": "x-linx-030",
+   "no": "87",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q144: Semantic match: current question 15410 already tests Altimeter reads 10000ft when set to 1003 hPa QNH. What does it read when you reset the altimeter to standard pressure setting? (1hPa : 27 ft); different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "144",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 15381,
+   "key": "x-linx-030:88",
+   "source": "x-linx-030",
+   "no": "88",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q145: Semantic match: current question 15381 already tests The pressure altitude is 12 000 ft. The ISA deviation is -5°C. What is the density altitude?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "145",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14715,
+   "key": "x-linx-030:89",
+   "source": "x-linx-030",
+   "no": "89",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q126: Semantic match: current question 14715 already tests A flight level is a...; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "126",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 15381,
+   "key": "x-linx-030:90",
+   "source": "x-linx-030",
+   "no": "90",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q146: Semantic match: current question 15381 already tests The pressure altitude is 12 000 ft. The ISA deviation is -5°C. What is the density altitude?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "146",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:91",
+   "source": "x-linx-030",
+   "no": "91",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "138",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 63034,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 15410,
+   "key": "x-linx-030:92",
+   "source": "x-linx-030",
+   "no": "92",
+   "page": "15 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q147: Semantic match: current question 15410 already tests Altimeter reads 10000ft when set to 1003 hPa QNH. What does it read when you reset the altimeter to standard pressure setting? (1hPa : 27 ft); different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "147",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:93",
+   "source": "x-linx-030",
+   "no": "93",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "125",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 63034,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 15381,
+   "key": "x-linx-030:94",
+   "source": "x-linx-030",
+   "no": "94",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q57: Semantic match: current question 15381 already tests The pressure altitude is 12 000 ft. The ISA deviation is -5°C. What is the density altitude?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "57",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14923,
+   "key": "x-linx-030:95",
+   "source": "x-linx-030",
+   "no": "95",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q13: Semantic match: current question 14923 already tests When the density of the atmosphere is relatively low, the resulting reduction in:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "13",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14888,
+   "key": "x-linx-030:96",
+   "source": "x-linx-030",
+   "no": "96",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q54: Semantic match: current question 14888 already tests Increasing humidity ……… air density, and therefore it ………. the aircraft performance.; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "54",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14963,
+   "key": "x-linx-030:97",
+   "source": "x-linx-030",
+   "no": "97",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q85: Semantic match: current question 14963 already tests Which atmospheric conditions provide best climb performance?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "85",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14929,
+   "key": "x-linx-030:98",
+   "source": "x-linx-030",
+   "no": "98",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q96: Semantic match: current question 14929 already tests Which of the following listed below is correct, when an aircraft is extra loaded? 1-Performance of aircraft increase 2-TORA increase 3-Landing distance required increase 4-ROC increase 5-endurance increase 6-Vs; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "96",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14925,
+   "key": "x-linx-030:99",
+   "source": "x-linx-030",
+   "no": "99",
+   "page": "16 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q95: Semantic match: current question 14925 already tests Which of the following combinations will give the most limiting weight if identical slope and wind component values exist?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "95",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14923,
+   "key": "x-linx-030:100",
+   "source": "x-linx-030",
+   "no": "100",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q94: Semantic match: current question 14923 already tests When the density of the atmosphere is relatively low, the resulting reduction in:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "94",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14941,
+   "key": "x-linx-030:101",
+   "source": "x-linx-030",
+   "no": "101",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q93: Semantic match: current question 14941 already tests At takeoff from a short airfield with an airplane or a powered hang glider, which airspeed should you fly until cleared of obstacles?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "93",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14941,
+   "key": "x-linx-030:102",
+   "source": "x-linx-030",
+   "no": "102",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q92: Semantic match: current question 14941 already tests At takeoff from a short airfield with an airplane or a powered hang glider, which airspeed should you fly until cleared of obstacles?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "92",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:103",
+   "source": "x-linx-030",
+   "no": "103",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "91",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 63035,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14961,
+   "key": "x-linx-030:104",
+   "source": "x-linx-030",
+   "no": "104",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q90: Semantic match: current question 14961 already tests What speed would you maintain if you wish to reach a given altitude in the shortest possible time?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "90",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14959,
+   "key": "x-linx-030:105",
+   "source": "x-linx-030",
+   "no": "105",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q89: Semantic match: current question 14959 already tests What is the proper use for the best-rate-of-climb speed (Vy)?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "89",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14958,
+   "key": "x-linx-030:106",
+   "source": "x-linx-030",
+   "no": "106",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q88: Semantic match: current question 14958 already tests What is the influence of the wind on an aeroplane's rate of climb?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "88",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14952,
+   "key": "x-linx-030:107",
+   "source": "x-linx-030",
+   "no": "107",
+   "page": "17 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q87: Semantic match: current question 14952 already tests The flight path angle; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "87",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14964,
+   "key": "x-linx-030:108",
+   "source": "x-linx-030",
+   "no": "108",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q86: Semantic match: current question 14964 already tests Which equation is related with the calculation of climb angle?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "86",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14941,
+   "key": "x-linx-030:109",
+   "source": "x-linx-030",
+   "no": "109",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q84: Semantic match: current question 14941 already tests At takeoff from a short airfield with an airplane or a powered hang glider, which airspeed should you fly until cleared of obstacles?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "84",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14996,
+   "key": "x-linx-030:110",
+   "source": "x-linx-030",
+   "no": "110",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q101: Semantic match: current question 14996 already tests During landing on an airport with high elevation the true air speed (TAS) of an aircraft is higher than normal. What indicated speed (IAS) should be kept in such cases?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "101",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:111",
+   "source": "x-linx-030",
+   "no": "111",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "108",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 63036,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14741,
+   "key": "x-linx-030:112",
+   "source": "x-linx-030",
+   "no": "112",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q107: Semantic match: current question 14741 already tests The speed scale of an airspeed indicator is colour coded. The green band is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "107",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14744,
+   "key": "x-linx-030:113",
+   "source": "x-linx-030",
+   "no": "113",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q106: Semantic match: current question 14744 already tests VNE is:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "106",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14894,
+   "key": "x-linx-030:114",
+   "source": "x-linx-030",
+   "no": "114",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q105: Semantic match: current question 14894 already tests Which one of these conditions increases the Vmd speed?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "105",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 68001,
+   "key": "x-linx-030:115",
+   "source": "x-linx-030",
+   "no": "115",
+   "page": "18 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q104: Semantic match: current question 68001 already tests An aeroplane is below the AFM/POH manoeuvring speed (VA) for its actual mass, in smooth air. Which statement about the structural protection associated with VA is correct?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "104",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 68001,
+   "key": "x-linx-030:116",
+   "source": "x-linx-030",
+   "no": "116",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q103: Semantic match: current question 68001 already tests An aeroplane is below the AFM/POH manoeuvring speed (VA) for its actual mass, in smooth air. Which statement about the structural protection associated with VA is correct?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "103",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:117",
+   "source": "x-linx-030",
+   "no": "117",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q102: Cruise IAS versus altitude at unchanged throttle depends on engine/propeller/mixture/power assumptions; original stem underdetermines performance.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "102",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14974,
+   "key": "x-linx-030:118",
+   "source": "x-linx-030",
+   "no": "118",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q100: Semantic match: current question 14974 already tests What speed must be flown to attain the maximum cruise endurance?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "100",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 63001,
+   "key": "x-linx-030:119",
+   "source": "x-linx-030",
+   "no": "119",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q134: Semantic match: current question 63001 already tests For this exercise, the take-off table for the stated mass, pressure altitude and temperature gives a zero-wind paved-runway ground roll of 1,115 ft and a total distance of 2,125 ft to clear a 50 ft obstacle. It; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "134",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:120",
+   "source": "x-linx-030",
+   "no": "120",
+   "page": "19 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "142",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63046,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:121",
+   "source": "x-linx-030",
+   "no": "121",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "148",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63044,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 63001,
+   "key": "x-linx-030:122",
+   "source": "x-linx-030",
+   "no": "122",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q143: Semantic match: current question 63001 already tests For this exercise, the take-off table for the stated mass, pressure altitude and temperature gives a zero-wind paved-runway ground roll of 1,115 ft and a total distance of 2,125 ft to clear a 50 ft obstacle. It; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "143",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:123",
+   "source": "x-linx-030",
+   "no": "123",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "121",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63037,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:124",
+   "source": "x-linx-030",
+   "no": "124",
+   "page": "20 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "139",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63037,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 15007,
+   "key": "x-linx-030:125",
+   "source": "x-linx-030",
+   "no": "125",
+   "page": "21 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q123: Semantic match: current question 15007 already tests Which one is the correct statement about the landing performance?; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "123",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:126",
+   "source": "x-linx-030",
+   "no": "126",
+   "page": "21 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "review",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q122: CAD PDF names an external figure that is not embedded in this linked bank. Exact original diagram answer is unverified; no access barriers bypassed.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "122",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:127",
+   "source": "x-linx-030",
+   "no": "127",
+   "page": "21 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "141",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63045,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:128",
+   "source": "x-linx-030",
+   "no": "128",
+   "page": "21 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "140",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63044,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:129",
+   "source": "x-linx-030",
+   "no": "129",
+   "page": "22 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "124",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63037,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:130",
+   "source": "x-linx-030",
+   "no": "130",
+   "page": "22 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "135",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63032,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:131",
+   "source": "x-linx-030",
+   "no": "131",
+   "page": "22 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "117",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63032,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:132",
+   "source": "x-linx-030",
+   "no": "132",
+   "page": "22 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "118",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63032,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": false,
+   "key": "x-linx-030:133",
+   "source": "x-linx-030",
+   "no": "133",
+   "page": "22 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "120",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "bank_id": 63032,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "original_answer_verified": true,
+   "key": "x-linx-030:134",
+   "source": "x-linx-030",
+   "no": "134",
+   "page": "23 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "119",
+    "stem_similarity": 0.8215
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false,
+   "verification_evidence": "LinxPDF29 row8,000ft/2300rpm/55%,20°Cbelowstandard fuel6.2USgph",
+   "bank_id": 63032,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "bank_id": 14985,
+   "key": "x-linx-030:135",
+   "source": "x-linx-030",
+   "no": "135",
+   "page": "23 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q83: Semantic match: current question 14985 already tests In order to maximise the glide range, the aircraft should be flown:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "83",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:136",
+   "source": "x-linx-030",
+   "no": "136",
+   "page": "23 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "69",
+    "stem_similarity": 1.0
+   },
+   "bank_id": 63039,
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır."
+  },
+  {
+   "subject": "030",
+   "key": "x-linx-030:137",
+   "source": "x-linx-030",
+   "no": "137",
+   "page": "23 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "56",
+    "stem_similarity": 1.0
+   },
+   "cross_subject_candidate_key": "x-traficom-070:58",
+   "cross_subject_code": "070",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 67040
+  },
+  {
+   "subject": "030",
+   "bank_id": 14986,
+   "key": "x-linx-030:138",
+   "source": "x-linx-030",
+   "no": "138",
+   "page": "23 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q71: Semantic match: current question 14986 already tests The maximum glide range will be achieved by:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "71",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14813,
+   "key": "x-linx-030:139",
+   "source": "x-linx-030",
+   "no": "139",
+   "page": "23 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q72: Semantic match: current question 14813 already tests A wing contaminated by a small amount of ice will produce:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "72",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 14813,
+   "key": "x-linx-030:140",
+   "source": "x-linx-030",
+   "no": "140",
+   "page": "23 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q73: Semantic match: current question 14813 already tests A wing contaminated by a small amount of ice will produce:; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "73",
+    "stem_similarity": 1.0
+   }
+  },
+  {
+   "subject": "030",
+   "bank_id": 15837,
+   "key": "x-linx-030:141",
+   "source": "x-linx-030",
+   "no": "141",
+   "page": "24 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q136: Semantic match: current question 15837 already tests Given: Runway direction 083°(M) Surface W/V 023° / 35 kt Calculate the effective headwind component.; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "136",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 15836,
+   "key": "x-linx-030:142",
+   "source": "x-linx-030",
+   "no": "142",
+   "page": "24 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q115: Semantic match: current question 15836 already tests For landing on a runway with the magnetic direction of 225°, the W/V reported by voice ATIS is 180°/30 kt. The local magnetic variation is given as 15° E. Calculate the approximate crosswind component.; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "115",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 15849,
+   "key": "x-linx-030:143",
+   "source": "x-linx-030",
+   "no": "143",
+   "page": "24 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q114: Semantic match: current question 15849 already tests The PIC of an aircraft with a crosswind limitation of 14kt for both T/O and landing has the option of three operational runways. Given a surface wind of 250/18kt, which of the following runways give a crosswind; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "114",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 15849,
+   "key": "x-linx-030:144",
+   "source": "x-linx-030",
+   "no": "144",
+   "page": "24 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q133: Semantic match: current question 15849 already tests The PIC of an aircraft with a crosswind limitation of 14kt for both T/O and landing has the option of three operational runways. Given a surface wind of 250/18kt, which of the following runways give a crosswind; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "133",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 15836,
+   "key": "x-linx-030:145",
+   "source": "x-linx-030",
+   "no": "145",
+   "page": "24 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q113: Semantic match: current question 15836 already tests For landing on a runway with the magnetic direction of 225°, the W/V reported by voice ATIS is 180°/30 kt. The local magnetic variation is given as 15° E. Calculate the approximate crosswind component.; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "113",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 15849,
+   "key": "x-linx-030:146",
+   "source": "x-linx-030",
+   "no": "146",
+   "page": "24 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q112: Semantic match: current question 15849 already tests The PIC of an aircraft with a crosswind limitation of 14kt for both T/O and landing has the option of three operational runways. Given a surface wind of 250/18kt, which of the following runways give a crosswind; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "112",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 15849,
+   "key": "x-linx-030:147",
+   "source": "x-linx-030",
+   "no": "147",
+   "page": "25 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q111: Semantic match: current question 15849 already tests The PIC of an aircraft with a crosswind limitation of 14kt for both T/O and landing has the option of three operational runways. Given a surface wind of 250/18kt, which of the following runways give a crosswind; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "111",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 15849,
+   "key": "x-linx-030:148",
+   "source": "x-linx-030",
+   "no": "148",
+   "page": "25 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q110: Semantic match: current question 15849 already tests The PIC of an aircraft with a crosswind limitation of 14kt for both T/O and landing has the option of three operational runways. Given a surface wind of 250/18kt, which of the following runways give a crosswind; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "110",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 15836,
+   "key": "x-linx-030:149",
+   "source": "x-linx-030",
+   "no": "149",
+   "page": "25 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q137: Semantic match: current question 15836 already tests For landing on a runway with the magnetic direction of 225°, the W/V reported by voice ATIS is 180°/30 kt. The local magnetic variation is given as 15° E. Calculate the approximate crosswind component.; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "137",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  },
+  {
+   "subject": "030",
+   "bank_id": 15836,
+   "key": "x-linx-030:150",
+   "source": "x-linx-030",
+   "no": "150",
+   "page": "25 (PDF)",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
+   "status": "existing",
+   "reason": "Question-by-question operative-condition comparison with x-cad-030 Q116: Semantic match: current question 15836 already tests For landing on a runway with the magnetic direction of 225°, the W/V reported by voice ATIS is 180°/30 kt. The local magnetic variation is given as 15° E. Calculate the approximate crosswind component.; different numbers/word order alone do not create a missing knowledge type.",
+   "same_family_comparison": {
+    "source": "x-cad-030",
+    "no": "116",
+    "stem_similarity": 1.0
+   },
+   "original_figure_inspected": true,
+   "original_figure_copy_tracked": false
+  }
+ ],
+ "cross_manifest_links": [
+  {
+   "representative_key": "full-030:baggage-limit",
+   "target_candidate_key": "full-030:baggage-limit",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:category",
+   "target_candidate_key": "full-030:category",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:cg-burn",
+   "target_candidate_key": "full-030:cg-burn",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:climb-table-read",
+   "target_candidate_key": "full-030:climb-table-read",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:cruise-table",
+   "target_candidate_key": "full-030:cruise-table",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:cumulative-climb",
+   "target_candidate_key": "full-030:cumulative-climb",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:density-chain",
+   "target_candidate_key": "full-030:density-chain",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:engine-first",
+   "target_candidate_key": "full-030:engine-first",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:excess-power",
+   "target_candidate_key": "full-030:excess-power",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:gust",
+   "target_candidate_key": "full-030:gust",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:landing-correction",
+   "target_candidate_key": "full-030:landing-correction",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:min-sink",
+   "target_candidate_key": "full-030:min-sink",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:payload-fuel",
+   "target_candidate_key": "full-030:payload-fuel",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:rough",
+   "target_candidate_key": "full-030:rough",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:table-interpolate",
+   "target_candidate_key": "full-030:table-interpolate",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:tailwind-landing",
+   "target_candidate_key": "full-030:tailwind-landing",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:tailwind-takeoff",
+   "target_candidate_key": "full-030:tailwind-takeoff",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:vy-ias",
+   "target_candidate_key": "full-030:vy-ias",
+   "target_subject": "030"
+  },
+  {
+   "representative_key": "full-030:yellow",
+   "target_candidate_key": "agk:yellow-arc",
+   "target_subject": "020"
+  }
+ ],
+ "summary_counts": {
+  "existing": 111,
+  "review": 10,
+  "duplicate_new": 29
+ },
+ "final_audit_counts": {
+  "scanned": 150,
+  "new_candidates": 0,
+  "decisions": {
+   "existing": 141,
+   "review": 9
+  }
+ }
+}

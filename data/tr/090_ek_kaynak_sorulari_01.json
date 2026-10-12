@@ -1,0 +1,229 @@
+{
+ "questions": {
+  "69001": {
+   "text": "UK CAP 413 usulünde uçak teker koyma noktasından 8 NM uzakta son yaklaşmaya dönüyor. Bu noktada hangi patern raporu kullanılır?",
+   "options": [
+    "LONG FINAL.",
+    "Mesafe ayrımı olmadan her durumda FINAL.",
+    "DOWNWIND.",
+    "RUNWAY VACATED."
+   ]
+  },
+  "69002": {
+   "text": "SERA’ya göre meydan trafiği (aerodrome traffic) neleri kapsar?",
+   "options": [
+    "Manevra sahasındaki bütün trafik ve meydan çevresindeki uçaklar.",
+    "Yalnız aprondaki uçaklar.",
+    "Yalnız fiilen iniş veya kalkış yapan uçaklar.",
+    "Uçuş bilgi bölgesinin herhangi bir yerindeki tüm uçaklar."
+   ]
+  },
+  "69003": {
+   "text": "Önlemede ortak dil kullanılamıyor ve önleme uçağı FOLLOW ifadesini yayımlıyor. Anlamı nedir?",
+   "options": [
+    "Önleme uçağını takip et.",
+    "Bağımsız devam edebilirsin.",
+    "Kalkış meydanına in.",
+    "Uçağının çağrı adını ver."
+   ]
+  },
+  "69004": {
+   "text": "Standart telsiz konuşmasında ACKNOWLEDGE talimatı ne ister?",
+   "options": [
+    "Mesajın alındığını ve anlaşıldığını bildirmek.",
+    "Ara vermeden yayına devam etmek.",
+    "Önceki müsaadeyi iptal etmek.",
+    "Yeniden çağrılana kadar sessiz beklemek."
+   ]
+  },
+  "69005": {
+   "text": "Telsiz kontrolüne READABILITY ONE cevabı veriliyor. Yayının anlaşılabilirliği nasıldır?",
+   "options": [
+    "Anlaşılmaz.",
+    "Zaman zaman anlaşılır.",
+    "Zorlukla anlaşılır.",
+    "Mükemmel anlaşılır."
+   ]
+  },
+  "69006": {
+   "text": "ATIS yoktur. Kalkış öncesi meydan verilerini almak için hangi standart istek kullanılır?",
+   "options": [
+    "REQUEST DEPARTURE INFORMATION.",
+    "REQUEST DEPARTURE INSTRUCTIONS.",
+    "REPORT DEPARTURE INFORMATION.",
+    "READY FOR TAKE-OFF."
+   ]
+  },
+  "69007": {
+   "text": "ATC rota değişikliğinde RECLEARED diyor. Yeni ve önceki müsaade arasındaki ilişki nedir?",
+   "options": [
+    "Yeni müsaade, önceki müsaadenin değiştirilen kısmının yerine geçer.",
+    "Pilot iki rotadan istediğini seçebilir.",
+    "Uçuş planı kendiliğinden iptal edilmiştir.",
+    "Ayrı kalkış müsaadesi olmadan kalkış yapılabilir."
+   ]
+  },
+  "69008": {
+   "text": "Güncel SERA kanal tanıtma kuralına göre VHF 118.150 kanalı nasıl okunur?",
+   "options": [
+    "ONE ONE EIGHT DECIMAL ONE FIVE ZERO.",
+    "ONE ONE EIGHT DECIMAL ONE FIVE.",
+    "ONE ONE EIGHT POINT ONE FIVE ZERO.",
+    "ONE HUNDRED EIGHTEEN DECIMAL ONE FIFTY."
+   ]
+  },
+  "69009": {
+   "text": "IFR’den farklı olarak IMC neyi tanımlar?",
+   "options": [
+    "Belirtilen VMC minimumlarının altındaki aletli meteorolojik koşulları.",
+    "Gerçek havadan bağımsız aletli uçuş kurallarını.",
+    "Özel VFR uçuş müsaadesini.",
+    "Belirtilen minimumları karşılayan görerek meteorolojik koşulları."
+   ]
+  },
+  "69010": {
+   "text": "Kontrollü meydanda kalkış öncesi taksi talimatı için ATC’ye hangi standart istek iletilir?",
+   "options": [
+    "REQUEST TAXI; ardından ilgili uçuş bilgileri.",
+    "READY FOR TAKE-OFF; bunun taksiye de izin vermesi.",
+    "Gereken rotadan bağımsız REQUEST BACKTRACK.",
+    "Önce taksi talimatı almadan LINE UP."
+   ]
+  },
+  "69011": {
+   "text": "Belirtilen konum raporlarının artık gerekmediğini ATC hangi standart ifadeyle bildirir?",
+   "options": [
+    "OMIT POSITION REPORTS; varsa belirtilen sınıra kadar.",
+    "CANCEL FLIGHT PLAN.",
+    "STOP TRANSMITTING MAYDAY.",
+    "NEGATIVE POSITION."
+   ]
+  },
+  "69012": {
+   "text": "SERA standartlarına göre sırasıyla tırmanma ve alçalma talimatı veren çift hangisidir?",
+   "options": [
+    "CLIMB TO FLIGHT LEVEL EIGHT ZERO; DESCEND TO FLIGHT LEVEL SIX ZERO.",
+    "EXPECT FLIGHT LEVEL EIGHT ZERO; REPORT FLIGHT LEVEL SIX ZERO.",
+    "CLEARED FOR TAKE-OFF; RUNWAY VACATED.",
+    "REPORT CLIMBING; CANCEL DESCENT."
+   ]
+  },
+  "69013": {
+   "text": "FL 100’e tırmanma müsaadesiyle yükselen uçağın FL 80’de tırmanışı durdurması isteniyor. Hangi standart talimat bunu bildirir?",
+   "options": [
+    "STOP CLIMB AT FLIGHT LEVEL EIGHT ZERO.",
+    "CONTINUE CLIMB TO FLIGHT LEVEL ONE ZERO ZERO.",
+    "REPORT LEAVING FLIGHT LEVEL EIGHT ZERO.",
+    "EXPECT CLIMB AT FLIGHT LEVEL EIGHT ZERO."
+   ]
+  },
+  "69014": {
+   "text": "İnişten sonra kule pist terk edilince rapor istiyor. RUNWAY VACATED ne zaman doğrudur?",
+   "options": [
+    "Uçağın tamamı ilgili pist bekleme çizgisinin ötesine geçtiğinde.",
+    "Burun pist kenarını geçer geçmez.",
+    "Yalnız kokpit bekleme çizgisini geçtiğinde.",
+    "Uçak taksi yoluna dönmeye başlar başlamaz."
+   ]
+  },
+  "69015": {
+   "text": "UK CAP 413 kuleli trafik paterni rapor usulünde BASE raporu ne zaman gerekir?",
+   "options": [
+    "ATS sağlayıcısı veya meydan işleticisi istediğinde.",
+    "Yerel usulden bağımsız dünyadaki her uçuşta.",
+    "Yalnız günbatımından sonra.",
+    "Hiçbir zaman; yalnız FINAL raporlanır."
+   ]
+  },
+  "69016": {
+   "text": "Şekilde sağa doğru iniş yapılan sol trafik paterni gösteriliyor. E, F, G bacakları sırasıyla hangileridir?",
+   "options": [
+    "Rüzgâr altı, esas, son yaklaşma.",
+    "Yan rüzgâr, son yaklaşma, esas.",
+    "Esas, rüzgâr altı, yan rüzgâr.",
+    "Son yaklaşma, yan rüzgâr, rüzgâr altı."
+   ]
+  },
+  "69017": {
+   "text": "Meydanda yolcu veya yük yükleme/boşaltma, yakıt ikmali, park veya bakım için ayrılan alan hangisidir?",
+   "options": [
+    "Apron.",
+    "Pist şeridi.",
+    "Durma uzantısı (stopway).",
+    "Son yaklaşma bacağı."
+   ]
+  },
+  "69018": {
+   "text": "ATC belirtilen pistte LINE UP AND WAIT talimatı veriyor. Ne için izin verilmiştir?",
+   "options": [
+    "Piste girip kalkış konumunda beklemek; kalkış için ayrıca müsaade gerekir.",
+    "Piste girip hemen kalkış koşusuna başlamak.",
+    "Pisti geçip durmadan taksiye devam etmek.",
+    "Bekleme noktasında kalıp piste hiç girmemek."
+   ]
+  },
+  "69019": {
+   "text": "ATC CONFIRM EIGHT POINT THREE THREE diyor. Telsiziniz 8,33 kHz kanal aralığını destekliyor. Bu yeteneği hangi cevap bildirir?",
+   "options": [
+    "AFFIRM EIGHT POINT THREE THREE; ardından uçak çağrı adı.",
+    "NEGATIVE EIGHT POINT THREE THREE; ardından çağrı adı.",
+    "Muafiyet durumuna bakmadan AFFIRM EIGHT POINT THREE THREE EXEMPTED.",
+    "SQUAWK IDENT."
+   ]
+  },
+  "69020": {
+   "text": "Uçakta transponder yoktur. ATC transponder kabiliyetini soruyor. Hangi standart cevap uygundur?",
+   "options": [
+    "NEGATIVE TRANSPONDER.",
+    "SQUAWK STANDBY.",
+    "STOP SQUAWK CHARLIE.",
+    "SQUAWK IDENT."
+   ]
+  },
+  "69021": {
+   "text": "Önlemede ortak dil kullanılamıyor ve önleme uçağı PROCEED ifadesini yayımlıyor. Anlamı nedir?",
+   "options": [
+    "Uçuşuna devam edebilirsin.",
+    "Bu meydana in.",
+    "İniş için alçal.",
+    "Önleme uçağını takip et."
+   ]
+  },
+  "69022": {
+   "text": "Önlemede ortak dil kullanılamıyor ve önleme uçağı CALL SIGN ifadesini yayımlıyor. Anlamı nedir?",
+   "options": [
+    "Uçağının çağrı adı nedir?",
+    "Tehlike çağrısı yap.",
+    "İniş için alçal.",
+    "Kalkış meydanına dön."
+   ]
+  },
+  "69023": {
+   "text": "Önlemede ortak dil kullanılamıyor ve önleme uçağı YOU LAND ifadesini yayımlıyor. Anlamı nedir?",
+   "options": [
+    "Bu meydana in.",
+    "Uçuşuna devam edebilirsin.",
+    "Kalkış meydanını bildir.",
+    "İniş yapmadan beni takip et."
+   ]
+  },
+  "69024": {
+   "text": "Ortak dil olmayan önlemede bir talimata uyamama durumu hangi özel ifadeyle bildirilir?",
+   "options": [
+    "CAN NOT.",
+    "AM LOST.",
+    "PROCEED.",
+    "YOU LAND."
+   ]
+  },
+  "69025": {
+   "text": "Ortak dil olmayan önlemede kendi konumunu bilmediğini önleme pilotuna hangi ifade bildirir?",
+   "options": [
+    "AM LOST.",
+    "CAN NOT.",
+    "WILCO.",
+    "PROCEED."
+   ]
+  }
+ }
+}

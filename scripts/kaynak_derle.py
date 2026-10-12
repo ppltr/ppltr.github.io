@@ -62,9 +62,12 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
     registry_path = data / "kaynaklar/_kaynaklar.json"
     registry = read(registry_path, {"kaynaklar": []})
     sources = {s["id"]: s for s in registry["kaynaklar"]}
-    candidates, decisions, existing_notes = {}, {}, []
+    candidates, decisions, existing_notes, audit_dates = {}, {}, [], []
     for path in paths:
         doc = read(path)
+        date = doc.get("audit_date") or doc.get("checked_at")
+        if isinstance(date, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+            audit_dates.append(date)
         for s in doc.get("sources", []):
             if "id" in s:
                 sources.setdefault(s["id"], {}).update(s)
@@ -135,9 +138,13 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
     id_path = data / f"kaynaklar/idler_{subject}.json"
     ids = read(id_path, {"ders": subject, "anahtarlar": {}})["anahtarlar"]
     old_output = {q["id"]: q for q in read(output_path, {"questions": []})["questions"]}
+    # Önceki genişletmede aynı derse eklenen soru da mevcut bir eşleşmedir.
+    # `bank` içinden çıkarmamızın nedeni yalnız yeniden derlenen adayın kendi
+    # köküyle çakışmasını önlemektir; kaynak bağı için kimlik kaybolmamalıdır.
+    existing_bank = {**bank, **old_output}
     if any(type(qid) is not int or qid <= 0 for qid in ids.values()):
         raise ValueError("Kalıcı kimlikler pozitif tam sayı olmalı")
-    new_ids = [qid for qid in ids.values() if qid not in bank]
+    new_ids = [qid for qid in ids.values() if qid not in existing_bank]
     if len(set(new_ids)) != len(new_ids):
         raise ValueError("Kalıcı kimlik kaydında çakışma")
     # Mevcut soru notlarının kimlikleri yeni soru bandının dışındadır.
@@ -261,8 +268,13 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
             corrections.append({"id": qid, "key": key, **correction, "new_sha256": question_hash(q)})
         # Kimliği verilmiş bir soru farklı içeriğe sessizce dönüştürülemez.
         if qid in old_output and old_output[qid] != q:
+            same_section = old_output[qid]["section"] == q["section"]
+            # Yalnız alt bölümün düzeltilmesi, aynı soruyu başka bir soruya
+            # dönüştürmez. Yine açık gerekçe ve tam önceki hash zorunludur.
+            only_section = {k: v for k, v in old_output[qid].items() if k != "section"} == \
+                           {k: v for k, v in q.items() if k != "section"}
             if not correction or question_hash(old_output[qid]) != correction["previous_sha256"] or \
-                    old_output[qid]["section"] != q["section"] or \
+                    not (same_section or only_section) or \
                     len(old_output[qid]["options"]) != len(q["options"]):
                 raise ValueError(f"Kalıcı yeni sorunun içeriği değişti: {key}; açık düzeltme gerekir")
         questions.append(q)
@@ -274,9 +286,10 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
     for c in existing_notes:
         c = dict(c)
         c["bank_id"] = canonical(c["bank_id"])
-        if c["bank_id"] not in bank:
+        if c["bank_id"] not in existing_bank or \
+                (c["bank_id"] in old_output and c["bank_id"] not in {q["id"] for q in questions}):
             raise ValueError(f"Bilinmeyen mevcut kimlik: {c['bank_id']}")
-        if bank_subjects[c["bank_id"]] != subject:
+        if bank_subjects.get(c["bank_id"], subject) != subject:
             c["also_subjects"] = sorted(set(c.get("also_subjects", [])) | {subject})
         if c["key"] in ids and ids[c["key"]] != c["bank_id"]:
             if canonical(ids[c["key"]]) != c["bank_id"]:
@@ -287,8 +300,8 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
 
     def resolve(key, visited=None):
         # Emekli/eksik bir anahtarın eski ID kaydı aktif soru oluşturmaz.
-        if key in ids and (key in candidates or ids[key] in bank):
-            return canonical(ids[key]) if ids[key] in bank else ids[key]
+        if key in ids and (key in candidates or ids[key] in existing_bank):
+            return canonical(ids[key]) if ids[key] in existing_bank else ids[key]
         visited = set() if visited is None else visited
         if key in visited:
             raise ValueError(f"Döngülü tekrar kararı: {key}")
@@ -311,7 +324,8 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
             # Seçilmeyen/cevabı belirsiz bir temsilciye atıf da incelemedir.
             d["status"] = "review"
             d["reason"] += " Temsilci aktif bankaya kabul edilmedi."
-        if d["status"] == "existing" and qid not in bank:
+        if d["status"] == "existing" and qid not in bank and \
+                not (qid in old_output and qid in active_new_ids):
             raise ValueError(f"Yanlış mevcut soru referansı: {key} -> {qid}")
         if d["status"] == "duplicate_new" and qid in bank:
             d["original_status"] = "duplicate_new"
@@ -328,6 +342,23 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
                 n["also_subjects"] = sorted(set(n.get("also_subjects", [])) | {subject})
             if qid in active_new_ids:
                 unique_new.setdefault(sid, set()).add(qid)
+            # Bir kaynak sorusu iki ayrı koşulu birlikte sorabilir. Koşullar
+            # ayrı bankalarda zaten kapsanıyorsa kimlikleri birleştirmeden
+            # her kayda kaynak bağla; kaynak satırı yine yalnız bir kez sayılır.
+            additional = []
+            for extra in d.get("additional_bank_ids", []):
+                extra = canonical(extra)
+                if extra == qid or extra in additional:
+                    continue
+                if extra not in bank and extra not in active_new_ids:
+                    raise ValueError(f"Bilinmeyen ek koşul referansı: {key} -> {extra}")
+                add_ref(extra, sid, d.get("url", ""), d["no"], d.get("page", ""))
+                if bank_subjects.get(extra, subject) != subject:
+                    n = notes.setdefault(str(extra), {"src": []})
+                    n["also_subjects"] = sorted(set(n.get("also_subjects", [])) | {subject})
+                additional.append(extra)
+            if additional:
+                d["additional_bank_ids"] = additional
         if d["status"] == "review":
             queue.append({"kaynak": sid, "no": str(d["no"]), "sayfa": str(d.get("page", "")),
                 "url": d.get("url") or sources[sid]["url"],
@@ -341,13 +372,14 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
         sources[sid]["karar_sayilari"] = dict(counter)
         sources[sid].setdefault("karar_sayilari_dersler", {})[subject] = dict(counter)
         sources[sid]["yeni_benzersiz"] = len(unique_new.get(sid, set()))
+    audit_date = max(audit_dates, default="2026-10-12")
     output = {"subject_code": subject, "subject_name": subject_name,
-        "origin": "ek", "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
+        "origin": "ek", "source": f"Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü ({audit_date})",
         "answer_convention": "İki dilde aynı sırada; ilk şık doğru. Belirsiz cevap aktif bankada yok.",
         "id_convention": "Kalıcı idler_" + subject + ".json; eski veya emekli kimlik yeniden kullanılmaz.",
         "sections": {c: section_names.get(c, c) for c in sorted({q['section'] for q in questions})},
         "questions": questions}
-    report = {"ders": subject, "tarih": "2026-10-12", "yeni_benzersiz": len(questions),
+    report = {"ders": subject, "tarih": audit_date, "yeni_benzersiz": len(questions),
         "taranan": len(decisions), "kaynaklar": {k: dict(v) for k, v in counts.items()},
         "yildizlar": [int(k) for k, n in notes.items() if n.get("isaret") == "dogrulanmis"],
         "inceleme": len(queue), "kararlar": list(decisions.values()),

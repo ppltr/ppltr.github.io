@@ -16,6 +16,30 @@
    "previous_sha256": "96521f2eed6d54a4835beae4cfcf184eacb821bb9e32f0deac198fe5543036b3",
    "reason": "SERA.5001 Tablo S5-1 dipnotu gereği TA 10.000 ft altındaysa eşik FL100’dür. Kök TA ve seviye koşulunu açık vererek 8 km cevabının kapsamını düzeltti.",
    "new_sha256": "5fa98b0473e24fc26db63c4aeae51c8c2be24e13d812cc6ca7f36e0770807751"
+  },
+  {
+   "id": 67004,
+   "key": "x-austro-070:21",
+   "kind": "clarification",
+   "previous_sha256": "acd50dde994b651c151782837a8434242fc3fb15b4dcaee3892b4fa7780c7769",
+   "reason": "Yalnız yanlış alt bölüm etiketi Operasyonel Usuller/Tehlikeler olarak düzeltildi; soru metni, seçenekler, cevap ve kimlik aynıdır.",
+   "new_sha256": "a7d3f07162e2af194215db0a6c81801f09136136e045069c8630a3baa4d0e610"
+  },
+  {
+   "id": 67013,
+   "key": "x-cad-070:141",
+   "kind": "clarification",
+   "previous_sha256": "d2867f098245d3c42ad3b1c62fb73cfe2a34f3093db45860292a6bc369c06e59",
+   "reason": "Yalnız yanlış alt bölüm etiketi Operasyonel Usuller/Tehlikeler olarak düzeltildi; soru metni, seçenekler, cevap ve kimlik aynıdır.",
+   "new_sha256": "7181cac827e279e18893be27ad94286019b3c427a09a77fc9286f00bebca93b0"
+  },
+  {
+   "id": 67016,
+   "key": "x-cad-070:145",
+   "kind": "clarification",
+   "previous_sha256": "69283c45804d769b66b11e99c406b9635dd401e91560d58007f31c1eb810d8d3",
+   "reason": "Yalnız yanlış alt bölüm etiketi Operasyonel Usuller/Tehlikeler olarak düzeltildi; soru metni, seçenekler, cevap ve kimlik aynıdır.",
+   "new_sha256": "84417bbd1ba7beda77b2f75c0ea44f68ec277234b1d19e52d8123b562a762581"
   }
  ]
 }

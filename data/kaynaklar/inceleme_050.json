@@ -1,4 +1,1477 @@
 {
  "ders": "050",
- "sorular": []
+ "sorular": [
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "18",
+   "sayfa": "64",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "tropopause_season",
+   "neden": "Sezonla gerçek tropopozun yüksekliği/sıcaklığı enlem ve hava kütlesine bağlı; koşulsuztek sıcaklık cevabı güncel birincil kaynakla kesinleştirilmedi."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "41",
+   "sayfa": "65",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "phase_term",
+   "neden": "Vapour→ice depositional süreç modernWMO’da deposition; iki yönü sublimation sayan eski terminolojiyle çelişki var."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "47",
+   "sayfa": "66",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "stability_missing",
+   "neden": "ELR veya doygunluk koşulu eksik; parselin tek başına soğuma hızı kararlı/kararsız sonucunu belirlemez."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "54",
+   "sayfa": "66",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "inversion_condition",
+   "neden": "Inversion kararlıdır ama rüzgâr profili/görüş/nem verilmeden calm veya turbulence arasında tek evrensel cevap seçilemez."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "56",
+   "sayfa": "67",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "saturated_descent",
+   "neden": "Saturateddescendingparcel içinde evaporation için sıvısu mevcut olup olmadığı yok. Dropletsavailable ve maintainedsaturation koşullu uyarlama ayrıca hazırlandı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "58",
+   "sayfa": "67",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "stability_missing",
+   "neden": "ELR veya doygunluk koşulu eksik; parselin tek başına soğuma hızı kararlı/kararsız sonucunu belirlemez."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "71",
+   "sayfa": "68",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "friction_fixed",
+   "neden": "Sürtünme nedeniyle beklenen yön/hız eğilimi biliniyor; sabit sayısal açı/hız ilişkisinin yüzey/nem/karışım bağlamı eksik."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "74",
+   "sayfa": "68",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "old_cloud_instrument",
+   "neden": "Alidade gibi tarihsel cloud-projector ölçümü için araç/düzenek verilmemiş; güncel ceilometer tipi ayrı doğrulanmış adayda korunuyor."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "79",
+   "sayfa": "68",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "turbulence_cloud_intensity",
+   "neden": "CU’nun türbülans şiddeti gelişimine/updraftına bağlı; bütün CU için tek sabit intensity doğrulanamaz.15529 konum bilgisini zaten kapsar."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "80",
+   "sayfa": "68",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "station_height",
+   "neden": "Merkez stationcircle doğrudan cloudbaseheight göstermez; doluluk cloudamount’tur. İrtifa kodu/istasyon modeli şeması eksik; circleamount tipi ayrı adayda korunuyor."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "83",
+   "sayfa": "68",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "convective_always",
+   "neden": "Konvektif bulut tabanının her zaman yükselmesi veya tümünün CB’ye dönüşmesi evrensel değildir; nem/kararlılık koşulu yok."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "88",
+   "sayfa": "69",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "snow_threshold",
+   "neden": "Karın yerde görülmesi için değişmez+4°C veya0°C eşiği yok; alt tabakadaki erime/ıslak termometre şartları etkilidir. Açık koşullu above-zero uyarlama ayrı hazırlandı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "90",
+   "sayfa": "69",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "cu_thunderstorm_forecast",
+   "neden": "Sabah küçükCU tek başına akşamCB garantisi değildir; derin nem/kararsızlık/kaldırma yeterliliği verilmemiş."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "94",
+   "sayfa": "69",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "below_ts_icing",
+   "neden": "CB altında icing olasılığı donma seviyesine ve freezingrain’e bağlı; OAT olmadan kesin en aztehlikeli seçim doğrulanamadı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "96",
+   "sayfa": "69",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "microburst_size",
+   "neden": "5 km/5 min gibi eski tekboyutlar güncel≤4 km microburst tanımıyla tam örtüşmüyor; boyut/lifespan her olayda aynı değildir."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "102",
+   "sayfa": "70",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "rvr_increment",
+   "neden": "Şık aralıkları birbirini kısmen kapsıyor; eski precision aralıklarını tek doğru diye kabul etmedik. RVR anlamı ayrı doğrulanmış adayda korunuyor."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "106",
+   "sayfa": "70",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "fog_timing",
+   "neden": "Gece oluşum ve sunrise sırasında maksimum sis seçenekleri birlikte savunulabilir; başlangıçT/dewpoint koşulu yok."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "109",
+   "sayfa": "70",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "ice_severity_by_cloud",
+   "neden": "Bulut türü/sıcaklık tek başına sabit icing şiddeti garantilemez; su içeriği/damla boyutu/airspeed ve ekipman önemlidir."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "111",
+   "sayfa": "71",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "carb_range",
+   "neden": "Carburettoricing olasılığı için güç/nem/karbüratör modeli eksik;40%RH ve subzero sıcaklık seçenekleri evrensel tek sonuç vermez."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "112",
+   "sayfa": "71",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "ice_severity_by_cloud",
+   "neden": "Bulut türü/sıcaklık tek başına sabit icing şiddeti garantilemez; su içeriği/damla boyutu/airspeed ve ekipman önemlidir."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "119",
+   "sayfa": "71",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "latitude_airmass",
+   "neden": "Daha düşük enleme giden hava nem kazanabilir; RH mutlaka azalır iddiası yüzey/nem değişimi belirtilmeden doğrulanmaz."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "123",
+   "sayfa": "71",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "cold_occlusion_cb",
+   "neden": "Soğuk oklüzyon tek başına embeddedCB zorunluluğu yaratmaz; yükseltilen sıcak havanın kararlılığı verilmemiş."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "134",
+   "sayfa": "72",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "trade_turn",
+   "neden": "Geostrophicforce eski/yanlış adlandırması ile Coriolis’in Ekvator’da işaret değiştirmesi karışıyor. Güncel açıklamayla trade-wind tipi korunuyor."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "140",
+   "sayfa": "73",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "dust_region",
+   "neden": "Duststorm/haze için aridlik/rüzgâr/konveksiyon bağlamı gerekli; bütün olayları subtropikal antisiklonlarla özdeşleştiren most-common ifadesi belirsiz."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "141",
+   "sayfa": "73",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "notorious_fog",
+   "neden": "Mostnotorious subjektif bölgesel ifade; mekanizma zaten15337’de var, yeni bölge ezberi eklenmedi."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "146",
+   "sayfa": "73",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "stability_multi",
+   "neden": "Birden fazla seçenek kararlı havayı tarif ediyor; single-best-answer kökü yeterince sınırlı değil."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "150",
+   "sayfa": "74",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "cirrus_visibility",
+   "neden": "Cirrus için sabit minimumhorizontalvisibility garanti edilemez; mostlyicecrystal ve düşükstructuralicing tipi ayrı korunuyor."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "171",
+   "sayfa": "75",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "cyclone_season",
+   "neden": "Cyclone tropical/extratropical veya bölge belirtilmemiş; mevsimsel maksimum bu ayrımla değişir."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "175",
+   "sayfa": "75",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "ice_type_intensity",
+   "neden": "IceTYPE (clear/rime) ile intensity (light/moderate/severe) aynı sınıf değildir; rime her zaman hafifmiş gibi yorumlanmamalı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "178",
+   "sayfa": "75",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "microburst_size",
+   "neden": "5 km/5 min gibi eski tekboyutlar güncel≤4 km microburst tanımıyla tam örtüşmüyor; boyut/lifespan her olayda aynı değildir."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "189",
+   "sayfa": "76",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "tropical_visibility",
+   "neden": "Rain intensity andvisibility arevariable; severallisted values can occur. Thereis noonefixedtropicaldownpourvisibilitythreshold forpilotdecision."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "192",
+   "sayfa": "76",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "tstorm_speed",
+   "neden": "Fırtınanın hareketi verticalmeanwind+propagation ile belirlenir; formationlabel tek başına en hızlı sınıfı garanti etmez."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "203",
+   "sayfa": "76",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "wrong_issuer",
+   "neden": "SIGMET’i meteorologicalwatchoffice üretir; ATC iletir. Source ATCshouldissue seçeneği bu sorumlulukları karıştırıyor; ayrı MWO uyarlaması hazırlandı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "204",
+   "sayfa": "76",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "runway_state_current",
+   "neden": "Tarihsel METAR runway-state grupları güncelGRF/RCR/SNOWTAM/ATIS yöntemine karışıyor; mevcut15618 de tarihselaynıtip. Orijinal aktif/doğrulanmış diye sunulmadı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "208",
+   "sayfa": "77",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "rvr_relation",
+   "neden": "RVR ile meteorolojik görüş hava/aydınlatma/konum koşullarına göre farklı olabilir; değişmezgreater/smaller ilişkisi doğrulanmadı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "218",
+   "sayfa": "77",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "ice_temperature_overlap",
+   "neden": "Nearfreezing ile−2..−15°C gibi seçenekler örtüşüyor; buzşiddeti yalnız aralıkla belirlenemez."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "221",
+   "sayfa": "77",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "vv_options",
+   "neden": "VV tanımı ve feetcinsindendikey görüş seçenekleri birlikte doğru yorumlanabilir; soru birim/koduzunluğunu sınırlamıyor."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "230",
+   "sayfa": "78",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "inversion_condition",
+   "neden": "Inversion kararlıdır ama rüzgâr profili/görüş/nem verilmeden calm veya turbulence arasında tek evrensel cevap seçilemez."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "231",
+   "sayfa": "78",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "cold_pool_level",
+   "neden": "Coldpool’in yüzeyde mi üst seviyede mi olduğu yok; yerdecoldpool stabilize, aloftcoldpool destabilize edebilir."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "240",
+   "sayfa": "79",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "qnh_no_correct",
+   "neden": "QNH değişken olabilir; dört şıkta geçerli genel ifade bulunmuyor."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "241",
+   "sayfa": "79",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "fog_depth",
+   "neden": "Radyasyon sisinin kalınlığı için evrensel500/800/2000ft sınırı yok; nem/karışım/hava şartına bağlı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "246",
+   "sayfa": "79",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "vv_malformed",
+   "neden": "FGVV100 kodu standardhshshs olarak10000ft olur; seçeneklerdeki100ft içinVV001 gerekir. Kaynaktaki ifade/kod çelişkisi giderilmeden aktif yapılmadı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "252",
+   "sayfa": "79",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "ice_hail_alt",
+   "neden": "CB’de hailin maksimum sabitFL200/450 sınırı değişmez değildir; iklim/hücreye göre değişir. BasicCB-hail bağlantısı15541’de var."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "255",
+   "sayfa": "79",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "İkincil alçak basıncın hareket koşulu",
+   "neden": "İkincil alçağın hareketi için iki sistemin etkileşim/üst akış koşulları eksik; değişmez yörünge kuralı yapılmadı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "256",
+   "sayfa": "79",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "storm_energy",
+   "neden": "Energyfromoceans ifadesi condensationlatentheatrelease yerine kaynağın yerini belirsiz soruyor; doğrudan güneşilkısıtması da tetikler. Currentlatent/instability kuralları korunuyor."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "273",
+   "sayfa": "81",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "saturated_descent",
+   "neden": "Saturateddescendingparcel içinde evaporation için sıvısu mevcut olup olmadığı yok. Dropletsavailable ve maintainedsaturation koşullu uyarlama ayrıca hazırlandı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "287",
+   "sayfa": "81",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "malformed_wind",
+   "neden": "Soru/şık ayrımındaki birim/kelimeler eksik; True/kt tipi15613 ve spotchart temsilcisi ile zaten kapsanıyor."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "293",
+   "sayfa": "82",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "rvr_relation",
+   "neden": "RVR ile meteorolojik görüş hava/aydınlatma/konum koşullarına göre farklı olabilir; değişmezgreater/smaller ilişkisi doğrulanmadı."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "304",
+   "sayfa": "82",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "tropical_core",
+   "neden": "Hurricane sıcak çekirdeği doğru olabilse de boyut/latitude seçenekleri coğrafya ve lifecycle koşuluna bağlı; bu eski key ayrıca teyit edilmedi."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "318",
+   "sayfa": "83",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "radar_definition",
+   "neden": "Modern radar rüzgârDoppler ve precipitation/cyclone ekoları verebilir; sadece cloudmovement diyerek seçenekler arası tek evrensel görev seçilemez."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "319",
+   "sayfa": "83",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "sigmet_interval",
+   "neden": "SIGMET sabit her4h yayın değil; gerektiğindehazard validperiodile yayımlanır/güncellenir. Source validity ve issueinterval’i karıştırıyor."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "322",
+   "sayfa": "83",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "nowcast_best",
+   "neden": "Kısa vadede tüm hava elemanları için tek bestobservationaltool yok; olay/tahmin ufku belirtilmemiş."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "330",
+   "sayfa": "84",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "mammatus_tornado",
+   "neden": "Mammatus tek başına tornado forecast göstergesi değildir; kuvvetli konveksiyon çevresinde farklı koşullarda oluşabilir."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "331",
+   "sayfa": "84",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "tornado_path",
+   "neden": "Tornado hareketi erratic/skipping ya da straighte olabilir; hiçbir tekdirection/path her olayda zorunlu değildir."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "333",
+   "sayfa": "84",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "forecast_process",
+   "neden": "Forecast sürecinde hangi data grubunun gerekeceği ürüne/güncel olayla göre değişir; genel allcharts seçeneği sınavlık yeni PPL tipi sağlamıyor."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "344",
+   "sayfa": "85",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "drift_missing",
+   "neden": "Sabitindicatedaltitude/pressure reference/geostrophicwind varsayımları eksik; yön tek başına truealtitude değişimini belirleyemez."
+  },
+  {
+   "kaynak": "x-caab-cpl-050",
+   "no": "348",
+   "sayfa": "85",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-comp-17-dec18.pdf",
+   "konu": "ice_hail_alt",
+   "neden": "CB’de hailin maksimum sabitFL200/450 sınırı değişmez değildir; iklim/hücreye göre değişir. BasicCB-hail bağlantısı15541’de var."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "24",
+   "sayfa": "101",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "tropopause_season",
+   "neden": "Sezonla gerçek tropopozun yüksekliği/sıcaklığı enlem ve hava kütlesine bağlı; koşulsuztek sıcaklık cevabı güncel birincil kaynakla kesinleştirilmedi."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "34",
+   "sayfa": "103",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "coupled_tas",
+   "neden": "FL veRAS koşulundan sıcaklık değişimiyle TAS/truealtitude birlikte hesaplanabilir ama basınç altimetre ve sıkıştırılabilirlik çerçevesi belirsiz; temeltemperaturealtimetry+TASkuralları current15415/15877’devar."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "48",
+   "sayfa": "105",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "inversion_profile",
+   "neden": "Clearskysurfaceradiationinversion olasıdır; bunun üzerindekilapse exactISA2°C/1000ft olmak zorunda değildir."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "51",
+   "sayfa": "105",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "phase_term",
+   "neden": "Vapour→ice depositional süreç modernWMO’da deposition; iki yönü sublimation sayan eski terminolojiyle çelişki var."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "60",
+   "sayfa": "106",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "stability_missing",
+   "neden": "ELR veya doygunluk koşulu eksik; parselin tek başına soğuma hızı kararlı/kararsız sonucunu belirlemez."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "69",
+   "sayfa": "107",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "stability_missing",
+   "neden": "ELR veya doygunluk koşulu eksik; parselin tek başına soğuma hızı kararlı/kararsız sonucunu belirlemez."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "82",
+   "sayfa": "109",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "friction_fixed",
+   "neden": "Sürtünme nedeniyle beklenen yön/hız eğilimi biliniyor; sabit sayısal açı/hız ilişkisinin yüzey/nem/karışım bağlamı eksik."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "86",
+   "sayfa": "110",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "sh_drift_temperature",
+   "neden": "Drift ile temperature yönü için thermalshear/pressure düzeyleri yok; SH pressuretype ayrı ve açıkgeostrophic koşulla korunuyor."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "97",
+   "sayfa": "111",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "old_cloud_instrument",
+   "neden": "Alidade gibi tarihsel cloud-projector ölçümü için araç/düzenek verilmemiş; güncel ceilometer tipi ayrı doğrulanmış adayda korunuyor."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "102",
+   "sayfa": "112",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "turbulence_cloud_intensity",
+   "neden": "CU’nun türbülans şiddeti gelişimine/updraftına bağlı; bütün CU için tek sabit intensity doğrulanamaz.15529 konum bilgisini zaten kapsar."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "106",
+   "sayfa": "112",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "convective_always",
+   "neden": "Konvektif bulut tabanının her zaman yükselmesi veya tümünün CB’ye dönüşmesi evrensel değildir; nem/kararlılık koşulu yok."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "110",
+   "sayfa": "113",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "precip_definition",
+   "neden": "Şıklar precipitation genel tanımı yerine shower/steady türlerini karıştırıyor; tüm precip için tekşık yok."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "112",
+   "sayfa": "113",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "cloud_precip_mislabel",
+   "neden": "Precipitationtype sorulurken cloudcomposition seçenekleri verilmiş; kök/şık uyumsuzluğu var."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "113",
+   "sayfa": "113",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "cu_thunderstorm_forecast",
+   "neden": "Sabah küçükCU tek başına akşamCB garantisi değildir; derin nem/kararsızlık/kaldırma yeterliliği verilmemiş."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "118",
+   "sayfa": "114",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "below_ts_icing",
+   "neden": "CB altında icing olasılığı donma seviyesine ve freezingrain’e bağlı; OAT olmadan kesin en aztehlikeli seçim doğrulanamadı."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "120",
+   "sayfa": "114",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "ts_duration",
+   "neden": "Tek hücre ömrü değişir; güncelFAA tipik≈30 min verir, source seçenekleri minimum≈1hour. Sert süre ezberi aktif olmadı."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "121",
+   "sayfa": "114",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "microburst_size",
+   "neden": "5 km/5 min gibi eski tekboyutlar güncel≤4 km microburst tanımıyla tam örtüşmüyor; boyut/lifespan her olayda aynı değildir."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "128",
+   "sayfa": "115",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "rvr_increment",
+   "neden": "Şık aralıkları birbirini kısmen kapsıyor; eski precision aralıklarını tek doğru diye kabul etmedik. RVR anlamı ayrı doğrulanmış adayda korunuyor."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "133",
+   "sayfa": "116",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "fog_timing",
+   "neden": "Gece oluşum ve sunrise sırasında maksimum sis seçenekleri birlikte savunulabilir; başlangıçT/dewpoint koşulu yok."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "138",
+   "sayfa": "117",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "ice_severity_by_cloud",
+   "neden": "Bulut türü/sıcaklık tek başına sabit icing şiddeti garantilemez; su içeriği/damla boyutu/airspeed ve ekipman önemlidir."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "140",
+   "sayfa": "117",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "carb_range",
+   "neden": "Carburettoricing olasılığı için güç/nem/karbüratör modeli eksik;40%RH ve subzero sıcaklık seçenekleri evrensel tek sonuç vermez."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "141",
+   "sayfa": "117",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "ice_severity_by_cloud",
+   "neden": "Bulut türü/sıcaklık tek başına sabit icing şiddeti garantilemez; su içeriği/damla boyutu/airspeed ve ekipman önemlidir."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "145",
+   "sayfa": "118",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "old_taf_code",
+   "neden": "OldTAFPRFG/format veOCRgrupları modern kodlamayla uyuşmuyor; önemliTAFminimumvisibility yaklaşımı15661’devar."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "146",
+   "sayfa": "119",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "old_taf_cavok",
+   "neden": "CAVOK bulutsuz/unlimitedcloudbase anlamına gelmez; katmanlar5000ft/higherMSA üzerindekabul edilebilir. Oldşık bunu fazla genelliyor."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "152",
+   "sayfa": "120",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "thermalwind_postfront",
+   "neden": "Frictionlayerabove polarity ile thermalwind backing karışıyor; professionalpost-front verticalbaroclinicwindprofile ayrıntısı PPLrelevansı ayrıca incelenmeli."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "154",
+   "sayfa": "121",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "occlusion_unqualified",
+   "neden": "Temperaturewarm/coldocclusion tipine göre değişir; yol/lowposition veairmass koşulu eksik."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "155",
+   "sayfa": "121",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "cold_occlusion_cb",
+   "neden": "Soğuk oklüzyon tek başına embeddedCB zorunluluğu yaratmaz; yükseltilen sıcak havanın kararlılığı verilmemiş."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "157",
+   "sayfa": "121",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "tropical_latitude",
+   "neden": "TC formation yaklaşık5°yakınındaçokseyrektir ama doNOTformwithin5 sertkuralı istisnalıdır; primaryverification/relevance yapılmadan aktif edilemez."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "161",
+   "sayfa": "122",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "tropical_quadrant",
+   "neden": "Ensevere quadrant stormmotion/hemisphere/circulationa bağlı;profesyonelrouteplanning ayrıntısı ve koşılsızhurricanegenellemesi birlikte."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "162",
+   "sayfa": "122",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "İkincil alçak basıncın hareket koşulu",
+   "neden": "İkincil alçağın hareketi için iki sistemin etkileşim/üst akış koşulları eksik; değişmez yörünge kuralı yapılmadı."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "164",
+   "sayfa": "122",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "tropical_no_answer",
+   "neden": "SouthAtlantic TC aslaneveroccur ifadesi istisnalıdır; diğerşıklar da hatalı. Tekgeçerli cevap yok."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "171",
+   "sayfa": "123",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "trade_turn",
+   "neden": "Geostrophicforce eski/yanlış adlandırması ile Coriolis’in Ekvator’da işaret değiştirmesi karışıyor. Güncel açıklamayla trade-wind tipi korunuyor."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "180",
+   "sayfa": "125",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "dust_region",
+   "neden": "Duststorm/haze için aridlik/rüzgâr/konveksiyon bağlamı gerekli; bütün olayları subtropikal antisiklonlarla özdeşleştiren most-common ifadesi belirsiz."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "181",
+   "sayfa": "125",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "notorious_fog",
+   "neden": "Mostnotorious subjektif bölgesel ifade; mekanizma zaten15337’de var, yeni bölge ezberi eklenmedi."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "189",
+   "sayfa": "126",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "stability_multi",
+   "neden": "Birden fazla seçenek kararlı havayı tarif ediyor; single-best-answer kökü yeterince sınırlı değil."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "218",
+   "sayfa": "129",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "cyclone_season",
+   "neden": "Cyclone tropical/extratropical veya bölge belirtilmemiş; mevsimsel maksimum bu ayrımla değişir."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "222",
+   "sayfa": "129",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "ice_type_intensity",
+   "neden": "IceTYPE (clear/rime) ile intensity (light/moderate/severe) aynı sınıf değildir; rime her zaman hafifmiş gibi yorumlanmamalı."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "225",
+   "sayfa": "129",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "microburst_size",
+   "neden": "5 km/5 min gibi eski tekboyutlar güncel≤4 km microburst tanımıyla tam örtüşmüyor; boyut/lifespan her olayda aynı değildir."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "245",
+   "sayfa": "131",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "runway_state_current",
+   "neden": "Tarihsel METAR runway-state grupları güncelGRF/RCR/SNOWTAM/ATIS yöntemine karışıyor; mevcut15618 de tarihselaynıtip. Orijinal aktif/doğrulanmış diye sunulmadı."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "247",
+   "sayfa": "131",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "ice_diversion_context",
+   "neden": "Nodiversion gerekliifadesi uçaksertifikasyonu/antiice veoperatinglimitations olmadan güvenlik talimatı sayılamaz; lighticing PPLSEP için de tehlikelidir."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "250",
+   "sayfa": "131",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "rvr_relation",
+   "neden": "RVR ile meteorolojik görüş hava/aydınlatma/konum koşullarına göre farklı olabilir; değişmezgreater/smaller ilişkisi doğrulanmadı."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "260",
+   "sayfa": "132",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "ice_temperature_overlap",
+   "neden": "Nearfreezing ile−2..−15°C gibi seçenekler örtüşüyor; buzşiddeti yalnız aralıkla belirlenemez."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "270",
+   "sayfa": "133",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "cold_pool_level",
+   "neden": "Coldpool’in yüzeyde mi üst seviyede mi olduğu yok; yerdecoldpool stabilize, aloftcoldpool destabilize edebilir."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "281",
+   "sayfa": "135",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "qnh_no_correct",
+   "neden": "QNH değişken olabilir; dört şıkta geçerli genel ifade bulunmuyor."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "282",
+   "sayfa": "135",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "fog_depth",
+   "neden": "Radyasyon sisinin kalınlığı için evrensel500/800/2000ft sınırı yok; nem/karışım/hava şartına bağlı."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "287",
+   "sayfa": "135",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "vv_malformed",
+   "neden": "FGVV100 kodu standardhshshs olarak10000ft olur; seçeneklerdeki100ft içinVV001 gerekir. Kaynaktaki ifade/kod çelişkisi giderilmeden aktif yapılmadı."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "290",
+   "sayfa": "135",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "fog_depth",
+   "neden": "Radyasyon sisinin kalınlığı için evrensel500/800/2000ft sınırı yok; nem/karışım/hava şartına bağlı."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "292",
+   "sayfa": "136",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "fog_depth",
+   "neden": "Radyasyon sisinin kalınlığı için evrensel500/800/2000ft sınırı yok; nem/karışım/hava şartına bağlı."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "293",
+   "sayfa": "136",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "ice_hail_alt",
+   "neden": "CB’de hailin maksimum sabitFL200/450 sınırı değişmez değildir; iklim/hücreye göre değişir. BasicCB-hail bağlantısı15541’de var."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "298",
+   "sayfa": "136",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "storm_energy",
+   "neden": "Energyfromoceans ifadesi condensationlatentheatrelease yerine kaynağın yerini belirsiz soruyor; doğrudan güneşilkısıtması da tetikler. Currentlatent/instability kuralları korunuyor."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "301",
+   "sayfa": "137",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "ice_temperature_overlap",
+   "neden": "Nearfreezing ile−2..−15°C gibi seçenekler örtüşüyor; buzşiddeti yalnız aralıkla belirlenemez."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "333",
+   "sayfa": "140",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "low_motion_universal",
+   "neden": "Depressionmovement isobarlara herzamandeğişmez biçimdeparallel değildir; synopticsteeringupperflow verilmemiş."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "335",
+   "sayfa": "140",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "sigwx_product_missing",
+   "neden": "WAFCfixedtimesnapshot ileUK9hvalidregionalF215 karışabilir; weatherchart ürünü belirtilmemiş."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "346",
+   "sayfa": "141",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "tropical_core",
+   "neden": "Hurricane sıcak çekirdeği doğru olabilse de boyut/latitude seçenekleri coğrafya ve lifecycle koşuluna bağlı; bu eski key ayrıca teyit edilmedi."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "358",
+   "sayfa": "143",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "radar_definition",
+   "neden": "Modern radar rüzgârDoppler ve precipitation/cyclone ekoları verebilir; sadece cloudmovement diyerek seçenekler arası tek evrensel görev seçilemez."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "361",
+   "sayfa": "143",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "nowcast_best",
+   "neden": "Kısa vadede tüm hava elemanları için tek bestobservationaltool yok; olay/tahmin ufku belirtilmemiş."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "372",
+   "sayfa": "144",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "mammatus_tornado",
+   "neden": "Mammatus tek başına tornado forecast göstergesi değildir; kuvvetli konveksiyon çevresinde farklı koşullarda oluşabilir."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "373",
+   "sayfa": "144",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "tornado_path",
+   "neden": "Tornado hareketi erratic/skipping ya da straighte olabilir; hiçbir tekdirection/path her olayda zorunlu değildir."
+  },
+  {
+   "kaynak": "x-caab-atpl-050",
+   "no": "374",
+   "sayfa": "144",
+   "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+   "konu": "forecast_process",
+   "neden": "Forecast sürecinde hangi data grubunun gerekeceği ürüne/güncel olayla göre değişir; genel allcharts seçeneği sınavlık yeni PPL tipi sağlamıyor."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "28",
+   "sayfa": "6",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Subsidence ve yüzeyde divergence genel kuraldır",
+   "neden": "Subsidence ve yüzeyde divergence genel kuraldır; görüşün iyi veya kötü olması nem/kirletici/inversiyon koşuluna bağlı. Eksik koşulla tek cevap dayatılmadı."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "38",
+   "sayfa": "7",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Sabit kütle başına gizli ısı ile daha sıcak havadaki toplam yoğunlaşabilir su karışıyor",
+   "neden": "Sabit kütle başına gizli ısı ile daha sıcak havadaki toplam yoğunlaşabilir su karışıyor. Sıcaklık arttıkça birim kütle yoğunlaşma gizli ısısı azalır; eski Greater/released anahtarı bağlamsız doğrulanmadı."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "41",
+   "sayfa": "8",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Buzdan buhara sublimation, buhardan doğrudan buza deposition adı kullanılır",
+   "neden": "Buzdan buhara sublimation, buhardan doğrudan buza deposition adı kullanılır; kaynak iki yönü aynı terimle birleştiriyor. Modern WMO terminolojisiyle çelişen kaynak aktif soruya taşınmadı."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "54",
+   "sayfa": "10",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Renkli halka ifadesi halo/corona ayrımını vermiyor",
+   "neden": "Renkli halka ifadesi halo/corona ayrımını vermiyor; kaynak CAD Altostratus cevabı ile bankadaki Cirrostratus halo bilgisi aynı değildir. Görsel/halka açısı olmadan eşleştirme kesin değil."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "63",
+   "sayfa": "11",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "CB yakınlığındaki birden fazla doğru seçenek",
+   "neden": "A seçeneğinin bulut ve yakınından kaçınma önerisi ile D seçeneğinin tehlikelerin bulut içinde veya yakınında görülebileceği ifadesi aynı anda doğru olabilir. Kaynak tek-doğru-cevap biçimi belirsiz; tehlike türü mevcut 15524 ile kapsanır."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "69",
+   "sayfa": "12",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "10 NM ifadesi güvenli kaçınma sınırı gibi yorumlanamaz",
+   "neden": "10 NM ifadesi güvenli kaçınma sınırı gibi yorumlanamaz. FAA 22.8.2 güçlü/severe hücre için en az 20 mi kaçınma önerir; mevcut CB çevresi tehlikeleri 15524/15583 mevcut."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "80",
+   "sayfa": "14",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Sıcak cephenin soğuk cephe hızının daima2/3’ü olması evrensel değil",
+   "neden": "Sıcak cephenin soğuk cephe hızının daima 2/3’ü olması evrensel değil; basit ezber oranı olarak yeni soru eklenmedi."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "83",
+   "sayfa": "14",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "200 mile değeri değişmez bir sınır değildir",
+   "neden": "200 mile değeri değişmez bir sınır değildir; cephe eğimi/hızı/nem yapısı verilmemiş. Genel bir tahmini sert PPL sayısına dönüştürmedik."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "87",
+   "sayfa": "15",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Anahtar sıcak cephe önündeki düşen basınç/alçalan bulut tabanını cephe sonrası diye soruyor",
+   "neden": "Anahtar sıcak cephe önündeki düşen basınç/alçalan bulut tabanını cephe sonrası diye soruyor. FAA 11.3.1 ile bu kök/anahtar kombinasyonu doğrulanamadı."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "93",
+   "sayfa": "16",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "-RASH kod sırası standart -SHRA değildir",
+   "neden": "-RASH kod sırası standart -SHRA değildir. Mevcut 15646 aynı decode bilgisini doğru sıra ile soruyor; kaynak yazımı aktif soruya taşınmadı."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "99",
+   "sayfa": "17",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Spot tahminde mekânsal rüzgâr interpolasyonu",
+   "neden": "Meteo-1 çizimi Linx PDF 26’da görüldü. Ara noktada yön/hızın skaler veya vektörel interpolasyonu farklı sonuç verir; kaynak yöntem belirtmiyor. Verileri ve hesap yöntemini açıkça veren bağımsız uyarlama hazırlandı."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "100",
+   "sayfa": "18",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Farklı yönlü spot rüzgârların interpolasyonu",
+   "neden": "Meteo-2 çizimi Linx PDF 26’da görüldü. 320°/10 kt ve 180°/20 kt için bileşen interpolasyonu, kaynakta verilen skaler 250°/15 kt sonucundan farklıdır; hesap yöntemi belirtilmiyor. Özgün cevap kesin diye sunulmaz."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "102",
+   "sayfa": "18",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Hava haritasından TAF seçimi ve eski kod sırası",
+   "neden": "Meteo-5 çizimi Linx PDF 28’de erişilebilir; özgün +RASH gibi kod dizilişi güncel standart SHRA sırasıyla uyumsuz. Tam verili, güncel kodlu bölge/TAF eşleştirme türü ana taramadaki uyarlamada korunur."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "109",
+   "sayfa": "19",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Soru kökünde hangi bölgesel ürünün adı olduğu eksik",
+   "neden": "Soru kökünde hangi bölgesel ürünün adı olduğu eksik. GAMET/AIRMET/ülkesel forecast ürünü ve irtifa kapsamı belirsiz."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "111",
+   "sayfa": "19",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Kaynak20kt kuralını bölge/yükseklik/ürün koşulu vermeden soruyor",
+   "neden": "Kaynak 20 kt kuralını bölge/yükseklik/ürün koşulu vermeden soruyor. Güncel EASA MET. TR.253 ve ulusal ürün eşikleriyle ayrıca kontrol edilmeli."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "113",
+   "sayfa": "20",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "VOLMET güncellemesi hizmet/bölgeye bağlıdır",
+   "neden": "VOLMET güncellemesi hizmet/bölgeye bağlıdır; tüm dünya için sabit yarım saat cevabı doğrulanmadı. Güncel AIP/hizmet programı gerekir."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "121",
+   "sayfa": "21",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "ISA sıcaklık hesabında yanlış kaynak anahtarı",
+   "neden": "1500 ft’te +15°C’den 7000 ft’e 2°C/1000 ft ile hesap +4°C verir; kaynak A +3°C anahtarı hatalıdır. Hesap yöntemi mevcut 15322’de vardır; özgün kaynak anahtarı incelemeye alınır."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "123",
+   "sayfa": "21",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Her fiziksel hava sürecini mutlaka ısı alışverişine bağlayan evrensel ifade adyabatik süreçle karışı",
+   "neden": "Her fiziksel hava sürecini mutlaka ısı alışverişine bağlayan evrensel ifade adyabatik süreçle karışıyor; bankadaki adyabatik kuralları bozmamak için belirsiz kök aktif olmadı."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "130",
+   "sayfa": "22",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "CAD anahtarı light rain bekliyor",
+   "neden": "CAD anahtarı light rain bekliyor; inversion altında yüksek nem kendi başına yağmur zorunluluğu getirmez. Traficom eşdeğeri smooth/poor visibility/fog/cloud seçeneğiyle farklıdır."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "134",
+   "sayfa": "23",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "Sağanak bulutu için iki uygun seçenek",
+   "neden": "Kaynak seçeneklerinde CB yanında CU da bulunur; her ikisi sağanak verebilir. CB tek doğru olarak garanti edilemez. +TSRA gibi gök gürültüsü koşulu açık olan mevcut 15539 sorusu ayrı koşuldur."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "137",
+   "sayfa": "23",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "2000–4000ft rüzgâr25kt tek başına evrensel tehlikeli windshear eşiği değildir",
+   "neden": "2000–4000 ft rüzgâr 25 kt tek başına evrensel tehlikeli windshear eşiği değildir; yüzey rüzgârı ve tabaka farkı yok. İhtiyaç olursa tam profil ile bağımsız uyarlama gerekir."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "146",
+   "sayfa": "24",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "DZ önünde - yok",
+   "neden": "DZ önünde - yok; Met Office güncel decode tablosunda bu moderate drizzle olur. CAD anahtarı light drizzle olarak işaretli ve çelişiyor."
+  },
+  {
+   "kaynak": "x-linx-050",
+   "no": "147",
+   "sayfa": "25",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
+   "konu": "FEW003 SCT010 OVC020 için tavan OVC020=2000ft yaklaşık610m, SCT010 tavan değildir",
+   "neden": "CAD300 mceilinganahtarıyanlış: lowestBKN/OVCOVC020=2000 ft≈610 m, SCT010 tavanolamaz."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "16",
+   "sayfa": "4",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "Birden fazla şık savunulabilir: sabit sıcaklıkta yüksek basınç daha yoğundur ve ISA yoğunluğu yüksek",
+   "neden": "Birden fazla şık savunulabilir: sabit sıcaklıkta yüksek basınç daha yoğundur ve ISA yoğunluğu yükseklikle azalır. Tek doğrulu aktif soru yapılmadı."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "27",
+   "sayfa": "6",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "Subsidence ve yüzeyde divergence genel kuraldır",
+   "neden": "Subsidence ve yüzeyde divergence genel kuraldır; görüşün iyi veya kötü olması nem/kirletici/inversiyon koşuluna bağlı. Eksik koşulla tek cevap dayatılmadı."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "36",
+   "sayfa": "7",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "Sabit kütle başına gizli ısı ile daha sıcak havadaki toplam yoğunlaşabilir su karışıyor",
+   "neden": "Sabit kütle başına gizli ısı ile daha sıcak havadaki toplam yoğunlaşabilir su karışıyor. Sıcaklık arttıkça birim kütle yoğunlaşma gizli ısısı azalır; eski Greater/released anahtarı bağlamsız doğrulanmadı."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "39",
+   "sayfa": "8",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "Buzdan buhara sublimation, buhardan doğrudan buza deposition adı kullanılır",
+   "neden": "Buzdan buhara sublimation, buhardan doğrudan buza deposition adı kullanılır; kaynak iki yönü aynı terimle birleştiriyor. Modern WMO terminolojisiyle çelişen kaynak aktif soruya taşınmadı."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "49",
+   "sayfa": "9",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "Renkli halka ifadesi halo/corona ayrımını vermiyor",
+   "neden": "Renkli halka ifadesi halo/corona ayrımını vermiyor; kaynak CAD Altostratus cevabı ile bankadaki Cirrostratus halo bilgisi aynı değildir. Görsel/halka açısı olmadan eşleştirme kesin değil."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "76",
+   "sayfa": "14",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "200 mile değeri değişmez bir sınır değildir",
+   "neden": "200 mile değeri değişmez bir sınır değildir; cephe eğimi/hızı/nem yapısı verilmemiş. Genel bir tahmini sert PPL sayısına dönüştürmedik."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "79",
+   "sayfa": "14",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "Anahtar sıcak cephe önündeki düşen basınç/alçalan bulut tabanını cephe sonrası diye soruyor",
+   "neden": "Anahtar sıcak cephe önündeki düşen basınç/alçalan bulut tabanını cephe sonrası diye soruyor. FAA 11.3.1 ile bu kök/anahtar kombinasyonu doğrulanamadı."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "95",
+   "sayfa": "17",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "Soru kökünde hangi bölgesel ürünün adı olduğu eksik",
+   "neden": "Soru kökünde hangi bölgesel ürünün adı olduğu eksik. GAMET/AIRMET/ülkesel forecast ürünü ve irtifa kapsamı belirsiz."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "96",
+   "sayfa": "17",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "VOLMET güncellemesi hizmet/bölgeye bağlıdır",
+   "neden": "VOLMET güncellemesi hizmet/bölgeye bağlıdır; tüm dünya için sabit yarım saat cevabı doğrulanmadı. Güncel AIP/hizmet programı gerekir."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "105",
+   "sayfa": "19",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "Her fiziksel hava sürecini mutlaka ısı alışverişine bağlayan evrensel ifade adyabatik süreçle karışı",
+   "neden": "Her fiziksel hava sürecini mutlaka ısı alışverişine bağlayan evrensel ifade adyabatik süreçle karışıyor; bankadaki adyabatik kuralları bozmamak için belirsiz kök aktif olmadı."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "122",
+   "sayfa": "21",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "DZ önünde - yok",
+   "neden": "DZ önünde - yok; Met Office güncel decode tablosunda bu moderate drizzle olur. CAD anahtarı light drizzle olarak işaretli ve çelişiyor."
+  },
+  {
+   "kaynak": "x-traficom-050",
+   "no": "140",
+   "sayfa": "24",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "Sadece visibility/ceiling listelenmiş",
+   "neden": "Sadece visibility/ceiling listelenmiş; CAVOK için hiçbir CB/TCU ve significant weather olmaması gibi zorunlu koşullar seçeneklerde yok. Eksik tanım yeni aktif soru olmadı."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "7",
+   "sayfa": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "Buzdan buhara sublimation, buhardan doğrudan buza deposition adı kullanılır",
+   "neden": "Buzdan buhara sublimation, buhardan doğrudan buza deposition adı kullanılır; kaynak iki yönü aynı terimle birleştiriyor. Modern WMO terminolojisiyle çelişen kaynak aktif soruya taşınmadı."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "21",
+   "sayfa": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "10 NM ifadesi güvenli kaçınma sınırı gibi yorumlanamaz",
+   "neden": "10 NM ifadesi güvenli kaçınma sınırı gibi yorumlanamaz. FAA 22.8.2 güçlü/severe hücre için en az 20 mi kaçınma önerir; mevcut CB çevresi tehlikeleri 15524/15583 mevcut."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "31",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "Renkli halka ifadesi halo/corona ayrımını vermiyor",
+   "neden": "Renkli halka ifadesi halo/corona ayrımını vermiyor; kaynak CAD Altostratus cevabı ile bankadaki Cirrostratus halo bilgisi aynı değildir. Görsel/halka açısı olmadan eşleştirme kesin değil."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "34",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "Her fiziksel hava sürecini mutlaka ısı alışverişine bağlayan evrensel ifade adyabatik süreçle karışı",
+   "neden": "Her fiziksel hava sürecini mutlaka ısı alışverişine bağlayan evrensel ifade adyabatik süreçle karışıyor; bankadaki adyabatik kuralları bozmamak için belirsiz kök aktif olmadı."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "60",
+   "sayfa": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "Subsidence ve yüzeyde divergence genel kuraldır",
+   "neden": "Subsidence ve yüzeyde divergence genel kuraldır; görüşün iyi veya kötü olması nem/kirletici/inversiyon koşuluna bağlı. Eksik koşulla tek cevap dayatılmadı."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "70",
+   "sayfa": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "Sabit kütle başına gizli ısı ile daha sıcak havadaki toplam yoğunlaşabilir su karışıyor",
+   "neden": "Sabit kütle başına gizli ısı ile daha sıcak havadaki toplam yoğunlaşabilir su karışıyor. Sıcaklık arttıkça birim kütle yoğunlaşma gizli ısısı azalır; eski Greater/released anahtarı bağlamsız doğrulanmadı."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "80",
+   "sayfa": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "CAD anahtarı light rain bekliyor",
+   "neden": "CAD anahtarı light rain bekliyor; inversion altında yüksek nem kendi başına yağmur zorunluluğu getirmez. Traficom eşdeğeri smooth/poor visibility/fog/cloud seçeneğiyle farklıdır."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "89",
+   "sayfa": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "FEW003 SCT010 OVC020 için tavan OVC020=2000ft yaklaşık610m, SCT010 tavan değildir",
+   "neden": "CAD300 mceilinganahtarıyanlış: lowestBKN/OVCOVC020=2000 ft≈610 m, SCT010 tavanolamaz."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "90",
+   "sayfa": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "DZ önünde - yok",
+   "neden": "DZ önünde - yok; Met Office güncel decode tablosunda bu moderate drizzle olur. CAD anahtarı light drizzle olarak işaretli ve çelişiyor."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "99",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "2000–4000ft rüzgâr25kt tek başına evrensel tehlikeli windshear eşiği değildir",
+   "neden": "2000–4000 ft rüzgâr 25 kt tek başına evrensel tehlikeli windshear eşiği değildir; yüzey rüzgârı ve tabaka farkı yok. İhtiyaç olursa tam profil ile bağımsız uyarlama gerekir."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "103",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "ISA sıcaklık hesabında kaynak anahtarındaki +3°C / +4°C çelişkisi",
+   "neden": "Verilen 1500 ft seviyesinde +15°C ve 7000 ft hedef için 2°C/1000 ft hesabı +4°C verir; kaynak A +3°C cevabı hatalı. ISA sıcaklık hesabı bankada 15322 ile mevcut, orijinal anahtar incelemeye alınır."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "121",
+   "sayfa": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "Sıcak cephenin soğuk cephe hızının daima2/3’ü olması evrensel değil",
+   "neden": "Sıcak cephenin soğuk cephe hızının daima 2/3’ü olması evrensel değil; basit ezber oranı olarak yeni soru eklenmedi."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "124",
+   "sayfa": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "200 mile değeri değişmez bir sınır değildir",
+   "neden": "200 mile değeri değişmez bir sınır değildir; cephe eğimi/hızı/nem yapısı verilmemiş. Genel bir tahmini sert PPL sayısına dönüştürmedik."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "126",
+   "sayfa": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "Kaynak20kt kuralını bölge/yükseklik/ürün koşulu vermeden soruyor",
+   "neden": "Kaynak 20 kt kuralını bölge/yükseklik/ürün koşulu vermeden soruyor. Güncel EASA MET. TR.253 ve ulusal ürün eşikleriyle ayrıca kontrol edilmeli."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "128",
+   "sayfa": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "Soru kökünde hangi bölgesel ürünün adı olduğu eksik",
+   "neden": "Soru kökünde hangi bölgesel ürünün adı olduğu eksik. GAMET/AIRMET/ülkesel forecast ürünü ve irtifa kapsamı belirsiz."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "137",
+   "sayfa": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "Anahtar sıcak cephe önündeki düşen basınç/alçalan bulut tabanını cephe sonrası diye soruyor",
+   "neden": "Anahtar sıcak cephe önündeki düşen basınç/alçalan bulut tabanını cephe sonrası diye soruyor. FAA 11.3.1 ile bu kök/anahtar kombinasyonu doğrulanamadı."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "141",
+   "sayfa": "17",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "-RASH kod sırası standart -SHRA değildir",
+   "neden": "-RASH kod sırası standart -SHRA değildir. Mevcut 15646 aynı decode bilgisini doğru sıra ile soruyor; kaynak yazımı aktif soruya taşınmadı."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "143",
+   "sayfa": "17",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "CAD Meteo-1/2 figürleri yayımlanan18 sayfalık dosyada yok",
+   "neden": "CAD Meteo-1/2 figürleri yayımlanan 18 sayfalık dosyada yok; orijinal koordinat cevabı doğrulanamadı. Tam verileri sağlanan bağımsız spot-wind/temperature okuma uyarlaması ayrıca hazırlandı."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "144",
+   "sayfa": "17",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "CAD Meteo-1/2 figürleri yayımlanan18 sayfalık dosyada yok",
+   "neden": "CAD Meteo-1/2 figürleri yayımlanan 18 sayfalık dosyada yok; orijinal koordinat cevabı doğrulanamadı. Tam verileri sağlanan bağımsız spot-wind/temperature okuma uyarlaması ayrıca hazırlandı."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "146",
+   "sayfa": "17",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "CAD Meteo-5 figürü dosyada yok",
+   "neden": "CAD Meteo-5 figürü dosyada yok; özgünZone 3 cevabı yeniden doğrulanamadı. Tam verileri verilen bağımsız zone/TAF eşleştirme uyarlaması ayrıca hazırlandı."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "147",
+   "sayfa": "17",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "VOLMET güncellemesi hizmet/bölgeye bağlıdır",
+   "neden": "VOLMET güncellemesi hizmet/bölgeye bağlıdır; tüm dünya için sabit yarım saat cevabı doğrulanmadı. Güncel AIP/hizmet programı gerekir."
+  },
+  {
+   "kaynak": "x-cad-050",
+   "no": "148",
+   "sayfa": "18",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "CAD Meteo-14 figürü yok",
+   "neden": "CAD Meteo-14 figürü yok; kaynak kökünde ok yönü bulunmuyor. Basınç merkezi hareket oku için ayrı ve tamamen tanımlı kendi çizimimizle uyarlama hazırlandı."
+  },
+  {
+   "kaynak": "x-austro-050",
+   "no": "4",
+   "sayfa": "3",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf",
+   "konu": "1m³ hava kütlesi için basınç/sıcaklık/humidite belirtilmemiş",
+   "neden": "1 m³ hava kütlesi için basınç/sıcaklık/humidite belirtilmemiş; 1.225 kg yalnız ISA deniz seviyesinde geçerli.15365 o koşulu zaten soruyor."
+  },
+  {
+   "kaynak": "x-austro-050",
+   "no": "37",
+   "sayfa": "9",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf",
+   "konu": "Dağ ardında inen her hava katabatik soğuk-drenaj rüzgârı değildir",
+   "neden": "Dağ ardında inen her hava katabatik soğuk-drenaj rüzgârı değildir; Foehn dinamiği farklı.15454 doğru katabatik soğuma koşulunu koruyor."
+  },
+  {
+   "kaynak": "x-austro-050",
+   "no": "38",
+   "sayfa": "9",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf",
+   "konu": "Foehn için stability ve yaygın zorlanmış yükselme tipik olabilir ama tek evrensel oluşum koşulu deği",
+   "neden": "Foehn için stability ve yaygın zorlanmış yükselme tipik olabilir ama tek evrensel oluşum koşulu değildir. Belirsiz koşul aktif soru olmadı."
+  },
+  {
+   "kaynak": "x-austro-050",
+   "no": "65",
+   "sayfa": "14",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf",
+   "konu": "Yağış oluşumu donma sıcaklığı ve güçlü updraft gerektirmez",
+   "neden": "Yağış oluşumu donma sıcaklığı ve güçlü updraft gerektirmez; sıcak bulutlarda coalescence mümkündür.55101 bu iki yağış sürecini doğru biçimde soruyor."
+  },
+  {
+   "kaynak": "x-austro-050",
+   "no": "66",
+   "sayfa": "15",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf",
+   "konu": "Tüm orta/büyük yağış parçacıkları için güçlü updraft zorunlu değildir",
+   "neden": "Tüm orta/büyük yağış parçacıkları için güçlü updraft zorunlu değildir; stratiform yağış da vardır.55101 ve FAA14.2 ile eski zorunluluk ifadesi doğrulanmadı."
+  },
+  {
+   "kaynak": "x-austro-050",
+   "no": "68",
+   "sayfa": "15",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf",
+   "konu": "Stratiform bulutta medium turbulence her zaman beklenmez",
+   "neden": "Stratiform bulutta medium turbulence her zaman beklenmez; türbülans yoğunluğu bağımsız rüzgâr/kararlılık koşullarına bağlıdır."
+  },
+  {
+   "kaynak": "x-austro-050",
+   "no": "80",
+   "sayfa": "17",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf",
+   "konu": "Kaynak genel sıcak sektörde moderate/good visibility derken mevcut15564 maritime sıcak sektörde exte",
+   "neden": "Kaynak genel sıcak sektörde moderate/good visibility derken mevcut 15564 maritime sıcak sektörde extensive stratus ve poor visibility soruyor; hava kütlesi bağlamı eksik. İkisini yanlışlıkla aynı soru saymadık."
+  },
+  {
+   "kaynak": "x-austro-050",
+   "no": "84",
+   "sayfa": "18",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf",
+   "konu": "Sıcak sektör izobarlarına paralel hareket klasik tipik tahmindir",
+   "neden": "Sıcak sektör izobarlarına paralel hareket klasik tipik tahmindir; üst seviye yönlendirici akış verilmeden değişmez hareket kuralı yapılamaz."
+  },
+  {
+   "kaynak": "x-austro-050",
+   "no": "89",
+   "sayfa": "19",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf",
+   "konu": "Yaz yüksek basıncında Cu/Ac miktarı nem ve kararlılığa bağlıdır",
+   "neden": "Yaz yüksek basıncında Cu/Ac miktarı nem ve kararlılığa bağlıdır; source genel cevabı değişmez hava kuralı olarak doğrulanmadı. Açık koşullu yaz anticyclone adayı ayrı tutuldu."
+  },
+  {
+   "kaynak": "x-austro-050",
+   "no": "109",
+   "sayfa": "22",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf",
+   "konu": "Yüksek yüzey sıcaklığı thunderstorm için zorunlu değildir",
+   "neden": "Yüksek yüzey sıcaklığı thunderstorm için zorunlu değildir; gerekli üçlü nem/kararsızlık/kaldırmadır.15574 korunuyor."
+  },
+  {
+   "kaynak": "x-austro-050",
+   "no": "115",
+   "sayfa": "23",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-30-MET_EN.pdf",
+   "konu": "İnversion tek başına tırmanışta hava hızının hangi yönde değişeceğini belirlemez",
+   "neden": "İnversion tek başına tırmanışta hava hızının hangi yönde değişeceğini belirlemez; rüzgârın baş/kuyruk bileşeni profili yok.15593 açık bileşen değişimini zaten soruyor."
+  }
+ ]
 }

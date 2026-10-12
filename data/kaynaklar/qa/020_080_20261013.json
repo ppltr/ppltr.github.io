@@ -1,0 +1,976 @@
+{
+  "date": "2026-10-13",
+  "mode": "read_only",
+  "reviewed_candidates": 128,
+  "actual_existing_bank_records_reviewed": 3051,
+  "recommended_existing_merges": [
+    {
+      "key": "agk:hand-prop-master-off",
+      "bank_ids": [
+        14671,
+        14609
+      ],
+      "reason": "14671 fulloptions explicitlycontrast ignitionONcorrect withbattery/masterONdistractors;14609 selfpoweredmagneto. Root acceptedmerge."
+    }
+  ],
+  "cross_subject_duplicate": [
+    {
+      "key": "full-030:asi-lower",
+      "accepted_keys": [
+        "agk:white-arc",
+        "caab:green-arc-limits"
+      ],
+      "reason": "Samepairedlowerbounds;020records addbothupperbounds. Rootalreadyresolvedwithadditional_bank_ids and shared030 scope."
+    }
+  ],
+  "fixes": [
+    {
+      "keys": [
+        "pof:drag-curve-total",
+        "pof:drag-curve-parasite"
+      ],
+      "kind": "proof_metadata",
+      "actual_evidence": "PHAK07_phak_ch5.txt Figure5-6 dragversusspeed printed5-5;Figure5-8wingrootinterferencedrag."
+    },
+    {
+      "keys": [
+        "caab:radio-altimeter-height"
+      ],
+      "kind": "proof_metadata",
+      "actual_evidence": "FAA31B amt_airframeB.txtRadioAltimeterChapter11 p11-59,notChapter10."
+    },
+    {
+      "keys": [
+        "pof:drag-coefficient-speed"
+      ],
+      "kind": "complete_assumptions",
+      "recommendation": "Explicitlyholdair density andreferenceareaconstant when speed doubles; alpha/config/Re/Mach conditionsalreadyclear."
+    },
+    {
+      "keys": [
+        "caab:stoichiometric-ratio"
+      ],
+      "kind": "legacy_conflict_note",
+      "bank_id": 14616,
+      "recommendation": "Keepnewchemicallycorrect15:1masscondition. Existing14616 ideal1:12 ambiguous; annotatebestpoweronlyifverifiedoriginalintent orqueuelegacyquestion, preservingID."
+    },
+    {
+      "keys": [
+        "agk:master-off-services",
+        "caab:hot-bus"
+      ],
+      "kind": "explanation_precision",
+      "recommendation": "MasterOFF isolatesnormal switchedservices; avoidexplanationimplyingALLbatteryfedcircuitsaredisconnected becausehotbatterybus intentionallystayslive."
+    }
+  ],
+  "remaining_answer_errors": [],
+  "all_graphic_results_verified": true,
+  "all_four_option_en_tr_order_verified": true,
+  "numeric_checks": {
+    "ohm_current_a": 2.0,
+    "dc_power_w": 72,
+    "stall_mass_percent": 9.544511501033215,
+    "turn_lift_lbf": 7156.329603557896,
+    "max_bank_deg": 66.42182152179817,
+    "polar_best_ld_q": 22.360679774997894,
+    "polar_ld_r": 19.047619047619047
+  },
+  "items": [
+    {
+      "key": "agk:carb-full-heat",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14579,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:ground-carb-ice",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14582,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:deviation-card",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14748,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:cs-acceleration",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14657,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:carb-ice-indications",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 62003,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:alternator-low-rpm",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14601,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:detonation-process",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14633,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:compass-swing",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14754,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:connecting-rod",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14515,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:cooling-fins",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14545,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:master-off-services",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14608,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:hand-prop-master-off",
+      "file": "full_subjects_020.json",
+      "review": "merge_existing",
+      "nearest_bank_id_actually_read": 14597,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:fuel-injection-definition",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14561,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:carbheat-ice-recovery",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 62003,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:aux-fuel-pump",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14570,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:low-oil-temperature",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14661,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:cs-throttle",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14657,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:torque-greatest",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14666,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:gyro-tail-lift",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14664,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:va-no-colour",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 68001,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:instrument-crosscheck",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14791,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:water-sample",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14553,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:sandwich-components",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14453,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:manual-controls",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14481,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:secondary-controls",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14481,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:voltmeter",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14687,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:static-wicks",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14678,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:oil-filter-bypass",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14538,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:yellow-arc",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 58019,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:hsi-combination",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14804,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:pfd-core",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14804,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:gyro-precession",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14769,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:heat-fixed-no-ice",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 62003,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:west-compass-and",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14750,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:alternator-failure-response",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14685,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:t-tail",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14451,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:torque-link",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14482,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:carb-purpose",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14580,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:blade-angle-definition",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14675,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:compression-sealing",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14515,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:magneto-rough-plug",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14607,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:warning-colours",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 52039,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:adi-combination",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14804,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:cs-efficiency-range",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14670,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:distributor-half-speed",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14520,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:fixed-prop-aoa",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14657,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "agk:white-arc",
+      "file": "full_subjects_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14739,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:overlap-definition",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14524,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:overlap-purpose",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14520,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:crankcase-breather",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14564,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:reduction-gear",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14520,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:dry-sump-scavenge",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14527,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:fuel-grade-lean-rich",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 62001,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:thermocouple-voltage",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14802,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:manifold-throttle",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14614,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:starting-retarded-spark",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14605,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:parallel-loads",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14678,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:airframe-bonding",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14754,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:flaperon",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14481,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:gear-three-green",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14489,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:pneumatic-boots",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 52021,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:opposite-static-ports",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14705,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:turn-coordinator-roll",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14791,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:southern-compass-and",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14750,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:hydraulic-force-area",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14490,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:hydraulic-fluid-compatibility",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14565,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:hydraulic-accumulator",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14490,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:air-in-brakes",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14490,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:tube-tyre-creep",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14494,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:brake-fade",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14484,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:hot-tyre-pressure",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14488,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:short-circuit",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14698,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:ohm-current",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14682,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:dc-power",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14682,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:rectifier",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14681,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:voltage-regulator",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14697,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:ammeter-quantity",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14684,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:fuse-approved-rating",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14687,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:hot-bus",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14678,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:earth-return",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14679,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:pitot-open-drain",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14726,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:alternate-static-indications",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14703,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:pressurized-cabin-principle",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 15115,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:prop-lever-rpm",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14657,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:wastegate-function",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14618,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:intercooler-function",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14545,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:fuselage-formers",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14454,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:stringer-skin-support",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14455,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:fixed-tas-warm-air",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 68002,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:radio-altimeter-height",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14719,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:green-arc-limits",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14741,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:single-axis-autopilot",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14481,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:avgas-low-lead",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14567,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:stoichiometric-ratio",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14616,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:gear-squat-switch",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14489,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:protection-mechanism",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14689,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:turbo-climb-wastegate",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14618,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:turbo-descent-overboost",
+      "file": "full_caab_020.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14618,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:same-ias-density",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 68002,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:drag-coefficient-speed",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16147,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:dutch-roll",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16236,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:wing-ac-forward-cg",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16239,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:dihedral-cause",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16247,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:high-wing-lateral",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16245,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:roll-trim-left-tab",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16279,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:left-aileron-balance-tab",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16273,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:horn-balance",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16276,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:stall-mass-percent",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16198,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:level-turn-supported-load",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 58030,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:max-bank-load",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 58030,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:boundary-transition",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16187,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:boundary-separation",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16188,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:turbulent-boundary-tradeoff",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16186,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:gust-load-directions",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16310,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:windmill-drag",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14670,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:interference-drag",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16146,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:aerodynamic-washout",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16192,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:wing-loading-definition",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16198,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:streamlining",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16146,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:level-turn-controls",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16202,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:drag-curve-total",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16160,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:drag-curve-parasite",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16160,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:polar-min-cd",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16163,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "pof:polar-best-ld",
+      "file": "full_subjects_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16163,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:spoiler-function",
+      "file": "full_caab_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16209,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:t-tail-high-aoa",
+      "file": "full_caab_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 14451,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "caab:action-reaction-thrust",
+      "file": "full_caab_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16064,
+      "candidate_text_options_translations_explanations_read": true
+    },
+    {
+      "key": "linx:polar-critical-cl",
+      "file": "full_linx_080.json",
+      "review": "retain_distinct_condition_or_property",
+      "nearest_bank_id_actually_read": 16140,
+      "candidate_text_options_translations_explanations_read": true
+    }
+  ]
+}

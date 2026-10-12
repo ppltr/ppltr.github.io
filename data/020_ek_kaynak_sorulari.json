@@ -2,16 +2,29 @@
  "subject_code": "020",
  "subject_name": "Aircraft General Knowledge",
  "origin": "ek",
- "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
+ "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-13)",
  "answer_convention": "İki dilde aynı sırada; ilk şık doğru. Belirsiz cevap aktif bankada yok.",
  "id_convention": "Kalıcı idler_020.json; eski veya emekli kimlik yeniden kullanılmaz.",
  "sections": {
+  "020-02": "Fuselage & Empennage",
+  "020-04": "Flight Controls",
+  "020-05": "Landing Gear",
+  "020-06": "Engines – Introduction",
+  "020-07": "Lubrication Systems",
+  "020-08": "External Cooling Systems",
   "020-09": "Fuel",
   "020-10": "Carburation",
   "020-11": "Ignition",
+  "020-12": "Performance and Engine Handling",
+  "020-13": "Propellers",
+  "020-14": "Electrics",
+  "020-15": "Pitot/Static System",
   "020-16": "Altimeter",
+  "020-18": "Airspeed Indicator",
   "020-19": "Magnetic Compass",
-  "020-23": "Turn Indicator"
+  "020-20": "Gyroscopes",
+  "020-23": "Turn Indicator",
+  "020-24": "Other Instruments"
  },
  "questions": [
   {
@@ -89,6 +102,1172 @@
     "000° and 180°.",
     "045° and 225°.",
     "135° and 315°."
+   ]
+  },
+  {
+   "id": 62008,
+   "section": "020-24",
+   "text": "On an ADI fitted with flight-director command bars, which statement about the displayed information is correct?",
+   "options": [
+    "The attitude background shows actual attitude; the command bars show guidance to follow.",
+    "The command bars always show actual pitch and bank, regardless of guidance mode.",
+    "The attitude background shows commanded attitude; the bars show fuel flow.",
+    "Both displays show pressure altitude and no attitude information."
+   ]
+  },
+  {
+   "id": 62009,
+   "section": "020-14",
+   "text": "An alternator failure is confirmed in flight in a conventional light aeroplane. After the POH checks, the fault remains. What is the sound electrical-power strategy?",
+   "options": [
+    "Reduce non-essential electrical loads and plan a suitable landing while limited battery power remains.",
+    "Keep all loads operating because the battery provides unlimited endurance.",
+    "Increase cabin electrical loads to make the alternator start generating again.",
+    "Switch off the magnetos because every alternator failure stops ignition."
+   ]
+  },
+  {
+   "id": 62010,
+   "section": "020-14",
+   "text": "Compared with a conventional DC generator, what useful characteristic does an aircraft alternator normally have at low engine RPM?",
+   "options": [
+    "It can supply useful electrical output at lower engine RPM.",
+    "It produces ignition sparks independently of the magnetos.",
+    "It eliminates the need for overvoltage protection.",
+    "It guarantees that a discharged battery will recover before take-off."
+   ]
+  },
+  {
+   "id": 62011,
+   "section": "020-09",
+   "text": "A light aeroplane’s POH calls for an electric auxiliary fuel pump during specified critical phases and if its engine-driven fuel pump fails. What is the auxiliary pump’s principal role?",
+   "options": [
+    "To maintain the required fuel supply pressure when the normal pump needs assistance or fails.",
+    "To generate high-voltage sparks when one magneto fails.",
+    "To ventilate the fuel tank and prevent all fuel-vapour formation.",
+    "To control the propeller governor’s oil pressure."
+   ]
+  },
+  {
+   "id": 62012,
+   "section": "020-13",
+   "text": "Which angle is the geometric blade angle of a propeller section?",
+   "options": [
+    "The angle between the blade-section chord and the plane of rotation.",
+    "The angle between the chord and the local resultant relative airflow.",
+    "The angle between the aircraft’s flight path and the horizon.",
+    "The angle between the aircraft heading and its ground track."
+   ]
+  },
+  {
+   "id": 62013,
+   "section": "020-10",
+   "text": "In flight, carburettor ice is suspected in a carburetted piston engine without a carburettor-temperature gauge. Unless its POH states a different procedure, which heat selection is appropriate to clear the ice?",
+   "options": [
+    "Full carburettor heat, allowing time for the ice to melt.",
+    "Partial heat only until the first small RPM decrease.",
+    "Cold air while increasing throttle to restore RPM.",
+    "Repeated short hot/cold selections without waiting."
+   ]
+  },
+  {
+   "id": 62014,
+   "section": "020-10",
+   "text": "What is the usual first power indication of carburettor icing at unchanged control settings: (1) a fixed-pitch propeller, (2) a constant-speed propeller within its governing range?",
+   "options": [
+    "(1) Decreasing RPM; (2) decreasing manifold pressure.",
+    "(1) Increasing RPM; (2) increasing manifold pressure.",
+    "(1) Decreasing manifold pressure only; (2) decreasing RPM first.",
+    "(1) Increasing RPM; (2) decreasing RPM first."
+   ]
+  },
+  {
+   "id": 62015,
+   "section": "020-10",
+   "text": "What is the basic purpose of a carburettor in a conventional piston aircraft engine?",
+   "options": [
+    "To combine fuel and air into a suitable combustible mixture before it enters the cylinders.",
+    "To meter lubricating oil into the crankshaft bearings.",
+    "To produce the high-voltage electricity for the spark plugs.",
+    "To adjust propeller blade pitch as airspeed changes."
+   ]
+  },
+  {
+   "id": 62016,
+   "section": "020-10",
+   "text": "Carburettor ice is reducing power in a fixed-pitch aeroplane. After full heat is applied at unchanged throttle, which response can occur before the ice has fully melted?",
+   "options": [
+    "RPM initially falls further and roughness may increase, followed by recovery as ice melts.",
+    "RPM must increase immediately; any initial drop proves that heat is ineffective.",
+    "RPM remains exactly unchanged until all the ice has disappeared.",
+    "The engine stops because warm intake air cannot support combustion."
+   ]
+  },
+  {
+   "id": 62017,
+   "section": "020-14",
+   "text": "A conventional centre-zero ammeter in the battery lead deflects positively shortly after engine start. The alternator is operating and electrical loads are small. What does this positive indication normally mean?",
+   "options": [
+    "Current is flowing into the battery to recharge it after starting.",
+    "The alternator has failed and the battery is discharging.",
+    "The indicator is a loadmeter showing all aircraft consumers only.",
+    "A positive reading always proves dangerous overcharging."
+   ]
+  },
+  {
+   "id": 62018,
+   "section": "020-19",
+   "text": "During a compass swing, what comparison is made to determine the aircraft’s compass deviation?",
+   "options": [
+    "Compass readings are compared with independently established magnetic headings.",
+    "Compass readings are compared directly with the aircraft’s ground track in wind.",
+    "Compass readings are compared with true north without allowing for variation.",
+    "The compass is compared with the altimeter after each heading change."
+   ]
+  },
+  {
+   "id": 62019,
+   "section": "020-06",
+   "text": "In a conventional four-stroke engine during compression, which parts principally seal the combustion chamber against gas leakage past the piston and through the intake/exhaust ports?",
+   "options": [
+    "The piston compression rings and closed intake/exhaust valves.",
+    "The connecting rod and the rotating crankshaft journals.",
+    "The carburettor float and the fuel-tank vent.",
+    "The alternator field winding and the ignition switch."
+   ]
+  },
+  {
+   "id": 62020,
+   "section": "020-06",
+   "text": "In a conventional reciprocating aircraft engine, the connecting rod directly connects which two components?",
+   "options": [
+    "The piston and the crankshaft.",
+    "The camshaft and the magneto switch.",
+    "The intake valve and the exhaust valve.",
+    "The cylinder head and the engine mount."
+   ]
+  },
+  {
+   "id": 62021,
+   "section": "020-08",
+   "text": "What is the main contribution of the fins formed on an air-cooled engine cylinder?",
+   "options": [
+    "They enlarge the surface area available to transfer heat to the cooling airflow.",
+    "They increase cylinder compression ratio by reducing clearance volume.",
+    "They meter oil pressure to keep it below the relief-valve setting.",
+    "They retain heat in the cylinder to prevent induction icing."
+   ]
+  },
+  {
+   "id": 62022,
+   "section": "020-13",
+   "text": "A constant-speed propeller is operating within the governor’s regulating range. As forward airspeed increases with the selected RPM unchanged, how does the governor normally maintain that RPM?",
+   "options": [
+    "It increases blade pitch to oppose the tendency for RPM to rise.",
+    "It decreases blade pitch so that RPM rises with airspeed.",
+    "It keeps blade pitch fixed and increases the selected RPM.",
+    "It feathers the blades as soon as airspeed increases."
+   ]
+  },
+  {
+   "id": 62023,
+   "section": "020-13",
+   "text": "Why can a variable-pitch constant-speed propeller provide better efficiency across different flight phases than a fixed-pitch propeller?",
+   "options": [
+    "Its blade pitch can be adjusted to suit changing combinations of forward speed and engine power.",
+    "It needs no blade angle because RPM is kept constant.",
+    "It removes all propeller drag after engine failure.",
+    "It keeps a single pitch optimised for every possible forward speed."
+   ]
+  },
+  {
+   "id": 62024,
+   "section": "020-13",
+   "text": "With a constant-speed propeller governing normally, the propeller lever remains unchanged and the throttle is advanced. What response normally prevents an RPM increase?",
+   "options": [
+    "The governor increases blade pitch to absorb the additional engine power.",
+    "The governor decreases blade pitch to reduce propeller load.",
+    "The governor removes all oil and places every propeller in feather.",
+    "The propeller remains at fixed pitch and the RPM rises freely."
+   ]
+  },
+  {
+   "id": 62025,
+   "section": "020-09",
+   "text": "Which description distinguishes detonation from pre-ignition in a spark-ignition aircraft engine?",
+   "options": [
+    "A very rapid, uncontrolled combustion of the remaining charge after normal ignition has begun.",
+    "Ignition of the mixture by a hot spot before the scheduled spark.",
+    "A normal flame front propagating smoothly from the spark plug.",
+    "Failure of the magneto to produce a spark at the scheduled time."
+   ]
+  },
+  {
+   "id": 62026,
+   "section": "020-19",
+   "text": "What information is supplied by a magnetic-compass deviation card fitted in the cockpit?",
+   "options": [
+    "Heading-dependent corrections between compass readings and magnetic headings.",
+    "The local angle between magnetic north and true north for the entire route.",
+    "The wind correction needed to convert a heading into a ground track.",
+    "The delay in the compass caused by every possible turn rate."
+   ]
+  },
+  {
+   "id": 62027,
+   "section": "020-11",
+   "text": "In a conventional four-stroke piston engine’s magneto ignition system, what is the distributor’s rotational speed relative to the crankshaft?",
+   "options": [
+    "One-half of crankshaft speed.",
+    "Equal to crankshaft speed.",
+    "Twice crankshaft speed.",
+    "One-quarter of crankshaft speed."
+   ]
+  },
+  {
+   "id": 62028,
+   "section": "020-13",
+   "text": "For a fixed-pitch propeller section, neglect changes in induced flow. Which combination makes the local relative inflow angle smaller and therefore increases blade angle of attack?",
+   "options": [
+    "Lower forward TAS and higher RPM.",
+    "Higher forward TAS and lower RPM.",
+    "Higher forward TAS at unchanged RPM.",
+    "Lower RPM at unchanged forward TAS."
+   ]
+  },
+  {
+   "id": 62029,
+   "section": "020-10",
+   "text": "A light-aircraft engine meters fuel under pressure to individual nozzles near the intake ports instead of mixing all fuel and air in a carburettor. What system is described?",
+   "options": [
+    "Fuel injection.",
+    "A float-type carburettor.",
+    "The ignition distributor.",
+    "The crankcase oil-pressure system."
+   ]
+  },
+  {
+   "id": 62030,
+   "section": "020-10",
+   "text": "Carburettor ice is cleared during taxi using the POH procedure. For a conventional fixed-pitch trainer whose POH calls for cold intake air for take-off, what must be checked before starting the take-off?",
+   "options": [
+    "Heat is selected cold and the engine achieves the specified take-off RPM.",
+    "Heat remains fully hot to compensate for any remaining power loss.",
+    "The mixture is moved to idle cut-off to test the ignition.",
+    "The engine is allowed to take off below the specified RPM."
+   ]
+  },
+  {
+   "id": 62031,
+   "section": "020-10",
+   "text": "In a light aeroplane whose carburettor heat draws unfiltered alternate air, why should prolonged use on a dusty taxi surface be avoided except as needed by the POH to check heat or clear suspected ice?",
+   "options": [
+    "Dust and foreign particles can enter the engine through the unfiltered intake.",
+    "It prevents the magnetos from generating sparks at idle.",
+    "It always makes the fuel-air mixture leaner and causes fuel starvation.",
+    "It automatically disconnects the oil-cooler bypass valve."
+   ]
+  },
+  {
+   "id": 62032,
+   "section": "020-20",
+   "text": "For a spinning gyroscope, the precessional response to an applied force occurs at what angular position relative to that force?",
+   "options": [
+    "90° later in the direction of rotor rotation.",
+    "90° opposite the direction of rotor rotation.",
+    "180° later in the direction of rotor rotation.",
+    "At the same angular position, with no change in direction."
+   ]
+  },
+  {
+   "id": 62033,
+   "section": "020-13",
+   "text": "A tailwheel aeroplane has a propeller rotating clockwise as viewed from the cockpit. As the tail is raised during the take-off roll, the propeller disc is pitched forward. Which yaw tendency is produced by gyroscopic precession?",
+   "options": [
+    "Yaw to the left.",
+    "Yaw to the right.",
+    "No yaw; only a rolling moment is possible.",
+    "No yaw; a spinning propeller has no angular momentum."
+   ]
+  },
+  {
+   "id": 62034,
+   "section": "020-10",
+   "text": "During a run-up of a fixed-pitch carburetted aeroplane, no ice is present. With throttle and mixture unchanged, full carburettor heat is selected. What is the usual initial indication?",
+   "options": [
+    "A decrease in RPM caused by the less-dense heated intake air.",
+    "An immediate RPM increase because warm air is denser.",
+    "No RPM change because every propeller governs engine speed.",
+    "A permanent RPM increase caused by advancing ignition timing."
+   ]
+  },
+  {
+   "id": 62035,
+   "section": "020-10",
+   "text": "At a high-elevation aerodrome a conventional carburetted engine runs roughly during the run-up. The magneto check gives no evidence of a single-magneto fault, and carburettor heat makes the roughness worse. If there is no other fault indication, which approved adjustment should be evaluated under the POH?",
+   "options": [
+    "A leaner mixture setting appropriate to the field conditions.",
+    "An even richer mixture, regardless of the field elevation.",
+    "A higher-than-approved manifold pressure to force the engine smooth.",
+    "An automatic assumption that every case is carburettor ice."
+   ]
+  },
+  {
+   "id": 62036,
+   "section": "020-24",
+   "text": "A conventional horizontal situation indicator (HSI) combines which information in one display?",
+   "options": [
+    "Heading information and radio-navigation course-deviation information.",
+    "Pressure altitude and engine oil temperature only.",
+    "Vertical speed and fuel quantity only.",
+    "Magnetic variation and the amount of water in the fuel tank."
+   ]
+  },
+  {
+   "id": 62037,
+   "section": "020-24",
+   "text": "What is meant by cross-checking flight instruments?",
+   "options": [
+    "Comparing several relevant indications to confirm a consistent aircraft state and detect misleading indications.",
+    "Keeping attention on one instrument until all other indications are forgotten.",
+    "Adjusting every indication to match the reading of the altimeter.",
+    "Comparing only the magnetic compass with the fuel-quantity gauge."
+   ]
+  },
+  {
+   "id": 62038,
+   "section": "020-07",
+   "text": "All other factors unchanged, why can an insufficient engine-oil quantity contribute to an abnormally high oil temperature?",
+   "options": [
+    "Less oil is available to absorb and carry away heat from engine parts.",
+    "Lower quantity always causes the pressure-relief valve to increase cooling-air flow.",
+    "The remaining oil automatically becomes more viscous at higher temperature.",
+    "The oil-temperature sensor changes into an exhaust-gas sensor."
+   ]
+  },
+  {
+   "id": 62039,
+   "section": "020-11",
+   "text": "During a ground ignition check, an engine runs roughly on one magneto. Which fault can cause this without proving that the magneto itself has failed?",
+   "options": [
+    "A fouled or defective spark plug in that ignition circuit.",
+    "A fully charged battery with its master selected ON.",
+    "Correctly matched approved fuel grade.",
+    "An undamaged, fully open fuel-tank vent."
+   ]
+  },
+  {
+   "id": 62040,
+   "section": "020-04",
+   "text": "In a conventional small aeroplane with manually operated flight controls, how is cockpit control movement normally transmitted to the control surfaces?",
+   "options": [
+    "By mechanical cables, pushrods and associated linkages.",
+    "Only by hydraulic actuators with no mechanical link.",
+    "By a direct radio link from the cockpit to each hinge.",
+    "By changes in the fuel-tank vent pressure."
+   ]
+  },
+  {
+   "id": 62041,
+   "section": "020-14",
+   "text": "Why is the battery master normally selected OFF after shutdown of a conventional magneto-ignition aeroplane?",
+   "options": [
+    "To isolate normally switched battery-fed services that could otherwise discharge the battery.",
+    "To remove the magnetos’ only source of ignition energy.",
+    "To close the engine’s fuel-mixture idle cut-off valve.",
+    "To release electrical pressure from the vacuum-driven gyroscopes."
+   ]
+  },
+  {
+   "id": 62042,
+   "section": "020-07",
+   "text": "An engine’s oil filter becomes blocked, and its pressure-operated filter bypass valve opens. What is the intended result?",
+   "options": [
+    "Oil circulation can continue, although oil passing through the bypass is not filtered.",
+    "All oil flow to the engine is deliberately stopped until the filter clears.",
+    "Oil pressure becomes zero because all oil is dumped overboard.",
+    "The bypass filters the oil more finely than the blocked filter."
+   ]
+  },
+  {
+   "id": 62043,
+   "section": "020-05",
+   "text": "During a pre-flight walkaround, how can a pilot normally assess whether an oleo-pneumatic landing-gear strut appears correctly charged without performing servicing?",
+   "options": [
+    "Inspect the exposed strut extension and compare it with the aircraft’s specified limits under the stated loading conditions.",
+    "Drain all the hydraulic fluid and judge the amount collected.",
+    "Assume a fully compressed strut is always correct when the aircraft is parked.",
+    "Use the same fixed extension measurement for every aircraft type."
+   ]
+  },
+  {
+   "id": 62044,
+   "section": "020-24",
+   "text": "Which group describes the basic flight information normally brought together on a primary flight display (PFD)?",
+   "options": [
+    "Attitude, airspeed, altitude, heading and vertical-speed information.",
+    "Only engine oil pressure and fuel quantity.",
+    "Only the aerodrome chart and passenger manifest.",
+    "Only weather radar returns and the radio frequencies in use."
+   ]
+  },
+  {
+   "id": 62045,
+   "section": "020-13",
+   "text": "In a conventional piston aeroplane with a constant-speed propeller, both RPM and manifold pressure need changing. Following the usual POH sequence, what is the order for (1) reducing power and (2) increasing power?",
+   "options": [
+    "(1) Reduce manifold pressure before RPM; (2) increase RPM before manifold pressure.",
+    "(1) Reduce RPM before manifold pressure; (2) increase manifold pressure before RPM.",
+    "(1) Reduce RPM before manifold pressure; (2) increase RPM before manifold pressure.",
+    "(1) Reduce manifold pressure before RPM; (2) increase manifold pressure before RPM."
+   ]
+  },
+  {
+   "id": 62046,
+   "section": "020-24",
+   "text": "A pressurised cabin loses pressure rapidly and a brief mist forms. What physical process can explain this mist?",
+   "options": [
+    "Rapid expansion cools the cabin air, allowing water vapour to condense.",
+    "The oxygen percentage must rise until visible oxygen droplets form.",
+    "Rapid decompression always heats the air enough to evaporate every droplet.",
+    "The cabin pressure must become higher than outside pressure because mist exists."
+   ]
+  },
+  {
+   "id": 62047,
+   "section": "020-02",
+   "text": "A typical aircraft sandwich panel has which construction?",
+   "options": [
+    "Two thin face sheets bonded to a lightweight core.",
+    "One solid metal plate with no internal core.",
+    "Loose fibres suspended in fuel between two tanks.",
+    "A welded tube truss with an unsupported fabric cover."
+   ]
+  },
+  {
+   "id": 62048,
+   "section": "020-12",
+   "text": "For normal take-off at sea level in a conventional manually controlled, float-carburettor piston engine, with no contrary AFM/POH requirement, what mixture setting is normally used?",
+   "options": [
+    "FULL RICH.",
+    "IDLE CUT-OFF.",
+    "FULL LEAN.",
+    "The previous high-altitude lean setting without a check."
+   ]
+  },
+  {
+   "id": 62049,
+   "section": "020-04",
+   "text": "Which set consists of secondary flight controls?",
+   "options": [
+    "Flaps, leading-edge devices, spoilers or speed brakes, and trim systems.",
+    "Elevator, rudder and ailerons only.",
+    "Magnetos, starter motor and alternator.",
+    "Altimeter, airspeed indicator and vertical speed indicator."
+   ]
+  },
+  {
+   "id": 62050,
+   "section": "020-15",
+   "text": "In the conventional basicT arrangement of four primary flight indications, which is the correct layout?",
+   "options": [
+    "Airspeed left, attitude top centre, altitude right, heading directly below attitude.",
+    "Altitude left, heading top centre, airspeed right, attitude below heading.",
+    "Vertical speed left, engineRPMtop centre, fuel pressure right, attitude below RPM.",
+    "Heading left, airspeed top centre, attitude right, altitude below airspeed."
+   ]
+  },
+  {
+   "id": 62051,
+   "section": "020-14",
+   "text": "What is the purpose of static discharge wicks fitted to an aeroplane?",
+   "options": [
+    "To dissipate accumulated static charge and reduce radio interference.",
+    "To bond the aircraft to the refuelling hose during airborne flight.",
+    "To supply battery charging current when the alternator fails.",
+    "To prevent magnetic-compass dip by removing magnetic flux."
+   ]
+  },
+  {
+   "id": 62052,
+   "section": "020-02",
+   "text": "An aeroplane’s horizontal stabiliser is mounted at the top of its vertical fin. What tail arrangement is described?",
+   "options": [
+    "T-tail.",
+    "Conventional low-mounted tailplane.",
+    "V-tail.",
+    "Canard foreplane."
+   ]
+  },
+  {
+   "id": 62053,
+   "section": "020-13",
+   "text": "For normal take-off in a conventional piston aeroplane with a constant-speed propeller, which propeller selection normally makes maximum approved take-off power available?",
+   "options": [
+    "Fine pitch/high selected RPM, as specified by the POH.",
+    "Coarse pitch/low selected RPM for maximum cruise economy.",
+    "Feathered propeller and minimum selected RPM.",
+    "Any pitch with the propeller lever left at the previous cruise setting."
+   ]
+  },
+  {
+   "id": 62054,
+   "section": "020-13",
+   "text": "In a single-engine propeller aeroplane, in which general combination is the pilot most likely to notice strong propeller turning effects during take-off or climb?",
+   "options": [
+    "High engine power and low airspeed, often with a high angle of attack.",
+    "Idle power and high airspeed with a low angle of attack.",
+    "Engine stopped and aircraft stationary with the controls locked.",
+    "Low engine power and high airspeed in a shallow descent."
+   ]
+  },
+  {
+   "id": 62055,
+   "section": "020-05",
+   "text": "What is a main function of the torque links on a telescopic oleo landing-gear strut?",
+   "options": [
+    "Prevent relative rotation of the inner and outer strut parts while allowing compression and extension.",
+    "Provide the sole pneumatic spring by storing compressed nitrogen in the links.",
+    "Replace the wheel brake discs during every landing.",
+    "Measure tyre inflation pressure electrically."
+   ]
+  },
+  {
+   "id": 62056,
+   "section": "020-18",
+   "text": "Which commonly used speed is normally obtained from the AFM/POH for the actual aircraft mass rather than identified by a standard coloured arc or line on an analogue airspeed indicator?",
+   "options": [
+    "Manoeuvring speed, VA.",
+    "Never-exceed speed, VNE.",
+    "Maximum normal operating speed, VNO.",
+    "Maximum flap-extended speed, VFE."
+   ]
+  },
+  {
+   "id": 62057,
+   "section": "020-14",
+   "text": "What electrical quantity does a voltmeter indicate?",
+   "options": [
+    "Electrical potential difference, in volts.",
+    "Electric current flowing through it, in amperes.",
+    "Accumulated battery capacity, in ampere-hours.",
+    "Electrical energy consumed over time, in watt-hours."
+   ]
+  },
+  {
+   "id": 62058,
+   "section": "020-24",
+   "text": "For a flight-deck alerting system using the conventional warning/caution colour convention, which colour pairing is correct?",
+   "options": [
+    "Warning red; caution amber/yellow.",
+    "Warning amber/yellow; caution red.",
+    "Warning green; caution blue.",
+    "Warning white; caution green."
+   ]
+  },
+  {
+   "id": 62059,
+   "section": "020-09",
+   "text": "A fuel sample from a low-point drain contains aviation gasoline and free water after settling. Where is the free water normally seen?",
+   "options": [
+    "As a separate lower layer or droplets beneath the gasoline.",
+    "As a stable layer floating on top of the gasoline.",
+    "Only as gas bubbles which disappear without residue.",
+    "As an increase in the gasoline’s octane rating."
+   ]
+  },
+  {
+   "id": 62060,
+   "section": "020-19",
+   "text": "A Northern-Hemisphere direct-reading magnetic compass is on a westerly heading. In straight flight, what apparent turning errors are expected during (1) acceleration and (2) deceleration?",
+   "options": [
+    "(1) Towards north; (2) towards south.",
+    "(1) Towards south; (2) towards north.",
+    "(1) Towards north; (2) towards north.",
+    "(1) No error; (2) no error."
+   ]
+  },
+  {
+   "id": 62061,
+   "section": "020-18",
+   "text": "On a conventional analogue airspeed indicator, the white arc normally extends between which limits?",
+   "options": [
+    "Landing-configuration stall speed VS0 and maximum flap-extended speed VFE.",
+    "Clean-configuration stall speed VS1 and never-exceed speed VNE.",
+    "Manoeuvring speed VA and maximum normal operating speed VNO.",
+    "Best-angle climb speed VX and best-rate climb speed VY."
+   ]
+  },
+  {
+   "id": 62062,
+   "section": "020-18",
+   "text": "What restriction applies to the yellow arc on a conventional analogue airspeed indicator?",
+   "options": [
+    "Use only in smooth air, and with caution.",
+    "Use freely in turbulence because it is the normal operating range.",
+    "Use only when full landing flap is extended.",
+    "Use only below the clean-configuration stall speed."
+   ]
+  },
+  {
+   "id": 62063,
+   "section": "020-05",
+   "text": "Air trapped in a hydraulic wheel-brake line can cause a spongy pedal. Why?",
+   "options": [
+    "The trapped air compresses under pedal pressure, reducing prompt transmission through the liquid.",
+    "Air is less compressible than hydraulic liquid, so the pedal becomes rigid.",
+    "The air generates additional braking pressure without pedal movement.",
+    "The air changes brake discs into electrical heating elements."
+   ]
+  },
+  {
+   "id": 62064,
+   "section": "020-14",
+   "text": "Why are conductive aircraft components bonded together with suitable low-resistance connections?",
+   "options": [
+    "To minimise potential differences and provide a path for charge/current, reducing arcing and interference.",
+    "To keep adjacent metal parts at deliberately different electrical potentials.",
+    "To increase magnetic-compass deviation to a fixed known value.",
+    "To replace all fuses with a direct connection across their contacts."
+   ]
+  },
+  {
+   "id": 62065,
+   "section": "020-15",
+   "text": "A light unpressurised aeroplane selects an alternate static source inside the cabin. Cabin static pressure is lower than outside static pressure. With the pitot source normal, what initial instrument changes are expected?",
+   "options": [
+    "Altimeter and ASI read higher; the VSI briefly indicates a climb.",
+    "Altimeter and ASI read lower; the VSI briefly indicates a descent.",
+    "Altimeter reads higher,ASI lower, and VSI briefly indicates a descent.",
+    "The altimeter freezes and the VSI remains permanently at zero."
+   ]
+  },
+  {
+   "id": 62066,
+   "section": "020-14",
+   "text": "What quantity and unit are shown by an electrical ammeter?",
+   "options": [
+    "Current, in amperes.",
+    "Potential difference, in volts.",
+    "Accumulated capacity, in ampere-hours.",
+    "Power, in watts."
+   ]
+  },
+  {
+   "id": 62067,
+   "section": "020-09",
+   "text": "What does theLLinAVGAS100LL indicate?",
+   "options": [
+    "Low lead content; it does not mean a lower anti-knock grade than100.",
+    "Low octane rating below grade80.",
+    "Lead-free fuel with no lead compound at all.",
+    "A fuel approved only for low-level flight."
+   ]
+  },
+  {
+   "id": 62068,
+   "section": "020-05",
+   "text": "What is meant by thermal brake fade after excessive braking?",
+   "options": [
+    "Braking effectiveness decreases because the brake system has overheated.",
+    "The brake remains partly applied after pedal release and causes wheel drag.",
+    "Air in the hydraulic line creates a spongy pedal at any temperature.",
+    "The nosewheel oscillates laterally because its shimmy damper is ineffective."
+   ]
+  },
+  {
+   "id": 62069,
+   "section": "020-07",
+   "text": "What is a main function of a piston engine’s crankcase breather?",
+   "options": [
+    "To vent gases and prevent excessive pressure building up inside the crankcase.",
+    "To regulate the engine’s lubricating-oil pressure at the relief-valve setting.",
+    "To keep the crankcase sealed at permanently elevated gas pressure.",
+    "To control the oil flow through the temperature-sensitive cooler bypass."
+   ]
+  },
+  {
+   "id": 62070,
+   "section": "020-14",
+   "text": "A steady DC load draws 3 A from a 24 V supply. What electrical power does it consume?",
+   "options": [
+    "72 W.",
+    "8 W.",
+    "27 W.",
+    "0.125 W."
+   ]
+  },
+  {
+   "id": 62071,
+   "section": "020-07",
+   "text": "In a dry-sump engine oil system, what is the scavenge pump’s basic function?",
+   "options": [
+    "To return used oil from the engine collecting areas to the separate oil tank.",
+    "To supply pressurised oil from the tank to the engine bearings.",
+    "To select the temperature-dependent path through the oil cooler.",
+    "To bypass a blocked filter with unfiltered oil."
+   ]
+  },
+  {
+   "id": 62072,
+   "section": "020-14",
+   "text": "In a conventional negative-ground earth-return aircraft electrical circuit, how does current normally return from a consumer to the source?",
+   "options": [
+    "Through bonded conductive airframe structure connected to the negative side.",
+    "Through a second insulated return wire in every circuit by definition.",
+    "Through airframe structure connected to the positive side instead.",
+    "Through an open path that requires no conducting return connection."
+   ]
+  },
+  {
+   "id": 62073,
+   "section": "020-18",
+   "text": "Two aeroplanes maintain the same flight level while entering warmer air. Aeroplane A holds CAS constant; aeroplane B holds TAS constant. Neglect instrument, position and compressibility errors. Which changes are expected?",
+   "options": [
+    "A:TAS increases. B:CAS decreases.",
+    "A:TAS decreases. B:CAS increases.",
+    "A:TAS increases. B:CAS increases.",
+    "A:TAS decreases. B:CAS decreases."
+   ]
+  },
+  {
+   "id": 62074,
+   "section": "020-04",
+   "text": "What functions does a flaperon combine?",
+   "options": [
+    "Flap and aileron functions.",
+    "Rudder and elevator functions.",
+    "Elevator and spoiler functions.",
+    "Landing-gear and speed-brake functions."
+   ]
+  },
+  {
+   "id": 62075,
+   "section": "020-09",
+   "text": "For a conventional two-number aviation-gasoline grade such as 100/130, what do the first and second ratings refer to respectively?",
+   "options": [
+    "Anti-knock performance in lean-mixture and rich-mixture tests.",
+    "Anti-knock performance in rich-mixture and lean-mixture tests.",
+    "Fuel freezing point and boiling point in degreesCelsius.",
+    "Minimum cruiseRPMand maximum take-off RPM."
+   ]
+  },
+  {
+   "id": 62076,
+   "section": "020-14",
+   "text": "A 5 A fuse has blown. If replacement is permitted by the POH after the relevant fault checks, which replacement is appropriate?",
+   "options": [
+    "The approved fuse type with the same specified5 A rating.",
+    "A10 A fuse to make a second interruption less likely.",
+    "A piece of wire to bypass the fuse temporarily.",
+    "Any fuse of the same physical size, regardless of rating."
+   ]
+  },
+  {
+   "id": 62077,
+   "section": "020-02",
+   "text": "What is a principal structural function of fuselage frames or formers?",
+   "options": [
+    "To maintain the fuselage cross-sectional shape and support the skin/load distribution.",
+    "To define the aerodynamic profile of each wing rib.",
+    "To generate ignition sparks for the engine cylinders.",
+    "To measure the difference between total and static pressure."
+   ]
+  },
+  {
+   "id": 62078,
+   "section": "020-05",
+   "text": "What is a principal purpose of a serviceable squat/weight-on-wheels switch in a retractable landing-gear safety circuit?",
+   "options": [
+    "To inhibit gear retraction while the aircraft’s weight is on the landing gear.",
+    "To guarantee that every downlock remains intact after structural damage.",
+    "To prevent all flap movement whenever the aircraft is airborne.",
+    "To apply the wheel brakes whenever the gear selector is moved."
+   ]
+  },
+  {
+   "id": 62079,
+   "section": "020-05",
+   "text": "On a conventional three-leg retractable landing gear with a serviceable three-green downlock indication system, what do all three green lights confirm?",
+   "options": [
+    "Each landing-gear leg is down and locked.",
+    "The legs are down, but the indication gives no downlock confirmation.",
+    "Every gear leg and every gear door must be in the same open position.",
+    "The down command has been selected while all legs are still moving."
+   ]
+  },
+  {
+   "id": 62080,
+   "section": "020-18",
+   "text": "On a conventional analogue airspeed indicator, what do the lower and upper ends of the green arc normally represent?",
+   "options": [
+    "VS1 in the specified clean configuration andVNO.",
+    "VS0 in landing configuration andVFE.",
+    "VA andVNE.",
+    "VX andVY."
+   ]
+  },
+  {
+   "id": 62081,
+   "section": "020-14",
+   "text": "What does the term hot battery bus mean in an aircraft electrical system?",
+   "options": [
+    "A bus that remains directly connected to the battery while the battery is connected.",
+    "A bus that is heated by the cabin heater.",
+    "A bus that carries only non-essential galley loads.",
+    "A bus that is always isolated whenever the normal master isOFF."
+   ]
+  },
+  {
+   "id": 62082,
+   "section": "020-05",
+   "text": "Tyres are hot immediately after landing and taxi. Should they be deflated to the AFM’s specified COLD inflation pressure merely because the hot reading is higher?",
+   "options": [
+    "No; compare/service using the prescribed cold-condition method, since pressure falls as they cool.",
+    "Yes; reduce them immediately to the cold target while still hot.",
+    "Yes; a hot tyre must always have less pressure than a cold tyre.",
+    "No; hot readings are always exactly15% higher at every temperature."
+   ]
+  },
+  {
+   "id": 62083,
+   "section": "020-05",
+   "text": "What is a main function of a hydraulic accumulator?",
+   "options": [
+    "To store hydraulic energy under pressure and help cushion pressure fluctuations.",
+    "To remove every trace of gas from all aircraft systems.",
+    "To turnACelectricity intoDCwithout a rectifier.",
+    "To ensure hydraulic pressure is always greater than the system limit."
+   ]
+  },
+  {
+   "id": 62084,
+   "section": "020-05",
+   "text": "Why must a hydraulic system be replenished only with its approved fluid, without substituting a different incompatible fluid family?",
+   "options": [
+    "The wrong fluid can damage seals/materials and cause leaks or system failure.",
+    "Any fluid with the same colour always has identical compatibility.",
+    "Every hydraulic system requires synthetic fluid regardless of its approval.",
+    "Fluid type changes only the colour of the reservoir indication."
+   ]
+  },
+  {
+   "id": 62085,
+   "section": "020-05",
+   "text": "Two ideal hydraulic actuators receive the same fluid pressure. The second piston has twice the effective area of the first. Ignoring friction, how do their output forces compare?",
+   "options": [
+    "The second produces twice the force.",
+    "The second produces half the force.",
+    "Both produce the same force because pressure is the same.",
+    "The second produces four times the force."
+   ]
+  },
+  {
+   "id": 62086,
+   "section": "020-12",
+   "text": "When fitted downstream of a piston engine’s turbocharger compressor, what does an intercooler do?",
+   "options": [
+    "Cools the compressed intake air before it reaches the cylinders.",
+    "Heats the compressed intake air to reduce its density.",
+    "Cools only the engine exhaust after it has left the turbine.",
+    "Changes ignition timing by generating high-voltage sparks."
+   ]
+  },
+  {
+   "id": 62087,
+   "section": "020-12",
+   "text": "In a normally aspirated piston engine at the same RPM, opening the throttle generally changes induction-manifold absolute pressure in which direction?",
+   "options": [
+    "It increases towards outside ambient pressure.",
+    "It decreases towards a perfect vacuum.",
+    "It stays fixed at 1013.25 hPa at every altitude.",
+    "It changes only if the battery voltage changes."
+   ]
+  },
+  {
+   "id": 62088,
+   "section": "020-14",
+   "text": "An ideal 24 VDC supply feeds a 12 ohm resistive load. What steady current flows through the load?",
+   "options": [
+    "2 A.",
+    "0.5 A.",
+    "12 A.",
+    "288 A."
+   ]
+  },
+  {
+   "id": 62089,
+   "section": "020-15",
+   "text": "When two primary static ports on opposite sides of the fuselage are connected together, what is a principal reason for this arrangement?",
+   "options": [
+    "To average attitude-related pressure variations between the sides, such as during yaw or sideslip.",
+    "To add dynamic pressure to static pressure before feeding the altimeter.",
+    "To provide vacuum-pump suction to the turn coordinator.",
+    "To make the static pressure depend directly on engine RPM."
+   ]
+  },
+  {
+   "id": 62090,
+   "section": "020-06",
+   "text": "What is valve overlap in a conventional four-stroke piston engine?",
+   "options": [
+    "The period around the end of exhaust and start of intake when both valves are open.",
+    "The period near the end of compression when both valves are closed.",
+    "The period nearBDCwhen only the intake valve is open.",
+    "The period aroundBDCwhen both valves are open at the end of intake."
+   ]
+  },
+  {
+   "id": 62091,
+   "section": "020-06",
+   "text": "Why is an overlap period deliberately included in the valve timing of a conventional four-stroke aircraft engine?",
+   "options": [
+    "To improve cylinder filling and volumetric efficiency.",
+    "To change the engine’s geometric compression ratio.",
+    "To remove the need for a compression stroke.",
+    "To stop all exhaust flow before the exhaust stroke begins."
+   ]
+  },
+  {
+   "id": 62092,
+   "section": "020-14",
+   "text": "Several electrical consumers are connected in parallel to a regulated DC bus. One consumer is switched off and the regulator maintains the bus voltage. What happens to the total current drawn from the supply?",
+   "options": [
+    "It decreases by that consumer’s branch current; the remaining branches still receive the bus voltage.",
+    "It remains unchanged because bus voltage is unchanged.",
+    "The bus voltage falls to zero when any single branch is opened.",
+    "Each remaining branch must take extra current equal to that of the switched-off branch."
+   ]
+  },
+  {
+   "id": 62093,
+   "section": "020-18",
+   "text": "The pitot inlet becomes blocked, but its drain hole and the static source remain open. After the trapped pressure has vented, what does the airspeed indicator normally show?",
+   "options": [
+    "Approximately zero.",
+    "It acts like an altimeter, increasing its indication during a climb.",
+    "It remains fixed at the airspeed when the inlet blocked.",
+    "It displays the true airspeed with no error."
+   ]
+  },
+  {
+   "id": 62094,
+   "section": "020-04",
+   "text": "How does a conventional pneumatic de-icing boot remove accumulated ice from an aerofoil leading edge?",
+   "options": [
+    "It inflates and deflates to crack and shed the ice.",
+    "It continuously heats the leading edge using engine bleed air.",
+    "It delivers protective fluid through a porous leading edge.",
+    "It melts ice by electrical-resistance heating elements."
+   ]
+  },
+  {
+   "id": 62095,
+   "section": "020-24",
+   "text": "An aeroplane is cruising with a pressurised cabin at a lower pressure altitude than the aircraft’s outside altitude. How does cabin pressure compare with outside ambient pressure?",
+   "options": [
+    "Cabin pressure is higher than outside pressure.",
+    "Cabin pressure is lower than outside pressure.",
+    "Both pressures must be equal whenever the aircraft is level.",
+    "Cabin pressure must be zero to keep cabin altitude below aircraft altitude."
+   ]
+  },
+  {
+   "id": 62096,
+   "section": "020-13",
+   "text": "A constant-speed propeller is regulating normally. With throttle unchanged, the pilot moves the propeller control forward to select higher RPM. What is the initial governor response?",
+   "options": [
+    "It reduces blade pitch so RPM can rise to the new selected value.",
+    "It increases blade pitch to prevent any RPM rise.",
+    "It feathers the propeller because the throttle has not moved.",
+    "It fixes blade pitch permanently at the cruise setting."
+   ]
+  },
+  {
+   "id": 62097,
+   "section": "020-14",
+   "text": "Excess current flows through (1) a fuse and (2) a thermal circuit breaker. Which physical mechanisms normally open these devices?",
+   "options": [
+    "(1) The fuse element melts; (2) a heated bimetallic strip bends and trips the breaker.",
+    "(1) A bimetallic strip bends; (2) the breaker element must melt and be replaced.",
+    "(1) The fuse increases battery voltage; (2) the breaker permanently reduces bus voltage.",
+    "(1) The fuse stores the excess current; (2) the breaker transfers it to another consumer."
+   ]
+  },
+  {
+   "id": 62098,
+   "section": "020-16",
+   "text": "What vertical distance does an aircraft radio altimeter normally provide?",
+   "options": [
+    "Height above the terrain beneath the aircraft.",
+    "Altitude above mean sea level from aQNHreference.",
+    "Pressure altitude from a1013.25hPareference.",
+    "Density altitude corrected for ambient temperature."
+   ]
+  },
+  {
+   "id": 62099,
+   "section": "020-14",
+   "text": "Which component converts alternating current into direct current?",
+   "options": [
+    "A rectifier.",
+    "An inverter.",
+    "A transformer alone.",
+    "A voltage regulator alone."
+   ]
+  },
+  {
+   "id": 62100,
+   "section": "020-13",
+   "text": "In an engine with a propeller reduction gearbox, what is the gearbox’s basic purpose?",
+   "options": [
+    "To allow the propeller to rotate more slowly than the engine crankshaft.",
+    "To make the camshaft rotate faster than the crankshaft.",
+    "To make the propeller rotate faster than the crankshaft.",
+    "To change blade pitch automatically as the selectedRPMchanges."
+   ]
+  },
+  {
+   "id": 62101,
+   "section": "020-14",
+   "text": "What electrical hazard is created by a short circuit that provides a very low-resistance path across the supply?",
+   "options": [
+    "Excessive current and possible overheating until the circuit protection opens.",
+    "Zero current, as occurs with an open circuit.",
+    "Normal current while the load’s resistance increases sharply.",
+    "Reduced current because the short necessarily adds a high resistance."
+   ]
+  },
+  {
+   "id": 62102,
+   "section": "020-04",
+   "text": "What motion does a conventional single-axis wing-levelling autopilot primarily control?",
+   "options": [
+    "Roll about the longitudinal axis through the ailerons.",
+    "Pitch about the lateral axis through the elevator only.",
+    "Yaw about the vertical axis through the rudder only.",
+    "All three axes with automatic thrust control."
+   ]
+  },
+  {
+   "id": 62103,
+   "section": "020-19",
+   "text": "On an easterly or westerly heading in the Southern Hemisphere, which apparent turns does a direct-reading magnetic compass normally show in straight flight during (1) acceleration and (2) deceleration?",
+   "options": [
+    "(1) Towards south; (2) towards north.",
+    "(1) Towards north; (2) towards south.",
+    "(1) Towards north; (2) towards north.",
+    "(1) Towards south; (2) towards south."
+   ]
+  },
+  {
+   "id": 62104,
+   "section": "020-11",
+   "text": "Besides increasing magneto speed momentarily, why does an impulse coupling retard ignition during engine starting?",
+   "options": [
+    "To reduce the risk of combustion opposing the slow cranking motion and causing kickback.",
+    "To fire earlier than the normal running advance for maximum starting power.",
+    "To stop the magneto from producing any voltage at cranking speed.",
+    "To cause combustion only after the exhaust valve has opened."
+   ]
+  },
+  {
+   "id": 62105,
+   "section": "020-10",
+   "text": "For the conventional aviation-gasoline teaching model, approximately what air-to-fuel ratio by MASS is chemically correct(stoichiometric), given sufficient time and mixing for complete combustion?",
+   "options": [
+    "15parts air to 1 part fuel.",
+    "12parts air to 1 part fuel.",
+    "1 part air to 15partsfuel.",
+    "1 part air to 12partsfuel."
+   ]
+  },
+  {
+   "id": 62106,
+   "section": "020-02",
+   "text": "What is a principal effect of longitudinal stringers attached to a fuselage skin?",
+   "options": [
+    "They stiffen and support the skin, helping resist local buckling.",
+    "They create deliberate stress concentrations to encourage fatigue cracks.",
+    "They replace all frames so no cross-sectional support is needed.",
+    "They are fitted only to route fuel around the cabin."
+   ]
+  },
+  {
+   "id": 62107,
+   "section": "020-24",
+   "text": "A conventional thermocouple temperature sensor uses two dissimilar metals with hot and reference junctions. How does it provide a temperature signal?",
+   "options": [
+    "It generates a small voltage related to the junction-temperature difference.",
+    "Its resistance changes when an external current is passed through a sensor.",
+    "Two bonded strips expand differently and mechanically move a pointer.",
+    "A sealed gas expands to create a measured pressure change."
+   ]
+  },
+  {
+   "id": 62108,
+   "section": "020-05",
+   "text": "In a tube-type aircraft tyre, why is tyre creep relative to the wheel potentially serious?",
+   "options": [
+    "It can pull or tear the tube’s valve stem and lead to loss of pressure.",
+    "It must increase tyre pressure because the ply rating increases.",
+    "Painting alignment marks prevents all relative movement afterwards.",
+    "The inner tube cannot load the valve stem because the stem is unattached to it."
+   ]
+  },
+  {
+   "id": 62109,
+   "section": "020-12",
+   "text": "A turbocharged piston aeroplane climbs below critical altitude. Its automatic system maintains the same selected manifold pressure within the regulating range. What normally happens to the wastegate as altitude increases?",
+   "options": [
+    "It progressively closes, directing more exhaust flow through the turbine.",
+    "It progressively opens, diverting more exhaust around the turbine.",
+    "It must remain fully open at every altitude.",
+    "It completely blocks the induction manifold."
+   ]
+  },
+  {
+   "id": 62110,
+   "section": "020-12",
+   "text": "An aeroplane has a manually controlled turbocharger wastegate. It descends with the wastegate left closed and the previous high-altitude throttle setting retained. What is a main risk?",
+   "options": [
+    "Manifold pressure can rise above the approved limit and cause overboost.",
+    "Manifold pressure must fall because the aircraft descends.",
+    "The magnetos must stop because ambient pressure increases.",
+    "The wastegate automatically prevents any overboost in every manual system."
+   ]
+  },
+  {
+   "id": 62111,
+   "section": "020-23",
+   "text": "Compared with a conventional turn indicator, why is a turn coordinator’s gyro mounted with its gimbal axis tilted?",
+   "options": [
+    "So it responds to rolling as well as yawing motion.",
+    "So its miniature aeroplane directly measures bank angle like an attitude indicator.",
+    "So it responds to pitching and yawing but not rolling.",
+    "So it responds only to yaw rate, exactly like a conventional turn indicator."
+   ]
+  },
+  {
+   "id": 62112,
+   "section": "020-14",
+   "text": "What is the principal role of the voltage regulator in a conventional aircraft generator/alternator system?",
+   "options": [
+    "To maintain the required output voltage as engine speed and electrical load change.",
+    "To make battery capacity increase automatically with every switched-on load.",
+    "To keep engine RPM constant by changing propeller pitch.",
+    "To provide the static pressure reference for the altimeter."
+   ]
+  },
+  {
+   "id": 62113,
+   "section": "020-12",
+   "text": "What does a turbocharger wastegate regulate?",
+   "options": [
+    "The proportion of exhaust gas that bypasses the turbine.",
+    "The fuel-air mixture’s colour in the float chamber.",
+    "The engine oil flow through the spark plugs.",
+    "The static pressure supplied to the cabin altimeter."
    ]
   }
  ]

@@ -2,12 +2,21 @@
  "subject_code": "080",
  "subject_name": "Principles of Flight",
  "origin": "ek",
- "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
+ "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-13)",
  "answer_convention": "İki dilde aynı sırada; ilk şık doğru. Belirsiz cevap aktif bankada yok.",
  "id_convention": "Kalıcı idler_080.json; eski veya emekli kimlik yeniden kullanılmaz.",
  "sections": {
+  "080-01": "Basics, Laws and Definitions",
+  "080-02": "Lift",
+  "080-03": "Drag",
   "080-04": "The Stall",
-  "080-08": "Limitations"
+  "080-05": "Flaps and Slats",
+  "080-06": "Stability",
+  "080-07": "Control",
+  "080-08": "Limitations",
+  "080-09": "Flight Mechanics",
+  "080-10": "080-10",
+  "080-11": "080-11"
  },
  "questions": [
   {
@@ -30,6 +39,341 @@
     "Stall IAS is higher; stall TAS is approximately unchanged.",
     "Stall IAS is lower; stall TAS is higher.",
     "Both stall IAS and stall TAS are approximately unchanged."
+   ]
+  },
+  {
+   "id": 68003,
+   "section": "080-01",
+   "text": "A propeller accelerates air rearward. Which principle explains the corresponding forward reaction force on the aeroplane?",
+   "options": [
+    "Newton’s third law: equal and opposite forces.",
+    "Newton’s first law: no force is required for acceleration.",
+    "Boyle’s law: every volume decrease must produce forward thrust.",
+    "The aircraft weight must equal its engine thrust."
+   ]
+  },
+  {
+   "id": 68004,
+   "section": "080-09",
+   "text": "What is the general aerodynamic effect of raising a spoiler on a wing?",
+   "options": [
+    "It disrupts the airflow, reducing lift and increasing drag.",
+    "It increases lift and decreases drag like an ideal leading-edge slot.",
+    "It increases camber and wing area like a Fowler flap.",
+    "It increases thrust by feeding more air to the propeller."
+   ]
+  },
+  {
+   "id": 68005,
+   "section": "080-08",
+   "text": "A T-tail may be clear of the wing wake in normal flight. At a sufficiently high angle of attack, what serious condition can occur?",
+   "options": [
+    "The wing wake can blanket the high tailplane and reduce elevator effectiveness.",
+    "The tailplane automatically creates unlimited nose-down control.",
+    "The rudder becomes the main pitch control because its hinge is vertical.",
+    "The tailplane location guarantees that the aircraft cannot stall."
+   ]
+  },
+  {
+   "id": 68006,
+   "section": "080-02",
+   "text": "On the independently plotted coefficient polar, which labelled point represents the maximumCL and therefore the critical angle of attack for this illustrated aerofoil?",
+   "options": [
+    "R.",
+    "P.",
+    "Q.",
+    "S."
+   ],
+   "needs_figure": true
+  },
+  {
+   "id": 68007,
+   "section": "080-07",
+   "text": "A wing keeps the same geometric incidence along its span but uses different aerofoil sections so the tip reaches its stall later than the root. What is this design feature called?",
+   "options": [
+    "Aerodynamic washout.",
+    "Geometric washout.",
+    "Wing anhedral.",
+    "Forward sweep."
+   ]
+  },
+  {
+   "id": 68008,
+   "section": "080-04",
+   "text": "What is meant by boundary-layer separation from an aerofoil?",
+   "options": [
+    "The near-surface airflow breaks away from the aerofoil instead of following its contour.",
+    "The laminar flow becomes turbulent while remaining attached to the contour.",
+    "The oncoming flow divides into upper and lower paths at the leading edge.",
+    "The total pressure is added to the static pressure inside the pitot tube."
+   ]
+  },
+  {
+   "id": 68009,
+   "section": "080-04",
+   "text": "What is the transition point in the boundary layer over an aerofoil?",
+   "options": [
+    "The location where laminar boundary-layer flow becomes turbulent.",
+    "The location where all aerodynamic forces are represented as acting.",
+    "The point where the freestream velocity must be exactly zero.",
+    "The point where attached airflow has already separated from the surface."
+   ]
+  },
+  {
+   "id": 68010,
+   "section": "080-08",
+   "text": "After a roll disturbance, an aeroplane with positive wing dihedral sideslips towards its lower wing. What creates the restoring rolling moment?",
+   "options": [
+    "The sideslip increases the lower wing’s effective AOA and lift relative to the upper wing.",
+    "The lower wing loses all lift while the upper wing gains lift.",
+    "The rudder becomes a horizontal lifting surface as soon as bank develops.",
+    "Gravity applies a direct rolling moment about the CG even without an aerodynamic force change."
+   ]
+  },
+  {
+   "id": 68011,
+   "section": "080-05",
+   "text": "For the same air density, reference area, configuration and angle of attack, assume Reynolds-number and compressibility effects on CD are negligible. When airflow speed doubles, which statement about parasite drag and its coefficient is correct?",
+   "options": [
+    "Parasite drag becomes four times as large; its coefficient remains approximately unchanged.",
+    "Parasite drag and its coefficient both become four times as large.",
+    "Parasite drag doubles; its coefficient also doubles.",
+    "Parasite drag stays unchanged; its coefficient becomes one quarter as large."
+   ]
+  },
+  {
+   "id": 68012,
+   "section": "080-05",
+   "text": "In the drag-versus-speed diagram, which labelled curve shows parasite drag?",
+   "options": [
+    "B",
+    "A",
+    "C",
+    "The vertical axis"
+   ],
+   "needs_figure": true
+  },
+  {
+   "id": 68013,
+   "section": "080-05",
+   "text": "In the drag-versus-speed diagram, which labelled curve shows total drag?",
+   "options": [
+    "C",
+    "A",
+    "B",
+    "The horizontal axis"
+   ],
+   "needs_figure": true
+  },
+  {
+   "id": 68014,
+   "section": "080-08",
+   "text": "Which motion characterises Dutch roll?",
+   "options": [
+    "A coupled oscillation in roll and yaw.",
+    "A pure pitching oscillation with no lateral motion.",
+    "An increase in bank angle with no oscillation, followed by a spiral dive.",
+    "A vertical bounce of the landing gear while the aircraft is parked."
+   ]
+  },
+  {
+   "id": 68015,
+   "section": "080-11",
+   "text": "During straight flight, before the pilot reacts, what is the usual immediate load-factor response to (1) an upward vertical gust and (2) a downward vertical gust?",
+   "options": [
+    "(1) Increases; (2) decreases.",
+    "(1) Decreases; (2) increases.",
+    "(1) Unchanged; (2) unchanged.",
+    "(1) Decreases; (2) decreases."
+   ]
+  },
+  {
+   "id": 68016,
+   "section": "080-08",
+   "text": "Comparing otherwise similar aeroplanes with zero geometric dihedral, what is the usual contribution of placing the wing high on the fuselage rather than low?",
+   "options": [
+    "A greater stabilising dihedral effect in sideslip.",
+    "A complete elimination of all yawing moments.",
+    "A reversal of elevator operation from pitch to roll.",
+    "A requirement that the lower wing stall in every normal turn."
+   ]
+  },
+  {
+   "id": 68017,
+   "section": "080-09",
+   "text": "How can a control surface be aerodynamically balanced to reduce the force needed to deflect it?",
+   "options": [
+    "Place some surface area ahead of its hinge line so air loads assist deflection.",
+    "Add all the balancing mass behind the hinge line to increase flutter tendency.",
+    "Fit an antiservo tab which always increases hinge force.",
+    "Move the centre of gravity beyond the aircraft’s aft limit."
+   ]
+  },
+  {
+   "id": 68018,
+   "section": "080-05",
+   "text": "Where is interference drag typically generated on an aeroplane?",
+   "options": [
+    "At junctions such as the wing-fuselage intersection, where different airflows interact.",
+    "Only at the tyre-ground contact while the aircraft is parked.",
+    "Only inside the sealed fuel tanks.",
+    "Only when the engine has stopped and the propeller is windmilling."
+   ]
+  },
+  {
+   "id": 68019,
+   "section": "080-09",
+   "text": "The control column is moved right in an aeroplane with mechanically linked balance tabs. The left aileron moves down. How does its balance tab move relative to the left aileron?",
+   "options": [
+    "Up, opposing the aileron deflection and reducing control force.",
+    "Down, following the aileron and increasing control force.",
+    "It stays at a fixed angle to the aileron like a simple set trim tab.",
+    "It moves only if the elevator trim wheel is rotated."
+   ]
+  },
+  {
+   "id": 68020,
+   "section": "080-11",
+   "text": "Compared with straight-and-level flight at the same airspeed, what is normally required to maintain both altitude and airspeed in a steady coordinated level turn?",
+   "options": [
+    "A higher angle of attack and enough additional power to overcome the increased drag.",
+    "The same angle of attack with power reduced to match the lower drag.",
+    "A lower angle of attack and lower power because total lift is smaller.",
+    "A higher angle of attack with no possible change in required power."
+   ]
+  },
+  {
+   "id": 68021,
+   "section": "080-11",
+   "text": "An aeroplane weighing4,600 lbf makes a steady, coordinated, altitude-maintaining 50° banked turn. Approximately what total aerodynamic lift is required?",
+   "options": [
+    "7,160 lbf.",
+    "4,600 lbf.",
+    "2,960 lbf.",
+    "9,200 lbf."
+   ]
+  },
+  {
+   "id": 68022,
+   "section": "080-11",
+   "text": "In a steady coordinated level turn, an aeroplane’s positive load-factor limit is+2.5. Ignoring gusts and other constraints, what is the greatest bank angle that does not exceed this limit?",
+   "options": [
+    "Approximately 66°.",
+    "Approximately 45°.",
+    "Approximately 75°.",
+    "90°."
+   ]
+  },
+  {
+   "id": 68023,
+   "section": "080-05",
+   "text": "In the coefficient polar shown, which labelled point has the greatest positive CL/CD ratio and therefore the best lift-to-drag ratio?",
+   "options": [
+    "Q",
+    "P",
+    "R",
+    "S"
+   ],
+   "needs_figure": true
+  },
+  {
+   "id": 68024,
+   "section": "080-05",
+   "text": "In the coefficient polar shown, which labelled point has the smallest drag coefficient CD?",
+   "options": [
+    "P",
+    "Q",
+    "R",
+    "S"
+   ],
+   "needs_figure": true
+  },
+  {
+   "id": 68025,
+   "section": "080-09",
+   "text": "An aeroplane tends to fly right-wing-low with the controls released. It has a conventional adjustable trim tab on the left aileron and mechanically linked ailerons. What trim-tab movement produces a correcting left-roll tendency?",
+   "options": [
+    "Tab down, left aileron up and right aileron down.",
+    "Tab up, left aileron down and right aileron up.",
+    "Tab down, both ailerons down by equal amounts.",
+    "Tab up, both ailerons up by equal amounts."
+   ]
+  },
+  {
+   "id": 68026,
+   "section": "080-03",
+   "text": "At low subsonic speed, neglecting instrument and position error, density changes while an aeroplane keeps the same IAS, wing configuration and angle of attack. What happens to aerodynamic lift and drag?",
+   "options": [
+    "They remain approximately unchanged because the dynamic pressure is unchanged.",
+    "Both increase in direct proportion to density.",
+    "Lift increases while drag decreases because IAS is unchanged.",
+    "Lift decreases while drag increases because TAS must increase."
+   ]
+  },
+  {
+   "id": 68027,
+   "section": "080-10",
+   "text": "The mass of an aeroplane increases by 20%, with wing area, configuration, CG position and maximum lift coefficient unchanged. Approximately how much does its 1-g stall speed increase?",
+   "options": [
+    "About 10%.",
+    "About 20%.",
+    "About 44%.",
+    "It remains unchanged."
+   ]
+  },
+  {
+   "id": 68028,
+   "section": "080-05",
+   "text": "For comparable size, speed and other conditions, why does a streamlined body normally have less form drag than a blunt body?",
+   "options": [
+    "It promotes smoother airflow and reduces the separated wake.",
+    "It eliminates all skin friction because air viscosity becomes zero.",
+    "It produces extra lift so induced drag necessarily becomes zero.",
+    "It raises the total mass so the body no longer experiences aerodynamic force."
+   ]
+  },
+  {
+   "id": 68029,
+   "section": "080-04",
+   "text": "Compared with a laminar boundary layer under otherwise similar conditions, a turbulent boundary layer generally has which trade-off?",
+   "options": [
+    "More skin-friction drag but greater resistance to separation in an adverse pressure gradient.",
+    "Less skin-friction drag and less resistance to separation.",
+    "No skin-friction drag and immediate separation at every AOA.",
+    "The same friction but no near-surface velocity gradient."
+   ]
+  },
+  {
+   "id": 68030,
+   "section": "080-06",
+   "text": "After engine failure, what is the general aerodynamic effect of a windmilling propeller compared with the powered propeller’s thrust-producing role?",
+   "options": [
+    "It produces drag that reduces glide performance.",
+    "It continues to provide normal positive engine thrust.",
+    "It eliminates all aerodynamic drag from the aircraft.",
+    "It increases lift without affecting the aircraft’s energy."
+   ]
+  },
+  {
+   "id": 68031,
+   "section": "080-08",
+   "text": "Consider the wing’s contribution alone: its aerodynamic centre is ahead of the aircraft’s CG. If an increase in angle of attack increases wing lift, what incremental pitching effect does that lift change produce?",
+   "options": [
+    "A nose-up moment that tends to reinforce the angle-of-attack increase.",
+    "A nose-down moment that necessarily stabilises the complete aircraft.",
+    "No moment because every lift force passes through the CG.",
+    "Only a yawing moment, because pitch is controlled solely by the rudder."
+   ]
+  },
+  {
+   "id": 68032,
+   "section": "080-11",
+   "text": "What does wing loading express?",
+   "options": [
+    "Aircraft weight divided by wing area.",
+    "Wing span divided by mean chord.",
+    "Lift divided by aircraft weight.",
+    "Drag divided by available engine power."
    ]
   }
  ]

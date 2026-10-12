@@ -1,0 +1,469 @@
+{
+ "ders": "090",
+ "sorular": [
+  {
+   "kaynak": "x-linx-090",
+   "no": "3",
+   "sayfa": "2",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Menzil için anten yükseklikleri ve yayılım varsayımları eksik; CAD120NM ile Traf150NM anahtarları çelişiyor.",
+   "neden": "Menzil için anten yükseklikleri ve yayılım varsayımları eksik; CAD120NM ile Traf150NM anahtarları çelişiyor."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "7",
+   "sayfa": "2",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "CVFR tarihsel/ulusal kısaltması; güncel SERA evrensel hizmet adı gibi sunulmadı.",
+   "neden": "CVFR tarihsel/ulusal kısaltması; güncel SERA evrensel hizmet adı gibi sunulmadı."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "19",
+   "sayfa": "4",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "SID tanımı PPL kontrollü uçuş için aday; mevcut bankada yok ama bağımsız güncel tanım doğrulaması tamamlanmadı.",
+   "neden": "SID tanımı PPL kontrollü uçuş için aday; mevcut bankada yok ama bağımsız güncel tanım doğrulaması tamamlanmadı."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "24",
+   "sayfa": "5",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Standart olay sırası uçağa ve operasyon biçimine bağlı; push-back bütün PPL uçuşlarına genellenmedi.",
+   "neden": "Standart olay sırası uçağa ve operasyon biçimine bağlı; push-back bütün PPL uçuşlarına genellenmedi."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "31",
+   "sayfa": "6",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Eski5digitfrequency alternatifi güncelSERA6digit kuralıyla çelişiyor.",
+   "neden": "Eski5digitfrequency alternatifi güncelSERA6digit kuralıyla çelişiyor."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "35",
+   "sayfa": "6",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "600 sayısının bağlamı verilmemiş; rakam/whole-hundred istisnası bilgi türüne göre değişebilir.",
+   "neden": "600 sayısının bağlamı verilmemiş; rakam/whole-hundred istisnası bilgi türüne göre değişebilir."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "39",
+   "sayfa": "7",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Eski5/4ve6/4 alternatifi güncelSERA6digit kuralıyla çelişiyor.",
+   "neden": "Eski5/4ve6/4 alternatifi güncelSERA6digit kuralıyla çelişiyor."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "47",
+   "sayfa": "8",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Mevcut16339 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "50",
+   "sayfa": "8",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Mevcut16379 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "53",
+   "sayfa": "8",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "QNE actualreturn pressure/query kodu ile standartFLreferansı farklı; kaynak yalınQcodegenellemesi incelemede.",
+   "neden": "QNE actualreturn pressure/query kodu ile standartFLreferansı farklı; kaynak yalınQcodegenellemesi incelemede."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "59",
+   "sayfa": "9",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "İlkcall ile mesajaktarma zamanı bölgeselusule göre değişebilir; evrensel seçeneka anahtarı doğrulanmadı.",
+   "neden": "İlkcall ile mesajaktarma zamanı bölgeselusule göre değişebilir; evrensel seçeneka anahtarı doğrulanmadı."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "62",
+   "sayfa": "10",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Mevcut16403 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "76",
+   "sayfa": "12",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Özgün mesaj formatı/operasyon koşulu, yakın genel tanım sorusundan farklıdır; cevap dayanağı tamamlanmadan aktif değil.",
+   "neden": "Özgün mesaj formatı/operasyon koşulu, yakın genel tanım sorusundan farklıdır; cevap dayanağı tamamlanmadan aktif değil."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "86",
+   "sayfa": "13",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "SVFRmessage details sourcefirstoptionomitsposition heading; güncelprimarytamformat doğrulaması gerekiyor.",
+   "neden": "SVFRmessage details sourcefirstoptionomitsposition heading; güncelprimarytamformat doğrulaması gerekiyor."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "89",
+   "sayfa": "14",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "ANYpositiondownwindanahtarı ile belirliyerelrapornoktası ayrımı gerekir; mevcutbacakadına sessizbirleştirme yok.",
+   "neden": "ANYpositiondownwindanahtarı ile belirliyerelrapornoktası ayrımı gerekir; mevcutbacakadına sessizbirleştirme yok."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "91",
+   "sayfa": "14",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Mevcut16458 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "100",
+   "sayfa": "15",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Clearanceexpiry anahtarıpermissionwillbegranted doğru değil; tümşıklar/kök bağlamı yenidenincelenecek.",
+   "neden": "Clearanceexpiry anahtarıpermissionwillbegranted doğru değil; tümşıklar/kök bağlamı yenidenincelenecek."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "101",
+   "sayfa": "15",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Kaynakfirstoption DISREGARD diyor fakat güncelmüsaadeiptaliCANCEL; özgünanahtar yanlış.",
+   "neden": "Kaynakfirstoption DISREGARD diyor fakat güncelmüsaadeiptaliCANCEL; özgünanahtar yanlış."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "105",
+   "sayfa": "16",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "EskiRECYCLEALPHAvsgüncelRESETSQUAWK; özgünphraseology güncellenmeden aktif değil.",
+   "neden": "EskiRECYCLEALPHAvsgüncelRESETSQUAWK; özgünphraseology güncellenmeden aktif değil."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "127",
+   "sayfa": "19",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Önceden bulunan kaza: kişide ciddi/yakın tehlike belirsiz; PAN/MAYDAY seçimi bağımsız koşul incelemesi gerektirir.",
+   "neden": "Önceden bulunan kaza: kişide ciddi/yakın tehlike belirsiz; PAN/MAYDAY seçimi bağımsız koşul incelemesi gerektirir."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "128",
+   "sayfa": "19",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Gözlenen zorunlu inişin aciliyeti, yakın genel URGENCY tanımından farklıdır; özgün mesaj koşulu ayrıca doğrulanmalıdır.",
+   "neden": "Gözlenen zorunlu inişin aciliyeti, yakın genel URGENCY tanımından farklıdır; özgün mesaj koşulu ayrıca doğrulanmalıdır."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "146",
+   "sayfa": "22",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Tarihsel UK RIS hizmet adı güncel service adlarıyla aynı varsayılmadı.",
+   "neden": "Tarihsel UK RIS hizmet adı güncel service adlarıyla aynı varsayılmadı."
+  },
+  {
+   "kaynak": "x-linx-090",
+   "no": "149",
+   "sayfa": "22",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+   "konu": "Tarihsel radar advisory service için tüm trafikten standard separation iddiası doğru değil; güncel hizmet bağlamı eksik.",
+   "neden": "Tarihsel radar advisory service için tüm trafikten standard separation iddiası doğru değil; güncel hizmet bağlamı eksik."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "2",
+   "sayfa": "2",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Eski135.975 üst sınırı güncel136.975 haberleşme bandıyla uyuşmuyor; özgün cevap doğrulanmış sayılmadı.",
+   "neden": "Eski135.975 üst sınırı güncel136.975 haberleşme bandıyla uyuşmuyor; özgün cevap doğrulanmış sayılmadı."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "3",
+   "sayfa": "2",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Menzil için anten yükseklikleri ve yayılım varsayımları eksik; CAD120NM ile Traf150NM anahtarları çelişiyor.",
+   "neden": "Menzil için anten yükseklikleri ve yayılım varsayımları eksik; CAD120NM ile Traf150NM anahtarları çelişiyor."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "29",
+   "sayfa": "6",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "600 sayısının bağlamı verilmemiş; rakam/whole-hundred istisnası bilgi türüne göre değişebilir.",
+   "neden": "600 sayısının bağlamı verilmemiş; rakam/whole-hundred istisnası bilgi türüne göre değişebilir."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "41",
+   "sayfa": "7",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Mevcut16339 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "44",
+   "sayfa": "8",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Mevcut16379 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "53",
+   "sayfa": "9",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Mevcut16403 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "64",
+   "sayfa": "11",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Doğru READY FOR DEPARTURE seçeneği özgün şıklarda yok; aynı tip mevcut16421de korunur.",
+   "neden": "Doğru READY FOR DEPARTURE seçeneği özgün şıklarda yok; aynı tip mevcut16421de korunur."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "66",
+   "sayfa": "11",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Özgün mesaj formatı/operasyon koşulu, yakın genel tanım sorusundan farklıdır; cevap dayanağı tamamlanmadan aktif değil.",
+   "neden": "Özgün mesaj formatı/operasyon koşulu, yakın genel tanım sorusundan farklıdır; cevap dayanağı tamamlanmadan aktif değil."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "76",
+   "sayfa": "13",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Mevcut16458 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "105",
+   "sayfa": "18",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Özgün mesaj formatı/operasyon koşulu, yakın genel tanım sorusundan farklıdır; cevap dayanağı tamamlanmadan aktif değil.",
+   "neden": "Özgün mesaj formatı/operasyon koşulu, yakın genel tanım sorusundan farklıdır; cevap dayanağı tamamlanmadan aktif değil."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "126",
+   "sayfa": "21",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Birden çok yanıt beklemeyen mesaj şıklarda var; tek doğru soru olarak doğrulanamadı.",
+   "neden": "Birden çok yanıt beklemeyen mesaj şıklarda var; tek doğru soru olarak doğrulanamadı."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "132",
+   "sayfa": "22",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Güncel zorunlu readback QNHdir; seçeneklerin hepsinde QNH ile zorunlu olmayan bilgi birlikte veya eksik; anahtar belirsiz.",
+   "neden": "Güncel zorunlu readback QNHdir; seçeneklerin hepsinde QNH ile zorunlu olmayan bilgi birlikte veya eksik; anahtar belirsiz."
+  },
+  {
+   "kaynak": "x-traficom-090",
+   "no": "136",
+   "sayfa": "22",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+   "konu": "Alçalışta standarttan QNHye geçiş TLdedir; kökteTAdenmiş ve101hPa şıkkı da bozuk; özgün yanlış kök aktif yapılmadı.",
+   "neden": "Alçalışta standarttan QNHye geçiş TLdedir; kökteTAdenmiş ve101hPa şıkkı da bozuk; özgün yanlış kök aktif yapılmadı."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "12",
+   "sayfa": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "SID tanımı PPL kontrollü uçuş için aday; mevcut bankada yok ama bağımsız güncel tanım doğrulaması tamamlanmadı.",
+   "neden": "SID tanımı PPL kontrollü uçuş için aday; mevcut bankada yok ama bağımsız güncel tanım doğrulaması tamamlanmadı."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "17",
+   "sayfa": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Standart olay sırası uçağa ve operasyon biçimine bağlı; push-back bütün PPL uçuşlarına genellenmedi.",
+   "neden": "Standart olay sırası uçağa ve operasyon biçimine bağlı; push-back bütün PPL uçuşlarına genellenmedi."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "21",
+   "sayfa": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Menzil için anten yükseklikleri ve yayılım varsayımları eksik; CAD120NM ile Traf150NM anahtarları çelişiyor.",
+   "neden": "Menzil için anten yükseklikleri ve yayılım varsayımları eksik; CAD120NM ile Traf150NM anahtarları çelişiyor."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "32",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "CVFR tarihsel/ulusal kısaltması; güncel SERA evrensel hizmet adı gibi sunulmadı.",
+   "neden": "CVFR tarihsel/ulusal kısaltması; güncel SERA evrensel hizmet adı gibi sunulmadı."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "35",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Tarihsel radar advisory service için tüm trafikten standard separation iddiası doğru değil; güncel hizmet bağlamı eksik.",
+   "neden": "Tarihsel radar advisory service için tüm trafikten standard separation iddiası doğru değil; güncel hizmet bağlamı eksik."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "38",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Tarihsel UK RIS hizmet adı güncel service adlarıyla aynı varsayılmadı.",
+   "neden": "Tarihsel UK RIS hizmet adı güncel service adlarıyla aynı varsayılmadı."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "47",
+   "sayfa": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Mevcut16339 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "49",
+   "sayfa": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Mevcut16379 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "51",
+   "sayfa": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Eski5/4ve6/4 alternatifi güncelSERA6digit kuralıyla çelişiyor.",
+   "neden": "Eski5/4ve6/4 alternatifi güncelSERA6digit kuralıyla çelişiyor."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "53",
+   "sayfa": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Eski5digitfrequency alternatifi güncelSERA6digit kuralıyla çelişiyor.",
+   "neden": "Eski5digitfrequency alternatifi güncelSERA6digit kuralıyla çelişiyor."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "62",
+   "sayfa": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "600 sayısının bağlamı verilmemiş; rakam/whole-hundred istisnası bilgi türüne göre değişebilir.",
+   "neden": "600 sayısının bağlamı verilmemiş; rakam/whole-hundred istisnası bilgi türüne göre değişebilir."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "66",
+   "sayfa": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "QNE actualreturn pressure/query kodu ile standartFLreferansı farklı; kaynak yalınQcodegenellemesi incelemede.",
+   "neden": "QNE actualreturn pressure/query kodu ile standartFLreferansı farklı; kaynak yalınQcodegenellemesi incelemede."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "74",
+   "sayfa": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "İlkcall ile mesajaktarma zamanı bölgeselusule göre değişebilir; evrensel seçeneka anahtarı doğrulanmadı.",
+   "neden": "İlkcall ile mesajaktarma zamanı bölgeselusule göre değişebilir; evrensel seçeneka anahtarı doğrulanmadı."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "76",
+   "sayfa": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Özgün mesaj formatı/operasyon koşulu, yakın genel tanım sorusundan farklıdır; cevap dayanağı tamamlanmadan aktif değil.",
+   "neden": "Özgün mesaj formatı/operasyon koşulu, yakın genel tanım sorusundan farklıdır; cevap dayanağı tamamlanmadan aktif değil."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "79",
+   "sayfa": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Mevcut16403 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "86",
+   "sayfa": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Mevcut16458 aynı bilgi ve koşul tipini kapsar; yalnız kelime/sayı değişimi yeni soru yapılmadı.",
+   "neden": "Kaynak farklı konuşmacı/mesaj hedefi veya belirsiz kısaltma usulü soruyor; konuya göre tam eşleştirme yapılmadı."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "100",
+   "sayfa": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "SVFRmessage details sourcefirstoptionomitsposition heading; güncelprimarytamformat doğrulaması gerekiyor.",
+   "neden": "SVFRmessage details sourcefirstoptionomitsposition heading; güncelprimarytamformat doğrulaması gerekiyor."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "109",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "ANYpositiondownwindanahtarı ile belirliyerelrapornoktası ayrımı gerekir; mevcutbacakadına sessizbirleştirme yok.",
+   "neden": "ANYpositiondownwindanahtarı ile belirliyerelrapornoktası ayrımı gerekir; mevcutbacakadına sessizbirleştirme yok."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "119",
+   "sayfa": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "EskiRECYCLEALPHAvsgüncelRESETSQUAWK; özgünphraseology güncellenmeden aktif değil.",
+   "neden": "EskiRECYCLEALPHAvsgüncelRESETSQUAWK; özgünphraseology güncellenmeden aktif değil."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "129",
+   "sayfa": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Kaynakfirstoption DISREGARD diyor fakat güncelmüsaadeiptaliCANCEL; özgünanahtar yanlış.",
+   "neden": "Kaynakfirstoption DISREGARD diyor fakat güncelmüsaadeiptaliCANCEL; özgünanahtar yanlış."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "132",
+   "sayfa": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Clearanceexpiry anahtarıpermissionwillbegranted doğru değil; tümşıklar/kök bağlamı yenidenincelenecek.",
+   "neden": "Clearanceexpiry anahtarıpermissionwillbegranted doğru değil; tümşıklar/kök bağlamı yenidenincelenecek."
+  },
+  {
+   "kaynak": "x-cad-090",
+   "no": "136",
+   "sayfa": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+   "konu": "Görülenkazadaki kişinin ciddi/yakıntehlikesi belirsiz; PAN/MAYDAY bağlamınıvarsayarak birleştirme yok.",
+   "neden": "Görülenkazadaki kişinin ciddi/yakıntehlikesi belirsiz; PAN/MAYDAY bağlamınıvarsayarak birleştirme yok."
+  }
+ ]
+}

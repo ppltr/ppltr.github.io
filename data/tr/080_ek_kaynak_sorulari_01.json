@@ -17,6 +17,276 @@
     "Stall IAS azalır; stall TAS artar.",
     "Stall IAS ve stall TAS yaklaşık aynı kalır."
    ]
+  },
+  "68003": {
+   "text": "Pervane havayı geriye hızlandırıyor. Uçaktaki karşılık gelen ileri tepki kuvvetini hangi ilke açıklar?",
+   "options": [
+    "Newton’un üçüncü kanunu: eşit ve zıt kuvvetler.",
+    "Newton’un birinci kanunu: hızlanma için kuvvet gerekmez.",
+    "Boyle kanunu: her hacim azalması ileri itki üretir.",
+    "Uçağın ağırlığı motor itkisine eşit olmalıdır."
+   ]
+  },
+  "68004": {
+   "text": "Kanat üzerindeki spoiler kaldırıldığında genel aerodinamik etki nedir?",
+   "options": [
+    "Akışı bozarak kaldırmayı azaltır ve sürüklemeyi artırır.",
+    "İdeal hücum kenarı yarığı gibi kaldırmayı artırıp sürüklemeyi azaltır.",
+    "Fowler flap gibi kamburluğu ve kanat alanını artırır.",
+    "Pervaneye daha çok hava gönderip itkiyi artırır."
+   ]
+  },
+  "68005": {
+   "text": "T-kuyruk normal uçuşta kanat izinden uzak olabilir. Yeterince yüksek hücum açısında hangi ciddi durum oluşabilir?",
+   "options": [
+    "Kanat izi yüksek yatay kuyruğu örterek elevator etkinliğini azaltabilir.",
+    "Yatay kuyruk otomatik olarak sınırsız burun aşağı kontrol sağlar.",
+    "Menteşesi düşey olduğu için rudder ana pitch kumandası olur.",
+    "Kuyruk konumu uçağın stall olamayacağını garanti eder."
+   ]
+  },
+  "68006": {
+   "text": "Bağımsız çizilen katsayı polarında, gösterilen profilin azami CL değerini ve dolayısıyla kritik hücum açısını hangi etiketli nokta temsil eder?",
+   "options": [
+    "R.",
+    "P.",
+    "Q.",
+    "S."
+   ]
+  },
+  "68007": {
+   "text": "Bir kanat açıklık boyunca aynı geometrik geliş açısını koruyor, ancak farklı profil kesitleri sayesinde uç kısım kökten daha geç stall oluyor. Bu tasarım özelliğinin adı nedir?",
+   "options": [
+    "Aerodinamik washout.",
+    "Geometrik washout.",
+    "Kanat anhedral açısı.",
+    "İleri süpürme."
+   ]
+  },
+  "68008": {
+   "text": "Bir kanat profilinde sınır tabaka ayrılması ne demektir?",
+   "options": [
+    "Yüzeye yakın akışın profilin şeklini izlemek yerine yüzeyden kopması.",
+    "Laminer akışın yüzeye yapışık kalırken türbülanslıya dönüşmesi.",
+    "Gelen akışın hücum kenarında üst ve alt yollara ayrılması.",
+    "Pitot tüpünde toplam basıncın statik basınca eklenmesi."
+   ]
+  },
+  "68009": {
+   "text": "Bir kanat profili üzerindeki sınır tabakada transition point nedir?",
+   "options": [
+    "Laminer sınır tabaka akışının türbülanslı hâle geçtiği konum.",
+    "Bütün aerodinamik kuvvetlerin etkidiği kabul edilen konum.",
+    "Serbest akış süratinin mutlaka sıfır olduğu nokta.",
+    "Yüzeye yapışık akışın yüzeyden zaten ayrıldığı nokta."
+   ]
+  },
+  "68010": {
+   "text": "Pozitif dihedral açısı olan uçak, yatış bozucusundan sonra alçak kanadı yönünde sideslip yapıyor. Düzeltici yuvarlanma momentini ne oluşturur?",
+   "options": [
+    "Sideslip’in alçak kanadın etkin hücum açısını ve kaldırmasını üst kanada göre artırması.",
+    "Alçak kanadın bütün kaldırmayı kaybederken üst kanadın kaldırma kazanması.",
+    "Yatış başlayınca rudder’ın yatay kaldırma yüzeyine dönüşmesi.",
+    "Aerodinamik kuvvet değişmese bile yerçekiminin CG etrafında doğrudan yuvarlanma momenti üretmesi."
+   ]
+  },
+  "68011": {
+   "text": "Hava yoğunluğu, referans alanı, konfigürasyon ve hücum açısı aynı kalıyor. CD üzerindeki Reynolds sayısı ve sıkıştırılabilirlik etkilerini ihmal edin. Hava akış hızı iki katına çıktığında parazit sürükleme ve katsayısı için hangisi doğrudur?",
+   "options": [
+    "Parazit sürükleme dört kat olur; katsayısı yaklaşık aynı kalır.",
+    "Parazit sürükleme ve katsayısı birlikte dört kat olur.",
+    "Parazit sürükleme iki kat olur; katsayısı da iki kat olur.",
+    "Parazit sürükleme değişmez; katsayısı dörtte birine iner."
+   ]
+  },
+  "68012": {
+   "text": "Şekildeki sürükleme-sürat grafiğinde parazit sürüklemeyi hangi işaretli eğri gösterir?",
+   "options": [
+    "B",
+    "A",
+    "C",
+    "Düşey eksen"
+   ]
+  },
+  "68013": {
+   "text": "Şekildeki sürükleme-sürat grafiğinde toplam sürüklemeyi hangi işaretli eğri gösterir?",
+   "options": [
+    "C",
+    "A",
+    "B",
+    "Yatay eksen"
+   ]
+  },
+  "68014": {
+   "text": "Dutch roll hareketinin özelliği hangisidir?",
+   "options": [
+    "Yuvarlanma ve sapmanın birbirine bağlı salınımı.",
+    "Yanal hareket olmadan yalnız pitch salınımı.",
+    "Salınımsız yatış artışını izleyen spiral dalış.",
+    "Uçak park hâlindeyken iniş takımının düşey sıçraması."
+   ]
+  },
+  "68015": {
+   "text": "Düz uçuşta pilot tepki vermeden önce (1) yukarı yönlü ve (2) aşağı yönlü düşey gustın yük faktörüne olağan ilk etkisi nedir?",
+   "options": [
+    "(1) Artırır; (2) azaltır.",
+    "(1) Azaltır; (2) artırır.",
+    "(1) Değiştirmez; (2) değiştirmez.",
+    "(1) Azaltır; (2) azaltır."
+   ]
+  },
+  "68016": {
+   "text": "Geometrik dihedral açısı sıfır olan, diğer yönleri benzer uçaklar karşılaştırılıyor. Kanadı gövdenin altı yerine üstüne koymanın olağan katkısı nedir?",
+   "options": [
+    "Sideslip sırasında daha güçlü kararlı dihedral etkisi.",
+    "Bütün sapma momentlerinin tamamen ortadan kalkması.",
+    "Elevator’ın pitch yerine roll kontrol etmesi.",
+    "Her normal dönüşte alçak kanadın mutlaka stall olması."
+   ]
+  },
+  "68017": {
+   "text": "Bir kumanda yüzeyi, saptırma kuvvetini azaltmak için nasıl aerodinamik dengelenebilir?",
+   "options": [
+    "Menteşe hattının önünde yüzey alanı bırakarak hava yüklerinin sapmaya yardımcı olması sağlanır.",
+    "Dengeleme kütlesinin tamamını menteşe arkasına koyup flutter eğilimi artırılır.",
+    "Menteşe kuvvetini daima artıran bir anti-servo tab takılır.",
+    "Uçağın CG’si arka sınırın ötesine taşınır."
+   ]
+  },
+  "68018": {
+   "text": "Bir uçakta interference drag tipik olarak nerede oluşur?",
+   "options": [
+    "Kanat-gövde birleşimi gibi farklı akışların etkileştiği kavşaklarda.",
+    "Yalnız uçak park hâlindeyken lastiğin yerle temasında.",
+    "Yalnız kapalı yakıt depolarının içinde.",
+    "Yalnız motor durup pervane windmilling yaparken."
+   ]
+  },
+  "68019": {
+   "text": "Mekanik bağlı balance tabları olan bir uçakta kumanda kolu sağa getiriliyor ve sol aileron aşağı gidiyor. Sol aileronun balance tabı ana yüzeye göre nasıl hareket eder?",
+   "options": [
+    "Yukarı; aileron sapmasına ters giderek kumanda kuvvetini azaltır.",
+    "Aşağı; aileronla aynı yönde giderek kuvveti artırır.",
+    "Ayarlanmış basit trim tabı gibi ailerona göre sabit açıda kalır.",
+    "Yalnız elevator trim tekerleği çevrilirse hareket eder."
+   ]
+  },
+  "68020": {
+   "text": "Aynı süratte düz-yatay uçuşa göre, kararlı koordineli yatay dönüşte hem irtifayı hem sürati korumak için normalde ne gerekir?",
+   "options": [
+    "Daha yüksek hücum açısı ve artan sürüklemeyi karşılayacak yeterli ek güç.",
+    "Azalan sürüklemeye uygun azaltılmış güçle aynı hücum açısı.",
+    "Toplam kaldırma daha küçük olduğu için daha düşük hücum açısı ve güç.",
+    "Daha yüksek hücum açısı; gereken gücün değişmesi mümkün değildir."
+   ]
+  },
+  "68021": {
+   "text": "Ağırlığı4.600 lbf olan uçak,50° yatışla kararlı, koordineli ve irtifayı koruyan dönüş yapıyor. Yaklaşık toplam aerodinamik kaldırma ne olmalıdır?",
+   "options": [
+    "7.160 lbf.",
+    "4.600 lbf.",
+    "2.960 lbf.",
+    "9.200 lbf."
+   ]
+  },
+  "68022": {
+   "text": "Kararlı koordineli yatay dönüşte uçağın pozitif yük faktörü sınırı+2,5’tir. Gustlar ve diğer kısıtlar ihmal edilirse bu sınırı aşmayan en büyük yatış açısı nedir?",
+   "options": [
+    "Yaklaşık66°.",
+    "Yaklaşık45°.",
+    "Yaklaşık75°.",
+    "90°."
+   ]
+  },
+  "68023": {
+   "text": "Gösterilen katsayı polarında hangi işaretli noktanın pozitif CL/CD oranı, dolayısıyla kaldırma/sürükleme oranı en büyüktür?",
+   "options": [
+    "Q",
+    "P",
+    "R",
+    "S"
+   ]
+  },
+  "68024": {
+   "text": "Gösterilen katsayı polarında hangi işaretli noktanın CD sürükleme katsayısı en küçüktür?",
+   "options": [
+    "P",
+    "Q",
+    "R",
+    "S"
+   ]
+  },
+  "68025": {
+   "text": "Kumandalar bırakılınca uçak sağ kanadı alçakta uçma eğiliminde. Sol aileronda geleneksel ayarlanabilir trim tabı var ve aileronlar mekanik bağlı. Düzeltici sola yuvarlanma eğilimi hangi tab hareketiyle oluşur?",
+   "options": [
+    "Tab aşağı, sol aileron yukarı ve sağ aileron aşağı.",
+    "Tab yukarı, sol aileron aşağı ve sağ aileron yukarı.",
+    "Tab aşağı, iki aileron da eşit miktarda aşağı.",
+    "Tab yukarı, iki aileron da eşit miktarda yukarı."
+   ]
+  },
+  "68026": {
+   "text": "Düşük sesaltı hızda, alet ve konum hataları ihmal ediliyor. Yoğunluk değişirken uçak aynı IAS, kanat konfigürasyonu ve hücum açısını koruyor. Aerodinamik kaldırma ve sürükleme ne olur?",
+   "options": [
+    "Dinamik basınç değişmediği için yaklaşık aynı kalır.",
+    "İkisi de yoğunlukla doğru orantılı artar.",
+    "IAS değişmediği için kaldırma artar, sürükleme azalır.",
+    "TAS artmak zorunda olduğu için kaldırma azalır, sürükleme artar."
+   ]
+  },
+  "68027": {
+   "text": "Kanat alanı, konfigürasyon, CG konumu ve azami kaldırma katsayısı aynı kalırken uçak kütlesi %20 artıyor. 1-g stall hızı yaklaşık ne kadar artar?",
+   "options": [
+    "Yaklaşık %10.",
+    "Yaklaşık %20.",
+    "Yaklaşık %44.",
+    "Değişmez."
+   ]
+  },
+  "68028": {
+   "text": "Boyut, sürat ve diğer koşullar benzerken akışa uygun biçimlendirilmiş gövde neden küt bir gövdeden normalde daha az form drag oluşturur?",
+   "options": [
+    "Daha düzgün akış sağlayıp ayrılmış izi azalttığı için.",
+    "Havanın viskozitesi sıfır olduğu için bütün yüzey sürtünmesini yok ettiğinden.",
+    "Ek kaldırma üretip induced dragı mutlaka sıfırladığından.",
+    "Toplam kütleyi artırıp aerodinamik kuvveti kaldırdığından."
+   ]
+  },
+  "68029": {
+   "text": "Diğer koşullar benzerken türbülanslı sınır tabakanın laminer tabakaya göre genel özelliği hangisidir?",
+   "options": [
+    "Daha fazla yüzey sürtünme sürüklemesi; ancak ters basınç gradyanında ayrılmaya daha fazla direnç.",
+    "Daha az yüzey sürtünmesi ve ayrılmaya daha az direnç.",
+    "Sıfır yüzey sürtünmesi ve her hücum açısında hemen ayrılma.",
+    "Aynı sürtünme; ancak yüzeye yakın hız gradyanı olmaması."
+   ]
+  },
+  "68030": {
+   "text": "Motor arızasından sonra windmilling yapan pervanenin, motor gücüyle itki üretmesine göre genel aerodinamik etkisi nedir?",
+   "options": [
+    "Süzülme performansını azaltan sürükleme üretir.",
+    "Normal pozitif motor itkisinin tamamını üretmeye devam eder.",
+    "Uçağın bütün aerodinamik sürüklemesini yok eder.",
+    "Uçağın enerjisini etkilemeden kaldırmayı artırır."
+   ]
+  },
+  "68031": {
+   "text": "Yalnız kanadın katkısı değerlendiriliyor: aerodinamik merkezi uçağın CG’sinin önünde. Hücum açısının artması kanat kaldırmasını artırırsa bu kaldırma değişimi hangi ek pitch etkisini üretir?",
+   "options": [
+    "Hücum açısı artışını güçlendirme eğiliminde bir burun yukarı moment.",
+    "Bütün uçağı mutlaka kararlı yapan bir burun aşağı moment.",
+    "Her kaldırma kuvveti CG’den geçtiği için moment oluşmaması.",
+    "Pitch yalnız rudder ile kontrol edildiği için yalnız sapma momenti."
+   ]
+  },
+  "68032": {
+   "text": "Kanat yüklemesi neyi ifade eder?",
+   "options": [
+    "Uçak ağırlığının kanat alanına bölünmesini.",
+    "Kanat açıklığının ortalama veter uzunluğuna bölünmesini.",
+    "Kaldırmanın uçak ağırlığına bölünmesini.",
+    "Sürüklemenin kullanılabilir motor gücüne bölünmesini."
+   ]
   }
  }
 }

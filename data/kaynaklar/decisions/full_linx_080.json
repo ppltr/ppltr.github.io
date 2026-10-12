@@ -1,0 +1,2834 @@
+{
+ "schema_version": 1,
+ "audit_date": "2026-10-13",
+ "subject_code": "080",
+ "sources": [
+  {
+   "id": "x-linx-080",
+   "ad": "Linx Aviation publicly linked PPL(A) 080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "tur": "pdf",
+   "checked_at": "2026-10-13",
+   "erisim": "acik",
+   "subject": "080",
+   "total_scanned": 150,
+   "pdf_sha256": "39390f5d0cdfa4cb9e04e26e93f7c7bb8bd7ef0af0aa20066232a90d72506a4d",
+   "pdf_pages": 23,
+   "index_url": "https://linxaviation.rs/training/",
+   "coverage": "All150numbered rows and allpages read. Original appendices visually inspected:020pages26–27,080page23. Some original items intentionally contain only3options; others have malformed markers or incorrect declaredAanswers, identified for review.",
+   "erisim_notu": "Normal publicly linkedPDFretrieved without account/challenge bypass. Available historicCAD-familybank, not proof of current liveexam coverage.",
+   "kullanim_notu": "Public factreading for comparison only; source protected wording/options/artwork not republished. Any new question is independently authored and verified with currentprimaryFAA.",
+   "counts": {
+    "existing": 126,
+    "review": 23,
+    "new": 1
+   }
+  }
+ ],
+ "candidates": [
+  {
+   "key": "linx:polar-critical-cl",
+   "section": "080-02",
+   "text": "On the independently plotted coefficient polar, which labelled point represents the maximumCL and therefore the critical angle of attack for this illustrated aerofoil?",
+   "options": [
+    "R.",
+    "P.",
+    "Q.",
+    "S."
+   ],
+   "tr_text": "Bağımsız çizilen katsayı polarında, gösterilen profilin azami CL değerini ve dolayısıyla kritik hücum açısını hangi etiketli nokta temsil eder?",
+   "tr_options": [
+    "R.",
+    "P.",
+    "Q.",
+    "S."
+   ],
+   "explanation_en": "R is the highest point inCL. Beyond it the illustrated post-stall branch losesCL while drag increases. BestL/D is instead found by an origin tangent, so it is a different point.",
+   "explanation_tr": "R, CL’nin en yüksek olduğu noktadır. Sonraki stall kolunda CL düşerken sürükleme artar. En iyi L/D ise orijinden teğetle bulunur; aynı nokta değildir.",
+   "sources": [
+    {
+     "source": "x-linx-080",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+     "no": "139",
+     "page": "21; appendix23(PDF1-based)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/07_phak_ch5.pdf",
+     "section": "PHAK Chapter5, ForcesActingontheAircraft, Figure5-5:CL increases tocriticalAOA/CLMAX then decreases; primary passage read2026-10-13."
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_id": 16140,
+   "distinctness_evidence": "16140 asks textualstall-AOA/CLmax relationship. This asks identifying the PEAK in a coefficientPOLAR, distinguishing maximumCL from minimumCD and origin-tangent bestL/D; no existing polar critical-point graphic exercise found.",
+   "needs_figure": true,
+   "figure_name": "ppl_coefficient_polar_20261012.svg"
+  }
+ ],
+ "existing_notes": [],
+ "decisions": [
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "1",
+   "page": "2",
+   "key": "x-linx-080:1",
+   "raw_question_sha256": "b42ada5ce95f7cc04287272d2beb037635ba937f1770f24f884b0e986c9ee5d9",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "1",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16078,
+   "reason": "Same tested fact or operating condition as bank 16078: Density: Answer: Reduces with altitude increase.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16078 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "2",
+   "page": "2",
+   "key": "x-linx-080:2",
+   "raw_question_sha256": "2ef3f251a145206fd6d62ceb4120646500ec4deef2f9a95737fd96a81739fd38",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "2",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16085,
+   "reason": "Same tested fact or operating condition as bank 16085: The air pressure that acts on anything immersed in it: Answer: Is also known as Static Pressure.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16085 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "3",
+   "page": "2",
+   "key": "x-linx-080:3",
+   "raw_question_sha256": "aa47e742ffd9453ad50706622167e915250a7a32c19eb2c63df480755cc31b09",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "54",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16077,
+   "reason": "Same tested fact or operating condition as bank 16077: If, on a given day, the actual outside air temperature at 4000 ft is 23°C, what is the approximate difference between the actual and ISA temperature? Answer: 16°C.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16077 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "4",
+   "page": "2",
+   "key": "x-linx-080:4",
+   "raw_question_sha256": "72bd9dce9e0cc42943b816fc71ee8596ac572b5a30c85574acc83ff9d2e550ac",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "3",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16070,
+   "reason": "Same tested fact or operating condition as bank 16070: The presence of water vapour: Answer: In air will reduce its density.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16070 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "5",
+   "page": "2",
+   "key": "x-linx-080:5",
+   "raw_question_sha256": "ca2cc71adf0c14768112b40ab46ee754f2b22905bd4544521d1778fe6a630b72",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "4",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16081,
+   "reason": "Same tested fact or operating condition as bank 16081: When considering the changes in density of the air with altitude, which of the following four options is correct? Answer: The reduction in pressure with increasing altitude causes density to reduce.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16081 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "6",
+   "page": "2",
+   "key": "x-linx-080:6",
+   "raw_question_sha256": "d29b6a19ee6f61a1cacf00dcd45cb66ac9cf5c85ac025a45ec4a3060e166f095",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "51",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16073,
+   "reason": "Same tested fact or operating condition as bank 16073: The respective percentages of the four most abundant gases that make up the atmosphere are? Answer: Nitrogen 78% Oxygen 21% Argon 0.95% Carbon Dioxide 0.05%. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16073 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "7",
+   "page": "3",
+   "key": "x-linx-080:7",
+   "raw_question_sha256": "7c9243fd55ac1499ecbec2d40ef3de6e869e55f22789d47bf58f99ac661c7a0f",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "50",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16071,
+   "reason": "Same tested fact or operating condition as bank 16071: The properties of the Earth’s atmosphere which influence the performance of aircraft are: Answer: Its water vapour content, temperature, pressure and density.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16071 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "8",
+   "page": "3",
+   "key": "x-linx-080:8",
+   "raw_question_sha256": "56e26d85de58b84b7752c3fbbdbfb479a2aa71e3d027e41ff6827f49b7270379",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "5",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16068,
+   "reason": "Same tested fact or operating condition as bank 16068: Assuming that the pressure at sea level is lSA, but the temperature is 10°C higher than lSA, the density will be: Answer: Less than ISA.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16068 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "9",
+   "page": "3",
+   "key": "x-linx-080:9",
+   "raw_question_sha256": "cd34deeda388570a80134dd1b51fda8406a0e7388dd61a05541f84cc8d85c249",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "6",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16087,
+   "reason": "Same tested fact or operating condition as bank 16087: Air pressure: Answer: Acts in all directions.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16087 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "10",
+   "page": "3",
+   "key": "x-linx-080:10",
+   "raw_question_sha256": "7c7a06dfc9915607b827a4ce82424e75b73badb916bc7982bbb56e4dad0717cd",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "47",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16074,
+   "reason": "Same tested fact or operating condition as bank 16074: A piston engine aircraft flies in that layer of the atmosphere called: Answer: The Troposphere.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16074 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "11",
+   "page": "3",
+   "key": "x-linx-080:11",
+   "raw_question_sha256": "5fdbf50e2078182c72c045a1730678a8f07870d6ebaf21282015886442c8abc5",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "7",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16288,
+   "reason": "Same tested fact or operating condition as bank 16288: In straight and level powered flight the following principal forces act on an aircraft: Answer: Thrust lift. drag, weight. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16288 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "12",
+   "page": "3",
+   "key": "x-linx-080:12",
+   "raw_question_sha256": "d3426d4fd9f249c452d8dd28e71d129e2850bf7d666d4eff1911683f859e9c07",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "8",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16065,
+   "reason": "Same tested fact or operating condition as bank 16065: The unit of force is the: Answer: Newton.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16065 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "13",
+   "page": "3",
+   "key": "x-linx-080:13",
+   "raw_question_sha256": "978990f19e70cdbfa261bec5b08c59c9fb9d106d05dca4c458461018f989fccd",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "9",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16089,
+   "reason": "Same tested fact or operating condition as bank 16089: The dynamic pressure exerted on an aircraft's frontal surface is equal to: Answer: Half the density times the true airspeed squared.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16089 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "14",
+   "page": "3",
+   "key": "x-linx-080:14",
+   "raw_question_sha256": "5759b8a2c941c38116e030769fb824e36c1f76c9fd1f2b355bfd953235a68713",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "10",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16106,
+   "reason": "Same tested fact or operating condition as bank 16106: Relative airflow is _____ and _____ the movement of the aircraft. Answer: Parallel to - Opposite to. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16106 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "15",
+   "page": "4",
+   "key": "x-linx-080:15",
+   "raw_question_sha256": "e0673c4455906321b3ec499f4cfb370a4f3cbe47189b842933fe0aee65972166",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "11",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16118,
+   "reason": "Same tested fact or operating condition as bank 16118: The terms 'q' and 'S' in the lift formula Answer: dynamic pressure and wing area. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16118 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "16",
+   "page": "4",
+   "key": "x-linx-080:16",
+   "raw_question_sha256": "bacd3f1248011aea66c53bf091ca6998d2111c3c87c7ce1a4b81e4339e967ca6",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "12",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16124,
+   "reason": "Same tested fact or operating condition as bank 16124: The air flow over the wing’s upper surface in straight and level flight, when compared with the air flow that is unaffected by the wing, will have: Answer: A higher velocity.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16124 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "17",
+   "page": "4",
+   "key": "x-linx-080:17",
+   "raw_question_sha256": "b23464543dd6ab731be302f788be4e5f62c1da7cb59a21b61af8297653cad372",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "13",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16120,
+   "reason": "Same tested fact or operating condition as bank 16120: If the Angle of Attack and other factors remain constant, and the airspeed is doubled, lift will be: Answer: Quadrupled(Four times).. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16120 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "18",
+   "page": "4",
+   "key": "x-linx-080:18",
+   "raw_question_sha256": "6ba1cd02d29f252a6e04043d1881b516d52bf6105eb221b453ad5db0c050ad63",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "65",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16295,
+   "reason": "Same tested fact or operating condition as bank 16295: An aircraft has a nose down pitching moment due to the lift/weight couple and a nose up pitching moment due to the thrust/drag couple. When power is increased: Answer: It will pitch nose up.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16295 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "19",
+   "page": "4",
+   "key": "x-linx-080:19",
+   "raw_question_sha256": "ee5a5b30e5855e8ca50453ccd01dd9f2814ad8a11feed0a69e6f8d97d69b7e0c",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "14",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16289,
+   "reason": "Same tested fact or operating condition as bank 16289: Considering the forces acting upon an aeroplane, at constant airspeed, which statement is correct? Answer: Weight always acts vertically downwards towards the centre of the Earth.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16289 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "20",
+   "page": "4",
+   "key": "x-linx-080:20",
+   "raw_question_sha256": "d7d3a30d8facd1b6b5ea3f509e1c7d721290596d8ade45abf0e54691aae1df72",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "15",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16127,
+   "reason": "Same tested fact or operating condition as bank 16127: What pressure pattern can be observed at a lift-generating wing profile at positive angle of attack? Answer: Low pressure is created above, higher pressure below the profile. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16127 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "21",
+   "page": "4",
+   "key": "x-linx-080:21",
+   "raw_question_sha256": "cbf9db5559a97b2ab6703e6fb50aad5d2ce0189e2dae8310eb45d137150422a8",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "16",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16099,
+   "reason": "Same tested fact or operating condition as bank 16099: If the cross sectional area of an airflow is reduced: Answer: The mass flow remains constant and the velocity of the airflow increases.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16099 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "22",
+   "page": "5",
+   "key": "x-linx-080:22",
+   "raw_question_sha256": "957277b1e81f57e02b82ae78deb7ef8eec77113e6b700929b5cade94a9c03973",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "17",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16083,
+   "reason": "Same tested fact or operating condition as bank 16083: For [pt = total pressure; ps = static pressure; q = dynamic pressure] Bernoulli's equation can be written as: Answer: pt - q = ps. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16083 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "23",
+   "page": "5",
+   "key": "x-linx-080:23",
+   "raw_question_sha256": "79bb6e3474028d324cec2f520ed2d8baa0049643a2e7b32eca78d07752126551",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "18",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16090,
+   "reason": "Same tested fact or operating condition as bank 16090: When considering air: 1- Air has mass 2- Air is not compressible 3- Air is able to flow or change its shape when subject to even small pressures 4- The viscosity of air is very high 5- Moving air has kinetic energy The correct combination of all true statements is: Answer: 1, 3, and 5.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16090 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "24",
+   "page": "5",
+   "key": "x-linx-080:24",
+   "raw_question_sha256": "b1f3853464bb72713cb5d529be76acbff376cb15a12e1da256147fe1235ae855",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "19",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16250,
+   "reason": "Same tested fact or operating condition as bank 16250: An aircraft rotates about: Answer: Its centre of gravity (CG). Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16250 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "25",
+   "page": "5",
+   "key": "x-linx-080:25",
+   "raw_question_sha256": "7a9ab6e7e709540ec9e5caf225f27b87518bcf14e12d37a6347134b9d34ada4e",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "70",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16061,
+   "reason": "Same tested fact or operating condition as bank 16061: An aircraft's mass is a result of: Answer: How much matter it contains.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16061 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "26",
+   "page": "5",
+   "key": "x-linx-080:26",
+   "raw_question_sha256": "e968c990c3156faabf2cc0626d552ae0994f68a7cc9e0077c55f7eb41d55d7f9",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "20",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16083,
+   "reason": "Same tested fact or operating condition as bank 16083: For [pt = total pressure; ps = static pressure; q = dynamic pressure] Bernoulli's equation can be written as: Answer: pt - q = ps. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16083 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "27",
+   "page": "5",
+   "key": "x-linx-080:27",
+   "raw_question_sha256": "f13ceb9537a551d33ab393c21d974a3e02ea8f0206ac89c39668321e4d520942",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "21",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16097,
+   "reason": "Same tested fact or operating condition as bank 16097: If the velocity of an air mass is increased: Answer: The kinetic energy will increase, the dynamic pressure will increase and the static pressure will decrease.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16097 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "28",
+   "page": "6",
+   "key": "x-linx-080:28",
+   "raw_question_sha256": "94c64255fd048566fa339262fcb99f62a5cc69fde8b19ec9df052b488bdc8381",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "22",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16187,
+   "reason": "Same tested fact or operating condition as bank 16187: The boundary layer consists of: Answer: Laminar and Turbulent flow.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16187 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "29",
+   "page": "6",
+   "key": "x-linx-080:29",
+   "raw_question_sha256": "035dfc7292ffcd6922147a8ef285fb9b4b75982a181a30a4643fe518b6a1f68e",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "23",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16291,
+   "reason": "Same tested fact or operating condition as bank 16291: What must be the relationship between the forces acting on an aircraft in flight, for that aircraft to be in a state of equilibrium? Answer: Lift must equal weight, and thrust must equal drag.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16291 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "30",
+   "page": "6",
+   "key": "x-linx-080:30",
+   "raw_question_sha256": "923a97073580f99af8e09ab293ebacf0d4cfaed77e44c80804fcc628fe4ec95e",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "24",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16186,
+   "reason": "Same tested fact or operating condition as bank 16186: The smooth flow of air, where each molecule follows the path of the preceding molecule, is a definition of: Answer: Laminar flow.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16186 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "31",
+   "page": "6",
+   "key": "x-linx-080:31",
+   "raw_question_sha256": "c678e35fffde6789e2c8dbf8679129ded66a434302914ae7379b2f8e93de763a",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "25",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16098,
+   "reason": "Same tested fact or operating condition as bank 16098: In sub-sonic airflow, as air passes through a venturi, the mass flow … , the velocity … and the static pressure … . Answer: Remains constant / increases then decreases / decreases then increases.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16098 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "32",
+   "page": "6",
+   "key": "x-linx-080:32",
+   "raw_question_sha256": "32326bd31397fd577055c0f6ae460782885dfdd38ce2254de0deaf6ff2adfc6e",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "26",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16084,
+   "reason": "Same tested fact or operating condition as bank 16084: A moving mass of air possesses kinetic energy. An object placed in the path of such a moving mass of air will be subject to: Answer: Static pressure and dynamic pressure.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16084 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "33",
+   "page": "6",
+   "key": "x-linx-080:33",
+   "raw_question_sha256": "39093aaf729891ad1c4f0529601bd759808518d3e7168435f15faba87dd3a2f7",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "27",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16088,
+   "reason": "Same tested fact or operating condition as bank 16088: Dynamic Pressure may be expressed by the formula: Answer: Q=1/2ρV2. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16088 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "34",
+   "page": "6",
+   "key": "x-linx-080:34",
+   "raw_question_sha256": "c0ee61dbc1fcf55d30511f13e28ae55001fa9070a8055c5028b1668b5bec1a68",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "28",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16155,
+   "reason": "Same tested fact or operating condition as bank 16155: As airspeed increases, induced drag: Answer: Decreases.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16155 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "35",
+   "page": "7",
+   "key": "x-linx-080:35",
+   "raw_question_sha256": "14c2cb964f5558f38108641ead0b0eac491e599f4cca8b4aa63a2308cf0ab1f2",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "60",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16121,
+   "reason": "Same tested fact or operating condition as bank 16121: As Indicated Air Speed (IAS) is reduced, in order to maintain altitude, the pilot must: Answer: Increase the angle of attack to maintain the correct lift force.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16121 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "36",
+   "page": "7",
+   "key": "x-linx-080:36",
+   "raw_question_sha256": "c232a2f0e5bd9054dea1b35734d9fddc6d1ca0abd84e99a2b04d44bd9cc47423",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "30",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16149,
+   "reason": "Same tested fact or operating condition as bank 16149: That portion of the aircraft's total drag created by the production of lift is called: Answer: Induced drag, which is greatly affected by changes in airspeed.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16149 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "37",
+   "page": "7",
+   "key": "x-linx-080:37",
+   "raw_question_sha256": "c6eb1470e4d0c9e20912cf9c8f659e6f84b0710a77c5253ce978354a368c9762",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "36",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16129,
+   "reason": "Same tested fact or operating condition as bank 16129: By changing the Angle of Attack of a wing, the pilot can control the aeroplane’s: Answer: Lift, airspeed, and drag.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16129 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "38",
+   "page": "7",
+   "key": "x-linx-080:38",
+   "raw_question_sha256": "5bb7e17b88a4e3a8924d230fca0021c6a5fb5a92c2fb2f2bec833733d75cc5b3",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "67",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16145,
+   "reason": "Same tested fact or operating condition as bank 16145: Resistance, or skin friction, due to the viscosity of the air as it passes along the surface of a wing, is a type of: Answer: Parasite drag.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16145 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "39",
+   "page": "7",
+   "key": "x-linx-080:39",
+   "raw_question_sha256": "7560abcd577894e721d6a91a45b8651096f8cee886d3bfd8d672b2f0fba3a1ca",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "31",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16148,
+   "reason": "Same tested fact or operating condition as bank 16148: If the indicated Air Speed of an aircraft is increased from 50 kts to 100 kts, parasite drag will be: Answer: Four times greater.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16148 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "40",
+   "page": "7",
+   "key": "x-linx-080:40",
+   "raw_question_sha256": "1f68b575c8eefd46e3bd58bae475d49e2c937ca9055b073114fc70b989ca7f8e",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "32",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16101,
+   "reason": "Same tested fact or operating condition as bank 16101: An imaginary straight line running from the leading edge of an aerofoil to its trailing edge, is called the: Answer: Chord line. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16101 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "41",
+   "page": "7",
+   "key": "x-linx-080:41",
+   "raw_question_sha256": "f2eab65ec2b789629805098867421d4d9171044148ffa983e05c4dee7737aad3",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "33",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16143,
+   "reason": "Same tested fact or operating condition as bank 16143: A positively cambered aerofoil starts to produce lift at an angle of attack of approximately: Answer: Minus 4 degrees.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16143 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "42",
+   "page": "8",
+   "key": "x-linx-080:42",
+   "raw_question_sha256": "5eb89ef6ac2f7e407ca51ff544989f0aa16899f2cce56e809c1af3bca962416e",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "34",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16108,
+   "reason": "Same tested fact or operating condition as bank 16108: On an aerofoil section, the force of Iift acts perpendicular to, and the force of drag acts Answer: Flightpath.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16108 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "43",
+   "page": "8",
+   "key": "x-linx-080:43",
+   "raw_question_sha256": "0eb5ecbecca613d3edbc5b2af168001732862f1f2938fdc4caab507646a1a74d",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "35",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16162,
+   "reason": "Same tested fact or operating condition as bank 16162: As airspeed increases induced drag _____ , parasite drag _____ and total drag _____ . Answer: Decreases, Increases, Decreases then increases. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16162 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "44",
+   "page": "8",
+   "key": "x-linx-080:44",
+   "raw_question_sha256": "d98ee31c30306d0c1792c696d994727883b06721b9a098b26f60fb6ebf406a5a",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "36",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16165,
+   "reason": "Same tested fact or operating condition as bank 16165: If in level flight the airspeed decreases below that for maximum Lift/Drag, the effect will be that: Answer: Drag increases because of increased induced drag.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16165 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "45",
+   "page": "8",
+   "key": "x-linx-080:45",
+   "raw_question_sha256": "61c39980a74c67415837ee06f9db96a7dc3ce965fd2575c290fdc725f5d6cbdd",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "37",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16103,
+   "reason": "Same tested fact or operating condition as bank 16103: The angle of attack is the angle between... Answer: the chord line and the oncoming airflow.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16103 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "46",
+   "page": "8",
+   "key": "x-linx-080:46",
+   "raw_question_sha256": "48bcc6bcff0b45eac57ff99aac3a994ad2cf4b7f8b4282560d08f96df3b89c37",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "38",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16172,
+   "reason": "Same tested fact or operating condition as bank 16172: A typical stalling angle of attack for an training aircraft wing is about: Answer: 16°. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16172 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "47",
+   "page": "8",
+   "key": "x-linx-080:47",
+   "raw_question_sha256": "60746505e4b34058d8222bb521e3c5168d7a7cce6a541a44b236e0ded201328e",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "39",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16130,
+   "reason": "Same tested fact or operating condition as bank 16130: If an aircraft is maintaining a constant angle of attack but increases its airspeed this will cause: Answer: an increase of both lift and drag.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "16130 sabit hücum açısında süratin değişmesinin kaldırma ve sürüklemeyi aynı yönde değiştirmesini sınar. Burada yön ters çevrilse de sabit AOA/dinamik basınç kuralı ve mantığı aynı; yeni koşul veya istisna yok."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "48",
+   "page": "8",
+   "key": "x-linx-080:48",
+   "raw_question_sha256": "c4055bd424c51a72e030e4f8b637edd368bc7e409d12442f8bbf7e948381c117",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "40",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16120,
+   "reason": "Same tested fact or operating condition as bank 16120: If the Angle of Attack and other factors remain constant, and the airspeed is doubled, lift will be: Answer: Quadrupled(Four times).. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16120 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "49",
+   "page": "8",
+   "key": "x-linx-080:49",
+   "raw_question_sha256": "d5cf066cce051cbcf7c4e7c53deaac62e9bbb3b191eb519759854eb5f03aae58",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "41",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16107,
+   "reason": "Same tested fact or operating condition as bank 16107: Lift is perpendicular to the…………..: Answer: relative airflow.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16107 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "50",
+   "page": "9",
+   "key": "x-linx-080:50",
+   "raw_question_sha256": "8ed237fd85f384b2967c6f72fe5caa458e8e8b70c33eb1b199d79b18cf673713",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "42",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16119,
+   "reason": "Same tested fact or operating condition as bank 16119: Which of the answer options most correctly completes the sentence? The amount of lift a wing produces is directly proportional to: Answer: The air density.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16119 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "51",
+   "page": "9",
+   "key": "x-linx-080:51",
+   "raw_question_sha256": "2d6aab1910439e7f118ce24fc553173cfdcd6d605129dbc7197193bed365ff3b",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "43",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16140,
+   "reason": "Same tested fact or operating condition as bank 16140: The maximum value of the Coefficient of Lift is found: Answer: At the stalling angle of attack.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16140 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "52",
+   "page": "9",
+   "key": "x-linx-080:52",
+   "raw_question_sha256": "640a98be4d22935939633419723ff474c8073c95a40f7c3846fad24dda3b56ee",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "44",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:same-ias-density",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68026
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "53",
+   "page": "9",
+   "key": "x-linx-080:53",
+   "raw_question_sha256": "bdd1a59bbca8deac85234f818f0fc796799cc271a83c0353c84a67e23d81a66b",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "4",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16128,
+   "reason": "Same tested fact or operating condition as bank 16128: An aerofoil section is designed to produce lift resulting from a difference in the: Answer: Higher air pressure below the surface and lower air pressure above the surface.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16128 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "54",
+   "page": "9",
+   "key": "x-linx-080:54",
+   "raw_question_sha256": "3ff3f04d2343411bd1d81aecae5a90ac8145ad9928445a3fbdbbb997183fab5e",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "45",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16214,
+   "reason": "Same tested fact or operating condition as bank 16214: Full flaps should be selected when: Answer: Committed to land.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16214 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "55",
+   "page": "9",
+   "key": "x-linx-080:55",
+   "raw_question_sha256": "0fca8ed4a4d242b804698b35ffff75bd75299db0854d1711cc78c06c7a64e357",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "46",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16115,
+   "reason": "Same tested fact or operating condition as bank 16115: A wing which is inclined downwards from root to tip is said to have: Answer: Anhedral. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16115 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "56",
+   "page": "9",
+   "key": "x-linx-080:56",
+   "raw_question_sha256": "350f9ddfb463a183ae8ad6faf285ef72d7e981c6a200f95b8096ba87913da3c2",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "47",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16240,
+   "reason": "Same tested fact or operating condition as bank 16240: When the C of G is close to the forward limit: Answer: Very high stick forces are required to pitch because the aircraft is very stable.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16240 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "57",
+   "page": "9",
+   "key": "x-linx-080:57",
+   "raw_question_sha256": "ca46b1378f7e37583f4f6281411ffac28a02cd30d255e24b62de9b0df5edf7b6",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "29",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:dutch-roll",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68014
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "58",
+   "page": "10",
+   "key": "x-linx-080:58",
+   "raw_question_sha256": "beaad667e972ab5e55642c91bd5ba7e5386766dcd31cf12be6b3a85201159bdd",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "48",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16232,
+   "reason": "Same tested fact or operating condition as bank 16232: A stable aeroplane will: Answer: Have a built-in tendency to return to its original state following the removal of any disturbing force.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16232 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "59",
+   "page": "10",
+   "key": "x-linx-080:59",
+   "raw_question_sha256": "d860153d89e681db5d8a5e9e02868a69249c00a6feedf9a72128d2a99ed24e14",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "49",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16236,
+   "reason": "Same tested fact or operating condition as bank 16236: After a disturbance in pitch, an aircraft oscillates in lateral axis with increasing amplitude. It is: Answer: Statically stable but dynamically unstable.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16236 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "60",
+   "page": "10",
+   "key": "x-linx-080:60",
+   "raw_question_sha256": "5a178ad2f957397ceef75bf9ee4569933118dae7da31417d4925fae17e8d0494",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "34",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16247,
+   "reason": "Same tested fact or operating condition as bank 16247: lf a disturbing force causes an aircraft to roll: Answer: Wing dihedral will cause a rolling moment which tends to correct the sideslip.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16247 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "61",
+   "page": "10",
+   "key": "x-linx-080:61",
+   "raw_question_sha256": "7296bdd984e9ed41d68979e676d458cc6f52e896d99ccf3fd7e2de046b61bf84",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "33",
+    "lexical_similarity": 0.843,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:wing-ac-forward-cg",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68031
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "62",
+   "page": "10",
+   "key": "x-linx-080:62",
+   "raw_question_sha256": "5c0a60abaf168828471137438db407df169e9f14ef32c4699cb8a3d7f209003e",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "50",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "review",
+   "reason": "Tail force direction alone cannot universally describe a pitch disturbance without initial trim, tail incidence and derivative assumptions. Existing16294 retains the specified lift/weight balancing couple. Linx full text/options inspected; original diagram available where noted does not remove this factual ambiguity.",
+   "reason_tr": "İnceleme: Tail force direction alone cannot universally describe a pitch disturbance without initial trim, tail incidence and derivative assumptions. Existing16294 retains the specified lift/weight balancing couple."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "63",
+   "page": "10",
+   "key": "x-linx-080:63",
+   "raw_question_sha256": "35f8320761942c61fe5e28be7243424aa565c3e85120d582c7bdf858f8021976",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "31",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:dihedral-cause",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68010
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "64",
+   "page": "10",
+   "key": "x-linx-080:64",
+   "raw_question_sha256": "45d93a78dad7f57772b6589eb3e2fc54eeaa00ef0ff6af2186256a7f397d3f3b",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "51",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16231,
+   "reason": "Same tested fact or operating condition as bank 16231: When an aircraft is disturbed from its established flight path by, for example, turbulence, it is said to have positive stability if it subsequently: Answer: Re-establishes its original flight path without any input from the pilot.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16231 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "65",
+   "page": "11",
+   "key": "x-linx-080:65",
+   "raw_question_sha256": "178123b0ff63ecbf79d78f70f0b4df188a277e85a6b19ebe248ac28fbb694471",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "52",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 14835,
+   "reason": "Same tested fact or operating condition as bank 14835: If the Centre of Gravity is in behind of the aft limit, which one of the following is not one of its effects? Answer: It is easier to maintain the glide angle due to aircraft pitching upward trend.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 14835 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "66",
+   "page": "11",
+   "key": "x-linx-080:66",
+   "raw_question_sha256": "b6e609ecad022a91aa2f0a41c98ac6c02a33445736119d52c744b7809832850e",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "53",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 14924,
+   "reason": "Same tested fact or operating condition as bank 14924: When using appropriate flaps setting for take-off (compared with clean wing take-off), take-off roll ..., and .... ground distance is required to finish the initial climb to 50 ft. Take-off distance required in general ... Answer: decreases - longer - decreases.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 14924 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "67",
+   "page": "11",
+   "key": "x-linx-080:67",
+   "raw_question_sha256": "081cab6b81e176525a97787a28db6931f0ecee06c411f3826f6d25ce22677ea7",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "54",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16210,
+   "reason": "Same tested fact or operating condition as bank 16210: With the flaps Iowered, the stalling speed will: Answer: Decrease.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16210 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "68",
+   "page": "11",
+   "key": "x-linx-080:68",
+   "raw_question_sha256": "ee6d2433c597a85a7bfa30a26defd3527e8372e6853672cbf8e4de44eb7fc0a3",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "55",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16233,
+   "reason": "Same tested fact or operating condition as bank 16233: When an aeroplane is disturbed from its trimmed attitude, for instance when entering turbulent air, it is said to have neutral stability if it consequently: Answer: remains in the new attitude.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16233 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "69",
+   "page": "11",
+   "key": "x-linx-080:69",
+   "raw_question_sha256": "8594d539e6b533429e5304037cec40fa299a2536670f8424bd2eca73783e98b8",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "56",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "review",
+   "reason": "Landing CG must be checked after fuel burn, but nearest53002 onlytests movement. Parent030 owns the complete landing-limit check adaptation; avoid a new duplicate. Linx full text/options inspected; original diagram available where noted does not remove this factual ambiguity.",
+   "reason_tr": "İnceleme: Landing CG must be checked after fuel burn, but nearest53002 onlytests movement. Parent030 owns the complete landing-limit check adaptation; avoid a new duplicate."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "70",
+   "page": "11",
+   "key": "x-linx-080:70",
+   "raw_question_sha256": "3a4f7ee06ab1abb920f5574fe0e568c5e44f366b29c734a94c9c456cba1f369e",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "57",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 14822,
+   "reason": "Same tested fact or operating condition as bank 14822: When the centre of gravity is at the forward limit, an aeroplane will be: Answer: extremely stable and will require excessive elevator control to change pitch.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 14822 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "71",
+   "page": "11",
+   "key": "x-linx-080:71",
+   "raw_question_sha256": "7f1e4d700209c430a0c60acf04c705f9e960bb53caccea735dd10d6c0fbf9ed8",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "58",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16237,
+   "reason": "Same tested fact or operating condition as bank 16237: The main surface providing longitudinal stability is: Answer: Horizontal stabilizer. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16237 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "72",
+   "page": "12",
+   "key": "x-linx-080:72",
+   "raw_question_sha256": "51ba7e573d4b1762ad98e5f681f90c0615a659907e67b9b8f2dd7aceced00315",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "59",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 14823,
+   "reason": "Same tested fact or operating condition as bank 14823: If the centre of gravity of an aeroplane moves forward during flight the elevator control will : Answer: become heavier making the aeroplane more difficult to manouevre in pitch. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 14823 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "73",
+   "page": "12",
+   "key": "x-linx-080:73",
+   "raw_question_sha256": "049e62194469082b0b3dc14802ca9dda4890ffc6d383cf84ea14a20568deef8c",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "60",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16229,
+   "reason": "Same tested fact or operating condition as bank 16229: The tendency of an aircraft to develop forces which restore it to its original flight situation, when disturbed from a condition of steady flight, is known as: Answer: Stability.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16229 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "74",
+   "page": "12",
+   "key": "x-linx-080:74",
+   "raw_question_sha256": "4b5b74ef95311ac9bcf043d034f5302c55349be208762c912378237f70bf1c51",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "61",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16244,
+   "reason": "Same tested fact or operating condition as bank 16244: The surface that gives an aircraft directional stability is: Answer: The fin.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16244 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "75",
+   "page": "12",
+   "key": "x-linx-080:75",
+   "raw_question_sha256": "40795c109ae2b9cf1f440d8387ca84751732575dc976b4c6cfa299dc0d4b7efa",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "8",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16303,
+   "reason": "Same tested fact or operating condition as bank 16303: The maximum gliding distance from 6000 feet, for an aircraft in clean configuration, with a lift/drag ratio of 8:1, is approximately 8 nautical miles. If flaps are deployed: Answer: The maximum gliding distance will be less.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16303 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "76",
+   "page": "12",
+   "key": "x-linx-080:76",
+   "raw_question_sha256": "ff3fd3dac72cf763a1b3a98ed3b14a48e61cbd3e127df88dfbfc35c259d8350a",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "63",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16220,
+   "reason": "Same tested fact or operating condition as bank 16220: A pilot lowers the flaps while keeping the airspeed constant. In order to maintain level flight, the angle of attack: Answer: Must be reduced.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16220 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "77",
+   "page": "12",
+   "key": "x-linx-080:77",
+   "raw_question_sha256": "d2e5752590003e8250cec24d6d82c6e59512b430111949385bb1830a13575271",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "122",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16255,
+   "reason": "Same tested fact or operating condition as bank 16255: Movement of the aircraft about its normal (vertical) axis is known as: Answer: Yawing.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16255 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "78",
+   "page": "12",
+   "key": "x-linx-080:78",
+   "raw_question_sha256": "febcd2e0239825ee45f936aa0d1fa4b14b091878933d0978ffbd1711c3e6b501",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "64",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16245,
+   "reason": "Same tested fact or operating condition as bank 16245: An aircraft wing is constructed with dihedral in order to give: Answer: Lateral stability about the longitudinal axis.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16245 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "79",
+   "page": "13",
+   "key": "x-linx-080:79",
+   "raw_question_sha256": "df1a0cbd3f8e445c028e99687cfbb4d87932999186e9fb8dc88780f3d6600482",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "65",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16233,
+   "reason": "Same tested fact or operating condition as bank 16233: When an aeroplane is disturbed from its trimmed attitude, for instance when entering turbulent air, it is said to have neutral stability if it consequently: Answer: remains in the new attitude.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16233 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "80",
+   "page": "13",
+   "key": "x-linx-080:80",
+   "raw_question_sha256": "09f4ecc272d228bd4136cc0e7f56162197a8ef4513c8a83399d447361b5421c9",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "66",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16211,
+   "reason": "Same tested fact or operating condition as bank 16211: When flaps are lowered the stalling angle of attack of the wing: Answer: Decreases, but CLMAx increases.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16211 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "81",
+   "page": "13",
+   "key": "x-linx-080:81",
+   "raw_question_sha256": "9fdd2e3648ec31c247614876eeb0d25fac1f0df98acb08adf9e98394eb81a571",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "67",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:high-wing-lateral",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68016
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "82",
+   "page": "13",
+   "key": "x-linx-080:82",
+   "raw_question_sha256": "bd039df843dae2b8a263ece8a35e4bd04d1cdf2ac0cf030c4b4aebdebad3f63a",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "68",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16230,
+   "reason": "Same tested fact or operating condition as bank 16230: An aircraft is disturbed from its flight path by a gust of wind. If it tends to return to its original flight path without pilot intervention, the aircraft is said to possess: Answer: Positive Static Stability.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16230 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "83",
+   "page": "13",
+   "key": "x-linx-080:83",
+   "raw_question_sha256": "271f1e88a612fcc17f0753ecd985cb8b5b013e4b73c4420e464797895edc4586",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "69",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16226,
+   "reason": "Same tested fact or operating condition as bank 16226: A stalling angle of attack is increased by slots because: Answer: They delay the break-up of the smooth airflow over the wing. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16226 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "84",
+   "page": "13",
+   "key": "x-linx-080:84",
+   "raw_question_sha256": "18e4f595c56fcc75072ce5d76c7377b628d1c504539067c1039e907f152632fe",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "123",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16244,
+   "reason": "Same tested fact or operating condition as bank 16244: The surface that gives an aircraft directional stability is: Answer: The fin.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16244 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "85",
+   "page": "13",
+   "key": "x-linx-080:85",
+   "raw_question_sha256": "fd76b9d99e4f8b5626908e67561dc1949032a4fcde96ee5cc17ebb625bf231a9",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "71",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16215,
+   "reason": "Same tested fact or operating condition as bank 16215: If a landing is to be made without flaps the landing speed must be: Answer: Increased.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16215 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "86",
+   "page": "14",
+   "key": "x-linx-080:86",
+   "raw_question_sha256": "fb16a532bfe3f4e2d925f4e224585890ad09a235ce31f3875b467f7414dd0cb0",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "72",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16282,
+   "reason": "Same tested fact or operating condition as bank 16282: The maximum speed at which the aircraft can be flown with flaps extended is called: Answer: VFE.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16282 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "87",
+   "page": "14",
+   "key": "x-linx-080:87",
+   "raw_question_sha256": "46efe137d1683db074cafce81e370d445350a65bddafbf85a4c77cbf402054ca",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "73",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16255,
+   "reason": "Same tested fact or operating condition as bank 16255: Movement of the aircraft about its normal (vertical) axis is known as: Answer: Yawing.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16255 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "88",
+   "page": "14",
+   "key": "x-linx-080:88",
+   "raw_question_sha256": "13cb0715b1f7451feb8bad38b5e7ac363c7f4ed20e82112f6f5d82de35d20ac9",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "74",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16251,
+   "reason": "Same tested fact or operating condition as bank 16251: The lateral axis of an aircraft is a line which: Answer: Passes through the Centre of Gravity, parallel to a line through the wing tips.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16251 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "89",
+   "page": "14",
+   "key": "x-linx-080:89",
+   "raw_question_sha256": "b2bf905497a395966150261a42e40abd8fed4b5d4651c1fa8765bde4a1353eaf",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "128",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16213,
+   "reason": "Same tested fact or operating condition as bank 16213: One of the main functions of flaps during approach and landing is to: Answer: increase the angle of descent without increasing the airspeed.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16213 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "90",
+   "page": "14",
+   "key": "x-linx-080:90",
+   "raw_question_sha256": "60a86b6bdd63f998ec60be3268b50b97b639953eea67dd991546b70f92241731",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "76",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16231,
+   "reason": "Same tested fact or operating condition as bank 16231: When an aircraft is disturbed from its established flight path by, for example, turbulence, it is said to have positive stability if it subsequently: Answer: Re-establishes its original flight path without any input from the pilot.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16231 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "91",
+   "page": "14",
+   "key": "x-linx-080:91",
+   "raw_question_sha256": "ec38d0cfa5050898e8961f5eaf5ac79b2aea45d86f74044c861a778da3e80642",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "77",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16276,
+   "reason": "Same tested fact or operating condition as bank 16276: The purpose of an anti-balance tab is to: Answer: Prevent overdeflection of the control surfaces by increasing the load applied by the pilot.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16276 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "92",
+   "page": "14",
+   "key": "x-linx-080:92",
+   "raw_question_sha256": "2a783e0f92494edd64321b8e724c4d90311f9b37b65b4d43dc17a751ddd10dbb",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "78",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16272,
+   "reason": "Same tested fact or operating condition as bank 16272: A control surface may have a mass balance fitted to it, in order to: Answer: Help prevent a rapid and uncontrolled oscillation which is called \"flutter\".. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16272 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "93",
+   "page": "15",
+   "key": "x-linx-080:93",
+   "raw_question_sha256": "c282644dc194c2daa4066d111240f0839f9475abfd2c788dd090dd9df9285211",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "142",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:horn-balance",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68017
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "94",
+   "page": "15",
+   "key": "x-linx-080:94",
+   "raw_question_sha256": "ce2462b722bd6909cbccb7d6245d001ca70d2c0a904f78927e9c86f249460032",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "80",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16266,
+   "reason": "Same tested fact or operating condition as bank 16266: The primary and secondary effects of the aileron control are: Answer: Roll and yaw.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16266 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "95",
+   "page": "15",
+   "key": "x-linx-080:95",
+   "raw_question_sha256": "3677eb9f87017f1100a74c3424c330f86cced8a32f801d6f4ad8997b5d56d412",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "133",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16271,
+   "reason": "Same tested fact or operating condition as bank 16271: Differential aileron deflection: Answer: Decreases the difference in drag between the right and left wings.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16271 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "96",
+   "page": "15",
+   "key": "x-linx-080:96",
+   "raw_question_sha256": "1439087c3b64a8a0d5d1e987b3d0cd6586903b4416fe90d89c3903077a134b78",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "143",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16260,
+   "reason": "Same tested fact or operating condition as bank 16260: The primary and secondary effects of applying the left rudder alone are: Answer: Left yaw and left roll.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16260 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "97",
+   "page": "15",
+   "key": "x-linx-080:97",
+   "raw_question_sha256": "fbd9f7d5d9445efc0efd63935d0e477e63e6276917112aeba1009139743c8fa0",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "81",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16255,
+   "reason": "Same tested fact or operating condition as bank 16255: Movement of the aircraft about its normal (vertical) axis is known as: Answer: Yawing.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16255 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "98",
+   "page": "15",
+   "key": "x-linx-080:98",
+   "raw_question_sha256": "2dd790bcb70ac9d0484aa519bc61ff684980941a0e5181465aa7c454867ec757",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "82",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16271,
+   "reason": "Same tested fact or operating condition as bank 16271: Differential aileron deflection: Answer: Decreases the difference in drag between the right and left wings.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16271 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "99",
+   "page": "15",
+   "key": "x-linx-080:99",
+   "raw_question_sha256": "18212c874f1c0c3769c1ed835e2877c6ba09d88093a45b2bb0b5400a40825ca5",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "83",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16260,
+   "reason": "Same tested fact or operating condition as bank 16260: The primary and secondary effects of applying the left rudder alone are: Answer: Left yaw and left roll.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16260 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "100",
+   "page": "16",
+   "key": "x-linx-080:100",
+   "raw_question_sha256": "f112dab29017d3880b81c262320b96cd26146342ebb27bd17a83cb11087c49c3",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "84",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16271,
+   "reason": "Same tested fact or operating condition as bank 16271: Differential aileron deflection: Answer: Decreases the difference in drag between the right and left wings.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16271 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "101",
+   "page": "16",
+   "key": "x-linx-080:101",
+   "raw_question_sha256": "4fd53e2f441e79ba0926fde526e85c07d6efd0a3f22eba0c28d5ebca09633d2c",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "85",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16274,
+   "reason": "Same tested fact or operating condition as bank 16274: An aircraft is fitted with a balance tab controlled rudder, when viewed from the rear, forward movement of the rudder bar to the left to yaw the aircraft to the left will move the balance tab to the: Answer: tab to the right and the rudder to the left.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16274 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "102",
+   "page": "16",
+   "key": "x-linx-080:102",
+   "raw_question_sha256": "8017982c3f14a291ab0ea1ac16851f9ebad1bd9528edbe22769c9243c7ebbb59",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "86",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:roll-trim-left-tab",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68025
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "103",
+   "page": "16",
+   "key": "x-linx-080:103",
+   "raw_question_sha256": "1bdfbb1f29d619cb83a61ef24f664dd03218288d82878dd25d81b802f0f3a455",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "87",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16262,
+   "reason": "Same tested fact or operating condition as bank 16262: Ailerons give: Answer: Lateral control about the longitudinal axis. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16262 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "104",
+   "page": "16",
+   "key": "x-linx-080:104",
+   "raw_question_sha256": "49e5728f72180740da5a20d9827577f68d87f813411518190ae6a9480bfdac43",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "88",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "review",
+   "reason": "Forward CG/trim/elevator authority depends on actual deflection limits and aerodynamic hinge moments. The source’s universal re-trim consequence is not adopted without a specific primary model. Linx full text/options inspected; original diagram available where noted does not remove this factual ambiguity.",
+   "reason_tr": "İnceleme: Forward CG/trim/elevator authority depends on actual deflection limits and aerodynamic hinge moments. The source’s universal re-trim consequence is not adopted without a specific primary model."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "105",
+   "page": "16",
+   "key": "x-linx-080:105",
+   "raw_question_sha256": "d056cc6197494bb5d025c61b61ead6521d01147c8da3507c65ef02dda241aa72",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "89",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16272,
+   "reason": "Same tested fact or operating condition as bank 16272: A control surface may have a mass balance fitted to it, in order to: Answer: Help prevent a rapid and uncontrolled oscillation which is called \"flutter\".. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16272 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "106",
+   "page": "16",
+   "key": "x-linx-080:106",
+   "raw_question_sha256": "ba9ddceb942e9311db2107e704d22a03f7de0ce96f898990b8a624114cabc0ef",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "113",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16260,
+   "reason": "Same tested fact or operating condition as bank 16260: The primary and secondary effects of applying the left rudder alone are: Answer: Left yaw and left roll.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16260 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "107",
+   "page": "17",
+   "key": "x-linx-080:107",
+   "raw_question_sha256": "e68df2a0568a57f380c9c53698bd90fa3f7c14c689347752bd199e86e54ba55a",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "90",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16277,
+   "reason": "Same tested fact or operating condition as bank 16277: The purpose of a trim tab is: Answer: To zero the load on the pilots controls in the flight attitude required.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16277 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "108",
+   "page": "17",
+   "key": "x-linx-080:108",
+   "raw_question_sha256": "91ad2311de4e190f0b224608fd3f9b560ae4d3fd1f71a4d1a7c7c401e02c6eb4",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "91",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16272,
+   "reason": "Same tested fact or operating condition as bank 16272: A control surface may have a mass balance fitted to it, in order to: Answer: Help prevent a rapid and uncontrolled oscillation which is called \"flutter\".. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16272 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "109",
+   "page": "17",
+   "key": "x-linx-080:109",
+   "raw_question_sha256": "070403b709d1ca50fc2ac43cf22d604cf5b0ba1c867d7fea01e381242f3dd1e5",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "92",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 14461,
+   "reason": "Same tested fact or operating condition as bank 14461: The tendency for control surfaces to flutter at high speed can be avoided by: Answer: Fitting a mass balance forward of the leading edge of the control surface. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 14461 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "110",
+   "page": "17",
+   "key": "x-linx-080:110",
+   "raw_question_sha256": "a26632a9239a563e33cf858f7c6fd5c03a29815d63d60babc99085562091456b",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "93",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16281,
+   "reason": "Same tested fact or operating condition as bank 16281: A fixed trim tab such as those commonly found on ailerons should: Answer: be adjusted on the ground after a flight test to achieve laterally level flight (roll). Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16281 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "111",
+   "page": "17",
+   "key": "x-linx-080:111",
+   "raw_question_sha256": "4775893c3ec60e52ad199c679eda2411eb9cf7cb9ef63d5dbbebe295f4e3a4b6",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "94",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 14443,
+   "reason": "Same tested fact or operating condition as bank 14443: The empennage normally consists of a horizontal surface, a vertical fin,a rudder and an elevator. Which part provides longitudinal control? Answer: The elevator,. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 14443 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "112",
+   "page": "17",
+   "key": "x-linx-080:112",
+   "raw_question_sha256": "d89deee0c0d62cb514dfb6a920e6d1b0502054fd4de7efc4d77c56295ecd9554",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "95",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16277,
+   "reason": "Same tested fact or operating condition as bank 16277: The purpose of a trim tab is: Answer: To zero the load on the pilots controls in the flight attitude required.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16277 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "113",
+   "page": "17",
+   "key": "x-linx-080:113",
+   "raw_question_sha256": "a6d183af6ea9a77361b0abd9233d881c4a4bd9b7996ee31c29f59faf53989924",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "140",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 14468,
+   "reason": "Same tested fact or operating condition as bank 14468: From which type of flight control is movement around the vertical axis controlled? Answer: The rudder. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 14468 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "114",
+   "page": "17",
+   "key": "x-linx-080:114",
+   "raw_question_sha256": "7dfd63bd49053f226eab2e30552f0aa1716c79399638ac5ecfe61d5bad9f7a92",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "96",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16265,
+   "reason": "Same tested fact or operating condition as bank 16265: If the control column is moved to the left and forward: Answer: The left aileron moves up, right aileron moves down, elevator moves down.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16265 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "115",
+   "page": "18",
+   "key": "x-linx-080:115",
+   "raw_question_sha256": "85b38a3ad05cffbf04600bb657ca8f5778b02a9d8c070dd060530f5f9938ce7e",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "97",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:left-aileron-balance-tab",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68019
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "116",
+   "page": "18",
+   "key": "x-linx-080:116",
+   "raw_question_sha256": "18cc0d6d4e6ec0dcf8f1d69a14f19e3ce2c6478ca093cb6ce09314fa70756a55",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "98",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16269,
+   "reason": "Same tested fact or operating condition as bank 16269: 'Differential Ailerons' are a design feature that helps to counteract: Answer: Adverse yaw.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16269 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "117",
+   "page": "18",
+   "key": "x-linx-080:117",
+   "raw_question_sha256": "d92eacb38ad58a1387bc72a6f19ba06bc970c67e63d888d7ccbd88377fde8a0b",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "99",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16177,
+   "reason": "Same tested fact or operating condition as bank 16177: If the angle of attack is increased above the stalling angle: Answer: Lift will decrease and drag will increase.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16177 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "118",
+   "page": "18",
+   "key": "x-linx-080:118",
+   "raw_question_sha256": "130ac06a9a2ef926d9358c0851a5e805b11bc9dbd6158fb240efaa11d63ff05a",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "91",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16170,
+   "reason": "Same tested fact or operating condition as bank 16170: An aeroplane wing stalls when: Answer: The critical angle of attack is exceeded.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16170 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "119",
+   "page": "18",
+   "key": "x-linx-080:119",
+   "raw_question_sha256": "d584c7e7ba7decc473652b6cd2e0104d03fa07397e6ee07ea56b67dcdbc1bbcd",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "101",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16170,
+   "reason": "Same tested fact or operating condition as bank 16170: An aeroplane wing stalls when: Answer: The critical angle of attack is exceeded.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16170 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "120",
+   "page": "18",
+   "key": "x-linx-080:120",
+   "raw_question_sha256": "02d84b07ac5d9b4ad1f40f41263dc9d8f1943d30fd1a01918fe847ee269161cd",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "89",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16205,
+   "reason": "Same tested fact or operating condition as bank 16205: The stalling speed of an aircraft in straight and level flight is 60 kt, IAS. What is its stalling speed in a level 60º banked turn? Answer: 85 kt. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16205 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "121",
+   "page": "18",
+   "key": "x-linx-080:121",
+   "raw_question_sha256": "44e13c50e53d64cdc8042068779320e8082cd744375b23b3f5442d2d672e9843",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "103",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16296,
+   "reason": "Same tested fact or operating condition as bank 16296: In a straight steady climb, which of the following statements is correct? Answer: Lift is less than weight,load factor is less than 1.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16296 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "122",
+   "page": "19",
+   "key": "x-linx-080:122",
+   "raw_question_sha256": "d4e950cd4b64704c54859aa52aeecd382d19e17a1dbca70294707847218bac4c",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "104",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16172,
+   "reason": "Same tested fact or operating condition as bank 16172: A typical stalling angle of attack for an training aircraft wing is about: Answer: 16°. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16172 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "123",
+   "page": "19",
+   "key": "x-linx-080:123",
+   "raw_question_sha256": "f57236ef2f4946ce126a9e035add2ef2c308b54bf1a2f36d023336456dd85047",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "105",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16300,
+   "reason": "Same tested fact or operating condition as bank 16300: The angle of climb is proportional to: Answer: The amount by which the thrust exceeds the drag.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16300 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "124",
+   "page": "19",
+   "key": "x-linx-080:124",
+   "raw_question_sha256": "e4639a96c74d65d580ceb187c6162e7f1b18a8f805a606fb68f6dc564fd3bbfe",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "106",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16173,
+   "reason": "Same tested fact or operating condition as bank 16173: The angle of attack at which an airplane stalls will: Answer: remain the same regardless of gross weight.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16173 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "125",
+   "page": "19",
+   "key": "x-linx-080:125",
+   "raw_question_sha256": "6afbd9a3fdd6ef0267a517c8ec41e6a88f5ec986256898064690a491cc77d120",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "107",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16206,
+   "reason": "Same tested fact or operating condition as bank 16206: When the aircraft is in a spin, the direction of spin is most reliably found by reference to which of the following indications? Answer: Turn coordinator. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16206 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "126",
+   "page": "19",
+   "key": "x-linx-080:126",
+   "raw_question_sha256": "4441641f065b11ef437f61708619e717d3c996a1c7a056cc170bb89e5cbab078",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "108",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16194,
+   "reason": "Same tested fact or operating condition as bank 16194: The reason for geometric washout being designed into an aeroplane wing is to: Answer: cause the inboard section of the wing to stall first.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16194 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "127",
+   "page": "19",
+   "key": "x-linx-080:127",
+   "raw_question_sha256": "a02533ca841456a5f739c818d557c97eb3743f48b3b00eff460f29f68acc8025",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "109",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16221,
+   "reason": "Same tested fact or operating condition as bank 16221: The maximum allowable airspeed with flaps extended (VFE) is lower than cruising speed because: Answer: At speeds higher than VFE, the aerodynamic forces would overload the flap and wing structures.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16221 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "128",
+   "page": "19",
+   "key": "x-linx-080:128",
+   "raw_question_sha256": "eaec2d57a57b966e490ef22fd837281bf6e83101764b9a425c08f3ac1a70851d",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "79",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16205,
+   "reason": "Same tested fact or operating condition as bank 16205: The stalling speed of an aircraft in straight and level flight is 60 kt, IAS. What is its stalling speed in a level 60º banked turn? Answer: 85 kt. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "16205 zaten yatıştan yük faktörünü ve karekök ilişkisiyle stall hızını hesaplatır. 45°/80 kt yalnız aynı hesabın sayısal varyantıdır; farklı bir kural veya istisna eklemez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "129",
+   "page": "20",
+   "key": "x-linx-080:129",
+   "raw_question_sha256": "551439eea7f515dd4c06160b4f5008ad2d73493914df22fc94604766b5de6dc3",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "111",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16180,
+   "reason": "Same tested fact or operating condition as bank 16180: In a light training aircraft a smooth stall is characterized by: Answer: a nose pitch down and aircraft sink.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16180 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "130",
+   "page": "20",
+   "key": "x-linx-080:130",
+   "raw_question_sha256": "d46b8d95319b46675ae8801ab3b5468bba542af1a1970af6f5f38d0eb0d30d79",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "112",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16283,
+   "reason": "Same tested fact or operating condition as bank 16283: VNE is: Answer: The maximum airspeed at which the aircraft may be flown.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16283 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "131",
+   "page": "20",
+   "key": "x-linx-080:131",
+   "raw_question_sha256": "3111552adc930f387c1a39d4c35a9a43a2a96c89751629b29e46a585d105bf0b",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "113",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16298,
+   "reason": "Same tested fact or operating condition as bank 16298: ln a climb at a constant speed, the thrust is: Answer: Greater than the aerodynamic drag.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16298 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "132",
+   "page": "20",
+   "key": "x-linx-080:132",
+   "raw_question_sha256": "5c785dceffe420fa9ff553ca317ec4f804c4eb69b97f9b5680eb842fd3242e80",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "114",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 58019,
+   "reason": "Same tested fact or operating condition as bank 58019: Which speed is the upper limit of the normal operating speed range? Answer: Vno. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 58019 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "133",
+   "page": "20",
+   "key": "x-linx-080:133",
+   "raw_question_sha256": "6490a0353f0153cecb24eea3d3398588eb01a498beae519c99d97f415a7e029f",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "115",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16203,
+   "reason": "Same tested fact or operating condition as bank 16203: A factor that determines an aeroplane's stalling speed for a given weight is: Answer: the square root of the load factor.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16203 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "134",
+   "page": "20",
+   "key": "x-linx-080:134",
+   "raw_question_sha256": "401669b83d4cfdf199c667a87a927b688aeff9097dfdb93b4707da13bf1602aa",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "116",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16300,
+   "reason": "Same tested fact or operating condition as bank 16300: The angle of climb is proportional to: Answer: The amount by which the thrust exceeds the drag.. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16300 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "135",
+   "page": "20",
+   "key": "x-linx-080:135",
+   "raw_question_sha256": "b8439c32a600074cad534cf2b11318f8729d9bf31ce8d7e859aaa6d7c5a52933",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "117",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "review",
+   "reason": "VA does not provide unconditional protection from every repeated/reversed/multiple-axis input or every mass. Raw impossible-to-exceed-limit wording lacks FAA limitations.",
+   "reason_tr": "Özgün kaynak sorusunda bu belirsizlik/yanlışlık korunarak incelemeye alındı; aktif test cevabı olarak kullanılmaz."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "136",
+   "page": "21",
+   "key": "x-linx-080:136",
+   "raw_question_sha256": "929574b774289f937acc83043e259a0a982258e0609042707c20a5548cb9802f",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "118",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "review",
+   "reason": "A andD both say same critical angle, butD adds an incorrect/unsupportedCG-stall-speed clause. Exact critical-AOA condition is retained for answer validation rather than combining them.",
+   "reason_tr": "Özgün kaynak sorusunda bu belirsizlik/yanlışlık korunarak incelemeye alındı; aktif test cevabı olarak kullanılmaz."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "137",
+   "page": "21",
+   "key": "x-linx-080:137",
+   "raw_question_sha256": "e38a7b5f8c1d5e9678cb14d83a4cbaa1189eade5edddef1a49d16f81ef9c91ec",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "109",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 16172,
+   "reason": "Same tested fact or operating condition as bank 16172: A typical stalling angle of attack for an training aircraft wing is about: Answer: 16°. Wording/order/numerical-equivalent variation adds no new rule or exception. Linx stem and answer-changing conditions inspected; source reference attached without a new copy.",
+   "reason_tr": "Aynı bilgi ve koşul bankadaki 16172 kaydında sınanıyor. Metin veya şık sırası farkı yeni kural/istisna getirmediği için yeni kopya eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "138",
+   "page": "21",
+   "key": "x-linx-080:138",
+   "raw_question_sha256": "f5f912d58d577ca22d6906cd9a0f8087f04371d185b30a26cd7b156fb9fe75a2",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "108",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:polar-best-ld",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68023
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "139",
+   "page": "21",
+   "key": "linx:polar-critical-cl",
+   "raw_question_sha256": "df5cfa20f7ecc73aa76fc19a2c1f513a00a33caf48b9da229ba86b0ab3794eb7",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "107",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "new",
+   "nearest_bank_id": 16140,
+   "reason": "16140 asks textualstall-AOA/CLmax relationship. This asks identifying the PEAK in a coefficientPOLAR, distinguishing maximumCL from minimumCD and origin-tangent bestL/D; no existing polar critical-point graphic exercise found.",
+   "reason_tr": "Polarda azamiCL/kritik açı noktasını, en iyiL/D ve en düşükCD noktalarından ayıran bağımsız görsel uyarlama.",
+   "topic_tr": "Bağımsız çizilen katsayı polarında, gösterilen profilin azamiCL değerini ve dolayısıyla kritik hücum açısını hangi etiketli nokta temsil eder?",
+   "figure_source_visually_inspected": true
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "140",
+   "page": "21",
+   "key": "x-linx-080:140",
+   "raw_question_sha256": "12d7b66cf7dad5e2321739816a4840064d3fc1e4bb219cd85a6baab7cce08134",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "96",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:polar-min-cd",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68024
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "141",
+   "page": "21",
+   "key": "x-linx-080:141",
+   "raw_question_sha256": "b99603dce33b193c45e783cd7590bdb3dcdd94bc23b57e8e4be1e5f991cda797",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "105",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "review",
+   "reason": "Ranking rectangular/taper/elliptic induced drag also depends on aspect ratio, loading and twist. Without equal-span/area/lift assumptions, the source maximum cannot be uniquely verified. Linx full text/options inspected; original diagram available where noted does not remove this factual ambiguity.",
+   "reason_tr": "İnceleme: Ranking rectangular/taper/elliptic induced drag also depends on aspect ratio, loading and twist. Without equal-span/area/lift assumptions, the source maximum cannot be uniquely verified."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "142",
+   "page": "21",
+   "key": "x-linx-080:142",
+   "raw_question_sha256": "0e7797bdfd71acf3540b84c405eb3679891da9858ee512e81a514e9940ba18b4",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "122",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "review",
+   "reason": "MarkedA drag coefficient fourfold is false at fixedAOA/configuration; doubling speed makesFORCEfourfold while coefficient unchanged. Corepof:drag-coefficient-speed is verified independently.",
+   "reason_tr": "Özgün kaynak sorusunda bu belirsizlik/yanlışlık korunarak incelemeye alındı; aktif test cevabı olarak kullanılmaz."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "143",
+   "page": "21",
+   "key": "x-linx-080:143",
+   "raw_question_sha256": "392c380f137e8c946f319b2d4de8bd53538323c677fec8e3ba599c288d854575",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "123",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:stall-mass-percent",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68027
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "144",
+   "page": "22",
+   "key": "x-linx-080:144",
+   "raw_question_sha256": "dfe83f23681c71bb8fd7868279e7f32b53dd1e46788fbae0c0d10f12bcb18e13",
+   "same_family_comparison": {
+    "source": "x-traficom-080",
+    "no": "124",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:stall-mass-percent",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68027
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "145",
+   "page": "22",
+   "key": "x-linx-080:145",
+   "raw_question_sha256": "daea3603d6a5824bd1a0b269161ce8cdf3aeb88d848fc75bd40dfba3a869056c",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "101",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:level-turn-supported-load",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68021
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "146",
+   "page": "22",
+   "key": "x-linx-080:146",
+   "raw_question_sha256": "cf5afa64f14e13e7c4743c98dd9114a4c9be4a5ab32b242608e3e2526a264e48",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "100",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:level-turn-supported-load",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68021
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "147",
+   "page": "22",
+   "key": "x-linx-080:147",
+   "raw_question_sha256": "1b58c1a1ba04db6724c08bbf17af679e254d0f720a31d94eeb0ea323d225ddc7",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "99",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:max-bank-load",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68022
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "148",
+   "page": "22",
+   "key": "x-linx-080:148",
+   "raw_question_sha256": "471e39e6c73f42cd5e98d25ec1203d2e5db0eca66828db939db8f23d91c00f6d",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "98",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "cross_subject_candidate_key": "pof:max-bank-load",
+   "cross_subject_code": "080",
+   "linkage_to_same_batch": true,
+   "reason": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "reason_tr": "Aynı doğrulanmış kural/koşul mevcut veya bu taramada kabul edilen tek ID ile kapsanır.",
+   "bank_id": 68022
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "149",
+   "page": "22",
+   "key": "x-linx-080:149",
+   "raw_question_sha256": "3cd73b7a32917325094335da410d9cbc8362efdaba7f19624f80f07e7f48224c",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "97",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 58030,
+   "reason": "Appendix1 visually verified60degrees givesn=2; existing58030 asks the same bank/load relationship.",
+   "reason_tr": "Mevcut58030 kaydındaki aynı doğrulanmış kural; tekrar eklenmez."
+  },
+  {
+   "source": "x-linx-080",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "no": "150",
+   "page": "22",
+   "key": "x-linx-080:150",
+   "raw_question_sha256": "26608ec1adad22fca3057158536d6636a7d3f47b7ef354c830b2045c1c78e985",
+   "same_family_comparison": {
+    "source": "x-cad-080",
+    "no": "119",
+    "lexical_similarity": 1.0,
+    "semantic_conditions_checked": true
+   },
+   "status": "existing",
+   "bank_id": 68001,
+   "reason": "Single momentary elevator input assumption is stated; current68001 tests manoeuvring speed rather than unconditional protection for all inputs.",
+   "reason_tr": "Mevcut68001 kaydındaki aynı doğrulanmış kural; tekrar eklenmez."
+  }
+ ],
+ "audit_totals": {
+  "scanned": 150,
+  "unique_new_candidates": 1,
+  "decision_counts": {
+   "existing": 142,
+   "review": 7,
+   "new": 1
+  },
+  "pending_same_batch_links": 16
+ },
+ "final_audit_counts": {
+  "scanned": 150,
+  "new_candidates": 1,
+  "decisions": {
+   "existing": 142,
+   "review": 7,
+   "new": 1
+  }
+ }
+}

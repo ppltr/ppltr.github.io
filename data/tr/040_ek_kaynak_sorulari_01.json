@@ -26,6 +26,870 @@
     "İçe kayma (slip) ve hava hızının azaldığı izlenimi",
     "İçe kayma (slip) ve hava hızının arttığı izlenimi"
    ]
+  },
+  "64004": {
+   "text": "Çarpıcı yeni kaza haberi kolay hatırlanıyor ve pilotun risk tahminine hâkim oluyor; temsil edici sıklık verileri geri planda kalıyor. Hangi yanlılık görülür?",
+   "options": [
+    "Kolay hatırlanana dayalı availability yanlılığı",
+    "Çarpıcı raporların istatistiksel olarak temsil edici olduğunun garantisi",
+    "Uçağın stol hızının fiziksel değişimi",
+    "Bütün gözlemlerin eşit kullanıldığı doğru risk hesabı"
+   ]
+  },
+  "64005": {
+   "text": "Pilotun biyolojik gecesindeki çok erken başlangıç, uçuş kısa olsa bile uyanıklığı neden etkileyebilir?",
+   "options": [
+    "Sirkadiyen faz, uçuş süresinden bağımsız olarak uyku ve düşük uyanıklığı destekleyebilir",
+    "Kısa uçuş bütün sirkadiyen etkileri otomatik kaldırır",
+    "Her pilotun biyolojik saati her zaman UTC’ye kilitlidir",
+    "Uçağın enlemi uyku ihtiyacını doğrudan kaldırır"
+   ]
+  },
+  "64006": {
+   "text": "Egzoz ısı eşanjörüyle çalışan kabin ısıtıcısı bulunan uçakta şüpheli sızıntıyla birlikte baş ağrısı ve baş dönmesi var. Olası CO maruziyetine hangi tepki uyar?",
+   "options": [
+    "AFM işlemini uygulamak: şüpheli ısı kaynağını kapatıp temiz hava ve varsa ek oksijen sağlarken emniyetli iniş ve tıbbi yardım ayarlamak",
+    "Gazı gidermek için kabin ısısını artırmak",
+    "CO’nun mutlaka kokması gerektiği için devam etmek",
+    "İşlemden önce dudakların kiraz kırmızısı olmasını beklemek"
+   ]
+  },
+  "64007": {
+   "text": "Çok uçuşta aynı rutini kullanan pilot, farklı talimat verildiği hâlde istemeden eski tanıdık diziyi başlatıyor. Ne olmuştur?",
+   "options": [
+    "Habit capture: öğrenilmiş rutin mevcut niyetin önüne geçmiştir",
+    "Her durumda kuralı kasıtlı ihlal etme kararı",
+    "Yeni talimatın yanlış olduğunun kanıtı",
+    "Otomatik rutinlerin hata yapamayacağının garantisi"
+   ]
+  },
+  "64008": {
+   "text": "İstem dışı gece thunderstorm karşılaşmasında pilot yıldırım flaşlarına maruz kalıyor. FAA hava rehberindeki hangi kokpit aydınlatması düzenlemesi geçici kamaşmayı azaltmaya yardım eder?",
+   "options": [
+    "Yıldırım flaşlarıyla karşıtlığı azaltmak için kokpit aydınlatmasını artırmak",
+    "Karşıtlığı en yüksek yapmak için kokpiti tamamen karartmak",
+    "Her flaşa doğrudan bakmak",
+    "Alet okumayı engelleyen koyu cam kullanmak"
+   ]
+  },
+  "64009": {
+   "text": "Kokpit güneş gözlüğü seçiminde renk kodlu bilgiyi gereksiz bozmayarak görmeyi koruyan hangi birleşim uygundur?",
+   "options": [
+    "Etkili UV koruması, uygun nötr renk ve yeterli görünür ışık geçirgenliği",
+    "Alet okunabilirliğinden bağımsız mümkün olan en koyu cam",
+    "Seyir ışıklarının renklerini ayırt ettirmeyen kuvvetli mavi engelleyici renk",
+    "Her koyu cam; koyuluk tek başına UV korumasını garanti eder"
+   ]
+  },
+  "64010": {
+   "text": "En iyi korunma için FAA AIM tıbbi rehberi, (1) gündüz ve (2) gece uçuşunda yaklaşık hangi kabin basınç irtifalarının üzerinde ek oksijen kullanımını teşvik eder?",
+   "options": [
+    "(1) 10.000 ft; (2) 5.000 ft",
+    "(1) 5.000 ft; (2) 10.000 ft",
+    "(1) 14.000 ft; (2) 14.000 ft",
+    "Bilinç kaybı oluncaya kadar ikisinde de teşvik etmez"
+   ]
+  },
+  "64011": {
+   "text": "FAA AIM’in gerçek uçuş irtifası 8.000 ft AMSL’ye kadar olan uçuş için tavsiye ettiği beklemelere göre, (1) dekompresyon durağı gerektirmeyen ve (2) gerektiren basınçlı hava dalışı sonrası asgari süre çifti nedir?",
+   "options": [
+    "(1) 12 saat; (2) 24 saat",
+    "(1) 4 saat; (2) 12 saat",
+    "(1) 24 saat; (2) 12 saat",
+    "(1) bekleme yok; (2) 4 saat"
+   ]
+  },
+  "64012": {
+   "text": "Doğru kalibre edilmiş üç ibreli altimetrede alet arızası yok. Pilot göstergeyi yorumlarken yine de yanlış irtifa okuyabilir mi?",
+   "options": [
+    "Evet; gösterge doğruluğu ve insanın okuyabilirliği farklıdır, ibreler yine yanlış yorumlanabilir",
+    "Hayır; doğru kalibrasyon ibre düzenini her pilot için kesin anlaşılır yapar",
+    "Hayır; üç ibre bin feetlik okuma hatasını otomatik önler",
+    "Evet; her okuma hatası statik basınç sisteminin arızalı olduğunu kanıtlar"
+   ]
+  },
+  "64013": {
+   "text": "Basit optik modelde hipermetrop göz paralel ışınları retinanın arkasında odaklar. Hangi gözlük merceği odağı retinaya doğru taşır?",
+   "options": [
+    "Pozitif güçlü yakınsak mercek; yaygın adıyla dışbükey/convex",
+    "Negatif güçlü ıraksak mercek; yaygın adıyla içbükey/concave",
+    "Yalnız optik gücü sıfır nötr filtre",
+    "Hiç ışık geçirmeyen opak mercek"
+   ]
+  },
+  "64014": {
+   "text": "Başarılı ve başarısız geçmiş deneyimlerin ikisi de pilotun yeni uçuş durumundaki kararlarını etkileyebilir mi?",
+   "options": [
+    "Evet; deneyim değerlendirme ve seçimi etkileyebilir, ancak güncel koşullar yine değerlendirilmelidir",
+    "Yalnız başarılı deneyimler etkileyebilir",
+    "Yalnız başarısız deneyimler etkileyebilir",
+    "Hayır; önceki deneyim hiçbir yeni uçuş kararıyla ilişkili değildir"
+   ]
+  },
+  "64015": {
+   "text": "Görüşün kırmızılaşması (red-out) hangi ivme koşuluyla ilişkilidir?",
+   "options": [
+    "Kanı başa doğru iten negatif düşeyg.",
+    "Kanı baştan uzaklaştıran pozitif düşeyg.",
+    "Beynin normal kanlandığı kararlı1g düz uçuş.",
+    "İvme değişmeden yalnızca kabin basıncının kaybı."
+   ]
+  },
+  "64016": {
+   "text": "Pilot hızlı nefes almakta ve parmaklarında karıncalanma vardır; parmak oksimetresi normal oksijen doygunluğu göstermektedir. Geçerli sonuç hangisidir?",
+   "options": [
+    "Normal değer hiperventilasyonu dışlamaz ve tek başına tam uygunluk değerlendirmesi değildir.",
+    "Normal değer hiperventilasyonun imkânsız olduğunu kanıtlar.",
+    "Cihaz kandaki karbondioksit düzeyini doğrudan ölçer.",
+    "Değer belirtilerin güvenle yok sayılabileceğini kanıtlar."
+   ]
+  },
+  "64017": {
+   "text": "Damar yaralanmasından sonra kanamayı durduran tıkacın oluşmasında hangi kan bileşeni temel rol oynar?",
+   "options": [
+    "Trombositler.",
+    "Oksijen taşıyan alyuvarlar.",
+    "Çözünmüş azot miktarı.",
+    "Bağışıklık hücresi gibi davranan hemoglobin."
+   ]
+  },
+  "64018": {
+   "text": "Pilot ibreli göstergenin karşısından değil eğik açıdan okumaktadır. Hangi okuma hatası oluşabilir?",
+   "options": [
+    "Paralaks hatası.",
+    "Pusula ivmelenme hatası.",
+    "Altimetre sıcaklık hatası.",
+    "Dünya dönüşünden kaynaklanan jiroskop sürüklenmesi."
+   ]
+  },
+  "64019": {
+   "text": "Gece yaklaşmasında kokpit lazerle aydınlatılmıştır. Hangi etki bunu hemen uçuş emniyeti sorunu yapar?",
+   "options": [
+    "Kamaşma, dikkat dağılması ve geçici görme bozukluğu kontrolü ve yönelimi bozabilir.",
+    "Her olayda anında kalıcı tam körlük garanti olur.",
+    "Pusulanın manyetik istikametini değiştirir.",
+    "Retina duyarlılığını artırıp karanlık uyumunu iyileştirir."
+   ]
+  },
+  "64020": {
+   "text": "LCD göstergeler veya polarizan ön cam malzemeleri bulunan kokpitte polarize güneş gözlüğü neden genellikle önerilmez?",
+   "options": [
+    "Bu malzemelerle etkileşerek göstergeleri karartabilir veya yanıltıcı görsel desenler oluşturabilir.",
+    "Mercek yönünden bağımsız olarak her zaman yararlı ışığın tamamını yok eder.",
+    "Karbonmonoksit zehirlenmesi oluşturur.",
+    "Gözün odak değiştirmesini kalıcı olarak engeller."
+   ]
+  },
+  "64021": {
+   "text": "Temel havacılık risk değerlendirme matrisinde hangi iki boyut birlikte ele alınır?",
+   "options": [
+    "Olayın olasılığı ve sonuçlarının şiddeti.",
+    "Yalnızca pilotun deneyimi ve sigorta maliyeti.",
+    "Uçağın rengi ve kalan gün ışığı.",
+    "Yalnızca yolcu sayısı ve uçma istekleri."
+   ]
+  },
+  "64022": {
+   "text": "Pilot planladığı rotayı destekleyen raporları benimseyip buna aykırı güvenilir raporları göz ardı etmektedir. Hangi bilişsel yanlılık görülür?",
+   "options": [
+    "Doğrulama yanlılığı.",
+    "Bağımsız kanıtın tarafsız çapraz kontrolü.",
+    "Kumandaların teyitli devri.",
+    "ATC müsaadesinin doğru readback’i."
+   ]
+  },
+  "64023": {
+   "text": "Uçak kontrol edilebilir durumdayken istemeden araziye uçurulmuştur. Bu kaza kategorisinin adı nedir?",
+   "options": [
+    "Kontrollü uçuşta araziye çarpma (CFIT).",
+    "Uçuşta kontrol kaybı (LOC-I).",
+    "Bilinçli ihtiyati iniş.",
+    "Kalkış öncesi pist ihlali."
+   ]
+  },
+  "64024": {
+   "text": "Uçuş tehlikesi belirlendikten sonra hangi grup riski ele almanın tanınmış yollarını içerir?",
+   "options": [
+    "Ortadan kaldırmak/kaçınmak, azaltmak, uygun unsurları devretmek veya bilinçli kabul etmek.",
+    "Yok saymak, gizlemek, tüm değerlendirmeyi ertelemek veya olamayacağını varsaymak.",
+    "PIC sorumluluğunun tamamını yolculara veya ATC’ye devretmek.",
+    "Sonuçları düşünmeden bütün tehlikeleri eşit derecede kabul edilebilir saymak."
+   ]
+  },
+  "64025": {
+   "text": "Pilot esas olarak arkadaşlarını etkilemek için gereksiz alçak geçiş önermektedir. Hangi tehlikeli tutum en doğrudan görülür?",
+   "options": [
+    "Macho: becerisini kanıtlamak için risk alma.",
+    "Kabullenme: kendi davranışının sonucu değiştiremeyeceğine inanma.",
+    "Kişisel sınırların disiplinli uygulanması.",
+    "Acil tehlike durumuna uygun tepki."
+   ]
+  },
+  "64026": {
+   "text": "Otopilot birçok uçuşta sorunsuz çalıştığı için pilot modlarını ve uçuş yolunu izlemeyi bırakmıştır. Hangi insan faktörü riski artmaktadır?",
+   "options": [
+    "Rehavet ve otomasyon davranışına ilişkin farkındalık kaybı.",
+    "Durumsal farkındalığın garantili iyileşmesi.",
+    "Elle uçuşa hazır olma gereğinin ortadan kalkması.",
+    "Yanlış mod seçimi olasılığının yok olması."
+   ]
+  },
+  "64027": {
+   "text": "Uçuş öncesi uykuya dalmak için alkol kullanmak neden kötü stratejidir?",
+   "options": [
+    "Uykuya dalmayı kolaylaştırır görünse bile dinlendirici uyku kalitesini azaltabilir",
+    "Her kişide daha dinlendirici uykuyu garanti eder",
+    "Sirkadiyen bozulmayı kalıcı kaldırır",
+    "Uçuş performansını etkilemeden tüm uyku borcunu giderir"
+   ]
+  },
+  "64028": {
+   "text": "Yüksek irtifada basınçlandırma kaybından sonra kabin irtifası uyarısı geldi ve uygun oksijen maskesi hazır. Arızayı teşhis etmeden önce hangi kişisel korunma önceliği vardır?",
+   "options": [
+    "Uçak kontrolünü korurken maskeyi takıp oksijen akışını sağlamak",
+    "Oksijenden önce uzun arıza teşhisini tamamlamak",
+    "Oksijen gerektiğini kanıtlamak için muhakemenin bozulmasını beklemek",
+    "Telsiz konuşması netleşsin diye maskeyi çıkarmak"
+   ]
+  },
+  "64029": {
+   "text": "Sorunun hiperventilasyon olduğu biliniyor, uçak kontrolü korunuyor ve hipoksi veya CO maruziyeti dışlanmış. Hangi solunum tepkisi yardımcı olur?",
+   "options": [
+    "Aşırı hız ve derinliği bilinçle normal solunuma doğru azaltmak",
+    "Daha çok karbondioksit atmak için daha hızlı ve derin solumak",
+    "Bayılıncaya kadar tekrar tekrar nefes tutmak",
+    "Açıklanamayan her uçuş belirtisinde otomatik ilk işlem olarak kâğıt torba kullanmak"
+   ]
+  },
+  "64030": {
+   "text": "Pilot ilk solo uçuşunun belirli yerini, zamanını ve kişisel deneyimini hatırlıyor. Hangi uzun süreli bellek türü kullanılıyor?",
+   "options": [
+    "Belirli olaya ait epizodik bellek",
+    "Yalnız genel olguya ait anlamsal bellek",
+    "Yalnız kumandanın nasıl hareket ettirildiğine ait işlemsel bellek",
+    "Yalnız özgün görsel uyaran sürerken bulunabilen duyusal iz"
+   ]
+  },
+  "64031": {
+   "text": "Kahve veya soğuk duş alkolü hızla vücuttan giderip uçuşa uygunluğu sağlayabilir mi?",
+   "options": [
+    "Hayır; alkolün atılmasını hızlandırmazlar ve güvenli performansı kanıtlamazlar",
+    "Evet; ikisi de kan alkolünü hemen sıfırlar",
+    "Evet; kafein alkole bağlı hipoksiye bağışıklık sağlar",
+    "Evet; uyanık hissetmek alkol ve akşamdan kalma etkilerinin yokluğunu kanıtlar"
+   ]
+  },
+  "64032": {
+   "text": "Katarakt gözün hangi yapısında bulanıklaşmadır?",
+   "options": [
+    "Mercek",
+    "Yalnız astigmatizma nedeniyle kornea",
+    "Yalnız normal kör nokta nedeniyle optik sinir çıkışı",
+    "Yalnız renk kusurlu koniler nedeniyle iris"
+   ]
+  },
+  "64033": {
+   "text": "Bir konuşmayı izleyen pilotun dikkati, başka konuşmada kendi çağrı işaretini duyunca aniden oraya çekiliyor. Hangi olay görülür?",
+   "options": [
+    "Anlamlı bilginin dikkati yakalaması; cocktail-party effect",
+    "Eşzamanlı her mesajın kusursuz bilinçli işlenmesi",
+    "Orta kulak basıncından işitme kaybı",
+    "Bölünmüş dikkatin sınırsız olduğunun garantisi"
+   ]
+  },
+  "64034": {
+   "text": "Pist yakınındaki yuvarlama sırasında hangi dış görsel bilgiler pilotun yükseklik ve yaklaşma hızını tahmin etmesine yardım edebilir?",
+   "options": [
+    "Yer/pist dokusu, perspektif ve yakındaki arazinin görünür hareketi",
+    "Kesin yükseklik ölçümü olarak yalnız telsiz ses yüksekliği",
+    "Perspektiften bağımsız yalnız pist ışıklarının rengi",
+    "Görüntüden bağımsız yolcu sayısı"
+   ]
+  },
+  "64035": {
+   "text": "Gece pist görünüyor, ancak karanlık yaklaşma alanında yer ayrıntıları çok az. “Black hole” yaklaşması hangi tehlikeli yükseklik illüzyonunu oluşturabilir?",
+   "options": [
+    "Uçak fazla yüksek sanılabilir ve gereğinden alçak yaklaşma yapılabilir",
+    "Uçak mutlaka alçak sanılır ve her pilot tırmanır",
+    "Doğal ufkun doğru görülmesini garanti eder",
+    "Yalnız renk körlüğü yapar; yaklaşma hattını etkileyemez"
+   ]
+  },
+  "64036": {
+   "text": "Yaklaşmada ön camdaki yağmur uçağı gerçekte olduğundan yüksek gösteren illüzyon yaratıyor. Hangi yaklaşma hatası gelişebilir?",
+   "options": [
+    "Planlanandan daha alçak yaklaşma yapmak",
+    "Uçak alçak sanıldığı için daha yüksek yaklaşmak",
+    "Kumanda değişmeden gerçek irtifanın mutlaka artması",
+    "Yalnız telsiz frekans hatası"
+   ]
+  },
+  "64037": {
+   "text": "Uçuşa uygunluk açısından akut ve kronik yorgunluğu ayıran hangi tanım yararlıdır?",
+   "options": [
+    "Akut kısa sürelidir; kronik uzayan veya biriken etkilenmedir ve tek normal dinlenme süresinden fazlasını gerektirebilir",
+    "Akut yıllarca, kronik yalnız saniyeler sürer",
+    "Kronik yorgunluk kahveyle her zaman kaybolur",
+    "Deneyim ikisini de zararsız yapar"
+   ]
+  },
+  "64038": {
+   "text": "Acil olmayan ortak kararda görüşmeyi yöneten pilot, rütbenin diğer kişinin katkısını bastırmasını nasıl azaltabilir?",
+   "options": [
+    "Kendi tercih ettiği cevabı açıklamadan bağımsız gözlem ve önerileri istemek",
+    "Cevabı başta açıklayıp yalnız onayı kabul etmek",
+    "Liderlik itirazı dışladığı için soru sormayı yasaklamak",
+    "Bütün sorumluluğu bırakıp hiçbir karar vermemek"
+   ]
+  },
+  "64039": {
+   "text": "Kontrol listesi telsiz çağrısıyla kesildi. Devam ederken madde atlamayı ne azaltır?",
+   "options": [
+    "Kesin tamamlanan son maddeyi yeniden belirleyip yayımlanmış liste yöntemine göre devam etmek",
+    "Nerede kalındığını tahmin edip hafızadan sürdürmek",
+    "Çoğu rutin olduğu için kalan maddeleri tamamlandı saymak",
+    "İlgisiz tanıdık bir listeye yeniden başlamak"
+   ]
+  },
+  "64040": {
+   "text": "Pilot ve öğretmen, bağımsız gözlemlerini birleştirip tek başına bulduklarından daha güvenli çözüm üretiyor. Bu hangi takım etkisine örnektir?",
+   "options": [
+    "Sinerji: etkili işbirliği ayrı bireysel katkıların ötesinde yarar sağlar",
+    "Her iki kişinin her zaman daha güvenli karar verdiğinin kanıtı",
+    "PIC sorumluluğunun tamamen öğretmene geçmesi",
+    "Oksijen yüzdesinin fizyolojik artışı"
+   ]
+  },
+  "64041": {
+   "text": "Kokpit uyarısı pilotun dikkatini çekmelidir. Hangi ek özellik gereklidir?",
+   "options": [
+    "Durumu açık tanımlayıp gereksiz karışıklık yaratmadan uygun aciliyeti iletmek",
+    "Anlamı anlaşılmasa bile olabildiğince irkiltmek",
+    "Diğer bütün uçuş bilgilerini süresiz gizlemek",
+    "Her duruma aynı ayırt edilemez sinyali vermek"
+   ]
+  },
+  "64042": {
+   "text": "Pilot koşulların artık uygun olmadığını kabul ediyor, fakat çok zaman ve emek harcadığı için ilk yolculuğu bitirmeye mecbur hissediyor. Hangi karar tuzağı görülür?",
+   "options": [
+    "Planı sürdürme yanlılığı veya press-on-itis",
+    "Eski planı otomatik doğrulayan bağımsız yeniden değerlendirme",
+    "Uçuş planı doldurmanın koyduğu bir mecburiyet",
+    "Diversion’ın yalnız kalkıştan önce yapılabildiği kural"
+   ]
+  },
+  "64043": {
+   "text": "Burun pasajları tıkalıyken alçalma sırasında kaş üstünde veya üst yanakta şiddetli ağrı oluşuyor. Hangi basınç mekanizması buna neden olabilir?",
+   "options": [
+    "Sinüste sıkışan havanın artan kabin basıncıyla eşitlenememesi",
+    "Yalnız hızlı tırmanışın oluşturduğu azot kabarcıkları",
+    "Kokleadaki gürültü hasarından işitme kaybı",
+    "Alçalırken oksijen yüzdesinin zorunlu artması"
+   ]
+  },
+  "64044": {
+   "text": "Havacılık sisteminin insan hatasına toleranslı olması ne demektir?",
+   "options": [
+    "Hata oluşsa bile sonuçlarının emniyeti ciddi biçimde tehlikeye atmaması",
+    "İnsanların hiçbir zaman hata yapamayacağının garanti edilmesi",
+    "Yalnız deneyimli pilotların sonuç doğurmadan hata yapabilmesi",
+    "Her gizli hatanın sürekli tespit dışı kalması"
+   ]
+  },
+  "64045": {
+   "text": "Çok soğukta titreyen pilotun vücudunda oksijen ihtiyacı artıyor. Bu hipoksi yatkınlığını nasıl etkileyebilir?",
+   "options": [
+    "Aynı sınırlı oksijen arzı artan ihtiyaca daha az yeterli kalabilir",
+    "Atmosferdeki oksijen yüzdesini her zaman artırır",
+    "İrtifa hipoksisine bağışıklığı garanti eder",
+    "Her oksijen sistemini gereksiz kılar"
+   ]
+  },
+  "64046": {
+   "text": "Standart üç aşamalı beceri kazanımı modelinde, yeni öğrenen uçuş görevini tekrar ederken olağan sıra nedir?",
+   "options": [
+    "Bilişsel → ilişkisel → otomatik veya otonom",
+    "Otomatik → bilişsel → ilişkisel",
+    "İlişkisel → otomatik → bilişsel",
+    "Bilişsel → otomatik → ilişkisel"
+   ]
+  },
+  "64047": {
+   "text": "Uçuşta irtifaya bağlı DCS’den şüpheleniliyor. Güvenli alçalırken belirtiler azalıyor. Uygun tepki nedir?",
+   "options": [
+    "Uygun oksijen/acil durum işlemini sürdürmek, mümkün olan en kısa zamanda inip acil tıbbi değerlendirme almak",
+    "Belirtilerin azalması tam iyileşmeyi kanıtladığı için planlı uçuşa devam etmek",
+    "Ağrının dönüp dönmediğini denemek için yeniden tırmanmak",
+    "Kabarcıkları gidermek için ağrıyan eklemi kuvvetle çalıştırmak"
+   ]
+  },
+  "64048": {
+   "text": "Kokpit konuşmasında bir kişi susuyor, fakat yüz ifadesi ve duruşu tereddüt gösteriyor. İletişim hakkında ne anlaşılmalıdır?",
+   "options": [
+    "Sözcük olmadan da sözsüz davranış anlam iletebilir",
+    "Susmak her zaman onay ve anlayışı kanıtlar",
+    "İki kişi aynı anda konuşmadıkça iletişim mümkün değildir",
+    "Beden dili açık emniyet ifadesi gereğini kaldırır"
+   ]
+  },
+  "64049": {
+   "text": "Öğrenci önemli sözel bilgiyi tekrar edip mevcut bilgiye bağlayarak çalışma belleğinin ötesinde tutmaya çalışıyor. Bu hangi süreçtir?",
+   "options": [
+    "Uzun süreli belleğe kodlamayı destekleyen rehearsal yani tekrar/prova",
+    "Çalışma belleğini sınırsız yapan chunking",
+    "Bilgiyi kalıcı saklayan vestibüler refleks",
+    "Daha parlak ışığa duyusal adaptasyon"
+   ]
+  },
+  "64050": {
+   "text": "Kalp karıncıklarındaki normal kan akışını hangi yol doğru tanımlar?",
+   "options": [
+    "Sağ karıncık: oksijence fakir kanı akciğere; sol karıncık: oksijence zengin kanı vücuda yollar",
+    "Sağ karıncık: oksijence zengin kanı vücuda; sol karıncık: oksijence fakir kanı akciğere yollar",
+    "İki karıncık da oksijence zengin kanı yalnız akciğere yollar",
+    "İki karıncık da vücuttan gelen kanı doğrudan beyne pompalar"
+   ]
+  },
+  "64051": {
+   "text": "Birbirini onaylayan iki pilot, başlangıçtaki bireysel tercihlerinin ortalamasından daha riskli planı kabul ediyor. Bu hangi grup etkisidir?",
+   "options": [
+    "Riskli kayma; grup kutuplaşmasının yüksek risk tarafı",
+    "Bütün grup kararlarının her zaman daha riskli olduğunun garantisi",
+    "Fizyolojik işitme azalması",
+    "Kıdemli pilotun artık sorumlu olmadığı kuralı"
+   ]
+  },
+  "64052": {
+   "text": "Anemi nedeniyle işlev gören hemoglobin miktarı azalmış kişide hipoksi yatkınlığı nasıl artabilir?",
+   "options": [
+    "Solunacak oksijen bulunsa da kanın oksijen taşıma kapasitesi azalır",
+    "Atmosferdeki oksijen yüzdesi artar",
+    "Azotun dokularda çözünmesini her zaman önler",
+    "Akciğerlerin ek oksijen üretmesini sağlar"
+   ]
+  },
+  "64053": {
+   "text": "İrtifaya bağlı dekompresyon hastalığında “chokes” adı verilen belirti grubu hangi sistemi etkiler?",
+   "options": [
+    "Akciğerler ve solunum sistemi",
+    "Yalnız parmak eklemleri",
+    "Yalnız retina",
+    "Yalnız dış kulak yolu"
+   ]
+  },
+  "64054": {
+   "text": "Yüksek irtifa maruziyetinden birkaç saat sonra, uçuş bitmişken pilotta olası DCS belirtileri gelişiyor. Yerde bulunmak tek başına yeterli güvence midir?",
+   "options": [
+    "Hayır; DCS yere dönüşten sonra gecikmeli gelişebilir ve hızlı tıbbi değerlendirme gerektirir",
+    "Evet; uçak indikten sonra DCS bulunamaz",
+    "Evet; sıradan egzersiz nedeni her zaman giderir",
+    "Hayır; pilot hemen yeniden yüksek irtifaya uçmalıdır"
+   ]
+  },
+  "64055": {
+   "text": "Tipik yaşa bağlı işitme kaybında hangi sesler genellikle önce etkilenir?",
+   "options": [
+    "Daha yüksek frekanslı sesler",
+    "Yalnız en düşük frekanslar",
+    "Her frekansın aynı anda mutlaka kaybolması",
+    "Yalnız orta kulak kemikleriyle iletilen sesler"
+   ]
+  },
+  "64056": {
+   "text": "Fotokromik güneş gözlüğü neden kokpitte dışarıya göre daha az etkili olabilir?",
+   "options": [
+    "Kararması UV maruziyetine bağlıdır; ön cam UV’yi azaltabilir ve açılması hızlı ışık değişimlerine göre yavaş kalabilir",
+    "Gece saydam cam gereğini her zaman kaldırır",
+    "Yalnız kokpit hava basıncıyla anında kararır",
+    "Her pilotun kırma kusurunu reçetesiz düzeltir"
+   ]
+  },
+  "64057": {
+   "text": "Işık retinaya ulaştığında retinal fotoreseptörlerin temel işlevi nedir?",
+   "options": [
+    "Işığı görme sinir sistemiyle beyne taşınabilecek sinyallere dönüştürmek",
+    "Işık göz bebeğine girmeden önce kırmanın çoğunu yapmak",
+    "Kabin basıncını düzenlemek",
+    "Optik sinir için oksijen üretmek"
+   ]
+  },
+  "64058": {
+   "text": "Yakındaki nesnenin derinliğini algılamada binoküler stereopsis hangi bilgiyi kullanır?",
+   "options": [
+    "İki gözün biraz farklı görüntülerini",
+    "Desibel ile ölçülen ses düzeyini",
+    "Orta kulaktaki basınç farkını",
+    "Yalnız uzak ufkun rengini"
+   ]
+  },
+  "64059": {
+   "text": "Yavaş gelişen pilot görev yapamazlığı neden özellikle tehlikeli olabilir?",
+   "options": [
+    "Pilot kötüleşmiş kararlar vermeye devam ederken etkilenme fark edilmeyebilir",
+    "Her zaman anında ve kolayca fark edilen yıkılma oluşturur",
+    "İyileşmeden önce yargıyı otomatik geliştirir",
+    "Pilot çok uçuş saatine sahipse zararsızdır"
+   ]
+  },
+  "64060": {
+   "text": "Alçalırken kulak basıncı eşitlenmiyor ve ağrı artıyor. Gerekli izinle güvenli düz uçuş veya küçük tırmanış mümkün. Hangi eylem basınç farkının artmasını sürdürmekten kaçınır?",
+   "options": [
+    "Alçalmayı duraklatıp eşitlenmeye zaman vermek; uygunsa güvenli ve izinli irtifa düzenlemesini kullanmak",
+    "Dış basıncı daha hızlı artırmak için alçalma hızını artırmak",
+    "İşitme kaybı eşitlenmeyi kanıtladığı için hızla alçalmayı sürdürmek",
+    "Orta kulak basıncını azaltmak için ek oksijeni çıkarmak"
+   ]
+  },
+  "64061": {
+   "text": "Pilotun mevcut uçuş durumuna ait zihinsel modeline normalde hangi bilgiler katkı verir?",
+   "options": [
+    "Hem geçmiş bilgi/deneyim hem mevcut duyusal bilgi",
+    "Mevcut kanıtlardan bağımsız yalnız geçmiş deneyim",
+    "Güncel bilgi olmadan yalnız otomatik motor rutin",
+    "Bütün duyusal girdilerin yorumsuz kusursuz kaydı"
+   ]
+  },
+  "64062": {
+   "text": "Pilotun karşısında öğrenilmiş hiçbir kuralın uymadığı gerçekten yeni bir problem var. Çözümü oluşturmak için ağırlıkla hangi yaklaşım gerekir?",
+   "options": [
+    "Durumu ve sistemi anlayarak bilgiye dayalı muhakeme",
+    "İlgisiz tanıdık rutinin otomatik beceriyle uygulanması",
+    "Uygun olmadığı bilinen kuralın kurala dayalı uygulanması",
+    "Yeni her problemi çözmenin tek yolu olarak kasıtlı kural ihlali"
+   ]
+  },
+  "64063": {
+   "text": "Pilot karanlık zemindeki tek ışığa uzun süre bakıyor ve sabit ışık hareket ediyormuş gibi görünüyor. Bu hangi illüzyondur?",
+   "options": [
+    "Otokinez",
+    "Eğimli bulut tabakasından oluşan yanlış ufuk",
+    "Uzun dönüşte başı hareket ettirmekten oluşan Coriolis illüzyonu",
+    "Çarpışmayı kanıtlayan gerçek kerteriz değişimi"
+   ]
+  },
+  "64064": {
+   "text": "Ses düzeyi desibel ile ifade ediliyor. Desibel ölçeği hangi tür ölçektir?",
+   "options": [
+    "Logaritmik",
+    "Doğrusal; sayıyı ikiye katlamak ses şiddetini her zaman ikiye katlar",
+    "Hertz cinsinden frekansın doğrudan ölçümü",
+    "Saniye cinsinden işitme süresinin ölçümü"
+   ]
+  },
+  "64065": {
+   "text": "Başka pilotla eğitim uçuşundan önce etkili operasyon brifingi neyi oluşturmalıdır?",
+   "options": [
+    "Plan, sorumluluklar ve olası sorunlara tepkiler hakkında ortak anlayış",
+    "Yalnız kıdemli kişiye hiçbir zaman soru sorulamayacağını",
+    "Yalnız ortamı iyileştiren sosyal konuşmayı",
+    "Anlaşılıp anlaşılmadığına bakmadan mümkün olan her ayrıntıyı"
+   ]
+  },
+  "64066": {
+   "text": "Duyusal tespit eşiği neyi tanımlar?",
+   "options": [
+    "Belirtilen şartlarda duyusal tepki doğurmak için gereken en düşük uyaran gücünü",
+    "Kalıcı tutulan bilginin en yüksek miktarını",
+    "Ezberlenen kontrol maddelerinin toplam sayısını",
+    "Fiziksel olarak alınan her sinyalin bilinçle fark edileceğinin garantisini"
+   ]
+  },
+  "64067": {
+   "text": "Hipoglisemi nedir ve pilotu neden etkileyebilir?",
+   "options": [
+    "Kan şekerinin anormal düşük olması; güçsüzlük, kafa karışıklığı ve performans azalması oluşturabilir",
+    "Kan şekeri normalken oksijen parsiyel basıncının düşük olması",
+    "Konsantrasyonu her zaman artıran yüksek kan şekeri",
+    "Yalnız kulak tıkanması nedeniyle karbondioksitin artması"
+   ]
+  },
+  "64068": {
+   "text": "Stres tepkisi sonrasında toparlanma ve “dinlen ve sindir” işlevlerini genellikle hangi otonom bölüm destekler?",
+   "options": [
+    "Parasempatik bölüm",
+    "Savaş ya da kaç tepkisini sağlayan sempatik bölüm",
+    "Yalnız istemli iskelet kası sistemi",
+    "Yalnız görme korteksi"
+   ]
+  },
+  "64069": {
+   "text": "Pilotun süren birkaç kaygısı ve önünde zor bir uçuş vardır. Birleşen stres nasıl değerlendirilmelidir?",
+   "options": [
+    "Yükler birikebilir ve birlikte pilotun başa çıkma kapasitesini aşabilir",
+    "Her yük diğerlerini yok eder",
+    "Yalnız en son kaygı etki eder",
+    "Deneyim bütün birleşik strese karşı bağışıklık sağlar"
+   ]
+  },
+  "64070": {
+   "text": "Pilot kalkış öncesinde acele ve aşırı yük hissediyor. Hangi tepki stresin önlenebilir nedenlerini ele alır?",
+   "options": [
+    "Hazırlık için zaman ayırmak, planı yeniden değerlendirmek ve başlamadan gereksiz yükleri azaltmak",
+    "Planı koruyup belirtileri alkolle gizlemek",
+    "Kaygıya daha az zaman kalsın diye kontrolleri aceleyle bitirmek",
+    "Uçak havalanınca kokpit stresinin yok olacağını varsaymak"
+   ]
+  },
+  "64071": {
+   "text": "Seçilen bilgi çalışma belleğine geçmeden önce gelen görsel ve işitsel izlenimleri kısa süre hangi depo tutar?",
+   "options": [
+    "Görsel ikonik ve işitsel ekoik izleri içeren duyusal bellek",
+    "Yalnız anlamsal uzun süreli bellek",
+    "Öğrenilmiş motor becerilerin işlemsel belleği",
+    "Bütün uyaranların seçimsiz kalıcı deposu"
+   ]
+  },
+  "64072": {
+   "text": "Çok tekrar sonrasında tanıdık kumanda dizisi az bilinçli dikkatle akıcı yapılabiliyor. Bu öğrenilmiş diziye hangi tanım uyar?",
+   "options": [
+    "Motor program veya öğrenilmiş otomatik rutin",
+    "Hiç pratik gerektirmeyen doğuştan refleks",
+    "Tamamen yeni probleme bilgiye dayalı çözüm",
+    "Kontrol listeleri ve izlemenin her zaman bırakılabileceğinin kanıtı"
+   ]
+  },
+  "64073": {
+   "text": "Yeterli zaman olmasına rağmen görev pilotun bilgi ve becerisini aşıyor. Bu hangi yük sorunudur?",
+   "options": [
+    "Nitel aşırı yük: görevin zorluğu mevcut yeterliği aşar",
+    "Yalnız az sürede çok sayıda basit görevden nicel aşırı yük",
+    "Uyaran azlığı nedeniyle yetersiz yük",
+    "Bol zaman sayesinde en iyi performansın garanti olması"
+   ]
+  },
+  "64074": {
+   "text": "Pilot doğru telsiz frekansını girmeyi planlıyor, fakat yanlış rakama basıyor. Bu hangi hata türüdür?",
+   "options": [
+    "Slip: amaç doğru, uygulanan hareket amaçlandığı gibi değil",
+    "Mistake: pilot yanlış eylemi özellikle planlamış",
+    "Bilinen kuralın kasıtlı ihlali",
+    "Fizyolojik bilinç kaybı"
+   ]
+  },
+  "64075": {
+   "text": "Pilot emniyet kontrollerinin sırasını hatırlamak için bir kısaltma kullanıyor. Hangi bellek yardımından yararlanıyor?",
+   "options": [
+    "Bilgiyi akılda kalan örüntüye bağlayan mnemonic",
+    "Yeni bir fizyolojik duyu",
+    "Çalışma belleğinin fiziksel büyüklüğünü artırma",
+    "Hatırlanan her maddenin doğrulanmadan doğru olduğunu garanti etme"
+   ]
+  },
+  "64076": {
+   "text": "AFM acil durum için zaman kritik hafıza maddeleri tanımlıyor. Uçak kontrolünü koruyup bu ilk maddeleri yaptıktan sonra pilot ne yapmalıdır?",
+   "options": [
+    "Uygun kontrol listesiyle doğrulayıp kalan işlemleri tamamlamak",
+    "Liste hazır olsa da kalan her maddeyi hafızadan yapmak",
+    "Yalnız tanıdık olduğu için ilgisiz listeye başlamak",
+    "Acil durumun çözüldüğünü varsayıp sonraki kontrolleri atlamak"
+   ]
+  },
+  "64077": {
+   "text": "FAA havacılık tıbbı rehberine göre sağlıklı bir pilotta gece görüşü yaklaşık hangi kabin basınç irtifasında etkilenmeye başlayabilir?",
+   "options": [
+    "Yaklaşık 5.000 ft.",
+    "Yalnızca 18.000 ft’in üzerinde.",
+    "Yalnızca 35.000 ft’in üzerinde.",
+    "Havada oksijen oranı%21 kaldıkça hiçbir irtifa gece görüşünü etkileyemez."
+   ]
+  },
+  "64078": {
+   "text": "Gündüz VFR uçuşunda ön cam boyunca trafiği fark etmeye hangi dış tarama yöntemi yardımcı olur?",
+   "options": [
+    "Küçük sektörleri düzenli taramak ve her birinde odaklanmak için kısa süre durmak.",
+    "Gözleri durmadan olabildiğince hızlı kaydırmak.",
+    "Tek noktaya bakıp tamamen çevresel harekete güvenmek.",
+    "Yalnızca burnun tam önündeki alanı izlemek."
+   ]
+  },
+  "64079": {
+   "text": "Geçerli sağlık sertifikası bulunan pilotta uçuşu etkileyebilecek bir hastalık gelişmiştir. Lisans yetkilerini kullanmama yönündeki ilk sorumluluk kimdedir?",
+   "options": [
+    "Gerektiğinde havacılık tıbbı görüşü alarak pilotta.",
+    "Yalnızca sertifikayı veren muayene uzmanında.",
+    "Kalkıştan sonra ATC’de.",
+    "Çoğunluk oyuyla yolcularda."
+   ]
+  },
+  "64080": {
+   "text": "Kumanda devrinde A pilotu “Kumandalar sende”, B pilotu “Kumandalar bende” demiştir. Önerilen üç aşamalı devri ne tamamlar?",
+   "options": [
+    "A pilotunun “Kumandalar sende” diye teyit etmesi ve devri doğrulaması.",
+    "B pilotunun “Kumandalar sende” diyerek hemen geri vermesi.",
+    "İki pilotun aynı anda kumandaları bırakması.",
+    "İlk ifade söylendiğinde başka teyit gerekmemesi."
+   ]
+  },
+  "64081": {
+   "text": "Pilot “Bugün kurallar bana uygulanmaz” düşüncesini fark etmiştir. Tehlikeli tutumu düzeltmenin ilk adımı nedir?",
+   "options": [
+    "Karşı düşünceyi uygulamadan önce düşünceyi tehlikeli olarak fark edip adlandırmak.",
+    "Tereddüdü önlemek için hemen bu düşünceye göre davranmak.",
+    "İş yükünü azaltmak için tüm kontrol listelerini bırakmak.",
+    "Düşüncenin tehlikeli olduğunu gösterecek kazayı beklemek."
+   ]
+  },
+  "64082": {
+   "text": "Pilot dürtüsellik tutumuyla “Hemen bir şey yapmalıyım” diye düşünmektedir. Uygun karşı düşünce hangisidir?",
+   "options": [
+    "Dur ve harekete geçmeden önce düşün",
+    "Kurallar bana uygulanmaz",
+    "Yapacağım hiçbir şey işe yaramaz",
+    "Kazalar yalnızca başkalarının başına gelir"
+   ]
+  },
+  "64083": {
+   "text": "Pilot otorite karşıtlığı tutumuyla “Kimse bana ne yapacağımı söylememeli” diye düşünmektedir. Uygun karşı düşünce hangisidir?",
+   "options": [
+    "Geçerli kurallara saygı duy ve uy",
+    "Düşünmeden harekete geç",
+    "Bir kazanın başıma gelemeyeceğini varsay",
+    "Sonuç kader olduğu için vazgeç"
+   ]
+  },
+  "64084": {
+   "text": "Pilot zarar görmezlik inancı tutumuyla “Benim başıma kaza gelemez” diye düşünmektedir. Uygun karşı düşünce hangisidir?",
+   "options": [
+    "Benim de başıma gelebileceğini kabul et ve riski yönet",
+    "Risk alarak üstün becerini kanıtla",
+    "Aklına gelen ilk şeyi yap",
+    "Kuralların yalnızca diğer pilotlara uygulandığını varsay"
+   ]
+  },
+  "64085": {
+   "text": "Pilotun işitme değerlendirmesinde presbiakuzi ne demektir?",
+   "options": [
+    "Yaşlanmayla ilişkili kademeli işitme kaybı.",
+    "Alçalmada geçici kulak basıncı ağrısı.",
+    "Dönüşte baş hareketinin oluşturduğu baş dönmesi.",
+    "Yalnızca dış kulaktaki bir nesnenin oluşturduğu iletim tıkanıklığı."
+   ]
+  },
+  "64086": {
+   "text": "Yüksek yaklaşma süratiyle doğrudan çarpışma rotasında yaklaşan uzak bir uçağın görünür büyüklüğü, çarpışma anı yaklaştıkça genellikle nasıl değişir?",
+   "options": [
+    "Başlangıçta yavaş, çarpışma yaklaştığında çok hızlı büyür.",
+    "Yaklaşmanın tamamında sabit bir hızla büyür.",
+    "Önce hızla büyür, sonra görünür büyüklüğü sabit kalır.",
+    "Uçaklar birbirini geçene kadar değişmez."
+   ]
+  },
+  "64087": {
+   "text": "Gündüz VMC şartlarında gerçek doğal ufuk açık ve güvenilir biçimde görülebiliyorsa, uçak duruşu hakkında en iyi doğrudan referans hangisidir?",
+   "options": [
+    "Gerçek dış ufuk.",
+    "İç kulaktaki denge hissi.",
+    "Yalnızca koltuktan hissedilen basınç.",
+    "Yakındaki bulut yüzeyinin görünür eğimi."
+   ]
+  },
+  "64088": {
+   "text": "İki pilot farklı ses düzeylerine farklı sürelerle maruz kalmıştır. Gürültünün işitmeye zarar verme riski değerlendirilirken hangileri dikkate alınmalıdır?",
+   "options": [
+    "Hem ses düzeyi hem maruz kalma süresi.",
+    "Yalnızca anlık en yüksek ses düzeyi.",
+    "Ses düzeyinden bağımsız olarak yalnızca süre.",
+    "Yalnızca sesin konuşma içerip içermemesi."
+   ]
+  },
+  "64089": {
+   "text": "Dönen pervaneden kesikli gelen güneş ışığı yolcuda yönelim bozukluğu yaratmaktadır. Pilot güvenli kontrolü sürdürürken bu görsel uyaranı doğrudan azaltan davranış hangisidir?",
+   "options": [
+    "Uygun siperlik veya gölgeyle yolcuyu kesikli ışıktan korumak.",
+    "Uyumu hızlandırmak için kesikli ışığı daha parlak yapmak.",
+    "Yolcudan pervanenin içinden sabit bakmasını istemek.",
+    "Görsel etkiyi gidermek için kabin sıcaklığını artırmak."
+   ]
+  },
+  "64090": {
+   "text": "Bir pilot reçetesiz satılan bir antihistaminik kullanmaya başlamıştır. İlacın reçetesiz olması uçuş öncesinde güvenle kullanılabileceğini gösterir mi?",
+   "options": [
+    "Hayır; hastalık ve ilaç birlikte değerlendirilmeli, gerektiğinde havacılık tıbbı görüşü alınmalıdır.",
+    "Evet; uçuşu yalnızca reçeteli ilaçlar bozabilir.",
+    "Evet; ilk doz bir saatten daha kısa süre önce alınmışsa.",
+    "Hayır; her ilaç pilot lisansını kalıcı olarak geçersiz kılar."
+   ]
+  },
+  "64091": {
+   "text": "Puslu havaya alışkın bir pilot alışılmadık derecede berrak havada uçmaktadır. Hangi mesafe algısı hatası oluşabilir?",
+   "options": [
+    "Uzak arazi gerçekte olduğundan daha yakın görünebilir.",
+    "Uzak arazi mutlaka gerçekte olduğundan daha uzakta görünür.",
+    "Berrak hava araziye gerçek mesafeyi azaltır.",
+    "Arazi konumu görsel kontrasttan bağımsız hale gelir."
+   ]
+  },
+  "64092": {
+   "text": "Gezi uçuşu için arkadaşlar beklemektedir; yan rüzgâr pilotun kişisel sınırını aşmış ve şartlar kötüleşmektedir. Doğru karar hangisidir?",
+   "options": [
+    "Yolcuların hayal kırıklığına rağmen uçuşu ertelemek.",
+    "Riskin kabul edilebilirliğine yolcuların karar vermesini sağlamak.",
+    "Planlanan saate uymak için hemen kalkmak.",
+    "Kişisel sınırları aşmayı çalışmak için uçuşu kullanmak."
+   ]
+  },
+  "64093": {
+   "text": "Daha deneyimli bir pilotla uçarken hemen tehlike yaratabilecek bir davranış fark ettiniz. Uygun iletişim tepkisi hangisidir?",
+   "options": [
+    "Emniyet kaygısını gecikmeden ve açıkça belirtmek.",
+    "Deneyim doğruluğu garanti ettiği için sessiz kalmak.",
+    "Aciliyetten bağımsız olarak inişi beklemek.",
+    "Şimdi katıldığınızı söyleyip kaygıyı daha sonra başka biriyle konuşmak."
+   ]
+  },
+  "64094": {
+   "text": "Bir gösterge, değerin hızla artıp artmadığını veya sınıra yaklaşıp yaklaşmadığını göstermelidir. Eğilimi ilk bakışta fark etmeyi hangi sunum genellikle kolaylaştırır?",
+   "options": [
+    "İyi tasarlanmış analog ölçek veya grafik eğilim göstergesi.",
+    "Ölçek ya da eğilim bilgisi olmayan yalnızca sayısal değer.",
+    "Yalnızca sınır aşıldıktan sonra beliren uyarı.",
+    "Birimleri haber vermeden otomatik değiştiren gösterge."
+   ]
+  },
+  "64095": {
+   "text": "Normal eğitim uçuşundan önce uçağa ait doğru kontrol listesini bulamıyorsunuz. Ne yapmalısınız?",
+   "options": [
+    "Planlanan kontrolleri yapmadan önce doğru kontrol listesini edinmek.",
+    "Kumandaları benzer başka tipin kontrol listesini kullanmak.",
+    "Öğretmen de uçacağı için kontrolleri atlamak.",
+    "Kalkışı geciktirmemek için bütün kontrollerde belleğe güvenmek."
+   ]
+  },
+  "64096": {
+   "text": "Sıcak kokpitte uzun uçuş pilotun su kaybını artırmaktadır. Dehidrasyon gelişirken hangi sonuç önemlidir?",
+   "options": [
+    "Yorgunluk ve zihinsel/fiziksel performansta azalma.",
+    "Hipoksiye dayanıklılığın otomatik artması.",
+    "Dolaşan sıvı azaldığı için dikkatin iyileşmesi.",
+    "Su içmeden bile sıcaklık hastalığına karşı korunma."
+   ]
+  },
+  "64097": {
+   "text": "Manevralı uçuşta yolcu uçuş tutması yaşamaktadır. İlaç vermeden rahatsızlığı hangi önlem azaltabilir?",
+   "options": [
+    "Gereksiz manevraları azaltmak, temiz hava sağlamak ve sabit dış referansa bakmasını teşvik etmek.",
+    "Daha hızlı alışması için ani manevraları artırmak.",
+    "Tekrarlayan hızlı baş hareketleri yaptırmak.",
+    "Yalnızca kabindeki yakın ve hareketli nesneye odaklanmasını sağlamak."
+   ]
+  },
+  "64098": {
+   "text": "Piston uçakta egzozdan kabine küçük bir sızıntı vardır. Aynı karbonmonoksit maruziyeti daha yüksek kabin irtifasında neden daha tehlikeli olabilir?",
+   "options": [
+    "Azalan oksijen erişilebilirliği, CO’nun oksijen taşıma kapasitesini azaltan etkisine eklenir.",
+    "Yüksek irtifa CO’yu zararsız azota dönüştürür.",
+    "Düşük kabin basıncında CO’nun hemoglobine ilgisi azalır.",
+    "Yüksek irtifa pilotun CO kokusunu daha erken almasını garanti eder."
+   ]
+  },
+  "64099": {
+   "text": "Kokpitte alışılmadık koku veya renk fark edilmemesi karbonmonoksit bulunmadığını güvenilir biçimde gösterir mi?",
+   "options": [
+    "Hayır; CO’nun kendisi renksiz ve kokusuzdur.",
+    "Evet; tehlikeli CO’nun her zaman keskin kokusu vardır.",
+    "Evet; CO her zaman görünür gri bulut oluşturur.",
+    "Evet; CO performansı etkilemeden önce duyularla fark edilir."
+   ]
   }
  }
 }

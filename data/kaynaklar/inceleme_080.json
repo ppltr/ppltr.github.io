@@ -8,6 +8,286 @@
    "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
    "konu": "Koordineli dönüşte stall ve spin yönü",
    "neden": "Kaynak anahtarı, koordineli sola dönüşte stall’dan sola başlangıç spin’i seçtiriyor. Modern FAA AFH 5-20/5-22, spin için stall ve yaw gerektiğini açıklar; belirtilen koordinasyon tek başına spin yönünü belirlemez. Kaynağın bu yön cevabı doğrulanamadığından puanlanan teste eklenmez."
+  },
+  {
+   "kaynak": "x-caab-agk-080",
+   "no": "317",
+   "sayfa": "26",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-ir--agk-29072019.pdf",
+   "konu": "T-kuyruk normal uçuşta kanat izinden uzak olabilir. Yeterince yüksek hücum açısında hangi ciddi durum oluşabilir?",
+   "neden": "Özgün kaynak sorusu belirsiz veya farklı koşuldadır; bağımsız uyarlama ayrı kayıtta tutulur."
+  },
+  {
+   "kaynak": "x-caab-agk-080",
+   "no": "909",
+   "sayfa": "75",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-ir--agk-29072019.pdf",
+   "konu": "Koşul, kapsam veya kaynak cevabı incelemesi",
+   "neden": "Kaynak sorusu bu gerekçeyle aktif teste alınmadı; ayrı inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-caab-agk-080",
+   "no": "923",
+   "sayfa": "76",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-ir--agk-29072019.pdf",
+   "konu": "Koşul, kapsam veya kaynak cevabı incelemesi",
+   "neden": "Kaynak sorusu bu gerekçeyle aktif teste alınmadı; ayrı inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-caab-agk-080",
+   "no": "974",
+   "sayfa": "80",
+   "url": "https://ops.caab.gov.bd/file-manager/cpl-ir--agk-29072019.pdf",
+   "konu": "Koşul, kapsam veya kaynak cevabı incelemesi",
+   "neden": "Kaynak sorusu bu gerekçeyle aktif teste alınmadı; ayrı inceleme kaydı korundu."
+  },
+  {
+   "kaynak": "x-linx-080",
+   "no": "62",
+   "sayfa": "10",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "konu": "İnceleme: Tail force direction alone cannot universally describe a pitch disturbance without initial trim, tail incidence and derivative assumptions. Existing16294 retains the specified lift/weight balancing couple.",
+   "neden": "İnceleme: Tail force direction alone cannot universally describe a pitch disturbance without initial trim, tail incidence and derivative assumptions. Existing16294 retains the specified lift/weight balancing couple."
+  },
+  {
+   "kaynak": "x-linx-080",
+   "no": "69",
+   "sayfa": "11",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "konu": "İnceleme: Landing CG must be checked after fuel burn, but nearest53002 onlytests movement. Parent030 owns the complete landing-limit check adaptation; avoid a new duplicate.",
+   "neden": "İnceleme: Landing CG must be checked after fuel burn, but nearest53002 onlytests movement. Parent030 owns the complete landing-limit check adaptation; avoid a new duplicate."
+  },
+  {
+   "kaynak": "x-linx-080",
+   "no": "104",
+   "sayfa": "16",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "konu": "İnceleme: Forward CG/trim/elevator authority depends on actual deflection limits and aerodynamic hinge moments. The source’s universal re-trim consequence is not adopted without a specific primary model.",
+   "neden": "İnceleme: Forward CG/trim/elevator authority depends on actual deflection limits and aerodynamic hinge moments. The source’s universal re-trim consequence is not adopted without a specific primary model."
+  },
+  {
+   "kaynak": "x-linx-080",
+   "no": "135",
+   "sayfa": "20",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "konu": "Özgün kaynak sorusunda bu belirsizlik/yanlışlık korunarak incelemeye alındı; aktif test cevabı olarak kullanılmaz.",
+   "neden": "Özgün kaynak sorusunda bu belirsizlik/yanlışlık korunarak incelemeye alındı; aktif test cevabı olarak kullanılmaz."
+  },
+  {
+   "kaynak": "x-linx-080",
+   "no": "136",
+   "sayfa": "21",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "konu": "Özgün kaynak sorusunda bu belirsizlik/yanlışlık korunarak incelemeye alındı; aktif test cevabı olarak kullanılmaz.",
+   "neden": "Özgün kaynak sorusunda bu belirsizlik/yanlışlık korunarak incelemeye alındı; aktif test cevabı olarak kullanılmaz."
+  },
+  {
+   "kaynak": "x-linx-080",
+   "no": "141",
+   "sayfa": "21",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "konu": "İnceleme: Ranking rectangular/taper/elliptic induced drag also depends on aspect ratio, loading and twist. Without equal-span/area/lift assumptions, the source maximum cannot be uniquely verified.",
+   "neden": "İnceleme: Ranking rectangular/taper/elliptic induced drag also depends on aspect ratio, loading and twist. Without equal-span/area/lift assumptions, the source maximum cannot be uniquely verified."
+  },
+  {
+   "kaynak": "x-linx-080",
+   "no": "142",
+   "sayfa": "21",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Principles_of_flight.pdf",
+   "konu": "Özgün kaynak sorusunda bu belirsizlik/yanlışlık korunarak incelemeye alındı; aktif test cevabı olarak kullanılmaz.",
+   "neden": "Özgün kaynak sorusunda bu belirsizlik/yanlışlık korunarak incelemeye alındı; aktif test cevabı olarak kullanılmaz."
+  },
+  {
+   "kaynak": "x-traficom-080",
+   "no": "50",
+   "sayfa": "9",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL080ENG%2011102018.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: tail-disturbance",
+   "neden": "İnceleme: Tail force direction alone cannot universally describe a pitch disturbance without initial trim, tail incidence and derivative assumptions. Existing16294 retains the specified lift/weight balancing couple."
+  },
+  {
+   "kaynak": "x-traficom-080",
+   "no": "56",
+   "sayfa": "10",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL080ENG%2011102018.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: landing-cg",
+   "neden": "İnceleme: Landing CG must be checked after fuel burn, but nearest53002 onlytests movement. Parent030 owns the complete landing-limit check adaptation; avoid a new duplicate."
+  },
+  {
+   "kaynak": "x-traficom-080",
+   "no": "79",
+   "sayfa": "14",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL080ENG%2011102018.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: aerobalance",
+   "neden": "İnceleme: Newpof:horn-balance supplies verified geometric aerodynamic balancing. Source row shared independently; cross-reference canonical key below."
+  },
+  {
+   "kaynak": "x-traficom-080",
+   "no": "88",
+   "sayfa": "15",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL080ENG%2011102018.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: trim-authority",
+   "neden": "İnceleme: Forward CG/trim/elevator authority depends on actual deflection limits and aerodynamic hinge moments. The source’s universal re-trim consequence is not adopted without a specific primary model."
+  },
+  {
+   "kaynak": "x-traficom-080",
+   "no": "121",
+   "sayfa": "20",
+   "url": "https://www.traficom.fi/sites/default/files/media/file/PPL080ENG%2011102018.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: planform",
+   "neden": "İnceleme: Ranking rectangular/taper/elliptic induced drag also depends on aspect ratio, loading and twist. Without equal-span/area/lift assumptions, the source maximum cannot be uniquely verified."
+  },
+  {
+   "kaynak": "x-cad-080",
+   "no": "25",
+   "sayfa": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno osoblje/2022/Principles of flight.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: landing-cg",
+   "neden": "İnceleme: Landing CG must be checked after fuel burn, but nearest53002 onlytests movement. Parent030 owns the complete landing-limit check adaptation; avoid a new duplicate."
+  },
+  {
+   "kaynak": "x-cad-080",
+   "no": "32",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno osoblje/2022/Principles of flight.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: tail-disturbance",
+   "neden": "İnceleme: Tail force direction alone cannot universally describe a pitch disturbance without initial trim, tail incidence and derivative assumptions. Existing16294 retains the specified lift/weight balancing couple."
+  },
+  {
+   "kaynak": "x-cad-080",
+   "no": "105",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno osoblje/2022/Principles of flight.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: planform",
+   "neden": "İnceleme: Ranking rectangular/taper/elliptic induced drag also depends on aspect ratio, loading and twist. Without equal-span/area/lift assumptions, the source maximum cannot be uniquely verified."
+  },
+  {
+   "kaynak": "x-cad-080",
+   "no": "112",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno osoblje/2022/Principles of flight.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: cdkey",
+   "neden": "İnceleme: CADmarked-AquadruplesDRAGCOEFFICIENTwhenvelocitydoubles; onlyforcequadrupleswithconstantcoefficient. Independentpof:drag-coefficient-speed fixesassumptions."
+  },
+  {
+   "kaynak": "x-cad-080",
+   "no": "141",
+   "sayfa": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno osoblje/2022/Principles of flight.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: trim-authority",
+   "neden": "İnceleme: Forward CG/trim/elevator authority depends on actual deflection limits and aerodynamic hinge moments. The source’s universal re-trim consequence is not adopted without a specific primary model."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "3",
+   "sayfa": "3",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: incipient-spin",
+   "neden": "İnceleme: Wingdrop/stall recovery should reduceAOAandcontrol yaw perAFM; source wordingdoesnotestablishspinstateanduniversalrudderagainstlowerwingrule. Ambiguousdirectionnotactivated."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "14",
+   "sayfa": "5",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: thickness",
+   "neden": "İnceleme: Profile-thickness graphical/definition type absent from bank, but exact independent primary geometry locator not yet established; retained for review, not discarded as irrelevant."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "16",
+   "sayfa": "6",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: bl-profile",
+   "neden": "İnceleme: Sourcegraphiclaminar/turbulent velocityprofile visuallyinspected; bank16187tests types but not profile shape. Newpof:turbulent-boundary-tradeoff preservesverifieddifferentphysics; specificprofilegraphicinterpretationkeptreviewpendingindependentprimarydiagram."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "18",
+   "sayfa": "7",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: bl-profile",
+   "neden": "İnceleme: Sourcegraphiclaminar/turbulent velocityprofile visuallyinspected; bank16187tests types but not profile shape. Newpof:turbulent-boundary-tradeoff preservesverifieddifferentphysics; specificprofilegraphicinterpretationkeptreviewpendingindependentprimarydiagram."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "31",
+   "sayfa": "10",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: aoa-linear",
+   "neden": "İnceleme: ApproximateproportionalityofwinglifttoAOAdepends onfixedspeed/density/zero-liftangle and pre-stalllinearity; sourceomitsnecessaryassumptions."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "44",
+   "sayfa": "12",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: induced-location",
+   "neden": "İnceleme: Induceddrag isassociated withlift-generateddownwash/wake; a singletrailing-edge-originstatement omitsdistribution. Bank16151testswingtipvortexeffect; original locationkeykeptreview."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "63",
+   "sayfa": "16",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: approachstall",
+   "neden": "İnceleme: Before criticalAOA, lift canstillincreaseasstallisapproached. Sourceapproachingstallliftdecrease wording isambiguous;16177specifiesbeyondstall."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "65",
+   "sayfa": "17",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: stall-location",
+   "neden": "İnceleme: Initialseparationmaystartattrailingorleadingedgedepending onairfoildesign;sourceall-wings trailing-edgeanswer isnotuniversal."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "75",
+   "sayfa": "18",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: flap-glide-wrong",
+   "neden": "İnceleme: Sourceclaimsreducedglideanglewithoutspecifyingangleconvention/power; commonflapextensionincreasesdragandsteepenspower-offpath.14980/16303retainverifiedshorterglidedistance."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "77",
+   "sayfa": "19",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: flap-trim",
+   "neden": "İnceleme: Flapextension canchangepitchingmomentandtrim; independentprimarydirection isinstallationdependent. Conceptretainedforreviewratherthanassertalltypespitchthesameway."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "83",
+   "sayfa": "20",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: goaround-poh",
+   "neden": "İnceleme: Flapretraction sequenceaftergo-aroundisPOH-specificanddepends onpositiveclimb/airspeed. No defaultmiddlepositionprocedure universallyactivated."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "107",
+   "sayfa": "24",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: aoa-climb",
+   "neden": "İnceleme: AOA comparisonbetweenlevelflightandclimbrequiresairspeed/power/mass/pathconditions;samepowersettingalonedoesnotdetermineuniqueAOA."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "141",
+   "sayfa": "30",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: idle-prop-poh",
+   "neden": "İnceleme: Moving propellerleverbackduringidledescentmaychangegovernedpitch/dragonlywithinapplicableoperatingrange; exact POH and propulsion state needed."
+  },
+  {
+   "kaynak": "x-austro-080",
+   "no": "143",
+   "sayfa": "31",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Doğrulanamayan koşul / kaynak anahtarı: negative-cl-flight",
+   "neden": "İnceleme: NegativeCL on a coefficientpolar doesnot uniquelyprove invertedflight; uprightnegative-loadflightisalsopossible. Originalflightstatekeynotactivated."
   }
  ]
 }
