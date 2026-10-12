@@ -1,0 +1,31 @@
+{
+ "questions": {
+  "64001": {
+   "text": "Gündüz bir pilot, odaklanacağı uzak bir nesne seçmeden uzun süre belirgin özelliği olmayan puslu gökyüzüne bakıyor. Gözleri gevşeyip görece yakın bir mesafeye odaklandığı için uzaktaki trafiği fark etmesi zorlaşıyor. Bu durumun adı nedir?",
+   "options": [
+    "Boş alan miyopisi (empty-field myopia)",
+    "Otokinezi (autokinesis)",
+    "Yanlış ufuk yanılsaması",
+    "Astigmatizma"
+   ]
+  },
+  "64002": {
+   "text": "Kabin basınç irtifası arttığında az miktarda alkol bile pilotun performans bozulmasını neden artırabilir?",
+   "options": [
+    "Baskılayıcı etkisi, beynin hipoksiye duyarlılığını artırır",
+    "Kabin basıncı düşünce aynı alkol dozu kan alkol konsantrasyonunu mutlaka yükseltir",
+    "Kabin basınç irtifası arttıkça solunan havadaki oksijen yüzdesi azalır",
+    "İrtifada alkol esas olarak uyarıcı etki göstererek beynin oksijen ihtiyacını artırır"
+   ]
+  },
+  "64003": {
+   "text": "Alçak irtifada, kuvvetli ve sabit rüzgârda bir uçak IAS’ını koruyarak rüzgâr altı yönünden rüzgâra karşı yöne koordineli dönüş yapıyor. Yerdeki görsel ipuçları hangi iki izlenimi oluşturabilir?",
+   "options": [
+    "Dışa kayma (skid) ve hava hızının azaldığı izlenimi",
+    "Dışa kayma (skid) ve hava hızının arttığı izlenimi",
+    "İçe kayma (slip) ve hava hızının azaldığı izlenimi",
+    "İçe kayma (slip) ve hava hızının arttığı izlenimi"
+   ]
+  }
+ }
+}

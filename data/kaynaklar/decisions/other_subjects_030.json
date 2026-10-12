@@ -1,0 +1,381 @@
+{
+ "schema_version": 1,
+ "audit_date": "2026-10-12",
+ "subject": "030",
+ "purpose": "Accepted independent EN/TR gap additions plus dispositions for every original source proposal. Original map-dependent source questions and independently specified adaptations are counted separately. Existing IDs/content/history are not changed here.",
+ "sources": [
+  {
+   "id": "x-tc-tp13014",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "permission_url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "permission": "Explicit personal/public noncommercial reproduction permission; accurate attribution and no official/endorsement claim. Commercial use requires separate permission.",
+   "scanned": 6,
+   "coverage": "All assigned TP 13014 questions reread; answer key and supplied appendix figures checked;2006 Toronto VNC is absent.",
+   "figures_visually_checked": [
+    "Take-off Table1(PDF27/printed25)",
+    "Loading graph and CG envelope(PDF28/printed26)",
+    "Lindsay CFS(PDF37/printed35)",
+    "Kingston CFS(PDF38/printed36)"
+   ],
+   "version": "Fourth editionNovember 2008, TP 13014 E 05/2009"
+  },
+  {
+   "id": "x-sonyaklasma",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama",
+   "permission": "All-rights-reserved public sample; no licence to transfer protected question wording. Metadata/topic hints only.",
+   "scanned": 10,
+   "coverage": "Current public 10-question sample HTTP 200; authenticated bank not accessed; no full-bank estimate."
+  },
+  {
+   "id": "ref-faa-phak",
+   "name": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+   "permission": "Technical facts used to independently author MCQs; no FAA/third-party images or bank wording copied.",
+   "scanned": 0,
+   "coverage": "Primary technical verification only; not an additional scanned question bank."
+  }
+ ],
+ "candidates": [
+  {
+   "key": "x-tc-tp13014:49",
+   "section": "030-05",
+   "text": "For this exercise, the take-off table for the stated mass, pressure altitude and temperature gives a zero-wind paved-runway ground roll of 1,115 ft and a total distance of 2,125 ft to clear a 50 ft obstacle. Its notes require both figures to be reduced by 10% for the 9 kt headwind, then require 15% of the wind-corrected ground roll to be added to the wind-corrected total for dry grass. What total distance is required, rounded to the nearest foot?",
+   "options": [
+    "2,063 ft",
+    "1,913 ft",
+    "2,199 ft",
+    "2,444 ft"
+   ],
+   "tr_text": "Bu alıştırmada kalkış tablosu, verilen kütle, basınç irtifası ve sıcaklık için rüzgârsız asfalt pistte 1.115 ft kalkış koşusu ve 50 ft engeli aşmak için 2.125 ft toplam mesafe veriyor. Tablo notları, 9 kt baş rüzgârında iki değerin de %10 azaltılmasını; ardından kuru çim için rüzgâr düzeltmesi yapılmış kalkış koşusunun %15’inin düzeltilmiş toplam mesafeye eklenmesini istiyor. En yakın fite yuvarlandığında gerekli toplam mesafe kaçtır?",
+   "tr_options": [
+    "2.063 ft",
+    "1.913 ft",
+    "2.199 ft",
+    "2.444 ft"
+   ],
+   "explanation_tr": "Önce rüzgâr: toplam 2.125 × 0,90 = 1.912,5 ft; kalkış koşusu 1.115 × 0,90 = 1.003,5 ft. Çim ilavesi yalnız koşuya dayanır: 1.003,5 × 0,15 = 150,525 ft. Sonuç 2.063,025 ≈ 2.063 ft. Bu yüzdeler verilen tabloya aittir; bütün uçaklar için genel kural değildir. Transport Canada örnek tablosu bağımsız bir alıştırma olarak uyarlanmıştır; resmî SHGM sorusu değildir.",
+   "explanation_en": "Apply the wind factor to both distances: 2,125 × 0.90 = 1,912.5 ft and 1,115 × 0.90 = 1,003.5 ft. Add 0.15 × 1,003.5 = 150.525 ft for grass, giving 2,063.025 ft, rounded to 2,063 ft. The factors belong to the supplied table, not to every aircraft. Independently adapted from the Transport Canada sample; not an official Turkish examination question.",
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "49",
+     "page": "12; printed p 10; take-off table PDF p 27/printed p 25; independently adapted"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "section": "Question 49; Table 1 notes 3 and 5, row 1600 lb/4000 ft/20°C; Answer Key printedp 37:49-(2); original figures visually verified"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf",
+     "section": "Chapter 11, Performance Charts / Conditions Notes, printedpp 11-19 to 11-20: use each AFM/POH chart and its conditions"
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_ids": [
+    14922,
+    53009
+   ],
+   "distinctness_evidence": "14922 only identifies take-off factors;53009 defines ground roll. Neither applies wind to both distances and grass to the ground-roll component only. This changes the calculation rule rather than just the numbers.",
+   "original_answer_verified": true,
+   "calculation": {
+    "ground_roll_zero_wind_ft": 1115,
+    "total_zero_wind_ft": 2125,
+    "wind_factor": 0.9,
+    "grass_fraction_of_corrected_roll": 0.15,
+    "result_ft": 2063.025,
+    "rounded_result_ft": 2063
+   }
+  },
+  {
+   "key": "x-tc-tp13014:89",
+   "section": "030-10",
+   "text": "A two-leg flight includes a landing at an intermediate aerodrome without refuelling. The cruise times, excluding taxi, take-off and climb, are 45 minutes and 55 minutes. Cruise fuel flow is 6 US gal/h. Each departure requires a separate allowance of 2 US gal for taxi, take-off and climb. The flight plan also specifies a final reserve of 30 minutes at the same cruise fuel flow, to remain after the last landing. With no other allowances required in this exercise, what minimum usable fuel is needed before the first taxi?",
+   "options": [
+    "17 US gal",
+    "15 US gal",
+    "14 US gal",
+    "13 US gal"
+   ],
+   "tr_text": "İki bacaklı bir uçuşta ara meydana iniliyor ve yakıt ikmali yapılmıyor. Taksi, kalkış ve tırmanış hariç seyir süreleri 45 dakika ve 55 dakikadır. Seyir tüketimi 6 US gal/saattir. Her kalkış için taksi, kalkış ve tırmanış için toplam 2 US gal pay ayrılmıştır. Planda son inişten sonra kalacak son rezerv, aynı seyir tüketimiyle 30 dakikalık yakıttır. Bu alıştırmada başka pay gerekmediğine göre ilk taksiden önce en az kaç US gal kullanılabilir yakıt gerekir?",
+   "tr_options": [
+    "17 US gal",
+    "15 US gal",
+    "14 US gal",
+    "13 US gal"
+   ],
+   "explanation_tr": "Seyir yakıtı: (45 + 55)/60 × 6 = 10 US gal. İki kalkışın payı: 2 + 2 = 4 US gal. Son rezerv:30/60 × 6 = 3 US gal. Toplam 10 + 4 + 3 = 17 US gal. İki kalkış payı da eklenir; son rezerv uçuşun sonunda bir kez kalmalıdır.30 dakika bu soruda açıkça verilen planlama koşuludur; her ülke ve uçuş için geçerli mevzuat iddiası değildir. Transport Canada soru 89’daki eksik tür, farklı verilerle bağımsız yazılmıştır.",
+   "explanation_en": "Cruise fuel is (45 + 55)/60 × 6 = 10 US gal. The two departures require 2 + 2 = 4 US gal. The explicitly specified final reserve is 30/60 × 6 = 3 US gal, so total usable fuel is 17 US gal. Include both departure allowances and retain the final reserve once after the last landing. The 30-minute reserve is an exercise assumption, not a universal legal requirement. Independently written using the missing two-leg allowance type identified in Transport Canada question 89.",
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "89",
+     "page": "20; printed p 18; independently rewritten values and explicitly supplied reserve"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "section": "Question 89 and Answer Key printedp 37:89-(2); original structure includes two separate 2 gal departure allowances; this adaptation explicitly supplies its reserve"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "section": "Chapter 16 Fuel Consumption, printedpp 16-11 to 16-12: trip fuel plus reserve, starting/taxi fuel and higher climb fuel"
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_ids": [
+    15016,
+    15020,
+    15969,
+    15970
+   ],
+   "distinctness_evidence": "15016 has only a single-leg duration and reserve.15020 calculates take-off mass after taxi fuel, and 15969/15970 ask reserve duration. None requires two separate departure fuel allowances plus a single retained final reserve.",
+   "original_answer_verified": true,
+   "calculation": {
+    "cruise_minutes": [
+     45,
+     55
+    ],
+    "fuel_flow_us_gal_per_hour": 6,
+    "departure_allowances_us_gal": [
+     2,
+     2
+    ],
+    "final_reserve_minutes": 30,
+    "cruise_fuel_us_gal": 10,
+    "reserve_fuel_us_gal": 3,
+    "total_usable_fuel_us_gal": 17
+   }
+  }
+ ],
+ "existing_notes": [],
+ "decisions": [
+  {
+   "source": "x-tc-tp13014",
+   "no": "46",
+   "page": "12; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:46",
+   "subject": "030",
+   "status": "existing",
+   "reason": "Pressure-altitude change from barometric setting is already tested in 15410; units/numbers alone do not justify a new item.",
+   "topic": "Pressure altitude from elevation and QNH",
+   "topic_tr": "Meydan yüksekliği ve altimetre ayarıyla basınç irtifası",
+   "answer_verification": {
+    "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+    "ref": "TP13014E question 46, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+   },
+   "bank_id": 15410,
+   "reason_tr": "15410’da altimetre ayarından basınç irtifası değişimi hesaplanıyor; farklı birim ve sayılar yeni soru türü oluşturmaz.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "47",
+   "page": "12; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:47",
+   "subject": "030",
+   "status": "existing",
+   "bank_id": 15381,
+   "reason": "15381 already computes density altitude from pressure altitude and ISA deviation.",
+   "topic_tr": "ISA sapmasından yoğunluk irtifası",
+   "reason_tr": "15381 aynı basınç irtifası ve ISA sıcaklık sapması hesabını soruyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "48",
+   "page": "12; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:48",
+   "subject": "030",
+   "status": "existing",
+   "bank_id": 15837,
+   "reason": "15837 covers headwind and 15836 covers crosswind components; the source combines those existing calculations.",
+   "topic_tr": "Baş ve yan rüzgâr bileşenleri",
+   "reason_tr": "15837 baş rüzgârı,15836 yan rüzgârı bileşenini hesaplatıyor; kaynak sorusu bu mevcut hesapları birleştiriyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "49",
+   "page": "12",
+   "key": "x-tc-tp13014:49",
+   "subject": "030",
+   "status": "new",
+   "reason": "Original table visually inspected and answer recomputed:2063.025 ft. The component-only grass correction is absent from the bank.",
+   "topic_tr": "Tablo notlarına göre baş rüzgârı ve yalnız kalkış koşusuna çim düzeltmesi",
+   "reason_tr": "Özgün tablo görsel olarak okundu; sonuç 2.063,025 ft hesaplandı. Çim ilavesini yalnız kalkış koşusuna uygulayan bu tür bankada yok."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "50",
+   "page": "13; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:50",
+   "subject": "030",
+   "status": "existing",
+   "bank_id": 14882,
+   "reason": "14882 already totals loading moments and checks both mass and CG limits. Source loading graph/envelope visually inspected.",
+   "topic_tr": "Yükleme sonrası kütle ve CG sınırlarına karar",
+   "reason_tr": "14882 yüklerin moment toplamını hesaplatıp hem kütle hem CG sınırını kontrol ediyor. Kaynağın yükleme grafiği ve zarfı da görsel olarak incelendi.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "89",
+   "page": "20",
+   "key": "x-tc-tp13014:89",
+   "subject": "030",
+   "status": "new",
+   "reason": "Missing separate two-departure allowance type; adaptation specifies reserve and excludes climb from cruise times to prevent double counting.",
+   "topic": "Multi-leg fuel including two ground/climb allowances and final reserve",
+   "topic_tr": "İki kalkışın yakıt payı ve son rezerv",
+   "answer_verification": {
+    "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+    "ref": "TP13014E question 89, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+   },
+   "reason_tr": "İki ayrı kalkış payının yakıt toplamına katılması eksik türdür. Yeni soruda rezerv açıkça verildi; tırmanış yakıtının iki kez sayılması önlendi."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "1",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:1",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-1",
+   "status": "existing",
+   "bank_id": 14959,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Vy ile en iyi tırmanma oranı",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14959 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "2",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:2",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-2",
+   "status": "existing",
+   "bank_id": 14941,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Engel aşılana kadar Vx",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14941 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "3",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:3",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-3",
+   "status": "existing",
+   "bank_id": 15027,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Uçuş planında TAS",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15027 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "4",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:4",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-4",
+   "status": "existing",
+   "bank_id": 15036,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Uçuş planında UTC",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15036 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "5",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:5",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-5",
+   "status": "existing",
+   "bank_id": 15004,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Kütlenin stall hızı ve iniş mesafesine etkisi",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15004 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "6",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:6",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-6",
+   "status": "existing",
+   "bank_id": 14995,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Meydan yüksekliğinin kalkış/iniş mesafesine etkisi",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14995 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "7",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:7",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-7",
+   "status": "existing",
+   "bank_id": 14980,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Flap açık süzülüşte mesafe",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14980 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "8",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:8",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-8",
+   "status": "existing",
+   "bank_id": 14886,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "ISA’dan sıcak havada yoğunluk irtifası",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14886 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "9",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:9",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-9",
+   "status": "existing",
+   "bank_id": 14861,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Yakıt hacminden kütle",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14861 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "10",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:10",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-10",
+   "status": "existing",
+   "bank_id": 14880,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Toplam momentten CG",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14880 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  }
+ ],
+ "counts": {
+  "original_rows": 16,
+  "original_dispositions": {
+   "existing": 14,
+   "new": 2
+  },
+  "accepted_questions": 2,
+  "independent_adaptations_from_reviewed_source_types": 0
+ }
+}

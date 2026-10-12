@@ -1,0 +1,95 @@
+{
+ "subject_code": "020",
+ "subject_name": "Aircraft General Knowledge",
+ "origin": "ek",
+ "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
+ "answer_convention": "İki dilde aynı sırada; ilk şık doğru. Belirsiz cevap aktif bankada yok.",
+ "id_convention": "Kalıcı idler_020.json; eski veya emekli kimlik yeniden kullanılmaz.",
+ "sections": {
+  "020-09": "Fuel",
+  "020-10": "Carburation",
+  "020-11": "Ignition",
+  "020-16": "Altimeter",
+  "020-19": "Magnetic Compass",
+  "020-23": "Turn Indicator"
+ },
+ "questions": [
+  {
+   "id": 62001,
+   "section": "020-09",
+   "text": "A high-compression spark-ignition aircraft engine is supplied with fuel below its specified octane rating. Which abnormal combustion process is most directly promoted by the inadequate octane rating?",
+   "options": [
+    "Detonation of the fuel-air charge in the cylinder.",
+    "Pre-ignition initiated by an overheated spark-plug electrode.",
+    "Spark-plug fouling caused by lead and carbon deposits.",
+    "Backfiring caused by an incorrect ignition firing sequence."
+   ]
+  },
+  {
+   "id": 62002,
+   "section": "020-11",
+   "text": "A conventional piston engine has two independent magnetos, each firing one plug in every cylinder. If one magneto fails while the other ignition circuit remains serviceable, what is the usual immediate result?",
+   "options": [
+    "All cylinders continue firing, with a small reduction in power.",
+    "Only half the cylinders keep firing, with a major reduction in power.",
+    "All cylinders lose ignition, so the engine stops immediately.",
+    "All cylinders continue firing, with no change in power output."
+   ]
+  },
+  {
+   "id": 62003,
+   "section": "020-10",
+   "text": "A normally aspirated carburetted engine is driving a constant-speed propeller in steady cruise. There is no carburettor ice. With throttle and mixture controls unchanged, selecting carburettor heat normally has which initial effect?",
+   "options": [
+    "Manifold pressure decreases and the mixture becomes richer.",
+    "Manifold pressure decreases and the mixture becomes leaner.",
+    "Manifold pressure increases and the mixture becomes richer.",
+    "Manifold pressure increases and the mixture becomes leaner."
+   ]
+  },
+  {
+   "id": 62004,
+   "section": "020-10",
+   "text": "An aircraft with a float-type carburettor is flying in clear air at +15°C with high relative humidity. There is no cloud or precipitation. Which statement about carburettor icing is correct?",
+   "options": [
+    "It remains possible because evaporation and the venturi can cool the intake below freezing.",
+    "It is prevented because the outside air temperature is above the freezing point.",
+    "It requires flight through a cloud containing supercooled liquid water droplets.",
+    "It requires rain or snow to enter through the carburettor air intake."
+   ]
+  },
+  {
+   "id": 62005,
+   "section": "020-16",
+   "text": "Ignoring instrument and position errors, a pressure altimeter is set to 1013.25 hPa. Which atmospheric conditions make its pressure-altitude indication agree with true altitude above mean sea level throughout the layer below the aircraft?",
+   "options": [
+    "Standard sea-level pressure and the ISA temperature profile.",
+    "Standard sea-level pressure and any vertical temperature profile.",
+    "Standard sea-level temperature and any sea-level pressure.",
+    "A standard temperature lapse rate and any sea-level pressure or temperature."
+   ]
+  },
+  {
+   "id": 62006,
+   "section": "020-23",
+   "text": "In an established airborne turn, the turn coordinator indicates a right turn and its inclinometer ball is displaced to the left of the centre marks. What does this combination indicate?",
+   "options": [
+    "A skidding right turn.",
+    "A slipping right turn.",
+    "A skidding left turn.",
+    "A slipping left turn."
+   ]
+  },
+  {
+   "id": 62007,
+   "section": "020-19",
+   "text": "A direct-reading magnetic compass is used in the Northern Hemisphere. During straight flight, the aircraft decelerates without changing heading. On which pair of magnetic headings is the deceleration error greatest?",
+   "options": [
+    "090° and 270°.",
+    "000° and 180°.",
+    "045° and 225°.",
+    "135° and 315°."
+   ]
+  }
+ ]
+}

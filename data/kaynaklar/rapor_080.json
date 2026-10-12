@@ -1,0 +1,234 @@
+{
+ "ders": "080",
+ "tarih": "2026-10-12",
+ "yeni_benzersiz": 2,
+ "taranan": 16,
+ "kaynaklar": {
+  "x-tc-tp13014": {
+   "review": 1,
+   "new": 2,
+   "existing": 3
+  },
+  "x-sonyaklasma": {
+   "existing": 10
+  }
+ },
+ "yildizlar": [
+  61001,
+  61002,
+  14909
+ ],
+ "inceleme": 1,
+ "kararlar": [
+  {
+   "source": "x-tc-tp13014",
+   "no": "21",
+   "page": "8",
+   "key": "x-tc-tp13014:21",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "review",
+   "reason_tr": "Kaynak anahtarı, koordineli sola dönüşte stall’dan sola başlangıç spin’i seçtiriyor. Modern FAA AFH 5-20/5-22, spin için stall ve yaw gerektiğini açıklar; belirtilen koordinasyon tek başına spin yönünü belirlemez. Kaynağın bu yön cevabı doğrulanamadığından puanlanan teste eklenmez.",
+   "reason": "Kaynak anahtarı, koordineli sola dönüşte stall’dan sola başlangıç spin’i seçtiriyor. Modern FAA AFH 5-20/5-22, spin için stall ve yaw gerektiğini açıklar; belirtilen koordinasyon tek başına spin yönünü belirlemez. Kaynağın bu yön cevabı doğrulanamadığından puanlanan teste eklenmez.",
+   "topic_tr": "Koordineli dönüşte stall ve spin yönü",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/06_afh_ch5.pdf",
+     "section": "FAA-H-8083-3C, Chapter 5, Accelerated Stalls, p. 5-20; Spins, p. 5-22"
+    }
+   ]
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "22",
+   "page": "8",
+   "key": "x-tc-tp13014:22",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "new",
+   "reason_tr": "58020 manevra yük diyagramında kütle etkisini sorar. Tek eksende tek kumanda ile tekrarlı veya eşzamanlı tam kumandalar arasındaki VA sınırlaması bankada yok; modern FAA koşulları kaynak tanımının belirsizliğini giderdi.",
+   "reason": "58020 addresses mass in the manoeuvring-load diagram; no existing bank item tests the single-input/single-axis versus repeated or simultaneous input limitation. Modern limitations resolve the source review issue.",
+   "nearest_bank_id": 58020,
+   "topic_tr": "VA’nın tek/çoklu kumanda sınırlaması",
+   "question_id": 68001
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "23",
+   "page": "8",
+   "key": "x-tc-tp13014:23",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "existing",
+   "bank_id": 16199,
+   "reason_tr": "Kanat buzlanmasının stall hızını artırması 16199’da zaten sınanıyor; yük faktörü ve buzlanmayı birlikte soran kayıt korunur. Yeni bir sayısal eşik yok.",
+   "reason": "Kanat buzlanmasının stall hızını artırması 16199’da zaten sınanıyor; yük faktörü ve buzlanmayı birlikte soran kayıt korunur. Yeni bir sayısal eşik yok.",
+   "question_id": 16199
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "24",
+   "page": "8",
+   "key": "x-tc-tp13014:24",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "new",
+   "reason_tr": "16200 dönüş/kütle/CG etkilerini listeler; 16197 düşük yoğunluğu IAS düşüşünün nedeni olarak reddeder. Bu aday irtifa değişiminin stall IAS ve TAS’ye birlikte etkisini, düşük hız ve ihmal edilen hatalar varsayımını açıkça belirterek sorar.",
+   "reason": "16200 lists changes from turns/mass/CG; 16197 rejects lower density as a cause of lower stall IAS but does not ask the simultaneous IAS/TAS consequence of altitude. This exposes the IAS-versus-TAS distinction and explicitly bounds the approximation.",
+   "nearest_bank_id": 16200,
+   "topic_tr": "Aynı kütle ve konfigürasyonda irtifa değişiminin IAS stall hızına etkisi",
+   "question_id": 68002
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "25",
+   "page": "8",
+   "key": "x-tc-tp13014:25",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "existing",
+   "bank_id": 16201,
+   "reason_tr": "Koordineli yatay dönüşte stall hızının artması 16201 ile aynı kural ve koşullardır.",
+   "reason": "Koordineli yatay dönüşte stall hızının artması 16201 ile aynı kural ve koşullardır.",
+   "question_id": 16201
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "32",
+   "page": "9",
+   "key": "x-tc-tp13014:32",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "existing",
+   "bank_id": 16168,
+   "reason_tr": "Yer etkisinde taşımanın artıp sürüklemenin azalması 16168’de zaten sınanıyor. İndüklenmiş sürükleme/downwash açıklaması mevcut kayda eklenerek mekanizma güçlendirildi; aynı etkiyi yeni bir isim seçimiyle yeniden sormak gerekli görülmedi.",
+   "reason": "Yer etkisinde taşımanın artıp sürüklemenin azalması 16168’de zaten sınanıyor. İndüklenmiş sürükleme/downwash açıklaması mevcut kayda eklenerek mekanizma güçlendirildi; aynı etkiyi yeni bir isim seçimiyle yeniden sormak gerekli görülmedi.",
+   "question_id": 16168
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "1",
+   "page": "",
+   "key": "x-sonyaklasma:080:1",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-1",
+   "status": "existing",
+   "bank_id": 16126,
+   "reason_tr": "Durma noktasında hızın sıfır olması 16126’nın şekilli doğru cevabında, akımın üst/alt kola ayrılması 16132’de var. Yeni adlandırma sorusu aynı bilginin ters soruluşu olacağından eklenmedi; terim açıklaması 16126’ya eklenecek.",
+   "reason": "Durma noktasında hızın sıfır olması 16126’nın şekilli doğru cevabında, akımın üst/alt kola ayrılması 16132’de var. Yeni adlandırma sorusu aynı bilginin ters soruluşu olacağından eklenmedi; terim açıklaması 16126’ya eklenecek.",
+   "question_id": 16126
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "2",
+   "page": "",
+   "key": "x-sonyaklasma:080:2",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-2",
+   "status": "existing",
+   "bank_id": 58002,
+   "reason_tr": "Hücum/firar kenarı arasındaki veter mesafesi 58002’de EN/TR karşılığıyla zaten var.",
+   "reason": "Hücum/firar kenarı arasındaki veter mesafesi 58002’de EN/TR karşılığıyla zaten var.",
+   "question_id": 58002
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "3",
+   "page": "",
+   "key": "x-sonyaklasma:080:3",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-3",
+   "status": "existing",
+   "bank_id": 16305,
+   "reason_tr": "Koordineli dönüşü taşımanın yatay bileşeninin sağlaması 16305 ile aynıdır.",
+   "reason": "Koordineli dönüşü taşımanın yatay bileşeninin sağlaması 16305 ile aynıdır.",
+   "question_id": 16305
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "4",
+   "page": "",
+   "key": "x-sonyaklasma:080:4",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-4",
+   "status": "existing",
+   "bank_id": 16290,
+   "reason_tr": "Kaynağın taşıma=ağırlık ve itki=sürükleme cevabı 16291’de zaten var. Bu eşitlikler sabit hızda yatay uçuş bağlamındadır; genel tırmanış/alçalış dengesine genişletilmemelidir. Mevcut tekrar grubunda 16291 kaydının görünür kanonik kimliği 16290 olduğu için kaynak bilgisi bu kimliğe bağlanır.",
+   "reason": "Kaynağın taşıma=ağırlık ve itki=sürükleme cevabı 16291’de zaten var. Bu eşitlikler sabit hızda yatay uçuş bağlamındadır; genel tırmanış/alçalış dengesine genişletilmemelidir.",
+   "matched_bank_id": 16291,
+   "question_id": 16290
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "5",
+   "page": "",
+   "key": "x-sonyaklasma:080:5",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-5",
+   "status": "existing",
+   "bank_id": 58028,
+   "reason_tr": "Yük faktörü n=L/W tanımı 16285 ile aynıdır. Mevcut tekrar grubunda 16285 kaydının görünür kanonik kimliği 58028 olduğu için kaynak bilgisi bu kimliğe bağlanır.",
+   "reason": "Yük faktörü n=L/W tanımı 16285 ile aynıdır.",
+   "matched_bank_id": 16285,
+   "question_id": 58028
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "6",
+   "page": "",
+   "key": "x-sonyaklasma:080:6",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-6",
+   "status": "existing",
+   "bank_id": 16245,
+   "reason_tr": "Dihedralin yanal kararlılığı artırması 16246 ile aynı sorudur. Mevcut tekrar grubunda 16246 kaydının görünür kanonik kimliği 16245 olduğu için kaynak bilgisi bu kimliğe bağlanır.",
+   "reason": "Dihedralin yanal kararlılığı artırması 16246 ile aynı sorudur.",
+   "matched_bank_id": 16246,
+   "question_id": 16245
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "7",
+   "page": "",
+   "key": "x-sonyaklasma:080:7",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-7",
+   "status": "existing",
+   "bank_id": 16267,
+   "reason_tr": "Diferansiyel kanatçıkların ters sapmayı azaltması 16269 ile aynıdır. Mevcut tekrar grubunda 16269 kaydının görünür kanonik kimliği 16267 olduğu için kaynak bilgisi bu kimliğe bağlanır.",
+   "reason": "Diferansiyel kanatçıkların ters sapmayı azaltması 16269 ile aynıdır.",
+   "matched_bank_id": 16269,
+   "question_id": 16267
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "8",
+   "page": "",
+   "key": "x-sonyaklasma:080:8",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-8",
+   "status": "existing",
+   "bank_id": 58009,
+   "reason_tr": "Flap/slat ile taşıma katsayısının artırılıp daha düşük hızda uçulması 16224 ile aynıdır. Mevcut tekrar grubunda 16224 kaydının görünür kanonik kimliği 58009 olduğu için kaynak bilgisi bu kimliğe bağlanır.",
+   "reason": "Flap/slat ile taşıma katsayısının artırılıp daha düşük hızda uçulması 16224 ile aynıdır.",
+   "matched_bank_id": 16224,
+   "question_id": 58009
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "9",
+   "page": "",
+   "key": "x-sonyaklasma:080:9",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-9",
+   "status": "existing",
+   "bank_id": 16183,
+   "reason_tr": "Stall kurtarmasında önce hücum açısının azaltılması 16183 ile aynıdır.",
+   "reason": "Stall kurtarmasında önce hücum açısının azaltılması 16183 ile aynıdır.",
+   "question_id": 16183
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "10",
+   "page": "",
+   "key": "x-sonyaklasma:080:10",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-10",
+   "status": "existing",
+   "bank_id": 16161,
+   "reason_tr": "Düz yatay uçuşta hız artınca indüklenmiş sürüklemenin azalıp parazit sürüklemenin artması 16161 ile aynıdır.",
+   "reason": "Düz yatay uçuşta hız artınca indüklenmiş sürüklemenin azalıp parazit sürüklemenin artması 16161 ile aynıdır.",
+   "question_id": 16161
+  }
+ ],
+ "kaynak_yeni_benzersiz": {
+  "x-tc-tp13014": 2,
+  "x-sonyaklasma": 0
+ },
+ "bagimsiz_uyarlamalar": [],
+ "duzeltmeler": []
+}

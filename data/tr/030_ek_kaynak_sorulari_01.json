@@ -1,0 +1,22 @@
+{
+ "questions": {
+  "63001": {
+   "text": "Bu alıştırmada kalkış tablosu, verilen kütle, basınç irtifası ve sıcaklık için rüzgârsız asfalt pistte 1.115 ft kalkış koşusu ve 50 ft engeli aşmak için 2.125 ft toplam mesafe veriyor. Tablo notları, 9 kt baş rüzgârında iki değerin de %10 azaltılmasını; ardından kuru çim için rüzgâr düzeltmesi yapılmış kalkış koşusunun %15’inin düzeltilmiş toplam mesafeye eklenmesini istiyor. En yakın fite yuvarlandığında gerekli toplam mesafe kaçtır?",
+   "options": [
+    "2.063 ft",
+    "1.913 ft",
+    "2.199 ft",
+    "2.444 ft"
+   ]
+  },
+  "63002": {
+   "text": "İki bacaklı bir uçuşta ara meydana iniliyor ve yakıt ikmali yapılmıyor. Taksi, kalkış ve tırmanış hariç seyir süreleri 45 dakika ve 55 dakikadır. Seyir tüketimi 6 US gal/saattir. Her kalkış için taksi, kalkış ve tırmanış için toplam 2 US gal pay ayrılmıştır. Planda son inişten sonra kalacak son rezerv, aynı seyir tüketimiyle 30 dakikalık yakıttır. Bu alıştırmada başka pay gerekmediğine göre ilk taksiden önce en az kaç US gal kullanılabilir yakıt gerekir?",
+   "options": [
+    "17 US gal",
+    "15 US gal",
+    "14 US gal",
+    "13 US gal"
+   ]
+  }
+ }
+}

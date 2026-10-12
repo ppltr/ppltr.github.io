@@ -1129,8 +1129,8 @@
      "derleyen": "010"
     }
    ],
-   "tr": "Yön önemlidir: tabakada tırmanışta FL, alçalışta irtifa kullanılır. Kaynağın “yalnız TA” anahtarı düzeltilmiştir.",
-   "en": "Direction matters: within the layer use FL while climbing and altitude while descending.",
+   "tr": "Geçiş tabakasının içinde tırmanışta FL, alçalışta irtifa kullanılır. TA’da ve altında normal ifade irtifadır; TL’de ve üzerinde FL’dir. Soru tabakanın içini sorar, TA sınırının eşitliğini tabakayla karıştırmaz.",
+   "en": "Inside the transition layer use flight levels while climbing and altitudes while descending. At or below TA normally use altitude; at or above TL use flight levels. The stem explicitly asks about the layer, not the equality boundary at TA.",
    "isaret": "aday",
    "answer_verification": [
     {
@@ -3041,10 +3041,10 @@
      "derleyen": "010"
     },
     {
-     "k": "ref-b0f32fd59dca",
+     "k": "ref-d898a42fdc0d",
      "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
      "no": "",
-     "sayfa": "SERA.5001 Table S5-1: at and above3050m(10000ft)AMSL",
+     "sayfa": "SERA.5001, Table S5-1 and footnote (*)",
      "derleyen": "010"
     },
     {
@@ -3062,12 +3062,12 @@
      "derleyen": "010"
     }
    ],
-   "tr": "10.000 ft AMSL sınırı dâhildir: bu bantta normal VFR görüşü 8 km’dir.10.000 ft altındaki 5 km kuralıyla karıştırma; sınır değişince doğru cevap değişir.",
-   "en": "The 10,000 ft boundary is included in the higher band, whose normal VFR flight visibility minimum is 8 km. This differs from the 5 km rule below 10,000 ft.",
+   "tr": "TA 10.000 ft AMSL’den düşük olduğu için VMC tablosunda 10.000 ft yerine FL100 kullanılır. FL100 üst bandın başlangıcına dâhildir; burada minimum görüş 8 km’dir. Altitude ile FL aynı basınç referansı değildir.",
+   "en": "Because TA is below 10,000 ft AMSL, the table uses FL100 instead of 10,000 ft. FL100 is included in the upper band, requiring 8 km visibility. Altitude and flight level do not share the same pressure reference.",
    "answer_verification": [
     {
      "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
-     "section": "SERA.5001 Table S5-1: at and above3050m(10000ft)AMSL"
+     "section": "SERA.5001, Table S5-1 and footnote (*)"
     }
    ],
    "adapted": true,
@@ -3076,6 +3076,16 @@
   "61085": {
    "src": [
     {
+     "k": "ref-2387d06c2b37",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-11607",
+     "no": "",
+     "sayfa": "Annex I Definitions(18a): ceiling",
+     "derleyen": [
+      "010",
+      "050"
+     ]
+    },
+    {
      "k": "x-austrocontrol-ecqb-ppl",
      "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
      "no": "61",
@@ -3083,15 +3093,15 @@
      "derleyen": "010"
     },
     {
-     "k": "ref-2387d06c2b37",
-     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-11607",
-     "no": "",
-     "sayfa": "Annex I Definitions(18a): ceiling",
-     "derleyen": "010"
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "77",
+     "sayfa": "17",
+     "derleyen": "050"
     }
    ],
-   "tr": "Tavan, bütün bulut tabanlarıyla aynı değildir:20 000 ft altındaki katmanlardan yarıdan fazla örtülme veren en alçağı seçilir; referans yer/sudur. METAR’da BKN/OVC katmanları bu ayrımı gösterir.",
-   "en": "The ceiling is a height above ground/water. It uses the lowest layer below 20,000 ft covering more than half the sky; a scattered layer alone does not establish a ceiling.",
+   "tr": "ICAO/EASA tavanı, yer veya su üstünden ölçülen, 20.000 ft altında gökyüzünün yarıdan fazlasını örten en alçak uygun bulut tabanıdır. FEW/SCT örtüsü bu eşiği sağlamaz; BKN/OVC sağlayabilir. METAR yükseklikleri yüzlerce feet’tir.",
+   "en": "The ICAO/EASA ceiling is the lowest qualifying layer below 20,000 ft covering more than half the sky, above ground or water. FEW/SCT do not qualify; BKN/OVC can. METAR heights use hundreds of feet.",
    "answer_verification": [
     {
      "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-11607",
@@ -3099,7 +3109,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_subjects": [
+    "050"
+   ]
   },
   "61086": {
    "src": [
@@ -3820,6 +3833,13 @@
      "no": "76",
      "sayfa": "15",
      "derleyen": "010"
+    },
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-3",
+     "no": "3",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "030"
     }
    ],
    "also_subjects": [
@@ -5453,6 +5473,13 @@
      "no": "66",
      "sayfa": "15",
      "derleyen": "010"
+    },
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-4",
+     "no": "4",
+     "sayfa": "",
+     "derleyen": "020"
     }
    ],
    "also_subjects": [
@@ -5689,6 +5716,2588 @@
     }
    ],
    "replace_sources": true
+  },
+  "62001": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "26",
+     "sayfa": "9 (PDF sayfası; basılı sayfa 7)",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-192f19d6356c",
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-25C, Chapter 7, Combustion / Fuel Grades, pp. 7-19 and 7-27",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-b8b988895da4",
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "no": "",
+     "sayfa": "TP 13014E question 26; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+     "derleyen": "020"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "26",
+     "sayfa": "9",
+     "derleyen": "020"
+    }
+   ],
+   "tr": "Oktan değeri yakıtın detonasyona karşı direncini belirtir. Üreticinin istediğinden düşük yakıt sınıfı, yüksek sıkıştırma altında kontrolsüz yanma ve motor hasarı riskini artırır. Erken ateşleme ise normal buji kıvılcımından önce bir sıcak noktanın karışımı tutuşturmasıdır.",
+   "en": "Octane rating expresses resistance to detonation. Fuel below the approved grade can cause uncontrolled combustion and engine damage under high compression. Pre-ignition is a different event: a hot spot ignites the mixture before the intended spark.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "section": "FAA-H-8083-25C, Chapter 7, Combustion / Fuel Grades, pp. 7-19 and 7-27"
+    },
+    {
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "section": "TP 13014E question 26; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference."
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "62002": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "27",
+     "sayfa": "9 (PDF sayfası; basılı sayfa 7)",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-81aada9b5853",
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-25C, Chapter 7, Ignition System, p. 7-15",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-bc85925cd1d3",
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "no": "",
+     "sayfa": "TP 13014E question 27; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+     "derleyen": "020"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "27",
+     "sayfa": "9",
+     "derleyen": "020"
+    }
+   ],
+   "tr": "Her manyeto silindirlerin yarısını değil, bütün silindirlerdeki birer bujiyi besler. Sağlam manyeto motoru çalıştırmaya devam eder; tek bujili yanma nedeniyle güç biraz azalabilir. Bu, manyetonun topraklama kablosunun kopup motorun durdurulamaması durumundan farklıdır.",
+   "en": "Each magneto fires one plug in every cylinder, rather than supplying half the cylinders. With the other circuit serviceable, the engine keeps running with a slight power loss. A broken grounding lead that prevents shutdown is a different failure.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "section": "FAA-H-8083-25C, Chapter 7, Ignition System, p. 7-15"
+    },
+    {
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "section": "TP 13014E question 27; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference."
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "62003": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "28",
+     "sayfa": "9 (PDF sayfası; basılı sayfa 7)",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-d88bc7c63c0d",
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-25C, Chapter 7, Carburetor Heat, p. 7-10",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-bc77ca0a833a",
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "no": "",
+     "sayfa": "TP 13014E question 28; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+     "derleyen": "020"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "28",
+     "sayfa": "9",
+     "derleyen": "020"
+    }
+   ],
+   "tr": "Isınan emme havası daha az yoğundur; aynı karışım ayarında yakıtın havaya oranı artar. Sabit devirli pervanede güç kaybı manifold basıncındaki düşüşle görülür. Buz varsa eridikten sonra basınç yeniden artabilir; soru buzsuz durumun ilk etkisini sorar.",
+   "en": "Heated intake air is less dense, enriching the mixture at the unchanged mixture setting. With a constant-speed propeller, the power reduction is seen as a manifold-pressure drop. Melting existing ice may later restore pressure; this question specifies no ice and the initial response.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "section": "FAA-H-8083-25C, Chapter 7, Carburetor Heat, p. 7-10"
+    },
+    {
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "section": "TP 13014E question 28; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference."
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "62004": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "30",
+     "sayfa": "9 (PDF sayfası; basılı sayfa 7)",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-658f35fae1b7",
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-25C, Chapter 7, Carburetor Icing / Carburetor Heat, pp. 7-9–7-10",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-4831e719c781",
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "no": "",
+     "sayfa": "TP 13014E question 30; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+     "derleyen": "020"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "30",
+     "sayfa": "9",
+     "derleyen": "020"
+    }
+   ],
+   "tr": "Karbüratörde basıncın düşmesi ve yakıtın buharlaşması sıcaklığı azaltır. Havadaki su buharı böylece, dış hava sıfırın üzerindeyken bile buza dönüşebilir. Görünür nem, bulut veya yağış şart değildir; bu yönüyle hava gövdesi buzlanmasıyla karıştırılmamalıdır.",
+   "en": "Venturi pressure reduction and fuel evaporation cool the air inside a carburettor. Moisture can therefore freeze even when outside air is above freezing. Cloud, rain and visible moisture are not required; this differs from the usual airframe-icing conditions.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+     "section": "FAA-H-8083-25C, Chapter 7, Carburetor Icing / Carburetor Heat, pp. 7-9–7-10"
+    },
+    {
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "section": "TP 13014E question 30; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference."
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "62005": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "33",
+     "sayfa": "10 (PDF sayfası; basılı sayfa 8)",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-e20757a5daf7",
+     "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-25C, Chapter 8, Altimeter / Effect of Nonstandard Pressure and Temperature, p. 8-4",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-e3b5d72a2e79",
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "no": "",
+     "sayfa": "TP 13014E question 33; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+     "derleyen": "020"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "33",
+     "sayfa": "10",
+     "derleyen": "020"
+    }
+   ],
+   "tr": "Altimetre standart basınç–irtifa ilişkisine göre kalibre edilir. 1013,25 hPa ayarında gerçek irtifayla uyum için deniz seviyesi basıncı ve katmanın sıcaklık profili standart olmalıdır. Yalnız basıncın veya yalnız sıcaklık azalma oranının standart olması yeterli değildir.",
+   "en": "The altimeter uses the standard pressure-height relationship. With 1013.25 hPa selected, agreement with true altitude requires both standard sea-level pressure and the standard temperature profile through the air below. Standard pressure alone, or the standard lapse rate alone, is insufficient.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+     "section": "FAA-H-8083-25C, Chapter 8, Altimeter / Effect of Nonstandard Pressure and Temperature, p. 8-4"
+    },
+    {
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "section": "TP 13014E question 33; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference."
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "62006": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "44",
+     "sayfa": "11 (PDF sayfası; basılı sayfa 9)",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-9a614c6f1ab2",
+     "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-25C, Chapter 8, Inclinometer, p. 8-18, Figure 8-22",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-6be3b2748bab",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "",
+     "sayfa": "Question 44, printed p. 9 (PDF p. 11); Turn Coordinator Diagram #1, printed p. 23 (PDF p. 25), visually checked; answer key 44(4), p. 37",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-23134597588b",
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "no": "",
+     "sayfa": "TP 13014E question 44; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+     "derleyen": "020"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "44",
+     "sayfa": "11",
+     "derleyen": "020"
+    }
+   ],
+   "tr": "Sağa dönüşte sol taraf dönüşün dışıdır. Bilye dışa kaymışsa skid vardır: dönüş oranı yatışa göre fazladır. Slip durumunda bilye dönüşün içine kayar. Kaynağın PDF 25. sayfasındaki gösterge görsel olarak doğrulandı; buradaki soru tüm gerekli gösterge bilgisini metinde verir.",
+   "en": "In a right turn, the left side is the outside of the turn. An outside ball indicates a skid: the turn rate is too great for the bank angle. An inside ball indicates a slip. The source diagram on PDF page 25 was visually checked; this adaptation states both indications in text.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+     "section": "FAA-H-8083-25C, Chapter 8, Inclinometer, p. 8-18, Figure 8-22"
+    },
+    {
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "section": "Question 44, printed p. 9 (PDF p. 11); Turn Coordinator Diagram #1, printed p. 23 (PDF p. 25), visually checked; answer key 44(4), p. 37"
+    },
+    {
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "section": "TP 13014E question 44; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference."
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "62007": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "45",
+     "sayfa": "11 (PDF sayfası; basılı sayfa 9)",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-17765f10133a",
+     "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-25C, Chapter 8, Acceleration Error, pp. 8-26–8-27, Figure 8-37",
+     "derleyen": "020"
+    },
+    {
+     "k": "ref-7402c0dc0439",
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "no": "",
+     "sayfa": "TP 13014E question 45; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+     "derleyen": "020"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "45",
+     "sayfa": "11",
+     "derleyen": "020"
+    }
+   ],
+   "tr": "Hızlanma/yavaşlama hatası doğu ve batı başlarında en belirgindir; kuzey-güney başlarında oluşmaz. Kuzey Yarımkürede hızlanma kuzeye, yavaşlama güneye doğru yalancı dönüş gösterir (ANDS). Dönüş hatasının en büyük olduğu kuzey-güney başlarıyla karıştırma.",
+   "en": "Acceleration/deceleration error is greatest on easterly and westerly headings and absent on north/south headings. In the Northern Hemisphere, acceleration gives an apparent turn north and deceleration an apparent turn south (ANDS). Turning error has a different maximum on north/south headings.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+     "section": "FAA-H-8083-25C, Chapter 8, Acceleration Error, pp. 8-26–8-27, Figure 8-37"
+    },
+    {
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "section": "TP 13014E question 45; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference."
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "14584": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "29",
+     "sayfa": "9",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14628": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "31",
+     "sayfa": "9",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15408": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "34",
+     "sayfa": "10",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true,
+   "also_subjects": [
+    "020"
+   ]
+  },
+  "14739": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "43",
+     "sayfa": "11",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14760": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-1",
+     "no": "1",
+     "sayfa": "",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14771": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-2",
+     "no": "2",
+     "sayfa": "",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14709": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-3",
+     "no": "3",
+     "sayfa": "",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14705": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-5",
+     "no": "5",
+     "sayfa": "",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "52003": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-6",
+     "no": "6",
+     "sayfa": "",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14583": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-7",
+     "no": "7",
+     "sayfa": "",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14567": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-8",
+     "no": "8",
+     "sayfa": "",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14695": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-9",
+     "no": "9",
+     "sayfa": "",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14478": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-10",
+     "no": "10",
+     "sayfa": "",
+     "derleyen": "020"
+    }
+   ],
+   "replace_sources": true
+  },
+  "63001": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "49",
+     "sayfa": "12; printed p 10; take-off table PDF p 27/printed p 25; independently adapted",
+     "derleyen": "030"
+    },
+    {
+     "k": "ref-af78897858ca",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "",
+     "sayfa": "Question 49; Table 1 notes 3 and 5, row 1600 lb/4000 ft/20°C; Answer Key printedp 37:49-(2); original figures visually verified",
+     "derleyen": "030"
+    },
+    {
+     "k": "ref-cfbd6afc582e",
+     "url": "https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf",
+     "no": "",
+     "sayfa": "Chapter 11, Performance Charts / Conditions Notes, printedpp 11-19 to 11-20: use each AFM/POH chart and its conditions",
+     "derleyen": "030"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "49",
+     "sayfa": "12",
+     "derleyen": "030"
+    }
+   ],
+   "tr": "Önce rüzgâr: toplam 2.125 × 0,90 = 1.912,5 ft; kalkış koşusu 1.115 × 0,90 = 1.003,5 ft. Çim ilavesi yalnız koşuya dayanır: 1.003,5 × 0,15 = 150,525 ft. Sonuç 2.063,025 ≈ 2.063 ft. Bu yüzdeler verilen tabloya aittir; bütün uçaklar için genel kural değildir. Transport Canada örnek tablosu bağımsız bir alıştırma olarak uyarlanmıştır; resmî SHGM sorusu değildir.",
+   "en": "Apply the wind factor to both distances: 2,125 × 0.90 = 1,912.5 ft and 1,115 × 0.90 = 1,003.5 ft. Add 0.15 × 1,003.5 = 150.525 ft for grass, giving 2,063.025 ft, rounded to 2,063 ft. The factors belong to the supplied table, not to every aircraft. Independently adapted from the Transport Canada sample; not an official Turkish examination question.",
+   "answer_verification": [
+    {
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "section": "Question 49; Table 1 notes 3 and 5, row 1600 lb/4000 ft/20°C; Answer Key printedp 37:49-(2); original figures visually verified"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf",
+     "section": "Chapter 11, Performance Charts / Conditions Notes, printedpp 11-19 to 11-20: use each AFM/POH chart and its conditions"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "63002": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "89",
+     "sayfa": "20; printed p 18; independently rewritten values and explicitly supplied reserve",
+     "derleyen": "030"
+    },
+    {
+     "k": "ref-72087edc5657",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "",
+     "sayfa": "Question 89 and Answer Key printedp 37:89-(2); original structure includes two separate 2 gal departure allowances; this adaptation explicitly supplies its reserve",
+     "derleyen": "030"
+    },
+    {
+     "k": "ref-6627fccbd242",
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "no": "",
+     "sayfa": "Chapter 16 Fuel Consumption, printedpp 16-11 to 16-12: trip fuel plus reserve, starting/taxi fuel and higher climb fuel",
+     "derleyen": "030"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "89",
+     "sayfa": "20",
+     "derleyen": "030"
+    }
+   ],
+   "tr": "Seyir yakıtı: (45 + 55)/60 × 6 = 10 US gal. İki kalkışın payı: 2 + 2 = 4 US gal. Son rezerv:30/60 × 6 = 3 US gal. Toplam 10 + 4 + 3 = 17 US gal. İki kalkış payı da eklenir; son rezerv uçuşun sonunda bir kez kalmalıdır.30 dakika bu soruda açıkça verilen planlama koşuludur; her ülke ve uçuş için geçerli mevzuat iddiası değildir. Transport Canada soru 89’daki eksik tür, farklı verilerle bağımsız yazılmıştır.",
+   "en": "Cruise fuel is (45 + 55)/60 × 6 = 10 US gal. The two departures require 2 + 2 = 4 US gal. The explicitly specified final reserve is 30/60 × 6 = 3 US gal, so total usable fuel is 17 US gal. Include both departure allowances and retain the final reserve once after the last landing. The 30-minute reserve is an exercise assumption, not a universal legal requirement. Independently written using the missing two-leg allowance type identified in Transport Canada question 89.",
+   "answer_verification": [
+    {
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "section": "Question 89 and Answer Key printedp 37:89-(2); original structure includes two separate 2 gal departure allowances; this adaptation explicitly supplies its reserve"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "section": "Chapter 16 Fuel Consumption, printedpp 16-11 to 16-12: trip fuel plus reserve, starting/taxi fuel and higher climb fuel"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15410": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "46",
+     "sayfa": "12; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true,
+   "also_subjects": [
+    "030"
+   ]
+  },
+  "15381": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "47",
+     "sayfa": "12; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true,
+   "also_subjects": [
+    "030"
+   ]
+  },
+  "56014": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "48",
+     "sayfa": "12; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true,
+   "also_subjects": [
+    "030"
+   ]
+  },
+  "14882": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "50",
+     "sayfa": "13; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14959": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-1",
+     "no": "1",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14941": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-2",
+     "no": "2",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15036": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-4",
+     "no": "4",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15004": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-5",
+     "no": "5",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14995": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-6",
+     "no": "6",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14980": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-7",
+     "no": "7",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true
+  },
+  "14886": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-8",
+     "no": "8",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true
+  },
+  "53013": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-9",
+     "no": "9",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true
+  },
+  "53003": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-10",
+     "no": "10",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "030"
+    }
+   ],
+   "replace_sources": true
+  },
+  "66001": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "88",
+     "sayfa": "19; Özgün tırmanış payı alıştırması; kaynak VNC cevabı doğrulanmadı",
+     "derleyen": "060"
+    },
+    {
+     "k": "ref-f1330ea2fe32",
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "no": "",
+     "sayfa": "Chapter 16: Time-Speed-Distance printedp 16-11; flight planning example printedp 16-21 adds climb allowance to cruise time",
+     "derleyen": "060"
+    },
+    {
+     "k": "ref-70d4ffa5e2f1",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "",
+     "sayfa": "Question 88 specifies an additional 2 minutes per 1000 ft of climb; original chart unavailable; supplied adaptation values calculated independently",
+     "derleyen": "060"
+    }
+   ],
+   "tr": "Temel süre 110/100 × 60 = 66 dakikadır. Kazanılacak irtifa 5.500 -1.000 =4.500 ft; ek süre 4,5 ×2 =9 dakikadır. Toplam 66 +9 =75 dakika.5.500 ft’in tamamını tırmanış miktarı sayma.2 dakika/1.000 ft, bu alıştırmanın verilen ek payıdır; uçağın gerçek tırmanış tablosunun yerine geçmez. TC 88’deki tür bağımsız ve eksiksiz verilerle yazıldı; eski Toronto VNC’deki özgün mesafe/cevap doğrulanmış sayılmadı.",
+   "en": "The cruise-groundspeed baseline is 110/100 ×60 =66 minutes. The climb gains 5,500 -1,000 =4,500 ft, so the specified additional allowance is 4.5 ×2 =9 minutes. Total time is 75 minutes. Use altitude gained, not the entire cruise altitude. The allowance belongs to this exercise and is not a substitute for aircraft performance data. This fully specified independent exercise adapts the type in TC 88; the original 2006 Toronto VNC distance/answer is not claimed as verified.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "section": "Chapter 16: Time-Speed-Distance printedp 16-11; flight planning example printedp 16-21 adds climb allowance to cruise time"
+    },
+    {
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "section": "Question 88 specifies an additional 2 minutes per 1000 ft of climb; original chart unavailable; supplied adaptation values calculated independently"
+    }
+   ],
+   "adapted": true,
+   "adaptation_only": true,
+   "original_answer_verified": false,
+   "replace_sources": true
+  },
+  "66002": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "96",
+     "sayfa": "21; Özgün FROM alıştırması; kaynak VNC cevabı doğrulanmadı",
+     "derleyen": "060"
+    },
+    {
+     "k": "ref-24b449b2d922",
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "no": "",
+     "sayfa": "Chapter 16, Very High Frequency Omnidirectional Range / VOR receiver, printedpp 16-23 to 16-24: centred CDI indicates radial withFROM, reciprocal withTO",
+     "derleyen": "060"
+    },
+    {
+     "k": "ref-949b4bf94539",
+     "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html",
+     "no": "",
+     "sayfa": "AIM 1-1-4(b): centred CDI 0° withFROM or 180° withTO on VOT; supports reciprocal indicator relationship",
+     "derleyen": "060"
+    }
+   ],
+   "tr": "VOR radyali istasyondan dışarı doğru manyetik kerterizdir.123° radyali üzerinde OBS 123° seçilirse CDI ortalanır ve FROM görünür; karşıtı 303° ise TO verir. Baş açısı tek başına bu göstergeyi belirlemez: burun istasyona dönük olsa da seçilen OBS 123° iken FROM kalır. Bu, TC 96’nın FROM ayrımından bağımsız yazılmış, radyali açıkça verilmiş alıştırmadır; özgün Coehill/Marlbank harita cevabı doğrulanmadı.",
+   "en": "A VOR radial is the magnetic bearing FROM the station. On the 123° radial, selecting 123° centres the CDI with FROM; its reciprocal 303° centres it with TO. The nose heading does not determine the flag: heading toward the station can coexist with FROM when the selected OBS is 123°. Independently specified exercise preserving TC 96’s FROM condition; the original Coehill/Marlbank chart answer was not verified.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "section": "Chapter 16, Very High Frequency Omnidirectional Range / VOR receiver, printedpp 16-23 to 16-24: centred CDI indicates radial withFROM, reciprocal withTO"
+    },
+    {
+     "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html",
+     "section": "AIM 1-1-4(b): centred CDI 0° withFROM or 180° withTO on VOT; supports reciprocal indicator relationship"
+    }
+   ],
+   "adapted": true,
+   "adaptation_only": true,
+   "original_answer_verified": false,
+   "replace_sources": true
+  },
+  "66003": {
+   "src": [
+    {
+     "k": "ref-faa-phak",
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "no": "Track / heading / course",
+     "sayfa": "16-10",
+     "derleyen": "060"
+    },
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-2",
+     "no": "2",
+     "sayfa": "Konu ipucu; korumalı metin aktarılmadı",
+     "derleyen": "060"
+    },
+    {
+     "k": "ref-2af42e35962f",
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "no": "",
+     "sayfa": "Chapter 16, Effect of Wind / definitions immediately before Time-Speed-Distance, printedp 16-10: course, heading, track",
+     "derleyen": "060"
+    }
+   ],
+   "tr": "Track, uçağın yerde gerçekte izlediği yoldur. Heading, burnun baktığı yön; course ise planlanan yer yoludur. Rüzgâr doğru telafi edilirse track ile course çakışabilir; tanımları yine farklıdır. Soru FAA’nın teknik tanımlarından bağımsız yazılmıştır. Son Yaklaşma örneği yalnız konu ipucudur; korumalı soru metni aktarılmamıştır.",
+   "en": "Track is the path actually made over the ground; heading is where the nose points, and course is the intended ground path. Proper wind correction can make track and course coincide without making the terms identical. Independently written from FAA technical definitions. The Son Yaklaşma sample is a topic hint only; its protected wording is not reproduced.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "section": "Chapter 16, Effect of Wind / definitions immediately before Time-Speed-Distance, printedp 16-10: course, heading, track"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true,
+   "adaptation_only": true,
+   "original_answer_verified": false
+  },
+  "15722": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "81",
+     "sayfa": "18; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15775": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "82",
+     "sayfa": "18; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15796": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "85",
+     "sayfa": "19; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15804": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "90",
+     "sayfa": "20; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15822": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "93",
+     "sayfa": "21; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15874": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "97",
+     "sayfa": "21; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15901": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-1",
+     "no": "1",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15684": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-3",
+     "no": "3",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15776": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-4",
+     "no": "4",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15840": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-5",
+     "no": "5",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15739": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-6",
+     "no": "6",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15745": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-7",
+     "no": "7",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15923": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-8",
+     "no": "8",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15915": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-9",
+     "no": "9",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15898": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-10",
+     "no": "10",
+     "sayfa": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+     "derleyen": "060"
+    }
+   ],
+   "replace_sources": true
+  },
+  "68001": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "22",
+     "sayfa": "8 (PDF sayfası; basılı sayfa 6)",
+     "derleyen": "080"
+    },
+    {
+     "k": "ref-792f2968861a",
+     "url": "https://www.faa.gov/sites/faa.gov/files/07_phak_ch5_0.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-25C, Chapter 5, Load Factors and Stalling Speeds, pp. 5-35–5-36",
+     "derleyen": "080"
+    },
+    {
+     "k": "ref-6d5f5a14db3d",
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "no": "",
+     "sayfa": "TP 13014E question 22; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+     "derleyen": "080"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "22",
+     "sayfa": "8",
+     "derleyen": "080"
+    }
+   ],
+   "tr": "VA’nın tasarım varsayımı, sakin havada tek eksende tek bir kumandanın bir kez tam hareketidir. Tekrarlı ters kumandalar ve eşzamanlı çoklu kumandalar VA altında da yapısal sınırları aşabilir. Mevcut kütleye uygun AFM/POH değeri kullanılmalıdır; eski kaynağın sınırsız “tam kumanda” tanımı bu nedenle daraltılmıştır.",
+   "en": "The design assumption is a single full input on one control axis, once, in smooth air. Repeated reversals or simultaneous full inputs on several axes may exceed structural limits even below VA. Use the AFM/POH value for the current mass. This adaptation corrects the old source’s overbroad control-input wording.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/07_phak_ch5_0.pdf",
+     "section": "FAA-H-8083-25C, Chapter 5, Load Factors and Stalling Speeds, pp. 5-35–5-36"
+    },
+    {
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "section": "TP 13014E question 22; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference."
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "68002": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "24",
+     "sayfa": "8 (PDF sayfası; basılı sayfa 6)",
+     "derleyen": "080"
+    },
+    {
+     "k": "ref-3336823f6d8b",
+     "url": "https://www.faa.gov/sites/faa.gov/files/07_phak_ch5_0.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-25C, Chapter 5, Lift/Drag Ratio and lift equation, p. 5-5; Stalls, p. 5-25",
+     "derleyen": "080"
+    },
+    {
+     "k": "ref-ce6bc0c8b390",
+     "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-25C, Chapter 8, Airspeed Indicator / True Airspeed, pp. 8-8–8-9",
+     "derleyen": "080"
+    },
+    {
+     "k": "ref-ba165e42e134",
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "no": "",
+     "sayfa": "TP 13014E question 24; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+     "derleyen": "080"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "24",
+     "sayfa": "8",
+     "derleyen": "080"
+    }
+   ],
+   "tr": "Aynı koşullarda stall için gereken dinamik basınç değişmez; bu yüzden IAS yaklaşık sabittir. Yoğunluk azaldığında aynı dinamik basınca ulaşmak için daha yüksek TAS gerekir. IAS’nin CAS/EAS’ye yaklaşık eşit alınması yalnız soruda belirtilen düşük hız ve ihmal edilen hatalar varsayımıyla geçerlidir.",
+   "en": "With the other conditions unchanged, the dynamic pressure required at the stall is unchanged, so IAS is approximately constant. Lower density requires a higher TAS for the same dynamic pressure. Treating IAS as approximately CAS/EAS is justified here only by the stated low-speed and error assumptions.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/07_phak_ch5_0.pdf",
+     "section": "FAA-H-8083-25C, Chapter 5, Lift/Drag Ratio and lift equation, p. 5-5; Stalls, p. 5-25"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+     "section": "FAA-H-8083-25C, Chapter 8, Airspeed Indicator / True Airspeed, pp. 8-8–8-9"
+    },
+    {
+     "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+     "section": "TP 13014E question 24; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference."
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "16168": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "32",
+     "sayfa": "9 (PDF; basılı7)",
+     "derleyen": "080"
+    },
+    {
+     "k": "ref-29534d0091a4",
+     "url": "https://www.faa.gov/sites/faa.gov/files/07_phak_ch5_0.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-25C, Chapter 5, Ground Effect, pp. 5-11–5-12",
+     "derleyen": "080"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "32",
+     "sayfa": "9",
+     "derleyen": "080"
+    }
+   ],
+   "tr": "Yer etkisinde yüzey, kanadın üç boyutlu akışını ve downwash’ı değiştirerek indüklenmiş sürüklemeyi azaltır. Aynı hücum açısında taşıma artabilir; düşük hızda gereken itki azalır. Bu nedenle erken havalanan uçak yer etkisinden çıkınca uçuşu sürdüremeyebilir; AFM/POH kalkış hızına uyulmalıdır.",
+   "en": "The nearby surface changes the wing flow and downwash, reducing induced drag. At the same angle of attack, lift can increase and the low-speed thrust requirement decreases. Early lift-off does not guarantee sustained flight after leaving ground effect; use the AFM/POH take-off speed.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/07_phak_ch5_0.pdf",
+     "section": "FAA-H-8083-25C, Chapter 5, Ground Effect, pp. 5-11–5-12"
+    }
+   ],
+   "adapted": false,
+   "replace_sources": true
+  },
+  "16126": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-1",
+     "no": "1",
+     "sayfa": "",
+     "derleyen": "080"
+    },
+    {
+     "k": "ref-7b1e32bd7c0d",
+     "url": "https://www.grc.nasa.gov/WWW/k-12/airplane/bern.html",
+     "no": "",
+     "sayfa": "Bernoulli’s Equation, incompressible-flow relation ps + ½ρV² = pt",
+     "derleyen": "080"
+    },
+    {
+     "k": "ref-5c5a8d97653d",
+     "url": "https://www.grc.nasa.gov/WWW/k-12/FoilSim/Manual/fsim0006.htm",
+     "no": "",
+     "sayfa": "Flow Field Details: front stagnation streamline splits at the airfoil leading edge",
+     "derleyen": "080"
+    }
+   ],
+   "tr": "Şekildeki V1=0 noktası, ideal akışta durma noktasıdır (stagnation point). Dış akış burada yerel olarak durur; aynı akım çizgisi boyunca kinetik enerji statik basınca dönüşür. Basınç merkezi ise taşıma kuvvetinin etki noktasıdır, aynı terim değildir.",
+   "en": "The V1=0 location in the figure is the stagnation point in the ideal flow model. The external flow is locally brought to rest, converting kinetic energy into static pressure along the streamline. The centre of pressure instead locates the resultant aerodynamic force.",
+   "answer_verification": [
+    {
+     "url": "https://www.grc.nasa.gov/WWW/k-12/airplane/bern.html",
+     "section": "Bernoulli’s Equation, incompressible-flow relation ps + ½ρV² = pt"
+    },
+    {
+     "url": "https://www.grc.nasa.gov/WWW/k-12/FoilSim/Manual/fsim0006.htm",
+     "section": "Flow Field Details: front stagnation streamline splits at the airfoil leading edge"
+    }
+   ],
+   "adapted": false,
+   "replace_sources": true
+  },
+  "16199": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "23",
+     "sayfa": "8",
+     "derleyen": "080"
+    }
+   ],
+   "replace_sources": true
+  },
+  "16201": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "25",
+     "sayfa": "8",
+     "derleyen": "080"
+    }
+   ],
+   "replace_sources": true
+  },
+  "58002": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-2",
+     "no": "2",
+     "sayfa": "",
+     "derleyen": "080"
+    }
+   ],
+   "replace_sources": true
+  },
+  "16305": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-3",
+     "no": "3",
+     "sayfa": "",
+     "derleyen": "080"
+    }
+   ],
+   "replace_sources": true
+  },
+  "16290": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-4",
+     "no": "4",
+     "sayfa": "",
+     "derleyen": "080"
+    }
+   ],
+   "replace_sources": true
+  },
+  "58028": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-5",
+     "no": "5",
+     "sayfa": "",
+     "derleyen": "080"
+    }
+   ],
+   "replace_sources": true
+  },
+  "16245": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-6",
+     "no": "6",
+     "sayfa": "",
+     "derleyen": "080"
+    }
+   ],
+   "replace_sources": true
+  },
+  "16267": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-7",
+     "no": "7",
+     "sayfa": "",
+     "derleyen": "080"
+    }
+   ],
+   "replace_sources": true
+  },
+  "58009": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-8",
+     "no": "8",
+     "sayfa": "",
+     "derleyen": "080"
+    }
+   ],
+   "replace_sources": true
+  },
+  "16183": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-9",
+     "no": "9",
+     "sayfa": "",
+     "derleyen": "080"
+    }
+   ],
+   "replace_sources": true
+  },
+  "16161": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-10",
+     "no": "10",
+     "sayfa": "",
+     "derleyen": "080"
+    }
+   ],
+   "replace_sources": true
+  },
+  "64001": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "36",
+     "sayfa": "10; Independent definition; original numerical source answer not verified",
+     "derleyen": "040"
+    },
+    {
+     "k": "ref-190a4ba4d893",
+     "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap8_section_1.html",
+     "no": "",
+     "sayfa": "AIM 8-1-6, Vision in Flight: effective scanning and empty-field myopia; approximate 10–30 ft range",
+     "derleyen": "040"
+    }
+   ],
+   "tr": "Boş alan miyopisinde uzak bir odak ipucu olmadığında gözler uzak trafiğe odaklanmayabilir. Uzak nesneleri belirleyip etkin dış tarama yapmak bunu azaltır. Sabit bir odak mesafesi ezberletilmedi: TC 36’nın eski 3–5 ft cevabı, güncel FAA AIM’in yaklaşık 10–30 ft açıklamasıyla uyuşmadığı için özgün sayısal soru incelemede tutuldu. Buradaki tanım sorusu FAA’dan bağımsız yazılmıştır.",
+   "en": "Without a distant focus cue, the eyes may relax to a nearer focal distance instead of focusing on distant traffic: empty-field myopia. Identifying distant objects and actively scanning helps. No fixed distance is tested. The old TC 36 numerical answer of 3–5 ft conflicts with the current FAA AIM explanation of approximately 10–30 ft, so that original numerical question remains for review. This definition exercise is independently written from FAA facts.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap8_section_1.html",
+     "section": "AIM 8-1-6, Vision in Flight: effective scanning and empty-field myopia; approximate 10–30 ft range"
+    }
+   ],
+   "adapted": true,
+   "adaptation_only": true,
+   "original_answer_verified": false,
+   "replace_sources": true
+  },
+  "64002": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "37",
+     "sayfa": "10; Independent mechanism wording; no fixed altitude/alcohol multiplier",
+     "derleyen": "040"
+    },
+    {
+     "k": "ref-27b566ead8d7",
+     "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap8_section_1.html",
+     "no": "",
+     "sayfa": "AIM 8-1-2, Effects of Altitude: small amounts of alcohol and depressant drugs can make the brain more susceptible to hypoxia",
+     "derleyen": "040"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "37",
+     "sayfa": "10",
+     "derleyen": "040"
+    }
+   ],
+   "tr": "FAA AIM, az miktarda alkolün baskılayıcı etkisiyle beynin hipoksiye daha duyarlı olabileceğini açıklar. Bu soru alkol ile azalan oksijen basıncının ortak riskini sorar; irtifayla kan alkol düzeyinin mutlaka yükseldiğini veya her içkinin sabit bir katsayıyla etkileneceğini söylemez. TC 37’deki irtifa koşulu, doğrulanmış mekanizmayla yeniden yazılmıştır.",
+   "en": "The FAA AIM explains that even small amounts of alcohol can make the brain more susceptible to hypoxia through their depressant action. This tests the combined altitude/alcohol hazard; it does not assert that altitude always raises blood alcohol concentration or multiplies each drink by a fixed factor. The altitude condition from TC 37 is independently rewritten around this verified mechanism.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap8_section_1.html",
+     "section": "AIM 8-1-2, Effects of Altitude: small amounts of alcohol and depressant drugs can make the brain more susceptible to hypoxia"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "64003": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "39",
+     "sayfa": "10; Independently rewritten; steady wind and unchangedIAS explicit",
+     "derleyen": "040"
+    },
+    {
+     "k": "ref-4d663d5dc8de",
+     "url": "https://www.aviation.govt.nz/licensing-and-certification/pilots/flight-training/flight-instructor-guide/low-flying-introduction/",
+     "no": "",
+     "sayfa": "Low flying introduction, revised 2023, Considerations / Visual effects: downwind-to-into-wind outward-skid illusion and misleading groundspeed cues",
+     "derleyen": "040"
+    },
+    {
+     "k": "ref-e8d3b0d30bb1",
+     "url": "https://tc.canada.ca/en/aviation/publications/flight-instructor-guide-aeroplane-tp-975",
+     "no": "",
+     "sayfa": "Exercise 20, Essential Background Knowledge 1(a): into-wind reducedGS creates reducedairspeed illusion; downwind-to-into-wind creates outwardskid illusion",
+     "derleyen": "040"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "39",
+     "sayfa": "10",
+     "derleyen": "040"
+    }
+   ],
+   "tr": "Rüzgâra karşı dönerken yer hızı azalır; bu, IAS azalmadığı hâlde hava hızının azaldığı izlenimini verebilir. Yer üzerindeki sürüklenme de dışa skid yanılsaması oluşturabilir. Dönüş koordineli ve denge topu ortadaysa yalnız bu görsel izlenimi düzeltmek için rudder eklenmez; IAS ve denge göstergeleriyle çapraz kontrol yapılır. TC 39 türü, güncel CAA NZ kılavuzunun görsel etkileriyle doğrulandı. Sabit rüzgâr koşulu, gerçek wind-shear etkisinden ayrılır.",
+   "en": "As the aircraft turns into wind, groundspeed falls and may create an impression of falling airspeed even though IAS is maintained. Drift over the ground can also create an outward-skid illusion. In a coordinated turn with the ball centred, adding rudder solely to correct that visual impression is inappropriate; cross-check airspeed and balance. The TC 39 type is corroborated by the current CAA NZ guide. Steady wind distinguishes this illusion from a real wind-shear effect.",
+   "answer_verification": [
+    {
+     "url": "https://www.aviation.govt.nz/licensing-and-certification/pilots/flight-training/flight-instructor-guide/low-flying-introduction/",
+     "section": "Low flying introduction, revised 2023, Considerations / Visual effects: downwind-to-into-wind outward-skid illusion and misleading groundspeed cues"
+    },
+    {
+     "url": "https://tc.canada.ca/en/aviation/publications/flight-instructor-guide-aeroplane-tp-975",
+     "section": "Exercise 20, Essential Background Knowledge 1(a): into-wind reducedGS creates reducedairspeed illusion; downwind-to-into-wind creates outwardskid illusion"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15109": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "35",
+     "sayfa": "10; Same testedtype; no verbatim match claimed",
+     "derleyen": "040"
+    }
+   ],
+   "replace_sources": true
+  },
+  "15178": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "38",
+     "sayfa": "10; Same testedtype; no verbatim match claimed",
+     "derleyen": "040"
+    }
+   ],
+   "replace_sources": true
+  },
+  "65001": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "79",
+     "sayfa": "17",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-c5e95085f9ea",
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "no": "",
+     "sayfa": "METAR decode, p. 10, element 9 QNH: Q indicates millibars (= hPa), A inches and hundredths",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Q1017, QNH’nin 1.017 hPa olduğunu bildirir; QFE, QFF veya inHg biçimi değildir. Bu bağımsız soru, kaynak ipucundaki eski Kanada Axxxx sorusunun birebir eşleşmesi değildir; Türkiye’de kullanılan Qxxxx koduna göre yazılmıştır.",
+   "en": "Q1017 reports QNH 1,017 hPa. It is neither QFE/QFF nor an A-prefixed inHg setting. This independent question uses Qxxxx and is not presented as a literal match to the regional Canadian Axxxx source item.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "METAR decode, p. 10, element 9 QNH: Q indicates millibars (= hPa), A inches and hundredths"
+    }
+   ],
+   "adapted": true,
+   "adaptation_only": true,
+   "original_answer_verified": false,
+   "replace_sources": true
+  },
+  "65002": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "51",
+     "sayfa": "13",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-43974c39ba0d",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "6.3 Saturation; 6.4 Relative Humidity, pp. 6-3–6-4",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Bağıl nem, aynı sıcaklıktaki doygunluğa ne kadar yakın olunduğunu gösteren orandır; çoğunlukla yüzde olarak verilir. Diğer şıklar sırasıyla özgül nem, karışım oranı ve mutlak nem tanımlarına karşılık gelir.",
+   "en": "Relative humidity compares actual moisture with saturation at the same temperature, usually as a percentage. The other ratios describe specific humidity, mixing ratio and absolute humidity.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "6.3 Saturation; 6.4 Relative Humidity, pp. 6-3–6-4"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "65003": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "55",
+     "sayfa": "14",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-37533c88c5f0",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "18.1.1.1.1 Radiation Fog, pp. 18-2–18-3",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Gece yerin radyasyonla soğuması, yere temas eden nemli havayı çiy noktasına indirir. Yatay taşınma adveksiyon sisini, yamaç boyunca yükselme yamaç sisini, sıcak sudan buharlaşma ise buharlaşma sisini açıklar.",
+   "en": "Radiational ground cooling cools adjacent moist air to its dewpoint. The alternatives describe advection fog, upslope fog and evaporation fog.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "18.1.1.1.1 Radiation Fog, pp. 18-2–18-3"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "65004": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "56",
+     "sayfa": "14",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-3dd28f0f49e7",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "10.5 Surface Wind, pp. 10-7–10-8; 12.4.2 Frictional Effects, p. 12-6",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Kuzey Yarımküre’de yüzey sürtünmesi akımı izobarlara açılı hâle getirir: yüksek basınçtan saat yönünde dışarı, alçak basınca saat yönünün tersine içeri. Bu büyük ölçekli model, dağ veya meltem etkisinin baskın olduğu her yerel rüzgârı tarif etmez.",
+   "en": "Northern Hemisphere surface friction gives clockwise outward flow from a high and anticlockwise inward flow into a low. Strong terrain or local breeze effects can override this synoptic pattern.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "10.5 Surface Wind, pp. 10-7–10-8; 12.4.2 Frictional Effects, p. 12-6"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "65005": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "57",
+     "sayfa": "14",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-412e7f3b0340",
+     "url": "https://www.weather.gov/source/zhu/ZHU_Training_Page/winds/Wx_Terms/Flight_Environment.htm",
+     "no": "",
+     "sayfa": "SURFACE WINDS; VEERING AND BACKING (descent into surface friction)",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-a4392d893a91",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "10.3.3 Friction Force; 10.5 Surface Wind, pp. 10-5–10-8",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Yüzeye yaklaşırken sürtünme rüzgârı yavaşlatır; zayıflayan Coriolis etkisi akımı alçak basınca doğru izobarların üzerinden döndürür. Kuzey Yarımküre’de tipik sonuç backing ve hız azalmasıdır. Cephe, dağ veya yerel meltem farklı sonuç verebilir.",
+   "en": "Increasing surface friction reduces speed and turns the wind across isobars toward lower pressure. Under the stated Northern Hemisphere conditions, a descending pilot normally encounters backing and slowing.",
+   "answer_verification": [
+    {
+     "url": "https://www.weather.gov/source/zhu/ZHU_Training_Page/winds/Wx_Terms/Flight_Environment.htm",
+     "section": "SURFACE WINDS; VEERING AND BACKING (descent into surface friction)"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "10.3.3 Friction Force; 10.5 Surface Wind, pp. 10-5–10-8"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "65006": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "58",
+     "sayfa": "14",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-662d9c924c63",
+     "url": "https://www.weather.gov/source/zhu/ZHU_Training_Page/winds/Wx_Terms/Flight_Environment.htm",
+     "no": "",
+     "sayfa": "DIURNAL VARIATIONS, paragraphs on daytime turbulent transfer and night backing",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Gündüz karışımı üstteki daha hızlı akımın momentumunu yüzeye taşır; belirtilen Kuzey Yarımküre modelinde yüzey rüzgârı veer eder ve hızlanır. Gece karışım azaldığında ters eğilim görülebilir. Bu, deniz-kara melteminin yön kuralı değildir.",
+   "en": "Daytime turbulence transfers momentum from faster flow aloft to the surface, normally causing veering and acceleration under these assumptions. Reduced night mixing tends to reverse that change; this is separate from coastal breezes.",
+   "answer_verification": [
+    {
+     "url": "https://www.weather.gov/source/zhu/ZHU_Training_Page/winds/Wx_Terms/Flight_Environment.htm",
+     "section": "DIURNAL VARIATIONS, paragraphs on daytime turbulent transfer and night backing"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "65007": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "63",
+     "sayfa": "15",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-afbddb88d609",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "11.3 Fronts, p. 11-4",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Cephe, farklı hava kütlelerinin geçiş bölgesidir. Basıncı eşit noktaların çizgisi izobar, uzamış alçak basınç bölgesi trough, doygunluğun ilk oluştuğu yükselme seviyesi LCL’dir.",
+   "en": "A front separates air masses with contrasting characteristics. The alternatives define an isobar, a trough and the lifting condensation level.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "11.3 Fronts, p. 11-4"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "65008": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "68",
+     "sayfa": "15",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-facac9901ac0",
+     "url": "https://www.faa.gov/sites/faa.gov/files/2022-06/Pilot%20Bulletin%2021-1b%20web.pdf",
+     "no": "",
+     "sayfa": "WINDS AND TEMPERATURES ALOFT FORECASTS (FD), printed p. 12: intermediate-level interpolation and true north",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-59b51e43729b",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "27.2 Winds and Temperatures Aloft; 27.2.1.1.1 text format, pp. 27-3–27-4",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "4.500 ft iki seviyenin tam ortasıdır: 18 + (30−18)×0,5 = 24 kt. Yön iki seviyede de 270° hakikidir; manyetiğe kendiliğinden dönüşmez. Kaynak ipucundaki Kanada FD kodu yerine verileri açık yazılmış bağımsız bir interpolasyon sorusudur.",
+   "en": "4,500 ft is halfway between the levels: 18 + (30−18)×0.5 = 24 kt. Direction remains 270° true. This independent, explicit-data exercise replaces the regional FD coding in the source clue.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/2022-06/Pilot%20Bulletin%2021-1b%20web.pdf",
+     "section": "WINDS AND TEMPERATURES ALOFT FORECASTS (FD), printed p. 12: intermediate-level interpolation and true north"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "27.2 Winds and Temperatures Aloft; 27.2.1.1.1 text format, pp. 27-3–27-4"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "65009": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "70",
+     "sayfa": "16",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-ccd3b8b161c0",
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "no": "",
+     "sayfa": "Pressure centres and fronts, p. 13: plotted pressure-centre position and movement",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-ebe2a86e1247",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "25.2.3 Surface Analysis Chart: high and low pressure centres",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "L işaretli kapalı alçak basınç merkezi aynı sabit ızgarada sağa, yani doğuya yer değiştirir; kuzey-güney konumu korunur. Rüzgârın bu merkez çevresindeki dolaşım yönü ile basınç sisteminin ilerleme yönünü karıştırma. Şekil bağımsız hazırlanmış öğretim örneğidir.",
+   "en": "The closed low marked L shifts rightward, east, on the fixed north-up grid, without north/south displacement. System movement differs from wind circulation around the system. The charts are independently authored teaching examples.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "Pressure centres and fronts, p. 13: plotted pressure-centre position and movement"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "25.2.3 Surface Analysis Chart: high and low pressure centres"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "65010": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "76",
+     "sayfa": "17",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-92f5ca2f5b22",
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "no": "",
+     "sayfa": "MET. DECODES: TAF decode, p. 5, wind and change groups; METAR decode, pp. 8–9, wind",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-a386ec019d4a",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "24.4.3.5 Wind Group; 27.4.2.5 Wind Group",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "1200 için TAF’ın ana grubu 270°/15 kt’dır; 1600–1800 BECMG değişimi henüz bu saate uygulanmaz. METAR 290°/10 kt gözlemidir: yön farkı saat yönünde 20°, hız farkı −5 kt. İki raporda da yön hakikidir.",
+   "en": "At 1200 the applicable TAF wind is 270°/15 kt; the 1600–1800 BECMG has not applied. METAR observes 290°/10 kt: 20° clockwise and 5 kt weaker. Both directions are true.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "MET. DECODES: TAF decode, p. 5, wind and change groups; METAR decode, pp. 8–9, wind"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "24.4.3.5 Wind Group; 27.4.2.5 Wind Group"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "65011": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "78",
+     "sayfa": "17",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-0fac399a7c35",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "6.6 Temperature-Dewpoint Spread, p. 6-4; 24.4.3.10 Temperature/Dewpoint Group, p. 24-18",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "M, eksi sıcaklığı belirtir: sıcaklık −8 °C, çiy noktası −13 °C. Fark −8 − (−13) = 5 °C’dir; mutlak değerleri toplamak veya çıkarma sırasını ters çevirmek hatadır.",
+   "en": "M means minus: temperature is −8 °C and dewpoint −13 °C. The spread is −8 − (−13) = 5 °C, not the sum of magnitudes or the reversed subtraction.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "6.6 Temperature-Dewpoint Spread, p. 6-4; 24.4.3.10 Temperature/Dewpoint Group, p. 24-18"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15294": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-1",
+     "no": "1",
+     "sayfa": "",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-0f577bac0e92",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "4.3.1 Troposphere",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Su buharının çoğu ve hava olaylarının hemen tamamı troposferdedir.",
+   "en": "Most water vapour and almost all weather are in the troposphere.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "4.3.1 Troposphere"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15322": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "59",
+     "sayfa": "14",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-b0e312f087c6",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "4.4 The Standard Atmosphere, Table 4-1",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "ISA troposferinde sıcaklık yükseklikle yaklaşık 2 °C/1.000 ft azalır. Başlangıç sıcaklığı verilmişse fark hesabını o başlangıçtan yap; her ölçümü +15 °C kabul etme.",
+   "en": "In the ISA troposphere temperature falls about 2 °C per 1,000 ft; use the stated starting temperature when one is supplied.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "4.4 The Standard Atmosphere, Table 4-1"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15337": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "54",
+     "sayfa": "13",
+     "derleyen": "050"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "62",
+     "sayfa": "15",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-8bb50172917a",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "13 Atmospheric Stability; 18.1.1.1.2 Advection Fog",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Nemli hava daha soğuk yüzey üzerinde alttan soğutulunca kararlılık artar; doygunluğa ulaşırsa sis ve kötü görüş oluşabilir. Kararlı hava tabaka bulutunu destekler.",
+   "en": "Cooling moist air from below increases stability and can produce fog, poor visibility and stratiform cloud.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "13 Atmospheric Stability; 18.1.1.1.2 Advection Fog"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15344": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "61",
+     "sayfa": "14",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-94e9ddabc884",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "13 Atmospheric Stability: inversions",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "İnversiyonda sıcaklık, olağan azalmanın tersine yükseklikle artar; bu tabaka dikey hareketi sınırlar.",
+   "en": "In an inversion temperature increases with height, suppressing vertical motion.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "13 Atmospheric Stability: inversions"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15413": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-2",
+     "no": "2",
+     "sayfa": "",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-52cef92fda2a",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "8.4.1.2.1 Altimeter Setting; Figure 8-13",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Yüksekten düşük QNH’ya eski ayarla uçulursa altimetre fazla gösterir; gerçek irtifa gösterilenden düşüktür. Bu soru basınç etkisini anlatır.",
+   "en": "Flying from higher to lower QNH without resetting makes the altimeter overread; true altitude is lower.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "8.4.1.2.1 Altimeter Setting; Figure 8-13"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15435": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-4",
+     "no": "4",
+     "sayfa": "",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-6690d48acd13",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "10.4 Upper Air Wind; 10.5 Surface Wind",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Kuzey Yarımküre’de yaklaşık dengeli büyük ölçekli akım varsayımında alçak basınca doğru uçarken rüzgâr soldan gelir ve sağa sapma oluşturur. Güçlü yerel arazi/meltem etkilerinde bunu değişmez kural sayma.",
+   "en": "In approximately balanced Northern Hemisphere synoptic flow, flying toward lower pressure gives wind from the left and right drift. Strong terrain or local breeze effects can alter this.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "10.4 Upper Air Wind; 10.5 Surface Wind"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15465": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "53",
+     "sayfa": "13",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-f1a5e155c616",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "12.2 Vertical Motion Effects on an Unsaturated Air Parcel, pp. 12-2–12-3",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Yükselirken azalan çevre basıncı havanın genleşmesine yol açar; hava dışarıdan ısı almadan adyabatik soğur.",
+   "en": "Falling ambient pressure lets rising air expand and cool adiabatically.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "12.2 Vertical Motion Effects on an Unsaturated Air Parcel, pp. 12-2–12-3"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15476": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-3",
+     "no": "3",
+     "sayfa": "",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-53b89c497c49",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "6.5 Dewpoint",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Çiy noktası, basınç ve su buharı içeriği sabitken havanın soğutularak doygun olduğu sıcaklıktır.",
+   "en": "Dewpoint is the temperature at which air becomes saturated when cooled at unchanged pressure and moisture content.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "6.5 Dewpoint"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15536": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "52",
+     "sayfa": "13",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-a1d060a99ab1",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "Appendix A, A.2.3 Nimbostratus (Ns)",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Nimbostratus, geniş alanda uzun süreli yağmur veya karla ilişkili tabaka bulutudur.",
+   "en": "Nimbostratus is associated with widespread sustained rain or snow.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "Appendix A, A.2.3 Nimbostratus (Ns)"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15552": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-5",
+     "no": "5",
+     "sayfa": "",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-d215e836ea3e",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "18.1.1.1.1 Radiation Fog",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Yüksek nem, açık gökyüzü ve hafif rüzgâr gece yerin soğumasıyla radyasyon sisini destekler; kuvvetli karışım bu yüzey sisini engelleyebilir.",
+   "en": "Moist air, clear sky and light wind favour radiation fog during nocturnal ground cooling; strong mixing can prevent it.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "18.1.1.1.1 Radiation Fog"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15559": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "65",
+     "sayfa": "15",
+     "derleyen": "050"
+    },
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-6",
+     "no": "6",
+     "sayfa": "",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-e38976fb8ff8",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "11.3.1 Warm Front",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Sıcak cephe yaklaşırken Ci, Cs, As ve Ns şeklinde giderek alçalan/kalınlaşan bulut dizisi tipiktir; her cephede aynı sıra kesin değildir.",
+   "en": "A lowering, thickening Ci–Cs–As–Ns sequence is typical ahead of a warm front, not guaranteed for every front.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "11.3.1 Warm Front"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15565": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "64",
+     "sayfa": "15",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-2ac143828e9e",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "12.4.3 Frontal Lift",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Soğuk hava daha yoğundur; ilerleyen soğuk cephede sıcak havanın altına girer ve onu yükselmeye zorlar.",
+   "en": "Denser cold air undercuts and lifts warm air at an advancing cold front.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "12.4.3 Frontal Lift"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15574": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "60",
+     "sayfa": "14",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-407c62cdb102",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "22.2 Necessary Ingredients for Thunderstorm Cell Formation, p. 22-2",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Gök gürültülü fırtına için yeterli nem, kararsız atmosfer ve havayı yükselten bir etki gerekir.",
+   "en": "Thunderstorms require moisture, instability and a lifting mechanism.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "22.2 Necessary Ingredients for Thunderstorm Cell Formation, p. 22-2"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15584": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-7",
+     "no": "7",
+     "sayfa": "",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-9fb9ef17af13",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "22.7.3 Downburst and Microburst",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Mikroburst güçlü aşağı akımın yüzeyde dışa yayılmasıdır; baş rüzgârından kuyruk rüzgârına hızla geçiş dahil ciddi rüzgâr kesmesi tehlikesi üretir.",
+   "en": "A microburst is a strong downdraft spreading outward at the surface, producing hazardous shear including rapid headwind-to-tailwind change.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "22.7.3 Downburst and Microburst"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "55016": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "42",
+     "sayfa": "11",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-e419de90657d",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "22.7.3 Downburst and Microburst, pp. 22-7–22-10",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Ani baş→kuyruk rüzgârı geçişinde uçak yer hızını hemen değiştiremez; hava hızı ve kaldırma azalır, tırmanış/approach marjı bozulur.",
+   "en": "A sudden headwind-to-tailwind change reduces airspeed and lift before the aircraft can change groundspeed.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "22.7.3 Downburst and Microburst, pp. 22-7–22-10"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15612": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "80",
+     "sayfa": "17",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-09ea47b7c019",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "24.4.1 Aviation Routine Weather Report; 27.4 Terminal Aerodrome Forecast",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "METAR, rapor saatinde gözlenen meydan hava durumudur; gelecekteki bir geçerlilik dönemi için tahmin TAF’tır.",
+   "en": "METAR reports observed aerodrome weather; TAF forecasts a future validity period.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "24.4.1 Aviation Routine Weather Report; 27.4 Terminal Aerodrome Forecast"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15632": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-9",
+     "no": "9",
+     "sayfa": "",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-609d753e11c1",
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "no": "",
+     "sayfa": "TAF decode p. 5, significant changes and examples p. 6",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "BECMG belirtilen aralıkta yeni koşullara geçişi anlatır; değişen koşullar sonraki değişime kadar devam eder. TEMPO geçici dalgalanmaları anlatır. “Kalıcı” sonsuza kadar anlamına gelmez.",
+   "en": "BECMG introduces changed conditions that persist until a later change; TEMPO denotes temporary fluctuations, not a permanent new baseline.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "TAF decode p. 5, significant changes and examples p. 6"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15636": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "66",
+     "sayfa": "15",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-acfbd94ad0e8",
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "no": "",
+     "sayfa": "TAF decode p. 5, cloud; METAR decode p. 9, cloud",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "METAR ve TAF bulut tabanı gruplarında yükseklik, yüzlerce feet cinsinden meydan seviyesinin üstünde verilir; AMSL değildir.",
+   "en": "METAR and TAF cloud-base groups give hundreds of feet above aerodrome level, not AMSL.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "TAF decode p. 5, cloud; METAR decode p. 9, cloud"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "55025": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-8",
+     "no": "8",
+     "sayfa": "",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-b7470c1e28ee",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "24.4.3.10 Temperature/Dewpoint Group",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Sıcaklık/çiy noktası grubunda ikinci değer çiy noktasıdır; M03 eksi 3 °C demektir. LTAI Antalya’dır; kaynak örnekteki İstanbul/Atatürk etiketi aktarılmadı.",
+   "en": "The second temperature/dewpoint value is dewpoint; M03 means −3 °C. LTAI identifies Antalya; the sample’s mismatched Istanbul/Atatürk label was not copied.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "24.4.3.10 Temperature/Dewpoint Group"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15655": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "74",
+     "sayfa": "16",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-85d60b4ae546",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "27.4.2.4 Valid Period",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "TAF geçerlilik grubunda başlangıç ve bitiş gün/saatini kullan; yayın saatini veya TEMPO aralığını toplam geçerlilik süresi sanma.",
+   "en": "Use the start and end date/hour of the validity group, not issue time or a TEMPO period.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "27.4.2.4 Valid Period"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15657": {
+   "src": [
+    {
+     "k": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-10",
+     "no": "10",
+     "sayfa": "",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-224089b6ca06",
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "no": "",
+     "sayfa": "TAF decode p. 5, wind",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "090 doğudan gelen hakiki yön, 22 ortalama hız, G32 en yüksek hamle, KT knot birimidir: 09022G32KT.",
+   "en": "090 is wind from true east, 22 mean speed, G32 peak gust and KT knots: 09022G32KT.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "TAF decode p. 5, wind"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15658": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "75",
+     "sayfa": "17",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-d28ae3109494",
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "no": "",
+     "sayfa": "TAF decode p. 5: wind and significant changes",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "İstenen UTC saatine uygulanabilen TAF zaman grubunu seç. KT knot, G en yüksek hamleyi belirtir; rapordaki yön hakiki kuzeye göredir.",
+   "en": "Select the TAF time group that applies to the requested UTC time. KT is knots, G the gust maximum and direction is true.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "TAF decode p. 5: wind and significant changes"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15665": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "72",
+     "sayfa": "16",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-6cadd6cb8c5e",
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "no": "",
+     "sayfa": "TAF decode p. 5, cloud and significant change groups",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "BKN 5–7 okta; 030 ise meydan üstünde 3.000 ft demektir. BECMG zaman aralığındaki kalıcı değişim TEMPO’nun geçici dalgalanmasından ayrıdır.",
+   "en": "BKN is 5–7 oktas and 030 is 3,000 ft above aerodrome level. BECMG marks a change rather than a temporary TEMPO fluctuation.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "TAF decode p. 5, cloud and significant change groups"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "15414": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "67",
+     "sayfa": "15",
+     "derleyen": "050"
+    },
+    {
+     "k": "ref-69cf4180cef4",
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "no": "",
+     "sayfa": "8.4.1.2 Indicated Altitude; 8.4.1.2.1 Altimeter Setting and Figure 8-13, pp. 8-11–8-12",
+     "derleyen": "050"
+    }
+   ],
+   "tr": "Düşükten yüksek QNH’ya geçerken eski düşük ayar korunursa altimetre eksik gösterir: gerçek irtifa göstergeden yüksektir. Yüksekten düşük basınca geçişte işaret tersine döner. Soru sıcaklık ve alet hatalarını hesaba katmaz.",
+   "en": "Retaining the lower QNH in the higher-QNH area makes the altimeter underread: true altitude exceeds indicated altitude. High-to-low pressure reverses the error. Temperature and instrument errors are excluded here.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "8.4.1.2 Indicated Altitude; 8.4.1.2.1 Altimeter Setting and Figure 8-13, pp. 8-11–8-12"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "67001": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "40",
+     "sayfa": "11; Independent combined-condition wording",
+     "derleyen": "070"
+    },
+    {
+     "k": "ref-53a09d866971",
+     "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
+     "no": "",
+     "sayfa": "FAA-H-8083-3 C, Chapter 9 Approaches and Landings, printedp 9-35 / Wheelbarrowing: excessive-speed touchdown followed by forward elevator pressure",
+     "derleyen": "070"
+    },
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "40",
+     "sayfa": "11",
+     "derleyen": "070"
+    }
+   ],
+   "tr": "Fazla hızla temasın ardından ileri elevator kumandası uygulamak yükü burun tekerleğine yoğunlaştırabilir. Wheelbarrowing, özellikle yan rüzgârda yön kontrolünü ve frenleme etkinliğini bozabilir. Bu, yalnız yüksek hızın iniş mesafesini uzatmasından farklı bir tehlikedir. FAA Airplane Flying Handbook 9-35 mekanizmayı doğrular; Transport Canada 40 türü bağımsız yazılmıştır.",
+   "en": "Excess touchdown speed followed by forward elevator pressure can concentrate weight on the nosewheel. Wheelbarrowing can impair braking and directional control, particularly in crosswinds. It is a different hazard from simply increasing landing distance with excess speed. FAA Airplane Flying Handbook 9-35 corroborates the mechanism; independently adapted from the type in Transport Canada 40.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
+     "section": "FAA-H-8083-3 C, Chapter 9 Approaches and Landings, printedp 9-35 / Wheelbarrowing: excessive-speed touchdown followed by forward elevator pressure"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "58006": {
+   "src": [
+    {
+     "k": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "41",
+     "sayfa": "11; Same testedtype; no verbatim match claimed",
+     "derleyen": "070"
+    }
+   ],
+   "replace_sources": true,
+   "also_subjects": [
+    "070"
+   ]
   }
  },
  "_aciklama": "Kullanıcı doğrulaması ile kaynak/cevap doğrulaması ayrıdır; hiçbir işaret resmî SHGM çıkmış sorusu iddiası değildir."

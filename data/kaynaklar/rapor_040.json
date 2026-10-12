@@ -1,0 +1,97 @@
+{
+ "ders": "040",
+ "tarih": "2026-10-12",
+ "yeni_benzersiz": 3,
+ "taranan": 5,
+ "kaynaklar": {
+  "x-tc-tp13014": {
+   "existing": 2,
+   "review": 1,
+   "new": 2
+  }
+ },
+ "yildizlar": [
+  61001,
+  61002,
+  14909
+ ],
+ "inceleme": 1,
+ "kararlar": [
+  {
+   "source": "x-tc-tp13014",
+   "no": "35",
+   "page": "10; Same testedtype; no verbatim match claimed",
+   "key": "x-tc-tp13014:35",
+   "subject": "040",
+   "status": "existing",
+   "reason": "15109 already tests euphoria and impaired judgement as hypoxia symptoms.",
+   "topic_tr": "Hipoksiye bağlı öfori",
+   "reason_tr": "15109 hipoksi belirtileri olarak öfori ve muhakeme bozulmasını zaten soruyor.",
+   "bank_id": 15109,
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "question_id": 15109
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "36",
+   "page": "10",
+   "key": "x-tc-tp13014:36",
+   "subject": "040",
+   "status": "review",
+   "reason": "Old 3–5 ft source answer differs from current FAA 10–30 ft discussion. Preserve numerical question for review; independent qualitative definition accepted separately.",
+   "topic_tr": "Boş alan miyopisi; eski sayısal cevap çelişkisi",
+   "reason_tr": "Eski 3–5 ft cevabı güncel FAA’nın 10–30 ft açıklamasıyla farklıdır. Sayısal soru incelemede; mesafe ezberletmeyen bağımsız tanım sorusu ayrı kabul edildi.",
+   "representative_key": "adapted:tc36-empty-field-myopia",
+   "original_answer_verified": false
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "37",
+   "page": "10",
+   "key": "x-tc-tp13014:37",
+   "subject": "040",
+   "status": "new",
+   "reason": "Missing conditional altitude/alcohol type independently rewritten around FAA-supported hypoxia susceptibility; no BAC multiplier asserted.",
+   "topic_tr": "Alkol ve kabin basınç irtifasının ortak riski",
+   "reason_tr": "İrtifa/alkol ortak riski eksik türdür. FAA’nın hipoksi duyarlılığı açıklamasıyla bağımsız yazıldı; kan alkolü için katsayı iddia edilmedi.",
+   "question_id": 64002
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "38",
+   "page": "10; Same testedtype; no verbatim match claimed",
+   "key": "x-tc-tp13014:38",
+   "subject": "040",
+   "status": "existing",
+   "reason": "15178/15198 already test the upslope illusion leading to a lower approach.",
+   "topic_tr": "Yukarı eğimli pistte yüksek görünme ve alçak yaklaşma",
+   "reason_tr": "15178/15198 yukarı eğimli pistin düşük yaklaşmaya götüren yanılsamasını zaten soruyor.",
+   "bank_id": 15178,
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "question_id": 15178
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "39",
+   "page": "10",
+   "key": "x-tc-tp13014:39",
+   "subject": "040",
+   "status": "new",
+   "reason": "Source condition corroborated by currentCAA NZ and TC instructor guide; optical drift/skid illusion differs from vestibular acceleration questions.",
+   "topic_tr": "Sabit rüzgârda dönüşün sürüklenme yanılsaması",
+   "reason_tr": "Kaynak koşulu güncelCAA NZ ve TC öğretmen kılavuzuyla desteklendi. Optik sürüklenme/skid yanılsaması, vestibüler ivmelenme sorularından farklı.",
+   "question_id": 64003
+  }
+ ],
+ "kaynak_yeni_benzersiz": {
+  "x-tc-tp13014": 2
+ },
+ "bagimsiz_uyarlamalar": [
+  {
+   "key": "adapted:tc36-empty-field-myopia",
+   "id": 64001,
+   "original_answer_verified": false
+  }
+ ],
+ "duzeltmeler": []
+}

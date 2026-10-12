@@ -1,0 +1,31 @@
+{
+ "questions": {
+  "66001": {
+   "text": "Bir seyrüsefer alıştırmasında planlanan bacak 110 NM ve seyir yer hızı 100 kt’dir. Kalkış meydanının yüksekliği 1.000 ft AMSL, planlanan seyir irtifası 5.500 ft AMSL’dir. Planlama talimatı, önce tüm bacağı seyir yer hızıyla hesaplayıp ardından tırmanışta kazanılacak her 1.000 ft için 2 dakika ek süre eklemektir. En yakın dakikaya yuvarlanan tahmini uçuş süresi kaçtır?",
+   "options": [
+    "75 dakika",
+    "66 dakika",
+    "77 dakika",
+    "57 dakika"
+   ]
+  },
+  "66002": {
+   "text": "Bir uçak, kimliği doğrulanmış ve kullanılabilir bir VOR’un 123° manyetik radyali üzerindedir. Uçağın manyetik baş açısı 303°’dir. Hangi OBS ayarı CDI ibresini ortalar ve FROM göstergesi verir?",
+   "options": [
+    "123°",
+    "303°",
+    "213°",
+    "033°"
+   ]
+  },
+  "66003": {
+   "text": "Bir pilot rüzgârlı bir uçuştan sonra üç şeyi karşılaştırıyor: kalkıştan önce çizilen planlanan yol, uçak burnunun baktığı yön ve gerçek mevki tespitlerinden oluşturulan uçuş yolu. Üçüncüsü hangi seyrüsefer terimiyle adlandırılır?",
+   "options": [
+    "Track (gerçek yer izi)",
+    "Heading (baş açısı)",
+    "Planned course (planlanan rota)",
+    "VOR radial (VOR radyali)"
+   ]
+  }
+ }
+}

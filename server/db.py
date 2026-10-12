@@ -10,6 +10,8 @@ Soru bankası ATTACH ile bağlanır, böylece tek sorguda birleştirilebilir.
 from __future__ import annotations
 
 import os
+import json
+import re
 import sqlite3
 from contextlib import contextmanager
 from datetime import datetime, timezone
@@ -18,6 +20,19 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BANK_DB = Path(os.environ.get("ATPL_BANK_DB", ROOT / "atpl.db"))
 APP_DB = Path(os.environ.get("ATPL_APP_DB", ROOT / "server" / "app.db"))
+
+
+def figure_url(question_id: int) -> str | None:
+    """Soruya ait doğrulanmış depo görselini sunucu sürümünde de gösterir."""
+    index_path = ROOT / "figures" / "index.json"
+    if not index_path.exists():
+        return None
+    name = json.loads(index_path.read_text(encoding="utf-8")).get(str(question_id))
+    if not isinstance(name, str) or not re.fullmatch(r"[A-Za-z0-9_-]+", name):
+        return None
+    if not (ROOT / "figures" / f"{name}.svg").is_file():
+        return None
+    return f"/figures/{name}.svg"
 
 SCHEMA = """
 PRAGMA journal_mode = WAL;

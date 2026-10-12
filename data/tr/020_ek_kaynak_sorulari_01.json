@@ -1,0 +1,67 @@
+{
+ "questions": {
+  "62001": {
+   "text": "Yüksek sıkıştırmalı, buji ateşlemeli bir uçak motoruna belirtilenden düşük oktanlı yakıt konulmuştur. Yetersiz oktan değeri doğrudan hangi anormal yanma riskini artırır?",
+   "options": [
+    "Silindirdeki yakıt-hava karışımının detonasyonu.",
+    "Aşırı ısınmış buji elektrodunun başlattığı erken ateşleme.",
+    "Kurşun ve karbon birikintilerinin neden olduğu buji kirlenmesi.",
+    "Yanlış ateşleme sırasının neden olduğu geri tepme."
+   ]
+  },
+  "62002": {
+   "text": "Geleneksel bir piston motorunda iki bağımsız manyeto vardır; her biri her silindirdeki bir bujiyi ateşler. Bir manyeto arızalanırken diğer ateşleme devresi sağlam kalırsa olağan ilk sonuç nedir?",
+   "options": [
+    "Tüm silindirler ateşlemeye devam eder; güçte küçük bir azalma olur.",
+    "Yalnızca silindirlerin yarısı ateşlemeye devam eder; güç ciddi azalır.",
+    "Tüm silindirlerde ateşleme kaybolur; motor hemen durur.",
+    "Tüm silindirler ateşlemeye devam eder; güç çıkışı hiç değişmez."
+   ]
+  },
+  "62003": {
+   "text": "Atmosferik, karbüratörlü bir motor sabit devirli pervaneyle kararlı seyir uçuşundadır. Karbüratörde buz yoktur. Gaz ve karışım kolları değiştirilmeden karbüratör ısıtması açılınca olağan ilk etki nedir?",
+   "options": [
+    "Manifold basıncı azalır ve karışım zenginleşir.",
+    "Manifold basıncı azalır ve karışım fakirleşir.",
+    "Manifold basıncı artar ve karışım zenginleşir.",
+    "Manifold basıncı artar ve karışım fakirleşir."
+   ]
+  },
+  "62004": {
+   "text": "Şamandıralı karbüratörü olan bir uçak, bağıl nemi yüksek, +15°C sıcaklıktaki açık havada uçmaktadır. Bulut veya yağış yoktur. Karbüratör buzlanması için hangi ifade doğrudur?",
+   "options": [
+    "Yakıtın buharlaşması ve venturi, emme havasını sıfırın altına soğutabileceği için yine mümkündür.",
+    "Dış hava sıcaklığı donma noktasının üzerinde olduğu için buzlanma önlenir.",
+    "Aşırı soğumuş sıvı su damlacıkları içeren bir bulutun içinden uçmak gerekir.",
+    "Karbüratör hava girişine yağmur veya kar girmesi gerekir."
+   ]
+  },
+  "62005": {
+   "text": "Alet ve konum hataları ihmal edilen bir basınç altimetresi 1013,25 hPa değerine ayarlanmıştır. Altimetrenin basınç irtifası göstergesinin deniz seviyesinden gerçek irtifayla uyumlu olması için, uçağın altındaki atmosfer tabakasında hangi koşullar gerekir?",
+   "options": [
+    "Standart deniz seviyesi basıncı ve ISA sıcaklık profili.",
+    "Standart deniz seviyesi basıncı ve herhangi bir düşey sıcaklık profili.",
+    "Standart deniz seviyesi sıcaklığı ve herhangi bir deniz seviyesi basıncı.",
+    "Standart sıcaklık azalma oranı ve herhangi bir deniz seviyesi basıncı veya sıcaklığı."
+   ]
+  },
+  "62006": {
+   "text": "Havada yerleşmiş bir dönüşte turn coordinator sağa dönüş göstermektedir ve eğimölçer bilyesi orta işaretlerin solundadır. Bu ikili gösterge neyi ifade eder?",
+   "options": [
+    "Skid yapan sağa dönüş.",
+    "Slip yapan sağa dönüş.",
+    "Skid yapan sola dönüş.",
+    "Slip yapan sola dönüş."
+   ]
+  },
+  "62007": {
+   "text": "Kuzey Yarımkürede doğrudan okumalı manyetik pusula kullanan bir uçak, başını değiştirmeden düz uçuşta yavaşlamaktadır. Pusulanın yavaşlama hatası hangi manyetik baş çiftinde en büyüktür?",
+   "options": [
+    "090° ve 270°.",
+    "000° ve 180°.",
+    "045° ve 225°.",
+    "135° ve 315°."
+   ]
+  }
+ }
+}

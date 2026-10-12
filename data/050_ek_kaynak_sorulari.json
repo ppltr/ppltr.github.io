@@ -1,0 +1,139 @@
+{
+ "subject_code": "050",
+ "subject_name": "Meteorology",
+ "origin": "ek",
+ "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
+ "answer_convention": "İki dilde aynı sırada; ilk şık doğru. Belirsiz cevap aktif bankada yok.",
+ "id_convention": "Kalıcı idler_050.json; eski veya emekli kimlik yeniden kullanılmaz.",
+ "sections": {
+  "050-04": "Wind",
+  "050-05": "Thermodynamics",
+  "050-06": "Clouds, Fog and Precipitation",
+  "050-07": "Air Masses and Fronts",
+  "050-09": "Meteorological Information"
+ },
+ "questions": [
+  {
+   "id": 65001,
+   "section": "050-09",
+   "text": "The fictional METAR LTAC 121230Z 01008KT 9999 SCT025 12/06 Q1017 = contains Q1017. Which pressure setting does this group provide?",
+   "options": [
+    "QNH of 1,017 hPa",
+    "QFE of 1,017 hPa",
+    "QFF of 1,017 hPa",
+    "An altimeter setting of 30.17 inHg"
+   ]
+  },
+  {
+   "id": 65002,
+   "section": "050-05",
+   "text": "What does relative humidity compare at a specified air temperature?",
+   "options": [
+    "The actual water-vapour content with the saturation water-vapour content at that temperature",
+    "The mass of water vapour with the total mass of moist air",
+    "The mass of water vapour with the mass of dry air",
+    "The mass of water vapour with the volume of the air parcel"
+   ]
+  },
+  {
+   "id": 65003,
+   "section": "050-06",
+   "text": "On a clear, moist night with light wind over land, which cooling process produces radiation fog near the surface?",
+   "options": [
+    "The ground loses heat by radiation and cools the air touching it to its dewpoint",
+    "Warm moist air is transported horizontally over a colder surface",
+    "Air is forced up a slope and cools by expansion until saturated",
+    "Water evaporates into colder air flowing across a warmer water surface"
+   ]
+  },
+  {
+   "id": 65004,
+   "section": "050-04",
+   "text": "For approximately steady, large-scale surface flow in the Northern Hemisphere away from strong terrain effects, how does air circulate around a high and a low?",
+   "options": [
+    "Clockwise and outward around the high; anticlockwise and inward around the low",
+    "Clockwise and inward around the high; anticlockwise and outward around the low",
+    "Anticlockwise and outward around the high; clockwise and inward around the low",
+    "Anticlockwise and inward around the high; clockwise and outward around the low"
+   ]
+  },
+  {
+   "id": 65005,
+   "section": "050-04",
+   "text": "A pilot descends from above the friction layer toward flat land in the Northern Hemisphere. The pressure pattern is steady, with no front or local breeze. What change in mean wind is normally expected as surface friction increases?",
+   "options": [
+    "It backs and slows",
+    "It veers and slows",
+    "It backs and speeds up",
+    "It veers and speeds up"
+   ]
+  },
+  {
+   "id": 65006,
+   "section": "050-04",
+   "text": "Over flat inland terrain in the Northern Hemisphere, the pressure pattern stays steady and local breezes are absent. Daytime heating strengthens turbulent mixing with air above the friction layer. What normally happens to the surface mean wind?",
+   "options": [
+    "It veers and speeds up",
+    "It backs and speeds up",
+    "It veers and slows",
+    "It backs and slows"
+   ]
+  },
+  {
+   "id": 65007,
+   "section": "050-07",
+   "text": "Which feature is a weather front?",
+   "options": [
+    "A relatively narrow transition zone separating air masses with different temperature or moisture characteristics",
+    "A line connecting places with equal sea-level pressure",
+    "An elongated zone of relatively low pressure that need not separate different air masses",
+    "A level where a rising air parcel first becomes saturated"
+   ]
+  },
+  {
+   "id": 65008,
+   "section": "050-09",
+   "text": "For one forecast point at 1200 UTC on 12 October 2026, the winds-aloft table gives 270° true/18 kt at 3,000 ft AMSL and 270° true/30 kt at 6,000 ft AMSL. Assuming wind speed changes linearly between these levels, what wind should be used at 4,500 ft AMSL?",
+   "options": [
+    "270° true/24 kt",
+    "270° magnetic/24 kt",
+    "270° true/18 kt",
+    "270° true/30 kt"
+   ]
+  },
+  {
+   "id": 65009,
+   "section": "050-09",
+   "text": "The two north-up surface-pressure forecast charts use the same fixed grid and landmarks. In which direction is the low-pressure centre forecast to move between 1800 UTC on 12 October and 0000 UTC on 13 October 2026?",
+   "options": [
+    "East",
+    "West",
+    "North-west",
+    "South-east"
+   ],
+   "needs_figure": true
+  },
+  {
+   "id": 65010,
+   "section": "050-09",
+   "text": "Use these fictional reports for 12 October 2026 (all times UTC): TAF LTBJ 121030Z 1212/1221 27015KT 9999 SCT030 BECMG 1216/1218 30020KT =; METAR LTBJ 121200Z 29010KT 9999 SCT030 18/10 Q1018 =. At 1200, how does the observed mean wind compare with the mean wind forecast for that time?",
+   "options": [
+    "Its direction is 20° clockwise from the forecast direction and its speed is 5 kt lower",
+    "Its direction is 20° anticlockwise from the forecast direction and its speed is 5 kt lower",
+    "Its direction is 20° clockwise from the forecast direction and its speed is 5 kt higher",
+    "Its direction is 20° anticlockwise from the forecast direction and its speed is 5 kt higher"
+   ]
+  },
+  {
+   "id": 65011,
+   "section": "050-09",
+   "text": "In the fictional report METAR LTAC 121200Z 03006KT 9999 SCT020 M08/M13 Q1016 =, what is the temperature minus dewpoint spread?",
+   "options": [
+    "5 °C",
+    "21 °C",
+    "−5 °C",
+    "13 °C"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "ders": "080",
+ "sorular": [
+  {
+   "kaynak": "x-tc-tp13014",
+   "no": "21",
+   "sayfa": "8",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "konu": "Koordineli dönüşte stall ve spin yönü",
+   "neden": "Kaynak anahtarı, koordineli sola dönüşte stall’dan sola başlangıç spin’i seçtiriyor. Modern FAA AFH 5-20/5-22, spin için stall ve yaw gerektiğini açıklar; belirtilen koordinasyon tek başına spin yönünü belirlemez. Kaynağın bu yön cevabı doğrulanamadığından puanlanan teste eklenmez."
+  }
+ ]
+}

@@ -4483,22 +4483,22 @@
   {
    "key": "linx-airlaw:117",
    "section": "010-06",
-   "text": "When passing through the transition layer, when do the usual altitude/flight-level references change?",
+   "text": "While passing through the transition layer, how is an aircraft’s vertical position normally expressed during climb and during descent?",
    "options": [
-    "To flight levels at transition altitude in climb; to altitudes at transition level in descent",
-    "At transition altitude in both directions",
-    "At transition level in both directions",
-    "To altitudes in climb and flight levels in descent"
+    "Flight levels during climb; altitudes during descent",
+    "Altitudes during both climb and descent",
+    "Flight levels during both climb and descent",
+    "Altitudes during climb; flight levels during descent"
    ],
-   "tr_text": "Geçiş tabakası geçilirken normal irtifa/uçuş seviyesi referansı nerede değiştirilir?",
+   "tr_text": "Geçiş tabakası içinden geçerken uçağın dikey konumu tırmanışta ve alçalışta normal olarak nasıl ifade edilir?",
    "tr_options": [
-    "Tırmanışta geçiş irtifasında FL’ye; alçalışta geçiş seviyesinde irtifaya",
-    "Her iki yönde geçiş irtifasında",
-    "Her iki yönde geçiş seviyesinde",
-    "Tırmanışta irtifaya, alçalışta FL’ye"
+    "Tırmanışta uçuş seviyesi (FL); alçalışta irtifa",
+    "Hem tırmanışta hem alçalışta irtifa",
+    "Hem tırmanışta hem alçalışta uçuş seviyesi (FL)",
+    "Tırmanışta irtifa; alçalışta uçuş seviyesi (FL)"
    ],
-   "explanation_en": "Direction matters: within the layer use FL while climbing and altitude while descending.",
-   "explanation_tr": "Yön önemlidir: tabakada tırmanışta FL, alçalışta irtifa kullanılır. Kaynağın “yalnız TA” anahtarı düzeltilmiştir.",
+   "explanation_en": "Inside the transition layer use flight levels while climbing and altitudes while descending. At or below TA normally use altitude; at or above TL use flight levels. The stem explicitly asks about the layer, not the equality boundary at TA.",
+   "explanation_tr": "Geçiş tabakasının içinde tırmanışta FL, alçalışta irtifa kullanılır. TA’da ve altında normal ifade irtifadır; TL’de ve üzerinde FL’dir. Soru tabakanın içini sorar, TA sınırının eşitliğini tabakayla karıştırmaz.",
    "answer_verification": [
     {
      "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
@@ -4517,7 +4517,12 @@
     }
    ],
    "jurisdiction": "EASA",
-   "mark": "aday"
+   "mark": "aday",
+   "correction": {
+    "kind": "clarification",
+    "previous_sha256": "869832580ae80cbbf959c75c60cfc555fe6964caefa7057cca1d901945fc8d81",
+    "reason": "Geçiş tabakasındaki dikey konum ifadesini tırmanış/alçalış yönüne göre açık sorar; TA sınırında doğrudan FL ifadesi belirsizliği kaldırıldı. Aynı kavram ve doğru ilk şık korunur."
+   }
   },
   {
    "key": "linx-airlaw:118",

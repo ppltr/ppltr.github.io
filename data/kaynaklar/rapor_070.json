@@ -1,0 +1,52 @@
+{
+ "ders": "070",
+ "tarih": "2026-10-12",
+ "yeni_benzersiz": 1,
+ "taranan": 2,
+ "kaynaklar": {
+  "x-tc-tp13014": {
+   "new": 1,
+   "existing": 1
+  }
+ },
+ "yildizlar": [
+  61001,
+  61002,
+  14909
+ ],
+ "inceleme": 0,
+ "kararlar": [
+  {
+   "source": "x-tc-tp13014",
+   "no": "40",
+   "page": "11",
+   "key": "x-tc-tp13014:40",
+   "subject": "070",
+   "status": "new",
+   "reason": "FAA Airplane Flying Handbook 9-35 supports speed/pitch combination; no semantic bank duplicate found.",
+   "topic_tr": "Burun tekerleğine yük yoğunlaşması: wheelbarrowing",
+   "reason_tr": "FAA Airplane Flying Handbook 9-35 hız/pitch birleşimini destekliyor; bankada aynı tehlikeyi soran kayıt bulunmadı.",
+   "question_id": 67001
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "41",
+   "page": "11; Same testedtype; no verbatim match claimed",
+   "key": "x-tc-tp13014:41",
+   "subject": "070",
+   "status": "existing",
+   "reason": "16152 and 16032/16045 already ask vortex generation starting at rotation.",
+   "topic_tr": "Kanat ucu girdabının rotasyonda başlaması",
+   "reason_tr": "16152 ve 16032/16045 girdapların rotasyonla başlamasını zaten soruyor.",
+   "bank_id": 58006,
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "matched_bank_id": 16152,
+   "question_id": 58006
+  }
+ ],
+ "kaynak_yeni_benzersiz": {
+  "x-tc-tp13014": 1
+ },
+ "bagimsiz_uyarlamalar": [],
+ "duzeltmeler": []
+}

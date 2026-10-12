@@ -547,3 +547,50 @@ node scripts/test_kaynak_web.cjs
 `--kuru` veri yazmaz; ID kaydı kalıcıdır; doğrulamasız cevap, kimlik çakışması, aynı kök veya eski yeni-soru içeriğinin sessiz değişimi derlemeyi durdurur. İnceleme yalnız okunur panelde açılır. Mevcut soru ortak dersler için `also_subjects` ile bağlanır; çözüm yine aynı ID üzerinden tutulur. İlerleme veritabanı/localStorage/bulut kayıtlarına derleme betikleri dokunmaz.
 
 23 Python regresyon testi, gerçek template işlevleriyle JS kontrolü, sunucu akış testi, EN/TR tamlığı ve 2.934 soru için SHA-256 kimlik/içerik kontrolü geçti. Tarayıcıda yıldız, açıklama/kaynak, yanlışların tekrar turu, yenileme ve geri/ileri ile aynı soruya dönüş doğrulandı. Yeni bankada 3.022 ham / 2.642 görünür benzersiz soru var; mevcut 380 tekrar bağlantısı değişmedi. `qa/airlaw-confirmed.jpg` yerel test profili görüntüsüdür.
+
+## 2026-10-12 · Diğer PPL derslerinde tamamlanan eklemeler
+
+Aynı kaynak ailesinden **29 yeni benzersiz soru** eklendi. İki dil, makul çeldiriciler, kısa açıklama ve birincil cevap dayanağı birlikte denetlendi. Mevcut 3.022 kimlik korundu; silme veya yeniden ID kullanma yok. Toplam 3.051 ham / 2.671 görünür benzersiz soru oldu. İlk 18-aday kaydı tarihsel ön elemedir; yeni sayılar ayrıntılı içerik ve grafik denetiminin sonucudur.
+
+| Ders | Yeni | Gerçek kaynak adayı | İnceleme |
+|---|---:|---:|---:|
+| Aircraft General Knowledge | 7 | 21 | 0 |
+| Flight Performance | 2 | 16 | 0 |
+| Human Performance | 3 | 5 | 1 |
+| Meteorology | 11 | 41 | 0 |
+| Navigation | 3 | 23 | 8 |
+| Operational Procedures | 1 | 2 | 0 |
+| Principles of Flight | 2 | 16 | 1 |
+
+130 gerçek kaynak adayı: TC örneğinin 21–100 numaralı tüm 80 sorusu ve Son Yaklaşma’nın 50 önceden elde edilmiş açık örneği. 124 kayıt derslere işlendi; kalan 6 TC kaydı Kanada’ya özgü meydan/hukuk şartları nedeniyle kapsam dışı tutuldu. Bu sayılar ek bir bankanın bütününe ilişkin tahmin değildir.
+
+| Kaynak | Gerçek aday | Mevcut | Yeni kaynak türü | İnceleme | Kapsam dışı |
+|---|---:|---:|---:|---:|---:|
+| x-tc-tp13014 | 80 | 37 | 24 | 9 | 10 |
+| x-sonyaklasma | 50 | 49 | 0 | 1 | 0 |
+
+**24 kabul edilen kaynak türü + 5 ayrı, koşulları açık bağımsız alıştırma = 29.** Ayrı alıştırmalar: VOR FROM, tırmanış ek süresi, track/heading/course, ICAO Qxxxx/hPa ve boş alan miyopisi tanımı. Bunlar eski haritaların veya yerel kodların özgün cevaplarının doğrulandığı anlamına gelmez. Eski Toronto VNC’ye bağlı sorular ve TC’nin eski sayısal miyopi cevabı referanslarıyla incelemede kaldı; cevap tahmini aktif bankaya yazılmadı.
+
+Transport Canada’nın yayımladığı [TP13014](https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014) kamuya açık ticari olmayan yeniden kullanım iznini açıkça verir. Son Yaklaşma’nın korumalı metinleri aktarılmadı; mevcut sorulara kaynak ipucu bağlandı ve track sorusu FAA teknik tanımlarından bağımsız yazıldı. Önceki Scribd/QuizVDS/Furious/PDFCoffee/Dauntless toplu aktarım kısıtları korunur. Traficom’un coğrafi veri lisansı sınav bankasına uygulanmış sayılmadı; CAD belgesinin üçüncü taraf hakları kesinleşmedi. Bu geniş bankalar bu turda kapak/erişim/izin kontrolünden öte taranmış sayılmadı.
+
+İkinci hakem denetimi: TC67’nin mevcut 15414 ile aynı düşük→yüksek QNH koşulu yeniden sorulmadı; yer etkisi ve stagnation soruları mevcut16168/16126’ya bağlandı; METAR tavanı mevcut 61085’e ortak ders bağıyla taşındı. TC89 Türkçe toplam yakıt payı belirsizliği ve TC58’in cevabı veren sıfatları düzeltildi. Alkol/irtifa sorusunun ilgisiz yanlış şıkları daha yakın fizik/etki yanılgılarıyla değiştirildi.
+
+Sayısal örnekler ayrı doğrulandı: tabloya özgü kalkış 2.063 ft, iki kalkış payıyla yakıt 17 US gal, tırmanış ek paylı uçuş 75 dakika, ara seviye rüzgâr 24 kt, negatif sıcaklık–çiy noktası farkı 5°C. Bunlar senaryonun verdiği model ve katsayılardır; evrensel AFM/POH veya yakıt rezerv kuralları değildir.
+
+Yeni meteoroloji çizimi 65009 sorusuna bağlandı; web ve sunucu sürümlerinde gösterilir. Tarih/UTC, kuzey ve sabit referanslar görsel olarak denetlendi. SVG erişilebilir açıklaması yorumlanmış doğru yönü yazmaz, aynı konum verilerini verir. Görsel QA: `qa/other-subjects.jpg`.
+
+**Önceki Air Law’dan 61035 ve 61084**, tespit edilen koşul/kök sorunları için aynı ID ile düzeltildi. Geçiş tabakası içindeki tırmanışta FL / alçalışta irtifa ayrımı ve TA < 10.000 ft iken FL100 eşiği açık yazıldı. Düzeltme eski/yeni içerik hashleri ve gerekçesiyle `data/kaynaklar/duzeltmeler.json` içindedir; eski 2.934 banka sorusuna dokunulmadı.
+
+Kontroller: 28 Python regresyon testi, JS kapsam/kimlik/inceleme ayrımı, tam EN/TR ve şekil kontrolü, SQLite bütünlüğü, bütün 8 ders derlemesinin tekrarlı çalıştırmada aynı veri vermesi, eski kimlik/hash koruması, sunucu akış ve grafik/API testi geçti. Browser’da grafikli soru ve dil seçimi görüldü; yenileme aynı soruya döndü. Kullanıcı verisi/localStorage/bulut geçmişine taşıma/sıfırlama yapılmadı.
+
+Yeniden derleme:
+
+```bash
+python3 scripts/kaynak_derle.py 010 data/kaynaklar/decisions/root_special.json data/kaynaklar/decisions/caab_linx_audit.json data/kaynaklar/decisions/other_airlaw_audit.json
+for ders in 020 030 040 050 060 070 080; do
+  python3 scripts/kaynak_derle.py "$ders" "data/kaynaklar/decisions/other_subjects_${ders}.json"
+done
+python3 scripts/check_tr.py
+python3 scripts/init_db.py
+python3 scripts/build_web.py
+```

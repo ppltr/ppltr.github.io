@@ -1,0 +1,103 @@
+{
+ "questions": {
+  "65001": {
+   "text": "METAR LTAC 121230Z 01008KT 9999 SCT025 12/06 Q1017 = örnek raporundaki Q1017 grubu hangi basınç ayarını verir?",
+   "options": [
+    "1.017 hPa QNH",
+    "1.017 hPa QFE",
+    "1.017 hPa QFF",
+    "30,17 inHg altimetre ayarı"
+   ]
+  },
+  "65002": {
+   "text": "Bağıl nem, belirli bir hava sıcaklığında hangi iki değeri karşılaştırır?",
+   "options": [
+    "Mevcut su buharı içeriği ile aynı sıcaklıktaki doygunluk su buharı içeriğini",
+    "Su buharı kütlesi ile nemli havanın toplam kütlesini",
+    "Su buharı kütlesi ile kuru hava kütlesini",
+    "Su buharı kütlesi ile hava parselinin hacmini"
+   ]
+  },
+  "65003": {
+   "text": "Kara üzerinde açık, nemli ve hafif rüzgârlı bir gecede, yüzeye yakın radyasyon sisini hangi soğuma süreci oluşturur?",
+   "options": [
+    "Yer radyasyonla ısı kaybeder ve kendisine temas eden havayı çiy noktasına kadar soğutur",
+    "Sıcak ve nemli hava yatay olarak daha soğuk bir yüzey üzerine taşınır",
+    "Hava bir yamaç boyunca yükselmeye zorlanır ve genleşerek doygunluğa kadar soğur",
+    "Daha sıcak su yüzeyi üzerinden geçen soğuk havaya su buharı eklenir"
+   ]
+  },
+  "65004": {
+   "text": "Kuzey Yarımküre’de, belirgin arazi etkilerinden uzakta yaklaşık dengeli büyük ölçekli yüzey akımında hava yüksek ve alçak basınç çevresinde nasıl dolaşır?",
+   "options": [
+    "Yüksek basınç çevresinde saat yönünde dışarı; alçak basınç çevresinde saat yönünün tersine içeri",
+    "Yüksek basınç çevresinde saat yönünde içeri; alçak basınç çevresinde saat yönünün tersine dışarı",
+    "Yüksek basınç çevresinde saat yönünün tersine dışarı; alçak basınç çevresinde saat yönünde içeri",
+    "Yüksek basınç çevresinde saat yönünün tersine içeri; alçak basınç çevresinde saat yönünde dışarı"
+   ]
+  },
+  "65005": {
+   "text": "Bir pilot Kuzey Yarımküre’de sürtünme tabakasının üstünden düz araziye doğru alçalıyor. Basınç düzeni kararlı; cephe veya yerel meltem yok. Yüzey sürtünmesi arttıkça ortalama rüzgârda normal olarak hangi değişim beklenir?",
+   "options": [
+    "Yönü saat yönünün tersine döner ve hızı azalır",
+    "Yönü saat yönünde döner ve hızı azalır",
+    "Yönü saat yönünün tersine döner ve hızı artar",
+    "Yönü saat yönünde döner ve hızı artar"
+   ]
+  },
+  "65006": {
+   "text": "Kuzey Yarımküre’de düz iç kesimlerde basınç düzeni kararlı ve yerel meltemler yok. Gündüz ısınması, sürtünme tabakasının üstündeki havayla türbülanslı karışımı güçlendiriyor. Yüzeydeki ortalama rüzgârın yönü ve hızı normal olarak nasıl değişir?",
+   "options": [
+    "Yönü saat yönünde döner ve hızı artar",
+    "Yönü saat yönünün tersine döner ve hızı artar",
+    "Yönü saat yönünde döner ve hızı azalır",
+    "Yönü saat yönünün tersine döner ve hızı azalır"
+   ]
+  },
+  "65007": {
+   "text": "Meteorolojik cephe hangi oluşumdur?",
+   "options": [
+    "Sıcaklık veya nem özellikleri farklı hava kütlelerini ayıran görece dar geçiş bölgesi",
+    "Deniz seviyesine indirgenmiş basıncı aynı olan noktaları birleştiren çizgi",
+    "Farklı hava kütlelerini ayırması gerekmeyen, uzamış görece alçak basınç bölgesi",
+    "Yükselen hava parselinin ilk kez doygunluğa ulaştığı seviye"
+   ]
+  },
+  "65008": {
+   "text": "12 Ekim 2026 saat 1200 UTC için bir tahmin noktasının yüksek seviye rüzgâr tablosunda 3.000 ft AMSL’de 270° hakiki/18 kt ve 6.000 ft AMSL’de 270° hakiki/30 kt veriliyor. Bu seviyeler arasında rüzgâr hızının doğrusal değiştiği varsayılırsa 4.500 ft AMSL için hangi rüzgâr kullanılmalıdır?",
+   "options": [
+    "270° hakiki/24 kt",
+    "270° manyetik/24 kt",
+    "270° hakiki/18 kt",
+    "270° hakiki/30 kt"
+   ]
+  },
+  "65009": {
+   "text": "Kuzeyi yukarıda olan iki yüzey basınç tahmin haritasında ızgara ve yer işaretleri aynıdır. 12 Ekim 1800 UTC ile 13 Ekim 2026 0000 UTC arasında alçak basınç merkezinin hangi yöne hareket etmesi bekleniyor?",
+   "options": [
+    "Doğuya",
+    "Batıya",
+    "Kuzeybatıya",
+    "Güneydoğuya"
+   ]
+  },
+  "65010": {
+   "text": "12 Ekim 2026’ya ait bu örnek raporları kullanın (tüm saatler UTC): TAF LTBJ 121030Z 1212/1221 27015KT 9999 SCT030 BECMG 1216/1218 30020KT =; METAR LTBJ 121200Z 29010KT 9999 SCT030 18/10 Q1018 =. 1200’de gözlenen ortalama rüzgâr, aynı saat için tahmin edilen ortalama rüzgâra göre nasıldır?",
+   "options": [
+    "Yönü tahmin edilenden saat yönünde 20° ileride ve hızı 5 kt daha düşüktür",
+    "Yönü tahmin edilenden saat yönünün tersine 20° geride ve hızı 5 kt daha düşüktür",
+    "Yönü tahmin edilenden saat yönünde 20° ileride ve hızı 5 kt daha yüksektir",
+    "Yönü tahmin edilenden saat yönünün tersine 20° geride ve hızı 5 kt daha yüksektir"
+   ]
+  },
+  "65011": {
+   "text": "METAR LTAC 121200Z 03006KT 9999 SCT020 M08/M13 Q1016 = örnek raporunda sıcaklık eksi çiy noktası farkı kaçtır?",
+   "options": [
+    "5 °C",
+    "21 °C",
+    "−5 °C",
+    "13 °C"
+   ]
+  }
+ }
+}

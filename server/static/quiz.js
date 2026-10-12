@@ -56,7 +56,7 @@ function draw(){
   const reveal = shown && MODE === 'calisma';
 
   const badges =
-    (q.needs_figure ? '<span class="badge fig" title="Soru bir şekle atıf yapıyor; görsel bankada yok">şekil gerekli</span>' : '') +
+    (q.needs_figure && !q.figure_url ? '<span class="badge fig" title="Sorunun görseli bulunamadı">şekil gerekli</span>' : '') +
     (q.generated ? '<span class="badge gen" title="Ders notundan üretilmiş — gerçek sınav sorusu değil">üretilmiş</span>' : '') +
     (q.flagged ? '<span class="badge flag" title="Kaynakta Attention! işaretli — cevabı tartışmalı">tartışmalı</span>' : '');
 
@@ -90,6 +90,8 @@ function draw(){
         '<span class="sp"></span>' + badges +
         '<span class="lbl num">ID ' + q.id + '</span></div>' +
       '<div class="qtext">' + esc(q.text) + '</div>' +
+      (q.figure_url && /^\/figures\/[A-Za-z0-9_-]+\.svg$/.test(q.figure_url)
+        ? '<div class="qfigure"><img src="' + esc(q.figure_url) + '" alt="Soruya ait şekil"></div>' : '') +
       '<div class="opts">' + opts + '</div>' + verdict +
     '</div>' +
     '<div class="actions">' +

@@ -1,0 +1,500 @@
+{
+ "schema_version": 1,
+ "audit_date": "2026-10-12",
+ "subject": "060",
+ "purpose": "Accepted independent EN/TR gap additions plus dispositions for every original source proposal. Original map-dependent source questions and independently specified adaptations are counted separately. Existing IDs/content/history are not changed here.",
+ "sources": [
+  {
+   "id": "x-tc-tp13014",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "permission_url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "permission": "Explicit personal/public noncommercial reproduction permission; accurate attribution and no official/endorsement claim. Commercial use requires separate permission.",
+   "scanned": 13,
+   "coverage": "All assigned TP 13014 questions reread; answer key and supplied appendix figures checked;2006 Toronto VNC is absent.",
+   "figures_visually_checked": [
+    "Take-off Table1(PDF27/printed25)",
+    "Loading graph and CG envelope(PDF28/printed26)",
+    "Lindsay CFS(PDF37/printed35)",
+    "Kingston CFS(PDF38/printed36)"
+   ],
+   "version": "Fourth editionNovember 2008, TP 13014 E 05/2009"
+  },
+  {
+   "id": "x-sonyaklasma",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon",
+   "permission": "All-rights-reserved public sample; no licence to transfer protected question wording. Metadata/topic hints only.",
+   "scanned": 10,
+   "coverage": "Current public 10-question sample HTTP 200; authenticated bank not accessed; no full-bank estimate."
+  },
+  {
+   "id": "ref-faa-phak",
+   "name": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+   "permission": "Technical facts used to independently author MCQs; no FAA/third-party images or bank wording copied.",
+   "scanned": 0,
+   "coverage": "Primary technical verification only; not an additional scanned question bank."
+  }
+ ],
+ "candidates": [
+  {
+   "key": "independent:track-heading-course",
+   "section": "060-02",
+   "text": "A pilot compares three things after a windy flight: the route drawn before departure, the direction in which the nose pointed, and the path reconstructed from actual position fixes. Which navigation term applies to the third of these?",
+   "options": [
+    "Track",
+    "Heading",
+    "Planned course",
+    "VOR radial"
+   ],
+   "tr_text": "Bir pilot rüzgârlı bir uçuştan sonra üç şeyi karşılaştırıyor: kalkıştan önce çizilen planlanan yol, uçak burnunun baktığı yön ve gerçek mevki tespitlerinden oluşturulan uçuş yolu. Üçüncüsü hangi seyrüsefer terimiyle adlandırılır?",
+   "tr_options": [
+    "Track (gerçek yer izi)",
+    "Heading (baş açısı)",
+    "Planned course (planlanan rota)",
+    "VOR radial (VOR radyali)"
+   ],
+   "explanation_tr": "Track, uçağın yerde gerçekte izlediği yoldur. Heading, burnun baktığı yön; course ise planlanan yer yoludur. Rüzgâr doğru telafi edilirse track ile course çakışabilir; tanımları yine farklıdır. Soru FAA’nın teknik tanımlarından bağımsız yazılmıştır. Son Yaklaşma örneği yalnız konu ipucudur; korumalı soru metni aktarılmamıştır.",
+   "explanation_en": "Track is the path actually made over the ground; heading is where the nose points, and course is the intended ground path. Proper wind correction can make track and course coincide without making the terms identical. Independently written from FAA technical definitions. The Son Yaklaşma sample is a topic hint only; its protected wording is not reproduced.",
+   "sources": [
+    {
+     "source": "ref-faa-phak",
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "no": "Track / heading / course",
+     "page": "16-10"
+    },
+    {
+     "source": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-2",
+     "no": "2",
+     "page": "Konu ipucu; korumalı metin aktarılmadı",
+     "role": "topic_hint"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "section": "Chapter 16, Effect of Wind / definitions immediately before Time-Speed-Distance, printedp 16-10: course, heading, track"
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_ids": [
+    15704,
+    15714,
+    61038
+   ],
+   "distinctness_evidence": "15704 asks the wind-correction angle,15714 asks when course/heading/track can coincide,61038 applies magnetic track to cruising levels. None directly distinguishes an actual fix-derived path from heading and the planned course.",
+   "independent_authoring": true,
+   "source_wording_transferred": false,
+   "adaptation_only": true,
+   "original_answer_verified": false,
+   "original_question_status": "review"
+  },
+  {
+   "key": "adapted:tc88-climb-allowance",
+   "section": "060-07",
+   "text": "For a navigation exercise, the planned leg is 110 NM and cruise groundspeed is 100 kt. Departure elevation is 1,000 ft AMSL and the planned cruise altitude is 5,500 ft AMSL. The planning instruction is to calculate the whole leg at cruise groundspeed, then add an extra 2 minutes for each 1,000 ft of altitude gained during climb. What is the estimated flight time, rounded to the nearest minute?",
+   "options": [
+    "75 minutes",
+    "66 minutes",
+    "77 minutes",
+    "57 minutes"
+   ],
+   "tr_text": "Bir seyrüsefer alıştırmasında planlanan bacak 110 NM ve seyir yer hızı 100 kt’dir. Kalkış meydanının yüksekliği 1.000 ft AMSL, planlanan seyir irtifası 5.500 ft AMSL’dir. Planlama talimatı, önce tüm bacağı seyir yer hızıyla hesaplayıp ardından tırmanışta kazanılacak her 1.000 ft için 2 dakika ek süre eklemektir. En yakın dakikaya yuvarlanan tahmini uçuş süresi kaçtır?",
+   "tr_options": [
+    "75 dakika",
+    "66 dakika",
+    "77 dakika",
+    "57 dakika"
+   ],
+   "explanation_tr": "Temel süre 110/100 × 60 = 66 dakikadır. Kazanılacak irtifa 5.500 -1.000 =4.500 ft; ek süre 4,5 ×2 =9 dakikadır. Toplam 66 +9 =75 dakika.5.500 ft’in tamamını tırmanış miktarı sayma.2 dakika/1.000 ft, bu alıştırmanın verilen ek payıdır; uçağın gerçek tırmanış tablosunun yerine geçmez. TC 88’deki tür bağımsız ve eksiksiz verilerle yazıldı; eski Toronto VNC’deki özgün mesafe/cevap doğrulanmış sayılmadı.",
+   "explanation_en": "The cruise-groundspeed baseline is 110/100 ×60 =66 minutes. The climb gains 5,500 -1,000 =4,500 ft, so the specified additional allowance is 4.5 ×2 =9 minutes. Total time is 75 minutes. Use altitude gained, not the entire cruise altitude. The allowance belongs to this exercise and is not a substitute for aircraft performance data. This fully specified independent exercise adapts the type in TC 88; the original 2006 Toronto VNC distance/answer is not claimed as verified.",
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "88",
+     "page": "19; Özgün tırmanış payı alıştırması; kaynak VNC cevabı doğrulanmadı"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "section": "Chapter 16: Time-Speed-Distance printedp 16-11; flight planning example printedp 16-21 adds climb allowance to cruise time"
+    },
+    {
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "section": "Question 88 specifies an additional 2 minutes per 1000 ft of climb; original chart unavailable; supplied adaptation values calculated independently"
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_ids": [
+    15759,
+    15761,
+    15762,
+    15854
+   ],
+   "distinctness_evidence": "15759 is cruise distance/time only;15761/15762 apply wind to a known climb distance, and 15854 solves vertical rate from ground distance. The new condition adds a specified climb-time allowance using altitude gained to a cruise-time baseline.",
+   "adaptation_only": true,
+   "original_answer_verified": false,
+   "calculation": {
+    "leg_distance_nm": 110,
+    "cruise_groundspeed_kt": 100,
+    "departure_elevation_ft_amsl": 1000,
+    "cruise_altitude_ft_amsl": 5500,
+    "extra_minutes_per_1000_ft": 2,
+    "baseline_minutes": 66,
+    "climb_gain_ft": 4500,
+    "extra_minutes": 9,
+    "total_minutes": 75
+   }
+  },
+  {
+   "key": "adapted:tc96-from",
+   "section": "060-12",
+   "text": "An aircraft is on the 123° magnetic radial of an identified, serviceable VOR, with a magnetic heading of 303°. Which OBS setting will centre the CDI and show a FROM indication?",
+   "options": [
+    "123°",
+    "303°",
+    "213°",
+    "033°"
+   ],
+   "tr_text": "Bir uçak, kimliği doğrulanmış ve kullanılabilir bir VOR’un 123° manyetik radyali üzerindedir. Uçağın manyetik baş açısı 303°’dir. Hangi OBS ayarı CDI ibresini ortalar ve FROM göstergesi verir?",
+   "tr_options": [
+    "123°",
+    "303°",
+    "213°",
+    "033°"
+   ],
+   "explanation_tr": "VOR radyali istasyondan dışarı doğru manyetik kerterizdir.123° radyali üzerinde OBS 123° seçilirse CDI ortalanır ve FROM görünür; karşıtı 303° ise TO verir. Baş açısı tek başına bu göstergeyi belirlemez: burun istasyona dönük olsa da seçilen OBS 123° iken FROM kalır. Bu, TC 96’nın FROM ayrımından bağımsız yazılmış, radyali açıkça verilmiş alıştırmadır; özgün Coehill/Marlbank harita cevabı doğrulanmadı.",
+   "explanation_en": "A VOR radial is the magnetic bearing FROM the station. On the 123° radial, selecting 123° centres the CDI with FROM; its reciprocal 303° centres it with TO. The nose heading does not determine the flag: heading toward the station can coexist with FROM when the selected OBS is 123°. Independently specified exercise preserving TC 96’s FROM condition; the original Coehill/Marlbank chart answer was not verified.",
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "96",
+     "page": "21; Özgün FROM alıştırması; kaynak VNC cevabı doğrulanmadı"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+     "section": "Chapter 16, Very High Frequency Omnidirectional Range / VOR receiver, printedpp 16-23 to 16-24: centred CDI indicates radial withFROM, reciprocal withTO"
+    },
+    {
+     "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html",
+     "section": "AIM 1-1-4(b): centred CDI 0° withFROM or 180° withTO on VOT; supports reciprocal indicator relationship"
+    }
+   ],
+   "adapted": true,
+   "nearest_bank_ids": [
+    15890,
+    15892
+   ],
+   "distinctness_evidence": "15890 and 15892 ask an inbound/TO selection. This exercise explicitly requests FROM while the heading points inbound, so selecting the reciprocal would change the answer. It is not a numbers-only duplicate of the TO questions.",
+   "adaptation_only": true,
+   "original_answer_verified": false
+  }
+ ],
+ "existing_notes": [],
+ "decisions": [
+  {
+   "source": "x-tc-tp13014",
+   "no": "81",
+   "page": "18; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:81",
+   "subject": "060",
+   "status": "existing",
+   "bank_id": 15722,
+   "reason": "15722 already asks the reciprocal-leg heading with unchanged wind and drift correction.",
+   "topic_tr": "Aynı rüzgârda dönüş bacağı baş açısı",
+   "reason_tr": "15722 aynı rüzgâr ve sürüklenme koşuluyla dönüş bacağının baş açısını hesaplatıyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "82",
+   "page": "18; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:82",
+   "subject": "060",
+   "status": "existing",
+   "bank_id": 15775,
+   "reason": "15775 already converts latitude difference along the same meridian into nautical-mile distance.",
+   "topic_tr": "Aynı meridyen üzerindeki enlem farkından mesafe",
+   "reason_tr": "15775 aynı meridyendeki enlem farkını deniz mili mesafesine çeviriyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "84",
+   "page": "18",
+   "key": "x-tc-tp13014:84",
+   "subject": "060",
+   "status": "review",
+   "reason": "Original 2006 Toronto VNC colour legend and terrain strip are not supplied; no exact terrain answer inferred.",
+   "topic_tr": "Haritada hipsometrik renklendirmeden arazi yüksekliği",
+   "reason_tr": "2006 Toronto VNC’nin renk lejandı ve arazi şeridi verilmediği için kesin arazi cevabı çıkarılmadı."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "85",
+   "page": "19; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:85",
+   "subject": "060",
+   "status": "existing",
+   "bank_id": 15796,
+   "reason": "15796 already requires both wind-corrected heading and groundspeed.",
+   "topic_tr": "Rüzgâr üçgeninden baş açısı ve yer hızı",
+   "reason_tr": "15796 rüzgâr üçgeninden düzeltilmiş baş açısını ve yer hızını birlikte hesaplatıyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "87",
+   "page": "19",
+   "key": "x-tc-tp13014:87",
+   "subject": "060",
+   "status": "review",
+   "reason": "Old VNC and along-route variation are not available; approximate geometry or a single aerodrome variation is not asserted as the original measured track. Generic true/magnetic conversion already exists in 15739.",
+   "topic_tr": "Eski VNC üzerinde manyetik rota ölçümü",
+   "reason_tr": "Eski VNC ve rota boyu varyasyon bilgisi yok. Yaklaşık geometri veya tek meydan varyasyonu özgün ölçülmüş rota sayılmadı; genel dönüşüm 15739’da var."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "88",
+   "page": "19",
+   "key": "x-tc-tp13014:88",
+   "subject": "060",
+   "status": "review",
+   "reason": "Original VNC distance is unverified. Preserve source question for review; a separate fully specified independent exercise carries the missing climb-time allowance condition.",
+   "topic_tr": "Seyir süresine kazanılan irtifaya göre tırmanış payı ekleme",
+   "reason_tr": "Özgün VNC mesafesi doğrulanmadı. Kaynak soru incelemede kaldı; eksik tırmanış ek süresi koşulu, verileri eksiksiz ayrı bir özgün alıştırmayla eklendi.",
+   "representative_key": "adapted:tc88-climb-allowance",
+   "original_answer_verified": false
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "90",
+   "page": "20; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:90",
+   "subject": "060",
+   "status": "existing",
+   "bank_id": 15804,
+   "reason": "15804 already computes TAS from pressure altitude, temperature and IAS.",
+   "topic_tr": "Basınç irtifası ve sıcaklıkla TAS hesabı",
+   "reason_tr": "15804 basınç irtifası, sıcaklık ve IAS’dan TAS hesaplatıyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "91",
+   "page": "20",
+   "key": "x-tc-tp13014:91",
+   "subject": "060",
+   "status": "review",
+   "reason": "The required five-mile obstacle corridor depends on the missing 2006 VNC. Do not infer obstacle height from the answer key alone.",
+   "topic_tr": "Rota koridorunun en yüksek engeli ve AMSL/AGL ayrımı",
+   "reason_tr": "Beş millik koridordaki engeller eksik 2006 VNC’den okunmalı; cevap anahtarından tek başına engel yüksekliği çıkarılmadı."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "92",
+   "page": "20",
+   "key": "x-tc-tp13014:92",
+   "subject": "060",
+   "status": "review",
+   "reason": "Old VNC/FISE coverage and historical station frequencies are incomplete and potentially stale; no current operational answer assigned.",
+   "topic_tr": "Yol boyu hava bilgisi için eski istasyon/frekans seçimi",
+   "reason_tr": "Eski VNC/FISE kapsaması ve istasyon frekansları eksik, güncelliği belirsiz; güncel operasyon cevabı atanmadı."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "93",
+   "page": "21; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:93",
+   "subject": "060",
+   "status": "existing",
+   "reason": "Given fixes have identical latitude;24 minutes of longitude in 12 minutes implies 104 minutes of longitude remaining takes 52 minutes, ETA 1914 Z, agreeing with key.15822 already tests observed GS and revised ETA.",
+   "topic_tr": "Mevki geçiş zamanından yer hızı ve revize ETA",
+   "reason_tr": "Verilen iki mevki aynı enlemde:24 yay dakikası boylam 12 dakikada geçiliyor; kalan 104 yay dakikası 52 dakika sürer. ETA 1914 Z anahtarla uyumlu. Gözlenen yer hızıyla ETA güncelleme 15822’de zaten var.",
+   "bank_id": 15822,
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "94",
+   "page": "21",
+   "key": "x-tc-tp13014:94",
+   "subject": "060",
+   "status": "review",
+   "reason": "Opening/closing-angle method exists in 15831/15838/15839, but the original chart geometry has not been verified; no exact source answer claimed.",
+   "topic_tr": "Haritadan açılma ve kapanma açıları",
+   "reason_tr": "Açılma/kapanma açısı yöntemi 15831/15838/15839’da var; özgün harita geometrisi doğrulanmadığı için kesin kaynak cevabı iddia edilmedi."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "96",
+   "page": "21",
+   "key": "x-tc-tp13014:96",
+   "subject": "060",
+   "status": "review",
+   "reason": "Original Coehill-to-Marlbank magnetic radial requires the missing VNC. Keep original for review; independent explicitly given radial exercise preserves the FROM condition separately.",
+   "topic_tr": "VOR radyali üzerinde FROM/TO ayrımı",
+   "reason_tr": "Coehill-Marlbank özgün manyetik radyali için eksik VNC gerekiyor. Kaynak soru incelemede kaldı; FROM koşulu radyali açıkça verilen ayrı bir özgün alıştırmayla korundu.",
+   "representative_key": "adapted:tc96-from",
+   "original_answer_verified": false
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "97",
+   "page": "21; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:97",
+   "subject": "060",
+   "status": "existing",
+   "reason": "Provided historical Kingston CFS visually lists VDF 122.5, so the sample DF-steer answer is supported without VNC.15874 already tests VDF bearings without radar; no claim about current Kingston service.",
+   "topic_tr": "VDF hizmetiyle yön bulma yardımı",
+   "reason_tr": "Verilen tarihî Kingston CFS’de VDF 122.5 görsel olarak okundu; örnek DF-steer cevabı VNC olmadan destekleniyor.15874 radarsız VDF kerterizini zaten soruyor. Güncel Kingston hizmeti iddia edilmedi.",
+   "bank_id": 15874,
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "1",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:060:1",
+   "subject": "060",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-1",
+   "status": "existing",
+   "bank_id": 15901,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "DME’nin mesafe bilgisi",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15901 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "2",
+   "page": "",
+   "key": "x-sonyaklasma:060:2",
+   "subject": "060",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-2",
+   "status": "review",
+   "reason": "Protected sample wording has no bank-reuse licence; preserve as topic metadata only. Independently authored FAA factual distinction accepted separately.",
+   "topic_tr": "Gerçek yer izinin tanımı",
+   "reason_tr": "Korumalı örnek metnin bankada yeniden kullanım izni yok; yalnız konu metadatası korundu. FAA tanımlarıyla bağımsız yazılan soru ayrı kabul edildi.",
+   "representative_key": "independent:track-heading-course",
+   "source_wording_transferred": false
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "3",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:060:3",
+   "subject": "060",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-3",
+   "status": "existing",
+   "bank_id": 15760,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Bir yay dakikası ve deniz mili",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15760 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "4",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:060:4",
+   "subject": "060",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-4",
+   "status": "existing",
+   "bank_id": 15776,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Mesafe ve süreden yer hızı",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15776 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "5",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:060:5",
+   "subject": "060",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-5",
+   "status": "existing",
+   "bank_id": 15840,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "1’e 60 ile rota hatası",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15840 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "6",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:060:6",
+   "subject": "060",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-6",
+   "status": "existing",
+   "bank_id": 15739,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Batı varyasyonunu ekleme",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15739 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "7",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:060:7",
+   "subject": "060",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-7",
+   "status": "existing",
+   "bank_id": 15745,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "İzogonal çizgiler",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15745 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "8",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:060:8",
+   "subject": "060",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-8",
+   "status": "existing",
+   "bank_id": 15923,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Üç boyutlu GPS için uydu sayısı",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15923 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "9",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:060:9",
+   "subject": "060",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-9",
+   "status": "existing",
+   "bank_id": 15915,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Transponder özel kodları",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15915 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "10",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:060:10",
+   "subject": "060",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-10",
+   "status": "existing",
+   "bank_id": 15898,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "VOR frekans bandı",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15898 kimliğinde var. Korumalı örnek metin aktarılmadı."
+  }
+ ],
+ "counts": {
+  "original_rows": 23,
+  "original_dispositions": {
+   "existing": 15,
+   "review": 8
+  },
+  "accepted_questions": 3,
+  "independent_adaptations_from_reviewed_source_types": 3
+ }
+}

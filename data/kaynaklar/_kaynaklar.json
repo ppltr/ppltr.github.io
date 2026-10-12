@@ -1,5 +1,5 @@
 {
- "_aciklama": "Soru bankasına katkı yapan dış kaynakların kaydı. `erisim`/`taranan`/sayılar scripts/kaynak_ozet.py ile ham dosyalardan türetilir; elle düzenleme. Ham soru dosyaları data/kaynaklar/_ham/ altındadır (gitignore'da).",
+ "_aciklama": "Kaynak/erişim/kullanım kaydı. Ders bazında taranan ve karar sayıları ilgili rapor_<ders>.json dosyasındadır; ham tam bankalar yayımlanmaz. Fiziken erişilebilir önizleme yeniden kullanım izni veya bütün bankanın tarandığı anlamına gelmez.",
  "kaynaklar": [
   {
    "id": "pplhavuz",
@@ -140,7 +140,15 @@
     "new": 48,
     "duplicate_new": 7
    },
-   "yeni_benzersiz": 48
+   "yeni_benzersiz": 48,
+   "karar_sayilari_dersler": {
+    "010": {
+     "existing": 59,
+     "review": 36,
+     "new": 48,
+     "duplicate_new": 7
+    }
+   }
   },
   {
    "id": "pc2-010",
@@ -199,7 +207,16 @@
     "out_of_scope": 111,
     "duplicate_new": 8
    },
-   "yeni_benzersiz": 31
+   "yeni_benzersiz": 31,
+   "karar_sayilari_dersler": {
+    "010": {
+     "existing": 54,
+     "new": 27,
+     "review": 50,
+     "out_of_scope": 111,
+     "duplicate_new": 8
+    }
+   }
   },
   {
    "id": "quizvds",
@@ -329,7 +346,15 @@
     "review": 13,
     "out_of_scope": 4
    },
-   "yeni_benzersiz": 30
+   "yeni_benzersiz": 30,
+   "karar_sayilari_dersler": {
+    "010": {
+     "existing": 30,
+     "duplicate_new": 32,
+     "review": 13,
+     "out_of_scope": 4
+    }
+   }
   },
   {
    "id": "x-austrocontrol-ecqb-ppl",
@@ -355,7 +380,16 @@
     "new": 5,
     "duplicate_new": 8
    },
-   "yeni_benzersiz": 9
+   "yeni_benzersiz": 9,
+   "karar_sayilari_dersler": {
+    "010": {
+     "review": 74,
+     "existing": 34,
+     "out_of_scope": 13,
+     "new": 5,
+     "duplicate_new": 8
+    }
+   }
   },
   {
    "id": "x-traficom-lapl-ppl",
@@ -380,7 +414,15 @@
     "existing": 64,
     "out_of_scope": 11
    },
-   "yeni_benzersiz": 34
+   "yeni_benzersiz": 34,
+   "karar_sayilari_dersler": {
+    "010": {
+     "review": 68,
+     "duplicate_new": 38,
+     "existing": 64,
+     "out_of_scope": 11
+    }
+   }
   },
   {
    "id": "x-sonyaklasma",
@@ -389,46 +431,194 @@
    "tur": "web",
    "kesif": "benzer kaynak taraması",
    "erisim": "kismi",
-   "erisim_notu": "Current plainGET HTTP200; no authentication or access barrier bypass. Existing raw question candidates audited by disposition; original figures/old regional charts flagged separately.",
-   "kullanim_notu": "No bulk transfer of copyrighted source wording. Novel protected-wording/permission uncertainties retained for review; any active additions are independently authored legal-fact questions with current primary-rule citations. Website accessibility is not a reuse licence.",
+   "erisim_notu": "Bu dersin girişsiz örnek sayfasına normal web erişimi doğrulandı. Önceden tutulan ilk10 ücretsiz örnek soru bu denetimin aday kaynağıdır; kilitli/üyelikli bölüm taranmadı, güncel tam banka sayısı çıkarılmadı.",
+   "kullanim_notu": "Tüm hakları saklıdır. Örnek soruların toplu yeniden yayım izni saptanmadı. Bu denetim korunmuş soru metinlerini aktarmadan yalnız mevcut bilgi eşleşmeleri/kaynak konumları kaydeder.",
    "taranan": {
     "010": {
      "sayi": 10,
      "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
      "url": "https://sonyaklasma.com/ppl-sorulari/hava-hukuku"
+    },
+    "020": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://sonyaklasma.com/ppl-sorulari/hava-hukuku"
+    },
+    "030": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama"
+    },
+    "060": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon"
+    },
+    "080": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://sonyaklasma.com/ppl-sorulari/hava-hukuku"
+    },
+    "050": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji"
     }
    },
    "checked_at": "2026-10-12",
    "karar_sayilari": {
     "existing": 10
    },
-   "yeni_benzersiz": 0
+   "yeni_benzersiz": 0,
+   "karar_sayilari_dersler": {
+    "010": {
+     "existing": 10
+    },
+    "020": {
+     "existing": 10
+    },
+    "030": {
+     "existing": 10
+    },
+    "060": {
+     "existing": 9,
+     "review": 1
+    },
+    "080": {
+     "existing": 10
+    },
+    "050": {
+     "existing": 10
+    }
+   },
+   "total_scanned": 10,
+   "counts": {
+    "existing": 10
+   },
+   "subject": "080",
+   "coverage": "080 herkese açık örneğinin eldeki10 soru kaydı; güncel tam bankaya erişim iddiası yok.",
+   "permission": "All-rights-reserved public sample; no licence to transfer protected question wording. Metadata/topic hints only.",
+   "scanned": 10,
+   "access_checked_at": "2026-10-12"
   },
   {
    "id": "x-tc-tp13014",
    "ad": "Transport Canada — TP 13014E Sample Examination (Recreational Pilot Permit / Private Pilot Licence — Aeroplane)",
-   "url": "https://www.tc.gc.ca/publications/EN/TP13014/PDF/HR/TP13014E.PDF",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
    "tur": "pdf",
    "kesif": "benzer kaynak taraması",
    "erisim": "acik",
-   "erisim_notu": "Current plainGET HTTP200; no authentication or access barrier bypass. Existing raw question candidates audited by disposition; original figures/old regional charts flagged separately.",
-   "kullanim_notu": "Explicit personal/public noncommercial reuse with attribution; commercial use requires separate permission. Current TransportCanada primary publication page confirms.",
+   "erisim_notu": "Güncel Transport Canada sayfası ve PDF normal kamu erişimiyle açıldı. Kaynağın soru metni ve cevap anahtarı okundu; 44 için PDF25/basılı23 gösterge ayrıca görsel doğrulandı.",
+   "kullanim_notu": "Transport Canada içerik için kaynak belirtilerek kişisel ve kamusal ticari olmayan kullanıma açıkça izin verir. Bağımsız uyarlamalar resmî veya kurumun desteklediği sürüm olarak sunulmaz; ticari kullanım için ayrı izin gerekir.",
    "taranan": {
     "010": {
      "sayi": 20,
      "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
      "url": "https://www.tc.gc.ca/publications/EN/TP13014/PDF/HR/TP13014E.PDF"
+    },
+    "020": {
+     "sayi": 11,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+    },
+    "030": {
+     "sayi": 6,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+    },
+    "060": {
+     "sayi": 13,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+    },
+    "080": {
+     "sayi": 6,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+    },
+    "040": {
+     "sayi": 5,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+    },
+    "050": {
+     "sayi": 31,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+    },
+    "070": {
+     "sayi": 2,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
     }
    },
    "checked_at": "2026-10-12",
    "karar_sayilari": {
-    "out_of_scope": 12,
+    "review": 1,
     "new": 2,
-    "duplicate_new": 2,
-    "existing": 2,
-    "review": 2
+    "existing": 3
    },
-   "yeni_benzersiz": 4
+   "yeni_benzersiz": 2,
+   "karar_sayilari_dersler": {
+    "010": {
+     "out_of_scope": 12,
+     "new": 2,
+     "duplicate_new": 2,
+     "existing": 2,
+     "review": 2
+    },
+    "020": {
+     "new": 7,
+     "existing": 4
+    },
+    "030": {
+     "existing": 4,
+     "new": 2
+    },
+    "060": {
+     "existing": 6,
+     "review": 7
+    },
+    "080": {
+     "review": 1,
+     "new": 2,
+     "existing": 3
+    },
+    "040": {
+     "existing": 2,
+     "review": 1,
+     "new": 2
+    },
+    "050": {
+     "existing": 17,
+     "new": 10,
+     "out_of_scope": 4
+    },
+    "070": {
+     "new": 1,
+     "existing": 1
+    }
+   },
+   "total_scanned": 6,
+   "counts": {
+    "review": 1,
+    "new": 2,
+    "existing": 3
+   },
+   "subject": "080",
+   "permission_url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "coverage": "TP13014E içindeki 080 dersine atanmış 6 adayın tamamı; PDF sayfa numaraları 1 tabanlı, basılı sayfa = PDF sayfası −2. Tüm belgeyi bu ders olarak saymaz.",
+   "permission": "Explicit personal/public noncommercial reproduction permission. Independent adaptations retain attribution and make no official endorsement claim.",
+   "scanned": 13,
+   "figures_visually_checked": [
+    "Take-off Table1(PDF27/printed25)",
+    "Loading graph and CG envelope(PDF28/printed26)",
+    "Lindsay CFS(PDF37/printed35)",
+    "Kingston CFS(PDF38/printed36)"
+   ],
+   "version": "Fourth editionNovember 2008, TP 13014 E 05/2009",
+   "access_checked_at": "2026-10-12",
+   "other_050_audit": "All 31 assigned meteorology source rows (Q42, Q51–80), appendix weather charts/TAF/METAR/FD and answer-key locators checked; 12 independent active candidates include 1 non-literal Qxxxx adaptation outside original-row disposition counts."
   },
   {
    "id": "x-studylib-ppl-tr",
@@ -1227,6 +1417,631 @@
    "id": "ref-131d4ea67aaf",
    "ad": "Cevap doğrulama · ATS.TR.320(a)(2)",
    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-atm-ans-regulation-eu?erules-id=ERULES-1963177438-17691",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-d898a42fdc0d",
+   "ad": "Cevap doğrulama · SERA.5001, Table S5-1 and footnote (*)",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-192f19d6356c",
+   "ad": "Cevap doğrulama · FAA-H-8083-25C, Chapter 7, Combustion / Fuel Grades, pp. 7-19 and 7-27",
+   "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-b8b988895da4",
+   "ad": "Cevap doğrulama · TP 13014E question 26; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+   "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-81aada9b5853",
+   "ad": "Cevap doğrulama · FAA-H-8083-25C, Chapter 7, Ignition System, p. 7-15",
+   "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-bc85925cd1d3",
+   "ad": "Cevap doğrulama · TP 13014E question 27; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+   "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-d88bc7c63c0d",
+   "ad": "Cevap doğrulama · FAA-H-8083-25C, Chapter 7, Carburetor Heat, p. 7-10",
+   "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-bc77ca0a833a",
+   "ad": "Cevap doğrulama · TP 13014E question 28; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+   "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-658f35fae1b7",
+   "ad": "Cevap doğrulama · FAA-H-8083-25C, Chapter 7, Carburetor Icing / Carburetor Heat, pp. 7-9–7-10",
+   "url": "https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-4831e719c781",
+   "ad": "Cevap doğrulama · TP 13014E question 30; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+   "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e20757a5daf7",
+   "ad": "Cevap doğrulama · FAA-H-8083-25C, Chapter 8, Altimeter / Effect of Nonstandard Pressure and Temperature, p. 8-4",
+   "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e3b5d72a2e79",
+   "ad": "Cevap doğrulama · TP 13014E question 33; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+   "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-9a614c6f1ab2",
+   "ad": "Cevap doğrulama · FAA-H-8083-25C, Chapter 8, Inclinometer, p. 8-18, Figure 8-22",
+   "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-6be3b2748bab",
+   "ad": "Cevap doğrulama · Question 44, printed p. 9 (PDF p. 11); Turn Coordinator Diagram #1, printed p. 23 (PDF p. 25), visually checked; answer key 44(4), p. 37",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-23134597588b",
+   "ad": "Cevap doğrulama · TP 13014E question 44; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+   "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-17765f10133a",
+   "ad": "Cevap doğrulama · FAA-H-8083-25C, Chapter 8, Acceleration Error, pp. 8-26–8-27, Figure 8-37",
+   "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-7402c0dc0439",
+   "ad": "Cevap doğrulama · TP 13014E question 45; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+   "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-faa-phak",
+   "name": "FAA Pilot’s Handbook of Aeronautical Knowledge",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+   "permission": "Technical facts used to independently author MCQs; no FAA/third-party images or bank wording copied.",
+   "scanned": 0,
+   "coverage": "Primary technical verification only; not an additional scanned question bank.",
+   "ad": "FAA Pilot’s Handbook of Aeronautical Knowledge"
+  },
+  {
+   "id": "ref-af78897858ca",
+   "ad": "Cevap doğrulama · Question 49; Table 1 notes 3 and 5, row 1600 lb/4000 ft/20°C; Answer Key printedp 37:49-(2); original figures visually verified",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-cfbd6afc582e",
+   "ad": "Cevap doğrulama · Chapter 11, Performance Charts / Conditions Notes, printedpp 11-19 to 11-20: use each AFM/POH chart and its conditions",
+   "url": "https://www.faa.gov/sites/faa.gov/files/13_phak_ch11.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-72087edc5657",
+   "ad": "Cevap doğrulama · Question 89 and Answer Key printedp 37:89-(2); original structure includes two separate 2 gal departure allowances; this adaptation explicitly supplies its reserve",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-6627fccbd242",
+   "ad": "Cevap doğrulama · Chapter 16 Fuel Consumption, printedpp 16-11 to 16-12: trip fuel plus reserve, starting/taxi fuel and higher climb fuel",
+   "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-f1330ea2fe32",
+   "ad": "Cevap doğrulama · Chapter 16: Time-Speed-Distance printedp 16-11; flight planning example printedp 16-21 adds climb allowance to cruise time",
+   "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-70d4ffa5e2f1",
+   "ad": "Cevap doğrulama · Question 88 specifies an additional 2 minutes per 1000 ft of climb; original chart unavailable; supplied adaptation values calculated independently",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-24b449b2d922",
+   "ad": "Cevap doğrulama · Chapter 16, Very High Frequency Omnidirectional Range / VOR receiver, printedpp 16-23 to 16-24: centred CDI indicates radial withFROM, reciprocal withTO",
+   "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-949b4bf94539",
+   "ad": "Cevap doğrulama · AIM 1-1-4(b): centred CDI 0° withFROM or 180° withTO on VOT; supports reciprocal indicator relationship",
+   "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap1_section_1.html",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-2af42e35962f",
+   "ad": "Cevap doğrulama · Chapter 16, Effect of Wind / definitions immediately before Time-Speed-Distance, printedp 16-10: course, heading, track",
+   "url": "https://www.faa.gov/sites/faa.gov/files/18_phak_ch16.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-792f2968861a",
+   "ad": "Cevap doğrulama · FAA-H-8083-25C, Chapter 5, Load Factors and Stalling Speeds, pp. 5-35–5-36",
+   "url": "https://www.faa.gov/sites/faa.gov/files/07_phak_ch5_0.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-6d5f5a14db3d",
+   "ad": "Cevap doğrulama · TP 13014E question 22; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+   "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-3336823f6d8b",
+   "ad": "Cevap doğrulama · FAA-H-8083-25C, Chapter 5, Lift/Drag Ratio and lift equation, p. 5-5; Stalls, p. 5-25",
+   "url": "https://www.faa.gov/sites/faa.gov/files/07_phak_ch5_0.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-ce6bc0c8b390",
+   "ad": "Cevap doğrulama · FAA-H-8083-25C, Chapter 8, Airspeed Indicator / True Airspeed, pp. 8-8–8-9",
+   "url": "https://www.faa.gov/sites/faa.gov/files/10_phak_ch8.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-ba165e42e134",
+   "ad": "Cevap doğrulama · TP 13014E question 24; Appendix Answer Key, printed p. 37 (PDF p. 39). Modern technical wording independently checked against FAA reference.",
+   "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-29534d0091a4",
+   "ad": "Cevap doğrulama · FAA-H-8083-25C, Chapter 5, Ground Effect, pp. 5-11–5-12",
+   "url": "https://www.faa.gov/sites/faa.gov/files/07_phak_ch5_0.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-7b1e32bd7c0d",
+   "ad": "Cevap doğrulama · Bernoulli’s Equation, incompressible-flow relation ps + ½ρV² = pt",
+   "url": "https://www.grc.nasa.gov/WWW/k-12/airplane/bern.html",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-5c5a8d97653d",
+   "ad": "Cevap doğrulama · Flow Field Details: front stagnation streamline splits at the airfoil leading edge",
+   "url": "https://www.grc.nasa.gov/WWW/k-12/FoilSim/Manual/fsim0006.htm",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-190a4ba4d893",
+   "ad": "Cevap doğrulama · AIM 8-1-6, Vision in Flight: effective scanning and empty-field myopia; approximate 10–30 ft range",
+   "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap8_section_1.html",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-27b566ead8d7",
+   "ad": "Cevap doğrulama · AIM 8-1-2, Effects of Altitude: small amounts of alcohol and depressant drugs can make the brain more susceptible to hypoxia",
+   "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap8_section_1.html",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-4d663d5dc8de",
+   "ad": "Cevap doğrulama · Low flying introduction, revised 2023, Considerations / Visual effects: downwind-to-into-wind outward-skid illusion and misleading groundspeed cues",
+   "url": "https://www.aviation.govt.nz/licensing-and-certification/pilots/flight-training/flight-instructor-guide/low-flying-introduction/",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e8d3b0d30bb1",
+   "ad": "Cevap doğrulama · Exercise 20, Essential Background Knowledge 1(a): into-wind reducedGS creates reducedairspeed illusion; downwind-to-into-wind creates outwardskid illusion",
+   "url": "https://tc.canada.ca/en/aviation/publications/flight-instructor-guide-aeroplane-tp-975",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-c5e95085f9ea",
+   "ad": "Cevap doğrulama · METAR decode, p. 10, element 9 QNH: Q indicates millibars (= hPa), A inches and hundredths",
+   "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-43974c39ba0d",
+   "ad": "Cevap doğrulama · 6.3 Saturation; 6.4 Relative Humidity, pp. 6-3–6-4",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-37533c88c5f0",
+   "ad": "Cevap doğrulama · 18.1.1.1.1 Radiation Fog, pp. 18-2–18-3",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-3dd28f0f49e7",
+   "ad": "Cevap doğrulama · 10.5 Surface Wind, pp. 10-7–10-8; 12.4.2 Frictional Effects, p. 12-6",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-412e7f3b0340",
+   "ad": "Cevap doğrulama · SURFACE WINDS; VEERING AND BACKING (descent into surface friction)",
+   "url": "https://www.weather.gov/source/zhu/ZHU_Training_Page/winds/Wx_Terms/Flight_Environment.htm",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-a4392d893a91",
+   "ad": "Cevap doğrulama · 10.3.3 Friction Force; 10.5 Surface Wind, pp. 10-5–10-8",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-662d9c924c63",
+   "ad": "Cevap doğrulama · DIURNAL VARIATIONS, paragraphs on daytime turbulent transfer and night backing",
+   "url": "https://www.weather.gov/source/zhu/ZHU_Training_Page/winds/Wx_Terms/Flight_Environment.htm",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-afbddb88d609",
+   "ad": "Cevap doğrulama · 11.3 Fronts, p. 11-4",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-facac9901ac0",
+   "ad": "Cevap doğrulama · WINDS AND TEMPERATURES ALOFT FORECASTS (FD), printed p. 12: intermediate-level interpolation and true north",
+   "url": "https://www.faa.gov/sites/faa.gov/files/2022-06/Pilot%20Bulletin%2021-1b%20web.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-59b51e43729b",
+   "ad": "Cevap doğrulama · 27.2 Winds and Temperatures Aloft; 27.2.1.1.1 text format, pp. 27-3–27-4",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-ccd3b8b161c0",
+   "ad": "Cevap doğrulama · Pressure centres and fronts, p. 13: plotted pressure-centre position and movement",
+   "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-ebe2a86e1247",
+   "ad": "Cevap doğrulama · 25.2.3 Surface Analysis Chart: high and low pressure centres",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-92f5ca2f5b22",
+   "ad": "Cevap doğrulama · MET. DECODES: TAF decode, p. 5, wind and change groups; METAR decode, pp. 8–9, wind",
+   "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-a386ec019d4a",
+   "ad": "Cevap doğrulama · 24.4.3.5 Wind Group; 27.4.2.5 Wind Group",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-0fac399a7c35",
+   "ad": "Cevap doğrulama · 6.6 Temperature-Dewpoint Spread, p. 6-4; 24.4.3.10 Temperature/Dewpoint Group, p. 24-18",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-0f577bac0e92",
+   "ad": "Cevap doğrulama · 4.3.1 Troposphere",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-b0e312f087c6",
+   "ad": "Cevap doğrulama · 4.4 The Standard Atmosphere, Table 4-1",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-8bb50172917a",
+   "ad": "Cevap doğrulama · 13 Atmospheric Stability; 18.1.1.1.2 Advection Fog",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-94e9ddabc884",
+   "ad": "Cevap doğrulama · 13 Atmospheric Stability: inversions",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-52cef92fda2a",
+   "ad": "Cevap doğrulama · 8.4.1.2.1 Altimeter Setting; Figure 8-13",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-6690d48acd13",
+   "ad": "Cevap doğrulama · 10.4 Upper Air Wind; 10.5 Surface Wind",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-f1a5e155c616",
+   "ad": "Cevap doğrulama · 12.2 Vertical Motion Effects on an Unsaturated Air Parcel, pp. 12-2–12-3",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-53b89c497c49",
+   "ad": "Cevap doğrulama · 6.5 Dewpoint",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-a1d060a99ab1",
+   "ad": "Cevap doğrulama · Appendix A, A.2.3 Nimbostratus (Ns)",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-d215e836ea3e",
+   "ad": "Cevap doğrulama · 18.1.1.1.1 Radiation Fog",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e38976fb8ff8",
+   "ad": "Cevap doğrulama · 11.3.1 Warm Front",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-2ac143828e9e",
+   "ad": "Cevap doğrulama · 12.4.3 Frontal Lift",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-407c62cdb102",
+   "ad": "Cevap doğrulama · 22.2 Necessary Ingredients for Thunderstorm Cell Formation, p. 22-2",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-9fb9ef17af13",
+   "ad": "Cevap doğrulama · 22.7.3 Downburst and Microburst",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e419de90657d",
+   "ad": "Cevap doğrulama · 22.7.3 Downburst and Microburst, pp. 22-7–22-10",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-09ea47b7c019",
+   "ad": "Cevap doğrulama · 24.4.1 Aviation Routine Weather Report; 27.4 Terminal Aerodrome Forecast",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-609d753e11c1",
+   "ad": "Cevap doğrulama · TAF decode p. 5, significant changes and examples p. 6",
+   "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-acfbd94ad0e8",
+   "ad": "Cevap doğrulama · TAF decode p. 5, cloud; METAR decode p. 9, cloud",
+   "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-b7470c1e28ee",
+   "ad": "Cevap doğrulama · 24.4.3.10 Temperature/Dewpoint Group",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-85d60b4ae546",
+   "ad": "Cevap doğrulama · 27.4.2.4 Valid Period",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-224089b6ca06",
+   "ad": "Cevap doğrulama · TAF decode p. 5, wind",
+   "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-d28ae3109494",
+   "ad": "Cevap doğrulama · TAF decode p. 5: wind and significant changes",
+   "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-6cadd6cb8c5e",
+   "ad": "Cevap doğrulama · TAF decode p. 5, cloud and significant change groups",
+   "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-69cf4180cef4",
+   "ad": "Cevap doğrulama · 8.4.1.2 Indicated Altitude; 8.4.1.2.1 Altimeter Setting and Figure 8-13, pp. 8-11–8-12",
+   "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-53a09d866971",
+   "ad": "Cevap doğrulama · FAA-H-8083-3 C, Chapter 9 Approaches and Landings, printedp 9-35 / Wheelbarrowing: excessive-speed touchdown followed by forward elevator pressure",
+   "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/10_afh_ch9.pdf",
    "tur": "resmi-dayanak",
    "erisim": "acik",
    "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."

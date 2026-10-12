@@ -1,0 +1,13 @@
+{
+ "questions": {
+  "67001": {
+   "text": "Burun tekerlekli bir uçakta iniş koşusu sırasında wheelbarrowing (ağırlığın burun tekerleğine aşırı binmesi) hangi koşul birleşiminde özellikle kolaylaşır?",
+   "options": [
+    "Yüksek temas hızı ve ardından ileri elevator kumandası",
+    "Yüksek temas hızı ve burun tekerleğinin yerden açık tutulması",
+    "Düşük temas hızı ve geri elevator kumandası",
+    "Normal temas hızı ve burun tekerleğinin nazikçe indirilmesi"
+   ]
+  }
+ }
+}

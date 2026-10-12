@@ -1,0 +1,1604 @@
+{
+ "schema_version": 1,
+ "checked_at": "2026-10-12",
+ "subject": "050",
+ "scope": "Exactly 41 original 050 source rows: 31 Transport Canada and 10 public Son Yaklaşma. One separate Qxxxx adaptation is an independently authored candidate, not a further scanned source question.",
+ "deduplication": {
+  "bank_unique_questions_reviewed": 3022,
+  "languages": [
+   "EN",
+   "TR"
+  ],
+  "method": "Whole bank and correct-first options searched across all subjects, then semantic rule/condition review. Correct-answer-changing hemisphere, descent/daytime, high-to-low/low-to-high and negative arithmetic conditions retained; no quota.",
+  "existing_ids_preserved": true
+ },
+ "sources": [
+  {
+   "id": "x-tc-tp13014",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "access_checked_at": "2026-10-12",
+   "erisim": "acik",
+   "ad": "Transport Canada TP 13014E sample examination",
+   "kullanim_notu": "Transport Canada permits personal and public non-commercial reproduction with accurate attribution, no official-version or endorsement claim. Original questions are not bulk republished; independently worded questions and source locators only. Commercial use requires separate permission.",
+   "permission_url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+   "other_050_audit": "All 31 assigned meteorology source rows (Q42, Q51–80), appendix weather charts/TAF/METAR/FD and answer-key locators checked; 12 independent active candidates include 1 non-literal Qxxxx adaptation outside original-row disposition counts."
+  },
+  {
+   "id": "x-sonyaklasma",
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji",
+   "access_checked_at": "2026-10-12",
+   "erisim": "kismi",
+   "ad": "Son Yaklaşma public Meteorology sample",
+   "kullanim_notu": "HTTP 200 public 10-question sample checked without login; locked question11+ not accessed. No licence for bulk republication identified. Only factual source references attached to existing questions; source text/options not delivered."
+  }
+ ],
+ "candidates": [
+  {
+   "key": "x-tc-tp13014:51",
+   "section": "050-05",
+   "text": "What does relative humidity compare at a specified air temperature?",
+   "options": [
+    "The actual water-vapour content with the saturation water-vapour content at that temperature",
+    "The mass of water vapour with the total mass of moist air",
+    "The mass of water vapour with the mass of dry air",
+    "The mass of water vapour with the volume of the air parcel"
+   ],
+   "tr_text": "Bağıl nem, belirli bir hava sıcaklığında hangi iki değeri karşılaştırır?",
+   "tr_options": [
+    "Mevcut su buharı içeriği ile aynı sıcaklıktaki doygunluk su buharı içeriğini",
+    "Su buharı kütlesi ile nemli havanın toplam kütlesini",
+    "Su buharı kütlesi ile kuru hava kütlesini",
+    "Su buharı kütlesi ile hava parselinin hacmini"
+   ],
+   "explanation_tr": "Bağıl nem, aynı sıcaklıktaki doygunluğa ne kadar yakın olunduğunu gösteren orandır; çoğunlukla yüzde olarak verilir. Diğer şıklar sırasıyla özgül nem, karışım oranı ve mutlak nem tanımlarına karşılık gelir.",
+   "explanation_en": "Relative humidity compares actual moisture with saturation at the same temperature, usually as a percentage. The other ratios describe specific humidity, mixing ratio and absolute humidity.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "6.3 Saturation; 6.4 Relative Humidity, pp. 6-3–6-4"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "51",
+     "page": "13"
+    }
+   ],
+   "adapted": true,
+   "nearest_existing_bank_ids": [
+    15468,
+    15474
+   ],
+   "distinctness_reason": "15468 asks what RH depends on and 15474 the saturation value; neither distinguishes the actual/saturation ratio from specific humidity, mixing ratio and absolute humidity."
+  },
+  {
+   "key": "x-tc-tp13014:55",
+   "section": "050-06",
+   "text": "On a clear, moist night with light wind over land, which cooling process produces radiation fog near the surface?",
+   "options": [
+    "The ground loses heat by radiation and cools the air touching it to its dewpoint",
+    "Warm moist air is transported horizontally over a colder surface",
+    "Air is forced up a slope and cools by expansion until saturated",
+    "Water evaporates into colder air flowing across a warmer water surface"
+   ],
+   "tr_text": "Kara üzerinde açık, nemli ve hafif rüzgârlı bir gecede, yüzeye yakın radyasyon sisini hangi soğuma süreci oluşturur?",
+   "tr_options": [
+    "Yer radyasyonla ısı kaybeder ve kendisine temas eden havayı çiy noktasına kadar soğutur",
+    "Sıcak ve nemli hava yatay olarak daha soğuk bir yüzey üzerine taşınır",
+    "Hava bir yamaç boyunca yükselmeye zorlanır ve genleşerek doygunluğa kadar soğur",
+    "Daha sıcak su yüzeyi üzerinden geçen soğuk havaya su buharı eklenir"
+   ],
+   "explanation_tr": "Gece yerin radyasyonla soğuması, yere temas eden nemli havayı çiy noktasına indirir. Yatay taşınma adveksiyon sisini, yamaç boyunca yükselme yamaç sisini, sıcak sudan buharlaşma ise buharlaşma sisini açıklar.",
+   "explanation_en": "Radiational ground cooling cools adjacent moist air to its dewpoint. The alternatives describe advection fog, upslope fog and evaporation fog.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "18.1.1.1.1 Radiation Fog, pp. 18-2–18-3"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "55",
+     "page": "14"
+    }
+   ],
+   "adapted": true,
+   "nearest_existing_bank_ids": [
+    15552,
+    15350,
+    15337
+   ],
+   "distinctness_reason": "15552 tests favourable conditions, 15350 inversion height and 15337 fog over a cold surface; none selects the radiation-ground-contact cooling mechanism against other fog mechanisms."
+  },
+  {
+   "key": "x-tc-tp13014:56",
+   "section": "050-04",
+   "text": "For approximately steady, large-scale surface flow in the Northern Hemisphere away from strong terrain effects, how does air circulate around a high and a low?",
+   "options": [
+    "Clockwise and outward around the high; anticlockwise and inward around the low",
+    "Clockwise and inward around the high; anticlockwise and outward around the low",
+    "Anticlockwise and outward around the high; clockwise and inward around the low",
+    "Anticlockwise and inward around the high; clockwise and outward around the low"
+   ],
+   "tr_text": "Kuzey Yarımküre’de, belirgin arazi etkilerinden uzakta yaklaşık dengeli büyük ölçekli yüzey akımında hava yüksek ve alçak basınç çevresinde nasıl dolaşır?",
+   "tr_options": [
+    "Yüksek basınç çevresinde saat yönünde dışarı; alçak basınç çevresinde saat yönünün tersine içeri",
+    "Yüksek basınç çevresinde saat yönünde içeri; alçak basınç çevresinde saat yönünün tersine dışarı",
+    "Yüksek basınç çevresinde saat yönünün tersine dışarı; alçak basınç çevresinde saat yönünde içeri",
+    "Yüksek basınç çevresinde saat yönünün tersine içeri; alçak basınç çevresinde saat yönünde dışarı"
+   ],
+   "explanation_tr": "Kuzey Yarımküre’de yüzey sürtünmesi akımı izobarlara açılı hâle getirir: yüksek basınçtan saat yönünde dışarı, alçak basınca saat yönünün tersine içeri. Bu büyük ölçekli model, dağ veya meltem etkisinin baskın olduğu her yerel rüzgârı tarif etmez.",
+   "explanation_en": "Northern Hemisphere surface friction gives clockwise outward flow from a high and anticlockwise inward flow into a low. Strong terrain or local breeze effects can override this synoptic pattern.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "10.5 Surface Wind, pp. 10-7–10-8; 12.4.2 Frictional Effects, p. 12-6"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "56",
+     "page": "14"
+    }
+   ],
+   "adapted": true,
+   "nearest_existing_bank_ids": [
+    15436,
+    15443,
+    15445
+   ],
+   "distinctness_reason": "15436 tests only low circulation; high-pressure clockwise outward circulation is absent. Subsidence questions 15443/15445 do not test circulation direction."
+  },
+  {
+   "key": "x-tc-tp13014:57",
+   "section": "050-04",
+   "text": "A pilot descends from above the friction layer toward flat land in the Northern Hemisphere. The pressure pattern is steady, with no front or local breeze. What change in mean wind is normally expected as surface friction increases?",
+   "options": [
+    "It backs and slows",
+    "It veers and slows",
+    "It backs and speeds up",
+    "It veers and speeds up"
+   ],
+   "tr_text": "Bir pilot Kuzey Yarımküre’de sürtünme tabakasının üstünden düz araziye doğru alçalıyor. Basınç düzeni kararlı; cephe veya yerel meltem yok. Yüzey sürtünmesi arttıkça ortalama rüzgârda normal olarak hangi değişim beklenir?",
+   "tr_options": [
+    "Yönü saat yönünün tersine döner ve hızı azalır",
+    "Yönü saat yönünde döner ve hızı azalır",
+    "Yönü saat yönünün tersine döner ve hızı artar",
+    "Yönü saat yönünde döner ve hızı artar"
+   ],
+   "explanation_tr": "Yüzeye yaklaşırken sürtünme rüzgârı yavaşlatır; zayıflayan Coriolis etkisi akımı alçak basınca doğru izobarların üzerinden döndürür. Kuzey Yarımküre’de tipik sonuç backing ve hız azalmasıdır. Cephe, dağ veya yerel meltem farklı sonuç verebilir.",
+   "explanation_en": "Increasing surface friction reduces speed and turns the wind across isobars toward lower pressure. Under the stated Northern Hemisphere conditions, a descending pilot normally encounters backing and slowing.",
+   "answer_verification": [
+    {
+     "url": "https://www.weather.gov/source/zhu/ZHU_Training_Page/winds/Wx_Terms/Flight_Environment.htm",
+     "section": "SURFACE WINDS; VEERING AND BACKING (descent into surface friction)"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "10.3.3 Friction Force; 10.5 Surface Wind, pp. 10-5–10-8"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "57",
+     "page": "14"
+    }
+   ],
+   "adapted": true,
+   "nearest_existing_bank_ids": [
+    15437,
+    15436,
+    15587
+   ],
+   "distinctness_reason": "15437 defines backing and 15587 defines shear; neither tests the coupled speed/direction effect of descending into friction. This differs from daytime mixing in Q58."
+  },
+  {
+   "key": "x-tc-tp13014:58",
+   "section": "050-04",
+   "text": "Over flat inland terrain in the Northern Hemisphere, the pressure pattern stays steady and local breezes are absent. Daytime heating strengthens turbulent mixing with air above the friction layer. What normally happens to the surface mean wind?",
+   "options": [
+    "It veers and speeds up",
+    "It backs and speeds up",
+    "It veers and slows",
+    "It backs and slows"
+   ],
+   "tr_text": "Kuzey Yarımküre’de düz iç kesimlerde basınç düzeni kararlı ve yerel meltemler yok. Gündüz ısınması, sürtünme tabakasının üstündeki havayla türbülanslı karışımı güçlendiriyor. Yüzeydeki ortalama rüzgârın yönü ve hızı normal olarak nasıl değişir?",
+   "tr_options": [
+    "Yönü saat yönünde döner ve hızı artar",
+    "Yönü saat yönünün tersine döner ve hızı artar",
+    "Yönü saat yönünde döner ve hızı azalır",
+    "Yönü saat yönünün tersine döner ve hızı azalır"
+   ],
+   "explanation_tr": "Gündüz karışımı üstteki daha hızlı akımın momentumunu yüzeye taşır; belirtilen Kuzey Yarımküre modelinde yüzey rüzgârı veer eder ve hızlanır. Gece karışım azaldığında ters eğilim görülebilir. Bu, deniz-kara melteminin yön kuralı değildir.",
+   "explanation_en": "Daytime turbulence transfers momentum from faster flow aloft to the surface, normally causing veering and acceleration under these assumptions. Reduced night mixing tends to reverse that change; this is separate from coastal breezes.",
+   "answer_verification": [
+    {
+     "url": "https://www.weather.gov/source/zhu/ZHU_Training_Page/winds/Wx_Terms/Flight_Environment.htm",
+     "section": "DIURNAL VARIATIONS, paragraphs on daytime turbulent transfer and night backing"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "58",
+     "page": "14"
+    }
+   ],
+   "adapted": true,
+   "nearest_existing_bank_ids": [
+    15428,
+    15448,
+    15339,
+    15341
+   ],
+   "distinctness_reason": "15428 asks when calm conditions are most likely and 15448 sea/land breezes; neither tests daytime turbulent transfer and the coupled veering/acceleration. Conditions differ from descent Q57."
+  },
+  {
+   "key": "x-tc-tp13014:63",
+   "section": "050-07",
+   "text": "Which feature is a weather front?",
+   "options": [
+    "A relatively narrow transition zone separating air masses with different temperature or moisture characteristics",
+    "A line connecting places with equal sea-level pressure",
+    "An elongated zone of relatively low pressure that need not separate different air masses",
+    "A level where a rising air parcel first becomes saturated"
+   ],
+   "tr_text": "Meteorolojik cephe hangi oluşumdur?",
+   "tr_options": [
+    "Sıcaklık veya nem özellikleri farklı hava kütlelerini ayıran görece dar geçiş bölgesi",
+    "Deniz seviyesine indirgenmiş basıncı aynı olan noktaları birleştiren çizgi",
+    "Farklı hava kütlelerini ayırması gerekmeyen, uzamış görece alçak basınç bölgesi",
+    "Yükselen hava parselinin ilk kez doygunluğa ulaştığı seviye"
+   ],
+   "explanation_tr": "Cephe, farklı hava kütlelerinin geçiş bölgesidir. Basıncı eşit noktaların çizgisi izobar, uzamış alçak basınç bölgesi trough, doygunluğun ilk oluştuğu yükselme seviyesi LCL’dir.",
+   "explanation_en": "A front separates air masses with contrasting characteristics. The alternatives define an isobar, a trough and the lifting condensation level.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "11.3 Fronts, p. 11-4"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "63",
+     "page": "15"
+    }
+   ],
+   "adapted": true,
+   "nearest_existing_bank_ids": [
+    15565,
+    15560,
+    15446,
+    15359
+   ],
+   "distinctness_reason": "The bank tests cold-front lifting, warm-front cloud sequence, troughs and isobars, but no stem tests the definition of a front against these related concepts."
+  },
+  {
+   "key": "x-tc-tp13014:68",
+   "section": "050-09",
+   "text": "For one forecast point at 1200 UTC on 12 October 2026, the winds-aloft table gives 270° true/18 kt at 3,000 ft AMSL and 270° true/30 kt at 6,000 ft AMSL. Assuming wind speed changes linearly between these levels, what wind should be used at 4,500 ft AMSL?",
+   "options": [
+    "270° true/24 kt",
+    "270° magnetic/24 kt",
+    "270° true/18 kt",
+    "270° true/30 kt"
+   ],
+   "tr_text": "12 Ekim 2026 saat 1200 UTC için bir tahmin noktasının yüksek seviye rüzgâr tablosunda 3.000 ft AMSL’de 270° hakiki/18 kt ve 6.000 ft AMSL’de 270° hakiki/30 kt veriliyor. Bu seviyeler arasında rüzgâr hızının doğrusal değiştiği varsayılırsa 4.500 ft AMSL için hangi rüzgâr kullanılmalıdır?",
+   "tr_options": [
+    "270° hakiki/24 kt",
+    "270° manyetik/24 kt",
+    "270° hakiki/18 kt",
+    "270° hakiki/30 kt"
+   ],
+   "explanation_tr": "4.500 ft iki seviyenin tam ortasıdır: 18 + (30−18)×0,5 = 24 kt. Yön iki seviyede de 270° hakikidir; manyetiğe kendiliğinden dönüşmez. Kaynak ipucundaki Kanada FD kodu yerine verileri açık yazılmış bağımsız bir interpolasyon sorusudur.",
+   "explanation_en": "4,500 ft is halfway between the levels: 18 + (30−18)×0.5 = 24 kt. Direction remains 270° true. This independent, explicit-data exercise replaces the regional FD coding in the source clue.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/2022-06/Pilot%20Bulletin%2021-1b%20web.pdf",
+     "section": "WINDS AND TEMPERATURES ALOFT FORECASTS (FD), printed p. 12: intermediate-level interpolation and true north"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "27.2 Winds and Temperatures Aloft; 27.2.1.1.1 text format, pp. 27-3–27-4"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "68",
+     "page": "15"
+    }
+   ],
+   "adapted": true,
+   "nearest_existing_bank_ids": [
+    15613,
+    15611,
+    15824
+   ],
+   "distinctness_reason": "15613 tests true/magnetic reference, 15611 a wind barb and 15824 a wind-triangle ETA; none interpolates a forecast between altitude levels. Explicit constant direction avoids direction-vector ambiguity."
+  },
+  {
+   "key": "x-tc-tp13014:70",
+   "section": "050-09",
+   "text": "The two north-up surface-pressure forecast charts use the same fixed grid and landmarks. In which direction is the low-pressure centre forecast to move between 1800 UTC on 12 October and 0000 UTC on 13 October 2026?",
+   "options": [
+    "East",
+    "West",
+    "North-west",
+    "South-east"
+   ],
+   "tr_text": "Kuzeyi yukarıda olan iki yüzey basınç tahmin haritasında ızgara ve yer işaretleri aynıdır. 12 Ekim 1800 UTC ile 13 Ekim 2026 0000 UTC arasında alçak basınç merkezinin hangi yöne hareket etmesi bekleniyor?",
+   "tr_options": [
+    "Doğuya",
+    "Batıya",
+    "Kuzeybatıya",
+    "Güneydoğuya"
+   ],
+   "explanation_tr": "L işaretli kapalı alçak basınç merkezi aynı sabit ızgarada sağa, yani doğuya yer değiştirir; kuzey-güney konumu korunur. Rüzgârın bu merkez çevresindeki dolaşım yönü ile basınç sisteminin ilerleme yönünü karıştırma. Şekil bağımsız hazırlanmış öğretim örneğidir.",
+   "explanation_en": "The closed low marked L shifts rightward, east, on the fixed north-up grid, without north/south displacement. System movement differs from wind circulation around the system. The charts are independently authored teaching examples.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "Pressure centres and fronts, p. 13: plotted pressure-centre position and movement"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "25.2.3 Surface Analysis Chart: high and low pressure centres"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "70",
+     "page": "16"
+    }
+   ],
+   "adapted": true,
+   "nearest_existing_bank_ids": [
+    15436,
+    15438,
+    15571
+   ],
+   "distinctness_reason": "Existing questions test low circulation, low-pressure definition and front identification, not following the same synoptic pressure centre across two forecast chart times.",
+   "figure_name": "met_low_motion_12oct2026",
+   "needs_figure": true
+  },
+  {
+   "key": "x-tc-tp13014:76",
+   "section": "050-09",
+   "text": "Use these fictional reports for 12 October 2026 (all times UTC): TAF LTBJ 121030Z 1212/1221 27015KT 9999 SCT030 BECMG 1216/1218 30020KT =; METAR LTBJ 121200Z 29010KT 9999 SCT030 18/10 Q1018 =. At 1200, how does the observed mean wind compare with the mean wind forecast for that time?",
+   "options": [
+    "Its direction is 20° clockwise from the forecast direction and its speed is 5 kt lower",
+    "Its direction is 20° anticlockwise from the forecast direction and its speed is 5 kt lower",
+    "Its direction is 20° clockwise from the forecast direction and its speed is 5 kt higher",
+    "Its direction is 20° anticlockwise from the forecast direction and its speed is 5 kt higher"
+   ],
+   "tr_text": "12 Ekim 2026’ya ait bu örnek raporları kullanın (tüm saatler UTC): TAF LTBJ 121030Z 1212/1221 27015KT 9999 SCT030 BECMG 1216/1218 30020KT =; METAR LTBJ 121200Z 29010KT 9999 SCT030 18/10 Q1018 =. 1200’de gözlenen ortalama rüzgâr, aynı saat için tahmin edilen ortalama rüzgâra göre nasıldır?",
+   "tr_options": [
+    "Yönü tahmin edilenden saat yönünde 20° ileride ve hızı 5 kt daha düşüktür",
+    "Yönü tahmin edilenden saat yönünün tersine 20° geride ve hızı 5 kt daha düşüktür",
+    "Yönü tahmin edilenden saat yönünde 20° ileride ve hızı 5 kt daha yüksektir",
+    "Yönü tahmin edilenden saat yönünün tersine 20° geride ve hızı 5 kt daha yüksektir"
+   ],
+   "explanation_tr": "1200 için TAF’ın ana grubu 270°/15 kt’dır; 1600–1800 BECMG değişimi henüz bu saate uygulanmaz. METAR 290°/10 kt gözlemidir: yön farkı saat yönünde 20°, hız farkı −5 kt. İki raporda da yön hakikidir.",
+   "explanation_en": "At 1200 the applicable TAF wind is 270°/15 kt; the 1600–1800 BECMG has not applied. METAR observes 290°/10 kt: 20° clockwise and 5 kt weaker. Both directions are true.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "MET. DECODES: TAF decode, p. 5, wind and change groups; METAR decode, pp. 8–9, wind"
+    },
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "24.4.3.5 Wind Group; 27.4.2.5 Wind Group"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "76",
+     "page": "17"
+    }
+   ],
+   "adapted": true,
+   "nearest_existing_bank_ids": [
+    15658,
+    15437
+   ],
+   "distinctness_reason": "15658 selects a TAF wind and 15437 defines backing; none compares a contemporaneous observation with the applicable forecast while excluding a later change group."
+  },
+  {
+   "key": "x-tc-tp13014:78",
+   "section": "050-09",
+   "text": "In the fictional report METAR LTAC 121200Z 03006KT 9999 SCT020 M08/M13 Q1016 =, what is the temperature minus dewpoint spread?",
+   "options": [
+    "5 °C",
+    "21 °C",
+    "−5 °C",
+    "13 °C"
+   ],
+   "tr_text": "METAR LTAC 121200Z 03006KT 9999 SCT020 M08/M13 Q1016 = örnek raporunda sıcaklık eksi çiy noktası farkı kaçtır?",
+   "tr_options": [
+    "5 °C",
+    "21 °C",
+    "−5 °C",
+    "13 °C"
+   ],
+   "explanation_tr": "M, eksi sıcaklığı belirtir: sıcaklık −8 °C, çiy noktası −13 °C. Fark −8 − (−13) = 5 °C’dir; mutlak değerleri toplamak veya çıkarma sırasını ters çevirmek hatadır.",
+   "explanation_en": "M means minus: temperature is −8 °C and dewpoint −13 °C. The spread is −8 − (−13) = 5 °C, not the sum of magnitudes or the reversed subtraction.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "6.6 Temperature-Dewpoint Spread, p. 6-4; 24.4.3.10 Temperature/Dewpoint Group, p. 24-18"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "78",
+     "page": "17"
+    }
+   ],
+   "adapted": true,
+   "nearest_existing_bank_ids": [
+    15625,
+    15645,
+    55025
+   ],
+   "distinctness_reason": "Existing records identify positive temperature/dewpoint or a negative dewpoint; none calculates the temperature-minus-dewpoint spread when both values are negative."
+  },
+  {
+   "key": "adapted:050:qnh-group",
+   "section": "050-09",
+   "text": "The fictional METAR LTAC 121230Z 01008KT 9999 SCT025 12/06 Q1017 = contains Q1017. Which pressure setting does this group provide?",
+   "options": [
+    "QNH of 1,017 hPa",
+    "QFE of 1,017 hPa",
+    "QFF of 1,017 hPa",
+    "An altimeter setting of 30.17 inHg"
+   ],
+   "tr_text": "METAR LTAC 121230Z 01008KT 9999 SCT025 12/06 Q1017 = örnek raporundaki Q1017 grubu hangi basınç ayarını verir?",
+   "tr_options": [
+    "1.017 hPa QNH",
+    "1.017 hPa QFE",
+    "1.017 hPa QFF",
+    "30,17 inHg altimetre ayarı"
+   ],
+   "explanation_tr": "Q1017, QNH’nin 1.017 hPa olduğunu bildirir; QFE, QFF veya inHg biçimi değildir. Bu bağımsız soru, kaynak ipucundaki eski Kanada Axxxx sorusunun birebir eşleşmesi değildir; Türkiye’de kullanılan Qxxxx koduna göre yazılmıştır.",
+   "explanation_en": "Q1017 reports QNH 1,017 hPa. It is neither QFE/QFF nor an A-prefixed inHg setting. This independent question uses Qxxxx and is not presented as a literal match to the regional Canadian Axxxx source item.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "METAR decode, p. 10, element 9 QNH: Q indicates millibars (= hPa), A inches and hundredths"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "79",
+     "page": "17"
+    }
+   ],
+   "adapted": true,
+   "nearest_existing_bank_ids": [
+    15390,
+    15648,
+    15038
+   ],
+   "distinctness_reason": "The bank defines QNH and contains Qxxxx inside composite reports, but no question directly selects the value/unit/reference of the Qxxxx pressure group.",
+   "adaptation_only": true,
+   "original_answer_verified": false,
+   "original_question_status": "out_of_scope"
+  }
+ ],
+ "existing_notes": [
+  {
+   "key": "existing:050:15295",
+   "bank_id": 15295,
+   "explanation_tr": "Su buharının çoğu ve hava olaylarının hemen tamamı troposferdedir.",
+   "explanation_en": "Most water vapour and almost all weather are in the troposphere.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "4.3.1 Troposphere"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-1",
+     "no": "1",
+     "page": ""
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15322",
+   "bank_id": 15322,
+   "explanation_tr": "ISA troposferinde sıcaklık yükseklikle yaklaşık 2 °C/1.000 ft azalır. Başlangıç sıcaklığı verilmişse fark hesabını o başlangıçtan yap; her ölçümü +15 °C kabul etme.",
+   "explanation_en": "In the ISA troposphere temperature falls about 2 °C per 1,000 ft; use the stated starting temperature when one is supplied.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "4.4 The Standard Atmosphere, Table 4-1"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "59",
+     "page": "14"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15337",
+   "bank_id": 15337,
+   "explanation_tr": "Nemli hava daha soğuk yüzey üzerinde alttan soğutulunca kararlılık artar; doygunluğa ulaşırsa sis ve kötü görüş oluşabilir. Kararlı hava tabaka bulutunu destekler.",
+   "explanation_en": "Cooling moist air from below increases stability and can produce fog, poor visibility and stratiform cloud.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "13 Atmospheric Stability; 18.1.1.1.2 Advection Fog"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "54",
+     "page": "13"
+    },
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "62",
+     "page": "15"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15344",
+   "bank_id": 15344,
+   "explanation_tr": "İnversiyonda sıcaklık, olağan azalmanın tersine yükseklikle artar; bu tabaka dikey hareketi sınırlar.",
+   "explanation_en": "In an inversion temperature increases with height, suppressing vertical motion.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "13 Atmospheric Stability: inversions"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "61",
+     "page": "14"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15413",
+   "bank_id": 15413,
+   "explanation_tr": "Yüksekten düşük QNH’ya eski ayarla uçulursa altimetre fazla gösterir; gerçek irtifa gösterilenden düşüktür. Bu soru basınç etkisini anlatır.",
+   "explanation_en": "Flying from higher to lower QNH without resetting makes the altimeter overread; true altitude is lower.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "8.4.1.2.1 Altimeter Setting; Figure 8-13"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-2",
+     "no": "2",
+     "page": ""
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15435",
+   "bank_id": 15435,
+   "explanation_tr": "Kuzey Yarımküre’de yaklaşık dengeli büyük ölçekli akım varsayımında alçak basınca doğru uçarken rüzgâr soldan gelir ve sağa sapma oluşturur. Güçlü yerel arazi/meltem etkilerinde bunu değişmez kural sayma.",
+   "explanation_en": "In approximately balanced Northern Hemisphere synoptic flow, flying toward lower pressure gives wind from the left and right drift. Strong terrain or local breeze effects can alter this.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "10.4 Upper Air Wind; 10.5 Surface Wind"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-4",
+     "no": "4",
+     "page": ""
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15465",
+   "bank_id": 15465,
+   "explanation_tr": "Yükselirken azalan çevre basıncı havanın genleşmesine yol açar; hava dışarıdan ısı almadan adyabatik soğur.",
+   "explanation_en": "Falling ambient pressure lets rising air expand and cool adiabatically.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "12.2 Vertical Motion Effects on an Unsaturated Air Parcel, pp. 12-2–12-3"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "53",
+     "page": "13"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15476",
+   "bank_id": 15476,
+   "explanation_tr": "Çiy noktası, basınç ve su buharı içeriği sabitken havanın soğutularak doygun olduğu sıcaklıktır.",
+   "explanation_en": "Dewpoint is the temperature at which air becomes saturated when cooled at unchanged pressure and moisture content.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "6.5 Dewpoint"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-3",
+     "no": "3",
+     "page": ""
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15536",
+   "bank_id": 15536,
+   "explanation_tr": "Nimbostratus, geniş alanda uzun süreli yağmur veya karla ilişkili tabaka bulutudur.",
+   "explanation_en": "Nimbostratus is associated with widespread sustained rain or snow.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "Appendix A, A.2.3 Nimbostratus (Ns)"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "52",
+     "page": "13"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15552",
+   "bank_id": 15552,
+   "explanation_tr": "Yüksek nem, açık gökyüzü ve hafif rüzgâr gece yerin soğumasıyla radyasyon sisini destekler; kuvvetli karışım bu yüzey sisini engelleyebilir.",
+   "explanation_en": "Moist air, clear sky and light wind favour radiation fog during nocturnal ground cooling; strong mixing can prevent it.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "18.1.1.1.1 Radiation Fog"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-5",
+     "no": "5",
+     "page": ""
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15560",
+   "bank_id": 15560,
+   "explanation_tr": "Sıcak cephe yaklaşırken Ci, Cs, As ve Ns şeklinde giderek alçalan/kalınlaşan bulut dizisi tipiktir; her cephede aynı sıra kesin değildir.",
+   "explanation_en": "A lowering, thickening Ci–Cs–As–Ns sequence is typical ahead of a warm front, not guaranteed for every front.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "11.3.1 Warm Front"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "65",
+     "page": "15"
+    },
+    {
+     "source": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-6",
+     "no": "6",
+     "page": ""
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15565",
+   "bank_id": 15565,
+   "explanation_tr": "Soğuk hava daha yoğundur; ilerleyen soğuk cephede sıcak havanın altına girer ve onu yükselmeye zorlar.",
+   "explanation_en": "Denser cold air undercuts and lifts warm air at an advancing cold front.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "12.4.3 Frontal Lift"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "64",
+     "page": "15"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15574",
+   "bank_id": 15574,
+   "explanation_tr": "Gök gürültülü fırtına için yeterli nem, kararsız atmosfer ve havayı yükselten bir etki gerekir.",
+   "explanation_en": "Thunderstorms require moisture, instability and a lifting mechanism.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "22.2 Necessary Ingredients for Thunderstorm Cell Formation, p. 22-2"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "60",
+     "page": "14"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15584",
+   "bank_id": 15584,
+   "explanation_tr": "Mikroburst güçlü aşağı akımın yüzeyde dışa yayılmasıdır; baş rüzgârından kuyruk rüzgârına hızla geçiş dahil ciddi rüzgâr kesmesi tehlikesi üretir.",
+   "explanation_en": "A microburst is a strong downdraft spreading outward at the surface, producing hazardous shear including rapid headwind-to-tailwind change.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "22.7.3 Downburst and Microburst"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-7",
+     "no": "7",
+     "page": ""
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15593",
+   "bank_id": 15593,
+   "explanation_tr": "Ani baş→kuyruk rüzgârı geçişinde uçak yer hızını hemen değiştiremez; hava hızı ve kaldırma azalır, tırmanış/approach marjı bozulur.",
+   "explanation_en": "A sudden headwind-to-tailwind change reduces airspeed and lift before the aircraft can change groundspeed.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "22.7.3 Downburst and Microburst, pp. 22-7–22-10"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "42",
+     "page": "11"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15612",
+   "bank_id": 15612,
+   "explanation_tr": "METAR, rapor saatinde gözlenen meydan hava durumudur; gelecekteki bir geçerlilik dönemi için tahmin TAF’tır.",
+   "explanation_en": "METAR reports observed aerodrome weather; TAF forecasts a future validity period.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "24.4.1 Aviation Routine Weather Report; 27.4 Terminal Aerodrome Forecast"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "80",
+     "page": "17"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15632",
+   "bank_id": 15632,
+   "explanation_tr": "BECMG belirtilen aralıkta yeni koşullara geçişi anlatır; değişen koşullar sonraki değişime kadar devam eder. TEMPO geçici dalgalanmaları anlatır. “Kalıcı” sonsuza kadar anlamına gelmez.",
+   "explanation_en": "BECMG introduces changed conditions that persist until a later change; TEMPO denotes temporary fluctuations, not a permanent new baseline.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "TAF decode p. 5, significant changes and examples p. 6"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-9",
+     "no": "9",
+     "page": ""
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15636",
+   "bank_id": 15636,
+   "explanation_tr": "METAR ve TAF bulut tabanı gruplarında yükseklik, yüzlerce feet cinsinden meydan seviyesinin üstünde verilir; AMSL değildir.",
+   "explanation_en": "METAR and TAF cloud-base groups give hundreds of feet above aerodrome level, not AMSL.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "TAF decode p. 5, cloud; METAR decode p. 9, cloud"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "66",
+     "page": "15"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15645",
+   "bank_id": 15645,
+   "explanation_tr": "Sıcaklık/çiy noktası grubunda ikinci değer çiy noktasıdır; M03 eksi 3 °C demektir. LTAI Antalya’dır; kaynak örnekteki İstanbul/Atatürk etiketi aktarılmadı.",
+   "explanation_en": "The second temperature/dewpoint value is dewpoint; M03 means −3 °C. LTAI identifies Antalya; the sample’s mismatched Istanbul/Atatürk label was not copied.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "24.4.3.10 Temperature/Dewpoint Group"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-8",
+     "no": "8",
+     "page": ""
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15655",
+   "bank_id": 15655,
+   "explanation_tr": "TAF geçerlilik grubunda başlangıç ve bitiş gün/saatini kullan; yayın saatini veya TEMPO aralığını toplam geçerlilik süresi sanma.",
+   "explanation_en": "Use the start and end date/hour of the validity group, not issue time or a TEMPO period.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "27.4.2.4 Valid Period"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "74",
+     "page": "16"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15657",
+   "bank_id": 15657,
+   "explanation_tr": "090 doğudan gelen hakiki yön, 22 ortalama hız, G32 en yüksek hamle, KT knot birimidir: 09022G32KT.",
+   "explanation_en": "090 is wind from true east, 22 mean speed, G32 peak gust and KT knots: 09022G32KT.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "TAF decode p. 5, wind"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-sonyaklasma",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-10",
+     "no": "10",
+     "page": ""
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15658",
+   "bank_id": 15658,
+   "explanation_tr": "İstenen UTC saatine uygulanabilen TAF zaman grubunu seç. KT knot, G en yüksek hamleyi belirtir; rapordaki yön hakiki kuzeye göredir.",
+   "explanation_en": "Select the TAF time group that applies to the requested UTC time. KT is knots, G the gust maximum and direction is true.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "TAF decode p. 5: wind and significant changes"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "75",
+     "page": "17"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:15665",
+   "bank_id": 15665,
+   "explanation_tr": "BKN 5–7 okta; 030 ise meydan üstünde 3.000 ft demektir. BECMG zaman aralığındaki kalıcı değişim TEMPO’nun geçici dalgalanmasından ayrıdır.",
+   "explanation_en": "BKN is 5–7 oktas and 030 is 3,000 ft above aerodrome level. BECMG marks a change rather than a temporary TEMPO fluctuation.",
+   "answer_verification": [
+    {
+     "url": "https://www.metoffice.gov.uk/api/assets/file/02413-getmet-update-v6pdf?prefix=assets&prefix=assets",
+     "section": "TAF decode p. 5, cloud and significant change groups"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "72",
+     "page": "16"
+    }
+   ]
+  },
+  {
+   "key": "existing:050:61085",
+   "bank_id": 61085,
+   "explanation_tr": "ICAO/EASA tavanı, yer veya su üstünden ölçülen, 20.000 ft altında gökyüzünün yarıdan fazlasını örten en alçak uygun bulut tabanıdır. FEW/SCT örtüsü bu eşiği sağlamaz; BKN/OVC sağlayabilir. METAR yükseklikleri yüzlerce feet’tir.",
+   "explanation_en": "The ICAO/EASA ceiling is the lowest qualifying layer below 20,000 ft covering more than half the sky, above ground or water. FEW/SCT do not qualify; BKN/OVC can. METAR heights use hundreds of feet.",
+   "answer_verification": [
+    {
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-11607",
+     "section": "Annex I Definitions(18a): ceiling"
+    }
+   ],
+   "adapted": true,
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "77",
+     "page": "17"
+    }
+   ]
+  },
+  {
+   "explanation_tr": "Düşükten yüksek QNH’ya geçerken eski düşük ayar korunursa altimetre eksik gösterir: gerçek irtifa göstergeden yüksektir. Yüksekten düşük basınca geçişte işaret tersine döner. Soru sıcaklık ve alet hatalarını hesaba katmaz.",
+   "explanation_en": "Retaining the lower QNH in the higher-QNH area makes the altimeter underread: true altitude exceeds indicated altitude. High-to-low pressure reverses the error. Temperature and instrument errors are excluded here.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf",
+     "section": "8.4.1.2 Indicated Altitude; 8.4.1.2.1 Altimeter Setting and Figure 8-13, pp. 8-11–8-12"
+    }
+   ],
+   "sources": [
+    {
+     "source": "x-tc-tp13014",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "no": "67",
+     "page": "15"
+    }
+   ],
+   "adapted": true,
+   "key": "existing:050:15414",
+   "bank_id": 15414
+  }
+ ],
+ "decisions": [
+  {
+   "source": "x-tc-tp13014",
+   "no": "42",
+   "page": "11",
+   "key": "x-tc-tp13014:42",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15593,
+   "reason": "Baş rüzgârından kuyruk rüzgârına ani geçişin hava hızı/kaldırma kaybı mekanizması 15593 ve 55016’da zaten sınanıyor; yaklaşma sözcüğü yeni kural getirmiyor.",
+   "reason_tr": "Baş rüzgârından kuyruk rüzgârına ani geçişin hava hızı/kaldırma kaybı mekanizması 15593 ve 55016’da zaten sınanıyor; yaklaşma sözcüğü yeni kural getirmiyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "Baş rüzgârından kuyruk rüzgârına ani geçişin hava hızı/kaldırma kaybı mekanizması 15593 ve 55016’da zaten sınanıyor"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "51",
+   "page": "13",
+   "key": "x-tc-tp13014:51",
+   "subject": "050",
+   "status": "new",
+   "topic": "Relative humidity definition as fraction of saturation",
+   "topic_tr": "Bağıl nemin mevcut/saturasyon nemi oranı olarak tanımı",
+   "reason": "RH’nin gerçek/doygunluk oranını özgül nem, karışım oranı ve mutlak nemden ayıran tanım bankada yok.",
+   "reason_tr": "RH’nin gerçek/doygunluk oranını özgül nem, karışım oranı ve mutlak nemden ayıran tanım bankada yok.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "52",
+   "page": "13",
+   "key": "x-tc-tp13014:52",
+   "subject": "050",
+   "status": "existing",
+   "topic": "Steady rain and nimbostratus",
+   "topic_tr": "Sürekli yağış ile nimbostratus ilişkisi",
+   "bank_id": 15536,
+   "reason": "Sürekli yağış ile nimbostratus ilişkisi 15536’da var.",
+   "reason_tr": "Sürekli yağış ile nimbostratus ilişkisi 15536’da var.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "53",
+   "page": "13",
+   "key": "x-tc-tp13014:53",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15465,
+   "reason": "Yükselen havanın genleşerek adyabatik soğuması 15465’te var; cephede yükselme aynı soğuma mekanizmasını değiştirmiyor.",
+   "reason_tr": "Yükselen havanın genleşerek adyabatik soğuması 15465’te var; cephede yükselme aynı soğuma mekanizmasını değiştirmiyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "Yükselen havanın genleşerek adyabatik soğuması 15465’te var"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "54",
+   "page": "13",
+   "key": "x-tc-tp13014:54",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15337,
+   "reason": "Nemli sıcak havanın soğuk yüzey üzerinde soğuyup sis oluşturması 15337’de; adveksiyon sisinin gece/gündüz farkı ayrıca 15553’te var.",
+   "reason_tr": "Nemli sıcak havanın soğuk yüzey üzerinde soğuyup sis oluşturması 15337’de; adveksiyon sisinin gece/gündüz farkı ayrıca 15553’te var.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "Nemli sıcak havanın soğuk yüzey üzerinde soğuyup sis oluşturması 15337’de"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "55",
+   "page": "14",
+   "key": "x-tc-tp13014:55",
+   "subject": "050",
+   "status": "new",
+   "topic": "Radiation fog mechanism via ground cooling",
+   "topic_tr": "Radyasyon sisinin geceleri yerden soğuma ile oluşma mekanizması",
+   "reason": "15552 elverişli koşulları soruyor; yerin radyasyon kaybı ve temasla havayı soğutma mekanizmasını diğer sis mekanizmalarından ayırmıyor.",
+   "reason_tr": "15552 elverişli koşulları soruyor; yerin radyasyon kaybı ve temasla havayı soğutma mekanizmasını diğer sis mekanizmalarından ayırmıyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "56",
+   "page": "14",
+   "key": "x-tc-tp13014:56",
+   "subject": "050",
+   "status": "new",
+   "topic": "Northern-hemisphere circulation around high and low pressure",
+   "topic_tr": "Kuzey yarımkürede yüksek ve alçak basınç çevresindeki dolaşımın birlikte ayırt edilmesi",
+   "reason": "15436 yalnız alçak basınç dolaşımını soruyor; yüksek basıncın saat yönünde dışa dolaşımını kapsayan koşul korunuyor.",
+   "reason_tr": "15436 yalnız alçak basınç dolaşımını soruyor; yüksek basıncın saat yönünde dışa dolaşımını kapsayan koşul korunuyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "57",
+   "page": "14",
+   "key": "x-tc-tp13014:57",
+   "subject": "050",
+   "status": "new",
+   "topic": "Friction: wind change when descending to surface",
+   "topic_tr": "Yüzeye alçalırken sürtünme nedeniyle rüzgârın yön ve hız değişimi",
+   "reason": "Sürtünme tabakasına alçalırken birlikte backing ve hız azalması kuralı yok; backing tanımı veya shear tanımı eşdeğer değil.",
+   "reason_tr": "Sürtünme tabakasına alçalırken birlikte backing ve hız azalması kuralı yok; backing tanımı veya shear tanımı eşdeğer değil.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "58",
+   "page": "14",
+   "key": "x-tc-tp13014:58",
+   "subject": "050",
+   "status": "new",
+   "topic": "Diurnal surface wind change",
+   "topic_tr": "Gündüz karışımıyla yüzey rüzgârının yön ve hız değişimi",
+   "reason": "Gündüz türbülanslı momentum taşınmasıyla veering ve hız artışı yok; meltem soruları farklı mekanizmayı öğretiyor.",
+   "reason_tr": "Gündüz türbülanslı momentum taşınmasıyla veering ve hız artışı yok; meltem soruları farklı mekanizmayı öğretiyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "59",
+   "page": "14",
+   "key": "x-tc-tp13014:59",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15322,
+   "reason": "ISA sıcaklık gradyanıyla irtifadan sıcaklık hesabı 15322, 15319 ve 15323’te var; sayılar değişince yeni soru türü oluşmuyor.",
+   "reason_tr": "ISA sıcaklık gradyanıyla irtifadan sıcaklık hesabı 15322, 15319 ve 15323’te var; sayılar değişince yeni soru türü oluşmuyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "ISA sıcaklık gradyanıyla irtifadan sıcaklık hesabı 15322, 15319 ve 15323’te var"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "60",
+   "page": "14",
+   "key": "x-tc-tp13014:60",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15574,
+   "reason": "Kararsızlık, nem ve kaldırıcı etki koşulları 15574 ve 15573’te var.",
+   "reason_tr": "Kararsızlık, nem ve kaldırıcı etki koşulları 15574 ve 15573’te var.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "Kararsızlık, nem ve kaldırıcı etki koşulları 15574 ve 15573’te var."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "61",
+   "page": "14",
+   "key": "x-tc-tp13014:61",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15344,
+   "reason": "Yükseklikle sıcaklık artışının inversiyon olduğu 15344’te var.",
+   "reason_tr": "Yükseklikle sıcaklık artışının inversiyon olduğu 15344’te var.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "Yükseklikle sıcaklık artışının inversiyon olduğu 15344’te var."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "62",
+   "page": "15",
+   "key": "x-tc-tp13014:62",
+   "subject": "050",
+   "status": "existing",
+   "topic": "Weather associated with air cooled from below",
+   "topic_tr": "Alttan soğuyan hava kütlesinin tipik görüş/bulut özellikleri",
+   "bank_id": 15337,
+   "reason": "Alttan soğumayla kararlılık, sis/kötü görüş ve tabaka bulutu 15336, 15337 ve 15503 birlikte kapsıyor; yeni mekanizma yok.",
+   "reason_tr": "Alttan soğumayla kararlılık, sis/kötü görüş ve tabaka bulutu 15336, 15337 ve 15503 birlikte kapsıyor; yeni mekanizma yok.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "63",
+   "page": "15",
+   "key": "x-tc-tp13014:63",
+   "subject": "050",
+   "status": "new",
+   "topic": "Front as transition between air masses",
+   "topic_tr": "Cephenin iki hava kütlesi arasındaki geçiş bölgesi olarak tanımı",
+   "reason": "Cepheyi hava kütleleri arasındaki geçiş bölgesi olarak izobar/trough/LCL’den ayıran tanım yok; soğuk cephede yoğunluk sorusu eşdeğer değil.",
+   "reason_tr": "Cepheyi hava kütleleri arasındaki geçiş bölgesi olarak izobar/trough/LCL’den ayıran tanım yok; soğuk cephede yoğunluk sorusu eşdeğer değil.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "64",
+   "page": "15",
+   "key": "x-tc-tp13014:64",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15565,
+   "reason": "Soğuk yoğun havanın sıcak havanın altına girip onu yükseltmesi 15565’te var.",
+   "reason_tr": "Soğuk yoğun havanın sıcak havanın altına girip onu yükseltmesi 15565’te var.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "Soğuk yoğun havanın sıcak havanın altına girip onu yükseltmesi 15565’te var."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "65",
+   "page": "15",
+   "key": "x-tc-tp13014:65",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15560,
+   "reason": "Ci–Cs–As–Ns sıcak cephe dizisi 15560 ve 15559’da var.",
+   "reason_tr": "Ci–Cs–As–Ns sıcak cephe dizisi 15560 ve 15559’da var.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "Ci–Cs–As–Ns sıcak cephe dizisi 15560 ve 15559’da var."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "66",
+   "page": "15",
+   "key": "x-tc-tp13014:66",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15636,
+   "reason": "TAF/METAR bulut tabanının meydan üstünden AGL verilmesi 15636’da var.",
+   "reason_tr": "TAF/METAR bulut tabanının meydan üstünden AGL verilmesi 15636’da var.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "TAF/METAR bulut tabanının meydan üstünden AGL verilmesi 15636’da var."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "67",
+   "page": "15",
+   "key": "x-tc-tp13014:67",
+   "subject": "050",
+   "status": "existing",
+   "topic": "Altimeter error moving low to high pressure without reset",
+   "topic_tr": "Basınç ayarı güncellenmeden alçaktan yüksek basınca geçişte altimetre hatası",
+   "reason": "Mevcut15414düşükQNHdan yüksekQNHya ayar değiştirmeden uçuşta aynı gösterge/gerçek irtifa koşulunu ve cevabı soruyor; ikinci içerik denetiminde tekrar bulundu.",
+   "reason_tr": "Mevcut15414düşükQNHdan yüksekQNHya ayar değiştirmeden uçuşta aynı gösterge/gerçek irtifa koşulunu ve cevabı soruyor; ikinci içerik denetiminde tekrar bulundu.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "bank_id": 15414
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "68",
+   "page": "15",
+   "key": "x-tc-tp13014:68",
+   "subject": "050",
+   "status": "new",
+   "reason": "Bölgesel FD kodunu kopyalamadan, açık yükseklik ve rüzgâr verileriyle ara seviye interpolasyonu eklenir; bankadaki wind-barb ve ETA hesapları bu işlemi sormuyor.",
+   "reason_tr": "Bölgesel FD kodunu kopyalamadan, açık yükseklik ve rüzgâr verileriyle ara seviye interpolasyonu eklenir; bankadaki wind-barb ve ETA hesapları bu işlemi sormuyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "Bölgesel FD kodunu kopyalamadan, açık yükseklik ve rüzgâr verileriyle ara seviye interpolasyonu eklenir"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "69",
+   "page": "16",
+   "key": "x-tc-tp13014:69",
+   "subject": "050",
+   "status": "out_of_scope",
+   "reason": "Kanada GFA ürününde yüzey rüzgârının yazılma eşiği, Türkiye PPL temel meteoroloji sorusu değildir; bu ulusal ürün kuralı aktif teste alınmadı.",
+   "reason_tr": "Kanada GFA ürününde yüzey rüzgârının yazılma eşiği, Türkiye PPL temel meteoroloji sorusu değildir; bu ulusal ürün kuralı aktif teste alınmadı.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "Kanada GFA ürününde yüzey rüzgârının yazılma eşiği, Türkiye PPL temel meteoroloji sorusu değildir"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "70",
+   "page": "16",
+   "key": "x-tc-tp13014:70",
+   "subject": "050",
+   "status": "new",
+   "reason": "İki zamandaki kapalı alçak basınç merkezini aynı sabit haritada izleme tipi yok; bağımsız iki panelli öğretim şekliyle kapsam korunuyor. Kanada GFA özel alanları sınanmıyor.",
+   "reason_tr": "İki zamandaki kapalı alçak basınç merkezini aynı sabit haritada izleme tipi yok; bağımsız iki panelli öğretim şekliyle kapsam korunuyor. Kanada GFA özel alanları sınanmıyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "İki zamandaki kapalı alçak basınç merkezini aynı sabit haritada izleme tipi yok"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "71",
+   "page": "16",
+   "key": "x-tc-tp13014:71",
+   "subject": "050",
+   "status": "out_of_scope",
+   "reason": "Kanada GFA yayın/geçerlilik ve IFR outlook süreleri ulusal ürün kurallarıdır; Türkiye PPL için aktif kopya yapılmadı.",
+   "reason_tr": "Kanada GFA yayın/geçerlilik ve IFR outlook süreleri ulusal ürün kurallarıdır; Türkiye PPL için aktif kopya yapılmadı.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "Kanada GFA yayın/geçerlilik ve IFR outlook süreleri ulusal ürün kurallarıdır"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "72",
+   "page": "16",
+   "key": "x-tc-tp13014:72",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15665,
+   "reason": "TAF’taki katman miktarını ve yüksekliğini zaman grubuna göre çözme 15665/15643’te var; aynı kodlardan bulutun kalınlaşıp alçalmasını okumak yeni kural getirmiyor.",
+   "reason_tr": "TAF’taki katman miktarını ve yüksekliğini zaman grubuna göre çözme 15665/15643’te var; aynı kodlardan bulutun kalınlaşıp alçalmasını okumak yeni kural getirmiyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "TAF’taki katman miktarını ve yüksekliğini zaman grubuna göre çözme 15665/15643’te var"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "73",
+   "page": "16",
+   "key": "x-tc-tp13014:73",
+   "subject": "050",
+   "status": "out_of_scope",
+   "reason": "P6SM’nin 6 statute mile’dan fazla görüş olması güncel FAA kaynağında doğrulandı; Kuzey Amerika’ya özgü görüş biçimi ayrıca aktif soruya çevrilmedi. Türkiye’deki 9999 kodu 15640’ta zaten var.",
+   "reason_tr": "P6SM’nin 6 statute mile’dan fazla görüş olması güncel FAA kaynağında doğrulandı; Kuzey Amerika’ya özgü görüş biçimi ayrıca aktif soruya çevrilmedi. Türkiye’deki 9999 kodu 15640’ta zaten var.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "P6SM’nin 6 statute mile’dan fazla görüş olması güncel FAA kaynağında doğrulandı"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "74",
+   "page": "16",
+   "key": "x-tc-tp13014:74",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15655,
+   "reason": "TAF başlangıç/bitiş grubundan geçerlilik süresi hesabı 15655’te var.",
+   "reason_tr": "TAF başlangıç/bitiş grubundan geçerlilik süresi hesabı 15655’te var.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "TAF başlangıç/bitiş grubundan geçerlilik süresi hesabı 15655’te var."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "75",
+   "page": "17",
+   "key": "x-tc-tp13014:75",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15658,
+   "reason": "TAF’ın doğru zaman grubundaki rüzgâr yön/hızını seçme 15658’de; hakiki referans ayrıca 15613’te var.",
+   "reason_tr": "TAF’ın doğru zaman grubundaki rüzgâr yön/hızını seçme 15658’de; hakiki referans ayrıca 15613’te var.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "TAF’ın doğru zaman grubundaki rüzgâr yön/hızını seçme 15658’de"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "76",
+   "page": "17",
+   "key": "x-tc-tp13014:76",
+   "subject": "050",
+   "status": "new",
+   "topic": "Compare observed wind with contemporaneous TAF",
+   "topic_tr": "Eş zamanlı METAR rüzgârını TAF tahminiyle karşılaştırma",
+   "reason": "Aynı saatin METAR gözlemi ile geçerli TAF tahminini karşılaştırma yok; ileri zamanlı BECMG grubuyla karıştırma ayrı öğrenme değeri taşıyor.",
+   "reason_tr": "Aynı saatin METAR gözlemi ile geçerli TAF tahminini karşılaştırma yok; ileri zamanlı BECMG grubuyla karıştırma ayrı öğrenme değeri taşıyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "77",
+   "page": "17",
+   "key": "x-tc-tp13014:77",
+   "subject": "050",
+   "status": "existing",
+   "topic": "METAR ceiling: ignore scattered layer, use broken layer",
+   "topic_tr": "METAR tavanı seçerken SCT katmanını dışlayıp BKN tabanını kullanma",
+   "reason": "61085 birden fazla katmanda en alçak uygun tavanı seçmeyi ve SCT’nin tavan olmadığını zaten soruyor; 15643 ayrıca SCT/BKN yükseklik kodunu kapsıyor. Yeni tavan sorusu çoğaltılmadı.",
+   "reason_tr": "61085 birden fazla katmanda en alçak uygun tavanı seçmeyi ve SCT’nin tavan olmadığını zaten soruyor; 15643 ayrıca SCT/BKN yükseklik kodunu kapsıyor. Yeni tavan sorusu çoğaltılmadı.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "bank_id": 61085
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "78",
+   "page": "17",
+   "key": "x-tc-tp13014:78",
+   "subject": "050",
+   "status": "new",
+   "topic": "Negative-temperature METAR temperature/dewpoint spread",
+   "topic_tr": "Negatif sıcaklıklı METAR’da sıcaklık-çiğ noktası aralığının hesabı",
+   "reason": "METAR’da iki negatif sıcaklık arasında sıcaklık eksi çiy noktası farkı hesabı yok; yalnız M harfini okumak veya pozitif grubu yorumlamak eşdeğer değil.",
+   "reason_tr": "METAR’da iki negatif sıcaklık arasında sıcaklık eksi çiy noktası farkı hesabı yok; yalnız M harfini okumak veya pozitif grubu yorumlamak eşdeğer değil.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "79",
+   "page": "17",
+   "key": "x-tc-tp13014:79",
+   "subject": "050",
+   "status": "out_of_scope",
+   "reason": "Özgün soru Kanada Axxxx/inHg biçimini soruyor; bölgesel biçim aktif eşleşme sayılmadı. Kaynak ipucundan ayrı yazılan Qxxxx/hPa soru adapted:050:qnh-group anahtarıyla bağımsız uyarlamadır.",
+   "reason_tr": "Özgün soru Kanada Axxxx/inHg biçimini soruyor; bölgesel biçim aktif eşleşme sayılmadı. Kaynak ipucundan ayrı yazılan Qxxxx/hPa soru adapted:050:qnh-group anahtarıyla bağımsız uyarlamadır.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "Özgün soru Kanada Axxxx/inHg biçimini soruyor",
+   "original_answer_verified": false,
+   "independent_adaptation_key": "adapted:050:qnh-group"
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "80",
+   "page": "17",
+   "key": "x-tc-tp13014:80",
+   "subject": "050",
+   "status": "existing",
+   "bank_id": 15612,
+   "reason": "METAR’ın gözlenen meydan hava raporu olduğu 15612’de var.",
+   "reason_tr": "METAR’ın gözlenen meydan hava raporu olduğu 15612’de var.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "topic_tr": "METAR’ın gözlenen meydan hava raporu olduğu 15612’de var."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "1",
+   "page": "",
+   "key": "x-sonyaklasma:050:1",
+   "subject": "050",
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-1",
+   "status": "existing",
+   "bank_id": 15295,
+   "reason": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "reason_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "topic_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var"
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "2",
+   "page": "",
+   "key": "x-sonyaklasma:050:2",
+   "subject": "050",
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-2",
+   "status": "existing",
+   "bank_id": 15413,
+   "reason": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "reason_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "topic_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var"
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "3",
+   "page": "",
+   "key": "x-sonyaklasma:050:3",
+   "subject": "050",
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-3",
+   "status": "existing",
+   "bank_id": 15476,
+   "reason": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "reason_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "topic_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var"
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "4",
+   "page": "",
+   "key": "x-sonyaklasma:050:4",
+   "subject": "050",
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-4",
+   "status": "existing",
+   "bank_id": 15435,
+   "reason": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "reason_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "topic_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var"
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "5",
+   "page": "",
+   "key": "x-sonyaklasma:050:5",
+   "subject": "050",
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-5",
+   "status": "existing",
+   "bank_id": 15552,
+   "reason": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "reason_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "topic_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var"
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "6",
+   "page": "",
+   "key": "x-sonyaklasma:050:6",
+   "subject": "050",
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-6",
+   "status": "existing",
+   "bank_id": 15560,
+   "reason": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "reason_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "topic_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var"
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "7",
+   "page": "",
+   "key": "x-sonyaklasma:050:7",
+   "subject": "050",
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-7",
+   "status": "existing",
+   "bank_id": 15584,
+   "reason": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "reason_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "topic_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var"
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "8",
+   "page": "",
+   "key": "x-sonyaklasma:050:8",
+   "subject": "050",
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-8",
+   "status": "existing",
+   "bank_id": 15645,
+   "reason": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "reason_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "topic_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var"
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "9",
+   "page": "",
+   "key": "x-sonyaklasma:050:9",
+   "subject": "050",
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-9",
+   "status": "existing",
+   "bank_id": 15632,
+   "reason": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "reason_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "topic_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var"
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "10",
+   "page": "",
+   "key": "x-sonyaklasma:050:10",
+   "subject": "050",
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-10",
+   "status": "existing",
+   "bank_id": 15657,
+   "reason": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "reason_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var; kamuya açık örneğin sözcük/şık sırası yeni soru gerekçesi değil. Kaynak yalnız konum atfı olarak tutulur.",
+   "topic_tr": "Aynı kural ve aynı belirleyici koşullar mevcut EN/TR sorusunda var"
+  }
+ ],
+ "figures": [
+  {
+   "name": "met_low_motion_12oct2026",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"820\" height=\"400\" viewBox=\"0 0 820 400\" role=\"img\" aria-labelledby=\"title desc\"><title id=\"title\">Two surface-pressure forecasts: 12 October 1800 UTC and 13 October 0000 UTC 2026</title><desc id=\"desc\">Both forecasts are north-up. Panel coordinates increase to the right and downward. Landmark A stays at (96,105). The low centre is at (135,215) at 1800 UTC and at (225,215) at 0000 UTC.</desc><rect width=\"820\" height=\"400\" fill=\"white\"/><g transform=\"translate(20,20)\"><text x=\"185\" y=\"18\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"18\" font-weight=\"bold\">12 Oct 2026 - 1800 UTC</text><rect x=\"0\" y=\"35\" width=\"370\" height=\"300\" fill=\"white\" stroke=\"#111\" stroke-width=\"1.5\"/><path d=\"M40 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M95 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M150 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M205 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M260 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M315 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M0 60 H370\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M0 115 H370\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M0 170 H370\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M0 225 H370\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M0 280 H370\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M325 95 V60 M319 70 L325 60 L331 70\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"325\" y=\"53\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\">N</text><path d=\"M90 105 h12 M96 99 v12\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"108\" y=\"109\" font-family=\"sans-serif\" font-size=\"15\">A</text><ellipse cx=\"135\" cy=\"215\" rx=\"95\" ry=\"80\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><ellipse cx=\"135\" cy=\"215\" rx=\"65\" ry=\"50\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><circle cx=\"135\" cy=\"215\" r=\"3\" fill=\"#111\"/><text x=\"135\" y=\"205\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"25\" font-weight=\"bold\">L</text><text x=\"135\" y=\"238\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\">1004</text><rect x=\"114\" y=\"157\" width=\"42\" height=\"17\" fill=\"white\"/><text x=\"135\" y=\"171\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\">1008</text><rect x=\"114\" y=\"287\" width=\"42\" height=\"17\" fill=\"white\"/><text x=\"135\" y=\"301\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\">1012</text></g><g transform=\"translate(430,20)\"><text x=\"185\" y=\"18\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"18\" font-weight=\"bold\">13 Oct 2026 - 0000 UTC</text><rect x=\"0\" y=\"35\" width=\"370\" height=\"300\" fill=\"white\" stroke=\"#111\" stroke-width=\"1.5\"/><path d=\"M40 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M95 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M150 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M205 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M260 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M315 35 V335\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M0 60 H370\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M0 115 H370\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M0 170 H370\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M0 225 H370\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M0 280 H370\" stroke=\"#ddd\" stroke-width=\"1\"/><path d=\"M325 95 V60 M319 70 L325 60 L331 70\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><text x=\"325\" y=\"53\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\">N</text><path d=\"M90 105 h12 M96 99 v12\" stroke=\"#333\" stroke-width=\"2\"/><text x=\"108\" y=\"109\" font-family=\"sans-serif\" font-size=\"15\">A</text><ellipse cx=\"225\" cy=\"215\" rx=\"95\" ry=\"80\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><ellipse cx=\"225\" cy=\"215\" rx=\"65\" ry=\"50\" fill=\"none\" stroke=\"#111\" stroke-width=\"2\"/><circle cx=\"225\" cy=\"215\" r=\"3\" fill=\"#111\"/><text x=\"225\" y=\"205\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"25\" font-weight=\"bold\">L</text><text x=\"225\" y=\"238\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\">1004</text><rect x=\"204\" y=\"157\" width=\"42\" height=\"17\" fill=\"white\"/><text x=\"225\" y=\"171\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\">1008</text><rect x=\"204\" y=\"287\" width=\"42\" height=\"17\" fill=\"white\"/><text x=\"225\" y=\"301\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"14\">1012</text></g><text x=\"410\" y=\"385\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"15\">Surface pressure: hPa - same grid and landmarks - schematic teaching example</text></svg>",
+   "source_url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "reason": "Independent fixed-grid two-panel pressure-chart adaptation of the Q70 movement-reading type; chart data are fictional and self-authored, no source map image republished."
+  }
+ ],
+ "independent_adaptation_count": 1,
+ "independent_adaptation_keys": [
+  "adapted:050:qnh-group"
+ ],
+ "counts": {
+  "scanned": 41,
+  "new": 10,
+  "existing": 27,
+  "out_of_scope": 4,
+  "review": 0,
+  "accepted_candidates": 11
+ },
+ "new_candidate_count": 12
+}

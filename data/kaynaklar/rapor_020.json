@@ -1,0 +1,292 @@
+{
+ "ders": "020",
+ "tarih": "2026-10-12",
+ "yeni_benzersiz": 7,
+ "taranan": 21,
+ "kaynaklar": {
+  "x-tc-tp13014": {
+   "new": 7,
+   "existing": 4
+  },
+  "x-sonyaklasma": {
+   "existing": 10
+  }
+ },
+ "yildizlar": [
+  61001,
+  61002,
+  14909
+ ],
+ "inceleme": 0,
+ "kararlar": [
+  {
+   "source": "x-tc-tp13014",
+   "no": "26",
+   "page": "9",
+   "key": "x-tc-tp13014:26",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "new",
+   "reason_tr": "14632/52007 fakir karışım ve yüksek silindir sıcaklığı koşulunu soruyor; bu aday farklı olarak yetersiz oktan ve yüksek sıkıştırma koşulunu sınar.",
+   "reason": "14632/52007 tests lean mixture and high cylinder-head temperature. This item tests the separate fuel-grade / compression condition, not the same cause with reordered choices.",
+   "nearest_bank_id": 14632,
+   "topic_tr": "Yüksek sıkıştırmalı motorda düşük oktanlı yakıtın detonasyon riski",
+   "question_id": 62001
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "27",
+   "page": "9",
+   "key": "x-tc-tp13014:27",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "new",
+   "reason_tr": "14595 çift ateşlemenin amacını, 14597 kopuk topraklama kablosuyla durdurulamamayı, 14607 run-up devir düşüşünü sorar. Sağlam ikinci devreyle tek manyeto arızasının uçuş sırasında güç sonucu ayrı bir durumdur.",
+   "reason": "14595 tests why dual ignition is fitted; 14597 tests a disconnected earth wire and failed shutdown; 14607 tests an excessive run-up RPM drop. None asks the in-flight consequence of a single failed magneto while the second remains healthy.",
+   "nearest_bank_id": 14595,
+   "topic_tr": "Çift ateşlemede tek manyeto arızasının güç üzerindeki etkisi",
+   "question_id": 62002
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "28",
+   "page": "9",
+   "key": "x-tc-tp13014:28",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "new",
+   "reason_tr": "14589 yalnız zenginleşmeyi, 14590 yoğunluk kaynaklı güç azalmasını sorar. Sabit devirli pervanede ilk manifold basıncı düşüşünü ve buz varsa sonraki toparlanmadan ayrımını ayrıca öğretir.",
+   "reason": "14589 tests enrichment only and 14590 tests reduced power from density. This item adds the specific constant-speed-propeller manifold-pressure indication and separates the initial no-ice response from later ice-melting recovery.",
+   "nearest_bank_id": 14589,
+   "topic_tr": "Karbüratör ısıtmasının manifold basıncı ve karışıma birlikte etkisi",
+   "question_id": 62003
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "29",
+   "page": "9",
+   "key": "x-tc-tp13014:29",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "existing",
+   "bank_id": 14584,
+   "reason_tr": "Yüksek bağıl nem ve sıfır çevresindeki pozitif/negatif sıcaklıklarda ciddi karbüratör buzlanması 14584’te var. Kaynak aralığının farklı yaklaşık uçları yeni bir mekanizma değildir.",
+   "reason": "Yüksek bağıl nem ve sıfır çevresindeki pozitif/negatif sıcaklıklarda ciddi karbüratör buzlanması 14584’te var. Kaynak aralığının farklı yaklaşık uçları yeni bir mekanizma değildir.",
+   "question_id": 14584
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "30",
+   "page": "9",
+   "key": "x-tc-tp13014:30",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "new",
+   "reason_tr": "Önceki 14575 eşleştirmesi hatalıydı: 14575 belirli sıcaklık/nemde iniş güç ayarını, 14584 yaklaşık nem/sıcaklık aralığını sorar. Açık havada bulut/yağış olmadan pozitif sıcaklıkta buzlanma koşulu hiç sorulmuyor; yalnız sayılar değişmedi.",
+   "reason": "The previous proposal incorrectly linked this to 14575 (descent-power risk at +30°C/RH50). 14584 tests a humidity/temperature range; neither tests the clear-air / no-cloud / no-precipitation exception. This preserves a different condition, not a numbers-only change.",
+   "nearest_bank_id": 14575,
+   "topic_tr": "",
+   "question_id": 62004
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "31",
+   "page": "9",
+   "key": "x-tc-tp13014:31",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "existing",
+   "bank_id": 14628,
+   "reason_tr": "Uzun süre düşük devirde çalıştırmanın buji kirlenmesine yol açması 14628’de önleme yönünden zaten sınanıyor; yalnız soruyu ters çevirmek için yeni kayıt açılmadı.",
+   "reason": "Uzun süre düşük devirde çalıştırmanın buji kirlenmesine yol açması 14628’de önleme yönünden zaten sınanıyor; yalnız soruyu ters çevirmek için yeni kayıt açılmadı.",
+   "question_id": 14628
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "33",
+   "page": "10",
+   "key": "x-tc-tp13014:33",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "new",
+   "reason_tr": "14721 soğukta fazla okumayı, 14722 standart ayarda FL’ı, 15418 tek bir standart dışı sayısal hesabı sorar. Bu aday birlikte gereken basınç ve sıcaklık profilini, yalnız basınç veya yalnız lapse-rate tuzaklarından ayırır.",
+   "reason": "14721 tests cold-temperature over-reading; 14722 identifies flight levels at standard pressure; 15418 calculates one nonstandard-pressure/temperature case. This tests which combined reference conditions are sufficient and exposes the separate pressure-only and lapse-rate-only traps.",
+   "nearest_bank_id": 14721,
+   "topic_tr": "Standart basınç ayarlı altimetrede gerçek irtifa için gereken atmosfer koşulu",
+   "question_id": 62005
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "34",
+   "page": "10",
+   "key": "x-tc-tp13014:34",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "existing",
+   "bank_id": 15408,
+   "reason_tr": "Yanlış yüksek alt ölçek ayarının altimetreyi fazla okuturması ve hatanın büyüklüğü 15408’de var. inHg yerine hPa veya farklı sayılar ayrı bir soru tipi oluşturmaz.",
+   "reason": "Yanlış yüksek alt ölçek ayarının altimetreyi fazla okuturması ve hatanın büyüklüğü 15408’de var. inHg yerine hPa veya farklı sayılar ayrı bir soru tipi oluşturmaz.",
+   "question_id": 15408
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "43",
+   "page": "11",
+   "key": "x-tc-tp13014:43",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "existing",
+   "bank_id": 14739,
+   "reason_tr": "Beyaz yayın üst sınırının VFE olması 14739’da aynı koşulla var; sayısal göstergenin şekli yeni kural öğretmiyor.",
+   "reason": "Beyaz yayın üst sınırının VFE olması 14739’da aynı koşulla var; sayısal göstergenin şekli yeni kural öğretmiyor.",
+   "question_id": 14739
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "44",
+   "page": "11",
+   "key": "x-tc-tp13014:44",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "new",
+   "reason_tr": "14799 sola dönüşte iç bilyenin slip olduğunu, 14797 sağa dönüşte iç bilyeyi düzeltmeyi sorar. Bu kaynak sağa dönüşte dış bilye ile skid teşhisini sorar; koşul ve doğru cevap değiştiği için birleştirilmez.",
+   "reason": "14799 tests a left turn with an inside ball (slip). 14797 tests corrective actions in a right turn with an inside ball. This source tests a right turn with an outside ball (skid), which changes the correct answer and must not be merged.",
+   "nearest_bank_id": 14799,
+   "topic_tr": "Sağa skid durumunun bilyeden okunması",
+   "question_id": 62006
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "45",
+   "page": "11",
+   "key": "x-tc-tp13014:45",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "status": "new",
+   "reason_tr": "14753 güneye yavaşlamada hatanın olmadığını, 14750 doğuya hızlanmada hatanın işaretini sorar. Bu aday yavaşlama hatası büyüklüğünün maksimum olduğu başları sorar; mevcut cevapların yeniden yazımı değildir.",
+   "reason": "14753 asks no apparent turn during deceleration on south; 14750 asks the sign of acceleration error on east. This asks where deceleration-error magnitude is greatest, rather than rewording either existing answer.",
+   "nearest_bank_id": 14753,
+   "topic_tr": "Manyetik pusula yavaşlama hatasının doğu-batı başlarında en büyük olması",
+   "question_id": 62007
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "1",
+   "page": "",
+   "key": "x-sonyaklasma:020:1",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-1",
+   "status": "existing",
+   "bank_id": 14760,
+   "reason_tr": "Kuzey/güneyden geçerken en büyük pusula dönüş hatası 15742 ile aynıdır. Mevcut tekrar grubunda 15742 kaydının görünür kanonik kimliği 14760 olduğu için kaynak bilgisi bu kimliğe bağlanır.",
+   "reason": "Kuzey/güneyden geçerken en büyük pusula dönüş hatası 15742 ile aynıdır.",
+   "matched_bank_id": 15742,
+   "question_id": 14760
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "2",
+   "page": "",
+   "key": "x-sonyaklasma:020:2",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-2",
+   "status": "existing",
+   "bank_id": 14771,
+   "reason_tr": "Vakumla çalışan suni ufuk 14771 ile aynıdır.",
+   "reason": "Vakumla çalışan suni ufuk 14771 ile aynıdır.",
+   "question_id": 14771
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "3",
+   "page": "",
+   "key": "x-sonyaklasma:020:3",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-3",
+   "status": "existing",
+   "bank_id": 14709,
+   "reason_tr": "Pitot toplam basıncı = statik + dinamik basınç 14711 ile aynıdır. Mevcut tekrar grubunda 14711 kaydının görünür kanonik kimliği 14709 olduğu için kaynak bilgisi bu kimliğe bağlanır.",
+   "reason": "Pitot toplam basıncı = statik + dinamik basınç 14711 ile aynıdır.",
+   "matched_bank_id": 14711,
+   "question_id": 14709
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "4",
+   "page": "",
+   "key": "x-sonyaklasma:020:4",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-4",
+   "status": "existing",
+   "bank_id": 14722,
+   "reason_tr": "Standart alt ölçek ayarının FL göstermesi 14722 ile aynıdır.",
+   "reason": "Standart alt ölçek ayarının FL göstermesi 14722 ile aynıdır.",
+   "question_id": 14722
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "5",
+   "page": "",
+   "key": "x-sonyaklasma:020:5",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-5",
+   "status": "existing",
+   "bank_id": 14705,
+   "reason_tr": "Statik port tıkanmasının altimetre, VSI ve ASI’yi etkilemesi 14705 ile aynıdır.",
+   "reason": "Statik port tıkanmasının altimetre, VSI ve ASI’yi etkilemesi 14705 ile aynıdır.",
+   "question_id": 14705
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "6",
+   "page": "",
+   "key": "x-sonyaklasma:020:6",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-6",
+   "status": "existing",
+   "bank_id": 52003,
+   "reason_tr": "Bujilerin uçağın elektrik sisteminden bağımsız manyetodan beslenmesi 14604 ile aynıdır. Mevcut tekrar grubunda 14604 kaydının görünür kanonik kimliği 52003 olduğu için kaynak bilgisi bu kimliğe bağlanır.",
+   "reason": "Bujilerin uçağın elektrik sisteminden bağımsız manyetodan beslenmesi 14604 ile aynıdır.",
+   "matched_bank_id": 14604,
+   "question_id": 52003
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "7",
+   "page": "",
+   "key": "x-sonyaklasma:020:7",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-7",
+   "status": "existing",
+   "bank_id": 14583,
+   "reason_tr": "Venturi ve gaz kelebeği çevresinde buzlanma 14583 ile aynıdır.",
+   "reason": "Venturi ve gaz kelebeği çevresinde buzlanma 14583 ile aynıdır.",
+   "question_id": 14583
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "8",
+   "page": "",
+   "key": "x-sonyaklasma:020:8",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-8",
+   "status": "existing",
+   "bank_id": 14567,
+   "reason_tr": "100LL yakıtın mavi olması 14569 ile aynıdır. Mevcut tekrar grubunda 14569 kaydının görünür kanonik kimliği 14567 olduğu için kaynak bilgisi bu kimliğe bağlanır.",
+   "reason": "100LL yakıtın mavi olması 14569 ile aynıdır.",
+   "matched_bank_id": 14569,
+   "question_id": 14567
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "9",
+   "page": "",
+   "key": "x-sonyaklasma:020:9",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-9",
+   "status": "existing",
+   "bank_id": 14695,
+   "reason_tr": "Paralel iki akünün 12V/80Ah sonucu 14695 ile aynıdır; yalnız şık sırası farkı vardır.",
+   "reason": "Paralel iki akünün 12V/80Ah sonucu 14695 ile aynıdır; yalnız şık sırası farkı vardır.",
+   "question_id": 14695
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "10",
+   "page": "",
+   "key": "x-sonyaklasma:020:10",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-10",
+   "status": "existing",
+   "bank_id": 14478,
+   "reason_tr": "Fowler flapın kanat alanı ve kamburluğu birlikte artırması 14478 ile aynıdır.",
+   "reason": "Fowler flapın kanat alanı ve kamburluğu birlikte artırması 14478 ile aynıdır.",
+   "question_id": 14478
+  }
+ ],
+ "kaynak_yeni_benzersiz": {
+  "x-tc-tp13014": 7,
+  "x-sonyaklasma": 0
+ },
+ "bagimsiz_uyarlamalar": [],
+ "duzeltmeler": []
+}

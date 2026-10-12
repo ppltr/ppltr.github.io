@@ -35,6 +35,7 @@ db.init()   # şema idempotent; içe aktarmada kurulur, her sunucuda çalışır
 
 app = FastAPI(title="ATPL Soru Bankası", docs_url=None, redoc_url=None)
 app.mount("/static", StaticFiles(directory=HERE / "static"), name="static")
+app.mount("/figures", StaticFiles(directory=HERE.parent / "figures"), name="figures")
 tpl = Jinja2Templates(directory=str(HERE / "templates"))
 
 with db.db() as _c:
@@ -49,7 +50,7 @@ async def ensure_user(request: Request, call_next):
     bağlı olarak bu cihazda saklanır. Kullanıcı isterse sonradan e-posta ve
     parola ekleyip aynı hesabı kalıcı hale getirir — geçmiş kaybolmaz.
     """
-    if request.url.path.startswith("/static"):
+    if request.url.path.startswith(("/static", "/figures/")):
         return await call_next(request)
 
     fresh = None
@@ -323,6 +324,7 @@ def api_question(request: Request, run_id: int, idx: int):
             "subject_code": q["subject_code"], "subject": q["subject"],
             "sec_code": q["sec_code"], "sec_name": q["sec_name"],
             "flagged": q["flagged"], "needs_figure": q["needs_figure"],
+            "figure_url": db.figure_url(q["id"]),
             "generated": q["generated"], "options": opts,
             "mode": run["mode"], "answered": answered,
         }

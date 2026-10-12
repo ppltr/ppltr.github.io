@@ -319,26 +319,26 @@
     {
       "key": "x-austrocontrol-ecqb-ppl:60",
       "section": "010-03",
-      "text": "Under SERA, what minimum flight visibility normally applies to VFR in Class C at or above 10,000 ft AMSL?",
+      "text": "A VFR flight in Class C is cleared to FL100. The transition altitude is 5,000 ft AMSL. Under SERA, what minimum flight visibility normally applies?",
       "options": [
         "8 km",
         "5 km",
         "1,500 m",
         "800 m"
       ],
-      "tr_text": "SERA’ya göre Class C’de 10.000 ft AMSL ve üzerindeki VFR uçuşunda normal minimum uçuş görüşü kaçtır?",
+      "tr_text": "Class C’de bir VFR uçuşuna FL100 için izin verilmiştir. Geçiş irtifası 5.000 ft AMSL’dir. SERA’ya göre normal minimum uçuş görüşü kaçtır?",
       "tr_options": [
         "8 km",
         "5 km",
         "1.500 m",
         "800 m"
       ],
-      "explanation_tr": "10.000 ft AMSL sınırı dâhildir: bu bantta normal VFR görüşü 8 km’dir.10.000 ft altındaki 5 km kuralıyla karıştırma; sınır değişince doğru cevap değişir.",
-      "explanation_en": "The 10,000 ft boundary is included in the higher band, whose normal VFR flight visibility minimum is 8 km. This differs from the 5 km rule below 10,000 ft.",
+      "explanation_tr": "TA 10.000 ft AMSL’den düşük olduğu için VMC tablosunda 10.000 ft yerine FL100 kullanılır. FL100 üst bandın başlangıcına dâhildir; burada minimum görüş 8 km’dir. Altitude ile FL aynı basınç referansı değildir.",
+      "explanation_en": "Because TA is below 10,000 ft AMSL, the table uses FL100 instead of 10,000 ft. FL100 is included in the upper band, requiring 8 km visibility. Altitude and flight level do not share the same pressure reference.",
       "answer_verification": [
         {
           "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
-          "section": "SERA.5001 Table S5-1: at and above3050m(10000ft)AMSL"
+          "section": "SERA.5001, Table S5-1 and footnote (*)"
         }
       ],
       "adapted": true,
@@ -357,7 +357,12 @@
         "5 km",
         "1.500 m",
         "800 m"
-      ]
+      ],
+      "correction": {
+        "kind": "clarification",
+        "previous_sha256": "96521f2eed6d54a4835beae4cfcf184eacb821bb9e32f0deac198fe5543036b3",
+        "reason": "SERA.5001 Tablo S5-1 dipnotu gereği TA 10.000 ft altındaysa eşik FL100’dür. Kök TA ve seviye koşulunu açık vererek 8 km cevabının kapsamını düzeltti."
+      }
     }
   ],
   "decisions": [

@@ -1,0 +1,21 @@
+{
+ "_aciklama": "Kimliği korunan açık soru-kökü/koşul düzeltmeleri; farklı soru için ID yeniden kullanılmaz.",
+ "duzeltmeler": [
+  {
+   "id": 61035,
+   "key": "linx-airlaw:117",
+   "kind": "clarification",
+   "previous_sha256": "869832580ae80cbbf959c75c60cfc555fe6964caefa7057cca1d901945fc8d81",
+   "reason": "Geçiş tabakasındaki dikey konum ifadesini tırmanış/alçalış yönüne göre açık sorar; TA sınırında doğrudan FL ifadesi belirsizliği kaldırıldı. Aynı kavram ve doğru ilk şık korunur.",
+   "new_sha256": "64113166ad3eb877a54d504c1756bbdd4165d090e34d23f7aee2e868fae8b450"
+  },
+  {
+   "id": 61084,
+   "key": "x-austrocontrol-ecqb-ppl:60",
+   "kind": "clarification",
+   "previous_sha256": "96521f2eed6d54a4835beae4cfcf184eacb821bb9e32f0deac198fe5543036b3",
+   "reason": "SERA.5001 Tablo S5-1 dipnotu gereği TA 10.000 ft altındaysa eşik FL100’dür. Kök TA ve seviye koşulunu açık vererek 8 km cevabının kapsamını düzeltti.",
+   "new_sha256": "5fa98b0473e24fc26db63c4aeae51c8c2be24e13d812cc6ca7f36e0770807751"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "questions": {
+  "68001": {
+   "text": "Bir uçak, sakin havada gerçek kütlesi için AFM/POH’da verilen manevra hızının (VA) altında uçmaktadır. VA ile ilişkili yapısal koruma hakkında hangi ifade doğrudur?",
+   "options": [
+    "Tekrarlı tam ters kumandaları veya birden çok eksende aynı anda tam kumandayı kapsamaz.",
+    "Yalnız bir kumanda ekseni kullanılıyorsa tekrarlı tam ters kumandalara izin verir.",
+    "Sakin havada birden çok kumanda ekseninde aynı anda tam kumandaya izin verir.",
+    "İzin verilen kumanda hareketlerini uçağın mevcut kütlesinden bağımsız hâle getirir."
+   ]
+  },
+  "68002": {
+   "text": "Hafif bir uçak; aynı kütle, konfigürasyon, ağırlık merkezi, yük faktörü ve güç koşulunda, hava yoğunluğunun daha düşük olduğu yüksek bir irtifaya çıkar. Düşük subsonik hızlarda alet, konum ve sıkıştırılabilirlik hataları ihmal edilirse stall IAS ve stall TAS nasıl değişir?",
+   "options": [
+    "Stall IAS yaklaşık aynı kalır; stall TAS artar.",
+    "Stall IAS artar; stall TAS yaklaşık aynı kalır.",
+    "Stall IAS azalır; stall TAS artar.",
+    "Stall IAS ve stall TAS yaklaşık aynı kalır."
+   ]
+  }
+ }
+}

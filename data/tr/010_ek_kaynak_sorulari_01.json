@@ -307,12 +307,12 @@
    ]
   },
   "61035": {
-   "text": "Geçiş tabakası geçilirken normal irtifa/uçuş seviyesi referansı nerede değiştirilir?",
+   "text": "Geçiş tabakası içinden geçerken uçağın dikey konumu tırmanışta ve alçalışta normal olarak nasıl ifade edilir?",
    "options": [
-    "Tırmanışta geçiş irtifasında FL’ye; alçalışta geçiş seviyesinde irtifaya",
-    "Her iki yönde geçiş irtifasında",
-    "Her iki yönde geçiş seviyesinde",
-    "Tırmanışta irtifaya, alçalışta FL’ye"
+    "Tırmanışta uçuş seviyesi (FL); alçalışta irtifa",
+    "Hem tırmanışta hem alçalışta irtifa",
+    "Hem tırmanışta hem alçalışta uçuş seviyesi (FL)",
+    "Tırmanışta irtifa; alçalışta uçuş seviyesi (FL)"
    ]
   },
   "61036": {
@@ -748,7 +748,7 @@
    ]
   },
   "61084": {
-   "text": "SERA’ya göre Class C’de 10.000 ft AMSL ve üzerindeki VFR uçuşunda normal minimum uçuş görüşü kaçtır?",
+   "text": "Class C’de bir VFR uçuşuna FL100 için izin verilmiştir. Geçiş irtifası 5.000 ft AMSL’dir. SERA’ya göre normal minimum uçuş görüşü kaçtır?",
    "options": [
     "8 km",
     "5 km",

@@ -1,0 +1,263 @@
+{
+ "ders": "030",
+ "tarih": "2026-10-12",
+ "yeni_benzersiz": 2,
+ "taranan": 16,
+ "kaynaklar": {
+  "x-tc-tp13014": {
+   "existing": 4,
+   "new": 2
+  },
+  "x-sonyaklasma": {
+   "existing": 10
+  }
+ },
+ "yildizlar": [
+  61001,
+  61002,
+  14909
+ ],
+ "inceleme": 0,
+ "kararlar": [
+  {
+   "source": "x-tc-tp13014",
+   "no": "46",
+   "page": "12; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:46",
+   "subject": "030",
+   "status": "existing",
+   "reason": "Pressure-altitude change from barometric setting is already tested in 15410; units/numbers alone do not justify a new item.",
+   "topic": "Pressure altitude from elevation and QNH",
+   "topic_tr": "Meydan yüksekliği ve altimetre ayarıyla basınç irtifası",
+   "answer_verification": {
+    "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+    "ref": "TP13014E question 46, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+   },
+   "bank_id": 15410,
+   "reason_tr": "15410’da altimetre ayarından basınç irtifası değişimi hesaplanıyor; farklı birim ve sayılar yeni soru türü oluşturmaz.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "question_id": 15410
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "47",
+   "page": "12; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:47",
+   "subject": "030",
+   "status": "existing",
+   "bank_id": 15381,
+   "reason": "15381 already computes density altitude from pressure altitude and ISA deviation.",
+   "topic_tr": "ISA sapmasından yoğunluk irtifası",
+   "reason_tr": "15381 aynı basınç irtifası ve ISA sıcaklık sapması hesabını soruyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "question_id": 15381
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "48",
+   "page": "12; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:48",
+   "subject": "030",
+   "status": "existing",
+   "bank_id": 56014,
+   "reason": "15837 covers headwind and 15836 covers crosswind components; the source combines those existing calculations.",
+   "topic_tr": "Baş ve yan rüzgâr bileşenleri",
+   "reason_tr": "15837 baş rüzgârı,15836 yan rüzgârı bileşenini hesaplatıyor; kaynak sorusu bu mevcut hesapları birleştiriyor.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "matched_bank_id": 15837,
+   "question_id": 56014
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "49",
+   "page": "12",
+   "key": "x-tc-tp13014:49",
+   "subject": "030",
+   "status": "new",
+   "reason": "Original table visually inspected and answer recomputed:2063.025 ft. The component-only grass correction is absent from the bank.",
+   "topic_tr": "Tablo notlarına göre baş rüzgârı ve yalnız kalkış koşusuna çim düzeltmesi",
+   "reason_tr": "Özgün tablo görsel olarak okundu; sonuç 2.063,025 ft hesaplandı. Çim ilavesini yalnız kalkış koşusuna uygulayan bu tür bankada yok.",
+   "question_id": 63001
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "50",
+   "page": "13; Aynı soru türü; birebir metin eşleşmesi iddiası yok",
+   "key": "x-tc-tp13014:50",
+   "subject": "030",
+   "status": "existing",
+   "bank_id": 14882,
+   "reason": "14882 already totals loading moments and checks both mass and CG limits. Source loading graph/envelope visually inspected.",
+   "topic_tr": "Yükleme sonrası kütle ve CG sınırlarına karar",
+   "reason_tr": "14882 yüklerin moment toplamını hesaplatıp hem kütle hem CG sınırını kontrol ediyor. Kaynağın yükleme grafiği ve zarfı da görsel olarak incelendi.",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "question_id": 14882
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "89",
+   "page": "20",
+   "key": "x-tc-tp13014:89",
+   "subject": "030",
+   "status": "new",
+   "reason": "Missing separate two-departure allowance type; adaptation specifies reserve and excludes climb from cruise times to prevent double counting.",
+   "topic": "Multi-leg fuel including two ground/climb allowances and final reserve",
+   "topic_tr": "İki kalkışın yakıt payı ve son rezerv",
+   "answer_verification": {
+    "url": "https://tc.canada.ca/en/aviation/publications/civil-aviation-sample-examination-recreational-pilot-permit-private-pilot-licence-aeroplane-tp-13014",
+    "ref": "TP13014E question 89, Appendix Answer Key (printed p37); source permission personal/public noncommercial"
+   },
+   "reason_tr": "İki ayrı kalkış payının yakıt toplamına katılması eksik türdür. Yeni soruda rezerv açıkça verildi; tırmanış yakıtının iki kez sayılması önlendi.",
+   "question_id": 63002
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "1",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:1",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-1",
+   "status": "existing",
+   "bank_id": 14959,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Vy ile en iyi tırmanma oranı",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14959 kimliğinde var. Korumalı örnek metin aktarılmadı.",
+   "question_id": 14959
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "2",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:2",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-2",
+   "status": "existing",
+   "bank_id": 14941,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Engel aşılana kadar Vx",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14941 kimliğinde var. Korumalı örnek metin aktarılmadı.",
+   "question_id": 14941
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "3",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:3",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-3",
+   "status": "existing",
+   "bank_id": 14291,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Uçuş planında TAS",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15027 kimliğinde var. Korumalı örnek metin aktarılmadı.",
+   "matched_bank_id": 15027,
+   "question_id": 14291
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "4",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:4",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-4",
+   "status": "existing",
+   "bank_id": 15036,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Uçuş planında UTC",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15036 kimliğinde var. Korumalı örnek metin aktarılmadı.",
+   "question_id": 15036
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "5",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:5",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-5",
+   "status": "existing",
+   "bank_id": 15004,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Kütlenin stall hızı ve iniş mesafesine etkisi",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 15004 kimliğinde var. Korumalı örnek metin aktarılmadı.",
+   "question_id": 15004
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "6",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:6",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-6",
+   "status": "existing",
+   "bank_id": 14995,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Meydan yüksekliğinin kalkış/iniş mesafesine etkisi",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14995 kimliğinde var. Korumalı örnek metin aktarılmadı.",
+   "question_id": 14995
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "7",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:7",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-7",
+   "status": "existing",
+   "bank_id": 14980,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Flap açık süzülüşte mesafe",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14980 kimliğinde var. Korumalı örnek metin aktarılmadı.",
+   "question_id": 14980
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "8",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:8",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-8",
+   "status": "existing",
+   "bank_id": 14886,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "ISA’dan sıcak havada yoğunluk irtifası",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14886 kimliğinde var. Korumalı örnek metin aktarılmadı.",
+   "question_id": 14886
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "9",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:9",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-9",
+   "status": "existing",
+   "bank_id": 53013,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Yakıt hacminden kütle",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14861 kimliğinde var. Korumalı örnek metin aktarılmadı.",
+   "matched_bank_id": 14861,
+   "question_id": 53013
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "10",
+   "page": "Kaynak türü eşleşmesi; korumalı metin aktarılmadı",
+   "key": "x-sonyaklasma:030:10",
+   "subject": "030",
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-10",
+   "status": "existing",
+   "bank_id": 53003,
+   "reason": "Current public 10-question sample inspected; same tested knowledge and answer already exist. No protected sample wording transferred.",
+   "topic_tr": "Toplam momentten CG",
+   "reason_tr": "Güncel herkese açık 10 soruluk örnek incelendi; aynı ölçülen bilgi ve cevap 14880 kimliğinde var. Korumalı örnek metin aktarılmadı.",
+   "matched_bank_id": 14880,
+   "question_id": 53003
+  }
+ ],
+ "kaynak_yeni_benzersiz": {
+  "x-tc-tp13014": 2,
+  "x-sonyaklasma": 0
+ },
+ "bagimsiz_uyarlamalar": [],
+ "duzeltmeler": []
+}

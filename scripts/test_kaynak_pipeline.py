@@ -106,6 +106,23 @@ class SourcePipelineTest(unittest.TestCase):
         self.assertEqual(list(map(tuple, self.conn.execute("SELECT * FROM question_sources"))), before)
         self.assertEqual(self.conn.execute("SELECT explanation FROM questions WHERE id=2").fetchone()[0], "Koşu uzunluğu.")
 
+    def test_figure_is_exported_and_server_only_serves_existing_named_asset(self):
+        figures = self.root / "figures"
+        figures.mkdir()
+        svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><text x="1" y="10">L</text></svg>'
+        (figures / "forecast_low.svg").write_text(svg)
+        self.write(figures / "index.json", {"1": "forecast_low", "2": "../private", "3": "missing"})
+        with patch.object(server, "ROOT", self.root):
+            self.assertEqual(server.figure_url(1), "/figures/forecast_low.svg")
+            self.assertIsNone(server.figure_url(2))
+            self.assertIsNone(server.figure_url(3))
+        # Şüpheli/görseli olmayan eşleşmelerin export örneğine karışmasına gerek yok.
+        self.write(figures / "index.json", {"1": "forecast_low"})
+        exported = build.export()
+        first = next(q for q in exported["q"] if q[0] == 1)
+        self.assertEqual(first[9], "forecast_low")
+        self.assertEqual(exported["fg"]["forecast_low"], svg)
+
     def test_authoritative_refs_remove_corrected_citation_without_erasing_other_questions(self):
         self.conn.execute("INSERT INTO question_sources VALUES (1,'source','untouched','1','https://example.com/old')")
         self.conn.execute("INSERT OR REPLACE INTO question_sources VALUES (2,'source','48','1','https://example.com/wrong')")

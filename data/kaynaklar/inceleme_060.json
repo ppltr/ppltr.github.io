@@ -1,0 +1,69 @@
+{
+ "ders": "060",
+ "sorular": [
+  {
+   "kaynak": "x-tc-tp13014",
+   "no": "84",
+   "sayfa": "18",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "konu": "Haritada hipsometrik renklendirmeden arazi yüksekliği",
+   "neden": "2006 Toronto VNC’nin renk lejandı ve arazi şeridi verilmediği için kesin arazi cevabı çıkarılmadı."
+  },
+  {
+   "kaynak": "x-tc-tp13014",
+   "no": "87",
+   "sayfa": "19",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "konu": "Eski VNC üzerinde manyetik rota ölçümü",
+   "neden": "Eski VNC ve rota boyu varyasyon bilgisi yok. Yaklaşık geometri veya tek meydan varyasyonu özgün ölçülmüş rota sayılmadı; genel dönüşüm 15739’da var."
+  },
+  {
+   "kaynak": "x-tc-tp13014",
+   "no": "88",
+   "sayfa": "19",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "konu": "Seyir süresine kazanılan irtifaya göre tırmanış payı ekleme",
+   "neden": "Özgün VNC mesafesi doğrulanmadı. Kaynak soru incelemede kaldı; eksik tırmanış ek süresi koşulu, verileri eksiksiz ayrı bir özgün alıştırmayla eklendi."
+  },
+  {
+   "kaynak": "x-tc-tp13014",
+   "no": "91",
+   "sayfa": "20",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "konu": "Rota koridorunun en yüksek engeli ve AMSL/AGL ayrımı",
+   "neden": "Beş millik koridordaki engeller eksik 2006 VNC’den okunmalı; cevap anahtarından tek başına engel yüksekliği çıkarılmadı."
+  },
+  {
+   "kaynak": "x-tc-tp13014",
+   "no": "92",
+   "sayfa": "20",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "konu": "Yol boyu hava bilgisi için eski istasyon/frekans seçimi",
+   "neden": "Eski VNC/FISE kapsaması ve istasyon frekansları eksik, güncelliği belirsiz; güncel operasyon cevabı atanmadı."
+  },
+  {
+   "kaynak": "x-tc-tp13014",
+   "no": "94",
+   "sayfa": "21",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "konu": "Haritadan açılma ve kapanma açıları",
+   "neden": "Açılma/kapanma açısı yöntemi 15831/15838/15839’da var; özgün harita geometrisi doğrulanmadığı için kesin kaynak cevabı iddia edilmedi."
+  },
+  {
+   "kaynak": "x-tc-tp13014",
+   "no": "96",
+   "sayfa": "21",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "konu": "VOR radyali üzerinde FROM/TO ayrımı",
+   "neden": "Coehill-Marlbank özgün manyetik radyali için eksik VNC gerekiyor. Kaynak soru incelemede kaldı; FROM koşulu radyali açıkça verilen ayrı bir özgün alıştırmayla korundu."
+  },
+  {
+   "kaynak": "x-sonyaklasma",
+   "no": "2",
+   "sayfa": "",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-2",
+   "konu": "Gerçek yer izinin tanımı",
+   "neden": "Korumalı örnek metnin bankada yeniden kullanım izni yok; yalnız konu metadatası korundu. FAA tanımlarıyla bağımsız yazılan soru ayrı kabul edildi."
+  }
+ ]
+}

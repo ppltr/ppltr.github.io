@@ -1,0 +1,8 @@
+{
+ "ders": "060",
+ "anahtarlar": {
+  "adapted:tc88-climb-allowance": 66001,
+  "adapted:tc96-from": 66002,
+  "independent:track-heading-course": 66003
+ }
+}

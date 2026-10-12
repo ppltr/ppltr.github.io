@@ -70,11 +70,63 @@ class CompilerSafetyTest(unittest.TestCase):
             self.run_compile()
         self.assertFalse((self.data / "010_ek_kaynak_sorulari.json").exists())
 
+    def test_source_name_is_normalized_and_missing_name_fails_before_writes(self):
+        self.doc["sources"] = [{"id": "secondary", "name": "Official Handbook", "url": "https://authority.example.org"}]
+        self.run_compile()
+        registry = json.loads((self.data / "kaynaklar/_kaynaklar.json").read_text())
+        self.assertEqual(next(s for s in registry["kaynaklar"] if s["id"] == "secondary")["ad"], "Official Handbook")
+        self.doc["sources"].append({"id": "invalid", "url": "https://example.org"})
+        before = (self.data / "010_ek_kaynak_sorulari.json").read_bytes()
+        with self.assertRaisesRegex(ValueError, "adı eksik"):
+            self.run_compile()
+        self.assertEqual(before, (self.data / "010_ek_kaynak_sorulari.json").read_bytes())
+
     def test_reusing_or_reinterpreting_a_permanent_id_is_rejected(self):
         self.run_compile()
         self.candidate["options"] = ["A different answer", "Incorrect"]
         with self.assertRaisesRegex(ValueError, "içeriği değişti"):
             self.run_compile()
+
+    def test_clarification_requires_exact_previous_hash_and_is_logged_idempotently(self):
+        from kaynak_derle import question_hash
+        self.run_compile()
+        old = json.loads((self.data / "010_ek_kaynak_sorulari.json").read_text())["questions"][0]
+        self.candidate["text"] = "A verified new question with an explicit condition?"
+        self.candidate["correction"] = {"kind": "clarification", "previous_sha256": "0" * 64,
+            "reason": "Clarify the applicable condition while retaining the same fact."}
+        with self.assertRaises(ValueError):
+            self.run_compile()
+        self.candidate["correction"]["previous_sha256"] = question_hash(old)
+        self.run_compile()
+        self.run_compile()
+        updated = json.loads((self.data / "010_ek_kaynak_sorulari.json").read_text())["questions"][0]
+        self.assertEqual(old["id"], updated["id"])
+        log = json.loads((self.data / "kaynaklar/duzeltmeler.json").read_text())["duzeltmeler"]
+        self.assertEqual(len(log), 1)
+        self.assertEqual(log[0]["previous_sha256"], question_hash(old))
+
+    def test_shared_source_keeps_other_subject_ownership_when_one_releases_it(self):
+        self.put("data/020_original.json", {"subject_code": "020", "subject_name": "Aircraft General Knowledge",
+            "questions": [{"id": 43, "text": "Another historical question?", "options": ["Yes", "No"]}]})
+        self.doc["decisions"].append({"source": "s", "no": "shared", "key": "s:shared", "status": "existing",
+            "bank_id": 42, "reason": "Same rule in two subject scopes"})
+        self.run_compile()
+        path = self.put("audit020.json", {"candidates": [], "decisions": [self.doc["decisions"][-1]]})
+        compile_decisions("020", [path], root=self.root)
+        self.doc["decisions"] = [d for d in self.doc["decisions"] if d["no"] != "shared"]
+        self.run_compile()
+        notes = json.loads((self.data / "_kaynak_notlari.json").read_text())["notlar"]
+        ref = next(s for s in notes["42"]["src"] if s["no"] == "shared")
+        self.assertEqual(ref["derleyen"], "020")
+        self.assertEqual(notes["42"]["also_subjects"], ["020"])
+
+    def test_independent_adaptation_does_not_inflate_source_scan_counts(self):
+        self.candidate["adaptation_only"] = True
+        self.candidate["original_answer_verified"] = False
+        result = self.run_compile()
+        self.assertEqual(result["taranan"], 2)
+        self.assertEqual(result["yeni_benzersiz"], 1)
+        self.assertEqual(len(result["bagimsiz_uyarlamalar"]), 1)
 
     def test_duplicate_keys_and_duplicate_answer_choices_fail_closed(self):
         doc = copy.deepcopy(self.doc)

@@ -1,0 +1,197 @@
+{
+ "tarih": "2026-10-12",
+ "yeni_benzersiz": 29,
+ "taranan_gercek_aday": 130,
+ "dersler": {
+  "020": {
+   "ad": "Aircraft General Knowledge",
+   "yeni": 7,
+   "taranan": 21,
+   "inceleme": 0,
+   "bagimsiz_uyarlama": 0
+  },
+  "030": {
+   "ad": "Flight Performance",
+   "yeni": 2,
+   "taranan": 16,
+   "inceleme": 0,
+   "bagimsiz_uyarlama": 0
+  },
+  "040": {
+   "ad": "Human Performance",
+   "yeni": 3,
+   "taranan": 5,
+   "inceleme": 1,
+   "bagimsiz_uyarlama": 1
+  },
+  "050": {
+   "ad": "Meteorology",
+   "yeni": 11,
+   "taranan": 41,
+   "inceleme": 0,
+   "bagimsiz_uyarlama": 1
+  },
+  "060": {
+   "ad": "Navigation",
+   "yeni": 3,
+   "taranan": 23,
+   "inceleme": 8,
+   "bagimsiz_uyarlama": 3
+  },
+  "070": {
+   "ad": "Operational Procedures",
+   "yeni": 1,
+   "taranan": 2,
+   "inceleme": 0,
+   "bagimsiz_uyarlama": 0
+  },
+  "080": {
+   "ad": "Principles of Flight",
+   "yeni": 2,
+   "taranan": 16,
+   "inceleme": 1,
+   "bagimsiz_uyarlama": 0
+  }
+ },
+ "kaynak_kararlari": {
+  "x-tc-tp13014": {
+   "new": 24,
+   "existing": 37,
+   "review": 9,
+   "out_of_scope": 10
+  },
+  "x-sonyaklasma": {
+   "existing": 49,
+   "review": 1
+  }
+ },
+ "bagimsiz_uyarlamalar": [
+  {
+   "key": "adapted:tc36-empty-field-myopia",
+   "id": 64001,
+   "original_answer_verified": false
+  },
+  {
+   "key": "adapted:050:qnh-group",
+   "id": 65001,
+   "original_answer_verified": false
+  },
+  {
+   "key": "independent:track-heading-course",
+   "id": 66003,
+   "original_answer_verified": false
+  },
+  {
+   "key": "adapted:tc88-climb-allowance",
+   "id": 66001,
+   "original_answer_verified": false
+  },
+  {
+   "key": "adapted:tc96-from",
+   "id": 66002,
+   "original_answer_verified": false
+  }
+ ],
+ "daha_genis_kaynak_izni": [
+  {
+   "id": "x-traficom-lapl-ppl",
+   "public_index_url": "https://traficom.fi/en/aviation-licences/theoretical-examinations-personnel-licences/practice-questions-theoretical-knowledge-examinations-aviation",
+   "checked_at": "2026-10-12",
+   "bank_scanned": 0,
+   "inspection": "Cover and last-page text plus PDF metadata only; no full-question semantic scan in this turn.",
+   "files": [
+    {
+     "subject": "020",
+     "url": "https://traficom.fi/sites/default/files/media/file/PPL020ENG%2011102018.pdf",
+     "pages": 30,
+     "revision": "1.8",
+     "revision_date": "2018-10-11"
+    },
+    {
+     "subject": "030",
+     "url": "https://traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+     "pages": 40,
+     "revision": "1.7",
+     "revision_date": "2018-10-11"
+    },
+    {
+     "subject": "050",
+     "url": "https://traficom.fi/sites/default/files/media/file/PPL050ENG%2011102018.pdf",
+     "pages": 28,
+     "revision": "1.7",
+     "revision_date": "2018-10-11"
+    },
+    {
+     "subject": "060",
+     "url": "https://traficom.fi/sites/default/files/media/file/32088-PPL060ENG.pdf",
+     "pages": 34,
+     "revision": "1.7",
+     "revision_date": "2018-10-11"
+    },
+    {
+     "subject": "080",
+     "url": "https://traficom.fi/sites/default/files/media/file/PPL080ENG%2011102018.pdf",
+     "pages": 26,
+     "revision": "1.7",
+     "revision_date": "2018-10-11"
+    }
+   ],
+   "permission_status": "review_no_explicit_exam_bank_reuse_licence_confirmed",
+   "permission_evidence": [
+    {
+     "url": "https://traficom.fi/en/transport-system/geoinformationsmaterial/use-and-licences-data",
+     "finding": "The CC BY4 licence page is explicitly within geospatial dataset material; its scope must not be presumed to include examination PDFs."
+    },
+    {
+     "url": "https://www.traficom.fi/en/about-site",
+     "finding": "About-site information covers browsers and cookies; no general reproduction grant was found."
+    },
+    {
+     "url": "https://www.traficom.fi/fi/ilmailun-lupakirjat-ja-henkiloluvat/lupakirjat-ja-muut-henkiloluvat/yleisilmailun-koulutusmateriaalia-ja-ohjeita",
+     "finding": "This page identifies an Aviastar ATO manual under Creative Commons separately. It does not say the PPL question bank shares that licence."
+    }
+   ],
+   "safe_next_scope": "Public technical facts can be read to identify gaps and independently authored using current primary references. Protected question wording and images must not be transferred in bulk. Full banks are not counted as scanned."
+  },
+  {
+   "id": "x-cad-rs",
+   "public_index_url": "https://cad.gov.rs/strana/24921/%D0%9F%D0%B8%D0%BB%D0%BE%D1%82%D0%B8-%D0%B0%D0%B2%D0%B8%D0%BE%D0%BD%D0%B0?lang=en",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Aircraft%20%20general%20knowledge.pdf",
+   "subject": "020",
+   "pages": 17,
+   "effective_date": "2018-08-25",
+   "document_form": "CAD-PEL-OB-1001 Issue01",
+   "checked_at": "2026-10-12",
+   "bank_scanned": 0,
+   "inspection": "Cover, metadata and last page only; not a full semantic audit. The current official agency index links this bank.",
+   "permission_status": "official_material_exemption_evidence_found_but_no_explicit_open_licence_or_underlying_third_party_provenance_confirmed",
+   "permission_evidence": [
+    {
+     "url": "https://www.zis.gov.rs/en/rights/copyright-and-related-rights/",
+     "finding": "Serbia Intellectual Property Office FAQ states that official materials of state bodies/public-function bodies are not copyrighted; general ideas, procedures and mathematical concepts are not covered."
+    },
+    {
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Aircraft%20%20general%20knowledge.pdf",
+     "finding": "CAD-PEL-OB-1001 identifies an official examination document. Its cover and last page show no separate open licence or third-party source acknowledgement."
+    }
+   ],
+   "inference": "The official-materials exclusion may support reuse of agency-created material. It does not itself establish rights to underlying third-party questions or figures. This is an inference, not a confirmed CC/open licence.",
+   "safe_next_scope": "Public technical facts can be read to identify gaps and independently authored with current primary references. No protected wording/images should be transferred in bulk without a confirmed basis. No access barriers were bypassed; the full bank is not counted as scanned."
+  }
+ ],
+ "koruma": {
+  "onceki_kimlik": 3022,
+  "silinen": 0,
+  "yeniden_kullanilan": 0,
+  "acik_duzeltmeler": [
+   61035,
+   61084
+  ]
+ },
+ "dogrulama": {
+  "python_regresyon_testi": 28,
+  "ceviri": "3051/3051 EN ve TR",
+  "server_flow": "geçti; grafik API dahil",
+  "browser": "grafikli soru, dil seçimi ve yenileme doğrulandı"
+ }
+}

@@ -20,7 +20,8 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BANDS = {"010": 61000, "020": 62000, "030": 63000, "050": 65000, "060": 66000, "080": 68000}
+BANDS = {"010": 61000, "020": 62000, "030": 63000, "040": 64000,
+         "050": 65000, "060": 66000, "070": 67000, "080": 68000, "090": 69000}
 STATUS = {"existing", "new", "duplicate_new", "out_of_scope", "review"}
 
 
@@ -43,6 +44,15 @@ def write(path, value):
 def norm(value):
     # İşaretler/sayılar koşulu veya cevabı değiştirebilir: -3 ile +3 birleştirilmez.
     return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", value).casefold()).strip()
+
+
+def question_hash(question):
+    return hashlib.sha256(json.dumps(question, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+
+
+def source_owners(ref):
+    value = ref.get("derleyen")
+    return [value] if isinstance(value, str) else list(value or [])
 
 
 def compile_decisions(subject, paths, root=ROOT, dry=False):
@@ -72,6 +82,15 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
             if key in decisions:
                 raise ValueError(f"Kaynak sorusu iki kez sayıldı: {key}")
             decisions[key] = d
+
+    # Araştırma çıktıları İngilizce `name` kullanabilir; depodaki zorunlu ad alanına
+    # burada dönüştür ve eksik kaynağı hiçbir dosya yazmadan yakala.
+    for source in sources.values():
+        if not source.get("ad") and source.get("name"):
+            source["ad"] = source["name"]
+        if not isinstance(source.get("id"), str) or not source["id"].strip() or \
+                not isinstance(source.get("ad"), str) or not source["ad"].strip():
+            raise ValueError(f"Kaynak kimliği/adı eksik: {source}")
 
     output_path = data / f"{subject}_ek_kaynak_sorulari.json"
     bank, section_names, subject_codes, bank_subjects = {}, {}, set(), {}
@@ -141,7 +160,17 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
     notes = notes_doc["notlar"]
     # Bu derleyicinin önceki kaynak notlarını sıfırdan hesapla; başka dersler korunur.
     for n in notes.values():
-        n["src"] = [s for s in n.get("src", []) if s.get("derleyen") != subject]
+        kept = []
+        for s in n.get("src", []):
+            owners = source_owners(s)
+            if subject not in owners:
+                kept.append(s)
+                continue
+            remaining = sorted(set(owners) - {subject})
+            if remaining:
+                s = {**s, "derleyen": remaining[0] if len(remaining) == 1 else remaining}
+                kept.append(s)
+        n["src"] = kept
         n["replace_sources"] = True
 
     def add_ref(qid, source, url, no="", page=""):
@@ -152,8 +181,13 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
         n = notes.setdefault(str(qid), {"src": []})
         n["replace_sources"] = True
         n.setdefault("src", [])
-        if not any((s["k"], s.get("no", ""), s.get("sayfa", ""), s.get("url", "")) ==
-                   (ref["k"], ref["no"], ref["sayfa"], ref["url"]) for s in n["src"]):
+        for s in n["src"]:
+            if (s["k"], s.get("no", ""), s.get("sayfa", ""), s.get("url", "")) == \
+                    (ref["k"], ref["no"], ref["sayfa"], ref["url"]):
+                owners = sorted(set(source_owners(s)) | {subject})
+                s["derleyen"] = owners[0] if len(owners) == 1 else owners
+                break
+        else:
             n["src"].append(ref)
 
     def attach(qid, c):
@@ -178,6 +212,9 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
             n["also_subjects"] = sorted(set(n.get("also_subjects", [])) | set(c["also_subjects"]))
         n["answer_verification"] = c["answer_verification"]
         n["adapted"] = c.get("adapted", False)
+        if c.get("adaptation_only"):
+            n["adaptation_only"] = True
+            n["original_answer_verified"] = c.get("original_answer_verified", False)
         for s in c.get("sources", []):
             add_ref(qid, s["source"], s["url"], s.get("no", ""), s.get("page", ""))
         for v in c["answer_verification"]:
@@ -187,7 +224,7 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
                 "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."})
             add_ref(qid, source, v["url"], "", v["section"])
 
-    questions, translations, seen_stems = [], {}, {}
+    questions, translations, seen_stems, corrections = [], {}, {}, []
     for key, c in sorted(candidates.items(), key=lambda item: ids[item[0]]):
         required = ["section", "text", "options", "tr_text", "tr_options", "explanation_tr",
                     "explanation_en", "answer_verification"]
@@ -211,9 +248,23 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
         seen_stems[stem] = key
         qid = ids[key]
         q = {"id": qid, "section": c["section"], "text": c["text"], "options": opts}
+        if c.get("needs_figure"):
+            if not c.get("figure_name"):
+                raise ValueError(f"Görsel adı eksik: {key}")
+            q["needs_figure"] = True
+        correction = c.get("correction")
+        if correction:
+            if not isinstance(correction, dict) or correction.get("kind") != "clarification" or \
+                    not re.fullmatch(r"[0-9a-f]{64}", correction.get("previous_sha256", "")) or \
+                    not isinstance(correction.get("reason"), str) or len(correction["reason"].strip()) < 12:
+                raise ValueError(f"Açık düzeltme kaydı geçersiz: {key}")
+            corrections.append({"id": qid, "key": key, **correction, "new_sha256": question_hash(q)})
         # Kimliği verilmiş bir soru farklı içeriğe sessizce dönüştürülemez.
         if qid in old_output and old_output[qid] != q:
-            raise ValueError(f"Kalıcı yeni sorunun içeriği değişti: {key}; açık düzeltme gerekir")
+            if not correction or question_hash(old_output[qid]) != correction["previous_sha256"] or \
+                    old_output[qid]["section"] != q["section"] or \
+                    len(old_output[qid]["options"]) != len(q["options"]):
+                raise ValueError(f"Kalıcı yeni sorunun içeriği değişti: {key}; açık düzeltme gerekir")
         questions.append(q)
         translations[str(qid)] = {"text": c["tr_text"], "options": tr_opts}
         attach(qid, c)
@@ -288,6 +339,7 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
             "sayi": sum(counter.values()), "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
             "url": sources[sid]["url"]}
         sources[sid]["karar_sayilari"] = dict(counter)
+        sources[sid].setdefault("karar_sayilari_dersler", {})[subject] = dict(counter)
         sources[sid]["yeni_benzersiz"] = len(unique_new.get(sid, set()))
     output = {"subject_code": subject, "subject_name": subject_name,
         "origin": "ek", "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
@@ -299,7 +351,11 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
         "taranan": len(decisions), "kaynaklar": {k: dict(v) for k, v in counts.items()},
         "yildizlar": [int(k) for k, n in notes.items() if n.get("isaret") == "dogrulanmis"],
         "inceleme": len(queue), "kararlar": list(decisions.values()),
-        "kaynak_yeni_benzersiz": {sid: len(unique_new.get(sid, set())) for sid in counts}}
+        "kaynak_yeni_benzersiz": {sid: len(unique_new.get(sid, set())) for sid in counts},
+        "bagimsiz_uyarlamalar": [{"key": key, "id": ids[key],
+            "original_answer_verified": c.get("original_answer_verified", False)}
+            for key, c in candidates.items() if c.get("adaptation_only")],
+        "duzeltmeler": corrections}
     if not dry:
         write(output_path, output)
         write(data / f"tr/{subject}_ek_kaynak_sorulari_01.json", {"questions": translations})
@@ -310,6 +366,14 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
         write(registry_path, registry)
         write(data / f"kaynaklar/inceleme_{subject}.json", {"ders": subject, "sorular": queue})
         write(data / f"kaynaklar/rapor_{subject}.json", report)
+        if corrections:
+            log_path = data / "kaynaklar/duzeltmeler.json"
+            log = read(log_path, {"_aciklama": "Kimliği korunan açık soru-kökü/koşul düzeltmeleri; farklı soru için ID yeniden kullanılmaz.", "duzeltmeler": []})
+            known = {(r["id"], r["previous_sha256"], r["new_sha256"]) for r in log["duzeltmeler"]}
+            for record in corrections:
+                if (record["id"], record["previous_sha256"], record["new_sha256"]) not in known:
+                    log["duzeltmeler"].append(record)
+            write(log_path, log)
     return report
 
 
