@@ -81,6 +81,7 @@ CREATE TABLE IF NOT EXISTS question_sources (
 CREATE TABLE IF NOT EXISTS question_subjects (
     question_id INTEGER NOT NULL REFERENCES questions(id) ON DELETE CASCADE,
     subject_code TEXT NOT NULL REFERENCES subjects(code) ON DELETE CASCADE,
+    section_code TEXT,
     PRIMARY KEY (question_id, subject_code)
 );
 
@@ -197,6 +198,8 @@ def migrate(conn: sqlite3.Connection) -> None:
         conn.execute("ALTER TABLE sections ADD COLUMN name_tr TEXT")
     if "name_en" not in seccols:
         conn.execute("ALTER TABLE sections ADD COLUMN name_en TEXT")
+    if "section_code" not in {r[1] for r in conn.execute("PRAGMA table_info(question_subjects)")}:
+        conn.execute("ALTER TABLE question_subjects ADD COLUMN section_code TEXT")
 
     conn.commit()
 
@@ -400,6 +403,10 @@ def import_notes(conn: sqlite3.Connection) -> tuple[int, int, int]:
         for code in n.get("also_subjects", []):
             if conn.execute("SELECT 1 FROM subjects WHERE code=?", (code,)).fetchone() is None:
                 sys.exit(f"hata: soru {qid}: bilinmeyen ortak ders {code!r}")
+        for code, section in n.get("also_sections", {}).items():
+            if code not in n.get("also_subjects", []) or not conn.execute(
+                    "SELECT 1 FROM sections WHERE subject_code=? AND code=?", (code, section)).fetchone():
+                sys.exit(f"hata: soru {qid}: bilinmeyen ortak ders bölümü {code}/{section}")
     if reg_path.exists():
         for k in registry:
             conn.execute(
@@ -423,9 +430,13 @@ def import_notes(conn: sqlite3.Connection) -> tuple[int, int, int]:
             if "also_subjects" in n:
                 conn.execute("DELETE FROM question_subjects WHERE question_id=?", (qid,))
                 for code in n["also_subjects"]:
-                    conn.execute("INSERT OR IGNORE INTO question_subjects VALUES (?,?)", (qid, code))
-                    conn.execute("INSERT OR IGNORE INTO sections(subject_code,code,name,name_tr,name_en) "
-                                 "VALUES (?,?,?,?,?)", (code, f"{code}-X", "Shared questions", "Ortak sorular", "Shared questions"))
+                    if code == conn.execute("SELECT subject_code FROM questions WHERE id=?", (qid,)).fetchone()[0]:
+                        continue  # Kendi dersine ikinci bir ortak-ders kaydı ekleme.
+                    section = n.get("also_sections", {}).get(code)
+                    conn.execute("INSERT OR IGNORE INTO question_subjects(question_id,subject_code,section_code) VALUES (?,?,?)", (qid, code, section))
+                    if not section:
+                        conn.execute("INSERT OR IGNORE INTO sections(subject_code,code,name,name_tr,name_en) "
+                                     "VALUES (?,?,?,?,?)", (code, f"{code}-X", "Shared questions", "Ortak sorular", "Shared questions"))
             n_note += 1
             if n.get("replace_sources"):
                 # Derlenmiş tam liste açıkça yetkiliyse kaldırılan/yanlış eski atıfları da temizle.

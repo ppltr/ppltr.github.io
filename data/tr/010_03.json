@@ -37,12 +37,12 @@
    ]
   },
   "14384": {
-   "text": "Bir AlP'nin üç bölümünün adları nelerdir?",
+   "text": "AIP’nin üç ana bölümünün açık adları hangileridir?",
    "options": [
-    "GEN, ENR ve AD",
-    "ENR, AD ve AGA",
-    "ENR, AGA ve GEN",
-    "AGA, AD ve GEN"
+    "General / Genel (GEN), En-route / Yol boyu (ENR) ve Aerodromes / Meydanlar (AD)",
+    "En-route / Yol boyu (ENR), Aerodromes / Meydanlar (AD) ve AGA",
+    "En-route / Yol boyu (ENR), AGA ve General / Genel (GEN)",
+    "AGA, Aerodromes / Meydanlar (AD) ve General / Genel (GEN)"
    ]
   },
   "14385": {

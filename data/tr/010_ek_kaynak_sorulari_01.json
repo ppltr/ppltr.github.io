@@ -10,12 +10,12 @@
    ]
   },
   "61002": {
-   "text": "QNH raporlarına göre meydanda kullanılacak Transition Level’ı hangi operasyonel ATS birimleri belirler?",
+   "text": "Transition Level’ın belirlenmesinden hangi birimler sorumludur?",
    "options": [
     "Yaklaşma Kontrol Ofisi veya Meydan Kontrol Kulesi",
-    "Ulusal pilot lisanslandırma otoritesi",
-    "Genel ATC düzenleyici otoritesi",
-    "Yalnızca saha kontrol merkezi"
+    "Devletin yetkili otoritesi",
+    "Genel ATC otoritesi",
+    "Saha kontrol birimi"
    ]
   },
   "61003": {
@@ -307,12 +307,12 @@
    ]
   },
   "61035": {
-   "text": "Geçiş tabakası içinden geçerken uçağın dikey konumu tırmanışta ve alçalışta normal olarak nasıl ifade edilir?",
+   "text": "Tırmanış ve alçalışta altitude ile flight level bildirimi arasındaki geçiş hangi sınırlarda yapılır?",
    "options": [
-    "Tırmanışta uçuş seviyesi (FL); alçalışta irtifa",
-    "Hem tırmanışta hem alçalışta irtifa",
-    "Hem tırmanışta hem alçalışta uçuş seviyesi (FL)",
-    "Tırmanışta irtifa; alçalışta uçuş seviyesi (FL)"
+    "Tırmanışta transition altitude; alçalışta transition level",
+    "Tırmanışta transition level; alçalışta transition altitude",
+    "Hem tırmanış hem alçalışta transition altitude",
+    "Hem tırmanış hem alçalışta transition level"
    ]
   },
   "61036": {

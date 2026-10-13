@@ -2282,6 +2282,38 @@
       ],
       "not": "Kemerlerin yeri/kullanımı mevcut 16050 yolcu emniyet brifinginin alt kümesidir; yeni bağımsız koşul yok.",
       "audit_date": "2026-10-13"
+    },
+    {
+      "ids": [
+        27031,
+        61079
+      ],
+      "not": "Kaynak/koşul denetimi: CPL PIC/co-pilot bilgisi mevcut birleşik kayıtta veya TA tırmanış kuralı kaynak117 kaydında kapsanır; yeni kopya gizlenir.",
+      "audit_date": "2026-10-13"
+    },
+    {
+      "ids": [
+        27031,
+        61080
+      ],
+      "not": "Kaynak/koşul denetimi: CPL PIC/co-pilot bilgisi mevcut birleşik kayıtta veya TA tırmanış kuralı kaynak117 kaydında kapsanır; yeni kopya gizlenir.",
+      "audit_date": "2026-10-13"
+    },
+    {
+      "ids": [
+        61035,
+        61091
+      ],
+      "not": "Kaynak/koşul denetimi: CPL PIC/co-pilot bilgisi mevcut birleşik kayıtta veya TA tırmanış kuralı kaynak117 kaydında kapsanır; yeni kopya gizlenir.",
+      "audit_date": "2026-10-13"
+    },
+    {
+      "ids": [
+        27032,
+        61089
+      ],
+      "not": "Mevcut27032 çok pilotlu ticari uçakta kaptanlık için ATPL bilgisini zaten sorar; sonradan oluşturulan61089 arşiv/incelemede ve tekrar olarak tutulur.",
+      "audit_date": "2026-10-13"
     }
   ]
 }

@@ -1,0 +1,1272 @@
+{
+  "date": "2026-10-13",
+  "course_file": "notes/hava_hukuku_1_TASLAK.md",
+  "method": "Başlık, mevcut banka bölümü ve kaynakta sorulan kural/koşul eşleşmesi; boş slayttan ayrıntı çıkarılmadı. Ham nottaki rota tablosu cevap otoritesi olarak kullanılmadı.",
+  "questions": [
+    {
+      "id": 61001,
+      "curriculum": "B7 Annex14 meydan referans kodu",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "topicwise200q",
+          "no": "185",
+          "page": "Kullanıcının doğruladığı kaynak ipucu; belge taranmadı",
+          "url": "https://www.scribd.com/document/1066220026/02-Question-Bank-Topicwise-200Q"
+        }
+      ],
+      "direct_exam_recollection": true
+    },
+    {
+      "id": 61002,
+      "curriculum": "B4.1-5 Geçiş Seviyesi",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "oxford010",
+          "no": "10/2",
+          "page": "Kullanıcının doğruladığı kaynak ipucu; belge taranmadı",
+          "url": "https://www.scribd.com/document/604806172/CAE-Oxford-Aviation-Academy-010-Air-Law"
+        }
+      ],
+      "direct_exam_recollection": true
+    },
+    {
+      "id": 61003,
+      "curriculum": "B5.1-1 ATS tanımları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "101",
+          "page": "13"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61004,
+      "curriculum": "B7 Annex14 referans kodu",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "116",
+          "page": "15"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61005,
+      "curriculum": "B7 Görsel yaklaşma yardımcıları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "118",
+          "page": "15"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61006,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": true,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "13",
+          "page": "2"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61007,
+      "curriculum": "B7 Referans saha uzunluğu",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "142",
+          "page": "18"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61008,
+      "curriculum": "B5.2-9 Dikey ayırma / B3.1-6 RVSM",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "147",
+          "page": "19"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61009,
+      "curriculum": "B4.1-4/5 altimetre usulleri",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "157",
+          "page": "20"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61010,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": true,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "16",
+          "page": "2"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61011,
+      "curriculum": "B3.1-10 Özel VFR",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "160",
+          "page": "21"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61012,
+      "curriculum": "B5.2-2 AIP/NOTAM/AIRAC/AIC",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "169",
+          "page": "22"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61013,
+      "curriculum": "B7 Görsel yaklaşma yardımcıları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "170",
+          "page": "22"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61014,
+      "curriculum": "B5.2-9 Dikey ayırma",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "192",
+          "page": "25"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61015,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": true,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "21",
+          "page": "3"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61016,
+      "curriculum": "B3.1-7 VFR izinleri",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "22",
+          "page": "3"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61017,
+      "curriculum": "B1.1-5 devletin toprakları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "29",
+          "page": "4"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61018,
+      "curriculum": "B3.2-1 Hava kurallarının uygulanabilirliği",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "30",
+          "page": "4"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61019,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "33",
+          "page": "4"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61020,
+      "curriculum": "B3.2-6/7/8 yol hakkı ve kesişme/sollama koşulları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "35",
+          "page": "5"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61021,
+      "curriculum": "B3.2-14 uçakta ışıklar",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "36",
+          "page": "5"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61022,
+      "curriculum": "B3.1-8 kontrollü uçuşlar/haberleşme",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "43",
+          "page": "6"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61023,
+      "curriculum": "B1.1-3 ICAO yapısı / Hava Seyrüsefer Komisyonu",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "6",
+          "page": "1"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61024,
+      "curriculum": "B5.1-6 hava sahası sınıfları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "79",
+          "page": "11"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61025,
+      "curriculum": "B5.3-4 Uyarı safhaları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "80",
+          "page": "11"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61026,
+      "curriculum": "B5.1-6 hava sahası sınıfları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "81",
+          "page": "11"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61027,
+      "curriculum": "B5.2-8 görerek ayırma",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "85",
+          "page": "11"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61028,
+      "curriculum": "B3 uçuş planı / zaman kavramları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "90",
+          "page": "12"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61029,
+      "curriculum": "B3.1-13/14 sivil uçakların önlenmesi",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "caab-airlaw",
+          "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+          "no": "91",
+          "page": "12"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61030,
+      "curriculum": "B3.2-3 kısıtlı alanlar",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "100",
+          "page": "17"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61031,
+      "curriculum": "B3.1-2 VMC",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "109",
+          "page": "18"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61032,
+      "curriculum": "B3.1-12 meydan turu",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "111",
+          "page": "18"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61033,
+      "curriculum": "B3.1-2 VMC",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "112",
+          "page": "19"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61034,
+      "curriculum": "B3.1-10 Özel VFR",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "115",
+          "page": "19"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61035,
+      "curriculum": "B4.1-4/5 TA–TL, Linx117 kaynak eşleşmesi",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "117",
+          "page": "19 (PDF, 1-based)"
+        }
+      ],
+      "direct_exam_recollection": true
+    },
+    {
+      "id": 61036,
+      "curriculum": "B3.1-9 seyir seviyeleri",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "118",
+          "page": "19"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61037,
+      "curriculum": "B3.1-9 manyetik rota/seyir seviyeleri",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "119",
+          "page": "20"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61038,
+      "curriculum": "B3.1-9 rota–baş ayrımı",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "120",
+          "page": "20"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61039,
+      "curriculum": "B3.2-6/7/8 yol hakkı ve kesişme/sollama koşulları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "128",
+          "page": "21"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61040,
+      "curriculum": "B3.2-6/7/8 yol hakkı ve kesişme/sollama koşulları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "130",
+          "page": "21"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61041,
+      "curriculum": "B3.2-6/7/8 yol hakkı ve kesişme/sollama koşulları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "131",
+          "page": "21"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61042,
+      "curriculum": "B3.2-6/7/8 yol hakkı ve kesişme/sollama koşulları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "132",
+          "page": "22"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61043,
+      "curriculum": "B3.2-6/7/8 yol hakkı ve kesişme/sollama koşulları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "133",
+          "page": "22"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61044,
+      "curriculum": "B3.2-6/7/8 yol hakkı ve kesişme/sollama koşulları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "135",
+          "page": "22"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61045,
+      "curriculum": "B3.2-9 inişte yol hakkı",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "136",
+          "page": "22"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61046,
+      "curriculum": "Kaynak bankası/konu eşleşmesi bekleniyor",
+      "review": true,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "139",
+          "page": "23"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61047,
+      "curriculum": "B3.2-1 hava kuralları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "14",
+          "page": "4"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61048,
+      "curriculum": "B5 ATC izinleri",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "144",
+          "page": "23"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61049,
+      "curriculum": "B3.1-7/B5 ATC izinleri",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "145",
+          "page": "24"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61050,
+      "curriculum": "B5.3-8 acil durumlar",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "146",
+          "page": "24"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61051,
+      "curriculum": "B3.1-14 önleme prosedürü",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "147",
+          "page": "24"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61052,
+      "curriculum": "B3.1-13 önleme görsel sinyalleri",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "148",
+          "page": "24"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61053,
+      "curriculum": "B3.1-13 önleme görsel sinyalleri",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "150",
+          "page": "24"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61054,
+      "curriculum": "B3.2-6/7/8 yol hakkı ve kesişme/sollama koşulları",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "16",
+          "page": "4"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61055,
+      "curriculum": "B3.1-11 minimum yükseklik",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "18",
+          "page": "4"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61056,
+      "curriculum": "B3.2-7 ve B3.2-14 ışık/yol hakkı",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "20",
+          "page": "5"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61057,
+      "curriculum": "B3.1-8 VFR/haberleşme",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "21",
+          "page": "5"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61058,
+      "curriculum": "B3.1-10 SVFR ve telsiz arızası",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "25",
+          "page": "6"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61059,
+      "curriculum": "B1.2-5 sertifikaların geçerliliği",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "3",
+          "page": "2"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61060,
+      "curriculum": "B4.1-5 alçalışta TL/QNH",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "35",
+          "page": "7"
+        }
+      ],
+      "direct_exam_recollection": true
+    },
+    {
+      "id": 61061,
+      "curriculum": "B4.1-5 TL tanımı",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "37",
+          "page": "7"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61062,
+      "curriculum": "B3.1-12 meydan trafiği",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "42",
+          "page": "8"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61063,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "50",
+          "page": "9"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61064,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "6",
+          "page": "3"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61065,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "60",
+          "page": "11"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61066,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "64",
+          "page": "12"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61067,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "65",
+          "page": "12"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61068,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "67",
+          "page": "12"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61069,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": true,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "71",
+          "page": "13"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61070,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "73",
+          "page": "13"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61071,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "74",
+          "page": "13"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61072,
+      "curriculum": "B1.1-2 ICAO kuruluşu",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "8",
+          "page": "3"
+        }
+      ],
+      "direct_exam_recollection": true
+    },
+    {
+      "id": 61073,
+      "curriculum": "B3.2-1 PIC hava kurallarına uyma sorumluluğu",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "83",
+          "page": "14"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61074,
+      "curriculum": "B3.1-7 VFR uçuş hazırlığı",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "84",
+          "page": "15"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61075,
+      "curriculum": "B7 meydan/pist kullanımı",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "85",
+          "page": "15"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61076,
+      "curriculum": "İncelenen tekrar: mevcut070 emniyet brifingi",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "88",
+          "page": "15"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61077,
+      "curriculum": "B3.2-3 yasaklı alanlar",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "99",
+          "page": "17"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61078,
+      "curriculum": "B1.1-5/7 kabotaj; ayrıca kullanıcının sınav hatırlaması",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "quizvds-cabotage",
+          "url": "https://quizvds.it/en-en/quiz/atpl/air-law/306/refers",
+          "no": "306",
+          "page": "Konu eşleşmesi: sayfa kabotajın iç hat tanımını sorar; bu kayıtta kullanıcının hatırladığı devletin kısıtlama hakkı sorulur."
+        },
+        {
+          "source": "ppl-q-bank-al",
+          "url": "https://www.scribd.com/document/446626932/PPL-Q-BANK-AL",
+          "no": "16",
+          "page": "Önceki araştırmanın kaynak ipucu; tam belge taranmış sayılmaz."
+        }
+      ],
+      "direct_exam_recollection": true
+    },
+    {
+      "id": 61079,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": false,
+      "source_refs": [],
+      "direct_exam_recollection": true
+    },
+    {
+      "id": 61080,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": false,
+      "source_refs": [],
+      "direct_exam_recollection": true
+    },
+    {
+      "id": 61081,
+      "curriculum": "B6 acil durum/SAR ve kullanıcının ditching hatırlaması",
+      "review": false,
+      "source_refs": [],
+      "direct_exam_recollection": true
+    },
+    {
+      "id": 61082,
+      "curriculum": "B3.1-8 haberleşme zorunluluğu",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "x-austrocontrol-ecqb-ppl",
+          "no": "32",
+          "page": "8",
+          "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61083,
+      "curriculum": "B4.2 SSR/transponder",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "x-austrocontrol-ecqb-ppl",
+          "no": "34",
+          "page": "9",
+          "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61084,
+      "curriculum": "B3.1-2 VMC seviye eşiği",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "x-austrocontrol-ecqb-ppl",
+          "no": "60",
+          "page": "14",
+          "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61085,
+      "curriculum": "B3.1-2 VMC/tavan tanımı",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "x-austrocontrol-ecqb-ppl",
+          "no": "61",
+          "page": "14",
+          "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61086,
+      "curriculum": "B4.2-6 kod seçimi",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "x-austrocontrol-ecqb-ppl",
+          "no": "70",
+          "page": "16",
+          "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61087,
+      "curriculum": "B5.1-6 ClassC gereklilikleri",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "x-tc-tp13014",
+          "no": "20",
+          "page": "8",
+          "url": "https://www.tc.gc.ca/publications/EN/TP13014/PDF/HR/TP13014E.PDF"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61088,
+      "curriculum": "B3.2-1 PIC sorumluluğu; temel PPL uçuşa uygunluk",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "x-tc-tp13014",
+          "no": "5",
+          "page": "5",
+          "url": "https://www.tc.gc.ca/publications/EN/TP13014/PDF/HR/TP13014E.PDF"
+        }
+      ],
+      "direct_exam_recollection": false
+    },
+    {
+      "id": 61089,
+      "curriculum": "B2.2 personel lisanslandırması / mevcut PPL lisans ve eğitim bölümü",
+      "review": true,
+      "source_refs": [
+        {
+          "source": "exam-primary-atpl-multi-pilot-pic",
+          "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no?kw=LAPL&page=9",
+          "page": "Part-FCL FCL.505(a)(2), read with FCL.305(a)(3)-(4)",
+          "no": "Bağımsız hatırlanan-konu alıştırması"
+        }
+      ],
+      "direct_exam_recollection": true
+    },
+    {
+      "id": 61090,
+      "curriculum": "Kaynak bankası/konu eşleşmesi bekleniyor",
+      "review": true,
+      "source_refs": [
+        {
+          "source": "exam-primary-ifrnrvsm-track",
+          "url": "https://laws.justice.gc.ca/eng/regulations/SOR-96-433/page-58.html",
+          "page": "602.34 cruising-level table, NON-RVSM column for track180–359, FL350; used only for the stated conventional-table exercise",
+          "no": "Bağımsız hatırlanan-konu alıştırması"
+        }
+      ],
+      "direct_exam_recollection": true
+    },
+    {
+      "id": 61091,
+      "curriculum": "Kaynak bankası/konu eşleşmesi bekleniyor",
+      "review": false,
+      "source_refs": [
+        {
+          "source": "exam-primary-transition-climb-ta",
+          "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+          "page": "SERA.8015(eb)(1)-(3), altitude/flight-level reporting and QNH on descent",
+          "no": "Bağımsız hatırlanan-konu alıştırması"
+        },
+        {
+          "source": "linx-airlaw",
+          "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+          "no": "117",
+          "page": "19 (PDF, 1-based)"
+        }
+      ],
+      "direct_exam_recollection": true
+    }
+  ]
+}

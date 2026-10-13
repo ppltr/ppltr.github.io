@@ -1,0 +1,166 @@
+{
+ "schema_version": 1,
+ "audit_date": "2026-10-13",
+ "sources": [
+  {
+   "id": "exam-primary-atpl-multi-pilot-pic",
+   "ad": "Hatırlanan sınav konusu — birincil kural dayanağı",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no?kw=LAPL&page=9",
+   "erisim": "acik",
+   "checked_at": "2026-10-13",
+   "kullanim_notu": "Yalnız kural dayanağı; soru bağımsız yazılmış benzer adaydır."
+  },
+  {
+   "id": "exam-primary-ifrnrvsm-track",
+   "ad": "Hatırlanan sınav konusu — birincil kural dayanağı",
+   "url": "https://laws.justice.gc.ca/eng/regulations/SOR-96-433/page-58.html",
+   "erisim": "acik",
+   "checked_at": "2026-10-13",
+   "kullanim_notu": "Yalnız kural dayanağı; soru bağımsız yazılmış benzer adaydır."
+  },
+  {
+   "id": "exam-primary-transition-climb-ta",
+   "ad": "Hatırlanan sınav konusu — birincil kural dayanağı",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+   "erisim": "acik",
+   "checked_at": "2026-10-13",
+   "kullanim_notu": "Yalnız kural dayanağı; soru bağımsız yazılmış benzer adaydır."
+  }
+ ],
+ "candidates": [
+  {
+   "key": "exam:atpl-multi-pilot-pic",
+   "section": "010-04",
+   "text": "With all required ratings, medical and operational qualifications held, which of these licences permits PIC duties on a certificated multi-pilot aeroplane in commercial air transport?",
+   "options": [
+    "ATPL(A)",
+    "CPL(A) alone",
+    "PPL(A) alone",
+    "Student pilot authorisation"
+   ],
+   "tr_text": "Gerekli yetki, sağlık ve operasyon koşulları tamamken, çok pilotla işletilmek üzere sertifikalı bir uçakta ticari hava taşımacılığında kaptanlık (PIC) için hangi lisans gerekir?",
+   "tr_options": [
+    "ATPL(A)",
+    "Tek başına CPL(A)",
+    "Tek başına PPL(A)",
+    "Öğrenci pilot yetkisi"
+   ],
+   "explanation_tr": "Tek pilotlu ticari uçakta PIC ile çok pilotlu ticari uçakta PIC aynı değildir. CPL ile tek pilotlu ticari uçakta PIC ve ticari uçakta yardımcı pilotluk mümkündür; bu sorudaki çok pilotlu ticari uçakta PIC için ATPL gerekir. Tam sınav kökü hatırlanmadığı için benzer adaydır.",
+   "explanation_en": "CPL single-pilot CAT command and CAT co-pilot privileges differ from command of a certificated multi-pilot aeroplane. The latter requires ATPL privileges. This is a recalled-topic candidate, not an authenticated exam text.",
+   "sources": [
+    {
+     "source": "exam-primary-atpl-multi-pilot-pic",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no?kw=LAPL&page=9",
+     "page": "Part-FCL FCL.505(a)(2), read with FCL.305(a)(3)-(4)",
+     "no": "Bağımsız hatırlanan-konu alıştırması"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no?kw=LAPL&page=9",
+     "section": "Part-FCL FCL.505(a)(2), read with FCL.305(a)(3)-(4)"
+    }
+   ],
+   "mark": "aday",
+   "adapted": true,
+   "distinctness_evidence": "Attachment and original user recollection explicitly require this licence/IFR/transition distinction; existing recalled pack lacks this direct question form.",
+   "inceleme": true,
+   "inceleme_nedeni": "Mevcut banka27032 aynı ATPL çok pilotlu ticari uçak kaptanlığı bilgisini zaten sorar. Önceki özel alıştırma gereksiz türetilmiş kopyadır; inceleme/arşivde tutulur.",
+   "correction": {
+    "kind": "clarification",
+    "previous_sha256": "088c4ea10f11f55f1a6a1b7deac481eb9bccef375a3a7a110f9f876ed69db7b2",
+    "reason": "Yalnız arşiv gerekçesi mevcut27032 banka eşleşmesini açıklayacak şekilde düzeltildi; soru/ID değişmedi."
+   }
+  },
+  {
+   "key": "exam:ifrnrvsm-track",
+   "section": "010-06",
+   "text": "For this theory exercise the standard NON-RVSM semicircular cruising-level table above FL290 applies, with no route or ATC exception. For magnetic track 200°, which listed IFR level fits that table?",
+   "options": [
+    "FL350",
+    "FL330",
+    "FL370",
+    "FL410"
+   ],
+   "tr_text": "Bu teori alıştırmasında FL290 üzerinde standart NON-RVSM yarım daire seyir seviyesi tablosu geçerli; rota veya ATC istisnası yok. Manyetik rota 200° için aşağıdaki IFR seviyelerinden hangisi tabloya uyar?",
+   "tr_options": [
+    "FL350",
+    "FL330",
+    "FL370",
+    "FL410"
+   ],
+   "explanation_tr": "180°–359° yönündeki NON-RVSM sütunu FL310, FL350, FL390…; karşı yön FL290, FL330, FL370, FL410… şeklindedir. RVSM sütunu farklıdır. Sınavdaki derece hatırlanmadığı için 200° yalnız örnek değerdir; bu gerçek sınavın doğrulanmış metni değildir.",
+   "explanation_en": "The conventional non-RVSM table assigns FL310/350/390 to 180–359 degrees and FL290/330/370/410 to the opposite band. RVSM allocation differs. The remembered track is unknown; 200 degrees is an exercise assumption, not a confirmed exam detail.",
+   "sources": [
+    {
+     "source": "exam-primary-ifrnrvsm-track",
+     "url": "https://laws.justice.gc.ca/eng/regulations/SOR-96-433/page-58.html",
+     "page": "602.34 cruising-level table, NON-RVSM column for track180–359, FL350; used only for the stated conventional-table exercise",
+     "no": "Bağımsız hatırlanan-konu alıştırması"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://laws.justice.gc.ca/eng/regulations/SOR-96-433/page-58.html",
+     "section": "602.34 cruising-level table, NON-RVSM column for track180–359, FL350; used only for the stated conventional-table exercise"
+    }
+   ],
+   "mark": "aday",
+   "adapted": true,
+   "distinctness_evidence": "Attachment and original user recollection explicitly require this licence/IFR/transition distinction; existing recalled pack lacks this direct question form.",
+   "inceleme": true,
+   "inceleme_nedeni": "Önceki özel çalışma ekranı için 200° örnek dereceyle yazıldı; soru bankası eşleşmesi ve sınavdaki derece doğrulanmadı. Aktif teste alınmaz.",
+   "correction": {
+    "kind": "clarification",
+    "previous_sha256": "a4400be1172fce5ea706fb272e16a9c99e46aba3f83dff44cb26902346ab71e3",
+    "reason": "Yalnız mevcut inceleme statüsüne alındı: Önceki özel çalışma ekranı için 200° örnek dereceyle yazıldı; soru bankası eşleşmesi ve sınavdaki derece doğrulanmadı. Aktif teste alınmaz."
+   }
+  },
+  {
+   "key": "exam:transition-climb-ta",
+   "section": "010-06",
+   "text": "During a normal climb at an aerodrome with an established transition altitude, when is QNH replaced by standard pressure for flight-level reporting?",
+   "options": [
+    "When passing the transition altitude",
+    "Only when passing the transition level",
+    "Only after reaching cruise",
+    "At the middle of the transition layer"
+   ],
+   "tr_text": "Geçiş irtifası belirlenmiş bir meydandan normal tırmanışta, uçuş seviyesi bildirimi için QNH yerine standart basınç ayarı ne zaman seçilir?",
+   "tr_options": [
+    "Geçiş irtifası geçilirken",
+    "Yalnız geçiş seviyesi geçilirken",
+    "Yalnız seyir irtifasına ulaşıldıktan sonra",
+    "Geçiş tabakasının ortasında"
+   ],
+   "explanation_tr": "Tırmanırken TA geçilirken standart basınca geçilir; TL beklenmez. Alçalırken ise TL geçilirken QNH seçilir. Katman içinde tırmanış FL, alçalış altitude olarak ifade edilir. Bu, hatırlanan transition konusu için aday sorudur.",
+   "explanation_en": "Switch from QNH to standard pressure when climbing through TA; descent changes to QNH at TL. Layer reporting is FL climbing and altitude descending. Recalled-topic reconstruction.",
+   "sources": [
+    {
+     "source": "exam-primary-transition-climb-ta",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+     "page": "SERA.8015(eb)(1)-(3), altitude/flight-level reporting and QNH on descent",
+     "no": "Bağımsız hatırlanan-konu alıştırması"
+    },
+    {
+     "source": "linx-airlaw",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+     "no": "117",
+     "page": "19 (PDF, 1-based)"
+    }
+   ],
+   "answer_verification": [
+    {
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+     "section": "SERA.8015(eb)(1)-(3), altitude/flight-level reporting and QNH on descent"
+    }
+   ],
+   "mark": "aday",
+   "adapted": true,
+   "distinctness_evidence": "Attachment and original user recollection explicitly require this licence/IFR/transition distinction; existing recalled pack lacks this direct question form."
+  }
+ ],
+ "decisions": [],
+ "existing_notes": [],
+ "scope": "Yalnız kullanıcı konuşmasındaki eksik sınav konusu ayrımları. Kesin metin yoksa benzer aday."
+}

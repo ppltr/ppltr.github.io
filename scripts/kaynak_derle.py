@@ -47,7 +47,9 @@ def norm(value):
 
 
 def question_hash(question):
-    return hashlib.sha256(json.dumps(question, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+    # İnceleme durumuna almak metin/seçenek/kimliği farklı bir soruya çevirmez.
+    content = {k: v for k, v in question.items() if k not in ("inceleme", "inceleme_nedeni")}
+    return hashlib.sha256(json.dumps(content, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
 
 
 def source_owners(ref):
@@ -255,6 +257,9 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
         seen_stems[stem] = key
         qid = ids[key]
         q = {"id": qid, "section": c["section"], "text": c["text"], "options": opts}
+        if c.get("inceleme"):
+            q["inceleme"] = True
+            q["inceleme_nedeni"] = c["inceleme_nedeni"]
         if c.get("needs_figure"):
             if not c.get("figure_name"):
                 raise ValueError(f"Görsel adı eksik: {key}")

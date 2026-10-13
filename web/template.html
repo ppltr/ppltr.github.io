@@ -836,6 +836,8 @@ function loadProfile(){
 function applyPref(){
   Object.assign(F, DEFAULTS, S.pref || {});
   delete F.hideFig;                       // süzgeç kaldırıldı, eski kayıt taşımasın
+  if (F.deck === 'focus') F.deck = 'new';  // geri alınan özel ekranın tercihini taşımayalım
+  delete F.airlawExtra;
   if (!F.pick || typeof F.pick !== 'object') F.pick = {};
   S.pref = F;                             // bundan sonrası tek nesne üzerinden
 }
@@ -1268,7 +1270,7 @@ function bindAccount(u){
 // deck:'new' = varsayılan olarak henüz çözülmemişlerden başla, tüm konular
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
-                   ek:true, airlawExtra:false, hideFlag:false, count:0, mode:'study', order:'smart',
+                   ek:true, hideFlag:false, count:0, mode:'study', order:'smart',
                    sound:true, ai:'chatgpt', lang:'en' };
 const F = Object.assign({}, DEFAULTS);
 
@@ -1314,9 +1316,9 @@ function pickedAny(){ return Object.keys(F.pick).length > 0; }
 // Geçtiğin dersin soruları kapsamdan tümüyle çıkar: toplam sayıda, konu
 // seçicide, destelerde ve turlarda görünmez. Kayıt profile bağlıdır.
 function isPassed(code){ return (S.passed || []).indexOf(code) >= 0; }
-const qSubjects = q => [...new Set([SUBJ[q[1]].c, ...((xOf(q) || {}).a || [])])].filter(code => F.airlawExtra || code !== '010' || !((xOf(q) || {}).u || []).includes(code));
+const qSubjects = q => [...new Set([SUBJ[q[1]].c, ...((F.ek ? (xOf(q) || {}).a : []) || [])])];
 const inSubject = (q, code) => qSubjects(q).includes(code);
-const qSection = (q, code) => code === SUBJ[q[1]].c ? SUBJ[q[1]].sec[q[2]][0] : code + '-X';
+const qSection = (q, code) => code === SUBJ[q[1]].c ? SUBJ[q[1]].sec[q[2]][0] : ((xOf(q) || {}).t || {})[code] || code + '-X';
 const notPassed = q => qSubjects(q).some(code => !isPassed(code));
 let passDirty = false;
 
@@ -1373,7 +1375,6 @@ function inToggles(q, withPassed){
 }
 
 const DECKS = [
-  { k:'focus', cls:'exam', t:'Hatırladığın sınav konuları', d:'Konuşmadaki sınav konuları; yıldızlar doğruladığın eşleşmeler, diğerleri benzer adaylardır. Çözülmüş sorular da tekrar çalışılabilir.' },
   { k:'due',   cls:'due',   t:'Tekrar zamanı', d:'Vadesi gelenler' },
   { k:'wrong', cls:'wrong', t:'Yanlışlarım',   d:'Henüz oturmayanlar' },
   { k:'new',   cls:'new',   t:'Hiç görmedim',  d:'İlk kez çıkacak' },
@@ -1384,7 +1385,6 @@ const DECKS = [
 function inDeck(q, deck){
   const k = card(q[0]), now = Date.now();
   switch (deck){
-    case 'focus': return !!(xOf(q) && xOf(q).p);
     case 'due':   return !!k && k[1] <= now;
     case 'wrong': return !!k && k[3] > 0 && k[4] < MASTER;
     case 'new':   return !k;
@@ -1556,7 +1556,7 @@ function scopeTitle(){
   return ks.length + ' modül';
 }
 function openRun(){
-  const acik = S.runs.filter(r => !r.done && !isPassed(runCode(r)));
+  const acik = S.runs.filter(r => !r.done && !isPassed(runCode(r)) && !(r.title || '').includes('Hatırladığın sınav konuları'));
   // Cevap verilmiş tur öncelikli: yeni açılıp hiç dokunulmamış bir tur
   // ana ekranda gerçek yarım turun önüne geçmesin.
   return acik.find(r => (r.log || []).length) || acik[0] || null;
@@ -1601,7 +1601,7 @@ function start(sr){
   save();
   step0();
 }
-/** Güncel filtreleri yarım kalan tura da uygular; cevap geçmişine dokunmaz. */
+/** Güncel filtreler eski tura da uygulanır; kayıtlı cevaplar korunur. */
 function resumeSelection(rec){
   const code = runCode(rec);
   const list = (rec.ids || []).map(id => BY_ID.get(id)).filter(q => q && inToggles(q) && (!code || inSubject(q, code)));
@@ -1852,13 +1852,6 @@ function home(){
       '</div>';
   }
 
-  const focusN = QS.filter(q => xOf(q) && xOf(q).p && !q[6] && !isRev(q) && inSubject(q, '010')).length;
-  if (focusN && !isPassed('010') && (!pickedAny() || F.pick['010'])){
-    hero = '<div class="hero"><div class="wtitle">Sınavda hatırladığın konular</div>' +
-      '<p class="wtext">Kabotaj · Chicago/ICAO · lisans yetkileri · transition · AIP · Code 3 · ditching · TORA · IFR/non-RVSM</p>' +
-      '<button class="go" id="examFocus" type="button">Bu konuları çalış · ' + focusN + ' soru</button>' +
-      '<button class="hmini" id="examFocusNote" type="button">Kısa konu anlatımı ›</button></div>' + hero;
-  }
   // ── Deste çipleri: sıfır olanlar gizli, yer kaplamıyor ──
   const chips = DECKS.filter(d => counts[d.k] > 0)
     .map(d => '<button class="dchip ' + d.cls + (F.deck === d.k ? ' on' : '') +
@@ -1962,24 +1955,14 @@ function home(){
     ['hideDup','Tekrar eden soruları gizle', QS.filter(q => q[6] && notPassed(q)).length],
     ['gen',    'Ders notundan üretilmişler', QS.filter(q => q[7] && notPassed(q)).length],
     ['ek',     'Ek kaynaklardan eklenenler', QS.filter(q => isEk(q) && !isRev(q) && notPassed(q)).length],
-    ['airlawExtra','Air Law: tamamlayıcı ayrıntılar', QS.filter(q => ((xOf(q) || {}).u || []).includes('010') && !q[6] && !isRev(q)).length],
     ['hideFlag','Tartışmalıları gizle',      QS.filter(q => q[5] && notPassed(q)).length],
-  ].filter(([k,x,n]) => k !== 'airlawExtra' || n > 0).map(([k,x,n]) => '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k +
+  ].map(([k,x,n]) => '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k +
     '" type="button"><span class="knob"></span><span>' + x + '</span>' +
     '<span class="n">' + n + '</span></button>').join('') +
     '<button class="tbtn" id="reviewQueue" type="button">İnceleme kuyruğu · ' + REVIEW.length + '</button>';
   el('reviewQueue').onclick = openReviewQueue;
   el('sw').querySelectorAll('.switch').forEach(b =>
     b.onclick = () => { F[b.dataset.k] = !F[b.dataset.k]; savePref(); home(); openBox('optBox'); });
-  if (el('examFocus')) el('examFocus').onclick = () => {
-    F.pick = {'010':[]}; F.q = ''; F.deck = 'focus'; F.ek = true; F.hideDup = true;
-    F.count = 0; F.mode = 'study'; savePref(); start(false);
-  };
-  if (el('examFocusNote')) el('examFocusNote').onclick = () => {
-    const i = NOTES.findIndex(n => n.f === '010-sinavda-hatirlanan-konular.md');
-    openNotes(i >= 0 ? i : undefined);
-    el('sheet').classList.add('on');
-  };
 
   el('view').querySelectorAll('.dchip').forEach(b => b.onclick = () => {
     F.deck = b.dataset.deck; savePref(); home();
@@ -2230,7 +2213,9 @@ function askBtn(){
 /** Soruyu, şıkları, doğru cevabı ve verilen cevabı düz metne çevirir. */
 function askText(){
   if (!R) return '';
-  const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
+  const q = R.list[R.i], selected = Object.keys(F.pick), context = selected.length === 1 ? selected[0] : null;
+  const s = SUBJ.find(s => s.c === context && inSubject(q, s.c)) || SUBJ[q[1]];
+  const sec = s.sec.find(sc => sc[0] === qSection(q, s.c)) || SUBJ[q[1]].sec[q[2]];
   const okPos = R.order.indexOf(0);
   const L = [
     'Aşağıdaki soruyu açıkla: doğru cevap neden doğru, diğer şıklar neden yanlış? ' +
@@ -2377,13 +2362,14 @@ addEventListener('pointermove', e => {
 function xTags(q){
   const x = xOf(q);
   if (!x) return '';
+  const pick = Object.keys(F.pick);
+  const addedToPickedSubject = pick.length === 1 && SUBJ[q[1]].c !== pick[0] && (x.a || []).includes(pick[0]);
   return (x.k === 'd' ? '<span class="tag exam" title="Kullanıcının sınavda karşılaştığını doğruladığı soru tipi. Mevcut eşdeğer veya yeniden yazım olabilir. ' +
             'Resmî SHGM çıkmış sorusu olarak sunulmaz.">★ doğruladığın soru</span>' : '') +
          (x.k === 'a' ? '<span class="tag cand" title="Sınavda gördüğünü hatırladığın konuya benzer aday; ' +
             'kesin metin eşleşmesi yok.">benzer aday</span>' : '') +
-         (x.o ? '<span class="tag ek" title="Kaynaklarda saptanan eksik soru türü; anlatımı ve cevabı ayrıca kontrol edildi.">' +
+         (x.o || addedToPickedSubject ? '<span class="tag ek" title="Kaynaklarda saptanan eksik soru türü; anlatımı ve cevabı ayrıca kontrol edildi.">' +
             'ek kaynak</span>' : '') +
-         ((x.u || []).includes('010') && inSubject(q, '010') ? '<span class="tag ek" title="Air Law için isteğe bağlı tamamlayıcı alıştırma.">tamamlayıcı</span>' : '') +
          (x.r ? '<span class="tag rev" title="' + esc(x.rn || 'Belirsiz: inceleme kuyruğunda') +
             '">inceleme</span>' : '');
 }
@@ -2413,7 +2399,9 @@ function xNote(q){
 }
 
 function draw(){
-  const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
+  const q = R.list[R.i], selected = Object.keys(F.pick), context = selected.length === 1 ? selected[0] : null;
+  const s = SUBJ.find(s => s.c === context && inSubject(q, s.c)) || SUBJ[q[1]];
+  const sec = s.sec.find(sc => sc[0] === qSection(q, s.c)) || SUBJ[q[1]].sec[q[2]];
   const shown = R.picked !== null && F.mode === 'study' && !R.sr;
   const k = card(q[0]), st = stars();
   const retry = R.round > 1;
@@ -3367,7 +3355,7 @@ loadProfile();
 // Kapsam varsayılan olarak TÜM banka: açılışta modül daraltması yapılmaz.
 // Kullanıcı isterse konu seçicisinden daraltır; seçim onun kararıdır.
 paintWho();
-if (S.runs[0] && !S.runs[0].done) resumeRun(S.runs[0].id); else home();
+if (S.runs[0] && !S.runs[0].done && !(S.runs[0].title || '').includes('Hatırladığın sınav konuları')) resumeRun(S.runs[0].id); else home();
 Cloud.init();
 })();
 </script>

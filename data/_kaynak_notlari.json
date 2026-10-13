@@ -1141,7 +1141,7 @@
      "k": "linx-airlaw",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
      "no": "117",
-     "sayfa": "19",
+     "sayfa": "19 (PDF, 1-based)",
      "derleyen": "010"
     },
     {
@@ -1173,8 +1173,8 @@
      "derleyen": "010"
     }
    ],
-   "tr": "Geçiş tabakasının içinde tırmanışta FL, alçalışta irtifa kullanılır. TA’da ve altında normal ifade irtifadır; TL’de ve üzerinde FL’dir. Soru tabakanın içini sorar, TA sınırının eşitliğini tabakayla karıştırmaz.",
-   "en": "Inside the transition layer use flight levels while climbing and altitudes while descending. At or below TA normally use altitude; at or above TL use flight levels. The stem explicitly asks about the layer, not the equality boundary at TA.",
+   "tr": "Linx Air Law117 bu sınır çiftini sorar: tırmanışta TA, alçalışta TL. Çıkarken TA’da standart basınca, inerken TL’de QNH’ye geçilir. Böylece katman içinde tırmanış FL, alçalış altitude olarak ifade edilir. Önceki yeniden yazım kaynağın soru hedefini tam karşılamıyordu; aynı kaynak/ID düzeltildi.",
+   "en": "Linx Air Law117 tests TA during climb and TL during descent. The previous paraphrase asked layer reporting rather than the source’s transition boundaries. The existing source/question ID is corrected; the first option remains correct.",
    "isaret": "aday",
    "answer_verification": [
     {
@@ -3049,6 +3049,20 @@
   "61078": {
    "src": [
     {
+     "k": "quizvds",
+     "url": "https://quizvds.it/en-en/quiz/atpl/air-law/306/refers",
+     "no": "306",
+     "sayfa": "Konu eşleşmesi: sayfa kabotajın iç hat tanımını sorar; bu kayıtta kullanıcının hatırladığı devletin kısıtlama hakkı sorulur.",
+     "derleyen": "010"
+    },
+    {
+     "k": "pplqbankal",
+     "url": "https://www.scribd.com/document/446626932/PPL-Q-BANK-AL",
+     "no": "16",
+     "sayfa": "Önceki araştırmanın kaynak ipucu; tam belge taranmış sayılmaz.",
+     "derleyen": "010"
+    },
+    {
      "k": "ref-1d2bccd13a65",
      "url": "https://www.icao.int/sites/default/files/2024-12/7300_9ed.pdf",
      "no": "",
@@ -3429,7 +3443,10 @@
     }
    ],
    "adapted": false,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "14384": {
    "src": [
@@ -3540,7 +3557,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-04"
+   }
   },
   "15960": {
    "src": [
@@ -3606,7 +3626,10 @@
     }
    ],
    "adapted": false,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "15667": {
    "src": [
@@ -3658,7 +3681,10 @@
     }
    ],
    "adapted": false,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-06"
+   }
   },
   "15925": {
    "src": [
@@ -3673,7 +3699,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-01"
+   }
   },
   "27106": {
    "src": [
@@ -3695,7 +3724,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-01"
+   }
   },
   "14349": {
    "src": [
@@ -3734,7 +3766,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-07"
+   }
   },
   "14232": {
    "src": [
@@ -3933,7 +3968,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "51012": {
    "src": [
@@ -3974,7 +4012,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-07"
+   }
   },
   "51006": {
    "src": [
@@ -4095,7 +4136,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "14358": {
    "src": [
@@ -4167,7 +4211,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-06"
+   }
   },
   "14356": {
    "src": [
@@ -4246,7 +4293,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "14350": {
    "src": [
@@ -4389,7 +4439,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-07"
+   }
   },
   "14411": {
    "src": [
@@ -4523,7 +4576,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-06"
+   }
   },
   "14333": {
    "src": [
@@ -4604,7 +4660,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "14910": {
    "src": [
@@ -4619,7 +4678,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "14272": {
    "src": [
@@ -4688,7 +4750,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-06"
+   }
   },
   "14392": {
    "src": [
@@ -4783,7 +4848,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "27012": {
    "src": [
@@ -4798,7 +4866,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-04"
+   }
   },
   "14290": {
    "src": [
@@ -4865,7 +4936,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-06"
+   }
   },
   "14227": {
    "src": [
@@ -5403,7 +5477,10 @@
     "010",
     "020"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-06"
+   }
   },
   "14249": {
    "src": [
@@ -5645,7 +5722,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-01"
+   }
   },
   "15927": {
    "src": [
@@ -5688,7 +5768,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-04"
+   }
   },
   "51003": {
    "src": [
@@ -6084,7 +6167,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-06"
+   }
   },
   "56024": {
    "src": [
@@ -6099,7 +6185,10 @@
    "also_subjects": [
     "010"
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-06"
+   }
   },
   "14360": {
    "src": [
@@ -22171,7 +22260,10 @@
    "adapted": true,
    "adaptation_only": true,
    "original_answer_verified": false,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "63005": {
    "src": [
@@ -22444,7 +22536,10 @@
    "adapted": true,
    "adaptation_only": true,
    "original_answer_verified": false,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "63007": {
    "src": [
@@ -22779,7 +22874,10 @@
    "adapted": true,
    "adaptation_only": true,
    "original_answer_verified": false,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "63013": {
    "src": [
@@ -23314,7 +23412,10 @@
    "adapted": true,
    "adaptation_only": true,
    "original_answer_verified": false,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "63023": {
    "src": [
@@ -23347,7 +23448,10 @@
    "adapted": true,
    "adaptation_only": true,
    "original_answer_verified": false,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-06"
+   }
   },
   "63024": {
    "src": [
@@ -23747,7 +23851,10 @@
    "adapted": true,
    "adaptation_only": true,
    "original_answer_verified": false,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "63032": {
    "src": [
@@ -25073,7 +25180,10 @@
    "adapted": true,
    "adaptation_only": true,
    "original_answer_verified": false,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "14844": {
    "src": [
@@ -27489,7 +27599,10 @@
    "replace_sources": true,
    "also_subjects": [
     "010"
-   ]
+   ],
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "16163": {
    "src": [
@@ -38901,7 +39014,10 @@
     "040"
    ],
    "tr": "Yolcu emniyet brifingi kemerlerin yerini ve kullanımını içerir.",
-   "en": "The passenger safety briefing includes belt location and operation."
+   "en": "The passenger safety briefing includes belt location and operation.",
+   "also_sections": {
+    "010": "010-07"
+   }
   },
   "15113": {
    "src": [
@@ -57867,7 +57983,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "67013": {
    "src": [
@@ -57926,7 +58045,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "67014": {
    "src": [
@@ -57964,7 +58086,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "67015": {
    "src": [
@@ -58008,7 +58133,10 @@
    "adapted": true,
    "adaptation_only": true,
    "original_answer_verified": false,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "67016": {
    "src": [
@@ -58046,7 +58174,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "67017": {
    "src": [
@@ -58084,7 +58215,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "67018": {
    "src": [
@@ -58122,7 +58256,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "67019": {
    "src": [
@@ -58265,7 +58402,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "67023": {
    "src": [
@@ -58303,7 +58443,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "67024": {
    "src": [
@@ -58740,7 +58883,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "67032": {
    "src": [
@@ -58771,7 +58917,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "67033": {
    "src": [
@@ -59309,7 +59458,10 @@
     "010"
    ],
    "tr": "INCERFA, ALERFA ve DETRESFA bu genel terim altında farklı safhalardır.",
-   "en": "INCERFA, ALERFA and DETRESFA are distinct stages under the generic term."
+   "en": "INCERFA, ALERFA and DETRESFA are distinct stages under the generic term.",
+   "also_sections": {
+    "010": "010-07"
+   }
   },
   "15974": {
    "src": [
@@ -64544,7 +64696,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-06"
+   }
   },
   "69003": {
    "src": [
@@ -64589,7 +64744,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "69004": {
    "src": [
@@ -64844,7 +65002,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "69010": {
    "src": [
@@ -65299,7 +65460,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-05"
+   }
   },
   "69018": {
    "src": [
@@ -65470,7 +65634,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "69022": {
    "src": [
@@ -65515,7 +65682,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "69023": {
    "src": [
@@ -65560,7 +65730,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "69024": {
    "src": [
@@ -65605,7 +65778,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "69025": {
    "src": [
@@ -65650,7 +65826,10 @@
     }
    ],
    "adapted": true,
-   "replace_sources": true
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-03"
+   }
   },
   "16379": {
    "src": [
@@ -67672,6 +67851,13 @@
      "derleyen": "010"
     },
     {
+     "k": "linx-airlaw",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+     "no": "117",
+     "sayfa": "19 (PDF, 1-based)",
+     "derleyen": "010"
+    },
+    {
      "k": "ref-bc1722cd4641",
      "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
      "no": "",
@@ -67690,6 +67876,34 @@
    ],
    "adapted": true,
    "replace_sources": true
+  },
+  "27031": {
+   "src": [
+    {
+     "k": "ref-d963de15a0d8",
+     "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+     "no": "",
+     "sayfa": "FCL.305(a)(3)-(4), FCL.505(a)(2)",
+     "derleyen": "010"
+    }
+   ],
+   "also_subjects": [
+    "010"
+   ],
+   "isaret": "aday",
+   "replace_sources": true,
+   "also_sections": {
+    "010": "010-04"
+   },
+   "tr": "CPL, diğer yetki/sağlık/operasyon koşulları tamamken tek pilotlu ticari uçakta PIC veya çok pilotlu ticari uçakta yardımcı pilot yetkisini kapsar. Çok pilotlu ticari uçakta kaptanlık (PIC) ATPL ayrımıdır. Hatırladığın tam lisans sorusu kesinleşmediği için bu kayıt benzer adaydır; mevcut soru ID’si kullanılır.",
+   "en": "CPL privileges cover single-pilot CAT command and CAT co-pilot duties subject to the required qualifications. Command of a certificated multi-pilot CAT aeroplane is the ATPL distinction. The exact recalled question is unknown; the existing ID is reused.",
+   "answer_verification": [
+    {
+     "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+     "section": "FCL.305(a)(3)-(4), FCL.505(a)(2)"
+    }
+   ],
+   "adapted": false
   }
  },
  "_aciklama": "Kullanıcı doğrulaması ile kaynak/cevap doğrulaması ayrıdır; hiçbir işaret resmî SHGM çıkmış sorusu iddiası değildir."

@@ -3302,7 +3302,7 @@
   {
    "source": "linx-airlaw",
    "no": "117",
-   "page": "19",
+   "page": "19 (PDF, 1-based)",
    "key": "linx-airlaw:117",
    "status": "new",
    "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
@@ -8128,12 +8128,60 @@
  "bagimsiz_uyarlamalar": [],
  "duzeltmeler": [
   {
+   "id": 61002,
+   "key": "special:tl",
+   "kind": "clarification",
+   "previous_sha256": "cb20f2a4b8048cba21478872dc201d9fb86b8f5bffc3abc0334debceed95d8b1",
+   "reason": "Kullanıcının doğruladığı Oxford10/2 soru tipi ve seçenek anlamları mevcut ID ile açık yazıldı. Doğru ilk seçenek korunur.",
+   "new_sha256": "7d8a7d9a27dab85f18017702bc5fe04cfaaf4c939fd9101e28a987948fb65df6"
+  },
+  {
+   "id": 61006,
+   "key": "caab-airlaw:13",
+   "kind": "clarification",
+   "previous_sha256": "ef54a305a4a69891c32197aae13aaf1c92fa82586fbb72fab872b9569b71ea08",
+   "reason": "Yalnız mevcut inceleme statüsüne alındı: Kaynak sorusu CAAB13 bulunur; ders dökümünde CPL yaş koşulunun PPL öğrenim hedefi açık değil. Kapsam eşleşmesi bekleniyor.",
+   "new_sha256": "ef54a305a4a69891c32197aae13aaf1c92fa82586fbb72fab872b9569b71ea08"
+  },
+  {
+   "id": 61010,
+   "key": "caab-airlaw:16",
+   "kind": "clarification",
+   "previous_sha256": "a2e19f82389d88361bcf226f6489f71c48ea98e48754b85746b58342730954bd",
+   "reason": "Yalnız mevcut inceleme statüsüne alındı: Kaynak sorusu CAAB16 bulunur; mevcut ders dökümündeki sağlık slaytının metni yok. CPL Class1 ayrıntısı için kapsam eşleşmesi bekleniyor.",
+   "new_sha256": "a2e19f82389d88361bcf226f6489f71c48ea98e48754b85746b58342730954bd"
+  },
+  {
+   "id": 61015,
+   "key": "caab-airlaw:21",
+   "kind": "clarification",
+   "previous_sha256": "de9fe6d55079cfe82feac681b794d744e003a7c640c9ee610e9437fd3a5963ba",
+   "reason": "Yalnız mevcut inceleme statüsüne alındı: Kaynak sorusu CAAB21 bulunur; ilk medikalin idari geçerlilik başlangıcı ders dökümünde açıklanmamış. Kapsam eşleşmesi bekleniyor.",
+   "new_sha256": "de9fe6d55079cfe82feac681b794d744e003a7c640c9ee610e9437fd3a5963ba"
+  },
+  {
    "id": 61035,
    "key": "linx-airlaw:117",
    "kind": "clarification",
-   "previous_sha256": "869832580ae80cbbf959c75c60cfc555fe6964caefa7057cca1d901945fc8d81",
-   "reason": "Geçiş tabakasındaki dikey konum ifadesini tırmanış/alçalış yönüne göre açık sorar; TA sınırında doğrudan FL ifadesi belirsizliği kaldırıldı. Aynı kavram ve doğru ilk şık korunur.",
-   "new_sha256": "64113166ad3eb877a54d504c1756bbdd4165d090e34d23f7aee2e868fae8b450"
+   "previous_sha256": "64113166ad3eb877a54d504c1756bbdd4165d090e34d23f7aee2e868fae8b450",
+   "reason": "Linx PDF19.sayfa117 yeniden okundu. Önceki yorum yerine kaynağın altitude/FL geçiş sınırları sorusu aynı kaynak/ID ile doğru yazıldı.",
+   "new_sha256": "7e3765229a3faa63058ad670fae6cf401a9d254781a620d7c03644d60a1d61f5"
+  },
+  {
+   "id": 61046,
+   "key": "linx-airlaw:139",
+   "kind": "clarification",
+   "previous_sha256": "5247c23d23cdca5e1b27d357b681e039c7e2ca8aa420ed88d907d5a7ddf0b1cc",
+   "reason": "Yalnız mevcut inceleme statüsüne alındı: Part-NCO su üstü can yeleği yükümlülüğü için Air Law ders dökümünde açık başlık yok. Operational Procedures ile kapsam eşleşmesi bekleniyor.",
+   "new_sha256": "5247c23d23cdca5e1b27d357b681e039c7e2ca8aa420ed88d907d5a7ddf0b1cc"
+  },
+  {
+   "id": 61069,
+   "key": "linx-airlaw:71",
+   "kind": "clarification",
+   "previous_sha256": "ab3504861c3a20ef0c3f1218cb7814634c7fe0528bb362f7c24154d4127c6367",
+   "reason": "Yalnız mevcut inceleme statüsüne alındı: SPIC süre kaydı ders dökümünde açık öğrenim hedefi olarak bulunmadı. Kapsam eşleşmesi bekleniyor.",
+   "new_sha256": "ab3504861c3a20ef0c3f1218cb7814634c7fe0528bb362f7c24154d4127c6367"
   },
   {
    "id": 61084,
@@ -8142,6 +8190,25 @@
    "previous_sha256": "96521f2eed6d54a4835beae4cfcf184eacb821bb9e32f0deac198fe5543036b3",
    "reason": "SERA.5001 Tablo S5-1 dipnotu gereği TA 10.000 ft altındaysa eşik FL100’dür. Kök TA ve seviye koşulunu açık vererek 8 km cevabının kapsamını düzeltti.",
    "new_sha256": "5fa98b0473e24fc26db63c4aeae51c8c2be24e13d812cc6ca7f36e0770807751"
+  },
+  {
+   "id": 61089,
+   "key": "exam:atpl-multi-pilot-pic",
+   "kind": "clarification",
+   "previous_sha256": "088c4ea10f11f55f1a6a1b7deac481eb9bccef375a3a7a110f9f876ed69db7b2",
+   "reason": "Yalnız arşiv gerekçesi mevcut27032 banka eşleşmesini açıklayacak şekilde düzeltildi; soru/ID değişmedi.",
+   "new_sha256": "088c4ea10f11f55f1a6a1b7deac481eb9bccef375a3a7a110f9f876ed69db7b2"
+  },
+  {
+   "id": 61090,
+   "key": "exam:ifrnrvsm-track",
+   "kind": "clarification",
+   "previous_sha256": "a4400be1172fce5ea706fb272e16a9c99e46aba3f83dff44cb26902346ab71e3",
+   "reason": "Yalnız mevcut inceleme statüsüne alındı: Önceki özel çalışma ekranı için 200° örnek dereceyle yazıldı; soru bankası eşleşmesi ve sınavdaki derece doğrulanmadı. Aktif teste alınmaz.",
+   "new_sha256": "a4400be1172fce5ea706fb272e16a9c99e46aba3f83dff44cb26902346ab71e3"
   }
- ]
+ ],
+ "ek_kayit_sayisi": 91,
+ "aktif_ek_benzersiz": 78,
+ "inceleme_ek_kayit": 7
 }

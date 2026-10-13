@@ -3,19 +3,19 @@
   {
    "key": "special:tl",
    "section": "010-06",
-   "text": "Which aerodrome ATS units determine the transition level from the QNH reports?",
+   "text": "Which units are responsible for determining the transition level?",
    "options": [
     "Approach Control Office or the Aerodrome Control Tower",
-    "The national pilot licensing authority",
-    "The general ATC regulatory authority",
-    "The area control centre alone"
+    "The Authority of the State",
+    "The ATC Authority",
+    "Area Control"
    ],
-   "tr_text": "QNH raporlarına göre meydanda kullanılacak Transition Level’ı hangi operasyonel ATS birimleri belirler?",
+   "tr_text": "Transition Level’ın belirlenmesinden hangi birimler sorumludur?",
    "tr_options": [
     "Yaklaşma Kontrol Ofisi veya Meydan Kontrol Kulesi",
-    "Ulusal pilot lisanslandırma otoritesi",
-    "Genel ATC düzenleyici otoritesi",
-    "Yalnızca saha kontrol merkezi"
+    "Devletin yetkili otoritesi",
+    "Genel ATC otoritesi",
+    "Saha kontrol birimi"
    ],
    "explanation_tr": "Sınavda eşleşmesini doğruladığın cevap APP veya TWR’dir. Güncel ATS.TR.130 hükmü bunu “ilgili ATS birimi” olarak ifade eder; QNH değişince TL yeniden belirlenir. TA ile TL’nin sorumlusunu karıştırma. Soru, kullanıcı hatırlamasından yeniden yazılmıştır; kaynak belgenin birebir aktarımı değildir.",
    "explanation_en": "The user confirmed the APP/TWR answer. Current ATS.TR.130 uses “appropriate ATS unit”; the operational unit determines TL using QNH. This is a reconstruction from the user’s confirmed recollection, not a verbatim bank extract.",
@@ -34,7 +34,12 @@
      "page": "Kullanıcının doğruladığı kaynak ipucu; belge taranmadı",
      "url": "https://www.scribd.com/document/604806172/CAE-Oxford-Aviation-Academy-010-Air-Law"
     }
-   ]
+   ],
+   "correction": {
+    "kind": "clarification",
+    "previous_sha256": "cb20f2a4b8048cba21478872dc201d9fb86b8f5bffc3abc0334debceed95d8b1",
+    "reason": "Kullanıcının doğruladığı Oxford10/2 soru tipi ve seçenek anlamları mevcut ID ile açık yazıldı. Doğru ilk seçenek korunur."
+   }
   },
   {
    "key": "special:code3",
@@ -99,7 +104,20 @@
    ],
    "adapted": true,
    "mark": "aday",
-   "sources": []
+   "sources": [
+    {
+     "source": "quizvds",
+     "url": "https://quizvds.it/en-en/quiz/atpl/air-law/306/refers",
+     "no": "306",
+     "page": "Konu eşleşmesi: sayfa kabotajın iç hat tanımını sorar; bu kayıtta kullanıcının hatırladığı devletin kısıtlama hakkı sorulur."
+    },
+    {
+     "source": "pplqbankal",
+     "url": "https://www.scribd.com/document/446626932/PPL-Q-BANK-AL",
+     "no": "16",
+     "page": "Önceki araştırmanın kaynak ipucu; tam belge taranmış sayılmaz."
+    }
+   ]
   },
   {
    "key": "remembered:ditching",
@@ -291,6 +309,20 @@
     }
    ],
    "sources": []
+  },
+  {
+   "key": "matched:cpl-privileges",
+   "bank_id": 27031,
+   "mark": "aday",
+   "explanation_tr": "CPL, diğer yetki/sağlık/operasyon koşulları tamamken tek pilotlu ticari uçakta PIC veya çok pilotlu ticari uçakta yardımcı pilot yetkisini kapsar. Çok pilotlu ticari uçakta kaptanlık (PIC) ATPL ayrımıdır. Hatırladığın tam lisans sorusu kesinleşmediği için bu kayıt benzer adaydır; mevcut soru ID’si kullanılır.",
+   "explanation_en": "CPL privileges cover single-pilot CAT command and CAT co-pilot duties subject to the required qualifications. Command of a certificated multi-pilot CAT aeroplane is the ATPL distinction. The exact recalled question is unknown; the existing ID is reused.",
+   "sources": [],
+   "answer_verification": [
+    {
+     "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+     "section": "FCL.305(a)(3)-(4), FCL.505(a)(2)"
+    }
+   ]
   }
  ],
  "decisions": [],

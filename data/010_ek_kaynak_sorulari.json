@@ -7,7 +7,6 @@
  "id_convention": "Kalıcı idler_010.json; eski veya emekli kimlik yeniden kullanılmaz.",
  "sections": {
   "010-01": "International Law: Conventions, Agreements, Organizations",
-  "010-02": "Aircraft Nationality and Registration Marks",
   "010-03": "Rules of The Air",
   "010-04": "Personnel Licensing",
   "010-05": "Aerodromes",
@@ -29,12 +28,12 @@
   {
    "id": 61002,
    "section": "010-06",
-   "text": "Which aerodrome ATS units determine the transition level from the QNH reports?",
+   "text": "Which units are responsible for determining the transition level?",
    "options": [
     "Approach Control Office or the Aerodrome Control Tower",
-    "The national pilot licensing authority",
-    "The general ATC regulatory authority",
-    "The area control centre alone"
+    "The Authority of the State",
+    "The ATC Authority",
+    "Area Control"
    ]
   },
   {
@@ -79,7 +78,9 @@
     "16 years",
     "17 years",
     "21 years"
-   ]
+   ],
+   "inceleme": true,
+   "inceleme_nedeni": "Kaynak sorusu CAAB13 bulunur; ders dökümünde CPL yaş koşulunun PPL öğrenim hedefi açık değil. Kapsam eşleşmesi bekleniyor."
   },
   {
    "id": 61007,
@@ -123,7 +124,9 @@
     "Class 2 only",
     "An LAPL medical only",
     "No medical certificate"
-   ]
+   ],
+   "inceleme": true,
+   "inceleme_nedeni": "Kaynak sorusu CAAB16 bulunur; mevcut ders dökümündeki sağlık slaytının metni yok. CPL Class1 ayrıntısı için kapsam eşleşmesi bekleniyor."
   },
   {
    "id": 61011,
@@ -178,7 +181,9 @@
     "The date the pilot licence is printed",
     "The date the aircraft is registered",
     "The first flight after the examination"
-   ]
+   ],
+   "inceleme": true,
+   "inceleme_nedeni": "Kaynak sorusu CAAB21 bulunur; ilk medikalin idari geçerlilik başlangıcı ders dökümünde açıklanmamış. Kapsam eşleşmesi bekleniyor."
   },
   {
    "id": 61016,
@@ -392,12 +397,12 @@
   {
    "id": 61035,
    "section": "010-06",
-   "text": "While passing through the transition layer, how is an aircraft’s vertical position normally expressed during climb and during descent?",
+   "text": "Which transition boundaries are used when changing between altitude and flight-level reporting during climb and descent?",
    "options": [
-    "Flight levels during climb; altitudes during descent",
-    "Altitudes during both climb and descent",
-    "Flight levels during both climb and descent",
-    "Altitudes during climb; flight levels during descent"
+    "Transition altitude during climb; transition level during descent",
+    "Transition level during climb; transition altitude during descent",
+    "Transition altitude for both climb and descent",
+    "Transition level for both climb and descent"
    ]
   },
   {
@@ -519,7 +524,9 @@
     "Life rafts only, with no individual flotation",
     "No flotation equipment if the flight is VFR",
     "One life-jacket for the pilot only"
-   ]
+   ],
+   "inceleme": true,
+   "inceleme_nedeni": "Part-NCO su üstü can yeleği yükümlülüğü için Air Law ders dökümünde açık başlık yok. Operational Procedures ile kapsam eşleşmesi bekleniyor."
   },
   {
    "id": 61047,
@@ -772,7 +779,9 @@
     "Solo flight time",
     "Co-pilot time",
     "Simulator time"
-   ]
+   ],
+   "inceleme": true,
+   "inceleme_nedeni": "SPIC süre kaydı ders dökümünde açık öğrenim hedefi olarak bulunmadı. Kapsam eşleşmesi bekleniyor."
   },
   {
    "id": 61070,
@@ -985,14 +994,16 @@
   },
   {
    "id": 61089,
-   "section": "010-02",
+   "section": "010-04",
    "text": "With all required ratings, medical and operational qualifications held, which of these licences permits PIC duties on a certificated multi-pilot aeroplane in commercial air transport?",
    "options": [
     "ATPL(A)",
     "CPL(A) alone",
     "PPL(A) alone",
     "Student pilot authorisation"
-   ]
+   ],
+   "inceleme": true,
+   "inceleme_nedeni": "Mevcut banka27032 aynı ATPL çok pilotlu ticari uçak kaptanlığı bilgisini zaten sorar. Önceki özel alıştırma gereksiz türetilmiş kopyadır; inceleme/arşivde tutulur."
   },
   {
    "id": 61090,
@@ -1003,7 +1014,9 @@
     "FL330",
     "FL370",
     "FL410"
-   ]
+   ],
+   "inceleme": true,
+   "inceleme_nedeni": "Önceki özel çalışma ekranı için 200° örnek dereceyle yazıldı; soru bankası eşleşmesi ve sınavdaki derece doğrulanmadı. Aktif teste alınmaz."
   },
   {
    "id": 61091,

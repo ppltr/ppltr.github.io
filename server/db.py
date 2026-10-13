@@ -197,9 +197,8 @@ def sections(conn: sqlite3.Connection, subject: str) -> list[sqlite3.Row]:
     return conn.execute(
         """SELECT sec.code, sec.name,
                   (SELECT COUNT(*) FROM bank.questions q
-                    WHERE (q.section_id = sec.id OR (sec.code=sec.subject_code || '-X' AND EXISTS (
-                      SELECT 1 FROM bank.question_subjects a WHERE a.question_id=q.id
-                      AND a.subject_code=sec.subject_code))) AND q.dup_of IS NULL AND q.review = 0) AS n
+                    WHERE (q.section_id = sec.id OR EXISTS (SELECT 1 FROM bank.question_subjects a WHERE a.question_id=q.id
+                      AND a.subject_code=sec.subject_code AND COALESCE(a.section_code,a.subject_code || '-X')=sec.code)) AND q.dup_of IS NULL AND q.review = 0) AS n
              FROM bank.sections sec WHERE sec.subject_code = ? ORDER BY sec.code""",
         (subject,),
     ).fetchall()
@@ -230,7 +229,7 @@ def pick_questions(conn, user_id: int, *, subject: str, section: str,
         sql.append(
             "AND (q.section_id = (SELECT id FROM bank.sections "
             "WHERE subject_code = q.subject_code AND code = ?) OR EXISTS ("
-            "SELECT 1 FROM bank.question_subjects a WHERE a.question_id=q.id AND a.subject_code || '-X'=?))")
+            "SELECT 1 FROM bank.question_subjects a WHERE a.question_id=q.id AND COALESCE(a.section_code,a.subject_code || '-X')=?))")
         args.extend([section, section])
     sql.append("ORDER BY RANDOM() LIMIT ?")
     args.append(max(1, min(limit, 500)))

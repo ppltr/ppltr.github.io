@@ -62,8 +62,13 @@ def require_full_coverage():
 def verify_baseline(current=None):
     current = bank() if current is None else current
     baseline = read(DATA / "kaynaklar/baseline_full_20261013.json")["questions"]
+    corrections = read(DATA / "kaynaklar/duzeltmeler.json", {})["duzeltmeler"]
     for qid, old_hash in baseline.items():
-        if int(qid) not in current or question_hash(current[int(qid)][1]) != old_hash:
+        allowed_hash = old_hash
+        for correction in corrections:
+            if correction["id"] == int(qid) and correction["previous_sha256"] == allowed_hash:
+                allowed_hash = correction["new_sha256"]
+        if int(qid) not in current or question_hash(current[int(qid)][1]) != allowed_hash:
             raise ValueError(f"Başlangıçtaki soru değişti veya kayboldu: {qid}")
     return baseline
 
@@ -166,7 +171,7 @@ def audit():
     require_full_coverage()
     current = bank()
     baseline = verify_baseline(current)
-    new_ids = set(current) - set(map(int, baseline))
+    new_ids = {qid for qid in set(current) - set(map(int, baseline)) if current[qid][0] in CODES}
     if any(qid <= 0 for qid in current):
         raise ValueError("Geçersiz soru kimliği")
     declared_ids = set()

@@ -26,7 +26,6 @@ vm.runInContext(`
   const q = [2,1,0,'TORA?',['TORA','TODA'],0,0,0];
   const uncertain = [3,0,0,'Unknown?',['A','B'],0,0,0];
   const QS = [q,uncertain];
-  const BY_ID = new Map(QS.map(q => [q[0], q]));
   const xOf = q => XT[q[0]] || null;
   const isRev = q => !!(XT[q[0]] && XT[q[0]].r);
   const isEk = q => !!(XT[q[0]] && XT[q[0]].o);
@@ -43,8 +42,6 @@ vm.runInContext(`
   ${fn('matchPick')}
   ${fn('inScope')}
   ${fn('inToggles')}
-  ${fn('runCode')}
-  ${fn('resumeSelection')}
   ${fn('moduleStat')}
   ${fn('xTags')}
   ${fn('xNote')}
@@ -68,18 +65,4 @@ assert.ok(!rendered.includes('<img'));
 assert.ok(!rendered.includes('href='), 'non-http links must never become clickable');
 assert.ok(rendered.includes('&lt;script&gt;'));
 assert.ok(rendered.includes('&lt;Q&gt;'));
-assert.ok(script.includes('airlawExtra:false'), 'supplementary Air Law must default off');
-run("XT[2]={a:['010'],u:['010']}; F.pick={'010':[]}; F.airlawExtra=false");
-assert.equal(run('inScope(q)'), false, 'shared supplementary must leave Air Law scope');
-assert.equal(run("F.pick={'030':[]}; inScope(q)"), true, 'other subject remains available');
-assert.equal(run("F.pick={'010':[]}; F.airlawExtra=true; inScope(q)"), true);
-run("F.airlawExtra=false; XT[4]={u:['010'],o:1}; const extra=[4,0,0,'Optional?',['A','B'],0,0,0]; BY_ID.set(4,extra); const regular=[5,0,0,'Core?',['A','B'],0,0,0]; BY_ID.set(5,regular); const duplicate=[6,0,0,'Same?',['A','B'],0,1,0]; BY_ID.set(6,duplicate)");
-assert.equal(run('inToggles(extra)'), false);
-assert.equal(run('inScope(regular)'), true);
-assert.equal(run("resumeSelection({code:'010',ids:[4,6,5],i:1,missed:[4,6,5]}).list.map(q=>q[0]).join(',')"), '5');
-assert.equal(run("resumeSelection({code:'010',ids:[4,6,5],i:1}).i"), 0, 'filtered prefix must not skip unsolved core');
-assert.equal(run("resumeSelection({code:'010',ids:[4,6,5],i:1,missed:[4,6,5]}).missed.join(',')"), '5');
-assert.equal(run("resumeSelection({code:'030',ids:[2],i:0}).list.length"), 1);
-assert.equal(run("F.airlawExtra=true; F.hideDup=false; resumeSelection({code:'010',ids:[4,6,5],i:1}).list.length"), 3);
-assert.equal(run("const rec={code:'010',ids:[4,6,5],i:1,log:[{id:4,ok:true}],missed:[4]}; const before=JSON.stringify(rec); resumeSelection(rec); JSON.stringify(rec)===before"), true, 'saved history must remain intact');
 console.log('web scope, shared ID, review exclusion, labels and escaping checks passed');

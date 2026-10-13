@@ -1,6 +1,6 @@
 # PPL Soru Bankası
 
-SQLite tabanlı **PPL** çalışma uygulaması. İlk banka ATPL TV'deki *PPL Turkey (English)* sınav raporlarından çevrildi; ders notları ve kaynak taramalarından doğrulanmış, bağımsız yazılmış alıştırmalarla genişletildi. **3.572 kayıt, 11 ders; 383 tekrar bağlantısı çıkarılınca 3.189 benzersiz kayıt (varsayılan çalışma kapsamı 3.182 soru).** 233 kayıt ders notlarından, 638 kayıt ek kaynak çalışmalarından gelir.
+SQLite tabanlı **PPL** çalışma uygulaması. İlk banka ATPL TV'deki *PPL Turkey (English)* sınav raporlarından çevrildi; ders notları ve kaynak taramalarından doğrulanmış, bağımsız yazılmış alıştırmalarla genişletildi. **3.575 yerel kayıt, 11 ders; 3.182 aktif benzersiz soru.** İnceleme ve tekrar kayıtları çalışma kapsamından ayrılır. 233 kayıt ders notlarından, 638 kayıt ek kaynak çalışmalarından gelir.
 
 Aşağıdaki sayılar sorunun ana dersine göre fiziksel kayıt sayılarıdır. Ortak konular aynı soru kimliğiyle birden fazla derste gösterilebilir; bu bağlar toplam soru sayısını artırmaz.
 
@@ -697,30 +697,24 @@ node scripts/test_kaynak_web.cjs
 
 Yerel SQLite, bağımsız HTML ve GitHub Pages için `docs/index.html` yeniden üretildi. Çalışma yerel `codex/ppl-airlaw-expansion` dalındadır.
 
-## 2026-10-13 · Air Law hızlı tekrar ve kapsam düzeltmesi
+## 2026-10-13 · Mevcut yapıya dönüş
 
-Air Law'daki 88 yeni kayıt ve diğer derslerden bağlanan 27 yeni kayıt (115) yeniden incelendi. Sollama/tırmanış 61020 → 14264, acil durum safhaları 61025 → 15988 ve kemer brifingi 61076 → 16050 aynı bilgiyi tekrar sınadığı için yeni tekrar bağlantılarıyla gizlenir. Kanonik kayıtlar gerekli Air Law kaynak/ders bağlarını taşır. Hiçbir soru, seçenek, ID veya çözüm geçmişi silinmedi; mevcut 3.572 soru nesnesinin hashleri korundu.
+Özel 16 soruluk çalışma ekranı, ilave Air Law ayrıntı anahtarı, yayın beyaz listesi, koşullu soru gösterim varyantları ve bağımsız konu anlatımı eklemesi geri alındı. Ek sorular normal bankada, mevcut **Ek kaynaklardan eklenenler** anahtarıyla açılıp kapanır. Anahtar, başka dersin mevcut sorusuna sonradan eklenen ders bağını da kontrol eder; kaydın kendi dersini ve kimliğini silmez.
 
-15 ikincil/idari ayrıntı ve kısa önleme telsiz kalıbı alıştırması `data/_calisma_kapsami.json` ile Air Law'da tamamlayıcı olarak etiketlendi. **Ayarlar → Air Law: tamamlayıcı ayrıntılar** varsayılan kapalıdır. Açılınca yeniden görünürler. Başka derslerde kullanılan ortak sorular kendi derslerinde kalır; farklı koşul/istisna öğreten temel sorular keyfî kotayla çıkarılmadı.
+Lisans eklemeleri mevcut Personel Lisanslandırması bölümüne düzeltildi. TORA ve yer işaretleri mevcut Meydanlar bölümünde gösterilir. `question_subjects` mevcut ortak ders ilişkisine isteğe bağlı `section_code` ekler; eski eşlemeler geriye uyumlu kalır. Yeni ders/modül/çalışma ekranı oluşturulmaz.
 
-Air Law'da tekrarlar gizliyken 311 yerine **295 ana kapsam sorusu**, tamamlayıcılar da açılırsa **310** soru bulunur. Ana kapsamdaki yeni ek/ortak kayıt 97'dir. Kullanıcının “hiç görmedim” sayısı kişisel geçmişine bağlıdır; bu toplamlar kişisel çözülmemiş sayısı değildir. Üç doğrulanmış sınav işareti 61001, 61002 ve 14909 ana kapsamda kalır. Tam karar listesi `data/kaynaklar/rapor_airlaw_hizli_20261013.json` içindedir.
+TORA14909 ve AIP14384 tanım/açık-ad düzeltmeleri doğrudan normal soru/çeviri verisine işlendi. TL61002 kullanıcı tarafından doğrulanan birim seçenekleriyle, transition61035 ise yeniden okunan Linx117'nin tırmanıştaTA/alçalıştaTL hedefiyle düzeltildi. Her düzeltme eski/yeni hash ve gerekçesiyle `data/kaynaklar/duzeltmeler.json` içindedir; ID değişmedi.
 
-Yarım kalan tur geri açıldığında güncel tekrar/kapsam filtreleri uygulanır. Çıkarılan sorular yüzünden eski indeks kayarak çözülmemiş bir soruyu atlamaz; kayıtlı cevap geçmişi korunur. 35 Python testi ve JS kapsam/tur devamı kontrolleri geçti.
+CPL yetkileri eski27031'de, çok pilotlu ticari uçakta ATPL kaptanlığı eski27032'de zaten bulunur. Türetilmiş kopyalar bu kayıtlara bağlandı; mevcut kayda kaynak ve doğru ders bölümü eklendi. Soru bankası/konu kapsamı henüz kanıtlanamayan7 kayıt mevcut inceleme mekanizmasında tutulur. Kimlikler ve kullanıcı geçmişi silinmedi.
 
-## 2026-10-13 · Konuşmadaki sınav konularına odaklı son düzenleme
+Ders başlığı/kaynak eşleme dökümü: `data/kaynaklar/qa/airlaw_ders_kaynak_eslemesi_20261013.json`. Dökümde boş ders slaydı ayrıntı kanıtı sayılmaz; bankada bulunan, kullanıcının hatırladığı ve yalnız birincil kuraldan yazılmış örnekler ayrılır. Önceki88/521 sayıları kesin sınav ihtiyacı sayısı değildir.
 
-Kullanıcının paylaştığı 994 satırlık konuşma esas alındı. Air Law'daki yeni yayın kapsamı yalnız kabotaj, Chicago/ICAO, lisans yetkileri, transition, AIP, Code 3, ditching, TORA ve hatırlanan IFR/non-RVSM konusu olarak daraltıldı. Önceki 88 kayıttan bu konuları karşılamayan 76 kayıt yayın paketinden çıkarıldı; yerel kayıtlar ve kimlikleri tutuldu. Yeni ATPL çok pilotlu ticari uçak kaptanlığı, tırmanışta TA ve NON-RVSM örneği üç bağımsız aday olarak eklendi.
-
-Üstte **Sınavda hatırladığın konular → Bu konuları çalış · 16 soru** düğmesi vardır. Bu grup önceden çözülmüş AIP/PPL/TORA sorularını da aynı kimlikleriyle gösterir; “hiç görmedim” filtresi bu tekrar çalışmayı engellemez. **Kısa konu anlatımı** doğrudan `notes/010-sinavda-hatirlanan-konular.md` notunu açar.
-
-TORA'nın mevcut14909 kimliği, kullanıcı hatırlamasındaki gibi TORA soru kökünde parantez içinde olacak şekilde tanım sorusu olarak sunulur. AIP14384 seçeneklerinde GEN/ENR/AD'nin açık adları bulunur. CPL PIC/co-pilot kayıtları lisans seçenekleriyle gösterilir. Gösterim varyantları yerel soru nesnelerini değiştirmez, ilk doğru seçeneği ve geçmiş kimliğini korur.
-
-Yalnız üç yıldızlı eşleşme doğrulanmış olarak kalır. Diğer hatırlanan konular/koşullar benzer adaydır; özellikle IFR/non-RVSM örneğindeki200° kesin sınav derecesi değildir. Hiçbir soru resmî SHGM çıkmış sorusu olarak sunulmaz. Kullanıcının zaman isteğiyle test paketi çalıştırılmadı; kaynak dayanakları incelendi, banka/HTML üretildi ve GitHub Pages'e gönderildi.
-
-Air Law kaynak derlemesinde üç önceki tekrar kararının mevcut kanonik kayıtlar üzerinden çözülmesi ve yeni konu dosyasının dahil edilmesi için:
+Yeniden üretme:
 
 ```bash
-python3 scripts/kaynak_derle.py 010 data/kaynaklar/decisions/root_special.json data/kaynaklar/decisions/caab_linx_audit.json data/kaynaklar/decisions/other_airlaw_audit.json data/kaynaklar/decisions/exam_focus_010_20261013.json
+python3 scripts/kaynak_derle.py 010 data/kaynaklar/decisions/root_special.json data/kaynaklar/decisions/caab_linx_audit.json data/kaynaklar/decisions/other_airlaw_audit.json data/kaynaklar/decisions/airlaw_source_followup_20261013.json
 python3 scripts/init_db.py
 python3 scripts/build_web.py
 ```
+
+Kullanıcının zaman talebi doğrultusunda test paketi çalıştırılmadı. Mevcut arayüz dosyaları esas alındı ve banka/HTML yeniden üretildi.
