@@ -22,21 +22,5 @@
   "16126": "kanat-v1-v2",
   "16160": "surukleme-egrileri",
   "16304": "donus-vektorleri",
-  "20939": "cephe-okluzyon",
-  "65009": "met_low_motion_12oct2026",
-  "65015": "full_050_low_motion",
-  "65016": "full_050_spot_grid",
-  "65017": "full_050_zone_chart",
-  "65039": "full_050_cold_front",
-  "65040": "full_050_warm_front",
-  "65124": "full_050_ts_symbol",
-  "65125": "full_050_severe_ice",
-  "66028": "nav_full_graticule_12oct2026",
-  "66030": "nav_full_navaid_symbol_12oct2026",
-  "68006": "ppl_coefficient_polar_20261012",
-  "68012": "ppl_drag_components_20261012",
-  "68013": "ppl_drag_components_20261012",
-  "68023": "ppl_coefficient_polar_20261012",
-  "68024": "ppl_coefficient_polar_20261012",
-  "69016": "full_090_circuit"
+  "20939": "cephe-okluzyon"
 }

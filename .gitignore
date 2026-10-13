@@ -12,6 +12,3 @@ figures/_kontrol.html
 # firebase CLI günlüğü
 firebase-debug.log
 .firebase/
-
-# dış kaynaklardan çekilmiş ham soru dosyaları (üçüncü tarafın bankasının tamamı depoya girmez)
-data/kaynaklar/_ham/

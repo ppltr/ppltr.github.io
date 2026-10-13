@@ -645,9 +645,6 @@ add("donus-vektorleri", [16304], svg(400, 432, _turn_vectors()))
 
 # ── yaz ──────────────────────────────────────────────────────────────
 def main() -> None:
-    from kaynak_sekilleri import register_source_figures
-
-    register_source_figures(add, ROOT)
     OUT.mkdir(exist_ok=True)
     for name, markup in FIGS.items():
         (OUT / f"{name}.svg").write_text(markup, encoding="utf-8")

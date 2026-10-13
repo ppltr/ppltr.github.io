@@ -172,20 +172,4 @@ with db.db() as conn:
 assert n >= 1
 ok("hiç çözmemiş eski misafir kayıtları temizleniyor")
 
-# Yeni çizimli soru sunucu sürümünde de eksiksiz gelir; görsel yanıtta cevap anahtarı yoktur.
-with db.db() as conn:
-    who = auth.session_user(conn, c.cookies.get(auth.COOKIE))
-    cur = conn.execute(
-        "INSERT INTO runs(user_id,mode,scope,qids,seed,started_at) VALUES (?,?,?,?,?,?)",
-        (who["id"], "calisma", "Meteoroloji grafik kontrolü", "65009", 2026, db.now()))
-    figure_run = cur.lastrowid
-figure_question = c.get(f"/api/tur/{figure_run}/soru/0").json()
-assert figure_question["id"] == 65009 and figure_question["needs_figure"]
-assert figure_question["figure_url"] == "/figures/met_low_motion_12oct2026.svg"
-assert all(set(o) == {"pos", "text"} for o in figure_question["options"])
-figure_response = c.get(figure_question["figure_url"])
-assert figure_response.status_code == 200 and "<svg" in figure_response.text
-assert "east" not in figure_response.text.lower(), "görsel açıklaması yön cevabını doğrudan vermemeli"
-ok("grafikli soru API’den geliyor; görsel okunuyor, cevap anahtarı gönderilmiyor")
-
 print("\nTÜM TESTLER GEÇTİ")

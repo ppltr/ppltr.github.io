@@ -20,7 +20,7 @@ with db.db() as c:
         sys.exit(f"{email} bulunamadı. Önce siteden kayıt ol.")
     uid = u["id"]
     qs = [r[0] for r in c.execute(
-        "SELECT id FROM bank.questions WHERE dup_of IS NULL AND review = 0 ORDER BY RANDOM() LIMIT 240")]
+        "SELECT id FROM bank.questions WHERE dup_of IS NULL ORDER BY RANDOM() LIMIT 240")]
     now = datetime.now(timezone.utc)
     for qid in qs:
         ts = (now - timedelta(days=random.randint(0, 28),

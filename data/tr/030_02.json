@@ -208,12 +208,12 @@
    ]
   },
   "14909": {
-   "text": "Kalkış koşusu için kullanılabilir mesafe (TORA) nasıl tanımlanır?",
+   "text": "Pist yüzeyinin, herhangi bir clearway veya stopway hariç, kalkış sırasında normal operasyonlar için kullanılan kısmına şu denir:",
    "options": [
-    "Kalkış koşusuna uygun ve kullanılabilir olarak ilan edilmiş pist uzunluğu",
-    "Yalnız acil durum manevraları için ayrılmış mesafe",
-    "Clearway dâhil kalkış mesafesi",
-    "Stopway dâhil hızlanma-durma mesafesi"
+    "Kullanılabilir Kalkış Koşusu (TORA)",
+    "Kullanılabilir Acil Durum Mesafesi (EMDA)",
+    "Kullanılabilir Kalkış Mesafesi (TODA)",
+    "Kullanılabilir Hızlanma-Durma Mesafesi (ASDA)"
    ]
   },
   "14882": {

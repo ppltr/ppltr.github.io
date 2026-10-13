@@ -2258,62 +2258,6 @@
         14747
       ],
       "not": "tur2: tekrar taraması"
-    },
-    {
-      "ids": [
-        14264,
-        61020
-      ],
-      "not": "Yeni tırmanış ifadesi sollamada sağdan geçme yükümlülüğünü değiştirmiyor; mevcut 14264 aynı sollama kuralını sınar.",
-      "audit_date": "2026-10-13"
-    },
-    {
-      "ids": [
-        15988,
-        61025
-      ],
-      "not": "Belirsizlik, alarm ve tehlike aynı üç SAR safhasıdır; mevcut 15988 bunları urgency seçeneğinden ayırt eder.",
-      "audit_date": "2026-10-13"
-    },
-    {
-      "ids": [
-        16050,
-        61076
-      ],
-      "not": "Kemerlerin yeri/kullanımı mevcut 16050 yolcu emniyet brifinginin alt kümesidir; yeni bağımsız koşul yok.",
-      "audit_date": "2026-10-13"
-    },
-    {
-      "ids": [
-        27031,
-        61079
-      ],
-      "not": "Kaynak/koşul denetimi: CPL PIC/co-pilot bilgisi mevcut birleşik kayıtta veya TA tırmanış kuralı kaynak117 kaydında kapsanır; yeni kopya gizlenir.",
-      "audit_date": "2026-10-13"
-    },
-    {
-      "ids": [
-        27031,
-        61080
-      ],
-      "not": "Kaynak/koşul denetimi: CPL PIC/co-pilot bilgisi mevcut birleşik kayıtta veya TA tırmanış kuralı kaynak117 kaydında kapsanır; yeni kopya gizlenir.",
-      "audit_date": "2026-10-13"
-    },
-    {
-      "ids": [
-        61035,
-        61091
-      ],
-      "not": "Kaynak/koşul denetimi: CPL PIC/co-pilot bilgisi mevcut birleşik kayıtta veya TA tırmanış kuralı kaynak117 kaydında kapsanır; yeni kopya gizlenir.",
-      "audit_date": "2026-10-13"
-    },
-    {
-      "ids": [
-        27032,
-        61089
-      ],
-      "not": "Mevcut27032 çok pilotlu ticari uçakta kaptanlık için ATPL bilgisini zaten sorar; sonradan oluşturulan61089 arşiv/incelemede ve tekrar olarak tutulur.",
-      "audit_date": "2026-10-13"
     }
   ]
 }

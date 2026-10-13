@@ -893,12 +893,12 @@
     {
       "id": 14909,
       "section": "030-05",
-      "text": "How is the take-off run available (TORA) defined?",
+      "text": "That part of a runway surface which is used for normal operations during take off, excluding any clearway or stopway, is referred to as:",
       "options": [
-        "Runway length declared available and suitable for the take-off ground run",
-        "A distance reserved solely for emergency manoeuvres",
-        "Take-off distance including the clearway",
-        "Accelerate-stop distance including the stopway"
+        "the Take-Off Run Available (TORA)",
+        "the Emergency Distance Available (EMDA)",
+        "the Take-Off Distance Available (TODA)",
+        "the Accelerate-Stop Distance Available (ASDA)"
       ]
     },
     {

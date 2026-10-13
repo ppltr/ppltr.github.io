@@ -880,8 +880,8 @@
     {
       "id": 14384,
       "section": "010-06",
-      "text": "What are the full names of the three main parts of an Aeronautical Information Publication (AIP)?",
-      "options": ["General (GEN), En-route (ENR) and Aerodromes (AD)", "En-route (ENR), Aerodromes (AD) and AGA", "En-route (ENR), AGA and General (GEN)", "AGA, Aerodromes (AD) and General (GEN)"]
+      "text": "What are the names of the three parts of an AlP?",
+      "options": ["GEN, ENR and AD", "ENR, AD and AGA", "ENR, AGA and GEN", "AGA, AD and GEN"]
     },
     {
       "id": 14385,

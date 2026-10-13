@@ -28,7 +28,7 @@ def summary(conn: sqlite3.Connection, uid: int) -> dict:
         streak += 1
         cur -= timedelta(days=1)
     bank = conn.execute(
-        "SELECT COUNT(*) FROM bank.questions WHERE dup_of IS NULL AND review = 0").fetchone()[0]
+        "SELECT COUNT(*) FROM bank.questions WHERE dup_of IS NULL").fetchone()[0]
     return {
         "n": r["n"], "ok": r["ok"], "wrong": r["n"] - r["ok"],
         "pct": round(r["ok"] / r["n"] * 100) if r["n"] else None,
@@ -42,15 +42,12 @@ def per_subject(conn: sqlite3.Connection, uid: int) -> list[dict]:
     rows = conn.execute(
         """SELECT s.code, s.name,
                   (SELECT COUNT(*) FROM bank.questions q
-                    WHERE (q.subject_code = s.code OR EXISTS (SELECT 1 FROM bank.question_subjects x
-                      WHERE x.question_id=q.id AND x.subject_code=s.code))
-                    AND q.dup_of IS NULL AND q.review = 0) AS bank_n,
+                    WHERE q.subject_code = s.code AND q.dup_of IS NULL) AS bank_n,
                   COUNT(a.id) AS n,
                   COALESCE(SUM(a.correct), 0) AS ok,
                   COUNT(DISTINCT a.question_id) AS uniq
              FROM bank.subjects s
-             LEFT JOIN bank.questions q ON q.subject_code = s.code OR EXISTS (
-                  SELECT 1 FROM bank.question_subjects x WHERE x.question_id=q.id AND x.subject_code=s.code)
+             LEFT JOIN bank.questions q ON q.subject_code = s.code
              LEFT JOIN attempts a ON a.question_id = q.id AND a.user_id = ?
             GROUP BY s.code ORDER BY s.code""", (uid,)).fetchall()
     out = []

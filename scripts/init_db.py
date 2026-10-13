@@ -59,32 +59,6 @@ CREATE TABLE IF NOT EXISTS options (
     UNIQUE (question_id, ord)
 );
 
--- Dış kaynak kaydı (data/kaynaklar/_kaynaklar.json) ve soru ↔ kaynak bağı.
--- Aynı soru birden çok kaynakta geçebilir; mevcut soruya yeni kaynak eklenir, soru çoğaltılmaz.
-CREATE TABLE IF NOT EXISTS sources (
-    id     TEXT PRIMARY KEY,            -- ör. 'gdh-ppla'
-    name   TEXT NOT NULL,
-    url    TEXT,
-    kind   TEXT,                        -- 'pdf' | 'web' | 'scribd' ...
-    access TEXT,                        -- 'acik' | 'kismi' | 'engelli'
-    note   TEXT                         -- kullanım/telif notu
-);
-CREATE TABLE IF NOT EXISTS question_sources (
-    question_id INTEGER NOT NULL REFERENCES questions(id) ON DELETE CASCADE,
-    source_id   TEXT    NOT NULL REFERENCES sources(id) ON DELETE CASCADE,
-    ref         TEXT    NOT NULL DEFAULT '',   -- kaynaktaki soru no
-    page        TEXT,                          -- sayfa / bölüm
-    url         TEXT,                          -- soruya özel adres (yoksa kaynağınki)
-    PRIMARY KEY (question_id, source_id, ref)
-);
--- Aynı kimliği farklı bir dersin çalışma kapsamında da gösterir; soru/ilerleme çoğalmaz.
-CREATE TABLE IF NOT EXISTS question_subjects (
-    question_id INTEGER NOT NULL REFERENCES questions(id) ON DELETE CASCADE,
-    subject_code TEXT NOT NULL REFERENCES subjects(code) ON DELETE CASCADE,
-    section_code TEXT,
-    PRIMARY KEY (question_id, subject_code)
-);
-
 CREATE INDEX IF NOT EXISTS idx_questions_subject ON questions(subject_code);
 CREATE INDEX IF NOT EXISTS idx_questions_section ON questions(section_id);
 CREATE INDEX IF NOT EXISTS idx_options_question  ON options(question_id);
@@ -169,19 +143,6 @@ def migrate(conn: sqlite3.Connection) -> None:
         # Kaynağı Türkçe olan sorunun çeviriye ihtiyacı yoktur.
         conn.execute("ALTER TABLE questions ADD COLUMN lang TEXT NOT NULL DEFAULT 'en'")
 
-    if "mark" not in cols:
-        # 'dogrulanmis' = kullanıcı bu soruyu sınavda gördüğünü doğruladı (⭐);
-        # 'aday' = hatırlanan konuya benzer aday, kesin metin eşleşmesi yok.
-        # Hiçbiri resmî SHGM çıkmış sorusu değildir.
-        conn.execute("ALTER TABLE questions ADD COLUMN mark TEXT")
-    if "review" not in cols:
-        # 1 = inceleme kuyruğunda (belirsiz soru): puanlanan turlara asla girmez
-        conn.execute("ALTER TABLE questions ADD COLUMN review INTEGER NOT NULL DEFAULT 0")
-    if "review_note" not in cols:
-        conn.execute("ALTER TABLE questions ADD COLUMN review_note TEXT")
-    if "explanation_en" not in cols:
-        conn.execute("ALTER TABLE questions ADD COLUMN explanation_en TEXT")
-
     ocols = {r[1] for r in conn.execute("PRAGMA table_info(options)")}
     if "text_tr" not in ocols:
         conn.execute("ALTER TABLE options ADD COLUMN text_tr TEXT")
@@ -198,8 +159,6 @@ def migrate(conn: sqlite3.Connection) -> None:
         conn.execute("ALTER TABLE sections ADD COLUMN name_tr TEXT")
     if "name_en" not in seccols:
         conn.execute("ALTER TABLE sections ADD COLUMN name_en TEXT")
-    if "section_code" not in {r[1] for r in conn.execute("PRAGMA table_info(question_subjects)")}:
-        conn.execute("ALTER TABLE question_subjects ADD COLUMN section_code TEXT")
 
     conn.commit()
 
@@ -257,16 +216,6 @@ def import_file(conn: sqlite3.Connection, path: Path) -> int:
     lang = data.get("lang", "en")           # kaynak dil, dosya düzeyinde
     labels = "ABCDE"
 
-    # Önce bütün dosyayı doğrula; hatalı bir anahtar kısmi içe aktarıma yol açmasın.
-    for q in data["questions"]:
-        opts = q.get("options")
-        if not isinstance(opts, list) or not 2 <= len(opts) <= 5 or any(
-                not isinstance(o, str) or not o.strip() for o in opts):
-            sys.exit(f"hata: soru {q.get('id')}: 2–5 dolu şık gerekli")
-        if not q.get("inceleme") and (type(q.get("correct_index", 0)) is not int or
-                                       q.get("correct_index", 0) != 0):
-            sys.exit(f"hata: soru {q.get('id')}: doğrulanmış doğru cevap A/0 olmalı")
-
     for q in data["questions"]:
         code = q.get("section", default_section)
         if code and code not in section_ids:
@@ -274,22 +223,19 @@ def import_file(conn: sqlite3.Connection, path: Path) -> int:
 
         conn.execute(
             "INSERT INTO questions(id, subject_code, section_id, text, source, flagged, origin, "
-            "                      needs_figure, lang, review, review_note) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) "
+            "                      needs_figure, lang) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) "
             "ON CONFLICT(id) DO UPDATE SET subject_code = excluded.subject_code, "
             "section_id = excluded.section_id, text = excluded.text, "
             "source = excluded.source, flagged = excluded.flagged, origin = excluded.origin, "
-            "needs_figure = excluded.needs_figure, lang = excluded.lang, "
-            "review = excluded.review, review_note = excluded.review_note",
+            "needs_figure = excluded.needs_figure, lang = excluded.lang",
             (q["id"], subject_code, section_ids.get(code), q["text"], source,
              1 if q.get("flagged") else 0, q.get("origin", origin),
-             1 if q.get("needs_figure") else 0, q.get("lang", lang),
-             1 if q.get("inceleme") else 0, q.get("inceleme_nedeni")),
+             1 if q.get("needs_figure") else 0, q.get("lang", lang)),
         )
         # Şıklar her içe aktarımda yeniden yazılır (sıra/metin düzeltmeleri için)
         conn.execute("DELETE FROM options WHERE question_id = ?", (q["id"],))
-        # Belirsiz bir soruda ilk şık doğru sayılmaz. Bu kayıtlar yalnız inceleme içindir.
-        correct_index = None if q.get("inceleme") else 0
+        correct_index = q.get("correct_index", 0)  # kaynak formatında doğru şık ilk sırada
         for i, opt in enumerate(q["options"]):
             conn.execute(
                 "INSERT INTO options(question_id, ord, label, text, is_correct) VALUES (?, ?, ?, ?, ?)",
@@ -368,93 +314,6 @@ def import_translations(conn: sqlite3.Connection) -> tuple[int, int]:
     return sayim["tr"], sayim["en"]
 
 
-def import_notes(conn: sqlite3.Connection) -> tuple[int, int, int]:
-    """Dış kaynak kaydını ve soru notlarını yazar.
-
-    data/kaynaklar/_kaynaklar.json  → `sources`
-    data/_kaynak_notlari.json       → soru başına kaynak bağı, kısa açıklama (TR/EN) ve
-                                      işaret (`dogrulanmis` ⭐ / `aday`)
-
-        {"notlar": {"61001": {"src": [{"k": "gdh-ppla", "no": "57", "sayfa": "p.4", "url": "…"}],
-                              "tr": "Kısa açıklama.", "en": "Short explanation.",
-                              "isaret": "dogrulanmis"}}}
-
-    Bilinmeyen soru id'si ya da kayıtta olmayan kaynak derlemeyi durdurur: sessizce
-    kaybolan bir kaynak bilgisi, "bu soru nereden geldi" sorusunu cevapsız bırakır.
-    Döner: (kaynak sayısı, kaynak bağı sayısı, notlu soru sayısı).
-    """
-    reg_path = DATA_DIR / "kaynaklar" / "_kaynaklar.json"
-    notes_path = DATA_DIR / "_kaynak_notlari.json"
-    n_src = n_link = n_note = 0
-    registry = json.loads(reg_path.read_text(encoding="utf-8"))["kaynaklar"] if reg_path.exists() else []
-    notes = json.loads(notes_path.read_text(encoding="utf-8"))["notlar"] if notes_path.exists() else {}
-    kayitli = {r[0] for r in conn.execute("SELECT id FROM sources")} | {k["id"] for k in registry}
-    # Kaynak eklemek, mevcut (veya bu dosyada yer almayan) açıklamaları silmez.
-    # Bütün bağımlılıklar yazmadan önce kontrol edilir.
-    for sid, n in notes.items():
-        qid = int(sid)
-        if conn.execute("SELECT 1 FROM questions WHERE id = ?", (qid,)).fetchone() is None:
-            sys.exit(f"hata: _kaynak_notlari.json bilinmeyen soru id'si: {qid}")
-        if n.get("isaret") not in (None, "dogrulanmis", "aday"):
-            sys.exit(f"hata: soru {qid}: geçersiz işaret {n.get('isaret')!r}")
-        for s in n.get("src", []):
-            if s["k"] not in kayitli:
-                sys.exit(f"hata: soru {qid}: kayıtta olmayan kaynak {s['k']!r}")
-        for code in n.get("also_subjects", []):
-            if conn.execute("SELECT 1 FROM subjects WHERE code=?", (code,)).fetchone() is None:
-                sys.exit(f"hata: soru {qid}: bilinmeyen ortak ders {code!r}")
-        for code, section in n.get("also_sections", {}).items():
-            if code not in n.get("also_subjects", []) or not conn.execute(
-                    "SELECT 1 FROM sections WHERE subject_code=? AND code=?", (code, section)).fetchone():
-                sys.exit(f"hata: soru {qid}: bilinmeyen ortak ders bölümü {code}/{section}")
-    if reg_path.exists():
-        for k in registry:
-            conn.execute(
-                "INSERT INTO sources(id, name, url, kind, access, note) VALUES (?, ?, ?, ?, ?, ?) "
-                "ON CONFLICT(id) DO UPDATE SET name=excluded.name, url=excluded.url, "
-                "kind=excluded.kind, access=excluded.access, note=excluded.note",
-                (k["id"], k["ad"], k.get("url"), k.get("tur"), k.get("erisim"), k.get("kullanim_notu")))
-            kayitli.add(k["id"])
-            n_src += 1
-    if notes_path.exists():
-        for sid, n in notes.items():
-            qid = int(sid)
-            if conn.execute("SELECT 1 FROM questions WHERE id = ?", (qid,)).fetchone() is None:
-                sys.exit(f"hata: _kaynak_notlari.json bilinmeyen soru id'si: {qid}")
-            isaret = n.get("isaret")
-            if isaret not in (None, "dogrulanmis", "aday"):
-                sys.exit(f"hata: soru {qid}: geçersiz işaret {isaret!r}")
-            for key, column in (("isaret", "mark"), ("tr", "explanation"), ("en", "explanation_en")):
-                if key in n:              # null açıkça yazılırsa alan silinebilir
-                    conn.execute(f"UPDATE questions SET {column} = ? WHERE id = ?", (n[key], qid))
-            if "also_subjects" in n:
-                conn.execute("DELETE FROM question_subjects WHERE question_id=?", (qid,))
-                for code in n["also_subjects"]:
-                    if code == conn.execute("SELECT subject_code FROM questions WHERE id=?", (qid,)).fetchone()[0]:
-                        continue  # Kendi dersine ikinci bir ortak-ders kaydı ekleme.
-                    section = n.get("also_sections", {}).get(code)
-                    conn.execute("INSERT OR IGNORE INTO question_subjects(question_id,subject_code,section_code) VALUES (?,?,?)", (qid, code, section))
-                    if not section:
-                        conn.execute("INSERT OR IGNORE INTO sections(subject_code,code,name,name_tr,name_en) "
-                                     "VALUES (?,?,?,?,?)", (code, f"{code}-X", "Shared questions", "Ortak sorular", "Shared questions"))
-            n_note += 1
-            if n.get("replace_sources"):
-                # Derlenmiş tam liste açıkça yetkiliyse kaldırılan/yanlış eski atıfları da temizle.
-                # Kısmi not güncellemelerinde var olan diğer kaynak bağları korunur.
-                conn.execute("DELETE FROM question_sources WHERE question_id=?", (qid,))
-            for s in n.get("src", []):
-                if s["k"] not in kayitli:
-                    sys.exit(f"hata: soru {qid}: kayıtta olmayan kaynak {s['k']!r}")
-                conn.execute(
-                    "INSERT INTO question_sources(question_id, source_id, ref, page, url) "
-                    "VALUES (?, ?, ?, ?, ?) ON CONFLICT(question_id, source_id, ref) "
-                    "DO UPDATE SET page=excluded.page, url=excluded.url",
-                    (qid, s["k"], str(s.get("no", "")), s.get("sayfa"), s.get("url")))
-                n_link += 1
-    conn.commit()
-    return n_src, n_link, n_note
-
-
 def rebuild_fts(conn: sqlite3.Connection) -> None:
     try:
         conn.execute("INSERT INTO questions_fts(questions_fts) VALUES ('rebuild')")
@@ -486,7 +345,6 @@ def main() -> None:
 
     dups = apply_duplicates(conn)
     ceviri, ceviri_en = import_translations(conn)
-    n_src, n_link, n_note = import_notes(conn)
     rebuild_fts(conn)
 
     q = conn.execute("SELECT COUNT(*) FROM questions").fetchone()[0]
@@ -497,18 +355,11 @@ def main() -> None:
         "SELECT COUNT(*) FROM questions q "
         "WHERE NOT EXISTS (SELECT 1 FROM options o WHERE o.question_id = q.id AND o.is_correct = 1)"
     ).fetchone()[0]
-    ek = conn.execute("SELECT COUNT(*) FROM questions WHERE origin = 'ek'").fetchone()[0]
-    inc = conn.execute("SELECT COUNT(*) FROM questions WHERE review = 1").fetchone()[0]
-    yil = conn.execute("SELECT COUNT(*) FROM questions WHERE mark = 'dogrulanmis'").fetchone()[0]
-    adayn = conn.execute("SELECT COUNT(*) FROM questions WHERE mark = 'aday'").fetchone()[0]
     conn.close()
 
     print(f"\n{DB_PATH}: toplam {q} soru, {o} şık")
     print(f"  {dups} tekrar işaretlendi → {q - dups} benzersiz soru")
     print(f"  {uret} soru ders notundan üretilmiş")
-    print(f"  {ek} soru ek kaynaklardan eklendi ({inc} soru inceleme kuyruğunda)")
-    print(f"  {n_src} kaynak kaydı, {n_link} soru↔kaynak bağı, {n_note} notlu soru "
-          f"(⭐ doğrulanmış {yil}, benzer aday {adayn})")
     print(f"  Türkçe: {ceviri} çeviri + {trsrc} zaten Türkçe = {ceviri + trsrc}/{q}")
     print(f"  İngilizce: {ceviri_en} çeviri + {q - trsrc} zaten İngilizce = {ceviri_en + q - trsrc}/{q}")
     eksik_tr, eksik_en = q - (ceviri + trsrc), q - (ceviri_en + q - trsrc)

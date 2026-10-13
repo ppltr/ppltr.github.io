@@ -10,8 +10,6 @@ Soru bankası ATTACH ile bağlanır, böylece tek sorguda birleştirilebilir.
 from __future__ import annotations
 
 import os
-import json
-import re
 import sqlite3
 from contextlib import contextmanager
 from datetime import datetime, timezone
@@ -20,19 +18,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BANK_DB = Path(os.environ.get("ATPL_BANK_DB", ROOT / "atpl.db"))
 APP_DB = Path(os.environ.get("ATPL_APP_DB", ROOT / "server" / "app.db"))
-
-
-def figure_url(question_id: int) -> str | None:
-    """Soruya ait doğrulanmış depo görselini sunucu sürümünde de gösterir."""
-    index_path = ROOT / "figures" / "index.json"
-    if not index_path.exists():
-        return None
-    name = json.loads(index_path.read_text(encoding="utf-8")).get(str(question_id))
-    if not isinstance(name, str) or not re.fullmatch(r"[A-Za-z0-9_-]+", name):
-        return None
-    if not (ROOT / "figures" / f"{name}.svg").is_file():
-        return None
-    return f"/figures/{name}.svg"
 
 SCHEMA = """
 PRAGMA journal_mode = WAL;
@@ -186,9 +171,7 @@ def subjects(conn: sqlite3.Connection) -> list[sqlite3.Row]:
     return conn.execute(
         """SELECT s.code, s.name,
                   (SELECT COUNT(*) FROM bank.questions q
-                    WHERE (q.subject_code = s.code OR EXISTS (SELECT 1 FROM bank.question_subjects a
-                      WHERE a.question_id=q.id AND a.subject_code=s.code))
-                      AND q.dup_of IS NULL AND q.review = 0) AS n
+                    WHERE q.subject_code = s.code AND q.dup_of IS NULL) AS n
              FROM bank.subjects s ORDER BY s.code"""
     ).fetchall()
 
@@ -197,8 +180,7 @@ def sections(conn: sqlite3.Connection, subject: str) -> list[sqlite3.Row]:
     return conn.execute(
         """SELECT sec.code, sec.name,
                   (SELECT COUNT(*) FROM bank.questions q
-                    WHERE (q.section_id = sec.id OR EXISTS (SELECT 1 FROM bank.question_subjects a WHERE a.question_id=q.id
-                      AND a.subject_code=sec.subject_code AND COALESCE(a.section_code,a.subject_code || '-X')=sec.code)) AND q.dup_of IS NULL AND q.review = 0) AS n
+                    WHERE q.section_id = sec.id AND q.dup_of IS NULL) AS n
              FROM bank.sections sec WHERE sec.subject_code = ? ORDER BY sec.code""",
         (subject,),
     ).fetchall()
@@ -216,21 +198,19 @@ def pick_questions(conn, user_id: int, *, subject: str, section: str,
             "AND m.wrong_n > 0 AND m.right_streak < ?"
         )
         args += [user_id, MASTER_STREAK]
-    sql.append("WHERE q.review = 0")
+    sql.append("WHERE 1=1")
     if hide_dups:
         sql.append("AND q.dup_of IS NULL")
     if not show_gen:
         sql.append("AND q.origin <> 'uretilmis'")
     if subject != "all":
-        sql.append("AND (q.subject_code = ? OR EXISTS (SELECT 1 FROM bank.question_subjects a "
-                   "WHERE a.question_id=q.id AND a.subject_code=?))")
-        args.extend([subject, subject])
+        sql.append("AND q.subject_code = ?")
+        args.append(subject)
     if section != "all":
         sql.append(
-            "AND (q.section_id = (SELECT id FROM bank.sections "
-            "WHERE subject_code = q.subject_code AND code = ?) OR EXISTS ("
-            "SELECT 1 FROM bank.question_subjects a WHERE a.question_id=q.id AND COALESCE(a.section_code,a.subject_code || '-X')=?))")
-        args.extend([section, section])
+            "AND q.section_id = (SELECT id FROM bank.sections "
+            "WHERE subject_code = q.subject_code AND code = ?)")
+        args.append(section)
     sql.append("ORDER BY RANDOM() LIMIT ?")
     args.append(max(1, min(limit, 500)))
     return [r[0] for r in conn.execute(" ".join(sql), args)]
@@ -243,7 +223,7 @@ def question(conn: sqlite3.Connection, qid: int) -> dict | None:
              FROM bank.questions q
              JOIN bank.subjects sub ON sub.code = q.subject_code
              LEFT JOIN bank.sections sec ON sec.id = q.section_id
-            WHERE q.id = ? AND q.review = 0""", (qid,)).fetchone()
+            WHERE q.id = ?""", (qid,)).fetchone()
     if not r:
         return None
     opts = conn.execute(

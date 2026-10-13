@@ -245,7 +245,6 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .dchip.new b{color:var(--cyan)} .dchip.star b{color:var(--accent)}
 .dchip.leech b{color:var(--bad)}
 .dchip.slow b{color:var(--due)}
-.dchip.exam b{color:var(--accent)} .dchip.cand b{color:var(--cyan)}
 .dchip.on{background:var(--accent); border-color:var(--accent); color:var(--on-accent)}
 .dchip.on b{color:var(--on-accent)}
 
@@ -465,17 +464,6 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .tag.flag{color:var(--accent-ink); background:var(--accent-soft)}
 .tag.box{color:var(--due); background:var(--due-soft)}
 .tag.slow{color:var(--due)}
-.tag.exam{color:var(--accent-ink); background:var(--accent-soft); font-weight:600}
-.tag.cand{color:var(--cyan)} .tag.ek{color:var(--ink-2)} .tag.rev{color:var(--bad)}
-.xnote{border-top:1px solid var(--rule); padding:9px 14px 10px; background:var(--surface-2);
-  font-size:13px; color:var(--ink-2); line-height:1.45}
-.xrow{display:flex; gap:9px; align-items:baseline}
-.xrow + .xrow{margin-top:5px}
-.xrow .xl{flex:none; font-family:var(--f-num); font-size:9.5px; letter-spacing:.1em;
-  text-transform:uppercase; color:var(--ink-3); min-width:58px}
-.xrow a{color:var(--accent); text-decoration:underline; text-underline-offset:2px}
-.xrow .xref{color:var(--ink-3); font-size:12px}
-.xsrc{font-size:12.5px}
 .askbtn{flex:none; display:inline-flex; align-items:center; padding:3px 9px;
   border-radius:99px; border:1px solid var(--rule-2); background:var(--surface);
   color:var(--ink-2); font-family:var(--f-num); font-size:10.5px; font-weight:500;
@@ -727,13 +715,6 @@ kbd{font-family:var(--f-num); font-size:10px; background:var(--surface-2);
 
 const DB = JSON.parse(document.getElementById('qdata').textContent);
 const SUBJ = DB.s, QS = DB.q, NOTES = DB.n || [], FIGS = DB.fg || {};
-// Soru satırına dokunmayan ek bilgi (id → nesne): o=ek kaynak sorusu, k='d' sınavda çıktığı doğrulandı /
-// 'a' benzer aday, r=inceleme kuyruğunda, e/ee açıklama (TR/EN), s=[[kaynak,no,sayfa,adres]].
-const XT = DB.x || {}, KS = DB.ks || {};
-const REVIEW = DB.rq || [];
-const xOf = q => XT[q[0]] || null;
-const isEk  = q => !!(XT[q[0]] && XT[q[0]].o);
-const isRev = q => !!(XT[q[0]] && XT[q[0]].r);
 /** Sorunun çizimi (varsa) — q[9] çizim adı, FIGS adı SVG'ye çevirir. */
 const figOf = q => (q[9] && FIGS[q[9]]) || '';
 // soru: [0]id [1]dersIdx [2]bölümIdx [3]metin [4]şıklar [5]tartışmalı [6]tekrar [7]üretilmiş [8]şekil
@@ -836,8 +817,6 @@ function loadProfile(){
 function applyPref(){
   Object.assign(F, DEFAULTS, S.pref || {});
   delete F.hideFig;                       // süzgeç kaldırıldı, eski kayıt taşımasın
-  if (F.deck === 'focus') F.deck = 'new';  // geri alınan özel ekranın tercihini taşımayalım
-  delete F.airlawExtra;
   if (!F.pick || typeof F.pick !== 'object') F.pick = {};
   S.pref = F;                             // bundan sonrası tek nesne üzerinden
 }
@@ -1270,7 +1249,7 @@ function bindAccount(u){
 // deck:'new' = varsayılan olarak henüz çözülmemişlerden başla, tüm konular
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
-                   ek:true, hideFlag:false, count:0, mode:'study', order:'smart',
+                   hideFlag:false, count:0, mode:'study', order:'smart',
                    sound:true, ai:'chatgpt', lang:'en' };
 const F = Object.assign({}, DEFAULTS);
 
@@ -1316,10 +1295,7 @@ function pickedAny(){ return Object.keys(F.pick).length > 0; }
 // Geçtiğin dersin soruları kapsamdan tümüyle çıkar: toplam sayıda, konu
 // seçicide, destelerde ve turlarda görünmez. Kayıt profile bağlıdır.
 function isPassed(code){ return (S.passed || []).indexOf(code) >= 0; }
-const qSubjects = q => [...new Set([SUBJ[q[1]].c, ...((F.ek ? (xOf(q) || {}).a : []) || [])])];
-const inSubject = (q, code) => qSubjects(q).includes(code);
-const qSection = (q, code) => code === SUBJ[q[1]].c ? SUBJ[q[1]].sec[q[2]][0] : ((xOf(q) || {}).t || {})[code] || code + '-X';
-const notPassed = q => qSubjects(q).some(code => !isPassed(code));
+const notPassed = q => !isPassed(SUBJ[q[1]].c);
 let passDirty = false;
 
 function togglePassed(code){
@@ -1343,17 +1319,15 @@ function runCode(r){
 
 function matchPick(q){
   if (!pickedAny()) return true;
-  return qSubjects(q).some(code => {
-    const sel = F.pick[code];
-    return !isPassed(code) && sel && (sel.length === 0 || sel.includes(qSection(q, code)));
-  });
+  const s = SUBJ[q[1]];
+  const sel = F.pick[s.c];
+  if (!sel) return false;
+  return sel.length === 0 || sel.includes(s.sec[q[2]][0]);
 }
 function inScope(q){
   if (!notPassed(q)) return false;
   if (F.hideDup && q[6]) return false;
   if (!F.gen && q[7]) return false;
-  if (!F.ek && isEk(q)) return false;
-  if (isRev(q)) return false;               // hiçbir ayar belirsiz cevabı puanlanan tura sokamaz
   if (F.hideFlag && q[5]) return false;
   if (!matchPick(q)) return false;
   if (F.q){
@@ -1370,8 +1344,7 @@ function inScope(q){
 // Konu ağacındaki sayılar seçimden bağımsız, diğer anahtarlara bağlıdır
 function inToggles(q, withPassed){
   if (!withPassed && !notPassed(q)) return false;
-  return !(F.hideDup && q[6]) && (F.gen || !q[7]) && (F.ek || !isEk(q)) &&
-         !isRev(q) && !(F.hideFlag && q[5]);
+  return !(F.hideDup && q[6]) && (F.gen || !q[7]) && !(F.hideFlag && q[5]);
 }
 
 const DECKS = [
@@ -1379,8 +1352,6 @@ const DECKS = [
   { k:'wrong', cls:'wrong', t:'Yanlışlarım',   d:'Henüz oturmayanlar' },
   { k:'new',   cls:'new',   t:'Hiç görmedim',  d:'İlk kez çıkacak' },
   { k:'star',  cls:'star',  t:'Yıldızlılar',   d:'Sonra bakılacaklar' },
-  { k:'exam',  cls:'exam',  t:'Doğruladığım sorular', d:'Kullanıcının sınavda karşılaştığını doğruladığı sorular' },
-  { k:'cand',  cls:'cand',  t:'Hatırlanan konular', d:'Sınavda gördüğünü hatırladığın konulara benzer adaylar' },
 ];
 function inDeck(q, deck){
   const k = card(q[0]), now = Date.now();
@@ -1389,8 +1360,6 @@ function inDeck(q, deck){
     case 'wrong': return !!k && k[3] > 0 && k[4] < MASTER;
     case 'new':   return !k;
     case 'star':  return stars().has(q[0]);
-    case 'exam':  return !!(XT[q[0]] && XT[q[0]].k === 'd');
-    case 'cand':  return !!(XT[q[0]] && XT[q[0]].k === 'a');
     case 'leech': return !!k && k[3] >= LEECH;
     case 'slow':  { const t = S.qt && S.qt[q[0]]; return !!t && t[2] >= YAVAS_MS; }
     default:      return true;
@@ -1429,7 +1398,7 @@ function globalStat(){
 /** Bir modülün (dersin) durumu: toplam, görülen, kalan. */
 function moduleStat(code, raw){
   const si = SUBJ.findIndex(x => x.c === code);
-  const all = QS.filter(q => inSubject(q, code) && (raw || !isPassed(code)) && inToggles(q, raw));
+  const all = QS.filter(q => q[1] === si && inToggles(q, raw));
   const seen = all.filter(q => card(q[0])).length;
   return { code, name: subjName(SUBJ[si]), total: all.length, seen, left: all.length - seen };
 }
@@ -1556,7 +1525,7 @@ function scopeTitle(){
   return ks.length + ' modül';
 }
 function openRun(){
-  const acik = S.runs.filter(r => !r.done && !isPassed(runCode(r)) && !(r.title || '').includes('Hatırladığın sınav konuları'));
+  const acik = S.runs.filter(r => !r.done && !isPassed(runCode(r)));
   // Cevap verilmiş tur öncelikli: yeni açılıp hiç dokunulmamış bir tur
   // ana ekranda gerçek yarım turun önüne geçmesin.
   return acik.find(r => (r.log || []).length) || acik[0] || null;
@@ -1601,24 +1570,16 @@ function start(sr){
   save();
   step0();
 }
-/** Güncel filtreler eski tura da uygulanır; kayıtlı cevaplar korunur. */
-function resumeSelection(rec){
-  const code = runCode(rec);
-  const list = (rec.ids || []).map(id => BY_ID.get(id)).filter(q => q && inToggles(q) && (!code || inSubject(q, code)));
-  const kept = new Set(list.map(q => q[0]));
-  return {list, i:(rec.ids || []).slice(0, rec.i || 0).filter(id => kept.has(id)).length,
-          missed:(rec.missed || []).filter(id => kept.has(id))};
-}
-/** Yarım kalan turu geri yükler; kapsamda soru kalmamışsa turu kapatır. */
+/** Yarım kalan turu geri yükler; sorular silinmişse turu kapatır. */
 function resumeRun(id){
   yeniTur = false;
   const rec = S.runs.find(r => r.id === id);
   if (!rec || rec.done) return home();
-  const selection = resumeSelection(rec), list = selection.list;
+  const list = (rec.ids || []).map(x => BY_ID.get(x)).filter(Boolean);
   if (!list.length){ rec.done = true; save(); return home(); }
-  R = { id:rec.id, list, i:selection.i, order:null, picked:null,
+  R = { id:rec.id, list, i:Math.min(rec.i || 0, list.length), order:null, picked:null,
         orders:[], picks:[], log:(rec.log || []).slice(), t0:rec.t0,
-        round:rec.round || 1, missed:selection.missed,
+        round:rec.round || 1, missed:(rec.missed || []).slice(),
         sure:rec.sure || 0, durdu:!!rec.durdu, sureTam:!!rec.sureTam,
         bos:rec.bos || 0, bosTam:!!rec.bosTam, qTop:rec.qTop || 0, qN:rec.qN || 0,
         qAcc:{}, qAcik:null, qSon:{}, sr:!!rec.sr };
@@ -1645,7 +1606,7 @@ function step0(){
     // Tur bitti — bu turda yanlış yapılanlar varsa onlarla devam et
     if (R.missed.length){
       // missed soru id'si tutar, list soru nesnesi bekler
-      R.list = shuffle(R.missed.map(id => BY_ID.get(id)).filter(q => q && !isRev(q)));
+      R.list = shuffle(R.missed.map(id => BY_ID.get(id)).filter(Boolean));
       R.missed = []; R.i = 0; R.round++;
       R.orders = []; R.picks = [];        // yeni tur: sıra ve cevaplar sıfırlanır
       if (!R.list.length) return done();
@@ -1692,7 +1653,6 @@ function nextQ(){
 function pick(pos){
   if (!R || R.picked !== null) return;
   const q = R.list[R.i], ok = R.order[pos] === 0;
-  if (isRev(q)) return;
   soruKapat(); soruSureYaz(q[0]);              // grade() kaydı diske yazmadan önce
   R.picked = pos; R.picks[R.i] = pos;
   grade(q[0], ok);
@@ -1954,13 +1914,10 @@ function home(){
   el('sw').innerHTML = [
     ['hideDup','Tekrar eden soruları gizle', QS.filter(q => q[6] && notPassed(q)).length],
     ['gen',    'Ders notundan üretilmişler', QS.filter(q => q[7] && notPassed(q)).length],
-    ['ek',     'Ek kaynaklardan eklenenler', QS.filter(q => isEk(q) && !isRev(q) && notPassed(q)).length],
     ['hideFlag','Tartışmalıları gizle',      QS.filter(q => q[5] && notPassed(q)).length],
   ].map(([k,x,n]) => '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k +
     '" type="button"><span class="knob"></span><span>' + x + '</span>' +
-    '<span class="n">' + n + '</span></button>').join('') +
-    '<button class="tbtn" id="reviewQueue" type="button">İnceleme kuyruğu · ' + REVIEW.length + '</button>';
-  el('reviewQueue').onclick = openReviewQueue;
+    '<span class="n">' + n + '</span></button>').join('');
   el('sw').querySelectorAll('.switch').forEach(b =>
     b.onclick = () => { F[b.dataset.k] = !F[b.dataset.k]; savePref(); home(); openBox('optBox'); });
 
@@ -2100,13 +2057,12 @@ function buildTree(){
   const t = el('tree');
   if (!t) return;                 // hepsi geçildiyse seçici çizilmez
   t.innerHTML = SUBJ.map((s, si) => {
-    if (isPassed(s.c)) return '';
-    const qs = QS.filter(q => inSubject(q, s.c) && inToggles(q));
+    const qs = QS.filter(q => q[1] === si && inToggles(q));
     if (!qs.length) return '';
     const sel = F.pick[s.c];
     const state = !sel ? '' : (sel.length === 0 ? 'all' : 'some');
     const secs = s.sec.map((sc, i) => {
-      const n = qs.filter(q => qSection(q, s.c) === sc[0]).length;
+      const n = qs.filter(q => q[2] === i).length;
       if (!n) return '';
       const on = sel && (sel.length === 0 || sel.includes(sc[0]));
       return '<div class="row"><button class="tick ' + (on ? 'all' : '') + '" data-s="' + s.c +
@@ -2213,9 +2169,7 @@ function askBtn(){
 /** Soruyu, şıkları, doğru cevabı ve verilen cevabı düz metne çevirir. */
 function askText(){
   if (!R) return '';
-  const q = R.list[R.i], selected = Object.keys(F.pick), context = selected.length === 1 ? selected[0] : null;
-  const s = SUBJ.find(s => s.c === context && inSubject(q, s.c)) || SUBJ[q[1]];
-  const sec = s.sec.find(sc => sc[0] === qSection(q, s.c)) || SUBJ[q[1]].sec[q[2]];
+  const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
   const okPos = R.order.indexOf(0);
   const L = [
     'Aşağıdaki soruyu açıkla: doğru cevap neden doğru, diğer şıklar neden yanlış? ' +
@@ -2358,50 +2312,8 @@ addEventListener('pointermove', e => {
     o.classList.add('hov');
 }, { passive:true });
 
-/** Kart başlığındaki ek etiketler: ⭐ sınavda çıktı / benzer aday / ek kaynak / inceleme. */
-function xTags(q){
-  const x = xOf(q);
-  if (!x) return '';
-  const pick = Object.keys(F.pick);
-  const addedToPickedSubject = pick.length === 1 && SUBJ[q[1]].c !== pick[0] && (x.a || []).includes(pick[0]);
-  return (x.k === 'd' ? '<span class="tag exam" title="Kullanıcının sınavda karşılaştığını doğruladığı soru tipi. Mevcut eşdeğer veya yeniden yazım olabilir. ' +
-            'Resmî SHGM çıkmış sorusu olarak sunulmaz.">★ doğruladığın soru</span>' : '') +
-         (x.k === 'a' ? '<span class="tag cand" title="Sınavda gördüğünü hatırladığın konuya benzer aday; ' +
-            'kesin metin eşleşmesi yok.">benzer aday</span>' : '') +
-         (x.o || addedToPickedSubject ? '<span class="tag ek" title="Kaynaklarda saptanan eksik soru türü; anlatımı ve cevabı ayrıca kontrol edildi.">' +
-            'ek kaynak</span>' : '') +
-         (x.r ? '<span class="tag rev" title="' + esc(x.rn || 'Belirsiz: inceleme kuyruğunda') +
-            '">inceleme</span>' : '');
-}
-/** Cevaptan sonra kısa açıklama ve soru hangi kaynaklarda geçiyor. */
-function xNote(q){
-  const x = xOf(q);
-  if (!x) return '';
-  const ac = (trMode() ? x.e : x.ee) || x.e || x.ee || '';
-  const kay = (x.s || []).map(s => {
-    const k = KS[s[0]] || [s[0], ''];
-    const ad = esc(k[0]), href = s[3] || k[1];
-    const ek = [s[1] ? (trMode() ? 'soru ' : 'Q') + esc(s[1]) : '',
-                s[2] ? (/^\d+$/.test(s[2]) ? (trMode() ? 's. ' : 'p. ') : '') + esc(s[2]) : ''].filter(Boolean).join(', ');
-    return (href && /^https?:\/\//.test(href)
-      ? '<a href="' + esc(href) + '" target="_blank" rel="noopener noreferrer">' + ad + '</a>' : ad) +
-      (ek ? ' <span class="xref">(' + ek + ')</span>' : '');
-  });
-  if (!ac && !kay.length && !x.r) return '';
-  return '<div class="xnote">' +
-    (x.r ? '<div class="xrow"><span class="xl">İnceleme</span><span>' +
-       esc(x.rn || 'Bu soru belirsiz; çalışma kapsamına girmeden önce gözden geçirilmeli.') + '</span></div>' : '') +
-    (ac ? '<div class="xrow"><span class="xl">' + (trMode() ? 'Açıklama' : 'Note') + '</span><span>' +
-       esc(ac) + '</span></div>' : '') +
-    (kay.length ? '<div class="xrow xsrc"><span class="xl">' + (trMode() ? 'Kaynak' : 'Source') +
-       '</span><span>' + kay.join(' · ') + '</span></div>' : '') +
-    '</div>';
-}
-
 function draw(){
-  const q = R.list[R.i], selected = Object.keys(F.pick), context = selected.length === 1 ? selected[0] : null;
-  const s = SUBJ.find(s => s.c === context && inSubject(q, s.c)) || SUBJ[q[1]];
-  const sec = s.sec.find(sc => sc[0] === qSection(q, s.c)) || SUBJ[q[1]].sec[q[2]];
+  const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
   const shown = R.picked !== null && F.mode === 'study' && !R.sr;
   const k = card(q[0]), st = stars();
   const retry = R.round > 1;
@@ -2448,7 +2360,6 @@ function draw(){
       (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
       (q[8] && !figOf(q) ? '<span class="tag fig">şekil gerekli</span>' : '') +
       (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') +
-      xTags(q) +
       (S.qt && S.qt[q[0]] && S.qt[q[0]][2] >= YAVAS_MS
         ? '<span class="tag slow" title="Son denemede bu soru ' + saat(S.qt[q[0]][2]) +
           ' sürdü">uzun sürdü ' + saat(S.qt[q[0]][2]) + '</span>' : '') +
@@ -2459,8 +2370,7 @@ function draw(){
       '<span class="lbl num">' + q[0] + '</span></div>' +
       '<div class="qt">' + esc(qText(q)) + '</div>' +
       (figOf(q) ? '<div class="figbox">' + figOf(q) + '</div>' : '') +
-      '<div class="opts" id="opts">' + opts + '</div>' + verdict +
-      (shown ? xNote(q) : '') + '</div>' +
+      '<div class="opts" id="opts">' + opts + '</div>' + verdict + '</div>' +
     '<div class="foot">' +
     '<div class="navpop' + (navOpen ? '' : ' hidden') + '" id="navPop">' +
       '<div class="navrow">' +
@@ -2828,7 +2738,7 @@ function openStats(){
   const seenScoped = Object.keys(S.c).filter(id => scopedIds.has(+id)).length;
 
   const per = SUBJ.map((s, si) => {
-    const qs = QS.filter(q => inSubject(q, s.c) && !q[6]);
+    const qs = QS.filter(q => q[1] === si && !q[6]);
     let n = 0, o = 0, u = 0;
     qs.forEach(q => { const k = S.c[q[0]]; if (k){ u++; n += k[2]; o += k[2] - k[3]; } });
     return { c:s.c, bank:qs.length, uniq:u, n, pct: n ? Math.round(o/n*100) : null };
@@ -2837,7 +2747,7 @@ function openStats(){
   const secs = [];
   SUBJ.forEach((s, si) => s.sec.forEach((sc, i) => {
     let n = 0, o = 0;
-    QS.forEach(q => { if (inSubject(q, s.c) && qSection(q, s.c) === sc[0]){ const k = S.c[q[0]];
+    QS.forEach(q => { if (q[1] === si && q[2] === i){ const k = S.c[q[0]];
       if (k){ n += k[2]; o += k[2] - k[3]; } } });
     if (n >= 4) secs.push({ c:sc[0], t:secName(sc), n, pct: Math.round(o/n*100) });
   }));
@@ -3140,27 +3050,6 @@ function mergeProfile(name, text){
 }
 
 // ── Ders notları ──
-function openReviewQueue(){
-  el('sheetBody').innerHTML = '<h2>İnceleme kuyruğu</h2>' +
-    '<div class="note">Bu adaylar aktif teste girmez ve çözüm geçmişine işlenmez. Cevapları kesinleşmeden doğru şık gösterilmez.</div>' +
-    (REVIEW.length ? REVIEW.map(item => '<details class="grp"><summary>' +
-      esc(item.ders || '') + ' · ' + esc((KS[item.kaynak] || [item.kaynak || 'Aday'])[0]) +
-      (item.no ? ' · soru ' + esc(item.no) : '') + ' · ' +
-      esc(item.metin || item.konu || item.kume || 'İnceleme bekliyor') + '</summary>' +
-      '<div class="note">' + esc(item.neden || 'Cevap veya kapsam doğrulaması bekleniyor.') + '</div>' +
-      '<ol type="A">' + (item.siklar || []).map(s => '<li>' + esc(s) + '</li>').join('') + '</ol>' +
-      '<div class="note">' + (item.kaynaklar || []).map(s => {
-        const source = KS[s.k] || [s.k || '', ''];
-        const href = s.url || source[1];
-        const name = esc(source[0]);
-        const ref = [s.no ? 'soru ' + esc(s.no) : '', s.sayfa ? 's. ' + esc(s.sayfa) : ''].filter(Boolean).join(', ');
-        return (/^https?:\/\//.test(href || '') ? '<a href="' + esc(href) +
-          '" target="_blank" rel="noopener noreferrer">' + name + '</a>' : name) + (ref ? ' (' + ref + ')' : '');
-      }).join(' · ') + '</div></details>').join('') : '<div class="empty">İnceleme bekleyen aday yok.</div>');
-  el('sheet').classList.add('on');
-  el('sheetBody').scrollTop = 0;
-}
-
 function openNotes(id){
   if (id === undefined){
     el('sheetBody').innerHTML = '<h2>Konu anlatımı</h2>' +
@@ -3355,7 +3244,7 @@ loadProfile();
 // Kapsam varsayılan olarak TÜM banka: açılışta modül daraltması yapılmaz.
 // Kullanıcı isterse konu seçicisinden daraltır; seçim onun kararıdır.
 paintWho();
-if (S.runs[0] && !S.runs[0].done && !(S.runs[0].title || '').includes('Hatırladığın sınav konuları')) resumeRun(S.runs[0].id); else home();
+if (S.runs[0] && !S.runs[0].done) resumeRun(S.runs[0].id); else home();
 Cloud.init();
 })();
 </script>
