@@ -135,18 +135,18 @@
    },
    "raw_answer_status": "First-option key unreliable and not used as authority",
    "karar_sayilari": {
-    "existing": 59,
+    "existing": 61,
     "review": 36,
-    "new": 48,
-    "duplicate_new": 7
+    "new": 47,
+    "duplicate_new": 6
    },
-   "yeni_benzersiz": 48,
+   "yeni_benzersiz": 47,
    "karar_sayilari_dersler": {
     "010": {
-     "existing": 59,
+     "existing": 61,
      "review": 36,
-     "new": 48,
-     "duplicate_new": 7
+     "new": 47,
+     "duplicate_new": 6
     }
    }
   },
@@ -201,17 +201,17 @@
    },
    "raw_answer_status": "No answer key",
    "karar_sayilari": {
-    "existing": 54,
-    "new": 27,
+    "existing": 56,
+    "new": 25,
     "review": 50,
     "out_of_scope": 111,
     "duplicate_new": 8
    },
-   "yeni_benzersiz": 31,
+   "yeni_benzersiz": 29,
    "karar_sayilari_dersler": {
     "010": {
-     "existing": 54,
-     "new": 27,
+     "existing": 56,
+     "new": 25,
      "review": 50,
      "out_of_scope": 111,
      "duplicate_new": 8
@@ -341,16 +341,16 @@
    },
    "checked_at": "2026-10-12",
    "karar_sayilari": {
-    "existing": 30,
-    "duplicate_new": 32,
+    "existing": 32,
+    "duplicate_new": 30,
     "review": 13,
     "out_of_scope": 4
    },
-   "yeni_benzersiz": 30,
+   "yeni_benzersiz": 29,
    "karar_sayilari_dersler": {
     "010": {
-     "existing": 30,
-     "duplicate_new": 32,
+     "existing": 32,
+     "duplicate_new": 30,
      "review": 13,
      "out_of_scope": 4
     }
@@ -431,8 +431,8 @@
    "tur": "web",
    "kesif": "benzer kaynak taraması",
    "erisim": "kismi",
-   "erisim_notu": "Bu dersin girişsiz örnek sayfasına normal web erişimi doğrulandı. Önceden tutulan ilk10 ücretsiz örnek soru bu denetimin aday kaynağıdır; kilitli/üyelikli bölüm taranmadı, güncel tam banka sayısı çıkarılmadı.",
-   "kullanim_notu": "Tüm hakları saklıdır. Örnek soruların toplu yeniden yayım izni saptanmadı. Bu denetim korunmuş soru metinlerini aktarmadan yalnız mevcut bilgi eşleşmeleri/kaynak konumları kaydeder.",
+   "erisim_notu": "Current plainGET HTTP200; no authentication or access barrier bypass. Existing raw question candidates audited by disposition; original figures/old regional charts flagged separately.",
+   "kullanim_notu": "No bulk transfer of copyrighted source wording. Novel protected-wording/permission uncertainties retained for review; any active additions are independently authored legal-fact questions with current primary-rule citations. Website accessibility is not a reuse licence.",
    "taranan": {
     "010": {
      "sayi": 10,
@@ -504,12 +504,12 @@
   {
    "id": "x-tc-tp13014",
    "ad": "Transport Canada — TP 13014E Sample Examination (Recreational Pilot Permit / Private Pilot Licence — Aeroplane)",
-   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "url": "https://www.tc.gc.ca/publications/EN/TP13014/PDF/HR/TP13014E.PDF",
    "tur": "pdf",
    "kesif": "benzer kaynak taraması",
    "erisim": "acik",
-   "erisim_notu": "Güncel Transport Canada sayfası ve PDF normal kamu erişimiyle açıldı. Kaynağın soru metni ve cevap anahtarı okundu; 44 için PDF25/basılı23 gösterge ayrıca görsel doğrulandı.",
-   "kullanim_notu": "Transport Canada içerik için kaynak belirtilerek kişisel ve kamusal ticari olmayan kullanıma açıkça izin verir. Bağımsız uyarlamalar resmî veya kurumun desteklediği sürüm olarak sunulmaz; ticari kullanım için ayrı izin gerekir.",
+   "erisim_notu": "Current plainGET HTTP200; no authentication or access barrier bypass. Existing raw question candidates audited by disposition; original figures/old regional charts flagged separately.",
+   "kullanim_notu": "Explicit personal/public noncommercial reuse with attribution; commercial use requires separate permission. Current TransportCanada primary publication page confirms.",
    "taranan": {
     "010": {
      "sayi": 20,
@@ -554,11 +554,13 @@
    },
    "checked_at": "2026-10-12",
    "karar_sayilari": {
-    "review": 1,
+    "out_of_scope": 12,
     "new": 2,
-    "existing": 3
+    "duplicate_new": 2,
+    "existing": 2,
+    "review": 2
    },
-   "yeni_benzersiz": 2,
+   "yeni_benzersiz": 4,
    "karar_sayilari_dersler": {
     "010": {
      "out_of_scope": 12,
@@ -8482,6 +8484,54 @@
    "id": "ref-0ff6040359ef",
    "ad": "Cevap doğrulama · SERA.14040,TableS14-3,0–9pronunciationtable andSERA.14035(a)(1)–(2), current2024/404 groupingexceptions; primarytablesinspected2026-10-13.",
    "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9832",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "exam-primary-atpl-multi-pilot-pic",
+   "ad": "Hatırlanan sınav konusu — birincil kural dayanağı",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no?kw=LAPL&page=9",
+   "erisim": "acik",
+   "checked_at": "2026-10-13",
+   "kullanim_notu": "Yalnız kural dayanağı; soru bağımsız yazılmış benzer adaydır."
+  },
+  {
+   "id": "exam-primary-ifrnrvsm-track",
+   "ad": "Hatırlanan sınav konusu — birincil kural dayanağı",
+   "url": "https://laws.justice.gc.ca/eng/regulations/SOR-96-433/page-58.html",
+   "erisim": "acik",
+   "checked_at": "2026-10-13",
+   "kullanim_notu": "Yalnız kural dayanağı; soru bağımsız yazılmış benzer adaydır."
+  },
+  {
+   "id": "exam-primary-transition-climb-ta",
+   "ad": "Hatırlanan sınav konusu — birincil kural dayanağı",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+   "erisim": "acik",
+   "checked_at": "2026-10-13",
+   "kullanim_notu": "Yalnız kural dayanağı; soru bağımsız yazılmış benzer adaydır."
+  },
+  {
+   "id": "ref-4fcf2872f298",
+   "ad": "Cevap doğrulama · Part-FCL FCL.505(a)(2), read with FCL.305(a)(3)-(4)",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no?kw=LAPL&page=9",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-dd5a04af08d9",
+   "ad": "Cevap doğrulama · 602.34 cruising-level table, NON-RVSM column for track180–359, FL350; used only for the stated conventional-table exercise",
+   "url": "https://laws.justice.gc.ca/eng/regulations/SOR-96-433/page-58.html",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-bc1722cd4641",
+   "ad": "Cevap doğrulama · SERA.8015(eb)(1)-(3), altitude/flight-level reporting and QNH on descent",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
    "tur": "resmi-dayanak",
    "erisim": "acik",
    "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."

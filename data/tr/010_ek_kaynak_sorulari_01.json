@@ -791,6 +791,33 @@
     "Uçuş bir saatten kısa olacaksa kalkabilir",
     "Yorgunluğu yalnızca yolcu konforu konusu saymalıdır"
    ]
+  },
+  "61089": {
+   "text": "Gerekli yetki, sağlık ve operasyon koşulları tamamken, çok pilotla işletilmek üzere sertifikalı bir uçakta ticari hava taşımacılığında kaptanlık (PIC) için hangi lisans gerekir?",
+   "options": [
+    "ATPL(A)",
+    "Tek başına CPL(A)",
+    "Tek başına PPL(A)",
+    "Öğrenci pilot yetkisi"
+   ]
+  },
+  "61090": {
+   "text": "Bu teori alıştırmasında FL290 üzerinde standart NON-RVSM yarım daire seyir seviyesi tablosu geçerli; rota veya ATC istisnası yok. Manyetik rota 200° için aşağıdaki IFR seviyelerinden hangisi tabloya uyar?",
+   "options": [
+    "FL350",
+    "FL330",
+    "FL370",
+    "FL410"
+   ]
+  },
+  "61091": {
+   "text": "Geçiş irtifası belirlenmiş bir meydandan normal tırmanışta, uçuş seviyesi bildirimi için QNH yerine standart basınç ayarı ne zaman seçilir?",
+   "options": [
+    "Geçiş irtifası geçilirken",
+    "Yalnız geçiş seviyesi geçilirken",
+    "Yalnız seyir irtifasına ulaşıldıktan sonra",
+    "Geçiş tabakasının ortasında"
+   ]
   }
  }
 }

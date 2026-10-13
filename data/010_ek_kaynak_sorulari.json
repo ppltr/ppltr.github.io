@@ -2,11 +2,12 @@
  "subject_code": "010",
  "subject_name": "Air Law",
  "origin": "ek",
- "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
+ "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-13)",
  "answer_convention": "İki dilde aynı sırada; ilk şık doğru. Belirsiz cevap aktif bankada yok.",
  "id_convention": "Kalıcı idler_010.json; eski veya emekli kimlik yeniden kullanılmaz.",
  "sections": {
   "010-01": "International Law: Conventions, Agreements, Organizations",
+  "010-02": "Aircraft Nationality and Registration Marks",
   "010-03": "Rules of The Air",
   "010-04": "Personnel Licensing",
   "010-05": "Aerodromes",
@@ -980,6 +981,39 @@
     "Depart if the medical certificate is still in date",
     "Depart if the flight will last less than one hour",
     "Treat fatigue only as a passenger-comfort issue"
+   ]
+  },
+  {
+   "id": 61089,
+   "section": "010-02",
+   "text": "With all required ratings, medical and operational qualifications held, which of these licences permits PIC duties on a certificated multi-pilot aeroplane in commercial air transport?",
+   "options": [
+    "ATPL(A)",
+    "CPL(A) alone",
+    "PPL(A) alone",
+    "Student pilot authorisation"
+   ]
+  },
+  {
+   "id": 61090,
+   "section": "010-06",
+   "text": "For this theory exercise the standard NON-RVSM semicircular cruising-level table above FL290 applies, with no route or ATC exception. For magnetic track 200°, which listed IFR level fits that table?",
+   "options": [
+    "FL350",
+    "FL330",
+    "FL370",
+    "FL410"
+   ]
+  },
+  {
+   "id": 61091,
+   "section": "010-06",
+   "text": "During a normal climb at an aerodrome with an established transition altitude, when is QNH replaced by standard pressure for flight-level reporting?",
+   "options": [
+    "When passing the transition altitude",
+    "Only when passing the transition level",
+    "Only after reaching cruise",
+    "At the middle of the transition layer"
    ]
   }
  ]

@@ -307,6 +307,27 @@
   "61011": {
    "src": [
     {
+     "k": "x-linx-090",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+     "no": "6",
+     "sayfa": "2",
+     "derleyen": "090"
+    },
+    {
+     "k": "x-traficom-090",
+     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+     "no": "6",
+     "sayfa": "2",
+     "derleyen": "090"
+    },
+    {
+     "k": "x-cad-090",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+     "no": "9",
+     "sayfa": "3",
+     "derleyen": "090"
+    },
+    {
      "k": "caab-airlaw",
      "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
      "no": "160",
@@ -333,27 +354,6 @@
      "no": "15",
      "sayfa": "7",
      "derleyen": "010"
-    },
-    {
-     "k": "x-linx-090",
-     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
-     "no": "6",
-     "sayfa": "2",
-     "derleyen": "090"
-    },
-    {
-     "k": "x-traficom-090",
-     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
-     "no": "6",
-     "sayfa": "2",
-     "derleyen": "090"
-    },
-    {
-     "k": "x-cad-090",
-     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
-     "no": "9",
-     "sayfa": "3",
-     "derleyen": "090"
     }
    ],
    "tr": "Özel VFR hâlâ VFR’dir ve CTR içinde ATC izni gerektirir.",
@@ -374,6 +374,13 @@
   "61012": {
    "src": [
     {
+     "k": "x-traficom-030",
+     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+     "no": "136",
+     "sayfa": "26 (PDF; original source)",
+     "derleyen": "030"
+    },
+    {
      "k": "caab-airlaw",
      "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
      "no": "169",
@@ -386,13 +393,6 @@
      "no": "",
      "sayfa": "AIS.OR.315(a)",
      "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-030",
-     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
-     "no": "136",
-     "sayfa": "26 (PDF; original source)",
-     "derleyen": "030"
     }
    ],
    "tr": "Kalıcı değişiklik AIP amendment ile yayımlanır; supplement bu geçici durumlar içindir.",
@@ -666,6 +666,13 @@
   "61021": {
    "src": [
     {
+     "k": "x-caab-atpl-040",
+     "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
+     "no": "324",
+     "sayfa": "83",
+     "derleyen": "040"
+    },
+    {
      "k": "caab-airlaw",
      "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
      "no": "36",
@@ -678,13 +685,6 @@
      "no": "",
      "sayfa": "SERA.3215(e)(1)–(2)",
      "derleyen": "010"
-    },
-    {
-     "k": "x-caab-atpl-040",
-     "url": "https://ops.caab.gov.bd/file-manager/atplcomposit.pdf",
-     "no": "324",
-     "sayfa": "83",
-     "derleyen": "040"
     }
    ],
    "tr": "İstisna görevlerin olumsuz etkilenmesi veya dışarıda zararlı kamaşmadır; yalnız yolcu tercihi yeterli gerekçe değildir.",
@@ -1225,6 +1225,20 @@
   "61037": {
    "src": [
     {
+     "k": "x-austro-030",
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+     "no": "86",
+     "sayfa": "25 (PDF; original source)",
+     "derleyen": "030"
+    },
+    {
+     "k": "x-austro-030",
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+     "no": "87",
+     "sayfa": "25 (PDF; original source)",
+     "derleyen": "030"
+    },
+    {
      "k": "linx-airlaw",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
      "no": "119",
@@ -1251,20 +1265,6 @@
      "no": "91",
      "sayfa": "17",
      "derleyen": "010"
-    },
-    {
-     "k": "x-austro-030",
-     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
-     "no": "86",
-     "sayfa": "25 (PDF; original source)",
-     "derleyen": "030"
-    },
-    {
-     "k": "x-austro-030",
-     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
-     "no": "87",
-     "sayfa": "25 (PDF; original source)",
-     "derleyen": "030"
     }
    ],
    "tr": "170° + 20° = 190° manyetik rota; batı bandında çift binlik seviyelere 500 ft eklenir.",
@@ -1285,6 +1285,13 @@
   "61038": {
    "src": [
     {
+     "k": "x-austro-030",
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+     "no": "85",
+     "sayfa": "25 (PDF; original source)",
+     "derleyen": "030"
+    },
+    {
      "k": "linx-airlaw",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
      "no": "120",
@@ -1297,13 +1304,6 @@
      "no": "",
      "sayfa": "SERA.5005(g); Appendix 3 table of cruising levels",
      "derleyen": "010"
-    },
-    {
-     "k": "x-austro-030",
-     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
-     "no": "85",
-     "sayfa": "25 (PDF; original source)",
-     "derleyen": "030"
     }
    ],
    "tr": "Tablo rüzgâr düzeltmeli uçuş istikametine değil, manyetik rotaya dayanır.",
@@ -1583,27 +1583,6 @@
   "61046": {
    "src": [
     {
-     "k": "linx-airlaw",
-     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
-     "no": "139",
-     "sayfa": "23",
-     "derleyen": "010"
-    },
-    {
-     "k": "ref-2a2254924603",
-     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-18537",
-     "no": "",
-     "sayfa": "NCO.IDE.A.175(a)(1)(i)",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-cad-rs",
-     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-     "no": "40",
-     "sayfa": "6",
-     "derleyen": "010"
-    },
-    {
      "k": "x-traficom-070",
      "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
      "no": "40",
@@ -1630,6 +1609,27 @@
      "no": "2",
      "sayfa": "3",
      "derleyen": "070"
+    },
+    {
+     "k": "linx-airlaw",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+     "no": "139",
+     "sayfa": "23",
+     "derleyen": "010"
+    },
+    {
+     "k": "ref-2a2254924603",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-18537",
+     "no": "",
+     "sayfa": "NCO.IDE.A.175(a)(1)(i)",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-cad-rs",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
+     "no": "40",
+     "sayfa": "6",
+     "derleyen": "010"
     }
    ],
    "tr": "Tek motorlu kara uçağında bu yükümlülüğün eşiği, karaya süzülemeyecek mesafedir.",
@@ -1649,6 +1649,27 @@
   },
   "61047": {
    "src": [
+    {
+     "k": "x-linx-090",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+     "no": "9",
+     "sayfa": "3",
+     "derleyen": "090"
+    },
+    {
+     "k": "x-traficom-090",
+     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+     "no": "8",
+     "sayfa": "3",
+     "derleyen": "090"
+    },
+    {
+     "k": "x-cad-090",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+     "no": "4",
+     "sayfa": "3",
+     "derleyen": "090"
+    },
     {
      "k": "linx-airlaw",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
@@ -1676,27 +1697,6 @@
      "no": "12",
      "sayfa": "4",
      "derleyen": "010"
-    },
-    {
-     "k": "x-linx-090",
-     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
-     "no": "9",
-     "sayfa": "3",
-     "derleyen": "090"
-    },
-    {
-     "k": "x-traficom-090",
-     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
-     "no": "8",
-     "sayfa": "3",
-     "derleyen": "090"
-    },
-    {
-     "k": "x-cad-090",
-     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
-     "no": "4",
-     "sayfa": "3",
-     "derleyen": "090"
     }
    ],
    "tr": "VMC ile karşılaşmak IFR uçuşu kendiliğinden VFR’ye çevirmez.",
@@ -1846,6 +1846,27 @@
   "61051": {
    "src": [
     {
+     "k": "x-linx-090",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
+     "no": "120",
+     "sayfa": "18",
+     "derleyen": "090"
+    },
+    {
+     "k": "x-traficom-090",
+     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
+     "no": "99",
+     "sayfa": "16",
+     "derleyen": "090"
+    },
+    {
+     "k": "x-cad-090",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
+     "no": "111",
+     "sayfa": "13",
+     "derleyen": "090"
+    },
+    {
      "k": "linx-airlaw",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
      "no": "147",
@@ -1879,27 +1900,6 @@
      "no": "108",
      "sayfa": "20",
      "derleyen": "010"
-    },
-    {
-     "k": "x-linx-090",
-     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
-     "no": "120",
-     "sayfa": "18",
-     "derleyen": "090"
-    },
-    {
-     "k": "x-traficom-090",
-     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL090ENG%2001062018.pdf",
-     "no": "99",
-     "sayfa": "16",
-     "derleyen": "090"
-    },
-    {
-     "k": "x-cad-090",
-     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Communications.pdf",
-     "no": "111",
-     "sayfa": "13",
-     "derleyen": "090"
     }
    ],
    "tr": "Standart önleme tepkisi görsel talimata uyma, telsiz teması ve acil kodu birlikte içerir.",
@@ -2315,6 +2315,13 @@
   "61061": {
    "src": [
     {
+     "k": "x-traficom-020",
+     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL020ENG%2011102018.pdf",
+     "no": "152",
+     "sayfa": "26",
+     "derleyen": "020"
+    },
+    {
      "k": "linx-airlaw",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
      "no": "37",
@@ -2341,13 +2348,6 @@
      "no": "33",
      "sayfa": "7",
      "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-020",
-     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL020ENG%2011102018.pdf",
-     "no": "152",
-     "sayfa": "26",
-     "derleyen": "020"
     }
    ],
    "tr": "Altındaki irtifalarla gereken ayırmayı koruyacak en düşük kullanılabilir uçuş seviyesidir.",
@@ -2964,6 +2964,13 @@
   "61076": {
    "src": [
     {
+     "k": "x-traficom-070",
+     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+     "no": "36",
+     "sayfa": "9",
+     "derleyen": "070"
+    },
+    {
      "k": "linx-airlaw",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
      "no": "88",
@@ -2976,34 +2983,6 @@
      "no": "",
      "sayfa": "NCO.OP.130; AMC1 NCO.OP.130(a)",
      "derleyen": "010"
-    },
-    {
-     "k": "linx-airlaw",
-     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
-     "no": "90",
-     "sayfa": "15",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-cad-rs",
-     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-     "no": "30",
-     "sayfa": "5",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-cad-rs",
-     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-     "no": "31",
-     "sayfa": "5",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-070",
-     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
-     "no": "36",
-     "sayfa": "9",
-     "derleyen": "070"
     }
    ],
    "tr": "Yolcu emniyet brifingi kemerlerin yerini ve kullanımını içerir.",
@@ -3024,6 +3003,13 @@
   "61077": {
    "src": [
     {
+     "k": "x-traficom-060",
+     "url": "https://www.traficom.fi/sites/default/files/media/file/32088-PPL060ENG.pdf",
+     "no": "140",
+     "sayfa": "24 (PDF; original source)",
+     "derleyen": "060"
+    },
+    {
      "k": "linx-airlaw",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
      "no": "99",
@@ -3043,13 +3029,6 @@
      "no": "82",
      "sayfa": "16",
      "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-060",
-     "url": "https://www.traficom.fi/sites/default/files/media/file/32088-PPL060ENG.pdf",
-     "no": "140",
-     "sayfa": "24 (PDF; original source)",
-     "derleyen": "060"
     }
    ],
    "tr": "Yasak bölge, tahditli bölgedeki koşullu sınırlamalardan farklıdır.",
@@ -3266,13 +3245,6 @@
      ]
     },
     {
-     "k": "x-austrocontrol-ecqb-ppl",
-     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
-     "no": "61",
-     "sayfa": "14",
-     "derleyen": "010"
-    },
-    {
      "k": "x-tc-tp13014",
      "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
      "no": "77",
@@ -3292,10 +3264,17 @@
      "no": "139",
      "sayfa": "24",
      "derleyen": "050"
+    },
+    {
+     "k": "x-austrocontrol-ecqb-ppl",
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
+     "no": "61",
+     "sayfa": "14",
+     "derleyen": "010"
     }
    ],
-   "tr": "ICAO/EASA tavanı, yer veya su üstünden ölçülen, 20.000 ft altında gökyüzünün yarıdan fazlasını örten en alçak uygun bulut tabanıdır. FEW/SCT örtüsü bu eşiği sağlamaz; BKN/OVC sağlayabilir. METAR yükseklikleri yüzlerce feet’tir.",
-   "en": "The ICAO/EASA ceiling is the lowest qualifying layer below 20,000 ft covering more than half the sky, above ground or water. FEW/SCT do not qualify; BKN/OVC can. METAR heights use hundreds of feet.",
+   "tr": "Tavan, bütün bulut tabanlarıyla aynı değildir:20 000 ft altındaki katmanlardan yarıdan fazla örtülme veren en alçağı seçilir; referans yer/sudur. METAR’da BKN/OVC katmanları bu ayrımı gösterir.",
+   "en": "The ceiling is a height above ground/water. It uses the lowest layer below 20,000 ft covering more than half the sky; a scattered layer alone does not establish a ceiling.",
    "answer_verification": [
     {
      "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-11607",
@@ -3395,27 +3374,6 @@
   "14909": {
    "src": [
     {
-     "k": "pplhavuz",
-     "url": "https://www.scribd.com/document/851963112/PPLHAVUZSONHALI-1",
-     "no": "48",
-     "sayfa": "Kullanıcı ipucu; kaynak taranmadı",
-     "derleyen": "010"
-    },
-    {
-     "k": "lahmacun",
-     "url": "https://www.scribd.com/document/856014115/1-Lahmacun-%C4%B0%C5%9Faretsiz",
-     "no": "390",
-     "sayfa": "Kullanıcı ipucu; kaynak taranmadı",
-     "derleyen": "010"
-    },
-    {
-     "k": "ref-12fdfc35d249",
-     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-11607",
-     "no": "",
-     "sayfa": "Annex I, definition (117)",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-030",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Flight_performance_and_planning.pdf",
      "no": "32",
@@ -3435,6 +3393,27 @@
      "no": "21",
      "sayfa": "4 (PDF; original source)",
      "derleyen": "030"
+    },
+    {
+     "k": "pplhavuz",
+     "url": "https://www.scribd.com/document/851963112/PPLHAVUZSONHALI-1",
+     "no": "48",
+     "sayfa": "Kullanıcı ipucu; kaynak taranmadı",
+     "derleyen": "010"
+    },
+    {
+     "k": "lahmacun",
+     "url": "https://www.scribd.com/document/856014115/1-Lahmacun-%C4%B0%C5%9Faretsiz",
+     "no": "390",
+     "sayfa": "Kullanıcı ipucu; kaynak taranmadı",
+     "derleyen": "010"
+    },
+    {
+     "k": "ref-12fdfc35d249",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-11607",
+     "no": "",
+     "sayfa": "Annex I, definition (117)",
+     "derleyen": "010"
     }
    ],
    "tr": "TORA, kalkış koşusu için uygun ve kullanılabilir olduğu ilan edilen pist uzunluğudur. Stopway veya clearway TORA’ya eklenmez. Mevcut soru aynı tanımı terimden değil açıklamadan soruyor; yeni kopya açılmadan kullanıcının doğruladığı soru tipi olarak yıldızlandı.",
@@ -3632,20 +3611,6 @@
   "15667": {
    "src": [
     {
-     "k": "ref-131d4ea67aaf",
-     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-atm-ans-regulation-eu?erules-id=ERULES-1963177438-17691",
-     "no": "",
-     "sayfa": "ATS.TR.320(a)(2)",
-     "derleyen": "010"
-    },
-    {
-     "k": "caab-airlaw",
-     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
-     "no": "82",
-     "sayfa": "11",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-050",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Meteorology.pdf",
      "no": "116",
@@ -3665,6 +3630,20 @@
      "no": "108",
      "sayfa": "13",
      "derleyen": "050"
+    },
+    {
+     "k": "ref-131d4ea67aaf",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-atm-ans-regulation-eu?erules-id=ERULES-1963177438-17691",
+     "no": "",
+     "sayfa": "ATS.TR.320(a)(2)",
+     "derleyen": "010"
+    },
+    {
+     "k": "caab-airlaw",
+     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+     "no": "82",
+     "sayfa": "11",
+     "derleyen": "010"
     }
    ],
    "tr": "ATIS, önemli bir değişiklik oluşunca derhâl güncellenir. Sabit bir saat aralığını beklemek doğru değildir. Son ATIS tanıtım harfi güncel yayının hangisi olduğunu gösterir.",
@@ -3971,13 +3950,6 @@
   "16483": {
    "src": [
     {
-     "k": "caab-airlaw",
-     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
-     "no": "44",
-     "sayfa": "6",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-090",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
      "no": "130",
@@ -3990,6 +3962,13 @@
      "no": "107",
      "sayfa": "18",
      "derleyen": "090"
+    },
+    {
+     "k": "caab-airlaw",
+     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+     "no": "44",
+     "sayfa": "6",
+     "derleyen": "010"
     }
    ],
    "also_subjects": [
@@ -4064,27 +4043,6 @@
   "14291": {
    "src": [
     {
-     "k": "caab-airlaw",
-     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
-     "no": "89",
-     "sayfa": "12",
-     "derleyen": "010"
-    },
-    {
-     "k": "linx-airlaw",
-     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
-     "no": "92",
-     "sayfa": "16",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "76",
-     "sayfa": "15",
-     "derleyen": "010"
-    },
-    {
      "k": "x-sonyaklasma",
      "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-3",
      "no": "3",
@@ -4111,6 +4069,27 @@
      "no": "107",
      "sayfa": "31 (PDF; original source)",
      "derleyen": "030"
+    },
+    {
+     "k": "caab-airlaw",
+     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+     "no": "89",
+     "sayfa": "12",
+     "derleyen": "010"
+    },
+    {
+     "k": "linx-airlaw",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+     "no": "92",
+     "sayfa": "16",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "76",
+     "sayfa": "15",
+     "derleyen": "010"
     }
    ],
    "also_subjects": [
@@ -4298,20 +4277,6 @@
   "14327": {
    "src": [
     {
-     "k": "caab-airlaw",
-     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
-     "no": "122",
-     "sayfa": "16",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "123",
-     "sayfa": "22",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-070",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
      "no": "128",
@@ -4324,6 +4289,20 @@
      "no": "92",
      "sayfa": "12",
      "derleyen": "070"
+    },
+    {
+     "k": "caab-airlaw",
+     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+     "no": "122",
+     "sayfa": "16",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "123",
+     "sayfa": "22",
+     "derleyen": "010"
     }
    ],
    "replace_sources": true,
@@ -4434,34 +4413,6 @@
   "14321": {
    "src": [
     {
-     "k": "caab-airlaw",
-     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
-     "no": "138",
-     "sayfa": "18",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-austrocontrol-ecqb-ppl",
-     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
-     "no": "97",
-     "sayfa": "21",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "120",
-     "sayfa": "22",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "121",
-     "sayfa": "22",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-070",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
      "no": "121",
@@ -4516,6 +4467,34 @@
      "no": "137",
      "sayfa": "16",
      "derleyen": "090"
+    },
+    {
+     "k": "caab-airlaw",
+     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+     "no": "138",
+     "sayfa": "18",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-austrocontrol-ecqb-ppl",
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
+     "no": "97",
+     "sayfa": "21",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "120",
+     "sayfa": "22",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "121",
+     "sayfa": "22",
+     "derleyen": "010"
     }
    ],
    "replace_sources": true,
@@ -4657,13 +4636,6 @@
   "16316": {
    "src": [
     {
-     "k": "caab-airlaw",
-     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
-     "no": "203",
-     "sayfa": "26",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-090",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
      "no": "27",
@@ -4704,6 +4676,13 @@
      "no": "56",
      "sayfa": "8",
      "derleyen": "090"
+    },
+    {
+     "k": "caab-airlaw",
+     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+     "no": "203",
+     "sayfa": "26",
+     "derleyen": "010"
     }
    ],
    "also_subjects": [
@@ -4773,13 +4752,6 @@
   "15963": {
    "src": [
     {
-     "k": "caab-airlaw",
-     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
-     "no": "219",
-     "sayfa": "28",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-070",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
      "no": "11",
@@ -4799,6 +4771,13 @@
      "no": "37",
      "sayfa": "6",
      "derleyen": "070"
+    },
+    {
+     "k": "caab-airlaw",
+     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+     "no": "219",
+     "sayfa": "28",
+     "derleyen": "010"
     }
    ],
    "also_subjects": [
@@ -4862,13 +4841,6 @@
   "16421": {
    "src": [
     {
-     "k": "caab-airlaw",
-     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
-     "no": "243",
-     "sayfa": "30",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-090",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
      "no": "74",
@@ -4881,6 +4853,13 @@
      "no": "85",
      "sayfa": "11",
      "derleyen": "090"
+    },
+    {
+     "k": "caab-airlaw",
+     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+     "no": "243",
+     "sayfa": "30",
+     "derleyen": "010"
     }
    ],
    "also_subjects": [
@@ -5267,27 +5246,6 @@
   "14399": {
    "src": [
     {
-     "k": "linx-airlaw",
-     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
-     "no": "32",
-     "sayfa": "7",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-cad-rs",
-     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-     "no": "9",
-     "sayfa": "3",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "30",
-     "sayfa": "7",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-090",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
      "no": "22",
@@ -5328,6 +5286,27 @@
      "no": "55",
      "sayfa": "8",
      "derleyen": "090"
+    },
+    {
+     "k": "linx-airlaw",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+     "no": "32",
+     "sayfa": "7",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-cad-rs",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
+     "no": "9",
+     "sayfa": "3",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "30",
+     "sayfa": "7",
+     "derleyen": "010"
     }
    ],
    "replace_sources": true,
@@ -5364,27 +5343,6 @@
   "59002": {
    "src": [
     {
-     "k": "linx-airlaw",
-     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
-     "no": "39",
-     "sayfa": "8",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-cad-rs",
-     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-     "no": "23",
-     "sayfa": "5",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "34",
-     "sayfa": "7",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-020",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Aircraft_general_knowledge.pdf",
      "no": "142",
@@ -5418,6 +5376,27 @@
      "no": "101",
      "sayfa": "26",
      "derleyen": "020"
+    },
+    {
+     "k": "linx-airlaw",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+     "no": "39",
+     "sayfa": "8",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-cad-rs",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
+     "no": "23",
+     "sayfa": "5",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "34",
+     "sayfa": "7",
+     "derleyen": "010"
     }
    ],
    "also_subjects": [
@@ -5462,18 +5441,18 @@
   "14241": {
    "src": [
     {
-     "k": "linx-airlaw",
-     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
-     "no": "44",
-     "sayfa": "8",
-     "derleyen": "010"
-    },
-    {
      "k": "x-traficom-070",
      "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
      "no": "34",
      "sayfa": "8",
      "derleyen": "070"
+    },
+    {
+     "k": "linx-airlaw",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+     "no": "44",
+     "sayfa": "8",
+     "derleyen": "010"
     }
    ],
    "replace_sources": true,
@@ -5545,27 +5524,6 @@
   "14302": {
    "src": [
     {
-     "k": "linx-airlaw",
-     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
-     "no": "47",
-     "sayfa": "9",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-cad-rs",
-     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-     "no": "26",
-     "sayfa": "5",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "40",
-     "sayfa": "8",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-040",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Human_performance.pdf",
      "no": "87",
@@ -5585,6 +5543,27 @@
      "no": "120",
      "sayfa": "14",
      "derleyen": "040"
+    },
+    {
+     "k": "linx-airlaw",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+     "no": "47",
+     "sayfa": "9",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-cad-rs",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
+     "no": "26",
+     "sayfa": "5",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "40",
+     "sayfa": "8",
+     "derleyen": "010"
     }
    ],
    "replace_sources": true,
@@ -5628,6 +5607,20 @@
   "15951": {
    "src": [
     {
+     "k": "x-traficom-070",
+     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+     "no": "35",
+     "sayfa": "8",
+     "derleyen": "070"
+    },
+    {
+     "k": "x-traficom-070",
+     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+     "no": "38",
+     "sayfa": "9",
+     "derleyen": "070"
+    },
+    {
      "k": "linx-airlaw",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
      "no": "53",
@@ -5647,20 +5640,6 @@
      "no": "76",
      "sayfa": "9",
      "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-070",
-     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
-     "no": "35",
-     "sayfa": "8",
-     "derleyen": "070"
-    },
-    {
-     "k": "x-traficom-070",
-     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
-     "no": "38",
-     "sayfa": "9",
-     "derleyen": "070"
     }
    ],
    "also_subjects": [
@@ -6003,20 +5982,6 @@
   "14266": {
    "src": [
     {
-     "k": "x-austrocontrol-ecqb-ppl",
-     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
-     "no": "38",
-     "sayfa": "9",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "174",
-     "sayfa": "30",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-090",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Communications.pdf",
      "no": "8",
@@ -6036,6 +6001,20 @@
      "no": "3",
      "sayfa": "3",
      "derleyen": "090"
+    },
+    {
+     "k": "x-austrocontrol-ecqb-ppl",
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
+     "no": "38",
+     "sayfa": "9",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "174",
+     "sayfa": "30",
+     "derleyen": "010"
     }
    ],
    "replace_sources": true,
@@ -6045,13 +6024,6 @@
   },
   "14722": {
    "src": [
-    {
-     "k": "x-austrocontrol-ecqb-ppl",
-     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
-     "no": "66",
-     "sayfa": "15",
-     "derleyen": "010"
-    },
     {
      "k": "x-sonyaklasma",
      "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-4",
@@ -6100,6 +6072,13 @@
      "no": "138",
      "sayfa": "16",
      "derleyen": "020"
+    },
+    {
+     "k": "x-austrocontrol-ecqb-ppl",
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
+     "no": "66",
+     "sayfa": "15",
+     "derleyen": "010"
     }
    ],
    "also_subjects": [
@@ -6213,20 +6192,6 @@
   "14330": {
    "src": [
     {
-     "k": "x-austrocontrol-ecqb-ppl",
-     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
-     "no": "124",
-     "sayfa": "27",
-     "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "136",
-     "sayfa": "24",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-070",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
      "no": "142",
@@ -6239,6 +6204,20 @@
      "no": "149",
      "sayfa": "17",
      "derleyen": "070"
+    },
+    {
+     "k": "x-austrocontrol-ecqb-ppl",
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
+     "no": "124",
+     "sayfa": "27",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "136",
+     "sayfa": "24",
+     "derleyen": "010"
     }
    ],
    "replace_sources": true,
@@ -6249,13 +6228,6 @@
   "14264": {
    "src": [
     {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "102",
-     "sayfa": "19",
-     "derleyen": "010"
-    },
-    {
      "k": "caab-airlaw",
      "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
      "no": "35",
@@ -6263,10 +6235,10 @@
      "derleyen": "010"
     },
     {
-     "k": "ref-5ac2a0975478",
-     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
-     "no": "",
-     "sayfa": "SERA.3210(c)(3)",
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "102",
+     "sayfa": "19",
      "derleyen": "010"
     }
    ],
@@ -6290,13 +6262,6 @@
   "14336": {
    "src": [
     {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "122",
-     "sayfa": "22",
-     "derleyen": "010"
-    },
-    {
      "k": "x-linx-070",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
      "no": "127",
@@ -6309,6 +6274,13 @@
      "no": "91",
      "sayfa": "12",
      "derleyen": "070"
+    },
+    {
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "122",
+     "sayfa": "22",
+     "derleyen": "010"
     }
    ],
    "replace_sources": true,
@@ -6318,13 +6290,6 @@
   },
   "14331": {
    "src": [
-    {
-     "k": "x-traficom-lapl-ppl",
-     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-     "no": "140",
-     "sayfa": "25",
-     "derleyen": "010"
-    },
     {
      "k": "x-linx-070",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Operational_procedures.pdf",
@@ -6338,6 +6303,13 @@
      "no": "150",
      "sayfa": "17",
      "derleyen": "070"
+    },
+    {
+     "k": "x-traficom-lapl-ppl",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+     "no": "140",
+     "sayfa": "25",
+     "derleyen": "010"
     }
    ],
    "replace_sources": true,
@@ -27514,7 +27486,10 @@
      "derleyen": "030"
     }
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_subjects": [
+    "010"
+   ]
   },
   "16163": {
    "src": [
@@ -38885,17 +38860,17 @@
      "derleyen": "070"
     },
     {
+     "k": "x-traficom-070",
+     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+     "no": "36",
+     "sayfa": "9",
+     "derleyen": "070"
+    },
+    {
      "k": "linx-airlaw",
      "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
      "no": "88",
      "sayfa": "15",
-     "derleyen": "010"
-    },
-    {
-     "k": "ref-b7eb549a4218",
-     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-13601",
-     "no": "",
-     "sayfa": "NCO.OP.130; AMC1 NCO.OP.130(a)",
      "derleyen": "010"
     },
     {
@@ -38918,13 +38893,6 @@
      "no": "31",
      "sayfa": "5",
      "derleyen": "010"
-    },
-    {
-     "k": "x-traficom-070",
-     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
-     "no": "36",
-     "sayfa": "9",
-     "derleyen": "070"
     }
    ],
    "replace_sources": true,
@@ -59334,13 +59302,6 @@
      "no": "80",
      "sayfa": "11",
      "derleyen": "010"
-    },
-    {
-     "k": "ref-da52deaa0d70",
-     "url": "https://www.easa.europa.eu/sites/default/files/dfu/ANNEX%2011%20Checklist%20%28for%20info%20only%29.pdf",
-     "no": "",
-     "sayfa": "ICAO Annex 11 definition reproduced in EASA checklist, p.20; Annex 12 emergency definitions",
-     "derleyen": "010"
     }
    ],
    "replace_sources": true,
@@ -67641,6 +67602,93 @@
      "derleyen": "090"
     }
    ],
+   "replace_sources": true
+  },
+  "61089": {
+   "src": [
+    {
+     "k": "exam-primary-atpl-multi-pilot-pic",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no?kw=LAPL&page=9",
+     "no": "Bağımsız hatırlanan-konu alıştırması",
+     "sayfa": "Part-FCL FCL.505(a)(2), read with FCL.305(a)(3)-(4)",
+     "derleyen": "010"
+    },
+    {
+     "k": "ref-4fcf2872f298",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no?kw=LAPL&page=9",
+     "no": "",
+     "sayfa": "Part-FCL FCL.505(a)(2), read with FCL.305(a)(3)-(4)",
+     "derleyen": "010"
+    }
+   ],
+   "tr": "Tek pilotlu ticari uçakta PIC ile çok pilotlu ticari uçakta PIC aynı değildir. CPL ile tek pilotlu ticari uçakta PIC ve ticari uçakta yardımcı pilotluk mümkündür; bu sorudaki çok pilotlu ticari uçakta PIC için ATPL gerekir. Tam sınav kökü hatırlanmadığı için benzer adaydır.",
+   "en": "CPL single-pilot CAT command and CAT co-pilot privileges differ from command of a certificated multi-pilot aeroplane. The latter requires ATPL privileges. This is a recalled-topic candidate, not an authenticated exam text.",
+   "isaret": "aday",
+   "answer_verification": [
+    {
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aircrew-regulation-eu-no?kw=LAPL&page=9",
+     "section": "Part-FCL FCL.505(a)(2), read with FCL.305(a)(3)-(4)"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "61090": {
+   "src": [
+    {
+     "k": "exam-primary-ifrnrvsm-track",
+     "url": "https://laws.justice.gc.ca/eng/regulations/SOR-96-433/page-58.html",
+     "no": "Bağımsız hatırlanan-konu alıştırması",
+     "sayfa": "602.34 cruising-level table, NON-RVSM column for track180–359, FL350; used only for the stated conventional-table exercise",
+     "derleyen": "010"
+    },
+    {
+     "k": "ref-dd5a04af08d9",
+     "url": "https://laws.justice.gc.ca/eng/regulations/SOR-96-433/page-58.html",
+     "no": "",
+     "sayfa": "602.34 cruising-level table, NON-RVSM column for track180–359, FL350; used only for the stated conventional-table exercise",
+     "derleyen": "010"
+    }
+   ],
+   "tr": "180°–359° yönündeki NON-RVSM sütunu FL310, FL350, FL390…; karşı yön FL290, FL330, FL370, FL410… şeklindedir. RVSM sütunu farklıdır. Sınavdaki derece hatırlanmadığı için 200° yalnız örnek değerdir; bu gerçek sınavın doğrulanmış metni değildir.",
+   "en": "The conventional non-RVSM table assigns FL310/350/390 to 180–359 degrees and FL290/330/370/410 to the opposite band. RVSM allocation differs. The remembered track is unknown; 200 degrees is an exercise assumption, not a confirmed exam detail.",
+   "isaret": "aday",
+   "answer_verification": [
+    {
+     "url": "https://laws.justice.gc.ca/eng/regulations/SOR-96-433/page-58.html",
+     "section": "602.34 cruising-level table, NON-RVSM column for track180–359, FL350; used only for the stated conventional-table exercise"
+    }
+   ],
+   "adapted": true,
+   "replace_sources": true
+  },
+  "61091": {
+   "src": [
+    {
+     "k": "exam-primary-transition-climb-ta",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+     "no": "Bağımsız hatırlanan-konu alıştırması",
+     "sayfa": "SERA.8015(eb)(1)-(3), altitude/flight-level reporting and QNH on descent",
+     "derleyen": "010"
+    },
+    {
+     "k": "ref-bc1722cd4641",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+     "no": "",
+     "sayfa": "SERA.8015(eb)(1)-(3), altitude/flight-level reporting and QNH on descent",
+     "derleyen": "010"
+    }
+   ],
+   "tr": "Tırmanırken TA geçilirken standart basınca geçilir; TL beklenmez. Alçalırken ise TL geçilirken QNH seçilir. Katman içinde tırmanış FL, alçalış altitude olarak ifade edilir. Bu, hatırlanan transition konusu için aday sorudur.",
+   "en": "Switch from QNH to standard pressure when climbing through TA; descent changes to QNH at TL. Layer reporting is FL climbing and altitude descending. Recalled-topic reconstruction.",
+   "isaret": "aday",
+   "answer_verification": [
+    {
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+     "section": "SERA.8015(eb)(1)-(3), altitude/flight-level reporting and QNH on descent"
+    }
+   ],
+   "adapted": true,
    "replace_sources": true
   }
  },

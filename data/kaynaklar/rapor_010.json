@@ -1,21 +1,21 @@
 {
  "ders": "010",
- "tarih": "2026-10-12",
- "yeni_benzersiz": 88,
+ "tarih": "2026-10-13",
+ "yeni_benzersiz": 91,
  "taranan": 824,
  "kaynaklar": {
   "caab-airlaw": {
-   "existing": 54,
-   "new": 27,
+   "existing": 56,
+   "new": 25,
    "review": 50,
    "out_of_scope": 111,
    "duplicate_new": 8
   },
   "linx-airlaw": {
-   "existing": 59,
+   "existing": 61,
    "review": 36,
-   "new": 48,
-   "duplicate_new": 7
+   "new": 47,
+   "duplicate_new": 6
   },
   "x-austrocontrol-ecqb-ppl": {
    "review": 74,
@@ -25,8 +25,8 @@
    "duplicate_new": 8
   },
   "x-cad-rs": {
-   "existing": 30,
-   "duplicate_new": 32,
+   "existing": 32,
+   "duplicate_new": 30,
    "review": 13,
    "out_of_scope": 4
   },
@@ -364,9 +364,10 @@
    "no": "35",
    "page": "5",
    "key": "caab-airlaw:35",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61020
+   "status": "existing",
+   "reason": "Hızlı içerik denetiminde mevcut kaydın aynı kuralı kapsadığı doğrulandı; eski yeni-ID arşivde/tekrar olarak korunur.",
+   "bank_id": 14264,
+   "question_id": 14264
   },
   {
    "source": "caab-airlaw",
@@ -744,9 +745,10 @@
    "no": "80",
    "page": "11",
    "key": "caab-airlaw:80",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61025
+   "status": "existing",
+   "reason": "Hızlı içerik denetiminde mevcut kaydın aynı kuralı kapsadığı doğrulandı; eski yeni-ID arşivde/tekrar olarak korunur.",
+   "bank_id": 15988,
+   "question_id": 15988
   },
   {
    "source": "caab-airlaw",
@@ -3032,9 +3034,10 @@
    "no": "88",
    "page": "15",
    "key": "linx-airlaw:88",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61076
+   "status": "existing",
+   "reason": "Hızlı içerik denetiminde mevcut kaydın aynı kuralı kapsadığı doğrulandı; eski yeni-ID arşivde/tekrar olarak korunur.",
+   "bank_id": 16050,
+   "question_id": 16050
   },
   {
    "source": "linx-airlaw",
@@ -3051,11 +3054,12 @@
    "no": "90",
    "page": "15",
    "key": "linx-airlaw:90",
-   "status": "duplicate_new",
+   "status": "existing",
    "reason": "Yeni adayla aynı kural/koşul; kelime veya seçenek sırası farkı ayrı soru gerektirmiyor.",
-   "bank_id": 14227,
+   "bank_id": 16050,
    "representative_key": "linx-airlaw:88",
-   "question_id": 61076
+   "original_status": "duplicate_new",
+   "question_id": 16050
   },
   {
    "source": "linx-airlaw",
@@ -5327,10 +5331,12 @@
    "page": "5",
    "key": "x-cad-rs:30",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "existing",
    "representative_key": "linx-airlaw:88",
    "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61076
+   "original_status": "duplicate_new",
+   "bank_id": 16050,
+   "question_id": 16050
   },
   {
    "source": "x-cad-rs",
@@ -5338,10 +5344,12 @@
    "page": "5",
    "key": "x-cad-rs:31",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "existing",
    "representative_key": "linx-airlaw:88",
    "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61076
+   "original_status": "duplicate_new",
+   "bank_id": 16050,
+   "question_id": 16050
   },
   {
    "source": "x-cad-rs",
@@ -8109,10 +8117,10 @@
   }
  ],
  "kaynak_yeni_benzersiz": {
-  "caab-airlaw": 31,
-  "linx-airlaw": 48,
+  "caab-airlaw": 29,
+  "linx-airlaw": 47,
   "x-austrocontrol-ecqb-ppl": 9,
-  "x-cad-rs": 30,
+  "x-cad-rs": 29,
   "x-traficom-lapl-ppl": 34,
   "x-sonyaklasma": 0,
   "x-tc-tp13014": 4

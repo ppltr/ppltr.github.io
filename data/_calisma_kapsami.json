@@ -1,55 +1,171 @@
 {
   "schema_version": 1,
-  "tamamlayici": [
-    {
-      "id": 61006,
-      "ders": "010",
-      "neden": "CPL yaş sınırı; PPL lisans ve CPL yetki karşılaştırmalarının ardından tamamlayıcı ayrıntı."
-    },
-    {
-      "id": 61008,
-      "ders": "010",
-      "neden": "FL290–FL410 RVSM ayrıntısı; sınavda hatırlanan temel IFR/non-RVSM seviye tipi ana kapsamda korunur."
-    },
-    {
-      "id": 61010,
-      "ders": "010",
-      "neden": "CPL Class 1 medikal sınıfı; PPL medikali ve lisans yetkileri ana kapsamda."
-    },
-    {
-      "id": 61015,
-      "ders": "010",
-      "neden": "İlk medikal geçerlilik tarihinin idari hesap başlangıcı."
-    },
-    {
-      "id": 61023,
-      "ders": "010",
-      "neden": "ICAO Air Navigation Commission teknik Annex öneri görevi; Chicago/ICAO kuruluş konusu ana kapsamda."
-    },
-    {
-      "id": 61047,
-      "ders": "010",
-      "neden": "Genel kurallar ile VFR/IFR ayrımını tekrar eden giriş düzeyinde tamamlayıcı tanım."
-    },
-    {
-      "id": 61059,
-      "ders": "010",
-      "neden": "ICAO standardını tam karşılamayan belgelerde yabancı devlet izin istisnası."
-    },
-    {
-      "id": 61069,
-      "ders": "010",
-      "neden": "SPIC süre kaydı terminolojisi; solo tanımı ve PPL eğitim şartları ana kapsamda."
-    }
-  ],
+  "tamamlayici": [],
   "ortak_ders_kisitlari": {
     "010": {
       "izinli_idler": [
         14909,
-        15988,
-        16050
+        14910,
+        14906,
+        14913,
+        63012
       ],
-      "neden": "Air Law kapsamı: kendi soru dosyaları, doğrulanmış TORA ve yeni tekrarların mevcut kanonik karşılıkları. Diğer derslerin ek soruları kendi derslerinde kalır."
+      "neden": "Yalnız hatırlanan TORA/ilan edilmiş mesafeler ve IFR seviye konuları."
+    }
+  },
+  "yayindaki_ek_soru_kapsami": {
+    "010": [
+      61001,
+      61002,
+      61004,
+      61007,
+      61035,
+      61060,
+      61061,
+      61072,
+      61078,
+      61079,
+      61080,
+      61081,
+      61089,
+      61090,
+      61091
+    ]
+  },
+  "sinav_odagi": {
+    "ders": "010",
+    "ids": [
+      61078,
+      61072,
+      14303,
+      61080,
+      61079,
+      61089,
+      61002,
+      61091,
+      61060,
+      61035,
+      14384,
+      61001,
+      61081,
+      14909,
+      63012,
+      61090
+    ],
+    "konular": [
+      "Kabotaj",
+      "Chicago / ICAO",
+      "PPL / CPL / ATPL yetkileri",
+      "Transition altitude / level / layer",
+      "AIP GEN–ENR–AD",
+      "Aerodrome Code 3",
+      "Ditching",
+      "TORA",
+      "IFR / non-RVSM manyetik rota"
+    ]
+  },
+  "gosterim_varyantlari": {
+    "14909": {
+      "text": "How is the take-off run available (TORA) defined?",
+      "options": [
+        "Runway length declared available and suitable for an aeroplane’s take-off ground run",
+        "TORA plus the stopway",
+        "TORA plus the clearway",
+        "Runway length available for the landing ground run"
+      ],
+      "tr_text": "Kalkış koşusu için kullanılabilir mesafe (TORA) nasıl tanımlanır?",
+      "tr_options": [
+        "Uçağın kalkış koşusuna uygun ve kullanılabilir olarak ilan edilmiş pist uzunluğu",
+        "TORA ile stopway toplamı",
+        "TORA ile clearway toplamı",
+        "İniş koşusu için kullanılabilir pist uzunluğu"
+      ],
+      "reason": "Kullanıcı sınavda TORA’nın soru kökünde parantez içinde bulunduğunu doğruladı. Aynı mevcut kavram/ID, dört seçenekte ilk doğru cevap korunarak sınav tanım biçiminde gösterilir."
+    },
+    "14384": {
+      "text": "Which names correctly identify the three main parts of an Aeronautical Information Publication (AIP)?",
+      "options": [
+        "General (GEN) — En-route (ENR) — Aerodromes (AD)",
+        "General (GEN) — Europe (EUR) — Arrivals (ARR)",
+        "Ground (GND) — En-route (ENR) — Approach (APP)",
+        "General (GEN) — En-route (ENR) — Air Traffic Control (ACC)"
+      ],
+      "tr_text": "Havacılık Bilgi Yayını’nın (AIP) üç ana bölümünün doğru adları hangileridir?",
+      "tr_options": [
+        "General / Genel (GEN) — En-route / Yol boyu (ENR) — Aerodromes / Meydanlar (AD)",
+        "General / Genel (GEN) — Europe / Avrupa (EUR) — Arrivals / Varışlar (ARR)",
+        "Ground / Yer (GND) — En-route / Yol boyu (ENR) — Approach / Yaklaşma (APP)",
+        "General / Genel (GEN) — En-route / Yol boyu (ENR) — Air Traffic Control / Hava Trafik Kontrol (ACC)"
+      ],
+      "reason": "Kullanıcı kısaltmaların açılımlarını seçeneklerde gördüğünü hatırlıyor; mevcut AIP kimliği ve ilk doğru seçenek korunur."
+    },
+    "61002": {
+      "text": "Which operational units are responsible for determining the transition level?",
+      "options": [
+        "Approach Control Office or the Aerodrome Control Tower",
+        "The Authority of the State",
+        "The ATC Authority",
+        "Area Control"
+      ],
+      "tr_text": "Transition Level’ın belirlenmesinden hangi operasyonel birimler sorumludur?",
+      "tr_options": [
+        "Yaklaşma Kontrol Ofisi veya Meydan Kontrol Kulesi",
+        "Devletin yetkili otoritesi",
+        "Genel ATC otoritesi",
+        "Saha kontrol birimi"
+      ],
+      "reason": "Konuşmada kullanıcı seçenekler içindeki APP/TWR cevabını ve ATC Authority yanlış seçeneğini doğruladı; aynı soru tipi ve ID korunur."
+    },
+    "61080": {
+      "text": "Which listed licence permits PIC duties in commercial air transport on a single-pilot aeroplane, with all required ratings and qualifications held?",
+      "options": [
+        "CPL(A)",
+        "PPL(A) alone",
+        "LAPL(A) alone",
+        "Student pilot authorisation"
+      ],
+      "tr_text": "Diğer tüm yetki ve koşullar tamamken, tek pilotlu bir uçakta ticari hava taşımacılığında kaptanlık (PIC) yapmaya listedeki hangi lisans izin verir?",
+      "tr_options": [
+        "CPL(A)",
+        "Tek başına PPL(A)",
+        "Tek başına LAPL(A)",
+        "Öğrenci pilot yetkisi"
+      ],
+      "reason": "Aynı CPL tek pilotlu CAT-PIC kavramı; kullanıcı lisansı seçeneklerden ayırmaya çalıştığı için aynı ID daha doğrudan lisans seçimiyle gösterilir."
+    },
+    "61079": {
+      "text": "Which listed licence permits co-pilot duties in commercial air transport, with all required ratings and qualifications held?",
+      "options": [
+        "CPL(A)",
+        "PPL(A) alone",
+        "LAPL(A) alone",
+        "Student pilot authorisation"
+      ],
+      "tr_text": "Diğer tüm yetki ve koşullar tamamken, ticari hava taşımacılığında yardımcı pilotluk yapmaya listedeki hangi lisans izin verir?",
+      "tr_options": [
+        "CPL(A)",
+        "Tek başına PPL(A)",
+        "Tek başına LAPL(A)",
+        "Öğrenci pilot yetkisi"
+      ],
+      "reason": "Aynı CPL yardımcı pilotluk yetkisi; mevcut ID ve ilk doğru seçenek korunur."
+    },
+    "63012": {
+      "text": "Below FL290, the standard semicircular IFR cruising-level table applies and there is no ATC or route exception. For magnetic track 180°, which listed flight level fits?",
+      "options": [
+        "FL100",
+        "FL090",
+        "FL110",
+        "FL130"
+      ],
+      "tr_text": "FL290 altında standart IFR yarım daire seyir seviyesi tablosu geçerli; ATC veya rota istisnası yok. Manyetik rota 180° ise hangi uçuş seviyesi uygundur?",
+      "tr_options": [
+        "FL100",
+        "FL090",
+        "FL110",
+        "FL130"
+      ],
+      "reason": "Mevcut IFR/VFR çiftindeki IFR batı yönü kuralı aynı ID ile doğrudan sorulur. Derece örnektir, hatırlanan kesin sınav derecesi olduğu iddia edilmez."
     }
   }
 }

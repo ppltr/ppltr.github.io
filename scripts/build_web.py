@@ -121,6 +121,8 @@ def export_extras(conn) -> tuple[dict, dict]:
             for qid, extra in x.items():
                 if qid not in allowed and code in extra.get("a", []):
                     extra["a"] = [subject for subject in extra["a"] if subject != code]
+        for qid in scope.get("sinav_odagi", {}).get("ids", []):
+            x.setdefault(qid, {})["p"] = 1
     kullanilan = {r["id"]: [r["name"], r["url"] or ""]
                   for r in conn.execute("SELECT id, name, url FROM sources ORDER BY id")}
     for r in conn.execute(
@@ -161,6 +163,9 @@ def export_review_queue(conn) -> list:
 def export() -> dict:
     conn = sqlite3.connect(DB)
     conn.row_factory = sqlite3.Row
+    scope_path = SOURCE_DIR.parent / "_calisma_kapsami.json"
+    scope = json.loads(scope_path.read_text(encoding="utf-8")) if scope_path.exists() else {}
+    extra_scope = {code: set(ids) for code, ids in scope.get("yayindaki_ek_soru_kapsami", {}).items()}
 
     subjects, subj_idx, sec_idx = [], {}, {}
     for r in conn.execute(
@@ -195,12 +200,14 @@ def export() -> dict:
     qs = []
     ceviri = ceviri_en = 0
     for r in conn.execute(
-        "SELECT q.id, q.subject_code, s.code AS sec, q.text, q.text_tr, q.text_en, q.lang, q.flagged, "
+        "SELECT q.id, q.subject_code, s.code AS sec, q.text, q.text_tr, q.text_en, q.lang, q.origin, q.flagged, "
         "       (q.dup_of IS NOT NULL) AS dup, (q.origin = 'uretilmis') AS gen, "
         "       q.needs_figure AS fig "
         "FROM questions q LEFT JOIN sections s ON s.id = q.section_id WHERE q.review=0 "
         "ORDER BY q.subject_code, s.code, q.id"
     ):
+        if r["origin"] == "ek" and r["subject_code"] in extra_scope and r["id"] not in extra_scope[r["subject_code"]]:
+            continue
         rows = conn.execute(
             "SELECT text, text_tr, text_en FROM options WHERE question_id = ? ORDER BY ord",
             (r["id"],)).fetchall()
@@ -222,7 +229,18 @@ def export() -> dict:
         if en_var or r["lang"] != "tr":
             ceviri_en += 1
         qs.append(row)
+    # Aynı kavram/ID sınavda hatırlanan tanım/seçenek biçimiyle gösterilir.
+    # İlk seçenek doğru kalır; yerel banka nesnesi ve öğrenme ID'si değişmez.
+    for row in qs:
+        variant = scope.get("gosterim_varyantlari", {}).get(str(row[0]))
+        if variant:
+            row += [""] * (14 - len(row))
+            row[3], row[4] = variant["text"], variant["options"]
+            row[10], row[11] = variant["tr_text"], variant["tr_options"]
+            row[12], row[13] = "", ""
     ekstra, kaynaklar = export_extras(conn)
+    published_ids = {row[0] for row in qs}
+    ekstra = {qid: value for qid, value in ekstra.items() if qid in published_ids}
     review_queue = export_review_queue(conn)
     conn.close()
     return {"s": subjects, "q": qs, "n": export_notes(), "fg": figs,

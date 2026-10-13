@@ -1373,6 +1373,7 @@ function inToggles(q, withPassed){
 }
 
 const DECKS = [
+  { k:'focus', cls:'exam', t:'Hatırladığın sınav konuları', d:'Konuşmadaki sınav konuları; yıldızlar doğruladığın eşleşmeler, diğerleri benzer adaylardır. Çözülmüş sorular da tekrar çalışılabilir.' },
   { k:'due',   cls:'due',   t:'Tekrar zamanı', d:'Vadesi gelenler' },
   { k:'wrong', cls:'wrong', t:'Yanlışlarım',   d:'Henüz oturmayanlar' },
   { k:'new',   cls:'new',   t:'Hiç görmedim',  d:'İlk kez çıkacak' },
@@ -1383,6 +1384,7 @@ const DECKS = [
 function inDeck(q, deck){
   const k = card(q[0]), now = Date.now();
   switch (deck){
+    case 'focus': return !!(xOf(q) && xOf(q).p);
     case 'due':   return !!k && k[1] <= now;
     case 'wrong': return !!k && k[3] > 0 && k[4] < MASTER;
     case 'new':   return !k;
@@ -1850,6 +1852,13 @@ function home(){
       '</div>';
   }
 
+  const focusN = QS.filter(q => xOf(q) && xOf(q).p && !q[6] && !isRev(q) && inSubject(q, '010')).length;
+  if (focusN && !isPassed('010') && (!pickedAny() || F.pick['010'])){
+    hero = '<div class="hero"><div class="wtitle">Sınavda hatırladığın konular</div>' +
+      '<p class="wtext">Kabotaj · Chicago/ICAO · lisans yetkileri · transition · AIP · Code 3 · ditching · TORA · IFR/non-RVSM</p>' +
+      '<button class="go" id="examFocus" type="button">Bu konuları çalış · ' + focusN + ' soru</button>' +
+      '<button class="hmini" id="examFocusNote" type="button">Kısa konu anlatımı ›</button></div>' + hero;
+  }
   // ── Deste çipleri: sıfır olanlar gizli, yer kaplamıyor ──
   const chips = DECKS.filter(d => counts[d.k] > 0)
     .map(d => '<button class="dchip ' + d.cls + (F.deck === d.k ? ' on' : '') +
@@ -1955,13 +1964,22 @@ function home(){
     ['ek',     'Ek kaynaklardan eklenenler', QS.filter(q => isEk(q) && !isRev(q) && notPassed(q)).length],
     ['airlawExtra','Air Law: tamamlayıcı ayrıntılar', QS.filter(q => ((xOf(q) || {}).u || []).includes('010') && !q[6] && !isRev(q)).length],
     ['hideFlag','Tartışmalıları gizle',      QS.filter(q => q[5] && notPassed(q)).length],
-  ].map(([k,x,n]) => '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k +
+  ].filter(([k,x,n]) => k !== 'airlawExtra' || n > 0).map(([k,x,n]) => '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k +
     '" type="button"><span class="knob"></span><span>' + x + '</span>' +
     '<span class="n">' + n + '</span></button>').join('') +
     '<button class="tbtn" id="reviewQueue" type="button">İnceleme kuyruğu · ' + REVIEW.length + '</button>';
   el('reviewQueue').onclick = openReviewQueue;
   el('sw').querySelectorAll('.switch').forEach(b =>
     b.onclick = () => { F[b.dataset.k] = !F[b.dataset.k]; savePref(); home(); openBox('optBox'); });
+  if (el('examFocus')) el('examFocus').onclick = () => {
+    F.pick = {'010':[]}; F.q = ''; F.deck = 'focus'; F.ek = true; F.hideDup = true;
+    F.count = 0; F.mode = 'study'; savePref(); start(false);
+  };
+  if (el('examFocusNote')) el('examFocusNote').onclick = () => {
+    const i = NOTES.findIndex(n => n.f === '010-sinavda-hatirlanan-konular.md');
+    openNotes(i >= 0 ? i : undefined);
+    el('sheet').classList.add('on');
+  };
 
   el('view').querySelectorAll('.dchip').forEach(b => b.onclick = () => {
     F.deck = b.dataset.deck; savePref(); home();

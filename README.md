@@ -706,3 +706,21 @@ Air Law'daki 88 yeni kayıt ve diğer derslerden bağlanan 27 yeni kayıt (115) 
 Air Law'da tekrarlar gizliyken 311 yerine **295 ana kapsam sorusu**, tamamlayıcılar da açılırsa **310** soru bulunur. Ana kapsamdaki yeni ek/ortak kayıt 97'dir. Kullanıcının “hiç görmedim” sayısı kişisel geçmişine bağlıdır; bu toplamlar kişisel çözülmemiş sayısı değildir. Üç doğrulanmış sınav işareti 61001, 61002 ve 14909 ana kapsamda kalır. Tam karar listesi `data/kaynaklar/rapor_airlaw_hizli_20261013.json` içindedir.
 
 Yarım kalan tur geri açıldığında güncel tekrar/kapsam filtreleri uygulanır. Çıkarılan sorular yüzünden eski indeks kayarak çözülmemiş bir soruyu atlamaz; kayıtlı cevap geçmişi korunur. 35 Python testi ve JS kapsam/tur devamı kontrolleri geçti.
+
+## 2026-10-13 · Konuşmadaki sınav konularına odaklı son düzenleme
+
+Kullanıcının paylaştığı 994 satırlık konuşma esas alındı. Air Law'daki yeni yayın kapsamı yalnız kabotaj, Chicago/ICAO, lisans yetkileri, transition, AIP, Code 3, ditching, TORA ve hatırlanan IFR/non-RVSM konusu olarak daraltıldı. Önceki 88 kayıttan bu konuları karşılamayan 76 kayıt yayın paketinden çıkarıldı; yerel kayıtlar ve kimlikleri tutuldu. Yeni ATPL çok pilotlu ticari uçak kaptanlığı, tırmanışta TA ve NON-RVSM örneği üç bağımsız aday olarak eklendi.
+
+Üstte **Sınavda hatırladığın konular → Bu konuları çalış · 16 soru** düğmesi vardır. Bu grup önceden çözülmüş AIP/PPL/TORA sorularını da aynı kimlikleriyle gösterir; “hiç görmedim” filtresi bu tekrar çalışmayı engellemez. **Kısa konu anlatımı** doğrudan `notes/010-sinavda-hatirlanan-konular.md` notunu açar.
+
+TORA'nın mevcut14909 kimliği, kullanıcı hatırlamasındaki gibi TORA soru kökünde parantez içinde olacak şekilde tanım sorusu olarak sunulur. AIP14384 seçeneklerinde GEN/ENR/AD'nin açık adları bulunur. CPL PIC/co-pilot kayıtları lisans seçenekleriyle gösterilir. Gösterim varyantları yerel soru nesnelerini değiştirmez, ilk doğru seçeneği ve geçmiş kimliğini korur.
+
+Yalnız üç yıldızlı eşleşme doğrulanmış olarak kalır. Diğer hatırlanan konular/koşullar benzer adaydır; özellikle IFR/non-RVSM örneğindeki200° kesin sınav derecesi değildir. Hiçbir soru resmî SHGM çıkmış sorusu olarak sunulmaz. Kullanıcının zaman isteğiyle test paketi çalıştırılmadı; kaynak dayanakları incelendi, banka/HTML üretildi ve GitHub Pages'e gönderildi.
+
+Air Law kaynak derlemesinde üç önceki tekrar kararının mevcut kanonik kayıtlar üzerinden çözülmesi ve yeni konu dosyasının dahil edilmesi için:
+
+```bash
+python3 scripts/kaynak_derle.py 010 data/kaynaklar/decisions/root_special.json data/kaynaklar/decisions/caab_linx_audit.json data/kaynaklar/decisions/other_airlaw_audit.json data/kaynaklar/decisions/exam_focus_010_20261013.json
+python3 scripts/init_db.py
+python3 scripts/build_web.py
+```
