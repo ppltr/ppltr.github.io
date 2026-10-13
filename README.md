@@ -1,6 +1,6 @@
 # PPL Soru Bankası
 
-SQLite tabanlı **PPL** çalışma uygulaması. İlk banka ATPL TV'deki *PPL Turkey (English)* sınav raporlarından çevrildi; ders notları ve kaynak taramalarından doğrulanmış, bağımsız yazılmış alıştırmalarla genişletildi. **3.572 kayıt, 11 ders; 383 tekrar bağlantısı çıkarılınca 3.189 benzersiz kayıt (varsayılan çalışma kapsamı 3.181 soru).** 233 kayıt ders notlarından, 638 kayıt ek kaynak çalışmalarından gelir.
+SQLite tabanlı **PPL** çalışma uygulaması. İlk banka ATPL TV'deki *PPL Turkey (English)* sınav raporlarından çevrildi; ders notları ve kaynak taramalarından doğrulanmış, bağımsız yazılmış alıştırmalarla genişletildi. **3.572 kayıt, 11 ders; 383 tekrar bağlantısı çıkarılınca 3.189 benzersiz kayıt (varsayılan çalışma kapsamı 3.182 soru).** 233 kayıt ders notlarından, 638 kayıt ek kaynak çalışmalarından gelir.
 
 Aşağıdaki sayılar sorunun ana dersine göre fiziksel kayıt sayılarıdır. Ortak konular aynı soru kimliğiyle birden fazla derste gösterilebilir; bu bağlar toplam soru sayısını artırmaz.
 
