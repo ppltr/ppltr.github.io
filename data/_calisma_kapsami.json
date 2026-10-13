@@ -40,41 +40,16 @@
       "id": 61069,
       "ders": "010",
       "neden": "SPIC süre kaydı terminolojisi; solo tanımı ve PPL eğitim şartları ana kapsamda."
-    },
-    {
-      "id": 63023,
-      "ders": "010",
-      "neden": "AIP AD 2.13 tam alt bölüm numarası; AIP GEN/ENR/AD bölümleri ve TORA ana kapsamda."
-    },
-    {
-      "id": 69003,
-      "ders": "010",
-      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
-    },
-    {
-      "id": 69021,
-      "ders": "010",
-      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
-    },
-    {
-      "id": 69022,
-      "ders": "010",
-      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
-    },
-    {
-      "id": 69023,
-      "ders": "010",
-      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
-    },
-    {
-      "id": 69024,
-      "ders": "010",
-      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
-    },
-    {
-      "id": 69025,
-      "ders": "010",
-      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
     }
-  ]
+  ],
+  "ortak_ders_kisitlari": {
+    "010": {
+      "izinli_idler": [
+        14909,
+        15988,
+        16050
+      ],
+      "neden": "Air Law kapsamı: kendi soru dosyaları, doğrulanmış TORA ve yeni tekrarların mevcut kanonik karşılıkları. Diğer derslerin ek soruları kendi derslerinde kalır."
+    }
+  }
 }

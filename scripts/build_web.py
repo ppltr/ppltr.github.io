@@ -114,6 +114,13 @@ def export_extras(conn) -> tuple[dict, dict]:
                     (qid, code, code)).fetchone():
                 sys.exit(f"hata: tamamlayıcı kapsam bilinmeyen soru/ders: {qid}/{code}")
             x.setdefault(qid, {}).setdefault("u", []).append(code)
+        # Air Law çalışmasına diğer derslerden otomatik ek soru yığma.
+        # Kaynak/ID/geçmiş ve sorunun kendi dersi korunur.
+        for code, rule in scope.get("ortak_ders_kisitlari", {}).items():
+            allowed = set(rule["izinli_idler"])
+            for qid, extra in x.items():
+                if qid not in allowed and code in extra.get("a", []):
+                    extra["a"] = [subject for subject in extra["a"] if subject != code]
     kullanilan = {r["id"]: [r["name"], r["url"] or ""]
                   for r in conn.execute("SELECT id, name, url FROM sources ORDER BY id")}
     for r in conn.execute(
