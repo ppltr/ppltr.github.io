@@ -1,0 +1,68 @@
+{
+ "subject_code": "020",
+ "subject_name": "Aircraft General Knowledge",
+ "origin": "ek",
+ "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
+ "answer_convention": "İki dilde aynı sırada; ilk şık doğru. Belirsiz cevap aktif bankada yok.",
+ "id_convention": "Kalıcı idler_020.json; eski veya emekli kimlik yeniden kullanılmaz.",
+ "sections": {
+  "020-EK": "Additional Questions"
+ },
+ "questions": [
+  {
+   "id": 62001,
+   "section": "020-EK",
+   "text": "An engine with dual ignition suffers the failure of one magneto in cruising flight. What is the most likely result?",
+   "options": [
+    "A slight drop in RPM and power; the engine keeps running on the other magneto",
+    "The engine stops, because half of the cylinders no longer fire",
+    "No change at all, because each cylinder needs only one spark plug",
+    "Heavy backfiring and black smoke from the exhaust"
+   ]
+  },
+  {
+   "id": 62002,
+   "section": "020-EK",
+   "text": "What is done during a compass swing?",
+   "options": [
+    "The aircraft compass is read on known magnetic headings and compared with a reference (datum) compass, and a deviation card is prepared",
+    "The local magnetic variation is measured and entered on the compass card",
+    "The compass is swung on any dry, flat part of the airfield, whatever the magnetic surroundings",
+    "The aircraft's true heading is determined instead of its magnetic heading"
+   ]
+  },
+  {
+   "id": 62003,
+   "section": "020-EK",
+   "text": "Why does a high-compression piston engine require fuel of a higher grade (higher octane number)?",
+   "options": [
+    "Higher-grade fuel resists detonation under the higher pressures and temperatures in the cylinders",
+    "Higher-grade fuel contains more energy per kilogram, so the engine develops more power",
+    "Higher-grade fuel prevents carburettor icing at high power settings",
+    "Higher-grade fuel burns more slowly, which lowers the exhaust gas temperature"
+   ]
+  },
+  {
+   "id": 62004,
+   "section": "020-EK",
+   "text": "What does the carburettor of a piston engine supply to the engine?",
+   "options": [
+    "A mixture of fuel and air in the proportion selected by the mixture control",
+    "Air only, metered by the throttle valve",
+    "Fuel only, injected directly into each cylinder",
+    "Pressurised fuel at a fixed ratio regardless of altitude"
+   ]
+  },
+  {
+   "id": 62005,
+   "section": "020-EK",
+   "text": "As an aeroplane with a constant-speed propeller accelerates along the runway, what does the propeller governor do?",
+   "options": [
+    "It increases the blade pitch angle, keeping the RPM and the blade angle of attack roughly constant",
+    "It decreases the blade pitch angle, so the RPM stays constant while the angle of attack falls",
+    "It leaves the blade pitch unchanged, so the RPM rises with airspeed",
+    "It lowers the engine RPM to keep the propeller-tip speed constant"
+   ]
+  }
+ ]
+}

@@ -20,7 +20,8 @@ from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-BANDS = {"010": 61000, "020": 62000, "030": 63000, "050": 65000, "060": 66000, "080": 68000}
+BANDS = {"010": 61000, "020": 62000, "030": 63000, "040": 64000, "050": 65000, "060": 66000,
+         "070": 67000, "080": 68000, "090": 69000}
 STATUS = {"existing", "new", "duplicate_new", "out_of_scope", "review"}
 
 
@@ -52,9 +53,13 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
     registry_path = data / "kaynaklar/_kaynaklar.json"
     registry = read(registry_path, {"kaynaklar": []})
     sources = {s["id"]: s for s in registry["kaynaklar"]}
-    candidates, decisions, existing_notes = {}, {}, []
+    candidates, decisions, existing_notes, retired = {}, {}, [], {}
     for path in paths:
         doc = read(path)
+        for key, why in doc.get("retired", {}).items():
+            if not isinstance(why, dict) or not why.get("neden_tr") or not why.get("neden_en"):
+                raise ValueError(f"Emekli kaydı iki dilde neden ister: {key}")
+            retired[key] = why
         for s in doc.get("sources", []):
             if "id" in s:
                 sources.setdefault(s["id"], {}).update(s)
@@ -137,8 +142,20 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
         if not BANDS[subject] < ids[key] <= BANDS[subject] + 999:
             raise ValueError(f"Yeni soru kimliği ayrılan bant dışında: {key}")
 
+    # Emekli adaylar: kimlikleri ayrılmış kalır (yeniden kullanılmaz), ama soru olarak derlenmez.
+    for key in retired:
+        if key not in candidates:
+            raise ValueError(f"Emekli kaydı bilinmeyen adayı gösteriyor: {key}")
+        if key not in ids:
+            raise ValueError(f"Emekli aday için kalıcı kimlik yok: {key}")
+    retired_ids = {key: ids[key] for key in retired}
+    for key in retired:
+        del candidates[key]
+
     notes_doc = read(data / "_kaynak_notlari.json", {"notlar": {}})
     notes = notes_doc["notlar"]
+    for qid in retired_ids.values():
+        notes.pop(str(qid), None)
     # Bu derleyicinin önceki kaynak notlarını sıfırdan hesapla; başka dersler korunur.
     for n in notes.values():
         n["src"] = [s for s in n.get("src", []) if s.get("derleyen") != subject]
@@ -182,9 +199,10 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
             add_ref(qid, s["source"], s["url"], s.get("no", ""), s.get("page", ""))
         for v in c["answer_verification"]:
             source = "ref-" + hashlib.sha256((v["url"] + "#" + v["section"]).encode()).hexdigest()[:12]
-            sources.setdefault(source, {"id": source, "ad": "Cevap doğrulama · " + v["section"],
+            host = re.sub(r"^https?://(www\.)?", "", v["url"]).split("/")[0]
+            sources[source] = {**sources.get(source, {}), "id": source, "ad": "Cevap doğrulama · " + host,
                 "url": v["url"], "tur": "resmi-dayanak", "erisim": "acik",
-                "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."})
+                "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."}
             add_ref(qid, source, v["url"], "", v["section"])
 
     questions, translations, seen_stems = [], {}, {}
@@ -217,7 +235,7 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
         questions.append(q)
         translations[str(qid)] = {"text": c["tr_text"], "options": tr_opts}
         attach(qid, c)
-    removed = set(old_output) - {q["id"] for q in questions}
+    removed = set(old_output) - {q["id"] for q in questions} - set(retired_ids.values())
     if removed:
         raise ValueError(f"Önceden eklenen sorular silinemez: {sorted(removed)}")
     for c in existing_notes:
@@ -249,6 +267,17 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
             return resolve(d["representative_key"], visited)
         return None
 
+    def retired_by(key, visited=None):
+        # Karar kendisi ya da temsilcisi emekli bir adaysa o adayın anahtarını döndürür.
+        visited = set() if visited is None else visited
+        if key in visited:
+            return None
+        visited.add(key)
+        if key in retired:
+            return key
+        rep = decisions.get(key, {}).get("representative_key")
+        return retired_by(rep, visited) if rep else None
+
     queue, counts, unique_new = [], {}, {}
     active_new_ids = {q["id"] for q in questions}
     for key, d in decisions.items():
@@ -256,7 +285,14 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
         if sid not in sources:
             raise ValueError(f"Kararda kayıtsız kaynak: {sid}")
         qid = d.get("bank_id") if d["status"] == "existing" else resolve(key)
-        if d["status"] in {"new", "duplicate_new"} and qid is None:
+        if d["status"] in {"new", "duplicate_new"} and qid is None and retired_by(key):
+            why = retired[retired_by(key)]
+            d["status"], d["bank_id"] = "out_of_scope", None
+            d["reason"] = "Ders notlarında karşılığı yok / aynı konu: " + why["neden_en"]
+            d["reason_tr"] = "Ders notlarında karşılığı yok / aynı konu: " + why["neden_tr"]
+            d["emekli_kimlik"] = retired_ids[retired_by(key)]
+            d.pop("question_id", None)
+        elif d["status"] in {"new", "duplicate_new"} and qid is None:
             # Seçilmeyen/cevabı belirsiz bir temsilciye atıf da incelemedir.
             d["status"] = "review"
             d["reason"] += " Temsilci aktif bankaya kabul edilmedi."
@@ -286,14 +322,15 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
     for sid, counter in counts.items():
         sources[sid].setdefault("taranan", {})[subject] = {
             "sayi": sum(counter.values()), "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
-            "url": sources[sid]["url"]}
+            "url": next((d["url"] for d in decisions.values() if d["source"] == sid and d.get("url")), sources[sid]["url"])}
         sources[sid]["karar_sayilari"] = dict(counter)
         sources[sid]["yeni_benzersiz"] = len(unique_new.get(sid, set()))
     output = {"subject_code": subject, "subject_name": subject_name,
         "origin": "ek", "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
         "answer_convention": "İki dilde aynı sırada; ilk şık doğru. Belirsiz cevap aktif bankada yok.",
         "id_convention": "Kalıcı idler_" + subject + ".json; eski veya emekli kimlik yeniden kullanılmaz.",
-        "sections": {c: section_names.get(c, c) for c in sorted({q['section'] for q in questions})},
+        "sections": {c: section_names.get(c, "Additional Questions" if c.endswith("-EK") else c)
+                     for c in sorted({q['section'] for q in questions})},
         "questions": questions}
     report = {"ders": subject, "tarih": "2026-10-12", "yeni_benzersiz": len(questions),
         "taranan": len(decisions), "kaynaklar": {k: dict(v) for k, v in counts.items()},
@@ -301,9 +338,16 @@ def compile_decisions(subject, paths, root=ROOT, dry=False):
         "inceleme": len(queue), "kararlar": list(decisions.values()),
         "kaynak_yeni_benzersiz": {sid: len(unique_new.get(sid, set())) for sid in counts}}
     if not dry:
-        write(output_path, output)
-        write(data / f"tr/{subject}_ek_kaynak_sorulari_01.json", {"questions": translations})
-        write(id_path, {"ders": subject, "anahtarlar": ids})
+        tr_path = data / f"tr/{subject}_ek_kaynak_sorulari_01.json"
+        if questions:
+            write(output_path, output)
+            write(tr_path, {"questions": translations})
+        else:
+            # Hiç soru kalmadıysa boş dosya bırakılmaz (init_db boş bir ders dosyasını anlamsız bulur).
+            output_path.unlink(missing_ok=True)
+            tr_path.unlink(missing_ok=True)
+        write(id_path, {"ders": subject, "anahtarlar": ids,
+                        "emekli": {k: {"id": retired_ids[k], **retired[k]} for k in sorted(retired_ids)}})
         notes_doc["_aciklama"] = "Kullanıcı doğrulaması ile kaynak/cevap doğrulaması ayrıdır; hiçbir işaret resmî SHGM çıkmış sorusu iddiası değildir."
         write(data / "_kaynak_notlari.json", notes_doc)
         registry["kaynaklar"] = list(sources.values())

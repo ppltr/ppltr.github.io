@@ -491,6 +491,70 @@ gömer. Değişiklikten sonra `python3 scripts/build_web.py` çalıştır.
 Yedekleme metin kopyala/yapıştır üzerinden yapılır — artifact kum havuzunda dosya
 indirme engelli. Dosya düğmeleri yalnızca `window.self === window.top` iken gösterilir.
 
+## Ek kaynak soruları (`<ders>-EK`)
+
+Dış PPL soru listelerinden (Traficom, Sırbistan CAD, Transport Canada, Son Yaklaşma örnekleri, Austro Control
+ECQB özeti, CAAB, Linx) bankada **olmayan** sorular her derste kendi **tek** kategorisine girer: bölüm
+`<ders>-EK` ("Ek Sorular" / "Additional Questions"), kimlik bandı 61xxx (010), 62xxx (020), 63xxx, 64xxx (040),
+65xxx (050), 66xxx (060), 67xxx, 68xxx (080), 69xxx. Kartta "ek kaynak" etiketi, cevaptan sonra kısa açıklama ve
+kaynak satırı görünür. Soru **konu bölümlerine dağıtılmaz** (kullanıcı tek ek kategori istedi, 2026-10-13).
+
+**Ölçüt** (kullanıcının sözü: "tekrar etmeyen VE konu anlatım konularına dahil, aşırı gereksiz aynı konudan
+ek soru istemiyorum"): bir soru ancak (1) bankadaki hiçbir soruyla "aynı soru + aynı cevap" değilse **ve** aynı
+bilgiyi başka biçimde soran soru da yoksa, (2) ders notunda (ya da 050'de EASA 050 müfredatında) geçen bir
+konudaysa, (3) cevabı resmî bir dayanakla doğrulandıysa, (4) aynı konudan zaten birden çok soru yoksa eklenir;
+aynı konunun başka bir yönü ya da başka sayısal örneği ayrı soru **sayılmaz**. Şekil/ek gerektiren, helikopter,
+ulusal (Kanada/Finlandiya/Sırbistan/Bangladeş) kural soruları eklenmez. Cevabı kaynaklarda çelişen ya da
+doğrulanamayan soru **inceleme kuyruğuna** (`data/kaynaklar/inceleme_<ders>.json`) gider; aktif havuza girmez.
+Bu yüzden getiri düşüktür (banka zaten aynı ECQB havuzunu içeriyor).
+
+**Ders notu denetimi (2026-10-13, kullanıcı: "ders notlarında konusu geçmeyen soru olmasın").** Her ek soru, dersin
+`notes/` dosyasındaki bir başlık ya da metne bağlanabilmelidir; bağlanamayan **emekli edilir**. Air Law notu
+(`hava_hukuku_1_TASLAK.md`) KDM'den ham alınmış, çoğu slaytın metni boş (görsel/video); bu yüzden ölçü **slayt
+başlığının konuyu adıyla anması** (ör. B4.1-5 Geçiş Seviyesi, B3.1-10 Özel VFR, B3.2-8 Arkadan gelip geçme) ya da
+metnin kendisidir. Part-FCL eğitim kuralları (solo süre, FSTD kredisi, SPIC), Part-NCO (can yeleği, yorgunluk),
+IFR usulü, uçuş planı, RMZ/TMZ gibi başlığı olmayan konular elenir. Aynı başlığın altında en çok iki soru kalır.
+Sonuç: Air Law 88 → 42, 050 3 → 0 (**050 için ders notu yok**, bu derse ek soru eklenmez), 060 3 → 2 (VOR
+istasyon geçişi notlarda yok), 020/040/080'in eskileri notlarla doğrulandı. Kullanıcının sınavda gördüğü TL (61002)
+ve Code 3 (61001) kaldı.
+
+> Notlardaki hata: `hava_hukuku_1_TASLAK.md` B3.1-9 yarı daire tablosunda 000–179° için çift, 180–359° için tek
+> seviyeler yazılı; ICAO Annex 2 Ek 3'te tersidir (doğuya tek, batıya çift). Bu konudaki ek sorular (61036–61038)
+> notla çelişeceği için emekli edildi; konu bankada 14295 ile var. Ders notu uygulamaya girerken bu satır
+> düzeltilip "Ders metninde:" kutusuyla belirtilmelidir.
+
+**Emekli ek soru:** `data/kaynaklar/decisions/<ders>_emekli.json` içinde `{"retired": {"<aday anahtarı>":
+{"neden_tr": …, "neden_en": …}}}`; `kaynak_derle.py` bu dosyayı da komut satırında alır. Soru derlenmez, `init_db.py`
+tam içe aktarımda veritabanından düşürür, kimlik `idler_<ders>.json`'daki `emekli` alanında ayrılı kalır
+(yeniden kullanılmaz), kararları `out_of_scope` olur. Ders notu denetimi sonrası eklemek için de aynı yol: önce
+notta bağı kur, sonra adayı sil (emekli listesinden çıkar).
+
+**Metin bağımsız yazılır** (kaynak metni birebir aktarılmaz, toplu çoğaltma yok): kavram ders notuyla ve resmî
+dayanakla doğrulanır, soru kendi cümlemizle iki dilde yazılır; kaynak soru no/sayfa/adres `data/_kaynak_notlari.json`
+içinde, doğrulama adresi `answer_verification` ile tutulur. Erişim engelli ya da kullanım şartı toplu kopyalamayı
+yasaklayan kaynaklar (Scribd, QuizVDS, Furious, pdfcoffee, Dauntless, Rotate) taranmaz; engel aşılmaz. Cevap
+anahtarı olmayan kaynak (Traficom, CAAB) ve "doğru hep a)" kuralı koyan kaynak (CAD/Linx) cevap otoritesi sayılmaz.
+
+Akış (her ders için; araçlar `scripts/` altında, ham dosyalar `data/kaynaklar/_ham/` gitignore'da):
+
+```bash
+pdftotext -layout liste.pdf liste.txt && python3 -I scripts/kaynak_ayristir.py traficom|cad|tc|ecqb … # ham soru JSON
+python3 scripts/kaynak_esle.py 080                                   # bankayla eşleştirme + kümeler
+python3 scripts/kaynak_karar_olustur.py acik 080 <secim.json> --ust 0.55   # kararı olmayanlar + en yakın banka soruları
+python3 scripts/kaynak_karar_olustur.py ara "regex" 080              # bankada kavram başka biçimde var mı?
+python3 scripts/kaynak_karar_olustur.py uret 080 data/kaynaklar/decisions/080_secim.json
+python3 scripts/kaynak_derle.py 080 data/kaynaklar/decisions/080_ek.json [080_emekli.json]   # kimlik, çeviri, not, rapor
+python3 scripts/init_db.py && python3 scripts/check_tr.py && python3 scripts/build_web.py
+python3 scripts/kaynak_koru_kontrol.py   # ESKİ 2.934 sorunun hiçbiri değişmedi mi (ae0aeb2'ye göre)
+python3 scripts/kaynak_rapor.py          # ders ve kaynak bazında tablo
+```
+
+Her ham sorunun akıbeti (bankada var / eklendi / aynı konu / kapsam dışı / inceleme) karar dosyasında; `uret`
+karar verilmemiş küme kalırsa durur. Kimlikler `data/kaynaklar/idler_<ders>.json` içinde kalıcıdır; mevcut soru
+asla değiştirilmez/silinmez, emekli kimlik yeniden kullanılmaz. Mevcut sorulara yalnız kaynak bilgisi eklenir
+(`_kaynak_notlari.json`). `kaynak_koru_kontrol.py` her değişiklikten sonra çalıştırılır; çözüm geçmişi tarayıcıda
+soru kimliğine bağlı olduğu için kimlik ve içerik korunduğu sürece geçmiş korunur.
+
 ## Şekiller
 
 Şekil gerektiren sorular (`questions.needs_figure = 1`) için çizimler `figures/` altında

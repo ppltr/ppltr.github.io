@@ -2,7 +2,7 @@
  "candidates": [
   {
    "key": "special:tl",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "Which aerodrome ATS units determine the transition level from the QNH reports?",
    "options": [
     "Approach Control Office or the Aerodrome Control Tower",
@@ -38,7 +38,7 @@
   },
   {
    "key": "special:code3",
-   "section": "010-05",
+   "section": "010-EK",
    "text": "Which aeroplane reference field length corresponds to aerodrome reference code number 3?",
    "options": [
     "At least 1,200 m but less than 1,800 m",
@@ -74,7 +74,7 @@
   },
   {
    "key": "remembered:cabotage",
-   "section": "010-01",
+   "section": "010-EK",
    "text": "A State reserves paid transport between two points in its own territory to its domestic operators. Which right does this illustrate?",
    "options": [
     "Cabotage",
@@ -103,7 +103,7 @@
   },
   {
    "key": "remembered:ditching",
-   "section": "010-07",
+   "section": "010-EK",
    "text": "What does ditching describe in an aircraft emergency?",
    "options": [
     "A deliberate emergency landing on water",
@@ -132,7 +132,7 @@
   },
   {
    "key": "remembered:cpl-singlepic",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "Under Part-FCL, may a CPL holder act as PIC of a single-pilot aeroplane in commercial air transport if all relevant ratings and other conditions are met?",
    "options": [
     "Yes, subject to the applicable CPL and recent-experience restrictions",
@@ -161,7 +161,7 @@
   },
   {
    "key": "remembered:cpl-copilot",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "Under Part-FCL, can a CPL holder act as co-pilot in commercial air transport when the appropriate type rating and all other required qualifications are held?",
    "options": [
     "Yes, subject to the applicable conditions",

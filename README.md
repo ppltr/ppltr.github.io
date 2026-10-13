@@ -464,9 +464,9 @@ python3 scripts/find_duplicates.py
 
 ## 2026-10-12 · Dış kaynak Air Law genişletmesi
 
-Claude’un yarım kalan worktree çalışması denetlenip tamamlandı. **88 yeni benzersiz Air Law sorusu** iki dilde, doğru cevap ilk şık olacak şekilde eklendi; 2.934 mevcut sorunun kimliği/metni/şıkları aynen korundu. Kaynak soru metinleri topluca yayımlanmadı: eklenenler bağımsız anlatımlı, güncel birincil kuralla doğrulanmış uyarlamalardır.
+Claude’un yarım kalan worktree çalışması denetlenip tamamlandı. **42 yeni benzersiz Air Law sorusu** (ilk derlemede 88'di; 2026-10-13 ders notu denetiminde 46'sı notlarda karşılığı olmadığı ya da aynı konuyu tekrarladığı için emekli edildi) iki dilde, doğru cevap ilk şık olacak şekilde eklendi; 2.934 mevcut sorunun kimliği/metni/şıkları aynen korundu. Kaynak soru metinleri topluca yayımlanmadı: eklenenler bağımsız anlatımlı, güncel birincil kuralla doğrulanmış uyarlamalardır.
 
-824 kaynak adayı: **253 mevcut eşleşme**, **82 kabul edilen yeni kaynak türü**, **95 yeni aday tekrarı**, **151 PPL kapsamı dışı**, **243 inceleme**. Ayrıca kullanıcının ipuçları ve resmî kurallardan bağımsız yazılan 6 soru: TL sorumlusu, Code 3, kabotaj, ditching ve iki CPL yetki ayrımı. Sonuç 82 + 6 = 88. Mevcut ATPL sorusu 27032 yeni kopya yerine Air Law kapsamında ortak kullanılır.
+824 kaynak adayı: **253 mevcut eşleşme**, **42 aktif yeni soru**, **238 kapsam dışı / aynı konu / notlarda yok**, **243 inceleme**. Kullanıcının ipuçlarından yazılan sorulardan TL sorumlusu, Code 3, kabotaj ve iki CPL yetki ayrımı kaldı; ditching ders notunda karşılığı olmadığı için emekli edildi. Mevcut ATPL sorusu 27032 yeni kopya yerine Air Law kapsamında ortak kullanılır.
 
 ### Kaynak bazında sonuç
 
@@ -507,34 +507,30 @@ StudyLib ayrıca 403 erişim engeli nedeniyle taranmadı. CAAB’de cevap anahta
 | kabotaj | 61078 | benzer_aday |
 | icao-chicago | 61072 | benzer_aday |
 | lisans-yetkileri | 61080, 61079, 27032, 14303 | benzer_aday |
-| transition-tirmanis | 61060, 61035 | benzer_aday |
+| transition-tirmanis | 61035 | benzer_aday |
 | tl-kim-belirler | 61002 | kullanici_dogruladi_yeniden_yazim |
 | aip-bolumleri | 14384 | benzer_aday |
 | aerodrome-code3 | 61001 | kullanici_dogruladi_yeniden_yazim |
-| ditching | 61081 | benzer_aday |
+| ditching | — (61081 emekli: notlarda yok) | benzer_aday |
 | tora-tanimi | 14909 | kullanici_dogruladi_mevcut_esdeger |
 | manyetik-rota-fl | — | kesin_soru_bulunamadi |
 
 ⭐ **Code 3: 61001**, **TL sorumlusu: 61002**, **TORA: 14909**. TL ve Code 3 kullanıcının doğruladığı soru tipinden yeniden yazıldı; TORA mevcut ters yönden tanım sorusunun eşdeğer kaydıdır. Birebir kaynak metni bulundu iddiası yoktur. TORA’nın asıl dersi 030 ve geçmişi korunur; 010 kapsamına aynı kimlikle de girer. Hiçbir işaret resmî SHGM çıkmış sorusu iddiası değildir. Diğer konular benzer adaydır. **Manyetik rota/IFR/non-RVSM sorusunun kesin derece, koşul ve metni bulunamadı**; 146° VFR → FL75 ile birleştirilmedi.
 
-### Diğer dersler: yalnız ekleme önerileri
+### Diğer dersler (2026-10-13)
 
-130 aday (Transport Canada TP13014, soru 21–100: 80; Son Yaklaşma’nın her dersten 10 yerel örneği: 50) incelendi. Bu kaynakların tüm bankalarına ilişkin tahmin değildir. Kaynak anahtarı bulunan adaylar için de aktif eklemeden önce modern teknik dayanak, şekil ve ülke koşulları tamamlanmalıdır. Bu derslere yeni aktif soru eklenmedi.
-
-| Ders | Olası benzersiz yeni tür |
-|---|---:|
-| Navigation | 0 |
-| Flight Performance | 1 |
-| Aircraft General Knowledge | 5 |
-| Meteorology | 10 |
-| Principles of Flight | 2 |
-
-Toplam **18**; ikinci denetimde dört tekrar elendi. Navigation’daki 0, bankanın tamamında hiçbir eksik olmadığı anlamına gelmez: taranan örneklerin yeni türleri eski/eksik harita koşulları nedeniyle incelemededir. Aday başına kaynak, soru/sayfa, yakın mevcut kimlik ve ayrım gerekçesi `decisions/subject_proposals.json` içindedir.
+020, 030, 040, 050, 060, 070, 080, 090 için Traficom (Finlandiya) ve Sırbistan CAD listelerinin tamamı, Transport
+Canada örnek sınavının ilgili bölümleri ve Son Yaklaşma'nın ücretsiz örnekleri indirilip tek tek bankayla karşılaştırıldı.
+080 Principles of Flight için ek olarak Austro Control'ün yayımladığı ECQB-PPL(A) 51 özeti (149 soru, işaretli kutudan
+cevap anahtarı) tarandı: 80'i bankada aynı bilgiyle vardı, 63'ü notlarda yok ya da aynı konu, 1'i inceleme, 5'i yeni (kanat yüklemesi, girişim sürüklemesi, laminer→türbülanslı
+geçiş noktası, windmilling pervane direnci, dönüşte hücum açısı/güç); geri kalanı bankada aynı bilgiyle ya da notlarda
+yok. Her ek soru dersin `notes/` dosyasına bağlanabilmeli; bağlanamayan emekli edildi (Air Law 88 → 42, 050 → 0,
+060 → 2). Ölçüt ve akış `CLAUDE.md` içinde ("Ek kaynak soruları"). Sonuç için `python3 scripts/kaynak_rapor.py`.
 
 ### Yeniden derleme ve test
 
 ```bash
-python3 scripts/kaynak_derle.py 010 data/kaynaklar/decisions/root_special.json data/kaynaklar/decisions/caab_linx_audit.json data/kaynaklar/decisions/other_airlaw_audit.json
+python3 scripts/kaynak_derle.py 010 data/kaynaklar/decisions/root_special.json data/kaynaklar/decisions/caab_linx_audit.json data/kaynaklar/decisions/other_airlaw_audit.json data/kaynaklar/decisions/010_emekli.json
 python3 scripts/check_tr.py
 python3 scripts/init_db.py
 python3 scripts/build_web.py
@@ -546,4 +542,4 @@ node scripts/test_kaynak_web.cjs
 
 `--kuru` veri yazmaz; ID kaydı kalıcıdır; doğrulamasız cevap, kimlik çakışması, aynı kök veya eski yeni-soru içeriğinin sessiz değişimi derlemeyi durdurur. İnceleme yalnız okunur panelde açılır. Mevcut soru ortak dersler için `also_subjects` ile bağlanır; çözüm yine aynı ID üzerinden tutulur. İlerleme veritabanı/localStorage/bulut kayıtlarına derleme betikleri dokunmaz.
 
-23 Python regresyon testi, gerçek template işlevleriyle JS kontrolü, sunucu akış testi, EN/TR tamlığı ve 2.934 soru için SHA-256 kimlik/içerik kontrolü geçti. Tarayıcıda yıldız, açıklama/kaynak, yanlışların tekrar turu, yenileme ve geri/ileri ile aynı soruya dönüş doğrulandı. Yeni bankada 3.022 ham / 2.642 görünür benzersiz soru var; mevcut 380 tekrar bağlantısı değişmedi. `qa/airlaw-confirmed.jpg` yerel test profili görüntüsüdür.
+23 Python regresyon testi, gerçek template işlevleriyle JS kontrolü, sunucu akış testi, EN/TR tamlığı ve 2.934 soru için SHA-256 kimlik/içerik kontrolü geçti. Tarayıcıda yıldız, açıklama/kaynak, yanlışların tekrar turu, yenileme ve geri/ileri ile aynı soruya dönüş doğrulandı. Yeni bankada 2.992 ham / 2.612 görünür benzersiz soru var; mevcut 380 tekrar bağlantısı değişmedi. `qa/airlaw-confirmed.jpg` yerel test profili görüntüsüdür.

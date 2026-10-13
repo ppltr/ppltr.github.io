@@ -1,50 +1,51 @@
 {
  "ders": "010",
  "tarih": "2026-10-12",
- "yeni_benzersiz": 88,
+ "yeni_benzersiz": 42,
  "taranan": 824,
  "kaynaklar": {
   "caab-airlaw": {
    "existing": 54,
-   "new": 27,
+   "new": 11,
    "review": 50,
-   "out_of_scope": 111,
-   "duplicate_new": 8
+   "out_of_scope": 130,
+   "duplicate_new": 5
   },
   "linx-airlaw": {
    "existing": 59,
    "review": 36,
-   "new": 48,
-   "duplicate_new": 7
+   "new": 23,
+   "out_of_scope": 27,
+   "duplicate_new": 5
   },
   "x-austrocontrol-ecqb-ppl": {
    "review": 74,
    "existing": 34,
-   "out_of_scope": 13,
-   "new": 5,
-   "duplicate_new": 8
+   "out_of_scope": 19,
+   "duplicate_new": 5,
+   "new": 2
   },
   "x-cad-rs": {
    "existing": 30,
-   "duplicate_new": 32,
+   "out_of_scope": 22,
    "review": 13,
-   "out_of_scope": 4
+   "duplicate_new": 14
   },
   "x-traficom-lapl-ppl": {
    "review": 68,
-   "duplicate_new": 38,
+   "duplicate_new": 23,
    "existing": 64,
-   "out_of_scope": 11
+   "out_of_scope": 26
   },
   "x-sonyaklasma": {
    "existing": 10
   },
   "x-tc-tp13014": {
-   "out_of_scope": 12,
-   "new": 2,
-   "duplicate_new": 2,
+   "out_of_scope": 14,
+   "duplicate_new": 1,
    "existing": 2,
-   "review": 2
+   "review": 2,
+   "new": 1
   }
  },
  "yildizlar": [
@@ -172,9 +173,11 @@
    "no": "13",
    "page": "2",
    "key": "caab-airlaw:13",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61006
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: CPL minimum age; not in the notes (Annex 1 part covers licence, medical, renewal only) and outside PPL scope.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: CPL asgari yaşı; notlarda yok (Annex 1 bölümü yalnız lisans, sağlık, yenileme) ve PPL kapsamı dışı.",
+   "emekli_kimlik": 61006
   },
   {
    "source": "caab-airlaw",
@@ -197,9 +200,11 @@
    "no": "16",
    "page": "2",
    "key": "caab-airlaw:16",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61010
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Class 1 medical for CPL; CPL privileges are not in the notes.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: CPL için Class 1 sağlık belgesi; CPL konusu notlarda yok.",
+   "emekli_kimlik": 61010
   },
   {
    "source": "caab-airlaw",
@@ -238,18 +243,22 @@
    "no": "21",
    "page": "3",
    "key": "caab-airlaw:21",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61015
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Medical validity date; B2.2-2 (medical certificate) is already covered by 61064, so this is a same-topic repeat.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Sağlık belgesi geçerlilik tarihi; B2.2-2 (sağlık sertifikası) 61064 ile zaten karşılanıyor, aynı konu.",
+   "emekli_kimlik": 61015
   },
   {
    "source": "caab-airlaw",
    "no": "22",
    "page": "3",
    "key": "caab-airlaw:22",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61016
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Cancelling IFR for VFR with ATS notification; no note heading names this procedure.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: IFR'den VFR'ye geçişte ATS bildirimi; notlarda bu prosedürü anan başlık yok.",
+   "emekli_kimlik": 61016
   },
   {
    "source": "caab-airlaw",
@@ -344,9 +353,11 @@
    "no": "33",
    "page": "4",
    "key": "caab-airlaw:33",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61019
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Documents carried (including photo ID); the notes only mention the licence.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Pilotun yanında taşıyacağı belgeler (fotoğraflı kimlik dâhil); notlar yalnız lisansı anıyor.",
+   "emekli_kimlik": 61019
   },
   {
    "source": "caab-airlaw",
@@ -434,9 +445,11 @@
    "no": "43",
    "page": "6",
    "key": "caab-airlaw:43",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61022
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: IFR radio duty outside controlled airspace; IFR procedure is not in the notes or PPL scope.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: IFR uçuşun kontrolsüz sahada telsiz görevi; IFR usulü notlarda ve PPL kapsamında yok.",
+   "emekli_kimlik": 61022
   },
   {
    "source": "caab-airlaw",
@@ -735,9 +748,11 @@
    "no": "79",
    "page": "11",
    "key": "caab-airlaw:79",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61024
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: 250 kt speed limit in Class E; the notes have no speed limitation (B3.1-6 covers only FL200/RVSM).",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Class E'de 250 kt hız sınırı; notlarda hız sınırlaması yok (B3.1-6 yalnız FL200/RVSM).",
+   "emekli_kimlik": 61024
   },
   {
    "source": "caab-airlaw",
@@ -788,9 +803,11 @@
    "no": "85",
    "page": "11",
    "key": "caab-airlaw:85",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61027
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Separation for a visual approach in Class C; IFR separation procedure is not in the notes.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Class C'de görerek yaklaşma ayırması; IFR ayırma usulü notlarda yok.",
+   "emekli_kimlik": 61027
   },
   {
    "source": "caab-airlaw",
@@ -833,18 +850,22 @@
    "no": "90",
    "page": "12",
    "key": "caab-airlaw:90",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61028
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Flight-plan total estimated elapsed time; the notes have no flight-plan heading.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Uçuş planı toplam tahmini süre; notlarda uçuş planı başlığı yok.",
+   "emekli_kimlik": 61028
   },
   {
    "source": "caab-airlaw",
    "no": "91",
    "page": "12",
    "key": "caab-airlaw:91",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61029
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: 'Strayed aircraft' definition; its presence on the notes' definition slides cannot be confirmed.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: 'Strayed aircraft' tanımı; notlardaki tanım slaytlarında adıyla geçtiği doğrulanamıyor.",
+   "emekli_kimlik": 61029
   },
   {
    "source": "caab-airlaw",
@@ -1059,9 +1080,11 @@
    "no": "116",
    "page": "15",
    "key": "caab-airlaw:116",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61004
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: aerodrome reference code — 61001 (user-confirmed) stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: meydan referans kodu — 61001 (⭐ doğrulanmış) kalıyor.",
+   "emekli_kimlik": 61004
   },
   {
    "source": "caab-airlaw",
@@ -1078,9 +1101,11 @@
    "no": "118",
    "page": "15",
    "key": "caab-airlaw:118",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61005
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: PAPI — 61013 (reading the indication) stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: PAPI — 61013 (göstergenin okunuşu) kalıyor.",
+   "emekli_kimlik": 61005
   },
   {
    "source": "caab-airlaw",
@@ -1285,9 +1310,11 @@
    "no": "142",
    "page": "18",
    "key": "caab-airlaw:142",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61007
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: aerodrome reference code — 61001 (user-confirmed) stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: meydan referans kodu — 61001 (⭐ doğrulanmış) kalıyor.",
+   "emekli_kimlik": 61007
   },
   {
    "source": "caab-airlaw",
@@ -1326,9 +1353,11 @@
    "no": "147",
    "page": "19",
    "key": "caab-airlaw:147",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61008
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: vertical separation — 61014 stays; RVSM separation is an ATC matter.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: dikey ayırma — 61014 kalıyor; RVSM ayırması ATC işidir.",
+   "emekli_kimlik": 61008
   },
   {
    "source": "caab-airlaw",
@@ -1412,9 +1441,11 @@
    "no": "157",
    "page": "20",
    "key": "caab-airlaw:157",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61009
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: transition level/QNH — 61002 (starred) and 61035 stay.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: geçiş seviyesi/QNH — 61002 (⭐) ve 61035 kalıyor.",
+   "emekli_kimlik": 61009
   },
   {
    "source": "caab-airlaw",
@@ -1437,9 +1468,11 @@
    "no": "160",
    "page": "21",
    "key": "caab-airlaw:160",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61011
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: special VFR — 61034 (minimum visibility) stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: özel VFR — 61034 (asgari görüş) kalıyor.",
+   "emekli_kimlik": 61011
   },
   {
    "source": "caab-airlaw",
@@ -1602,10 +1635,12 @@
    "no": "179",
    "page": "23",
    "key": "caab-airlaw:179",
-   "status": "duplicate_new",
-   "reason": "Yeni adayla aynı kural/koşul; kelime veya seçenek sırası farkı ayrı soru gerektirmiyor.",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Cancelling IFR for VFR with ATS notification; no note heading names this procedure.",
    "representative_key": "caab-airlaw:22",
-   "question_id": 61016
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: IFR'den VFR'ye geçişte ATS bildirimi; notlarda bu prosedürü anan başlık yok.",
+   "emekli_kimlik": 61016
   },
   {
    "source": "caab-airlaw",
@@ -1919,10 +1954,12 @@
    "no": "216",
    "page": "27",
    "key": "caab-airlaw:216",
-   "status": "duplicate_new",
-   "reason": "Yeni adayla aynı kural/koşul; kelime veya seçenek sırası farkı ayrı soru gerektirmiyor.",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: converging aircraft — 61054 stays.",
    "representative_key": "linx-airlaw:20",
-   "question_id": 61056
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: kesişme — 61054 kalıyor.",
+   "emekli_kimlik": 61056
   },
   {
    "source": "caab-airlaw",
@@ -2185,10 +2222,12 @@
    "no": "247",
    "page": "30",
    "key": "caab-airlaw:247",
-   "status": "duplicate_new",
-   "reason": "Yeni adayla aynı kural/koşul; kelime veya seçenek sırası farkı ayrı soru gerektirmiyor.",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: PAPI — 61013 (reading the indication) stays.",
    "representative_key": "caab-airlaw:118",
-   "question_id": 61005
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: PAPI — 61013 (göstergenin okunuşu) kalıyor.",
+   "emekli_kimlik": 61005
   },
   {
    "source": "caab-airlaw",
@@ -2402,18 +2441,22 @@
    "no": "20",
    "page": "5",
    "key": "linx-airlaw:20",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61056
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: converging aircraft — 61054 stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: kesişme — 61054 kalıyor.",
+   "emekli_kimlik": 61056
   },
   {
    "source": "linx-airlaw",
    "no": "21",
    "page": "5",
    "key": "linx-airlaw:21",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61057
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: VFR pilot instructed into cloud; this scenario is not in the notes.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: VFR pilota bulutlu yön verilirse; notlarda bu senaryo yok.",
+   "emekli_kimlik": 61057
   },
   {
    "source": "linx-airlaw",
@@ -2548,9 +2591,11 @@
    "no": "35",
    "page": "7",
    "key": "linx-airlaw:35",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61060
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: transition level/QNH — 61002 (starred) and 61035 stay.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: geçiş seviyesi/QNH — 61002 (⭐) ve 61035 kalıyor.",
+   "emekli_kimlik": 61060
   },
   {
    "source": "linx-airlaw",
@@ -2567,9 +2612,11 @@
    "no": "37",
    "page": "7",
    "key": "linx-airlaw:37",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61061
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: transition level — 61002 (starred) and 61035 stay.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: geçiş seviyesi — 61002 (⭐) ve 61035 kalıyor.",
+   "emekli_kimlik": 61061
   },
   {
    "source": "linx-airlaw",
@@ -2614,9 +2661,11 @@
    "no": "42",
    "page": "8",
    "key": "linx-airlaw:42",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61062
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: aerodrome traffic rules — 61032 stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: meydan trafik kuralları — 61032 kalıyor.",
+   "emekli_kimlik": 61062
   },
   {
    "source": "linx-airlaw",
@@ -2686,9 +2735,11 @@
    "no": "50",
    "page": "9",
    "key": "linx-airlaw:50",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61063
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: PPL theory-exam validity period (training rule); the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: PPL teorik sınav geçerlilik süresi (eğitim); notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61063
   },
   {
    "source": "linx-airlaw",
@@ -2778,9 +2829,11 @@
    "no": "60",
    "page": "11",
    "key": "linx-airlaw:60",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61065
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Student pilot medical timing; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Öğrenci pilot sağlık belgesi zamanı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61065
   },
   {
    "source": "linx-airlaw",
@@ -2797,10 +2850,12 @@
    "no": "62",
    "page": "11",
    "key": "linx-airlaw:62",
-   "status": "duplicate_new",
-   "reason": "Yeni adayla aynı kural/koşul; kelime veya seçenek sırası farkı ayrı soru gerektirmiyor.",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Student pilot medical timing; the notes contain no training rules.",
    "representative_key": "linx-airlaw:60",
-   "question_id": 61065
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Öğrenci pilot sağlık belgesi zamanı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61065
   },
   {
    "source": "linx-airlaw",
@@ -2817,18 +2872,22 @@
    "no": "64",
    "page": "12",
    "key": "linx-airlaw:64",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61066
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: FSTD credit in PPL training; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: PPL eğitiminde FSTD kredisi; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61066
   },
   {
    "source": "linx-airlaw",
    "no": "65",
    "page": "12",
    "key": "linx-airlaw:65",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61067
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: PPL solo cross-country requirement; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: PPL yalnız seyir uçuşu şartı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61067
   },
   {
    "source": "linx-airlaw",
@@ -2846,9 +2905,11 @@
    "no": "67",
    "page": "12",
    "key": "linx-airlaw:67",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61068
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Solo flight time definition; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Solo uçuş süresi tanımı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61068
   },
   {
    "source": "linx-airlaw",
@@ -2883,9 +2944,11 @@
    "no": "71",
    "page": "13",
    "key": "linx-airlaw:71",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61069
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: SPIC flight time definition; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: SPIC uçuş süresi tanımı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61069
   },
   {
    "source": "linx-airlaw",
@@ -2989,27 +3052,33 @@
    "no": "83",
    "page": "14",
    "key": "linx-airlaw:83",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61073
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Pre-flight information duty; the notes have no flight-preparation heading.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Uçuş öncesi bilgi edinme yükümlülüğü; notlarda uçuş hazırlığı başlığı yok.",
+   "emekli_kimlik": 61073
   },
   {
    "source": "linx-airlaw",
    "no": "84",
    "page": "15",
    "key": "linx-airlaw:84",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61074
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: VFR contingency planning; the notes have no flight-preparation heading.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: VFR uçuşta alternatif plan; notlarda uçuş hazırlığı başlığı yok.",
+   "emekli_kimlik": 61074
   },
   {
    "source": "linx-airlaw",
    "no": "85",
    "page": "15",
    "key": "linx-airlaw:85",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61075
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Runway usability and performance check; the notes have no flight-preparation heading.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Pist kullanılabilirliği/performans kontrolü; notlarda uçuş hazırlığı başlığı yok.",
+   "emekli_kimlik": 61075
   },
   {
    "source": "linx-airlaw",
@@ -3032,9 +3101,11 @@
    "no": "88",
    "page": "15",
    "key": "linx-airlaw:88",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61076
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Passenger briefing on safety belts; not in the notes.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Yolculara emniyet kemeri bilgisi; notlarda yok.",
+   "emekli_kimlik": 61076
   },
   {
    "source": "linx-airlaw",
@@ -3051,11 +3122,12 @@
    "no": "90",
    "page": "15",
    "key": "linx-airlaw:90",
-   "status": "duplicate_new",
-   "reason": "Yeni adayla aynı kural/koşul; kelime veya seçenek sırası farkı ayrı soru gerektirmiyor.",
-   "bank_id": 14227,
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Passenger briefing on safety belts; not in the notes.",
+   "bank_id": null,
    "representative_key": "linx-airlaw:88",
-   "question_id": 61076
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Yolculara emniyet kemeri bilgisi; notlarda yok.",
+   "emekli_kimlik": 61076
   },
   {
    "source": "linx-airlaw",
@@ -3309,27 +3381,33 @@
    "no": "118",
    "page": "19",
    "key": "linx-airlaw:118",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61036
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: VFR cruising-level table; the notes' table lists the parity reversed (even for 000–179°), so the answer would contradict the notes. Topic already in the bank (14295).",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: VFR seyir seviyesi tablosu; notlardaki tablo ICAO ile ters yazılmış (000–179° için çift), cevap notlarla çelişir. Konu bankada zaten var (14295).",
+   "emekli_kimlik": 61036
   },
   {
    "source": "linx-airlaw",
    "no": "119",
    "page": "20",
    "key": "linx-airlaw:119",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61037
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Semi-circular rule calculation; the notes' table lists the parity reversed, so the answer would contradict the notes. Topic already in the bank (14295).",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Yarı daire kuralı hesabı; notlardaki tablo ICAO ile ters yazılmış, cevap notlarla çelişir. Konu bankada zaten var (14295).",
+   "emekli_kimlik": 61037
   },
   {
    "source": "linx-airlaw",
    "no": "120",
    "page": "20",
    "key": "linx-airlaw:120",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61038
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Semi-circular rule criterion; the notes' table lists the parity reversed, so the answer would contradict the notes. Topic already in the bank (14295).",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Yarı daire kuralının ölçütü; notlardaki tablo ICAO ile ters yazılmış, cevap notlarla çelişir. Konu bankada zaten var (14295).",
+   "emekli_kimlik": 61038
   },
   {
    "source": "linx-airlaw",
@@ -3411,9 +3489,11 @@
    "no": "128",
    "page": "21",
    "key": "linx-airlaw:128",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61039
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: priority between categories — 61041 stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: kategori öncelik sırası — 61041 kalıyor.",
+   "emekli_kimlik": 61039
   },
   {
    "source": "linx-airlaw",
@@ -3430,9 +3510,11 @@
    "no": "130",
    "page": "21",
    "key": "linx-airlaw:130",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61040
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: priority between categories — 61041 stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: kategori öncelik sırası — 61041 kalıyor.",
+   "emekli_kimlik": 61040
   },
   {
    "source": "linx-airlaw",
@@ -3449,9 +3531,11 @@
    "no": "132",
    "page": "22",
    "key": "linx-airlaw:132",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61042
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: right of way — 61041/61054 stay; the IFR–helicopter edge case is not in the notes.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: yol hakkı — 61041/61054 kalıyor; IFR–helikopter özel durumu notlarda yok.",
+   "emekli_kimlik": 61042
   },
   {
    "source": "linx-airlaw",
@@ -3478,9 +3562,11 @@
    "no": "135",
    "page": "22",
    "key": "linx-airlaw:135",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61044
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: priority between categories — 61041 stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: kategori öncelik sırası — 61041 kalıyor.",
+   "emekli_kimlik": 61044
   },
   {
    "source": "linx-airlaw",
@@ -3514,9 +3600,11 @@
    "no": "139",
    "page": "23",
    "key": "linx-airlaw:139",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61046
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Flotation equipment (Part-NCO); not in the notes.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Can yeleği/şişme donanım (Part-NCO); notlarda yok.",
+   "emekli_kimlik": 61046
   },
   {
    "source": "linx-airlaw",
@@ -3564,9 +3652,11 @@
    "no": "145",
    "page": "24",
    "key": "linx-airlaw:145",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61049
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: ATC clearance — 61048 and 61050 stay.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: ATC izni — 61048 ve 61050 kalıyor.",
+   "emekli_kimlik": 61049
   },
   {
    "source": "linx-airlaw",
@@ -3608,9 +3698,11 @@
    "no": "150",
    "page": "24",
    "key": "linx-airlaw:150",
-   "status": "new",
-   "reason": "Mevcut bankada aynı koşulu sınayan soru bulunmadı; birincil kurala dayalı bağımsız uyarlama.",
-   "question_id": 61053
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: interception signals — 61051 and 61052 stay.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: önleme sinyalleri — 61051 ve 61052 kalıyor.",
+   "emekli_kimlik": 61053
   },
   {
    "source": "x-austrocontrol-ecqb-ppl",
@@ -3932,10 +4024,12 @@
    "page": "8",
    "key": "x-austrocontrol-ecqb-ppl:32",
    "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
-   "status": "new",
-   "reason": "A distinct missing PPL legal-rule type, independently authored from current primary regulation; protected source expression not imported.",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Entering an RMZ; no RMZ heading in the notes.",
    "audit_note": "Originalbankwordingnotreproduced; independentcurrentSERA.6005(a)question authored.",
-   "question_id": 61082
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: RMZ girişi; notlarda RMZ başlığı yok.",
+   "emekli_kimlik": 61082
   },
   {
    "source": "x-austrocontrol-ecqb-ppl",
@@ -3953,10 +4047,12 @@
    "page": "9",
    "key": "x-austrocontrol-ecqb-ppl:34",
    "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
-   "status": "new",
-   "reason": "A distinct missing PPL legal-rule type, independently authored from current primary regulation; protected source expression not imported.",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: TMZ transponder requirement; no TMZ in the notes (B4.2 covers general SSR only).",
    "audit_note": "Originalbankwordingnotreproduced; independentcurrentSERA.6005(b)question authored.",
-   "question_id": 61083
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: TMZ transponder zorunluluğu; notlarda TMZ yok (B4.2 yalnız genel SSR).",
+   "emekli_kimlik": 61083
   },
   {
    "source": "x-austrocontrol-ecqb-ppl",
@@ -4128,10 +4224,12 @@
    "page": "12",
    "key": "x-austrocontrol-ecqb-ppl:51",
    "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
-   "status": "duplicate_new",
-   "reason": "The independently authored current SERA SVFR definition is covered by the canonical CAAB representative; source added without a second question.",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: special VFR — 61034 (minimum visibility) stays.",
    "representative_key": "caab-airlaw:160",
-   "question_id": 61011
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: özel VFR — 61034 (asgari görüş) kalıyor.",
+   "emekli_kimlik": 61011
   },
   {
    "source": "x-austrocontrol-ecqb-ppl",
@@ -4183,10 +4281,12 @@
    "page": "13",
    "key": "x-austrocontrol-ecqb-ppl:56",
    "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
-   "status": "duplicate_new",
-   "reason": "Same8km visibility rule above10000ft; changed altitude/flight-level numbers alone do not create another type.",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Visibility above 10,000 ft in Class C; the notes carry no VMC table text, this is a single-cell detail.",
    "representative_key": "x-austrocontrol-ecqb-ppl:60",
-   "question_id": 61084
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Class C'de 10.000 ft üstü görüş şartı; notlarda VMC tablosu metni yok, ayrıntı hücre sorusu.",
+   "emekli_kimlik": 61084
   },
   {
    "source": "x-austrocontrol-ecqb-ppl",
@@ -4194,10 +4294,12 @@
    "page": "13",
    "key": "x-austrocontrol-ecqb-ppl:57",
    "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
-   "status": "duplicate_new",
-   "reason": "Same8km visibility rule above10000ft; changed altitude/flight-level numbers alone do not create another type.",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Visibility above 10,000 ft in Class C; the notes carry no VMC table text, this is a single-cell detail.",
    "representative_key": "x-austrocontrol-ecqb-ppl:60",
-   "question_id": 61084
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Class C'de 10.000 ft üstü görüş şartı; notlarda VMC tablosu metni yok, ayrıntı hücre sorusu.",
+   "emekli_kimlik": 61084
   },
   {
    "source": "x-austrocontrol-ecqb-ppl",
@@ -4227,9 +4329,11 @@
    "page": "14",
    "key": "x-austrocontrol-ecqb-ppl:60",
    "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
-   "status": "new",
-   "reason": "Higher visibility band changes the answer from5km to8km; independently authored from currentSERA, not merged with below10000ftbank15960.",
-   "question_id": 61084
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Visibility above 10,000 ft in Class C; the notes carry no VMC table text, this is a single-cell detail.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Class C'de 10.000 ft üstü görüş şartı; notlarda VMC tablosu metni yok, ayrıntı hücre sorusu.",
+   "emekli_kimlik": 61084
   },
   {
    "source": "x-austrocontrol-ecqb-ppl",
@@ -5052,10 +5156,12 @@
    "page": "3",
    "key": "x-cad-rs:5",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:20",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61056
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: converging aircraft — 61054 stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: kesişme — 61054 kalıyor.",
+   "emekli_kimlik": 61056
   },
   {
    "source": "x-cad-rs",
@@ -5129,10 +5235,12 @@
    "page": "4",
    "key": "x-cad-rs:12",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:35",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61060
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: transition level/QNH — 61002 (starred) and 61035 stay.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: geçiş seviyesi/QNH — 61002 (⭐) ve 61035 kalıyor.",
+   "emekli_kimlik": 61060
   },
   {
    "source": "x-cad-rs",
@@ -5242,10 +5350,12 @@
    "page": "4",
    "key": "x-cad-rs:22",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:37",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61061
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: transition level — 61002 (starred) and 61035 stay.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: geçiş seviyesi — 61002 (⭐) ve 61035 kalıyor.",
+   "emekli_kimlik": 61061
   },
   {
    "source": "x-cad-rs",
@@ -5296,10 +5406,12 @@
    "page": "5",
    "key": "x-cad-rs:27",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:50",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61063
+   "reason": "Ders notlarında karşılığı yok / aynı konu: PPL theory-exam validity period (training rule); the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: PPL teorik sınav geçerlilik süresi (eğitim); notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61063
   },
   {
    "source": "x-cad-rs",
@@ -5327,10 +5439,12 @@
    "page": "5",
    "key": "x-cad-rs:30",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:88",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61076
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Passenger briefing on safety belts; not in the notes.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Yolculara emniyet kemeri bilgisi; notlarda yok.",
+   "emekli_kimlik": 61076
   },
   {
    "source": "x-cad-rs",
@@ -5338,10 +5452,12 @@
    "page": "5",
    "key": "x-cad-rs:31",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:88",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61076
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Passenger briefing on safety belts; not in the notes.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Yolculara emniyet kemeri bilgisi; notlarda yok.",
+   "emekli_kimlik": 61076
   },
   {
    "source": "x-cad-rs",
@@ -5399,10 +5515,12 @@
    "page": "6",
    "key": "x-cad-rs:37",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:119",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61037
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Semi-circular rule calculation; the notes' table lists the parity reversed, so the answer would contradict the notes. Topic already in the bank (14295).",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Yarı daire kuralı hesabı; notlardaki tablo ICAO ile ters yazılmış, cevap notlarla çelişir. Konu bankada zaten var (14295).",
+   "emekli_kimlik": 61037
   },
   {
    "source": "x-cad-rs",
@@ -5434,10 +5552,12 @@
    "page": "6",
    "key": "x-cad-rs:40",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:139",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61046
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Flotation equipment (Part-NCO); not in the notes.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Can yeleği/şişme donanım (Part-NCO); notlarda yok.",
+   "emekli_kimlik": 61046
   },
   {
    "source": "x-cad-rs",
@@ -5520,11 +5640,13 @@
    "page": "7",
    "key": "x-cad-rs:48",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:132",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: right of way — 61041/61054 stay; the IFR–helicopter edge case is not in the notes.",
    "audit_note": "ATC clearance does not replace right-of-way; source answer corrected in independent representative.",
-   "question_id": 61042
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: yol hakkı — 61041/61054 kalıyor; IFR–helikopter özel durumu notlarda yok.",
+   "emekli_kimlik": 61042
   },
   {
    "source": "x-cad-rs",
@@ -5570,10 +5692,12 @@
    "page": "7",
    "key": "x-cad-rs:52",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:85",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61075
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Runway usability and performance check; the notes have no flight-preparation heading.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Pist kullanılabilirliği/performans kontrolü; notlarda uçuş hazırlığı başlığı yok.",
+   "emekli_kimlik": 61075
   },
   {
    "source": "x-cad-rs",
@@ -5614,10 +5738,12 @@
    "page": "8",
    "key": "x-cad-rs:56",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:83",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61073
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Pre-flight information duty; the notes have no flight-preparation heading.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Uçuş öncesi bilgi edinme yükümlülüğü; notlarda uçuş hazırlığı başlığı yok.",
+   "emekli_kimlik": 61073
   },
   {
    "source": "x-cad-rs",
@@ -5625,10 +5751,12 @@
    "page": "8",
    "key": "x-cad-rs:57",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:84",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61074
+   "reason": "Ders notlarında karşılığı yok / aynı konu: VFR contingency planning; the notes have no flight-preparation heading.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: VFR uçuşta alternatif plan; notlarda uçuş hazırlığı başlığı yok.",
+   "emekli_kimlik": 61074
   },
   {
    "source": "x-cad-rs",
@@ -5636,10 +5764,12 @@
    "page": "8",
    "key": "x-cad-rs:58",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:64",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61066
+   "reason": "Ders notlarında karşılığı yok / aynı konu: FSTD credit in PPL training; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: PPL eğitiminde FSTD kredisi; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61066
   },
   {
    "source": "x-cad-rs",
@@ -5647,10 +5777,12 @@
    "page": "8",
    "key": "x-cad-rs:59",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:65",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61067
+   "reason": "Ders notlarında karşılığı yok / aynı konu: PPL solo cross-country requirement; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: PPL yalnız seyir uçuşu şartı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61067
   },
   {
    "source": "x-cad-rs",
@@ -5670,10 +5802,12 @@
    "page": "8",
    "key": "x-cad-rs:61",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:67",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61068
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Solo flight time definition; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Solo uçuş süresi tanımı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61068
   },
   {
    "source": "x-cad-rs",
@@ -5703,10 +5837,12 @@
    "page": "8",
    "key": "x-cad-rs:64",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:145",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61049
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: ATC clearance — 61048 and 61050 stay.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: ATC izni — 61048 ve 61050 kalıyor.",
+   "emekli_kimlik": 61049
   },
   {
    "source": "x-cad-rs",
@@ -5747,10 +5883,12 @@
    "page": "9",
    "key": "x-cad-rs:68",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:71",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61069
+   "reason": "Ders notlarında karşılığı yok / aynı konu: SPIC flight time definition; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: SPIC uçuş süresi tanımı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61069
   },
   {
    "source": "x-cad-rs",
@@ -5846,10 +5984,12 @@
    "page": "9",
    "key": "x-cad-rs:77",
    "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:150",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61053
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: interception signals — 61051 and 61052 stay.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: önleme sinyalleri — 61051 ve 61052 kalıyor.",
+   "emekli_kimlik": 61053
   },
   {
    "source": "x-cad-rs",
@@ -6060,10 +6200,12 @@
    "page": "5",
    "key": "x-traficom-lapl-ppl:18",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:20",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61056
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: converging aircraft — 61054 stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: kesişme — 61054 kalıyor.",
+   "emekli_kimlik": 61056
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6071,10 +6213,12 @@
    "page": "5",
    "key": "x-traficom-lapl-ppl:19",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:21",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61057
+   "reason": "Ders notlarında karşılığı yok / aynı konu: VFR pilot instructed into cloud; this scenario is not in the notes.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: VFR pilota bulutlu yön verilirse; notlarda bu senaryo yok.",
+   "emekli_kimlik": 61057
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6226,10 +6370,12 @@
    "page": "7",
    "key": "x-traficom-lapl-ppl:33",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:37",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61061
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: transition level — 61002 (starred) and 61035 stay.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: geçiş seviyesi — 61002 (⭐) ve 61035 kalıyor.",
+   "emekli_kimlik": 61061
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6333,10 +6479,12 @@
    "page": "9",
    "key": "x-traficom-lapl-ppl:43",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:50",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61063
+   "reason": "Ders notlarında karşılığı yok / aynı konu: PPL theory-exam validity period (training rule); the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: PPL teorik sınav geçerlilik süresi (eğitim); notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61063
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6408,10 +6556,12 @@
    "page": "10",
    "key": "x-traficom-lapl-ppl:50",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:60",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61065
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Student pilot medical timing; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Öğrenci pilot sağlık belgesi zamanı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61065
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6452,10 +6602,12 @@
    "page": "11",
    "key": "x-traficom-lapl-ppl:54",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:64",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61066
+   "reason": "Ders notlarında karşılığı yok / aynı konu: FSTD credit in PPL training; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: PPL eğitiminde FSTD kredisi; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61066
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6463,10 +6615,12 @@
    "page": "11",
    "key": "x-traficom-lapl-ppl:55",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:65",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61067
+   "reason": "Ders notlarında karşılığı yok / aynı konu: PPL solo cross-country requirement; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: PPL yalnız seyir uçuşu şartı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61067
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6495,10 +6649,12 @@
    "page": "11",
    "key": "x-traficom-lapl-ppl:58",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:67",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61068
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Solo flight time definition; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Solo uçuş süresi tanımı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61068
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6539,10 +6695,12 @@
    "page": "12",
    "key": "x-traficom-lapl-ppl:62",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:71",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61069
+   "reason": "Ders notlarında karşılığı yok / aynı konu: SPIC flight time definition; the notes contain no training rules.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: SPIC uçuş süresi tanımı; notlarda eğitim kuralları yok.",
+   "emekli_kimlik": 61069
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6649,10 +6807,12 @@
    "page": "14",
    "key": "x-traficom-lapl-ppl:72",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:84",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61074
+   "reason": "Ders notlarında karşılığı yok / aynı konu: VFR contingency planning; the notes have no flight-preparation heading.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: VFR uçuşta alternatif plan; notlarda uçuş hazırlığı başlığı yok.",
+   "emekli_kimlik": 61074
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6660,10 +6820,12 @@
    "page": "14",
    "key": "x-traficom-lapl-ppl:73",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:85",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61075
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Runway usability and performance check; the notes have no flight-preparation heading.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Pist kullanılabilirliği/performans kontrolü; notlarda uçuş hazırlığı başlığı yok.",
+   "emekli_kimlik": 61075
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6843,10 +7005,12 @@
    "page": "17",
    "key": "x-traficom-lapl-ppl:90",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:118",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61036
+   "reason": "Ders notlarında karşılığı yok / aynı konu: VFR cruising-level table; the notes' table lists the parity reversed (even for 000–179°), so the answer would contradict the notes. Topic already in the bank (14295).",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: VFR seyir seviyesi tablosu; notlardaki tablo ICAO ile ters yazılmış (000–179° için çift), cevap notlarla çelişir. Konu bankada zaten var (14295).",
+   "emekli_kimlik": 61036
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6854,10 +7018,12 @@
    "page": "17",
    "key": "x-traficom-lapl-ppl:91",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:119",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61037
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Semi-circular rule calculation; the notes' table lists the parity reversed, so the answer would contradict the notes. Topic already in the bank (14295).",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Yarı daire kuralı hesabı; notlardaki tablo ICAO ile ters yazılmış, cevap notlarla çelişir. Konu bankada zaten var (14295).",
+   "emekli_kimlik": 61037
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -6957,10 +7123,12 @@
    "page": "19",
    "key": "x-traficom-lapl-ppl:100",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:135",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61044
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: priority between categories — 61041 stays.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: kategori öncelik sırası — 61041 kalıyor.",
+   "emekli_kimlik": 61044
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -7019,10 +7187,12 @@
    "page": "20",
    "key": "x-traficom-lapl-ppl:106",
    "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
-   "status": "duplicate_new",
+   "status": "out_of_scope",
    "representative_key": "linx-airlaw:145",
-   "reason": "Same legal rule/conditions as independently authored Linx representative; wording/number/option-order variant does not justify a new question.",
-   "question_id": 61049
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: ATC clearance — 61048 and 61050 stay.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: ATC izni — 61048 ve 61050 kalıyor.",
+   "emekli_kimlik": 61049
   },
   {
    "source": "x-traficom-lapl-ppl",
@@ -7955,9 +8125,11 @@
    "page": "5",
    "key": "x-tc-tp13014:5",
    "url": "https://www.tc.gc.ca/publications/EN/TP13014/PDF/HR/TP13014E.PDF",
-   "status": "new",
-   "reason": "Generic missing PPL legal-rule type independently authored and scoped to verified current EASA/SERA rules; original Canadian-specific wording not imported.",
-   "question_id": 61088
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: No flight when fatigued (Part-NCO); not in the notes.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Yorgunlukta uçuşa başlama yasağı (Part-NCO); notlarda yok.",
+   "emekli_kimlik": 61088
   },
   {
    "source": "x-tc-tp13014",
@@ -8056,10 +8228,12 @@
    "page": "7",
    "key": "x-tc-tp13014:15",
    "url": "https://www.tc.gc.ca/publications/EN/TP13014/PDF/HR/TP13014E.PDF",
-   "status": "duplicate_new",
-   "reason": "The independently authored current SERA SVFR definition is covered by the canonical CAAB representative; source added without a second question.",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Same topic: special VFR — 61034 (minimum visibility) stays.",
    "representative_key": "caab-airlaw:160",
-   "question_id": 61011
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: Aynı konu: özel VFR — 61034 (asgari görüş) kalıyor.",
+   "emekli_kimlik": 61011
   },
   {
    "source": "x-tc-tp13014",
@@ -8109,12 +8283,12 @@
   }
  ],
  "kaynak_yeni_benzersiz": {
-  "caab-airlaw": 31,
-  "linx-airlaw": 48,
-  "x-austrocontrol-ecqb-ppl": 9,
-  "x-cad-rs": 30,
-  "x-traficom-lapl-ppl": 34,
+  "caab-airlaw": 14,
+  "linx-airlaw": 23,
+  "x-austrocontrol-ecqb-ppl": 5,
+  "x-cad-rs": 13,
+  "x-traficom-lapl-ppl": 19,
   "x-sonyaklasma": 0,
-  "x-tc-tp13014": 4
+  "x-tc-tp13014": 2
  }
 }

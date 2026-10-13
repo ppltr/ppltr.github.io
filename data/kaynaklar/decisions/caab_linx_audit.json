@@ -3378,7 +3378,7 @@
  "candidates": [
   {
    "key": "linx-airlaw:3",
-   "section": "010-01",
+   "section": "010-EK",
    "text": "An ICAO certificate carries an endorsement that it does not fully meet an international standard. What is needed for international navigation into another State?",
    "options": [
     "Permission from each State whose territory is entered",
@@ -3416,7 +3416,7 @@
   },
   {
    "key": "linx-airlaw:6",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "Under Part-MED, what medical certificate normally permits exercise of PPL(A) privileges?",
    "options": [
     "At least Class 2; a valid Class 1 also meets this requirement",
@@ -3454,7 +3454,7 @@
   },
   {
    "key": "linx-airlaw:8",
-   "section": "010-01",
+   "section": "010-EK",
    "text": "Which convention established the International Civil Aviation Organization (ICAO)?",
    "options": [
     "The Convention on International Civil Aviation signed at Chicago",
@@ -3493,7 +3493,7 @@
   },
   {
    "key": "linx-airlaw:14",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "An airborne civil aircraft must comply with the general rules and which flight rules?",
    "options": [
     "Either VFR or IFR",
@@ -3531,7 +3531,7 @@
   },
   {
    "key": "linx-airlaw:16",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "Two aeroplanes of the same category converge at approximately the same level. Which one must give way?",
    "options": [
     "The aeroplane that has the other on its right",
@@ -3569,7 +3569,7 @@
   },
   {
    "key": "linx-airlaw:18",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "Under SERA, what is the ordinary minimum height for day VFR outside congested areas, without a special permission or take-off/landing exception?",
    "options": [
     "500 ft above ground/water and 500 ft above obstacles within 150 m",
@@ -3607,7 +3607,7 @@
   },
   {
    "key": "linx-airlaw:20",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "At night, another aeroplane stays on a constant relative bearing 050° at your level. You see its red navigation light. What should you conclude?",
    "options": [
     "There is a collision risk and you must give way to the aircraft on your right",
@@ -3645,7 +3645,7 @@
   },
   {
    "key": "linx-airlaw:21",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "A VFR-only pilot receives a heading instruction that would take the aircraft into cloud. What is the appropriate response?",
    "options": [
     "Tell ATC immediately that the instruction cannot be followed while maintaining VMC and request an alternative",
@@ -3683,7 +3683,7 @@
   },
   {
    "key": "linx-airlaw:25",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "Before entering a Class D control zone under a special VFR clearance, your radio fails. What is the appropriate action?",
    "options": [
     "Remain outside the control zone and arrange a safe alternative",
@@ -3721,7 +3721,7 @@
   },
   {
    "key": "linx-airlaw:35",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "During descent through the transition level toward an aerodrome, which usual altimeter setting replaces standard pressure?",
    "options": [
     "The appropriate QNH",
@@ -3760,7 +3760,7 @@
   },
   {
    "key": "linx-airlaw:37",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "What is the transition level?",
    "options": [
     "The lowest flight level available above the transition altitude",
@@ -3798,7 +3798,7 @@
   },
   {
    "key": "linx-airlaw:50",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "Under Part-FCL, for how long is successful PPL theoretical knowledge completion valid for licence issue?",
    "options": [
     "24 months from successful completion",
@@ -3836,7 +3836,7 @@
   },
   {
    "key": "linx-airlaw:60",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "When must a student aeroplane pilot have a valid medical certificate before operating alone?",
    "options": [
     "Before the first solo flight",
@@ -3874,7 +3874,7 @@
   },
   {
    "key": "linx-airlaw:64",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "In the standard Part-FCL PPL(A) course, what is the maximum FSTD credit within the required 45 hours?",
    "options": [
     "5 hours",
@@ -3912,7 +3912,7 @@
   },
   {
    "key": "linx-airlaw:65",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "What is the standard Part-FCL PPL(A) qualifying solo cross-country requirement for one flight?",
    "options": [
     "At least 150 NM with full-stop landings at two aerodromes other than departure",
@@ -3950,7 +3950,7 @@
   },
   {
    "key": "linx-airlaw:67",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "In Part-FCL terminology, what is solo flight time?",
    "options": [
     "Flight time when a student pilot is the sole occupant",
@@ -3988,7 +3988,7 @@
   },
   {
    "key": "linx-airlaw:71",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "An instructor only observes a student acting as PIC, without influencing or controlling the flight. What is this defined time?",
    "options": [
     "Student pilot-in-command (SPIC) flight time",
@@ -4026,7 +4026,7 @@
   },
   {
    "key": "linx-airlaw:73",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "For SEP/TMG revalidation by experience, without an instructor-training exemption, which package must be completed in the 12 months preceding rating expiry?",
    "options": [
     "12 flight hours, including 6 PIC hours, 12 take-offs/landings and at least 1 hour refresher training with FI/CRI",
@@ -4064,7 +4064,7 @@
   },
   {
    "key": "linx-airlaw:74",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "A pilot chooses proficiency-check revalidation of an SEP class rating. What is the normal window immediately before expiry?",
    "options": [
     "The final 3 months",
@@ -4102,7 +4102,7 @@
   },
   {
    "key": "linx-airlaw:83",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "Before starting a flight, what general information duty applies to the PIC?",
    "options": [
     "Become familiar with all available information appropriate to the intended operation",
@@ -4140,7 +4140,7 @@
   },
   {
    "key": "linx-airlaw:84",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "For a VFR flight away from the departure vicinity, what contingency must flight preparation include?",
    "options": [
     "An alternative course of action if weather prevents completing the planned flight",
@@ -4178,7 +4178,7 @@
   },
   {
    "key": "linx-airlaw:85",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "When assessing a non-commercial aeroplane flight, how should the PIC establish that intended runways are usable?",
    "options": [
     "Check runway lengths and the aircraft performance limitations/data for the conditions",
@@ -4216,7 +4216,7 @@
   },
   {
    "key": "linx-airlaw:88",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "What must the PIC ensure passengers are told about safety belts before flight?",
    "options": [
     "Their location and use",
@@ -4254,7 +4254,7 @@
   },
   {
    "key": "linx-airlaw:99",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "What is a prohibited area?",
    "options": [
     "Defined airspace over a State’s land or territorial waters in which aircraft flight is prohibited",
@@ -4292,7 +4292,7 @@
   },
   {
    "key": "linx-airlaw:100",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "How may a pilot legally fly in a published restricted area?",
    "options": [
     "In accordance with the published restrictions or with the relevant State’s permission",
@@ -4330,7 +4330,7 @@
   },
   {
    "key": "linx-airlaw:109",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "For VFR in Class G above the higher of 3,000 ft AMSL or 1,000 ft above terrain, but below 10,000 ft AMSL, what vertical cloud clearance is normally required?",
    "options": [
     "1,000 ft (300 m)",
@@ -4368,7 +4368,7 @@
   },
   {
    "key": "linx-airlaw:111",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "At an uncontrolled aerodrome, what is the normal circuit-turn direction if no different pattern is indicated?",
    "options": [
     "Left",
@@ -4406,7 +4406,7 @@
   },
   {
    "key": "linx-airlaw:112",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "For VFR in Class G above the higher of 3,000 ft AMSL or 1,000 ft above terrain, but below 10,000 ft AMSL, what is the normal horizontal cloud clearance?",
    "options": [
     "1,500 m",
@@ -4444,7 +4444,7 @@
   },
   {
    "key": "linx-airlaw:115",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "Under ordinary SERA special VFR rules for an aeroplane by day, what minimum flight visibility must the pilot maintain?",
    "options": [
     "1,500 m, clear of cloud with the surface in sight",
@@ -4482,7 +4482,7 @@
   },
   {
    "key": "linx-airlaw:117",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "When passing through the transition layer, when do the usual altitude/flight-level references change?",
    "options": [
     "To flight levels at transition altitude in climb; to altitudes at transition level in descent",
@@ -4521,7 +4521,7 @@
   },
   {
    "key": "linx-airlaw:118",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "Unless a competent authority or ATC specifies otherwise, above what height does day VFR level cruising normally follow the cruising-level table?",
    "options": [
     "3,000 ft above ground or water",
@@ -4559,7 +4559,7 @@
   },
   {
    "key": "linx-airlaw:119",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "A VFR aeroplane cruises above the table threshold on true track 170° with variation 20°W. Which listed standard cruising level fits its magnetic track?",
    "options": [
     "FL65",
@@ -4597,7 +4597,7 @@
   },
   {
    "key": "linx-airlaw:120",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "Which quantity determines the ordinary east/west VFR cruising-level band?",
    "options": [
     "Magnetic track, with odd thousands plus 500 ft for 000°–179°",
@@ -4635,7 +4635,7 @@
   },
   {
    "key": "linx-airlaw:128",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "An airship and a balloon converge at the same level. Which must give way?",
    "options": [
     "The airship",
@@ -4673,7 +4673,7 @@
   },
   {
    "key": "linx-airlaw:130",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "A sailplane in free flight sees a powered aerotow converging from its left at the same level, away from a landing emergency. Which has priority?",
    "options": [
     "The sailplane, while both must avoid collision",
@@ -4711,7 +4711,7 @@
   },
   {
    "key": "linx-airlaw:132",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "In Class D, an IFR aeroplane in VMC converges with a VFR helicopter approaching from its right. Who normally gives way?",
    "options": [
     "The aeroplane; IFR status alone does not give priority over the helicopter",
@@ -4749,7 +4749,7 @@
   },
   {
    "key": "linx-airlaw:133",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "Two aeroplanes converge in VMC at the same level. Only one holds an ATC clearance. Does that clearance itself give right-of-way?",
    "options": [
     "No; apply the normal right-of-way rules",
@@ -4787,7 +4787,7 @@
   },
   {
    "key": "linx-airlaw:135",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "A powered aeroplane in free flight converges with another powered aircraft towing a glider. The tow is on its left. Who must give way?",
    "options": [
     "The aeroplane in free flight",
@@ -4825,7 +4825,7 @@
   },
   {
    "key": "linx-airlaw:136",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "A lower aeroplane has landing priority over a higher one. What may it still not do?",
    "options": [
     "Cut in front of or overtake an aircraft already in final approach",
@@ -4863,7 +4863,7 @@
   },
   {
    "key": "linx-airlaw:139",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "A non-commercial single-engine landplane flies over water beyond gliding distance of land. What individual flotation equipment is required under Part-NCO?",
    "options": [
     "A readily accessible life-jacket for each person, with an equivalent device for a child under 24 months",
@@ -4901,7 +4901,7 @@
   },
   {
    "key": "linx-airlaw:144",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "What does an ATC clearance authorise?",
    "options": [
     "Proceeding under the specified traffic conditions, while other applicable rules still apply",
@@ -4939,7 +4939,7 @@
   },
   {
    "key": "linx-airlaw:145",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "An ATC clearance would cause the pilot to breach an applicable rule. What should the pilot do?",
    "options": [
     "Advise ATC and request an amended clearance",
@@ -4977,7 +4977,7 @@
   },
   {
    "key": "linx-airlaw:146",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "An emergency requires immediate deviation from the current ATC clearance. What follows as soon as practicable?",
    "options": [
     "Notify the appropriate ATC unit of the action and seek any necessary amended clearance",
@@ -5015,7 +5015,7 @@
   },
   {
    "key": "linx-airlaw:147",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "On being intercepted, what should a civil aircraft do unless the appropriate ATS unit instructs otherwise regarding the transponder?",
    "options": [
     "Follow the interception signals, attempt contact on 121.5 MHz, and select 7700",
@@ -5053,7 +5053,7 @@
   },
   {
    "key": "linx-airlaw:148",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "An intercepting aircraft breaks away with an abrupt climbing turn of 90° or more without crossing your flight path. What does this signal mean?",
    "options": [
     "You may proceed",
@@ -5091,7 +5091,7 @@
   },
   {
    "key": "linx-airlaw:150",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "An intercepting aircraft circles the aerodrome, lowers its landing gear and leads you toward the landing runway. What does Series 3 mean?",
    "options": [
     "Land at this aerodrome",
@@ -5129,7 +5129,7 @@
   },
   {
    "key": "caab-airlaw:6",
-   "section": "010-01",
+   "section": "010-EK",
    "text": "Which ICAO body considers and recommends technical Annex amendments to the Council?",
    "options": [
     "The Air Navigation Commission",
@@ -5167,7 +5167,7 @@
   },
   {
    "key": "caab-airlaw:13",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "Under Part-FCL, what is the minimum age for issue of a commercial pilot licence?",
    "options": [
     "18 years",
@@ -5205,7 +5205,7 @@
   },
   {
    "key": "caab-airlaw:16",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "Under Part-MED, what class of medical certificate is required to exercise CPL privileges?",
    "options": [
     "Class 1",
@@ -5243,7 +5243,7 @@
   },
   {
    "key": "caab-airlaw:21",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "Under Part-MED, from what date is the validity of an initial medical certificate normally calculated?",
    "options": [
     "The date of the aeromedical examination",
@@ -5281,7 +5281,7 @@
   },
   {
    "key": "caab-airlaw:22",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "An IFR pilot elects to continue as VFR in suitable airspace and expects uninterrupted VMC. What must the pilot do?",
    "options": [
     "Notify ATS explicitly that IFR is cancelled and communicate flight-plan changes",
@@ -5319,7 +5319,7 @@
   },
   {
    "key": "caab-airlaw:29",
-   "section": "010-01",
+   "section": "010-EK",
    "text": "For Chicago Convention sovereignty, what does a State’s territory include?",
    "options": [
     "Its land areas and adjacent territorial waters",
@@ -5357,7 +5357,7 @@
   },
   {
    "key": "caab-airlaw:30",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "Which rules govern flights over the high seas under SERA?",
    "options": [
     "ICAO Annex 2 Rules of the Air without exception",
@@ -5395,7 +5395,7 @@
   },
   {
    "key": "caab-airlaw:33",
-   "section": "010-04",
+   "section": "010-EK",
    "text": "Besides a valid pilot licence, what documents must a Part-FCL pilot carry while exercising its privileges?",
    "options": [
     "A valid medical certificate and a personal photographic ID",
@@ -5433,7 +5433,7 @@
   },
   {
    "key": "caab-airlaw:35",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "You overtake another aeroplane from behind while climbing. Does the climb remove your obligation to give way?",
    "options": [
     "No; pass to its right and remain clear until entirely past and clear",
@@ -5471,7 +5471,7 @@
   },
   {
    "key": "caab-airlaw:36",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "Flashing anti-collision lights in cloud interfere with the pilot’s safe performance of duties. May the pilot reduce or switch them off?",
    "options": [
     "Yes, for that adverse-effect condition",
@@ -5509,7 +5509,7 @@
   },
   {
    "key": "caab-airlaw:79",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "Under ordinary SERA rules, what is the speed limit for an aeroplane VFR in Class E below 10,000 ft AMSL, unless a permitted exception applies?",
    "options": [
     "250 kt IAS",
@@ -5547,7 +5547,7 @@
   },
   {
    "key": "caab-airlaw:80",
-   "section": "010-07",
+   "section": "010-EK",
    "text": "What does emergency phase mean in ATS terminology?",
    "options": [
     "A generic term for uncertainty, alert or distress phase, as applicable",
@@ -5585,7 +5585,7 @@
   },
   {
    "key": "caab-airlaw:81",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "A normal VFR flight operates in Class E outside any radio mandatory zone. Which statement is correct?",
    "options": [
     "No ATC clearance or continuous two-way radio is required by the class alone, and ATC separation is not provided to VFR",
@@ -5623,7 +5623,7 @@
   },
   {
    "key": "caab-airlaw:101",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "What makes an aerodrome a controlled aerodrome?",
    "options": [
     "An air traffic control service is provided to its aerodrome traffic",
@@ -5661,7 +5661,7 @@
   },
   {
    "key": "caab-airlaw:116",
-   "section": "010-05",
+   "section": "010-EK",
    "text": "For the aerodrome reference code, what reference field length corresponds to code number 4?",
    "options": [
     "1,800 m or more",
@@ -5699,7 +5699,7 @@
   },
   {
    "key": "caab-airlaw:118",
-   "section": "010-05",
+   "section": "010-EK",
    "text": "How many light units normally make up one PAPI wing bar?",
    "options": [
     "Four",
@@ -5737,7 +5737,7 @@
   },
   {
    "key": "caab-airlaw:142",
-   "section": "010-05",
+   "section": "010-EK",
    "text": "What does the number in an aerodrome reference code describe?",
    "options": [
     "Aeroplane reference field length for planning",
@@ -5775,7 +5775,7 @@
   },
   {
    "key": "caab-airlaw:157",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "For a departing aircraft that has not already received the setting, when should QNH be included in the ATC clearance sequence?",
    "options": [
     "In the taxi clearance",
@@ -5813,7 +5813,7 @@
   },
   {
    "key": "caab-airlaw:169",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "Which temporary AIP change normally requires an AIP Supplement rather than a short ordinary notice?",
    "options": [
     "A change lasting three months or longer, or a shorter change needing extensive text/graphics",
@@ -5851,7 +5851,7 @@
   },
   {
    "key": "caab-airlaw:170",
-   "section": "010-05",
+   "section": "010-EK",
    "text": "On the normal PAPI approach slope, what does the pilot see?",
    "options": [
     "Two red and two white units",
@@ -5889,7 +5889,7 @@
   },
   {
    "key": "caab-airlaw:192",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "What is the normal IFR vertical separation minimum in controlled airspace below FL290?",
    "options": [
     "1,000 ft (300 m)",
@@ -5927,7 +5927,7 @@
   },
   {
    "key": "caab-airlaw:43",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "An IFR aircraft flies outside controlled airspace along a route designated for flight-plan and FIS communication requirements. What radio duty applies?",
    "options": [
     "Maintain a listening watch and establish two-way communication as necessary",
@@ -5965,7 +5965,7 @@
   },
   {
    "key": "caab-airlaw:85",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "An IFR flight is cleared for a visual approach in Class C. From which traffic is it normally separated by ATC?",
    "options": [
     "Other IFR and VFR traffic",
@@ -6003,7 +6003,7 @@
   },
   {
    "key": "caab-airlaw:90",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "For a VFR flight plan, what does total estimated elapsed time measure?",
    "options": [
     "From take-off to arrival over the destination aerodrome",
@@ -6041,7 +6041,7 @@
   },
   {
    "key": "caab-airlaw:91",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "Which aircraft is a strayed aircraft?",
    "options": [
     "One significantly off its intended track, or one reporting that it is lost",
@@ -6079,7 +6079,7 @@
   },
   {
    "key": "caab-airlaw:147",
-   "section": "010-06",
+   "section": "010-EK",
    "text": "Between FL290 and FL410 in designated RVSM airspace, what nominal vertical separation is applied to appropriately approved aircraft?",
    "options": [
     "1,000 ft (300 m)",
@@ -6117,7 +6117,7 @@
   },
   {
    "key": "linx-airlaw:131",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "A powered aeroplane and a sailplane converge at approximately the same level. Which must give way?",
    "options": [
     "The powered aeroplane",
@@ -6155,7 +6155,7 @@
   },
   {
    "key": "linx-airlaw:42",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "At an uncontrolled aerodrome, which direction should an aeroplane normally use for take-off or landing if no safety, runway or traffic factor calls for another direction?",
    "options": [
     "Into the wind",
@@ -6193,7 +6193,7 @@
   },
   {
    "key": "caab-airlaw:160",
-   "section": "010-03",
+   "section": "010-EK",
    "text": "What defines a special VFR flight under SERA?",
    "options": [
     "A VFR flight cleared by ATC to operate inside a control zone in conditions below VMC",

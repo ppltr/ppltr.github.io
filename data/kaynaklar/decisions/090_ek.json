@@ -1,0 +1,2517 @@
+{
+ "schema_version": 1,
+ "checked_at": "2026-10-13",
+ "sources": [
+  {
+   "id": "x-cad-rs"
+  },
+  {
+   "id": "x-traficom-lapl-ppl"
+  }
+ ],
+ "decisions": [
+  {
+   "source": "x-cad-rs",
+   "no": "19",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:19",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16344
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "23",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:23",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16461
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "69",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:69",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16465
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "73",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:73",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16387
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "75",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:75",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16400
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "77",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:77",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16311
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "80",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:80",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16317
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "98",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:98",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16447
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "102",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:102",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16327
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "118",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:118",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16471
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "121",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:121",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16451
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "122",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:122",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16439
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "123",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:123",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16434
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "128",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:128",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16450
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "131",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:131",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16419
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "133",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:133",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 16415
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "102",
+   "page": "17",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:102",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "127",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:127",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "103",
+   "page": "17",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:103",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "8",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:8",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "13",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:13",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "38",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:38",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "104",
+   "page": "17",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:104",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "14",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:14",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "47",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:47",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "41",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:41",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "124",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:124",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "91",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:91",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "35",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:35",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "104",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:104",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "70",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:70",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "103",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:103",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "69",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:69",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "34",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:34",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "123",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:123",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "18",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:18",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "1",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:1",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "58",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:58",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "24",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:24",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "84",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:84",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "71",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:71",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "20",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:20",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "4",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:4",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "57",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:57",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "23",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:23",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "50",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:50",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "21",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:21",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "56",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:56",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "22",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:22",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "108",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:108",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "113",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:113",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "94",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:94",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "116",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:116",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "100",
+   "page": "17",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:100",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "63",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:63",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "30",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:30",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "53",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:53",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "132",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:132",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "86",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:86",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "76",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:76",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "105",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:105",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "136",
+   "page": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:136",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "25",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:25",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "51",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:51",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "33",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:33",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "135",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:135",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "120",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:120",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "2",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:2",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "121",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:121",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "137",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:137",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "108",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:108",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "74",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:74",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "97",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:97",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "62",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:62",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "127",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:127",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "126",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:126",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "93",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:93",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "74",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:74",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "130",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:130",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "129",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:129",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "131",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:131",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "64",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:64",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "31",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:31",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "54",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:54",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "32",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:32",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "17",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:17",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "44",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:44",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "37",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:37",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "52",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:52",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "40",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:40",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "46",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:46",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "39",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:39",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "45",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:45",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "38",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:38",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "133",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:133",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "31",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:31",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "112",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:112",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "87",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:87",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "75",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:75",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "110",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:110",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "80",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:80",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "137",
+   "page": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:137",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "81",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:81",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "77",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:77",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "90",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:90",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "135",
+   "page": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:135",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "39",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:39",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16453
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "122",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:122",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16453
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "83",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:83",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "56",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:56",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "21",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:21",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "3",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:3",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "62",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:62",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "29",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:29",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "134",
+   "page": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:134",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "84",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:84",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "114",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:114",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "95",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:95",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "132",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:132",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "85",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:85",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "119",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:119",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "107",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:107",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "115",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:115",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "98",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:98",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "81",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:81",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "54",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:54",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "32",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:32",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "9",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:9",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "6",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:6",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "22",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:22",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "2",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:2",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "68",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:68",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "49",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:49",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "15",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:15",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "18",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:18",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "66",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:66",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "72",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:72",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "7",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:7",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "11",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:11",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "11",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:11",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "10",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:10",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "6",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:6",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "112",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:112",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "96",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:96",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "16",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:16",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "19",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:19",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "24",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:24",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "5",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:5",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "4",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:4",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "8",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:8",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "82",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:82",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "55",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:55",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "55",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:55",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "20",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:20",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "111",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:111",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "105",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:105",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "72",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:72",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "88",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:88",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "61",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:61",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "28",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:28",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "60",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:60",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "27",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:27",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "59",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:59",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "26",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:26",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "100",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:100",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "106",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:106",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "58",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:58",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "65",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:65",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "89",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:89",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "78",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:78",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "111",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:111",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "99",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:99",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "117",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:117",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "97",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:97",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "88",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:88",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "79",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:79",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "49",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:49",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "44",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:44",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "120",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:120",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "99",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:99",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "60",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:60",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "79",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:79",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "53",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:53",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "57",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:57",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "78",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:78",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "129",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:129",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "83",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:83",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "45",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:45",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "106",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:106",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "125",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:125",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "136",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:136",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "85",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:85",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "64",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:64",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "76",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:76",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "66",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:66",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "92",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:92",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "67",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:67",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "107",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:107",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "73",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:73",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "14",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:14",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16332
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "12",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:12",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16461
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "13",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:13",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "17",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:17",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "109",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:109",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "52",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:52",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "42",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:42",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16365
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "35",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:35",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16365
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "43",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:43",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16365
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "36",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:36",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16365
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "101",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:101",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "59",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:59",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "68",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:68",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "91",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:91",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "61",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:61",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 59010
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "95",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:95",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "65",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:65",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "89",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:89",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16434
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "30",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:30",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "113",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:113",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "90",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:90",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16471
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "94",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:94",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "93",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:93",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "48",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:48",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "43",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:43",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "33",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:33",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "124",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:124",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "110",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:110",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "87",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:87",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16362
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "41",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:41",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "34",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:34",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "134",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:134",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "26",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:26",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "118",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:118",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "27",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:27",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "117",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:117",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "28",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:28",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16412
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "116",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:116",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16412
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "29",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:29",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "115",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:115",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "25",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:25",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16340
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "114",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:114",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16340
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "36",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:36",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "101",
+   "page": "17",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:101",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "67",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:67",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16341
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "50",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:50",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16341
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "12",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:12",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "10",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:10",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "15",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:15",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "1",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:1",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "16",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:16",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "5",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:5",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "9",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:9",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "70",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:70",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "46",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:46",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "47",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:47",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "48",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:48",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 16465
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "71",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:71",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "40",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:40",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "42",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:42",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "3",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:3",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "7",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:7",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "96",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:96",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "63",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:63",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "37",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:37",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "119",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:119",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "126",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:126",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "109",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:109",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "128",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:128",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "130",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:130",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "82",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:82",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "51",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:51",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "125",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf",
+   "key": "x-cad-rs:125",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "92",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:92",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "86",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:86",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı ifade ya da kavram zaten işleniyor (sayı/frekans okunuşu, Q kodları, acil/öncelik mesajları, kısaltmalar, fraseoloji), önleme (interception) ifadeleri 010 bankasında işleniyor ya da ülkeye özgü (Finlandiya/Sırbistan) çağrı örneği; yeni bilgi eklemediği için ayrı soru açılmadı."
+  }
+ ],
+ "candidates": [],
+ "notes": "scripts/kaynak_karar_olustur.py ile üretildi; seçim kayıtları data/kaynaklar/decisions/090_secim.json."
+}

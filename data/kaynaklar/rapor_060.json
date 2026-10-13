@@ -1,0 +1,3198 @@
+{
+ "ders": "060",
+ "tarih": "2026-10-12",
+ "yeni_benzersiz": 2,
+ "taranan": 339,
+ "kaynaklar": {
+  "x-traficom-lapl-ppl": {
+   "new": 2,
+   "duplicate_new": 1,
+   "out_of_scope": 146,
+   "existing": 18,
+   "review": 3
+  },
+  "x-cad-rs": {
+   "out_of_scope": 113,
+   "existing": 21,
+   "review": 4
+  },
+  "x-tc-tp13014": {
+   "out_of_scope": 21
+  },
+  "x-sonyaklasma": {
+   "out_of_scope": 3,
+   "existing": 7
+  }
+ },
+ "yildizlar": [
+  61001,
+  61002,
+  14909
+ ],
+ "inceleme": 7,
+ "kararlar": [
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "155",
+   "page": "26",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:155",
+   "status": "new",
+   "reason": "Bankada aynı kavramı soran soru yok; ders notunda var.",
+   "question_id": 66002
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "160",
+   "page": "27",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:160",
+   "status": "new",
+   "reason": "Bankada aynı kavramı soran soru yok; ders notunda var.",
+   "question_id": 66003
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "161",
+   "page": "27",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:161",
+   "status": "duplicate_new",
+   "reason": "Yeni adayla aynı kavram; kelime/şık sırası farkı ayrı soru gerektirmiyor.",
+   "representative_key": "x-traficom-lapl-ppl:160",
+   "question_id": 66003
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "95",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:95",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Recognising VOR station passage by the TO/FROM reversal is not in the notes; they give the cone of confusion and the TO/FROM definition separately.",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: VOR istasyon geçişinin TO/FROM dönüşüyle anlaşılması notlarda yok; notlar yalnız karışıklık konisini ve TO/FROM tanımını ayrı ayrı veriyor.",
+   "emekli_kimlik": 66001
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "102",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:102",
+   "status": "out_of_scope",
+   "reason": "Ders notlarında karşılığı yok / aynı konu: Recognising VOR station passage by the TO/FROM reversal is not in the notes; they give the cone of confusion and the TO/FROM definition separately.",
+   "representative_key": "x-cad-rs:95",
+   "bank_id": null,
+   "reason_tr": "Ders notlarında karşılığı yok / aynı konu: VOR istasyon geçişinin TO/FROM dönüşüyle anlaşılması notlarda yok; notlar yalnız karışıklık konisini ve TO/FROM tanımını ayrı ayrı veriyor.",
+   "emekli_kimlik": 66001
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "94",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:94",
+   "status": "existing",
+   "reason": "Aynı soru bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15901,
+   "matched_bank_id": 15902,
+   "question_id": 15901
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "114",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:114",
+   "status": "existing",
+   "reason": "Aynı soru bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15901,
+   "matched_bank_id": 15902,
+   "question_id": 15901
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "92",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:92",
+   "status": "review",
+   "reason": "Kaynak anahtarı ('alçak irtifada istasyonun tam üstünde') bilinen davranışla (eğik mesafe hatası yüksek irtifada ve istasyona yakınken en büyüktür) çelişiyor; cevap doğrulanamadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "116",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:116",
+   "status": "review",
+   "reason": "Kaynak anahtarı ('alçak irtifada istasyonun tam üstünde') bilinen davranışla (eğik mesafe hatası yüksek irtifada ve istasyona yakınken en büyüktür) çelişiyor; cevap doğrulanamadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "101",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:101",
+   "status": "review",
+   "reason": "Ters yön/CDI sapması hesaplarında tam ölçek ve nokta açıları kaynaklara göre değişiyor; cevap doğrulanamadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "107",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:107",
+   "status": "review",
+   "reason": "Ters yön/CDI sapması hesaplarında tam ölçek ve nokta açıları kaynaklara göre değişiyor; cevap doğrulanamadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "72",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:72",
+   "status": "review",
+   "reason": "Kaynak anahtarı (6,7 NM) CDI beşte bir sapma ve 120 NM mesafe için hesapla tutarlı değil; cevap doğrulanamadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "37",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:37",
+   "status": "review",
+   "reason": "Dünya'nın ekvator çapı ile ekseni arasındaki fark kaynaklarda farklı veriliyor (43 km ≈ 42,7 km); sayısal tanım kaynaklarla netleştirilmeli."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "8",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:8",
+   "status": "review",
+   "reason": "Dünya'nın ekvator çapı ile ekseni arasındaki fark kaynaklarda farklı veriliyor (43 km ≈ 42,7 km); sayısal tanım kaynaklarla netleştirilmeli."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "162",
+   "page": "27",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:162",
+   "status": "out_of_scope",
+   "reason": "Konu yeni soruda (Güneş'in dönence/ekinoks konumu) işlendi; aynı bilginin başka bir mevsim sorusu olduğu için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "167",
+   "page": "28",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:167",
+   "status": "out_of_scope",
+   "reason": "Konu yeni soruda (Güneş'in dönence/ekinoks konumu) işlendi; aynı bilginin başka bir mevsim sorusu olduğu için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "154",
+   "page": "26",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:154",
+   "status": "out_of_scope",
+   "reason": "Konu yeni soruda (sivil alacakaranlık) işlendi; aynı tanımın başka bir ifadesi olduğu için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "156",
+   "page": "26",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:156",
+   "status": "out_of_scope",
+   "reason": "Konu yeni soruda (sivil alacakaranlık) işlendi; aynı tanımın başka bir ifadesi olduğu için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "135",
+   "page": "23",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:135",
+   "status": "out_of_scope",
+   "reason": "Finlandiya'ya özgü coğrafya sorusu; PPL kapsamı dışında."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "23",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:23",
+   "status": "out_of_scope",
+   "reason": "Finlandiya yaz saati dönüşümü ulusal uygulama; PPL kapsamı dışında."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "125",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:125",
+   "status": "out_of_scope",
+   "reason": "Finlandiya yerel saati ulusal uygulama; PPL kapsamı dışında."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "132",
+   "page": "23",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:132",
+   "status": "out_of_scope",
+   "reason": "Finlandiya yaz saati ulusal uygulama; PPL kapsamı dışında."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "151",
+   "page": "25",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:151",
+   "status": "out_of_scope",
+   "reason": "Finlandiya rotasında güneşin yönü: ulusal/örnek senaryo; yeni bilgi eklemiyor."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "152",
+   "page": "26",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:152",
+   "status": "out_of_scope",
+   "reason": "Finlandiya rotasında güneş saati: ulusal/örnek senaryo; yeni bilgi eklemiyor."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "124",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:124",
+   "status": "out_of_scope",
+   "reason": "Helsinki-Malmi pisti için yanrüzgâr hesabı: sayısal örnek, bankada benzer hesaplar var."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "3",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:3",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15771,
+   "question_id": 15771
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "8",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:8",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15868,
+   "question_id": 15868
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "12",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:12",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15828,
+   "question_id": 15828
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "15",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:15",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15684,
+   "question_id": 15684
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "22",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:22",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15819,
+   "question_id": 15819
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "25",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:25",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15774,
+   "question_id": 15774
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "34",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:34",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15694,
+   "question_id": 15694
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "40",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:40",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15745,
+   "question_id": 15745
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "41",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:41",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15716,
+   "question_id": 15716
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "42",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:42",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15670,
+   "question_id": 15670
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "50",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:50",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15826,
+   "question_id": 15826
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "78",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:78",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15772,
+   "question_id": 15772
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "86",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:86",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15704,
+   "question_id": 15704
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "113",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:113",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15739,
+   "question_id": 15739
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "115",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:115",
+   "status": "existing",
+   "reason": "Aynı soru ve aynı cevap bankada var; kaynak bilgisi mevcut kimliğe eklenir.",
+   "bank_id": 15716,
+   "matched_bank_id": 15717,
+   "question_id": 15716
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "46",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:46",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "66",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:66",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "54",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:54",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "65",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:65",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "122",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:122",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "68",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:68",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "123",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:123",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "67",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:67",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "89",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:89",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "119",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:119",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "9",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:9",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "52",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:52",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "137",
+   "page": "23",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:137",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "128",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:128",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "82",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:82",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "64",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:64",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "24",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:24",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "19",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:19",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "63",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:63",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "170",
+   "page": "28",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:170",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "29",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:29",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15402,
+   "question_id": 15402
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "56",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:56",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15402,
+   "question_id": 15402
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "109",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:109",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "89",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:89",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "127",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:127",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "83",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:83",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "126",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:126",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "84",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:84",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "104",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:104",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "86",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:86",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "132",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:132",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "87",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:87",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "88",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:88",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "107",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:107",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "85",
+   "page": "15",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:85",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "89",
+   "page": "20",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:89",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "74",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:74",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "145",
+   "page": "25",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:145",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "153",
+   "page": "26",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:153",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "45",
+   "page": "11",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:45",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "59",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:59",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "28",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:28",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "91",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:91",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "30",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:30",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "31",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:31",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "32",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:32",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "35",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:35",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "34",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:34",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "33",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:33",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "44",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:44",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "57",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:57",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "158",
+   "page": "26",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:158",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "65",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:65",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "7",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:7",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "24",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:24",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "50",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:50",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "31",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:31",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "49",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:49",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "55",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:55",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "15",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:15",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "136",
+   "page": "23",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:136",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "26",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:26",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "51",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:51",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "81",
+   "page": "18",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:81",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "83",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:83",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "92",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:92",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "84",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:84",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "91",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:91",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "85",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:85",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "90",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:90",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "76",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:76",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "99",
+   "page": "17",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:99",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "75",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:75",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "100",
+   "page": "17",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:100",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "77",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:77",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "98",
+   "page": "17",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:98",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "133",
+   "page": "23",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:133",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "150",
+   "page": "25",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:150",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "165",
+   "page": "27",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:165",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "61",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:61",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "135",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:135",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "78",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:78",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "122",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:122",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "79",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:79",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "96",
+   "page": "17",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:96",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "87",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:87",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "97",
+   "page": "17",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:97",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "71",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:71",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "95",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:95",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "159",
+   "page": "27",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:159",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "90",
+   "page": "20",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:90",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "83",
+   "page": "18",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:83",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "97",
+   "page": "21",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:97",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "100",
+   "page": "22",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:100",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "86",
+   "page": "19",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:86",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "88",
+   "page": "19",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:88",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "91",
+   "page": "20",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:91",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "84",
+   "page": "18",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:84",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "99",
+   "page": "22",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:99",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "95",
+   "page": "21",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:95",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "82",
+   "page": "18",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:82",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "87",
+   "page": "19",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:87",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "92",
+   "page": "20",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:92",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "96",
+   "page": "21",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:96",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "94",
+   "page": "21",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:94",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "93",
+   "page": "21",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:93",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "117",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:117",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "141",
+   "page": "24",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:141",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "144",
+   "page": "24",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:144",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "142",
+   "page": "24",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:142",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "143",
+   "page": "24",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:143",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "66",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:66",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "22",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:22",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "35",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:35",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "10",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:10",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "60",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:60",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "16",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:16",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "68",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:68",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "20",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:20",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "4",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:4",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "58",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:58",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "29",
+   "page": "6",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:29",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "168",
+   "page": "28",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:168",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "13",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:13",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "38",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:38",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "49",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:49",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "48",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:48",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "47",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:47",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "62",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:62",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "43",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:43",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "2",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:2",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "169",
+   "page": "28",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:169",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "44",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:44",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "11",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:11",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "146",
+   "page": "25",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:146",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "147",
+   "page": "25",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:147",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "148",
+   "page": "25",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:148",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "5",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:5",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "46",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:46",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "45",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:45",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "123",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:123",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "47",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:47",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "16",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:16",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "43",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:43",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "6",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:6",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15868,
+   "question_id": 15868
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "103",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:103",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "105",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:105",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "80",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:80",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "104",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:104",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "129",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:129",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "81",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:81",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "127",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:127",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "126",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:126",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "129",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:129",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "73",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:73",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "101",
+   "page": "17",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:101",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "90",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:90",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "118",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:118",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "138",
+   "page": "23",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:138",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "140",
+   "page": "24",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:140",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "164",
+   "page": "27",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:164",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "93",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:93",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "115",
+   "page": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:115",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "33",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:33",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "12",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:12",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "70",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:70",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "27",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:27",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "166",
+   "page": "28",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:166",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "20",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:20",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "62",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:62",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "163",
+   "page": "27",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:163",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "81",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:81",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "94",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:94",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "112",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:112",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "110",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:110",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "69",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:69",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "2",
+   "page": "",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-2",
+   "key": "x-sonyaklasma:2",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "131",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:131",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "157",
+   "page": "26",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:157",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "67",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:67",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "21",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:21",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "98",
+   "page": "22",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:98",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "27",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:27",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "120",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:120",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "1",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:1",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "108",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:108",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "98",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:98",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "110",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:110",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "100",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:100",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "99",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:99",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "109",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:109",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "108",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:108",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "71",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:71",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "69",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:69",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "19",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:19",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "125",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:125",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "1",
+   "page": "",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-1",
+   "key": "x-sonyaklasma:1",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "116",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:116",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "120",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:120",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "106",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:106",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "121",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:121",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "118",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:118",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "111",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:111",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "114",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:114",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "124",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:124",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "119",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:119",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "82",
+   "page": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:82",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "93",
+   "page": "16",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:93",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "128",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:128",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "105",
+   "page": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:105",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "113",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:113",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "53",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:53",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "9",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:9",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "130",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:130",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "72",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:72",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "51",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:51",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "39",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:39",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "6",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:6",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "96",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:96",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "112",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:112",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "88",
+   "page": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:88",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "111",
+   "page": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:111",
+   "status": "out_of_scope",
+   "reason": "Şekil, grafik, harita ya da ek gerektiriyor; çizimi üretilmeden aktif soruya çevrilemez."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "97",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:97",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "103",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:103",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "138",
+   "page": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:138",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "121",
+   "page": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:121",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-tc-tp13014",
+   "no": "85",
+   "page": "19",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "key": "x-tc-tp13014:85",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "23",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:23",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "59",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:59",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "102",
+   "page": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:102",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "106",
+   "page": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:106",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "149",
+   "page": "25",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:149",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "3",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:3",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "70",
+   "page": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:70",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15704,
+   "question_id": 15704
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "60",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:60",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15819,
+   "question_id": 15819
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "130",
+   "page": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:130",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "5",
+   "page": "",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-5",
+   "key": "x-sonyaklasma:5",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15840,
+   "question_id": 15840
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "30",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:30",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "55",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:55",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "4",
+   "page": "",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-4",
+   "key": "x-sonyaklasma:4",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15776,
+   "question_id": 15776
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "53",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:53",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "5",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:5",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15745,
+   "question_id": 15745
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "7",
+   "page": "",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-7",
+   "key": "x-sonyaklasma:7",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15745,
+   "question_id": 15745
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "39",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:39",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15828,
+   "question_id": 15828
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "10",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:10",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "41",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:41",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "17",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:17",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "28",
+   "page": "5",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:28",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "21",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:21",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15842,
+   "question_id": 15842
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "61",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:61",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15842,
+   "question_id": 15842
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "133",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:133",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15714,
+   "question_id": 15714
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "80",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:80",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15714,
+   "question_id": 15714
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "137",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:137",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "76",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:76",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "136",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:136",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "75",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:75",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "139",
+   "page": "24",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:139",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "134",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:134",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "79",
+   "page": "14",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:79",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "2",
+   "page": "3",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:2",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "54",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:54",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "42",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:42",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15868,
+   "question_id": 15868
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "3",
+   "page": "",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-3",
+   "key": "x-sonyaklasma:3",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15684,
+   "question_id": 15684
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "73",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:73",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15716,
+   "question_id": 15716
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "38",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:38",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "7",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:7",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "48",
+   "page": "9",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:48",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "14",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:14",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "37",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:37",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "36",
+   "page": "7",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:36",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15684,
+   "question_id": 15684
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "11",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:11",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "40",
+   "page": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:40",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "64",
+   "page": "11",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:64",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15772,
+   "question_id": 15772
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "56",
+   "page": "8",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:56",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "14",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:14",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "63",
+   "page": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:63",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "25",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:25",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "117",
+   "page": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:117",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "74",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:74",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "32",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:32",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15673,
+   "question_id": 15673
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "13",
+   "page": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:13",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15673,
+   "question_id": 15673
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "131",
+   "page": "15",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:131",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "52",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:52",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "58",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:58",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "4",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:4",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15716,
+   "question_id": 15716
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "57",
+   "page": "10",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:57",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15774,
+   "question_id": 15774
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "18",
+   "page": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:18",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "1",
+   "page": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:1",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 56003,
+   "question_id": 56003
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "36",
+   "page": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:36",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "18",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:18",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "10",
+   "page": "",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-10",
+   "key": "x-sonyaklasma:10",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15898,
+   "question_id": 15898
+  },
+  {
+   "source": "x-cad-rs",
+   "no": "45",
+   "page": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "key": "x-cad-rs:45",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "26",
+   "page": "5",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:26",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "8",
+   "page": "",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-8",
+   "key": "x-sonyaklasma:8",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "77",
+   "page": "13",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:77",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15739,
+   "question_id": 15739
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "17",
+   "page": "4",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:17",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15694,
+   "question_id": 15694
+  },
+  {
+   "source": "x-traficom-lapl-ppl",
+   "no": "134",
+   "page": "23",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "key": "x-traficom-lapl-ppl:134",
+   "status": "out_of_scope",
+   "reason": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "6",
+   "page": "",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-6",
+   "key": "x-sonyaklasma:6",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15739,
+   "question_id": 15739
+  },
+  {
+   "source": "x-sonyaklasma",
+   "no": "9",
+   "page": "",
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-9",
+   "key": "x-sonyaklasma:9",
+   "status": "existing",
+   "reason": "Aynı soru bankada var (soru kökü ve şıklar birebir örtüşüyor).",
+   "bank_id": 15915,
+   "question_id": 15915
+  }
+ ],
+ "kaynak_yeni_benzersiz": {
+  "x-traficom-lapl-ppl": 2,
+  "x-cad-rs": 0,
+  "x-tc-tp13014": 0,
+  "x-sonyaklasma": 0
+ }
+}

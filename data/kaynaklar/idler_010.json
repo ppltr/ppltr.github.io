@@ -95,5 +95,237 @@
   "remembered:atpl-pic": 27032,
   "context:classg-visibility": 15960,
   "context:atis-update": 15667
+ },
+ "emekli": {
+  "caab-airlaw:116": {
+   "id": 61004,
+   "neden_tr": "Aynı konu: meydan referans kodu — 61001 (⭐ doğrulanmış) kalıyor.",
+   "neden_en": "Same topic: aerodrome reference code — 61001 (user-confirmed) stays."
+  },
+  "caab-airlaw:118": {
+   "id": 61005,
+   "neden_tr": "Aynı konu: PAPI — 61013 (göstergenin okunuşu) kalıyor.",
+   "neden_en": "Same topic: PAPI — 61013 (reading the indication) stays."
+  },
+  "caab-airlaw:13": {
+   "id": 61006,
+   "neden_tr": "CPL asgari yaşı; notlarda yok (Annex 1 bölümü yalnız lisans, sağlık, yenileme) ve PPL kapsamı dışı.",
+   "neden_en": "CPL minimum age; not in the notes (Annex 1 part covers licence, medical, renewal only) and outside PPL scope."
+  },
+  "caab-airlaw:142": {
+   "id": 61007,
+   "neden_tr": "Aynı konu: meydan referans kodu — 61001 (⭐ doğrulanmış) kalıyor.",
+   "neden_en": "Same topic: aerodrome reference code — 61001 (user-confirmed) stays."
+  },
+  "caab-airlaw:147": {
+   "id": 61008,
+   "neden_tr": "Aynı konu: dikey ayırma — 61014 kalıyor; RVSM ayırması ATC işidir.",
+   "neden_en": "Same topic: vertical separation — 61014 stays; RVSM separation is an ATC matter."
+  },
+  "caab-airlaw:157": {
+   "id": 61009,
+   "neden_tr": "Aynı konu: geçiş seviyesi/QNH — 61002 (⭐) ve 61035 kalıyor.",
+   "neden_en": "Same topic: transition level/QNH — 61002 (starred) and 61035 stay."
+  },
+  "caab-airlaw:16": {
+   "id": 61010,
+   "neden_tr": "CPL için Class 1 sağlık belgesi; CPL konusu notlarda yok.",
+   "neden_en": "Class 1 medical for CPL; CPL privileges are not in the notes."
+  },
+  "caab-airlaw:160": {
+   "id": 61011,
+   "neden_tr": "Aynı konu: özel VFR — 61034 (asgari görüş) kalıyor.",
+   "neden_en": "Same topic: special VFR — 61034 (minimum visibility) stays."
+  },
+  "caab-airlaw:21": {
+   "id": 61015,
+   "neden_tr": "Sağlık belgesi geçerlilik tarihi; B2.2-2 (sağlık sertifikası) 61064 ile zaten karşılanıyor, aynı konu.",
+   "neden_en": "Medical validity date; B2.2-2 (medical certificate) is already covered by 61064, so this is a same-topic repeat."
+  },
+  "caab-airlaw:22": {
+   "id": 61016,
+   "neden_tr": "IFR'den VFR'ye geçişte ATS bildirimi; notlarda bu prosedürü anan başlık yok.",
+   "neden_en": "Cancelling IFR for VFR with ATS notification; no note heading names this procedure."
+  },
+  "caab-airlaw:33": {
+   "id": 61019,
+   "neden_tr": "Pilotun yanında taşıyacağı belgeler (fotoğraflı kimlik dâhil); notlar yalnız lisansı anıyor.",
+   "neden_en": "Documents carried (including photo ID); the notes only mention the licence."
+  },
+  "caab-airlaw:43": {
+   "id": 61022,
+   "neden_tr": "IFR uçuşun kontrolsüz sahada telsiz görevi; IFR usulü notlarda ve PPL kapsamında yok.",
+   "neden_en": "IFR radio duty outside controlled airspace; IFR procedure is not in the notes or PPL scope."
+  },
+  "caab-airlaw:79": {
+   "id": 61024,
+   "neden_tr": "Class E'de 250 kt hız sınırı; notlarda hız sınırlaması yok (B3.1-6 yalnız FL200/RVSM).",
+   "neden_en": "250 kt speed limit in Class E; the notes have no speed limitation (B3.1-6 covers only FL200/RVSM)."
+  },
+  "caab-airlaw:85": {
+   "id": 61027,
+   "neden_tr": "Class C'de görerek yaklaşma ayırması; IFR ayırma usulü notlarda yok.",
+   "neden_en": "Separation for a visual approach in Class C; IFR separation procedure is not in the notes."
+  },
+  "caab-airlaw:90": {
+   "id": 61028,
+   "neden_tr": "Uçuş planı toplam tahmini süre; notlarda uçuş planı başlığı yok.",
+   "neden_en": "Flight-plan total estimated elapsed time; the notes have no flight-plan heading."
+  },
+  "caab-airlaw:91": {
+   "id": 61029,
+   "neden_tr": "'Strayed aircraft' tanımı; notlardaki tanım slaytlarında adıyla geçtiği doğrulanamıyor.",
+   "neden_en": "'Strayed aircraft' definition; its presence on the notes' definition slides cannot be confirmed."
+  },
+  "linx-airlaw:118": {
+   "id": 61036,
+   "neden_tr": "VFR seyir seviyesi tablosu; notlardaki tablo ICAO ile ters yazılmış (000–179° için çift), cevap notlarla çelişir. Konu bankada zaten var (14295).",
+   "neden_en": "VFR cruising-level table; the notes' table lists the parity reversed (even for 000–179°), so the answer would contradict the notes. Topic already in the bank (14295)."
+  },
+  "linx-airlaw:119": {
+   "id": 61037,
+   "neden_tr": "Yarı daire kuralı hesabı; notlardaki tablo ICAO ile ters yazılmış, cevap notlarla çelişir. Konu bankada zaten var (14295).",
+   "neden_en": "Semi-circular rule calculation; the notes' table lists the parity reversed, so the answer would contradict the notes. Topic already in the bank (14295)."
+  },
+  "linx-airlaw:120": {
+   "id": 61038,
+   "neden_tr": "Yarı daire kuralının ölçütü; notlardaki tablo ICAO ile ters yazılmış, cevap notlarla çelişir. Konu bankada zaten var (14295).",
+   "neden_en": "Semi-circular rule criterion; the notes' table lists the parity reversed, so the answer would contradict the notes. Topic already in the bank (14295)."
+  },
+  "linx-airlaw:128": {
+   "id": 61039,
+   "neden_tr": "Aynı konu: kategori öncelik sırası — 61041 kalıyor.",
+   "neden_en": "Same topic: priority between categories — 61041 stays."
+  },
+  "linx-airlaw:130": {
+   "id": 61040,
+   "neden_tr": "Aynı konu: kategori öncelik sırası — 61041 kalıyor.",
+   "neden_en": "Same topic: priority between categories — 61041 stays."
+  },
+  "linx-airlaw:132": {
+   "id": 61042,
+   "neden_tr": "Aynı konu: yol hakkı — 61041/61054 kalıyor; IFR–helikopter özel durumu notlarda yok.",
+   "neden_en": "Same topic: right of way — 61041/61054 stay; the IFR–helicopter edge case is not in the notes."
+  },
+  "linx-airlaw:135": {
+   "id": 61044,
+   "neden_tr": "Aynı konu: kategori öncelik sırası — 61041 kalıyor.",
+   "neden_en": "Same topic: priority between categories — 61041 stays."
+  },
+  "linx-airlaw:139": {
+   "id": 61046,
+   "neden_tr": "Can yeleği/şişme donanım (Part-NCO); notlarda yok.",
+   "neden_en": "Flotation equipment (Part-NCO); not in the notes."
+  },
+  "linx-airlaw:145": {
+   "id": 61049,
+   "neden_tr": "Aynı konu: ATC izni — 61048 ve 61050 kalıyor.",
+   "neden_en": "Same topic: ATC clearance — 61048 and 61050 stay."
+  },
+  "linx-airlaw:150": {
+   "id": 61053,
+   "neden_tr": "Aynı konu: önleme sinyalleri — 61051 ve 61052 kalıyor.",
+   "neden_en": "Same topic: interception signals — 61051 and 61052 stay."
+  },
+  "linx-airlaw:20": {
+   "id": 61056,
+   "neden_tr": "Aynı konu: kesişme — 61054 kalıyor.",
+   "neden_en": "Same topic: converging aircraft — 61054 stays."
+  },
+  "linx-airlaw:21": {
+   "id": 61057,
+   "neden_tr": "VFR pilota bulutlu yön verilirse; notlarda bu senaryo yok.",
+   "neden_en": "VFR pilot instructed into cloud; this scenario is not in the notes."
+  },
+  "linx-airlaw:35": {
+   "id": 61060,
+   "neden_tr": "Aynı konu: geçiş seviyesi/QNH — 61002 (⭐) ve 61035 kalıyor.",
+   "neden_en": "Same topic: transition level/QNH — 61002 (starred) and 61035 stay."
+  },
+  "linx-airlaw:37": {
+   "id": 61061,
+   "neden_tr": "Aynı konu: geçiş seviyesi — 61002 (⭐) ve 61035 kalıyor.",
+   "neden_en": "Same topic: transition level — 61002 (starred) and 61035 stay."
+  },
+  "linx-airlaw:42": {
+   "id": 61062,
+   "neden_tr": "Aynı konu: meydan trafik kuralları — 61032 kalıyor.",
+   "neden_en": "Same topic: aerodrome traffic rules — 61032 stays."
+  },
+  "linx-airlaw:50": {
+   "id": 61063,
+   "neden_tr": "PPL teorik sınav geçerlilik süresi (eğitim); notlarda eğitim kuralları yok.",
+   "neden_en": "PPL theory-exam validity period (training rule); the notes contain no training rules."
+  },
+  "linx-airlaw:60": {
+   "id": 61065,
+   "neden_tr": "Öğrenci pilot sağlık belgesi zamanı; notlarda eğitim kuralları yok.",
+   "neden_en": "Student pilot medical timing; the notes contain no training rules."
+  },
+  "linx-airlaw:64": {
+   "id": 61066,
+   "neden_tr": "PPL eğitiminde FSTD kredisi; notlarda eğitim kuralları yok.",
+   "neden_en": "FSTD credit in PPL training; the notes contain no training rules."
+  },
+  "linx-airlaw:65": {
+   "id": 61067,
+   "neden_tr": "PPL yalnız seyir uçuşu şartı; notlarda eğitim kuralları yok.",
+   "neden_en": "PPL solo cross-country requirement; the notes contain no training rules."
+  },
+  "linx-airlaw:67": {
+   "id": 61068,
+   "neden_tr": "Solo uçuş süresi tanımı; notlarda eğitim kuralları yok.",
+   "neden_en": "Solo flight time definition; the notes contain no training rules."
+  },
+  "linx-airlaw:71": {
+   "id": 61069,
+   "neden_tr": "SPIC uçuş süresi tanımı; notlarda eğitim kuralları yok.",
+   "neden_en": "SPIC flight time definition; the notes contain no training rules."
+  },
+  "linx-airlaw:83": {
+   "id": 61073,
+   "neden_tr": "Uçuş öncesi bilgi edinme yükümlülüğü; notlarda uçuş hazırlığı başlığı yok.",
+   "neden_en": "Pre-flight information duty; the notes have no flight-preparation heading."
+  },
+  "linx-airlaw:84": {
+   "id": 61074,
+   "neden_tr": "VFR uçuşta alternatif plan; notlarda uçuş hazırlığı başlığı yok.",
+   "neden_en": "VFR contingency planning; the notes have no flight-preparation heading."
+  },
+  "linx-airlaw:85": {
+   "id": 61075,
+   "neden_tr": "Pist kullanılabilirliği/performans kontrolü; notlarda uçuş hazırlığı başlığı yok.",
+   "neden_en": "Runway usability and performance check; the notes have no flight-preparation heading."
+  },
+  "linx-airlaw:88": {
+   "id": 61076,
+   "neden_tr": "Yolculara emniyet kemeri bilgisi; notlarda yok.",
+   "neden_en": "Passenger briefing on safety belts; not in the notes."
+  },
+  "remembered:ditching": {
+   "id": 61081,
+   "neden_tr": "Ditching tanımı; notlarda (SAR, B6.1) bu terim geçmiyor.",
+   "neden_en": "Ditching definition; the notes (SAR, B6.1) do not name the term."
+  },
+  "x-austrocontrol-ecqb-ppl:32": {
+   "id": 61082,
+   "neden_tr": "RMZ girişi; notlarda RMZ başlığı yok.",
+   "neden_en": "Entering an RMZ; no RMZ heading in the notes."
+  },
+  "x-austrocontrol-ecqb-ppl:34": {
+   "id": 61083,
+   "neden_tr": "TMZ transponder zorunluluğu; notlarda TMZ yok (B4.2 yalnız genel SSR).",
+   "neden_en": "TMZ transponder requirement; no TMZ in the notes (B4.2 covers general SSR only)."
+  },
+  "x-austrocontrol-ecqb-ppl:60": {
+   "id": 61084,
+   "neden_tr": "Class C'de 10.000 ft üstü görüş şartı; notlarda VMC tablosu metni yok, ayrıntı hücre sorusu.",
+   "neden_en": "Visibility above 10,000 ft in Class C; the notes carry no VMC table text, this is a single-cell detail."
+  },
+  "x-tc-tp13014:5": {
+   "id": 61088,
+   "neden_tr": "Yorgunlukta uçuşa başlama yasağı (Part-NCO); notlarda yok.",
+   "neden_en": "No flight when fatigued (Part-NCO); not in the notes."
+  }
  }
 }
