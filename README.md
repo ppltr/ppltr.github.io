@@ -1,12 +1,12 @@
 # PPL Soru Bankası
 
-SQLite tabanlı **PPL** çalışma uygulaması. İlk banka ATPL TV'deki *PPL Turkey (English)* sınav raporlarından çevrildi; ders notları ve kaynak taramalarından doğrulanmış, bağımsız yazılmış alıştırmalarla genişletildi. **3.572 kayıt, 11 ders; mevcut 380 tekrar bağlantısı çıkarılınca 3.192 görünür benzersiz soru.** 233 kayıt ders notlarından, 638 kayıt ek kaynak çalışmalarından gelir.
+SQLite tabanlı **PPL** çalışma uygulaması. İlk banka ATPL TV'deki *PPL Turkey (English)* sınav raporlarından çevrildi; ders notları ve kaynak taramalarından doğrulanmış, bağımsız yazılmış alıştırmalarla genişletildi. **3.572 kayıt, 11 ders; 383 tekrar bağlantısı çıkarılınca 3.189 benzersiz kayıt (varsayılan çalışma kapsamı 3.181 soru).** 233 kayıt ders notlarından, 638 kayıt ek kaynak çalışmalarından gelir.
 
 Aşağıdaki sayılar sorunun ana dersine göre fiziksel kayıt sayılarıdır. Ortak konular aynı soru kimliğiyle birden fazla derste gösterilebilir; bu bağlar toplam soru sayısını artırmaz.
 
 | Ders | Kayıt | Benzersiz | Bölüm |
 |---|---:|---:|---:|
-| 010 · Air Law | 285 | 259 | 15 |
+| 010 · Air Law | 285 | 256 | 15 |
 | 020 · Aircraft General Knowledge | 500 | 439 | 34 |
 | 030 · Flight Performance and Planning | 307 | 274 | 15 |
 | 040 · Human Performance and Limitations | 384 | 341 | 18 |
@@ -673,7 +673,7 @@ Konu benzerliği tek başına tekrar sayılmadı. Açık/kapalı pitot tahliyesi
 
 VASI'nin iki sırası ile PAPI'nin dört birimi ayrı doğrulandı. VASI'de yakın beyaz/uzak kırmızı doğru süzülüş hattıdır; ikisi kırmızı hattın altı, ikisi beyaz hattın üstüdür. Sağ yönlü yer oku sağ trafik dönüşünü belirtir. Üç yeni sorunun yanlış alt bölüm etiketi metin/seçenek/ID korunarak düzeltildi; eski/yeni hash ve neden `data/kaynaklar/duzeltmeler.json` içindedir.
 
-Kullanıcının doğruladığı Air Law yıldızları **61001 (Transition Level'ı kim belirler), 61002 (Code 3), 14909 (TORA)** olarak korundu. Diğer hatırlanan konular benzer aday etiketinde kalır; hatırlanmayan manyetik derece ve sınavdaki tam soru metni kesinleştirilmiş sayılmadı. Hiçbir kayıt resmî SHGM çıkmış sorusu diye sunulmaz.
+Kullanıcının doğruladığı Air Law yıldızları **61001 (Code 3), 61002 (Transition Level'ı kim belirler), 14909 (TORA)** olarak korundu. Diğer hatırlanan konular benzer aday etiketinde kalır; hatırlanmayan manyetik derece ve sınavdaki tam soru metni kesinleştirilmiş sayılmadı. Hiçbir kayıt resmî SHGM çıkmış sorusu diye sunulmaz.
 
 ### Tekrarlanabilir derleme ve doğrulama
 
@@ -696,3 +696,13 @@ node scripts/test_kaynak_web.cjs
 33 Python regresyon testi, JS kapsam/kimlik/inceleme ayrımı, sunucu kullanıcı/çözüm/geçmiş akışı ve grafik API testi geçti. Her 3.572 kaydın iki dili tamdır; şekil isteyen 40 sorunun tamamı 32 üretilmiş çizime bağlanır. SQLite bütünlük ve yabancı anahtar kontrolleri temizdir. Mevcut 380 tekrar bağı ve kullanıcı geçmiş veritabanı değişmedi. Tarayıcıda eski çalışma oturumunun aynı ID/zamanla açılması, ayrı QA profilinde yeni grafikli sorunun iki dili, cevap/açıklama/kaynak ve tekrar turu doğrulandı. `qa/full-subject-expansion-tr.jpg` yeni soru ekranıdır.
 
 Yerel SQLite, bağımsız HTML ve GitHub Pages için `docs/index.html` yeniden üretildi. Çalışma yerel `codex/ppl-airlaw-expansion` dalındadır.
+
+## 2026-10-13 · Air Law hızlı tekrar ve kapsam düzeltmesi
+
+Air Law'daki 88 yeni kayıt ve diğer derslerden bağlanan 27 yeni kayıt (115) yeniden incelendi. Sollama/tırmanış 61020 → 14264, acil durum safhaları 61025 → 15988 ve kemer brifingi 61076 → 16050 aynı bilgiyi tekrar sınadığı için yeni tekrar bağlantılarıyla gizlenir. Kanonik kayıtlar gerekli Air Law kaynak/ders bağlarını taşır. Hiçbir soru, seçenek, ID veya çözüm geçmişi silinmedi; mevcut 3.572 soru nesnesinin hashleri korundu.
+
+15 ikincil/idari ayrıntı ve kısa önleme telsiz kalıbı alıştırması `data/_calisma_kapsami.json` ile Air Law'da tamamlayıcı olarak etiketlendi. **Ayarlar → Air Law: tamamlayıcı ayrıntılar** varsayılan kapalıdır. Açılınca yeniden görünürler. Başka derslerde kullanılan ortak sorular kendi derslerinde kalır; farklı koşul/istisna öğreten temel sorular keyfî kotayla çıkarılmadı.
+
+Air Law'da tekrarlar gizliyken 311 yerine **295 ana kapsam sorusu**, tamamlayıcılar da açılırsa **310** soru bulunur. Ana kapsamdaki yeni ek/ortak kayıt 97'dir. Kullanıcının “hiç görmedim” sayısı kişisel geçmişine bağlıdır; bu toplamlar kişisel çözülmemiş sayısı değildir. Üç doğrulanmış sınav işareti 61001, 61002 ve 14909 ana kapsamda kalır. Tam karar listesi `data/kaynaklar/rapor_airlaw_hizli_20261013.json` içindedir.
+
+Yarım kalan tur geri açıldığında güncel tekrar/kapsam filtreleri uygulanır. Çıkarılan sorular yüzünden eski indeks kayarak çözülmemiş bir soruyu atlamaz; kayıtlı cevap geçmişi korunur. 35 Python testi ve JS kapsam/tur devamı kontrolleri geçti.

@@ -6254,9 +6254,26 @@
      "no": "102",
      "sayfa": "19",
      "derleyen": "010"
+    },
+    {
+     "k": "caab-airlaw",
+     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+     "no": "35",
+     "sayfa": "5",
+     "derleyen": "010"
+    },
+    {
+     "k": "ref-5ac2a0975478",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+     "no": "",
+     "sayfa": "SERA.3210(c)(3)",
+     "derleyen": "010"
     }
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_subjects": [],
+   "tr": "Geçen uçağın yükümlülüğü tırmanışta, alçalışta ve düz uçuşta aynıdır.",
+   "en": "Overtaking obligations apply in climb, descent and level flight."
   },
   "14407": {
    "src": [
@@ -38866,12 +38883,57 @@
      "no": "64",
      "sayfa": "13",
      "derleyen": "070"
+    },
+    {
+     "k": "linx-airlaw",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+     "no": "88",
+     "sayfa": "15",
+     "derleyen": "010"
+    },
+    {
+     "k": "ref-b7eb549a4218",
+     "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-13601",
+     "no": "",
+     "sayfa": "NCO.OP.130; AMC1 NCO.OP.130(a)",
+     "derleyen": "010"
+    },
+    {
+     "k": "linx-airlaw",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+     "no": "90",
+     "sayfa": "15",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-cad-rs",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
+     "no": "30",
+     "sayfa": "5",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-cad-rs",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
+     "no": "31",
+     "sayfa": "5",
+     "derleyen": "010"
+    },
+    {
+     "k": "x-traficom-070",
+     "url": "https://www.traficom.fi/sites/default/files/media/file/PPL070ENG%2001062018.pdf",
+     "no": "36",
+     "sayfa": "9",
+     "derleyen": "070"
     }
    ],
    "replace_sources": true,
    "also_subjects": [
+    "010",
     "040"
-   ]
+   ],
+   "tr": "Yolcu emniyet brifingi kemerlerin yerini ve kullanımını içerir.",
+   "en": "The passenger safety briefing includes belt location and operation."
   },
   "15113": {
    "src": [
@@ -59265,9 +59327,28 @@
      "no": "84",
      "sayfa": "11",
      "derleyen": "070"
+    },
+    {
+     "k": "caab-airlaw",
+     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+     "no": "80",
+     "sayfa": "11",
+     "derleyen": "010"
+    },
+    {
+     "k": "ref-da52deaa0d70",
+     "url": "https://www.easa.europa.eu/sites/default/files/dfu/ANNEX%2011%20Checklist%20%28for%20info%20only%29.pdf",
+     "no": "",
+     "sayfa": "ICAO Annex 11 definition reproduced in EASA checklist, p.20; Annex 12 emergency definitions",
+     "derleyen": "010"
     }
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "also_subjects": [
+    "010"
+   ],
+   "tr": "INCERFA, ALERFA ve DETRESFA bu genel terim altında farklı safhalardır.",
+   "en": "INCERFA, ALERFA and DETRESFA are distinct stages under the generic term."
   },
   "15974": {
    "src": [

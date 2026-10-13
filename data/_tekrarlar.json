@@ -2258,6 +2258,30 @@
         14747
       ],
       "not": "tur2: tekrar taraması"
+    },
+    {
+      "ids": [
+        14264,
+        61020
+      ],
+      "not": "Yeni tırmanış ifadesi sollamada sağdan geçme yükümlülüğünü değiştirmiyor; mevcut 14264 aynı sollama kuralını sınar.",
+      "audit_date": "2026-10-13"
+    },
+    {
+      "ids": [
+        15988,
+        61025
+      ],
+      "not": "Belirsizlik, alarm ve tehlike aynı üç SAR safhasıdır; mevcut 15988 bunları urgency seçeneğinden ayırt eder.",
+      "audit_date": "2026-10-13"
+    },
+    {
+      "ids": [
+        16050,
+        61076
+      ],
+      "not": "Kemerlerin yeri/kullanımı mevcut 16050 yolcu emniyet brifinginin alt kümesidir; yeni bağımsız koşul yok.",
+      "audit_date": "2026-10-13"
     }
   ]
 }

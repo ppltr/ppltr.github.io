@@ -180,6 +180,23 @@ class SourcePipelineTest(unittest.TestCase):
             init.import_file(self.conn, path)
         self.assertIsNone(self.conn.execute("SELECT id FROM questions WHERE id=4").fetchone())
 
+    def test_supplementary_scope_exports_metadata_without_changing_question_or_history(self):
+        before = list(map(tuple, self.conn.execute("SELECT id,text FROM questions ORDER BY id")))
+        self.write(self.data / "_calisma_kapsami.json", {"schema_version": 1,
+            "tamamlayici": [{"id": 2, "ders": "010", "neden": "Supplementary in Air Law only"}]})
+        exported = build.export()
+        self.assertEqual(exported["x"][2]["u"], ["010"])
+        self.assertEqual(exported["x"][2]["a"], ["010"])
+        self.assertEqual([q[0] for q in exported["q"]], [1, 2])
+        self.assertEqual(before, list(map(tuple, self.conn.execute("SELECT id,text FROM questions ORDER BY id"))))
+
+    def test_supplementary_scope_rejects_unknown_question_or_unassigned_subject(self):
+        for qid, code in [(999, "010"), (1, "030")]:
+            self.write(self.data / "_calisma_kapsami.json", {"schema_version": 1,
+                "tamamlayici": [{"id": qid, "ders": code}]})
+            with self.assertRaises(SystemExit):
+                build.export()
+
     def test_answer_selection_fails_closed(self):
         decision = {"kume": "C", "dogru_dogrulandi": True, "dayanak": "Verified rule",
                     "dogru_url": "https://example.com/rule", "siklar": ["+3"]}

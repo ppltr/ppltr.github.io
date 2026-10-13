@@ -8,6 +8,7 @@ on:
     paths:
       - 'web/template.html'
       - 'scripts/build_web.py'
+      - 'data/_calisma_kapsami.json'
       - 'atpl.db'
       - 'notes/**'
       - 'figures/**'

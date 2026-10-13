@@ -102,6 +102,18 @@ def export_extras(conn) -> tuple[dict, dict]:
         x[r["id"]] = d
     for r in conn.execute("SELECT question_id,subject_code FROM question_subjects ORDER BY question_id,subject_code"):
         x.setdefault(r["question_id"], {}).setdefault("a", []).append(r["subject_code"])
+    scope_path = SOURCE_DIR.parent / "_calisma_kapsami.json"
+    if scope_path.exists():
+        scope = json.loads(scope_path.read_text(encoding="utf-8"))
+        if scope.get("schema_version") != 1:
+            sys.exit("hata: geçersiz çalışma kapsamı sürümü")
+        for item in scope.get("tamamlayici", []):
+            qid, code = item["id"], item["ders"]
+            if not conn.execute("SELECT 1 FROM questions q WHERE q.id=? AND (q.subject_code=? OR EXISTS ("
+                    "SELECT 1 FROM question_subjects a WHERE a.question_id=q.id AND a.subject_code=?))",
+                    (qid, code, code)).fetchone():
+                sys.exit(f"hata: tamamlayıcı kapsam bilinmeyen soru/ders: {qid}/{code}")
+            x.setdefault(qid, {}).setdefault("u", []).append(code)
     kullanilan = {r["id"]: [r["name"], r["url"] or ""]
                   for r in conn.execute("SELECT id, name, url FROM sources ORDER BY id")}
     for r in conn.execute(

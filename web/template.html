@@ -1268,7 +1268,7 @@ function bindAccount(u){
 // deck:'new' = varsayılan olarak henüz çözülmemişlerden başla, tüm konular
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
-                   ek:true, hideFlag:false, count:0, mode:'study', order:'smart',
+                   ek:true, airlawExtra:false, hideFlag:false, count:0, mode:'study', order:'smart',
                    sound:true, ai:'chatgpt', lang:'en' };
 const F = Object.assign({}, DEFAULTS);
 
@@ -1314,7 +1314,7 @@ function pickedAny(){ return Object.keys(F.pick).length > 0; }
 // Geçtiğin dersin soruları kapsamdan tümüyle çıkar: toplam sayıda, konu
 // seçicide, destelerde ve turlarda görünmez. Kayıt profile bağlıdır.
 function isPassed(code){ return (S.passed || []).indexOf(code) >= 0; }
-const qSubjects = q => [...new Set([SUBJ[q[1]].c, ...((xOf(q) || {}).a || [])])];
+const qSubjects = q => [...new Set([SUBJ[q[1]].c, ...((xOf(q) || {}).a || [])])].filter(code => F.airlawExtra || code !== '010' || !((xOf(q) || {}).u || []).includes(code));
 const inSubject = (q, code) => qSubjects(q).includes(code);
 const qSection = (q, code) => code === SUBJ[q[1]].c ? SUBJ[q[1]].sec[q[2]][0] : code + '-X';
 const notPassed = q => qSubjects(q).some(code => !isPassed(code));
@@ -1599,16 +1599,24 @@ function start(sr){
   save();
   step0();
 }
-/** Yarım kalan turu geri yükler; sorular silinmişse turu kapatır. */
+/** Güncel filtreleri yarım kalan tura da uygular; cevap geçmişine dokunmaz. */
+function resumeSelection(rec){
+  const code = runCode(rec);
+  const list = (rec.ids || []).map(id => BY_ID.get(id)).filter(q => q && inToggles(q) && (!code || inSubject(q, code)));
+  const kept = new Set(list.map(q => q[0]));
+  return {list, i:(rec.ids || []).slice(0, rec.i || 0).filter(id => kept.has(id)).length,
+          missed:(rec.missed || []).filter(id => kept.has(id))};
+}
+/** Yarım kalan turu geri yükler; kapsamda soru kalmamışsa turu kapatır. */
 function resumeRun(id){
   yeniTur = false;
   const rec = S.runs.find(r => r.id === id);
   if (!rec || rec.done) return home();
-  const list = (rec.ids || []).map(x => BY_ID.get(x)).filter(q => q && !isRev(q));
+  const selection = resumeSelection(rec), list = selection.list;
   if (!list.length){ rec.done = true; save(); return home(); }
-  R = { id:rec.id, list, i:Math.min(rec.i || 0, list.length), order:null, picked:null,
+  R = { id:rec.id, list, i:selection.i, order:null, picked:null,
         orders:[], picks:[], log:(rec.log || []).slice(), t0:rec.t0,
-        round:rec.round || 1, missed:(rec.missed || []).slice(),
+        round:rec.round || 1, missed:selection.missed,
         sure:rec.sure || 0, durdu:!!rec.durdu, sureTam:!!rec.sureTam,
         bos:rec.bos || 0, bosTam:!!rec.bosTam, qTop:rec.qTop || 0, qN:rec.qN || 0,
         qAcc:{}, qAcik:null, qSon:{}, sr:!!rec.sr };
@@ -1945,6 +1953,7 @@ function home(){
     ['hideDup','Tekrar eden soruları gizle', QS.filter(q => q[6] && notPassed(q)).length],
     ['gen',    'Ders notundan üretilmişler', QS.filter(q => q[7] && notPassed(q)).length],
     ['ek',     'Ek kaynaklardan eklenenler', QS.filter(q => isEk(q) && !isRev(q) && notPassed(q)).length],
+    ['airlawExtra','Air Law: tamamlayıcı ayrıntılar', QS.filter(q => ((xOf(q) || {}).u || []).includes('010') && !q[6] && !isRev(q)).length],
     ['hideFlag','Tartışmalıları gizle',      QS.filter(q => q[5] && notPassed(q)).length],
   ].map(([k,x,n]) => '<button class="switch' + (F[k] ? ' on' : '') + '" data-k="' + k +
     '" type="button"><span class="knob"></span><span>' + x + '</span>' +
@@ -2356,6 +2365,7 @@ function xTags(q){
             'kesin metin eşleşmesi yok.">benzer aday</span>' : '') +
          (x.o ? '<span class="tag ek" title="Kaynaklarda saptanan eksik soru türü; anlatımı ve cevabı ayrıca kontrol edildi.">' +
             'ek kaynak</span>' : '') +
+         ((x.u || []).includes('010') && inSubject(q, '010') ? '<span class="tag ek" title="Air Law için isteğe bağlı tamamlayıcı alıştırma.">tamamlayıcı</span>' : '') +
          (x.r ? '<span class="tag rev" title="' + esc(x.rn || 'Belirsiz: inceleme kuyruğunda') +
             '">inceleme</span>' : '');
 }

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "tamamlayici": [
+    {
+      "id": 61006,
+      "ders": "010",
+      "neden": "CPL yaş sınırı; PPL lisans ve CPL yetki karşılaştırmalarının ardından tamamlayıcı ayrıntı."
+    },
+    {
+      "id": 61008,
+      "ders": "010",
+      "neden": "FL290–FL410 RVSM ayrıntısı; sınavda hatırlanan temel IFR/non-RVSM seviye tipi ana kapsamda korunur."
+    },
+    {
+      "id": 61010,
+      "ders": "010",
+      "neden": "CPL Class 1 medikal sınıfı; PPL medikali ve lisans yetkileri ana kapsamda."
+    },
+    {
+      "id": 61015,
+      "ders": "010",
+      "neden": "İlk medikal geçerlilik tarihinin idari hesap başlangıcı."
+    },
+    {
+      "id": 61023,
+      "ders": "010",
+      "neden": "ICAO Air Navigation Commission teknik Annex öneri görevi; Chicago/ICAO kuruluş konusu ana kapsamda."
+    },
+    {
+      "id": 61047,
+      "ders": "010",
+      "neden": "Genel kurallar ile VFR/IFR ayrımını tekrar eden giriş düzeyinde tamamlayıcı tanım."
+    },
+    {
+      "id": 61059,
+      "ders": "010",
+      "neden": "ICAO standardını tam karşılamayan belgelerde yabancı devlet izin istisnası."
+    },
+    {
+      "id": 61069,
+      "ders": "010",
+      "neden": "SPIC süre kaydı terminolojisi; solo tanımı ve PPL eğitim şartları ana kapsamda."
+    },
+    {
+      "id": 63023,
+      "ders": "010",
+      "neden": "AIP AD 2.13 tam alt bölüm numarası; AIP GEN/ENR/AD bölümleri ve TORA ana kapsamda."
+    },
+    {
+      "id": 69003,
+      "ders": "010",
+      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
+    },
+    {
+      "id": 69021,
+      "ders": "010",
+      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
+    },
+    {
+      "id": 69022,
+      "ders": "010",
+      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
+    },
+    {
+      "id": 69023,
+      "ders": "010",
+      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
+    },
+    {
+      "id": 69024,
+      "ders": "010",
+      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
+    },
+    {
+      "id": 69025,
+      "ders": "010",
+      "neden": "Önleme telsiz kalıbı için kısa dil alıştırması; Communications dersinde olağan kapsamda, Air Law için tamamlayıcı. Önleme eylemleri/görsel işaretleri ana kapsamda."
+    }
+  ]
+}
