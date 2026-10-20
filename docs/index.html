@@ -356,6 +356,7 @@ input[type=search], select, textarea{width:100%; padding:10px 12px; font-size:14
   border-radius:var(--r)}
 textarea#bak{height:60px; resize:vertical; font-family:var(--f-num); font-size:11px;
   line-height:1.45; color:var(--ink-2)}
+#askPrompt{min-height:110px; resize:vertical; line-height:1.5}
 input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:none;
   box-shadow:0 0 0 3px var(--accent-soft)}
 .seg{display:flex; border:1px solid var(--rule); border-radius:var(--r); overflow:hidden}
@@ -816,6 +817,7 @@ function loadProfile(){
 /** S.pref → F. Açılışta ve buluttan daha yeni bir ayar seti geldiğinde çalışır. */
 function applyPref(){
   Object.assign(F, DEFAULTS, S.pref || {});
+  if (typeof F.aiPrompt !== 'string' || !F.aiPrompt.trim()) F.aiPrompt = DEFAULTS.aiPrompt;
   delete F.hideFig;                       // süzgeç kaldırıldı, eski kayıt taşımasın
   if (!F.pick || typeof F.pick !== 'object') F.pick = {};
   S.pref = F;                             // bundan sonrası tek nesne üzerinden
@@ -1250,7 +1252,8 @@ function bindAccount(u){
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
                    hideFlag:false, count:0, mode:'study', order:'smart',
-                   sound:true, ai:'chatgpt', lang:'en' };
+                   sound:true, ai:'chatgpt', lang:'en',
+                   aiPrompt:'Doğru cevabı veya doğru şıkkı söylemeden, doğru cevabı kendim verebileceğim şekilde konuyu kısaca Türkçe anlat.' };
 const F = Object.assign({}, DEFAULTS);
 
 // ── Soru dili ────────────────────────────────────────────────────────
@@ -1883,9 +1886,15 @@ function home(){
         '<div class="grp"><span class="lbl">Soruyu sorduğun yer</span><div class="seg" id="aiSel">' +
           Object.keys(AI).map(k => '<button type="button" data-ai="' + k + '" class="' +
             (F.ai === k ? 'on' : '') + '">' + AI[k][0] + '</button>').join('') + '</div>' +
-          '<div class="note">Soru kartındaki <b>Sor</b> düğmesi soruyu, şıkları, doğru ' +
-          'cevabı ve senin cevabını metne çevirip panoya kopyalar ve burayı yeni sekmede ' +
+          '<div class="note">Soru kartındaki <b>Sor</b> düğmesi aşağıdaki isteği, soruyu ve şıkları ' +
+          'panoya kopyalar ve burayı yeni sekmede ' +
           'açar (Gemini ve Grok URL parametresi almadığı için açılan sayfada <b>Cmd+V / Ctrl+V</b> ile yapıştırınız).</div></div>' +
+        '<div class="grp"><label class="lbl" for="askPrompt">Sor düğmesinin isteği</label>' +
+          '<textarea id="askPrompt" rows="4" aria-describedby="askPromptHelp">' +
+            esc(F.aiPrompt || DEFAULTS.aiPrompt) + '</textarea>' +
+          '<div class="note" id="askPromptHelp">Otomatik kaydedilir. Soru ve şıklar bu metnin sonuna eklenir. ' +
+          'Boş bırakırsan varsayılan istek kullanılır.</div>' +
+          '<div class="tools"><button class="tbtn" id="askPromptReset" type="button">Varsayılana dön</button></div></div>' +
         '<div class="grp"><span class="lbl">Geri bildirim</span>' +
           '<button class="switch' + (F.sound ? ' on' : '') + '" id="swSound" type="button">' +
             '<span class="knob"></span><span>Cevapta ses çal</span></button>' +
@@ -1960,6 +1969,12 @@ function home(){
     b.onclick = () => { F.lang = b.dataset.lang; savePref(); home(); openBox('optBox'); });
   el('aiSel').querySelectorAll('button').forEach(b =>
     b.onclick = () => { F.ai = b.dataset.ai; savePref(); home(); openBox('optBox'); });
+  el('askPrompt').oninput = e => { F.aiPrompt = e.target.value; savePref(); };
+  el('askPromptReset').onclick = () => {
+    F.aiPrompt = DEFAULTS.aiPrompt;
+    el('askPrompt').value = F.aiPrompt;
+    savePref();
+  };
   el('swSound').onclick = () => {
     F.sound = !F.sound; savePref(); home(); openBox('optBox');
     if (F.sound) beep('ok');
@@ -2166,29 +2181,21 @@ function askBtn(){
       'title="Soru çok uzun — panoya kopyalanır">' + askEtiket(true) + '</button>';
 }
 
-/** Soruyu, şıkları, doğru cevabı ve verilen cevabı düz metne çevirir. */
+/** Kişisel isteği, soruyu ve ekranda görünen sıradaki şıkları düz metne çevirir. */
 function askText(){
   if (!R) return '';
   const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
-  const okPos = R.order.indexOf(0);
   const L = [
-    'Aşağıdaki soruyu açıkla: doğru cevap neden doğru, diğer şıklar neden yanlış? ' +
-      'Kısa ve net yaz, Türkçe cevapla.',
+    F.aiPrompt.trim() || DEFAULTS.aiPrompt,
     '',
     'Ders: ' + s.c + ' · ' + subjName(s) + (sec && sec[1] ? ' — ' + secName(sec) : ''),
     'Soru (' + q[0] + '): ' + qText(q),
     '',
   ];
   R.order.forEach((oi, pos) => L.push(KEYS[pos] + ') ' + qOpts(q)[oi]));
-  L.push('', 'Doğru cevap: ' + KEYS[okPos] + ') ' + qOpts(q)[0]);
-  if (R.picked !== null){
-    const dogru = R.order[R.picked] === 0;
-    L.push('Benim cevabım: ' + KEYS[R.picked] + ') ' + qOpts(q)[R.order[R.picked]] +
-           (dogru ? '  (doğru)' : '  (yanlış)'));
-  }
   // Türkçe kipteysek İngilizce aslını da ver: model çeviriye değil kaynağa baksın
   if (trMode() && q[10]) L.push('', 'Sorunun İngilizce aslı: ' + q[3],
-    ...q[4].map((t, i) => '  ' + (i === 0 ? '(doğru) ' : '') + t));
+    ...R.order.map((oi, pos) => '  ' + KEYS[pos] + ') ' + q[4][oi]));
   if (q[8]) L.push('', 'Not: Bu soruda bir şekil var, metne aktarılamadı.');
   if (q[7]) L.push('Not: Bu soru ders notundan üretilmiştir, gerçek sınav sorusu değildir.');
   return L.join('\n');
