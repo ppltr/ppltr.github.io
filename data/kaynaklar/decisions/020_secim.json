@@ -1,0 +1,193 @@
+{
+ "ders": "020",
+ "bolum": "020-EK",
+ "tarih": "2026-10-13",
+ "yeni": [
+  {
+   "uye": "CAD#41",
+   "ek_uyeler": [],
+   "bolum": "020-EK",
+   "text": "As an aeroplane with a constant-speed propeller accelerates along the runway, what does the propeller governor do?",
+   "options": [
+    "It increases the blade pitch angle, keeping the RPM and the blade angle of attack roughly constant",
+    "It decreases the blade pitch angle, so the RPM stays constant while the angle of attack falls",
+    "It leaves the blade pitch unchanged, so the RPM rises with airspeed",
+    "It lowers the engine RPM to keep the propeller-tip speed constant"
+   ],
+   "tr_text": "Sabit hızlı (constant-speed) pervaneli bir uçak pistte hızlanırken pervane regülatörü (governor) ne yapar?",
+   "tr_options": [
+    "Pal açısını (hatveyi) artırır; böylece devir ve palin hücum açısı kabaca sabit kalır",
+    "Pal açısını azaltır; devir sabit kalırken hücum açısı düşer",
+    "Pal açısını değiştirmez; bu yüzden devir hızla birlikte artar",
+    "Pervane ucu hızını sabit tutmak için motor devrini düşürür"
+   ],
+   "explanation_tr": "Hız arttıkça göreceli rüzgâr değişir; governör hücum açısını ve devri sabit tutmak için pal açısını artırır. Kalkışta düşük, seyirde yüksek hatve kullanılır.",
+   "explanation_en": "As airspeed rises the governor increases blade pitch to hold RPM and the blade's angle of attack steady: low pitch for take-off, higher pitch in cruise.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Ch. 5 'Propeller', p. 5-30"
+    }
+   ]
+  },
+  {
+   "uye": "CAD#123",
+   "ek_uyeler": [
+    "TC#27"
+   ],
+   "bolum": "020-EK",
+   "text": "An engine with dual ignition suffers the failure of one magneto in cruising flight. What is the most likely result?",
+   "options": [
+    "A slight drop in RPM and power; the engine keeps running on the other magneto",
+    "The engine stops, because half of the cylinders no longer fire",
+    "No change at all, because each cylinder needs only one spark plug",
+    "Heavy backfiring and black smoke from the exhaust"
+   ],
+   "tr_text": "Çift ateşlemeli bir motorda seyir uçuşunda manyetolardan biri arızalanırsa en olası sonuç nedir?",
+   "tr_options": [
+    "Devir ve güçte hafif düşüş; motor diğer manyetoyla çalışmaya devam eder",
+    "Motor durur; çünkü silindirlerin yarısı ateşlenmez",
+    "Hiçbir değişiklik olmaz; çünkü her silindir için tek buji yeterlidir",
+    "Şiddetli geri tepme ve egzozdan siyah duman"
+   ],
+   "explanation_tr": "Her silindirde iki buji ve ayrı iki manyeto vardır; biri arızalanınca motor çalışmayı sürdürür, yalnız yanma yavaşladığı için devir ve güç hafifçe düşer. Run-up'ta manyeto kontrolü bu yüzden yapılır.",
+   "explanation_en": "Each cylinder has two plugs fed by two independent magnetos; if one fails the engine keeps running, with only a slight loss of RPM and power because combustion is slower. That is why the magneto check is done at run-up.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Ch. 7 'Ignition System', p. 7-15"
+    },
+    {
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "section": "TP 13014E Q27, answer key 27-(1)"
+    }
+   ]
+  },
+  {
+   "uye": "CAD#124",
+   "bolum": "020-EK",
+   "text": "What is done during a compass swing?",
+   "options": [
+    "The aircraft compass is read on known magnetic headings and compared with a reference (datum) compass, and a deviation card is prepared",
+    "The local magnetic variation is measured and entered on the compass card",
+    "The compass is swung on any dry, flat part of the airfield, whatever the magnetic surroundings",
+    "The aircraft's true heading is determined instead of its magnetic heading"
+   ],
+   "tr_text": "Pusula kalibrasyonunda (compass swing) ne yapılır?",
+   "tr_options": [
+    "Uçağın pusulası bilinen manyetik başlıklarda okunur, bir referans (datum) pusulayla karşılaştırılır ve sapma kartı hazırlanır",
+    "Yerel manyetik varyasyon ölçülür ve pusula kartına yazılır",
+    "Pusula, manyetik çevreye bakılmaksızın meydanın herhangi bir kuru ve düz yerinde çevrilir",
+    "Uçağın manyetik başlığı yerine gerçek (true) başlığı belirlenir"
+   ],
+   "explanation_tr": "Compass swing, uçağın kendi manyetik alanından doğan sapmayı (deviation) ölçüp kompanse etmek ve kalan hata için kart hazırlamaktır; manyetik etkiden uzak, işaretli bir alanda yapılır. Varyasyon bu işlemle belirlenmez.",
+   "explanation_en": "A compass swing measures and compensates the deviation caused by the aircraft's own magnetic field and prepares a correction card for the residual error; it is done on a magnetically clean, marked site. Variation is not determined by it.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_43-215.pdf",
+     "section": "AC 43-215, compass swing and correction card"
+    }
+   ]
+  },
+  {
+   "uye": "CAD#28",
+   "ek_uyeler": [
+    "TR#110"
+   ],
+   "bolum": "020-EK",
+   "text": "What does the carburettor of a piston engine supply to the engine?",
+   "options": [
+    "A mixture of fuel and air in the proportion selected by the mixture control",
+    "Air only, metered by the throttle valve",
+    "Fuel only, injected directly into each cylinder",
+    "Pressurised fuel at a fixed ratio regardless of altitude"
+   ],
+   "tr_text": "Pistonlu bir motorun karbüratörü motora ne sağlar?",
+   "tr_options": [
+    "Karışım kontrolüyle seçilen oranda yakıt–hava karışımı",
+    "Yalnız hava; gaz kelebeği ile ölçülür",
+    "Yalnız yakıt; doğrudan her silindire püskürtülür",
+    "İrtifadan bağımsız sabit oranda basınçlı yakıt"
+   ],
+   "explanation_tr": "Karbüratör, venturi boğazında yakıtı havaya karıştırıp yakıt–hava karışımını emme manifolduna verir; oran karışım kontrolüyle ayarlanır. Yakıtı doğrudan silindire püskürten sistem enjeksiyondur.",
+   "explanation_en": "The carburettor mixes fuel into the air at the venturi and delivers a fuel–air mixture to the intake manifold, with the ratio set by the mixture control. A system that injects fuel straight into the cylinder is fuel injection.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Ch. 7 'Carburetor Systems', p. 7-8"
+    }
+   ]
+  },
+  {
+   "uye": "CAD#149",
+   "ek_uyeler": [
+    "TC#26",
+    "TR#144"
+   ],
+   "bolum": "020-EK",
+   "text": "Why does a high-compression piston engine require fuel of a higher grade (higher octane number)?",
+   "options": [
+    "Higher-grade fuel resists detonation under the higher pressures and temperatures in the cylinders",
+    "Higher-grade fuel contains more energy per kilogram, so the engine develops more power",
+    "Higher-grade fuel prevents carburettor icing at high power settings",
+    "Higher-grade fuel burns more slowly, which lowers the exhaust gas temperature"
+   ],
+   "tr_text": "Yüksek sıkıştırma oranlı bir pistonlu motor neden daha yüksek dereceli (oktan sayılı) yakıt ister?",
+   "tr_options": [
+    "Yüksek dereceli yakıt, silindirdeki yüksek basınç ve sıcaklıkta vuruntuya (detonation) dayanır",
+    "Yüksek dereceli yakıt kilogram başına daha çok enerji içerir; motor daha fazla güç üretir",
+    "Yüksek dereceli yakıt, yüksek güç ayarlarında karbüratör buzlanmasını önler",
+    "Yüksek dereceli yakıt daha yavaş yanar; bu da egzoz gazı sıcaklığını düşürür"
+   ],
+   "explanation_tr": "Oktan/performans sayısı yakıtın vuruntuya dayanıklılığını gösterir. Yüksek sıkıştırmalı motorda düşük oktanlı yakıt kontrolsüz yanar (vuruntu) ve motora zarar verir; bu yüzden uygun dereceli yakıt kullanılır.",
+   "explanation_en": "The octane or performance number expresses resistance to knock. In a high-compression engine low-octane fuel burns uncontrollably (detonation) and damages the engine, so the specified grade must be used.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Ch. 7 'Fuel Grades'"
+    },
+    {
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+     "section": "TP 13014E Q26, answer key 26-(4)"
+    }
+   ]
+  }
+ ],
+ "inceleme": {
+  "CAD#141": "VA ve renk kodsuz hız sınırları ders notunda yok; VA tanımı kaynaklarda farklı ifade ediliyor — resmî tanımla netleştirilmeden eklenmedi.",
+  "CAD#103": "Kaynak anahtarı (kuyruk kaldırılırken jiroskopik etki = yatış eğilimi) Traficom seçenekleriyle ve standart bilgiyle (sapma/yaw) uyuşmuyor; cevap doğrulanamadı.",
+  "CAD#34": "Pilotun yasal yetkisi dahilinde yaptığı bakımın kaydı ulusal mevzuata (Part-ML/SHGM) bağlı; kaynak şıkları ayrı ayrı doğrulanmadı."
+ },
+ "var": {
+  "CAD#1": 14677,
+  "SY#2": 14771,
+  "CAD#64": 14538,
+  "CAD#70": 16391,
+  "CAD#73": 14719,
+  "CAD#81": 14638,
+  "CAD#93": 14483,
+  "CAD#94": 14621,
+  "CAD#5": 14624,
+  "CAD#66": 15413,
+  "CAD#106": 14541,
+  "CAD#110": 14744,
+  "CAD#135": 14741,
+  "CAD#120": 14426,
+  "CAD#122": 14647,
+  "CAD#127": 16408,
+  "CAD#101": 14640,
+  "CAD#102": 14560,
+  "TR#84": 14775,
+  "CAD#50": 14671,
+  "CAD#22": 14586,
+  "CAD#55": 52007,
+  "TC#28": 14589,
+  "TC#31": 14628
+ },
+ "varsayilan_disi": "Kaynak sorusu tek tek okundu: ya bankada aynı konu zaten işleniyor (karbüratör buzlanması, yağ sistemi, elektrik, jiroskop, hava hızı göstergesi vb.) ya da ders notu/PPL kapsamı dışında; yeni bilgi eklemediği için ayrı soru açılmadı.",
+ "disi": {
+  "CAD#42": "Sabit hızlı pervane konusu yeni soruda işlendi; aynı konunun başka bir yönü olduğu için ayrı soru açılmadı.",
+  "CAD#49": "Sabit hızlı/pal bükümü konusu bankada (14662, 14674) ve yeni soruda işleniyor; ayrı soru açılmadı.",
+  "CAD#96": "Çift ateşleme konusu yeni soruda (tek manyeto arızası) işlendi; aynı konunun başka yönü olduğu için ayrı soru açılmadı."
+ }
+}

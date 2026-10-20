@@ -1,0 +1,9 @@
+{
+ "retired": {
+  "x-cad-rs:95": {
+   "id": 66001,
+   "neden_tr": "VOR istasyon geçişinin TO/FROM dönüşüyle anlaşılması notlarda yok; notlar yalnız karışıklık konisini ve TO/FROM tanımını ayrı ayrı veriyor.",
+   "neden_en": "Recognising VOR station passage by the TO/FROM reversal is not in the notes; they give the cone of confusion and the TO/FROM definition separately."
+  }
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "ders": "040",
+ "bolum": "040-EK",
+ "tarih": "2026-10-13",
+ "yeni": [
+  {
+   "uye": "CAD#63",
+   "ek_uyeler": [
+    "TR#30"
+   ],
+   "bolum": "040-EK",
+   "text": "Hypermetropia (long-sightedness) is caused by an eyeball that is too ______ and is corrected with a ______ lens.",
+   "options": [
+    "short / convex (positive)",
+    "long / convex (positive)",
+    "short / concave (negative)",
+    "long / concave (negative)"
+   ],
+   "tr_text": "Hipermetropi (uzağı iyi, yakını kötü görme) çok ______ bir göz yuvarlağından kaynaklanır ve ______ mercekle düzeltilir.",
+   "tr_options": [
+    "kısa / dışbükey (pozitif)",
+    "uzun / dışbükey (pozitif)",
+    "kısa / içbükey (negatif)",
+    "uzun / içbükey (negatif)"
+   ],
+   "explanation_tr": "Hipermetropide göz yuvarlağı kısadır (ya da mercek yeterince kıvrık değildir); ışık retinanın arkasında odaklanır ve yakın görme bulanıklaşır. Işığı toplayan dışbükey (pozitif) mercek düzeltir. Miyopide tersi geçerlidir: uzun göz, içbükey mercek.",
+   "explanation_en": "In hypermetropia the eyeball is too short (or the lens too flat), so light focuses behind the retina and near vision blurs; a converging convex (positive) lens corrects it. Myopia is the opposite: a long eyeball corrected with a concave lens.",
+   "answer_verification": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Far-sightedness",
+     "section": "Far-sightedness: axial hypermetropia; convex lenses"
+    }
+   ]
+  }
+ ],
+ "inceleme": {
+  "CAD#41": "Beyin hücrelerinin oksijensiz kalınca ölmeye başlama süresi kaynaklarda farklı (2 dk / 4 dk 'ciddi hasar'); bankadaki 15079 ile birlikte tek ifadede netleştirilmeli.",
+  "CAD#42": "Önerilen haftalık alkol birimi ulusal sağlık tavsiyesine bağlı; EASA/ICAO kuralı değil, cevap doğrulanamadı.",
+  "CAD#139": "Dalış sonrası bekleme süresi dalış türüne bağlı; kaynak anahtarı (4 saat) bankadaki 15090 (24 saat) ile aynı koşulu sorduğundan çelişki doğrulanmalı."
+ },
+ "var": {
+  "CAD#140": 15110,
+  "TR#154": 15084
+ },
+ "varsayilan_disi": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (hipoksi, gaz değişimi, göz ve kulak, yönelim bozukluğu, gece görüşü, bellek, stres, alkol vb.) ya da ders notu dışı (FAA ADM/tehlikeli tutum kalıbı, ulusal sağlık tavsiyeleri); yeni bilgi eklemediği için ayrı soru açılmadı."
+}

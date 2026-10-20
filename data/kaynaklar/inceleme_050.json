@@ -1,0 +1,45 @@
+{
+ "ders": "050",
+ "sorular": [
+  {
+   "kaynak": "x-cad-rs",
+   "no": "103",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "Kaynak anahtarı (+3 °C) ISA gradyanı (≈ +4 °C) ile örtüşmüyor; cevap doğrulanamadı.",
+   "neden": "Kaynak anahtarı (+3 °C) ISA gradyanı (≈ +4 °C) ile örtüşmüyor; cevap doğrulanamadı."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "103",
+   "sayfa": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "Kaynak anahtarı (+3 °C) ISA gradyanı (≈ +4 °C) ile örtüşmüyor; cevap doğrulanamadı.",
+   "neden": "Kaynak anahtarı (+3 °C) ISA gradyanı (≈ +4 °C) ile örtüşmüyor; cevap doğrulanamadı."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "65",
+   "sayfa": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "'Regional QNH' tanımı ulusal AIP/ICAO metniyle doğrulanıp eklenmeli; ders müfredatında ayrı başlık olarak görünmüyor.",
+   "neden": "'Regional QNH' tanımı ulusal AIP/ICAO metniyle doğrulanıp eklenmeli; ders müfredatında ayrı başlık olarak görünmüyor."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "19",
+   "sayfa": "4",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf",
+   "konu": "Yüzey rüzgârı için pratik kuralın katsayıları kaynaklarda farklı (30° kayma, hız oranı); doğrulanmadan eklenmedi.",
+   "neden": "Yüzey rüzgârı için pratik kuralın katsayıları kaynaklarda farklı (30° kayma, hız oranı); doğrulanmadan eklenmedi."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "65",
+   "sayfa": "12",
+   "url": "https://www.traficom.fi/files/media/file/PPL050ENG%2011102018.pdf",
+   "konu": "Yüzey rüzgârı için pratik kuralın katsayıları kaynaklarda farklı; doğrulanmadan eklenmedi.",
+   "neden": "Yüzey rüzgârı için pratik kuralın katsayıları kaynaklarda farklı; doğrulanmadan eklenmedi."
+  }
+ ]
+}

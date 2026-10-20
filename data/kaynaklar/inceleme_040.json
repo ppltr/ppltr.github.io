@@ -1,0 +1,29 @@
+{
+ "ders": "040",
+ "sorular": [
+  {
+   "kaynak": "x-cad-rs",
+   "no": "41",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Human%20performance.pdf",
+   "konu": "Beyin hücrelerinin oksijensiz kalınca ölmeye başlama süresi kaynaklarda farklı (2 dk / 4 dk 'ciddi hasar'); bankadaki 15079 ile birlikte tek ifadede netleştirilmeli.",
+   "neden": "Beyin hücrelerinin oksijensiz kalınca ölmeye başlama süresi kaynaklarda farklı (2 dk / 4 dk 'ciddi hasar'); bankadaki 15079 ile birlikte tek ifadede netleştirilmeli."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "42",
+   "sayfa": "7",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Human%20performance.pdf",
+   "konu": "Önerilen haftalık alkol birimi ulusal sağlık tavsiyesine bağlı; EASA/ICAO kuralı değil, cevap doğrulanamadı.",
+   "neden": "Önerilen haftalık alkol birimi ulusal sağlık tavsiyesine bağlı; EASA/ICAO kuralı değil, cevap doğrulanamadı."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "139",
+   "sayfa": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Human%20performance.pdf",
+   "konu": "Dalış sonrası bekleme süresi dalış türüne bağlı; kaynak anahtarı (4 saat) bankadaki 15090 (24 saat) ile aynı koşulu sorduğundan çelişki doğrulanmalı.",
+   "neden": "Dalış sonrası bekleme süresi dalış türüne bağlı; kaynak anahtarı (4 saat) bankadaki 15090 (24 saat) ile aynı koşulu sorduğundan çelişki doğrulanmalı."
+  }
+ ]
+}

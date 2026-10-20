@@ -1,0 +1,13 @@
+{
+ "questions": {
+  "64001": {
+   "text": "Hipermetropi (uzağı iyi, yakını kötü görme) çok ______ bir göz yuvarlağından kaynaklanır ve ______ mercekle düzeltilir.",
+   "options": [
+    "kısa / dışbükey (pozitif)",
+    "uzun / dışbükey (pozitif)",
+    "kısa / içbükey (negatif)",
+    "uzun / içbükey (negatif)"
+   ]
+  }
+ }
+}

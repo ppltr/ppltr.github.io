@@ -1,0 +1,10 @@
+{
+ "ders": "070",
+ "bolum": "070-EK",
+ "tarih": "2026-10-13",
+ "yeni": [],
+ "inceleme": {
+  "CAD#134": "Elektrik arızası sonuçları uçak tipine bağlı; ders notunda yok, doğrulanmadı."
+ },
+ "varsayilan_disi": "Kaynak sorusu tek tek okundu: ders notu/cheat sheet kapsamında olmayan pilotaj ve motor işletme ayrıntısı (spin/spiral kurtarma, VASI/PAPI göstergeleri, yakıt renkleri, ampermetre/alternatör okuma, taksi kumanda duruşu) ya da bankada zaten işleniyor (wake türbülans, karbüratör yangını, 121.5 MHz, mayday); yeni bilgi eklemediği için ayrı soru açılmadı."
+}

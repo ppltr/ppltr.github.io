@@ -1,0 +1,387 @@
+{
+ "ders": "080",
+ "bolum": "080-EK",
+ "tarih": "2026-10-13",
+ "yeni": [
+  {
+   "uye": "CAD#29",
+   "bolum": "080-EK",
+   "text": "What describes the 'Dutch roll' motion of an aeroplane?",
+   "options": [
+    "A coupled oscillation in which the aeroplane alternately rolls and yaws, out of phase, after a lateral or directional disturbance",
+    "A slowly tightening descending spiral that develops when lateral stability is weak and directional stability is strong",
+    "A repeating pitch oscillation about the lateral axis at constant airspeed",
+    "A one-sided roll caused by adverse aileron drag when a turn is started"
+   ],
+   "tr_text": "Bir uçağın 'Dutch roll' hareketini aşağıdakilerden hangisi tanımlar?",
+   "tr_options": [
+    "Yanal ya da yön bozulmasından sonra uçağın faz farkıyla dönüşümlü olarak yattığı ve saptığı bağlaşık salınım",
+    "Yanal kararlılık zayıf, yön kararlılığı güçlü olduğunda gelişen, giderek sıkışan alçalan spiral",
+    "Hava hızı sabitken yanal eksen etrafında tekrarlanan yunuslama salınımı",
+    "Dönüşe girerken ters aileron sürüklemesinin yol açtığı tek yönlü yatış"
+   ],
+   "explanation_tr": "Dutch roll, yatış ve sapmanın birbirine bağlı, faz farklı salınımıdır; yatış sönümü güçlü, yön kararlılığı zayıf olduğunda ortaya çıkar ve yaw damper ile bastırılır. Zayıf yatış kararlılığı ise spiral dalışa götürür.",
+   "explanation_en": "Dutch roll is a coupled roll–yaw oscillation, out of phase, typical when roll damping is strong but directional stability is weak; a yaw damper suppresses it. Weak roll stability instead leads to a spiral dive.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Ch. 5 'Free Directional Oscillations (Dutch Roll)', p. 5-20"
+    }
+   ]
+  },
+  {
+   "uye": "CAD#142",
+   "ek_uyeler": [
+    "TR#79"
+   ],
+   "bolum": "080-EK",
+   "text": "How can an aeroplane's aileron be given aerodynamic balance so that the control forces become lighter?",
+   "options": [
+    "By setting the hinge line back behind the leading edge of the aileron (inset hinge)",
+    "By attaching a weight ahead of the hinge line",
+    "By fitting an anti-balance tab to the trailing edge",
+    "By making the up-going aileron deflect further than the down-going aileron"
+   ],
+   "tr_text": "Bir uçağın kanatçığında (aileron) kumanda kuvvetlerini hafifletmek için aerodinamik denge nasıl sağlanabilir?",
+   "tr_options": [
+    "Menteşe hattını kanatçığın hücum kenarının gerisine alarak (inset hinge)",
+    "Menteşe hattının önüne bir ağırlık takarak",
+    "Firar kenarına anti-balance tab takarak",
+    "Yukarı giden kanatçığı aşağı gidenden daha fazla saptırarak"
+   ],
+   "explanation_tr": "Menteşe hücum kenarının gerisine alınınca menteşenin önünde kalan yüzey, hava kuvvetinin menteşe momentini azaltır ve kumanda kuvveti düşer. Ağırlık dengesi flutter'ı önler, anti-balance tab kuvveti artırır, differential aileron ters sapmayı azaltır.",
+   "explanation_en": "With the hinge set back behind the leading edge, the surface area ahead of the hinge offsets the hinge moment and lightens the control force. Mass balance prevents flutter, an anti-balance tab increases the force, and differential ailerons reduce adverse yaw.",
+   "answer_verification": [
+    {
+     "url": "https://avweb.com/flight-safety/control-surface-design-keeping-them-balanced/",
+     "section": "'Control Surface Design: Keeping them Balanced' — offset hinge"
+    }
+   ]
+  },
+  {
+   "uye": "TC#23",
+   "bolum": "080-EK",
+   "text": "Ice has built up on the wings of an aeroplane in flight. What is the effect on the stalling speed?",
+   "options": [
+    "It increases, because the ice reduces the lift the wing can produce and adds drag",
+    "It remains unchanged, because the critical angle of attack does not depend on the surface condition",
+    "It decreases, because a rough surface keeps the boundary layer attached longer",
+    "It increases only in turns, because the load factor then rises"
+   ],
+   "tr_text": "Bir uçağın kanatlarında uçuş sırasında buz birikmiştir. Stall hızı nasıl etkilenir?",
+   "tr_options": [
+    "Artar; çünkü buz kanadın üretebileceği taşımayı azaltır ve sürüklemeyi artırır",
+    "Değişmez; çünkü kritik hücum açısı yüzey durumuna bağlı değildir",
+    "Azalır; çünkü pürüzlü yüzey sınır tabakayı daha uzun süre yüzeyde tutar",
+    "Yalnız dönüşlerde artar; çünkü o zaman yük faktörü yükselir"
+   ],
+   "explanation_tr": "Buz CLmax'ı ve stall açısını düşürür, sürüklemeyi artırır; ince ya da pürüzlü bir tabaka bile stall hızını belirgin biçimde yükseltir. Bu yüzden uçuştan önce yüzeyler buz, kırağı ve kardan arındırılır.",
+   "explanation_en": "Ice lowers CLmax and the stall angle and adds drag; even a thin, rough layer raises the stalling speed noticeably. That is why surfaces must be cleared of ice, frost and snow before flight.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_91-74B.pdf",
+     "section": "AC 91-74B, ch. 3 'Icing Effects', para. a 'Stall'"
+    }
+   ]
+  },
+  {
+   "uye": "AU#140",
+   "bolum": "080-EK",
+   "text": "After an engine failure, what does a propeller that keeps windmilling in the airflow produce?",
+   "options": [
+    "Drag instead of thrust, which slows the aeroplane down",
+    "Neither thrust nor drag, because the engine is no longer delivering power",
+    "Extra thrust, because the airflow keeps driving the blades",
+    "Lift that lengthens the glide"
+   ],
+   "tr_text": "Motor arızasından sonra hava akımında dönmeye devam eden (windmilling) bir pervane ne üretir?",
+   "tr_options": [
+    "İtki yerine direnç üretir; uçağı yavaşlatır",
+    "Ne itki ne direnç üretir; çünkü motor artık güç vermiyordur",
+    "Ek itki üretir; çünkü hava akımı palleri döndürmeye devam eder",
+    "Süzülme mesafesini uzatan taşıma üretir"
+   ],
+   "explanation_tr": "Motor yerine hava akımı tarafından döndürülen pervane uçağı fren gibi tutar: itki değil, büyük olabilen yel değirmeni direnci (windmilling drag) üretir; uçak yavaşlar ve süzülme kısalır. Feather konumu (varsa) ya da motorun yeniden çalıştırılması bu direnci azaltır.",
+   "explanation_en": "A propeller turned by the airflow instead of the engine acts like a brake on the aeroplane: it produces windmilling drag, which can be large, slows the aeroplane and shortens the glide. Feathering (where fitted) or restarting the engine reduces it.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/14_afh_ch13.pdf",
+     "section": "Ch. 13 'Feathering Propellers' — a windmilling propeller can create enough drag to make the airplane difficult or impossible to control"
+    }
+   ]
+  },
+  {
+   "uye": "AU#133",
+   "bolum": "080-EK",
+   "text": "What does wing loading express?",
+   "options": [
+    "The aeroplane's weight divided by its wing area",
+    "The wing area divided by the aeroplane's weight",
+    "The total drag divided by the wing area",
+    "The lift divided by the drag"
+   ],
+   "tr_text": "Kanat yüklemesi (wing loading) neyi ifade eder?",
+   "tr_options": [
+    "Uçağın ağırlığının kanat alanına bölümü",
+    "Kanat alanının uçağın ağırlığına bölümü",
+    "Toplam sürüklemenin kanat alanına bölümü",
+    "Taşımanın sürüklemeye bölümü"
+   ],
+   "explanation_tr": "Kanat yüklemesi, uçağın ağırlığının kanat alanına bölümüdür (N/m² ya da lb/ft²). Kanat yüklemesi arttıkça stall hızı yükselir.",
+   "explanation_en": "Wing loading is the aeroplane's weight divided by its wing area (for example N/m² or lb/ft²). A higher wing loading raises the stalling speed.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Ch. 11 'Performance' — wing loading is total weight divided by wing area (pdf p. 264)"
+    }
+   ]
+  },
+  {
+   "uye": "AU#45",
+   "bolum": "080-EK",
+   "text": "Where does interference drag typically arise?",
+   "options": [
+    "Where two parts of the airframe meet, for example at the wing root where the wing joins the fuselage",
+    "Along the smooth, undisturbed middle of the upper wing surface",
+    "At the wing tips, as a result of tip vortices",
+    "Inside the boundary layer, as a result of skin friction"
+   ],
+   "tr_text": "Girişim sürüklemesi (interference drag) tipik olarak nerede oluşur?",
+   "tr_options": [
+    "Uçağın iki parçasının birleştiği yerde; örneğin kanadın gövdeye bağlandığı kanat kökünde",
+    "Üst kanat yüzeyinin düzgün ve bozulmamış orta kısmında",
+    "Kanat uçlarında, uç girdaplarının sonucu olarak",
+    "Sınır tabaka içinde, yüzey sürtünmesinin sonucu olarak"
+   ],
+   "explanation_tr": "Girişim sürüklemesi, iki yüzeyin birleştiği yerde hava akımlarının çarpışıp girdap yaratmasından doğar; en bilinen örnek kanat–gövde birleşimi olan kanat köküdür. Kaplamalar (fairing) onu azaltır. Kanat ucu girdapları indüklenmiş, yüzey sürtünmesi ise yüzey sürtünme sürüklemesi doğurur.",
+   "explanation_en": "Interference drag comes from airstreams colliding where two surfaces meet; the wing–fuselage junction at the wing root is the classic example, and fairings reduce it. Tip vortices cause induced drag and surface friction causes skin-friction drag.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Ch. 5 'Interference Drag' — wing and fuselage at the wing root (pdf p. 103)"
+    }
+   ]
+  },
+  {
+   "uye": "AU#86",
+   "bolum": "080-EK",
+   "text": "As air flows back along an aerofoil, at which point does the boundary layer change from laminar to turbulent?",
+   "options": [
+    "The transition point",
+    "The stagnation point",
+    "The separation point",
+    "The point of maximum thickness"
+   ],
+   "tr_text": "Hava bir kanat profili üzerinde arkaya doğru akarken sınır tabaka laminerden türbülanslıya hangi noktada geçer?",
+   "tr_options": [
+    "Geçiş (transition) noktası",
+    "Durma (stagnation) noktası",
+    "Ayrılma (separation) noktası",
+    "En büyük kalınlık noktası"
+   ],
+   "explanation_tr": "Sınır tabaka hücum kenarında laminer başlar ve geçiş noktasında türbülanslıya dönüşür; daha geride akım yüzeyden ayrılabilir. Durma noktası ise akımın hücum kenarında ikiye ayrıldığı yerdir.",
+   "explanation_en": "The boundary layer starts laminar at the leading edge and becomes turbulent at the transition point; further aft the flow can separate. The stagnation point is where the flow divides at the leading edge.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Ch. 5 'Turbulent Boundary Layer Flow' — the laminar flow breaks down and transitions to turbulent (pdf p. 143)"
+    }
+   ]
+  },
+  {
+   "uye": "AU#145",
+   "bolum": "080-EK",
+   "text": "Compared with straight and level flight, what must the pilot do to keep the same speed and altitude in a steady level turn?",
+   "options": [
+    "Increase the angle of attack and add power",
+    "Keep the angle of attack and add power",
+    "Decrease the angle of attack and add power",
+    "Increase the angle of attack and keep the power unchanged"
+   ],
+   "tr_text": "Düz yatay uçuşa göre, kararlı bir yatay dönüşte aynı hız ve irtifayı korumak için pilot ne yapmalıdır?",
+   "tr_options": [
+    "Hücum açısını artırmalı ve güç eklemeli",
+    "Hücum açısını korumalı ve güç eklemeli",
+    "Hücum açısını azaltmalı ve güç eklemeli",
+    "Hücum açısını artırmalı, gücü değiştirmemeli"
+   ],
+   "explanation_tr": "Yatışta taşımanın dikey bileşeni küçülür; irtifayı korumak için hücum açısı artırılır, artan indüklenmiş sürükleme de hızı korumak için daha fazla itki ister.",
+   "explanation_en": "In a bank the vertical component of lift shrinks, so the angle of attack must be increased to restore lift; the extra induced drag then needs more thrust to hold speed.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Ch. 5 'Forces in Turns' — AOA must be progressively increased; additional thrust (power) must be applied (pdf p. 120)"
+    }
+   ]
+  }
+ ],
+ "inceleme": {
+  "CAD#86": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi.",
+  "CAD#119": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi.",
+  "TC#22": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi.",
+  "CAD#112": "Kaynak anahtarı soru köküyle çelişiyor: hız iki katına çıkınca sürükleme katsayısı değil sürükleme kuvveti 4 kat artar. Soru metni ya da anahtar düzeltilmeden eklenmedi.",
+  "AU#75": "Kaynak anahtarı fiziğe ters görünüyor (flap açınca süzülme açısı küçülmez, büyür); bankada 16216 zaten var. Resmî dayanakla netleşmeden eklenmedi."
+ },
+ "disi": {
+  "CAD#136": "Kanat konumunun (yüksek/alçak kanat) yanal kararlılığa etkisi ders notunda geçmiyor (yalnız dihedral).",
+  "CAD#149": "Bankada aynı konu zaten işleniyor (trim tab: 16277–16281); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#103": "Bankada aynı konu zaten işleniyor (stall hızını etkileyen faktörler: 16196–16205); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#102": "Bankada aynı konu zaten işleniyor (stall hızını etkileyen faktörler: 16196–16205); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#79": "Bankada aynı konu zaten işleniyor (dönüşte stall hızı: 16204–16205); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "TR#110": "Bankada aynı konu zaten işleniyor (dönüşte stall hızı: 16204–16205); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "TC#25": "Bankada aynı konu zaten işleniyor (dönüşte stall hızı: 16200, 16204); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "TC#24": "Bankada aynı konu zaten işleniyor (stall hızı faktörleri: 16196–16205); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#5": "IAS–yoğunluk ilişkisi ders notunda yalnız IAS/TAS tanımıyla geçiyor; cevap yalnız tek kaynak anahtarına ve fizik çıkarımına dayanıyor, bu turda eklenmedi.",
+  "CAD#78": "Bankada aynı konu zaten işleniyor (stall ve basınç merkezi: 16138–16139, 16180); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#109": "Bankada aynı konu zaten işleniyor (kritik hücum açısı: 16172); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#11": "Bankada aynı konu zaten işleniyor (CLmax ve kritik hücum açısı: 16140, 16172); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#91": "Bankada aynı konu zaten işleniyor (stall ve hücum açısı: 16170–16171); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "TR#100": "Bankada aynı konu zaten işleniyor (stall ve hücum açısı: 16170–16171); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#32": "Bankada aynı konu zaten işleniyor (basınç merkezi ve kuyruk yükü: 16294); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#127": "Bankada aynı konu zaten işleniyor (statik/dinamik kararlılık: 16229–16236); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#141": "Bankada aynı konu zaten işleniyor (CG ve trim: 14833–14839, 16240); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#25": "Bankada aynı konu zaten işleniyor (CG sınırları: 14833–14839); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#19": "Bankada aynı konu zaten işleniyor (CG arka sınır etkileri: 14834–14835); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#22": "Bankada aynı konu zaten işleniyor (CG etkileri: 14833–14835, 16240); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#24": "Bankada aynı konu zaten işleniyor (CG etkileri: 14833–14835, 16240); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#33": "Aerodinamik merkez–CG moment ilişkisi ders notunda yok.",
+  "TC#32": "Bankada aynı konu zaten işleniyor (yer etkisi: 16168–16169); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "TC#21": "Spin/vril ders notunda yok (yalnız stall).",
+  "CAD#83": "Bankada aynı konu zaten işleniyor (yön kararlılığı: 16244); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#18": "Bankada aynı konu zaten işleniyor (taşıma kuvvetinin yönü: 16107); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#84": "Bankada aynı konu zaten işleniyor (tırmanma açısı: 14945, 16300); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#125": "Bankada aynı konu zaten işleniyor (flutter / mass balance: 14461, 16272, 16284); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#133": "Bankada aynı konu zaten işleniyor (differential aileron: 16269–16270); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#147": "Bankada aynı konu zaten işleniyor (aileron sapması ve sürükleme: 16270); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#116": "Bankada aynı konu zaten işleniyor (mass balance: 16272, 16284); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "SY#1": "Bankada aynı konu zaten işleniyor (stagnation point: 16132–16134, 16190–16191); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "TR#134": "Helikopter sorusu: PPL(A) kapsamı ve ders notu dışında.",
+  "TR#140": "Helikopter sorusu: PPL(A) kapsamı ve ders notu dışında.",
+  "CAD#28": "Bankada aynı konu zaten işleniyor (flap etkileri: 16211–16224); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#31": "Bankada aynı konu zaten işleniyor (dihedral: 16245–16248); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#134": "Bankada aynı konu zaten işleniyor (slot/slat: 16226, 16227); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#138": "Bankada aynı konu zaten işleniyor (kararlılık tanımları: 16230–16233); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#1": "Bankada aynı konu zaten işleniyor (sabit hücum açısında hız–taşıma/sürükleme: 16130); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#69": "Bankada aynı konu zaten işleniyor (dinamik basınç: 16082–16089); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#73": "Bankada aynı konu zaten işleniyor (dinamik basınç: 16082–16089); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#42": "Bankada aynı konu zaten işleniyor (dinamik basınç: 16082–16089); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#94": "Bankada aynı konu zaten işleniyor (balance tab: 16273–16274); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#48": "Bankada aynı konu zaten işleniyor (kanat üstü/alt basınç ve hız: 16124–16125, 58005); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#114": "Yay önyüklemeli (spring-bias) trim sistemi ders notunda yok.",
+  "CAD#118": "Bankada aynı konu zaten işleniyor (kumanda yüzeyleri ve eksenler: 14443, 16262); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#40": "Bankada aynı konu zaten işleniyor (hız–taşıma ilişkisi: 16119–16121); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "CAD#105": "Bankada aynı konu zaten işleniyor (kanat planformu ve indüklenmiş sürükleme: 16157); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#79": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#83": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#85": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#77": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#89": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#90": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#95": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#107": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#141": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#3": "Ders notunda (080) spin geçmiyor; bankada 16206–16207 zaten var.",
+  "AU#24": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#41": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#65": "Ders notunda (080) bu bilgi geçmiyor.",
+  "AU#36": "Ders notunda (080) washout geçmiyor; bankada 16192–16195 zaten var.",
+  "AU#6": "Ders notunda (080) atmosfer/ISA parametreleri geçmiyor (bankada 16075–16077).",
+  "AU#97": "Ders notunda (080) 'elevatördeki aşağı kuvvet = boylamsal kararlılık' ifadesi yok; kaynak ifadesi de belirsiz.",
+  "AU#135": "Ders notunda gust ile yük faktörü ilişkisi açık değil (yalnız pozitif/negatif gust ve diyagram tanımı).",
+  "AU#136": "Ders notunda gust ile yük faktörü ilişkisi açık değil (yalnız pozitif/negatif gust ve diyagram tanımı).",
+  "AU#124": "Bankada aynı konu zaten işleniyor (kanatçık etkileri: 16263–16266); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#125": "Bankada aynı konu zaten işleniyor (aerodinamik denge: 68001); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#126": "Bankada aynı konu zaten işleniyor (aerodinamik denge: 68001); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#132": "Bankada aynı konu zaten işleniyor (trim: 16277–16281); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#114": "Bankada aynı konu zaten işleniyor (CG sınırları ve yükleme: 14816–14818 (030)); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#4": "Bankada aynı konu zaten işleniyor (arka CG'nin sonuçları: 14831, 14834, 14835 (030) ve 16239); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#91": "Bankada aynı konu zaten işleniyor (eksen–kararlılık eşleşmesi: 16242, 16245, 16256); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#98": "Bankada aynı konu zaten işleniyor (eksen–kararlılık eşleşmesi: 16242, 16245, 16256); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#99": "Bankada aynı konu zaten işleniyor (eksen–kararlılık eşleşmesi: 16242, 16245, 16256); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#100": "Bankada aynı konu zaten işleniyor (eksen–kararlılık eşleşmesi: 16242, 16245, 16256); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#1": "Bankada aynı konu zaten işleniyor (kuvvet dengesi: 16290–16291); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#31": "Kaynak ifadesi belirsiz ('stall öncesi taşıma hücum açısıyla yaklaşık orantılı'); bankada CL–α soruları var (16140, 16144).",
+  "AU#40": "Bankada aynı konu zaten işleniyor (parazit sürükleme ve hız: 16147–16148); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#42": "Bankada aynı konu zaten işleniyor (indüklenmiş sürükleme ve kanat ucu: 16150–16151); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#44": "Kaynak şıkları anlamsız (örn. 'uçak koridoru'); soru olarak kullanılamaz.",
+  "AU#50": "Bankada aynı konu zaten işleniyor (parazit sürükleme türleri: 16145–16146); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#58": "Bankada aynı konu zaten işleniyor (toplam sürükleme bileşenleri: 16162–16164); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#61": "Bankada aynı konu zaten işleniyor (toplam sürükleme bileşenleri: 16162–16164); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#80": "Bankada aynı konu zaten işleniyor (flap ve taşıma: 16211, 16222, 58009); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#81": "Bankada aynı konu zaten işleniyor (kalkış flap ayarı: 14924, 14943 (030)); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#87": "Aynı konudan tek soru kuralı: sınır tabaka geçişi için AU#86 seçildi; konu 16185–16188 ile birlikte kapsanıyor.",
+  "AU#88": "Aynı konudan tek soru kuralı: sınır tabaka geçişi için AU#86 seçildi; konu 16185–16188 ile birlikte kapsanıyor.",
+  "AU#137": "Bankada aynı konu zaten işleniyor (sabit hızlı pervane: 62005 (020), 58025); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#138": "Bankada aynı konu zaten işleniyor (sabit hızlı pervane: 62005 (020), 58025); yeni bir bilgi eklemediği için ayrı soru açılmadı.",
+  "AU#148": "Aynı konudan tek soru kuralı: dönüşte hücum açısı/güç için AU#145 seçildi; dönüş yük faktörü 16304–16310 zaten var.",
+  "AU#149": "Aynı konudan tek soru kuralı: dönüşte hücum açısı/güç için AU#145 seçildi; dönüş yük faktörü 16304–16310 zaten var."
+ },
+ "var": {
+  "CAD#145": 16272,
+  "TR#89": 16272,
+  "CAD#117": 16281,
+  "CAD#23": 16237,
+  "CAD#144": 16278,
+  "CAD#106": 58019,
+  "CAD#88": 16296,
+  "CAD#150": 14468,
+  "CAD#140": 16255,
+  "CAD#130": 16255,
+  "TR#19": 16250,
+  "TR#5": 16068,
+  "TR#27": 16088,
+  "CAD#128": 16213,
+  "CAD#95": 16173,
+  "TR#70": 16244,
+  "SY#2": 58002,
+  "CAD#26": 16233,
+  "CAD#37": 16210,
+  "AU#113": 16257,
+  "AU#117": 16260,
+  "AU#129": 16279,
+  "AU#72": 16182,
+  "AU#64": 16183,
+  "AU#147": 16201,
+  "AU#69": 16196,
+  "AU#10": 16135,
+  "AU#110": 16240,
+  "AU#109": 16240,
+  "AU#108": 58015,
+  "AU#134": 16283,
+  "AU#120": 16267,
+  "AU#121": 16267,
+  "AU#123": 16267,
+  "AU#122": 16268,
+  "AU#127": 16272,
+  "AU#128": 16284,
+  "AU#131": 16277,
+  "AU#92": 16245,
+  "AU#118": 16263,
+  "AU#2": 16210,
+  "AU#51": 16166,
+  "AU#55": 16155,
+  "AU#56": 16155,
+  "AU#54": 16149,
+  "AU#57": 16108,
+  "AU#60": 16163,
+  "AU#67": 16173,
+  "AU#106": 16173,
+  "AU#71": 16191,
+  "AU#73": 16207,
+  "AU#74": 58009,
+  "AU#76": 16222,
+  "AU#93": 16232,
+  "AU#94": 16234,
+  "AU#101": 16243,
+  "AU#104": 58015,
+  "AU#105": 16253,
+  "AU#115": 16254,
+  "AU#116": 58017,
+  "AU#15": 58003,
+  "AU#28": 16137,
+  "AU#29": 16137,
+  "AU#130": 16281,
+  "AU#146": 14795,
+  "AU#82": 14924
+ }
+}

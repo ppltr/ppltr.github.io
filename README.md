@@ -461,3 +461,85 @@ python3 scripts/find_duplicates.py
 ## Yeni ders eklemek
 
 `data/` altına aynı formatta yeni bir JSON koy (`subject_code`, `subject_name`, `section_code`, `questions[]`) ve `python3 scripts/init_db.py` çalıştır.
+
+## 2026-10-12 · Dış kaynak Air Law genişletmesi
+
+Claude’un yarım kalan worktree çalışması denetlenip tamamlandı. **42 yeni benzersiz Air Law sorusu** (ilk derlemede 88'di; 2026-10-13 ders notu denetiminde 46'sı notlarda karşılığı olmadığı ya da aynı konuyu tekrarladığı için emekli edildi) iki dilde, doğru cevap ilk şık olacak şekilde eklendi; 2.934 mevcut sorunun kimliği/metni/şıkları aynen korundu. Kaynak soru metinleri topluca yayımlanmadı: eklenenler bağımsız anlatımlı, güncel birincil kuralla doğrulanmış uyarlamalardır.
+
+824 kaynak adayı: **253 mevcut eşleşme**, **42 aktif yeni soru**, **238 kapsam dışı / aynı konu / notlarda yok**, **243 inceleme**. Kullanıcının ipuçlarından yazılan sorulardan TL sorumlusu, Code 3, kabotaj ve iki CPL yetki ayrımı kaldı; ditching ders notunda karşılığı olmadığı için emekli edildi. Mevcut ATPL sorusu 27032 yeni kopya yerine Air Law kapsamında ortak kullanılır.
+
+### Kaynak bazında sonuç
+
+"Yeni" sütunu kaynak sorusuna atanmış yeni temsilcileri sayar. Aynı yeni soruya başka kaynaktan verilen bağ "tekrar" sütunundadır. Mevcutler kanonik kimliğe bağlanır. Kaynak başına farklı yeni soru bağlantılarının sayısı JSON raporundaki `kaynak_yeni_benzersiz` alanındadır ve kaynaklar arasında toplanmaz.
+
+| Kaynak | Taranan | Mevcut | Yeni | Yeni aday tekrarı | Kapsam dışı | İnceleme |
+|---|---:|---:|---:|---:|---:|---:|
+| [Linx Aviation — Air Law](https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf) | 150 | 59 | 48 | 7 | 0 | 36 |
+| [Bangladesh CAA — Air Law (validation)](https://ops.caab.gov.bd/file-manager/air-law-validation.pdf) | 250 | 54 | 27 | 8 | 111 | 50 |
+| [Sırbistan Sivil Havacılık Direktörlüğü (CAD) — PPL(A) Air Law teorik sınav soruları (Form CAD-PEL-OB-1001)](https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf) | 79 | 30 | 0 | 32 | 4 | 13 |
+| [Austro Control — ECQB-PPL(A) 10 Air Law (Aircademy/LPLUS özeti, v2015.4)](https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf) | 134 | 34 | 5 | 8 | 13 | 74 |
+| [Traficom (Finlandiya) — LAPL/PPL question bank AIRLAW 010 (Rev. 1.8, 2018)](https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf) | 181 | 64 | 0 | 38 | 11 | 68 |
+| [Son Yaklaşma — PPL Soruları / Hava Hukuku (ücretsiz örnek)](https://sonyaklasma.com/ppl-sorulari/hava-hukuku) | 10 | 10 | 0 | 0 | 0 | 0 |
+| [Transport Canada — TP 13014E Sample Examination (Recreational Pilot Permit / Private Pilot Licence — Aeroplane)](https://www.tc.gc.ca/publications/EN/TP13014/PDF/HR/TP13014E.PDF) | 20 | 2 | 2 | 2 | 12 | 2 |
+
+Kullanıcının verdiği aşağıdaki kaynaklar toplu bankaya aktarım kısıtı nedeniyle **taranmış sayılmadı**. Erişilebilir önizleme, toplu yeniden kullanım izni değildir. Kullanıcı ipuçları saklandı; korunan soru bankasının tamamı çıkarılmadı ve hiçbir erişim engeli aşılmadı. [Scribd şartları](https://support.scribd.com/hc/en-us/articles/210129326-Global-Terms-of-Use), [QuizVDS şartları](https://quizvds.it/en-en/termini-condizioni), [Furious yasal bildirim](https://www.furious-atpl.com/mcq-exam/pageplus_3-legal-notices), [PDFCoffee şartları](https://pdfcoffee.com/term).
+
+| Kaynak | Taranan | Mevcut | Yeni | Durum |
+|---|---:|---:|---:|---|
+| [PPLHAVUZSONHALI](https://www.scribd.com/document/851963112/PPLHAVUZSONHALI-1) | 0 | 0 | 0 | Toplu aktarım izni yok |
+| [PPL-Q-BANK-AL](https://www.scribd.com/document/446626932/PPL-Q-BANK-AL) | 0 | 0 | 0 | Toplu aktarım izni yok |
+| [CAE Oxford Aviation Academy 010 Air Law](https://www.scribd.com/document/604806172/CAE-Oxford-Aviation-Academy-010-Air-Law) | 0 | 0 | 0 | Toplu aktarım izni yok |
+| [PPL(A) Question Bank (Scribd)](https://www.scribd.com/document/676565250/PPL-a-Question-Bank) | 0 | 0 | 0 | Toplu aktarım izni yok |
+| [02 Question Bank Topicwise 200Q](https://www.scribd.com/document/1066220026/02-Question-Bank-Topicwise-200Q) | 0 | 0 | 0 | Toplu aktarım izni yok |
+| [010 Progress Check 2](https://www.scribd.com/document/774640527/010-PC2) | 0 | 0 | 0 | Toplu aktarım izni yok |
+| [QuizVDS — ATPL Air Law](https://quizvds.it/en-en/quiz/atpl/air-law/306/refers) | 0 | 0 | 0 | Toplu aktarım izni yok |
+| [Furious ATPL — MCQ exam](https://www.furious-atpl.com/mcq-exam/answer%2C1-training-professional) | 0 | 0 | 0 | Toplu aktarım izni yok |
+| [1 Lahmacun İşaretsiz](https://www.scribd.com/document/856014115/1-Lahmacun-%C4%B0%C5%9Faretsiz) | 0 | 0 | 0 | Toplu aktarım izni yok |
+| [GDH PPL(A) English Question Bank](https://pdfcoffee.com/gdh-ppl-a-question-bank-eng-pdf-free.html) | 0 | 0 | 0 | Toplu aktarım izni yok |
+| [Dauntless GroundSchool ATPL test banks](https://www.dauntless-soft.com/PRODUCTS/GroundSchoolATPL/TestBanks/air_law_and_atc_procedures/010-01-01_the_convention_of_chicago/) | 0 | 0 | 0 | Toplu aktarım izni yok |
+
+StudyLib ayrıca 403 erişim engeli nedeniyle taranmadı. CAAB’de cevap anahtarı yok; Linx’in ilk şık kuralı bazı sorularda yanlış. Bu yüzden hiçbiri doğrudan cevap otoritesi kabul edilmedi. Eski ulusal/JAR kuralları, eksik görseller, kapsam/cevap/izin belirsizlikleri referanslarıyla `inceleme_010.json` içinde; aktif soru/puanlama havuzuna girmez.
+
+### Sınavda hatırlanan sorular
+
+| Konu | Kimlik | İşaret ve eşleşme |
+|---|---|---|
+| kabotaj | 61078 | benzer_aday |
+| icao-chicago | 61072 | benzer_aday |
+| lisans-yetkileri | 61080, 61079, 27032, 14303 | benzer_aday |
+| transition-tirmanis | 61035 | benzer_aday |
+| tl-kim-belirler | 61002 | kullanici_dogruladi_yeniden_yazim |
+| aip-bolumleri | 14384 | benzer_aday |
+| aerodrome-code3 | 61001 | kullanici_dogruladi_yeniden_yazim |
+| ditching | — (61081 emekli: notlarda yok) | benzer_aday |
+| tora-tanimi | 14909 | kullanici_dogruladi_mevcut_esdeger |
+| manyetik-rota-fl | — | kesin_soru_bulunamadi |
+
+⭐ **Code 3: 61001**, **TL sorumlusu: 61002**, **TORA: 14909**. TL ve Code 3 kullanıcının doğruladığı soru tipinden yeniden yazıldı; TORA mevcut ters yönden tanım sorusunun eşdeğer kaydıdır. Birebir kaynak metni bulundu iddiası yoktur. TORA’nın asıl dersi 030 ve geçmişi korunur; 010 kapsamına aynı kimlikle de girer. Hiçbir işaret resmî SHGM çıkmış sorusu iddiası değildir. Diğer konular benzer adaydır. **Manyetik rota/IFR/non-RVSM sorusunun kesin derece, koşul ve metni bulunamadı**; 146° VFR → FL75 ile birleştirilmedi.
+
+### Diğer dersler (2026-10-13)
+
+020, 030, 040, 050, 060, 070, 080, 090 için Traficom (Finlandiya) ve Sırbistan CAD listelerinin tamamı, Transport
+Canada örnek sınavının ilgili bölümleri ve Son Yaklaşma'nın ücretsiz örnekleri indirilip tek tek bankayla karşılaştırıldı.
+080 Principles of Flight için ek olarak Austro Control'ün yayımladığı ECQB-PPL(A) 51 özeti (149 soru, işaretli kutudan
+cevap anahtarı) tarandı: 80'i bankada aynı bilgiyle vardı, 63'ü notlarda yok ya da aynı konu, 1'i inceleme, 5'i yeni (kanat yüklemesi, girişim sürüklemesi, laminer→türbülanslı
+geçiş noktası, windmilling pervane direnci, dönüşte hücum açısı/güç); geri kalanı bankada aynı bilgiyle ya da notlarda
+yok. Her ek soru dersin `notes/` dosyasına bağlanabilmeli; bağlanamayan emekli edildi (Air Law 88 → 42, 050 → 0,
+060 → 2). Ölçüt ve akış `CLAUDE.md` içinde ("Ek kaynak soruları"). Sonuç için `python3 scripts/kaynak_rapor.py`.
+
+### Yeniden derleme ve test
+
+```bash
+python3 scripts/kaynak_derle.py 010 data/kaynaklar/decisions/root_special.json data/kaynaklar/decisions/caab_linx_audit.json data/kaynaklar/decisions/other_airlaw_audit.json data/kaynaklar/decisions/010_emekli.json
+python3 scripts/check_tr.py
+python3 scripts/init_db.py
+python3 scripts/build_web.py
+python3 scripts/test_kaynak_pipeline.py
+python3 scripts/test_kaynak_derle.py
+node scripts/test_kaynak_web.cjs
+.venv/bin/python server/test_flow.py
+```
+
+`--kuru` veri yazmaz; ID kaydı kalıcıdır; doğrulamasız cevap, kimlik çakışması, aynı kök veya eski yeni-soru içeriğinin sessiz değişimi derlemeyi durdurur. İnceleme yalnız okunur panelde açılır. Mevcut soru ortak dersler için `also_subjects` ile bağlanır; çözüm yine aynı ID üzerinden tutulur. İlerleme veritabanı/localStorage/bulut kayıtlarına derleme betikleri dokunmaz.
+
+23 Python regresyon testi, gerçek template işlevleriyle JS kontrolü, sunucu akış testi, EN/TR tamlığı ve 2.934 soru için SHA-256 kimlik/içerik kontrolü geçti. Tarayıcıda yıldız, açıklama/kaynak, yanlışların tekrar turu, yenileme ve geri/ileri ile aynı soruya dönüş doğrulandı. Yeni bankada 2.992 ham / 2.612 görünür benzersiz soru var; mevcut 380 tekrar bağlantısı değişmedi. `qa/airlaw-confirmed.jpg` yerel test profili görüntüsüdür.

@@ -1,0 +1,101 @@
+{
+ "subject_code": "080",
+ "subject_name": "Principles of Flight",
+ "origin": "ek",
+ "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
+ "answer_convention": "İki dilde aynı sırada; ilk şık doğru. Belirsiz cevap aktif bankada yok.",
+ "id_convention": "Kalıcı idler_080.json; eski veya emekli kimlik yeniden kullanılmaz.",
+ "sections": {
+  "080-EK": "Additional Questions"
+ },
+ "questions": [
+  {
+   "id": 68001,
+   "section": "080-EK",
+   "text": "How can an aeroplane's aileron be given aerodynamic balance so that the control forces become lighter?",
+   "options": [
+    "By setting the hinge line back behind the leading edge of the aileron (inset hinge)",
+    "By attaching a weight ahead of the hinge line",
+    "By fitting an anti-balance tab to the trailing edge",
+    "By making the up-going aileron deflect further than the down-going aileron"
+   ]
+  },
+  {
+   "id": 68002,
+   "section": "080-EK",
+   "text": "What describes the 'Dutch roll' motion of an aeroplane?",
+   "options": [
+    "A coupled oscillation in which the aeroplane alternately rolls and yaws, out of phase, after a lateral or directional disturbance",
+    "A slowly tightening descending spiral that develops when lateral stability is weak and directional stability is strong",
+    "A repeating pitch oscillation about the lateral axis at constant airspeed",
+    "A one-sided roll caused by adverse aileron drag when a turn is started"
+   ]
+  },
+  {
+   "id": 68003,
+   "section": "080-EK",
+   "text": "Ice has built up on the wings of an aeroplane in flight. What is the effect on the stalling speed?",
+   "options": [
+    "It increases, because the ice reduces the lift the wing can produce and adds drag",
+    "It remains unchanged, because the critical angle of attack does not depend on the surface condition",
+    "It decreases, because a rough surface keeps the boundary layer attached longer",
+    "It increases only in turns, because the load factor then rises"
+   ]
+  },
+  {
+   "id": 68004,
+   "section": "080-EK",
+   "text": "What does wing loading express?",
+   "options": [
+    "The aeroplane's weight divided by its wing area",
+    "The wing area divided by the aeroplane's weight",
+    "The total drag divided by the wing area",
+    "The lift divided by the drag"
+   ]
+  },
+  {
+   "id": 68005,
+   "section": "080-EK",
+   "text": "After an engine failure, what does a propeller that keeps windmilling in the airflow produce?",
+   "options": [
+    "Drag instead of thrust, which slows the aeroplane down",
+    "Neither thrust nor drag, because the engine is no longer delivering power",
+    "Extra thrust, because the airflow keeps driving the blades",
+    "Lift that lengthens the glide"
+   ]
+  },
+  {
+   "id": 68006,
+   "section": "080-EK",
+   "text": "Compared with straight and level flight, what must the pilot do to keep the same speed and altitude in a steady level turn?",
+   "options": [
+    "Increase the angle of attack and add power",
+    "Keep the angle of attack and add power",
+    "Decrease the angle of attack and add power",
+    "Increase the angle of attack and keep the power unchanged"
+   ]
+  },
+  {
+   "id": 68007,
+   "section": "080-EK",
+   "text": "Where does interference drag typically arise?",
+   "options": [
+    "Where two parts of the airframe meet, for example at the wing root where the wing joins the fuselage",
+    "Along the smooth, undisturbed middle of the upper wing surface",
+    "At the wing tips, as a result of tip vortices",
+    "Inside the boundary layer, as a result of skin friction"
+   ]
+  },
+  {
+   "id": 68008,
+   "section": "080-EK",
+   "text": "As air flows back along an aerofoil, at which point does the boundary layer change from laminar to turbulent?",
+   "options": [
+    "The transition point",
+    "The stagnation point",
+    "The separation point",
+    "The point of maximum thickness"
+   ]
+  }
+ ]
+}

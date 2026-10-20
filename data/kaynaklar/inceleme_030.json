@@ -1,0 +1,77 @@
+{
+ "ders": "030",
+ "sorular": [
+  {
+   "kaynak": "x-cad-rs",
+   "no": "103",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "105",
+   "sayfa": "19",
+   "url": "https://www.traficom.fi/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "82",
+   "sayfa": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "2",
+   "sayfa": "2",
+   "url": "https://www.traficom.fi/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "74",
+   "sayfa": "10",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "9",
+   "sayfa": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "104",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "145",
+   "sayfa": "27",
+   "url": "https://www.traficom.fi/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "Standart yolcu/çocuk kütleleri işletme kurallarına ve uçak sınıfına bağlı; ders notunda yok ve cevap tek bir kaynakla doğrulanamadı.",
+   "neden": "Standart yolcu/çocuk kütleleri işletme kurallarına ve uçak sınıfına bağlı; ders notunda yok ve cevap tek bir kaynakla doğrulanamadı."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "143",
+   "sayfa": "27",
+   "url": "https://www.traficom.fi/files/media/file/PPL030ENG%2011102018.pdf",
+   "konu": "AIP Supplement (SUP) ders notunda yalnız AIP/AIC/NOTAM düzeyinde geçiyor; ICAO Annex 15 tanımıyla doğrulanıp eklenmeli.",
+   "neden": "AIP Supplement (SUP) ders notunda yalnız AIP/AIC/NOTAM düzeyinde geçiyor; ICAO Annex 15 tanımıyla doğrulanıp eklenmeli."
+  }
+ ]
+}

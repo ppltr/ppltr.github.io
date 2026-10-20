@@ -1,0 +1,69 @@
+{
+ "ders": "080",
+ "sorular": [
+  {
+   "kaynak": "x-cad-rs",
+   "no": "86",
+   "sayfa": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Principles%20of%20flight.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "117",
+   "sayfa": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL080ENG%2011102018.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "119",
+   "sayfa": "14",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Principles%20of%20flight.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "130",
+   "sayfa": "22",
+   "url": "https://www.traficom.fi/files/media/file/PPL080ENG%2011102018.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi."
+  },
+  {
+   "kaynak": "x-tc-tp13014",
+   "no": "22",
+   "sayfa": "8",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "konu": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi.",
+   "neden": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yalnız manevra yük diyagramında geçiyor. Resmî tanımla netleştirilmeden aktif soruya çevrilmedi."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "112",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Principles%20of%20flight.pdf",
+   "konu": "Kaynak anahtarı soru köküyle çelişiyor: hız iki katına çıkınca sürükleme katsayısı değil sürükleme kuvveti 4 kat artar. Soru metni ya da anahtar düzeltilmeden eklenmedi.",
+   "neden": "Kaynak anahtarı soru köküyle çelişiyor: hız iki katına çıkınca sürükleme katsayısı değil sürükleme kuvveti 4 kat artar. Soru metni ya da anahtar düzeltilmeden eklenmedi."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "122",
+   "sayfa": "21",
+   "url": "https://www.traficom.fi/files/media/file/PPL080ENG%2011102018.pdf",
+   "konu": "Kaynak anahtarı soru köküyle çelişiyor: hız iki katına çıkınca sürükleme katsayısı değil sürükleme kuvveti 4 kat artar. Soru metni ya da anahtar düzeltilmeden eklenmedi.",
+   "neden": "Kaynak anahtarı soru köküyle çelişiyor: hız iki katına çıkınca sürükleme katsayısı değil sürükleme kuvveti 4 kat artar. Soru metni ya da anahtar düzeltilmeden eklenmedi."
+  },
+  {
+   "kaynak": "x-austrocontrol-ecqb-ppl",
+   "no": "75",
+   "sayfa": "18",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf",
+   "konu": "Kaynak anahtarı fiziğe ters görünüyor (flap açınca süzülme açısı küçülmez, büyür); bankada 16216 zaten var. Resmî dayanakla netleşmeden eklenmedi.",
+   "neden": "Kaynak anahtarı fiziğe ters görünüyor (flap açınca süzülme açısı küçülmez, büyür); bankada 16216 zaten var. Resmî dayanakla netleşmeden eklenmedi."
+  }
+ ]
+}

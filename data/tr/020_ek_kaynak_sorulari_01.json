@@ -1,0 +1,49 @@
+{
+ "questions": {
+  "62001": {
+   "text": "Çift ateşlemeli bir motorda seyir uçuşunda manyetolardan biri arızalanırsa en olası sonuç nedir?",
+   "options": [
+    "Devir ve güçte hafif düşüş; motor diğer manyetoyla çalışmaya devam eder",
+    "Motor durur; çünkü silindirlerin yarısı ateşlenmez",
+    "Hiçbir değişiklik olmaz; çünkü her silindir için tek buji yeterlidir",
+    "Şiddetli geri tepme ve egzozdan siyah duman"
+   ]
+  },
+  "62002": {
+   "text": "Pusula kalibrasyonunda (compass swing) ne yapılır?",
+   "options": [
+    "Uçağın pusulası bilinen manyetik başlıklarda okunur, bir referans (datum) pusulayla karşılaştırılır ve sapma kartı hazırlanır",
+    "Yerel manyetik varyasyon ölçülür ve pusula kartına yazılır",
+    "Pusula, manyetik çevreye bakılmaksızın meydanın herhangi bir kuru ve düz yerinde çevrilir",
+    "Uçağın manyetik başlığı yerine gerçek (true) başlığı belirlenir"
+   ]
+  },
+  "62003": {
+   "text": "Yüksek sıkıştırma oranlı bir pistonlu motor neden daha yüksek dereceli (oktan sayılı) yakıt ister?",
+   "options": [
+    "Yüksek dereceli yakıt, silindirdeki yüksek basınç ve sıcaklıkta vuruntuya (detonation) dayanır",
+    "Yüksek dereceli yakıt kilogram başına daha çok enerji içerir; motor daha fazla güç üretir",
+    "Yüksek dereceli yakıt, yüksek güç ayarlarında karbüratör buzlanmasını önler",
+    "Yüksek dereceli yakıt daha yavaş yanar; bu da egzoz gazı sıcaklığını düşürür"
+   ]
+  },
+  "62004": {
+   "text": "Pistonlu bir motorun karbüratörü motora ne sağlar?",
+   "options": [
+    "Karışım kontrolüyle seçilen oranda yakıt–hava karışımı",
+    "Yalnız hava; gaz kelebeği ile ölçülür",
+    "Yalnız yakıt; doğrudan her silindire püskürtülür",
+    "İrtifadan bağımsız sabit oranda basınçlı yakıt"
+   ]
+  },
+  "62005": {
+   "text": "Sabit hızlı (constant-speed) pervaneli bir uçak pistte hızlanırken pervane regülatörü (governor) ne yapar?",
+   "options": [
+    "Pal açısını (hatveyi) artırır; böylece devir ve palin hücum açısı kabaca sabit kalır",
+    "Pal açısını azaltır; devir sabit kalırken hücum açısı düşer",
+    "Pal açısını değiştirmez; bu yüzden devir hızla birlikte artar",
+    "Pervane ucu hızını sabit tutmak için motor devrini düşürür"
+   ]
+  }
+ }
+}

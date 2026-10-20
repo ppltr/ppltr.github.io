@@ -1,0 +1,18 @@
+{
+ "ders": "030",
+ "bolum": "030-EK",
+ "tarih": "2026-10-13",
+ "yeni": [],
+ "inceleme": {
+  "CAD#103": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi.",
+  "CAD#82": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi.",
+  "CAD#74": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi.",
+  "CAD#104": "VA tanımı kaynaklarda farklı ifade ediliyor (tek eksende tam sapma / sınır yük faktörü aşılmaz); ders notunda yok. Resmî tanımla netleştirilmeden eklenmedi.",
+  "TR#145": "Standart yolcu/çocuk kütleleri işletme kurallarına ve uçak sınıfına bağlı; ders notunda yok ve cevap tek bir kaynakla doğrulanamadı.",
+  "TR#143": "AIP Supplement (SUP) ders notunda yalnız AIP/AIC/NOTAM düzeyinde geçiyor; ICAO Annex 15 tanımıyla doğrulanıp eklenmeli."
+ },
+ "var": {
+  "CAD#26": 14961
+ },
+ "varsayilan_disi": "Kaynak sorusu tek tek okundu: ya bankada aynı konu zaten işleniyor (Vx/Vy, yoğunluk irtifası, ağırlık-denge, yakıt hesapları, iniş/kalkış etkenleri vb.) ya da ders notu/PPL kapsamı dışında; yeni bilgi eklemediği için ayrı soru açılmadı."
+}

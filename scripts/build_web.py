@@ -21,6 +21,7 @@ TPL = ROOT / "web" / "template.html"
 OUT = ROOT / "web" / "atpl-soru-bankasi.html"
 PAGES = ROOT / "docs" / "index.html"        # GitHub Pages /docs kökünden yayımlar
 NOTES_DIR = ROOT / "notes"
+SOURCE_DIR = ROOT / "data" / "kaynaklar"
 ICONS_DIR = ROOT / "web" / "icons"       # site ikonu kaynağı; docs/ köküne kopyalanır
 
 # Ders notu dosyasındaki kod, soru bankasındaki ders koduna eşlenir
@@ -68,6 +69,76 @@ def export_figures() -> tuple[dict, dict]:
     return svgs, by_q
 
 
+def export_extras(conn) -> tuple[dict, dict]:
+    """Soru başına ek bilgi (ek kaynak, ⭐/aday işareti, inceleme, açıklama, kaynaklar).
+
+    Döner: ({soru_id: {...}}, {kaynak_id: [ad, adres]}).  Satır düzenine (q[0..13]) dokunmaz;
+    uygulama bunu id ile ayrı bir sözlükten okur. Anahtarlar kısa tutulur:
+      o=1 ek kaynak sorusu · k='d' ⭐ doğrulanmış / 'a' benzer aday · r=1 inceleme kuyruğu
+      rn inceleme nedeni · e/ee Türkçe/İngilizce kısa açıklama · s=[[kaynak_id, no, sayfa, adres]]
+    """
+    x: dict = {}
+    for r in conn.execute(
+            "SELECT q.id, q.mark, q.review, q.review_note, q.explanation, q.explanation_en, "
+            "       (q.origin = 'ek') AS ek "
+            "FROM questions q "
+            "WHERE q.mark IS NOT NULL OR q.review = 1 OR q.explanation IS NOT NULL "
+            "   OR q.explanation_en IS NOT NULL OR q.origin = 'ek' "
+            "   OR EXISTS (SELECT 1 FROM question_sources s WHERE s.question_id = q.id) "
+            "   OR EXISTS (SELECT 1 FROM question_subjects a WHERE a.question_id = q.id)"):
+        d = {}
+        if r["ek"]:
+            d["o"] = 1
+        if r["mark"]:
+            d["k"] = "d" if r["mark"] == "dogrulanmis" else "a"
+        if r["review"]:
+            d["r"] = 1
+            if r["review_note"]:
+                d["rn"] = r["review_note"]
+        if r["explanation"]:
+            d["e"] = r["explanation"]
+        if r["explanation_en"]:
+            d["ee"] = r["explanation_en"]
+        x[r["id"]] = d
+    for r in conn.execute("SELECT question_id,subject_code FROM question_subjects ORDER BY question_id,subject_code"):
+        x.setdefault(r["question_id"], {}).setdefault("a", []).append(r["subject_code"])
+    kullanilan = {r["id"]: [r["name"], r["url"] or ""]
+                  for r in conn.execute("SELECT id, name, url FROM sources ORDER BY id")}
+    for r in conn.execute(
+            "SELECT s.question_id, s.source_id, s.ref, s.page, s.url, src.name, src.url AS surl "
+            "FROM question_sources s JOIN sources src ON src.id = s.source_id "
+            "ORDER BY s.question_id, s.source_id, s.ref"):
+        sat = [r["source_id"], r["ref"] or "", r["page"] or "", r["url"] or ""]
+        while len(sat) > 2 and not sat[-1]:
+            sat.pop()
+        x.setdefault(r["question_id"], {}).setdefault("s", []).append(sat)
+        kullanilan[r["source_id"]] = [r["name"], r["surl"] or ""]
+    return x, kullanilan
+
+
+def export_review_queue(conn) -> list:
+    """Belirsiz adayları ayrı, cevap işaretlemeyen okuma paneline aktarır."""
+    out = []
+    for path in sorted(SOURCE_DIR.glob("inceleme_*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for item in data.get("sorular", data.get("kuyruk", [])):
+            normalized = {"ders": data.get("ders", ""), **item}
+            if item.get("kaynak") and not item.get("kaynaklar"):
+                normalized["kaynaklar"] = [{"k": item["kaynak"], "no": item.get("no"),
+                                             "sayfa": item.get("sayfa"), "url": item.get("url")}]
+            out.append(normalized)
+    # Önceki içe aktarımlardaki review kayıtları da aktif sorulara karışmaz.
+    for row in conn.execute("SELECT id, subject_code, text, review_note FROM questions WHERE review=1"):
+        out.append({"ders": row["subject_code"], "kume": str(row["id"]),
+                    "metin": row["text"], "neden": row["review_note"],
+                    "siklar": [r[0] for r in conn.execute(
+                        "SELECT text FROM options WHERE question_id=? ORDER BY ord", (row["id"],))],
+                    "kaynaklar": [{"k": r[0], "no": r[1], "sayfa": r[2], "url": r[3]}
+                        for r in conn.execute("SELECT source_id, ref, page, url FROM question_sources "
+                                              "WHERE question_id=?", (row["id"],))]})
+    return out
+
+
 def export() -> dict:
     conn = sqlite3.connect(DB)
     conn.row_factory = sqlite3.Row
@@ -108,7 +179,7 @@ def export() -> dict:
         "SELECT q.id, q.subject_code, s.code AS sec, q.text, q.text_tr, q.text_en, q.lang, q.flagged, "
         "       (q.dup_of IS NOT NULL) AS dup, (q.origin = 'uretilmis') AS gen, "
         "       q.needs_figure AS fig "
-        "FROM questions q LEFT JOIN sections s ON s.id = q.section_id "
+        "FROM questions q LEFT JOIN sections s ON s.id = q.section_id WHERE q.review=0 "
         "ORDER BY q.subject_code, s.code, q.id"
     ):
         rows = conn.execute(
@@ -132,9 +203,11 @@ def export() -> dict:
         if en_var or r["lang"] != "tr":
             ceviri_en += 1
         qs.append(row)
+    ekstra, kaynaklar = export_extras(conn)
+    review_queue = export_review_queue(conn)
     conn.close()
     return {"s": subjects, "q": qs, "n": export_notes(), "fg": figs,
-            "tr": ceviri, "en": ceviri_en}
+            "tr": ceviri, "en": ceviri_en, "x": ekstra, "ks": kaynaklar, "rq": review_queue}
 
 
 def main() -> None:
@@ -178,7 +251,7 @@ def main() -> None:
             shutil.copy2(f, PAGES.parent / f.name)
     kb = OUT.stat().st_size / 1024
     print(f"{OUT}  ({len(data['q'])} soru (TR {data['tr']}, EN {data['en']}), {len(data['s'])} ders, "
-          f"{len(data['n'])} not, {len(data['fg'])} çizim, {kb:.1f} KB"
+          f"{len(data['n'])} not, {len(data['fg'])} çizim, {len(data['x'])} ek bilgili soru, {kb:.1f} KB"
           + (", bulut açık)" if fb != "null" else ", bulut kapalı)"))
     print(f"{PAGES}  (GitHub Pages için aynı dosya)")
 

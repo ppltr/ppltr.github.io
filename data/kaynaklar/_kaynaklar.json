@@ -1,0 +1,1678 @@
+{
+ "_aciklama": "Soru bankasına katkı yapan dış kaynakların kaydı. `erisim`/`taranan`/sayılar scripts/kaynak_ozet.py ile ham dosyalardan türetilir; elle düzenleme. Ham soru dosyaları data/kaynaklar/_ham/ altındadır (gitignore'da).",
+ "kaynaklar": [
+  {
+   "id": "pplhavuz",
+   "ad": "PPLHAVUZSONHALI",
+   "url": "https://www.scribd.com/document/851963112/PPLHAVUZSONHALI-1",
+   "tur": "scribd",
+   "ipucu": "TORA, soru 48",
+   "erisim": "kismi",
+   "erisim_notu": "Codex 2026-10-12: herkese açık önizleme veya kaynak üst bilgisi erişilebilir. Kullanım koşulları toplu soru bankası aktarımına izin vermiyor; soru taraması yapılmadı, taranan sayı 0. Önceki Claude teknik erişim notu bu kontrolle güncellendi.",
+   "kullanim_notu": "Scribd Global Terms 9.1(a): otomatik erişim, metin/veri madenciliği ve sistematik içerik veritabanı oluşturma yasak. Kullanıcı ipuçları kaynak taraması sayılmaz.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "Toplu tarama yapılmadı: kullanım kısıtı",
+     "url": "https://www.scribd.com/document/851963112/PPLHAVUZSONHALI-1"
+    }
+   },
+   "kontrol_tarihi": "2026-10-12",
+   "kullanim": "toplu_aktarım_yasak",
+   "kullanim_url": "https://support.scribd.com/hc/en-us/articles/210129326-Global-Terms-of-Use"
+  },
+  {
+   "id": "pplqbankal",
+   "ad": "PPL-Q-BANK-AL",
+   "url": "https://www.scribd.com/document/446626932/PPL-Q-BANK-AL",
+   "tur": "scribd",
+   "ipucu": "Kabotaj, soru 16",
+   "erisim": "kismi",
+   "erisim_notu": "Codex 2026-10-12: herkese açık önizleme veya kaynak üst bilgisi erişilebilir. Kullanım koşulları toplu soru bankası aktarımına izin vermiyor; soru taraması yapılmadı, taranan sayı 0. Önceki Claude teknik erişim notu bu kontrolle güncellendi.",
+   "kullanim_notu": "Scribd Global Terms 9.1(a): otomatik erişim, metin/veri madenciliği ve sistematik içerik veritabanı oluşturma yasak. Kullanıcı ipuçları kaynak taraması sayılmaz.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "Toplu tarama yapılmadı: kullanım kısıtı",
+     "url": "https://www.scribd.com/document/446626932/PPL-Q-BANK-AL"
+    }
+   },
+   "kontrol_tarihi": "2026-10-12",
+   "kullanim": "toplu_aktarım_yasak",
+   "kullanim_url": "https://support.scribd.com/hc/en-us/articles/210129326-Global-Terms-of-Use"
+  },
+  {
+   "id": "oxford010",
+   "ad": "CAE Oxford Aviation Academy 010 Air Law",
+   "url": "https://www.scribd.com/document/604806172/CAE-Oxford-Aviation-Academy-010-Air-Law",
+   "tur": "scribd",
+   "ipucu": "TL'yi kim belirler, bölüm 10 soru 2",
+   "erisim": "kismi",
+   "erisim_notu": "Codex 2026-10-12: herkese açık önizleme veya kaynak üst bilgisi erişilebilir. Kullanım koşulları toplu soru bankası aktarımına izin vermiyor; soru taraması yapılmadı, taranan sayı 0. Önceki Claude teknik erişim notu bu kontrolle güncellendi.",
+   "kullanim_notu": "Scribd Global Terms 9.1(a): otomatik erişim, metin/veri madenciliği ve sistematik içerik veritabanı oluşturma yasak. Kullanıcı ipuçları kaynak taraması sayılmaz.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "Toplu tarama yapılmadı: kullanım kısıtı",
+     "url": "https://www.scribd.com/document/604806172/CAE-Oxford-Aviation-Academy-010-Air-Law"
+    }
+   },
+   "kontrol_tarihi": "2026-10-12",
+   "kullanim": "toplu_aktarım_yasak",
+   "kullanim_url": "https://support.scribd.com/hc/en-us/articles/210129326-Global-Terms-of-Use"
+  },
+  {
+   "id": "ppla-qb-scribd",
+   "ad": "PPL(A) Question Bank (Scribd)",
+   "url": "https://www.scribd.com/document/676565250/PPL-a-Question-Bank",
+   "tur": "scribd",
+   "ipucu": "Transition ve AIP",
+   "erisim": "kismi",
+   "erisim_notu": "Codex 2026-10-12: herkese açık önizleme veya kaynak üst bilgisi erişilebilir. Kullanım koşulları toplu soru bankası aktarımına izin vermiyor; soru taraması yapılmadı, taranan sayı 0. Önceki Claude teknik erişim notu bu kontrolle güncellendi.",
+   "kullanim_notu": "Scribd Global Terms 9.1(a): otomatik erişim, metin/veri madenciliği ve sistematik içerik veritabanı oluşturma yasak. Kullanıcı ipuçları kaynak taraması sayılmaz.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "Toplu tarama yapılmadı: kullanım kısıtı",
+     "url": "https://www.scribd.com/document/676565250/PPL-a-Question-Bank"
+    }
+   },
+   "kontrol_tarihi": "2026-10-12",
+   "kullanim": "toplu_aktarım_yasak",
+   "kullanim_url": "https://support.scribd.com/hc/en-us/articles/210129326-Global-Terms-of-Use"
+  },
+  {
+   "id": "topicwise200q",
+   "ad": "02 Question Bank Topicwise 200Q",
+   "url": "https://www.scribd.com/document/1066220026/02-Question-Bank-Topicwise-200Q",
+   "tur": "scribd",
+   "ipucu": "Aerodrome Code 3, soru 185",
+   "erisim": "kismi",
+   "erisim_notu": "Codex 2026-10-12: herkese açık önizleme veya kaynak üst bilgisi erişilebilir. Kullanım koşulları toplu soru bankası aktarımına izin vermiyor; soru taraması yapılmadı, taranan sayı 0. Önceki Claude teknik erişim notu bu kontrolle güncellendi.",
+   "kullanim_notu": "Scribd Global Terms 9.1(a): otomatik erişim, metin/veri madenciliği ve sistematik içerik veritabanı oluşturma yasak. Kullanıcı ipuçları kaynak taraması sayılmaz.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "Toplu tarama yapılmadı: kullanım kısıtı",
+     "url": "https://www.scribd.com/document/1066220026/02-Question-Bank-Topicwise-200Q"
+    }
+   },
+   "kontrol_tarihi": "2026-10-12",
+   "kullanim": "toplu_aktarım_yasak",
+   "kullanim_url": "https://support.scribd.com/hc/en-us/articles/210129326-Global-Terms-of-Use"
+  },
+  {
+   "id": "linx-airlaw",
+   "ad": "Linx Aviation — Air Law",
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+   "tur": "pdf",
+   "ipucu": "Tırmanış/alçalış, soru 117",
+   "erisim": "acik",
+   "erisim_notu": "Herkese açık PDF, giriş/duvar yok; curl ile 1 indirme. 24 sayfa, metin katmanlı (pdftotext -layout), OCR gerekmedi. Cevap anahtarı: PDF 2. sayfadaki not 'The correct answer under a. During the exam the order of answers will be different.' — kaynağın açık kuralı gereği her soruda doğru cevap ilk şık (a), dogru=0. Ayrı anahtar sayfası yok. UYARI: genel kural bazı sorularda standart bilgiyle çelişiyor görünüyor (ör. 91, 92, 99, 102, 117, 122-126, 149); özellikle 89. sorudan sonra a) şıkkı her zaman güvenilir değil.",
+   "kullanim_notu": "robots.txt yalnız /wp-admin/ yasaklıyor (PDF yolu serbest). PDF'te telif/kullanım şartı yok; PDF altbilgisinde 'Latest information about the exam can be found at www.cad.gov.rs/osoblje.php'; site altbilgisi 'Copyright 2024, Linx Aviation ATO'.",
+   "taranan": {
+    "010": {
+     "sayi": 150,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf"
+    }
+   },
+   "access_checked_at": "2026-10-12",
+   "access": "public PDF successfully opened with web tool",
+   "usage": "No explicit bulk question-bank reproduction licence identified; only source locators and independently worded rule-based questions are delivered. Public accessibility is not treated as a republication licence.",
+   "scan": "All raw questions 1–150 reviewed, live PDF verified accessible; no bypass used.",
+   "total_scanned": 150,
+   "counts": {
+    "existing": 59,
+    "review": 36,
+    "new": 48,
+    "duplicate_new": 7
+   },
+   "raw_answer_status": "First-option key unreliable and not used as authority",
+   "karar_sayilari": {
+    "existing": 59,
+    "review": 36,
+    "new": 23,
+    "out_of_scope": 27,
+    "duplicate_new": 5
+   },
+   "yeni_benzersiz": 23
+  },
+  {
+   "id": "pc2-010",
+   "ad": "010 Progress Check 2",
+   "url": "https://www.scribd.com/document/774640527/010-PC2",
+   "tur": "scribd",
+   "ipucu": "IFR/non-RVSM, soru 4",
+   "erisim": "kismi",
+   "erisim_notu": "Codex 2026-10-12: herkese açık önizleme veya kaynak üst bilgisi erişilebilir. Kullanım koşulları toplu soru bankası aktarımına izin vermiyor; soru taraması yapılmadı, taranan sayı 0. Önceki Claude teknik erişim notu bu kontrolle güncellendi.",
+   "kullanim_notu": "Scribd Global Terms 9.1(a): otomatik erişim, metin/veri madenciliği ve sistematik içerik veritabanı oluşturma yasak. Kullanıcı ipuçları kaynak taraması sayılmaz.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "Toplu tarama yapılmadı: kullanım kısıtı",
+     "url": "https://www.scribd.com/document/774640527/010-PC2"
+    }
+   },
+   "kontrol_tarihi": "2026-10-12",
+   "kullanim": "toplu_aktarım_yasak",
+   "kullanim_url": "https://support.scribd.com/hc/en-us/articles/210129326-Global-Terms-of-Use"
+  },
+  {
+   "id": "caab-airlaw",
+   "ad": "Bangladesh CAA — Air Law (validation)",
+   "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+   "tur": "pdf",
+   "ipucu": "Transition Level, soru 174",
+   "erisim": "acik",
+   "erisim_notu": "Herkese açık PDF; giriş, ödeme, CAPTCHA ya da hız sınırı yok. CAAB 'Question Bank' sayfasında (https://ops.caab.gov.bd/sub-menu-content/4/115/152, 'Last updated: 1st December 2022') 'Air Law Validation Question Bank' bağlantısı olarak duruyor. PDF 31 sayfa, 493.356 bayt, Word 2013 çıktısı, metin katmanlı (gömülü görüntü yok). CEVAP ANAHTARI YOK: sonda anahtar sayfası yok, hiçbir şık işaretli/kalın/renkli değil (kalın yazı yalnız soru kökleri; sayfaların renk taramasında renkli piksel çıkmadı). Bu yüzden 250 sorunun hepsinde dogru=null, dogru_dayanak='yok'. Çıkarım: pdftotext -layout ile ayrıştırıldı; yerleşim kaynaklı boşluklar ('sh ould', 'cen tre') pdftotext -raw sözlüğüyle 13 yerde onarıl",
+   "kullanim_notu": "robots.txt: 'User-agent: *' / 'Disallow:' (boş, hiçbir yol yasak değil). Site altbilgisi: genel 'All Rights Reserved' (CAAB, 2022); 'Disclaimer' bağlantısı yalnız menü iskeleti döndürdü, kopyalama/kazıma yasağı içeren metin görülmedi. Soru bankası sitede kamuya açık indirme olarak yayımlanmış.",
+   "taranan": {
+    "010": {
+     "sayi": 250,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf"
+    }
+   },
+   "access_checked_at": "2026-10-12",
+   "access": "public PDF successfully opened with web tool",
+   "usage": "No explicit bulk question-bank reproduction licence identified; only source locators and independently worded rule-based questions are delivered. Public accessibility is not treated as a republication licence.",
+   "scan": "All raw questions 1–250 reviewed, live PDF verified accessible; no bypass used.",
+   "total_scanned": 250,
+   "counts": {
+    "existing": 53,
+    "new": 27,
+    "review": 50,
+    "out_of_scope": 111,
+    "duplicate_new": 9
+   },
+   "raw_answer_status": "No answer key",
+   "karar_sayilari": {
+    "existing": 54,
+    "new": 11,
+    "review": 50,
+    "out_of_scope": 130,
+    "duplicate_new": 5
+   },
+   "yeni_benzersiz": 14
+  },
+  {
+   "id": "quizvds",
+   "ad": "QuizVDS — ATPL Air Law",
+   "url": "https://quizvds.it/en-en/quiz/atpl/air-law/306/refers",
+   "tur": "web",
+   "ipucu": "Kabotaj",
+   "erisim": "kismi",
+   "erisim_notu": "Codex 2026-10-12: herkese açık önizleme veya kaynak üst bilgisi erişilebilir. Kullanım koşulları toplu soru bankası aktarımına izin vermiyor; soru taraması yapılmadı, taranan sayı 0. Önceki Claude teknik erişim notu bu kontrolle güncellendi.",
+   "kullanim_notu": "QuizVDS şartları Madde9-10: izinsiz çoğaltma, dağıtım, türev eser ve bot/otomatik betik kullanımı yasak.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "Toplu tarama yapılmadı: kullanım kısıtı",
+     "url": "https://quizvds.it/en-en/quiz/atpl/air-law/306/refers"
+    }
+   },
+   "kontrol_tarihi": "2026-10-12",
+   "kullanim": "toplu_aktarım_yasak",
+   "kullanim_url": "https://quizvds.it/en-en/termini-condizioni"
+  },
+  {
+   "id": "furious",
+   "ad": "Furious ATPL — MCQ exam",
+   "url": "https://www.furious-atpl.com/mcq-exam/answer%2C1-training-professional",
+   "tur": "web",
+   "ipucu": "ICAO / Chicago",
+   "erisim": "kismi",
+   "erisim_notu": "Codex 2026-10-12: herkese açık önizleme veya kaynak üst bilgisi erişilebilir. Kullanım koşulları toplu soru bankası aktarımına izin vermiyor; soru taraması yapılmadı, taranan sayı 0. Önceki Claude teknik erişim notu bu kontrolle güncellendi.",
+   "kullanim_notu": "Furious ATPL yasal bildirimi: elektronik ortamda kısmen veya tamamen yeniden üretim sahibinin açık iznine bağlı.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "Toplu tarama yapılmadı: kullanım kısıtı",
+     "url": "https://www.furious-atpl.com/mcq-exam/answer%2C1-training-professional"
+    }
+   },
+   "kontrol_tarihi": "2026-10-12",
+   "kullanim": "toplu_aktarım_yasak",
+   "kullanim_url": "https://www.furious-atpl.com/mcq-exam/pageplus_3-legal-notices"
+  },
+  {
+   "id": "lahmacun",
+   "ad": "1 Lahmacun İşaretsiz",
+   "url": "https://www.scribd.com/document/856014115/1-Lahmacun-%C4%B0%C5%9Faretsiz",
+   "tur": "scribd",
+   "ipucu": "TORA, soru 390",
+   "erisim": "kismi",
+   "erisim_notu": "Codex 2026-10-12: herkese açık önizleme veya kaynak üst bilgisi erişilebilir. Kullanım koşulları toplu soru bankası aktarımına izin vermiyor; soru taraması yapılmadı, taranan sayı 0. Önceki Claude teknik erişim notu bu kontrolle güncellendi.",
+   "kullanim_notu": "Scribd Global Terms 9.1(a): otomatik erişim, metin/veri madenciliği ve sistematik içerik veritabanı oluşturma yasak. Kullanıcı ipuçları kaynak taraması sayılmaz.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "Toplu tarama yapılmadı: kullanım kısıtı",
+     "url": "https://www.scribd.com/document/856014115/1-Lahmacun-%C4%B0%C5%9Faretsiz"
+    }
+   },
+   "kontrol_tarihi": "2026-10-12",
+   "kullanim": "toplu_aktarım_yasak",
+   "kullanim_url": "https://support.scribd.com/hc/en-us/articles/210129326-Global-Terms-of-Use"
+  },
+  {
+   "id": "gdh-ppla",
+   "ad": "GDH PPL(A) English Question Bank",
+   "url": "https://pdfcoffee.com/gdh-ppl-a-question-bank-eng-pdf-free.html",
+   "tur": "web",
+   "ipucu": "genel",
+   "erisim": "kismi",
+   "erisim_notu": "Codex 2026-10-12: herkese açık önizleme veya kaynak üst bilgisi erişilebilir. Kullanım koşulları toplu soru bankası aktarımına izin vermiyor; soru taraması yapılmadı, taranan sayı 0. Önceki Claude teknik erişim notu bu kontrolle güncellendi.",
+   "kullanim_notu": "PDFCoffee şartları otomatik bilgi toplamayı açık izin olmadan yasaklıyor. Üçüncü taraf GDH belgesinin yeniden kullanım izni doğrulanmadı.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "Toplu tarama yapılmadı: kullanım kısıtı",
+     "url": "https://pdfcoffee.com/gdh-ppl-a-question-bank-eng-pdf-free.html"
+    }
+   },
+   "kontrol_tarihi": "2026-10-12",
+   "kullanim": "toplu_aktarım_yasak",
+   "kullanim_url": "https://pdfcoffee.com/term"
+  },
+  {
+   "id": "dauntless",
+   "ad": "Dauntless GroundSchool ATPL test banks",
+   "url": "https://www.dauntless-soft.com/PRODUCTS/GroundSchoolATPL/TestBanks/air_law_and_atc_procedures/010-01-01_the_convention_of_chicago/",
+   "tur": "web",
+   "ipucu": "Chicago Convention",
+   "erisim": "kismi",
+   "erisim_notu": "Codex 2026-10-12: herkese açık önizleme veya kaynak üst bilgisi erişilebilir. Kullanım koşulları toplu soru bankası aktarımına izin vermiyor; soru taraması yapılmadı, taranan sayı 0. Önceki Claude teknik erişim notu bu kontrolle güncellendi.",
+   "kullanim_notu": "Dauntless kişisel görüntülemeye izin veriyor; kamuya açık/ticari kullanım ve veri toplama yasağı bildiriyor.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "Toplu tarama yapılmadı: kullanım kısıtı",
+     "url": "https://www.dauntless-soft.com/PRODUCTS/GroundSchoolATPL/TestBanks/air_law_and_atc_procedures/010-01-01_the_convention_of_chicago/"
+    }
+   },
+   "kontrol_tarihi": "2026-10-12",
+   "kullanim": "toplu_aktarım_yasak",
+   "kullanim_url": "https://www.dauntless-soft.com/PRODUCTS/GroundSchoolATPL/TestBanks/air_law_and_atc_procedures/010-01-01_the_convention_of_chicago/"
+  },
+  {
+   "id": "x-cad-rs",
+   "ad": "Sırbistan Sivil Havacılık Direktörlüğü (CAD) — PPL(A) Air Law teorik sınav soruları (Form CAD-PEL-OB-1001)",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
+   "tur": "pdf",
+   "kesif": "benzer kaynak taraması",
+   "erisim": "acik",
+   "erisim_notu": "Current plainGET HTTP200; no authentication or access barrier bypass. Existing raw question candidates audited by disposition; original figures/old regional charts flagged separately.",
+   "kullanim_notu": "No bulk transfer of copyrighted source wording. Novel protected-wording/permission uncertainties retained for review; any active additions are independently authored legal-fact questions with current primary-rule citations. Website accessibility is not a reuse licence.",
+   "taranan": {
+    "010": {
+     "sayi": 79,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf"
+    },
+    "080": {
+     "sayi": 150,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Principles%20of%20flight.pdf"
+    },
+    "020": {
+     "sayi": 150,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Aircraft%20%20general%20knowledge.pdf"
+    },
+    "030": {
+     "sayi": 148,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf"
+    },
+    "050": {
+     "sayi": 148,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Metheorology.pdf"
+    },
+    "060": {
+     "sayi": 138,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf"
+    },
+    "040": {
+     "sayi": 150,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Human%20performance.pdf"
+    },
+    "070": {
+     "sayi": 150,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Operational%20procedures.pdf"
+    },
+    "090": {
+     "sayi": 137,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Comunication.pdf"
+    }
+   },
+   "checked_at": "2026-10-12",
+   "karar_sayilari": {
+    "existing": 30,
+    "out_of_scope": 22,
+    "review": 13,
+    "duplicate_new": 14
+   },
+   "yeni_benzersiz": 13
+  },
+  {
+   "id": "x-austrocontrol-ecqb-ppl",
+   "ad": "Austro Control — ECQB-PPL(A) soru kataloğu özeti (Aircademy/LPLUS, v2015.4): 10 Air Law, 51 Principles of Flight",
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
+   "tur": "pdf",
+   "kesif": "benzer kaynak taraması",
+   "erisim": "acik",
+   "erisim_notu": "Current plainGET HTTP200; no authentication or access barrier bypass. Existing raw question candidates audited by disposition; original figures/old regional charts flagged separately.",
+   "kullanim_notu": "No bulk transfer of copyrighted source wording. Novel protected-wording/permission uncertainties retained for review; any active additions are independently authored legal-fact questions with current primary-rule citations. Website accessibility is not a reuse licence.",
+   "taranan": {
+    "010": {
+     "sayi": 134,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf"
+    },
+    "080": {
+     "sayi": 149,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-51-PFA_EN.pdf"
+    }
+   },
+   "checked_at": "2026-10-12",
+   "karar_sayilari": {
+    "review": 74,
+    "existing": 34,
+    "out_of_scope": 19,
+    "duplicate_new": 5,
+    "new": 2
+   },
+   "yeni_benzersiz": 5
+  },
+  {
+   "id": "x-traficom-lapl-ppl",
+   "ad": "Traficom (Finlandiya) — LAPL/PPL question bank AIRLAW 010 (Rev. 1.8, 2018)",
+   "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+   "tur": "pdf",
+   "kesif": "benzer kaynak taraması",
+   "erisim": "acik",
+   "erisim_notu": "Current plainGET HTTP200; no authentication or access barrier bypass. Existing raw question candidates audited by disposition; original figures/old regional charts flagged separately.",
+   "kullanim_notu": "No bulk transfer of copyrighted source wording. Novel protected-wording/permission uncertainties retained for review; any active additions are independently authored legal-fact questions with current primary-rule citations. Website accessibility is not a reuse licence.",
+   "taranan": {
+    "010": {
+     "sayi": 181,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf"
+    },
+    "080": {
+     "sayi": 141,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://www.traficom.fi/files/media/file/PPL080ENG%2011102018.pdf"
+    },
+    "020": {
+     "sayi": 159,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://www.traficom.fi/files/media/file/PPL020ENG%2011102018.pdf"
+    },
+    "030": {
+     "sayi": 165,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://www.traficom.fi/files/media/file/PPL030ENG%2011102018.pdf"
+    },
+    "050": {
+     "sayi": 144,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://www.traficom.fi/files/media/file/PPL050ENG%2011102018.pdf"
+    },
+    "060": {
+     "sayi": 170,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf"
+    },
+    "040": {
+     "sayi": 159,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://www.traficom.fi/files/media/file/PPL040ENG%2011102018.pdf"
+    },
+    "090": {
+     "sayi": 137,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://www.traficom.fi/files/media/file/PPL090ENG%2011102018.pdf"
+    }
+   },
+   "checked_at": "2026-10-12",
+   "karar_sayilari": {
+    "review": 68,
+    "duplicate_new": 23,
+    "existing": 64,
+    "out_of_scope": 26
+   },
+   "yeni_benzersiz": 19
+  },
+  {
+   "id": "x-sonyaklasma",
+   "ad": "Son Yaklaşma — PPL Soruları / Hava Hukuku (ücretsiz örnek)",
+   "url": "https://sonyaklasma.com/ppl-sorulari/hava-hukuku",
+   "tur": "web",
+   "kesif": "benzer kaynak taraması",
+   "erisim": "kismi",
+   "erisim_notu": "Current plainGET HTTP200; no authentication or access barrier bypass. Existing raw question candidates audited by disposition; original figures/old regional charts flagged separately.",
+   "kullanim_notu": "No bulk transfer of copyrighted source wording. Novel protected-wording/permission uncertainties retained for review; any active additions are independently authored legal-fact questions with current primary-rule citations. Website accessibility is not a reuse licence.",
+   "taranan": {
+    "010": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://sonyaklasma.com/ppl-sorulari/hava-hukuku#soru-1"
+    },
+    "080": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri#soru-2"
+    },
+    "020": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi#soru-2"
+    },
+    "030": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama#soru-7"
+    },
+    "050": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji#soru-10"
+    },
+    "060": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon#soru-2"
+    }
+   },
+   "checked_at": "2026-10-12",
+   "karar_sayilari": {
+    "existing": 10
+   },
+   "yeni_benzersiz": 0
+  },
+  {
+   "id": "x-tc-tp13014",
+   "ad": "Transport Canada — TP 13014E Sample Examination (Recreational Pilot Permit / Private Pilot Licence — Aeroplane)",
+   "url": "https://www.tc.gc.ca/publications/EN/TP13014/PDF/HR/TP13014E.PDF",
+   "tur": "pdf",
+   "kesif": "benzer kaynak taraması",
+   "erisim": "acik",
+   "erisim_notu": "Current plainGET HTTP200; no authentication or access barrier bypass. Existing raw question candidates audited by disposition; original figures/old regional charts flagged separately.",
+   "kullanim_notu": "Explicit personal/public noncommercial reuse with attribution; commercial use requires separate permission. Current TransportCanada primary publication page confirms.",
+   "taranan": {
+    "010": {
+     "sayi": 20,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://www.tc.gc.ca/publications/EN/TP13014/PDF/HR/TP13014E.PDF"
+    },
+    "080": {
+     "sayi": 6,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+    },
+    "020": {
+     "sayi": 10,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+    },
+    "030": {
+     "sayi": 5,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+    },
+    "050": {
+     "sayi": 30,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+    },
+    "060": {
+     "sayi": 21,
+     "kapsam": "Her soru için karar kaydı; kapsam kaynak notunda",
+     "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf"
+    }
+   },
+   "checked_at": "2026-10-12",
+   "karar_sayilari": {
+    "out_of_scope": 14,
+    "duplicate_new": 1,
+    "existing": 2,
+    "review": 2,
+    "new": 1
+   },
+   "yeni_benzersiz": 2
+  },
+  {
+   "id": "x-studylib-ppl-tr",
+   "ad": "studylib — PPL Türkçe soru havuzu (Hava Hukuku PPL(A))",
+   "url": "https://studylib.net/doc/27619056/ppl-t%C3%BCrk%C3%A7e-soru-havuzu",
+   "tur": "web",
+   "kesif": "benzer kaynak taraması",
+   "erisim": "engelli",
+   "erisim_notu": "Current plainGET returnsHTTP403; verification wall not bypassed. No questions scanned.",
+   "kullanim_notu": "No bulk transfer of copyrighted source wording. Novel protected-wording/permission uncertainties retained for review; any active additions are independently authored legal-fact questions with current primary-rule citations. Website accessibility is not a reuse licence.",
+   "taranan": {
+    "010": {
+     "sayi": 0,
+     "gorulen": 0,
+     "kapsam": "",
+     "url": "https://studylib.net/doc/27619056/ppl-t%C3%BCrk%C3%A7e-soru-havuzu"
+    }
+   },
+   "checked_at": "2026-10-12"
+  },
+  {
+   "id": "x-rotatepilot",
+   "ad": "Rotate — Air Law question pages",
+   "url": "https://rotatepilot.com/questions/air-law",
+   "tur": "web",
+   "kesif": "ipucu araması",
+   "erisim": "engelli",
+   "kullanim_notu": "Kullanım şartları (madde 6): içeriğin izinsiz çoğaltılması/türev eser yasak. Taranan 3 tekil sayfa soru bankasına ALINMADI, ham veri silindi.",
+   "erisim_notu": "Sayfalar herkese açık; kullanım şartları nedeniyle kullanılmadı."
+  },
+  {
+   "id": "x-pdfcoffee-caab-cpl",
+   "ad": "pdfcoffee — CAAB CPL Question Bank Air Law (kullanıcı yüklemesi)",
+   "url": "https://pdfcoffee.com/cpl-question-bank-air-law-pdf-free.html",
+   "tur": "web",
+   "kesif": "ipucu araması",
+   "erisim": "engelli",
+   "kullanim_notu": "pdfcoffee.com şartları otomatik veri toplamayı izinsiz yasaklıyor; 2 soruluk önizleme parçası ham veride tutulmadı.",
+   "erisim_notu": "Kullanılmadı (kullanım şartları)."
+  },
+  {
+   "id": "x-aircademy-ecqb",
+   "ad": "Aircademy — ECQB-PPL (resmî EASA soru bankası, etkileşimli uygulama)",
+   "url": "https://aircademy.com/ecqb-ppl",
+   "tur": "web",
+   "kesif": "benzer kaynak taraması",
+   "erisim": "engelli",
+   "kullanim_notu": "Telif saklı ('subject to copyright… contact copyright@aircademy.com'); sorular yalnız etkileşimli uygulamada, kazınmadı.",
+   "erisim_notu": "Taranmadı."
+  },
+  {
+   "id": "ref-335a0906af67",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aerodromes-regulation-eu?erules-id=ERULES-1963177438-2368",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-b2a2fce33196",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-atm-ans-regulation-eu?erules-id=ERULES-1963177438-3335",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-7d625398a6c9",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9812",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-a1e679d2bf5e",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aerodromes-regulation-eu?erules-id=ERULES-1963177438-2368",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-0001962ec35a",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aerodromes-regulation-eu?erules-id=ERULES-1963177438-2468",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-92e7199142f2",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-ec8eb9b194d7",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aerodromes-regulation-eu?erules-id=ERULES-1963177438-2368",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-63230d56c662",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-20a12f2f5d77",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-70366d16fabe",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e061b8de5a9f",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9812",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e9ab49c613f0",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-atm-ans-regulation-eu?erules-id=ERULES-1963177438-3073",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-acdf2d79a2c9",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-aerodromes-regulation-eu?erules-id=ERULES-1963177438-2468",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e7e094ac25b9",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-4b8787ca3b1b",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e4e2911e6c0a",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-8d3ebb925a82",
+   "ad": "Cevap doğrulama · icao.int",
+   "url": "https://www.icao.int/sites/default/files/publications/DocSeries/7300_cons_CH.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-5ae8a4623c17",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-8eddd211f170",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-5ac2a0975478",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-c327f963f91c",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-1bafee6390ce",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-006f37051536",
+   "ad": "Cevap doğrulama · icao.int",
+   "url": "https://www.icao.int/sites/default/files/publications/DocSeries/7300_cons_CH.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-cff6e180e43f",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-da52deaa0d70",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/sites/default/files/dfu/ANNEX%2011%20Checklist%20%28for%20info%20only%29.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-23485b2ba6a1",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-f27220191f3a",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e28aba93223a",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9812",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-a5e6a83793b7",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9812",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-beac96378bf3",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-987aae43c219",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-58a6ab6bee0d",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e96983221031",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-b38613a07452",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-3f53ee7bdcf9",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-58e0e565e08a",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-77a34bb1e4e6",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-239e2bab6b92",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-897fb6f361ff",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-2c7774ceb827",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-3d3951f9bf96",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-60f700b574ad",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-ed74d0dc5077",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-2a2254924603",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-18537",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-4de7142bdc11",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-46cc91e6de6c",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-1c1f29ba518a",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-181599430084",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-df2a03a25e91",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9921",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-778692be4a43",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9921",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-6fd0511fbbce",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9921",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-af16b5013651",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-a3a4aa6b54c9",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-b6127af8ec74",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-c36686a19839",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-057b8bcf0324",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-86ab8647bc7c",
+   "ad": "Cevap doğrulama · icao.int",
+   "url": "https://www.icao.int/sites/default/files/publications/DocSeries/7300_cons_CH.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-4c85b5a597c5",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9888",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-42fd927e4c0f",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9812",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-31a742350baa",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-6e5e5c501d79",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-c6345dc5e37c",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-f084a2a9f940",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-7889f9fe464d",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-f5c7122f7f70",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-03b00af63d2d",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-2259ee9ceb17",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e55e3286961c",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-12537deb3451",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-f2750024d0fa",
+   "ad": "Cevap doğrulama · icao.int",
+   "url": "https://www.icao.int/sites/default/files/publications/DocSeries/7300_cons_CH.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e3b133d684e7",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-73f69858f04b",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-13601",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-a8df89d5025c",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-18537",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-b7eb549a4218",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-13601",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-444aeb7d58cb",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9812",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-1d2bccd13a65",
+   "ad": "Cevap doğrulama · icao.int",
+   "url": "https://www.icao.int/sites/default/files/2024-12/7300_9ed.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-ed09b2b0a3c8",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-ebac663f2c62",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-7c753662a4f5",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-small-rotorcraft-cs-27?page=23",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-6bc9bb00fbdf",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-90904f589a5b",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-b0f32fd59dca",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-2387d06c2b37",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-11607",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-63829277da38",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9921",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-18309f930adf",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-2cd680a8e9c4",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-13601",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-12fdfc35d249",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-air-operations?erules-id=ERULES-1963177438-11607",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-ed9943fecce0",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-atm-ans-regulation-eu?erules-id=ERULES-1963177438-17753",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-440db8b799e4",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-6da04cc1f62c",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/downloads/115485/en",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-bb730169e1e1",
+   "ad": "Cevap doğrulama · SERA.5001, Table S5-1 and footnotes",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-bd1103ffb5e3",
+   "ad": "Cevap doğrulama · SERA.9010(a)(3)",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-59be465c0383",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-standardised-european?erules-id=ERULES-1963177438-9807",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-131d4ea67aaf",
+   "ad": "Cevap doğrulama · easa.europa.eu",
+   "url": "https://www.easa.europa.eu/en/document-library/easy-access-rules/online-publications/easy-access-rules-atm-ans-regulation-eu?erules-id=ERULES-1963177438-17691",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-37595a8a0042",
+   "ad": "Cevap doğrulama · 'Control Surface Design: Keeping them Balanced' — offset (set-back) hinge-line balance",
+   "url": "https://avweb.com/flight-safety/control-surface-design-keeping-them-balanced/",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-f873f58eab01",
+   "ad": "Cevap doğrulama · Chapter 5, 'Free Directional Oscillations (Dutch Roll)', p. 5-20: coupled lateral/directional oscillation, roll and yaw out of phase",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-0c7aae58cfda",
+   "ad": "Cevap doğrulama · Chapter 3 'Icing Effects, Protection, and Detection', para. a 'Stall': CLmax reduced, stall angle lower, stall speed increased",
+   "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_91-74B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-b2dbb2db8f48",
+   "ad": "Cevap doğrulama · Chapter 7 'Ignition System' (printed p. 7-15): dual ignition with two independent magnetos increases reliability",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-a4f81578105e",
+   "ad": "Cevap doğrulama · TP 13014E, Q27 and answer key 27-(1)",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-c2b5f79c5ac7",
+   "ad": "Cevap doğrulama · AC 43-215, purpose and para. on compass swing: compensators adjusted, then a correction card prepared for remaining error",
+   "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_43-215.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-c320567b640c",
+   "ad": "Cevap doğrulama · Chapter 7 'Fuel Grades': the grade designates antiknock value; higher grades withstand more pressure without detonating",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-b2d713a85a06",
+   "ad": "Cevap doğrulama · TP 13014E, Q26 and answer key 26-(4)",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e8daef6f3e12",
+   "ad": "Cevap doğrulama · Chapter 7 'Induction Systems' / 'Carburetor Systems' (printed p. 7-7/7-8): the carburetor mixes fuel and air before the mixture enters the intake manifold",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-d8b6c9a40683",
+   "ad": "Cevap doğrulama · Chapter 5 'Propeller' (printed p. 5-30): a constant-speed propeller automatically keeps the blade angle adjusted for efficient AOA; low blade angle at take-off",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-37fa4fca5040",
+   "ad": "Cevap doğrulama · Appendix/Definitions 'Rime Ice': a rough, milky, opaque ice formed by the instantaneous freezing of small supercooled droplets",
+   "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_91-74B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-7df22ba3b27a",
+   "ad": "Cevap doğrulama · Chapter 12 (printed p. 12-14): temperature and dew point converge at 4.4 °F per 1,000 ft; spread ÷ convergence rate × 1,000 ft = cloud base AGL",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-2c06d7607b8d",
+   "ad": "Cevap doğrulama · Chapter 12 'Ceiling' (pdf p. 301) and Glossary 'Ceiling': lowest layer reported broken or overcast, or vertical visibility into an obscuration",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-3424d3ab02b8",
+   "ad": "Cevap doğrulama · AIM 5-3-2 'Position Reports': time of passing a VOR is the first complete reversal of the TO/FROM indicator",
+   "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_3.html",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-5486c77bc9f5",
+   "ad": "Cevap doğrulama · 'Rise, Set, and Twilight Definitions': civil twilight ends in the evening when the centre of the Sun is geometrically 6° below the horizon",
+   "url": "https://aa.usno.navy.mil/faq/RST_defs",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-3d9278ff18bb",
+   "ad": "Cevap doğrulama · Tropic of Cancer: northernmost latitude where the Sun can be directly overhead, at the June solstice",
+   "url": "https://en.wikipedia.org/wiki/Tropic_of_Cancer",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-b0e66cf6eeee",
+   "ad": "Cevap doğrulama · Far-sightedness: axial hypermetropia when the eyeball is too short; eyeglasses for far-sightedness have convex lenses",
+   "url": "https://en.wikipedia.org/wiki/Far-sightedness",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-e26dea9bce36",
+   "ad": "Cevap doğrulama · avweb.com",
+   "url": "https://avweb.com/flight-safety/control-surface-design-keeping-them-balanced/",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-5f63f10c3619",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-bf4c77acd4f9",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_91-74B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-2603a019828f",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-1a7b6493551e",
+   "ad": "Cevap doğrulama · tc.canada.ca",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-2daa54cc9d7c",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_43-215.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-94e34947d281",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-5d46c983cb97",
+   "ad": "Cevap doğrulama · tc.canada.ca",
+   "url": "https://tc.canada.ca/sites/default/files/2021-04/tp13014e.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-56670ff54087",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-0b560611e8c0",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-a4017c7bc264",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_91-74B.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-3803a748be8c",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-d2fa8fbc6232",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-9c7ac488c3d2",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_3.html",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-699ea7d463e5",
+   "ad": "Cevap doğrulama · aa.usno.navy.mil",
+   "url": "https://aa.usno.navy.mil/faq/RST_defs",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-05b7660fbb98",
+   "ad": "Cevap doğrulama · en.wikipedia.org",
+   "url": "https://en.wikipedia.org/wiki/Tropic_of_Cancer",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-29352c6eaf38",
+   "ad": "Cevap doğrulama · en.wikipedia.org",
+   "url": "https://en.wikipedia.org/wiki/Far-sightedness",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-d4f06045becf",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-88d5745b64b4",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/14_afh_ch13.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-4b8f2cf6f38a",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-3ff8e2a8236d",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  },
+  {
+   "id": "ref-aba8270b5fdf",
+   "ad": "Cevap doğrulama · faa.gov",
+   "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+   "tur": "resmi-dayanak",
+   "erisim": "acik",
+   "kullanim_notu": "Resmî kural atfı; soru metni bağımsız yazılmıştır."
+  }
+ ]
+}

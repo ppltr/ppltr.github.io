@@ -1,0 +1,114 @@
+{
+ "ders": "050",
+ "bolum": "050-EK",
+ "tarih": "2026-10-13",
+ "yeni": [
+  {
+   "uye": "CAD#30",
+   "ek_uyeler": [
+    "TR#50"
+   ],
+   "bolum": "050-EK",
+   "text": "At the surface the air temperature is +21 °C and the dew point is +7 °C. At approximately what height above the ground can the base of cumulus clouds formed by convection be expected?",
+   "options": [
+    "About 5,600 ft",
+    "About 2,800 ft",
+    "About 8,400 ft",
+    "About 1,400 ft"
+   ],
+   "tr_text": "Yüzeyde hava sıcaklığı +21 °C, çiy noktası +7 °C'dir. Konveksiyonla oluşan kümülüs bulutlarının tabanı yerden yaklaşık hangi yükseklikte beklenir?",
+   "tr_options": [
+    "Yaklaşık 5.600 ft",
+    "Yaklaşık 2.800 ft",
+    "Yaklaşık 8.400 ft",
+    "Yaklaşık 1.400 ft"
+   ],
+   "explanation_tr": "Yükselen doymamış havada sıcaklık ile çiy noktası arasındaki fark 1.000 ft'te yaklaşık 2,5 °C (°C başına ≈ 400 ft) kapanır. Fark 21 − 7 = 14 °C olduğundan taban ≈ 14 × 400 ≈ 5.600 ft AGL olur.",
+   "explanation_en": "In rising unsaturated air the temperature–dew-point spread closes by about 2.5 °C per 1,000 ft (roughly 400 ft per °C). With a 14 °C spread the cloud base is about 14 × 400 ≈ 5,600 ft AGL.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Ch. 12, cloud base from temperature/dew point, p. 12-14"
+    }
+   ]
+  },
+  {
+   "uye": "TR#139",
+   "bolum": "050-EK",
+   "text": "How is the 'ceiling' defined for aviation purposes?",
+   "options": [
+    "The height above the ground of the lowest cloud layer reported as broken or overcast, or the vertical visibility into an obscuration",
+    "The height above the ground of the highest cloud layer covering more than half of the sky",
+    "The height above the ground of the base of any cloud layer, including few and scattered layers",
+    "The height above mean sea level of the tops of the lowest cloud layer"
+   ],
+   "tr_text": "Havacılık amacıyla 'tavan' (ceiling) nasıl tanımlanır?",
+   "tr_options": [
+    "Yerden itibaren BKN ya da OVC bildirilen en alçak bulut tabakasının (ya da sis gibi bir kapanmada dikey görüşün) yüksekliği",
+    "Gökyüzünün yarısından fazlasını kaplayan en yüksek bulut tabakasının yerden yüksekliği",
+    "FEW ve SCT dahil herhangi bir bulut tabakasının tabanının yerden yüksekliği",
+    "En alçak bulut tabakasının üst seviyesinin ortalama deniz seviyesinden yüksekliği"
+   ],
+   "explanation_tr": "Tavan, gökyüzünün yarıdan fazlasını (BKN, 5–7/8 ya da OVC, 8/8) kaplayan en alçak bulut tabakasının yerden yüksekliğidir; kapanmada dikey görüş tavan sayılır. FEW ve SCT tabakalar tavan oluşturmaz.",
+   "explanation_en": "The ceiling is the height above the ground of the lowest layer covering more than half the sky (BKN 5–7/8 or OVC 8/8); vertical visibility counts when the sky is obscured. FEW and SCT layers do not form a ceiling.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Ch. 12 'Ceiling' and Glossary"
+    }
+   ]
+  },
+  {
+   "uye": "CAD#122",
+   "bolum": "050-EK",
+   "text": "A rough, milky, opaque ice deposit that protrudes forward from the leading edge of an aerofoil, formed by the instantaneous freezing of small supercooled droplets, is called:",
+   "options": [
+    "Rime ice",
+    "Clear ice",
+    "Hoar frost",
+    "Rain ice (glaze)"
+   ],
+   "tr_text": "Küçük aşırı soğumuş damlacıkların anında donmasıyla bir kanat profilinin hücum kenarında öne doğru uzayan, pürüzlü, sütlü ve opak buz birikimine ne ad verilir?",
+   "tr_options": [
+    "Rime buzu",
+    "Berrak (clear) buz",
+    "Kırağı (hoar frost)",
+    "Yağmur buzu (glaze)"
+   ],
+   "explanation_tr": "Rime buzu küçük damlacıkların temasla anında donmasıyla oluşur; pürüzlü ve sütlüdür. Büyük damlacıkların yayılarak donduğu berrak buz ise şeffaf ve sert olup daha tehlikelidir.",
+   "explanation_en": "Rime ice forms when small supercooled droplets freeze instantly on contact, giving a rough, milky deposit. Clear ice, from larger droplets that spread before freezing, is transparent, hard and usually more dangerous.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_91-74B.pdf",
+     "section": "AC 91-74B, definition of 'Rime Ice'"
+    }
+   ]
+  }
+ ],
+ "inceleme": {
+  "CAD#103": "Kaynak anahtarı (+3 °C) ISA gradyanı (≈ +4 °C) ile örtüşmüyor; cevap doğrulanamadı.",
+  "TR#103": "Kaynak anahtarı (+3 °C) ISA gradyanı (≈ +4 °C) ile örtüşmüyor; cevap doğrulanamadı.",
+  "CAD#65": "'Regional QNH' tanımı ulusal AIP/ICAO metniyle doğrulanıp eklenmeli; ders müfredatında ayrı başlık olarak görünmüyor.",
+  "CAD#19": "Yüzey rüzgârı için pratik kuralın katsayıları kaynaklarda farklı (30° kayma, hız oranı); doğrulanmadan eklenmedi.",
+  "TR#65": "Yüzey rüzgârı için pratik kuralın katsayıları kaynaklarda farklı; doğrulanmadan eklenmedi."
+ },
+ "disi": {
+  "CAD#35": "Konu yeni soruda (bulut tabanı: sıcaklık–çiy noktası farkı) işlendi; aynı kuralın başka sayısal örneği olduğu için ayrı soru açılmadı.",
+  "TR#115": "Konu yeni soruda (bulut tabanı: sıcaklık–çiy noktası farkı) işlendi; aynı kuralın başka sayısal örneği olduğu için ayrı soru açılmadı.",
+  "CAD#83": "Konu yeni soruda (bulut tabanı: sıcaklık–çiy noktası farkı) işlendi; aynı kuralın başka sayısal örneği olduğu için ayrı soru açılmadı.",
+  "TR#109": "Konu yeni soruda (bulut tabanı: sıcaklık–çiy noktası farkı) işlendi; aynı kuralın başka sayısal örneği olduğu için ayrı soru açılmadı.",
+  "CAD#96": "Konu yeni soruda (bulut tabanı: sıcaklık–çiy noktası farkı) işlendi; aynı kuralın başka sayısal örneği olduğu için ayrı soru açılmadı.",
+  "TR#114": "Konu yeni soruda (bulut tabanı: sıcaklık–çiy noktası farkı) işlendi; aynı kuralın başka sayısal örneği olduğu için ayrı soru açılmadı.",
+  "CAD#94": "Konu yeni soruda (bulut tabanı: sıcaklık–çiy noktası farkı) işlendi; aynı kuralın başka sayısal örneği olduğu için ayrı soru açılmadı.",
+  "TR#113": "Konu yeni soruda (bulut tabanı: sıcaklık–çiy noktası farkı) işlendi; aynı kuralın başka sayısal örneği olduğu için ayrı soru açılmadı.",
+  "TR#123": "Tavan bu soruda bir METAR metninden okunuyor; ceiling kavramı yeni soruda işlendi.",
+  "CAD#89": "Tavan bu soruda bir METAR metninden okunuyor; ceiling kavramı yeni soruda işlendi."
+ },
+ "var": {
+  "TC#52": 15536,
+  "TC#54": 15337,
+  "CAD#33": 15436,
+  "TR#132": 15436
+ },
+ "varsayilan_disi": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (bulut türleri, cepheler, fırtına evreleri, METAR/TAF çözümleme, buzlanma, rüzgâr, ATIS vb.) ya da PPL kapsamı dışında (Kanada/İsviçre/Finlandiya'ya özgü ürün ve kurallar, SIGMET çözümleme); yeni bilgi eklemediği için ayrı soru açılmadı."
+}

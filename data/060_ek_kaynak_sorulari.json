@@ -1,0 +1,35 @@
+{
+ "subject_code": "060",
+ "subject_name": "Navigation",
+ "origin": "ek",
+ "source": "Dış kaynaklarda saptanan eksik soru tipleri; bağımsız anlatım ve resmî cevap kontrolü (2026-10-12)",
+ "answer_convention": "İki dilde aynı sırada; ilk şık doğru. Belirsiz cevap aktif bankada yok.",
+ "id_convention": "Kalıcı idler_060.json; eski veya emekli kimlik yeniden kullanılmaz.",
+ "sections": {
+  "060-EK": "Additional Questions"
+ },
+ "questions": [
+  {
+   "id": 66002,
+   "section": "060-EK",
+   "text": "Evening civil twilight ends when:",
+   "options": [
+    "the centre of the Sun's disc is 6° below the horizon",
+    "the upper limb of the Sun touches the horizon",
+    "the centre of the Sun's disc is 12° below the horizon",
+    "the centre of the Sun's disc is 18° below the horizon"
+   ]
+  },
+  {
+   "id": 66003,
+   "section": "060-EK",
+   "text": "At the northern summer (June) solstice the Sun is directly overhead at noon over:",
+   "options": [
+    "the Tropic of Cancer (about 23.5° N)",
+    "the Tropic of Capricorn (about 23.5° S)",
+    "the equator",
+    "the North Pole"
+   ]
+  }
+ ]
+}

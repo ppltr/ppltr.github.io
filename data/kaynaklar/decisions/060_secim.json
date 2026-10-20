@@ -1,0 +1,109 @@
+{
+ "ders": "060",
+ "bolum": "060-EK",
+ "tarih": "2026-10-13",
+ "yeni": [
+  {
+   "uye": "TR#155",
+   "bolum": "060-EK",
+   "text": "Evening civil twilight ends when:",
+   "options": [
+    "the centre of the Sun's disc is 6° below the horizon",
+    "the upper limb of the Sun touches the horizon",
+    "the centre of the Sun's disc is 12° below the horizon",
+    "the centre of the Sun's disc is 18° below the horizon"
+   ],
+   "tr_text": "Akşam sivil alacakaranlığı ne zaman sona erer?",
+   "tr_options": [
+    "Güneş diskinin merkezi ufkun 6° altına indiğinde",
+    "Güneşin üst kenarı ufka değdiğinde",
+    "Güneş diskinin merkezi ufkun 12° altına indiğinde",
+    "Güneş diskinin merkezi ufkun 18° altına indiğinde"
+   ],
+   "explanation_tr": "Sivil alacakaranlık, Güneş'in merkezi ufkun 6° altına inene kadar sürer; gece bu andan sonra başlar. 12° denizcilik, 18° astronomik alacakaranlığın sınırıdır.",
+   "explanation_en": "Civil twilight lasts until the centre of the Sun is 6° below the horizon, after which night begins. 12° and 18° mark nautical and astronomical twilight.",
+   "answer_verification": [
+    {
+     "url": "https://aa.usno.navy.mil/faq/RST_defs",
+     "section": "'Rise, Set, and Twilight Definitions'"
+    }
+   ]
+  },
+  {
+   "uye": "TR#160",
+   "bolum": "060-EK",
+   "text": "At the northern summer (June) solstice the Sun is directly overhead at noon over:",
+   "options": [
+    "the Tropic of Cancer (about 23.5° N)",
+    "the Tropic of Capricorn (about 23.5° S)",
+    "the equator",
+    "the North Pole"
+   ],
+   "tr_text": "Kuzey yarım kürenin yaz gündönümünde (Haziran) Güneş öğle vakti nerenin tam tepesindedir?",
+   "tr_options": [
+    "Yengeç Dönencesi'nin (yaklaşık 23,5° K)",
+    "Oğlak Dönencesi'nin (yaklaşık 23,5° G)",
+    "Ekvatorun",
+    "Kuzey Kutbu'nun"
+   ],
+   "explanation_tr": "Dünya'nın 23,5°'lik eksen eğikliği nedeniyle Haziran gündönümünde Güneş en kuzeydeki noktasına, Yengeç Dönencesi'ne gelir. Ekinokslarda Güneş ekvatorun, Aralık gündönümünde Oğlak Dönencesi'nin üstündedir.",
+   "explanation_en": "Because of the Earth's 23.5° axial tilt, at the June solstice the Sun reaches its northernmost point, over the Tropic of Cancer. At the equinoxes it is over the equator and at the December solstice over the Tropic of Capricorn.",
+   "answer_verification": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Tropic_of_Cancer",
+     "section": "Tropic of Cancer: Sun overhead at the June solstice"
+    }
+   ]
+  },
+  {
+   "uye": "CAD#95",
+   "ek_uyeler": [],
+   "bolum": "060-EK",
+   "text": "When using a VOR for navigation, how is station passage recognised?",
+   "options": [
+    "By the first complete reversal of the TO/FROM indicator",
+    "When the OFF flag appears",
+    "When the TO/FROM indicator begins to flicker",
+    "When the CDI needle first shows full-scale deflection"
+   ],
+   "tr_text": "Seyrüsefer için VOR kullanırken istasyon geçişi nasıl anlaşılır?",
+   "tr_options": [
+    "TO/FROM göstergesinin ilk tam dönüşümüyle (TO'dan FROM'a)",
+    "OFF bayrağı göründüğünde",
+    "TO/FROM göstergesi titremeye başladığında",
+    "CDI iğnesi ilk kez tam sapma gösterdiğinde"
+   ],
+   "explanation_tr": "İstasyonun tepesinde sinyal kısa süre kaybolur (onay konisi); istasyon geçişi TO/FROM göstergesinin ilk tam ve kalıcı dönmesiyle belirlenir. OFF bayrağı ve titreme istasyona yakın bölgede de görülebilir, güvenilir ölçüt değildir.",
+   "explanation_en": "Directly above the station the signal drops briefly (cone of confusion); passage is taken at the first complete reversal of the TO/FROM indicator. An OFF flag or flicker can also occur near the station and is not a reliable criterion.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap5_section_3.html",
+     "section": "AIM 5-3-2 'Position Reports'"
+    }
+   ]
+  }
+ ],
+ "inceleme": {
+  "CAD#92": "Kaynak anahtarı ('alçak irtifada istasyonun tam üstünde') bilinen davranışla (eğik mesafe hatası yüksek irtifada ve istasyona yakınken en büyüktür) çelişiyor; cevap doğrulanamadı.",
+  "CAD#101": "Ters yön/CDI sapması hesaplarında tam ölçek ve nokta açıları kaynaklara göre değişiyor; cevap doğrulanamadı.",
+  "CAD#72": "Kaynak anahtarı (6,7 NM) CDI beşte bir sapma ve 120 NM mesafe için hesapla tutarlı değil; cevap doğrulanamadı.",
+  "CAD#37": "Dünya'nın ekvator çapı ile ekseni arasındaki fark kaynaklarda farklı veriliyor (43 km ≈ 42,7 km); sayısal tanım kaynaklarla netleştirilmeli."
+ },
+ "disi": {
+  "TR#162": "Konu yeni soruda (Güneş'in dönence/ekinoks konumu) işlendi; aynı bilginin başka bir mevsim sorusu olduğu için ayrı soru açılmadı.",
+  "TR#167": "Konu yeni soruda (Güneş'in dönence/ekinoks konumu) işlendi; aynı bilginin başka bir mevsim sorusu olduğu için ayrı soru açılmadı.",
+  "TR#154": "Konu yeni soruda (sivil alacakaranlık) işlendi; aynı tanımın başka bir ifadesi olduğu için ayrı soru açılmadı.",
+  "TR#156": "Konu yeni soruda (sivil alacakaranlık) işlendi; aynı tanımın başka bir ifadesi olduğu için ayrı soru açılmadı.",
+  "TR#135": "Finlandiya'ya özgü coğrafya sorusu; PPL kapsamı dışında.",
+  "TR#23": "Finlandiya yaz saati dönüşümü ulusal uygulama; PPL kapsamı dışında.",
+  "TR#125": "Finlandiya yerel saati ulusal uygulama; PPL kapsamı dışında.",
+  "TR#132": "Finlandiya yaz saati ulusal uygulama; PPL kapsamı dışında.",
+  "TR#151": "Finlandiya rotasında güneşin yönü: ulusal/örnek senaryo; yeni bilgi eklemiyor.",
+  "TR#152": "Finlandiya rotasında güneş saati: ulusal/örnek senaryo; yeni bilgi eklemiyor.",
+  "TR#124": "Helsinki-Malmi pisti için yanrüzgâr hesabı: sayısal örnek, bankada benzer hesaplar var."
+ },
+ "var": {
+  "CAD#94": 15902
+ },
+ "varsayilan_disi": "Kaynak sorusu tek tek okundu: bankada aynı konu zaten işleniyor (büyük/küçük daire, rhumb line, VOR/DME/ADF/VDF, GPS, ölçek/mesafe ve rüzgâr hesapları vb.), sayısal örnek/ulusal harita bilgisi ya da ders notu dışı; yeni bilgi eklemediği için ayrı soru açılmadı."
+}

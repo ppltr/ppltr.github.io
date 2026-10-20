@@ -1,0 +1,382 @@
+{
+ "questions": {
+  "61001": {
+   "text": "Meydan referans kodu 3 için uçak referans saha uzunluğu hangi aralıktadır?",
+   "options": [
+    "1.200 m dâhil, 1.800 m hariç",
+    "800 m dâhil, 1.200 m hariç",
+    "1.200 m hariç, 1.800 m dâhil",
+    "1.800 m ve üzeri"
+   ]
+  },
+  "61002": {
+   "text": "QNH raporlarına göre meydanda kullanılacak Transition Level’ı hangi operasyonel ATS birimleri belirler?",
+   "options": [
+    "Yaklaşma Kontrol Ofisi veya Meydan Kontrol Kulesi",
+    "Ulusal pilot lisanslandırma otoritesi",
+    "Genel ATC düzenleyici otoritesi",
+    "Yalnızca saha kontrol merkezi"
+   ]
+  },
+  "61003": {
+   "text": "Bir meydanı kontrollü meydan yapan nedir?",
+   "options": [
+    "Meydan trafiğine hava trafik kontrol hizmeti verilmesi",
+    "Daima CTR içinde bulunması",
+    "Birden çok pisti olması",
+    "ATIS yayını bulunması"
+   ]
+  },
+  "61012": {
+   "text": "Hangi geçici AIP değişikliği normalde kısa bildirimin yerine AIP Supplement gerektirir?",
+   "options": [
+    "Üç ay veya daha uzun değişiklik; ya da kısa sürüp kapsamlı metin/grafik isteyen değişiklik",
+    "Yalnız bir yıldan uzun değişiklik",
+    "Her bir dakikalık pist kapanması",
+    "Yalnız kalıcı değişiklik"
+   ]
+  },
+  "61013": {
+   "text": "Normal PAPI yaklaşma eğiminde pilot ne görür?",
+   "options": [
+    "İki kırmızı ve iki beyaz birim",
+    "Dört kırmızı birim",
+    "Dört beyaz birim",
+    "Bir kırmızı ve üç beyaz birim"
+   ]
+  },
+  "61014": {
+   "text": "Kontrollü hava sahasında FL290 altında normal IFR dikey ayırma asgarisi nedir?",
+   "options": [
+    "1.000 ft (300 m)",
+    "500 ft (150 m)",
+    "2.000 ft (600 m)",
+    "2.500 ft (750 m)"
+   ]
+  },
+  "61017": {
+   "text": "Chicago Sözleşmesi’ndeki egemenlik açısından devletin ülkesi neleri kapsar?",
+   "options": [
+    "Kara alanları ve bitişik karasuları",
+    "Yalnız kara alanları",
+    "Bütün bitişik uluslararası suları",
+    "Hizmet verdiği bütün FIR’ları"
+   ]
+  },
+  "61018": {
+   "text": "SERA’ya göre açık deniz üzerindeki uçuşlarda hangi kurallar geçerlidir?",
+   "options": [
+    "İstisnasız ICAO Ek 2 Hava Kuralları",
+    "Yalnız en yakın devletin iç kuralları",
+    "Hiçbir kural uygulanmaz",
+    "Yalnız işletmeci kuralları"
+   ]
+  },
+  "61020": {
+   "text": "Arkadan bir uçağı tırmanarak geçiyorsunuz. Tırmanış yol verme yükümlülüğünü kaldırır mı?",
+   "options": [
+    "Hayır; sağından geçip tamamen geçilene kadar açık kalmalısınız",
+    "Evet, tırmanış öncelik sağlar",
+    "Evet, daha hızlıysanız",
+    "Yalnız diğer uçak da tırmanıyorsa"
+   ]
+  },
+  "61021": {
+   "text": "Buluttaki flaşlı çarpışma önleyici ışıklar pilotun görevini emniyetle yapmasını olumsuz etkiliyor. Azaltılabilir veya kapatılabilir mi?",
+   "options": [
+    "Evet, bu olumsuz etki koşulunda",
+    "Hayır, görev bozulsa da",
+    "Yalnız inişten sonra",
+    "Yalnız gece"
+   ]
+  },
+  "61023": {
+   "text": "ICAO Konseyine teknik ek değişikliklerini inceleyip öneren organ hangisidir?",
+   "options": [
+    "Hava Seyrüsefer Komisyonu",
+    "Tek bir hava yolu şirketi",
+    "Meydan kontrol kulesi",
+    "Yalnız uçağın tescil devleti"
+   ]
+  },
+  "61025": {
+   "text": "ATS terminolojisinde acil durum safhası (emergency phase) neyi ifade eder?",
+   "options": [
+    "Duruma göre belirsizlik, alarm veya tehlike safhasının genel adı",
+    "Yalnız tehlike safhasını",
+    "Yalnız alarm safhasını",
+    "Yalnız ilan edilmiş motor arızasını"
+   ]
+  },
+  "61026": {
+   "text": "Normal VFR uçuş, radyo zorunlu bölge dışında E sınıfında yapılmaktadır. Hangi ifade doğrudur?",
+   "options": [
+    "Sınıf tek başına ATC izni/sürekli çift yönlü telsiz gerektirmez ve VFR’ye ATC ayırması verilmez",
+    "ATC her IFR uçuşundan ayırır",
+    "Daima ATC izni gerekir",
+    "Her VFR için çift yönlü telsiz zorunludur"
+   ]
+  },
+  "61030": {
+   "text": "Yayımlanmış tahditli bölgede yasal uçuş nasıl yapılabilir?",
+   "options": [
+    "Yayımlanan sınırlama koşullarına uyarak veya ilgili devletin izniyle",
+    "Yalnız IFR uçuş planı vererek",
+    "Uçak bulut altındaysa her zaman",
+    "7000 kodunu seçerek"
+   ]
+  },
+  "61031": {
+   "text": "G sınıfında 3.000 ft AMSL veya araziden 1.000 ft eşiklerinden yüksek olanının üstünde, 10.000 ft AMSL altında VFR için normal dikey bulut mesafesi nedir?",
+   "options": [
+    "1.000 ft (300 m)",
+    "500 ft (150 m)",
+    "Yalnız bulut dışında olmak",
+    "2.000 ft (600 m)"
+   ]
+  },
+  "61032": {
+   "text": "Kontrolsüz meydanda farklı trafik paterni belirtilmemişse normal dönüş yönü nedir?",
+   "options": [
+    "Sol",
+    "Sağ",
+    "Mesafeyi kısaltan herhangi bir yön",
+    "Sırayla sol ve sağ"
+   ]
+  },
+  "61033": {
+   "text": "G sınıfında 3.000 ft AMSL veya araziden 1.000 ft eşiklerinden yüksek olanının üstünde, 10.000 ft AMSL altında VFR için normal yatay bulut mesafesi nedir?",
+   "options": [
+    "1.500 m",
+    "300 m",
+    "600 m",
+    "Sabit mesafe olmadan bulut dışında kalmak"
+   ]
+  },
+  "61034": {
+   "text": "SERA’nın normal gündüz özel VFR uçak kuralında pilot en az hangi uçuş görüşünü korumalıdır?",
+   "options": [
+    "1.500 m; bulut dışında ve yer yüzeyi görünür durumda",
+    "Her uçakta 800 m",
+    "Özel VFR’de de 5 km",
+    "Her PPL sahibinde 10 km"
+   ]
+  },
+  "61035": {
+   "text": "Geçiş tabakası geçilirken normal irtifa/uçuş seviyesi referansı nerede değiştirilir?",
+   "options": [
+    "Tırmanışta geçiş irtifasında FL’ye; alçalışta geçiş seviyesinde irtifaya",
+    "Her iki yönde geçiş irtifasında",
+    "Her iki yönde geçiş seviyesinde",
+    "Tırmanışta irtifaya, alçalışta FL’ye"
+   ]
+  },
+  "61041": {
+   "text": "Motorlu uçak ve planör yaklaşık aynı seviyede kesişen rotalarda yaklaşır. Hangisi yol vermelidir?",
+   "options": [
+    "Motorlu uçak",
+    "Planör",
+    "Kategori istisnası olmadan soldaki",
+    "Hiçbiri"
+   ]
+  },
+  "61043": {
+   "text": "VMC’de aynı seviyede kesişen iki uçağın yalnız birinde ATC izni vardır. İzin tek başına yol hakkı verir mi?",
+   "options": [
+    "Hayır; normal yol hakkı kuralları uygulanır",
+    "Evet, izinsiz bütün uçaklara karşı",
+    "Evet, yalnız IFR uçuyorsa",
+    "Evet, uçak daha büyükse"
+   ]
+  },
+  "61045": {
+   "text": "Alçaktaki uçak yüksektekine göre iniş önceliğine sahiptir. Buna rağmen ne yapamaz?",
+   "options": [
+    "Son yaklaşmadaki uçağın önüne kesmek veya onu geçmek",
+    "Herhangi bir yüksek uçaktan önce inmek",
+    "Yaklaşma hızını korumak",
+    "Kuleyle konuşmak"
+   ]
+  },
+  "61047": {
+   "text": "Havadaki sivil bir uçak genel kurallara ek olarak hangi uçuş kurallarına uymalıdır?",
+   "options": [
+    "VFR veya IFR kurallarından birine",
+    "Görüş iyiyse uçuş planından bağımsız daima VFR’ye",
+    "Kontrollü hava sahasında yalnız IFR’ye",
+    "Yalnız işletmeci usullerine"
+   ]
+  },
+  "61048": {
+   "text": "ATC izni neye yetki verir?",
+   "options": [
+    "Diğer kurallar geçerliyken belirtilen trafik koşullarında ilerlemeye",
+    "Diğer bütün uçaklara karşı önceliğe",
+    "Uçuş görüşü minimumlarını yok saymaya",
+    "Her sınıfta her uçaktan garanti ayırmaya"
+   ]
+  },
+  "61050": {
+   "text": "Acil durumda mevcut ATC izninden derhal sapmak gerekmiştir. Mümkün olur olmaz ne yapılır?",
+   "options": [
+    "Yapılan hareket uygun ATC birimine bildirilir ve gereken değiştirilmiş izin istenir",
+    "Yalnız AIS’ye bildirilir",
+    "Ertesi güne kadar beklenir",
+    "Emniyet artmışsa sapma gizlenir"
+   ]
+  },
+  "61051": {
+   "text": "Sivil hava aracı önlendiğinde transponder için uygun ATS birimi başka talimat vermemişse ne yapmalıdır?",
+   "options": [
+    "Önleme sinyallerine uymalı, 121,5 MHz’de temas denemeli ve 7700 seçmelidir",
+    "7600 seçip görsel sinyalleri yok saymalıdır",
+    "Hemen tırmanarak uzaklaşmalıdır",
+    "Transponder ve bütün ışıkları kapatmalıdır"
+   ]
+  },
+  "61052": {
+   "text": "Önleme yapan uçak uçuş yolunuzu kesmeden 90° veya daha fazla ani tırmanış dönüşüyle ayrılıyor. Sinyalin anlamı nedir?",
+   "options": [
+    "Devam edebilirsiniz",
+    "Beni takip edin",
+    "Hemen inin",
+    "Kalkış meydanına dönün"
+   ]
+  },
+  "61054": {
+   "text": "Aynı kategorideki iki uçak yaklaşık aynı seviyede kesişen rotalarda yaklaşmaktadır. Hangisi yol vermelidir?",
+   "options": [
+    "Diğer uçağı sağında gören uçak",
+    "Diğer uçağı solunda gören uçak",
+    "Daha hızlı uçak",
+    "Daha büyük uçak"
+   ]
+  },
+  "61055": {
+   "text": "SERA’ya göre özel izin veya kalkış/iniş istisnası yokken yoğun yerleşim dışında gündüz VFR için normal asgari yükseklik nedir?",
+   "options": [
+    "Yer/su yüzeyinden 500 ft ve 150 m içindeki engellerden 500 ft",
+    "Her yerde 600 m içindeki engellerden 1.000 ft",
+    "Yer/su yüzeyinden 300 ft",
+    "Kontrolsüz sahada asgari yükseklik yoktur"
+   ]
+  },
+  "61058": {
+   "text": "Özel VFR izniyle D sınıfı CTR’ye girmeden önce telsiz arızalanırsa uygun davranış nedir?",
+   "options": [
+    "CTR dışında kalıp emniyetli alternatif düzenlemek",
+    "İlk izin telsiz gereğini kaldırdığı için girmek",
+    "Girip yalnız ışık sinyallerine güvenmek",
+    "Uçuşu IFR’ye çevirmek"
+   ]
+  },
+  "61059": {
+   "text": "Bir ICAO belgesinde uluslararası standardı tam karşılamadığına ilişkin şerh vardır. Başka devletin ülkesine uluslararası uçuş için ne gerekir?",
+   "options": [
+    "Ülkesine girilen her devletin izni",
+    "Yalnız işletmeci izni",
+    "Uçuş planı varsa izin gerekmez",
+    "Yalnız ICAO izni"
+   ]
+  },
+  "61064": {
+   "text": "Part-MED kapsamında PPL(A) yetkilerini kullanmak için normalde hangi sağlık belgesi gerekir?",
+   "options": [
+    "En az Sınıf 2; geçerli Sınıf 1 de bu gereği karşılar",
+    "Yalnız Sınıf 1",
+    "Yalnız LAPL sağlık belgesi",
+    "Sağlık belgesi gerekmez"
+   ]
+  },
+  "61070": {
+   "text": "Muafiyet bulunmayan SEP/TMG tecrübe ile temdidinde yetkinin sona ermesinden önceki 12 ay içinde hangi şartlar tamamlanmalıdır?",
+   "options": [
+    "12 saat uçuş; 6 saat PIC, 12 kalkış/iniş ve FI/CRI ile en az 1 saat tazeleme eğitimi",
+    "Yalnız 6 saat ve 6 iniş",
+    "Öğretmensiz 12 saat PIC",
+    "Tek bir solo seyrüsefer uçuşu"
+   ]
+  },
+  "61071": {
+   "text": "Pilot SEP sınıf yetkisini yeterlilik kontrolüyle temdit edecektir. Sona ermeden önceki normal kontrol aralığı nedir?",
+   "options": [
+    "Son 3 ay",
+    "Son 15 gün",
+    "Son 6 ay",
+    "Yalnız sona erme günü"
+   ]
+  },
+  "61072": {
+   "text": "Uluslararası Sivil Havacılık Teşkilatını (ICAO) hangi sözleşme kurmuştur?",
+   "options": [
+    "Chicago’da imzalanan Uluslararası Sivil Havacılık Sözleşmesi",
+    "Varşova Sözleşmesi",
+    "Roma Sözleşmesi",
+    "Tokyo Sözleşmesi"
+   ]
+  },
+  "61077": {
+   "text": "Yasak bölge (Prohibited Area) nedir?",
+   "options": [
+    "Devletin kara veya karasuları üzerinde uçuşun yasaklandığı belirli boyutlu hava sahası",
+    "Her C sınıfı CTR",
+    "Yalnız uçuş planı gereken alan",
+    "Yalnız VFR’ye ayrılmış alan"
+   ]
+  },
+  "61078": {
+   "text": "Bir devlet, kendi ülkesindeki iki nokta arasında ücretli taşımacılığı kendi işletmecileriyle sınırlandırıyor. Bu hangi hakkı örnekler?",
+   "options": [
+    "Kabotaj",
+    "Birinci hava trafik hakkı",
+    "İkinci hava trafik hakkı",
+    "Zararsız geçiş hakkı"
+   ]
+  },
+  "61079": {
+   "text": "Part-FCL’e göre gerekli tip yetkisi ve diğer tüm nitelikler mevcutsa CPL sahibi ticari hava taşımacılığında yardımcı pilot olabilir mi?",
+   "options": [
+    "Evet; ilgili koşullara uymak şartıyla",
+    "Hayır; yardımcı pilot için de her zaman ATPL gerekir",
+    "Yalnızca yolcu taşınmazsa",
+    "Yalnızca ücret almadan"
+   ]
+  },
+  "61080": {
+   "text": "Part-FCL’e göre ilgili yetkiler ve diğer koşullar tamam olduğunda CPL sahibi, tek pilotlu bir uçakta ticari hava taşımacılığında PIC olabilir mi?",
+   "options": [
+    "Evet; CPL ve güncel deneyim kısıtlarına uymak şartıyla",
+    "Hayır; her ticari uçuş için ATPL gerekir",
+    "Yalnızca ücret almayan yardımcı pilot olabilir",
+    "Yalnızca ticari hava taşımacılığı dışında olabilir"
+   ]
+  },
+  "61085": {
+   "text": "Birden fazla bulut katmanı varsa tavanı (ceiling) hangi bulut tabanı tanımlar?",
+   "options": [
+    "Yer veya su üstünden ölçülen,20 000 ft altında gökyüzünün yarıdan fazlasını örten en alçak uygun katman",
+    "Ortalama deniz seviyesinden ölçülen en yüksek katman",
+    "Örtülme oranına bakılmaksızın herhangi bir SCT katmanı",
+    "Uçağın en yüksek bulutun üzerindeki yüksekliği"
+   ]
+  },
+  "61086": {
+   "text": "SERA’ya göre uçak hava trafik hizmeti almıyorsa ve yetkili otorite başka kod yayımlamamışsa normalde hangi transponder kodu seçilir?",
+   "options": [
+    "7000",
+    "Her durumda 2000",
+    "7600",
+    "7500"
+   ]
+  },
+  "61087": {
+   "text": "Normal SERA hükümlerine göre VFR uçağı Class C hava sahasına ATC izni olmadan girebilir mi?",
+   "options": [
+    "Hayır; Class C’de hem VFR hem IFR için ATC izni gerekir",
+    "Evet; Class C’de yalnız IFR için izin gerekir",
+    "Evet; pilot acil durum transponder kodunu kullanıyorsa",
+    "Evet; telsiz çağrısı yapmak her durumda izin yerine geçer"
+   ]
+  }
+ }
+}

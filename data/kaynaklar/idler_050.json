@@ -1,0 +1,25 @@
+{
+ "ders": "050",
+ "anahtarlar": {
+  "x-cad-rs:122": 65001,
+  "x-cad-rs:30": 65002,
+  "x-traficom-lapl-ppl:139": 65003
+ },
+ "emekli": {
+  "x-cad-rs:122": {
+   "id": 65001,
+   "neden_tr": "Meteoroloji (050) için ders notu yok (KDM platformunda 050 ders metni yok; yalnız sınav). Konusu notlarda doğrulanamadığı için eklenmedi.",
+   "neden_en": "There are no course notes for Meteorology (050; the KDM platform has no 050 lesson text, only exams). The topic cannot be confirmed in the notes, so it is not added."
+  },
+  "x-cad-rs:30": {
+   "id": 65002,
+   "neden_tr": "Meteoroloji (050) için ders notu yok (KDM platformunda 050 ders metni yok; yalnız sınav). Konusu notlarda doğrulanamadığı için eklenmedi.",
+   "neden_en": "There are no course notes for Meteorology (050; the KDM platform has no 050 lesson text, only exams). The topic cannot be confirmed in the notes, so it is not added."
+  },
+  "x-traficom-lapl-ppl:139": {
+   "id": 65003,
+   "neden_tr": "Meteoroloji (050) için ders notu yok (KDM platformunda 050 ders metni yok; yalnız sınav). Konusu notlarda doğrulanamadığı için eklenmedi.",
+   "neden_en": "There are no course notes for Meteorology (050; the KDM platform has no 050 lesson text, only exams). The topic cannot be confirmed in the notes, so it is not added."
+  }
+ }
+}

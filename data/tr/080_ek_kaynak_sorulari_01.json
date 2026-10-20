@@ -1,0 +1,76 @@
+{
+ "questions": {
+  "68001": {
+   "text": "Bir uçağın kanatçığında (aileron) kumanda kuvvetlerini hafifletmek için aerodinamik denge nasıl sağlanabilir?",
+   "options": [
+    "Menteşe hattını kanatçığın hücum kenarının gerisine alarak (inset hinge)",
+    "Menteşe hattının önüne bir ağırlık takarak",
+    "Firar kenarına anti-balance tab takarak",
+    "Yukarı giden kanatçığı aşağı gidenden daha fazla saptırarak"
+   ]
+  },
+  "68002": {
+   "text": "Bir uçağın 'Dutch roll' hareketini aşağıdakilerden hangisi tanımlar?",
+   "options": [
+    "Yanal ya da yön bozulmasından sonra uçağın faz farkıyla dönüşümlü olarak yattığı ve saptığı bağlaşık salınım",
+    "Yanal kararlılık zayıf, yön kararlılığı güçlü olduğunda gelişen, giderek sıkışan alçalan spiral",
+    "Hava hızı sabitken yanal eksen etrafında tekrarlanan yunuslama salınımı",
+    "Dönüşe girerken ters aileron sürüklemesinin yol açtığı tek yönlü yatış"
+   ]
+  },
+  "68003": {
+   "text": "Bir uçağın kanatlarında uçuş sırasında buz birikmiştir. Stall hızı nasıl etkilenir?",
+   "options": [
+    "Artar; çünkü buz kanadın üretebileceği taşımayı azaltır ve sürüklemeyi artırır",
+    "Değişmez; çünkü kritik hücum açısı yüzey durumuna bağlı değildir",
+    "Azalır; çünkü pürüzlü yüzey sınır tabakayı daha uzun süre yüzeyde tutar",
+    "Yalnız dönüşlerde artar; çünkü o zaman yük faktörü yükselir"
+   ]
+  },
+  "68004": {
+   "text": "Kanat yüklemesi (wing loading) neyi ifade eder?",
+   "options": [
+    "Uçağın ağırlığının kanat alanına bölümü",
+    "Kanat alanının uçağın ağırlığına bölümü",
+    "Toplam sürüklemenin kanat alanına bölümü",
+    "Taşımanın sürüklemeye bölümü"
+   ]
+  },
+  "68005": {
+   "text": "Motor arızasından sonra hava akımında dönmeye devam eden (windmilling) bir pervane ne üretir?",
+   "options": [
+    "İtki yerine direnç üretir; uçağı yavaşlatır",
+    "Ne itki ne direnç üretir; çünkü motor artık güç vermiyordur",
+    "Ek itki üretir; çünkü hava akımı palleri döndürmeye devam eder",
+    "Süzülme mesafesini uzatan taşıma üretir"
+   ]
+  },
+  "68006": {
+   "text": "Düz yatay uçuşa göre, kararlı bir yatay dönüşte aynı hız ve irtifayı korumak için pilot ne yapmalıdır?",
+   "options": [
+    "Hücum açısını artırmalı ve güç eklemeli",
+    "Hücum açısını korumalı ve güç eklemeli",
+    "Hücum açısını azaltmalı ve güç eklemeli",
+    "Hücum açısını artırmalı, gücü değiştirmemeli"
+   ]
+  },
+  "68007": {
+   "text": "Girişim sürüklemesi (interference drag) tipik olarak nerede oluşur?",
+   "options": [
+    "Uçağın iki parçasının birleştiği yerde; örneğin kanadın gövdeye bağlandığı kanat kökünde",
+    "Üst kanat yüzeyinin düzgün ve bozulmamış orta kısmında",
+    "Kanat uçlarında, uç girdaplarının sonucu olarak",
+    "Sınır tabaka içinde, yüzey sürtünmesinin sonucu olarak"
+   ]
+  },
+  "68008": {
+   "text": "Hava bir kanat profili üzerinde arkaya doğru akarken sınır tabaka laminerden türbülanslıya hangi noktada geçer?",
+   "options": [
+    "Geçiş (transition) noktası",
+    "Durma (stagnation) noktası",
+    "Ayrılma (separation) noktası",
+    "En büyük kalınlık noktası"
+   ]
+  }
+ }
+}

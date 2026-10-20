@@ -1,0 +1,197 @@
+{
+ "_aciklama": "Claude worktree içinden devralınan adayların envanteri. Bu kayıt erişim veya yeniden kullanım izni kanıtı değildir. Ham tam bankalar yayımlanmaz; güncel erişim/izin notu _kaynaklar.json ve inceleme kararlarında.",
+ "kayitlar": [
+  {
+   "kaynak": "caab-airlaw",
+   "ders": "010",
+   "yerel_ham_sha256": "89d36761a93f2d5db1ad7354d716930cd14178dddf32333d1faca09b27088680",
+   "sayi": 250,
+   "url": "https://ops.caab.gov.bd/file-manager/air-law-validation.pdf",
+   "yerel_dosya": "caab-airlaw__010.json"
+  },
+  {
+   "kaynak": "dauntless",
+   "ders": "010",
+   "yerel_ham_sha256": "72968619dbd4d317edeceff50e5a2645121c6433820f943242c4ac2d0e7474d9",
+   "sayi": 0,
+   "url": "https://www.dauntless-soft.com/PRODUCTS/GroundSchoolATPL/TestBanks/air_law_and_atc_procedures/010-01-01_the_convention_of_chicago/",
+   "yerel_dosya": "dauntless__010.json"
+  },
+  {
+   "kaynak": "furious",
+   "ders": "010",
+   "yerel_ham_sha256": "6c34a7719d80f7cbdf62d032c5a4fc954dbb28f8712c1cb061ef15d27062a9a8",
+   "sayi": 0,
+   "url": "https://www.furious-atpl.com/mcq-exam/answer,1-training-professional",
+   "yerel_dosya": "furious__010.json"
+  },
+  {
+   "kaynak": "gdh-ppla",
+   "ders": "010",
+   "yerel_ham_sha256": "25846c6147ec7efe0f7659aa79318805541193fb5cf47a88c9632823eb97ecb1",
+   "sayi": 0,
+   "url": "https://pdfcoffee.com/gdh-ppl-a-question-bank-eng-pdf-free.html",
+   "yerel_dosya": "gdh-ppla__010.json"
+  },
+  {
+   "kaynak": "lahmacun",
+   "ders": "010",
+   "yerel_ham_sha256": "5321e089c7d6ab8ba3eb3f4b2c5391bd1d7153edfe623646ee242abd2a017d60",
+   "sayi": 0,
+   "url": "https://www.scribd.com/document/856014115/1-Lahmacun-%C4%B0%C5%9Faretsiz",
+   "yerel_dosya": "lahmacun__010.json"
+  },
+  {
+   "kaynak": "linx-airlaw",
+   "ders": "010",
+   "yerel_ham_sha256": "16960fba3084ad578c759fb99e1e9a574274007d60ed9faeccce47c8556347ee",
+   "sayi": 150,
+   "url": "https://linxaviation.rs/wp-content/uploads/2020/12/Air_law.pdf",
+   "yerel_dosya": "linx-airlaw__010.json"
+  },
+  {
+   "kaynak": "oxford010",
+   "ders": "010",
+   "yerel_ham_sha256": "4fadfafedd53a182ca49d9c3283f4cc8af34913839f5740fbe5a4946fb87d5d0",
+   "sayi": 0,
+   "url": "https://www.scribd.com/document/604806172/CAE-Oxford-Aviation-Academy-010-Air-Law",
+   "yerel_dosya": "oxford010__010.json"
+  },
+  {
+   "kaynak": "pc2-010",
+   "ders": "010",
+   "yerel_ham_sha256": "13d12e3fd9896bc865592fb3585a21b2ef1a39a5c975f75f6af58eab74037329",
+   "sayi": 0,
+   "url": "https://www.scribd.com/document/774640527/010-PC2",
+   "yerel_dosya": "pc2-010__010.json"
+  },
+  {
+   "kaynak": "ppla-qb-scribd",
+   "ders": "010",
+   "yerel_ham_sha256": "c71d63af55d1985c843bb1ad5233009498e01c3fbd936d31d35bf7e4b0f6df09",
+   "sayi": 0,
+   "url": "https://www.scribd.com/document/676565250/PPL-a-Question-Bank",
+   "yerel_dosya": "ppla-qb-scribd__010.json"
+  },
+  {
+   "kaynak": "pplhavuz",
+   "ders": "010",
+   "yerel_ham_sha256": "cba24388aba8cd5461ba3b176ba20d0cc13541eb41429beefc9a43a1448ffd41",
+   "sayi": 0,
+   "url": "https://www.scribd.com/document/851963112/PPLHAVUZSONHALI-1",
+   "yerel_dosya": "pplhavuz__010.json"
+  },
+  {
+   "kaynak": "pplqbankal",
+   "ders": "010",
+   "yerel_ham_sha256": "58bf8444195a2ae62c4315160c2ce2dd9e4ad7a60377ef5befa033b6bf9b2fae",
+   "sayi": 0,
+   "url": "https://www.scribd.com/document/446626932/PPL-Q-BANK-AL",
+   "yerel_dosya": "pplqbankal__010.json"
+  },
+  {
+   "kaynak": "quizvds",
+   "ders": "010",
+   "yerel_ham_sha256": "1f1b972c6e1229628219f2fd977a08cbce9c7808fbb2e7991eff66e48e034613",
+   "sayi": 0,
+   "url": "https://quizvds.it/en-en/quiz/atpl/air-law/306/refers",
+   "yerel_dosya": "quizvds__010.json"
+  },
+  {
+   "kaynak": "topicwise200q",
+   "ders": "010",
+   "yerel_ham_sha256": "b51042aec2d8f5146d18146f3eb77d75137a6643613ed2dc9387ee3c5e0eb83d",
+   "sayi": 0,
+   "url": "https://www.scribd.com/document/1066220026/02-Question-Bank-Topicwise-200Q",
+   "yerel_dosya": "topicwise200q__010.json"
+  },
+  {
+   "kaynak": "x-austrocontrol-ecqb-ppl",
+   "ders": "010",
+   "yerel_ham_sha256": "253859260d2e4c1a5331a77485c519bef90fd25c1e21e28d13bded0fa9fbb394",
+   "sayi": 134,
+   "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-10-ALW_EN.pdf",
+   "yerel_dosya": "x-austrocontrol-ecqb-ppl__010.json"
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "ders": "010",
+   "yerel_ham_sha256": "dd229a14a5f8a6d1805d6d56d7051b872b0b5422c83d6540324dccd177be8b90",
+   "sayi": 79,
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Air%20law.pdf",
+   "yerel_dosya": "x-cad-rs__010.json"
+  },
+  {
+   "kaynak": "x-sonyaklasma",
+   "ders": "010",
+   "yerel_ham_sha256": "23f3fced64764feac3d304fbc6ca946e329a96b30266dfc126fdc1deb616b2bc",
+   "sayi": 10,
+   "url": "https://sonyaklasma.com/ppl-sorulari/hava-hukuku",
+   "yerel_dosya": "x-sonyaklasma__010.json"
+  },
+  {
+   "kaynak": "x-sonyaklasma",
+   "ders": "020",
+   "yerel_ham_sha256": "e4125e530843406caee02154a1a4c8c9d15715e7fe0229afadbcf22396a6cbc4",
+   "sayi": 10,
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucak-genel-bilgisi",
+   "yerel_dosya": "x-sonyaklasma__020.json"
+  },
+  {
+   "kaynak": "x-sonyaklasma",
+   "ders": "030",
+   "yerel_ham_sha256": "816a307a0809c4a623d1a1d2d62515ca0b4b49240a92d8d7e4f80bf9f7437c4c",
+   "sayi": 10,
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-performansi-ve-planlama",
+   "yerel_dosya": "x-sonyaklasma__030.json"
+  },
+  {
+   "kaynak": "x-sonyaklasma",
+   "ders": "050",
+   "yerel_ham_sha256": "86e9a7a9054e3cfe451b6cc4a76dd6778c0814f6cd3848494e922e1333391379",
+   "sayi": 10,
+   "url": "https://sonyaklasma.com/ppl-sorulari/meteoroloji",
+   "yerel_dosya": "x-sonyaklasma__050.json"
+  },
+  {
+   "kaynak": "x-sonyaklasma",
+   "ders": "060",
+   "yerel_ham_sha256": "bbf5e61fbfc773f9d012de4e5fbec13e6a63de6b3cef20f0ca7125743c2b4af6",
+   "sayi": 10,
+   "url": "https://sonyaklasma.com/ppl-sorulari/navigasyon",
+   "yerel_dosya": "x-sonyaklasma__060.json"
+  },
+  {
+   "kaynak": "x-sonyaklasma",
+   "ders": "080",
+   "yerel_ham_sha256": "7bbd3a6c0787d56a3df37d9445a34e5a262187a0abbd1c7b45a09c0e83920062",
+   "sayi": 10,
+   "url": "https://sonyaklasma.com/ppl-sorulari/ucus-prensipleri",
+   "yerel_dosya": "x-sonyaklasma__080.json"
+  },
+  {
+   "kaynak": "x-studylib-ppl-tr",
+   "ders": "010",
+   "yerel_ham_sha256": "4ad780138cc084f249932b16c0f6359700656eaca88c6581848853393cae1699",
+   "sayi": 0,
+   "url": "https://studylib.net/doc/27619056/ppl-t%C3%BCrk%C3%A7e-soru-havuzu",
+   "yerel_dosya": "x-studylib-ppl-tr__010.json"
+  },
+  {
+   "kaynak": "x-tc-tp13014",
+   "ders": "010",
+   "yerel_ham_sha256": "5417d15b4851a4ff174d6066e697d88e22f16aefd4999415a6032496e77b7aa6",
+   "sayi": 20,
+   "url": "https://www.tc.gc.ca/publications/EN/TP13014/PDF/HR/TP13014E.PDF",
+   "yerel_dosya": "x-tc-tp13014__010.json"
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "ders": "010",
+   "yerel_ham_sha256": "e0f86a1ac572828c30c20076295a4cdfdd1ac091bd9d970cf2fea2664d2c1fcc",
+   "sayi": 181,
+   "url": "https://www.traficom.fi/files/media/file/PPL010ENG%2011102018.pdf",
+   "yerel_dosya": "x-traficom-lapl-ppl__010.json"
+  }
+ ]
+}

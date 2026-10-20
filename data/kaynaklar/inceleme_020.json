@@ -1,0 +1,45 @@
+{
+ "ders": "020",
+ "sorular": [
+  {
+   "kaynak": "x-cad-rs",
+   "no": "141",
+   "sayfa": "16",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Aircraft%20%20general%20knowledge.pdf",
+   "konu": "VA ve renk kodsuz hız sınırları ders notunda yok; VA tanımı kaynaklarda farklı ifade ediliyor — resmî tanımla netleştirilmeden eklenmedi.",
+   "neden": "VA ve renk kodsuz hız sınırları ders notunda yok; VA tanımı kaynaklarda farklı ifade ediliyor — resmî tanımla netleştirilmeden eklenmedi."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "129",
+   "sayfa": "23",
+   "url": "https://www.traficom.fi/files/media/file/PPL020ENG%2011102018.pdf",
+   "konu": "VA ve renk kodsuz hız sınırları ders notunda yok; VA tanımı kaynaklarda farklı ifade ediliyor — resmî tanımla netleştirilmeden eklenmedi.",
+   "neden": "VA ve renk kodsuz hız sınırları ders notunda yok; VA tanımı kaynaklarda farklı ifade ediliyor — resmî tanımla netleştirilmeden eklenmedi."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "103",
+   "sayfa": "13",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Aircraft%20%20general%20knowledge.pdf",
+   "konu": "Kaynak anahtarı (kuyruk kaldırılırken jiroskopik etki = yatış eğilimi) Traficom seçenekleriyle ve standart bilgiyle (sapma/yaw) uyuşmuyor; cevap doğrulanamadı.",
+   "neden": "Kaynak anahtarı (kuyruk kaldırılırken jiroskopik etki = yatış eğilimi) Traficom seçenekleriyle ve standart bilgiyle (sapma/yaw) uyuşmuyor; cevap doğrulanamadı."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "34",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Aircraft%20%20general%20knowledge.pdf",
+   "konu": "Pilotun yasal yetkisi dahilinde yaptığı bakımın kaydı ulusal mevzuata (Part-ML/SHGM) bağlı; kaynak şıkları ayrı ayrı doğrulanmadı.",
+   "neden": "Pilotun yasal yetkisi dahilinde yaptığı bakımın kaydı ulusal mevzuata (Part-ML/SHGM) bağlı; kaynak şıkları ayrı ayrı doğrulanmadı."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "40",
+   "sayfa": "8",
+   "url": "https://www.traficom.fi/files/media/file/PPL020ENG%2011102018.pdf",
+   "konu": "Pilotun yasal yetkisi dahilinde yaptığı bakımın kaydı ulusal mevzuata (Part-ML/SHGM) bağlı; kaynak şıkları ayrı ayrı doğrulanmadı.",
+   "neden": "Pilotun yasal yetkisi dahilinde yaptığı bakımın kaydı ulusal mevzuata (Part-ML/SHGM) bağlı; kaynak şıkları ayrı ayrı doğrulanmadı."
+  }
+ ]
+}

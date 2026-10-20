@@ -1,0 +1,61 @@
+{
+ "ders": "060",
+ "sorular": [
+  {
+   "kaynak": "x-cad-rs",
+   "no": "92",
+   "sayfa": "11",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "konu": "Kaynak anahtarı ('alçak irtifada istasyonun tam üstünde') bilinen davranışla (eğik mesafe hatası yüksek irtifada ve istasyona yakınken en büyüktür) çelişiyor; cevap doğrulanamadı.",
+   "neden": "Kaynak anahtarı ('alçak irtifada istasyonun tam üstünde') bilinen davranışla (eğik mesafe hatası yüksek irtifada ve istasyona yakınken en büyüktür) çelişiyor; cevap doğrulanamadı."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "116",
+   "sayfa": "20",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "konu": "Kaynak anahtarı ('alçak irtifada istasyonun tam üstünde') bilinen davranışla (eğik mesafe hatası yüksek irtifada ve istasyona yakınken en büyüktür) çelişiyor; cevap doğrulanamadı.",
+   "neden": "Kaynak anahtarı ('alçak irtifada istasyonun tam üstünde') bilinen davranışla (eğik mesafe hatası yüksek irtifada ve istasyona yakınken en büyüktür) çelişiyor; cevap doğrulanamadı."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "101",
+   "sayfa": "12",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "konu": "Ters yön/CDI sapması hesaplarında tam ölçek ve nokta açıları kaynaklara göre değişiyor; cevap doğrulanamadı.",
+   "neden": "Ters yön/CDI sapması hesaplarında tam ölçek ve nokta açıları kaynaklara göre değişiyor; cevap doğrulanamadı."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "107",
+   "sayfa": "18",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "konu": "Ters yön/CDI sapması hesaplarında tam ölçek ve nokta açıları kaynaklara göre değişiyor; cevap doğrulanamadı.",
+   "neden": "Ters yön/CDI sapması hesaplarında tam ölçek ve nokta açıları kaynaklara göre değişiyor; cevap doğrulanamadı."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "72",
+   "sayfa": "9",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "konu": "Kaynak anahtarı (6,7 NM) CDI beşte bir sapma ve 120 NM mesafe için hesapla tutarlı değil; cevap doğrulanamadı.",
+   "neden": "Kaynak anahtarı (6,7 NM) CDI beşte bir sapma ve 120 NM mesafe için hesapla tutarlı değil; cevap doğrulanamadı."
+  },
+  {
+   "kaynak": "x-cad-rs",
+   "no": "37",
+   "sayfa": "6",
+   "url": "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Navigation.pdf",
+   "konu": "Dünya'nın ekvator çapı ile ekseni arasındaki fark kaynaklarda farklı veriliyor (43 km ≈ 42,7 km); sayısal tanım kaynaklarla netleştirilmeli.",
+   "neden": "Dünya'nın ekvator çapı ile ekseni arasındaki fark kaynaklarda farklı veriliyor (43 km ≈ 42,7 km); sayısal tanım kaynaklarla netleştirilmeli."
+  },
+  {
+   "kaynak": "x-traficom-lapl-ppl",
+   "no": "8",
+   "sayfa": "3",
+   "url": "https://www.traficom.fi/files/media/file/PPL060ENG%2011102018.pdf",
+   "konu": "Dünya'nın ekvator çapı ile ekseni arasındaki fark kaynaklarda farklı veriliyor (43 km ≈ 42,7 km); sayısal tanım kaynaklarla netleştirilmeli.",
+   "neden": "Dünya'nın ekvator çapı ile ekseni arasındaki fark kaynaklarda farklı veriliyor (43 km ≈ 42,7 km); sayısal tanım kaynaklarla netleştirilmeli."
+  }
+ ]
+}

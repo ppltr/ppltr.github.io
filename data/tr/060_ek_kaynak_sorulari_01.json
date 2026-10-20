@@ -1,0 +1,22 @@
+{
+ "questions": {
+  "66002": {
+   "text": "Akşam sivil alacakaranlığı ne zaman sona erer?",
+   "options": [
+    "Güneş diskinin merkezi ufkun 6° altına indiğinde",
+    "Güneşin üst kenarı ufka değdiğinde",
+    "Güneş diskinin merkezi ufkun 12° altına indiğinde",
+    "Güneş diskinin merkezi ufkun 18° altına indiğinde"
+   ]
+  },
+  "66003": {
+   "text": "Kuzey yarım kürenin yaz gündönümünde (Haziran) Güneş öğle vakti nerenin tam tepesindedir?",
+   "options": [
+    "Yengeç Dönencesi'nin (yaklaşık 23,5° K)",
+    "Oğlak Dönencesi'nin (yaklaşık 23,5° G)",
+    "Ekvatorun",
+    "Kuzey Kutbu'nun"
+   ]
+  }
+ }
+}

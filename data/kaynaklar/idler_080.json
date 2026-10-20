@@ -1,0 +1,14 @@
+{
+ "ders": "080",
+ "anahtarlar": {
+  "x-cad-rs:142": 68001,
+  "x-cad-rs:29": 68002,
+  "x-tc-tp13014:23": 68003,
+  "x-austrocontrol-ecqb-ppl:133": 68004,
+  "x-austrocontrol-ecqb-ppl:140": 68005,
+  "x-austrocontrol-ecqb-ppl:145": 68006,
+  "x-austrocontrol-ecqb-ppl:45": 68007,
+  "x-austrocontrol-ecqb-ppl:86": 68008
+ },
+ "emekli": {}
+}
