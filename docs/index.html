@@ -391,6 +391,12 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .qtm.uzun .qv{color:var(--due)}
 .qtm.dur .qv{opacity:.45}
 .qtm.dar .qo{display:none}
+.walltime{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;
+  margin:0 0 10px; padding:9px 10px; border:1px solid var(--rule); border-radius:var(--r);
+  background:var(--surface-2)}
+.walltime .wl{display:block; font-size:10px; color:var(--ink-3); margin-bottom:3px}
+.walltime time,.walltime b{font-family:var(--f-num); font-size:12px; font-weight:500;
+  font-variant-numeric:tabular-nums; overflow-wrap:anywhere}
 .prog i{display:block; height:100%; background:var(--accent); width:0; transition:width .25s ease}
 .prog i.retry{background:var(--bad)}
 .meta{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px}
@@ -399,7 +405,10 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .meta > .lbl{min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 /* Dar ekranda "Soru 4 / 2547" da gizlenir — alt şeritteki gezinme düğmesi aynı sayıyı
    gösteriyor; yer iki sayaca kalır. */
-@media (max-width:400px){ .meta > .lbl, .meta > .qpos, .qtm .qb{display:none} }
+@media (max-width:400px){
+  .meta{gap:4px}
+  .meta > .lbl,.meta > .qpos,.qtm .qa,.qtm .qo{display:none}
+}
 /* Gezinme düğmesi ve paneli — kapalıyken hiç yer kaplamaz */
 /* Tur sayacı: dokununca durur/sürer. Simge yapılacak eylemi gösterir —
    sayarken duraklat (iki çubuk), dururken oynat (üçgen). Emoji değil CSS:
@@ -1171,6 +1180,8 @@ function sureYaz(){
   rec.sure = Math.round(R.sure || 0);
   rec.bos = Math.round(R.bos || 0);
   rec.qTop = Math.round(R.qTop || 0); rec.qN = R.qN || 0;
+  rec.qWall = Object.fromEntries(Object.entries(R.qWall).map(([k,v]) => [k,v.slice()]));
+  rec.qWallOpen = R.qWallOpen;
   // Ekrandaki cevaplanmamış sorunun birikimi: sayfa yenilenince sıfırlanmasın
   if (R.qAcik != null) rec.qAn = [R.qAcik, Math.round(R.qAcc[R.qAcik] || 0)];
   else delete rec.qAn;
@@ -1180,7 +1191,7 @@ function sureYaz(){
 function sureBirak(){
   akit(Date.now());
   sonEtkin = null;                          // gizliyken geçen süre sayılmaz
-  if (sureDegisti){ sureYaz(); Cloud.schedule(); }
+  sureYaz(); Cloud.schedule();
 }
 addEventListener('pagehide', () => { sureBirak(); flushLocal(); Cloud.simdiGonder(); });
 addEventListener('visibilitychange', () => {
@@ -1592,7 +1603,8 @@ function start(sr){
   const id = 'r' + Date.now();
   R = { id, list, i:0, order:null, picked:null, orders:[], picks:[],
         log:[], t0:Date.now(), round:1, missed:[], sure:0, durdu:false, sureTam:true,
-        bos:0, bosTam:true, qTop:0, qN:0, qAcc:{}, qAcik:null, qSon:{}, sr };
+        bos:0, bosTam:true, qTop:0, qN:0, qAcc:{}, qAcik:null, qSon:{},
+        qWall:{}, qWallOpen:null, sr };
   S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle() + (sr ? ' · Speedrun' : ''),
                    code:soloModule() || '', deck:deckName(), sr,
                    n0:list.length, ids:list.map(q => q[0]), i:0, round:1,
@@ -1614,7 +1626,9 @@ function resumeRun(id){
         round:rec.round || 1, missed:(rec.missed || []).slice(),
         sure:rec.sure || 0, durdu:!!rec.durdu, sureTam:!!rec.sureTam,
         bos:rec.bos || 0, bosTam:!!rec.bosTam, qTop:rec.qTop || 0, qN:rec.qN || 0,
-        qAcc:{}, qAcik:null, qSon:{}, sr:!!rec.sr };
+        qAcc:{}, qAcik:null, qSon:{},
+        qWall:Object.fromEntries(Object.entries(rec.qWall || {}).map(([k,v]) => [k,v.slice()])),
+        qWallOpen:rec.qWallOpen || null, sr:!!rec.sr };
   if (Array.isArray(rec.qAn)) R.qAcc[rec.qAn[0]] = rec.qAn[1] || 0;
   // Bu turda verilmiş cevapları geri kur: kayıtta kaynak şık indeksi var,
   // yeni karıştırmada karşılığı bulunur. Böylece geri gidince cevap görünür
@@ -1647,6 +1661,7 @@ function step0(){
   if (R.i < 0) R.i = 0;
   R.order = orderFor(R.i);
   R.picked = R.picks[R.i] === undefined ? null : R.picks[R.i];
+  soruAc();
   saveRun();
   draw();
   window.scrollTo({ top:0, behavior:'smooth' });
@@ -2259,9 +2274,44 @@ function sureMetni(ms){
   const dk = Math.round(ms / 6e4), sa = Math.floor(dk / 60);
   return sa ? sa + ' sa' + (dk % 60 ? ' ' + dk % 60 + ' dk' : '') : dk + ' dk';
 }
+/** Duvar saati: sekme, boşta kalma ve aktif sayacın duraklatılmasından bağımsızdır.
+ *  Her tur/tekrar + soru için [birikmiş ms, açık zaman damgası] tutulur.
+ *  Açık zaman damgası yenilemede korunur; başka soruda geçen süre eklenmez. */
+const wallKey = () => R.round + ':' + R.list[R.i][0];
+function soruToplam(k, an = Date.now()){
+  const v = R.qWall[k];
+  return v ? v[0] + (v[1] === null ? 0 : Math.max(0, an - v[1])) : null;
+}
+function toplamKapat(an = Date.now()){
+  const k = R.qWallOpen;
+  if (k && R.qWall[k]) R.qWall[k] = [soruToplam(k, an), null];
+  R.qWallOpen = null;
+}
+function toplamAc(an = Date.now()){
+  const k = wallKey();
+  if (R.qWallOpen !== k) toplamKapat(an);
+  if (R.picked !== null) return;
+  const v = R.qWall[k] || (R.qWall[k] = [0, null]);
+  if (v[1] === null) v[1] = an;
+  R.qWallOpen = k;
+}
+function baslamaSaati(ms){
+  return new Date(ms).toLocaleTimeString('tr-TR', {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+}
 /** Sayaç çipini günceller: süre, durdu mu, boşta mı. */
 function tmrBoya(){
   if (!R) return;
+  const an = Date.now(), bas = el('runStart'), toplam = el('runWall'), soru = el('questionWall');
+  if (bas){
+    bas.textContent = baslamaSaati(R.t0);
+    bas.dateTime = new Date(R.t0).toISOString();
+    bas.title = stamp(R.t0);
+  }
+  if (toplam) toplam.textContent = saat(Math.max(0, an - R.t0));
+  if (soru){
+    const ms = soruToplam(wallKey(), an);
+    soru.textContent = ms === null ? '–' : saat(ms);
+  }
   const bosta = !R.durdu && bostaMi();
   // Tur sayacı (dokunulabilir): yalnız çalışma süresi
   const t = el('tmr');
@@ -2269,11 +2319,11 @@ function tmrBoya(){
     t.classList.toggle('off', !!R.durdu);
     t.classList.toggle('bosta', bosta);
     t.setAttribute('aria-pressed', R.durdu ? 'true' : 'false');
-    t.title = R.durdu ? 'Sayaçlar durdu · devam etmek için dokun (P)'
-      : bosta ? '3 dakikadır dokunmadın, sayaçlar durdu · dokununca sürer'
+    t.title = R.durdu ? 'Aktif sayaçlar durdu · devam etmek için dokun (P). Toplam süreler ilerler.'
+      : bosta ? '3 dakikadır dokunmadın, aktif sayaçlar durdu · toplam süreler ilerler'
       : 'Bu turda çalıştığın süre · durdurmak için dokun (P)';
-    t.setAttribute('aria-label', (R.durdu ? 'Sayaçlar durdu. ' : '') +
-      'Tur süresi ' + saat(R.sure || 0));
+    t.setAttribute('aria-label', (R.durdu ? 'Aktif sayaçlar durdu. ' : '') +
+      'Aktif tur süresi ' + saat(R.sure || 0));
     t.querySelector('.tv').textContent = saat(R.sure || 0);
   }
   // Soru sayacı: her yeni soruda 0:00'dan başlar. Cevaplanınca o sorunun
@@ -2288,7 +2338,7 @@ function tmrBoya(){
     q.classList.toggle('dur', acik && (R.durdu || bosta));
     q.classList.toggle('bitti', !acik);
     q.classList.toggle('uzun', ms !== null && ms >= YAVAS_MS);
-    q.innerHTML = '<span class="qb">bu </span>soru <b class="qv">' +
+    q.innerHTML = 'soru <span class="qa">aktif </span><b class="qv">' +
       (ms === null ? '–' : saat(ms)) + '</b>' +
       (ort !== null ? '<span class="qo"> · ort ' + saat(ort) + '</span>' : '');
     // Satıra sığmıyorsa (dar telefon, saatleri aşan tur) ortalama düşer, süre kalır
@@ -2310,13 +2360,17 @@ function tmrBoya(){
  *  Önce o ana kadarki süre bir önceki soruya yazılır. */
 function soruAc(){
   if (!R) return;
-  akit(Date.now());
+  const an = Date.now();
+  akit(an);
+  toplamAc(an);
   R.qAcik = R.picked === null ? R.list[R.i][0] : null;
 }
 /** Süreyi yazıp akışı keser (cevapta, ana ekrana dönüşte). */
 function soruKapat(){
   if (!R) return;
-  akit(Date.now());
+  const an = Date.now();
+  akit(an);
+  toplamKapat(an);
   R.qAcik = null;
 }
 /** Cevap anında sorunun süresini kaydeder. */
@@ -2433,7 +2487,13 @@ function draw(){
         (retry ? 'Yanlış turu ' + R.round : R.sr ? 'Speedrun' : deckName()) + '</span>' +
       '<span class="qtm" id="qtm" role="timer" aria-live="off"></span>' +
       '<button class="tmr" id="tmr" type="button"><span class="ti" aria-hidden="true">' +
-        '</span><span class="tv num"></span></button></div>' +
+        '</span><span>aktif</span><span class="tv num"></span></button></div>' +
+    '<div class="walltime">' +
+      '<div><span class="wl">Başlangıç</span><time id="runStart"></time></div>' +
+      '<div title="Sınava başladığından beri geçen süre; aralar ve kapalı sekme dahil">' +
+        '<span class="wl">Sınav toplam</span><b id="runWall" role="timer" aria-live="off"></b></div>' +
+      '<div title="Bu soruda geçen toplam süre; sekme dışındaki zaman ve duraklatmalar dahil. Cevapta durur.">' +
+        '<span class="wl">Soru toplam</span><b id="questionWall" role="timer" aria-live="off"></b></div></div>' +
     '<div class="card"><div class="head">' +
       '<span class="who">' + esc(secName(sec)) + '</span><span class="sp"></span>' +
       (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
@@ -2558,7 +2618,7 @@ function deckName(){
 
 function done(){
   clearTimeout(advT);
-  if (R) akit(Date.now());                  // son sorudaki süre de tura yazılsın
+  if (R){ soruKapat(); sureYaz(); }       // son sorudaki aktif ve toplam süreyi sakla
   const rec = runRec();
   if (rec){
     rec.i = R.i; rec.round = R.round; rec.log = R.log.slice();
@@ -2572,7 +2632,7 @@ function done(){
   const live = R ? { log:R.log, round:R.round, t0:R.t0, tN:Date.now(),
                      sure:Math.round(R.sure || 0), sureTam:R.sureTam,
                      bos:Math.round(R.bos || 0), bosTam:R.bosTam,
-                     qTop:Math.round(R.qTop || 0), qN:R.qN || 0 } : null;
+                     qTop:Math.round(R.qTop || 0), qN:R.qN || 0, qWall:R.qWall } : null;
   R = null;
   if (!live || !live.log.length) return home();
   report(live, true);
@@ -2631,6 +2691,10 @@ function report(rec, live){
     '<div class="card"><div style="padding:24px 16px; text-align:center">' +
       '<div class="lbl">' + (live ? 'Tur bitti' : esc(rec.title || 'Tur')) + ' · ' + sureYazi +
         (rounds > 1 ? ' · ' + rounds + ' tur' : '') + '</div>' +
+      '<div class="note">Başlangıç <b>' + stamp(rec.t0) + '</b> · Bitiş <b>' +
+        stamp(rec.tN || Date.now()) + '</b><br>Toplam geçen süre <b>' +
+        saat(Math.max(0, (rec.tN || Date.now()) - rec.t0)) + '</b>' +
+        (sure !== null ? ' · aktif <b>' + saat(sure) + '</b>' : '') + '</div>' +
       '<div class="score" style="color:' + (pct >= 75 ? 'var(--ok)' : pct >= 50 ? 'var(--ink)' : 'var(--bad)') +
         '">%' + pct + '</div>' +
       '<div class="lbl" style="margin-top:5px">İlk denemede <span class="num">' + ok +
@@ -2650,14 +2714,17 @@ function report(rec, live){
         // Süre yalnız tur biter bitmez: geçmişten açılan eski turda son deneme
         // başka bir tura ait olabilir
         const tm = live && S.qt && S.qt[id] ? S.qt[id][2] : null;
+        const wall = Object.entries(rec.qWall || {}).filter(([k]) => k.split(':')[1] === String(id));
+        const total = wall.length ? wall.reduce((sum,[,v]) => sum + v[0], 0) : null;
         return '<div class="rrow"><span class="rdot ' + (firstOk ? 'ok' : 'bad') + '"></span>' +
           '<div style="min-width:0"><div class="q">' + esc(qText(q)) + '</div><div class="a">' +
           (firstOk ? '<b>' + esc(qOpts(q)[0]) + '</b>'
                    : '<i>İlk seçimin: ' + esc(qOpts(q)[tries[0].pick]) + '</i> · <b>Doğru: ' +
                      esc(qOpts(q)[0]) + '</b>' + (fixed ? ' · sonra bildin' : '')) +
           '</div></div>' +
-          (tm !== null ? '<span class="rtm' + (tm >= YAVAS_MS ? ' slow' : '') + '">' + saat(tm) +
-            '</span>' : '') + '</div>';
+          (tm !== null || total !== null ? '<span class="rtm' + (tm >= YAVAS_MS ? ' slow' : '') + '">' +
+            (total !== null ? 'toplam ' + saat(total) : '') +
+            (tm !== null ? (total !== null ? '<br>' : '') + 'aktif ' + saat(tm) : '') + '</span>' : '') + '</div>';
       };
       const bad = seen.filter(id => !log.filter(x => x.id === id)[0].ok);
       const good = seen.filter(id => log.filter(x => x.id === id)[0].ok);
