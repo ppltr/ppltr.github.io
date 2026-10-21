@@ -23,6 +23,7 @@ PAGES = ROOT / "docs" / "index.html"        # GitHub Pages /docs kökünden yay�
 NOTES_DIR = ROOT / "notes"
 SOURCE_DIR = ROOT / "data" / "kaynaklar"
 ICONS_DIR = ROOT / "web" / "icons"       # site ikonu kaynağı; docs/ köküne kopyalanır
+SEO_DIR = ROOT / "web" / "seo"
 
 # Ders notu dosyasındaki kod, soru bankasındaki ders koduna eşlenir
 FIG_DIR = ROOT / "figures"
@@ -61,7 +62,7 @@ def export_figures() -> tuple[dict, dict]:
         return {}, {}
     by_q = json.loads(idx_path.read_text(encoding="utf-8"))
     svgs = {}
-    for name in set(by_q.values()):
+    for name in sorted(set(by_q.values())):
         f = FIG_DIR / f"{name}.svg"
         if not f.exists():
             sys.exit(f"hata: {f} yok — scripts/make_figures.py çalıştır")
@@ -247,6 +248,9 @@ def main() -> None:
     PAGES.parent.mkdir(parents=True, exist_ok=True)
     PAGES.write_text(html, encoding="utf-8")
     for f in ICONS_DIR.iterdir():               # Pages yalnız docs/ klasörünü yayımlar
+        if f.is_file():
+            shutil.copy2(f, PAGES.parent / f.name)
+    for f in SEO_DIR.iterdir():
         if f.is_file():
             shutil.copy2(f, PAGES.parent / f.name)
     kb = OUT.stat().st_size / 1024

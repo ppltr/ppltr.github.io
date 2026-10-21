@@ -1,7 +1,24 @@
+<!doctype html>
+<html lang="tr">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<title>PPL Çalışma</title>
+<title>PPL Soru Bankası ve Teori Sınavı Çalışma | PPL Çalışma</title>
+<meta name="description" content="Türkçe ve İngilizce PPL soruları, ders notları ve aralıklı tekrar ile havacılık teori sınavına çalış. İlerlemeni ve soru sürelerini takip et.">
+<link rel="canonical" href="https://ppltr.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="PPL Çalışma">
+<meta property="og:title" content="PPL Soru Bankası ve Teori Sınavı Çalışma">
+<meta property="og:description" content="Türkçe ve İngilizce sorular, ders notları, aralıklı tekrar ve ilerleme takibi ile PPL teori sınavına hazırlan.">
+<meta property="og:url" content="https://ppltr.github.io/">
+<meta property="og:image" content="https://ppltr.github.io/icon-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PPL Soru Bankası | PPL Çalışma">
+<meta name="twitter:description" content="Türkçe ve İngilizce PPL soruları, ders notları ve kişisel ilerleme takibi.">
+<meta name="twitter:image" content="https://ppltr.github.io/icon-512.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"PPL Çalışma","url":"https://ppltr.github.io/","applicationCategory":"EducationalApplication","operatingSystem":"Web","inLanguage":["tr","en"],"description":"PPL teori sınavı için soru bankası, ders notları, aralıklı tekrar ve kişisel ilerleme takibi."}</script>
 <link rel="icon" href="__FAVICON__" type="image/svg+xml">
 <link rel="alternate icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -10,16 +27,18 @@
 <meta name="theme-color" content="#080B10" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"></noscript>
 
 <style>
 :root{
+  color-scheme:light;
   --paper:#F2F4F7; --surface:#FFFFFF; --surface-2:#F6F8FA; --surface-3:#E9EEF3;
-  --ink:#10151C; --ink-2:#4A5563; --ink-3:#7B8794;
+  --ink:#10151C; --ink-2:#4A5563; --ink-3:#596573;
   --rule:#D6DDE5; --rule-2:#B4BFCB;
   --accent:#C21A6B; --accent-soft:#FBE7F0; --accent-ink:#8E0F4C; --on-accent:#FFFFFF;
   --cyan:#0B6E7F; --cyan-soft:#E1F1F4;
-  --due:#A8620A; --due-soft:#FBF0DE;
+  --due:#925306; --due-soft:#FBF0DE;
   --ok:#15764F; --ok-soft:#E2F3EB; --bad:#B32318; --bad-soft:#FBE9E7;
   --shadow:0 1px 2px rgba(16,21,28,.05), 0 12px 32px -18px rgba(16,21,28,.30);
   --f-ui:'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -29,8 +48,9 @@
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
+    color-scheme:dark;
     --paper:#080B10; --surface:#111721; --surface-2:#171F2A; --surface-3:#1F2937;
-    --ink:#E6ECF3; --ink-2:#9AA7B5; --ink-3:#6B7785;
+    --ink:#E6ECF3; --ink-2:#9AA7B5; --ink-3:#8F9DAD;
     --rule:#232E3B; --rule-2:#374553;
     --accent:#FF5CA8; --accent-soft:#2B1322; --accent-ink:#FF8FC4; --on-accent:#11060C;
     --cyan:#4FBACE; --cyan-soft:#0D2930;
@@ -40,8 +60,9 @@
   }
 }
 :root[data-theme="dark"]{
+  color-scheme:dark;
   --paper:#080B10; --surface:#111721; --surface-2:#171F2A; --surface-3:#1F2937;
-  --ink:#E6ECF3; --ink-2:#9AA7B5; --ink-3:#6B7785;
+  --ink:#E6ECF3; --ink-2:#9AA7B5; --ink-3:#8F9DAD;
   --rule:#232E3B; --rule-2:#374553;
   --accent:#FF5CA8; --accent-soft:#2B1322; --accent-ink:#FF8FC4; --on-accent:#11060C;
   --cyan:#4FBACE; --cyan-soft:#0D2930;
@@ -55,6 +76,12 @@ html{-webkit-text-size-adjust:100%}
 body{margin:0; background:var(--paper); color:var(--ink);
   font-family:var(--f-ui); font-size:16px; line-height:1.5;
   -webkit-font-smoothing:antialiased; overscroll-behavior-y:none}
+body.modal-open{position:fixed; top:var(--locked-scroll-y); left:0; right:0; overflow:hidden}
+.skip-link{position:fixed; top:8px; left:8px; z-index:100; transform:translateY(-160%);
+  padding:10px 14px; background:var(--surface); color:var(--ink); border:2px solid var(--accent)}
+.skip-link:focus{transform:none}
+.sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0}
 button,input,select,textarea{font:inherit; color:inherit}
 button{cursor:pointer; background:none; border:none}
 :focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:3px}
@@ -81,7 +108,7 @@ button{cursor:pointer; background:none; border:none}
 .tbtn:hover{border-color:var(--rule-2); color:var(--ink)}
 .tbtn.on{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink)}
 .ava{flex:none; width:21px; height:21px; border-radius:50%; display:inline-grid;
-  place-items:center; background:hsl(var(--h) 46% 38%); color:#fff;
+  place-items:center; background:hsl(var(--h) 46% 30%); color:#fff;
   font-family:var(--f-ui); font-size:9px; font-weight:700; letter-spacing:.02em;
   line-height:1; text-transform:uppercase; overflow:hidden; position:relative}
 /* Resim baş harflerin üstünü örter; yüklenemezse img silinir, harfler geri gelir */
@@ -159,7 +186,7 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .hero .hname .frag{font-family:var(--f-num); font-size:11px; font-weight:500;
   color:var(--ink-3); vertical-align:middle; white-space:nowrap}
 .hero .hsub{display:block; font-size:12.5px; color:var(--ink-3); margin-top:5px}
-.hero .hsub i{font-style:normal; opacity:.75}
+.hero .hsub i{font-style:normal}
 .hero .hsub .num{color:var(--ink-2); font-weight:500}
 .hero .hsub .ok{color:var(--ok); font-weight:600}
 .hero .hact{display:flex; justify-content:center; gap:8px; flex-wrap:wrap}
@@ -259,7 +286,7 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
   padding:15px 20px; font-size:16px; font-weight:600; text-align:center}
 .go:hover{filter:brightness(1.07)}
 /* Birincil düğmenin alt satırı — genel .sub rengini devralmasın diye ayrı ad */
-.go .gsub{display:block; margin-top:3px; color:var(--on-accent); opacity:.72;
+.go .gsub{display:block; margin-top:3px; color:var(--on-accent);
   font-family:var(--f-num); font-size:11px; font-weight:500; letter-spacing:.03em;
   overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .go:disabled{opacity:.4; cursor:not-allowed; filter:none}
@@ -284,6 +311,11 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
   font-size:12px; transition:transform .15s}
 .box[open] > summary .chev{transform:rotate(90deg)}
 .box .in{padding:13px}
+#optBox{overflow:visible}
+.settings-toolbar{position:sticky; top:var(--app-bar-height,64px); z-index:21;
+  display:flex; align-items:center; justify-content:space-between; gap:8px;
+  padding:8px 0; margin-bottom:12px; background:var(--paper); border-bottom:1px solid var(--rule)}
+.settings-toolbar button{min-height:44px}
 .pill{font-family:var(--f-num); font-size:10px; font-weight:500; letter-spacing:.04em;
   color:var(--accent-ink); background:var(--accent-soft); border:1px solid var(--accent);
   border-radius:99px; padding:2px 8px}
@@ -314,7 +346,7 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .node.sel > .row .nm{color:var(--accent-ink)}
 
 /* Geçilen ders satırı */
-.tbl tr.passed td{opacity:.55}
+.tbl tr.passed td{color:var(--ink-3)}
 .pflag{display:inline-block; font-family:var(--f-num); font-size:9.5px; font-weight:500;
   letter-spacing:.06em; text-transform:uppercase; padding:1px 5px; border-radius:99px;
   background:var(--accent-soft); color:var(--accent-ink); vertical-align:middle}
@@ -334,7 +366,7 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .pchip .num{flex:none; font-style:normal; font-size:11.5px; color:var(--ink-3)}
 .pchip.on{background:var(--accent-soft); border-color:var(--accent)}
 .pchip.on b, .pchip.on .nm{color:var(--accent-ink)}
-.pchip.on .num{color:var(--accent-ink); opacity:.7}
+.pchip.on .num{color:var(--accent-ink)}
 .pchip.on .tk{background:var(--accent); border-color:var(--accent); color:var(--surface)}
 
 .switch{display:flex; align-items:center; gap:10px; padding:9px 11px; width:100%;
@@ -355,6 +387,8 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 input[type=search], select, textarea{width:100%; padding:10px 12px; font-size:14.5px;
   background:var(--surface-2); color:var(--ink); border:1px solid var(--rule);
   border-radius:var(--r)}
+input:not([type]),input[type=text]{background:var(--surface-2); color:var(--ink);
+  border:1px solid var(--rule); border-radius:var(--r)}
 textarea#bak{height:60px; resize:vertical; font-family:var(--f-num); font-size:11px;
   line-height:1.45; color:var(--ink-2)}
 #askPrompt{min-height:110px; resize:vertical; line-height:1.5}
@@ -388,7 +422,7 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .qtm .qo{color:var(--ink-3)}
 .qtm.bitti .qv{color:var(--ink-2); font-weight:500}
 .qtm.uzun .qv{color:var(--due)}
-.qtm.dur .qv{opacity:.45}
+.qtm.dur .qv{color:var(--ink-3)}
 .qtm.dar .qo{display:none}
 .walltime{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;
   margin:0 0 10px; padding:9px 10px; border:1px solid var(--rule); border-radius:var(--r);
@@ -417,7 +451,7 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .tmr.off{color:var(--due); border-color:var(--due); background:var(--due-soft)}
 .tmr.off .ti{width:0; height:0; border-right:0; border-left:8px solid currentColor;
   border-top:5px solid transparent; border-bottom:5px solid transparent}
-.tmr.bosta .tv{opacity:.45}
+.tmr.bosta .tv{color:var(--ink-3)}
 @media (hover:hover) and (pointer:fine){
   .tmr:hover{border-color:var(--accent); color:var(--accent)}
   .tmr.off:hover{border-color:var(--due); color:var(--due); filter:brightness(1.1)}
@@ -595,9 +629,8 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
     font-size:16px; white-space:normal; overflow:visible; text-overflow:clip}
   .navrow .nb,.navpop input{min-height:44px}
   input[type=search],select,textarea{font-size:16px}
-  .sheet .body{max-height:88dvh; overscroll-behavior:contain}
 }
-@media (max-width:719px) and (max-height:500px){
+@media (min-width:480px) and (max-width:719px) and (max-height:500px) and (orientation:landscape){
   .foot .acts{display:flex}
   .foot .acts .go{flex:1; font-size:14px}
 }
@@ -641,17 +674,25 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .rrow .a b{color:var(--ok); font-weight:600} .rrow .a i{color:var(--bad); font-style:normal}
 
 /* ── Paneller ── */
-.sheet{position:fixed; inset:0; z-index:50; display:none}
-.sheet.on{display:block}
-.sheet .veil{position:absolute; inset:0; background:rgba(8,11,16,.55)}
-.sheet .body{position:absolute; inset:auto 0 0 0; max-height:88vh; overflow-y:auto;
-  background:var(--paper); border-top:1px solid var(--rule);
-  border-radius:10px 10px 0 0; padding:16px 14px calc(24px + env(safe-area-inset-bottom));
-  animation:up .18s ease}
+.sheet{position:fixed; inset:0; z-index:50; width:100%; height:100%; max-width:none;
+  max-height:none; margin:0; padding:0; border:0; background:transparent; color:var(--ink)}
+.sheet:not([open]){display:none}
+.sheet::backdrop{background:rgba(8,11,16,.55)}
+.sheet .veil{position:absolute; inset:0}
+.sheet-shell{position:absolute; inset:0 0 0 auto; width:100%; display:flex;
+  flex-direction:column; background:var(--paper); overflow:hidden;
+  padding-top:env(safe-area-inset-top); animation:up .18s ease}
+.sheet-header{flex:none; display:grid; grid-template-columns:auto minmax(0,1fr) auto;
+  align-items:center; gap:8px; padding:8px max(14px,env(safe-area-inset-right)) 8px max(14px,env(safe-area-inset-left));
+  background:var(--surface); border-bottom:1px solid var(--rule)}
+.sheet .sheet-header h2{display:block; margin:0; font-size:16px; overflow-wrap:anywhere}
+.sheet-header button{min-height:44px; padding:8px 10px; font-size:12px}
+.sheet .body{flex:1; min-height:0; overflow-y:auto; overscroll-behavior:contain;
+  padding:16px max(14px,env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left))}
 @keyframes up{from{transform:translateY(14px); opacity:.6}to{transform:none; opacity:1}}
 @media (min-width:720px){
-  .sheet .body{inset:0 0 0 auto; width:min(560px, 92vw); max-height:none; border-radius:0;
-    border-left:1px solid var(--rule); border-top:none; padding:20px 18px}
+  .sheet-shell{width:min(560px,92vw); border-left:1px solid var(--rule)}
+  .sheet .body{padding:20px 18px}
 }
 .sheet h2{margin:0 0 13px; font-size:17px; font-weight:700; letter-spacing:-.02em;
   display:flex; align-items:center; gap:10px}
@@ -736,9 +777,28 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .hint{font-size:11.5px; line-height:1.55; color:var(--ink-3); margin-top:14px}
 kbd{font-family:var(--f-num); font-size:10px; background:var(--surface-2);
   border:1px solid var(--rule); border-radius:3px; padding:1px 5px; color:var(--ink-2)}
+@media (max-width:719px){
+  .sheet .body{max-height:none}
+  .sheet button,.sheet summary,#optBox button{min-height:44px}
+  .sheet input,.sheet select,.sheet textarea,.sheet #bak{font-size:16px}
+  .sheet .tbtn,#optBox .tbtn{font-size:12px}
+  .sheet .lbl,#optBox .lbl{font-size:11px}
+  .sheet .stat4{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sheet .stat4.st3 .s:last-child{grid-column:1 / -1}
+  .sheet .tbl{table-layout:fixed; overflow-wrap:anywhere}
+  .sheet .tbl th,.sheet .tbl td{padding:8px 4px}
+  .sheet .tbl td.n{white-space:normal}
+  .sheet .whorow{flex-wrap:wrap}
+  .sheet .whorow input,.sheet .whorow select{min-width:120px}
+  .picker button{min-height:44px}
+  .picker .tick,.picker .exp{min-width:44px}
+}
 </style>
+</head>
+<body>
+<a class="skip-link" href="#view">İçeriğe geç</a>
 
-<div class="bar">
+<nav class="bar" aria-label="Ana gezinme">
   <span class="logo">
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="M2 14.5 22 6l-3.5 8.5L22 23 2 14.5Z" fill="var(--accent)"/>
@@ -746,20 +806,34 @@ kbd{font-family:var(--f-num); font-size:10px; background:var(--surface-2);
   </span>
   <span class="sp"></span>
   <button class="tbtn" id="bWho" type="button"></button>
-  <button class="tbtn gsign hidden" id="bLogin" type="button">
+  <button class="tbtn gsign hidden" id="bLogin" type="button" aria-label="Google ile giriş yap">
     <svg viewBox="0 0 18 18" aria-hidden="true"><path fill="#4285F4" d="M17.6 9.2c0-.6-.1-1.3-.2-1.9H9v3.5h4.8a4.1 4.1 0 0 1-1.8 2.7v2.2h2.9c1.7-1.6 2.7-3.9 2.7-6.5Z"/><path fill="#34A853" d="M9 18c2.4 0 4.5-.8 6-2.2l-2.9-2.3c-.8.6-1.9.9-3.1.9-2.4 0-4.4-1.6-5.1-3.8H.9v2.3A9 9 0 0 0 9 18Z"/><path fill="#FBBC05" d="M3.9 10.7a5.4 5.4 0 0 1 0-3.4V5H.9a9 9 0 0 0 0 8l3-2.3Z"/><path fill="#EA4335" d="M9 3.6c1.3 0 2.5.5 3.4 1.3L15 2.3A9 9 0 0 0 .9 5l3 2.3C4.6 5.2 6.6 3.6 9 3.6Z"/></svg>
     <span>Giriş</span></button>
   <button class="tbtn" id="bNotes" type="button">Konu</button>
   <button class="tbtn" id="bStats" type="button">Durum</button>
   <button class="tbtn" id="bTheme" type="button">Tema</button>
-</div>
+</nav>
 
-<div class="page" id="view"></div>
+<main class="page" id="view" tabindex="-1">
+  <section class="hero" aria-labelledby="siteTitle">
+    <h1 id="siteTitle">PPL soru bankası ve teori sınavına hazırlık</h1>
+    <p>Türkçe ve İngilizce sorular, ders notları, aralıklı tekrar ve kişisel ilerleme takibi ile çalış.</p>
+    <p>Hava hukuku, meteoroloji, seyrüsefer, uçuş prensipleri ve diğer PPL teori derslerini gözden geçir.</p>
+    <noscript><p>Soru çözmek ve ilerlemeni kaydetmek için tarayıcında JavaScript’i etkinleştir.</p></noscript>
+  </section>
+</main>
 
-<div class="sheet" id="sheet">
-  <div class="veil" id="veil"></div>
-  <div class="body" id="sheetBody"></div>
-</div>
+<dialog class="sheet" id="sheet" aria-labelledby="sheetTitle">
+  <div class="veil" id="veil" aria-hidden="true"></div>
+  <div class="sheet-shell">
+    <header class="sheet-header">
+      <button class="tbtn" id="sheetBack" type="button">‹ Geri</button>
+      <h2 id="sheetTitle" tabindex="-1" autofocus>Panel</h2>
+      <button class="tbtn" id="sheetClose" type="button">Kapat ×</button>
+    </header>
+    <div class="body" id="sheetBody"></div>
+  </div>
+</dialog>
 
 <script id="qdata" type="application/json">__DATA__</script>
 <script id="fbconf" type="application/json">__FIREBASE__</script>
@@ -1630,6 +1704,7 @@ function start(sr){
   sr = sr === true;                         // onclick olay nesnesi geçirir, o sayılmaz
   const list = buildQueue();
   if (!list.length) return;
+  if (uiRoute() === 'settings') replaceUIRoute('');
   yeniTur = false;
   S.runs = S.runs.filter(r => r.done || (r.log || []).length);   // boş bırakılanları at
   const id = 'r' + Date.now();
@@ -1917,7 +1992,7 @@ function home(){
     : '';
 
   el('view').innerHTML =
-    idline + resume + hero +
+    '<h1 class="sr-only">PPL soru bankası ve teori sınavına hazırlık</h1>' + idline + resume + hero +
     (firstRun || allPassed ? '' : '<div class="chiprow">' + chips + '</div>') +
     (otherWait
       ? '<button class="nextmod" id="mAll" type="button">Diğer modüllerde ' +
@@ -1939,6 +2014,8 @@ function home(){
         ' · ' + (F.count ? F.count + ' soru' : 'tüm tur') +
         ' · ' + (F.mode === 'study' ? 'çalışma' : 'sınav') + '</span><span class="chev">›</span></summary>' +
       '<div class="in">' +
+        '<div class="settings-toolbar"><b>Ayarlar</b>' +
+          '<button class="tbtn" id="settingsBack" type="button">‹ Geri</button></div>' +
         '<div class="grp"><span class="lbl">Soru dili</span><div class="seg" id="lang">' +
           '<button type="button" data-lang="en" class="' + (F.lang === 'en' ? 'on' : '') +
             '">English</button>' +
@@ -1951,7 +2028,7 @@ function home(){
               'karşılığı henüz yok, onlar kaynak dilinde gelir. ') +
           'Dili değiştirmek ilerlemeni bozmaz: soru dilden bağımsız sayılır, ' +
           'çözdüğün soru iki kez karşına çıkmaz.</div></div>' +
-        '<div class="grp"><span class="lbl">Ara</span>' +
+        '<div class="grp"><label class="lbl" for="q">Ara</label>' +
           '<input type="search" id="q" placeholder="kelime ya da soru ID" value="' + esc(F.q) + '"></div>' +
         '<div class="grp"><span class="lbl">Kapsam</span><div id="sw"></div></div>' +
         '<div class="grp"><span class="lbl">Tur uzunluğu</span><div class="seg" id="cnt">' +
@@ -1997,6 +2074,9 @@ function home(){
       'Tur bitince yanlış yaptıkların tekrar sorulur.</div>';
 
   buildTree();
+  ['lang','aiSel','cnt','mode','ord'].forEach(id => {
+    el(id).querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', b.classList.contains('on') ? 'true' : 'false'));
+  });
   el('sw').innerHTML = [
     ['hideDup','Tekrar eden soruları gizle', QS.filter(q => q[6] && notPassed(q)).length],
     ['gen',    'Ders notundan üretilmişler', QS.filter(q => q[7] && notPassed(q)).length],
@@ -2006,7 +2086,16 @@ function home(){
     '" type="button"><span class="knob"></span><span>' + x + '</span>' +
     '<span class="n">' + n + '</span></button>').join('') +
     '<button class="tbtn" id="reviewQueue" type="button">İnceleme kuyruğu · ' + REVIEW.length + '</button>';
+  el('view').querySelectorAll('button.switch').forEach(b =>
+    b.setAttribute('aria-pressed', b.classList.contains('on') ? 'true' : 'false'));
   el('reviewQueue').onclick = openReviewQueue;
+  el('settingsBack').onclick = closeSettings;
+  const optBox = el('optBox');
+  optBox.ontoggle = () => {
+    if (!optBox.isConnected) return;
+    if (optBox.open) pushUIRoute('settings');
+    else if (uiRoute() === 'settings') backFromSettings();
+  };
   el('sw').querySelectorAll('.switch').forEach(b =>
     b.onclick = () => { F[b.dataset.k] = !F[b.dataset.k]; savePref(); home(); openBox('optBox'); });
 
@@ -2162,17 +2251,20 @@ function buildTree(){
       if (!n) return '';
       const on = sel && (sel.length === 0 || sel.includes(sc[0]));
       return '<div class="row"><button class="tick ' + (on ? 'all' : '') + '" data-s="' + s.c +
-        '" data-c="' + sc[0] + '" type="button">' + (on ? '◼' : '◻') + '</button>' +
+        '" data-c="' + sc[0] + '" type="button" aria-label="' + esc(secName(sc)) +
+        ' seçimi" aria-pressed="' + (on ? 'true' : 'false') + '">' + (on ? '◼' : '◻') + '</button>' +
         '<button class="nm" data-solo="' + s.c + '" data-c="' + sc[0] + '" type="button" title="' +
         esc(secName(sc)) + '">' + esc(secName(sc)) + '<b>' + n + '</b></button></div>';
     }).join('');
     return '<div class="node' + (state ? ' sel' : '') + '"><div class="row">' +
-      '<button class="tick ' + state + '" data-s="' + s.c + '" type="button">' +
+      '<button class="tick ' + state + '" data-s="' + s.c + '" type="button" aria-label="' +
+        esc(subjName(s)) + ' seçimi" aria-pressed="' + (state === 'all' ? 'true' : state === 'some' ? 'mixed' : 'false') + '">' +
         (state === 'all' ? '◼' : state === 'some' ? '◧' : '◻') + '</button>' +
       '<button class="nm" data-solo="' + s.c + '" type="button">' + s.c + ' · ' + esc(subjName(s)) +
         '<b>' + qs.length + '</b></button>' +
       '<button class="exp' + (expanded[s.c] ? ' open' : '') + '" data-x="' + s.c +
-        '" type="button" aria-label="Bölümler">›</button></div>' +
+        '" type="button" aria-label="' + esc(subjName(s)) + ' bölümleri" aria-expanded="' +
+        (expanded[s.c] ? 'true' : 'false') + '">›</button></div>' +
       '<div class="kids' + (expanded[s.c] ? '' : ' hidden') + '">' + secs + '</div></div>';
   }).join('');
 
@@ -2508,6 +2600,7 @@ function draw(){
 
   const last = R.i === R.list.length - 1 && !R.missed.length;
   el('view').innerHTML =
+    '<h1 class="sr-only">Soru ' + (R.i + 1) + ' / ' + R.list.length + '</h1>' +
     '<div class="prog"><i class="' + (retry ? 'retry' : '') + '" style="width:' +
       (R.i / R.list.length * 100) + '%"></i></div>' +
     '<div class="meta"><button class="backb" id="hb" type="button" ' +
@@ -2538,6 +2631,8 @@ function draw(){
       (q[5] ? '<span class="tag flag">tartışmalı</span>' : '') +
       askBtn() +
       '<button class="starbtn' + (st.has(q[0]) ? ' on' : '') + '" id="star" type="button" ' +
+        'aria-label="' + (st.has(q[0]) ? 'Sorunun yıldızını kaldır' : 'Soruyu yıldızla') +
+        '" aria-pressed="' + (st.has(q[0]) ? 'true' : 'false') + '" ' +
         'title="Yıldızla (S)">' + (st.has(q[0]) ? '★' : '☆') + '</button>' +
       '<span class="lbl num">' + q[0] + '</span></div>' +
       '<div class="qt">' + esc(qText(q)) + '</div>' +
@@ -2687,14 +2782,14 @@ function openSrText(){
   if (!list.length) return;
   const m = srMetin(list);
   el('sheetBody').innerHTML =
-    '<h2>Düz metin<span class="sp"></span><span class="lbl">' + nf(list.length) + ' soru</span></h2>' +
+    '<p class="lbl">' + nf(list.length) + ' soru</p>' +
     '<div class="note" style="margin-bottom:8px">Kapsamdaki soruların metni ve doğru cevabı: ' +
       esc(scopeTitle()) + ' · ' + esc(deckName()) + '. Seçili dilde; dili Ayarlar\'dan değiştir.</div>' +
     '<div style="display:flex; gap:7px; margin-bottom:8px">' +
       '<button class="tbtn" id="srCopy" type="button">Kopyala</button></div>' +
-    '<textarea id="srTa" readonly spellcheck="false" style="min-height:60vh"></textarea>';
+    '<textarea id="srTa" aria-label="Sorular ve doğru cevaplar" readonly spellcheck="false" style="min-height:60vh"></textarea>';
   el('srTa').value = m;
-  el('sheet').classList.add('on');
+  showSheet('Düz metin', 'text');
   el('srCopy').onclick = async () => {
     const b = el('srCopy'), ok = await copyText(m);
     b.textContent = ok ? 'Kopyalandı' : 'Kopyalanamadı — kutudan seç';
@@ -2720,7 +2815,7 @@ function report(rec, live){
   const seen = [...new Set(log.map(x => x.id))].filter(id => BY_ID.has(id));
 
   el('view').innerHTML =
-    '<div class="card"><div style="padding:24px 16px; text-align:center">' +
+    '<h1 class="sr-only">Tur sonucu</h1><div class="card"><div style="padding:24px 16px; text-align:center">' +
       '<div class="lbl">' + (live ? 'Tur bitti' : esc(rec.title || 'Tur')) + ' · ' + sureYazi +
         (rounds > 1 ? ' · ' + rounds + ' tur' : '') + '</div>' +
       '<div class="note">Başlangıç <b>' + stamp(rec.t0) + '</b> · Bitiş <b>' +
@@ -2945,8 +3040,7 @@ function openStats(){
   for (let i = days.length - 1; i >= 0; i--){ if (days[i][1]) streak++; else if (i !== days.length-1) break; }
 
   el('sheetBody').innerHTML =
-    '<h2>Durum</h2>' +
-    '<div class="whobox"><span class="lbl">Adın</span>' +
+    '<div class="whobox"><label class="lbl" for="pname">Adın</label>' +
       '<div class="whorow"><input id="pname" maxlength="28" value="' + esc(ME) + '">' +
         '<button class="tbtn" id="pSave" type="button">Kaydet</button></div>' +
       '<div class="note">' + (Cloud.user
@@ -2955,7 +3049,7 @@ function openStats(){
           'İlerlemen bu ada bağlı saklanır.') + '</div>' +
       (PROFILES.length > 1
         ? '<div class="whorow" style="margin-top:8px">' +
-          '<select id="prof">' + PROFILES.map(x => '<option' + (x === ME ? ' selected' : '') +
+          '<select id="prof" aria-label="Çalışma profili">' + PROFILES.map(x => '<option' + (x === ME ? ' selected' : '') +
             '>' + esc(x) + '</option>').join('') + '</select>' +
           '<button class="tbtn" id="pNew" type="button">+ Yeni</button></div>'
         : '<div class="whorow" style="margin-top:8px">' +
@@ -2990,7 +3084,7 @@ function openStats(){
       '</div>' +
 
     '<div class="lbl" style="margin-bottom:7px">Ders bazında</div>' +
-    '<table class="tbl"><thead><tr><th>Ders</th><th class="n">Başarı</th><th style="width:28%"></th>' +
+    '<table class="tbl"><thead><tr><th>Ders</th><th class="n">Başarı</th><th style="width:28%"><span class="sr-only">Başarı grafiği</span></th>' +
       '<th class="n">Kapsam</th></tr></thead><tbody>' +
       per.map(p => '<tr' + (isPassed(p.c) ? ' class="passed"' : '') + '><td><b>' + p.c +
         '</b>' + (isPassed(p.c) ? ' <span class="pflag">geçildi</span>' : '') +
@@ -3029,7 +3123,7 @@ function openStats(){
     '<div class="lbl" style="margin:18px 0 7px">Yedek</div>' +
     '<div class="note" style="margin-bottom:8px">İlerleme bu tarayıcıda, <b>' + esc(ME) +
       '</b> profilinde. Başka cihaza taşımak için metni kopyala, orada aynı kutuya yapıştırıp Yükle.</div>' +
-    '<textarea id="bak" spellcheck="false" placeholder="Yedek metnini buraya yapıştır…"></textarea>' +
+    '<textarea id="bak" aria-label="İlerleme yedeği" spellcheck="false" placeholder="Yedek metnini buraya yapıştır…"></textarea>' +
     '<div style="display:flex; gap:7px; flex-wrap:wrap; margin-top:8px">' +
       '<button class="tbtn" id="copy" type="button">Kopyala</button>' +
       '<button class="tbtn" id="load" type="button">Yükle</button>' +
@@ -3037,10 +3131,10 @@ function openStats(){
         ? '<button class="tbtn" id="dl" type="button">Dosya indir</button>' +
           '<button class="tbtn" id="imp" type="button">Dosya seç</button>' : '') +
       '<button class="tbtn" id="wipe" type="button" style="color:var(--bad); border-color:var(--bad)">Sıfırla</button>' +
-    '</div><div class="note" id="bakMsg"></div>' +
+    '</div><div class="note" id="bakMsg" role="status"></div>' +
     '<input type="file" id="impFile" accept="application/json" class="hidden">';
 
-  el('sheet').classList.add('on');
+  showSheet('Durum', 'stats');
   el('pSave').onclick = () => {
     const nv = el('pname').value.trim().slice(0, 28);
     if (!nv || nv === ME) return;
@@ -3231,7 +3325,7 @@ function mergeProfile(name, text){
 
 // ── Ders notları ──
 function openReviewQueue(){
-  el('sheetBody').innerHTML = '<h2>İnceleme kuyruğu</h2>' +
+  el('sheetBody').innerHTML =
     '<div class="note">Bu adaylar aktif teste girmez ve çözüm geçmişine işlenmez. Cevapları kesinleşmeden doğru şık gösterilmez.</div>' +
     (REVIEW.length ? REVIEW.map(item => '<details class="grp"><summary>' +
       esc(item.ders || '') + ' · ' + esc((KS[item.kaynak] || [item.kaynak || 'Aday'])[0]) +
@@ -3247,13 +3341,13 @@ function openReviewQueue(){
         return (/^https?:\/\//.test(href || '') ? '<a href="' + esc(href) +
           '" target="_blank" rel="noopener noreferrer">' + name + '</a>' : name) + (ref ? ' (' + ref + ')' : '');
       }).join(' · ') + '</div></details>').join('') : '<div class="empty">İnceleme bekleyen aday yok.</div>');
-  el('sheet').classList.add('on');
+  showSheet('İnceleme kuyruğu', 'review');
   el('sheetBody').scrollTop = 0;
 }
 
 function openNotes(id){
   if (id === undefined){
-    el('sheetBody').innerHTML = '<h2>Konu anlatımı</h2>' +
+    el('sheetBody').innerHTML =
       (NOTES.length
         ? '<div class="notelist">' + NOTES.map((n, i) =>
             '<button class="noteitem" data-n="' + i + '" type="button">' +
@@ -3264,17 +3358,16 @@ function openNotes(id){
           'build_web.py çalıştır.</span></div>') +
       '<div class="note" style="margin-top:14px">Notlar depodaki <b>notes/</b> klasöründen ' +
       'gelir; uygulamaya gömülüdür, internet gerekmez.</div>';
-    el('sheet').classList.add('on');
+    showSheet('Konu anlatımı', 'notes');
     el('sheetBody').querySelectorAll('.noteitem').forEach(b =>
       b.onclick = () => openNotes(+b.dataset.n));
     return;
   }
   const n = NOTES[id];
+  if (!n) return openNotes();
   el('sheetBody').innerHTML =
-    '<h2><button class="tbtn" id="nBack" type="button">‹ Geri</button>' +
-      '<span class="sp"></span>' + (n.s ? '<span class="lbl">' + esc(n.s) + '</span>' : '') + '</h2>' +
     '<div class="md">' + md(n.md) + '</div>';
-  el('nBack').onclick = () => openNotes();
+  showSheet('Ders notu' + (n.s ? ' · ' + n.s : ''), 'note:' + id);
   el('sheetBody').scrollTop = 0;
 }
 
@@ -3352,10 +3445,83 @@ function md(src){
   return out.join('');
 }
 
-function closeSheet(){
-  el('sheet').classList.remove('on');
+// ── Paneller: tek kapanış yolu, native odak yönetimi ve mobil geri tuşu ──
+let sheetFocus = null, sheetScroll = 0, sheetRoute = '', settingsBackPending = false;
+const uiRoute = () => (history.state && history.state.atplUI) || '';
+const isSheetRoute = route => ['stats','notes','review','text'].includes(route) || /^note:\d+$/.test(route);
+function replaceUIRoute(route){
+  try{ history.replaceState(Object.assign({}, history.state, {atplUI:route, atplDepth:0}), ''); }catch(e){}
+}
+function pushUIRoute(route){
+  if (uiRoute() === route) return;
+  const depth = isSheetRoute(route) ? (isSheetRoute(uiRoute()) ? (history.state.atplDepth || 1) + 1 : 1) : 0;
+  try{ history.pushState(Object.assign({}, history.state, {atplUI:route, atplDepth:depth}), ''); }catch(e){}
+}
+function showSheet(title, route){
+  const sh = el('sheet'), changed = sheetRoute !== route;
+  if (!sh.open){
+    sheetFocus = document.activeElement;
+    sheetScroll = window.scrollY;
+    document.body.style.setProperty('--locked-scroll-y', -sheetScroll + 'px');
+    document.body.classList.add('modal-open');
+    sh.showModal();
+  }
+  sh.classList.add('on');
+  el('sheetTitle').textContent = title;
+  pushUIRoute(route);
+  sheetRoute = route;
+  if (changed){
+    el('sheetBody').scrollTop = 0;
+    el('sheetTitle').focus({preventScroll:true});
+  }
+}
+function dismissSheet(){
+  const sh = el('sheet');
+  if (!sh.open) return;
+  sh.close(); sh.classList.remove('on'); sheetRoute = '';
+  document.body.classList.remove('modal-open');
+  document.body.style.removeProperty('--locked-scroll-y');
+  window.scrollTo({top:sheetScroll, behavior:'instant'});
   // Geçilen sınav listesi değiştiyse ana ekranı tazele (tur sürüyorsa dokunma)
   if (passDirty){ passDirty = false; if (!R) home(); }
+  const target = sheetFocus && sheetFocus.isConnected ? sheetFocus : el('bStats');
+  target.focus({preventScroll:true});
+}
+function closeSheet(){
+  if (!el('sheet').open) return;
+  const depth = isSheetRoute(uiRoute()) ? (history.state.atplDepth || 1) : 0;
+  dismissSheet();
+  if (depth) history.go(-depth);
+}
+function backFromSettings(){
+  if (settingsBackPending) return;
+  settingsBackPending = true;
+  history.back();
+}
+function closeSettings(){
+  const box = el('optBox');
+  if (!box) return;
+  box.open = false;
+  box.querySelector('summary').focus({preventScroll:true});
+  box.scrollIntoView({block:'nearest', behavior:'instant'});
+  if (uiRoute() === 'settings') backFromSettings();
+}
+function renderUIRoute(){
+  settingsBackPending = false;
+  const route = uiRoute();
+  if (route === 'stats') return openStats();
+  if (route === 'notes') return openNotes();
+  if (/^note:\d+$/.test(route)) return openNotes(+route.slice(5));
+  if (route === 'review') return openReviewQueue();
+  if (route === 'text') return openSrText();
+  dismissSheet();
+  const box = el('optBox');
+  if (route === 'settings' && R){ replaceUIRoute(''); return; }
+  if (box){
+    const wasOpen = box.open;
+    box.open = route === 'settings';
+    if (wasOpen && !box.open) box.querySelector('summary').focus({preventScroll:true});
+  }
 }
 
 // ── Olaylar ──
@@ -3377,6 +3543,29 @@ function paintWho(){
 }
 el('bNotes').onclick = () => openNotes();
 el('veil').onclick = closeSheet;
+el('sheetClose').onclick = closeSheet;
+el('sheetBack').onclick = () => {
+  if (sheetRoute.startsWith('note:') && (history.state.atplDepth || 0) > 1) history.back();
+  else closeSheet();
+};
+el('sheet').addEventListener('cancel', e => { e.preventDefault(); closeSheet(); });
+el('sheet').addEventListener('keydown', e => {
+  if (e.key !== 'Tab') return;
+  const controls = Array.from(el('sheet').querySelectorAll(
+    'button:not(:disabled),input:not(:disabled),select:not(:disabled),textarea:not(:disabled),a[href],summary,[tabindex="0"]'
+  )).filter(x => x.getClientRects().length && getComputedStyle(x).visibility !== 'hidden');
+  const first = controls[0], last = controls[controls.length - 1];
+  if (!first){ e.preventDefault(); el('sheetTitle').focus(); return; }
+  if (e.shiftKey && (document.activeElement === first || document.activeElement === el('sheetTitle'))){
+    e.preventDefault(); last.focus();
+  }else if (!e.shiftKey && document.activeElement === last){
+    e.preventDefault(); first.focus();
+  }
+});
+addEventListener('popstate', renderUIRoute);
+new ResizeObserver(([entry]) => {
+  document.documentElement.style.setProperty('--app-bar-height', entry.target.getBoundingClientRect().height + 'px');
+}).observe(document.querySelector('.bar'));
 
 // ── Parmakla kaydırma: sola sonraki, sağa önceki soru ──
 // Telefonda ok tuşu yok ve gezinme paneli bulunması zor; kaydırma hiç yer
@@ -3391,7 +3580,7 @@ let sonKaydirma = 0;
     if (!R || e.touches.length !== 1) return;
     if (el('sheet') && el('sheet').classList.contains('on')) return;
     const tg = e.target;
-    if (tg && tg.closest && tg.closest('input, textarea, select, .navpop, .figbox')) return;
+    if (tg && tg.closest && tg.closest('input, textarea, select, .navpop, .figbox, .bar, .foot, .meta, .walltime, a')) return;
     iptal = false;
     x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; bas = Date.now();
   }, { passive: true });
@@ -3408,6 +3597,7 @@ let sonKaydirma = 0;
 })();
 
 document.addEventListener('keydown', e => {
+  if (el('sheet').open) return;             // panel açıkken arka plandaki soruyu değiştirme
   const tg = e.target;
   if (tg && tg.matches && tg.matches('input, select, textarea')) return;
   if (e.key === 'Escape'){
@@ -3446,6 +3636,9 @@ loadProfile();
 // Kullanıcı isterse konu seçicisinden daraltır; seçim onun kararıdır.
 paintWho();
 if (S.runs[0] && !S.runs[0].done) resumeRun(S.runs[0].id); else home();
+if (uiRoute()) renderUIRoute();
 Cloud.init();
 })();
 </script>
+</body>
+</html>

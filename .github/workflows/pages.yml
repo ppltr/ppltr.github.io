@@ -12,6 +12,11 @@ on:
       - 'notes/**'
       - 'figures/**'
       - 'web/icons/**'
+      - 'web/seo/**'
+      - 'scripts/test_*web.cjs'
+      - 'scripts/test_timers.cjs'
+      - 'package.json'
+      - 'package-lock.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -26,14 +31,37 @@ concurrency:
 
 jobs:
   derle:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Test bağımlılıkları
+        run: npm ci
+      - name: Mobil tarayıcı motorları
+        run: npx playwright install --with-deps chromium webkit
       - name: Siteyi üret
         run: python scripts/build_web.py
+      - name: Chromium mobil, gezinme ve erişilebilirlik kontrolleri
+        run: npm test
+        env:
+          MOBILE_QA_DIR: test-results/chromium
+      - name: WebKit mobil, gezinme ve erişilebilirlik kontrolleri
+        run: npm test
+        env:
+          WEB_TEST_BROWSER: webkit
+          MOBILE_QA_DIR: test-results/webkit
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: mobile-test-results
+          path: test-results
+          if-no-files-found: ignore
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

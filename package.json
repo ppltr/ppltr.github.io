@@ -1,0 +1,11 @@
+{
+  "name": "ppl-study-web-checks",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/test_kaynak_web.cjs && node scripts/test_timers.cjs && node scripts/test_mobile_web.cjs && node scripts/test_navigation_web.cjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.0",
+    "playwright": "1.64.1"
+  }
+}

@@ -4,7 +4,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const http = require('node:http');
-const { chromium } = require('playwright');
+const engines = require('playwright');
 
 (async () => {
   const html = fs.readFileSync(path.join(__dirname, '../docs/index.html'));
@@ -16,16 +16,17 @@ const { chromium } = require('playwright');
   const base = `http://127.0.0.1:${server.address().port}/`;
   let browser;
   try {
-    browser = await chromium.launch({headless:true,
-      ...(process.env.MOBILE_BROWSER_EXECUTABLE ? {executablePath:process.env.MOBILE_BROWSER_EXECUTABLE} : {})});
+    const engine = process.env.WEB_TEST_BROWSER || 'chromium';
+    browser = await engines[engine].launch({headless:true,
+      ...(engine === 'chromium' && process.env.MOBILE_BROWSER_EXECUTABLE ? {executablePath:process.env.MOBILE_BROWSER_EXECUTABLE} : {})});
     const page = await browser.newPage({viewport:{width:414,height:896}, isMobile:true,
       hasTouch:true, deviceScaleFactor:1, timezoneId:'Europe/Istanbul'});
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
     await page.route('**/*', route => route.request().url().startsWith(base) ? route.continue() : route.abort());
     await page.emulateMedia({reducedMotion:'reduce'});
-    const sizes = [[320,568],[360,780],[375,812],[390,844],[400,844],[401,844],
-      [414,896],[430,932],[480,854],[600,960],[719,1024],[844,390]];
+    const sizes = [[320,480],[320,568],[360,780],[375,812],[390,844],[400,844],[401,844],
+      [414,896],[430,932],[480,854],[568,320],[600,960],[667,375],[719,1024],[844,390]];
     const layout = async label => {
       const width = page.viewportSize().width;
       const result = await page.evaluate(() => ({

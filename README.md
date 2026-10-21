@@ -403,6 +403,40 @@ Kurallar ayrıca yazılan belgenin biçimini ve boyutunu doğrular.
 > engeller. Katman sessizce kapanır, uygulama `localStorage` ile çalışmaya devam eder.
 > Bulut yedeği için siteyi kullan.
 
+## Mobil gezinme ve kalite kontrolleri
+
+Durum, ders notları, inceleme kuyruğu ve düz metin panellerinde Geri/Kapat başlığı
+her zaman görünür. Telefonun veya tarayıcının Geri düğmesi önce paneli kapatır;
+ders notunda önce listeye döner. Panel kapanınca aynı soru, seçim ve sayfa konumu
+korunur. Ayarlar'daki sabit Geri düğmesi bölümü kapatır; ayar değişiklikleri
+otomatik kaydedilir.
+
+Yayın öncesinde Chromium ve WebKit üzerinde mobil ekranlar, panelden çıkış,
+Geri/İleri, klavye odağı, soru/süre korunması ve axe erişilebilirlik kuralları
+otomatik kontrol edilir. Başarısız kontrol yayını durdurur.
+
+```bash
+npm ci
+npx playwright install chromium webkit
+python3 scripts/build_web.py
+npm test
+WEB_TEST_BROWSER=webkit npm test
+```
+
+Ekran görüntüleri için `MOBILE_QA_DIR=test-results` kullanılabilir. Bu testler
+320–719 piksel genişlikleri ve yatay görünümü kapsar; gerçek telefon, ekran
+okuyucu ve sanal klavye ile elle yapılacak incelemenin yerine geçmez.
+
+SEO için açıklayıcı başlık/açıklama, canonical adres, paylaşım etiketleri,
+WebApplication yapılandırılmış verisi, JavaScript öncesi okunabilir tanıtım,
+`robots.txt` ve `sitemap.xml` bulunur. Soru ve kişisel ilerleme ekranları ayrı
+indekslenebilir adresler oluşturmaz. Yazı tipleri ilk çizimi bekletmeden yüklenir.
+
+Gezinme ve odak davranışı [WAI dialog rehberini](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/),
+SEO düzenlemeleri [Google Search Central rehberini](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+izler. Otomatik kontrollerin geçmesi bütün cihazlarda kusursuzluk veya arama
+sonuçlarında sıralama garantisi değildir.
+
 ## Yayın
 
 **Canlı site: https://ppltr.github.io/**
