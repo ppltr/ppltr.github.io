@@ -410,6 +410,8 @@ Soru numarasına dokunarak soruya gidilir; Sor ve yıldız işlemleri doğrudan 
 Soru süresi üst satırda, başlangıç/aktif/toplam süre ayrıntıları ve Konu/Durum/Tema
 işlemleri **⋯** menüsündedir. Menü soru değişince kapanır. Ana uygulama çubuğu
 soru ekranında yer kaplamaz; ana ekrana dönünce yeniden görünür.
+Masaüstü ve geniş yatay tablette de çalışma üst çubuğu tek satırdır; ayrıntılı
+sayaç ve araç kutusu bütün ekran boyutlarında **⋯** ile açılır.
 
 iPhone 17 Pro için 402×874 ve Safari araç çubuklarına alan bırakan 402×734
 yerleşimleri ayrıca test edilir. Kontrol satırı en fazla 48 px, alt gezinme en
