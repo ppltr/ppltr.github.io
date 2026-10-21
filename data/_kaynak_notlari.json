@@ -1,5 +1,16 @@
 {
  "notlar": {
+  "55201": {
+   "tr": "MIFG, shallow fog yani sığ sis kodudur. BR pus, FG sis, BCFG parçalı sis, FZFG ise donan sis anlamına gelir. Kullanıcının sınavda kodlarla sorulduğunu hatırladığı ve 2026-10-21 tarihinde onayladığı yeniden yazımdır; resmî soru metni değildir. 15551 numaralı eski soru ayrı ve görünür tutulmuştur.",
+   "en": "MIFG is the code for shallow fog. BR means mist, FG fog, BCFG patches of fog, and FZFG freezing fog. Reconstructed from the user's recollection of a question with code options and approved on 2026-10-21; this is not an official exam transcript. Original question 15551 is retained as a separate visible question.",
+   "answer_verification": [
+    {
+     "url": "https://aviationweather.gov/viewer/help/",
+     "section": "Weather Symbols: Fog and Mist"
+    }
+   ],
+   "adapted": true
+  },
   "61001": {
    "src": [
     {

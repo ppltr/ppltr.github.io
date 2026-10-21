@@ -1,0 +1,14 @@
+{
+  "questions": {
+    "55201": {
+      "text": "Yerden yalnızca 2 metre yüksekliğe kadar uzanan sis, METAR’da hangi kodla gösterilir?",
+      "options": [
+        "MIFG",
+        "BR",
+        "FG",
+        "BCFG",
+        "FZFG"
+      ]
+    }
+  }
+}

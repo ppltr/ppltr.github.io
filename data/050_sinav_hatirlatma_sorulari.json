@@ -1,0 +1,25 @@
+{
+  "subject_code": "050",
+  "subject_name": "Meteorology",
+  "source": "Kullanıcının 2026-10-21 tarihli sınav hatırlamasından onayladığı yeniden yazım; resmî soru metni değildir.",
+  "origin": "banka",
+  "answer_convention": "Doğru cevap ilk şıktır (A). Kullanıcıya gösterilen taslakta C olan MIFG başa alınmış, diğer şıkların kendi aralarındaki sırası korunmuştur. Sunum katmanı şıkları karıştırır.",
+  "id_convention": "55201+ bandı: kullanıcının sınav hatırlamasından onayladığı Meteoroloji soru uyarlamaları. Mevcut ve emekli kimlikler yeniden kullanılmaz.",
+  "sections": {
+    "050-06": "Clouds, Fog and Precipitation"
+  },
+  "questions": [
+    {
+      "id": 55201,
+      "section": "050-06",
+      "text": "Fog which reaches only 2 metres above ground is coded in a METAR as:",
+      "options": [
+        "MIFG",
+        "BR",
+        "FG",
+        "BCFG",
+        "FZFG"
+      ]
+    }
+  ]
+}

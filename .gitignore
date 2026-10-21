@@ -9,6 +9,10 @@ cards/
 videos/
 figures/_kontrol.html
 
+# Yerel ders çıktıları, render dosyaları ve geçici çalışma ortamları
+/output/
+/tmp/
+
 # firebase CLI günlüğü
 firebase-debug.log
 .firebase/
