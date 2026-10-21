@@ -52,6 +52,11 @@ const engines = require('playwright');
       fs.mkdirSync(process.env.MOBILE_QA_DIR, {recursive:true});
       await page.screenshot({path:path.join(process.env.MOBILE_QA_DIR, name + '.png')});
     };
+    const appAction = async name => {
+      if (await page.locator('#b' + name).isVisible()) return page.locator('#b' + name).tap();
+      if (!await page.locator('#quizExtra').isVisible()) await page.locator('#quizMore').tap();
+      await page.locator('#quiz' + name).tap();
+    };
     await page.goto(base);
     // Include the signed-out Google control, even when its remote SDK is blocked.
     await page.locator('#bLogin').evaluate(el => el.classList.remove('hidden'));
@@ -86,8 +91,10 @@ const engines = require('playwright');
     assert.match(await page.locator('#tmr .tv').textContent(), /^4:/);
     assert.match(await page.locator('#questionWall').textContent(), /^3:/);
     await matrix('long timers and question 1000');
+    await page.locator('#quizMore').tap();
     await page.locator('#tmr').tap();
     assert.equal(await page.locator('#tmr').getAttribute('aria-pressed'), 'true');
+    await page.locator('#quizMore').tap();
     const wrong = await page.evaluate(() => {
       const db = JSON.parse(document.querySelector('#qdata').textContent);
       const id = +document.querySelector('.card .head > .lbl.num').textContent;
@@ -106,10 +113,10 @@ const engines = require('playwright');
     await page.locator('#navNo').fill('1001');
     await page.locator('#navGo').tap();
     assert.match(await page.locator('#navBtn').textContent(), /^1001\//);
-    await page.locator('#bTheme').tap();
+    await appAction('Theme');
     await matrix('theme');
     await shot('mobile-dark');
-    await page.locator('#bStats').tap();
+    await appAction('Stats');
     await matrix('stats panel');
     assert.deepEqual(errors, []);
     console.log('Mobile device layouts, long timers, answer controls, navigation, settings and stats passed.');

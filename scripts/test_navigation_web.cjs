@@ -26,6 +26,11 @@ const engines = require('playwright');
     await context.route('**/*', route => route.request().url().startsWith(base) ? route.continue() : route.abort());
     const page = await context.newPage(), errors = [];
     page.on('pageerror', error => errors.push(error.message));
+    const appAction = async name => {
+      if (await page.locator('#b' + name).isVisible()) return page.locator('#b' + name).tap();
+      if (!await page.locator('#quizExtra').isVisible()) await page.locator('#quizMore').tap();
+      await page.locator('#quiz' + name).tap();
+    };
     const closed = async () => {
       await page.waitForFunction(() => !document.querySelector('#sheet').open && !['stats','notes','text','review'].includes(history.state?.atplUI) && !/^note:/.test(history.state?.atplUI || ''));
       assert.equal(await page.locator('body').evaluate(el => el.classList.contains('modal-open')), false);
@@ -115,22 +120,22 @@ const engines = require('playwright');
     await page.locator('#go').tap();
     const question = await page.locator('#navBtn').textContent();
     await a11y('question');
-    await page.locator('#bStats').tap(); await a11y('status');
+    await appAction('Stats'); await a11y('status');
     await page.keyboard.press('ArrowRight'); await page.keyboard.press('a');
     await page.locator('#sheetBack').tap(); await closed();
     assert.equal(await page.locator('#navBtn').textContent(), question);
     assert.equal(await page.locator('.opt:disabled').count(), 0);
-    await page.locator('#bStats').tap();
+    await appAction('Stats');
     await page.reload();
     await page.waitForFunction(() => document.querySelector('#sheet').open);
     await page.locator('#sheetClose').tap(); await closed();
     assert.equal(await page.locator('#navBtn').textContent(), question);
-    await page.locator('#bTheme').tap(); await a11y('dark question');
-    await page.locator('#bStats').tap(); await a11y('dark status');
+    await appAction('Theme'); await a11y('dark question');
+    await appAction('Stats'); await a11y('dark status');
     await page.locator('#sheetClose').tap(); await closed();
     if (process.env.MOBILE_QA_DIR) {
       fs.mkdirSync(process.env.MOBILE_QA_DIR, {recursive:true});
-      await page.locator('#bStats').tap();
+      await appAction('Stats');
       await page.screenshot({path:path.join(process.env.MOBILE_QA_DIR, engine + '-status.png')});
       await page.locator('#sheetClose').tap(); await closed();
     }

@@ -15,6 +15,7 @@ on:
       - 'web/seo/**'
       - 'scripts/test_*web.cjs'
       - 'scripts/test_timers.cjs'
+      - 'scripts/test_compact_layout.cjs'
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/pages.yml'

@@ -413,7 +413,7 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 
 /* ── Soru ── */
 .prog{height:3px; background:var(--rule); border-radius:2px; overflow:hidden; margin-bottom:6px}
-/* Aktif sayaçlar masaüstünde üst bilgi satırında, telefonda kendi satırındadır.
+/* Aktif sayaçlar ayrıntı alanındadır; telefonda yalnız istenince açılır.
    İlerleme çubuğu tam genişlikte kalır. Sığmayan ortalama gizlenir. */
 .qtm{flex:none; margin-left:auto; font-family:var(--f-num); font-size:10.5px; letter-spacing:.03em;
   color:var(--ink-3); white-space:nowrap; font-variant-numeric:tabular-nums}
@@ -424,6 +424,16 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .qtm.uzun .qv{color:var(--due)}
 .qtm.dur .qv{color:var(--ink-3)}
 .qtm.dar .qo{display:none}
+.quiz-more,.compact-clock{display:none}
+.quiz-extra{margin-bottom:10px; padding:10px; background:var(--surface-2);
+  border:1px solid var(--rule); border-radius:8px}
+.active-time{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px}
+.active-time .qtm{margin-left:0}
+.quiz-actions{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+.quiz-actions button{min-height:44px}
+.quiz-info{font-size:12px; color:var(--ink-2); margin-top:10px; overflow-wrap:anywhere}
+.quiz-info .tag{display:inline-block; margin:6px 5px 0 0}
+.quiz-extra .walltime{margin:0; padding:0; border:0; background:none}
 .walltime{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;
   margin:0 0 10px; padding:9px 10px; border:1px solid var(--rule); border-radius:var(--r);
   background:var(--surface-2)}
@@ -573,7 +583,7 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
    panel açılınca düğmelerin hemen üstünde çıksın. */
 .foot{margin-top:10px}
 .acts{display:flex; gap:8px; align-items:stretch}
-/* Masaüstünde tek eylem satırı; mobilde gezinme ve devam için ayrı satırlar. */
+/* Gezinme ve devam aynı ince eylem satırında kalır. */
 .acts .go{flex:1; min-width:0; white-space:nowrap; overflow:hidden;
   text-overflow:ellipsis}
 @media (max-width:719px){
@@ -595,44 +605,80 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 
 /* Mobil yerleşim: sayaçlar ve dokunma alanları ekran genişliğine bağlı kalır.
    Uzun süreler ve büyük soru numaraları tek satırı taşırmamalı. */
-@media (max-width:719px){
+@media (max-width:719px), (max-height:500px) and (hover:none) and (pointer:coarse){
   .bar{gap:6px}
   .bar .logo .long,.bar .gsign span{display:none}
   .bar .tbtn{min-width:40px; min-height:40px; padding:6px 7px; font-size:10px;
     display:inline-flex; align-items:center; justify-content:center}
   .bar #bWho{padding:4px}
   .bar .gsign{width:40px; padding:0}
-  .meta{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:8px;
-    align-items:center; margin-bottom:10px}
-  .meta > .lbl{display:none}
-  .meta .backb{justify-self:start; min-height:40px; margin:0}
-  .meta .qpos{justify-self:end; font-size:11px; letter-spacing:0}
-  .meta .qtm{margin:0; min-width:0; max-width:100%; white-space:normal; letter-spacing:0;
-    font-size:11px; line-height:1.5}
-  .qtm .qo{display:none}
-  .meta .tmr{justify-self:end; min-height:40px; margin:0; gap:5px; padding:6px 9px}
-  .walltime{gap:6px; padding:10px; margin-bottom:12px}
-  .walltime .wl{font-size:11px}
-  .walltime time,.walltime b{font-size:13px}
-  .head{gap:6px; padding:8px 10px}
-  .head .who{flex-basis:100%; white-space:normal; overflow-wrap:anywhere; font-size:12px}
-  .head .sp{display:none}
-  .head .askbtn{margin-left:auto; min-width:44px; min-height:40px; justify-content:center}
-  .head .starbtn{min-width:40px; min-height:40px; font-size:20px}
   .opt{display:grid; grid-template-columns:23px minmax(0,1fr); gap:6px 10px}
   .opt .m{grid-column:2; justify-self:start; margin:0; padding:0}
-  .foot .acts{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:8px}
-  .foot .navgrp{justify-self:start}
-  .foot .navgrp .nvb{min-width:44px; min-height:44px; padding:0 9px}
-  .foot .acts .go3{grid-column:2; grid-row:1; min-height:44px; padding:8px 10px}
-  .foot .acts .go{grid-column:1 / -1; grid-row:2; min-height:46px; padding:10px 12px;
-    font-size:16px; white-space:normal; overflow:visible; text-overflow:clip}
   .navrow .nb,.navpop input{min-height:44px}
   input[type=search],select,textarea{font-size:16px}
+  body.in-quiz{background:var(--surface)}
+  .in-quiz > .bar{display:none}
+  .in-quiz .quiz-view{padding:0 12px calc(72px + env(safe-area-inset-bottom))}
+  .quiz-view .meta{position:sticky; top:0; z-index:30; display:flex; gap:2px;
+    margin:0 -12px; padding:env(safe-area-inset-top) max(8px,env(safe-area-inset-right)) 0 max(8px,env(safe-area-inset-left));
+    min-height:44px; background:var(--surface); border-bottom:1px solid var(--rule)}
+  .quiz-view .meta > .lbl{display:none}
+  .quiz-view .meta .backb,.quiz-view .meta .askbtn,.quiz-view .meta .starbtn,.quiz-more{
+    display:inline-flex; align-items:center; justify-content:center; flex:none;
+    width:44px; min-height:44px; margin:0; padding:0; border:0; border-radius:6px;
+    background:none; color:var(--ink-2)}
+  .quiz-view .backb i{font-size:28px}
+  .quiz-view .back-label{display:none}
+  .quiz-view .meta .qpos{flex:1; min-width:0; min-height:44px; padding:0 3px;
+    font-size:12px; letter-spacing:0; color:var(--ink-2); text-align:left}
+  .quiz-view .meta .askbtn{font-size:12px; letter-spacing:0; text-transform:none}
+  .quiz-view .meta .askn{display:none}
+  .quiz-view .meta .starbtn{font-size:21px}
+  .quiz-view .meta .starbtn.on{color:var(--accent)}
+  .quiz-view .compact-clock{display:flex; flex-direction:column; justify-content:center;
+    align-items:center; flex:none; min-height:44px; min-width:62px; padding:0 4px;
+    color:var(--ink-2); font-family:var(--f-num); font-variant-numeric:tabular-nums}
+  .compact-clock .clock-label{font-size:9px; line-height:1.2; color:var(--ink-3)}
+  .compact-clock .clock-value{font-size:12px; line-height:1.5; font-weight:500}
+  .quiz-more{font-size:25px}
+  .quiz-more[aria-expanded=true]{background:var(--surface-2); color:var(--accent)}
+  .quiz-view .prog{height:2px; margin:0 -12px 8px; border-radius:0}
+  .quiz-view .quiz-extra{display:none; margin:8px 0 12px; padding:12px; border-radius:10px}
+  .quiz-view .quiz-extra.open{display:block}
+  .quiz-extra .active-time{flex-wrap:wrap; gap:8px}
+  .quiz-extra .qtm{margin:0; font-size:11px; letter-spacing:0}
+  .quiz-extra .tmr{min-height:44px; margin:0}
+  .quiz-extra .walltime{gap:8px}
+  .quiz-extra .walltime .wl{font-size:10px}
+  .quiz-extra .walltime time,.quiz-extra .walltime b{font-size:12px}
+  .quiz-actions{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px}
+  .quiz-actions button{font-size:12px; text-transform:none; letter-spacing:0}
+  .quiz-actions #quit{grid-column:1 / -1}
+  .quiz-view .card{border:0; border-radius:0; box-shadow:none}
+  .quiz-view .head{flex-wrap:nowrap; min-height:22px; gap:6px; padding:2px 0;
+    background:none; border:0}
+  .quiz-view .head .who{flex:1; min-width:0; white-space:nowrap; font-size:11px}
+  .quiz-view .head .sp,.quiz-view .head .tag{display:none}
+  .quiz-view .head .tag.flag{display:inline; font-size:8px}
+  .quiz-view .head > .lbl.num{flex:none; font-size:9px; letter-spacing:0}
+  .quiz-view .qt,.quiz-view .opt{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+  .quiz-view .qt{padding:10px 0 6px; font-size:17px; font-weight:500; line-height:1.45}
+  .quiz-view .opts{padding:6px 0; gap:6px}
+  .quiz-view .opt{padding:10px 11px; border-radius:9px; font-size:16px; line-height:1.35}
+  .quiz-view .figbox{margin:10px 0; padding:8px}
+  .quiz-view .foot{position:fixed; bottom:0; left:0; right:0; z-index:20; margin:0;
+    padding:6px max(12px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));
+    background:var(--surface); border-top:1px solid var(--rule)}
+  .quiz-view .foot .acts{display:grid; grid-template-columns:44px minmax(0,1fr) 44px; gap:8px}
+  .quiz-view .foot .navgrp{display:contents}
+  .quiz-view .foot .nvb{min-height:44px; padding:0; border:0; border-radius:8px; font-size:17px}
+  .quiz-view .foot .nvb[data-nav=prev]{grid-column:1; grid-row:1}
+  .quiz-view .foot .nvb[data-nav=next]{grid-column:3; grid-row:1}
+  .quiz-view .foot .go{grid-column:2; grid-row:1; min-height:44px; padding:8px;
+    border-radius:8px; font-size:15px; white-space:normal; overflow:visible; text-overflow:clip}
 }
-@media (min-width:480px) and (max-width:719px) and (max-height:500px) and (orientation:landscape){
-  .foot .acts{display:flex}
-  .foot .acts .go{flex:1; font-size:14px}
+@media (max-width:359px){
+  .quiz-view .compact-clock{display:none}
 }
 
 /* ── Özet ── */
@@ -777,7 +823,7 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .hint{font-size:11.5px; line-height:1.55; color:var(--ink-3); margin-top:14px}
 kbd{font-family:var(--f-num); font-size:10px; background:var(--surface-2);
   border:1px solid var(--rule); border-radius:3px; padding:1px 5px; color:var(--ink-2)}
-@media (max-width:719px){
+@media (max-width:719px), (max-height:500px) and (hover:none) and (pointer:coarse){
   .sheet .body{max-height:none}
   .sheet button,.sheet summary,#optBox button{min-height:44px}
   .sheet input,.sheet select,.sheet textarea,.sheet #bak{font-size:16px}
@@ -1825,6 +1871,7 @@ function next(){ clearTimeout(advT); if (R){ R.i++; step0(); } }
 // ── Ana ekran ──
 function home(){
   R = null;
+  questionMode(false);
   const total = scoped().length;
   const counts = {}; DECKS.forEach(d => counts[d.k] = deckCount(d.k));
   const leech = deckCount('leech');
@@ -2435,6 +2482,11 @@ function tmrBoya(){
   if (soru){
     const ms = soruToplam(wallKey(), an);
     soru.textContent = ms === null ? '–' : saat(ms);
+    const compact = el('quizClock');
+    if (compact){
+      compact.querySelector('.clock-value').textContent = ms === null ? '–' : saat(ms);
+      compact.setAttribute('aria-label', 'Bu soruda geçen toplam süre ' + (ms === null ? 'ölçülmedi' : saat(ms)) + '. Sayaç ayrıntılarını aç');
+    }
   }
   const bosta = !R.durdu && bostaMi();
   // Tur sayacı (dokunulabilir): yalnız çalışma süresi
@@ -2569,7 +2621,19 @@ function xNote(q){
     '</div>';
 }
 
+function questionMode(on){
+  document.body.classList.toggle('in-quiz', on);
+  el('view').classList.toggle('quiz-view', on);
+}
+function quizExtras(open){
+  const panel = el('quizExtra');
+  if (!panel) return;
+  const show = open === undefined ? !panel.classList.contains('open') : open;
+  panel.classList.toggle('open', show);
+  ['quizMore','quizClock'].forEach(id => el(id).setAttribute('aria-expanded', show ? 'true' : 'false'));
+}
 function draw(){
+  questionMode(true);
   const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
   const shown = R.picked !== null && F.mode === 'study' && !R.sr;
   const k = card(q[0]), st = stars();
@@ -2601,15 +2665,28 @@ function draw(){
   const last = R.i === R.list.length - 1 && !R.missed.length;
   el('view').innerHTML =
     '<h1 class="sr-only">Soru ' + (R.i + 1) + ' / ' + R.list.length + '</h1>' +
-    '<div class="prog"><i class="' + (retry ? 'retry' : '') + '" style="width:' +
-      (R.i / R.list.length * 100) + '%"></i></div>' +
     '<div class="meta"><button class="backb" id="hb" type="button" ' +
+      'aria-label="Ana ekrana dön; tur kayıtlı kalır" ' +
       'title="Ana ekran — tur kayıtlı kalır, oradan devam edersin">' +
-      '<i>‹</i>Ana ekran</button>' +
-      '<span class="qpos">Soru <b class="num">' + (R.i + 1) + '</b> / ' +
-        '<b class="num">' + R.list.length + '</b></span>' +
+      '<i aria-hidden="true">‹</i><span class="back-label">Ana ekran</span></button>' +
+      '<button class="qpos" id="navBtn" type="button" aria-expanded="' + (navOpen ? 'true' : 'false') +
+        '" aria-controls="navPop" aria-label="Soru ' + (R.i + 1) + ' / ' + R.list.length +
+        '. Soru numarasına git" title="Soru numarasına git">' + (R.i + 1) + '/' + R.list.length + '</button>' +
       '<span class="lbl"' + (retry ? ' style="color:var(--bad)"' : '') + '>' +
         (retry ? 'Yanlış turu ' + R.round : R.sr ? 'Speedrun' : deckName()) + '</span>' +
+      '<button class="compact-clock" id="quizClock" type="button" aria-expanded="false" aria-controls="quizExtra">' +
+        '<span class="clock-label">Soru</span><b class="clock-value">0:00</b></button>' +
+      askBtn() +
+      '<button class="starbtn' + (st.has(q[0]) ? ' on' : '') + '" id="star" type="button" ' +
+        'aria-label="' + (st.has(q[0]) ? 'Sorunun yıldızını kaldır' : 'Soruyu yıldızla') +
+        '" aria-pressed="' + (st.has(q[0]) ? 'true' : 'false') + '" ' +
+        'title="Yıldızla (S)">' + (st.has(q[0]) ? '★' : '☆') + '</button>' +
+      '<button class="quiz-more" id="quizMore" type="button" aria-label="Çalışma araçları ve sayaçlar" ' +
+        'aria-expanded="false" aria-controls="quizExtra">⋯</button></div>' +
+    '<div class="prog"><i class="' + (retry ? 'retry' : '') + '" style="width:' +
+      (R.i / R.list.length * 100) + '%"></i></div>' +
+    '<section class="quiz-extra" id="quizExtra" aria-label="Çalışma araçları ve sayaçlar">' +
+      '<div class="active-time">' +
       '<span class="qtm" id="qtm" role="timer" aria-live="off"></span>' +
       '<button class="tmr" id="tmr" type="button"><span class="ti" aria-hidden="true">' +
         '</span><span>aktif</span><span class="tv num"></span></button></div>' +
@@ -2619,6 +2696,13 @@ function draw(){
         '<span class="wl">Sınav toplam</span><b id="runWall" role="timer" aria-live="off"></b></div>' +
       '<div title="Bu soruda geçen toplam süre; sekme dışındaki zaman ve duraklatmalar dahil. Cevapta durur.">' +
         '<span class="wl">Soru toplam</span><b id="questionWall" role="timer" aria-live="off"></b></div></div>' +
+      '<div class="quiz-actions">' +
+        '<button class="tbtn" id="quizNotes" type="button">Konu</button>' +
+        '<button class="tbtn" id="quizStats" type="button">Durum</button>' +
+        '<button class="tbtn" id="quizTheme" type="button">Tema</button>' +
+        '<button class="go3" id="quit" type="button">Turu bitir</button></div>' +
+      '<div class="quiz-info">' + esc(secName(sec)) + ' · ' + q[0] + '<br>' +
+        xTags(q) + (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') + '</div></section>' +
     '<div class="card"><div class="head">' +
       '<span class="who">' + esc(secName(sec)) + '</span><span class="sp"></span>' +
       (k && k[0] > 0 ? '<span class="tag box">kutu ' + k[0] + '</span>' : '') +
@@ -2629,11 +2713,6 @@ function draw(){
         ? '<span class="tag slow" title="Son denemede bu soru ' + saat(S.qt[q[0]][2]) +
           ' sürdü">uzun sürdü ' + saat(S.qt[q[0]][2]) + '</span>' : '') +
       (q[5] ? '<span class="tag flag">tartışmalı</span>' : '') +
-      askBtn() +
-      '<button class="starbtn' + (st.has(q[0]) ? ' on' : '') + '" id="star" type="button" ' +
-        'aria-label="' + (st.has(q[0]) ? 'Sorunun yıldızını kaldır' : 'Soruyu yıldızla') +
-        '" aria-pressed="' + (st.has(q[0]) ? 'true' : 'false') + '" ' +
-        'title="Yıldızla (S)">' + (st.has(q[0]) ? '★' : '☆') + '</button>' +
       '<span class="lbl num">' + q[0] + '</span></div>' +
       '<div class="qt">' + esc(qText(q)) + '</div>' +
       (figOf(q) ? '<div class="figbox">' + figOf(q) + '</div>' : '') +
@@ -2659,17 +2738,13 @@ function draw(){
     '<div class="acts">' +
       '<div class="navgrp">' +
         '<button class="nvb" data-nav="prev" type="button" title="Önceki soru (←)"' +
-          (R.i === 0 ? ' disabled' : '') + '>◀</button>' +
-        '<button class="nvb nn' + (navOpen ? ' on' : '') + '" id="navBtn" type="button" ' +
-          'aria-expanded="' + (navOpen ? 'true' : 'false') + '" ' +
-          'title="Soru numarasına git">' + (R.i + 1) + '/' + R.list.length + '</button>' +
+          ' aria-label="Önceki soru"' + (R.i === 0 ? ' disabled' : '') + '>‹</button>' +
         '<button class="nvb" data-nav="next" type="button" ' +
           'title="Sonraki soru (→) — cevaplamadan atlar"' +
-          (R.i === R.list.length - 1 ? ' disabled' : '') + '>▶</button>' +
+          ' aria-label="Sonraki soruya geç"' + (R.i === R.list.length - 1 ? ' disabled' : '') + '>›</button>' +
       '</div>' +
       '<button class="go" id="next" type="button"' + (R.picked === null ? ' disabled' : '') + '>' +
-        (last ? 'Bitir' : (shown && R.order[R.picked] !== 0 ? 'Anladım, devam' : 'Sonraki')) + '</button>' +
-      '<button class="go3" id="quit" type="button">Turu bitir</button></div>' +
+        (last ? 'Bitir' : (shown && R.order[R.picked] !== 0 ? 'Anladım, devam' : 'Sonraki')) + '</button></div>' +
     '</div>';
 
   el('view').querySelectorAll('.opt').forEach(b => b.onclick = () => {
@@ -2678,6 +2753,11 @@ function draw(){
   });
   el('hb').onclick = () => { clearTimeout(advT); soruKapat(); saveRun(); dropEmptyRun(); home(); };
   el('tmr').onclick = tmrCevir;
+  el('quizMore').onclick = () => quizExtras();
+  el('quizClock').onclick = () => quizExtras();
+  el('quizNotes').onclick = () => { quizExtras(false); openNotes(); };
+  el('quizStats').onclick = () => { quizExtras(false); openStats(); };
+  el('quizTheme').onclick = () => { el('bTheme').click(); quizExtras(false); };
   hovCapa = imlec ? imlec.slice() : null;   // imleç bu noktadan kıpırdayınca vurgu açılır
   soruAc();
   tmrBoya();
@@ -2799,6 +2879,7 @@ function openSrText(){
 
 /** Tur raporu — hem tur biter bitmez hem de geçmişten açılınca çizilir. */
 function report(rec, live){
+  questionMode(false);
   const log = rec.log || [], rounds = rec.round || 1;
   const first = log.filter(x => x.round === 1);
   const ok = first.filter(x => x.ok).length;
@@ -3484,7 +3565,8 @@ function dismissSheet(){
   window.scrollTo({top:sheetScroll, behavior:'instant'});
   // Geçilen sınav listesi değiştiyse ana ekranı tazele (tur sürüyorsa dokunma)
   if (passDirty){ passDirty = false; if (!R) home(); }
-  const target = sheetFocus && sheetFocus.isConnected ? sheetFocus : el('bStats');
+  const target = sheetFocus && sheetFocus.isConnected && sheetFocus.getClientRects().length
+    ? sheetFocus : (R ? el('quizMore') : el('bStats'));
   target.focus({preventScroll:true});
 }
 function closeSheet(){
@@ -3602,6 +3684,9 @@ document.addEventListener('keydown', e => {
   if (tg && tg.matches && tg.matches('input, select, textarea')) return;
   if (e.key === 'Escape'){
     if (navOpen && R){ el('navBtn').click(); return; }
+    if (R && el('quizExtra') && el('quizExtra').classList.contains('open')){
+      quizExtras(false); el('quizMore').focus(); return;
+    }
     closeSheet(); return;
   }
   if (!R) return;

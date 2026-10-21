@@ -405,6 +405,17 @@ Kurallar ayrıca yazılan belgenin biçimini ve boyutunu doğrular.
 
 ## Mobil gezinme ve kalite kontrolleri
 
+Mobil soru ekranında yaklaşık 45 px üst satır ve tek satırlı alt gezinme bulunur.
+Soru numarasına dokunarak soruya gidilir; Sor ve yıldız işlemleri doğrudan erişilir.
+Soru süresi üst satırda, başlangıç/aktif/toplam süre ayrıntıları ve Konu/Durum/Tema
+işlemleri **⋯** menüsündedir. Menü soru değişince kapanır. Ana uygulama çubuğu
+soru ekranında yer kaplamaz; ana ekrana dönünce yeniden görünür.
+
+iPhone 17 Pro için 402×874 ve Safari araç çubuklarına alan bırakan 402×734
+yerleşimleri ayrıca test edilir. Kontrol satırı en fazla 48 px, alt gezinme en
+fazla 60 px olmalı; seçili uzun dört şıklı sorular kaydırmadan görünmelidir.
+Şekilli veya daha uzun sorular okunabilir metin boyutunu koruyarak kaydırılır.
+
 Durum, ders notları, inceleme kuyruğu ve düz metin panellerinde Geri/Kapat başlığı
 her zaman görünür. Telefonun veya tarayıcının Geri düğmesi önce paneli kapatır;
 ders notunda önce listeye döner. Panel kapanınca aynı soru, seçim ve sayfa konumu
