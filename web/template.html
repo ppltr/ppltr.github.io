@@ -311,11 +311,18 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
   font-size:12px; transition:transform .15s}
 .box[open] > summary .chev{transform:rotate(90deg)}
 .box .in{padding:13px}
-#optBox{overflow:visible}
+#optBox{overflow:visible; scroll-margin-top:calc(var(--app-bar-height,64px) + 8px)}
 .settings-toolbar{position:sticky; top:var(--app-bar-height,64px); z-index:21;
   display:flex; align-items:center; justify-content:space-between; gap:8px;
   padding:8px 0; margin-bottom:12px; background:var(--paper); border-bottom:1px solid var(--rule)}
 .settings-toolbar button{min-height:44px}
+.settings-group{min-width:0; margin:0 0 18px; padding:0 0 16px; border:0;
+  border-bottom:1px solid var(--rule)}
+.settings-group:last-child{margin-bottom:0; padding-bottom:0; border-bottom:0}
+.settings-group legend{padding:0; margin-bottom:12px; font-size:15px; font-weight:600;
+  color:var(--ink); font-family:var(--f-ui)}
+.danger-zone{display:flex; align-items:center; justify-content:space-between; gap:12px;
+  border-top:1px solid var(--rule); margin-top:16px; padding-top:12px; font-size:12px; color:var(--ink-2)}
 .pill{font-family:var(--f-num); font-size:10px; font-weight:500; letter-spacing:.04em;
   color:var(--accent-ink); background:var(--accent-soft); border:1px solid var(--accent);
   border-radius:99px; padding:2px 8px}
@@ -2074,7 +2081,7 @@ function home(){
         ' · ' + (F.count ? F.count + ' soru' : 'tüm tur') +
         ' · ' + (F.mode === 'study' ? 'çalışma' : 'sınav') + '</span><span class="chev">›</span></summary>' +
       '<div class="in">' +
-        '<div class="settings-toolbar"><b>Ayarlar</b>' +
+        '<div class="settings-toolbar"><span class="note" style="margin:0">Otomatik kaydedilir</span>' +
           '<button class="tbtn" id="settingsBack" type="button">‹ Geri</button></div>' +
         '<div class="grp"><span class="lbl">Soru dili</span><div class="seg" id="lang">' +
           '<button type="button" data-lang="en" class="' + (F.lang === 'en' ? 'on' : '') +
@@ -2086,41 +2093,39 @@ function home(){
             ? 'Bütün sorular seçtiğin dilde geliyor. '
             : '<b class="num">' + nf(QS.length - langN()) + '</b> sorunun bu dilde ' +
               'karşılığı henüz yok, onlar kaynak dilinde gelir. ') +
-          'Dili değiştirmek ilerlemeni bozmaz: soru dilden bağımsız sayılır, ' +
-          'çözdüğün soru iki kez karşına çıkmaz.</div></div>' +
-        '<div class="grp"><label class="lbl" for="q">Ara</label>' +
-          '<input type="search" id="q" placeholder="kelime ya da soru ID" value="' + esc(F.q) + '"></div>' +
-        '<div class="grp"><span class="lbl">Kapsam</span><div id="sw"></div></div>' +
+          'Dil değişince ilerlemen korunur.</div></div>' +
+        '<div class="grp"><label class="lbl" for="q">Soru ara</label>' +
+          '<input type="search" id="q" placeholder="Kelime veya soru numarası" value="' + esc(F.q) + '"></div>' +
+        '<div class="grp"><span class="lbl">Soru filtreleri</span><div id="sw"></div></div>' +
         '<div class="grp"><span class="lbl">Tur uzunluğu</span><div class="seg" id="cnt">' +
           [[0,'Tümü'],[20,'20'],[50,'50'],[100,'100']].map(([v,x]) =>
             '<button type="button" data-n="' + v + '" class="' + (F.count === v ? 'on' : '') +
             '">' + x + '</button>').join('') + '</div>' +
           '<div class="note">Tümü: kapsamdaki bütün sorular tek turda. İstediğin an ' +
           '<b>Turu bitir</b> dersin, ilerlemen kayıtlı kalır.</div></div>' +
-        '<div class="grp"><span class="lbl">Soruyu sorduğun yer</span><div class="seg" id="aiSel">' +
+        '<div class="grp"><span class="lbl">Kullanılacak site</span><div class="seg" id="aiSel">' +
           Object.keys(AI).map(k => '<button type="button" data-ai="' + k + '" class="' +
             (F.ai === k ? 'on' : '') + '">' + AI[k][0] + '</button>').join('') + '</div>' +
-          '<div class="note">Soru kartındaki <b>Sor</b> düğmesi aşağıdaki isteği, soruyu ve şıkları ' +
-          'panoya kopyalar ve burayı yeni sekmede ' +
-          'açar (Gemini ve Grok URL parametresi almadığı için açılan sayfada <b>Cmd+V / Ctrl+V</b> ile yapıştırınız).</div></div>' +
-        '<div class="grp"><label class="lbl" for="askPrompt">Sor düğmesinin isteği</label>' +
+          '<div class="note"><b>Sor</b>, soruyu ve isteğini panoya kopyalayıp seçtiğin siteyi açar. ' +
+          'Gemini ve Grok kullanıyorsan metni açılan sayfaya yapıştır.</div></div>' +
+        '<div class="grp"><label class="lbl" for="askPrompt">Gönderilecek istek</label>' +
           '<textarea id="askPrompt" rows="4" aria-describedby="askPromptHelp">' +
             esc(F.aiPrompt || DEFAULTS.aiPrompt) + '</textarea>' +
           '<div class="note" id="askPromptHelp">Otomatik kaydedilir. Soru ve şıklar bu metnin sonuna eklenir. ' +
           'Boş bırakırsan varsayılan istek kullanılır.</div>' +
           '<div class="tools"><button class="tbtn" id="askPromptReset" type="button">Varsayılana dön</button></div></div>' +
-        '<div class="grp"><span class="lbl">Geri bildirim</span>' +
+        '<div class="grp"><span class="lbl">Cevap sesleri</span>' +
           '<button class="switch' + (F.sound ? ' on' : '') + '" id="swSound" type="button">' +
             '<span class="knob"></span><span>Cevapta ses çal</span></button>' +
           '<div class="note">Doğruda yükselen iki nota, yanlışta kısa bir uyarı. ' +
           'Sınav modunda ses nötrdür, cevabı ele vermez.</div></div>' +
-        '<div class="grp"><span class="lbl">Mod</span><div class="seg" id="mode">' +
+        '<div class="grp"><span class="lbl">Çalışma modu</span><div class="seg" id="mode">' +
           '<button type="button" data-m="study" class="' + (F.mode === 'study' ? 'on' : '') + '">Çalışma</button>' +
           '<button type="button" data-m="exam" class="' + (F.mode === 'exam' ? 'on' : '') + '">Sınav</button>' +
           '</div><div class="note">' + (F.mode === 'study'
             ? 'Doğruda kendiliğinden geçer, yanlışta doğru cevabı gösterir.'
             : 'Geri bildirim yok, sonuç sonda gelir.') + '</div></div>' +
-        '<div class="grp"><span class="lbl">Sıra</span><div class="seg" id="ord">' +
+        '<div class="grp"><span class="lbl">Soru sırası</span><div class="seg" id="ord">' +
           '<button type="button" data-o="smart" class="' + (F.order === 'smart' ? 'on' : '') + '">Akıllı</button>' +
           '<button type="button" data-o="rand" class="' + (F.order === 'rand' ? 'on' : '') + '">Rastgele</button>' +
           '</div><div class="note">' + (F.order === 'smart'
@@ -2133,6 +2138,7 @@ function home(){
       '<kbd>S</kbd> yıldız · <kbd>P</kbd> sayacı durdur<br>' +
       'Tur bitince yanlış yaptıkların tekrar sorulur.</div>';
 
+  groupSettings();
   buildTree();
   ['lang','aiSel','cnt','mode','ord'].forEach(id => {
     el(id).querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', b.classList.contains('on') ? 'true' : 'false'));
@@ -2153,7 +2159,11 @@ function home(){
   const optBox = el('optBox');
   optBox.ontoggle = () => {
     if (!optBox.isConnected) return;
-    if (optBox.open) pushUIRoute('settings');
+    if (optBox.open){
+      const entering = uiRoute() !== 'settings';
+      pushUIRoute('settings');
+      if (entering) optBox.scrollIntoView({block:'start',behavior:'instant'});
+    }
     else if (uiRoute() === 'settings') backFromSettings();
   };
   el('sw').querySelectorAll('.switch').forEach(b =>
@@ -2175,8 +2185,7 @@ function home(){
   el('go').onclick = devam
     ? () => resumeRun(orun.id)
     : allPassed
-      ? () => { openStats(); const h = el('passHead');
-                if (h) h.scrollIntoView({ block:'start' }); }
+      ? openPassedExams
       : start;
   const gn = el('goNew');
   if (gn) gn.onclick = () => { yeniTur = true; pickOpen = true; home(); };
@@ -2291,6 +2300,23 @@ function ringSvg(pct, done){
 }
 
 function openBox(id){ const b = el(id); if (b) b.open = true; }
+/** İlgili tercihleri aynı gruba taşır; kontrol kimlikleri ve kayıt akışı korunur. */
+function groupSettings(){
+  const container = el('optBox').querySelector('.in');
+  [
+    ['study','Çalışma düzeni',['mode','cnt','ord']],
+    ['questions','Dil ve sorular',['lang','q','sw']],
+    ['ask','Sor düğmesi',['aiSel','askPrompt']],
+    ['sound','Ses',['swSound']],
+  ].forEach(([key,title,ids]) => {
+    const group = document.createElement('fieldset');
+    group.className = 'settings-group'; group.dataset.settingsGroup = key;
+    const legend = document.createElement('legend'); legend.textContent = title;
+    group.append(legend);
+    ids.forEach(id => group.append(el(id).closest('.grp')));
+    container.append(group);
+  });
+}
 
 // ── Konu ağacı (modül kutusunun içinde, varsayılan kapalı) ──
 let expanded = {}, pickOpen = false;
@@ -2347,11 +2373,7 @@ function buildTree(){
   const ta = el('tAll');
   if (ta) ta.onclick = () => { F.pick = {}; savePref(); pickOpen = true; home(); };
   const tp = el('tPass');
-  if (tp) tp.onclick = () => {
-    openStats();
-    const h = el('passHead');
-    if (h) h.scrollIntoView({ block:'start', behavior:'smooth' });
-  };
+  if (tp) tp.onclick = openPassedExams;
 }
 function toggleSubject(code){
   if (F.pick[code]) delete F.pick[code];
@@ -3098,6 +3120,10 @@ function sorBlok(){
       .slice(0, 8).map(satir).join('') + '</div>';
 }
 function openStats(){
+  const restoring = el('sheet').open && sheetRoute === 'stats';
+  const previousScroll = restoring ? el('sheetBody').scrollTop : 0;
+  const previousGroups = restoring ? Array.from(el('sheetBody').querySelectorAll('[data-stats-group]'))
+    .map(group => [group.id,group.open]) : [];
   let seen = 0, wrong = 0, tot = 0;
   Object.keys(S.c).forEach(id => { const k = S.c[id]; tot += k[2]; wrong += k[3]; seen++; });
   const pct = tot ? Math.round((tot - wrong) / tot * 100) : null;
@@ -3134,7 +3160,7 @@ function openStats(){
   for (let i = days.length - 1; i >= 0; i--){ if (days[i][1]) streak++; else if (i !== days.length-1) break; }
 
   el('sheetBody').innerHTML =
-    '<div class="whobox"><label class="lbl" for="pname">Adın</label>' +
+    '<div class="whobox" id="statsProfile"><label class="lbl" for="pname">Adın</label>' +
       '<div class="whorow"><input id="pname" maxlength="28" value="' + esc(ME) + '">' +
         '<button class="tbtn" id="pSave" type="button">Kaydet</button></div>' +
       '<div class="note">' + (Cloud.user
@@ -3149,7 +3175,7 @@ function openStats(){
         : '<div class="whorow" style="margin-top:8px">' +
           '<button class="tbtn" id="pNew" type="button">+ Yeni profil</button></div>') +
     '</div>' +
-    '<div class="stat4">' +
+    '<section id="statsOverview" aria-label="Çalışma özeti"><div class="stat4">' +
       '<div class="s"><span class="lbl">Başarı</span><div class="v">' + (pct === null ? '—' : '%'+pct) + '</div></div>' +
       '<div class="s"><span class="lbl">Tekrar zamanı</span><div class="v due">' + dueN + '</div></div>' +
       '<div class="s"><span class="lbl">Yanlış defteri</span><div class="v bad">' + wrongN + '</div></div>' +
@@ -3171,13 +3197,12 @@ function openStats(){
     '<div class="note" style="margin:0 0 14px">Çalışma yalnız sayfa açık ve sen başındayken ' +
       'sayılır; 3 dakika hiç dokunmazsan o ara boşta sayılır. Bilgisayar uyurken geçen süre ' +
       'ikisine de girmez. Telefon ve bilgisayar ayrı ayrı sayılıp toplanır.</div>' +
-    qtBlok() + sorBlok() +
     '<div class="note" style="margin-bottom:16px">Gördüğün soru: <b>' + seenScoped +
       '</b> / ' + nf(scopedIds.size) +
       ((S.passed || []).length ? ' <span class="lbl">(geçtiklerin hariç)</span>' : '') +
-      '</div>' +
+      '</div></section>' +
 
-    '<div class="lbl" style="margin-bottom:7px">Ders bazında</div>' +
+    '<div id="statsCoursesContent"><div class="lbl" style="margin-bottom:7px">Ders bazında</div>' +
     '<table class="tbl"><thead><tr><th>Ders</th><th class="n">Başarı</th><th style="width:28%"><span class="sr-only">Başarı grafiği</span></th>' +
       '<th class="n">Kapsam</th></tr></thead><tbody>' +
       per.map(p => '<tr' + (isPassed(p.c) ? ' class="passed"' : '') + '><td><b>' + p.c +
@@ -3198,8 +3223,9 @@ function openStats(){
         '<span class="tk"></span><b>' + s.c + '</b><span class="nm">' + esc(subjName(s)) + '</span>' +
         '<i class="num">' + m.total + '</i></button>';
     }).join('') + '</div>' +
-    '<div class="note" id="passSum" style="margin-top:8px"></div>' +
+    '<div class="note" id="passSum" style="margin-top:8px"></div></div>' +
 
+    '<div id="statsAnalysisContent">' + qtBlok() + sorBlok() +
     (secs.length ? '<div class="lbl" style="margin:16px 0 7px">En zayıf bölümlerin</div>' +
       '<table class="tbl"><tbody>' + secs.slice(0,8).map(s =>
         '<tr><td><b>' + s.c + '</b> · ' + esc(s.t) + '</td><td class="n">%' + s.pct + '</td>' +
@@ -3207,8 +3233,9 @@ function openStats(){
         '" style="width:' + s.pct + '%"></i></div></td></tr>').join('') + '</tbody></table>' : '') +
 
     (leech ? '<div class="note" style="margin-top:14px"><b style="color:var(--bad)">' + leech +
-      '</b> soruda takılıyorsun. <button class="tbtn" id="goLeech" type="button">Bunlara çalış</button></div>' : '') +
+      '</b> soruda takılıyorsun. <button class="tbtn" id="goLeech" type="button">Bunlara çalış</button></div>' : '') + '</div>' +
 
+    '<div id="statsAccountContent">' +
     (Cloud.acik
       ? '<div class="lbl" style="margin:18px 0 7px">Google ile giriş</div>' +
         '<div class="cloud" id="cloudBox">' + cloudInner() + '</div>'
@@ -3224,11 +3251,29 @@ function openStats(){
       (window.self === window.top
         ? '<button class="tbtn" id="dl" type="button">Dosya indir</button>' +
           '<button class="tbtn" id="imp" type="button">Dosya seç</button>' : '') +
-      '<button class="tbtn" id="wipe" type="button" style="color:var(--bad); border-color:var(--bad)">Sıfırla</button>' +
     '</div><div class="note" id="bakMsg" role="status"></div>' +
-    '<input type="file" id="impFile" accept="application/json" class="hidden">';
+    '<input type="file" id="impFile" accept="application/json" class="hidden">' +
+    '<div class="danger-zone"><span>İlerleme verilerini sıfırla</span>' +
+      '<button class="tbtn" id="wipe" type="button" style="color:var(--bad); border-color:var(--bad)">Sıfırla</button></div></div>';
+
+  [
+    ['statsCourses','Dersler ve sınavlar',['statsCoursesContent']],
+    ['statsAnalysis','Çalışma analizi',['statsAnalysisContent']],
+    ['statsAccount','Hesap ve yedek',['statsProfile','statsAccountContent']],
+  ].forEach(([id,title,contentIds]) => {
+    const group = document.createElement('details');
+    group.className = 'box'; group.id = id; group.dataset.statsGroup = '';
+    group.innerHTML = '<summary>' + esc(title) + '<span class="chev" aria-hidden="true">›</span></summary><div class="in"></div>';
+    contentIds.forEach(contentId => group.querySelector('.in').append(el(contentId)));
+    el('sheetBody').append(group);
+  });
+  if (!el('statsAnalysisContent').children.length){
+    el('statsAnalysisContent').innerHTML = '<p class="note">Soru çözdükçe süre ve tekrar analizlerin burada görünür.</p>';
+  }
 
   showSheet('Durum', 'stats');
+  previousGroups.forEach(([id,open]) => { el(id).open = open; });
+  if (restoring) el('sheetBody').scrollTop = previousScroll;
   el('pSave').onclick = () => {
     const nv = el('pname').value.trim().slice(0, 28);
     if (!nv || nv === ME) return;
@@ -3302,6 +3347,17 @@ function openStats(){
     S = blank(); Object.assign(F, DEFAULTS); Cloud.kirli = false;
     save(); closeSheet(); home();
   };
+}
+
+function openPassedExams(){
+  openStats();
+  el('statsCourses').open = true;
+  el('passHead').scrollIntoView({block:'start',behavior:'instant'});
+}
+function openAccount(){
+  openStats();
+  el('statsAccount').open = true;
+  el('statsAccount').scrollIntoView({block:'start',behavior:'instant'});
 }
 
 /** Yedek metnini mevcut ilerlemeyle birleştirir; daha çok görülmüş kayıt kazanır. */
@@ -3629,12 +3685,12 @@ el('bTheme').onclick = () => {
   document.documentElement.setAttribute('data-theme', nx);
   ls.set('atpl.theme', nx);
 };
-el('bWho').onclick = openStats;
+el('bWho').onclick = openAccount;
 el('bStats').onclick = openStats;
 el('bLogin').onclick = () => Cloud.girisYap();
 function paintWho(){
   el('bWho').innerHTML = avatar(ME) + '<span class="nm">' + esc(ME) + '</span>';
-  el('bWho').title = ME + ' — profil ve durum';
+  el('bWho').title = ME + ' — hesap ve yedek';
 }
 el('bNotes').onclick = () => openNotes();
 el('veil').onclick = closeSheet;

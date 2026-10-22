@@ -71,6 +71,8 @@ const engines = require('playwright');
     await page.locator('#bStats').tap();
     await page.locator('#sheetBack').focus(); await page.keyboard.press('Shift+Tab');
     assert.ok(await page.evaluate(() => document.querySelector('#sheet').contains(document.activeElement)));
+    await page.locator('#statsAccount > summary').tap();
+    await a11y('account');
     await page.locator('#pname').focus(); await page.keyboard.press('Escape'); await closed();
 
     // Settings rerenders may not stack history entries or lose the saved prompt.
@@ -147,6 +149,64 @@ const engines = require('playwright');
     assert.match(await staticPage.locator('main h1').textContent(), /PPL soru bankası/);
     assert.match(await staticPage.locator('main').textContent(), /JavaScript/);
     await noJS.close();
+
+    // Reproduce the real populated-profile case: analyses must never take over settings.
+    const populated = await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,reducedMotion:'reduce'});
+    await populated.route('**/*',route=>route.request().url().startsWith(base)?route.continue():route.abort());
+    const rich = await populated.newPage();
+    rich.on('pageerror',error=>errors.push(error.message));
+    const ids = JSON.parse(fs.readFileSync(path.join(root,'index.html'),'utf8')
+      .match(/<script id="qdata" type="application\/json">(.*?)<\/script>/s)[1]).q.filter(q=>!q[6]).slice(0,12).map(q=>q[0]);
+    await rich.addInitScript(ids=>{
+      if (sessionStorage.getItem('settingsTestSeeded')) return;
+      sessionStorage.setItem('settingsTestSeeded','1');
+      const state={v:2,c:{},star:[],day:{},runs:[],passed:[],pref:{lang:'en',sound:false},qt:{},sor:{}};
+      ids.forEach(id=>{state.c[id]=[0,0,6,5,0];state.qt[id]=[240000,2,180000,180000];state.sor[id]=[7,Date.now()]});
+      localStorage.setItem('atpl.profiles','["Düzen Testi"]');localStorage.setItem('atpl.profile','Düzen Testi');
+      localStorage.setItem('atpl.v2:Düzen Testi',JSON.stringify(state));
+    },ids);
+    await rich.goto(base);
+    await rich.locator('#optBox > summary').tap();
+    await rich.waitForFunction(()=>history.state?.atplUI==='settings');
+    assert.deepEqual(await rich.locator('.settings-group > legend').allTextContents(),['Çalışma düzeni','Dil ve sorular','Sor düğmesi','Ses']);
+    assert.equal(await rich.locator('#optBox .qtlist').count(),0);
+    assert.equal(await rich.locator('#mode').evaluate(el=>el.closest('fieldset').dataset.settingsGroup),'study');
+    assert.equal(await rich.locator('#askPrompt').evaluate(el=>el.closest('fieldset').dataset.settingsGroup),'ask');
+    if (process.env.MOBILE_QA_DIR) await rich.screenshot({path:path.join(process.env.MOBILE_QA_DIR,engine+'-grouped-settings.png')});
+    await rich.locator('[data-n="20"]').tap();
+    await rich.waitForTimeout(350);
+    await rich.reload();
+    const saved=await rich.evaluate(()=>JSON.parse(localStorage.getItem('atpl.v2:'+localStorage.getItem('atpl.profile'))));
+    assert.equal(saved.pref.count,20); assert.equal(Object.keys(saved.qt).length,12);assert.equal(Object.keys(saved.sor).length,12);
+    await rich.locator('#settingsBack').tap();
+    await rich.waitForFunction(()=>!document.querySelector('#optBox').open&&!history.state?.atplUI);
+    await rich.locator('#bStats').tap();
+    assert.equal(await rich.locator('#sheetBody > :first-child').getAttribute('id'),'statsOverview');
+    assert.deepEqual(await rich.locator('[data-stats-group]').evaluateAll(groups=>groups.map(g=>g.id)),['statsCourses','statsAnalysis','statsAccount']);
+    assert.equal(await rich.locator('#statsAnalysis').evaluate(el=>el.open),false);
+    assert.equal(await rich.locator('#statsAnalysis .qtrow').first().isVisible(),false);
+    if (process.env.MOBILE_QA_DIR) await rich.screenshot({path:path.join(process.env.MOBILE_QA_DIR,engine+'-populated-overview.png')});
+    await rich.locator('#statsAnalysis > summary').tap();
+    assert.ok(await rich.locator('#goSlow').isVisible());
+    assert.ok(await rich.locator('#goLeech').isVisible());
+    assert.ok(await rich.locator('#statsAnalysis .qtrow').count()>10);
+    await rich.locator('#statsAccount > summary').tap();
+    await rich.locator('#pname').fill('Düzen Testi 2'); await rich.locator('#pSave').tap();
+    assert.equal(await rich.locator('#statsAnalysis').evaluate(el=>el.open),true);
+    assert.equal(await rich.locator('#statsAccount').evaluate(el=>el.open),true);
+    assert.equal(await rich.locator('#pname').inputValue(),'Düzen Testi 2');
+    await rich.locator('#sheetClose').tap();
+    await rich.waitForFunction(()=>!document.querySelector('#sheet').open&&!history.state?.atplUI);
+    await rich.locator('#bStats').tap();
+    assert.equal(await rich.locator('#statsAnalysis').evaluate(el=>el.open),false);
+    assert.equal(await rich.locator('#sheetBody').evaluate(el=>el.scrollTop),0);
+    await rich.locator('#sheetClose').tap();
+    await rich.waitForFunction(()=>!document.querySelector('#sheet').open&&!history.state?.atplUI);
+    await rich.locator('#bWho').tap();
+    assert.ok(await rich.locator('#pname').isVisible());
+    assert.equal(await rich.locator('#statsAnalysis').evaluate(el=>el.open),false);
+    assert.deepEqual(errors,[]);
+    await populated.close();
     console.log(`${engine}: panel exits, Back/Forward, focus, settings, preserved exam, SEO and accessibility passed.`);
   } finally {
     if (browser) await browser.close();

@@ -424,6 +424,13 @@ ders notunda önce listeye döner. Panel kapanınca aynı soru, seçim ve sayfa 
 korunur. Ayarlar'daki sabit Geri düğmesi bölümü kapatır; ayar değişiklikleri
 otomatik kaydedilir.
 
+Ayarlar, **Çalışma düzeni**, **Dil ve sorular**, **Sor düğmesi** ve **Ses**
+başlıkları altında gruplanır. Durum paneli çalışma özetiyle açılır; **Dersler ve
+sınavlar**, **Çalışma analizi**, **Hesap ve yedek** ayrıntıları kapalı bölümlerdedir.
+Uzun süren ve sık sorulan soru listeleri yalnız Çalışma analizi içinde gösterilir.
+Profil düğmesi doğrudan Hesap ve yedek bölümünü açar. Panel yenilenirken açık
+bölümler korunur; kapatıp yeniden açınca başlangıç görünümüne dönülür.
+
 Yayın öncesinde Chromium ve WebKit üzerinde mobil ekranlar, panelden çıkış,
 Geri/İleri, klavye odağı, soru/süre korunması ve axe erişilebilirlik kuralları
 otomatik kontrol edilir. Başarısız kontrol yayını durdurur.
