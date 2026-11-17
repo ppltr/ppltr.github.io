@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>020 · Zayıf konular çalışma bankası</title>
+<style>
+:root{--bg:#fafaf7;--card:#fff;--ink:#1d1d1b;--ink2:#5c5c57;--line:#e3e2dc;--ok:#1f7a4d;--okb:#e5f4ec;--bad:#b3261e;--badb:#fbe9e7;--acc:#c2185b}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--card:#21211f;--ink:#ecebe6;--ink2:#a5a49d;--line:#3a3935;--okb:#16352a;--badb:#3d1b18}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:16px 16px 40px}
+h1{font-size:20px;margin:4px 0 2px}.sub{color:var(--ink2);font-size:14px;margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.top{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+button{font:inherit;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 14px;cursor:pointer}
+button.p{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+label.t{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-top:1px solid var(--line)}label.t:first-of-type{border-top:0}
+label.t small{display:block;color:var(--ink2);font-size:13px;line-height:1.4}
+.tz{font-size:14px;background:var(--bg);border-left:3px solid var(--acc);padding:8px 10px;border-radius:6px;margin:8px 0 0}
+.meta{display:flex;justify-content:space-between;color:var(--ink2);font-size:13px;margin-bottom:6px}
+.bar{height:4px;background:var(--line);border-radius:2px;overflow:hidden;margin-bottom:10px}.bar i{display:block;height:100%;background:var(--acc)}
+.q{font-weight:600;white-space:pre-wrap;margin:4px 0 10px}
+.o{display:block;width:100%;text-align:left;margin:7px 0;padding:11px 12px;line-height:1.4}
+.o b{display:inline-block;width:1.6em;color:var(--ink2)}
+.o.ok{background:var(--okb);border-color:var(--ok)}.o.bad{background:var(--badb);border-color:var(--bad)}
+.x{font-size:14px;color:var(--ink2);margin-top:10px;white-space:pre-wrap}
+.tag{font-size:12px;border:1px solid var(--line);border-radius:6px;padding:1px 6px;color:var(--ink2)}
+.tag.n{border-color:var(--acc);color:var(--acc)}
+.list .it{border-top:1px solid var(--line);padding:9px 0}.list .it:first-child{border-top:0}
+.list .a{color:var(--ok);font-weight:600}
+.row{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}
+</style></head><body><main>
+<h1>020 · Zayıf konular çalışma bankası</h1>
+<p class="sub">17 Kasım sınavında hatırladığın ve yanlış yapmış olabileceğin konular, bütün bankadan toplandı: <b>__TOT__ soru</b>. Doğru cevaplar karıştırılmış gelir. <span class="tag n">yeni</span> etiketli sorular bugün eklendi.</p>
+<div id="v"></div>
+</main><script>
+const D=__DATA__;
+let st={};try{st=JSON.parse(localStorage.getItem('zk020')||'{}')}catch(e){}st.lang=st.lang||'en';st.yanlis=st.yanlis||{};st.sec=st.sec||D.map(g=>g.k);
+const kaydet=()=>{try{localStorage.setItem('zk020',JSON.stringify(st))}catch(e){}};
+const v=document.getElementById('v');let R=null;
+const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const kar=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const T=q=>st.lang==='tr'?q.tr:q.en, O=q=>st.lang==='tr'?q.ot:q.oe, X=q=>(st.lang==='tr'?q.xt:q.xe)||(st.lang==='tr'?q.xe:q.xt);
+const dil=()=>`<button id="dil">${st.lang==='en'?'Türkçe göster':'Show English'}</button>`;
+function bagDil(f){const b=document.getElementById('dil');if(b)b.onclick=()=>{st.lang=st.lang==='en'?'tr':'en';kaydet();f()}}
+function ana(){
+  const ny=Object.keys(st.yanlis).length;
+  v.innerHTML=`<div class="card">${D.map(g=>`<label class="t"><input type="checkbox" data-k="${g.k}" ${st.sec.includes(g.k)?'checked':''}><span><b>${g.ad}</b> · ${g.q.length} soru<div class="tz">${g.tuzak}</div></span></label>`).join('')}</div>
+  <div class="top"><button class="p" id="bas">Başla</button>${ny?`<button id="yan">Yanlışlarım (${ny})</button>`:''}<button id="lis">Cevaplı liste</button>${dil()}</div>`;
+  v.querySelectorAll('[data-k]').forEach(c=>c.onchange=()=>{st.sec=[...v.querySelectorAll('[data-k]:checked')].map(x=>x.dataset.k);kaydet()});
+  document.getElementById('bas').onclick=()=>tur(D.filter(g=>st.sec.includes(g.k)).flatMap(g=>g.q));
+  const y=document.getElementById('yan');if(y)y.onclick=()=>tur(D.flatMap(g=>g.q).filter(q=>st.yanlis[q.id]));
+  document.getElementById('lis').onclick=liste;bagDil(ana);
+}
+function tur(qs){if(!qs.length)return;R={qs:kar(qs),i:0,d:0,y:0,sec:null,ord:null};soru()}
+function soru(){
+  const q=R.qs[R.i];if(!R.ord)R.ord=kar(O(q).map((_,i)=>i));
+  const op=O(q),L='ABCDE';
+  v.innerHTML=`<div class="meta"><span>${R.i+1} / ${R.qs.length} · ✓ ${R.d} · ✗ ${R.y}</span><span>${q.s} · ${q.sec} · #${q.id} ${q.yeni?'<span class="tag n">yeni</span>':''}</span></div>
+  <div class="bar"><i style="width:${R.i/R.qs.length*100}%"></i></div>
+  <div class="card"><div class="q">${esc(T(q))}</div>${R.ord.map((oi,k)=>`<button class="o ${R.sec===null?'':oi===0?'ok':oi===R.sec?'bad':''}" data-o="${oi}"><b>${L[k]}</b>${esc(op[oi])}</button>`).join('')}
+  ${R.sec!==null&&X(q)?`<div class="x">${esc(X(q))}</div>`:''}</div>
+  <div class="row">${dil()}<button id="cik">Bitir</button>${R.sec!==null?`<button class="p" id="ileri">${R.i+1<R.qs.length?'Sonraki':'Sonucu gör'}</button>`:''}</div>`;
+  v.querySelectorAll('[data-o]').forEach(b=>b.onclick=()=>{if(R.sec!==null)return;R.sec=+b.dataset.o;
+    if(R.sec===0){R.d++;delete st.yanlis[q.id]}else{R.y++;st.yanlis[q.id]=1}kaydet();soru()});
+  const n=document.getElementById('ileri');if(n)n.onclick=ileri;
+  document.getElementById('cik').onclick=sonuc;bagDil(soru);window.scrollTo(0,0);
+}
+function ileri(){R.i++;R.sec=null;R.ord=null;R.i<R.qs.length?soru():sonuc()}
+function sonuc(){const n=R.d+R.y;v.innerHTML=`<div class="card"><h1>${R.d} / ${n} doğru</h1><p class="sub">${n?Math.round(R.d/n*100):0}% · yanlışlar "Yanlışlarım" listesinde duruyor; bir kez doğru yapınca listeden düşer.</p></div><div class="top"><button class="p" id="g">Ana ekran</button></div>`;document.getElementById('g').onclick=ana}
+function liste(){
+  v.innerHTML=`<div class="top"><button id="g">‹ Geri</button>${dil()}</div>`+D.map(g=>`<div class="card list"><h1>${g.ad}</h1><div class="tz">${g.tuzak}</div>${g.q.map(q=>`<div class="it"><div class="meta"><span>#${q.id} · ${q.s}</span>${q.yeni?'<span class="tag n">yeni</span>':''}</div>${esc(T(q))}<div class="a">→ ${esc(O(q)[0])}</div></div>`).join('')}</div>`).join('');
+  document.getElementById('g').onclick=ana;bagDil(liste);
+}
+document.addEventListener('keydown',e=>{if(!R||!v.querySelector('[data-o]'))return;const k='abcde'.indexOf(e.key.toLowerCase());const bs=v.querySelectorAll('[data-o]');if(k>=0&&bs[k])bs[k].click();if(e.key==='Enter'){const n=document.getElementById('ileri');if(n)n.click()}});
+ana();
+</script></body></html>

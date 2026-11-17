@@ -7278,7 +7278,8 @@
      "derleyen": "020"
     }
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "isaret": "aday"
   },
   "19318": {
    "src": [
@@ -8025,7 +8026,8 @@
      "derleyen": "020"
     }
    ],
-   "replace_sources": true
+   "replace_sources": true,
+   "isaret": "aday"
   },
   "52003": {
    "src": [
@@ -11996,6 +11998,470 @@
     }
    ],
    "replace_sources": true
+  },
+  "52201": {
+   "isaret": "aday",
+   "tr": "Statik boşaltıcılar (static wick) firar kenarlarındadır; uçuşta sürtünmeyle biriken statik yükü kontrollü biçimde havaya boşaltır, telsiz/aviyonik parazitini azaltır. Yıldırımdan korumaz; ikmalde topraklama kablo ile yapılır. ECQB-PPL(A) AGK 53 aynı konuyu soruyor. Kullanıcının 2026-11-17 sınavında hatırladığı konudan bağımsız yazıldı; resmî soru metni değildir.",
+   "en": "Static wicks on the trailing edges bleed off the charge built up by friction in flight, reducing radio/avionics interference. They are not lightning protection; earthing for refuelling is done with a bonding cable. ECQB-PPL(A) AGK Q53 asks the same topic. Written independently from a topic the user recalled from the 2026-11-17 exam; not an official exam transcript.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 53"
+    },
+    {
+     "url": "notes/020-ders-notlari.md",
+     "section": "Statik elektrik ve statik deşarj cihazları"
+    }
+   ]
+  },
+  "52202": {
+   "isaret": "aday",
+   "tr": "100LL = 100 oktan, low lead (düşük kurşunlu). Rengi mavi (bkz. 14567). AVGAS 100 yeşildir ve daha çok kurşun içerir; 100LL kurşunsuz değildir. Kullanıcının 2026-11-17 sınavında hatırladığı konudan bağımsız yazıldı; resmî soru metni değildir.",
+   "en": "100LL = 100 octane, low lead. It is dyed blue (see 14567). AVGAS 100 is green and contains more lead; 100LL is not lead-free. Written independently from a topic the user recalled from the 2026-11-17 exam; not an official exam transcript.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Chapter 7, Fuel Grades"
+    }
+   ]
+  },
+  "52203": {
+   "isaret": "aday",
+   "tr": "Hafif uçakların çoğunda 14 V ya da 28 V DC sistem vardır; alternatör gerilimi aküden yüksek olmalı ki 12 V ya da 24 V'luk aküyü şarj etsin. 115/200 V 400 Hz AC büyük uçaklarındır. Kullanıcının 2026-11-17 sınavında hatırladığı konudan bağımsız yazıldı; resmî soru metni değildir.",
+   "en": "Most light aircraft have a 14 V or 28 V DC system; the alternator voltage must be above the 12 V or 24 V battery voltage to charge it. 115/200 V 400 Hz AC is used on large aircraft. Written independently from a topic the user recalled from the 2026-11-17 exam; not an official exam transcript.",
+   "answer_verification": [
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Chapter 7, Electrical System"
+    }
+   ]
+  },
+  "52204": {
+   "tr": "ISA'da deniz seviyesi yakınında 1 hPa ≈ 27 ft (≈ 8 m): 96 × T/P = 96 × 288 / 1013,25. Meteoroloji hesaplarında kolaylık için 30 ft de kullanılır, ama sorulan bu ise 27 ft. Kaynak: Traficom PPL020, soru 150.",
+   "en": "Near sea level in the ISA, 1 hPa ≈ 27 ft (≈ 8 m): 96 × T/P = 96 × 288 / 1013.25. Meteorology problems often round this to 30 ft, but the answer to this question is 27 ft. Source: Traficom PPL020 Q150.",
+   "answer_verification": [
+    {
+     "url": "https://www.traficom.fi/files/media/file/PPL020ENG%2011102018.pdf",
+     "section": "Traficom PPL020, soru 150"
+    },
+    {
+     "url": "notes/020-ders-notlari.md",
+     "section": "Kalibrasyon: 1 hPa ≈ 27 ft"
+    }
+   ]
+  },
+  "52211": {
+   "tr": "Basınç penceresi altimetrenin sıfır noktasını seçilen basınç seviyesine bağlar: QNH → irtifa, QFE → yükseklik, 1013,25 → uçuş seviyesi. Sıcaklık ve alet hatasını düzeltmez. Kaynak: ECQB-PPL(A) AGK 101.",
+   "en": "The subscale sets the pressure level the altimeter measures from: QNH → altitude, QFE → height, 1013.25 → flight level. It does not correct temperature or instrument errors. Source: ECQB-PPL(A) AGK Q101.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 101"
+    }
+   ]
+  },
+  "52212": {
+   "tr": "Alternatör arızalanınca akü devreyi besler; elektrik yükü azaltılır, iniş planlanır. Manyetolar elektrik sisteminden bağımsızdır, motor çalışmaya devam eder. Kaynak: ECQB-PPL(A) AGK 54.",
+   "en": "When the alternator fails the battery carries the electrical load; shed load and plan to land. The magnetos are independent of the electrical system, so the engine keeps running. Source: ECQB-PPL(A) AGK Q54.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 54"
+    }
+   ]
+  },
+  "52213": {
+   "tr": "Hafif uçak pistonlu motorları genellikle yatay karşılıklı (boxer) dizilimlidir: kısa, düz, iyi soğur ve dengelidir. Kaynak: ECQB-PPL(A) AGK 58.",
+   "en": "Light-aircraft piston engines are usually horizontally opposed (boxer): compact, flat, well cooled and well balanced. Source: ECQB-PPL(A) AGK Q58.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 58"
+    }
+   ]
+  },
+  "52214": {
+   "tr": "Su yakıttan ağırdır, tankın en alt noktasında toplanır; uçuş öncesi tahliye vanasından (drain) numune alınarak boşaltılır. Kaynak: ECQB-PPL(A) AGK 64.",
+   "en": "Water is heavier than fuel and settles at the lowest point of the tank; it is drained through the drain valve during the pre-flight check. Source: ECQB-PPL(A) AGK Q64.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 64"
+    }
+   ]
+  },
+  "52215": {
+   "tr": "Sürat saati renkleri: beyaz yay flap aralığı, yeşil normal çalışma, sarı dikkat aralığı (VNO–VNE, yalnız sakin hava), kırmızı çizgi VNE. Kaynak: ECQB-PPL(A) AGK 149.",
+   "en": "ASI markings: white arc flap range, green normal operating range, yellow caution range (VNO–VNE, smooth air only), red line VNE. Source: ECQB-PPL(A) AGK Q149.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 149"
+    },
+    {
+     "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf",
+     "section": "Chapter 8, Airspeed Indicator Markings"
+    }
+   ]
+  },
+  "14608": {
+   "isaret": "dogrulanmis"
+  },
+  "52015": {
+   "isaret": "aday"
+  },
+  "52205": {
+   "isaret": "dogrulanmis",
+   "tr": "Hektopaskal (hPa = 100 Pa) bir basınç birimidir; altimetre ayarı ve meteorolojide kullanılır. Kelvin, Celsius ve Fahrenhayt sıcaklık birimleridir (°C = K − 273,15; °C = (°F − 32) / 1,8). Kullanıcının 2026-11-17 sınavında çıktığını söylediği soru; metin bağımsız yazıldı, şıklar kullanıcının hatırladığı gibi.",
+   "en": "The hectopascal (hPa = 100 Pa) is a unit of pressure, used for altimeter settings and in meteorology. Kelvin, Celsius and Fahrenheit are temperature units (°C = K − 273.15; °C = (°F − 32) / 1.8). The user reported this question from the 2026-11-17 exam; written independently, options as the user recalled them.",
+   "answer_verification": [
+    {
+     "url": "notes/020-ders-notlari.md",
+     "section": "Sıcaklık: °C = (°F − 32) / 1,8"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Pascal_(unit)",
+     "section": "Hectopascal"
+    }
+   ]
+  },
+  "52216": {
+   "tr": "Primer, çalıştırmadan önce emme tarafına yakıt basan küçük elle kumandalı pompadır; kullanımdan sonra kilitlenmelidir, yoksa titreşimle açılıp karışımı zenginleştirir. Kaynak: ECQB-PPL(A) AGK 46.",
+   "en": "The primer is a small hand pump that injects fuel into the intake before start; it must be locked after use or it may vibrate open and enrich the mixture. Source: ECQB-PPL(A) AGK Q46.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 46"
+    },
+    {
+     "url": "notes/020-ders-notlari.md",
+     "section": "Hazırlama pompası (primer)"
+    }
+   ]
+  },
+  "52217": {
+   "tr": "Gerilim volt (V), akım amper (A), direnç ohm (Ω), güç watt (W) ile ölçülür; voltmetre gerilimi gösterir. Kaynak: ECQB-PPL(A) AGK 50.",
+   "en": "Voltage is measured in volts (V), current in amperes (A), resistance in ohms (Ω) and power in watts (W); a voltmeter shows voltage. Source: ECQB-PPL(A) AGK Q50.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 50"
+    },
+    {
+     "url": "notes/020-ders-notlari.md",
+     "section": "Elektrik temelleri"
+    }
+   ]
+  },
+  "52218": {
+   "tr": "Güç işin yapılma hızıdır, birimi watt: W = V × I = I² × R. Kaynak: ECQB-PPL(A) AGK 51.",
+   "en": "Power is the rate of doing work, measured in watts: W = V × I = I² × R. Source: ECQB-PPL(A) AGK Q51.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 51"
+    },
+    {
+     "url": "notes/020-ders-notlari.md",
+     "section": "Güç: birimi watt, W = V × I"
+    }
+   ]
+  },
+  "52219": {
+   "tr": "Uçak üç eksen etrafında döner: boylamsal (roll, aileron), yanal (pitch, irtifa dümeni), dikey (yaw, istikamet dümeni). Kaynak: ECQB-PPL(A) AGK 27.",
+   "en": "An aircraft rotates about three axes: longitudinal (roll, aileron), lateral (pitch, elevator) and vertical/normal (yaw, rudder). Source: ECQB-PPL(A) AGK Q27.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 27"
+    },
+    {
+     "url": "notes/020-ders-notlari.md",
+     "section": "Eksenler"
+    }
+   ]
+  },
+  "52220": {
+   "tr": "Venturi ve gaz kelebeğinde biriken buz hava akışını kısar; sabit hatveli pervanede devir, değişken hatvelide manifold basıncı düşer, motor gücü azalır. Kaynak: ECQB-PPL(A) AGK 72.",
+   "en": "Ice in the venturi and at the throttle valve restricts airflow; RPM (fixed pitch) or manifold pressure (constant speed) falls and engine power is lost. Source: ECQB-PPL(A) AGK Q72.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 72"
+    },
+    {
+     "url": "notes/020-ders-notlari.md",
+     "section": "Karbüratör buzlanması"
+    }
+   ]
+  },
+  "52221": {
+   "tr": "Kontak kısa bir an OFF'a alınınca her iki manyetonun primer devresi toprağa bağlanır, ateşleme kesilir ve devir düşer; BOTH'a dönünce devir eski değerine gelir. Devir düşmüyorsa manyeto toprak bağlantısı (P-lead) kopuktur: kontak kapalıyken bile pervane çevrilirse motor çalışabilir (bkz. 14593, 14608). Kaynak: ECQB-PPL(A) AGK 89.",
+   "en": "Switching briefly to OFF earths both magneto primary circuits, ignition stops and RPM drops; back on BOTH the RPM recovers. If it does not drop, a P-lead is broken and the engine may fire with the switch off if the propeller is turned (see 14593, 14608). Source: ECQB-PPL(A) AGK Q89.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 89"
+    },
+    {
+     "url": "notes/020-ders-notlari.md",
+     "section": "Manyeto kontrolü (run-up)"
+    }
+   ]
+  },
+  "52222": {
+   "tr": "Tek manyetoda sert ve düzensiz çalışma genellikle o manyetonun beslediği bujilerden birinin arızalı ya da kirlenmiş olduğunu gösterir. Aşırı devir düşüşü ise manyeto arızasına işarettir (14607); ikisi farklı cevaplı tuzak çiftidir. Kaynak: ECQB-PPL(A) AGK 62.",
+   "en": "Rough running on one magneto usually points to a defective or fouled spark plug fed by that magneto. An excessive RPM drop points to a magneto fault (14607); the two are a trap pair with different answers. Source: ECQB-PPL(A) AGK Q62.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 62"
+    },
+    {
+     "url": "notes/020-ders-notlari.md",
+     "section": "Manyeto kontrolü (run-up)"
+    }
+   ]
+  },
+  "52223": {
+   "tr": "Yükü ince yüzey levhaları taşır; petek ya da köpük çekirdek onları ayırıp burkulmayı önler. Sonuç hafif ve rijit bir yapıdır. Kaynak: ECQB-PPL(A) AGK 8.",
+   "en": "The thin face sheets carry the loads; a honeycomb or foam core keeps them apart and stops buckling, giving a light, stiff structure. Source: ECQB-PPL(A) AGK Q8.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 8"
+    }
+   ]
+  },
+  "52224": {
+   "tr": "Kaplamadaki ezik, buruşma ve perçin çevresindeki çatlaklar sert iniş ya da limit yük katsayısının aşıldığını gösterir; uçuş öncesi kontrolde bildirilir. Kaynak: ECQB-PPL(A) AGK 14.",
+   "en": "Dents, skin wrinkles and cracks around rivets point to a hard landing or exceeding the limit load factor; report them before flight. Source: ECQB-PPL(A) AGK Q14.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 14"
+    }
+   ]
+  },
+  "52225": {
+   "tr": "Toplanabilir takım sürüklenmeyi azaltır ama hidrolik/elektrik toplama sistemi ağırlık, karmaşıklık ve bakım getirir. Kaynak: ECQB-PPL(A) AGK 18.",
+   "en": "Retractable gear reduces drag, but the retraction system adds weight, complexity and maintenance. Source: ECQB-PPL(A) AGK Q18.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 18"
+    }
+   ]
+  },
+  "52226": {
+   "tr": "Manevra/türbülans hızının üstünde sert hamle ya da ani kumanda, yapıyı limit yük katsayısının üstüne zorlayabilir. Kaynak: ECQB-PPL(A) AGK 22.",
+   "en": "Above the manoeuvring/turbulence penetration speed, a strong gust or abrupt control input can load the structure beyond its limit load factor. Source: ECQB-PPL(A) AGK Q22.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 22"
+    }
+   ]
+  },
+  "52227": {
+   "tr": "Teker dümenlemesi pedallara, yani istikamet dümeni kumandasına bağlıdır (bkz. 14483). Kaynak: ECQB-PPL(A) AGK 25.",
+   "en": "Wheel steering is linked to the rudder pedals (see 14483). Source: ECQB-PPL(A) AGK Q25.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 25"
+    }
+   ]
+  },
+  "52228": {
+   "tr": "Tank değişiminde hatta hava girip motor teklememesi için yardımcı (boost) pompa açılır, değişimden sonra yakıt basıncı izlenir. Kaynak: ECQB-PPL(A) AGK 48.",
+   "en": "The boost pump is switched on so that air in the line does not starve the engine during the change; fuel pressure is checked afterwards. Source: ECQB-PPL(A) AGK Q48.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 48"
+    }
+   ]
+  },
+  "52229": {
+   "tr": "Voltmetre gerilimi (V), ampermetre akımı (A) gösterir. Kaynak: ECQB-PPL(A) AGK 52.",
+   "en": "A voltmeter shows voltage (V); an ammeter shows current (A). Source: ECQB-PPL(A) AGK Q52.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 52"
+    }
+   ]
+  },
+  "52230": {
+   "tr": "Hafif uçaklarda elektrikle çalışan jiroskoplu göstergeler (ör. dönüş koordinatörü) üzerinde \"DC ELEC\" gibi bir yazı taşır; vakumlu olanlardan böyle ayrılır. Kaynak: ECQB-PPL(A) AGK 56.",
+   "en": "On light aircraft, electrically driven gyro instruments (e.g. the turn coordinator) carry a \"DC ELEC\" type marking that distinguishes them from vacuum-driven ones. Source: ECQB-PPL(A) AGK Q56.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 56"
+    }
+   ]
+  },
+  "52231": {
+   "tr": "Pitot-statik göstergeler (sürat, altimetre, variometre), manyetik pusula ve vakumlu jiroskoplar elektriğe bağlı değildir; telsiz, navigasyon ve elektrikli jiroskoplar etkilenir. Motor manyetolarla çalışmaya devam eder. Kaynak: ECQB-PPL(A) AGK 57.",
+   "en": "Pitot-static instruments, the magnetic compass and vacuum gyros do not need electrical power; radios, navigation equipment and electric gyros do. The engine keeps running on its magnetos. Source: ECQB-PPL(A) AGK Q57.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 57"
+    }
+   ]
+  },
+  "52232": {
+   "tr": "Sıcak hava daha az yoğundur, karışım zenginleşir ve güç azalır; devir hafifçe düşer. Buz varsa düşüşten sonra devir yükselir (bkz. 14589). Kaynak: ECQB-PPL(A) AGK 70.",
+   "en": "Hot air is less dense, the mixture becomes richer and power falls, so RPM drops slightly; if ice was present, RPM rises after the initial drop (see 14589). Source: ECQB-PPL(A) AGK Q70.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 70"
+    }
+   ]
+  },
+  "52233": {
+   "tr": "Filtre tıkanınca basınçla açılan baypas valfi yağı filtrenin yanından geçirir; motor yağsız kalmaz ama partiküller süzülmez. Kaynak: ECQB-PPL(A) AGK 78.",
+   "en": "A pressure-operated bypass valve routes oil around a clogged filter: the engine is still lubricated, but the oil is no longer filtered. Source: ECQB-PPL(A) AGK Q78.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 78"
+    }
+   ]
+  },
+  "52234": {
+   "tr": "Silindiri aşırı zorlamamak için: güç azaltırken önce gaz (MP), sonra devir; güç artırırken önce devir, sonra gaz. Kaynak: ECQB-PPL(A) AGK 85.",
+   "en": "To avoid overstressing the cylinders: when reducing power, throttle (MP) first, then RPM; when increasing, RPM first, then throttle. Source: ECQB-PPL(A) AGK Q85.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 85"
+    }
+   ]
+  },
+  "52235": {
+   "tr": "Sertifikasyon kuralı (CS-23): her tankın göstergesi düz uçuşta kullanılamayan yakıt miktarında sıfır okuyacak şekilde kalibre edilir. Kaynak: ECQB-PPL(A) AGK 92.",
+   "en": "Certification rule (CS-23): each tank's gauge is calibrated to read zero in level flight when only unusable fuel remains. Source: ECQB-PPL(A) AGK Q92.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 92"
+    }
+   ]
+  },
+  "52236": {
+   "tr": "Doğu-batı başlarında hızlanma pusulayı kuzeye doğru döndürür (ANDS: Accelerate North). 270'te kuzeye dönüş baş değerini büyütür → ~300°. 090'da tersine küçülür (14750). Kaynak: ECQB-PPL(A) AGK 132.",
+   "en": "On easterly/westerly headings acceleration shows a turn towards north (ANDS). On 270° that increases the reading to ~300°; on 090° it decreases it (14750). Source: ECQB-PPL(A) AGK Q132.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 132"
+    }
+   ]
+  },
+  "52237": {
+   "tr": "Yavaşlama güneye dönüş gösterir (ANDS: Decelerate South); 270'te güneye dönüş değeri küçültür → ~240°. Kaynak: ECQB-PPL(A) AGK 133.",
+   "en": "Deceleration shows a turn towards south (ANDS); on 270° that reduces the reading to ~240°. Source: ECQB-PPL(A) AGK Q133.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 133"
+    }
+   ]
+  },
+  "52238": {
+   "tr": "Jiroskobun iki özelliği: uzayda sabitlik (rigidity) ve presesyon; kuvvet dönüş yönünde 90° kaymış noktada etki eder. Kaynak: ECQB-PPL(A) AGK 137.",
+   "en": "A gyro has two properties: rigidity in space and precession; an applied force acts at a point 90° further on in the direction of rotation. Source: ECQB-PPL(A) AGK Q137.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 137"
+    }
+   ]
+  },
+  "52239": {
+   "tr": "Dünya saatte 15° döner; yatay düzlemde hissedilen bileşen enlemin sinüsüyle orantılıdır: kutupta 15°/sa, ekvatorda 0 (bkz. 14778). Kaynak: ECQB-PPL(A) AGK 138.",
+   "en": "The earth turns 15° per hour; the component felt in the horizontal plane is proportional to sin(latitude): 15°/h at the pole, 0 at the equator (see 14778). Source: ECQB-PPL(A) AGK Q138.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 138"
+    }
+   ]
+  },
+  "52240": {
+   "tr": "ADI, yapay ufuk ile uçuş direktörü (flight director) komut çubuklarını tek göstergede birleştirir. Kaynak: ECQB-PPL(A) AGK 148.",
+   "en": "The ADI combines the attitude indicator with the flight director command bars in one instrument. Source: ECQB-PPL(A) AGK Q148.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 148"
+    }
+   ]
+  },
+  "52241": {
+   "tr": "ADI = yapay ufuk + uçuş direktörü. HSI = yön jiroskobu + VOR/ILS sapma göstergesi. Kaynak: ECQB-PPL(A) AGK 150.",
+   "en": "ADI = attitude indicator + flight director. HSI = directional gyro + VOR/ILS deviation indicator. Source: ECQB-PPL(A) AGK Q150.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 150"
+    }
+   ]
+  },
+  "52242": {
+   "tr": "HSI, baş göstergesinin (yön jiroskobu) üstüne VOR/ILS rota sapma çubuğunu koyar. Kaynak: ECQB-PPL(A) AGK 151.",
+   "en": "The HSI overlays the VOR/ILS course deviation bar on the heading (directional gyro) card. Source: ECQB-PPL(A) AGK Q151.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 151"
+    }
+   ]
+  },
+  "52243": {
+   "tr": "PFD uçuşun temel bilgilerini (durum, hız, irtifa, baş, rota, FD), ND ise harita/rota/istasyon bilgilerini gösterir. Kaynak: ECQB-PPL(A) AGK 153.",
+   "en": "The PFD shows the primary flight data (attitude, speed, altitude, heading, course, FD); the ND shows map, route and station data. Source: ECQB-PPL(A) AGK Q153.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 153"
+    }
+   ]
+  },
+  "52244": {
+   "tr": "ND harita ekranıdır: rota, istasyonlar, kerterizler. Motor değerleri ayrı motor ekranındadır. Kaynak: ECQB-PPL(A) AGK 154.",
+   "en": "The ND is the map display: route, stations, bearings. Engine values are on a separate engine display. Source: ECQB-PPL(A) AGK Q154.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 154"
+    }
+   ]
+  },
+  "52245": {
+   "tr": "Ayar artınca gösterge artar: 10 hPa × ~8 m (27 ft) ≈ 80 m (270 ft). 'Ayar yukarı → irtifa yukarı' (bkz. 52204). Kaynak: ECQB-PPL(A) AGK 155.",
+   "en": "Raising the setting raises the reading: 10 hPa × ~8 m (27 ft) ≈ 80 m (270 ft). Setting up → reading up (see 52204). Source: ECQB-PPL(A) AGK Q155.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 155"
+    }
+   ]
+  },
+  "52246": {
+   "tr": "Büyük kapta irtifa değişiminde daha çok hava akar, ölçülen basınç farkı büyür; gösterge fazla okur. Kaynak: ECQB-PPL(A) AGK 158.",
+   "en": "With a larger chamber more air must flow through the restriction for a given climb rate, the pressure difference grows and the instrument over-reads. Source: ECQB-PPL(A) AGK Q158.",
+   "answer_verification": [
+    {
+     "url": "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+     "section": "ECQB-PPL(A) 80 AGK, soru 158"
+    }
+   ]
   }
  },
  "_aciklama": "Kullanıcı doğrulaması ile kaynak/cevap doğrulaması ayrıdır; hiçbir işaret resmî SHGM çıkmış sorusu iddiası değildir."

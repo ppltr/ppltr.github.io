@@ -1,0 +1,40 @@
+{
+  "questions": {
+    "52201": {
+      "text": "Kanatların ve kuyruğun firar kenarlarına takılan statik boşaltıcıların (static wick) görevi nedir?",
+      "options": [
+        "Uçuşta gövdede biriken statik yükü havaya boşaltarak telsiz ve aviyonikteki paraziti azaltmak",
+        "Yıldırım akımını toprağa ileterek uçağı yıldırım çarpmasından korumak",
+        "Yakıt ikmali sırasında uçağı topraklayıp kıvılcım oluşmasını önlemek",
+        "Kumanda yüzeylerinin firar kenarlarında buz oluşmasını önlemek"
+      ]
+    },
+    "52202": {
+      "text": "AVGAS 100LL yakıt adındaki \"LL\" ne anlama gelir?",
+      "options": [
+        "Low lead (düşük kurşun): eski AVGAS 100'den daha az tetraetil kurşun içerir",
+        "Lead-free (kurşunsuz): hiç tetraetil kurşun içermez",
+        "Light load (hafif yük): 2.000 kg altındaki uçaklar içindir",
+        "Long life (uzun ömür): reçine oluşturmadan daha uzun depolanabilir"
+      ]
+    },
+    "52203": {
+      "text": "Pistonlu hafif uçaklarda DC elektrik sisteminin nominal (alternatör) gerilimi genellikle kaçtır?",
+      "options": [
+        "14 V ya da 28 V; 12 V ya da 24 V'luk aküyü şarj eder",
+        "115 V ya da 200 V AC; 400 Hz'de beslenir",
+        "6 V ya da 12 V; 6 V'luk aküyü şarj eder",
+        "48 V; seri bağlı iki 24 V aküyü şarj eder"
+      ]
+    },
+    "52205": {
+      "text": "Aşağıdakilerden hangisi bir sıcaklık birimi DEĞİLDİR?",
+      "options": [
+        "Hektopaskal",
+        "Kelvin",
+        "Santigrat derece (Celsius)",
+        "Fahrenhayt derece"
+      ]
+    }
+  }
+}

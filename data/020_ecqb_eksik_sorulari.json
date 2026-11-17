@@ -1,0 +1,425 @@
+{
+  "subject_code": "020",
+  "subject_name": "Aircraft General Knowledge",
+  "source": "Açık PPL soru listeleri (Austro Control ECQB-PPL(A) 80 AGK özeti v2015.4; Traficom PPL020) bankayla tek tek karşılaştırıldı (2026-11-17). Bankada hiçbir biçimde sorulmayan, ders notunda geçen, şekil gerektirmeyen bilgiler; metin bağımsız yazıldı.",
+  "kaynak_url": [
+    "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-80-AGK.pdf",
+    "https://www.traficom.fi/sites/default/files/media/file/PPL020ENG%2011102018.pdf"
+  ],
+  "origin": "ek",
+  "answer_convention": "Doğru cevap ilk şıktır (A). Sunum katmanı şıkları karıştırır.",
+  "id_convention": "52204 ve 52211+ bandı: başka açık bankalarda olup bizde olmayan 020 soruları. Mevcut ve emekli kimlikler yeniden kullanılmaz.",
+  "ecqb_eslesme": "162 sorudan 35'i alındı. 101, 54, 58, 64, 149 → 52211–52215; 46, 50, 51, 27, 72, 89, 62 → 52216–52222; 8→52223, 14→52224, 18→52225, 22→52226, 25→52227, 48→52228, 52→52229, 56→52230, 57→52231, 70→52232, 78→52233, 85→52234, 92→52235, 132→52236, 133→52237, 137→52238, 138→52239, 148→52240, 150→52241, 151→52242, 153→52243, 154→52244, 155→52245, 158→52246 (kullanıcı 2026-11-17'de 'bizde olmayan bütün soruları ekle' dedi; aynı konunun başka yönü/sayısı artık eleme nedeni değil); 53 → 52201 (020-SH). Traficom 150 → 52204. Kalanlar bankada aynı soru+aynı cevap olarak var ya da alınmadı: şekilli sorular (4, 7, 16–21, 26, 59–61, 82–83; çizimleri yok), çelişkili anahtar (41–42: ECQB burun-ağır/kuyruk-ağır trimde tab yönünü fiziğe ve 14479'a ters veriyor; 69: oktan = tutuşma sıcaklığı, 66'daki 'vuruntu direnci' ile çelişiyor).",
+  "sections": {
+    "020-EC": "Missing From Other Banks"
+  },
+  "questions": [
+    {
+      "id": 52204,
+      "section": "020-EC",
+      "text": "In the ISA near mean sea level, a change of 1 hPa in the altimeter subscale setting changes the indicated altitude by approximately:",
+      "options": [
+        "27 ft",
+        "3 ft",
+        "100 ft",
+        "270 ft"
+      ]
+    },
+    {
+      "id": 52211,
+      "section": "020-EC",
+      "text": "What is the purpose of the altimeter subscale (pressure setting window)?",
+      "options": [
+        "To refer the altimeter reading to a selected pressure level such as QNH, QFE or 1013.25 hPa",
+        "To correct the altimeter reading for non-standard temperature",
+        "To correct the instrument and hysteresis errors of the altimeter",
+        "To set the reference altitude of the transponder's altitude encoder"
+      ]
+    },
+    {
+      "id": 52212,
+      "section": "020-EC",
+      "text": "The alternator of a light aircraft fails in flight. What is the immediate effect?",
+      "options": [
+        "Little change at first: the battery supplies the electrical system until it is discharged",
+        "The engine stops, because the magnetos are powered by the alternator",
+        "The altimeter and airspeed indicator stop working at once",
+        "The battery is immediately disconnected and all electrical equipment fails"
+      ]
+    },
+    {
+      "id": 52213,
+      "section": "020-EC",
+      "text": "Which cylinder arrangement is most common in the piston engines of light aircraft?",
+      "options": [
+        "Horizontally opposed (boxer)",
+        "In-line",
+        "V",
+        "Radial"
+      ]
+    },
+    {
+      "id": 52214,
+      "section": "020-EC",
+      "text": "Where does condensed water collect in an aircraft fuel tank, and how is it removed?",
+      "options": [
+        "At the lowest point of the tank, from where it is drained through the drain valve",
+        "On the surface of the fuel, from where it evaporates through the tank vent",
+        "Evenly mixed through the fuel, so it can only be removed by filtering",
+        "At the top of the tank, near the filler cap"
+      ]
+    },
+    {
+      "id": 52215,
+      "section": "020-EC",
+      "text": "On an airspeed indicator, what does the yellow arc mark?",
+      "options": [
+        "The caution range, to be used only in smooth air (from VNO up to VNE)",
+        "The normal operating range",
+        "The flap operating range",
+        "The speed that must never be exceeded"
+      ]
+    },
+    {
+      "id": 52216,
+      "section": "020-EC",
+      "text": "What is the primer of a light aircraft piston engine?",
+      "options": [
+        "A small hand-operated pump that sprays fuel into the intake before starting, to make the engine easier to start",
+        "A lever that engages the turbocharger",
+        "A valve in the carburettor that adjusts the mixture automatically",
+        "The nozzle in the carburettor venturi that atomises the fuel"
+      ]
+    },
+    {
+      "id": 52217,
+      "section": "020-EC",
+      "text": "In which unit is electrical voltage expressed?",
+      "options": [
+        "Volt",
+        "Ampere",
+        "Ohm",
+        "Watt"
+      ]
+    },
+    {
+      "id": 52218,
+      "section": "020-EC",
+      "text": "In which unit is electrical power expressed?",
+      "options": [
+        "Watt",
+        "Volt",
+        "Ampere",
+        "Ohm"
+      ]
+    },
+    {
+      "id": 52219,
+      "section": "020-EC",
+      "text": "About how many axes does an aircraft move in flight?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "id": 52220,
+      "section": "020-EC",
+      "text": "What is a typical consequence of carburettor icing?",
+      "options": [
+        "A loss of engine power",
+        "An increase in engine power",
+        "A drop in oil pressure",
+        "A rise in oil pressure"
+      ]
+    },
+    {
+      "id": 52221,
+      "section": "020-EC",
+      "text": "During the ignition grounding check the ignition switch is moved briefly to OFF and then back to BOTH. If the ignition system is correctly grounded, what happens to the RPM?",
+      "options": [
+        "It drops when OFF is selected and returns to the previous value when BOTH is selected again",
+        "It rises when OFF is selected and returns to the previous value when BOTH is selected again",
+        "It does not change, because the magnetos keep firing until the engine stops",
+        "It drops when OFF is selected and stays below the previous value when BOTH is selected again"
+      ]
+    },
+    {
+      "id": 52222,
+      "section": "020-EC",
+      "text": "During the magneto check the engine runs unusually rough on one magneto. What is the most likely cause?",
+      "options": [
+        "A defective (e.g. fouled) spark plug",
+        "The starter is still engaged",
+        "The fuel tank vent is blocked",
+        "The alternator has failed"
+      ]
+    },
+    {
+      "id": 52223,
+      "section": "020-EC",
+      "text": "A sandwich structure consists of:",
+      "options": [
+        "Two thin load-bearing face sheets and a light supporting core",
+        "Two thick supporting face sheets and a light load-bearing core",
+        "Two thin supporting face sheets and a heavy supporting core",
+        "Two thick supporting face sheets and a heavy load-bearing core"
+      ]
+    },
+    {
+      "id": 52224,
+      "section": "020-EC",
+      "text": "Dents or wrinkles found in the airframe structure may indicate:",
+      "options": [
+        "A hard landing or overstressing of the structure",
+        "Material defects or old paint",
+        "Heavy erosion or wear",
+        "Excessive engine RPM and a cylinder defect"
+      ]
+    },
+    {
+      "id": 52225,
+      "section": "020-EC",
+      "text": "What is a disadvantage of retractable landing gear?",
+      "options": [
+        "Higher weight",
+        "More drag in flight",
+        "Higher fuel consumption",
+        "Higher approach speed"
+      ]
+    },
+    {
+      "id": 52226,
+      "section": "020-EC",
+      "text": "What can compromise the static strength of the airframe?",
+      "options": [
+        "Exceeding the manoeuvring speed in strong gusts",
+        "A stall caused by too high an angle of attack",
+        "Trimming out the control forces for the flight condition",
+        "Flying below a certain airspeed"
+      ]
+    },
+    {
+      "id": 52227,
+      "section": "020-EC",
+      "text": "Which control is connected to the nose-wheel or tail-wheel steering?",
+      "options": [
+        "Rudder",
+        "Aileron",
+        "Elevator",
+        "Trim tab"
+      ]
+    },
+    {
+      "id": 52228,
+      "section": "020-EC",
+      "text": "Unless the flight manual says otherwise, what should be done before switching to another fuel tank in an aircraft with an electric auxiliary fuel pump?",
+      "options": [
+        "Switch the auxiliary fuel pump on",
+        "Switch the ignition off",
+        "Apply carburettor heat",
+        "Use the primer"
+      ]
+    },
+    {
+      "id": 52229,
+      "section": "020-EC",
+      "text": "What does a voltmeter indicate?",
+      "options": [
+        "Voltage",
+        "Current",
+        "Electrical power",
+        "Resistance"
+      ]
+    },
+    {
+      "id": 52230,
+      "section": "020-EC",
+      "text": "How are instruments that are powered by the aircraft's electrical system marked?",
+      "options": [
+        "\"DC\"",
+        "\"EL\"",
+        "\"CO\"",
+        "\"AL\""
+      ]
+    },
+    {
+      "id": 52231,
+      "section": "020-EC",
+      "text": "Which equipment may be affected by a failure of the aircraft's electrical system?",
+      "options": [
+        "Radios, radio navigation equipment and electrically driven gyro instruments",
+        "Radios, radio navigation equipment and the magnetic compass",
+        "Fuel quantity indication, radios and the altimeter",
+        "Airspeed indicator, altimeter and vacuum-driven attitude indicator"
+      ]
+    },
+    {
+      "id": 52232,
+      "section": "020-EC",
+      "text": "On a run-up with a fixed-pitch propeller, what is the immediate effect of applying carburettor heat?",
+      "options": [
+        "The RPM drops",
+        "The RPM rises",
+        "The propeller blade angle increases",
+        "The propeller blade angle decreases"
+      ]
+    },
+    {
+      "id": 52233,
+      "section": "020-EC",
+      "text": "What happens when the engine oil filter becomes clogged?",
+      "options": [
+        "A bypass valve opens: oil keeps circulating, but it is no longer filtered",
+        "A bypass valve opens and a spare filter takes over",
+        "Oil circulation stops after about 30 minutes",
+        "Oil circulation stops after about 15 minutes"
+      ]
+    },
+    {
+      "id": 52234,
+      "section": "020-EC",
+      "text": "Unless the flight manual says otherwise, how should power be reduced with a constant-speed propeller?",
+      "options": [
+        "First reduce manifold pressure, then reduce RPM",
+        "First reduce RPM, then reduce manifold pressure",
+        "First reduce manifold pressure, then increase RPM",
+        "First reduce RPM, then increase manifold pressure"
+      ]
+    },
+    {
+      "id": 52235,
+      "section": "020-EC",
+      "text": "How must the fuel quantity be indicated?",
+      "options": [
+        "Each tank has its own gauge, which reads zero when only unusable fuel remains in level flight",
+        "One calibrated gauge for all tanks is sufficient",
+        "Each tank has its own gauge, which reads zero when 20 minutes of fuel remain",
+        "Each tank has two independent gauges, one of which triggers a warning light"
+      ]
+    },
+    {
+      "id": 52236,
+      "section": "020-EC",
+      "text": "An aircraft in the northern hemisphere accelerates on a magnetic heading of 270°. During the acceleration the magnetic compass indicates approximately:",
+      "options": [
+        "300°",
+        "240°",
+        "270°",
+        "090°"
+      ]
+    },
+    {
+      "id": 52237,
+      "section": "020-EC",
+      "text": "An aircraft in the northern hemisphere decelerates on a magnetic heading of 270°. During the deceleration the magnetic compass indicates approximately:",
+      "options": [
+        "240°",
+        "300°",
+        "270°",
+        "090°"
+      ]
+    },
+    {
+      "id": 52238,
+      "section": "020-EC",
+      "text": "How does a freely spinning gyroscope respond to an applied force?",
+      "options": [
+        "It reacts at a point displaced 90° in the direction of rotation (precession)",
+        "It moves in the same direction as the force",
+        "It reacts at a point displaced 45°",
+        "It turns towards north"
+      ]
+    },
+    {
+      "id": 52239,
+      "section": "020-EC",
+      "text": "The apparent drift of a directional gyro (caused by the earth's rotation) is:",
+      "options": [
+        "15°/h × sin(latitude)",
+        "13°/h × sin(latitude)",
+        "15°/h × cos(longitude)",
+        "13°/h × cos(longitude)"
+      ]
+    },
+    {
+      "id": 52240,
+      "section": "020-EC",
+      "text": "What does the abbreviation ADI stand for?",
+      "options": [
+        "Attitude Director Indicator",
+        "Advanced Directional Indicator",
+        "Attitude Deviation Indication",
+        "Aircraft De-Icing"
+      ]
+    },
+    {
+      "id": 52241,
+      "section": "020-EC",
+      "text": "An Attitude Director Indicator (ADI) combines the indications of:",
+      "options": [
+        "The attitude indicator and the flight director",
+        "The directional gyro and the turn indicator",
+        "The attitude indicator and the radio compass (RBI)",
+        "The directional gyro and the VOR indicator (OBI)"
+      ]
+    },
+    {
+      "id": 52242,
+      "section": "020-EC",
+      "text": "A Horizontal Situation Indicator (HSI) combines the indications of:",
+      "options": [
+        "The directional gyro and the VOR indicator",
+        "The attitude indicator and the flight director",
+        "The turn indicator and the slip ball",
+        "The directional gyro and the flight director"
+      ]
+    },
+    {
+      "id": 52243,
+      "section": "020-EC",
+      "text": "Among other things, the Primary Flight Display (PFD) of an EFIS can show:",
+      "options": [
+        "Attitude, heading, VOR radial or approach course, flight director",
+        "Navigation information, bearings to several stations, ATC flight plan",
+        "Oil pressure and temperature, cylinder head and exhaust gas temperatures",
+        "ATC flight plan and CPDLC messages"
+      ]
+    },
+    {
+      "id": 52244,
+      "section": "020-EC",
+      "text": "Among other things, the Navigation Display (ND) of an EFIS can show:",
+      "options": [
+        "Navigation information, bearings to several stations, the flight plan route",
+        "Attitude, heading, VOR radial or approach course, flight director",
+        "Oil pressure and temperature, cylinder head and exhaust gas temperatures",
+        "ATC flight plan and CPDLC messages"
+      ]
+    },
+    {
+      "id": 52245,
+      "section": "020-EC",
+      "text": "The altimeter subscale is changed from 1000 hPa to 1010 hPa. How does the indication change?",
+      "options": [
+        "It reads about 80 m (270 ft) more than before",
+        "It reads about 80 m less than before",
+        "It depends on the QNH",
+        "It does not change"
+      ]
+    },
+    {
+      "id": 52246,
+      "section": "020-EC",
+      "text": "If the expansion chamber (capacity flask) of a variometer is too large, the variometer will:",
+      "options": [
+        "Over-read",
+        "Under-read",
+        "Show nothing",
+        "Be heavily stressed"
+      ]
+    }
+  ]
+}

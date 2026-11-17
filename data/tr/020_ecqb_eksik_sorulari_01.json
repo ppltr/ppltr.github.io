@@ -1,0 +1,337 @@
+{
+  "questions": {
+    "52211": {
+      "text": "Altimetredeki basınç ayar penceresinin (subscale) amacı nedir?",
+      "options": [
+        "Altimetre okumasını QNH, QFE ya da 1013,25 hPa gibi seçilen bir basınç seviyesine göre referanslamak",
+        "Altimetre okumasını standart dışı sıcaklık için düzeltmek",
+        "Altimetrenin alet ve histerezis hatalarını düzeltmek",
+        "Transponderin irtifa kodlayıcısının referans irtifasını ayarlamak"
+      ]
+    },
+    "52212": {
+      "text": "Hafif bir uçağın alternatörü uçuşta arızalanıyor. İlk etkisi ne olur?",
+      "options": [
+        "Başta pek bir şey değişmez: akü boşalana kadar elektrik sistemini besler",
+        "Manyetolar alternatörden beslendiği için motor durur",
+        "Altimetre ve sürat saati hemen çalışmaz olur",
+        "Akü hemen devreden çıkar ve bütün elektrikli cihazlar susar"
+      ]
+    },
+    "52213": {
+      "text": "Hafif uçakların pistonlu motorlarında en yaygın silindir dizilimi hangisidir?",
+      "options": [
+        "Yatay karşılıklı (boxer)",
+        "Sıralı (in-line)",
+        "V",
+        "Yıldız (radyal)"
+      ]
+    },
+    "52214": {
+      "text": "Uçak yakıt tankında yoğuşan su nerede toplanır ve nasıl alınır?",
+      "options": [
+        "Tankın en alt noktasında; oradaki tahliye vanasından boşaltılır",
+        "Yakıtın yüzeyinde; tank havalandırmasından buharlaşıp gider",
+        "Yakıtın içine eşit dağılır; ancak filtreyle ayrılabilir",
+        "Tankın üst kısmında, dolum kapağının yakınında"
+      ]
+    },
+    "52215": {
+      "text": "Sürat saatindeki sarı yay neyi gösterir?",
+      "options": [
+        "Dikkat aralığı; yalnız sakin havada kullanılır (VNO ile VNE arası)",
+        "Normal çalışma aralığı",
+        "Flap kullanma aralığı",
+        "Hiçbir koşulda aşılmaması gereken hız"
+      ]
+    },
+    "52204": {
+      "text": "ISA'da ortalama deniz seviyesi yakınında, altimetre basınç penceresindeki 1 hPa'lık değişiklik gösterilen irtifayı yaklaşık ne kadar değiştirir?",
+      "options": [
+        "27 ft",
+        "3 ft",
+        "100 ft",
+        "270 ft"
+      ]
+    },
+    "52216": {
+      "text": "Hafif uçak pistonlu motorundaki hazırlama pompası (primer) nedir?",
+      "options": [
+        "Çalıştırmadan önce emme tarafına yakıt püskürterek motorun kolay çalışmasını sağlayan küçük, elle kullanılan pompa",
+        "Turboşarjı devreye alan kol",
+        "Karbüratörde karışımı kendiliğinden ayarlayan valf",
+        "Karbüratör venturisinde yakıtı püskürten meme"
+      ]
+    },
+    "52217": {
+      "text": "Elektrik gerilimi (voltaj) hangi birimle ifade edilir?",
+      "options": [
+        "Volt",
+        "Amper",
+        "Ohm",
+        "Watt"
+      ]
+    },
+    "52218": {
+      "text": "Elektrik gücü hangi birimle ifade edilir?",
+      "options": [
+        "Watt",
+        "Volt",
+        "Amper",
+        "Ohm"
+      ]
+    },
+    "52219": {
+      "text": "Bir uçak uçuşta kaç eksen etrafında hareket eder?",
+      "options": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ]
+    },
+    "52220": {
+      "text": "Karbüratör buzlanmasının tipik sonucu nedir?",
+      "options": [
+        "Motor gücünde düşüş",
+        "Motor gücünde artış",
+        "Yağ basıncında düşüş",
+        "Yağ basıncında artış"
+      ]
+    },
+    "52221": {
+      "text": "Ateşleme topraklama kontrolünde kontak anahtarı kısa bir an OFF'a alınıp yeniden BOTH'a getirilir. Ateşleme sistemi doğru topraklanmışsa devir (RPM) ne olur?",
+      "options": [
+        "OFF'ta düşer, yeniden BOTH'a alınınca önceki değerine döner",
+        "OFF'ta artar, yeniden BOTH'a alınınca önceki değerine döner",
+        "Değişmez, çünkü manyetolar motor durana kadar ateşlemeye devam eder",
+        "OFF'ta düşer, yeniden BOTH'a alınınca önceki değerinin altında kalır"
+      ]
+    },
+    "52222": {
+      "text": "Manyeto kontrolünde motor tek manyetoda alışılmadık biçimde sert (düzensiz) çalışıyor. En olası neden nedir?",
+      "options": [
+        "Arızalı (ör. kirlenmiş) buji",
+        "Marş motoru hâlâ devrede",
+        "Yakıt tankı havalandırması tıkalı",
+        "Alternatör arızalanmış"
+      ]
+    },
+    "52223": {
+      "text": "Sandviç yapı neden oluşur?",
+      "options": [
+        "İnce, yük taşıyan iki yüzey tabakası ve hafif, destekleyici bir çekirdek",
+        "Kalın, destekleyici iki yüzey tabakası ve hafif, yük taşıyan bir çekirdek",
+        "İnce, destekleyici iki yüzey tabakası ve ağır, destekleyici bir çekirdek",
+        "Kalın, destekleyici iki yüzey tabakası ve ağır, yük taşıyan bir çekirdek"
+      ]
+    },
+    "52224": {
+      "text": "Uçak yapısında görülen ezik ya da buruşmalar neye işaret edebilir?",
+      "options": [
+        "Sert iniş ya da yapının aşırı zorlanması",
+        "Malzeme hatası ya da eski boya",
+        "Şiddetli erozyon ya da aşınma",
+        "Aşırı motor devri ve silindir arızası"
+      ]
+    },
+    "52225": {
+      "text": "Toplanabilir iniş takımının bir dezavantajı nedir?",
+      "options": [
+        "Daha fazla ağırlık",
+        "Uçuşta daha fazla sürüklenme",
+        "Daha yüksek yakıt tüketimi",
+        "Daha yüksek yaklaşma hızı"
+      ]
+    },
+    "52226": {
+      "text": "Uçak yapısının statik dayanımını ne bozabilir?",
+      "options": [
+        "Kuvvetli hamlelerde manevra hızını aşmak",
+        "Fazla hücum açısı nedeniyle tutunma kaybı",
+        "Kumanda kuvvetlerini uçuş durumuna göre trimlemek",
+        "Belirli bir hızın altında uçmak"
+      ]
+    },
+    "52227": {
+      "text": "Burun ya da kuyruk tekeri dümenlemesi hangi kumandaya bağlıdır?",
+      "options": [
+        "İstikamet dümeni (rudder)",
+        "Aileron",
+        "İrtifa dümeni (elevator)",
+        "Trim tab"
+      ]
+    },
+    "52228": {
+      "text": "Uçuş el kitabı aksini söylemiyorsa, elektrikli yardımcı yakıt pompası olan uçakta başka tanka geçmeden önce ne yapılır?",
+      "options": [
+        "Yardımcı yakıt pompası açılır",
+        "Kontak kapatılır",
+        "Karbüratör ısıtması açılır",
+        "Primer kullanılır"
+      ]
+    },
+    "52229": {
+      "text": "Voltmetre neyi gösterir?",
+      "options": [
+        "Gerilim (voltaj)",
+        "Akım",
+        "Elektrik gücü",
+        "Direnç"
+      ]
+    },
+    "52230": {
+      "text": "Uçağın elektrik sisteminden beslenen göstergeler nasıl işaretlenir?",
+      "options": [
+        "\"DC\"",
+        "\"EL\"",
+        "\"CO\"",
+        "\"AL\""
+      ]
+    },
+    "52231": {
+      "text": "Uçağın elektrik sistemi arızalanırsa hangi cihazlar etkilenebilir?",
+      "options": [
+        "Telsizler, radyo seyrüsefer cihazları ve elektrikli jiroskoplu göstergeler",
+        "Telsizler, radyo seyrüsefer cihazları ve manyetik pusula",
+        "Yakıt miktar göstergesi, telsizler ve altimetre",
+        "Sürat saati, altimetre ve vakumlu yapay ufuk"
+      ]
+    },
+    "52232": {
+      "text": "Sabit hatveli pervaneli motorda run-up sırasında karbüratör ısıtması açılınca ilk etki nedir?",
+      "options": [
+        "Devir düşer",
+        "Devir artar",
+        "Pervane pal açısı artar",
+        "Pervane pal açısı azalır"
+      ]
+    },
+    "52233": {
+      "text": "Motor yağ filtresi tıkanırsa ne olur?",
+      "options": [
+        "Baypas valfi açılır: yağ dolaşmaya devam eder, ama artık süzülmez",
+        "Baypas valfi açılır ve yedek filtre devreye girer",
+        "Yağ dolaşımı yaklaşık 30 dakika sonra durur",
+        "Yağ dolaşımı yaklaşık 15 dakika sonra durur"
+      ]
+    },
+    "52234": {
+      "text": "Uçuş el kitabı aksini söylemiyorsa sabit hızlı pervanede güç nasıl azaltılır?",
+      "options": [
+        "Önce manifold basıncı, sonra devir azaltılır",
+        "Önce devir, sonra manifold basıncı azaltılır",
+        "Önce manifold basıncı azaltılır, sonra devir artırılır",
+        "Önce devir azaltılır, sonra manifold basıncı artırılır"
+      ]
+    },
+    "52235": {
+      "text": "Yakıt miktarı nasıl gösterilmelidir?",
+      "options": [
+        "Her tankın kendi göstergesi olur ve düz uçuşta yalnız kullanılamayan yakıt kaldığında sıfır gösterir",
+        "Bütün tanklar için kalibre edilmiş tek gösterge yeterlidir",
+        "Her tankın kendi göstergesi olur ve 20 dakikalık yakıt kaldığında sıfır gösterir",
+        "Her tankın, biri uyarı ışığı yakan iki bağımsız göstergesi olur"
+      ]
+    },
+    "52236": {
+      "text": "Kuzey yarımkürede bir uçak 270° manyetik başta hızlanıyor. Hızlanma sırasında manyetik pusula yaklaşık ne gösterir?",
+      "options": [
+        "300°",
+        "240°",
+        "270°",
+        "090°"
+      ]
+    },
+    "52237": {
+      "text": "Kuzey yarımkürede bir uçak 270° manyetik başta yavaşlıyor. Yavaşlama sırasında manyetik pusula yaklaşık ne gösterir?",
+      "options": [
+        "240°",
+        "300°",
+        "270°",
+        "090°"
+      ]
+    },
+    "52238": {
+      "text": "Serbestçe dönen bir jiroskop uygulanan kuvvete nasıl tepki verir?",
+      "options": [
+        "Kuvvet, dönüş yönünde 90° ilerideki noktada etkisini gösterir (presesyon)",
+        "Kuvvetle aynı yönde hareket eder",
+        "Kuvvet 45° ilerideki noktada etkisini gösterir",
+        "Kuzeye doğru döner"
+      ]
+    },
+    "52239": {
+      "text": "Yön jiroskobunun (dünyanın dönüşünden kaynaklanan) görünür kayması ne kadardır?",
+      "options": [
+        "15°/saat × sin(enlem)",
+        "13°/saat × sin(enlem)",
+        "15°/saat × cos(boylam)",
+        "13°/saat × cos(boylam)"
+      ]
+    },
+    "52240": {
+      "text": "ADI kısaltması neyin açılımıdır?",
+      "options": [
+        "Attitude Director Indicator",
+        "Advanced Directional Indicator",
+        "Attitude Deviation Indication",
+        "Aircraft De-Icing"
+      ]
+    },
+    "52241": {
+      "text": "Attitude Director Indicator (ADI) hangi göstergeleri birleştirir?",
+      "options": [
+        "Yapay ufuk ve uçuş direktörü",
+        "Yön jiroskobu ve dönüş göstergesi",
+        "Yapay ufuk ve radyo pusula (RBI)",
+        "Yön jiroskobu ve VOR göstergesi (OBI)"
+      ]
+    },
+    "52242": {
+      "text": "Horizontal Situation Indicator (HSI) hangi göstergeleri birleştirir?",
+      "options": [
+        "Yön jiroskobu ve VOR göstergesi",
+        "Yapay ufuk ve uçuş direktörü",
+        "Dönüş göstergesi ve kayma topu",
+        "Yön jiroskobu ve uçuş direktörü"
+      ]
+    },
+    "52243": {
+      "text": "Bir EFIS'in birincil uçuş ekranı (PFD) diğerlerinin yanında neleri gösterebilir?",
+      "options": [
+        "Uçuş durumu, baş, VOR radyali ya da yaklaşma rotası, uçuş direktörü",
+        "Seyrüsefer bilgisi, çeşitli istasyonlara kerteriz, ATC uçuş planı",
+        "Yağ basıncı ve sıcaklığı, silindir başı ve egzoz gazı sıcaklığı",
+        "ATC uçuş planı ve CPDLC mesajları"
+      ]
+    },
+    "52244": {
+      "text": "Bir EFIS'in seyrüsefer ekranı (ND) diğerlerinin yanında neleri gösterebilir?",
+      "options": [
+        "Seyrüsefer bilgisi, çeşitli istasyonlara kerteriz, uçuş planı rotası",
+        "Uçuş durumu, baş, VOR radyali ya da yaklaşma rotası, uçuş direktörü",
+        "Yağ basıncı ve sıcaklığı, silindir başı ve egzoz gazı sıcaklığı",
+        "ATC uçuş planı ve CPDLC mesajları"
+      ]
+    },
+    "52245": {
+      "text": "Altimetre basınç ayarı 1000 hPa'dan 1010 hPa'ya değiştiriliyor. Gösterge nasıl değişir?",
+      "options": [
+        "Öncekinden yaklaşık 80 m (270 ft) fazla gösterir",
+        "Öncekinden yaklaşık 80 m az gösterir",
+        "QNH'ye bağlıdır",
+        "Değişmez"
+      ]
+    },
+    "52246": {
+      "text": "Bir variometrenin genleşme kabı (kapasite kabı) olması gerekenden büyükse variometre:",
+      "options": [
+        "Olduğundan fazla gösterir",
+        "Olduğundan az gösterir",
+        "Hiçbir şey göstermez",
+        "Aşırı zorlanır"
+      ]
+    }
+  }
+}

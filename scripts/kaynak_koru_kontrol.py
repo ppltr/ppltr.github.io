@@ -7,7 +7,7 @@ Temel veritabanındaki HER soru (kimlik, ders, bölüm kodu, metin, çeviriler, 
 şekil bayrakları, şıkların sırası ve doğru şık) güncel veritabanında birebir aynı kalmalı.
 Çözüm geçmişi tarayıcıda soru kimliğine bağlıdır; kimlik ve içerik değişmediği sürece korunur.
 Yeni sorular ek kimlik bantlarında (61xxx-69xxx) ya da kullanıcının onayladığı
-sınav hatırlatma dosyasında kayıtlı kimliklerde olabilir.
+sınav hatırlatma / ECQB eksik dosyalarında kayıtlı kimliklerde olabilir.
 """
 
 import json
@@ -45,10 +45,13 @@ def main() -> None:
     eski, yeni = satirlar(temel), satirlar(ROOT / "atpl.db")
     bozuk = [i for i in eski if i not in yeni or yeni[i] != eski[i]]
     ekler = sorted(set(yeni) - set(eski))
-    hatirlatma_dosyasi = ROOT / "data" / "050_sinav_hatirlatma_sorulari.json"
+    # Kullanıcının onayladığı sınav hatırlatma ve ECQB eksik dosyaları kendi bantlarındadır.
     hatirlatma_idleri = {
-        q["id"] for q in json.loads(hatirlatma_dosyasi.read_text(encoding="utf-8"))["questions"]
-    } if hatirlatma_dosyasi.exists() else set()
+        q["id"]
+        for desen in ("*_sinav_hatirlatma_sorulari.json", "*_ecqb_eksik_sorulari.json")
+        for dosya in (ROOT / "data").glob(desen)
+        for q in json.loads(dosya.read_text(encoding="utf-8"))["questions"]
+    }
     bant_disi = [i for i in ekler if not 61000 < i < 70000 and i not in hatirlatma_idleri]
     dogru_a = [i for i in yeni if sum(o[3] for o in yeni[i][1]) != 1 or yeni[i][1][0][3] != 1]
     print(f"temel {len(eski)} soru · güncel {len(yeni)} · eklenen {len(ekler)}")

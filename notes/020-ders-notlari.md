@@ -370,6 +370,8 @@ Buz havanın uçağa ilk çarptığı yerlerde başlar. **Anti-icing:** Buz olu�
 ### 5.7 Elektrik üretimi ve dağıtımı
 **DC üretimi:** DC jeneratör (motor döndürür), **alternatör + redresör** (AC üretilir, doğrultularak DC'ye çevrilir; modern uçaklarda yaygın), **batarya/akümülatör** (acil durum). Tasarım güvenilirlik, verimlilik ve güvenlik içindir. **Bozulmalar:** aşırı yük (ısınma), kısa devre (hasar, yangın riski), voltaj düşüklüğü/artışı. **İzleme:** güç yönetim panelleri (voltaj, akım, sistem sağlığı), uyarı/alarm sistemleri, otomatik izleme.
 
+> Sınavda (2026-11-17): **Hafif uçakların çoğunda 14 V ya da 28 V DC** sistem vardır; alternatör gerilimi akünün (12 V ya da 24 V) üzerinde olmalı ki aküyü şarj etsin. 115/200 V, 400 Hz AC büyük uçaklarındır.
+
 **AC üretimi:** **Jeneratörler** (ana AC kaynağı), **invertörler** (DC → AC), **APU** ve yer destek ekipmanı (yerdeyken/ana motorlar çalışmazken). **Tasarım:** genellikle **üç fazlı**; **frekans 400 Hz** (jeneratör ve ekipman daha hafif/küçük); voltaj genellikle **115/200 VAC**. Bozulmalar: aşırı yük, kısa devre, voltaj ve frekans sapması. İzleme: AC güç panelleri (voltaj, akım, frekans), uyarı sistemleri.
 
 **Dağıtım:**

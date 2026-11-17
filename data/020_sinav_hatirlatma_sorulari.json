@@ -1,0 +1,65 @@
+{
+  "subject_code": "020",
+  "subject_name": "Aircraft General Knowledge",
+  "source": "Kullanıcının 2026-11-17 PPL(A) Uçak Genel Bilgisi sınavından hatırladığı konular; bankada karşılığı olmayanlar için bağımsız yazılmış sorular. Resmî SHGM soru metni değildir.",
+  "origin": "banka",
+  "answer_convention": "Doğru cevap ilk şıktır (A). Sunum katmanı şıkları karıştırır.",
+  "id_convention": "52201+ bandı: kullanıcının 020 sınav hatırlamasından yazılan sorular. Mevcut ve emekli kimlikler yeniden kullanılmaz.",
+  "hatirlanan_konular": {
+    "static discharge": "52201 (yeni; ECQB-PPL(A) 80 AGK soru 53 aynı konuyu soruyor)",
+    "100LL": "14567 rengi (bankada) + 52202 LL'nin anlamı (yeni)",
+    "küçük uçak voltajı": "52203 (yeni; FAA PHAK bölüm 7)",
+    "hectopascal": "52205 'hangisi sıcaklık birimi değildir' → hektopaskal (kullanıcının sözü, 2026-11-17; açık bankalarda bulunamadı). 52204 (1 hPa ≈ 27 ft) sınavda çıkmadı, 020-EC'ye taşındı.",
+    "altimetre (aneroid kapsül)": "bankada: 52015, 14716, 14717, 14718",
+    "magneto OFF primer devre": "bankada: 14608 (14610 onun tekrarı)"
+  },
+  "sections": {
+    "020-SH": "Recalled From the Exam"
+  },
+  "questions": [
+    {
+      "id": 52201,
+      "section": "020-SH",
+      "text": "What is the function of the static dischargers (static wicks) fitted to the trailing edges of the wings and tail?",
+      "options": [
+        "To bleed off the static charge that builds up on the airframe in flight, reducing interference with radio and avionics",
+        "To protect the aircraft from lightning strikes by conducting the strike current to earth",
+        "To earth the aircraft during refuelling so that no spark can occur",
+        "To prevent ice from forming on the trailing edges of the control surfaces"
+      ]
+    },
+    {
+      "id": 52202,
+      "section": "020-SH",
+      "text": "In the fuel grade designation AVGAS 100LL, what does \"LL\" stand for?",
+      "options": [
+        "Low lead: it contains less tetraethyl lead than the older AVGAS 100",
+        "Lead-free: it contains no tetraethyl lead at all",
+        "Light load: it is intended for aircraft below 2 000 kg",
+        "Long life: it can be stored longer without forming gum deposits"
+      ]
+    },
+    {
+      "id": 52203,
+      "section": "020-SH",
+      "text": "Light piston-engine aircraft usually have a DC electrical system whose nominal (alternator) voltage is:",
+      "options": [
+        "14 V or 28 V, charging a 12 V or 24 V battery",
+        "115 V or 200 V AC, supplied at 400 Hz",
+        "6 V or 12 V, charging a 6 V battery",
+        "48 V, charging two 24 V batteries in series"
+      ]
+    },
+    {
+      "id": 52205,
+      "section": "020-SH",
+      "text": "Which of the following is NOT a unit of temperature?",
+      "options": [
+        "Hectopascal",
+        "Kelvin",
+        "Degree Celsius",
+        "Degree Fahrenheit"
+      ]
+    }
+  ]
+}

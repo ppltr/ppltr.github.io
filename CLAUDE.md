@@ -491,6 +491,26 @@ gömer. Değişiklikten sonra `python3 scripts/build_web.py` çalıştır.
 Yedekleme metin kopyala/yapıştır üzerinden yapılır — artifact kum havuzunda dosya
 indirme engelli. Dosya düğmeleri yalnızca `window.self === window.top` iken gösterilir.
 
+## Sınav hatırlatma ve ECQB eksikleri (`020-SH`, `020-EC`)
+
+Kullanıcı 2026-11-17'de 020 (Uçak Genel Bilgisi) sınavına girdi, hatırladığı konular: static discharge,
+100LL, küçük uçak voltajı, hectopascal, altimetre kapsülü, magneto OFF primer devre. Bankada olmayanlar
+**ayrı bir kategoriye** girdi (kullanıcı istedi): `data/020_sinav_hatirlatma_sorulari.json`, bölüm
+`020-SH` "Sınavda Çıkanlar (Hatırlama)", kimlik 52201+, `isaret: aday`. Bankada zaten olanlar
+işaretlendi: 14608 magneto OFF `dogrulanmis`; 14567, 14717, 52015 `aday`. Hektopaskal sorusu kullanıcının
+sözüyle "hangisi sıcaklık birimi değildir" (Kelvin, Celsius, hektopaskal…) → 52205 `dogrulanmis`; hiçbir
+açık bankada bulunamadı. İlk tahmin 52204 (1 hPa ≈ 27 ft) sınavda çıkmadığı için 020-EC'ye taşındı.
+
+Austro Control'ün açık ECQB-PPL(A) 80 AGK özeti (162 soru; cevap `pdftotext -raw` çıktısında U+F0FE
+işaretli kutu, U+F0A8 boş kutu) bankayla tek tek eşlendi. Bankada hiç sorulmayan, ders notunda geçen,
+şekilsiz bilgiler `data/020_ecqb_eksik_sorulari.json` → `020-EC` "Başka Bankalardan Eksikler"
+("Missing From Other Banks"), 52204 + 52211–52222 (13 soru; ECQB'nin birim soruları sınavda birim sorusu
+çıktığı öğrenilince alındı, 52204 Traficom 150),
+`origin: ek`; elenenlerin nedeni dosyanın `ecqb_eslesme` alanında. Bunlar `kaynak_derle.py` zincirine
+girmez (ECQB kayıtlı kaynak değil); `kaynak_koru_kontrol.py` `*_sinav_hatirlatma_sorulari.json` ve
+`*_ecqb_eksik_sorulari.json` kimliklerini bant dışı saymaz. Başka bir ders için aynı iş istenirse aynı
+düzeni kullan: `<ders>-SH` / `<ders>-EC`, bant `<ders notu bandı>2xx`.
+
 ## Ek kaynak soruları (`<ders>-EK`)
 
 Dış PPL soru listelerinden (Traficom, Sırbistan CAD, Transport Canada, Son Yaklaşma örnekleri, Austro Control
