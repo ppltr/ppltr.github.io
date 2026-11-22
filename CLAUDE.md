@@ -418,12 +418,13 @@ Durum panelinin yerinde bir kutuda + Kopyala (`srMetin`: "N. soru ⏎ → cevap"
 uzunluğu sınırı uygulanmaz, seçili dilde. Speedrun'dan **ayrı** bağlantı; kullanıcı ikisinin
 karışmasını istemedi.
 
-**Soruyu yapay zekâya sorma.** Kart başlığındaki `Sor` düğmesi (`askBtn`) soruyu,
-gördüğün sıradaki şıkları, doğru cevabı ve verdiğin cevabı düz metne çevirip
-(`askText`) panoya kopyalar ve seçilen sohbeti yeni sekmede açar. Düğme gerçek bir
+**Soruyu yapay zekâya sorma.** Kart başlığındaki `Sor` düğmesi (`askBtn`) kişisel isteği
+(varsayılan: "Cevap anahtarına göre doğru şıkkın neden bu olduğunu kısaca, basitçe ve akılda kalıcı şekilde Türkçe anlat."),
+soruyu, gördüğün sıradaki şıkları, cevap anahtarının doğru şıkkını ve (yanlış işaretlendiyse)
+seçtiğin şıkkı düz metne çevirip (`askText`) panoya kopyalar ve seçilen sohbeti yeni sekmede açar. Düğme gerçek bir
 `<a target="_blank">`; `window.open` sandbox'ta engellenebiliyor. Sağlayıcı `AI`
 sözlüğünde (ChatGPT varsayılan; Claude, Gemini, Grok, Perplexity, Google), seçim
-`F.ai` ile Ayarlar'dan yapılır.
+`F.ai` ile Ayarlar'dan yapılır; eski varsayılan istek (`OLD_AI_PROMPT`, `S.prefV < 3`) yeni varsayılana otomatik geçirilir.
 
 **Satır içi API eklemeyi deneme.** Bu dosya herkese açık statik bir sayfa olarak
 yayınlanıyor; API anahtarı gömmek anahtarı sızdırır ve faturayı kullanıcıya keser.

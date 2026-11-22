@@ -1095,12 +1095,18 @@ function loadProfile(){
     }
     S.prefV = 2;
   }
+  // Eski varsayılan "Sor" isteği kaydedilmişse yeni varsayılana geçir (özel metne dokunma)
+  if ((S.prefV || 0) < 3){
+    if (S.pref && S.pref.aiPrompt === OLD_AI_PROMPT) delete S.pref.aiPrompt;
+    S.prefV = 3;
+  }
   applyPref();
 }
 /** S.pref → F. Açılışta ve buluttan daha yeni bir ayar seti geldiğinde çalışır. */
 function applyPref(){
   Object.assign(F, DEFAULTS, S.pref || {});
-  if (typeof F.aiPrompt !== 'string' || !F.aiPrompt.trim()) F.aiPrompt = DEFAULTS.aiPrompt;
+  if (typeof F.aiPrompt !== 'string' || !F.aiPrompt.trim() || F.aiPrompt.trim() === OLD_AI_PROMPT)
+    F.aiPrompt = DEFAULTS.aiPrompt;
   delete F.hideFig;                       // süzgeç kaldırıldı, eski kayıt taşımasın
   if (!F.pick || typeof F.pick !== 'object') F.pick = {};
   S.pref = F;                             // bundan sonrası tek nesne üzerinden
@@ -1719,10 +1725,11 @@ function bindAccount(u){
 // count:0 = sınır yok, kapsamdaki tüm sorular
 // deck:'new' = varsayılan olarak henüz çözülmemişlerden başla, tüm konular
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
+const OLD_AI_PROMPT = 'Doğru cevabı veya doğru şıkkı söylemeden, doğru cevabı kendim verebileceğim şekilde konuyu kısaca Türkçe anlat.';
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
                    ek:true, hideFlag:false, count:0, mode:'study', order:'smart',
                    sound:true, autoNext:true, timers:true, ai:'chatgpt', lang:'en', expLang:'tr',
-                   aiPrompt:'Doğru cevabı veya doğru şıkkı söylemeden, doğru cevabı kendim verebileceğim şekilde konuyu kısaca Türkçe anlat.' };
+                   aiPrompt:'Cevap anahtarına göre doğru şıkkın neden bu olduğunu kısaca, basitçe ve akılda kalıcı şekilde Türkçe anlat.' };
 const F = Object.assign({}, DEFAULTS);
 
 // ── Soru dili ────────────────────────────────────────────────────────
@@ -2401,7 +2408,7 @@ function home(){
         '<div class="grp"><label class="lbl" for="askPrompt">Gönderilecek istek</label>' +
           '<textarea id="askPrompt" rows="4" aria-describedby="askPromptHelp">' +
             esc(F.aiPrompt || DEFAULTS.aiPrompt) + '</textarea>' +
-          '<div class="note" id="askPromptHelp">Otomatik kaydedilir. Soru ve şıklar bu metnin sonuna eklenir. ' +
+          '<div class="note" id="askPromptHelp">Otomatik kaydedilir. Soru, şıklar ve cevap anahtarındaki doğru şık bu metnin sonuna eklenir. ' +
           'Boş bırakırsan varsayılan istek kullanılır.</div>' +
           '<div class="tools"><button class="tbtn" id="askPromptReset" type="button">Varsayılana dön</button></div></div>' +
         '<div class="grp"><span class="lbl">Cevap sesleri</span>' +
@@ -2828,10 +2835,13 @@ function bindAsk(q){
   };
 }
 
-/** Kişisel isteği, soruyu ve ekranda görünen sıradaki şıkları düz metne çevirir. */
+/** Kişisel isteği, soruyu, ekranda görünen sıradaki şıkları ve cevap anahtarının doğru şıkkını düz metne çevirir. */
 function askText(){
   if (!R) return '';
   const q = R.list[R.i], s = SUBJ[q[1]], sec = s.sec[q[2]];
+  const opts = qOpts(q);
+  const dogruPos = R.order.indexOf(0);
+  const dogruHarf = dogruPos >= 0 ? KEYS[dogruPos] : 'A';
   const L = [
     F.aiPrompt.trim() || DEFAULTS.aiPrompt,
     '',
@@ -2839,10 +2849,15 @@ function askText(){
     'Soru (' + q[0] + '): ' + qText(q),
     '',
   ];
-  R.order.forEach((oi, pos) => L.push(KEYS[pos] + ') ' + qOpts(q)[oi]));
+  R.order.forEach((oi, pos) => L.push(KEYS[pos] + ') ' + opts[oi]));
+  L.push('', 'Cevap anahtarı (Doğru şık): ' + dogruHarf + ') ' + opts[0]);
+  if (R.picked !== null && F.mode === 'study' && !R.sr && R.order[R.picked] !== 0){
+    L.push('Benim seçtiğim şık: ' + KEYS[R.picked] + ') ' + opts[R.order[R.picked]]);
+  }
   // Türkçe kipteysek İngilizce aslını da ver: model çeviriye değil kaynağa baksın
   if (trMode() && q[10]) L.push('', 'Sorunun İngilizce aslı: ' + q[3],
-    ...R.order.map((oi, pos) => '  ' + KEYS[pos] + ') ' + q[4][oi]));
+    ...R.order.map((oi, pos) => '  ' + KEYS[pos] + ') ' + q[4][oi]),
+    'Doğru şık (EN): ' + dogruHarf + ') ' + q[4][0]);
   if (q[8]) L.push('', 'Not: Bu soruda bir şekil var, metne aktarılamadı.');
   if (q[7]) L.push('Not: Bu soru ders notundan üretilmiştir, gerçek sınav sorusu değildir.');
   return L.join('\n');
