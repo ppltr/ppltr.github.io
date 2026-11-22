@@ -1,5 +1,5 @@
 // Otomatik üretildi (scripts/build_web.py) — elle düzenleme.
-const CACHE = 'ppl-offline-c02f10dbbdeb';
+const CACHE = 'ppl-offline-937b9d2ec85e';
 const FONT_CACHE = 'ppl-fonts-v1';
 const CORE = ["./", "./index.html", "./site.webmanifest", "./favicon.svg", "./favicon.ico", "./apple-touch-icon.png", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png"];
 

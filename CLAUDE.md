@@ -274,8 +274,8 @@ dışlanır. Kaydırma sonrası 400 ms boyunca şık tıklaması yok sayılır (
 yoksa parmağın kalktığı şık seçilmiş olurdu. Bunu kaldırma, ok tuşları telefonda yok.
 
 **Klavye:** `A`–`E` ve `1`–`5` cevaplar, `←` `→` soru değiştirir, `Home`/`End` başa ve
-sona gider, `Enter` devam eder, `S` yıldızlar, `P` tur sayacını durdurup sürdürür,
-`Esc` açık paneli kapatır.
+sona gider, `Enter` devam eder, `I` çevrimdışı ipucu/açıklama açar, `S` yıldızlar, `P` tur sayacını durdurup sürdürür,
+`T` canlı sayaç şeridini açıp kapatır, `Esc` açık paneli kapatır.
 
 **Nokta (`.`) = Enter**, yalnız soru ekranında: cevaplı soruda (geri dönülmüş ya da yanlış
 yapılmış) sonraki adım, Speedrun'da cevaplanmamış soruda tek şıkkı işaretler, cevaplanmamış
@@ -327,8 +327,16 @@ dönme. Bedeli: kalkıp gidince en çok 3 dakika çalışma sayılır.
   da `P` ile iki sayaç birlikte durur/sürer (`R.durdu`, tur kaydında saklanır). Elle
   durdurma site toplamını durdurmaz. Simge yapılacak eylemi gösterir ve CSS ile çizilir —
   iOS ⏸'yi renkli emojiye çeviriyor.
-- Canlı "boşta · toplam" satırı ve ikinci ortalama **kaldırıldı**: kullanıcı işe
-  yaramadığını söyledi. Boşta süre yalnız Durum panelinde ve tur raporunda.
+- Canlı "boşta · toplam" satırı üst başlıktan kaldırıldı; yerine kartın altında **aç/kapa
+  yapılabilen ince canlı sayaç şeridi** (`#timerStrip`, tercih `F.timers`, varsayılan açık;
+  `×` düğmesi, `⋯` panelindeki `#quizTimersToggle`, `Ayarlar → Çalışma düzeni → Sayaç şeridini
+  göster` veya `T` kısayolu ile anında açılıp kapatılır) bulunur: `Toplam` (tur duvar saati),
+  durdurulabilir `Aktif` çipi (`#tsAct`), `Önceki` (bir önceki cevaplanan soruya harcanan son
+  süre `R.lastQMs`/`R.lastQWall`, yenilemede korunur), `Ort` ve `Site açık` (`SITE_T0`,
+  `sessionStorage` ile sekme içi yenilemede korunur; 360px altında gizlenen üst saat yerine
+  `Soru` da şeritte görünür). Kartın altında durduğu için üst çubuğu büyütmez ve soruyu aşağı
+  itmez. Ana ekran `.idline` satırında (tercih açıkken) ve `Durum` panelinde (`#statsSiteOpen`)
+  canlı `Site açık` süresi gösterilir; boşta süre Durum panelinde ve tur raporunda kalır.
 - `sureYaz()` tur kaydına süreleri yazarken `tN`'ye dokunmaz; birleştirmede turun
   ilerlemesi ölçülürken yalnız süre değişikliği sayılmasın.
 

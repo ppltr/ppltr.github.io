@@ -17,6 +17,7 @@ run(`
   ${fn('soruToplam')}
   ${fn('toplamKapat')}
   ${fn('toplamAc')}
+  ${fn('prevQInfo')}
 `);
 
 // Passage of time counts independently of focus, idle status and manual pause.
@@ -47,4 +48,11 @@ assert.equal(run("soruToplam('2:101', 262000)"), 10000);
 // Older answered questions have no invented elapsed-time history.
 run('R = {round:1, i:0, list:[[101]], picked:0, qWall:{}, qWallOpen:null}; toplamAc(1000)');
 assert.equal(run("soruToplam('1:101', 5000)"), null);
-console.log('elapsed question timing: pause, navigation, reload, answer freeze, retry and legacy checks passed');
+// Previous question duration prefers active time, falls back to wall time if answered while paused.
+run('R = {lastQMs:null, lastQWall:null}');
+assert.equal(run('prevQInfo()'), null);
+run('R = {lastQMs:18000, lastQWall:22000}');
+assert.deepEqual({...run('prevQInfo()')}, {ms:18000, act:18000, wall:22000});
+run('R = {lastQMs:0, lastQWall:25000}');
+assert.deepEqual({...run('prevQInfo()')}, {ms:25000, act:0, wall:25000});
+console.log('elapsed question timing: pause, navigation, reload, answer freeze, retry, previous-question and legacy checks passed');

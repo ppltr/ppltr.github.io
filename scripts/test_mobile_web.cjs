@@ -33,7 +33,7 @@ const engines = require('playwright');
         // Mobile browsers enlarge innerWidth when content overflows. Compare to
         // the emulated device width instead of accepting that enlarged viewport.
         width:document.documentElement.scrollWidth,
-        clipped:[...document.querySelectorAll('.bar,.meta,.walltime,.foot,.opt,.head')]
+        clipped:[...document.querySelectorAll('.bar,.meta,.walltime,.tstrip,.foot,.opt,.head')]
           .map(el => ({name:el.className, rect:el.getBoundingClientRect().toJSON()}))
           .filter(el => el.rect.width && (el.rect.left < -1 || el.rect.right > document.documentElement.clientWidth + 1)),
       }));
@@ -60,13 +60,28 @@ const engines = require('playwright');
     await page.goto(base);
     // Include the signed-out Google control, even when its remote SDK is blocked.
     await page.locator('#bLogin').evaluate(el => el.classList.remove('hidden'));
+    assert.ok(await page.locator('#homeSiteClock').isVisible(), 'Site-open clock should be visible on home when enabled');
     await matrix('home');
     await page.locator('#optBox > summary').click();
+    assert.ok(await page.locator('#swTimers').isVisible(), 'Timer strip toggle should be in settings');
     await matrix('settings');
     assert.ok(await page.locator('#askPrompt').evaluate(el => parseFloat(getComputedStyle(el).fontSize) >= 16));
     await page.locator('#go').click();
+    assert.ok(await page.locator('#timerStrip').isVisible(), 'Live timer strip should be visible by default');
+    assert.equal(await page.locator('#tsPrev').textContent(), '–');
+    assert.match(await page.locator('#tsSite').textContent(), /^\d+:\d\d/);
     await matrix('question');
     await shot('mobile-question');
+    // Toggle timer strip off via strip close button and verify persistence + re-enable via drawer.
+    await page.locator('#tsHide').tap();
+    assert.equal(await page.locator('#timerStrip').isVisible(), false);
+    await page.locator('#quizMore').tap();
+    assert.equal(await page.locator('#quizTimersToggle').getAttribute('aria-pressed'), 'false');
+    assert.match(await page.locator('#siteWall').textContent(), /^\d+:\d\d/);
+    await page.locator('#quizTimersToggle').tap();
+    assert.equal(await page.locator('#quizTimersToggle').getAttribute('aria-pressed'), 'true');
+    assert.ok(await page.locator('#timerStrip').isVisible());
+    await page.locator('#quizMore').tap();
     await page.waitForTimeout(350);
     await page.addInitScript(() => {
       const seed = sessionStorage.getItem('mobile-test-seed');
@@ -103,6 +118,7 @@ const engines = require('playwright');
         el.children[1].textContent !== (q[13] || q[4])[0]);
     });
     await page.locator('.opt').nth(wrong).tap();
+    assert.match(await page.locator('#tsPrev').textContent(), /^\d+:\d\d/, 'Previous question timer should record after answer');
     await matrix('answered question');
     const next = await page.locator('#next').evaluate(el => ({width:el.clientWidth, text:el.scrollWidth, height:el.clientHeight}));
     assert.ok(next.text <= next.width, 'Continue label must fit');
@@ -113,10 +129,19 @@ const engines = require('playwright');
     await page.locator('#navNo').fill('1001');
     await page.locator('#navGo').tap();
     assert.match(await page.locator('#navBtn').textContent(), /^1001\//);
+    assert.match(await page.locator('#tsPrev').textContent(), /^\d+:\d\d/, 'Previous question timer should remain visible on next question');
+    // Inline active timer chip in strip syncs pause state with #tmr (already paused above).
+    assert.equal(await page.locator('#tsAct').getAttribute('aria-pressed'), 'true');
+    await page.locator('#tsAct').tap();
+    assert.equal(await page.locator('#tsAct').getAttribute('aria-pressed'), 'false');
+    assert.equal(await page.locator('#tmr').getAttribute('aria-pressed'), 'false');
+    await page.locator('#tsAct').tap();
+    assert.equal(await page.locator('#tsAct').getAttribute('aria-pressed'), 'true');
     await appAction('Theme');
     await matrix('theme');
     await shot('mobile-dark');
     await appAction('Stats');
+    assert.match(await page.locator('#statsSiteOpen').textContent(), /^\d+:\d\d/, 'Stats should show live site-open duration');
     await matrix('stats panel');
     assert.deepEqual(errors, []);
     console.log('Mobile device layouts, long timers, answer controls, navigation, settings and stats passed.');

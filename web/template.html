@@ -154,7 +154,7 @@ h1{margin:0 0 4px; font-size:23px; font-weight:700; letter-spacing:-.022em; text
 .idline .mini b{color:var(--ink-2); font-weight:500}
 .idline .chev{flex:none; color:var(--ink-3); font-family:var(--f-num); font-size:13px}
 .idline:hover .chev{color:var(--accent)}
-.idline .stats{display:flex; align-items:center; gap:10px; min-width:0}
+.idline .stats{display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:2px 10px; min-width:0}
 .csync{flex:none; width:7px; height:7px; border-radius:50%; background:var(--ok)}
 .csync.wait{background:var(--accent)}
 .csync.err{background:var(--bad)}
@@ -459,6 +459,40 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .quiz-info{font-size:12px; color:var(--ink-2); margin-top:10px; overflow-wrap:anywhere}
 .quiz-info .tag{display:inline-block; margin:6px 5px 0 0}
 .quiz-extra .walltime{margin:0; padding:0; border:0; background:none}
+.quiz-extra .switch{margin:10px 0 0; background:var(--surface); min-height:44px}
+/* Canlı sayaç şeridi: kartın altında ince satır; soruyu ve şıkları aşağı itmez, F.timers ile aç/kapa */
+.tstrip{display:flex; align-items:flex-start; gap:6px;
+  margin-top:8px; padding:5px 8px 5px 10px; background:var(--surface-2);
+  border:1px solid var(--rule); border-radius:var(--r);
+  font-family:var(--f-num); font-variant-numeric:tabular-nums; font-size:11.5px;
+  color:var(--ink-3); min-width:0}
+.tstrip.hidden{display:none}
+.tstrip .ts-list{display:flex; align-items:center; flex-wrap:wrap; gap:4px 12px;
+  flex:1; min-width:0}
+.tstrip .ts-i{display:inline-flex; align-items:center; gap:4px; white-space:nowrap}
+.tstrip .ts-i b{color:var(--ink-2); font-weight:500}
+.tstrip .ts-i.uzun b{color:var(--due)}
+.tstrip .ts-qonly{display:none}
+.tstrip .ts-act{display:inline-flex; align-items:center; gap:5px; min-height:28px;
+  padding:2px 8px; border-radius:99px; border:1px solid var(--rule);
+  background:var(--surface); color:var(--ink-2); font-family:var(--f-num);
+  font-variant-numeric:tabular-nums; font-size:11.5px; white-space:nowrap;
+  transition:border-color .12s, color .12s, background .12s}
+.tstrip .ts-act b{font-weight:500}
+.tstrip .ts-act .ti{width:7px; height:8px; border-left:2.5px solid currentColor;
+  border-right:2.5px solid currentColor; box-sizing:border-box; flex:none}
+.tstrip .ts-act.off{color:var(--due); border-color:var(--due); background:var(--due-soft)}
+.tstrip .ts-act.off .ti{width:0; height:0; border-right:0; border-left:7px solid currentColor;
+  border-top:4px solid transparent; border-bottom:4px solid transparent}
+.tstrip .ts-act.bosta b{color:var(--ink-3)}
+.tstrip .ts-hide{display:inline-flex; align-items:center; justify-content:center;
+  min-width:28px; min-height:28px; padding:0 6px; border-radius:6px;
+  color:var(--ink-3); font-size:14px; line-height:1; flex:none}
+@media (hover:hover) and (pointer:fine){
+  .tstrip .ts-act:hover{border-color:var(--accent); color:var(--accent)}
+  .tstrip .ts-act.off:hover{border-color:var(--due); color:var(--due); filter:brightness(1.1)}
+  .tstrip .ts-hide:hover{color:var(--accent); background:var(--surface)}
+}
 .walltime{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px;
   margin:0 0 10px; padding:9px 10px; border:1px solid var(--rule); border-radius:var(--r);
   background:var(--surface-2)}
@@ -724,6 +758,9 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
   .quiz-view .xnote,.quiz-view .xhint{margin:8px 0 0; border:1px solid var(--rule); border-radius:9px}
   .quiz-view .xhint{border-left:3px solid var(--cyan)}
   .quiz-view .xlang button{min-width:36px; min-height:30px}
+  .quiz-view .tstrip{margin:8px 0 6px; padding:5px 6px 5px 9px; gap:4px; font-size:11px; border-radius:9px}
+  .quiz-view .tstrip .ts-list{gap:3px 9px}
+  .quiz-view .tstrip .ts-act{font-size:11px; min-height:28px; padding:2px 7px}
   .quiz-view .foot{position:fixed; bottom:0; left:0; right:0; z-index:20; margin:0;
     padding:6px max(12px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));
     background:var(--surface); border-top:1px solid var(--rule)}
@@ -737,6 +774,7 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 }
 @media (max-width:359px){
   .quiz-view .compact-clock{display:none}
+  .quiz-view .tstrip .ts-qonly{display:inline-flex}
 }
 @media (max-width:380px){
   .bar{gap:4px; padding-left:8px; padding-right:8px}
@@ -1488,6 +1526,17 @@ const CIHAZ = (() => {
 let sonEtkin = document.visibilityState === 'visible' ? Date.now() : null;
 let sonTik = Date.now();
 let sureDegisti = false;
+/** Site bu sekmede açıldığından beri geçen süre (sayfa yenilenince sıfırlanmaz). */
+const SITE_T0 = (() => {
+  try {
+    const v = +sessionStorage.getItem('atpl.oturum0');
+    if (v && v <= Date.now() && Date.now() - v < 7 * DAY) return v;
+    const now = Date.now();
+    sessionStorage.setItem('atpl.oturum0', String(now));
+    return now;
+  } catch { return Date.now(); }
+})();
+const siteAcikMs = (an = Date.now()) => Math.max(0, an - SITE_T0);
 
 /** S.sure ya da S.bos içinde bu cihazın sayacını artırır (gün kaydıyla). */
 function sayacEkle(ad, d){
@@ -1561,6 +1610,11 @@ function sureYaz(){
   // Ekrandaki cevaplanmamış sorunun birikimi: sayfa yenilenince sıfırlanmasın
   if (R.qAcik != null) rec.qAn = [R.qAcik, Math.round(R.qAcc[R.qAcik] || 0)];
   else delete rec.qAn;
+  if (R.lastQId != null){
+    rec.lastQId = R.lastQId;
+    if (typeof R.lastQMs === 'number') rec.lastQMs = Math.round(R.lastQMs);
+    if (typeof R.lastQWall === 'number') rec.lastQWall = Math.round(R.lastQWall);
+  }
   if (R.durdu) rec.durdu = true; else delete rec.durdu;
 }
 /** Sayfa gizlenirken ya da kapanırken: o ana kadarki süreyi yaz, sayımı durdur. */
@@ -1577,8 +1631,8 @@ addEventListener('visibilitychange', () => {
 // Dakikada bir, süre değiştiyse yerel diske yaz; buluta gizlenişte ya da bir
 // sonraki cevapla gider. Tarayıcı çökerse en çok bir dakika kaybolur.
 setInterval(() => { if (sureDegisti){ sureYaz(); flushLocal(); } }, 60e3);
-// Saniyede bir: süre birikir, soru ekranındaki iki sayaç tazelenir.
-setInterval(() => { akit(Date.now()); if (R) tmrBoya(); }, 1000);
+// Saniyede bir: süre birikir, soru ve ana ekran / durum sayaçları tazelenir.
+setInterval(() => { akit(Date.now()); if (R) tmrBoya(); homeClockBoya(); }, 1000);
 addEventListener('online', () => {
   Offline.paint();
   paintCloud();
@@ -1667,7 +1721,7 @@ function bindAccount(u){
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
                    ek:true, hideFlag:false, count:0, mode:'study', order:'smart',
-                   sound:true, autoNext:true, ai:'chatgpt', lang:'en', expLang:'tr',
+                   sound:true, autoNext:true, timers:true, ai:'chatgpt', lang:'en', expLang:'tr',
                    aiPrompt:'Doğru cevabı veya doğru şıkkı söylemeden, doğru cevabı kendim verebileceğim şekilde konuyu kısaca Türkçe anlat.' };
 const F = Object.assign({}, DEFAULTS);
 
@@ -1997,7 +2051,7 @@ function start(sr){
   R = { id, list, i:0, order:null, picked:null, orders:[], picks:[],
         log:[], t0:Date.now(), round:1, missed:[], sure:0, durdu:false, sureTam:true,
         bos:0, bosTam:true, qTop:0, qN:0, qAcc:{}, qAcik:null, qSon:{},
-        qWall:{}, qWallOpen:null, hintMap:{}, sr };
+        qWall:{}, qWallOpen:null, lastQId:null, lastQMs:null, lastQWall:null, hintMap:{}, sr };
   S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle() + (sr ? ' · Speedrun' : ''),
                    code:soloModule() || '', deck:deckName(), sr,
                    n0:list.length, ids:list.map(q => q[0]), i:0, round:1,
@@ -2014,6 +2068,16 @@ function resumeRun(id){
   if (!rec || rec.done) return home();
   const list = (rec.ids || []).map(x => BY_ID.get(x)).filter(q => q && !isRev(q));
   if (!list.length){ rec.done = true; save(); return home(); }
+  let lastQId = rec.lastQId != null ? rec.lastQId : null;
+  let lastQMs = typeof rec.lastQMs === 'number' ? rec.lastQMs : null;
+  let lastQWall = typeof rec.lastQWall === 'number' ? rec.lastQWall : null;
+  if (lastQId === null && (rec.log || []).length){
+    const son = rec.log[rec.log.length - 1];
+    lastQId = son.id;
+    const wk = (son.round || 1) + ':' + son.id;
+    if (rec.qWall && rec.qWall[wk]) lastQWall = rec.qWall[wk][0];
+    if (S.qt && S.qt[son.id]) lastQMs = S.qt[son.id][2];
+  }
   R = { id:rec.id, list, i:Math.min(rec.i || 0, list.length), order:null, picked:null,
         orders:[], picks:[], log:(rec.log || []).slice(), t0:rec.t0,
         round:rec.round || 1, missed:(rec.missed || []).slice(),
@@ -2021,7 +2085,7 @@ function resumeRun(id){
         bos:rec.bos || 0, bosTam:!!rec.bosTam, qTop:rec.qTop || 0, qN:rec.qN || 0,
         qAcc:{}, qAcik:null, qSon:{},
         qWall:Object.fromEntries(Object.entries(rec.qWall || {}).map(([k,v]) => [k,v.slice()])),
-        qWallOpen:rec.qWallOpen || null, hintMap:{}, sr:!!rec.sr };
+        qWallOpen:rec.qWallOpen || null, lastQId, lastQMs, lastQWall, hintMap:{}, sr:!!rec.sr };
   if (Array.isArray(rec.qAn)) R.qAcc[rec.qAn[0]] = rec.qAn[1] || 0;
   // Bu turda verilmiş cevapları geri kur: kayıtta kaynak şık indeksi var,
   // yeni karıştırmada karşılığı bulunur. Böylece geri gidince cevap görünür
@@ -2095,6 +2159,9 @@ function pick(pos){
   const q = R.list[R.i], ok = R.order[pos] === 0;
   if (isRev(q)) return;
   soruKapat(); soruSureYaz(q[0]);              // grade() kaydı diske yazmadan önce
+  R.lastQId = q[0];
+  R.lastQMs = typeof R.qSon[q[0]] === 'number' ? R.qSon[q[0]] : 0;
+  R.lastQWall = soruToplam(wallKey(), Date.now());
   R.picked = pos; R.picks[R.i] = pos;
   grade(q[0], ok);
   R.log.push({ id:q[0], ok, pick:R.order[pos], round:R.round });
@@ -2177,8 +2244,10 @@ function home(){
           nf(G.total - G.seen) + '</b></span>' +
         (G.pct !== null ? '<span class="mini"><b class="num">%' + G.pct + '</b> isabet</span>' : '') +
         (G.streak ? '<span class="mini"><b class="num">' + G.streak + '</b> gün</span>' : '') +
-        (topSure >= 6e4 ? '<span class="mini" title="Toplam çalışma süresi, bütün cihazlar">' +
-          '<b class="num">' + sureMetni(topSure) + '</b> çalışma</span>' : '') +
+        '<span class="mini' + (topSure >= 6e4 ? '' : ' hidden') + '" id="homeTopSure" title="Toplam çalışma süresi, bütün cihazlar">' +
+          '<b class="num">' + sureMetni(topSure) + '</b> çalışma</span>' +
+        '<span class="mini' + (F.timers === false ? ' hidden' : '') + '" id="homeSiteClock" role="timer" aria-live="off" title="Site bu sekmede açıkken geçen süre">' +
+          '<b class="num">' + saat(siteAcikMs()) + '</b> site açık</span>' +
       (Cloud.user
         ? '<span class="csync ' + (Cloud.durum ? 'err' : Cloud.kirli ? 'wait' : 'ok') +
           '" title="' + (Cloud.durum ? 'Eşitlenemedi' :
@@ -2357,11 +2426,16 @@ function home(){
             '<span class="knob"></span><span>Doğruda otomatik geç</span></button>' +
           '<div class="note">Kapatırsan doğru cevapta da durur; çevrimdışı açıklamayı rahatça okuyup ' +
           '<b>Sonraki</b> ile geçersin.</div></div>' +
+        '<div class="grp"><span class="lbl">Canlı sayaçlar</span>' +
+          '<button class="switch' + (F.timers !== false ? ' on' : '') + '" id="swTimers" type="button">' +
+            '<span class="knob"></span><span>Sayaç şeridini göster</span></button>' +
+          '<div class="note">Soru kartının altında toplam geçen süre, aktif süre, önceki soru süresi ' +
+          've site açık süresini ince tek şeritte gösterir; istediğin an kapatabilirsin (<kbd>T</kbd>).</div></div>' +
       '</div></details>' +
 
     '<div class="hint"><kbd>A</kbd>–<kbd>E</kbd> ya da <kbd>1</kbd>–<kbd>5</kbd> şık · ' +
       '<kbd>←</kbd><kbd>→</kbd> ya da parmakla kaydır · <kbd>.</kbd> ya da <kbd>Enter</kbd> devam · ' +
-      '<kbd>I</kbd> ipucu · <kbd>S</kbd> yıldız · <kbd>P</kbd> sayacı durdur<br>' +
+      '<kbd>I</kbd> ipucu · <kbd>S</kbd> yıldız · <kbd>P</kbd> durdur · <kbd>T</kbd> sayaçlar<br>' +
       'Tur bitince yanlış yaptıkların tekrar sorulur.</div>';
 
   groupSettings();
@@ -2445,6 +2519,9 @@ function home(){
   };
   el('swAutoNext').onclick = () => {
     F.autoNext = F.autoNext === false; savePref(); home(); openBox('optBox');
+  };
+  el('swTimers').onclick = () => {
+    F.timers = F.timers === false; savePref(); home(); openBox('optBox');
   };
   el('cnt').querySelectorAll('button').forEach(b =>
     b.onclick = () => { F.count = +b.dataset.n; savePref(); home(); openBox('optBox'); });
@@ -2533,7 +2610,7 @@ function openBox(id){ const b = el(id); if (b) b.open = true; }
 function groupSettings(){
   const container = el('optBox').querySelector('.in');
   [
-    ['study','Çalışma düzeni',['mode','cnt','ord','swAutoNext']],
+    ['study','Çalışma düzeni',['mode','cnt','ord','swAutoNext','swTimers']],
     ['questions','Dil ve sorular',['lang','q','sw']],
     ['ask','Sor düğmesi',['aiSel','askPrompt']],
     ['sound','Ses',['swSound']],
@@ -2819,25 +2896,82 @@ function toplamAc(an = Date.now()){
 function baslamaSaati(ms){
   return new Date(ms).toLocaleTimeString('tr-TR', {hour:'2-digit', minute:'2-digit', second:'2-digit'});
 }
+function prevQInfo(){
+  if (!R) return null;
+  const act = typeof R.lastQMs === 'number' ? R.lastQMs : null;
+  const wall = typeof R.lastQWall === 'number' ? R.lastQWall : null;
+  if (act === null && wall === null) return null;
+  const ms = (act !== null && (act > 0 || !wall)) ? act : wall;
+  return { ms, act, wall };
+}
+function homeClockBoya(){
+  const an = Date.now();
+  const hc = el('homeSiteClock');
+  if (hc && !hc.classList.contains('hidden')){
+    const b = hc.querySelector('b');
+    if (b) b.textContent = saat(siteAcikMs(an));
+  }
+  const hs = el('homeTopSure');
+  if (hs){
+    const topSure = sureOzet().top;
+    if (topSure >= 6e4){
+      hs.classList.remove('hidden');
+      const b = hs.querySelector('b');
+      if (b) b.textContent = sureMetni(topSure);
+    }
+  }
+  const ss = el('statsSiteOpen');
+  if (ss) ss.textContent = saat(siteAcikMs(an));
+}
+function toggleTimers(val){
+  F.timers = val === undefined ? F.timers === false : !!val;
+  savePref();
+  const strip = el('timerStrip');
+  if (strip) strip.classList.toggle('hidden', F.timers === false);
+  const qt = el('quizTimersToggle');
+  if (qt){
+    qt.classList.toggle('on', F.timers !== false);
+    qt.setAttribute('aria-pressed', F.timers !== false ? 'true' : 'false');
+  }
+  const hc = el('homeSiteClock');
+  if (hc) hc.classList.toggle('hidden', F.timers === false);
+  if (R) tmrBoya();
+  else homeClockBoya();
+}
 /** Sayaç çipini günceller: süre, durdu mu, boşta mı. */
 function tmrBoya(){
   if (!R) return;
   const an = Date.now(), bas = el('runStart'), toplam = el('runWall'), soru = el('questionWall');
+  const wallRun = Math.max(0, an - R.t0);
+  const siteMs = siteAcikMs(an);
+  const prev = prevQInfo();
+  const qWallMs = soruToplam(wallKey(), an);
   if (bas){
     bas.textContent = baslamaSaati(R.t0);
     bas.dateTime = new Date(R.t0).toISOString();
     bas.title = stamp(R.t0);
   }
-  if (toplam) toplam.textContent = saat(Math.max(0, an - R.t0));
+  if (toplam) toplam.textContent = saat(wallRun);
   if (soru){
-    const ms = soruToplam(wallKey(), an);
-    soru.textContent = ms === null ? '–' : saat(ms);
+    soru.textContent = qWallMs === null ? '–' : saat(qWallMs);
     const compact = el('quizClock');
     if (compact){
-      compact.querySelector('.clock-value').textContent = ms === null ? '–' : saat(ms);
-      compact.setAttribute('aria-label', 'Bu soruda geçen toplam süre ' + (ms === null ? 'ölçülmedi' : saat(ms)) + '. Sayaç ayrıntılarını aç');
+      compact.querySelector('.clock-value').textContent = qWallMs === null ? '–' : saat(qWallMs);
+      compact.setAttribute('aria-label', 'Bu soruda geçen toplam süre ' + (qWallMs === null ? 'ölçülmedi' : saat(qWallMs)) + '. Sayaç ayrıntılarını aç');
     }
   }
+  const prevEl = el('prevQTime');
+  if (prevEl){
+    prevEl.textContent = prev ? saat(prev.ms) : '–';
+    prevEl.parentNode.title = prev
+      ? 'Önceki cevaplanan soru: aktif ' + (prev.act !== null ? saat(prev.act) : '–') +
+        (prev.wall !== null ? ' · toplam ' + saat(prev.wall) : '')
+      : 'Henüz cevaplanmış önceki soru yok';
+  }
+  const siteEl = el('siteWall');
+  if (siteEl) siteEl.textContent = saat(siteMs);
+  const todayEl = el('todayWork');
+  if (todayEl) todayEl.textContent = saat(sureOzet().bugun);
   const bosta = !R.durdu && bostaMi();
   // Tur sayacı (dokunulabilir): yalnız çalışma süresi
   const t = el('tmr');
@@ -2852,6 +2986,7 @@ function tmrBoya(){
       'Aktif tur süresi ' + saat(R.sure || 0));
     t.querySelector('.tv').textContent = saat(R.sure || 0);
   }
+  const ort = R.qN ? R.qTop / R.qN : null;
   // Soru sayacı: her yeni soruda 0:00'dan başlar. Cevaplanınca o sorunun
   // süresinde donar; geri dönünce de o süre görünür. Yanında çalışma ortalaman.
   const q = el('qtm');
@@ -2860,7 +2995,6 @@ function tmrBoya(){
     const ms = acik ? (R.qAcc[id] || 0)
       : id in R.qSon ? R.qSon[id]
       : R.round === 1 && S.qt && S.qt[id] ? S.qt[id][2] : null;
-    const ort = R.qN ? R.qTop / R.qN : null;
     q.classList.toggle('dur', acik && (R.durdu || bosta));
     q.classList.toggle('bitti', !acik);
     q.classList.toggle('uzun', ms !== null && ms >= YAVAS_MS);
@@ -2875,6 +3009,38 @@ function tmrBoya(){
       (ort !== null ? ' · ort: bu turda cevapladığın soruların ortalaması' : '') +
       ' · 1 dakikayı geçince turuncu olur';
   }
+  // Canlı sayaç şeridi (kart altında, F.timers ile aç/kapa)
+  const tsQ = el('tsQ');
+  if (tsQ) tsQ.textContent = qWallMs === null ? '–' : saat(qWallMs);
+  const tsW = el('tsWall');
+  if (tsW) tsW.textContent = saat(wallRun);
+  const tsAct = el('tsAct');
+  if (tsAct){
+    tsAct.classList.toggle('off', !!R.durdu);
+    tsAct.classList.toggle('bosta', bosta);
+    tsAct.setAttribute('aria-pressed', R.durdu ? 'true' : 'false');
+    tsAct.title = R.durdu ? 'Aktif sayaç durdu · sürdürmek için dokun (P)'
+      : bosta ? '3 dakikadır dokunmadın, aktif sayaç beklemede'
+      : 'Bu turda aktif çalıştığın süre · durdurmak için dokun (P)';
+    const v = el('tsActVal');
+    if (v) v.textContent = saat(R.sure || 0);
+  }
+  const tsPrev = el('tsPrev'), tsPrevW = el('tsPrevWrap');
+  if (tsPrev && tsPrevW){
+    tsPrev.textContent = prev ? saat(prev.ms) : '–';
+    tsPrevW.classList.toggle('uzun', !!prev && prev.ms >= YAVAS_MS);
+    tsPrevW.title = prev
+      ? 'Önceki soruya harcanan son süre: aktif ' + (prev.act !== null ? saat(prev.act) : '–') +
+        (prev.wall !== null ? ' · toplam ' + saat(prev.wall) : '')
+      : 'Bir önceki soruya harcanan son süre (ilk cevap sonrası görünür)';
+  }
+  const tsAvg = el('tsAvg'), tsAvgW = el('tsAvgWrap');
+  if (tsAvg && tsAvgW){
+    tsAvgW.classList.toggle('hidden', ort === null);
+    if (ort !== null) tsAvg.textContent = saat(ort);
+  }
+  const tsS = el('tsSite');
+  if (tsS) tsS.textContent = saat(siteMs);
 }
 // ── Soru başına süre ──
 // Soruyu gördüğün andan cevapladığın ana kadar geçen ÇALIŞMA süresi — tur
@@ -3079,10 +3245,19 @@ function draw(){
         '</span><span>aktif</span><span class="tv num"></span></button></div>' +
     '<div class="walltime">' +
       '<div><span class="wl">Başlangıç</span><time id="runStart"></time></div>' +
-      '<div title="Sınava başladığından beri geçen süre; aralar ve kapalı sekme dahil">' +
-        '<span class="wl">Sınav toplam</span><b id="runWall" role="timer" aria-live="off"></b></div>' +
+      '<div title="Tura başladığından beri geçen toplam süre; aralar ve kapalı sekme dahil">' +
+        '<span class="wl">Tur toplam</span><b id="runWall" role="timer" aria-live="off"></b></div>' +
       '<div title="Bu soruda geçen toplam süre; sekme dışındaki zaman ve duraklatmalar dahil. Cevapta durur.">' +
-        '<span class="wl">Soru toplam</span><b id="questionWall" role="timer" aria-live="off"></b></div></div>' +
+        '<span class="wl">Soru toplam</span><b id="questionWall" role="timer" aria-live="off"></b></div>' +
+      '<div title="Bir önceki cevaplanan soruya harcanan son süre">' +
+        '<span class="wl">Önceki soru</span><b id="prevQTime">–</b></div>' +
+      '<div title="Site bu sekmede açıkken geçen süre">' +
+        '<span class="wl">Site açık</span><b id="siteWall" role="timer" aria-live="off"></b></div>' +
+      '<div title="Bugün sitede aktif çalıştığın toplam süre">' +
+        '<span class="wl">Bugün aktif</span><b id="todayWork" role="timer" aria-live="off"></b></div></div>' +
+      '<button class="switch' + (F.timers !== false ? ' on' : '') + '" id="quizTimersToggle" type="button" ' +
+        'aria-pressed="' + (F.timers !== false ? 'true' : 'false') + '">' +
+        '<span class="knob"></span><span>Sayaç şeridini ekranda göster</span></button>' +
       '<div class="quiz-actions">' +
         '<button class="tbtn" id="quizNotes" type="button">Konu</button>' +
         '<button class="tbtn" id="quizStats" type="button">Durum</button>' +
@@ -3107,6 +3282,19 @@ function draw(){
       (figOf(q) ? '<div class="figbox">' + figOf(q) + '</div>' : '') +
       '<div class="opts" id="opts">' + opts + '</div>' + verdict +
       (shown ? xNote(q) : xHelpHtml(q)) + '</div>' +
+    '<div class="tstrip' + (F.timers === false ? ' hidden' : '') + '" id="timerStrip">' +
+      '<div class="ts-list">' +
+      '<span class="ts-i ts-qonly" title="Bu soruda geçen toplam süre">Soru <b id="tsQ" role="timer" aria-live="off">0:00</b></span>' +
+      '<span class="ts-i" title="Tura başladığından beri geçen toplam süre (aralar dahil)">Toplam <b id="tsWall" role="timer" aria-live="off">0:00</b></span>' +
+      '<button class="ts-act" id="tsAct" type="button" aria-pressed="false" title="Bu turda aktif çalıştığın süre · durdurmak için dokun (P)">' +
+        '<span class="ti" aria-hidden="true"></span><span>Aktif</span> <b id="tsActVal" role="timer" aria-live="off">0:00</b></button>' +
+      '<span class="ts-i" id="tsPrevWrap" title="Bir önceki cevaplanan soruya harcanan son süre">Önceki <b id="tsPrev">–</b></span>' +
+      '<span class="ts-i hidden" id="tsAvgWrap" title="Bu turda cevaplanan soruların ortalaması">Ort <b id="tsAvg">–</b></span>' +
+      '<span class="ts-i" title="Site bu sekmede açıkken geçen süre">Site açık <b id="tsSite" role="timer" aria-live="off">0:00</b></span>' +
+      '</div>' +
+      '<button class="ts-hide" id="tsHide" type="button" aria-label="Sayaç şeridini gizle" ' +
+        'title="Sayaç şeridini gizle (T) — Ayarlar veya ⋯ menüsünden tekrar açabilirsin"><span aria-hidden="true">×</span></button>' +
+    '</div>' +
     '<div class="foot">' +
     '<div class="navpop' + (navOpen ? '' : ' hidden') + '" id="navPop">' +
       '<div class="navrow">' +
@@ -3142,6 +3330,9 @@ function draw(){
   });
   el('hb').onclick = () => { clearTimeout(advT); soruKapat(); saveRun(); dropEmptyRun(); home(); };
   el('tmr').onclick = tmrCevir;
+  el('tsAct').onclick = tmrCevir;
+  el('tsHide').onclick = () => toggleTimers(false);
+  el('quizTimersToggle').onclick = () => toggleTimers();
   el('quizMore').onclick = () => quizExtras();
   el('quizClock').onclick = () => quizExtras();
   el('quizNotes').onclick = () => { quizExtras(false); openNotes(); };
@@ -3223,6 +3414,7 @@ function done(){
     rec.tN = Date.now(); rec.done = true;
     rec.sure = Math.round(R.sure || 0); rec.bos = Math.round(R.bos || 0); delete rec.durdu;
     rec.qTop = Math.round(R.qTop || 0); rec.qN = R.qN || 0; delete rec.qAn;
+    delete rec.lastQId; delete rec.lastQMs; delete rec.lastQWall;
     delete rec.ids; delete rec.missed;        // bitmiş tur geri yüklenmez
     if (!rec.log.length) S.runs.splice(S.runs.indexOf(rec), 1);
     save();
@@ -3611,6 +3803,9 @@ function openStats(){
     '<div class="note" style="margin:-6px 0 6px"><b style="color:var(--due)">Boşta</b> ' +
       '(ekran açık, hiç dokunmadın): bugün <b>' + sureMetni(bosT.bugun) + '</b> · son 7 gün <b>' +
       sureMetni(bosT.hafta) + '</b> · toplam <b>' + sureMetni(bosT.top) + '</b></div>' +
+    '<div class="note" style="margin:0 0 6px"><b>Site açık</b>: bu oturum <b id="statsSiteOpen" role="timer" aria-live="off">' +
+      saat(siteAcikMs()) + '</b> · bugün <b>' + sureMetni(sureT.bugun + bosT.bugun) +
+      '</b> · toplam <b>' + sureMetni(sureT.top + bosT.top) + '</b></div>' +
     '<div class="note" style="margin:0 0 14px">Çalışma yalnız sayfa açık ve sen başındayken ' +
       'sayılır; 3 dakika hiç dokunmazsan o ara boşta sayılır. Bilgisayar uyurken geçen süre ' +
       'ikisine de girmez. Telefon ve bilgisayar ayrı ayrı sayılıp toplanır.</div>' +
@@ -4204,6 +4399,7 @@ document.addEventListener('keydown', e => {
   }
   else if (k === 'i' || k === 'I'){ toggleOfflineHelp(); e.preventDefault(); }
   else if (k === 'p' || k === 'P'){ tmrCevir(); e.preventDefault(); }
+  else if (k === 't' || k === 'T'){ toggleTimers(); e.preventDefault(); }
 });
 
 loadProfile();
