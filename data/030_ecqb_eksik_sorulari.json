@@ -1,0 +1,316 @@
+{
+  "subject_code": "030",
+  "subject_name": "Flight Performance and Planning",
+  "source": "Açık Avrupa sivil havacılık PPL(A) 030 / ECQB-70 soru listeleri (Austro Control ECQB-PPL-A-70-FPP_EN v2015.4, Traficom PPL030ENG Rev.1.7, Sırbistan CAD Form CAD-PEL-1001) mevcut 258 soruluk 030 havuzuyla tek tek karşılaştırıldı (2026-11-23). Bankada hiçbir biçimde sorulmayan, şekil/ek gerektirmeyen, EASA PPL(A) kapsamındaki yüksek öncelikli 27 kavram bağımsız metinle iki dilde yazıldı.",
+  "kaynak_url": [
+    "https://www.austrocontrol.at/jart/prj3/ac/data/uploads/PEL/Fragenkatalog/ECQB-PPL-A-70-FPP_EN.pdf",
+    "https://www.traficom.fi/sites/default/files/media/file/PPL030ENG%2011102018.pdf",
+    "https://cad.gov.rs/upload/Vazduhoplovno%20osoblje/2022/Flight%20performance%20and%20planning.pdf"
+  ],
+  "origin": "ek",
+  "answer_convention": "Doğru cevap ilk şıktır (A). Sunum katmanı şıkları karıştırır.",
+  "id_convention": "53201–53227 bandı (53 = 030 ders notu bandı, 2xx = başka açık bankalardan eksikler). Mevcut ve emekli kimlikler yeniden kullanılmaz.",
+  "ecqb_eslesme": "Austro Control ECQB-PPL-A-70-FPP_EN (112 soru: 57 şekil/ek bağımlı, 55 metin tabanlı), Traficom PPL030ENG (165 soru) ve Sırbistan CAD 030 (148 soru) tarandı. Seçilen 27 eksik kavram: 53201 (ECQB#6 BEM içeriği), 53202 (ECQB#21 tartım öncesi kullanılabilir yakıt boşaltma), 53203 (ECQB#22 AFM/POH Weight & Balance bölümü), 53204 (ECQB#9 kg→lb 2,205), 53205 (ECQB#25-27/Traficom#25/CAD#132 yakıt yanması sonrası iniş CG hesabı), 53206 (ECQB#98 rampa→MTOM taksi yakıtı hesabı), 53207 (Traficom#138 yakıt göstergesi+fiziksel tank kontrolü), 53208 (Traficom#72,74/CAD#12,14 basınç irtifası 1013,25 hPa), 53209 (Traficom#84/CAD#57 yoğunluk irtifası 120 ft/°C kuralı), 53210 (Traficom#82,83/CAD#125,138 sayısal PA+DA hesabı), 53211 (ECQB#46 VFE tanımı), 53212 (Traficom#3/CAD#81 ASI sarı ark ihtiyat aralığı), 53213 (ECQB#55,58 pist rüzgâr bileşeni hesabı), 53214 (ECQB#41 çim pist kalkış ve frenleme), 53215 (ECQB#37 ilk tırmanışta artan arka rüzgâr/wind shear), 53216 (Traficom#40,93/CAD#31,91 Vy = maksimum fazla güç), 53217 (Traficom#126/CAD#71 en iyi süzülüşte Di = Dp), 53218 (Traficom#124/CAD#69 minimum alçalma oranı hızı < en iyi süzülüş hızı), 53219 (Traficom#165 tırmanışlı dönüşte ROC azalır), 53220 (CAD#55 arka rüzgârda azami menzil hızı düşürülür), 53221 (Traficom#101/CAD#108 hamleli rüzgârda Vref + ½ hamle), 53222 (ECQB#99 kalemlerden trip fuel toplamı), 53223 (ECQB#85,87 manyetik rota ve yarım daire VFR FL hesabı), 53224 (ECQB#83 MEF tanımı), 53225 (Traficom#141 ilan edilmiş pist mesafeleri AIP AD), 53226 (ECQB#110 havada uçuş planı verme = FIS), 53227 (ECQB#112 kontrol noktasına geç varmada yakıt/süre yeniden planlama). Elenenler: ek/grafik gerektiren 57 ECQB ve 35+ Traficom/CAD sorusu, bankada mevcut kavramlar, helikopter/ulusal kurallar, tanımı çelişen VA ve CAD#25.",
+  "sections": {
+    "030-EC": "Missing From Other Banks"
+  },
+  "questions": [
+    {
+      "id": 53201,
+      "section": "030-EC",
+      "text": "Which of the following items are included in the Basic Empty Mass (BEM) of an aeroplane?",
+      "options": [
+        "Airframe, engine and fixed equipment plus unusable fuel, other unusable liquids, engine and auxiliary lubricating oil, fire extinguishers and emergency oxygen equipment.",
+        "Airframe, engine and standard equipment plus usable fuel, flight crew and their baggage.",
+        "Airframe, engine and fixed equipment plus passengers, baggage and cargo, excluding all liquids.",
+        "Airframe, engine and standard equipment plus usable fuel and engine oil, excluding unusable fuel."
+      ]
+    },
+    {
+      "id": 53202,
+      "section": "030-EC",
+      "text": "Before weighing an aeroplane to determine its Basic Empty Mass and empty CG, what must be done regarding fuel?",
+      "options": [
+        "Drain all usable fuel, leaving only unusable fuel in the system.",
+        "Fill all main and auxiliary fuel tanks to maximum capacity.",
+        "Drain both usable and unusable fuel completely from all lines and tanks.",
+        "Fill the fuel tanks to half capacity so the empty CG represents mid-flight conditions."
+      ]
+    },
+    {
+      "id": 53203,
+      "section": "030-EC",
+      "text": "In which section of the Aeroplane Flight Manual (AFM) or Pilot's Operating Handbook (POH) are the Basic Empty Mass and CG limits published?",
+      "options": [
+        "Weight and Balance (Mass and Balance)",
+        "Emergency Procedures",
+        "Handling, Servicing and Maintenance",
+        "Normal Procedures"
+      ]
+    },
+    {
+      "id": 53204,
+      "section": "030-EC",
+      "text": "Which conversion factor is used to convert a mass from kilograms (kg) to pounds (lb)?",
+      "options": [
+        "lb = kg × 2.205",
+        "lb = kg ÷ 2.205",
+        "lb = kg × 0.72",
+        "lb = kg × 3.785"
+      ]
+    },
+    {
+      "id": 53205,
+      "section": "030-EC",
+      "text": "An aeroplane has a take-off mass of 2,400 lb and a take-off CG at 92.0 in aft of the datum. During the flight, 200 lb of fuel is burned from tanks located at station 81.0 in. Where is the CG at landing?",
+      "options": [
+        "93.0 in aft of the datum",
+        "91.0 in aft of the datum",
+        "92.0 in aft of the datum",
+        "85.3 in aft of the datum"
+      ]
+    },
+    {
+      "id": 53206,
+      "section": "030-EC",
+      "text": "An aeroplane has a Maximum Ramp Mass (MRM) of 1,215 kg, an actual ramp mass of 1,209 kg, and a Maximum Take-Off Mass (MTOM) of 1,200 kg. How many litres of AVGAS 100LL (density 0.72 kg/L) must be burned during start-up and taxi before take-off?",
+      "options": [
+        "12.5 L",
+        "9.0 L",
+        "6.5 L",
+        "20.8 L"
+      ]
+    },
+    {
+      "id": 53207,
+      "section": "030-EC",
+      "text": "What is the most reliable way for a pilot to verify the fuel quantity on board a light aeroplane before departure?",
+      "options": [
+        "Cross-check the cockpit fuel gauges against a direct visual or dipstick measurement of the tanks.",
+        "Rely solely on the cockpit fuel quantity gauges during the engine run-up.",
+        "Calculate remaining fuel solely from the previous pilot's logbook entry.",
+        "Trust the refueller's verbal confirmation without checking the tanks."
+      ]
+    },
+    {
+      "id": 53208,
+      "section": "030-EC",
+      "text": "How is Pressure Altitude (PA) directly obtained on an aeroplane's altimeter?",
+      "options": [
+        "Set the altimeter subscale to 1013.25 hPa and read the indicated altitude.",
+        "Set the local QNH on the altimeter subscale and read the indicated altitude.",
+        "Set the local QFE on the altimeter subscale and correct for outside air temperature.",
+        "Set the aerodrome elevation on the altimeter hands and read the pressure in the Kollsman window."
+      ]
+    },
+    {
+      "id": 53209,
+      "section": "030-EC",
+      "text": "Without a flight computer, how can Density Altitude (DA) be approximated from Pressure Altitude (PA)?",
+      "options": [
+        "Add or subtract about 120 ft for every 1 °C that the outside air temperature is above or below ISA.",
+        "Add or subtract about 30 ft for every 1 °C that the outside air temperature is above or below ISA.",
+        "Increase or decrease pressure altitude by 4% for every 10 °C deviation from ISA.",
+        "Add 120 ft for every 1 hPa that QNH is below 1013 hPa."
+      ]
+    },
+    {
+      "id": 53210,
+      "section": "030-EC",
+      "text": "An aerodrome has an elevation of 3,700 ft, QNH is 1003 hPa, and the outside air temperature (OAT) is +22 °C. Using standard approximations (30 ft/hPa, 2 °C/1,000 ft, 120 ft/°C), what is the approximate Density Altitude?",
+      "options": [
+        "5,800 ft",
+        "4,000 ft",
+        "5,200 ft",
+        "6,440 ft"
+      ]
+    },
+    {
+      "id": 53211,
+      "section": "030-EC",
+      "text": "What does the airspeed abbreviation VFE represent?",
+      "options": [
+        "Maximum flap extended speed",
+        "Maximum landing gear extended speed",
+        "Minimum steady flight speed with flaps retracted",
+        "Never exceed speed in smooth air"
+      ]
+    },
+    {
+      "id": 53212,
+      "section": "030-EC",
+      "text": "What does the yellow arc on an Airspeed Indicator (ASI) signify, and what operational caution applies?",
+      "options": [
+        "Caution range (VNO to VNE); operate in smooth air only and avoid abrupt control inputs.",
+        "Normal operating range (VS1 to VNO); full and abrupt control deflections are permitted at any speed in this arc.",
+        "Flap operating range (VS0 to VFE); flaps may be lowered safely throughout this arc.",
+        "Prohibited speed range; flight in this arc immediately causes structural failure."
+      ]
+    },
+    {
+      "id": 53213,
+      "section": "030-EC",
+      "text": "You are taking off from Runway 18 (180°) with a reported wind of 060° at 16 kt. What are the approximate longitudinal and crosswind components?",
+      "options": [
+        "8 kt tailwind and 14 kt crosswind from the left",
+        "8 kt headwind and 14 kt crosswind from the left",
+        "14 kt tailwind and 8 kt crosswind from the right",
+        "8 kt tailwind and 14 kt crosswind from the right"
+      ]
+    },
+    {
+      "id": 53214,
+      "section": "030-EC",
+      "text": "Compared to a dry paved runway, how does a grass runway affect take-off and braking performance?",
+      "options": [
+        "Take-off distance increases due to higher rolling resistance, and braking effectiveness is reduced.",
+        "Take-off distance decreases because grass provides greater tyre grip during acceleration.",
+        "Take-off distance is unchanged, but climb gradient after lift-off improves.",
+        "Take-off distance increases, while braking performance on grass is superior to asphalt."
+      ]
+    },
+    {
+      "id": 53215,
+      "section": "030-EC",
+      "text": "During initial climb after a take-off with a light surface tailwind, the aeroplane climbs out of the surface friction layer into a stronger tailwind. What immediate effect should the pilot expect?",
+      "options": [
+        "A temporary decrease in indicated airspeed (IAS) and rate of climb.",
+        "A temporary increase in indicated airspeed (IAS) and climb gradient.",
+        "No change in airspeed, only an immediate increase in rate of climb.",
+        "A sudden decrease in ground speed combined with higher lift."
+      ]
+    },
+    {
+      "id": 53216,
+      "section": "030-EC",
+      "text": "During a steady climb in a propeller aeroplane, the best rate of climb speed (Vy) corresponds to the speed where:",
+      "options": [
+        "excess power available is maximum.",
+        "excess thrust available is maximum.",
+        "total drag is minimum.",
+        "parasite drag is zero."
+      ]
+    },
+    {
+      "id": 53217,
+      "section": "030-EC",
+      "text": "In a power-off glide in still air, maximum glide distance from a given altitude is achieved at the angle of attack where:",
+      "options": [
+        "induced drag equals parasite drag (maximum lift-to-drag ratio).",
+        "parasite drag is at its absolute minimum.",
+        "the lift coefficient reaches CLmax.",
+        "power required is at its absolute minimum."
+      ]
+    },
+    {
+      "id": 53218,
+      "section": "030-EC",
+      "text": "How does the airspeed for minimum rate of descent (minimum sink, power-off) compare with the best glide range speed?",
+      "options": [
+        "It is always lower than the best glide speed.",
+        "It is always higher than the best glide speed.",
+        "It is identical to the best glide speed.",
+        "It is higher at low weight and lower at high weight."
+      ]
+    },
+    {
+      "id": 53219,
+      "section": "030-EC",
+      "text": "If a pilot enters a climbing turn from a straight climb without changing the power setting, what happens to the rate of climb?",
+      "options": [
+        "It decreases because banking increases the load factor and induced drag.",
+        "It remains unchanged as long as bank angle does not exceed 30°.",
+        "It increases slightly because the outer wing generates extra lift.",
+        "It remains constant at low altitude and increases above 5,000 ft."
+      ]
+    },
+    {
+      "id": 53220,
+      "section": "030-EC",
+      "text": "To achieve maximum ground range while cruising with a tailwind, how should the pilot adjust airspeed compared to the still-air maximum range speed?",
+      "options": [
+        "Decrease airspeed slightly compared to the still-air maximum range speed.",
+        "Increase airspeed by the full value of the tailwind component.",
+        "Maintain the exact same airspeed as in still air.",
+        "Increase airspeed slightly to stay ahead of the tailwind."
+      ]
+    },
+    {
+      "id": 53221,
+      "section": "030-EC",
+      "text": "Unless the Flight Manual specifies otherwise, how should the normal final approach speed (Vref) be adjusted when landing in gusty wind conditions?",
+      "options": [
+        "Add half of the gust factor to the normal approach speed.",
+        "Subtract half of the gust factor to prevent floating over the runway.",
+        "Keep Vref completely unchanged regardless of gust strength.",
+        "Double the full steady wind speed and add it to Vref."
+      ]
+    },
+    {
+      "id": 53222,
+      "section": "030-EC",
+      "text": "A flight plan lists the following fuel breakdown: start-up and taxi 6 L, take-off and climb 14 L, cruise 32 L, descent/approach/landing 8 L, taxi to parking 4 L, alternate 15 L, and final reserve 12 L. What is the Trip Fuel?",
+      "options": [
+        "54 L",
+        "60 L",
+        "64 L",
+        "81 L"
+      ]
+    },
+    {
+      "id": 53223,
+      "section": "030-EC",
+      "text": "For a VFR cruising flight on a true track of 182° in an area with 4° E magnetic variation, what is the lowest semicircular VFR flight level above 5,000 ft?",
+      "options": [
+        "FL 055",
+        "FL 065",
+        "FL 050",
+        "FL 060"
+      ]
+    },
+    {
+      "id": 53224,
+      "section": "030-EC",
+      "text": "What does the Maximum Elevation Figure (MEF) printed on a 1:500,000 VFR chart represent?",
+      "options": [
+        "The highest terrain or obstacle elevation in a 30' latitude × 30' longitude quadrangle plus a safety margin, rounded up to the next 100 ft.",
+        "The lowest flight level permitted for VFR cruising flights in that sector.",
+        "The maximum altitude allowed below controlled airspace in that quadrangle.",
+        "The average terrain elevation within 10 NM of the nearest aerodrome."
+      ]
+    },
+    {
+      "id": 53225,
+      "section": "030-EC",
+      "text": "In which part of the Aeronautical Information Publication (AIP) are declared runway distances (TORA, TODA, ASDA, LDA) published?",
+      "options": [
+        "AIP Part AD (Aerodromes)",
+        "AIP Part GEN (General)",
+        "AIP Part ENR (En-route)",
+        "ICAO Annex 2 (Rules of the Air)"
+      ]
+    },
+    {
+      "id": 53226,
+      "section": "030-EC",
+      "text": "To which ATS unit can a pilot file an Air-Filed Flight Plan (AFIL) while already airborne?",
+      "options": [
+        "Flight Information Service (FIS) / appropriate ATS unit on frequency",
+        "The destination aerodrome operator's dispatch office only",
+        "The meteorological watch office (MWO)",
+        "A flight plan can never be filed after take-off."
+      ]
+    },
+    {
+      "id": 53227,
+      "section": "030-EC",
+      "text": "During a VFR cross-country flight, you pass an en-route checkpoint 4 minutes later than planned on your operational flight plan while flying at the planned TAS. What operational conclusion follows?",
+      "options": [
+        "The headwind is stronger (or tailwind weaker) than forecast, so remaining flight time and fuel burn will increase and fuel reserves must be re-checked.",
+        "The headwind is weaker than forecast, so remaining fuel consumption will be lower than planned.",
+        "The altimeter setting has changed, requiring no change to time or fuel estimates.",
+        "Only the first leg is affected; subsequent leg times and fuel burn remain unchanged."
+      ]
+    }
+  ]
+}

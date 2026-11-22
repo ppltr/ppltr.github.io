@@ -1,0 +1,202 @@
+{
+  "subject_code": "030",
+  "lang": "tr",
+  "subject_name": "Flight Performance and Planning",
+  "source": "SHGM KDM 030 ders notundan (notes/030-ders-notlari.md) üretilmiş boşluk kapatma soruları (gerçek sınav sorusu değildir)",
+  "origin": "uretilmis",
+  "answer_convention": "Doğru cevap ilk şıktır (A). Sunum katmanı şıkları karıştırır.",
+  "id_convention": "90301–90317 bandı: 030 ders notundan üretilmiş sorular. Sıra ders notunu izler: B1 90301–90304 · B2 90305–90312 · B3 90313 · B4 90314–90317. Silinen kimlikler yeniden kullanılmaz.",
+  "selection": "Kullanıcı 2026-11-23'te mevcut ATPL TV + 030-EC açık banka sorularının kapsamadığı ders notu alanları için aşırı soru yığmadan seçilmiş, sınav odaklı sorular istedi. Ölçü: yalnız notes/030-ders-notlari.md içinde geçen, sınavlık (tanım, sayısal eşik, formül, kural) ve mevcut 258 soru ile 27 yeni 030-EC sorusunun hiçbirinde sorulmayan bilgi. 17 soru seçildi: Payload/Trafik yükü (90301), Contingency fuel %5/5 dk (90302), Final reserve 45/30 dk (90303), Extra fuel (90304), ISA standart değerleri (90305), CAS→EAS sıkışabilirlik (90306), ASI beyaz/yeşil arklar (90307), Performans Sınıf B (90308), Screen height 35/50 ft (90309), Islak pist V1 ve VMCG (90310), %50/%150 rüzgâr katsayıları (90311), OLTOM ve arka rüzgâr (90312), VFR/IFR Total EET (90313), MZFM yapısal nedeni kanat kökü eğilme momenti (90314), MTOM = min(RTOM, RLM+trip, MZFM+TOF) (90315), %MAC hesabı (90316), alan yük limiti ve yük dağıtıcılar (90317). Bilerek yazılmayanlar: 010/050/080 derslerinde kapsamlı sorulan METAR/TAF/Bernoulli/hava sahası sınıfları, ders notu ile ICAO arasında fark olan 30 dk/60 dk plan verme süresi ve yalnız IFR havayoluna özgü RPL ayrıntıları.",
+  "sections": {
+    "030-U": "Ders Notundan Üretilmiş"
+  },
+  "questions": [
+    {
+      "id": 90301,
+      "section": "030-U",
+      "text": "Trafik yükünün (Traffic Load) uçuşta gelir getiren (para kazandıran) yolcu, bagaj ve kargo kısmına ne ad verilir?",
+      "options": [
+        "Payload (faydalı yük)",
+        "Variable Load (değişken yük)",
+        "Dry Operating Mass (kuru işletme kütlesi)",
+        "Useful Load (kullanılabilir yük)"
+      ]
+    },
+    {
+      "id": 90302,
+      "section": "030-U",
+      "text": "Rüzgâr sapması, rota değişikliği veya ATC kısıtlamaları için planlanan beklenmedik durum yakıtı (Contingency Fuel) miktarı nasıl belirlenir?",
+      "options": [
+        "Yolculuk (trip) yakıtının %5'i ile varış meydanı üzerinde 1.500 ft AGL'de 5 dakika bekleme yakıtından hangisi büyükse.",
+        "Yedek meydan yakıtının %10'u ile 15 dakika seyir yakıtından hangisi küçükse.",
+        "Pistonlu uçaklarda her zaman 45 dakika, türbinli uçaklarda 30 dakika bekleme yakıtı.",
+        "Kaptanın takdirine göre eklenen sabit 10 dakikalık taksi yakıtı."
+      ]
+    },
+    {
+      "id": 90303,
+      "section": "030-U",
+      "text": "Yedek meydandaki beklenmedik durumlar için ayrılan nihai yedek yakıt (Final Reserve Fuel), 1.500 ft AGL'de bekleme süresi olarak pistonlu ve gaz türbinli uçaklar için sırasıyla ne kadardır?",
+      "options": [
+        "Pistonlu uçaklar için 45 dakika, gaz türbinli uçaklar için 30 dakika.",
+        "Pistonlu uçaklar için 30 dakika, gaz türbinli uçaklar için 45 dakika.",
+        "Hem pistonlu hem gaz türbinli uçaklar için sabit 20 dakika.",
+        "Pistonlu uçaklar için 60 dakika, gaz türbinli uçaklar için 15 dakika."
+      ]
+    },
+    {
+      "id": 90304,
+      "section": "030-U",
+      "text": "Zorunlu yakıt kalemlerinin üzerine kaptan pilotun ve/veya harekât uzmanının (dispatcher) takdirine bağlı olarak eklenen yakıt hangisidir?",
+      "options": [
+        "Extra fuel (ekstra yakıt)",
+        "Contingency fuel (beklenmedik durum yakıtı)",
+        "Final reserve fuel (nihai yedek yakıt)",
+        "Trip fuel (yolculuk yakıtı)"
+      ]
+    },
+    {
+      "id": 90305,
+      "section": "030-U",
+      "text": "ICAO Standart Atmosferi (ISA, Doc 7488) için deniz seviyesi sıcaklığı, basıncı, hava yoğunluğu ve troposfer sıcaklık düşüş oranı sırasıyla hangisidir?",
+      "options": [
+        "15 °C · 1013,25 hPa · 1,225 kg/m³ · 1,98 °C (≈ 2 °C) / 1.000 ft",
+        "0 °C · 1013,25 hPa · 1,000 kg/m³ · 3,0 °C / 1.000 ft",
+        "15 °C · 1000,00 hPa · 1,225 kg/m³ · 1,0 °C / 1.000 ft",
+        "20 °C · 1013,25 hPa · 1,500 kg/m³ · 2,0 °C / 1.000 ft"
+      ]
+    },
+    {
+      "id": 90306,
+      "section": "030-U",
+      "text": "Kalibre Hava Hızına (CAS) yüksek hızlarda (Mach 0,3 / 300 KTAS üzeri) hangi hata düzeltmesi uygulanarak Eşdeğer Hava Hızı (EAS) elde edilir?",
+      "options": [
+        "Sıkışabilirlik hatası (compressibility error)",
+        "Alet ve pozisyon hatası (instrument and position error)",
+        "Yoğunluk hatası (density error)",
+        "Rüzgâr bileşeni düzeltmesi (wind correction)"
+      ]
+    },
+    {
+      "id": 90307,
+      "section": "030-U",
+      "text": "Sürat saatindeki (ASI) beyaz arkın (white arc) alt ve üst sınırları hangi hızları gösterir?",
+      "options": [
+        "Alt sınır VS0 (tam flap stall hızı), üst sınır VFE (azami flap açık hızı).",
+        "Alt sınır VS1 (flapsız stall hızı), üst sınır VNO (azami yapısal seyir hızı).",
+        "Alt sınır VNO (azami yapısal seyir hızı), üst sınır VNE (asla aşılmaması gereken hız).",
+        "Alt sınır VR (rotasyon hızı), üst sınır VLOF (yerden kesilme hızı)."
+      ]
+    },
+    {
+      "id": 90308,
+      "section": "030-U",
+      "text": "Performans sınıflandırmasında Sınıf B (Class B) uçaklar hangi kapsama girer?",
+      "options": [
+        "9 veya daha az yolcu kapasiteli ve azami kalkış kütlesi 5.700 kg veya altında olan tek veya çift motorlu pervaneli uçaklar.",
+        "10 ve üzeri yolcu kapasiteli veya 5.700 kg üzeri tüm çok motorlu jet ve turboprop uçaklar.",
+        "10 ve üzeri yolcu kapasiteli veya 5.700 kg üzeri çok motorlu pistonlu uçaklar.",
+        "Yalnızca 136.000 kg üzerindeki ağır ticari yolcu uçakları."
+      ]
+    },
+    {
+      "id": 90309,
+      "section": "030-U",
+      "text": "Kalkış mesafesi hesabında yerden kesilme sonrası ulaşılması gereken ekran yüksekliği (screen height), Sınıf A ve Sınıf B uçaklar için sırasıyla kaç feet'tir?",
+      "options": [
+        "Sınıf A için 35 ft, Sınıf B için 50 ft",
+        "Sınıf A için 50 ft, Sınıf B için 35 ft",
+        "Hem Sınıf A hem Sınıf B için 15 ft",
+        "Sınıf A için 100 ft, Sınıf B için 50 ft"
+      ]
+    },
+    {
+      "id": 90310,
+      "section": "030-U",
+      "text": "Kuru piste kıyasla ıslak pistte karar hızı (V1) nasıl değişir ve yerdeki minimum kontrol hızı (VMCG) ile ilişkisi nedir?",
+      "options": [
+        "Durma mesafesi arttığı için V1 düşer; yön kontrolü için her zaman VMCG ≤ V1 olmalıdır.",
+        "Durma mesafesi azaldığı için V1 yükselir; her zaman V1 < VMCG olmalıdır.",
+        "Pist ıslaklığı V1'i değiştirmez; VMCG yalnızca inişte dikkate alınır.",
+        "Islak pistte V1 artarak VR'nin üzerine çıkar."
+      ]
+    },
+    {
+      "id": 90311,
+      "section": "030-U",
+      "text": "Yönetmelik gereği kalkış performansı hesaplanırken rapor edilen rüzgâr değişimlerine karşı güvenlik payı olarak kafa ve arka rüzgâr bileşenlerinin hangi oranları hesaba katılır?",
+      "options": [
+        "Kafa rüzgârının en fazla %50'si, arka rüzgârın en az %150'si.",
+        "Kafa rüzgârının en az %150'si, arka rüzgârın en fazla %50'si.",
+        "Hem kafa hem arka rüzgârın birebir %100'ü.",
+        "Kafa rüzgârının %75'i, arka rüzgâr ise hesaplamaya hiç katılmaz."
+      ]
+    },
+    {
+      "id": 90312,
+      "section": "030-U",
+      "text": "Tırmanış sınırlı kalkış kütlesi (CLTOM) ile engel sınırlı kalkış kütlesi (OLTOM) karşılaştırıldığında arka rüzgârın etkisi nedir?",
+      "options": [
+        "Arka rüzgâr CLTOM'u etkilemez, ancak yer üzerindeki tırmanış yolunu yatıklaştırdığı için OLTOM'u azaltır.",
+        "Arka rüzgâr hem CLTOM'u hem OLTOM'u aynı oranda artırır.",
+        "Arka rüzgâr CLTOM'u azaltır, ancak OLTOM'u etkilemez.",
+        "Arka rüzgâr ne CLTOM'u ne de OLTOM'u etkiler."
+      ]
+    },
+    {
+      "id": 90313,
+      "section": "030-U",
+      "text": "ICAO uçuş planında Toplam Tahmini Geçen Süre (Total EET), VFR ve IFR uçuşlar için hangi noktaya kadar olan süreyi kapsar?",
+      "options": [
+        "VFR'de kalkıştan varış meydanına kadar; IFR'de kalkıştan varış meydanının ilk yaklaşma noktasına (IAF) kadar.",
+        "Hem VFR hem IFR'de motor çalıştırmadan park yerine teker takozuna kadar.",
+        "VFR'de yalnızca seyir süresini; IFR'de yedek meydana kadar olan toplam süreyi.",
+        "VFR'de kalkıştan IAF noktasına kadar; IFR'de kalkıştan son piste teker koymaya kadar."
+      ]
+    },
+    {
+      "id": 90314,
+      "section": "030-U",
+      "text": "Maksimum Sıfır Yakıt Kütlesi (MZFM) yapısal sınırının konmasının temel amacı nedir?",
+      "options": [
+        "Kanat depolarında yakıt yokken gövdedeki yükün kanat kökünde aşırı eğilme momenti (wing root bending moment) oluşturmasını önlemek.",
+        "İniş anında ana iniş takımı amortisörlerinin aşırı ısınmasını engellemek.",
+        "Yakıt depolarının genleşme payını korumak için yakıt miktarını sınırlamak.",
+        "Taksi sırasında frenlerin aşırı ısınmasını önlemek."
+      ]
+    },
+    {
+      "id": 90315,
+      "section": "030-U",
+      "text": "Bir uçak için MSTOM = 65.000 kg, PLTOM = 68.000 kg, MSLM = 59.000 kg, PLLM = 57.500 kg, MZFM = 53.000 kg, kalkış yakıtı (TOF) = 11.000 kg ve yolculuk (trip) yakıtı = 5.500 kg ise izin verilen maksimum kalkış kütlesi (MTOM) kaç kg'dır?",
+      "options": [
+        "63.000 kg",
+        "64.000 kg",
+        "65.000 kg",
+        "64.500 kg"
+      ]
+    },
+    {
+      "id": 90316,
+      "section": "030-U",
+      "text": "Ortalama aerodinamik kord (MAC) uzunluğu 2,00 m, hücum kenarı (LeMAC) datumun 12,40 m gerisinde ve ağırlık merkezi (CG) datumun 12,90 m gerisinde olan bir uçağın CG konumu %MAC cinsinden kaçtır?",
+      "options": [
+        "%25 MAC",
+        "%20 MAC",
+        "%40 MAC",
+        "%50 MAC"
+      ]
+    },
+    {
+      "id": 90317,
+      "section": "030-U",
+      "text": "Kargo kompartmanında ağır ve küçük tabanlı bir yük, döşeme panellerini koruyan alan yük limitini (area/floor load limit, kg/m²) aşıyorsa bu yükün güvenle taşınması için ne yapılmalıdır?",
+      "options": [
+        "Yük dağıtıcı kalas/plakalar (load spreaders) kullanarak yükü daha geniş döşeme alanına yaymak.",
+        "Yükü tek noktada toplamak için altına dar bir destek koymak.",
+        "Sadece toplam kütle limiti aşılmıyorsa alan yük limitini göz ardı etmek.",
+        "Yükü doğrudan gövde yan duvarına yaslayarak zeminden ayırmak."
+      ]
+    }
+  ]
+}

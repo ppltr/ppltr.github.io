@@ -45,10 +45,10 @@ def main() -> None:
     eski, yeni = satirlar(temel), satirlar(ROOT / "atpl.db")
     bozuk = [i for i in eski if i not in yeni or yeni[i] != eski[i]]
     ekler = sorted(set(yeni) - set(eski))
-    # Kullanıcının onayladığı sınav hatırlatma ve ECQB eksik dosyaları kendi bantlarındadır.
+    # Kullanıcının onayladığı sınav hatırlatma, ECQB eksik ve ders notu üretim dosyaları kendi bantlarındadır.
     hatirlatma_idleri = {
         q["id"]
-        for desen in ("*_sinav_hatirlatma_sorulari.json", "*_ecqb_eksik_sorulari.json")
+        for desen in ("*_sinav_hatirlatma_sorulari.json", "*_ecqb_eksik_sorulari.json", "*_uretilmis_sorular.json")
         for dosya in (ROOT / "data").glob(desen)
         for q in json.loads(dosya.read_text(encoding="utf-8"))["questions"]
     }

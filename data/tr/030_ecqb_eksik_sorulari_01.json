@@ -1,0 +1,247 @@
+{
+  "questions": {
+    "53201": {
+      "text": "Aşağıdakilerden hangileri bir uçağın Temel Boş Kütlesi (Basic Empty Mass — BEM) içine dâhildir?",
+      "options": [
+        "Gövde, motor ve sabit donanım ile kullanılamayan yakıt, diğer kullanılamayan sıvılar, motor ve yardımcı ünite yağları, yangın söndürücüler ve acil oksijen ekipmanı.",
+        "Gövde, motor ve standart donanım ile kullanılabilir yakıt, uçuş ekibi ve ekip bagajları.",
+        "Gövde, motor ve sabit donanım ile tüm sıvılar hariç yolcu, bagaj ve kargo.",
+        "Gövde, motor ve standart donanım ile kullanılabilir yakıt ve motor yağı (kullanılamayan yakıt hariç)."
+      ]
+    },
+    "53202": {
+      "text": "Bir uçağın Temel Boş Kütlesini ve boş ağırlık merkezini belirlemek için tartım yapmadan önce yakıtla ilgili ne yapılmalıdır?",
+      "options": [
+        "Tüm kullanılabilir yakıt boşaltılır, sistemde yalnızca kullanılamayan yakıt bırakılır.",
+        "Tüm ana ve yardımcı yakıt depoları azami kapasiteye kadar doldurulur.",
+        "Hem kullanılabilir hem kullanılamayan yakıtın tamamı hatlardan ve depolardan boşaltılır.",
+        "Boş CG'nin uçuş ortasını yansıtması için yakıt depoları yarıya kadar doldurulur."
+      ]
+    },
+    "53203": {
+      "text": "Bir uçağın Temel Boş Kütlesi (BEM) ve ağırlık merkezi (CG) limitleri Uçuş El Kitabının (AFM/POH) hangi bölümünde yer alır?",
+      "options": [
+        "Ağırlık ve Denge (Weight and Balance / Mass and Balance)",
+        "Acil Durum Usulleri (Emergency Procedures)",
+        "Yer Hizmetleri, Bakım ve Servis (Handling, Servicing and Maintenance)",
+        "Normal Usuller (Normal Procedures)"
+      ]
+    },
+    "53204": {
+      "text": "Kütleyi kilogramdan (kg) libreye (lb) çevirmek için hangi dönüşüm katsayısı kullanılır?",
+      "options": [
+        "lb = kg × 2,205",
+        "lb = kg ÷ 2,205",
+        "lb = kg × 0,72",
+        "lb = kg × 3,785"
+      ]
+    },
+    "53205": {
+      "text": "Bir uçağın kalkış kütlesi 2.400 lb ve kalkış ağırlık merkezi (CG) datumun 92,0 inç gerisindedir. Uçuş boyunca 81,0 inç istasyonundaki depolardan 200 lb yakıt tüketilirse inişteki CG konumu nerede olur?",
+      "options": [
+        "Datumun 93,0 inç gerisinde",
+        "Datumun 91,0 inç gerisinde",
+        "Datumun 92,0 inç gerisinde",
+        "Datumun 85,3 inç gerisinde"
+      ]
+    },
+    "53206": {
+      "text": "Azami Rampa Kütlesi (MRM) 1.215 kg, gerçek rampa kütlesi 1.209 kg ve Azami Kalkış Kütlesi (MTOM) 1.200 kg olan bir uçakta kalkıştan önce motor çalıştırma ve taksi sırasında en az kaç litre AVGAS 100LL (yoğunluk 0,72 kg/L) yakılmalıdır?",
+      "options": [
+        "12,5 L",
+        "9,0 L",
+        "6,5 L",
+        "20,8 L"
+      ]
+    },
+    "53207": {
+      "text": "Hafif bir uçakta kalkış öncesinde uçaktaki yakıt miktarını doğrulamanın en güvenilir yolu nedir?",
+      "options": [
+        "Kokpit yakıt göstergelerini depoların doğrudan görsel veya ölçüm çubuğu (dipstick) kontrolüyle karşılaştırmak.",
+        "Motor çalıştırma (run-up) sırasında yalnızca kokpit yakıt göstergelerine güvenmek.",
+        "Kalan yakıtı yalnızca bir önceki pilotun uçuş defteri kaydından hesaplamak.",
+        "Depoları kontrol etmeden yakıt ikmal görevlisinin sözlü teyidine güvenmek."
+      ]
+    },
+    "53208": {
+      "text": "Basınç İrtifası (Pressure Altitude — PA) uçaktaki altimetreden doğrudan nasıl okunur?",
+      "options": [
+        "Altimetre basınç penceresine 1013,25 hPa bağlanır ve okunan irtifa alınır.",
+        "Altimetre basınç penceresine yerel QNH bağlanır ve okunan irtifa alınır.",
+        "Altimetre basınç penceresine yerel QFE bağlanır ve dış hava sıcaklığına göre düzeltilir.",
+        "Altimetre ibreleri meydan rakımına ayarlanır ve Kollsman penceresindeki basınç okunur."
+      ]
+    },
+    "53209": {
+      "text": "Uçuş bilgisayarı olmadan Basınç İrtifasından (PA) Yoğunluk İrtifası (DA) yaklaşık olarak nasıl hesaplanır?",
+      "options": [
+        "Dış hava sıcaklığının ISA'dan her 1 °C sapması için basınç irtifasına yaklaşık 120 ft eklenir veya çıkarılır.",
+        "Dış hava sıcaklığının ISA'dan her 1 °C sapması için basınç irtifasına yaklaşık 30 ft eklenir veya çıkarılır.",
+        "ISA'dan her 10 °C sapma için basınç irtifası %4 artırılır veya azaltılır.",
+        "QNH'nin 1013 hPa'nın altında kaldığı her 1 hPa için 120 ft eklenir."
+      ]
+    },
+    "53210": {
+      "text": "Rakımı 3.700 ft olan bir meydanda QNH 1003 hPa ve dış hava sıcaklığı (OAT) +22 °C'dir. Standart yaklaşımlarla (30 ft/hPa, 2 °C/1.000 ft, 120 ft/°C) yaklaşık Yoğunluk İrtifası (DA) kaçtır?",
+      "options": [
+        "5.800 ft",
+        "4.000 ft",
+        "5.200 ft",
+        "6.440 ft"
+      ]
+    },
+    "53211": {
+      "text": "Hava hızı kısaltması VFE neyi ifade eder?",
+      "options": [
+        "Flap açık azami hız (maximum flap extended speed)",
+        "İniş takımı açık azami hız (maximum landing gear extended speed)",
+        "Flaplar kapalıyken minimum düzenli uçuş hızı",
+        "Sakin havada asla aşılmaması gereken hız"
+      ]
+    },
+    "53212": {
+      "text": "Sürat saatindeki (ASI) sarı ark (yellow arc) neyi gösterir ve bu aralıkta uçarken pilot neye dikkat etmelidir?",
+      "options": [
+        "İhtiyat aralığı (VNO–VNE); yalnızca sakin havada uçulmalı ve ani kumanda hareketlerinden kaçınılmalıdır.",
+        "Normal işletme aralığı (VS1–VNO); bu aralıktaki her hızda tam ve ani kumanda verilebilir.",
+        "Flap kullanım aralığı (VS0–VFE); bu ark boyunca flaplar güvenle açılabilir.",
+        "Yasaklı hız aralığı; bu arka girildiğinde yapısal kırılma derhâl gerçekleşir."
+      ]
+    },
+    "53213": {
+      "text": "Pist 18'den (180°) kalkış yapıyorsunuz ve rapor edilen rüzgâr 060° / 16 kt'dir. Yaklaşık boyuna rüzgâr ve yan rüzgâr bileşenleri nelerdir?",
+      "options": [
+        "8 kt arka rüzgârı ve soldan 14 kt yan rüzgâr",
+        "8 kt kafa rüzgârı ve soldan 14 kt yan rüzgâr",
+        "14 kt arka rüzgârı ve sağdan 8 kt yan rüzgâr",
+        "8 kt arka rüzgârı ve sağdan 14 kt yan rüzgâr"
+      ]
+    },
+    "53214": {
+      "text": "Kuru kaplamalı (asfalt/beton) bir piste kıyasla çim pist kalkış ve frenleme performansını nasıl etkiler?",
+      "options": [
+        "Yüksek yuvarlanma direnci nedeniyle kalkış mesafesi uzar ve frenleme verimi düşer.",
+        "Çim yüzey ivmelenmede daha fazla tutunma sağladığı için kalkış mesafesi kısalır.",
+        "Kalkış mesafesi değişmez, ancak yerden kesilme sonrası tırmanış gradyanı artar.",
+        "Kalkış mesafesi uzar, ancak çimdeki frenleme performansı asfalttan daha iyidir."
+      ]
+    },
+    "53215": {
+      "text": "Hafif yer arka rüzgârıyla kalkıştan sonraki ilk tırmanışta uçak yer sürtünme tabakasından çıkıp daha kuvvetli bir arka rüzgâra girerse pilotun anlık olarak ne beklemesi gerekir?",
+      "options": [
+        "İşari hava hızında (IAS) ve tırmanış oranında geçici bir azalma.",
+        "İşari hava hızında (IAS) ve tırmanış gradyanında geçici bir artış.",
+        "Hava hızında değişiklik olmaz, yalnızca tırmanış oranı derhâl artar.",
+        "Yer hızında ani bir düşüş ve buna eşlik eden taşıma artışı."
+      ]
+    },
+    "53216": {
+      "text": "Pervaneli bir uçakta dengeli tırmanışta en iyi tırmanış oranı hızı (Vy) hangi noktadaki hıza karşılık gelir?",
+      "options": [
+        "Mevcut fazla gücün (excess power) maksimum olduğu hız.",
+        "Mevcut fazla itmenin (excess thrust) maksimum olduğu hız.",
+        "Toplam sürüklemenin minimum olduğu hız.",
+        "Parazit sürüklemenin sıfır olduğu hız."
+      ]
+    },
+    "53217": {
+      "text": "Sakin havada motorsuz süzülüşte belirli bir irtifadan en uzun süzülüş mesafesi hangi hücum açısında elde edilir?",
+      "options": [
+        "İndüklenmiş sürükleme ile parazit sürüklemenin eşit olduğu (azami L/D oranı) hücum açısında.",
+        "Parazit sürüklemenin mutlak minimum olduğu hücum açısında.",
+        "Taşıma katsayısının CLmax değerine ulaştığı hücum açısında.",
+        "Gerekli gücün mutlak minimum olduğu hücum açısında."
+      ]
+    },
+    "53218": {
+      "text": "Motorsuz minimum alçalma oranı (minimum çöküş) hızı, en iyi süzülüş mesafesi hızına kıyasla nasıldır?",
+      "options": [
+        "Her zaman en iyi süzülüş hızından daha düşüktür.",
+        "Her zaman en iyi süzülüş hızından daha yüksektir.",
+        "En iyi süzülüş hızıyla birebir aynıdır.",
+        "Düşük ağırlıkta daha yüksek, yüksek ağırlıkta daha düşüktür."
+      ]
+    },
+    "53219": {
+      "text": "Düz tırmanıştan güç ayarını değiştirmeden tırmanışlı bir dönüşe girildiğinde tırmanış oranına (ROC) ne olur?",
+      "options": [
+        "Yatış yük faktörünü ve indüklenmiş sürüklemeyi artırdığı için tırmanış oranı azalır.",
+        "Yatış açısı 30°'yi geçmediği sürece tırmanış oranı değişmez.",
+        "Dış kanat fazladan taşıma ürettiği için tırmanış oranı hafifçe artar.",
+        "Alçak irtifada sabit kalır, 5.000 ft üzerinde artar."
+      ]
+    },
+    "53220": {
+      "text": "Arka rüzgârla yapılan seyir uçuşunda yer üzerinde azami menzili elde etmek için hava hızı, sakin havadaki azami menzil hızına göre nasıl ayarlanmalıdır?",
+      "options": [
+        "Sakin havadaki azami menzil hızına kıyasla hava hızı hafifçe azaltılır.",
+        "Hava hızı arka rüzgâr bileşeninin tamamı kadar artırılır.",
+        "Sakin havadakiyle birebir aynı hava hızı korunur.",
+        "Arka rüzgârın önünde kalmak için hava hızı hafifçe artırılır."
+      ]
+    },
+    "53221": {
+      "text": "Uçuş el kitabında aksi belirtilmedikçe hamleli (gusty) rüzgâr koşullarında iniş yaklaşması yaparken normal yaklaşma hızı (Vref) nasıl düzeltilir?",
+      "options": [
+        "Normal yaklaşma hızına hamle faktörünün (gust factor) yarısı eklenir.",
+        "Pist üzerinde süzülmeyi önlemek için hamle faktörünün yarısı çıkarılır.",
+        "Hamle şiddeti ne olursa olsun Vref hiç değiştirilmez.",
+        "Daimi rüzgâr hızının iki katı Vref'e eklenir."
+      ]
+    },
+    "53222": {
+      "text": "Bir uçuş planında yakıt kalemleri şöyledir: çalıştırma ve taksi 6 L, kalkış ve tırmanış 14 L, seyir 32 L, alçalma/yaklaşma/iniş 8 L, park yerine taksi 4 L, yedek meydan 15 L ve nihai yedek (final reserve) 12 L. Yolculuk yakıtı (Trip Fuel) kaç litredir?",
+      "options": [
+        "54 L",
+        "60 L",
+        "64 L",
+        "81 L"
+      ]
+    },
+    "53223": {
+      "text": "Manyetik sapmanın (variation) 4° E olduğu bir bölgede hakiki rotası (true track) 182° olan bir VFR seyir uçuşu için 5.000 ft üzerindeki en alçak yarım daire VFR uçuş seviyesi hangisidir?",
+      "options": [
+        "FL 055",
+        "FL 065",
+        "FL 050",
+        "FL 060"
+      ]
+    },
+    "53224": {
+      "text": "1:500.000 ölçekli VFR haritasında basılı Azami Yükseklik Rakamı (Maximum Elevation Figure — MEF) neyi ifade eder?",
+      "options": [
+        "30' enlem × 30' boylam karesi içindeki en yüksek arazi veya engel yüksekliğine güvenlik payı eklenip bir üst 100 ft'e yuvarlanmış değerini.",
+        "O sektörde VFR seyir uçuşları için izin verilen en alçak uçuş seviyesini.",
+        "O karede kontrollü hava sahası altında izin verilen azami irtifayı.",
+        "En yakın meydana 10 NM mesafedeki ortalama arazi yüksekliğini."
+      ]
+    },
+    "53225": {
+      "text": "İlan edilmiş pist mesafeleri (TORA, TODA, ASDA, LDA) Havacılık Bilgi Yayınının (AIP) hangi bölümünde yayımlanır?",
+      "options": [
+        "AIP Bölüm AD (Meydanlar / Aerodromes)",
+        "AIP Bölüm GEN (Genel / General)",
+        "AIP Bölüm ENR (Yol Boyu / En-route)",
+        "ICAO Ek 2 (Hava Kuralları / Rules of the Air)"
+      ]
+    },
+    "53226": {
+      "text": "Pilot halihazırda havadayken uçuş planı (AFIL) vermek istediğinde bunu hangi ATS birimine iletebilir?",
+      "options": [
+        "Uçuş Bilgi Hizmeti (FIS) / frekanstaki ilgili ATS birimi",
+        "Yalnızca varış meydanı işletmecisinin harekât (dispatch) ofisi",
+        "Meteoroloji İzleme Ofisi (MWO)",
+        "Kalkıştan sonra hiçbir şekilde uçuş planı verilemez."
+      ]
+    },
+    "53227": {
+      "text": "VFR seyrüsefer uçuşunda planlanan TAS ile uçmanıza rağmen yol üzerindeki bir kontrol noktasından işletme uçuş planında (OFP) öngörülenden 4 dakika geç geçiyorsunuz. Bundan hangi operasyonel sonuç çıkar?",
+      "options": [
+        "Kafa rüzgârı tahminden daha kuvvetli (veya arka rüzgâr daha zayıf) demektir; kalan uçuş süresi ve yakıt tüketimi artacağından yakıt yedeği yeniden değerlendirilmelidir.",
+        "Kafa rüzgârı tahminden zayıf demektir; kalan yakıt tüketimi planlanandan düşük olur.",
+        "Yalnızca altimetre ayarı değişmiştir; süre ve yakıt tahminlerini güncellemeye gerek yoktur.",
+        "Yalnızca ilk bacak etkilenir; sonraki bacakların süre ve yakıtı değişmeden kalır."
+      ]
+    }
+  }
+}

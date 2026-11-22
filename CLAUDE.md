@@ -522,9 +522,9 @@ Uygulama uçak modunda / çevrimdışı tamamen çalışacak şekilde tasarland�
   yeniden yükleme, 030 ipucu/açıklama, TR/EN geçişi, rapor açıklamaları ve çevrimiçi
   toparlanmayı doğrular (`npm test` içinde çalışır).
 - Şu an yalnızca **030 (Flight Performance and Planning)** için tam kapsamlı çevrimdışı
-  açıklama ve ipucu seti (`data/aciklamalar/030.json`, 258/258 soru) eklendi.
+  açıklama ve ipucu seti (`data/aciklamalar/030.json`, 302/302 soru) eklendi.
 
-## Sınav hatırlatma ve ECQB eksikleri (`020-SH`, `020-EC`)
+## Sınav hatırlatma ve ECQB eksikleri (`020-SH`, `020-EC`, `030-EC`, `030-U`)
 
 Kullanıcı 2026-11-17'de 020 (Uçak Genel Bilgisi) sınavına girdi, hatırladığı konular: static discharge,
 100LL, küçük uçak voltajı, hectopascal, altimetre kapsülü, magneto OFF primer devre. Bankada olmayanlar
@@ -540,9 +540,30 @@ işaretli kutu, U+F0A8 boş kutu) bankayla tek tek eşlendi. Bankada hiç sorulm
 ("Missing From Other Banks"), 52204 + 52211–52222 (13 soru; ECQB'nin birim soruları sınavda birim sorusu
 çıktığı öğrenilince alındı, 52204 Traficom 150),
 `origin: ek`; elenenlerin nedeni dosyanın `ecqb_eslesme` alanında. Bunlar `kaynak_derle.py` zincirine
-girmez (ECQB kayıtlı kaynak değil); `kaynak_koru_kontrol.py` `*_sinav_hatirlatma_sorulari.json` ve
-`*_ecqb_eksik_sorulari.json` kimliklerini bant dışı saymaz. Başka bir ders için aynı iş istenirse aynı
+girmez (ECQB kayıtlı kaynak değil); `kaynak_koru_kontrol.py` `*_sinav_hatirlatma_sorulari.json`,
+`*_ecqb_eksik_sorulari.json` ve `*_uretilmis_sorular.json` kimliklerini bant dışı saymaz. Başka bir ders için aynı iş istenirse aynı
 düzeni kullan: `<ders>-SH` / `<ders>-EC`, bant `<ders notu bandı>2xx`.
+
+**030-EC ve 030-U boşluk kapatma seti (2026-11-23).** Kullanıcı 030 (Uçuş Performansı ve Planlama) için aşırı soru
+yığmadan, mevcut ATPL TV + KDM havuzunun (258 toplam / 225 görünür) karşılamadığı açık Avrupa PPL(A) konularını ve
+ders notu (`notes/030-ders-notlari.md`) boşluklarını kapatmamızı istedi:
+
+- `030-EC` ("Başka Bankalardan Eksikler" / "Missing From Other Banks"): `data/030_ecqb_eksik_sorulari.json` +
+  `data/tr/030_ecqb_eksik_sorulari_01.json`, 27 soru (`53201–53227`, `origin: ek`). Austro Control ECQB-PPL-A-70,
+  Traficom PPL030ENG ve Sırbistan CAD 030 listeleri taranarak bankada hiç sorulmayan, ek/grafik gerektirmeyen,
+  bağımsız yazılmış 27 yüksek öncelikli kavram (BEM içeriği, tartımda yakıt boşaltma, AFM W&B bölümü, kg→lb, yakıt
+  yanması sonrası iniş CG, rampa→MTOM taksi yakıtı, fiziksel yakıt kontrolü, PA/DA kuralları ve sayısal hesabı, VFE,
+  sarı ark, pist rüzgâr bileşeni, çim pist, tırmanışta arka rüzgâr kesmesi, Vy fazla güç, en iyi süzülüşte Di=Dp,
+  min çöküş < en iyi süzülüş, tırmanışlı dönüşte ROC, arka rüzgârda azami menzil hızı, hamleli rüzgârda Vref+½ gust,
+  Trip Fuel toplamı, 180° geçişli VFR FL, MEF, AIP AD pist mesafeleri, AFIL→FIS, geç kontrol noktasında yeniden planlama).
+- `030-U` ("Ders Notundan Üretilmiş" / "Generated from Course Notes"): `data/030_uretilmis_sorular.json` +
+  `data/en/030_uretilmis_sorular_01.json`, 17 soru (`90301–90317`, `origin: uretilmis`). Yalnız `notes/030-ders-notlari.md`
+  içinde geçen ve mevcut 258 + 27 `030-EC` sorusunun kapsamadığı 17 sınavlık kavram (Payload/Traffic Load, Contingency
+  %5/5 dk, Final Reserve 45/30 dk, Extra fuel, ISA sabitleri, CAS→EAS sıkışabilirlik, beyaz ark VS0–VFE, Sınıf B tanımı,
+  35/50 ft screen height, ıslak pist V1/VMCG, %50/%150 rüzgâr payı, OLTOM vs CLTOM arka rüzgâr, VFR/IFR Total EET,
+  MZFM kanat kökü eğilme momenti, RTOM/RLM/MZFM'den izin verilen MTOM hesabı, %MAC hesabı, alan yük limiti ve yük dağıtıcılar).
+- 44 yeni sorunun tamamı için çevrimdışı ipucu ve TR/EN açıklamalar `data/aciklamalar/030.json` içine eklendi (302/302).
+  030 toplam: 269 görünür (302 toplam, tekrarlar ve ortak 15376 dâhil).
 
 ## Ek kaynak soruları (`<ders>-EK`)
 

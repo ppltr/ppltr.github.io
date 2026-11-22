@@ -1,0 +1,157 @@
+{
+  "questions": {
+    "90301": {
+      "text": "What is the revenue-earning portion of the Traffic Load (passengers, baggage, and cargo carried for remuneration) called?",
+      "options": [
+        "Payload",
+        "Variable Load",
+        "Dry Operating Mass",
+        "Useful Load"
+      ]
+    },
+    "90302": {
+      "text": "How is Contingency Fuel (for unforeseen wind, routing, or ATC deviations) determined?",
+      "options": [
+        "The higher of 5% of trip fuel or fuel for 5 minutes of holding at 1,500 ft AGL over the destination aerodrome.",
+        "The lower of 10% of alternate fuel or 15 minutes of cruise fuel.",
+        "Always 45 minutes of holding fuel for piston aeroplanes and 30 minutes for turbine aeroplanes.",
+        "A fixed 10 minutes of taxi fuel added at the commander's discretion."
+      ]
+    },
+    "90303": {
+      "text": "What is the required Final Reserve Fuel (holding at 1,500 ft AGL above the alternate aerodrome) for piston-engine and gas-turbine aeroplanes respectively?",
+      "options": [
+        "45 minutes for piston aeroplanes and 30 minutes for gas-turbine aeroplanes.",
+        "30 minutes for piston aeroplanes and 45 minutes for gas-turbine aeroplanes.",
+        "A fixed 20 minutes for both piston and gas-turbine aeroplanes.",
+        "60 minutes for piston aeroplanes and 15 minutes for gas-turbine aeroplanes."
+      ]
+    },
+    "90304": {
+      "text": "Which fuel category is added above the mandatory fuel requirements at the discretion of the commander and/or flight dispatcher?",
+      "options": [
+        "Extra fuel",
+        "Contingency fuel",
+        "Final reserve fuel",
+        "Trip fuel"
+      ]
+    },
+    "90305": {
+      "text": "In the ICAO Standard Atmosphere (ISA, Doc 7488), what are the sea-level temperature, pressure, air density, and tropospheric temperature lapse rate respectively?",
+      "options": [
+        "15 °C · 1013.25 hPa · 1.225 kg/m³ · 1.98 °C (≈ 2 °C) / 1,000 ft",
+        "0 °C · 1013.25 hPa · 1.000 kg/m³ · 3.0 °C / 1,000 ft",
+        "15 °C · 1000.00 hPa · 1.225 kg/m³ · 1.0 °C / 1,000 ft",
+        "20 °C · 1013.25 hPa · 1.500 kg/m³ · 2.0 °C / 1,000 ft"
+      ]
+    },
+    "90306": {
+      "text": "Which error correction is applied to Calibrated Airspeed (CAS) at higher speeds (above Mach 0.3 / 300 KTAS) to obtain Equivalent Airspeed (EAS)?",
+      "options": [
+        "Compressibility error",
+        "Instrument and position error",
+        "Air density error",
+        "Wind component correction"
+      ]
+    },
+    "90307": {
+      "text": "What speeds are marked by the lower and upper ends of the white arc on an Airspeed Indicator (ASI)?",
+      "options": [
+        "Lower limit VS0 (stalling speed in landing configuration), upper limit VFE (maximum flap extended speed).",
+        "Lower limit VS1 (clean stalling speed), upper limit VNO (maximum structural cruising speed).",
+        "Lower limit VNO (maximum structural cruising speed), upper limit VNE (never exceed speed).",
+        "Lower limit VR (rotation speed), upper limit VLOF (lift-off speed)."
+      ]
+    },
+    "90308": {
+      "text": "Which aeroplanes belong to Performance Class B?",
+      "options": [
+        "Single- or multi-engine propeller aeroplanes with a maximum passenger seating configuration of 9 or fewer and MTOM of 5,700 kg or less.",
+        "All multi-engine jet and turboprop aeroplanes with 10 or more passenger seats or MTOM above 5,700 kg.",
+        "Multi-engine piston propeller aeroplanes with 10 or more passenger seats or MTOM above 5,700 kg.",
+        "Only heavy commercial transport aeroplanes above 136,000 kg MTOM."
+      ]
+    },
+    "90309": {
+      "text": "What is the take-off screen height to be reached at the end of the take-off distance for Performance Class A and Class B aeroplanes respectively?",
+      "options": [
+        "35 ft for Class A, 50 ft for Class B",
+        "50 ft for Class A, 35 ft for Class B",
+        "15 ft for both Class A and Class B",
+        "100 ft for Class A, 50 ft for Class B"
+      ]
+    },
+    "90310": {
+      "text": "How does take-off decision speed (V1) change on a wet runway compared to a dry runway, and what is its required relationship with minimum control speed on the ground (VMCG)?",
+      "options": [
+        "V1 decreases because stopping distance increases; VMCG must always be less than or equal to V1 (VMCG ≤ V1).",
+        "V1 increases because stopping distance decreases; V1 must always be less than VMCG.",
+        "A wet runway does not affect V1; VMCG applies only during landing.",
+        "On a wet runway V1 increases above VR."
+      ]
+    },
+    "90311": {
+      "text": "As a regulatory safety margin against wind variations during take-off performance calculations, what percentages of reported headwind and tailwind components must be factored?",
+      "options": [
+        "Not more than 50% of the headwind component and not less than 150% of the tailwind component.",
+        "Not less than 150% of the headwind component and not more than 50% of the tailwind component.",
+        "Exactly 100% of both headwind and tailwind components.",
+        "75% of the headwind component, while tailwind components are ignored."
+      ]
+    },
+    "90312": {
+      "text": "Comparing Climb-Limited Take-Off Mass (CLTOM) and Obstacle-Limited Take-Off Mass (OLTOM), what is the effect of a tailwind?",
+      "options": [
+        "A tailwind does not affect CLTOM, but it reduces OLTOM because it flattens the ground climb gradient.",
+        "A tailwind increases both CLTOM and OLTOM by the same amount.",
+        "A tailwind reduces CLTOM but has no effect on OLTOM.",
+        "A tailwind affects neither CLTOM nor OLTOM."
+      ]
+    },
+    "90313": {
+      "text": "In an ICAO ATS flight plan, up to which point is Total Estimated Elapsed Time (Total EET) calculated for VFR and IFR flights respectively?",
+      "options": [
+        "For VFR, from take-off to arrival over the destination aerodrome; for IFR, from take-off to the Initial Approach Fix (IAF) of the destination aerodrome.",
+        "For both VFR and IFR, from engine start-up to engine shut-down at the parking stand.",
+        "For VFR, cruise time only; for IFR, total time including diversion to the alternate aerodrome.",
+        "For VFR, from take-off to the IAF; for IFR, from take-off to touchdown."
+      ]
+    },
+    "90314": {
+      "text": "What is the primary structural purpose of the Maximum Zero Fuel Mass (MZFM) limitation?",
+      "options": [
+        "To prevent excessive wing root bending moments caused by fuselage load when wing fuel tanks are empty.",
+        "To prevent overheating of the main landing gear shock struts on touchdown.",
+        "To limit fuel uplift so thermal expansion space remains in the fuel tanks.",
+        "To prevent excessive brake temperatures during taxi."
+      ]
+    },
+    "90315": {
+      "text": "Given MSTOM = 65,000 kg, PLTOM = 68,000 kg, MSLM = 59,000 kg, PLLM = 57,500 kg, MZFM = 53,000 kg, take-off fuel (TOF) = 11,000 kg, and trip fuel = 5,500 kg, what is the maximum allowable take-off mass (MTOM)?",
+      "options": [
+        "63,000 kg",
+        "64,000 kg",
+        "65,000 kg",
+        "64,500 kg"
+      ]
+    },
+    "90316": {
+      "text": "An aeroplane has a Mean Aerodynamic Chord (MAC) length of 2.00 m, its leading edge (LeMAC) is 12.40 m aft of the datum, and the CG is at 12.90 m aft of the datum. What is the CG position in %MAC?",
+      "options": [
+        "25% MAC",
+        "20% MAC",
+        "40% MAC",
+        "50% MAC"
+      ]
+    },
+    "90317": {
+      "text": "If a heavy cargo item with a small base exceeds the cargo compartment's area (floor) load limit (kg/m²), what must be done to load it safely?",
+      "options": [
+        "Use load spreaders (planks/plates) to distribute the mass over a larger floor area.",
+        "Place a narrow support under its centre to concentrate the weight at one point.",
+        "Ignore the area load limit as long as total compartment mass is not exceeded.",
+        "Lean the cargo against the fuselage sidewall to keep it off the floor."
+      ]
+    }
+  }
+}

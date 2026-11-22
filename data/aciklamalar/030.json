@@ -1291,6 +1291,226 @@
       "ipucu": "Faydalı yük (useful load), kuru işletme kütlesi (DOM) ile kalkış kütlesi (TOM) arasındaki farktır; uçağa sonradan yüklenen hangi iki ana kalemin toplamıdır?",
       "tr": "Faydalı yük (useful load), uçağın kuru işletme kütlesine (DOM) eklenen kullanılabilir yakıt ile trafik yükünün (yolcu, bagaj, kargo) toplamıdır: Useful Load = TOM − DOM = Kullanılabilir yakıt + Trafik yükü. Maksimum kalkış kütlesi ile boş ağırlık farkı ise gerçek değil azami potansiyel yükü ifade eder ve ekip/değişken yük ayrımını atlar.",
       "en": "Useful load is the sum of usable fuel and traffic load (passengers, baggage, cargo), equal to Take-Off Mass minus Dry Operating Mass (TOM − DOM). The difference between MTOM and empty mass reflects a maximum allowance rather than the actual useful load."
+    },
+    "53201": {
+      "ipucu": "Temel Boş Kütlenin (BEM) uçağın uçuşa hazır sabit yapısını ve boşaltılamayan sıvılarını kapsadığını; yolcu, ekip ve kullanılabilir yakıtın buna dâhil olmadığını hatırla.",
+      "tr": "Temel Boş Kütle (BEM), uçağın gövde, motor ve sabit standart donanımına ek olarak kullanılamayan yakıt, diğer kullanılamayan sıvılar, motor ve yardımcı sistem yağları, sabit yangın söndürücüler ve acil oksijen donanımını içerir. Kullanılabilir yakıt, uçuş ekibi, yolcular, bagaj ve kargo BEM'in dışında kalır; bunlar işletme ve trafik yükleriyle sonradan eklenir.",
+      "en": "Basic Empty Mass (BEM) comprises the airframe, engine, and fixed standard equipment plus unusable fuel, other unusable fluids, full engine and auxiliary lubricating oil, fire extinguishers, and emergency oxygen equipment. Usable fuel, flight crew, passengers, baggage, and cargo are excluded from BEM and added later."
+    },
+    "53202": {
+      "ipucu": "Tartımda elde edilmek istenen Temel Boş Kütle (BEM) hangi yakıt türünü içerir, hangisini dışarıda bırakır?",
+      "tr": "Temel Boş Kütle (BEM) tanımı gereği kullanılamayan yakıtı içerir, kullanılabilir yakıtı içermez. Bu nedenle uçak tartılmadan önce tüm kullanılabilir yakıt depolardan boşaltılır ve sistemde yalnızca kullanılamayan yakıt (ve tam motor yağı) bırakılır; depoları doldurmak ya da kullanılamayan yakıtı da tamamen tahliye etmek BEM tanımına aykırıdır.",
+      "en": "By definition, Basic Empty Mass (BEM) includes unusable fuel but excludes usable fuel. Before weighing an aeroplane, all usable fuel must therefore be drained while leaving unusable fuel (and full engine oil) in the system; weighing with full or half tanks or draining unusable fuel would violate the BEM definition."
+    },
+    "53203": {
+      "ipucu": "Uçağın tartım raporu, boş ağırlık kaydı ve ağırlık merkezi zarfı Uçuş El Kitabının (AFM/POH) hangi standart bölümünde yer alır?",
+      "tr": "GAMA standardına göre düzenlenen AFM/POH'ta uçağın güncel Temel Boş Kütlesi (BEM), boş ağırlık merkezi, yükleme istasyonları ve izin verilen CG sınırları Bölüm 6 olan Ağırlık ve Denge (Weight and Balance / Mass and Balance) bölümünde yayımlanır. Normal ve Acil Durum Usulleri kontrol listelerini, Bakım bölümü ise servis ve yer işlemlerini içerir.",
+      "en": "In a standard AFM/POH (Section 6), the aircraft's current Basic Empty Mass (BEM), empty CG, loading stations, and certified CG limits are published in the Weight and Balance (Mass and Balance) section. Normal and Emergency Procedures cover checklists, while Handling, Servicing and Maintenance covers ground care."
+    },
+    "53204": {
+      "ipucu": "1 kilogramın 1 libreden daha ağır olduğunu hatırla: kilogramdan libreye çevirirken sayısal değer büyümeli mi küçülmeli mi ve kütle dönüşüm katsayısı hangisidir?",
+      "tr": "1 kilogram yaklaşık 2,205 libreye (tam 2,20462 lb) eşittir; dolayısıyla kütleyi kg'dan lb'ye çevirmek için kg değeri 2,205 ile çarpılır (lb = kg × 2,205). 2,205'e bölmek lb'den kg'a çevirir; 0,72 AVGAS'ın kg/L yoğunluğu, 3,785 ise 1 US galonun litre karşılığıdır.",
+      "en": "One kilogram equals approximately 2.205 pounds (exact 2.20462 lb), so mass is converted from kg to lb using lb = kg × 2.205. Dividing by 2.205 converts lb to kg, whereas 0.72 kg/L is AVGAS density and 3.785 L is one US gallon."
+    },
+    "53205": {
+      "ipucu": "Toplam kalkış momentinden yakılan yakıtın momentini çıkarıp kalan iniş kütlesine böl: İniş CG = (M_kalkış − M_yakıt) ÷ W_iniş. Yakıt deposu CG'nin önündeyse yakıt yandıkça CG geriye kayar.",
+      "tr": "Kalkış momenti = 2.400 lb × 92,0 inç = 220.800 lb·inç. Yakılan yakıtın momenti = 200 lb × 81,0 inç = 16.200 lb·inç. İniş kütlesi = 2.400 − 200 = 2.200 lb; iniş momenti = 220.800 − 16.200 = 204.600 lb·inç. İniş CG = 204.600 ÷ 2.200 = 93,0 inç (datumun gerisinde). Sağlama: yakıt deposu (81,0 inç) CG'nin (92,0 inç) önündedir; önden ağırlık eksilince CG geriye doğru 1,0 inç kayar.",
+      "en": "Take-off moment = 2,400 lb × 92.0 in = 220,800 lb·in. Burned fuel moment = 200 lb × 81.0 in = 16,200 lb·in. Landing mass = 2,400 − 200 = 2,200 lb; landing moment = 220,800 − 16,200 = 204,600 lb·in. Landing CG = 204,600 ÷ 2,200 = 93.0 in aft of datum. Sanity check: removing fuel from ahead of the CG (81.0 in vs 92.0 in) shifts the CG aft."
+    },
+    "53206": {
+      "ipucu": "Önce gerçek rampa kütlesi ile MTOM arasındaki fazlalığı kilogram olarak hesapla, sonra AVGAS yoğunluğuna bölerek litreye çevir; MRM yalnızca üst sınırdır, fark hesabına girmez.",
+      "tr": "Gerçek rampa kütlesi (1.209 kg) MRM sınırının (1.215 kg) altındadır, ancak kalkışa başlamadan önce MTOM (1.200 kg) veya altına inilmesi gerekir. Yakılması gereken yakıt kütlesi = 1.209 − 1.200 = 9 kg. Hacim = Kütle ÷ Yoğunluk = 9 ÷ 0,72 = 12,5 L AVGAS 100LL. 9,0 L yoğunluk dönüşümünü unutan, 6,5 L çarpma hatası yapan, 20,8 L ise yanlışlıkla MRM (1.215 kg) kullanan tuzaklardır.",
+      "en": "Actual ramp mass (1,209 kg) is within MRM (1,215 kg), but mass must drop to MTOM (1,200 kg) before take-off. Fuel mass to burn = 1,209 − 1,200 = 9 kg. Volume = Mass ÷ Density = 9 ÷ 0.72 = 12.5 L of AVGAS 100LL. Common traps are forgetting density (9.0 L), multiplying instead of dividing (6.5 L), or using MRM instead of actual ramp mass (20.8 L)."
+    },
+    "53207": {
+      "ipucu": "Hafif uçak yakıt göstergelerinin tek başına yanılma payı vardır; en emniyetli doğrulama kokpit okumasını hangi doğrudan fiziksel kontrolle çapraz doğrulamaktır?",
+      "tr": "Hafif uçaklardaki şamandıralı yakıt göstergeleri hatalı okuma yapabilir; bu nedenle kalkış öncesi en güvenilir yöntem, kokpit göstergelerini yakıt kapaklarını açıp görsel kontrol veya kalibre edilmiş ölçüm çubuğu (dipstick) ile doğrudan çapraz doğrulamaktır. Tek başına göstergelere, önceki pilotun defter kaydına veya ikmalcinin sözlü beyanına güvenmek yakıt bitmesi (fuel exhaustion) kazalarının başlıca nedenlerindendir.",
+      "en": "Light-aeroplane fuel gauges can be inaccurate, so the most reliable pre-flight check is to cross-check cockpit indications against a direct visual inspection or calibrated dipstick measurement of the tanks. Relying solely on gauges, previous log entries, or a refueller's verbal confirmation risks fuel exhaustion."
+    },
+    "53208": {
+      "ipucu": "Basınç irtifası (PA), Uluslararası Standart Atmosferin (ISA) deniz seviyesi referans basıncına göre tanımlanır; altimetre penceresine hangi standart değeri bağlamalısın?",
+      "tr": "Basınç İrtifası (PA), standart atmosferde 1013,25 hPa (29,92 inHg) izobar yüzeyinin üzerindeki irtifadır ve altimetre basınç penceresine (Kollsman) 1013,25 hPa bağlandığında doğrudan altimetreden okunur. Yerel QNH bağlandığında işari irtifa (MSL), QFE bağlandığında ise meydan yüzeyine göre yükseklik (AGL) okunur.",
+      "en": "Pressure Altitude (PA) is the altitude above the standard 1013.25 hPa (29.92 inHg) datum plane and is read directly by setting 1013.25 hPa on the altimeter subscale. Setting local QNH reads altitude above MSL, while QFE reads height above the aerodrome."
+    },
+    "53209": {
+      "ipucu": "Basınç düzeltmesi (30 ft/hPa) ile sıcaklık kaynaklı yoğunluk irtifası düzeltmesinin 1 °C ISA sapması başına kaç feet değiştiğini karıştırma.",
+      "tr": "Uçuş bilgisayarı olmadan Yoğunluk İrtifası (DA), Basınç İrtifasına (PA) dış hava sıcaklığının ISA'dan her 1 °C sapması için yaklaşık 120 ft eklenerek (ISA'dan sıcaksa +) veya çıkarılarak (ISA'dan soğuksa −) hesaplanır: DA ≈ PA + 120 × (OAT − ISA). 30 ft/hPa basınç irtifası düzeltmesidir, sıcaklık katsayısı değildir.",
+      "en": "Without a flight computer, Density Altitude is approximated by adding or subtracting about 120 ft to Pressure Altitude for every 1 °C that OAT is above or below ISA: DA ≈ PA + 120 × (OAT − ISA). By contrast, 30 ft/hPa is the barometric correction used to find Pressure Altitude from QNH."
+    },
+    "53210": {
+      "ipucu": "Üç adımda ilerle: (1) 1013 hPa ile QNH farkını 30 ft/hPa ile çarpıp PA'yı bul, (2) PA'daki ISA sıcaklığını hesapla (15 °C − 2 °C/1.000 ft) ve OAT'tan çıkararak ISA sapmasını bul, (3) sapmayı 120 ft/°C ile çarpıp PA'ya ekle.",
+      "tr": "Adım 1 — Basınç irtifası: PA = 3.700 + (1013 − 1003) × 30 = 3.700 + 300 = 4.000 ft (QNH 1013'ten düşük olduğu için PA rakımdan büyüktür). Adım 2 — 4.000 ft'te ISA sıcaklığı = 15 − (4 × 2) = +7 °C; ISA sapması = +22 − (+7) = +15 °C (ISA +15). Adım 3 — Yoğunluk irtifası: DA = 4.000 + (15 × 120) = 4.000 + 1.800 = 5.800 ft. 4.000 ft yalnızca PA'dır; 6.440 ft ise yanlışlıkla ISA sıcaklığını düşmeden +22 °C kullanma hatasıdır.",
+      "en": "Step 1 — Pressure Altitude: PA = 3,700 + (1013 − 1003) × 30 = 4,000 ft (QNH below 1013 increases PA). Step 2 — ISA temperature at 4,000 ft = 15 − (4 × 2) = +7 °C, giving an ISA deviation of +22 − (+7) = +15 °C. Step 3 — Density Altitude: DA = 4,000 + (15 × 120) = 5,800 ft."
+    },
+    "53211": {
+      "ipucu": "Kısaltmadaki F ve E harflerinin İngilizce açılımını hatırla; sürat saatindeki beyaz arkın üst sınırını belirleyen hızdır.",
+      "tr": "VFE, Maximum Flap Extended speed (flap açık azami hız) anlamına gelir ve sürat saatindeki (ASI) beyaz arkın üst sınırı ile işaretlenir; bu hızın üzerinde flap açmak yapısal hasara yol açabilir. İniş takımı açık azami hız VLE, flapsız stall hızı VS1, asla aşılmaması gereken hız ise VNE'dir.",
+      "en": "VFE stands for Maximum Flap Extended speed and marks the upper end of the ASI white arc; exceeding it with flaps deployed risks structural damage. Maximum landing gear extended speed is VLE, clean stall speed is VS1, and never-exceed speed is VNE."
+    },
+    "53212": {
+      "ipucu": "Sürat saatinde yeşil ark normal işletme, kırmızı çizgi VNE sınırıdır; ikisi arasındaki sarı bölgede uçuş hangi atmosfer koşulunda ve nasıl kumanda kullanımıyla yapılmalıdır?",
+      "tr": "Sürat saatindeki sarı ark (yellow arc), azami yapısal seyir hızı (VNO) ile asla aşılmaması gereken hız (VNE) arasındaki ihtiyat aralığını (caution range) gösterir. Bu hızlarda güçlü türbülans veya ani/tam kumanda hareketleri yapısal yük limitlerini aşabileceğinden yalnızca sakin havada (smooth air) ve yumuşak kumandayla uçulmalıdır. Normal aralık yeşil ark (VS1–VNO), flap aralığı ise beyaz arktır (VS0–VFE).",
+      "en": "The yellow arc on an ASI marks the caution range between VNO and VNE. Because severe gusts or abrupt control deflections in this speed band can exceed structural load limits, operation is permitted in smooth air only and with caution. The green arc (VS1–VNO) is the normal range, and the white arc (VS0–VFE) is the flap range."
+    },
+    "53213": {
+      "ipucu": "Pist 18 güneye (180°) bakar; rüzgârın geldiği 060° yönünü çizip uçağın önünden mi arkasından mı ve sol/sağ hangi kanadından geldiğini belirle. 60° açıda cos 60° = 0,5 ve sin 60° ≈ 0,87'dir.",
+      "tr": "Pist 18 istikameti 180° (güney) olup uçağın kuyruğu 000° (kuzey), sol kanadı 090° (doğu) yönündedir. 060°'den esen rüzgâr kuzey-doğu (arka-sol) çeyrekten gelir; kuyruk çizgisiyle (000°) açısı 60°'dir (pist başıyla 120°). Boyuna bileşen = 16 × cos 60° = 16 × 0,5 = 8 kt arka rüzgârı; yan rüzgâr bileşeni = 16 × sin 60° = 16 × 0,866 ≈ 13,9 ≈ 14 kt soldan yan rüzgâr.",
+      "en": "Runway 18 faces south (180°), so the tail points north (000°) and the left wing points east (090°). Wind from 060° blows from the rear-left quadrant at 60° off the tail (120° off the nose). Longitudinal component = 16 × cos 60° = 8 kt tailwind; crosswind component = 16 × sin 60° ≈ 13.9 ≈ 14 kt from the left."
+    },
+    "53214": {
+      "ipucu": "Çim yüzeyin tekerlek yuvarlanma direnci ile frenleme sürtünme katsayısını kuru asfalt pistle karşılaştır.",
+      "tr": "Çim pist, kuru asfalt veya betona göre daha yumuşak ve pürüzlü olduğundan tekerleklere daha yüksek yuvarlanma direnci (rolling resistance) uygular; bu da ivmelenmeyi azaltarak kalkış koşusunu uzatır. Aynı zamanda çim yüzeyde (özellikle ıslak/çiğli olduğunda) lastik tutunması daha düşük olduğundan frenleme verimi azalır ve iniş durma mesafesi uzar.",
+      "en": "Compared with dry paved surfaces, a grass runway produces higher rolling resistance, reducing acceleration and lengthening take-off distance. At the same time, lower tyre-to-surface friction reduces braking effectiveness (especially when damp), lengthening stopping distance."
+    },
+    "53215": {
+      "ipucu": "Uçağın ataleti nedeniyle yer hızı anında değişemez; arka rüzgâr aniden güçlendiğinde uçağa çarpan bağıl hava akışı (IAS) ve buna bağlı tırmanış performansı o an nasıl etkilenir?",
+      "tr": "Hava hızı (TAS/IAS) kabaca yer hızı ile rüzgâr arasındaki farktır (arka rüzgârda TAS = GS − TW). Uçak yer sürtünme tabakasından çıkıp aniden daha kuvvetli bir arka rüzgâra girdiğinde kütlesel ataleti nedeniyle yer hızı hemen artamaz; bu yüzden işari hava hızı (IAS), taşıma ve tırmanış oranı geçici olarak düşer (negatif rüzgâr kesmesi / wind shear). Tersi olan artan kafa rüzgârı ise geçici IAS artışı yaratır.",
+      "en": "Because of aircraft inertia, ground speed cannot increase instantaneously when climbing into a stronger tailwind. Since airspeed equals ground speed minus tailwind, indicated airspeed (IAS), lift, and rate of climb temporarily decrease (performance-decreasing wind shear)."
+    },
+    "53216": {
+      "ipucu": "En dik tırmanış açısı hızı (Vx) maksimum fazla itmeye, birim zamanda en çok irtifa kazandıran en iyi tırmanış oranı hızı (Vy) ise hangi fazla büyüklüğün maksimumuna karşılık gelir?",
+      "tr": "Tırmanış oranı (ROC), mevcut güç ile gerekli güç arasındaki farka (fazla güç, excess power = Pa − Pr) doğrudan orantılıdır: ROC = (Pa − Pr) ÷ W. Bu nedenle pervaneli bir uçakta en iyi tırmanış oranı hızı (Vy), mevcut fazla gücün maksimum olduğu hızdır. Maksimum fazla itme (excess thrust) ise en iyi tırmanış açısı hızını (Vx) verir.",
+      "en": "Rate of climb is directly proportional to excess power available over power required: ROC = (Pa − Pr) ÷ W. Therefore, best rate of climb speed (Vy) occurs where excess power is maximum, whereas maximum excess thrust yields best angle of climb speed (Vx)."
+    },
+    "53217": {
+      "ipucu": "Sakin havada en uzun süzülüş mesafesi toplam sürüklemenin minimum olduğu (azami L/D) hücum açısında elde edilir; sürükleme eğrisinin dip noktasında indüklenmiş ve parazit sürükleme arasındaki ilişkiyi hatırla.",
+      "tr": "Sakin havada motorsuz süzülüş menzili, taşıma/sürükleme (L/D) oranı maksimum olduğunda en uzun olur. Toplam sürükleme eğrisinin minimum olduğu (L/D max) bu optimum hücum açısında indüklenmiş sürükleme (Di) parazit sürüklemeye (Dp) eşittir. Minimum gerekli güç hızı ise en uzun mesafeyi değil, minimum alçalma oranını (en uzun havada kalış süresini) verir.",
+      "en": "Maximum still-air glide range is achieved at maximum lift-to-drag ratio (L/D max), which corresponds to minimum total drag. At this optimum angle of attack, induced drag equals parasite drag (Di = Dp). Minimum power required gives minimum sink rate (longest time aloft), not maximum distance."
+    },
+    "53218": {
+      "ipucu": "Minimum çöküş (en uzun süre) minimum gerekli güç hızında (Vmp), en iyi süzülüş mesafesi ise minimum sürükleme hızında (Vmd) elde edilir; güç = sürükleme × hız ilişkisi bu iki hızı nasıl sıralar?",
+      "tr": "Güç = Sürükleme × Hız olduğundan minimum gerekli güç hızı (Vmp — minimum çöküş/alçalma oranı) her zaman minimum sürükleme hızından (Vmd — en iyi süzülüş mesafesi) daha düşüktür (yaklaşık Vmp ≈ 0,76 × Vmd). Bu kural her ağırlıkta geçerlidir; daha düşük hızda daha uzun süre havada kalınır ama daha az yatay mesafe katedilir.",
+      "en": "Because Power = Drag × Speed, the minimum power speed (Vmp, minimum sink rate) is always lower than the minimum drag speed (Vmd, best glide range), typically around 0.76 × Vmd. This holds at all weights: flying at Vmp stays aloft longer but covers less horizontal distance."
+    },
+    "53219": {
+      "ipucu": "Dönüş için uçağı yatırdığında taşıma kuvvetinin bir kısmı merkezcil kuvvete harcanır ve yük faktörü (1 / cos φ) artar; sabit güçte bu durum indüklenmiş sürüklemeyi ve fazla gücü nasıl değiştirir?",
+      "tr": "Yatış açısı arttıkça aynı dikey taşıma bileşenini korumak için toplam taşıma ve yük faktörü (n = 1 ÷ cos φ) büyür. Bu da indüklenmiş sürüklemeyi ve gerekli gücü artırır. Güç ayarı sabit tutulduğunda mevcut fazla güç (Pa − Pr) azalacağından tırmanış oranı (ROC) düşer.",
+      "en": "Banking into a turn increases the load factor (n = 1 ÷ cos φ) to maintain vertical lift, which raises induced drag and power required. With an unchanged power setting, less excess power (Pa − Pr) remains available, so the rate of climb decreases."
+    },
+    "53220": {
+      "ipucu": "Rüzgâr seni bedavadan ileri taşırken havada biraz daha uzun kalıp bu yardımdan yararlanmak ister misin, yoksa yakıt tüketimini artırıp daha hızlı mı uçarsın?",
+      "tr": "Arka rüzgârla uçarken azami yer menzili (specific ground range) için hava hızı, sakin havadaki azami menzil hızına (Vmd) kıyasla hafifçe azaltılır (ancak minimum güç/endurance hızının altına inilmez); böylece rüzgârın uçağı ileri taşıma etkisinden daha uzun süre yararlanılır. Kafa rüzgârında ise rüzgâra maruz kalma süresini kısaltmak için hız hafifçe artırılır.",
+      "en": "In a tailwind, maximum ground range is obtained by reducing airspeed slightly below the still-air maximum range speed (towards, but not below, minimum power speed) to benefit longer from the free tailwind push. Conversely, in a headwind, airspeed is increased slightly to spend less time fighting the wind."
+    },
+    "53221": {
+      "ipucu": "Hamleli (gusty) rüzgârda ani rüzgâr düşüşünde stall riskini önlemek için yaklaşma hızına hamle faktörünün (gust factor) ne kadarı eklenir?",
+      "tr": "Uçuş El Kitabında farklı bir yöntem verilmedikçe, hamleli rüzgârda iniş yaklaşmasında normal yaklaşma hızına (Vref) hamle faktörünün (hamle − daimi rüzgâr) yarısı eklenir (Vref + ½ gust factor; çoğu hafif uçakta ekleme üst sınırı yaklaşık 10–15 kt). Bu pay ani rüzgâr kesmesinde stall'ı önlerken pist üzerinde aşırı süzülmeyi (floating) de sınırlar.",
+      "en": "Unless the AFM states otherwise, when landing in gusty conditions add half of the gust factor (gust minus steady wind) to Vref (Vref + ½ gust). This provides a stall margin against sudden lulls without adding excessive energy that would cause long runway float."
+    },
+    "53222": {
+      "ipucu": "Trip Fuel yalnızca tekerleklerin pistten kalkış koşusuna başlamasından varış pistine inişine kadar olan uçuş aşamalarını (kalkış/tırmanış, seyir, alçalma/yaklaşma/iniş) kapsar; yerdeki taksi ve yedek kalemleri dışarıda bırak.",
+      "tr": "Yolculuk yakıtı (Trip Fuel) yalnızca kalkış ve tırmanış (14 L) + seyir (32 L) + alçalma/yaklaşma/iniş (8 L) = 54 L toplamıdır. Çalıştırma/taksi (6 L) taksi yakıtıdır (kalkış öncesi yanar); iniş sonrası park yerine taksi (4 L), yedek meydan (15 L) ve nihai yedek (12 L) ayrı yakıt kalemleridir ve Trip Fuel'a eklenmez. (60 L kalkış taksisini, 64 L her iki taksiyi, 81 L ise yedek kalemleri yanlışlıkla ekleyen tuzaklardır.)",
+      "en": "Trip Fuel includes only the airborne flight phases from take-off to landing: take-off/climb (14 L) + cruise (32 L) + descent/approach/landing (8 L) = 54 L. Start-up/taxi (6 L), taxi to parking (4 L), alternate (15 L), and final reserve (12 L) are separate fuel categories and excluded from Trip Fuel."
+    },
+    "53223": {
+      "ipucu": "Yarım daire kuralı hakiki rotaya değil manyetik rotaya (MT) göre uygulanır. Doğu sapmayı (E) hakiki rotadan çıkararak manyetik rotayı bul, ardından 000°–179° (tek +500) ya da 180°–359° (çift +500) aralığına göre 5.000 ft üstündeki ilk VFR seviyesini seç.",
+      "tr": "Manyetik rota (MT) = Hakiki rota (TT) − Doğu sapması (E) = 182° − 4° = 178° (İngilizce kural: Variation East, Magnetic Least). 178° doğu yarım dairede (000°–179°) yer aldığından VFR uçuş seviyeleri tek bin + 500 ft olarak seçilir (FL 035, FL 055, FL 075…). 5.000 ft üzerindeki en alçak uygun VFR uçuş seviyesi FL 055'tir. FL 065 batı yarım daire (180°–359°) içindir; FL 050 ve FL 060 ise IFR seviyeleridir.",
+      "en": "Magnetic Track = True Track − East Variation = 182° − 4° = 178° ('Variation East, Magnetic Least'). Because 178° lies in the eastbound semicircle (000°–179°), VFR flight levels are odd thousands + 500 ft (FL 035, FL 055, FL 075…). Thus the lowest VFR level above 5,000 ft is FL 055; FL 065 is westbound, while FL 050 and FL 060 are IFR levels."
+    },
+    "53224": {
+      "ipucu": "1:500.000 VFR haritalarındaki enlem-boylam karelerinin ortasında iri rakamla basılı MEF değerinin neyi temsil ettiğini ve hangi basamağa yuvarlandığını hatırla.",
+      "tr": "Azami Yükseklik Rakamı (Maximum Elevation Figure — MEF), 1:500.000 ölçekli VFR haritasında 30' enlem × 30' boylam karesi içindeki en yüksek doğal arazi veya yapay engel yüksekliğine güvenlik/doğruluk payı eklenip bir üst 100 feet'e yuvarlanmasıyla elde edilen yüksekliktir (örneğin 3⁵ → 3.500 ft). VFR seyir seviyesi ya da kontrollü hava sahası tavanı değildir.",
+      "en": "The Maximum Elevation Figure (MEF) on a 1:500,000 VFR chart represents the highest terrain or obstacle elevation within a 30' latitude × 30' longitude quadrangle, plus an allowance for vertical accuracy/uncharted obstacles, rounded up to the next 100 ft. It is not a VFR cruising level or airspace ceiling."
+    },
+    "53225": {
+      "ipucu": "AIP genel bilgiler, yol boyu ve meydanlar olmak üzere üç ana bölüme ayrılır; pist mesafelerinin hangi ana bölüme ait olduğunu seç.",
+      "tr": "İlan edilmiş pist mesafeleri (TORA, TODA, ASDA, LDA) meydanlara özgü verilerdir ve Havacılık Bilgi Yayınının (AIP) Bölüm AD (Aerodromes — özellikle AD 2.13 tablosu) kısmında yayımlanır. GEN genel idari ve ulusal düzenlemeleri, ENR yol boyu hava sahası ve rotaları, ICAO Ek 2 ise hava kurallarını kapsar.",
+      "en": "Declared runway distances (TORA, TODA, ASDA, LDA) are aerodrome-specific data published in AIP Part AD (Aerodromes, table AD 2.13). Part GEN covers general rules, Part ENR covers en-route airspace and routes, and ICAO Annex 2 covers Rules of the Air."
+    },
+    "53226": {
+      "ipucu": "Havada uçuş planı (AFIL) vermek isteyen bir pilot, telsiz frekansında hangi hava trafik hizmet birimiyle iletişim kurar?",
+      "tr": "Kalkıştan sonra havadayken doldurulan uçuş planına AFIL (Air-Filed Flight Plan) denir ve uçuş sırasında temas hâlindeki Uçuş Bilgi Hizmeti (FIS) veya ilgili ATS birimine (örneğin kontrolsüz sahada FIS, kontrollü sahada ilgili ATC/ATS) telsizle iletilir. Dispatch ofisi veya MWO ATS birimi değildir ve havada plan vermek geçerli bir usuldür.",
+      "en": "An Air-Filed Flight Plan (AFIL) is submitted via radio while airborne to the Flight Information Service (FIS) or appropriate ATS unit on frequency. Dispatch offices and meteorological watch offices (MWO) do not receive ATS flight plans, and filing airborne is an authorised ICAO procedure."
+    },
+    "53227": {
+      "ipucu": "Planlanan TAS korunduğu hâlde kontrol noktasına geç varıyorsan yer hızın (GS) planlanandan düşük demektir; bunun rüzgâr, kalan süre ve yakıt yedeği açısından sonucunu çıkar.",
+      "tr": "Planlanan TAS ile uçulmasına rağmen kontrol noktasına 4 dakika geç varılması, yer hızının (GS) beklenenden düşük olduğunu; yani kafa rüzgârının tahminden kuvvetli (veya arka rüzgârın zayıf) olduğunu gösterir. Bu durum sonraki bacaklarda da uçuş süresini ve yakıt tüketimini artırabileceğinden kalan süre ile yakıt yedekleri (gerekirse yedek meydan/yakıt ikmali kararı) derhâl yeniden hesaplanmalıdır.",
+      "en": "Arriving 4 minutes late at a checkpoint while flying the planned TAS means ground speed is lower than planned due to a stronger headwind (or weaker tailwind). Remaining flight time and fuel burn will therefore increase, requiring immediate revision of ETA and fuel reserves (including diversion planning if needed)."
+    },
+    "90301": {
+      "ipucu": "Trafik yükü (Traffic Load) yolcu, bagaj ve kargonun tamamıdır; bunun özellikle ticari gelir getiren kısmına verilen İngilizce terimi ayır.",
+      "tr": "Trafik yükü (Traffic Load) uçaktaki tüm yolcu, bagaj ve kargoyu kapsar; bunun bilet/navlun karşılığı gelir getiren (ücretli) kısmına Payload (faydalı/ticari yük) denir. Variable load ekip ve ikram gibi değişken işletme yükü, DOM kuru işletme kütlesi, Useful load ise trafik yükü + kullanılabilir yakıt toplamıdır.",
+      "en": "Traffic Load covers all passengers, baggage, and cargo on board, while Payload specifically refers to the revenue-earning portion of Traffic Load. Variable load covers crew and catering, DOM is Dry Operating Mass, and Useful Load is Traffic Load plus usable fuel."
+    },
+    "90302": {
+      "ipucu": "Beklenmedik durum yakıtı (Contingency Fuel), yolculuk yakıtının küçük bir yüzdesi ile varış meydanı üzerinde kısa bir bekleme yakıtı karşılaştırılarak hangisi büyükse o alınır.",
+      "tr": "Ders notu ve EASA/ICAO yakıt planlamasına göre Contingency Fuel (beklenmedik durum yakıtı), beklenmeyen rüzgâr, rota veya ATC sapmaları için ayrılır ve yolculuk (trip) yakıtının %5'i ile varış meydanı üzerinde 1.500 ft AGL'de 5 dakika bekleme yakıtından büyük olanı olarak belirlenir. 45/30 dakika kuralı Final Reserve Fuel'a aittir.",
+      "en": "Contingency Fuel accounts for unforeseen wind, routing, or ATC deviations and is determined as the higher of 5% of Trip Fuel or fuel for 5 minutes of holding at 1,500 ft AGL over the destination aerodrome. The 45/30-minute holding rule applies to Final Reserve Fuel, not Contingency Fuel."
+    },
+    "90303": {
+      "ipucu": "Nihai yedek yakıt (Final Reserve Fuel) bekleme süresi pistonlu motorlu uçaklarda gaz türbinli uçaklara kıyasla daha uzundur; 1.500 ft AGL için iki standart dakika değerini sırayla eşleştir.",
+      "tr": "Yedek meydanda 1.500 ft AGL'de bekleme hızında ayrılması zorunlu nihai yedek yakıt (Final Reserve Fuel), pistonlu uçaklar için 45 dakika, gaz türbinli (jet/turboprop) uçaklar için 30 dakikalık yakıttır. Sırayı tersine çevirmek (30/45) sınavda sık karşılaşılan çeldiricidir.",
+      "en": "Final Reserve Fuel for holding at 1,500 ft AGL over the alternate aerodrome is 45 minutes for piston-engine aeroplanes and 30 minutes for gas-turbine aeroplanes. Reversing the two figures (30/45) is a classic exam distractor."
+    },
+    "90304": {
+      "ipucu": "Yasal asgari yakıt kalemlerinin (taksi, yolculuk, beklenmedik durum, yedek meydan, nihai yedek) üzerine tamamen kaptanın veya harekât uzmanının inisiyatifiyle eklenen isteğe bağlı yakıtın adını hatırla.",
+      "tr": "Zorunlu yakıt kalemlerinin (taksi, trip, contingency, alternate, final reserve) üzerine beklenen trafik yoğunluğu veya hava koşulları gibi nedenlerle kaptan pilotun ve/veya harekât uzmanının (dispatcher) takdirine bağlı olarak eklenen yakıt Extra Fuel (ekstra yakıt) olarak adlandırılır. Trip, contingency ve final reserve yasal olarak zorunlu kalemlerdir.",
+      "en": "Extra Fuel is discretionary fuel carried in addition to the mandatory fuel categories (taxi, trip, contingency, alternate, and final reserve) at the discretion of the commander and/or flight dispatcher. Trip, contingency, and final reserve fuel are mandatory rather than discretionary."
+    },
+    "90305": {
+      "ipucu": "ICAO Standart Atmosferinin (ISA) deniz seviyesindeki dört temel sabitini (sıcaklık, basınç, hava yoğunluğu ve 1.000 ft başına sıcaklık düşüş hızı) tek tek doğrula.",
+      "tr": "ICAO Standart Atmosferi (Doc 7488) tamamen kuru hava varsayar ve deniz seviyesinde sıcaklık 15 °C, basınç 1013,25 hPa (29,92 inHg), hava yoğunluğu 1,225 kg/m³ ve tropopoza (36.090 ft / ≈ 36.000 ft) kadar sıcaklık düşüş oranı 1,98 °C (≈ 2 °C) / 1.000 ft (6,5 °C/km) olarak tanımlanır.",
+      "en": "The ICAO Standard Atmosphere (Doc 7488) assumes dry air with sea-level temperature 15 °C, pressure 1013.25 hPa (29.92 inHg), air density 1.225 kg/m³, and a tropospheric temperature lapse rate of 1.98 °C (≈ 2 °C) per 1,000 ft up to the tropopause."
+    },
+    "90306": {
+      "ipucu": "Hız zincirini sırayla izle: IAS'tan CAS'a alet ve pozisyon hatası, EAS'tan TAS'a ise yoğunluk hatası düzeltilir; yüksek hızlarda CAS ile EAS arasındaki ara düzeltmeyi hatırla.",
+      "tr": "Hava hızı dönüşüm zinciri IAS → (alet + pozisyon hatası) → CAS → (sıkışabilirlik hatası) → EAS → (yoğunluk hatası) → TAS şeklindedir. Mach 0,3 / 300 KTAS üzerindeki yüksek hızlarda pitot tüpü önündeki hava sıkıştığı için CAS, EAS'den biraz büyük okunur; sıkışabilirlik düzeltmesi uygulanarak Eşdeğer Hava Hızı (EAS) elde edilir.",
+      "en": "The airspeed chain runs IAS → (instrument/position error) → CAS → (compressibility error) → EAS → (density error) → TAS. Above roughly Mach 0.3 (300 KTAS), air compresses at the pitot intake so CAS over-reads; applying compressibility correction yields Equivalent Airspeed (EAS)."
+    },
+    "90307": {
+      "ipucu": "Sürat saatindeki üç renkli arkı ayır: yeşil normal işletme, sarı ihtiyat, beyaz ise flap kullanım aralığıdır; beyaz arkın alt ve üst hız kodlarını eşleştir.",
+      "tr": "Sürat saatindeki (ASI) beyaz ark (white arc), flap işletme aralığını gösterir: alt sınırı iniş konfigürasyonundaki (tam flap + iniş takımı) stall hızı VS0, üst sınırı ise flap açık azami hız VFE'dir. Yeşil ark VS1–VNO normal aralığını, sarı ark ise VNO–VNE ihtiyat aralığını işaretler.",
+      "en": "The white arc on an ASI defines the flap operating range: its lower limit is VS0 (stalling speed in the landing configuration) and its upper limit is VFE (maximum flap extended speed). The green arc spans VS1–VNO and the yellow arc spans VNO–VNE."
+    },
+    "90308": {
+      "ipucu": "Performans Sınıf B, genel havacılık ve hafif ticari pervaneli uçakları kapsar; azami yolcu koltuğu sayısı ve MTOM eşiğini hatırla (Sınıf A daha büyük jet ve turboproplardır).",
+      "tr": "EASA/SHGM performans sınıflandırmasına göre Sınıf B (Class B), azami yolcu koltuk kapasitesi 9 veya daha az ve Azami Kalkış Kütlesi (MTOM) 5.700 kg veya altında olan tek veya çift motorlu pervaneli uçakları kapsar. 10+ koltuklu veya 5.700 kg üzeri çok motorlu turboprop ve tüm çok motorlu jetler Sınıf A; 10+ koltuklu veya 5.700 kg üzeri çok motorlu pistonlu uçaklar Sınıf C'dir.",
+      "en": "Performance Class B comprises single- or multi-engine propeller aeroplanes with a maximum passenger seating configuration of 9 or fewer and an MTOM of 5,700 kg or less. Multi-engine turboprops above those limits and all multi-engine turbojets belong to Class A, while larger multi-engine piston aeroplanes belong to Class C."
+    },
+    "90309": {
+      "ipucu": "Kalkış mesafesinin sonunda ulaşılması gereken ekran yüksekliği (screen height), büyük ticari jetleri kapsayan Sınıf A ile hafif pervaneli uçakları kapsayan Sınıf B arasında farklıdır; hangisinde daha yüksektir?",
+      "tr": "Kalkış mesafesi hesabında yerden kesilme sonrası aşılması gereken standart ekran yüksekliği (screen height), Performans Sınıf A uçaklar için 35 ft (kuru pistte; ıslak pistte 15 ft'e inebilir), Performans Sınıf B uçaklar için 50 ft'tir. Sınıf A ve Sınıf B rakamlarını yer değiştirmek yaygın bir sınav tuzağıdır.",
+      "en": "The standard take-off screen height at the end of the take-off distance is 35 ft for Performance Class A aeroplanes (dry runway) and 50 ft for Performance Class B aeroplanes. Swapping 35 ft and 50 ft between Class A and Class B is a frequent exam trap."
+    },
+    "90310": {
+      "ipucu": "Islak pistte frenleme sürtünmesi zayıfladığı için vazgeçilen kalkışta durma mesafesi uzar; karar hızı V1 bu nedenle nasıl değişir ve yerdeki minimum kontrol hızı VMCG ile hangi eşitsizliği sağlamak zorundadır?",
+      "tr": "Islak pistte frenleme performansı düştüğünden kalkıştan vazgeçildiğinde durmak için daha uzun mesafe gerekir; bu nedenle karar hızı V1 düşürülür (daha erken karar verilir). Ayrıca motor arızasında yalnızca aerodinamik dümenle pist ekseninde yön kontrolünün korunabilmesi için V1 hiçbir zaman yerdeki minimum kontrol hızının altına inemez: her zaman VMCG ≤ V1 (ve V1 ≤ VR) olmalıdır.",
+      "en": "On a wet runway, lower braking friction lengthens the stopping distance for a rejected take-off, so V1 is reduced to commit earlier. To ensure directional control using aerodynamic surfaces alone after an engine failure on the ground, VMCG must never exceed V1 (VMCG ≤ V1 ≤ VR)."
+    },
+    "90311": {
+      "ipucu": "Performans hesaplarında rüzgâr sapmalarına karşı emniyet payı her zaman muhafazakâr çalışır: performansa yardımcı olan kafa rüzgârı eksik, performansı bozan arka rüzgâr ise fazlasıyla hesaba katılır.",
+      "tr": "Yönetmelikler gereği kalkış ve iniş performans hesaplarında ani rüzgâr değişimlerine karşı güvenlik payı olarak rapor edilen kafa rüzgârı bileşeninin en fazla %50'si, arka rüzgâr bileşeninin ise en az %150'si hesaba katılır. Böylece kafa rüzgârı aniden zayıflasa veya arka rüzgâr güçlense bile pist mesafesi emniyette kalır.",
+      "en": "To provide a conservative margin against wind fluctuations in performance calculations, regulations permit factoring no more than 50% of a reported headwind component and require factoring at least 150% of any reported tailwind component."
+    },
+    "90312": {
+      "ipucu": "CLTOM hava kütlesi içindeki tırmanış gradyanına (hava açısına), OLTOM ise yerdeki sabit engellerin üzerinden geçiş açısına (yer açısına) bağlıdır. Arka rüzgâr hangisini etkiler?",
+      "tr": "Tırmanış sınırlı kalkış kütlesi (CLTOM) uçağın hava kütlesi içindeki aerodinamik tırmanış gradyanına bağlı olduğundan sabit rüzgâr CLTOM'u etkilemez. Ancak arka rüzgâr yer hızını (GS) artırıp yer üzerindeki tırmanış açısını yatıklaştırdığı için uçağın pist sonundaki sabit engelleri aşma payı azalır ve engel sınırlı kalkış kütlesi (OLTOM) düşer.",
+      "en": "Climb-Limited Take-Off Mass (CLTOM) depends on the air climb gradient through the air mass, so a steady tailwind does not change CLTOM. However, a tailwind increases ground speed and flattens the ground-referenced flight path over fixed obstacles, reducing Obstacle-Limited Take-Off Mass (OLTOM)."
+    },
+    "90313": {
+      "ipucu": "Total EET yerdeki taksiyi kapsamaz, kalkışla başlar; VFR uçuşun bittiği referans nokta ile IFR uçuşta aletli yaklaşma usulünün başladığı referans nokta arasındaki farkı hatırla.",
+      "tr": "ICAO uçuş planı Madde 16'daki Toplam Tahmini Geçen Süre (Total EET), taksi süresini içermez: VFR uçuşlarda kalkıştan varış meydanı üzerine varışa kadar; IFR uçuşlarda ise kalkıştan varış meydanının aletli yaklaşma usulünün başladığı İlk Yaklaşma Noktasına (Initial Approach Fix — IAF) kadar (IAF yoksa meydan üzerine kadar) geçen süredir.",
+      "en": "In ICAO Flight Plan Item 16, Total EET excludes taxi time: for VFR flights it is the time from take-off until arrival over the destination aerodrome, whereas for IFR flights it is from take-off until reaching the Initial Approach Fix (IAF) where the instrument approach procedure begins (or over the aerodrome if no IAF exists)."
+    },
+    "90314": {
+      "ipucu": "Kanat depolarındaki yakıt, uçuşta kanatların ürettiği yukarı yönlü taşıma kuvvetine karşı aşağı ağırlık yaparak kanat kökünü rahatlatır; yakıt boşken gövde yükü aşırı artarsa hangi yapısal zorlanma oluşur?",
+      "tr": "Kanat depoları dolu iken yakıtın ağırlığı kanatların ürettiği yukarı yönlü taşıma kuvvetini yerinden dengeleyerek kanat kökündeki yükü hafifletir (wing bending relief). Yakıt tükendiğinde tüm ağırlık gövdede toplanır; Maksimum Sıfır Yakıt Kütlesi (MZFM) sınırı, kanat depoları boşken gövdedeki yükün kanat kökünde aşırı yukarı eğilme momenti (wing root bending moment) oluşturmasını önlemek için konur.",
+      "en": "Fuel stored in the wings counteracts upward wing lift and relieves structural stress at the wing root. When wing tanks are empty, fuselage mass creates maximum upward wing root bending moment; Maximum Zero Fuel Mass (MZFM) is a structural limit specifically designed to prevent excessive wing root bending."
+    },
+    "90315": {
+      "ipucu": "İzin verilen MTOM üç sınırın en küçüğüdür: (1) düzenlenmiş kalkış kütlesi RTOM = min(MSTOM, PLTOM), (2) düzenlenmiş iniş kütlesi RLM + yolculuk yakıtı (trip), (3) MZFM + kalkış yakıtı (TOF).",
+      "tr": "Üç kalkış sınırı ayrı ayrı hesaplanıp en kısıtlayıcı (en küçük) olanı seçilir: (1) RTOM = min(MSTOM 65.000, PLTOM 68.000) = 65.000 kg. (2) RLM = min(MSLM 59.000, PLLM 57.500) = 57.500 kg → İniş sınırlı kalkış kütlesi = RLM + Trip = 57.500 + 5.500 = 63.000 kg. (3) Sıfır yakıt sınırlı kalkış kütlesi = MZFM + TOF = 53.000 + 11.000 = 64.000 kg. İzin verilen MTOM = min(65.000, 63.000, 64.000) = 63.000 kg (iniş kütlesiyle sınırlı).",
+      "en": "Calculate all three limits and take the lowest: (1) RTOM = min(MSTOM 65,000, PLTOM 68,000) = 65,000 kg. (2) RLM = min(MSLM 59,000, PLLM 57,500) = 57,500 kg → Landing-limited TOM = RLM + Trip = 57,500 + 5,500 = 63,000 kg. (3) Zero-fuel-limited TOM = MZFM + TOF = 53,000 + 11,000 = 64,000 kg. Allowable MTOM = min(65,000, 63,000, 64,000) = 63,000 kg."
+    },
+    "90316": {
+      "ipucu": "%MAC formülünü uygula: ağırlık merkezinin hücum kenarına (LeMAC) uzaklığını ortalama aerodinamik kord (MAC) uzunluğuna bölüp 100 ile çarp.",
+      "tr": "Formül: %MAC = [(CG − LeMAC) ÷ MAC] × 100. Verilenlerle: CG − LeMAC = 12,90 − 12,40 = 0,50 m. %MAC = (0,50 ÷ 2,00) × 100 = 0,25 × 100 = %25 MAC. CG'nin hücum kenarından 0,50 m geride olması, 2,00 m'lik kordun tam dörtte birine (%25) karşılık gelir.",
+      "en": "Formula: %MAC = [(CG − LeMAC) ÷ MAC] × 100. Here, CG − LeMAC = 12.90 − 12.40 = 0.50 m, so %MAC = (0.50 ÷ 2.00) × 100 = 25% MAC (one quarter of the 2.00 m chord aft of the leading edge)."
+    },
+    "90317": {
+      "ipucu": "Birim alana düşen yük (kg/m²) = Kütle ÷ Temas alanıdır; kütleyi değiştirmeden döşeme üzerindeki basıncı düşürmek için temas alanını nasıl büyütürsün?",
+      "tr": "Alan (döşeme) yük limiti (area/floor load limit, kg/m²) = Yük kütlesi ÷ Temas alanı formülüyle denetlenir. Küçük tabanlı ağır bir paket bu limiti aşıyorsa altına yük dağıtıcı kalas veya plakalar (load spreaders) yerleştirilerek temas alanı büyütülür ve döşeme panellerine binen basınç güvenli sınırın altına indirilir (yük dağıtıcının kendi ağırlığı da toplam hesaba katılır).",
+      "en": "Floor/area load intensity equals Mass ÷ Contact Area (kg/m²). When a dense, small-footprint item exceeds the floor load limit, placing load spreaders (planks or plates) beneath it increases the contact area and spreads the weight safely across the floor structure (including the mass of the spreaders themselves in the weight check)."
     }
   }
 }
