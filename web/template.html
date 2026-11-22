@@ -23,6 +23,10 @@
 <link rel="alternate icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PPL Çalışma">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#F2F4F7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#080B10" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,6 +111,11 @@ button{cursor:pointer; background:none; border:none}
   text-transform:uppercase; color:var(--ink-2); white-space:nowrap}
 .tbtn:hover{border-color:var(--rule-2); color:var(--ink)}
 .tbtn.on{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink)}
+.offpill{flex:none; display:inline-flex; align-items:center; gap:5px; padding:4px 8px;
+  border-radius:99px; border:1px solid var(--due); background:var(--due-soft);
+  color:var(--due); font-family:var(--f-num); font-size:10px; font-weight:600;
+  letter-spacing:.05em; text-transform:uppercase; white-space:nowrap}
+.offpill::before{content:''; width:6px; height:6px; border-radius:50%; background:currentColor}
 .ava{flex:none; width:21px; height:21px; border-radius:50%; display:inline-grid;
   place-items:center; background:hsl(var(--h) 46% 30%); color:#fff;
   font-family:var(--f-ui); font-size:9px; font-weight:700; letter-spacing:.02em;
@@ -534,15 +543,40 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 .tag.slow{color:var(--due)}
 .tag.exam{color:var(--accent-ink); background:var(--accent-soft); font-weight:600}
 .tag.cand{color:var(--cyan)} .tag.ek{color:var(--ink-2)} .tag.rev{color:var(--bad)}
-.xnote{border-top:1px solid var(--rule); padding:9px 14px 10px; background:var(--surface-2);
-  font-size:13px; color:var(--ink-2); line-height:1.45}
+.xnote{border-top:1px solid var(--rule); padding:11px 14px 12px; background:var(--surface-2);
+  font-size:13.5px; color:var(--ink); line-height:1.52}
 .xrow{display:flex; gap:9px; align-items:baseline}
-.xrow + .xrow{margin-top:5px}
+.xrow + .xrow{margin-top:8px; padding-top:8px; border-top:1px solid var(--rule)}
+.xrow.xexp{flex-direction:column; gap:5px; align-items:stretch}
+.xmeta{display:flex; align-items:center; justify-content:space-between; gap:8px}
+.xbody{color:var(--ink); overflow-wrap:anywhere}
+.xlang{display:inline-flex; border:1px solid var(--rule-2); border-radius:var(--r); overflow:hidden; flex:none}
+.xlang button{min-width:30px; min-height:24px; padding:2px 7px; font-family:var(--f-num);
+  font-size:10px; font-weight:600; letter-spacing:.05em; color:var(--ink-2); background:var(--surface)}
+.xlang button + button{border-left:1px solid var(--rule-2)}
+.xlang button.on{background:var(--accent); color:var(--on-accent)}
+.xhint{border-top:1px solid var(--rule); border-left:3px solid var(--cyan);
+  padding:11px 14px; background:var(--surface-2); font-size:13.5px; color:var(--ink); line-height:1.5}
+.xhint .xacts{display:flex; gap:7px; flex-wrap:wrap; margin-top:9px}
+.xhint .tbtn{font-size:11px; padding:5px 9px}
 .xrow .xl{flex:none; font-family:var(--f-num); font-size:9.5px; letter-spacing:.1em;
   text-transform:uppercase; color:var(--ink-3); min-width:58px}
 .xrow a{color:var(--accent); text-decoration:underline; text-underline-offset:2px}
 .xrow .xref{color:var(--ink-3); font-size:12px}
-.xsrc{font-size:12.5px}
+.xsrc{font-size:12.5px; color:var(--ink-2)}
+.rexp{margin-top:7px; font-size:12.5px; line-height:1.48; color:var(--ink-2)}
+.rexp summary{cursor:pointer; font-family:var(--f-num); font-size:10.5px; letter-spacing:.06em;
+  text-transform:uppercase; color:var(--accent-ink); padding:2px 0}
+.rexp p{margin:5px 0 0; color:var(--ink); overflow-wrap:anywhere}
+.offbox{background:var(--surface-2); border:1px solid var(--rule); border-radius:var(--r);
+  padding:12px 13px}
+.offbox .offst{display:flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:var(--ink)}
+.offbox .offdot{width:8px; height:8px; border-radius:50%; flex:none; background:var(--ink-3)}
+.offbox .offdot.ok{background:var(--ok)}
+.offbox .offdot.wait{background:var(--due)}
+.offbox .offdot.off{background:var(--cyan)}
+.offbox .note{margin-top:6px}
+.offbox .cloudrow{margin-top:9px; margin-bottom:0}
 .askbtn{flex:none; display:inline-flex; align-items:center; padding:3px 9px;
   border-radius:99px; border:1px solid var(--rule-2); background:var(--surface);
   color:var(--ink-2); font-family:var(--f-num); font-size:10.5px; font-weight:500;
@@ -632,6 +666,7 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
     display:inline-flex; align-items:center; justify-content:center}
   .bar #bWho{padding:4px}
   .bar .gsign{width:40px; padding:0}
+  .bar .offpill{font-size:9px; padding:3px 6px; letter-spacing:.02em}
   .opt{display:grid; grid-template-columns:23px minmax(0,1fr); gap:6px 10px}
   .opt .m{grid-column:2; justify-self:start; margin:0; padding:0}
   .navrow .nb,.navpop input{min-height:44px}
@@ -686,6 +721,9 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
   .quiz-view .opts{padding:6px 0; gap:6px}
   .quiz-view .opt{padding:10px 11px; border-radius:9px; font-size:16px; line-height:1.35}
   .quiz-view .figbox{margin:10px 0; padding:8px}
+  .quiz-view .xnote,.quiz-view .xhint{margin:8px 0 0; border:1px solid var(--rule); border-radius:9px}
+  .quiz-view .xhint{border-left:3px solid var(--cyan)}
+  .quiz-view .xlang button{min-width:36px; min-height:30px}
   .quiz-view .foot{position:fixed; bottom:0; left:0; right:0; z-index:20; margin:0;
     padding:6px max(12px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));
     background:var(--surface); border-top:1px solid var(--rule)}
@@ -699,6 +737,12 @@ input:focus, select:focus, textarea:focus{border-color:var(--accent); outline:no
 }
 @media (max-width:359px){
   .quiz-view .compact-clock{display:none}
+}
+@media (max-width:380px){
+  .bar{gap:4px; padding-left:8px; padding-right:8px}
+  .bar .tbtn{min-width:34px; padding:6px 5px}
+  .bar .offpill{font-size:8.5px; padding:2px 5px; gap:3px; letter-spacing:0}
+  .bar .offpill::before{width:5px; height:5px}
 }
 
 /* ── Özet ── */
@@ -871,6 +915,7 @@ kbd{font-family:var(--f-num); font-size:10px; background:var(--surface-2);
     </svg>PPL<span class="long"> Çalışma</span>
   </span>
   <span class="sp"></span>
+  <span class="offpill hidden" id="offPill" role="status">Çevrimdışı</span>
   <button class="tbtn" id="bWho" type="button"></button>
   <button class="tbtn gsign hidden" id="bLogin" type="button" aria-label="Google ile giriş yap">
     <svg viewBox="0 0 18 18" aria-hidden="true"><path fill="#4285F4" d="M17.6 9.2c0-.6-.1-1.3-.2-1.9H9v3.5h4.8a4.1 4.1 0 0 1-1.8 2.7v2.2h2.9c1.7-1.6 2.7-3.9 2.7-6.5Z"/><path fill="#34A853" d="M9 18c2.4 0 4.5-.8 6-2.2l-2.9-2.3c-.8.6-1.9.9-3.1.9-2.4 0-4.4-1.6-5.1-3.8H.9v2.3A9 9 0 0 0 9 18Z"/><path fill="#FBBC05" d="M3.9 10.7a5.4 5.4 0 0 1 0-3.4V5H.9a9 9 0 0 0 0 8l3-2.3Z"/><path fill="#EA4335" d="M9 3.6c1.3 0 2.5.5 3.4 1.3L15 2.3A9 9 0 0 0 .9 5l3 2.3C4.6 5.2 6.6 3.6 9 3.6Z"/></svg>
@@ -1050,10 +1095,150 @@ const AGZAMAN = 12000;
 // bu tarayıcıda hatırlar; girişten sonra ad elle değişirse bağ yeni ada taşınır.
 const ACCT = 'atpl.acct:';
 
+const isOnline = () => typeof navigator === 'undefined' || navigator.onLine !== false;
+const DIRTY_KEY = 'atpl.dirty';
+
+// ── Çevrimdışı katman: Service Worker, kalıcı depolama ve uygulama yükleme ──
+const Offline = {
+  supported: typeof navigator !== 'undefined' && 'serviceWorker' in navigator &&
+             (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1'),
+  fileMode: location.protocol === 'file:',
+  ready: location.protocol === 'file:',
+  checking: false,
+  failed: false,
+  version: '',
+  msg: '',
+  reg: null,
+  installPrompt: null,
+  supportsInstall: typeof Navigator !== 'undefined' && typeof Navigator.prototype.install === 'function',
+
+  async init(){
+    this.paint();
+    if (navigator.storage && navigator.storage.persist){
+      navigator.storage.persist().catch(() => {});
+    }
+    if (!this.supported) return;
+    this.checking = true;
+    this.paint();
+    try{
+      const reg = await navigator.serviceWorker.register('./sw.js', { scope: './' });
+      this.reg = reg;
+      reg.addEventListener('updatefound', () => {
+        const w = reg.installing;
+        if (!w) return;
+        w.addEventListener('statechange', () => {
+          if (w.state === 'activated') this.checkCache();
+        });
+      });
+      navigator.serviceWorker.addEventListener('controllerchange', () => this.checkCache());
+      await navigator.serviceWorker.ready;
+      await this.checkCache();
+    }catch(e){
+      this.checking = false;
+      this.failed = true;
+      this.paint();
+    }
+  },
+
+  async checkCache(){
+    if (this.fileMode){ this.ready = true; this.checking = false; this.paint(); return true; }
+    let ok = false, ver = '';
+    try{
+      const worker = navigator.serviceWorker.controller || (this.reg && this.reg.active);
+      if (worker && typeof MessageChannel !== 'undefined'){
+        const res = await new Promise(resolve => {
+          const ch = new MessageChannel();
+          const t = setTimeout(() => resolve(null), 1500);
+          ch.port1.onmessage = ev => { clearTimeout(t); resolve(ev.data || null); };
+          try{ worker.postMessage({ type: 'CACHE_CHECK' }, [ch.port2]); }
+          catch(e){ clearTimeout(t); resolve(null); }
+        });
+        if (res && res.ready){ ok = true; ver = res.version || ''; }
+      }
+      if (!ok && typeof caches !== 'undefined'){
+        const hit = await caches.match('./index.html', { ignoreSearch: true })
+          || await caches.match('./', { ignoreSearch: true });
+        if (hit) ok = true;
+      }
+    }catch(e){}
+    this.ready = ok;
+    this.version = ver;
+    this.checking = false;
+    this.failed = !ok && !this.reg;
+    this.paint();
+    return ok;
+  },
+
+  async refresh(){
+    if (!this.supported || !isOnline()){
+      this.msg = isOnline() ? 'Bu ortamda önbellek desteklenmiyor.' : 'Çevrimdışısın — önbellek zaten aktif.';
+      this.paint(); return;
+    }
+    this.checking = true; this.msg = ''; this.paint();
+    try{
+      if (!this.reg) this.reg = await navigator.serviceWorker.register('./sw.js', { scope: './' });
+      await this.reg.update();
+      await navigator.serviceWorker.ready;
+      const ok = await this.checkCache();
+      this.msg = ok ? 'Önbellek doğrulandı — uçak modunda açılıp çalışmaya hazır.'
+                    : 'Önbellek doğrulanamadı — sayfayı bir kez yenile.';
+    }catch(e){
+      this.checking = false;
+      this.msg = 'Önbellek güncellenemedi.';
+    }
+    this.paint();
+  },
+
+  async downloadSingleFile(){
+    try{
+      let text = '';
+      if (this.fileMode){
+        text = '<!doctype html>\n' + document.documentElement.outerHTML;
+      } else {
+        const res = await fetch('./index.html');
+        if (!res.ok) throw new Error('fetch');
+        text = await res.text();
+      }
+      const b = new Blob([text], { type: 'text/html; charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(b);
+      a.download = 'ppl-calisma-cevrimdisi-' + today() + '.html';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1500);
+      this.msg = 'Tek dosya indirildi — internet olmadan doğrudan açabilirsin.';
+    }catch(e){
+      this.msg = 'Dosya indirilemedi.';
+    }
+    this.paint();
+  },
+
+  canInstall(){ return this.supportsInstall || !!this.installPrompt; },
+
+  paint(){
+    const pill = el('offPill');
+    if (pill) pill.classList.toggle('hidden', isOnline());
+    const box = el('offlineBox');
+    if (box){ box.innerHTML = offlineInner(); bindOffline(); }
+    if (R) refreshAskControl();
+  },
+};
+
+addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  Offline.installPrompt = e;
+  Offline.paint();
+});
+addEventListener('appinstalled', () => {
+  Offline.installPrompt = null;
+  Offline.msg = 'Uygulama cihaza eklendi.';
+  Offline.paint();
+});
+
 const Cloud = {
   acik: !!(FBCONF && FBCONF.apiKey),
   sdk: null, user: null, durum: '', mesgul: false,
-  sonEs: 0, sonCek: 0, kirli: false, pT: null, girisSonrasi: false,
+  sonEs: 0, sonCek: 0, kirli: !!ls.get(DIRTY_KEY), pT: null,
+  girisSonrasi: false, bekleInit: false,
 
   async yukle(){
     if (this.sdk) return this.sdk;
@@ -1075,6 +1260,13 @@ const Cloud = {
 
   async init(){
     if (!this.acik) return;
+    if (!isOnline()){
+      // Çevrimdışı açılışta bulut kalıcı kapanmasın; internet gelince başlasın
+      this.bekleInit = true;
+      paintCloud();
+      return;
+    }
+    this.bekleInit = false;
     try{
       const s = await this.yukle();
       s.b.onAuthStateChanged(s.auth, u => {
@@ -1091,10 +1283,11 @@ const Cloud = {
           if (panel && el('sheet').classList.contains('on')) openStats();
         }
         paintCloud();
-        this.esitle(true);
+        if (isOnline()) this.esitle(true);
       });
       s.b.getRedirectResult(s.auth).catch(() => {});
     }catch(e){
+      if (!isOnline()){ this.bekleInit = true; paintCloud(); return; }
       // Artifact kum havuzu dış kaynakları engeller — sessizce kapalı kalır
       this.acik = false;
       paintCloud();
@@ -1117,6 +1310,10 @@ const Cloud = {
   },
 
   async girisYap(){
+    if (!isOnline()){
+      this.durum = 'Çevrimdışısın — giriş için internet gerekir. İlerlemen bu cihaza güvenle kaydediliyor.';
+      paintCloud(); return;
+    }
     try{
       const s = await this.yukle();
       await s.b.signInWithPopup(s.auth, new s.b.GoogleAuthProvider());
@@ -1141,10 +1338,10 @@ const Cloud = {
 
   async cikisYap(){
     try{
-      if (this.kirli){ try{ await this.gonder(); }catch(e){} }
+      if (this.kirli && isOnline()){ try{ await this.gonder(); }catch(e){} }
       const s = await this.yukle();
       await s.b.signOut(s.auth);
-      this.sonEs = 0; this.kirli = false;
+      this.sonEs = 0; this.kirli = false; ls.del(DIRTY_KEY);
       setPic(ME, '');                    // resim hesaba ait, ad ve veri yerelde kalır
       paintWho(); if (!R) home();
     }catch(e){ this.durum = 'Çıkış yapılamadı.'; paintCloud(); }
@@ -1156,28 +1353,29 @@ const Cloud = {
   /** Profil adı ve verisi dışarıdan verilebilir — profil değiştirirken
    *  eskisini, ad değiştirirken yenisini yollamak için gerekiyor. */
   async gonder(ad, veri){
-    if (!this.user) return;
+    if (!this.user || !isOnline()) return;
     const isim = ad || ME;
     const s = await this.yukle();
     const soz = s.c.setDoc(this.ref(s, isim),
       { name: isim, data: veri || JSON.stringify(S), updated: Date.now(), v: 2 });
     // Zaman aşımına uğrasak bile yazma kuyrukta; sunucu onaylayınca durumu düzelt
     soz.then(() => {
-      this.sonEs = Date.now(); this.kirli = false;
-      if (/sıraya alındı/.test(this.durum)) this.durum = '';
+      this.sonEs = Date.now(); this.kirli = false; ls.del(DIRTY_KEY);
+      if (/sıraya alındı|bağlantı gelince/.test(this.durum)) this.durum = '';
       paintCloud();
     }, () => {});
     await sureli(soz, AGZAMAN);
     this.sonEs = Date.now();
     this.kirli = false;
+    ls.del(DIRTY_KEY);
   },
   async sil(ad){
-    if (!this.user) return;
+    if (!this.user || !isOnline()) return;
     const s = await this.yukle();
     await s.c.deleteDoc(this.ref(s, ad));
   },
   async cek(){
-    if (!this.user) return 0;
+    if (!this.user || !isOnline()) return 0;
     const s = await this.yukle();
     const snap = await sureli(
       s.c.getDocs(s.c.collection(s.db, 'users', this.user.uid, 'profiles')), AGZAMAN);
@@ -1193,6 +1391,10 @@ const Cloud = {
   /** Çek + kaynaştır + gönder. Çakışma yok: iki taraf birleşir. */
   async esitle(sessiz){
     if (!this.user || this.mesgul) return;
+    if (!isOnline()){
+      if (!sessiz){ this.durum = ''; paintCloud(); }
+      return;
+    }
     this.mesgul = true; this.durum = ''; paintCloud();
     let degisti = false;
     try{
@@ -1201,7 +1403,8 @@ const Cloud = {
       await this.gonder();
     }catch(e){
       const k = (e && e.code) || (e && e.message) || 'bilinmeyen hata';
-      this.durum = k === 'timeout'
+      this.durum = !isOnline() ? ''
+        : k === 'timeout'
         ? 'Bağlantı yavaş — değişiklikler sıraya alındı, kendiliğinden gönderilecek.'
         : /permission/i.test(k)
         ? 'Yetki reddedildi — güvenlik kuralları yayımlandı mı?'
@@ -1221,13 +1424,14 @@ const Cloud = {
 
   /** Kaydın ardından buluta gönderimi geciktirir; yazma sayısını düşük tutar. */
   schedule(){
+    if (this.acik){ this.kirli = true; ls.set(DIRTY_KEY, '1'); }
     if (!this.user) return;
-    this.kirli = true;
     clearTimeout(this.pT);
+    if (!isOnline()){ paintCloud(); return; }
     this.pT = setTimeout(() => this.gonderGuvenli(), 4000);
   },
   async gonderGuvenli(){
-    if (!this.user) return;
+    if (!this.user || !isOnline()) return;
     // Eşitleme sürerken gönderme; bekleyeni düşürmeyip biraz sonra dene
     if (this.mesgul){
       clearTimeout(this.pT);
@@ -1235,20 +1439,20 @@ const Cloud = {
       return;
     }
     try{ await this.gonder(); this.durum = ''; }
-    catch(e){ this.durum = 'Gönderilemedi — bağlantı gelince tekrar denenecek.'; }
+    catch(e){ if (isOnline()) this.durum = 'Gönderilemedi — bağlantı gelince tekrar denenecek.'; }
     paintCloud();
   },
   /** Sekme kapanırken/gizlenirken bekleyeni hemen yolla; 4 sn'lik pencerede
    *  verilen son cevaplar kaybolmasın. */
   simdiGonder(){
-    if (!this.user || !this.kirli) return;
+    if (!this.user || !this.kirli || !isOnline()) return;
     clearTimeout(this.pT);
     this.gonder().catch(() => {});
   },
   /** Sekmeye dönüldüğünde başka cihazdaki ilerlemeyi al. Tur ortasında
    *  karıştırmamak için sadece ana ekrandayken çalışır. */
   async donusteCek(){
-    if (!this.user || this.mesgul || R) return;
+    if (!this.user || this.mesgul || R || !isOnline()) return;
     if (Date.now() - this.sonCek < 30000) return;
     await this.esitle(true);
   },
@@ -1375,7 +1579,16 @@ addEventListener('visibilitychange', () => {
 setInterval(() => { if (sureDegisti){ sureYaz(); flushLocal(); } }, 60e3);
 // Saniyede bir: süre birikir, soru ekranındaki iki sayaç tazelenir.
 setInterval(() => { akit(Date.now()); if (R) tmrBoya(); }, 1000);
-addEventListener('online', () => { if (Cloud.kirli) Cloud.gonderGuvenli(); });
+addEventListener('online', () => {
+  Offline.paint();
+  paintCloud();
+  if (Cloud.acik && !Cloud.sdk) Cloud.init();
+  else if (Cloud.user && (Cloud.kirli || Cloud.durum || ls.get(DIRTY_KEY))) Cloud.esitle(true);
+});
+addEventListener('offline', () => {
+  Offline.paint();
+  paintCloud();
+});
 // Sekme saatlerce açık kalırsa başka cihazdaki ilerleme de gelsin; donusteCek
 // tur ortasında ve 30 sn'den yeni çekişte kendisi geri dönüyor.
 setInterval(() => Cloud.donusteCek(), 3e5);
@@ -1454,7 +1667,7 @@ function bindAccount(u){
 // hideFig kaldırıldı: şekil gerektiren soruların hepsi çizildi, hiçbiri gizlenmiyor
 const DEFAULTS = { deck:'new', pick:{}, q:'', hideDup:true, gen:true,
                    ek:true, hideFlag:false, count:0, mode:'study', order:'smart',
-                   sound:true, ai:'chatgpt', lang:'en',
+                   sound:true, autoNext:true, ai:'chatgpt', lang:'en', expLang:'tr',
                    aiPrompt:'Doğru cevabı veya doğru şıkkı söylemeden, doğru cevabı kendim verebileceğim şekilde konuyu kısaca Türkçe anlat.' };
 const F = Object.assign({}, DEFAULTS);
 
@@ -1471,6 +1684,13 @@ const F = Object.assign({}, DEFAULTS);
 const trMode = () => F.lang === 'tr';
 const qText = q => (trMode() ? q[10] : q[12]) || q[3];
 const qOpts = q => (trMode() ? q[11] : q[13]) || q[4];
+const qHint = q => (XT[q[0]] && XT[q[0]].h) || '';
+const qExpText = (q, lang) => {
+  const x = XT[q[0]];
+  if (!x) return '';
+  const d = lang || F.expLang || 'tr';
+  return (d === 'tr' ? x.e : x.ee) || x.e || x.ee || '';
+};
 const subjName = s => (trMode() ? s.nt : s.ne) || s.n;
 const secName = sc => (trMode() ? sc[2] : sc[3]) || sc[1];
 // Seçili dilde gelen soru sayısı — derleme sayıyor, burada hesaplanmıyor
@@ -1777,7 +1997,7 @@ function start(sr){
   R = { id, list, i:0, order:null, picked:null, orders:[], picks:[],
         log:[], t0:Date.now(), round:1, missed:[], sure:0, durdu:false, sureTam:true,
         bos:0, bosTam:true, qTop:0, qN:0, qAcc:{}, qAcik:null, qSon:{},
-        qWall:{}, qWallOpen:null, sr };
+        qWall:{}, qWallOpen:null, hintMap:{}, sr };
   S.runs.unshift({ id, t0:R.t0, tN:R.t0, title:scopeTitle() + (sr ? ' · Speedrun' : ''),
                    code:soloModule() || '', deck:deckName(), sr,
                    n0:list.length, ids:list.map(q => q[0]), i:0, round:1,
@@ -1801,7 +2021,7 @@ function resumeRun(id){
         bos:rec.bos || 0, bosTam:!!rec.bosTam, qTop:rec.qTop || 0, qN:rec.qN || 0,
         qAcc:{}, qAcik:null, qSon:{},
         qWall:Object.fromEntries(Object.entries(rec.qWall || {}).map(([k,v]) => [k,v.slice()])),
-        qWallOpen:rec.qWallOpen || null, sr:!!rec.sr };
+        qWallOpen:rec.qWallOpen || null, hintMap:{}, sr:!!rec.sr };
   if (Array.isArray(rec.qAn)) R.qAcc[rec.qAn[0]] = rec.qAn[1] || 0;
   // Bu turda verilmiş cevapları geri kur: kayıtta kaynak şık indeksi var,
   // yeni karıştırmada karşılığı bulunur. Böylece geri gidince cevap görünür
@@ -1880,11 +2100,12 @@ function pick(pos){
   R.log.push({ id:q[0], ok, pick:R.order[pos], round:R.round });
   if (!ok && !R.missed.includes(q[0])) R.missed.push(q[0]);
   saveRun();
+  flushLocal();                                // çevrimdışı/pil biterse tek cevap bile kaybolmasın
   draw();
   feedback(ok);
   clearTimeout(advT);
   if (F.mode === 'exam' || R.sr) advT = setTimeout(next, R.sr ? 260 : 150);
-  else if (ok) advT = setTimeout(next, 580);
+  else if (ok && F.autoNext !== false && R.hintMap[q[0]] !== 'full') advT = setTimeout(next, 580);
 }
 function next(){ clearTimeout(advT); if (R){ R.i++; step0(); } }
 
@@ -2131,11 +2352,16 @@ function home(){
           '</div><div class="note">' + (F.order === 'smart'
             ? 'Vadesi en çok geçenler önce, hiç görülmemişler sonra.'
             : 'Tamamen karışık.') + '</div></div>' +
+        '<div class="grp"><span class="lbl">Otomatik geçiş</span>' +
+          '<button class="switch' + (F.autoNext !== false ? ' on' : '') + '" id="swAutoNext" type="button">' +
+            '<span class="knob"></span><span>Doğruda otomatik geç</span></button>' +
+          '<div class="note">Kapatırsan doğru cevapta da durur; çevrimdışı açıklamayı rahatça okuyup ' +
+          '<b>Sonraki</b> ile geçersin.</div></div>' +
       '</div></details>' +
 
     '<div class="hint"><kbd>A</kbd>–<kbd>E</kbd> ya da <kbd>1</kbd>–<kbd>5</kbd> şık · ' +
       '<kbd>←</kbd><kbd>→</kbd> ya da parmakla kaydır · <kbd>.</kbd> ya da <kbd>Enter</kbd> devam · ' +
-      '<kbd>S</kbd> yıldız · <kbd>P</kbd> sayacı durdur<br>' +
+      '<kbd>I</kbd> ipucu · <kbd>S</kbd> yıldız · <kbd>P</kbd> sayacı durdur<br>' +
       'Tur bitince yanlış yaptıkların tekrar sorulur.</div>';
 
   groupSettings();
@@ -2216,6 +2442,9 @@ function home(){
   el('swSound').onclick = () => {
     F.sound = !F.sound; savePref(); home(); openBox('optBox');
     if (F.sound) beep('ok');
+  };
+  el('swAutoNext').onclick = () => {
+    F.autoNext = F.autoNext === false; savePref(); home(); openBox('optBox');
   };
   el('cnt').querySelectorAll('button').forEach(b =>
     b.onclick = () => { F.count = +b.dataset.n; savePref(); home(); openBox('optBox'); });
@@ -2304,7 +2533,7 @@ function openBox(id){ const b = el(id); if (b) b.open = true; }
 function groupSettings(){
   const container = el('optBox').querySelector('.in');
   [
-    ['study','Çalışma düzeni',['mode','cnt','ord']],
+    ['study','Çalışma düzeni',['mode','cnt','ord','swAutoNext']],
     ['questions','Dil ve sorular',['lang','q','sw']],
     ['ask','Sor düğmesi',['aiSel','askPrompt']],
     ['sound','Ses',['swSound']],
@@ -2423,8 +2652,22 @@ function askEtiket(kopyala){
     (n ? '<i class="askn" title="Bu soruyu ' + n + ' kez sordun">' + n + '</i>' : '');
 }
 
-/** Kart başlığındaki "Sor" düğmesi. Adres çok uzunsa yalnız kopyalar. */
+/** Kart başlığındaki "Sor" / çevrimdışı "İpucu · Açıkla" düğmesi. */
 function askBtn(){
+  if (!isOnline() && R){
+    const q = R.list[R.i];
+    const shown = R.picked !== null && F.mode === 'study' && !R.sr;
+    const hasH = !!qHint(q), hasE = !!qExpText(q);
+    if (hasH || hasE){
+      const open = shown || !!R.hintMap[q[0]];
+      const label = (!shown && hasH && R.hintMap[q[0]] !== 'hint') ? 'İpucu' : 'Açıkla';
+      return '<button class="askbtn" id="ask" type="button" data-off="exp" ' +
+        'aria-expanded="' + (open ? 'true' : 'false') + '" ' +
+        'title="Çevrimdışı ipucu ve açıklama (I)">' + label + '</button>';
+    }
+    return '<button class="askbtn" id="ask" type="button" data-off="copy" ' +
+      'title="Çevrimdışı — soruyu panoya kopyala">Kopyala</button>';
+  }
   const ai = AI[F.ai] || AI.chatgpt;
   const noQ = ai[1].indexOf('?q=') < 0 && ai[1].indexOf('?query=') < 0;
   const url = noQ ? ai[1] : (ai[1] + encodeURIComponent(askText()));
@@ -2434,6 +2677,78 @@ function askBtn(){
       'rel="noopener noreferrer" title="' + esc(ttl) + '">' + askEtiket(false) + '</a>'
     : '<button class="askbtn" id="ask" type="button" ' +
       'title="Soru çok uzun — panoya kopyalanır">' + askEtiket(true) + '</button>';
+}
+function refreshAskControl(){
+  const cur = el('ask');
+  if (!cur || !R) return;
+  const wrap = document.createElement('div');
+  wrap.innerHTML = askBtn();
+  const nextEl = wrap.firstElementChild;
+  if (!nextEl) return;
+  cur.replaceWith(nextEl);
+  bindAsk(R.list[R.i]);
+}
+function toggleOfflineHelp(){
+  if (!R) return;
+  clearTimeout(advT);
+  const q = R.list[R.i];
+  const shown = R.picked !== null && F.mode === 'study' && !R.sr;
+  if (shown){
+    const n = el('xNote');
+    if (n) n.scrollIntoView({ behavior: REDUCED ? 'instant' : 'smooth', block: 'nearest' });
+    return;
+  }
+  const hasH = !!qHint(q), hasE = !!qExpText(q);
+  if (!hasH && !hasE){
+    R.hintMap[q[0]] = R.hintMap[q[0]] === 'none' ? '' : 'none';
+    draw();
+    return;
+  }
+  const cur = R.hintMap[q[0]] || '';
+  if (!cur) R.hintMap[q[0]] = hasH ? 'hint' : 'full';
+  else if (cur === 'hint' && hasE) R.hintMap[q[0]] = 'full';
+  else R.hintMap[q[0]] = '';
+  draw();
+  const box = el('xHelp') || el('xNote');
+  if (box) box.scrollIntoView({ behavior: REDUCED ? 'instant' : 'smooth', block: 'nearest' });
+}
+function bindAsk(q){
+  const b = el('ask');
+  if (!b) return;
+  if (b.dataset.off === 'exp'){
+    b.onclick = toggleOfflineHelp;
+    return;
+  }
+  if (b.dataset.off === 'copy'){
+    b.onclick = async () => {
+      await copyText(askText());
+      R.hintMap[q[0]] = 'none';
+      draw();
+      const c = el('ask');
+      if (c){
+        c.textContent = 'Kopyalandı';
+        c.classList.add('done');
+        setTimeout(() => {
+          const x = el('ask');
+          if (x && x.dataset.off === 'copy'){ x.textContent = 'Kopyala'; x.classList.remove('done'); }
+        }, 2000);
+      }
+    };
+    return;
+  }
+  b.onclick = async () => {
+    const kopyala = b.tagName === 'BUTTON';
+    sorSay(q[0]);
+    const ok = await copyText(askText());
+    const ai = AI[F.ai] || AI.chatgpt;
+    const noQ = ai[1].indexOf('?q=') < 0 && ai[1].indexOf('?query=') < 0;
+    b.textContent = ok ? (noQ ? 'Kopyalandı (Yapıştır)' : 'Kopyalandı') : 'Kopyalanamadı';
+    b.classList.add('done');
+    setTimeout(() => {
+      const c = el('ask');
+      if (c && !c.dataset.off){ c.innerHTML = askEtiket(kopyala); c.classList.remove('done'); }
+    }, 2000);
+  };
 }
 
 /** Kişisel isteği, soruyu ve ekranda görünen sıradaki şıkları düz metne çevirir. */
@@ -2635,7 +2950,9 @@ function xTags(q){
 function xNote(q){
   const x = xOf(q);
   if (!x) return '';
-  const ac = (trMode() ? x.e : x.ee) || x.e || x.ee || '';
+  const dil = typeof F !== 'undefined' && F.expLang ? F.expLang : (trMode() ? 'tr' : 'en');
+  const ac = (dil === 'tr' ? x.e : x.ee) || x.e || x.ee || '';
+  const cift = !!(x.e && x.ee);
   const kay = (x.s || []).map(s => {
     const k = KS[s[0]] || [s[0], ''];
     const ad = esc(k[0]), href = s[3] || k[1];
@@ -2646,14 +2963,46 @@ function xNote(q){
       (ek ? ' <span class="xref">(' + ek + ')</span>' : '');
   });
   if (!ac && !kay.length && !x.r) return '';
-  return '<div class="xnote">' +
+  return '<div class="xnote" id="xNote">' +
     (x.r ? '<div class="xrow"><span class="xl">İnceleme</span><span>' +
        esc(x.rn || 'Bu soru belirsiz; çalışma kapsamına girmeden önce gözden geçirilmeli.') + '</span></div>' : '') +
-    (ac ? '<div class="xrow"><span class="xl">' + (trMode() ? 'Açıklama' : 'Note') + '</span><span>' +
-       esc(ac) + '</span></div>' : '') +
+    (ac ? '<div class="xrow xexp"><div class="xmeta"><span class="xl">' +
+       (dil === 'tr' ? 'Açıklama' : 'Explanation') + '</span>' +
+       (cift ? '<span class="xlang" role="group" aria-label="Açıklama dili">' +
+         '<button type="button" data-elang="tr" aria-pressed="' + (dil === 'tr' ? 'true' : 'false') +
+         '" class="' + (dil === 'tr' ? 'on' : '') + '">TR</button>' +
+         '<button type="button" data-elang="en" aria-pressed="' + (dil === 'en' ? 'true' : 'false') +
+         '" class="' + (dil === 'en' ? 'on' : '') + '">EN</button></span>' : '') +
+       '</div><div class="xbody">' + esc(ac) + '</div></div>' : '') +
     (kay.length ? '<div class="xrow xsrc"><span class="xl">' + (trMode() ? 'Kaynak' : 'Source') +
        '</span><span>' + kay.join(' · ') + '</span></div>' : '') +
     '</div>';
+}
+/** Cevaplamadan önce açılan çevrimdışı ipucu veya tam açıklama kutusu. */
+function xHelpHtml(q){
+  const st = R && R.hintMap ? R.hintMap[q[0]] : '';
+  if (!st) return '';
+  const h = qHint(q), e = qExpText(q);
+  if (st === 'hint' && h){
+    return '<div class="xhint" id="xHelp"><div class="xmeta"><span class="xl">Çevrimdışı ipucu</span></div>' +
+      '<div class="xbody" style="margin-top:4px">' + esc(h) + '</div>' +
+      '<div class="xacts">' +
+        (e ? '<button class="tbtn" id="xShowFull" type="button">Tam açıklamayı gör</button>' : '') +
+        '<button class="tbtn" id="xHideHelp" type="button">Gizle</button></div></div>';
+  }
+  if (st === 'full' && e){
+    return xNote(q) + '<div class="xhint" style="border-left-color:var(--rule-2); padding:8px 14px">' +
+      '<button class="tbtn" id="xHideHelp" type="button">Açıklamayı gizle</button></div>';
+  }
+  if (st === 'none'){
+    const s = SUBJ[q[1]];
+    const noteIdx = NOTES.findIndex(n => n.s === s.c);
+    return '<div class="xhint" id="xHelp"><div class="xbody">Çevrimdışısın — bu ders için henüz soru açıklaması eklenmedi (soru metni panoya kopyalandı).</div>' +
+      '<div class="xacts">' +
+        (noteIdx >= 0 ? '<button class="tbtn" id="xOpenNote" data-n="' + noteIdx + '" type="button">Ders notunu aç</button>' : '') +
+        '<button class="tbtn" id="xHideHelp" type="button">Kapat</button></div></div>';
+  }
+  return '';
 }
 
 function questionMode(on){
@@ -2689,13 +3038,16 @@ function draw(){
   let verdict = '';
   if (shown){
     const ok = R.order[R.picked] === 0;
+    const autoGo = F.autoNext !== false && R.hintMap[q[0]] !== 'full';
     verdict = ok
       ? '<div class="verdict ok"><span class="p">Doğru</span><span class="x">Bildin. ' +
-        'Sonraki soru geliyor…<s>' + when(card(q[0])) + '</s></span></div>'
+        (autoGo ? 'Sonraki soru geliyor…' : 'Açıklamayı okuyup Sonraki ile geçebilirsin.') +
+        '<s>' + when(card(q[0])) + '</s></span></div>'
       : '<div class="verdict bad"><span class="p">Yanlış</span><span class="x">' +
         'Doğru cevap yukarıda yeşil: <b>' + KEYS[R.order.indexOf(0)] + ' şıkkı</b>' +
         '<s>Bu turun sonunda tekrar sorulacak</s></span></div>';
   }
+  const hasHelp = !!(qHint(q) || qExpText(q));
 
   const last = R.i === R.list.length - 1 && !R.missed.length;
   el('view').innerHTML =
@@ -2735,6 +3087,8 @@ function draw(){
         '<button class="tbtn" id="quizNotes" type="button">Konu</button>' +
         '<button class="tbtn" id="quizStats" type="button">Durum</button>' +
         '<button class="tbtn" id="quizTheme" type="button">Tema</button>' +
+        (hasHelp ? '<button class="tbtn" id="quizExp" type="button" style="grid-column:1 / -1">' +
+          (!shown && qHint(q) ? 'Çevrimdışı ipucu / açıklama (I)' : 'Çevrimdışı açıklama') + '</button>' : '') +
         '<button class="go3" id="quit" type="button">Turu bitir</button></div>' +
       '<div class="quiz-info">' + esc(secName(sec)) + ' · ' + q[0] + '<br>' +
         xTags(q) + (q[7] ? '<span class="tag gen">üretilmiş</span>' : '') + '</div></section>' +
@@ -2752,7 +3106,7 @@ function draw(){
       '<div class="qt">' + esc(qText(q)) + '</div>' +
       (figOf(q) ? '<div class="figbox">' + figOf(q) + '</div>' : '') +
       '<div class="opts" id="opts">' + opts + '</div>' + verdict +
-      (shown ? xNote(q) : '') + '</div>' +
+      (shown ? xNote(q) : xHelpHtml(q)) + '</div>' +
     '<div class="foot">' +
     '<div class="navpop' + (navOpen ? '' : ' hidden') + '" id="navPop">' +
       '<div class="navrow">' +
@@ -2793,22 +3147,24 @@ function draw(){
   el('quizNotes').onclick = () => { quizExtras(false); openNotes(); };
   el('quizStats').onclick = () => { quizExtras(false); openStats(); };
   el('quizTheme').onclick = () => { el('bTheme').click(); quizExtras(false); };
+  const qe = el('quizExp');
+  if (qe) qe.onclick = () => { quizExtras(false); toggleOfflineHelp(); };
   hovCapa = imlec ? imlec.slice() : null;   // imleç bu noktadan kıpırdayınca vurgu açılır
   soruAc();
   tmrBoya();
-  el('ask').onclick = async () => {
-    const b = el('ask'), kopyala = b.tagName === 'BUTTON';
-    sorSay(q[0]);
-    const ok = await copyText(askText());
-    const ai = AI[F.ai] || AI.chatgpt;
-    const noQ = ai[1].indexOf('?q=') < 0 && ai[1].indexOf('?query=') < 0;
-    b.textContent = ok ? (noQ ? 'Kopyalandı (Yapıştır)' : 'Kopyalandı') : 'Kopyalanamadı';
-    b.classList.add('done');
-    setTimeout(() => {
-      const c = el('ask');
-      if (c){ c.innerHTML = askEtiket(kopyala); c.classList.remove('done'); }
-    }, 2000);
-  };
+  bindAsk(q);
+  el('view').querySelectorAll('[data-elang]').forEach(b => b.onclick = () => {
+    clearTimeout(advT);
+    F.expLang = b.dataset.elang;
+    savePref();
+    draw();
+  });
+  const xsf = el('xShowFull');
+  if (xsf) xsf.onclick = () => { clearTimeout(advT); R.hintMap[q[0]] = 'full'; draw(); };
+  const xhh = el('xHideHelp');
+  if (xhh) xhh.onclick = () => { R.hintMap[q[0]] = ''; draw(); };
+  const xon = el('xOpenNote');
+  if (xon) xon.onclick = () => openNotes(+xon.dataset.n);
   el('navBtn').onclick = () => {
     navOpen = !navOpen;
     el('navPop').classList.toggle('hidden', !navOpen);
@@ -2959,12 +3315,16 @@ function report(rec, live){
         const tm = live && S.qt && S.qt[id] ? S.qt[id][2] : null;
         const wall = Object.entries(rec.qWall || {}).filter(([k]) => k.split(':')[1] === String(id));
         const total = wall.length ? wall.reduce((sum,[,v]) => sum + v[0], 0) : null;
+        const exp = qExpText(q);
         return '<div class="rrow"><span class="rdot ' + (firstOk ? 'ok' : 'bad') + '"></span>' +
           '<div style="min-width:0"><div class="q">' + esc(qText(q)) + '</div><div class="a">' +
           (firstOk ? '<b>' + esc(qOpts(q)[0]) + '</b>'
                    : '<i>İlk seçimin: ' + esc(qOpts(q)[tries[0].pick]) + '</i> · <b>Doğru: ' +
                      esc(qOpts(q)[0]) + '</b>' + (fixed ? ' · sonra bildin' : '')) +
-          '</div></div>' +
+          '</div>' +
+          (exp ? '<details class="rexp"' + (firstOk ? '' : ' open') + '><summary>Açıklama</summary><p>' +
+            esc(exp) + '</p></details>' : '') +
+          '</div>' +
           (tm !== null || total !== null ? '<span class="rtm' + (tm >= YAVAS_MS ? ' slow' : '') + '">' +
             (total !== null ? 'toplam ' + saat(total) : '') +
             (tm !== null ? (total !== null ? '<br>' : '') + 'aktif ' + saat(tm) : '') + '</span>' : '') + '</div>';
@@ -2999,15 +3359,71 @@ function report(rec, live){
   el('back').onclick = home;
 }
 
+/** Durum panelindeki çevrimdışı hazırlık kutusunun içi. */
+function offlineInner(){
+  const off = !isOnline();
+  const dot = Offline.fileMode || Offline.ready ? (off ? 'off' : 'ok') : Offline.checking ? 'wait' : '';
+  const title = Offline.fileMode ? 'Yerel tek dosya · tamamen çevrimdışı'
+    : off ? 'Çevrimdışı mod aktif'
+    : Offline.ready ? 'Çevrimdışı çalışmaya hazır'
+    : Offline.checking ? 'Çevrimdışı önbellek hazırlanıyor…'
+    : 'Çevrimdışı önbellek bekleniyor';
+  const exp030 = QS.filter(q => inSubject(q, '030') && !q[6] && qExpText(q)).length;
+  const det = Offline.fileMode
+    ? 'Tüm sorular, notlar, çizimler ve 030 açıklamaları (' + exp030 + ' soru) bu dosyanın içinde.'
+    : off
+      ? 'Sorular, ders notları, çizimler ve 030 açıklamaları (' + exp030 + ' soru) bu cihazdan yükleniyor. İlerlemen yerelde güvenle saklanır; internet gelince bulutla eşitlenir.'
+      : Offline.ready
+        ? 'Tüm soru bankası, ders notları, çizimler ve 030 açıklamaları (' + exp030 + ' soru) cihaz önbelleğinde. Uçak modunda doğrudan açılıp çalışır.'
+        : 'Uçuş öncesi bu sayfayı bir kez çevrimiçi açman yeterli; önbellek kendiliğinden kurulur.';
+  const showInstall = Offline.canInstall();
+  return '<div class="offst"><span class="offdot ' + dot + '" aria-hidden="true"></span><span>' + title + '</span></div>' +
+    '<div class="note">' + det + '</div>' +
+    '<div class="cloudrow">' +
+      (Offline.supported && !off ? '<button class="tbtn" id="offRef" type="button">Önbelleği doğrula</button>' : '') +
+      '<button class="tbtn" id="btnInstall" type="button"' + (showInstall ? '' : ' hidden') + '>Uygulamayı yükle</button>' +
+      (window.self === window.top ? '<button class="tbtn" id="offDl" type="button">Tek dosya HTML indir</button>' : '') +
+    '</div>' +
+    '<div class="note" id="offMsg" role="status">' + esc(Offline.msg || '') + '</div>';
+}
+function bindOffline(){
+  const ref = el('offRef'), dl = el('offDl'), ins = el('btnInstall');
+  if (ref) ref.onclick = () => Offline.refresh();
+  if (dl) dl.onclick = () => Offline.downloadSingleFile();
+  if (ins) ins.onclick = async () => {
+    if (ins.getAttribute('aria-disabled') === 'true') return;
+    ins.setAttribute('aria-disabled', 'true');
+    try{
+      if (Offline.supportsInstall){
+        await navigator.install();
+        Offline.msg = 'Uygulama yüklendi veya açıldı.';
+        ins.hidden = true;
+      } else if (Offline.installPrompt){
+        const ev = Offline.installPrompt;
+        Offline.installPrompt = null;
+        await ev.prompt();
+        const { outcome } = await ev.userChoice;
+        Offline.msg = outcome === 'accepted' ? 'Uygulama yüklendi.' : 'Yükleme iptal edildi.';
+        if (!Offline.installPrompt) ins.hidden = true;
+      }
+    }catch(e){
+      Offline.msg = e && e.name === 'AbortError' ? 'Yükleme iptal edildi.' : 'Yükleme başlatılamadı.';
+    }finally{
+      ins.removeAttribute('aria-disabled');
+      const m = el('offMsg'); if (m) m.textContent = Offline.msg;
+    }
+  };
+}
+
 /** Durum panelindeki bulut kutusunun içi. */
 function cloudInner(){
-  const u = Cloud.user;
+  const u = Cloud.user, off = !isOnline();
   if (!u){
-    return '<div class="note">Giriş yaparsan ilerlemen Google hesabına yedeklenir; ' +
-      'telefonda ve bilgisayarda aynı yerden devam edersin. Yalnız kendi verini ' +
-      'görürsün.</div>' +
-      '<div class="cloudrow"><button class="tbtn cbig" id="cIn" type="button">' +
-        'Google ile giriş yap</button></div>' +
+    return '<div class="note">' + (off
+        ? 'Çevrimdışısın — ilerlemen bu cihaza güvenle kaydediliyor. İnternet gelince Google ile giriş yapıp yedekleyebilirsin.'
+        : 'Giriş yaparsan ilerlemen Google hesabına yedeklenir; telefonda ve bilgisayarda aynı yerden devam edersin. Yalnız kendi verini görürsün.') +
+      '</div>' +
+      (off ? '' : '<div class="cloudrow"><button class="tbtn cbig" id="cIn" type="button">Google ile giriş yap</button></div>') +
       (Cloud.durum ? '<div class="note bad">' + esc(Cloud.durum) + '</div>' : '');
   }
   return '<div class="cloudrow gacc">' + avatar(ME) + '<span class="cwho">' +
@@ -3015,11 +3431,12 @@ function cloudInner(){
       (u.email ? '<span class="cmail">' + esc(u.email) + '</span>' : '') +
       '</span></div>' +
     '<div class="cloudrow">' +
-      '<button class="tbtn" id="cSync" type="button">Şimdi eşitle</button>' +
-      '<button class="tbtn" id="cOut" type="button">Çıkış yap</button>' +
+      '<button class="tbtn" id="cSync" type="button"' + (off ? ' disabled' : '') + '>Şimdi eşitle</button>' +
+      '<button class="tbtn" id="cOut" type="button"' + (off ? ' disabled' : '') + '>Çıkış yap</button>' +
     '</div>' +
-    '<div class="note' + (Cloud.durum ? ' bad' : '') + '">' +
-      (Cloud.durum ? esc(Cloud.durum)
+    '<div class="note' + (!off && Cloud.durum ? ' bad' : '') + '">' +
+      (off ? 'Çevrimdışı — ilerleme bu cihaza kaydediliyor; bağlantı gelince kendiliğinden eşitlenecek.'
+        : Cloud.durum ? esc(Cloud.durum)
         : Cloud.mesgul ? 'Eşitleniyor…'
         : Cloud.kirli ? 'Bekleyen değişiklik var, birkaç saniye içinde gidecek.'
         : Cloud.sonEs ? 'Her şey yedeklendi · son eşitleme ' + stamp(Cloud.sonEs)
@@ -3036,7 +3453,7 @@ function paintCloud(){
   if (b){ b.innerHTML = cloudInner(); bindCloud(); }
   // Girişi aramak zorunda kalma: üst çubuktaki düğme yalnız girilmemişken durur
   const g = el('bLogin');
-  if (g) g.classList.toggle('hidden', !Cloud.acik || !!Cloud.user);
+  if (g) g.classList.toggle('hidden', !Cloud.acik || !!Cloud.user || !isOnline());
 }
 
 /** Açık Durum panelini yeniden çizer — arka planda eşitleme bitince eski
@@ -3236,6 +3653,8 @@ function openStats(){
       '</b> soruda takılıyorsun. <button class="tbtn" id="goLeech" type="button">Bunlara çalış</button></div>' : '') + '</div>' +
 
     '<div id="statsAccountContent">' +
+    '<div class="lbl" style="margin:0 0 7px">Çevrimdışı çalışma</div>' +
+    '<div class="offbox" id="offlineBox">' + offlineInner() + '</div>' +
     (Cloud.acik
       ? '<div class="lbl" style="margin:18px 0 7px">Google ile giriş</div>' +
         '<div class="cloud" id="cloudBox">' + cloudInner() + '</div>'
@@ -3282,6 +3701,7 @@ function openStats(){
     openStats();
   };
   bindCloud();
+  bindOffline();
   el('pname').onkeydown = e => { if (e.key === 'Enter') el('pSave').click(); };
   el('pNew').onclick = () => switchProfile(randomName(PROFILES));
   const ps = el('prof'); if (ps) ps.onchange = e => switchProfile(e.target.value);
@@ -3782,6 +4202,7 @@ document.addEventListener('keydown', e => {
   else if (k === 's' || k === 'S'){
     const b = el('star'); if (b){ b.click(); e.preventDefault(); }
   }
+  else if (k === 'i' || k === 'I'){ toggleOfflineHelp(); e.preventDefault(); }
   else if (k === 'p' || k === 'P'){ tmrCevir(); e.preventDefault(); }
 });
 
@@ -3791,6 +4212,7 @@ loadProfile();
 paintWho();
 if (S.runs[0] && !S.runs[0].done) resumeRun(S.runs[0].id); else home();
 if (uiRoute()) renderUIRoute();
+Offline.init();
 Cloud.init();
 })();
 </script>

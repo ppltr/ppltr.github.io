@@ -1,10 +1,11 @@
 {
+  "id": "./",
   "name": "PPL Çalışma",
   "short_name": "PPL",
   "description": "PPL teori sınavları için soru bankası ve çalışma sitesi",
   "lang": "tr",
-  "start_url": ".",
-  "scope": ".",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#F2F4F7",
   "theme_color": "#C21A6B",

@@ -491,6 +491,39 @@ gömer. Değişiklikten sonra `python3 scripts/build_web.py` çalıştır.
 Yedekleme metin kopyala/yapıştır üzerinden yapılır — artifact kum havuzunda dosya
 indirme engelli. Dosya düğmeleri yalnızca `window.self === window.top` iken gösterilir.
 
+## Çevrimdışı çalışma (PWA) ve soru açıklamaları (`data/aciklamalar/`)
+
+Uygulama uçak modunda / çevrimdışı tamamen çalışacak şekilde tasarlandı:
+
+- **Service Worker (`docs/sw.js`)**: `scripts/build_web.py` tarafından her derlemede `docs/`
+  dosyalarının SHA-256 özetiyle (`ppl-offline-<hash>`) otomatik üretilir. `index.html`
+  (tüm sorular, çeviriler, ders notları, SVG çizimler ve açıklamalar gömülü), `site.webmanifest`
+  (kararlı `"id": "./"`) ve ikonları önbelleğe alır. Sayfa gezinmelerinde uçak Wi-Fi'ında
+  takılmamak için 2 sn ağ zaman aşımı + anında önbellek yedeği uygular; `sw.js` güncellemesi
+  ve Firebase istekleri önbelleklenmez.
+- **Bulut / çevrimdışı uyumu**: `Cloud.init()` çevrimdışıyken `acik = false` yapmaz,
+  `online` olayı gelince başlatır. Cevap anında `flushLocal()` senkron yazılır ve
+  `atpl.dirty` işaretlenir; çevrimdışı iken Firestore'a zaman aşımı hataları yağdırılmaz,
+  bağlantı dönünce `esitle(true)` tüm çevrimdışı ilerlemeyi kaynaştırıp yedekler.
+- **Çevrimdışı soru açıklamaları (`data/aciklamalar/<ders>.json`)**: Her soru için
+  `ipucu` (cevabı ele vermeyen Türkçe kavram/formül ipucu), `tr` (Türkçe tam açıklama) ve
+  `en` (İngilizce tam açıklama) alanları taşır. `scripts/init_db.py` içindeki
+  `import_explanations()` bunları `questions.hint`, `explanation`, `explanation_en`
+  sütunlarına yazar (`import_notes()` sonrasında çalışır, böylece `_kaynak_notlari.json`
+  notları korunurken `hint` alanı yine gelir). `build_web.py` ipucunu `XT[id].h` olarak
+  gömer. Doğrulama: `python3 scripts/check_aciklamalar.py`.
+- **Arayüz**: Çevrimdışıyken üst şeritte `Çevrimdışı` rozeti görünür; soru üst çubuğundaki
+  `Sor` düğmesi dış site açmak yerine `İpucu` / `Açıkla` düğmesine dönüşür (klavye `I`,
+  çevrimiçiyken de `⋯` menüsünden erişilir). Açıklama kutusunda `TR` / `EN` dil geçişi
+  (varsayılan `F.expLang = 'tr'`) ve Ayarlar → Çalışma düzeni altında `Doğruda otomatik geç`
+  (`F.autoNext`, varsayılan açık) anahtarı bulunur. Durum → Hesap ve yedek altında önbellek
+  durumu, doğrulama, uygulama yükleme ve tek dosya HTML indirme düğmeleri vardır.
+- **Test**: `scripts/test_offline_web.cjs` gerçek `context.setOffline(true)` altında soğuk
+  yeniden yükleme, 030 ipucu/açıklama, TR/EN geçişi, rapor açıklamaları ve çevrimiçi
+  toparlanmayı doğrular (`npm test` içinde çalışır).
+- Şu an yalnızca **030 (Flight Performance and Planning)** için tam kapsamlı çevrimdışı
+  açıklama ve ipucu seti (`data/aciklamalar/030.json`, 258/258 soru) eklendi.
+
 ## Sınav hatırlatma ve ECQB eksikleri (`020-SH`, `020-EC`)
 
 Kullanıcı 2026-11-17'de 020 (Uçak Genel Bilgisi) sınavına girdi, hatırladığı konular: static discharge,

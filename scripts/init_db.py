@@ -180,6 +180,9 @@ def migrate(conn: sqlite3.Connection) -> None:
         conn.execute("ALTER TABLE questions ADD COLUMN review_note TEXT")
     if "explanation_en" not in cols:
         conn.execute("ALTER TABLE questions ADD COLUMN explanation_en TEXT")
+    if "hint" not in cols:
+        # cevabı ele vermeyen kısa çevrimdışı ipucu (Türkçe)
+        conn.execute("ALTER TABLE questions ADD COLUMN hint TEXT")
 
     ocols = {r[1] for r in conn.execute("PRAGMA table_info(options)")}
     if "text_tr" not in ocols:
@@ -365,6 +368,66 @@ def import_translations(conn: sqlite3.Connection) -> tuple[int, int]:
     return sayim["tr"], sayim["en"]
 
 
+def import_explanations(conn: sqlite3.Connection) -> tuple[int, int]:
+    """data/aciklamalar/*.json dosyalarındaki çevrimdışı açıklama ve ipuçlarını yazar.
+
+    Biçim:
+        {"subject_code": "030", "aciklamalar": {
+            "14806": {"ipucu": "…", "tr": "…", "en": "…"}
+        }}
+
+    Bilinmeyen soru kimliği, çift kimlik veya boş metin yazmadan önce reddedilir.
+    `import_notes()` sonrasında çalışacağı için `_kaynak_notlari.json` içindeki
+    özel derlenmiş `tr`/`en` notları korunur; ipucu (`hint`) alanı buradan beslenir.
+    Döner: (açıklamalı soru sayısı, ipuçlu soru sayısı).
+    """
+    exp_dir = DATA_DIR / "aciklamalar"
+    if not exp_dir.exists():
+        return 0, 0
+
+    kayitlar: dict[int, dict] = {}
+    gorulen: dict[int, str] = {}
+    for path in sorted(exp_dir.glob("*.json")):
+        if path.name.startswith("_"):
+            continue
+        data = json.loads(path.read_text(encoding="utf-8"))
+        items = data.get("aciklamalar", {})
+        if not isinstance(items, dict):
+            sys.exit(f"hata: {path.name}: 'aciklamalar' sözlük olmalı")
+        for sid, item in items.items():
+            if not str(sid).isdigit():
+                sys.exit(f"hata: {path.name}: geçersiz soru kimliği: {sid!r}")
+            qid = int(sid)
+            if qid in gorulen:
+                sys.exit(f"hata: {path.name}: soru {qid} zaten {gorulen[qid]} içinde tanımlı")
+            if conn.execute("SELECT 1 FROM questions WHERE id = ?", (qid,)).fetchone() is None:
+                sys.exit(f"hata: {path.name}: bilinmeyen soru kimliği: {qid}")
+            if not isinstance(item, dict):
+                sys.exit(f"hata: {path.name}: soru {qid} nesne olmalı")
+            for alan in ("ipucu", "tr", "en"):
+                if alan in item and item[alan] is not None:
+                    if not isinstance(item[alan], str) or not item[alan].strip():
+                        sys.exit(f"hata: {path.name}: soru {qid}: '{alan}' boş olamaz")
+            gorulen[qid] = path.name
+            kayitlar[qid] = item
+
+    conn.execute("UPDATE questions SET hint = NULL")
+    n_exp = n_hint = 0
+    for qid, item in kayitlar.items():
+        if "ipucu" in item:
+            conn.execute("UPDATE questions SET hint = ? WHERE id = ?", (item["ipucu"], qid))
+            if item["ipucu"]:
+                n_hint += 1
+        if "tr" in item:
+            conn.execute("UPDATE questions SET explanation = ? WHERE id = ?", (item["tr"], qid))
+        if "en" in item:
+            conn.execute("UPDATE questions SET explanation_en = ? WHERE id = ?", (item["en"], qid))
+        if item.get("tr") or item.get("en"):
+            n_exp += 1
+    conn.commit()
+    return n_exp, n_hint
+
+
 def import_notes(conn: sqlite3.Connection) -> tuple[int, int, int]:
     """Dış kaynak kaydını ve soru notlarını yazar.
 
@@ -475,6 +538,7 @@ def main() -> None:
 
     dups = apply_duplicates(conn)
     ceviri, ceviri_en = import_translations(conn)
+    n_exp, n_hint = import_explanations(conn)
     n_src, n_link, n_note = import_notes(conn)
     rebuild_fts(conn)
 
@@ -498,6 +562,8 @@ def main() -> None:
     print(f"  {ek} soru ek kaynaklardan eklendi ({inc} soru inceleme kuyruğunda)")
     print(f"  {n_src} kaynak kaydı, {n_link} soru↔kaynak bağı, {n_note} notlu soru "
           f"(⭐ doğrulanmış {yil}, benzer aday {adayn})")
+    if n_exp or n_hint:
+        print(f"  {n_exp} soruda çevrimdışı açıklama ({n_hint} ipucu)")
     print(f"  Türkçe: {ceviri} çeviri + {trsrc} zaten Türkçe = {ceviri + trsrc}/{q}")
     print(f"  İngilizce: {ceviri_en} çeviri + {q - trsrc} zaten İngilizce = {ceviri_en + q - trsrc}/{q}")
     eksik_tr, eksik_en = q - (ceviri + trsrc), q - (ceviri_en + q - trsrc)

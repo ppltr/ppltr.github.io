@@ -117,6 +117,35 @@ class SourcePipelineTest(unittest.TestCase):
         self.assertEqual([tuple(r) for r in refs], [(1, "untouched"), (2, "49")])
         self.assertEqual(self.conn.execute("SELECT explanation FROM questions WHERE id=1").fetchone()[0], "existing explanation")
 
+    def test_explanations_import_and_export_preserve_notes(self):
+        self.write(self.data / "aciklamalar" / "030.json", {
+            "subject_code": "030",
+            "aciklamalar": {
+                "1": {"ipucu": "Kural ipucu.", "tr": "Çevrimdışı açıklama.", "en": "Offline explanation."},
+                "2": {"ipucu": "Pist koşusu ipucu.", "tr": "Geçici açıklama.", "en": "Temp explanation."},
+            },
+        })
+        n_exp, n_hint = init.import_explanations(self.conn)
+        init.import_notes(self.conn)
+        self.assertEqual((n_exp, n_hint), (2, 2))
+        self.assertEqual(self.conn.execute("SELECT hint, explanation FROM questions WHERE id=1").fetchone()[:],
+                         ("Kural ipucu.", "Çevrimdışı açıklama."))
+        # _kaynak_notlari.json içindeki tr/en korunur, ipucu aciklamalar'dan gelir
+        self.assertEqual(self.conn.execute("SELECT hint, explanation FROM questions WHERE id=2").fetchone()[:],
+                         ("Pist koşusu ipucu.", "Koşu uzunluğu."))
+        export = build.export()
+        self.assertEqual(export["x"][1]["h"], "Kural ipucu.")
+        self.assertEqual(export["x"][1]["e"], "Çevrimdışı açıklama.")
+        self.assertEqual(export["x"][2]["h"], "Pist koşusu ipucu.")
+        self.assertEqual(export["x"][2]["e"], "Koşu uzunluğu.")
+
+    def test_invalid_explanation_id_fails_closed(self):
+        self.write(self.data / "aciklamalar" / "bad.json", {
+            "aciklamalar": {"9999": {"ipucu": "x", "tr": "y", "en": "z"}},
+        })
+        with self.assertRaises(SystemExit):
+            init.import_explanations(self.conn)
+
     def test_uncertain_questions_have_no_correct_answer_or_active_export(self):
         self.assertEqual(self.conn.execute("SELECT SUM(is_correct) FROM options WHERE question_id=3").fetchone()[0], 0)
         self.write(self.sources / "inceleme_010.json", {"ders": "010", "sorular": [
